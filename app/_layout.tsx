@@ -166,7 +166,14 @@ function RootLayout() {
 
   // Lock to portrait by default; mushaf.tsx unlocks when that screen is active.
   useEffect(() => {
-    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP);
+    // @ai-start
+    // Browsers require fullscreen/user permission for orientation locking.
+    if (Platform.OS !== 'web') {
+      ScreenOrientation.lockAsync(
+        ScreenOrientation.OrientationLock.PORTRAIT_UP,
+      );
+    }
+    // @ai-end
   }, []);
 
   // Tajweed data — defer until after first frame + interactions complete

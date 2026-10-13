@@ -1,4 +1,5 @@
 import * as SQLite from 'expo-sqlite';
+import {loadBundledIbnKathir} from './loadBundledIbnKathir'; // @ai
 import type {DownloadedTafseerMeta} from '@/types/tafseer';
 
 export interface TafseerResult {
@@ -324,13 +325,7 @@ class TafseerDbService {
     if (already) return;
 
     const db = await this.ensureReady();
-    const compactData =
-      require('@/data/ibn-kathir-tafseer-compact.json') as Array<{
-        s: number;
-        f: number;
-        t: number;
-        text: string;
-      }>;
+    const compactData = await loadBundledIbnKathir(); // @ai
 
     // Expand compact entries into per-verse rows
     const verses: Array<{

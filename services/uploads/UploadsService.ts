@@ -1,5 +1,6 @@
 import * as FileSystem from 'expo-file-system/legacy';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {Platform} from 'react-native'; // @ai
 
 import {uploadsDatabaseService} from './UploadsDatabaseService';
 import type {UploadedRecitation, CustomReciter} from '../../types/uploads';
@@ -231,6 +232,8 @@ class UploadsService {
   // ─── Orphan Cleanup ────────────────────────────────────────────────
 
   async maybeRunOrphanCleanup(): Promise<void> {
+    // Browser storage has no native document-directory files to clean. @ai
+    if (Platform.OS === 'web') return; // @ai
     try {
       const lastCheckStr = await AsyncStorage.getItem(ORPHAN_CHECK_KEY);
       const lastCheck = lastCheckStr ? parseInt(lastCheckStr, 10) : 0;

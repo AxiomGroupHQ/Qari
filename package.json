@@ -1,6 +1,6 @@
 {
   "name": "bayaan",
-  "main": "expo-router/entry",
+  "main": "qari-entry.js",
   "version": "2.2.1",
   "license": "AGPL-3.0-or-later",
   "scripts": {
