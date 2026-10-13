@@ -1,0 +1,2 @@
+provider,catalogue_url,audio_url,content_length_bytes,status,notes
+mp3quran,https://mp3quran.net/api/v3/reciters?language=eng,,,not_measured,Public catalogue documented; remote HTTP size measurement unavailable in this execution environment
