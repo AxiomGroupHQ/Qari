@@ -1,0 +1,3 @@
+provider,catalogue_url,audio_url,content_length_bytes,status,notes
+bayaan,https://api.thebayaan.com,,,not_measured,API base URL confirmed in repository .env.example; catalogue endpoint and remote audio bytes not verified
+supabase,,,,not_measured,Project URL not present in public environment template; quran-audio bucket documented but inventory requires project details
