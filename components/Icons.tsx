@@ -499,14 +499,29 @@ export const PlaylistIcon: React.FC<IconProps> = ({color, size}) => (
   </Svg>
 );
 
-export const LogoIcon: React.FC<IconProps> = ({size, isDarkMode}) => (
-  <Svg width={size} height={size} viewBox="0 0 500 500" fill="none">
-    <Path
-      d="M436.69 266.09L308.26 266.09L427.06 217.31L418.32 196.03L297.58 245.61L389.13 152.58L372.75 136.46L284.03 226.61L333.27 110.1L312.1 101.15L261.5 220.87L261.5 220.87L261.5 90.9L238.5 90.9L238.5 219.33L189.72 100.53L168.44 109.26L218.02 230.01L124.99 138.45L108.87 154.84L199.02 243.56L82.51 194.32L73.56 215.49L193.28 266.09L193.28 266.09L63.31 266.09L63.31 289.09L222.57 289.09L202.42 309.57L150.2 363.9L166.58 380.02L215.97 328.57L215.98 328.56L238.5 305.66L238.5 334.31L238.5 334.31L238.5 409.1L261.5 409.1L261.5 305.02L281.98 325.17L336.31 377.39L352.43 361.01L300.98 311.62L300.97 311.61L278.07 289.09L306.72 289.09L306.72 289.09L436.69 289.09L436.69 266.09"
-      fill={isDarkMode ? '#FFFFFF' : '#101820'}
-    />
+// @ai-start
+export const LogoIcon: React.FC<IconProps> = ({size, color, isDarkMode}) => (
+  <Svg width={size} height={size} viewBox="0 0 1024 1024" fill="none">
+    {[
+      {x: 240, y: 432, h: 160},
+      {x: 360, y: 352, h: 320},
+      {x: 480, y: 256, h: 512},
+      {x: 600, y: 352, h: 320},
+      {x: 720, y: 432, h: 160},
+    ].map(bar => (
+      <Rect
+        key={bar.x}
+        x={bar.x}
+        y={bar.y}
+        width={64}
+        height={bar.h}
+        rx={32}
+        fill={color ?? (isDarkMode ? '#b8e6ca' : '#0c302b')}
+      />
+    ))}
   </Svg>
 );
+// @ai-end
 
 export const RewayatIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="-50 -50 100 100">

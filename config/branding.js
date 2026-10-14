@@ -1,5 +1,6 @@
+// @ai-start
 /**
- * Bayaan app identity config.
+ * ISTIMA app identity config.
  *
  * CJS (not ESM) — app.config.js calls require() before Expo CLI transpiles.
  * Forks override by replacing this file; the shape is typed in branding.d.ts.
@@ -7,24 +8,28 @@
  * See docs/rfcs/007-app-layer-multi-tenancy.md for the design rationale.
  */
 module.exports = {
-  appName: 'Bayaan',
-  appSlug: 'Bayaan',
-  urlScheme: 'bayaan',
+  appName: 'ISTIMA',
+  arabicName: 'استماع',
+  contentTagline: 'Quran • Bayan • Tafsir • Knowledge',
+  reflectionTagline: 'Listen. Reflect. Remember Allah.',
+  websiteUrl: 'https://istima.app',
+  appSlug: 'istima',
+  urlScheme: 'istima',
   bundleId: {
     ios: 'com.bayaan.app',
     android: 'com.bayaan.app',
   },
-  supportUrl: 'https://thebayaan.com/support',
-  termsUrl: 'https://thebayaan.com/terms',
-  privacyUrl: 'https://thebayaan.com/privacy',
-  shareBaseUrl: 'https://app.thebayaan.com',
-  emailProductName: 'Bayaan',
+  supportUrl: 'https://istima.app/support',
+  termsUrl: 'https://istima.app/terms',
+  privacyUrl: 'https://istima.app/privacy',
+  shareBaseUrl: 'https://istima.app',
+  emailProductName: 'ISTIMA',
   catalog: {
     source: 'bundled',
     fallbackPath: undefined,
   },
   /**
-   * Order + visibility of Listen-tab home rows. Bayaan's default mirrors
+   * Order + visibility of Listen-tab home rows. ISTIMA's default mirrors
    * the historical hardcoded order in RecitersView.tsx for parity. Forks
    * override this to reorder, hide, or omit rows entirely.
    */
@@ -43,3 +48,5 @@ module.exports = {
     {id: 'collection', enabled: true},
   ],
 };
+
+// @ai-end

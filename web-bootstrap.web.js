@@ -14,10 +14,10 @@ async function start() {
 }
 
 start().catch(error => {
-  console.error('Unable to start Qari:', error);
+  console.error('Unable to start ISTIMA:', error);
   const root = document.getElementById('root');
   if (root) {
     root.textContent =
-      'Qari could not start. Close other Qari tabs and reload this page.';
+      'ISTIMA could not start. Close other ISTIMA tabs and reload this page.';
   }
 });

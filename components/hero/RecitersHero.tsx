@@ -3,6 +3,7 @@ import {View, StyleSheet} from 'react-native';
 import {BrowseAllHero} from '@/components/hero/BrowseAllHero';
 import {HeroSection} from './HeroSection';
 import {moderateScale} from 'react-native-size-matters';
+import {IstimaWordmark} from '@/components/branding/IstimaWordmark'; // @ai
 
 /**
  * The main hero component for the RecitersView.
@@ -10,13 +11,16 @@ import {moderateScale} from 'react-native-size-matters';
  */
 export function RecitersHero() {
   return (
-    <HeroSection
-      mainHero={
-        <View style={styles.mainHeroWrapper}>
-          <BrowseAllHero />
-        </View>
-      }
-    />
+    <View>
+      <IstimaWordmark />
+      <HeroSection
+        mainHero={
+          <View style={styles.mainHeroWrapper}>
+            <BrowseAllHero />
+          </View>
+        }
+      />
+    </View>
   );
 }
 

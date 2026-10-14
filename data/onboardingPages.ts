@@ -25,7 +25,7 @@ export function getOnboardingPages(): OnboardingPage[] {
       id: 'welcome',
       icon: 'app-icon',
       title: `Welcome to ${branding.appName}`,
-      subtitle: 'A New Chapter',
+      subtitle: branding.reflectionTagline, // @ai
       description:
         'A beautiful Mushaf, ayah highlighting, word-by-word translation, adhkar, ambient sounds, and so much more.',
       minVersion: '2.0',

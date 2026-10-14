@@ -15,6 +15,7 @@ import {CommonActions} from '@react-navigation/native';
 import {BottomTabBarProps} from '@react-navigation/bottom-tabs';
 import {Theme} from '@/utils/themeUtils';
 import Color from 'color';
+import {IstimaWordmark} from '@/components/branding/IstimaWordmark'; // @ai
 import {usePlayerStore} from '@/services/player/store/playerStore';
 import {TabletDockedPlayer} from '@/components/tablet/TabletDockedPlayer';
 
@@ -179,14 +180,8 @@ export const TabletSidebar: React.FC<BottomTabBarProps> = ({
   return (
     <View style={containerStyle}>
       <View style={[styles.header, expanded && styles.headerExpanded]}>
-        <LogoIcon
-          color={theme.colors.text}
-          size={40}
-          isDarkMode={isDarkMode}
-        />
-        {expanded ? (
-          <Text style={[styles.brand, {color: theme.colors.text}]}>Bayaan</Text>
-        ) : null}
+        <LogoIcon color={theme.colors.text} size={40} isDarkMode={isDarkMode} />
+        {expanded ? <IstimaWordmark compact /> : null}
       </View>
 
       <View style={styles.items}>
@@ -196,8 +191,8 @@ export const TabletSidebar: React.FC<BottomTabBarProps> = ({
             options.tabBarLabel !== undefined
               ? options.tabBarLabel
               : options.title !== undefined
-                ? options.title
-                : route.name;
+              ? options.title
+              : route.name;
           const isFocused = state.index === index;
 
           return (

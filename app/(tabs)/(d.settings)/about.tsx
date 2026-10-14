@@ -58,10 +58,10 @@ export default function AboutScreen() {
           <View style={styles.section}>
             <Text style={styles.contentHeading}>Our Mission</Text>
             <Text style={styles.bodyText}>
-              Bayaan is dedicated to making the beautiful recitation of the Holy
+              ISTIMA is dedicated to making the beautiful recitation of the Holy
               Quran accessible to everyone. We strive to provide a serene and
               intuitive experience for listening to the Quran, featuring the
-              world&apos;s most renowned reciters and a few Bayaan Exclusives.
+              world&apos;s most renowned reciters and a few ISTIMA Exclusives.
             </Text>
           </View>
 
@@ -146,7 +146,7 @@ export default function AboutScreen() {
             <Text style={styles.bodyText}>
               We are committed to continuous improvement and maintaining the
               highest standards of quality. Our team works diligently to ensure
-              that Bayaan remains a reliable and respectful platform for Quranic
+              that ISTIMA remains a reliable and respectful platform for Quranic
               recitation. InshaAllah, with the help of Allah, we will continue
               to develop and enhance these features to better serve the Ummah.
               We are grateful for your support and feedback as we continue this

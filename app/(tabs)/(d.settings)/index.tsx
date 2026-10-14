@@ -278,7 +278,7 @@ export default function SettingsScreen() {
         router.push('/(d.settings)/credits');
         break;
       case 'github':
-        await Linking.openURL('https://github.com/thebayaan/Bayaan');
+        await Linking.openURL('https://github.com/AxiomGroupHQ/Qari');
         break;
       default:
         break;

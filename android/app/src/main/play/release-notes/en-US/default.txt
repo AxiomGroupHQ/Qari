@@ -1,4 +1,4 @@
-Bayaan is now open source at github.com/thebayaan/Bayaan. Find the Contribute link in Settings.
+ISTIMA is now open source at github.com/AxiomGroupHQ/Qari. Find the Contribute link in Settings.
 
 Also new in 2.2:
 • 7 more rewayat with full text: Warsh, Qalun, Al-Bazzi, Qunbul, Shu'bah, Al-Duri, Al-Susi

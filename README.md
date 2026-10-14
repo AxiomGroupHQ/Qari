@@ -1,8 +1,12 @@
-# Bayaan
+# ISTIMA · استماع
+
+Quran • Bayan • Tafsir • Knowledge
+
+Listen. Reflect. Remember Allah.
 
 **Open-source Quran recitation app for iOS and Android**
 
-Bayaan lets you listen to Quran recitations from 200+ reciters with background audio support, a full Uthmani Mushaf, Adhkar, offline downloads, playlists, and ambient sounds.
+ISTIMA lets you listen to Quran recitations from 200+ reciters with background audio support, a full Uthmani Mushaf, Adhkar, offline downloads, playlists, and ambient sounds.
 
 [![React Native](https://img.shields.io/badge/React_Native-0.83-61DAFB?logo=react)](https://reactnative.dev)
 [![Expo](https://img.shields.io/badge/Expo_SDK-55-000020?logo=expo)](https://expo.dev)
@@ -46,7 +50,7 @@ Bayaan lets you listen to Quran recitations from 200+ reciters with background a
 | Images                 | expo-image                                                |
 | Search                 | fuse.js (client-side fuzzy search)                        |
 | i18n                   | react-i18next with RTL support                            |
-| Backend (optional)     | Bayaan REST API (Hono/Bun on Railway); Supabase is legacy |
+| Backend (optional)     | ISTIMA REST API (Hono/Bun on Railway); Supabase is legacy |
 | Observability (opt-in) | Sentry + PostHog (both disabled when env keys absent)     |
 
 
@@ -97,8 +101,8 @@ Expo CLI is bundled with the project — invoke it via `npx expo` rather than in
 ### Install
 
 ```bash
-git clone https://github.com/thebayaan/Bayaan.git
-cd Bayaan
+git clone https://github.com/AxiomGroupHQ/Qari.git
+cd ISTIMA
 npm install
 ```
 
@@ -128,7 +132,7 @@ npm run android
 ## Project Structure
 
 ```
-Bayaan/
+ISTIMA/
 ├── app/                    # Expo Router screens
 │   ├── (tabs)/             # Main tab navigator
 │   │   ├── (a.home)/       # Home tab
@@ -184,14 +188,14 @@ Key points:
 
 ## License
 
-Bayaan is open source under the **GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)**.
+ISTIMA is open source under the **GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)**.
 
 In plain English:
 
 - You are free to use, study, modify, and redistribute this code.
 - If you run a modified version as a network service, you must make your modified source code available to users of that service.
 - Any fork or derivative must be licensed under AGPL-3.0-or-later as well.
-- "Bayaan" and the Bayaan logo are trademarks and are **not** licensed under AGPL. Forks must rebrand before distribution. See [TRADEMARKS.md](TRADEMARKS.md) for details.
+- ISTIMA is a rebranded fork of [Bayaan](https://github.com/thebayaan/Bayaan). Upstream attribution and trademark notices are preserved in [TRADEMARKS.md](TRADEMARKS.md).
 
 See [LICENSE](LICENSE) for the full terms.
 

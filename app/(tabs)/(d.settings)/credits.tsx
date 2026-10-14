@@ -146,7 +146,7 @@ export default function CreditsScreen() {
         showsVerticalScrollIndicator={false}>
         <View>
           <Text style={styles.introText}>
-            Bayaan wouldn&apos;t be possible without the incredible work of
+            ISTIMA wouldn&apos;t be possible without the incredible work of
             these projects, organizations, and individuals. We&apos;re deeply
             grateful for their contributions to the Muslim community and the
             tech world.
@@ -190,7 +190,9 @@ export default function CreditsScreen() {
             </View>
           ))}
 
-          <Text style={styles.footerText}>Made with ❤️ by the Bayaan team</Text>
+          <Text style={styles.footerText}>
+            ISTIMA · Built on the open-source Bayaan project
+          </Text>
         </View>
       </ScrollView>
     </View>

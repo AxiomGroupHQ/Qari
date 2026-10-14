@@ -72,6 +72,10 @@ export type SearchFilterDimension =
 /** App identity values that vary across forks. */
 export interface Branding {
   appName: string;
+  arabicName: string; // @ai
+  contentTagline: string; // @ai
+  reflectionTagline: string; // @ai
+  websiteUrl: string; // @ai
   appSlug: string;
   urlScheme: string;
   bundleId: {ios: string; android: string};

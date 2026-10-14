@@ -1,5 +1,6 @@
 // Import version information from Git-based generator
 const versionInfo = require('./scripts/generate-version');
+const branding = require('./config/branding'); // @ai
 
 // Get version string
 const getVersionString = () => versionInfo.semanticVersion;
@@ -19,13 +20,15 @@ const OTA_UPDATES_ENABLED = Boolean(EAS_PROJECT_ID_FROM_ENV);
 // no universal-link registration, avoiding conflicts with the maintainer's app.
 const ASSOCIATED_DOMAIN = process.env.EXPO_PUBLIC_ASSOCIATED_DOMAIN;
 const PRIVACY_POLICY_URL =
-  process.env.EXPO_PUBLIC_PRIVACY_POLICY_URL ?? 'https://thebayaan.com/privacy';
+  process.env.EXPO_PUBLIC_PRIVACY_POLICY_URL ?? branding.privacyUrl;
 
 module.exports = {
   expo: {
-    name: 'Bayaan',
-    slug: 'Bayaan',
-    scheme: 'bayaan',
+    name: branding.appName, // @ai
+    slug: branding.appSlug, // @ai
+    scheme: 'istima', // Legacy bayaan links remain registered on mobile. @ai
+    description: branding.contentTagline + '. ' + branding.reflectionTagline, // @ai
+    web: {name: branding.appName, favicon: './assets/images/icon.png'}, // @ai
     version: getVersionString(),
     orientation: 'portrait',
     cli: {
@@ -57,7 +60,7 @@ module.exports = {
         UIBackgroundModes: ['audio', 'remote-notification'],
         CFBundleURLTypes: [
           {
-            CFBundleURLSchemes: ['bayaan'],
+            CFBundleURLSchemes: ['istima', 'bayaan'],
           },
         ],
         NSPrivacyPolicyURL: PRIVACY_POLICY_URL,

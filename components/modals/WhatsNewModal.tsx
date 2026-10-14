@@ -135,7 +135,7 @@ export const WhatsNewModal = forwardRef<WhatsNewModalRef>((props, ref) => {
             />
 
             <Text style={[styles.title, {color: theme.colors.text}]}>
-              What&apos;s new in <Text style={styles.bayaanText}>Bayaan</Text>
+              What&apos;s new in <Text style={styles.bayaanText}>ISTIMA</Text>
             </Text>
 
             <Text style={[styles.version, {color: theme.colors.textSecondary}]}>

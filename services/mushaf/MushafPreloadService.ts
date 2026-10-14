@@ -3,7 +3,7 @@ import {
   type SkTypefaceFontProvider,
   type SkTypeface,
 } from '@shopify/react-native-skia';
-import {Image} from 'react-native';
+import {resolveAssetUri} from '@/utils/resolveAssetUri'; // @ai
 import {digitalKhattDataService} from './DigitalKhattDataService';
 import {quranTextService} from './QuranTextService';
 import {rewayahDiffService} from './RewayahDiffService';
@@ -174,7 +174,7 @@ class MushafPreloadService {
       let anyFailed = false;
 
       for (const [family, asset] of Object.entries(FONT_ASSETS)) {
-        const uri = Image.resolveAssetSource(asset).uri;
+        const uri = resolveAssetUri(asset); // @ai
         const data = await Skia.Data.fromURI(uri);
         const typeface = Skia.Typeface.MakeFreeTypeFaceFromData(data);
         if (!typeface) {
@@ -232,7 +232,7 @@ class MushafPreloadService {
 
       for (const [family, asset] of Object.entries(FONT_ASSETS)) {
         try {
-          const uri = Image.resolveAssetSource(asset).uri;
+          const uri = resolveAssetUri(asset); // @ai
           const data = await Skia.Data.fromURI(uri);
           const typeface = Skia.Typeface.MakeFreeTypeFaceFromData(data);
           if (!typeface) {

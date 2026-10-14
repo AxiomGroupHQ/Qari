@@ -1,0 +1,74 @@
+diff --git a/node_modules/@shopify/react-native-skia/src/Platform/Platform.web.tsx b/node_modules/@shopify/react-native-skia/src/Platform/Platform.web.tsx
+--- a/node_modules/@shopify/react-native-skia/src/Platform/Platform.web.tsx
++++ b/node_modules/@shopify/react-native-skia/src/Platform/Platform.web.tsx
+@@ -3,7 +3,6 @@
+ import type { LayoutChangeEvent, ViewComponent, ViewProps } from "react-native";
+ 
+ import type { DataModule } from "../skia/types";
+-import { isRNModule } from "../skia/types";
+ 
+ import type { IPlatform } from "./IPlatform";
+ 
+@@ -132,21 +131,11 @@
+ export const Platform: IPlatform = {
+   OS: "web",
+   PixelRatio: typeof window !== "undefined" ? window.devicePixelRatio : 1, // window is not defined on node
++  // Expo resolves production hashes and Metro's browser asset exports. // @ai
+   resolveAsset: (source: DataModule) => {
+-    if (isRNModule(source)) {
+-      if (typeof source === "number" && typeof require === "function") {
+-        const {
+-          getAssetByID,
+-        } = require("react-native/Libraries/Image/AssetRegistry");
+-        const { httpServerLocation, name, type } = getAssetByID(source);
+-        const uri = `${httpServerLocation}/${name}.${type}`;
+-        return uri;
+-      }
+-      throw new Error(
+-        "Asset source is a number - this is not supported on the web"
+-      );
+-    }
+-    return source.default;
++    const { Asset } = require("expo-asset"); // @ai
++    const asset = typeof source === "object" && "default" in source ? source.default : source; // @ai
++    return Asset.fromModule(asset).uri; // @ai
+   },
+   findNodeHandle: () => {
+     throw new Error("findNodeHandle is not supported on the web");
+diff --git a/node_modules/@shopify/react-native-skia/lib/module/Platform/Platform.web.js b/node_modules/@shopify/react-native-skia/lib/module/Platform/Platform.web.js
+--- a/node_modules/@shopify/react-native-skia/lib/module/Platform/Platform.web.js
++++ b/node_modules/@shopify/react-native-skia/lib/module/Platform/Platform.web.js
+@@ -1,5 +1,4 @@
+ import React, { useLayoutEffect, useMemo, useRef } from "react";
+-import { isRNModule } from "../skia/types";
+ // eslint-disable-next-line max-len
+ // https://github.com/necolas/react-native-web/blob/master/packages/react-native-web/src/modules/useElementLayout/index.js
+ const DOM_LAYOUT_HANDLER_NAME = "__reactLayoutHandler";
+@@ -125,23 +124,11 @@
+   OS: "web",
+   PixelRatio: typeof window !== "undefined" ? window.devicePixelRatio : 1,
+   // window is not defined on node
++  // Expo resolves production hashes and Metro's browser asset exports. // @ai
+   resolveAsset: source => {
+-    if (isRNModule(source)) {
+-      if (typeof source === "number" && typeof require === "function") {
+-        const {
+-          getAssetByID
+-        } = require("react-native/Libraries/Image/AssetRegistry");
+-        const {
+-          httpServerLocation,
+-          name,
+-          type
+-        } = getAssetByID(source);
+-        const uri = `${httpServerLocation}/${name}.${type}`;
+-        return uri;
+-      }
+-      throw new Error("Asset source is a number - this is not supported on the web");
+-    }
+-    return source.default;
++    const { Asset } = require("expo-asset"); // @ai
++    const asset = typeof source === "object" && "default" in source ? source.default : source; // @ai
++    return Asset.fromModule(asset).uri; // @ai
+   },
+   findNodeHandle: () => {
+     throw new Error("findNodeHandle is not supported on the web");

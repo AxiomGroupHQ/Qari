@@ -13,7 +13,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Bayaan</string>
+	<string>ISTIMA</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -33,6 +33,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>istima</string>
 				<string>bayaan</string>
 			</array>
 		</dict>
@@ -75,7 +76,7 @@
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Allow $(PRODUCT_NAME) to access your photos</string>
 	<key>NSPrivacyPolicyURL</key>
-	<string>https://thebayaan.com/privacy</string>
+	<string>https://istima.app/privacy</string>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER).expo.index_route</string>

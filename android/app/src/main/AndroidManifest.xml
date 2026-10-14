@@ -40,6 +40,7 @@
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="bayaan"/>
+        <data android:scheme="istima"/>
         <data android:scheme="exp+bayaan"/>
       </intent-filter>
       <intent-filter android:autoVerify="true" data-generated="true">
