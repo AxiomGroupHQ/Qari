@@ -1,3 +1,4 @@
+import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useState, useImperativeHandle, forwardRef, useRef} from 'react';
 import {Pressable, Text, TextInput, Animated, View} from 'react-native';
 import {Feather, AntDesign} from '@expo/vector-icons';
@@ -156,7 +157,7 @@ const SearchBar = forwardRef<SearchBarRef, SearchBarProps>(
             from={{opacity: 0, translateX: 20}}
             animate={{opacity: 1, translateX: 0}}>
             <Pressable style={styles.cancelButton} onPress={handleCancel}>
-              <Text style={styles.cancelButtonText}>Cancel</Text>
+              <Text style={styles.cancelButtonText}>{isArabicInterface() ? 'إلغاء' : 'Cancel'}</Text>
             </Pressable>
           </MotiView>
         )}
