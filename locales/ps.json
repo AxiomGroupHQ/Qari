@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "د غږ پلیر په چالانولو کې تېروتنه: {{message}}",
+    "errorLoadingFonts": "د لیکبڼو په پورته کولو کې تېروتنه"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "د ISTIMA کورپاڼه"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "ټول",
+      "clearAll": "ټول پاک کړئ",
+      "hasPhoto": "انځور لري"
+    },
+    "filterModal": {
+      "apply": "پلي کړئ",
+      "filterReciters": "قاریان چاڼ کړئ",
+      "recitationStyles": "د تلاوت ډولونه",
+      "reset": "بیا تنظیم کړئ",
+      "rewayatTypes": "د روایتونو ډولونه"
+    },
+    "recitersFound_one": "د اوسنیو چاڼونو له مخې {{count}} قاري وموندل شو",
+    "recitersFound_other": "د اوسنیو چاڼونو له مخې {{count}} قاریان وموندل شول"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "خوښ شوي سورتونه"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "آیتونه نښه کړئ چې دلته یې ووینئ",
+      "bookmarks": "نښې",
+      "noBookmarksYet": "تر اوسه نښې نشته",
+      "removeBookmark": "نښه لرې کړئ"
+    },
+    "collectionSearchModal": {
+      "rewayat": "روایتونه",
+      "searchPlaylistsRecitersSurahsRewayat": "د غږولو لړلیکونه، قاریان، سورتونه او روایتونه ولټوئ...",
+      "searchPlaylistsRecitersSurahsRewayat2": "د غږولو لړلیکونه، قاریان، سورتونه، روایتونه او ښکته شوې فایلونه ولټوئ",
+      "searchYourCollection": "خپله ټولګه ولټوئ",
+      "searching": "لټون روان دی...",
+      "tryDifferentKeywords": "نورې کلیمې وازمویئ"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "سورتونه ښکته کړئ چې دلته یې ووینئ",
+      "noDownloadsYet": "تر اوسه ښکته شوي فایلونه نشته",
+      "playAll": "ټول وغږوئ"
+    },
+    "favoritereciters": {
+      "addReciters": "قاریان ورزیات کړئ",
+      "addRecitersToSeeThem": "قاریان ورزیات کړئ چې دلته یې ووینئ",
+      "noFavoriteRecitersYet": "تر اوسه د خوښې قاریان نشته",
+      "removeFromFavorites": "له خوښو لرې کړئ",
+      "searchFavoriteReciters": "د خوښې قاریان ولټوئ"
+    },
+    "index": {
+      "addToCollection": "ټولګې ته ورزیات کړئ",
+      "bookmarks": "نښې",
+      "createYourFirstPlaylist": "خپل لومړی د غږولو لړلیک جوړ کړئ",
+      "downloads": "ښکته شوي فایلونه",
+      "items_one": "{{count}} توکی",
+      "items_other": "{{count}} توکي",
+      "loved": "خوښ شوي",
+      "noBookmarksYet": "تر اوسه نښې نشته",
+      "noDownloadsYet": "تر اوسه ښکته شوي فایلونه نشته",
+      "noFavoritesYet": "تر اوسه خوښ توکي نشته",
+      "noLovedSurahsYet": "تر اوسه خوښ شوي سورتونه نشته",
+      "noNotesYet": "تر اوسه یادښتونه نشته",
+      "noUploadsYet": "تر اوسه پورته شوي فایلونه نشته",
+      "notes": "یادښتونه",
+      "playlists": "د غږولو لړلیکونه",
+      "reciters": "قاریان",
+      "uploads": "پورته شوي فایلونه"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "ټول خوښ شوي سورتونه لا دمخه ښکته شوي دي.",
+      "allLovedSurahsHaveBeen": "ټول خوښ شوي سورتونه ښکته شول.",
+      "downloadError": "د ښکته کولو تېروتنه",
+      "loveSurahsToSeeThem": "سورتونه خوښ کړئ چې دلته یې ووینئ",
+      "noLovedSurahsYet": "تر اوسه خوښ شوي سورتونه نشته",
+      "someDownloadsMayHaveFailed": "ښايي ځینې فایلونه ښکته شوي نه وي.",
+      "unloveAllSurahs": "ټول سورتونه له خوښو لرې کړئ"
+    },
+    "notes": {
+      "addNotesToVersesTo": "آیتونو ته یادښتونه ورزیات کړئ چې دلته یې ووینئ",
+      "editNote": "یادښت سم کړئ",
+      "noNotesYet": "تر اوسه یادښتونه نشته",
+      "notes": "یادښتونه"
+    },
+    "playlistModal": {
+      "name": "نوم"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "د غږولو لړلیکونه جوړ کړئ چې دلته یې ووینئ",
+      "noPlaylistsYet": "تر اوسه د غږولو لړلیکونه نشته",
+      "playlists": "د غږولو لړلیکونه"
+    },
+    "uploads": {
+      "removeAllUploads": "ټول پورته شوي فایلونه لرې کړئ",
+      "uploadRecitationsToSeeThem": "تلاوتونه پورته کړئ چې دلته یې ووینئ"
+    }
+  },
+  "common": {
+    "1Time": "۱ ځل",
+    "2Times": "۲ ځله",
+    "3Times": "۳ ځله",
+    "addToCollection": "ټولګې ته ورزیات کړئ",
+    "addToQueue": "کتار ته ورزیات کړئ",
+    "allSurahs": "ټول سورتونه",
+    "alreadyDownloaded": "لا دمخه ښکته شوی",
+    "arabic": "عربي",
+    "asc": "صعودي",
+    "browseAll": "ټول وګورئ",
+    "browseAllReciters": "ټول قاریان وګورئ",
+    "cancel": "لغوه کړئ",
+    "clear": "پاک کړئ",
+    "copyToClipboard": "کلیپبورډ ته کاپي کړئ",
+    "createNewPlaylist": "نوی د غږولو لړلیک جوړ کړئ",
+    "defaultReciter": "ټاکلی قاري",
+    "delete": "ړنګ کړئ",
+    "deleteNote": "یادښت ړنګ کړئ",
+    "deleteRecitation": "تلاوت ړنګ کړئ",
+    "desc": "نزولي",
+    "downloadComplete": "ښکته کول بشپړ شول",
+    "downloadFailed": "ښکته کول ناکام شول",
+    "downloads": "ښکته شوي فایلونه",
+    "editDetails": "جزییات سم کړئ",
+    "error": "تېروتنه",
+    "favoriteReciters": "د خوښې قاریان",
+    "followAlong": "له متن سره تعقیب کړئ",
+    "from": "له",
+    "goToReciter": "قاري ته لاړ شئ",
+    "goToVerse": "آیت ته لاړ شئ",
+    "learnAboutSurah": "د سورت په اړه زده کړئ",
+    "loading": "پورته کېږي...",
+    "loop": "پرله پسې تکرار",
+    "loved": "خوښ شوي",
+    "mushafSettings": "د مصحف امستنې",
+    "next": "بل",
+    "noRecitersFound": "قاریان ونه موندل شول",
+    "noResultsFound": "پایلې ونه موندل شوې",
+    "noUploadsYet": "تر اوسه پورته شوي فایلونه نشته",
+    "play": "وغږوئ",
+    "playEachVerse": "هر آیت وغږوئ",
+    "playNow": "اوس یې وغږوئ",
+    "playSpeed": "د غږولو چټکتیا",
+    "playTheRange": "ټاکلې برخه وغږوئ",
+    "playlistName": "د غږولو لړلیک نوم",
+    "prev": "مخکینی",
+    "readingTheme": "د لوستلو بڼه",
+    "recentSearches": "وروستي لټونونه",
+    "reciter": "قاري",
+    "reciterChoice": "د قاري ټاکنه",
+    "reciters": "قاریان",
+    "remove": "لرې کړئ",
+    "removeAllDownloads": "ټول ښکته شوي فایلونه لرې کړئ",
+    "removeHighlight": "رنګینه نښه لرې کړئ",
+    "rev": "سرچپه",
+    "save": "خوندي کړئ",
+    "search": "ولټوئ",
+    "searchReciters": "قاریان ولټوئ...",
+    "searchSurahs": "سورتونه ولټوئ",
+    "share": "شریک کړئ",
+    "shareAsImage": "د انځور په توګه شریک کړئ",
+    "shareAsText": "د متن په توګه شریک کړئ",
+    "sharedPhrases": "ګډ عبارتونه",
+    "showBasmallah": "بسم الله ښکاره کړئ",
+    "stop": "ودروئ",
+    "storage": "زېرمه",
+    "surah": "سورت",
+    "surahs": "سورتونه",
+    "to": "تر",
+    "translation": "ژباړه",
+    "translationsTafaseer": "ژباړې او تفسیرونه",
+    "transliteration": "توري اړونه",
+    "uploads": "پورته شوي فایلونه",
+    "useDefaultReciter": "ټاکلی قاري وکاروئ",
+    "verseReference": "د آیت حواله",
+    "verses": "آیتونه",
+    "whatSNew": "څه نوي دي",
+    "wordByWord": "کلیمه په کلیمه",
+    "writeYourNoteHere": "خپل یادښت دلته ولیکئ...",
+    "yourPlaylists": "ستاسې د غږولو لړلیکونه"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "ټول سورتونه وغږوئ"
+    },
+    "searchHeader": {
+      "searchSurahs": "سورتونه ولټوئ"
+    },
+    "searchView": {
+      "noSurahsFound": "سورتونه ونه موندل شول"
+    },
+    "surahList": {
+      "noSurahsAvailable": "سورتونه نشته"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "تلاوت ورزیات کړئ",
+      "uploadRecitationsToSeeThem": "تلاوتونه پورته کړئ چې دلته یې ووینئ"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "ښکته شوی • {{count}} سورت",
+    "subtitle_other": "ښکته شوي • {{count}} سورتونه"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "بښنه غواړو، تېروتنه وشوه"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "ټول ۱۱۴ سورتونه وګورئ"
+    },
+    "savedAdhkarHero": {
+      "saved": "خوندي شوی",
+      "yourCollection": "ستاسې ټولګه"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "د ورځې سورت"
+    },
+    "surahsHero": {
+      "number": "شمېره"
+    }
+  },
+  "language": {
+    "later": "وروسته",
+    "restartMessage": "د نوې بڼې د لوري د پلي کولو لپاره اپ بیا چالان کړئ.",
+    "restartNow": "اوس بیا چالان کړئ",
+    "restartTitle": "بیا چالانول اړین دي",
+    "search": "ژبې ولټوئ",
+    "system": "د وسیلې ژبه"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "دوام ورکړئ"
+    },
+    "whatsNewOnboarding": {
+      "skip": "تېر شئ"
+    }
+  },
+  "mushaf": {
+    "juz": "جز {{juz}}",
+    "loadingMushaf": "مصحف پورته کېږي…",
+    "main": {
+      "mushafSettings": "د مصحف امستنې"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "قاري بدل کړئ",
+      "changeReciter2": "قاري بدل کړئ",
+      "nextAyah": "بل آیت",
+      "playbackOptions": "د غږولو غوراوي",
+      "previousAyah": "مخکینی آیت"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "سورتونه، آیتونه، مخونه یا جزونه ومومئ",
+      "recentReads": "وروستي لوستل شوي",
+      "searchSurahsPagesOrJuz": "سورتونه، مخونه یا جزونه ولټوئ...",
+      "searchTheMushaf": "په مصحف کې ولټوئ"
+    },
+    "options": "غوراوي",
+    "page": "مخ {{page}}",
+    "pageAndSurah": "مخ {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "مصحف پورته نه شو.",
+    "tryAgain": "بیا هڅه وکړئ"
+  },
+  "mushafSettings": {
+    "rabbHelper": "په مصحف کې د الله نوم او د رب په څېر الهي لقبونه په رنګ نښه کوي."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "د موضوعي برخو له مخې نوبتي رنګینول",
+    "arabicFontSize": "د عربي لیکبڼې کچه",
+    "bold": "پنډ",
+    "book": "کتاب",
+    "colorLegend": "د رنګونو لارښود",
+    "currentlyReading": "اوس لوستل کېږي",
+    "divineNames": "الهي نومونه",
+    "fontSize": "د لیکبڼې کچه",
+    "fullscreen": "بشپړه پرده",
+    "hamzaReplacedByLongVowel": "همزه په اوږد واول بدله شوې",
+    "heavyLamInAllahAfter": "له مفخمو تورو وروسته د الله په نوم کې د لام تفخیم",
+    "highlightAllahRabb": "الله / رب په رنګ نښه کړئ",
+    "horizontal": "افقي",
+    "ibdal": "ابدال",
+    "list": "لړلیک",
+    "loadingSample": "بېلګه پورته کېږي...",
+    "maddAlBadal": "مد البدل",
+    "maximumProminence": "تر ټولو څرګند",
+    "medium": "منځنی",
+    "modernMadinahPrintedPipeline": "د مدینې د نوې چاپي بڼې بهیر",
+    "mushaf": "مصحف",
+    "normal": "عادي",
+    "originalMushafWeight": "د مصحف د لیک اصلي پنډوالی",
+    "pageDesign": "د مخ ډیزاین",
+    "prolongedVowelAfterHamza": "له همزې وروسته اوږد واول",
+    "readingTheme": "د لوستلو بڼه",
+    "scrollDirection": "د ښویولو لوری",
+    "showDifferences": "توپیرونه ښکاره کړئ",
+    "silah": "صله",
+    "slightlyMoreProminent": "لږ زیات څرګند",
+    "softenedHamzaPronunciation": "د همزې نرمه ادا",
+    "subcontinentNastaliqStyle": "د نیمې وچې نستعلیق بڼه",
+    "taghlizAlLam": "تغلیظ اللام",
+    "tajweedColoring": "د تجوید رنګونه",
+    "tashilMusahhala": "تسهیل / مسهله",
+    "textPreviewNotYetAvailable": "د متن مخکتنه لا نشته",
+    "textThickness": "د متن پنډوالی",
+    "thematicHighlighting": "د موضوع له مخې رنګینول",
+    "trailingVowelOrMoodChange": "یوازې د پای واول یا اعرابو بدلون",
+    "usingSaheehInternationalTranslationWith": "کارول کېږي: د لمنلیکونو سره د Saheeh International ژباړه",
+    "vertical": "عمودي",
+    "viewType": "د لید ډول",
+    "vowelMoodShift": "د واول / اعرابو بدلون",
+    "wordByWord": "کلیمه په کلیمه",
+    "wordVariant": "د کلیمې بله بڼه"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "سرور ته لاسرسی نشته",
+    "connectionRestored": "اړیکه بېرته ټینګه شوه",
+    "noInternetConnection": "له انټرنېټ سره اړیکه نشته",
+    "showingCachedData": "زېرمه شوي معلومات ښودل کېږي"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" جوړ کړئ"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "کتار",
+      "queueIsEmpty": "کتار تش دی"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "دا تلاوت په نښه کړئ چې د سورت متن او جزییات ووینئ"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "د غږولو لړلیک • {{count}} سورت",
+    "subtitle_other": "د غږولو لړلیک • {{count}} سورتونه"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "په دې لړلیک کې سورتونه نشته"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "لمنلیک"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "همدې شېبې ته ځانګړی ټاکل شوی تلاوت",
+      "discover": "ومومئ",
+      "discoverANewVoice": "نوی غږ ومومئ",
+      "explore": "وپلټئ",
+      "exploreTheUnexpected": "نااشنا څه وپلټئ",
+      "hearSomethingNew": "یو نوی څه واورئ",
+      "letTheQuranSurpriseYou": "پرېږدئ قرآن مو حیران کړي",
+      "randomMix": "ناټاکلی ګډ غږ",
+      "randomRecitation": "ناټاکلی تلاوت",
+      "shuffleListen": "په ناټاکلي ترتیب واورئ",
+      "surpriseMe": "حیران مې کړئ"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "د بڼې بدلون په ټول اپ پلي کېږي"
+  },
+  "reciterBrowse": {
+    "allReciters": "ټول قاریان",
+    "browseReciters": "قاریان وګورئ",
+    "favorites": "خوښ شوي"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "د دې قاري ښکته شوي فایلونه نشته"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "زما پورته شوي فایلونه"
+    }
+  },
+  "recitersView": {
+    "adhkar": "اذکار",
+    "bestForMemorization": "د حفظ لپاره غوره",
+    "bestForTajweed": "د تجوید لپاره غوره",
+    "continueListening": "اورېدو ته دوام ورکړئ",
+    "exclusives": "ځانګړي",
+    "exploreByRewayah": "د روایت له مخې وپلټئ",
+    "featuredReciters": "غوره شوي قاریان",
+    "fromYourCollection": "ستاسې له ټولګې",
+    "myRecitations": "زما تلاوتونه",
+    "newToQuranStartHere": "له قرآن سره نوي یاست؟ له دې ځایه پیل کړئ",
+    "seeMore": "نور وګورئ",
+    "yourFavorites": "ستاسې خوښ شوي"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "فعال",
+      "activeTafseer": "فعال تفسیر",
+      "activeTranslation": "فعاله ژباړه",
+      "deleteTafseer": "تفسیر ړنګ کړئ",
+      "deleteTranslation": "ژباړه ړنګه کړئ",
+      "noTafaseerFound": "تفسیرونه ونه موندل شول",
+      "noTranslationsFound": "ژباړې ونه موندل شوې",
+      "unableToDownloadThisTafseer": "دا تفسیر ښکته کېدای نه شي. خپله انټرنېټي اړیکه وګورئ او بیا هڅه وکړئ.",
+      "unableToDownloadThisTranslation": "دا ژباړه ښکته کېدای نه شي. خپله انټرنېټي اړیکه وګورئ او بیا هڅه وکړئ."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "وروستي لټونونه نشته",
+      "tryDifferentKeywordsOrCheck": "نورې کلیمې وازمویئ یا املا وګورئ",
+      "yourSearchHistoryWillAppear": "ستاسې د لټون مخینه به دلته ښکاره شي"
+    },
+    "surahsOrReciters": "سورتونه یا قاریان ولټوئ"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "د غږ پرمختللي کنټرولونه",
+      "browseByJuz": "د جز له مخې وګورئ",
+      "createAndManageYourOwn": "د خپلو خوښو تلاوتونو ځانګړي د غږولو لړلیکونه جوړ او اداره کړئ",
+      "crystalClearRecitationsFromThe": "د نړۍ د غوره قاریانو روښانه تلاوتونه له ښه شوي انلاین غږولو سره",
+      "curatedCollections": "غوره شوې ټولګې",
+      "customPlaylists": "ځانګړي د غږولو لړلیکونه",
+      "customizeThemesAccentColorsAnd": "بڼې، رنګونه او د غږ امستنې له خپلې خوښې سره سمې کړئ",
+      "downloadSurahsForOfflineListening": "سورتونه ښکته کړئ چې هر وخت او هر ځای یې له انټرنېټ پرته واورئ",
+      "easilyNavigateThroughTheQuran": "د جزونو په تنظیم او ډلبندۍ سره په قرآن کې په اسانۍ وګرځئ",
+      "features": "ځانګړنې",
+      "highQualityAudio": "د لوړ کیفیت غږ",
+      "listenReflectRememberAllah": "واورئ. فکر وکړئ. الله یاد کړئ.",
+      "offlineDownloads": "د افلاین اورېدو فایلونه",
+      "ourCommitment": "زموږ ژمنتیا",
+      "ourMission": "زموږ موخه",
+      "personalization": "شخصي کول",
+      "precisePlaybackControlWithContinuous": "له پرله پسې غږولو او د تلاوت د چټکتیا له سمون سره دقیق کنټرول",
+      "quranBayanTafsirKnowledgeOur": "قرآن • بیان • تفسیر • پوهه. زموږ موخه دا ده چې اورېدل او فکر کول د ورځني ژوند برخه شي: په کور کې، په سفر کې او هر ځای چې د الله د یاد لپاره یوه شېبه لرئ.",
+      "readListenAndReflect": "ولولئ، واورئ او فکر وکړئ",
+      "readTheMushafExploreTranslations": "مصحف ولولئ، ژباړې او تفسیرونه وپلټئ، آیتونه او یادښتونه خوندي کړئ او ورځنیو اذکارو ته راوګرځئ. خپل قاري وټاکئ، د غږولو لړلیکونه جوړ کړئ او اورېدل له خپلې ورځې سره برابر کړئ. شته ځانګړنې د وسیلې له مخې بدلېږي؛ اصلي اپونه د افلاین اورېدو لپاره ښکته کول هم مني.",
+      "thoughtfullyOrganizedSurahsForDifferent": "د بېلابېلو وختونو او موضوعاتو لپاره په پام سره تنظیم شوي سورتونه",
+      "weCareAboutTheAccuracy": "موږ د سپېڅلي متن کره والي، درناوي لرونکې بڼې او باوري لاسرسي ته پام کوو. د کاروونکو د اړتیاوو په پام کې نیولو سره ISTIMA ښه کوو. الله دې دا هڅه قبوله او د هر اورېدونکي، لوستونکي او فکر کوونکي لپاره ګټوره کړي."
+    },
+    "aboutApp": "د {{name}} په اړه",
+    "appearance": "بڼه",
+    "defaultreciter": {
+      "changeDefaultReciter": "ټاکلی قاري بدل کړئ"
+    },
+    "developer": "پراختیاکوونکی",
+    "floatingDevMenu": "د پراختیاکوونکي لامبو وهونکې غورنۍ",
+    "language": "ژبه",
+    "languageDescription": "د اپ ژبه وټاکئ",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "تل خپل ټاکلی قاري وکاروئ",
+      "askEveryTime": "هر ځل پوښتنه وکړئ",
+      "chooseAReciterEachTime": "د هر غږولو پر مهال یو قاري وټاکئ",
+      "chooseHowYouWantTo": "د سورتونو د غږولو پر مهال د قاري د ټاکلو طریقه وټاکئ",
+      "defaultSelectionMethod": "د ټاکنې اصلي طریقه",
+      "searchThroughOurCompleteCollection": "زموږ د قاریانو په بشپړه ټولګه کې ولټوئ",
+      "selectionPreference": "د ټاکنې خوښه"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "ټول ښکته شوي فایلونه لرې شول.",
+      "areYouSureYouWant": "ډاډه یاست چې ټول ښکته شوي توکي لرې کول غواړئ؟ دا کار بېرته نه ګرځي.",
+      "cache": "لنډمهالې زېرمه",
+      "cacheHasBeenCleared": "لنډمهالې زېرمه پاکه شوه.",
+      "clearCache": "لنډمهالې زېرمه پاکه کړئ",
+      "failedToClearCache": "لنډمهالې زېرمه پاکه نه شوه.",
+      "failedToRemoveDownloads": "ښکته شوي فایلونه لرې نه شول.",
+      "free": "خالي",
+      "loadingStorageInformation": "د زېرمې معلومات پورته کېږي...",
+      "manageStorage": "زېرمه اداره کړئ",
+      "otherApps": "نور اپونه",
+      "removeAllDownloads": "ټول ښکته شوي فایلونه لرې کړئ",
+      "removeAllTheQuranContent": "د افلاین کارونې لپاره ښکته شوي د قرآن ټول توکي لرې کړئ.",
+      "storageBreakdown": "د زېرمې وېش",
+      "success": "بریا",
+      "thisWillClearYourCache": "دا به لنډمهالې زېرمه پاکه کړي. ښکته شوي فایلونه به نه لرې کېږي.",
+      "youCanFreeUpStorage": "د لنډمهالې زېرمې په پاکولو ځای خالي کولای شئ. ښکته شوي فایلونه به نه لرې کېږي."
+    },
+    "themePicker": {
+      "auto": "خپلکار",
+      "dark": "تیاره",
+      "light": "روښانه"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "د بدلونونو لړلیک نشته"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "د {{name}} په اړه",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "د خوښې قاري ورزیات کړئ",
+      "uploadRecitation": "تلاوت پورته کړئ"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "د چاپېریال غږونه",
+      "none": "هیڅ",
+      "volume": "د غږ کچه"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "لکه، د سهار تلاوتونه"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "ښکته شوی فایل لرې کړئ"
+    },
+    "favoriteRecitersSheet": {
+      "done": "بشپړ شو"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "ټولګې ته ورزیات کړئ",
+      "addToQueue": "کتار ته ورزیات کړئ",
+      "continuePlaying": "غږولو ته دوام ورکړئ",
+      "goToReciter": "قاري ته لاړ شئ",
+      "removeFromRecents": "له وروستیو لرې کړئ"
+    },
+    "mushafLayoutSheet": {
+      "back": "شاته"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "وروستی آیت",
+      "playbackSettings": "د غږولو امستنې",
+      "selectRange": "برخه وټاکئ",
+      "startingVerse": "پیل آیت"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "د تکرار امستنې",
+      "start": "پیل کړئ",
+      "verseRange": "د آیتونو برخه"
+    },
+    "organizeRecitationSheet": {
+      "category": "ډله",
+      "customReciter": "ځانګړی قاري",
+      "duA": "دعا",
+      "eGMorningAdhkar": "لکه، د سهار اذکار",
+      "lecture": "وینا",
+      "moreOptions": "نور غوراوي",
+      "other": "نور",
+      "recording": "ثبتول",
+      "rewayah": "روایت",
+      "searchSurahs": "سورتونه ولټوئ...",
+      "style": "ډول",
+      "tafsir": "تفسیر",
+      "title": "سرلیک",
+      "type": "ډول",
+      "verseRangeOptional": "د آیتونو برخه (اختیاري)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "د غږولو چټکتیا"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "د دې لړلیک ټول توکي لا دمخه ښکته شوي دي.",
+      "anErrorOccurredWhileDownloading": "د لړلیک په ښکته کولو کې تېروتنه وشوه. بیا هڅه وکړئ.",
+      "deletePlaylist": "د غږولو لړلیک ړنګ کړئ",
+      "downloadingPlaylist": "لړلیک ښکته کېږي...",
+      "editPlaylist": "د غږولو لړلیک سم کړئ",
+      "emptyPlaylist": "تش د غږولو لړلیک",
+      "thisPlaylistIsEmpty": "دا د غږولو لړلیک تش دی."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "د روایتونو په اړه",
+      "availableRewayat": "شته روایتونه"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "سورت لړلیک ته ورزیات نه شو",
+      "failedToCreatePlaylist": "د غږولو لړلیک جوړ نه شو",
+      "noPlaylistsYetCreateYour": "تر اوسه لړلیکونه نشته. پورته خپل لومړی لړلیک جوړ کړئ!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "هر ځل پوښتنه وکړئ",
+      "randomReciter": "ناټاکلی قاري",
+      "selectReciter": "قاري وټاکئ"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "د دې آیت لپاره ورته آیتونه ونه موندل شول.",
+      "similarWording": "ورته عبارتونه"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "د خوب وخت ټاکونکی",
+      "turnOffTimer": "وخت ټاکونکی بند کړئ"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "له لړلیک څخه لرې کړئ"
+    },
+    "verseActionsSheet": {
+      "addNote": "یادښت ورزیات کړئ",
+      "copy": "کاپي کړئ",
+      "repeat": "تکرار کړئ",
+      "similarVerses": "ورته آیتونه",
+      "tafseer": "تفسیر",
+      "theme": "موضوع"
+    },
+    "verseCopySheet": {
+      "copyOptions": "د کاپي غوراوي",
+      "selectWhatToCopy": "د کاپي کولو توکي وټاکئ"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "د رنګینې نښې رنګ"
+    },
+    "verseShareSheet": {
+      "shareVerse": "آیت شریک کړئ"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "په {{count}} آیت کې موندل شوی",
+    "foundIn_other": "په {{count}} آیتونو کې موندل شوی"
+  },
+  "surahItem": {
+    "moreOptions": "نور غوراوي",
+    "opensMenuWithAdditionalActions": "د دې سورت د نورو کړنو غورنۍ پرانیزي",
+    "tapToPlaySurah": "د سورت د غږولو لپاره ټک وکړئ"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "د لړلیک ناسم پېژند",
+      "playlistNotFound": "د غږولو لړلیک ونه موندل شو"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "د دې لړلیک د ټولو سورتونو قاري ونه موندل شو. بل لړلیک وازمویئ.",
+      "failedToPlayPlaylistPlease": "لړلیک ونه غږول شو. بیا هڅه وکړئ.",
+      "failedToPlayTrackPlease": "غږیز توکی ونه غږول شو. بیا هڅه وکړئ.",
+      "failedToShufflePlaylistPlease": "لړلیک په ناټاکلي ترتیب ونه غږول شو. بیا هڅه وکړئ.",
+      "noReciterAvailable": "قاري نشته",
+      "noSurahsInThisPlaylist": "په دې لړلیک کې سورتونه نشته"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "حساب",
+      "appData": "اپ او معلومات",
+      "audioPlayback": "غږ او غږول",
+      "chooseYourPreferredReciter": "خپل د خوښې قاري وټاکئ",
+      "customizeQuranDisplayOptions": "د قرآن د ښودلو غوراوي بدل کړئ",
+      "customizeReciterSelection": "د قاري ټاکنه برابره کړئ",
+      "featureRequests": "د ځانګړنو غوښتنې",
+      "feedback": "نظرونه",
+      "helpSupport": "مرسته او ملاتړ",
+      "learnMoreAboutOurMission": "زموږ د موخې په اړه نور پوه شئ",
+      "manageQuranTranslationsAndCommentary": "د قرآن ژباړې او تشریح اداره کړئ",
+      "privacyPolicy": "د محرمیت تګلاره",
+      "quran": "قرآن",
+      "readOurTermsOfService": "زموږ د خدمت شرطونه ولولئ",
+      "seeWhatSNewIn": "په دې نسخه کې نوي څه وګورئ",
+      "shareYourExperienceWithOthers": "خپله تجربه له نورو سره شریکه کړئ",
+      "showTheFloatingDeveloperTools": "د پراختیاکوونکي د وسیلو لامبو وهونکې تڼۍ ښکاره کړئ",
+      "suggestImprovementsAndNewFeatures": "د ښه والي او نوو ځانګړنو وړاندیز وکړئ",
+      "termsOfService": "د خدمت شرطونه",
+      "viewAndManageStorageUsage": "د زېرمې کارونه وګورئ او اداره یې کړئ",
+      "viewOurPrivacyPolicy": "زموږ د محرمیت تګلاره وګورئ",
+      "writeAReview": "بیاکتنه ولیکئ"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "لغوه کړئ",
+    "close": "وتړئ",
+    "collection": "ټولګه",
+    "download": "ښکته کړئ",
+    "downloads": "ښکته شوي فایلونه",
+    "error": "یو څه ناسم وشول",
+    "favorites": "خوښ شوي",
+    "home": "کورپاڼه",
+    "language": "ژبه",
+    "library": "کتابتون",
+    "loading": "پورته کېږي...",
+    "noResults": "پایلې ونه موندل شوې",
+    "offline": "تاسې افلاین یاست",
+    "pause": "تم کړئ",
+    "play": "وغږوئ",
+    "retry": "بیا هڅه وکړئ",
+    "save": "خوندي کړئ",
+    "search": "ولټوئ",
+    "settings": "امستنې",
+    "surahs": "سورتونه"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "توکي وټاکئ"
+    },
+    "highlightContent": {
+      "chooseColor": "رنګ وټاکئ"
+    },
+    "noteContent": {
+      "saveNote": "یادښت خوندي کړئ"
+    },
+    "shareContent": {
+      "shareLink": "تړونی شریک کړئ"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "د دې آیت لپاره ورته آیتونه ونه موندل شول.",
+      "sharedPhrases": "ګډ عبارتونه",
+      "similarWording": "ورته عبارتونه"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "تفسیرونه نه دي ښکته شوي",
+      "tafseerNotAvailableForThis": "د دې آیت تفسیر نشته",
+      "tapHereToDownloadA": "د تفسیر د ښکته کولو او تشریح د کتلو لپاره دلته ټک وکړئ."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "د دې آیت لپاره موضوعي معلومات نشته.",
+      "passage": "برخه"
+    },
+    "translationContent": {
+      "switch": "بدل کړئ",
+      "translationNotAvailable": "ژباړه نشته"
+    }
+  },
+  "version": {
+    "label": "نسخه {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "نوي څه په"
+  },
+  "wordDetail": {
+    "context": "آیت {{surah}}:{{ayah}} · کلیمه {{position}} له {{total}} څخه"
+  }
+}

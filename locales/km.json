@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "កំហុសពេលចាប់ផ្តើមកម្មវិធីចាក់សំឡេង៖ {{message}}",
+    "errorLoadingFonts": "កំហុសពេលផ្ទុកពុម្ពអក្សរ"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ទំព័រដើម ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "ទាំងអស់",
+      "clearAll": "សម្អាតទាំងអស់",
+      "hasPhoto": "មានរូបថត"
+    },
+    "filterModal": {
+      "apply": "អនុវត្ត",
+      "filterReciters": "ត្រងអ្នកសូត្រ",
+      "recitationStyles": "របៀបសូត្រ",
+      "reset": "កំណត់ឡើងវិញ",
+      "rewayatTypes": "ប្រភេទរីវ៉ាយ៉ាត"
+    },
+    "recitersFound_one": "រកឃើញអ្នកសូត្រ {{count}} នាក់តាមតម្រងបច្ចុប្បន្ន",
+    "recitersFound_other": "រកឃើញអ្នកសូត្រ {{count}} នាក់តាមតម្រងបច្ចុប្បន្ន"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "ស៊ូរ៉ោះដែលចូលចិត្ត"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "ដាក់ចំណាំអាយ៉ាត់ដើម្បីមើលនៅទីនេះ",
+      "bookmarks": "ចំណាំទំព័រ",
+      "noBookmarksYet": "មិនទាន់មានចំណាំទំព័រ",
+      "removeBookmark": "លុបចំណាំទំព័រ"
+    },
+    "collectionSearchModal": {
+      "rewayat": "រីវ៉ាយ៉ាត",
+      "searchPlaylistsRecitersSurahsRewayat": "ស្វែងរកបញ្ជីចាក់ អ្នកសូត្រ ស៊ូរ៉ោះ រីវ៉ាយ៉ាត...",
+      "searchPlaylistsRecitersSurahsRewayat2": "ស្វែងរកបញ្ជីចាក់ អ្នកសូត្រ ស៊ូរ៉ោះ រីវ៉ាយ៉ាត និងឯកសារទាញយក",
+      "searchYourCollection": "ស្វែងរកក្នុងបណ្តុំរបស់អ្នក",
+      "searching": "កំពុងស្វែងរក...",
+      "tryDifferentKeywords": "សាកល្បងពាក្យស្វែងរកផ្សេង"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "ទាញយកស៊ូរ៉ោះដើម្បីមើលនៅទីនេះ",
+      "noDownloadsYet": "មិនទាន់មានឯកសារទាញយក",
+      "playAll": "ចាក់ទាំងអស់"
+    },
+    "favoritereciters": {
+      "addReciters": "បន្ថែមអ្នកសូត្រ",
+      "addRecitersToSeeThem": "បន្ថែមអ្នកសូត្រដើម្បីមើលនៅទីនេះ",
+      "noFavoriteRecitersYet": "មិនទាន់មានអ្នកសូត្រដែលពេញចិត្ត",
+      "removeFromFavorites": "ដកចេញពីចំណូលចិត្ត",
+      "searchFavoriteReciters": "ស្វែងរកអ្នកសូត្រដែលពេញចិត្ត"
+    },
+    "index": {
+      "addToCollection": "បន្ថែមទៅបណ្តុំ",
+      "bookmarks": "ចំណាំទំព័រ",
+      "createYourFirstPlaylist": "បង្កើតបញ្ជីចាក់ដំបូងរបស់អ្នក",
+      "downloads": "ឯកសារទាញយក",
+      "items_one": "{{count}} ធាតុ",
+      "items_other": "{{count}} ធាតុ",
+      "loved": "ចូលចិត្ត",
+      "noBookmarksYet": "មិនទាន់មានចំណាំទំព័រ",
+      "noDownloadsYet": "មិនទាន់មានឯកសារទាញយក",
+      "noFavoritesYet": "មិនទាន់មានចំណូលចិត្ត",
+      "noLovedSurahsYet": "មិនទាន់មានស៊ូរ៉ោះដែលចូលចិត្ត",
+      "noNotesYet": "មិនទាន់មានកំណត់ត្រា",
+      "noUploadsYet": "មិនទាន់មានឯកសារផ្ទុកឡើង",
+      "notes": "កំណត់ត្រា",
+      "playlists": "បញ្ជីចាក់",
+      "reciters": "អ្នកសូត្រ",
+      "uploads": "ឯកសារផ្ទុកឡើង"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "ស៊ូរ៉ោះដែលចូលចិត្តទាំងអស់បានទាញយករួចហើយ។",
+      "allLovedSurahsHaveBeen": "ស៊ូរ៉ោះដែលចូលចិត្តទាំងអស់ត្រូវបានទាញយករួច។",
+      "downloadError": "កំហុសទាញយក",
+      "loveSurahsToSeeThem": "សម្គាល់ស៊ូរ៉ោះថាចូលចិត្តដើម្បីមើលនៅទីនេះ",
+      "noLovedSurahsYet": "មិនទាន់មានស៊ូរ៉ោះដែលចូលចិត្ត",
+      "someDownloadsMayHaveFailed": "ការទាញយកខ្លះអាចបានបរាជ័យ។",
+      "unloveAllSurahs": "ដកស៊ូរ៉ោះទាំងអស់ចេញពីចូលចិត្ត"
+    },
+    "notes": {
+      "addNotesToVersesTo": "បន្ថែមកំណត់ត្រាទៅអាយ៉ាត់ដើម្បីមើលនៅទីនេះ",
+      "editNote": "កែកំណត់ត្រា",
+      "noNotesYet": "មិនទាន់មានកំណត់ត្រា",
+      "notes": "កំណត់ត្រា"
+    },
+    "playlistModal": {
+      "name": "ឈ្មោះ"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "បង្កើតបញ្ជីចាក់ដើម្បីមើលនៅទីនេះ",
+      "noPlaylistsYet": "មិនទាន់មានបញ្ជីចាក់",
+      "playlists": "បញ្ជីចាក់"
+    },
+    "uploads": {
+      "removeAllUploads": "ដកឯកសារផ្ទុកឡើងទាំងអស់ចេញ",
+      "uploadRecitationsToSeeThem": "ផ្ទុកការសូត្រឡើងដើម្បីមើលនៅទីនេះ"
+    }
+  },
+  "common": {
+    "1Time": "១ ដង",
+    "2Times": "២ ដង",
+    "3Times": "៣ ដង",
+    "addToCollection": "បន្ថែមទៅបណ្តុំ",
+    "addToQueue": "បន្ថែមទៅជួរចាក់",
+    "allSurahs": "ស៊ូរ៉ោះទាំងអស់",
+    "alreadyDownloaded": "បានទាញយករួចហើយ",
+    "arabic": "អារ៉ាប់",
+    "asc": "លំដាប់ឡើង",
+    "browseAll": "មើលទាំងអស់",
+    "browseAllReciters": "មើលអ្នកសូត្រទាំងអស់",
+    "cancel": "បោះបង់",
+    "clear": "សម្អាត",
+    "copyToClipboard": "ចម្លងទៅក្ដារតម្បៀតខ្ទាស់",
+    "createNewPlaylist": "បង្កើតបញ្ជីចាក់ថ្មី",
+    "defaultReciter": "អ្នកសូត្រលំនាំដើម",
+    "delete": "លុប",
+    "deleteNote": "លុបកំណត់ត្រា",
+    "deleteRecitation": "លុបការសូត្រ",
+    "desc": "លំដាប់ចុះ",
+    "downloadComplete": "ទាញយករួចរាល់",
+    "downloadFailed": "ទាញយកមិនបាន",
+    "downloads": "ឯកសារទាញយក",
+    "editDetails": "កែព័ត៌មានលម្អិត",
+    "error": "កំហុស",
+    "favoriteReciters": "អ្នកសូត្រដែលពេញចិត្ត",
+    "followAlong": "អានតាម",
+    "from": "ពី",
+    "goToReciter": "ទៅកាន់អ្នកសូត្រ",
+    "goToVerse": "ទៅកាន់អាយ៉ាត់",
+    "learnAboutSurah": "ស្វែងយល់អំពីស៊ូរ៉ោះ",
+    "loading": "កំពុងផ្ទុក...",
+    "loop": "ចាក់វិលជុំ",
+    "loved": "ចូលចិត្ត",
+    "mushafSettings": "ការកំណត់មូសហាហ្វ",
+    "next": "បន្ទាប់",
+    "noRecitersFound": "រកមិនឃើញអ្នកសូត្រ",
+    "noResultsFound": "រកមិនឃើញលទ្ធផល",
+    "noUploadsYet": "មិនទាន់មានឯកសារផ្ទុកឡើង",
+    "play": "ចាក់",
+    "playEachVerse": "ចាក់អាយ៉ាត់នីមួយៗ",
+    "playNow": "ចាក់ឥឡូវ",
+    "playSpeed": "ល្បឿនចាក់",
+    "playTheRange": "ចាក់ចន្លោះដែលបានកំណត់",
+    "playlistName": "ឈ្មោះបញ្ជីចាក់",
+    "prev": "មុន",
+    "readingTheme": "រចនាប័ទ្មអាន",
+    "recentSearches": "ការស្វែងរកថ្មីៗ",
+    "reciter": "អ្នកសូត្រ",
+    "reciterChoice": "ជម្រើសអ្នកសូត្រ",
+    "reciters": "អ្នកសូត្រ",
+    "remove": "ដកចេញ",
+    "removeAllDownloads": "ដកឯកសារទាញយកទាំងអស់ចេញ",
+    "removeHighlight": "លុបការបន្លិច",
+    "rev": "បញ្ច្រាស",
+    "save": "រក្សាទុក",
+    "search": "ស្វែងរក",
+    "searchReciters": "ស្វែងរកអ្នកសូត្រ...",
+    "searchSurahs": "ស្វែងរកស៊ូរ៉ោះ",
+    "share": "ចែករំលែក",
+    "shareAsImage": "ចែករំលែកជារូបភាព",
+    "shareAsText": "ចែករំលែកជាអត្ថបទ",
+    "sharedPhrases": "ឃ្លាដូចគ្នា",
+    "showBasmallah": "បង្ហាញប៊ីសមិលឡាហ៍",
+    "stop": "បញ្ឈប់",
+    "storage": "ទំហំផ្ទុក",
+    "surah": "ស៊ូរ៉ោះ",
+    "surahs": "ស៊ូរ៉ោះ",
+    "to": "ដល់",
+    "translation": "ការបកប្រែ",
+    "translationsTafaseer": "ការបកប្រែ និងតាហ្វសៀរ",
+    "transliteration": "ការសរសេរសំឡេងតាមអក្សរ",
+    "uploads": "ឯកសារផ្ទុកឡើង",
+    "useDefaultReciter": "ប្រើអ្នកសូត្រលំនាំដើម",
+    "verseReference": "សេចក្តីយោងអាយ៉ាត់",
+    "verses": "អាយ៉ាត់",
+    "whatSNew": "អ្វីដែលថ្មី",
+    "wordByWord": "មួយពាក្យម្តង",
+    "writeYourNoteHere": "សរសេរកំណត់ត្រារបស់អ្នកនៅទីនេះ...",
+    "yourPlaylists": "បញ្ជីចាក់របស់អ្នក"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "ចាក់ស៊ូរ៉ោះទាំងអស់"
+    },
+    "searchHeader": {
+      "searchSurahs": "ស្វែងរកស៊ូរ៉ោះ"
+    },
+    "searchView": {
+      "noSurahsFound": "រកមិនឃើញស៊ូរ៉ោះ"
+    },
+    "surahList": {
+      "noSurahsAvailable": "មិនមានស៊ូរ៉ោះ"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "បន្ថែមការសូត្រ",
+      "uploadRecitationsToSeeThem": "ផ្ទុកការសូត្រឡើងដើម្បីមើលនៅទីនេះ"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "បានទាញយក • {{count}} ស៊ូរ៉ោះ",
+    "subtitle_other": "បានទាញយក • {{count}} ស៊ូរ៉ោះ"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "សូមអភ័យទោស មានកំហុសកើតឡើង"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "មើលស៊ូរ៉ោះទាំង ១១៤"
+    },
+    "savedAdhkarHero": {
+      "saved": "បានរក្សាទុក",
+      "yourCollection": "បណ្តុំរបស់អ្នក"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "ស៊ូរ៉ោះប្រចាំថ្ងៃ"
+    },
+    "surahsHero": {
+      "number": "លេខ"
+    }
+  },
+  "language": {
+    "later": "ពេលក្រោយ",
+    "restartMessage": "ចាប់ផ្តើមកម្មវិធីឡើងវិញដើម្បីអនុវត្តទិសប្លង់ថ្មី។",
+    "restartNow": "ចាប់ផ្តើមឡើងវិញឥឡូវ",
+    "restartTitle": "ត្រូវចាប់ផ្តើមឡើងវិញ",
+    "search": "ស្វែងរកភាសា",
+    "system": "ភាសារបស់ឧបករណ៍"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "បន្ត"
+    },
+    "whatsNewOnboarding": {
+      "skip": "រំលង"
+    }
+  },
+  "mushaf": {
+    "juz": "ជុហ្ស {{juz}}",
+    "loadingMushaf": "កំពុងផ្ទុកមូសហាហ្វ…",
+    "main": {
+      "mushafSettings": "ការកំណត់មូសហាហ្វ"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "ប្តូរអ្នកសូត្រ",
+      "changeReciter2": "ប្តូរអ្នកសូត្រ",
+      "nextAyah": "អាយ៉ាត់បន្ទាប់",
+      "playbackOptions": "ជម្រើសចាក់",
+      "previousAyah": "អាយ៉ាត់មុន"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "ស្វែងរកស៊ូរ៉ោះ អាយ៉ាត់ ទំព័រ ឬជុហ្ស",
+      "recentReads": "ការអានថ្មីៗ",
+      "searchSurahsPagesOrJuz": "ស្វែងរកស៊ូរ៉ោះ ទំព័រ ឬជុហ្ស...",
+      "searchTheMushaf": "ស្វែងរកក្នុងមូសហាហ្វ"
+    },
+    "options": "ជម្រើស",
+    "page": "ទំព័រ {{page}}",
+    "pageAndSurah": "ទំព័រ {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "មិនអាចផ្ទុកមូសហាហ្វបានទេ។",
+    "tryAgain": "ព្យាយាមម្តងទៀត"
+  },
+  "mushafSettings": {
+    "rabbHelper": "បន្លិចព្រះនាមអល់ឡោះ និងគោរមនាមដូចជា រ៉ប់ នៅក្នុងមូសហាហ្វ។"
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "បន្លិចឆ្លាស់គ្នាតាមវគ្គប្រធានបទ",
+    "arabicFontSize": "ទំហំពុម្ពអក្សរអារ៉ាប់",
+    "bold": "អក្សរដិត",
+    "book": "សៀវភៅ",
+    "colorLegend": "សេចក្តីពន្យល់ពណ៌",
+    "currentlyReading": "កំពុងអាន",
+    "divineNames": "ព្រះនាមដ៏ខ្ពង់ខ្ពស់",
+    "fontSize": "ទំហំពុម្ពអក្សរ",
+    "fullscreen": "ពេញអេក្រង់",
+    "hamzaReplacedByLongVowel": "ហាំហ្សាត្រូវបានជំនួសដោយស្រៈវែង",
+    "heavyLamInAllahAfter": "ឡាមធ្ងន់ក្នុងពាក្យអល់ឡោះបន្ទាប់ពីអក្សរធ្ងន់",
+    "highlightAllahRabb": "បន្លិចអល់ឡោះ / រ៉ប់",
+    "horizontal": "ផ្ដេក",
+    "ibdal": "អ៊ីបដាល",
+    "list": "បញ្ជី",
+    "loadingSample": "កំពុងផ្ទុកគំរូ...",
+    "maddAlBadal": "ម៉ាដ អាល់បាដាល់",
+    "maximumProminence": "លេចធ្លោបំផុត",
+    "medium": "មធ្យម",
+    "modernMadinahPrintedPipeline": "ប្រព័ន្ធបង្ហាញបោះពុម្ពម៉ាឌីណាទំនើប",
+    "mushaf": "មូសហាហ្វ",
+    "normal": "ធម្មតា",
+    "originalMushafWeight": "កម្រាស់អក្សរដើមនៃមូសហាហ្វ",
+    "pageDesign": "រចនាទំព័រ",
+    "prolongedVowelAfterHamza": "ស្រៈបន្លាយបន្ទាប់ពីហាំហ្សា",
+    "readingTheme": "រចនាប័ទ្មអាន",
+    "scrollDirection": "ទិសរមូរ",
+    "showDifferences": "បង្ហាញភាពខុសគ្នា",
+    "silah": "ស៊ីឡាហ៍",
+    "slightlyMoreProminent": "លេចធ្លោបន្ថែមបន្តិច",
+    "softenedHamzaPronunciation": "ការបញ្ចេញសំឡេងហាំហ្សាទន់",
+    "subcontinentNastaliqStyle": "រចនាប័ទ្មណាស្តាលីកនៃអនុទ្វីប",
+    "taghlizAlLam": "តាហ្គលីហ្ស អាល់ឡាម",
+    "tajweedColoring": "ពណ៌តាចវីទ",
+    "tashilMusahhala": "តាសហ៊ីល / មូសាហ្ហាឡា",
+    "textPreviewNotYetAvailable": "មិនទាន់មានការមើលអត្ថបទជាមុន",
+    "textThickness": "កម្រាស់អក្សរ",
+    "thematicHighlighting": "ការបន្លិចតាមប្រធានបទ",
+    "trailingVowelOrMoodChange": "ប្ដូរតែស្រៈចុង ឬទម្រង់វេយ្យាករណ៍",
+    "usingSaheehInternationalTranslationWith": "កំពុងប្រើ៖ ការបកប្រែ Saheeh International ជាមួយកំណត់សម្គាល់បាតទំព័រ",
+    "vertical": "បញ្ឈរ",
+    "viewType": "ប្រភេទទិដ្ឋភាព",
+    "vowelMoodShift": "ការប្តូរស្រៈ / ទម្រង់វេយ្យាករណ៍",
+    "wordByWord": "មួយពាក្យម្តង",
+    "wordVariant": "ទម្រង់ពាក្យផ្សេង"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "មិនអាចភ្ជាប់ទៅម៉ាស៊ីនមេ",
+    "connectionRestored": "ការតភ្ជាប់បានត្រឡប់មកវិញ",
+    "noInternetConnection": "មិនមានការតភ្ជាប់អ៊ីនធឺណិត",
+    "showingCachedData": "កំពុងបង្ហាញទិន្នន័យដែលបានរក្សាទុកបណ្តោះអាសន្ន"
+  },
+  "organize": {
+    "createReciter": "បង្កើត \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "ជួរចាក់",
+      "queueIsEmpty": "ជួរចាក់គ្មានអ្វីទេ"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "ដាក់ស្លាកការសូត្រនេះដើម្បីមើលអត្ថបទស៊ូរ៉ោះ និងព័ត៌មានលម្អិត"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "បញ្ជីចាក់ • {{count}} ស៊ូរ៉ោះ",
+    "subtitle_other": "បញ្ជីចាក់ • {{count}} ស៊ូរ៉ោះ"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "មិនមានស៊ូរ៉ោះក្នុងបញ្ជីចាក់នេះ"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "កំណត់សម្គាល់បាតទំព័រ"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "ការសូត្រដែលបានជ្រើសរើសសម្រាប់ពេលនេះ",
+      "discover": "ស្វែងយល់",
+      "discoverANewVoice": "ស្វែងយល់ពីសំឡេងថ្មី",
+      "explore": "រុករក",
+      "exploreTheUnexpected": "រុករកអ្វីដែលមិនបានរំពឹងទុក",
+      "hearSomethingNew": "ស្តាប់អ្វីដែលថ្មី",
+      "letTheQuranSurpriseYou": "ទទួលបទពិសោធន៍ដ៏អស្ចារ្យពីគម្ពីរគួរអាន",
+      "randomMix": "ការលាយចៃដន្យ",
+      "randomRecitation": "ការសូត្រចៃដន្យ",
+      "shuffleListen": "ចាក់ច្របល់ និងស្តាប់",
+      "surpriseMe": "ធ្វើឱ្យខ្ញុំភ្ញាក់ផ្អើល"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "ការប្តូររបៀបរូបរាងអនុវត្តចំពោះកម្មវិធីទាំងមូល"
+  },
+  "reciterBrowse": {
+    "allReciters": "អ្នកសូត្រទាំងអស់",
+    "browseReciters": "មើលអ្នកសូត្រ",
+    "favorites": "ចំណូលចិត្ត"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "មិនមានឯកសារទាញយកសម្រាប់អ្នកសូត្រនេះ"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "ឯកសារដែលខ្ញុំបានផ្ទុកឡើង"
+    }
+  },
+  "recitersView": {
+    "adhkar": "អាហ្សការ",
+    "bestForMemorization": "ល្អបំផុតសម្រាប់ទន្ទេញចាំ",
+    "bestForTajweed": "ល្អបំផុតសម្រាប់តាចវីទ",
+    "continueListening": "បន្តស្តាប់",
+    "exclusives": "មាតិកាផ្តាច់មុខ",
+    "exploreByRewayah": "រុករកតាមរីវ៉ាយ៉ា",
+    "featuredReciters": "អ្នកសូត្រលេចធ្លោ",
+    "fromYourCollection": "ពីបណ្តុំរបស់អ្នក",
+    "myRecitations": "ការសូត្ររបស់ខ្ញុំ",
+    "newToQuranStartHere": "ទើបស្គាល់គម្ពីរគួរអាន? ចាប់ផ្តើមទីនេះ",
+    "seeMore": "មើលបន្ថែម",
+    "yourFavorites": "ចំណូលចិត្តរបស់អ្នក"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "កំពុងប្រើ",
+      "activeTafseer": "តាហ្វសៀរកំពុងប្រើ",
+      "activeTranslation": "ការបកប្រែកំពុងប្រើ",
+      "deleteTafseer": "លុបតាហ្វសៀរ",
+      "deleteTranslation": "លុបការបកប្រែ",
+      "noTafaseerFound": "រកមិនឃើញតាហ្វសៀរ",
+      "noTranslationsFound": "រកមិនឃើញការបកប្រែ",
+      "unableToDownloadThisTafseer": "មិនអាចទាញយកតាហ្វសៀរនេះបានទេ។ សូមពិនិត្យការតភ្ជាប់អ៊ីនធឺណិត ហើយព្យាយាមម្តងទៀត។",
+      "unableToDownloadThisTranslation": "មិនអាចទាញយកការបកប្រែនេះបានទេ។ សូមពិនិត្យការតភ្ជាប់អ៊ីនធឺណិត ហើយព្យាយាមម្តងទៀត។"
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "មិនមានការស្វែងរកថ្មីៗ",
+      "tryDifferentKeywordsOrCheck": "សាកល្បងពាក្យផ្សេង ឬពិនិត្យអក្ខរាវិរុទ្ធ",
+      "yourSearchHistoryWillAppear": "ប្រវត្តិស្វែងរករបស់អ្នកនឹងបង្ហាញនៅទីនេះ"
+    },
+    "surahsOrReciters": "ស្វែងរកស៊ូរ៉ោះ ឬអ្នកសូត្រ"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "ការគ្រប់គ្រងសំឡេងកម្រិតខ្ពស់",
+      "browseByJuz": "មើលតាមជុហ្ស",
+      "createAndManageYourOwn": "បង្កើត និងគ្រប់គ្រងបញ្ជីចាក់ផ្ទាល់ខ្លួននៃការសូត្រដែលអ្នកពេញចិត្ត",
+      "crystalClearRecitationsFromThe": "ការសូត្រដ៏ច្បាស់ពីអ្នកសូត្រល្អបំផុតក្នុងលោក ជាមួយការចាក់ផ្សាយតាមអ៊ីនធឺណិតដែលបានកែលម្អ",
+      "curatedCollections": "បណ្តុំដែលបានជ្រើសរើស",
+      "customPlaylists": "បញ្ជីចាក់ផ្ទាល់ខ្លួន",
+      "customizeThemesAccentColorsAnd": "កែរចនាប័ទ្ម ពណ៌រំលេច និងការកំណត់សំឡេងតាមចំណូលចិត្ត",
+      "downloadSurahsForOfflineListening": "ទាញយកស៊ូរ៉ោះដើម្បីស្តាប់គ្រប់ពេល គ្រប់ទីកន្លែង ដោយមិនត្រូវការអ៊ីនធឺណិត",
+      "easilyNavigateThroughTheQuran": "ស្វែងរកក្នុងគម្ពីរគួរអានបានងាយដោយការរៀបចំ និងការដាក់ជាក្រុមតាមជុហ្ស",
+      "features": "មុខងារ",
+      "highQualityAudio": "សំឡេងគុណភាពខ្ពស់",
+      "listenReflectRememberAllah": "ស្តាប់។ ត្រិះរិះ។ រំលឹកដល់អល់ឡោះ។",
+      "offlineDownloads": "ឯកសារទាញយកសម្រាប់ស្តាប់ក្រៅបណ្តាញ",
+      "ourCommitment": "ការប្តេជ្ញារបស់យើង",
+      "ourMission": "បេសកកម្មរបស់យើង",
+      "personalization": "ការកំណត់ផ្ទាល់ខ្លួន",
+      "precisePlaybackControlWithContinuous": "ការគ្រប់គ្រងចាក់យ៉ាងច្បាស់ ជាមួយការចាក់បន្ត និងល្បឿនសូត្រដែលអាចលៃតម្រូវបាន",
+      "quranBayanTafsirKnowledgeOur": "គម្ពីរគួរអាន • បាយ៉ាន • តាហ្វសៀរ • ចំណេះដឹង។ គោលបំណងរបស់យើងគឺឱ្យការស្តាប់ និងការត្រិះរិះក្លាយជាផ្នែកនៃជីវិតប្រចាំថ្ងៃ៖ នៅផ្ទះ ពេលធ្វើដំណើរ និងគ្រប់ទីកន្លែងដែលអ្នកមានពេលរំលឹកដល់អល់ឡោះ។",
+      "readListenAndReflect": "អាន ស្តាប់ និងត្រិះរិះ",
+      "readTheMushafExploreTranslations": "អានមូសហាហ្វ ស្វែងយល់ការបកប្រែ និងតាហ្វសៀរ រក្សាទុកអាយ៉ាត់ និងកំណត់ត្រា ហើយត្រឡប់ទៅអាហ្សការប្រចាំថ្ងៃ។ ជ្រើសអ្នកសូត្រ បង្កើតបញ្ជីចាក់ និងរៀបចំការស្តាប់ឱ្យសមនឹងថ្ងៃរបស់អ្នក។ មុខងារដែលអាចប្រើបានខុសគ្នាតាមឧបករណ៍។ កម្មវិធីដើមក៏គាំទ្រការទាញយកសម្រាប់ស្តាប់ក្រៅបណ្តាញផងដែរ។",
+      "thoughtfullyOrganizedSurahsForDifferent": "ស៊ូរ៉ោះដែលបានរៀបចំយ៉ាងយកចិត្តទុកដាក់សម្រាប់ឱកាស និងប្រធានបទផ្សេងៗ",
+      "weCareAboutTheAccuracy": "យើងយកចិត្តទុកដាក់ចំពោះភាពត្រឹមត្រូវនៃមាតិកាពិសិដ្ឋ ការរចនាដោយគោរព និងការចូលប្រើដែលអាចទុកចិត្តបាន។ យើងបន្តកែលម្អ ISTIMA ដោយគិតគូរដល់អ្នកប្រើប្រាស់។ សូមអល់ឡោះទទួលយកការខិតខំនេះ និងធ្វើឱ្យវាមានប្រយោជន៍សម្រាប់អ្នកស្តាប់ អាន និងត្រិះរិះទាំងអស់។"
+    },
+    "aboutApp": "អំពី {{name}}",
+    "appearance": "រូបរាង",
+    "defaultreciter": {
+      "changeDefaultReciter": "ប្តូរអ្នកសូត្រលំនាំដើម"
+    },
+    "developer": "អ្នកអភិវឌ្ឍ",
+    "floatingDevMenu": "ម៉ឺនុយអភិវឌ្ឍអណ្តែត",
+    "language": "ភាសា",
+    "languageDescription": "ជ្រើសភាសារបស់កម្មវិធី",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "ប្រើអ្នកសូត្រលំនាំដើមដែលបានជ្រើសជានិច្ច",
+      "askEveryTime": "សួររាល់ពេល",
+      "chooseAReciterEachTime": "ជ្រើសអ្នកសូត្ររាល់ពេលចាក់",
+      "chooseHowYouWantTo": "ជ្រើសរបៀបជ្រើសអ្នកសូត្រពេលចាក់ស៊ូរ៉ោះ",
+      "defaultSelectionMethod": "វិធីជ្រើសលំនាំដើម",
+      "searchThroughOurCompleteCollection": "ស្វែងរកក្នុងបណ្តុំអ្នកសូត្រទាំងមូលរបស់យើង",
+      "selectionPreference": "ចំណូលចិត្តក្នុងការជ្រើស"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "ឯកសារទាញយកទាំងអស់ត្រូវបានដកចេញ។",
+      "areYouSureYouWant": "តើអ្នកប្រាកដថាចង់ដកមាតិកាដែលបានទាញយកទាំងអស់ចេញឬ? មិនអាចត្រឡប់សកម្មភាពនេះវិញបានទេ។",
+      "cache": "ឃ្លាំងបណ្តោះអាសន្ន",
+      "cacheHasBeenCleared": "បានសម្អាតឃ្លាំងបណ្តោះអាសន្ន។",
+      "clearCache": "សម្អាតឃ្លាំងបណ្តោះអាសន្ន",
+      "failedToClearCache": "មិនអាចសម្អាតឃ្លាំងបណ្តោះអាសន្ន។",
+      "failedToRemoveDownloads": "មិនអាចដកឯកសារទាញយកចេញ។",
+      "free": "ទំនេរ",
+      "loadingStorageInformation": "កំពុងផ្ទុកព័ត៌មានទំហំផ្ទុក...",
+      "manageStorage": "គ្រប់គ្រងទំហំផ្ទុក",
+      "otherApps": "កម្មវិធីផ្សេងទៀត",
+      "removeAllDownloads": "ដកឯកសារទាញយកទាំងអស់ចេញ",
+      "removeAllTheQuranContent": "ដកមាតិកាគម្ពីរគួរអានទាំងអស់ដែលបានទាញយកសម្រាប់ប្រើក្រៅបណ្តាញចេញ។",
+      "storageBreakdown": "ការបែងចែកទំហំផ្ទុក",
+      "success": "បានជោគជ័យ",
+      "thisWillClearYourCache": "វានឹងសម្អាតឃ្លាំងបណ្តោះអាសន្ន។ ឯកសារទាញយករបស់អ្នកនឹងមិនត្រូវដកចេញទេ។",
+      "youCanFreeUpStorage": "អ្នកអាចបង្កើនទំហំទំនេរដោយសម្អាតឃ្លាំងបណ្តោះអាសន្ន។ ឯកសារទាញយករបស់អ្នកនឹងមិនត្រូវដកចេញទេ។"
+    },
+    "themePicker": {
+      "auto": "ស្វ័យប្រវត្តិ",
+      "dark": "ងងឹត",
+      "light": "ភ្លឺ"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "មិនមានកំណត់ហេតុបំលាស់ប្តូរ"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "អំពី {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "បន្ថែមអ្នកសូត្រដែលពេញចិត្ត",
+      "uploadRecitation": "ផ្ទុកការសូត្រឡើង"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "សំឡេងបរិយាកាស",
+      "none": "គ្មាន",
+      "volume": "កម្រិតសំឡេង"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "ឧ. ការសូត្រពេលព្រឹក"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "ដកឯកសារទាញយកចេញ"
+    },
+    "favoriteRecitersSheet": {
+      "done": "រួចរាល់"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "បន្ថែមទៅបណ្តុំ",
+      "addToQueue": "បន្ថែមទៅជួរចាក់",
+      "continuePlaying": "បន្តចាក់",
+      "goToReciter": "ទៅកាន់អ្នកសូត្រ",
+      "removeFromRecents": "ដកចេញពីថ្មីៗ"
+    },
+    "mushafLayoutSheet": {
+      "back": "ថយក្រោយ"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "អាយ៉ាត់បញ្ចប់",
+      "playbackSettings": "ការកំណត់ចាក់",
+      "selectRange": "ជ្រើសចន្លោះ",
+      "startingVerse": "អាយ៉ាត់ចាប់ផ្តើម"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "ការកំណត់ចាក់ឡើងវិញ",
+      "start": "ចាប់ផ្តើម",
+      "verseRange": "ចន្លោះអាយ៉ាត់"
+    },
+    "organizeRecitationSheet": {
+      "category": "ប្រភេទ",
+      "customReciter": "អ្នកសូត្រផ្ទាល់ខ្លួន",
+      "duA": "ឌូអា",
+      "eGMorningAdhkar": "ឧ. អាហ្សការពេលព្រឹក",
+      "lecture": "ការបង្រៀន",
+      "moreOptions": "ជម្រើសបន្ថែម",
+      "other": "ផ្សេងទៀត",
+      "recording": "ការថតសំឡេង",
+      "rewayah": "រីវ៉ាយ៉ា",
+      "searchSurahs": "ស្វែងរកស៊ូរ៉ោះ...",
+      "style": "របៀប",
+      "tafsir": "តាហ្វសៀរ",
+      "title": "ចំណងជើង",
+      "type": "ប្រភេទ",
+      "verseRangeOptional": "ចន្លោះអាយ៉ាត់ (មិនចាំបាច់)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "ល្បឿនចាក់"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "ធាតុទាំងអស់ក្នុងបញ្ជីចាក់នេះបានទាញយករួចហើយ។",
+      "anErrorOccurredWhileDownloading": "មានកំហុសពេលទាញយកបញ្ជីចាក់។ សូមព្យាយាមម្តងទៀត។",
+      "deletePlaylist": "លុបបញ្ជីចាក់",
+      "downloadingPlaylist": "កំពុងទាញយកបញ្ជីចាក់...",
+      "editPlaylist": "កែបញ្ជីចាក់",
+      "emptyPlaylist": "បញ្ជីចាក់ទទេ",
+      "thisPlaylistIsEmpty": "បញ្ជីចាក់នេះគ្មានអ្វីទេ។"
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "អំពីរីវ៉ាយ៉ាត",
+      "availableRewayat": "រីវ៉ាយ៉ាតដែលអាចប្រើបាន"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "មិនអាចបន្ថែមស៊ូរ៉ោះទៅបញ្ជីចាក់",
+      "failedToCreatePlaylist": "មិនអាចបង្កើតបញ្ជីចាក់",
+      "noPlaylistsYetCreateYour": "មិនទាន់មានបញ្ជីចាក់។ បង្កើតបញ្ជីចាក់ដំបូងរបស់អ្នកនៅខាងលើ!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "សួររាល់ពេល",
+      "randomReciter": "អ្នកសូត្រចៃដន្យ",
+      "selectReciter": "ជ្រើសអ្នកសូត្រ"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "រកមិនឃើញអាយ៉ាត់ស្រដៀងសម្រាប់អាយ៉ាត់នេះ។",
+      "similarWording": "ពាក្យពេចន៍ស្រដៀង"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "កម្មវិធីកំណត់ពេលគេង",
+      "turnOffTimer": "បិទកម្មវិធីកំណត់ពេល"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "ដកចេញពីបញ្ជីចាក់"
+    },
+    "verseActionsSheet": {
+      "addNote": "បន្ថែមកំណត់ត្រា",
+      "copy": "ចម្លង",
+      "repeat": "ចាក់ឡើងវិញ",
+      "similarVerses": "អាយ៉ាត់ស្រដៀង",
+      "tafseer": "តាហ្វសៀរ",
+      "theme": "រចនាប័ទ្ម"
+    },
+    "verseCopySheet": {
+      "copyOptions": "ជម្រើសចម្លង",
+      "selectWhatToCopy": "ជ្រើសអ្វីដែលត្រូវចម្លង"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "ពណ៌បន្លិច"
+    },
+    "verseShareSheet": {
+      "shareVerse": "ចែករំលែកអាយ៉ាត់"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "រកឃើញក្នុង {{count}} អាយ៉ាត់",
+    "foundIn_other": "រកឃើញក្នុង {{count}} អាយ៉ាត់"
+  },
+  "surahItem": {
+    "moreOptions": "ជម្រើសបន្ថែម",
+    "opensMenuWithAdditionalActions": "បើកម៉ឺនុយដែលមានសកម្មភាពបន្ថែមសម្រាប់ស៊ូរ៉ោះនេះ",
+    "tapToPlaySurah": "ប៉ះដើម្បីចាក់ស៊ូរ៉ោះ"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "លេខសម្គាល់បញ្ជីចាក់មិនត្រឹមត្រូវ",
+      "playlistNotFound": "រកមិនឃើញបញ្ជីចាក់"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "មិនអាចរកអ្នកសូត្រដែលមានគ្រប់ស៊ូរ៉ោះក្នុងបញ្ជីចាក់នេះ។ សូមសាកល្បងបញ្ជីផ្សេង។",
+      "failedToPlayPlaylistPlease": "មិនអាចចាក់បញ្ជីចាក់។ សូមព្យាយាមម្តងទៀត។",
+      "failedToPlayTrackPlease": "មិនអាចចាក់បទសំឡេង។ សូមព្យាយាមម្តងទៀត។",
+      "failedToShufflePlaylistPlease": "មិនអាចចាក់បញ្ជីតាមលំដាប់ច្របល់។ សូមព្យាយាមម្តងទៀត។",
+      "noReciterAvailable": "មិនមានអ្នកសូត្រ",
+      "noSurahsInThisPlaylist": "មិនមានស៊ូរ៉ោះក្នុងបញ្ជីចាក់នេះ"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "គណនី",
+      "appData": "កម្មវិធី និងទិន្នន័យ",
+      "audioPlayback": "សំឡេង និងការចាក់",
+      "chooseYourPreferredReciter": "ជ្រើសអ្នកសូត្រដែលអ្នកពេញចិត្ត",
+      "customizeQuranDisplayOptions": "កែជម្រើសបង្ហាញគម្ពីរគួរអាន",
+      "customizeReciterSelection": "កែការជ្រើសអ្នកសូត្រ",
+      "featureRequests": "សំណើមុខងារ",
+      "feedback": "មតិកែលម្អ",
+      "helpSupport": "ជំនួយ និងការគាំទ្រ",
+      "learnMoreAboutOurMission": "ស្វែងយល់បន្ថែមអំពីបេសកកម្មរបស់យើង",
+      "manageQuranTranslationsAndCommentary": "គ្រប់គ្រងការបកប្រែ និងសេចក្តីពន្យល់គម្ពីរគួរអាន",
+      "privacyPolicy": "គោលការណ៍ឯកជនភាព",
+      "quran": "គម្ពីរគួរអាន",
+      "readOurTermsOfService": "អានលក្ខខណ្ឌសេវាកម្មរបស់យើង",
+      "seeWhatSNewIn": "មើលអ្វីដែលថ្មីក្នុងកំណែនេះ",
+      "shareYourExperienceWithOthers": "ចែករំលែកបទពិសោធន៍របស់អ្នកជាមួយអ្នកដទៃ",
+      "showTheFloatingDeveloperTools": "បង្ហាញប៊ូតុងឧបករណ៍អភិវឌ្ឍអណ្តែត",
+      "suggestImprovementsAndNewFeatures": "ស្នើការកែលម្អ និងមុខងារថ្មី",
+      "termsOfService": "លក្ខខណ្ឌសេវាកម្ម",
+      "viewAndManageStorageUsage": "មើល និងគ្រប់គ្រងការប្រើទំហំផ្ទុក",
+      "viewOurPrivacyPolicy": "មើលគោលការណ៍ឯកជនភាពរបស់យើង",
+      "writeAReview": "សរសេរការវាយតម្លៃ"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "បោះបង់",
+    "close": "បិទ",
+    "collection": "បណ្តុំ",
+    "download": "ទាញយក",
+    "downloads": "ឯកសារទាញយក",
+    "error": "មានអ្វីមួយខុសប្រក្រតី",
+    "favorites": "ចំណូលចិត្ត",
+    "home": "ទំព័រដើម",
+    "language": "ភាសា",
+    "library": "បណ្ណាល័យ",
+    "loading": "កំពុងផ្ទុក...",
+    "noResults": "រកមិនឃើញលទ្ធផល",
+    "offline": "អ្នកនៅក្រៅបណ្តាញ",
+    "pause": "ផ្អាក",
+    "play": "ចាក់",
+    "retry": "ព្យាយាមម្តងទៀត",
+    "save": "រក្សាទុក",
+    "search": "ស្វែងរក",
+    "settings": "ការកំណត់",
+    "surahs": "ស៊ូរ៉ោះ"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "ជ្រើសមាតិកា"
+    },
+    "highlightContent": {
+      "chooseColor": "ជ្រើសពណ៌"
+    },
+    "noteContent": {
+      "saveNote": "រក្សាទុកកំណត់ត្រា"
+    },
+    "shareContent": {
+      "shareLink": "ចែករំលែកតំណ"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "រកមិនឃើញអាយ៉ាត់ស្រដៀងសម្រាប់អាយ៉ាត់នេះ។",
+      "sharedPhrases": "ឃ្លាដូចគ្នា",
+      "similarWording": "ពាក្យពេចន៍ស្រដៀង"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "មិនមានតាហ្វសៀរដែលបានទាញយក",
+      "tafseerNotAvailableForThis": "មិនមានតាហ្វសៀរសម្រាប់អាយ៉ាត់នេះ",
+      "tapHereToDownloadA": "ប៉ះទីនេះដើម្បីទាញយកតាហ្វសៀរ និងមើលសេចក្តីពន្យល់។"
+    },
+    "themeContent": {
+      "noThematicDataForThis": "មិនមានទិន្នន័យប្រធានបទសម្រាប់អាយ៉ាត់នេះ។",
+      "passage": "វគ្គអត្ថបទ"
+    },
+    "translationContent": {
+      "switch": "ប្តូរ",
+      "translationNotAvailable": "មិនមានការបកប្រែ"
+    }
+  },
+  "version": {
+    "label": "កំណែ {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "អ្វីដែលថ្មីក្នុង"
+  },
+  "wordDetail": {
+    "context": "អាយ៉ាត់ {{surah}}:{{ayah}} · ពាក្យទី {{position}} ក្នុងចំណោម {{total}}"
+  }
+}
