@@ -41,7 +41,7 @@ export function verticalScale(size: number): number {
   return (height / GUIDELINE_BASE_HEIGHT) * size;
 }
 
-export function moderateScale(size: number, factor: number = 0.5): number {
+export function moderateScale(size: number, factor = 0.5): number {
   return size + (scale(size) - size) * factor;
 }
 

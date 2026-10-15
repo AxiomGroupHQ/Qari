@@ -73,7 +73,7 @@ export const ShareContent: React.FC<ShareContentProps> = ({
   const {width: screenWidth} = useWindowDimensions();
   const captureCanvasRef = useCanvasRef();
 
-  const [showWatermark, setShowWatermark] = useState(true);
+  const showWatermark = true; // the ISTIMA footer is always part of the card
   const [showBasmallah, setShowBasmallah] = useState(false);
   const [isCapturing, setIsCapturing] = useState(false);
 
@@ -217,21 +217,6 @@ export const ShareContent: React.FC<ShareContentProps> = ({
           ios_backgroundColor={Color(theme.colors.text).alpha(0.1).toString()}
           onValueChange={() => setShowBasmallah(!showBasmallah)}
           value={showBasmallah}
-          style={{transform: [{scaleX: 0.8}, {scaleY: 0.8}]}}
-        />
-      </View>
-
-      <View style={styles.toggleRow}>
-        <Text style={styles.toggleLabel}>Show Watermark</Text>
-        <Switch
-          trackColor={{
-            false: Color(theme.colors.text).alpha(0.1).toString(),
-            true: Color(theme.colors.text).alpha(0.65).toString(),
-          }}
-          thumbColor="#FFFFFF"
-          ios_backgroundColor={Color(theme.colors.text).alpha(0.1).toString()}
-          onValueChange={() => setShowWatermark(!showWatermark)}
-          value={showWatermark}
           style={{transform: [{scaleX: 0.8}, {scaleY: 0.8}]}}
         />
       </View>

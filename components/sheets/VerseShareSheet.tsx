@@ -60,7 +60,7 @@ export const VerseShareSheet = (props: SheetProps<'verse-share'>) => {
   const {width: screenWidth} = useWindowDimensions();
   const captureCanvasRef = useCanvasRef();
 
-  const [showWatermark, setShowWatermark] = useState(true);
+  const showWatermark = true; // the ISTIMA footer is always part of the card
   const [showBasmallah, setShowBasmallah] = useState(false);
   const [isCapturing, setIsCapturing] = useState(false);
 
@@ -209,24 +209,6 @@ export const VerseShareSheet = (props: SheetProps<'verse-share'>) => {
               .toString()}
             onValueChange={() => setShowBasmallah(!showBasmallah)}
             value={showBasmallah}
-            style={{transform: [{scaleX: 0.8}, {scaleY: 0.8}]}}
-          />
-        </View>
-
-        {/* Watermark toggle */}
-        <View style={styles.toggleRow}>
-          <Text style={styles.toggleLabel}>Show Watermark</Text>
-          <Switch
-            trackColor={{
-              false: Color(theme.colors.textSecondary).alpha(0.3).toString(),
-              true: theme.colors.text,
-            }}
-            thumbColor="#FFFFFF"
-            ios_backgroundColor={Color(theme.colors.textSecondary)
-              .alpha(0.3)
-              .toString()}
-            onValueChange={() => setShowWatermark(!showWatermark)}
-            value={showWatermark}
             style={{transform: [{scaleX: 0.8}, {scaleY: 0.8}]}}
           />
         </View>

@@ -2,6 +2,7 @@ import {Share, Platform} from 'react-native';
 import {analyticsService} from '@/services/analytics/AnalyticsService';
 import branding from '@/config/branding';
 import {shareMessage} from '@/utils/webShare';
+import {withShareFooter} from '@/utils/shareFooter';
 
 const BASE_URL = branding.shareBaseUrl;
 
@@ -85,9 +86,9 @@ export async function shareUrl(url: string, message: string): Promise<void> {
     if (Platform.OS === 'web') {
       await shareMessage(message, url);
     } else if (Platform.OS === 'ios') {
-      await Share.share({url});
+      await Share.share({message: withShareFooter(message), url});
     } else {
-      await Share.share({message: `${message}\n${url}`});
+      await Share.share({message: withShareFooter(`${message}\n${url}`)});
     }
   } catch {
     // User dismissed or share failed

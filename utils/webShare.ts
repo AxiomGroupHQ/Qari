@@ -1,6 +1,7 @@
 // @ai-generated
 import {Platform, Share} from 'react-native';
 import * as Sharing from 'expo-sharing';
+import {SHARE_FOOTER, withShareFooter} from '@/utils/shareFooter';
 
 const isWeb = Platform.OS === 'web';
 
@@ -19,14 +20,14 @@ async function copyToClipboard(text: string): Promise<boolean> {
 
 /** Shares text (and optionally a link); copies to the clipboard on browsers without the Web Share API. */
 export async function shareMessage(message: string, url?: string) {
+  const full = withShareFooter(url ? `${message}\n${url}` : message);
   if (!isWeb) {
-    await Share.share(url ? {message: `${message}\n${url}`} : {message});
+    await Share.share({message: full});
     return;
   }
-  const full = url ? `${message}\n${url}` : message;
   try {
     if (typeof navigator !== 'undefined' && navigator.share) {
-      await navigator.share(url ? {text: message, url} : {text: message});
+      await navigator.share({text: full});
       return;
     }
   } catch (error) {
@@ -48,8 +49,9 @@ export async function shareImageFile(uri: string) {
   const blob = await (await fetch(uri)).blob();
   const file = new File([blob], 'istima-verse.png', {type: 'image/png'});
   try {
+    // The caption carries the footer, as in the Ayah a Day shares.
     if (navigator.canShare?.({files: [file]})) {
-      await navigator.share({files: [file]});
+      await navigator.share({files: [file], text: SHARE_FOOTER});
       return;
     }
   } catch (error) {
