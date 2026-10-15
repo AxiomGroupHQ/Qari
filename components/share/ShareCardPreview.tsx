@@ -4,13 +4,15 @@ import {
   Paragraph,
   Rect,
   Group,
-  Path,
+  Image as SkImage,
   Skia,
   BlendMode,
+  useImage,
   type SkTypefaceFontProvider,
   type SkTypeface,
 } from '@shopify/react-native-skia';
 import {buildShareCardParagraphs} from './buildShareCardParagraphs';
+import {footerLockup, FOOTER_RULE_COLOR} from './shareFooterLayout';
 import {
   CARD_CONTENT_WIDTH,
   CARD_PADDING,
@@ -19,7 +21,6 @@ import {
   CARD_VERSE_BOTTOM_GAP,
   CARD_SURAH_GAP,
   CARD_BASMALLAH_BOTTOM_GAP,
-  STARBURST_PATH_DATA,
 } from './shareCardConstants';
 
 interface ShareCardPreviewProps {
@@ -81,10 +82,10 @@ const ShareCardPreview: React.FC<ShareCardPreviewProps> = ({
     ],
   );
 
-  const starburstPath = useMemo(
-    () => Skia.Path.MakeFromSVGString(STARBURST_PATH_DATA),
-    [],
+  const wordmarkImage = useImage(
+    require('@/assets/branding/istima-wordmark.png'),
   );
+  const halalwebImage = useImage(require('@/assets/branding/halalweb.png'));
 
   const scale = contentWidth / CARD_CONTENT_WIDTH;
   const totalHeight = elements.totalHeight + padding * 2;
@@ -188,42 +189,59 @@ const ShareCardPreview: React.FC<ShareCardPreviewProps> = ({
           y += elements.rewayahLabelHeight;
         }
 
-        // Watermark: squircle logo + "made with {appName}" (centered)
+        // Footer: ISTIMA wordmark, gold rule and Halalweb (centered), with the
+        // site URL at the bottom-right.
         if (elements.watermarkParagraph) {
-          const iconSize = elements.watermarkIconSize;
-          const gap = elements.watermarkGap;
-          const textW = elements.watermarkTextWidth;
-          const hasIcon = !!starburstPath;
-          const totalWmWidth = (hasIcon ? iconSize + gap : 0) + textW;
-          const wmStartX = padding + (contentWidth - totalWmWidth) / 2;
-
-          if (starburstPath) {
-            const iconY = y + (elements.watermarkHeight - iconSize) / 2;
-            const pathScale = iconSize / 1023;
-            const pathYOffset = (iconSize - 872 * pathScale) / 2;
+          const lockup = footerLockup(contentWidth);
+          const centerX = padding + contentWidth / 2;
+          const markX = centerX - lockup.markW / 2;
+          const ruleY = y + lockup.markH + lockup.gapTop;
+          const halalY = ruleY + lockup.ruleH + lockup.gapBottom;
+          if (wordmarkImage) {
             nodes.push(
-              <Group
-                key="logo"
-                transform={[
-                  {translateX: wmStartX},
-                  {translateY: iconY + pathYOffset},
-                  {scale: pathScale},
-                ]}>
-                <Path path={starburstPath} color={elements.colors.secondary} />
+              <Group key="wordmark" layer={nameColorPaint}>
+                <SkImage
+                  image={wordmarkImage}
+                  x={markX}
+                  y={y}
+                  width={lockup.markW}
+                  height={lockup.markH}
+                  fit="contain"
+                />
               </Group>,
             );
           }
-
-          const textX = hasIcon ? wmStartX + iconSize + gap : wmStartX;
+          nodes.push(
+            <Rect
+              key="rule"
+              x={markX}
+              y={ruleY}
+              width={lockup.markW}
+              height={lockup.ruleH}
+              color={FOOTER_RULE_COLOR}
+            />,
+          );
+          if (halalwebImage) {
+            nodes.push(
+              <SkImage
+                key="halalweb"
+                image={halalwebImage}
+                x={centerX - lockup.halalW / 2}
+                y={halalY}
+                width={lockup.halalW}
+                height={lockup.halalH}
+                fit="contain"
+              />,
+            );
+          }
           const textParaH = elements.watermarkParagraph.getHeight();
-          const textY = y + (elements.watermarkHeight - textParaH) / 2;
           nodes.push(
             <Paragraph
               key="watermark"
               paragraph={elements.watermarkParagraph}
-              x={textX}
-              y={textY}
-              width={textW + 10}
+              x={padding}
+              y={y + elements.watermarkHeight - textParaH}
+              width={contentWidth}
             />,
           );
         }

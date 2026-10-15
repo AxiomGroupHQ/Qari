@@ -38,6 +38,7 @@ import {
   digitalKhattDataService,
 } from '@/services/mushaf/DigitalKhattDataService';
 import {getRewayahShortLabel} from '@/utils/rewayahLabels';
+import {footerLockup} from './shareFooterLayout';
 import type {RewayahId} from '@/store/mushafSettingsStore';
 import branding from '@/config/branding';
 
@@ -322,8 +323,9 @@ export function buildShareCardParagraphs(
   const watermarkIconSize = CARD_WATERMARK_ICON_SIZE * scale;
   const watermarkGap = CARD_WATERMARK_GAP * scale;
   if (showWatermark) {
+    // Footer URL, bottom-right; the logo lockup is drawn by ShareCardPreview.
     const wmBuilder = Skia.ParagraphBuilder.Make(
-      {textAlign: TextAlign.Left},
+      {textAlign: TextAlign.Right},
       fontMgr,
     );
     wmBuilder.pushStyle({
@@ -331,13 +333,15 @@ export function buildShareCardParagraphs(
       fontFamilies: ['ManropeSemiBold'],
       fontSize: watermarkFontSize,
     });
-    wmBuilder.addText(`made with ${branding.appName}`);
+    wmBuilder.addText(branding.shareBaseUrl.replace(/^https?:\/\//, ''));
     wmBuilder.pop();
     watermarkParagraph = wmBuilder.build();
     watermarkParagraph.layout(contentWidth);
-    watermarkTextWidth = watermarkParagraph.getLongestLine();
-    const textHeight = watermarkParagraph.getHeight();
-    watermarkHeight = Math.max(watermarkIconSize, textHeight);
+    watermarkTextWidth = contentWidth;
+    watermarkHeight = Math.max(
+      footerLockup(contentWidth).height,
+      watermarkParagraph.getHeight(),
+    );
   }
 
   // Compute total height
