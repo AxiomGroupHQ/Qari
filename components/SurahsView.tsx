@@ -1,3 +1,4 @@
+import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useMemo, useCallback} from 'react';
 import {View, Text, StyleSheet, Pressable, Platform} from 'react-native';
 import {FlashList, type ListRenderItemInfo} from '@shopify/flash-list';
@@ -212,7 +213,7 @@ export default function SurahsView({
                     ? 'arrow-down'
                     : 'calendar';
               const label =
-                option === 'asc' ? 'Asc' : option === 'desc' ? 'Desc' : 'Rev';
+                option === 'asc' ? (isArabicInterface() ? 'تصاعدي' : 'Asc') : option === 'desc' ? (isArabicInterface() ? 'تنازلي' : 'Desc') : (isArabicInterface() ? 'النزول' : 'Rev');
               return (
                 <Pressable
                   key={option}
