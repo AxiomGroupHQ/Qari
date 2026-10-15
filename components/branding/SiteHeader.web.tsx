@@ -3,11 +3,14 @@ import React from 'react';
 import {View, Pressable, StyleSheet} from 'react-native';
 import {useRouter} from 'expo-router';
 import {useTheme} from '@/hooks/useTheme';
+import {useSiteHeaderStore} from '@/store/siteHeaderStore';
 import {IstimaWordmark} from './IstimaWordmark';
 
 export function SiteHeader() {
   const router = useRouter();
+  const isHome = useSiteHeaderStore(state => state.isHome);
   const {theme} = useTheme();
+  if (isHome) return null;
   return (
     <View style={[styles.header, {backgroundColor: theme.colors.background}]}>
       <Pressable
