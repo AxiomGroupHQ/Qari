@@ -1,6 +1,7 @@
 import React, {useMemo} from 'react';
 import {Text, Pressable, ScrollView, View, Linking, Switch} from 'react-native';
 import {useRouter} from 'expo-router';
+import {SheetManager} from 'react-native-actions-sheet';
 import {useTheme} from '@/hooks/useTheme';
 import {ScaledSheet, moderateScale} from 'react-native-size-matters';
 import {Theme} from '@/utils/themeUtils';
@@ -297,7 +298,7 @@ export default function SettingsScreen() {
         router.push('/(d.settings)/reciter-choice');
         break;
       case 'language':
-        router.push('/(d.settings)/language');
+        SheetManager.show('language-picker');
         break;
       case 'storage':
         router.push('/(d.settings)/storage');
