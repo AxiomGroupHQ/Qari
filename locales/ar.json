@@ -26,7 +26,7 @@
     "recitersFound_few": "تم العثور على {{count}} قرّاء مع عوامل التصفية الحالية",
     "recitersFound_many": "تم العثور على {{count}} قارئ مع عوامل التصفية الحالية",
     "recitersFound_one": "تم العثور على {{count}} قارئ مع عوامل التصفية الحالية",
-    "recitersFound_other": "تم العثور على {{count}} قرّاء مع عوامل التصفية الحالية",
+    "recitersFound_other": "تم العثور على {{count}} قارئ مع عوامل التصفية الحالية",
     "recitersFound_two": "تم العثور على {{count}} قارئ مع عوامل التصفية الحالية",
     "recitersFound_zero": "تم العثور على {{count}} قرّاء مع عوامل التصفية الحالية"
   },
@@ -70,7 +70,7 @@
       "items_few": "{{count}} عناصر",
       "items_many": "{{count}} عنصر",
       "items_one": "{{count}} عنصر",
-      "items_other": "{{count}} عناصر",
+      "items_other": "{{count}} عنصر",
       "items_two": "{{count}} عنصر",
       "items_zero": "{{count}} عناصر",
       "loved": "المحبوبة",
@@ -217,7 +217,7 @@
     "subtitle_few": "منزّل • {{count}} سور",
     "subtitle_many": "منزّل • {{count}} سورة",
     "subtitle_one": "منزّل • {{count}} سورة",
-    "subtitle_other": "منزّل • {{count}} سور",
+    "subtitle_other": "منزّل • {{count}} سورة",
     "subtitle_two": "منزّل • {{count}} سورة",
     "subtitle_zero": "منزّل • {{count}} سور"
   },
@@ -352,7 +352,7 @@
     "subtitle_few": "قائمة تشغيل • {{count}} سور",
     "subtitle_many": "قائمة تشغيل • {{count}} سورة",
     "subtitle_one": "قائمة تشغيل • {{count}} سورة",
-    "subtitle_other": "قائمة تشغيل • {{count}} سور",
+    "subtitle_other": "قائمة تشغيل • {{count}} سورة",
     "subtitle_two": "قائمة تشغيل • {{count}} سورة",
     "subtitle_zero": "قائمة تشغيل • {{count}} سور"
   },
@@ -623,7 +623,7 @@
     "foundIn_few": "موجودة في {{count}} آيات",
     "foundIn_many": "موجودة في {{count}} آية",
     "foundIn_one": "موجودة في {{count}} آية",
-    "foundIn_other": "موجودة في {{count}} آيات",
+    "foundIn_other": "موجودة في {{count}} آية",
     "foundIn_two": "موجودة في {{count}} آية",
     "foundIn_zero": "موجودة في {{count}} آيات"
   },

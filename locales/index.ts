@@ -3,4 +3,5 @@ export type LocaleResource = Record<string, unknown>;
 export const localeLoaders: Record<string, () => LocaleResource> = {
   'en': () => require('./en.json') as LocaleResource,
   'ar': () => require('./ar.json') as LocaleResource,
+  'ur': () => require('./ur.json') as LocaleResource,
 };

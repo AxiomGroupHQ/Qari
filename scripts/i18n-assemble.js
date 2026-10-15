@@ -28,7 +28,11 @@ const bases = new Set(Object.keys(enAll).filter(k => /_(one|other)$/.test(k)).ma
 for (const b of bases) {
   const one = flat[b + '_one'], other = flat[b + '_other'];
   if (one === undefined || other === undefined) continue;
-  const singularish = ['one', 'two', 'many'];
+  if (code === 'ar') {
+    // Arabic: 3-10 take the plural noun; 11+ and 100+ take the singular noun.
+    flat[`${b}_zero`] = other; flat[`${b}_two`] = one; flat[`${b}_few`] = other; flat[`${b}_many`] = one; flat[`${b}_other`] = one;
+    continue;
+  }
   for (const c of cats) {
     if (flat[`${b}_${c}`] !== undefined) continue;
     flat[`${b}_${c}`] = code === 'ar' || code === 'ckb' ? (['zero', 'few'].includes(c) ? other : one) : c === 'one' ? one : other;
