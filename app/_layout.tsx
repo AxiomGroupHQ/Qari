@@ -50,6 +50,7 @@ import {mushafSessionStore} from '@/services/mushaf/MushafSessionStore';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import * as Sentry from '@sentry/react-native';
 import * as ScreenOrientation from 'expo-screen-orientation';
+import {SiteHeader} from '@/components/branding/SiteHeader'; // @ai
 
 // Configure Reanimated logger
 configureReanimatedLogger({
@@ -379,6 +380,14 @@ function RootLayout() {
   useEffect(() => {
     if (!appIsReady || !isPlayerReady || hasShareIntent) return;
 
+    // Browser URLs own navigation; native session restoration can overwrite a
+    // direct /mushaf?surah=... link as its first screen mounts. @ai-start
+    if (Platform.OS === 'web') {
+      setMushafRestoreHandled(true);
+      return;
+    }
+    // @ai-end
+
     const lastScreenWasMushaf = mushafSessionStore.getLastScreenWasMushaf();
     const lastReadPage = mushafSessionStore.getLastReadPage();
 
@@ -407,7 +416,7 @@ function RootLayout() {
       !hasShareIntent &&
       mushafRestoreHandled
     ) {
-      SplashScreen.hideAsync().catch(() => {});
+      SplashScreen.hideAsync().catch(() => undefined); // @ai
     }
   }, [
     appIsReady,
@@ -460,11 +469,12 @@ function RootLayout() {
             <ExpoAudioProvider>
               <GestureHandlerRootView
                 style={{flex: 1, backgroundColor: theme.colors.background}}
-                // @ts-ignore - RN supports this on iOS to override system theme for native UI (keyboard, menus, alerts)
+                // @ts-expect-error - RN supports this on iOS to override system theme for native UI (keyboard, menus, alerts)
                 overrideUserInterfaceStyle={isDarkMode ? 'dark' : 'light'}
                 onLayout={onLayoutRootView}>
                 <NetworkStatusMonitor />
                 <SheetProvider>
+                  <SiteHeader />
                   <Stack
                     screenOptions={{
                       headerShown: false,

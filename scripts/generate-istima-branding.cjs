@@ -2,7 +2,6 @@
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
-const {Buffer} = require('buffer');
 
 const root = path.resolve(__dirname, '..');
 const mark = fs.readFileSync(
@@ -43,21 +42,25 @@ for (const name of [
 }
 
 (async () => {
+  const publisher = await sharp(path.join(root, 'assets/branding/halalweb.png'))
+    .resize({width: 400})
+    .toBuffer();
+  const wordmark = await sharp(mark)
+    .composite([{input: publisher, left: 312, top: 665}])
+    .png()
+    .toBuffer();
   for (const file of targets) {
     const {width, height} = await sharp(file).metadata();
     const monochrome = /notification_icon|tinted/.test(file);
     const transparent =
       /foreground|splash|SplashScreen/i.test(file) || monochrome;
-    let svg = mark.toString();
-    if (transparent) svg = svg.replace(/<rect width="1024"[^>]+\/>/, '');
-    if (transparent && !/dark|night/.test(file) && !monochrome) {
-      svg = svg.replace('#b8e6ca', '#277563').replace('#f4f3ec', '#0c302b');
-    }
-    if (monochrome) svg = svg.replace(/fill="#[^"]+"/g, 'fill="#ffffff"');
-    let image = sharp(Buffer.from(svg)).resize(width, height, {
+    let image = sharp(wordmark).resize(width, height, {
       fit: 'contain',
       background: '#00000000',
     });
+    if (monochrome) {
+      image = image.greyscale().linear(0, 255);
+    }
     if (!transparent) image = image.flatten({background: '#0c302b'});
     const output = await image
       .toFormat(file.endsWith('.webp') ? 'webp' : 'png')

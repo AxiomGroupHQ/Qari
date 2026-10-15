@@ -1,0 +1,397 @@
+{
+  "title": "Privacy Policy",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "ISTIMA Privacy Policy"
+    },
+    {
+      "type": "paragraph",
+      "text": "Last Updated: October 2026"
+    },
+    {
+      "type": "paragraph",
+      "text": "This Privacy Policy describes how ISTIMA ('we', 'us', or 'our') collects, uses, and handles your information when you use our Qur'an application and website (together, 'the App'). We are committed to protecting your privacy and have designed our App with minimal data collection to respect your privacy and align with Islamic ethical principles."
+    },
+    {
+      "type": "paragraph",
+      "text": "By downloading, installing, or using our App, you agree to the terms of this Privacy Policy. If you do not agree with this Privacy Policy, please do not use the App."
+    },
+    {
+      "type": "heading",
+      "text": "1. Information We Collect"
+    },
+    {
+      "type": "heading",
+      "text": "1.1 Information Stored Locally on Your Device"
+    },
+    {
+      "type": "paragraph",
+      "text": "The App stores certain data locally on your device to provide core functionality. Unless you sign in with a Quran.com account (see section 1.4), this data never leaves your device:"
+    },
+    {
+      "type": "item",
+      "text": "Favorite reciters and loved surahs"
+    },
+    {
+      "type": "item",
+      "text": "Playback history and queue position"
+    },
+    {
+      "type": "item",
+      "text": "App settings and preferences (theme, reading mode, playback speed)"
+    },
+    {
+      "type": "item",
+      "text": "Downloaded audio files for offline listening"
+    },
+    {
+      "type": "item",
+      "text": "Mushaf reading position and session history"
+    },
+    {
+      "type": "item",
+      "text": "Adhkar and tasbeeh counters"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can clear this data at any time through your device settings or by uninstalling the App."
+    },
+    {
+      "type": "heading",
+      "text": "1.2 Anonymous Usage Analytics"
+    },
+    {
+      "type": "paragraph",
+      "text": "To understand how features are used and improve the App, we collect anonymous usage events through PostHog (posthog.com). This includes:"
+    },
+    {
+      "type": "item",
+      "text": "Feature interactions (playback, reading, downloads, search queries, share actions)"
+    },
+    {
+      "type": "item",
+      "text": "Session duration and app lifecycle events (open, background)"
+    },
+    {
+      "type": "item",
+      "text": "Listening patterns (which surahs and reciters are played)"
+    },
+    {
+      "type": "item",
+      "text": "Mushaf reading patterns (pages opened, estimated reading time)"
+    },
+    {
+      "type": "paragraph",
+      "text": "All analytics data is tied to a randomly generated device identifier stored on your device. This identifier is not linked to your name, email, or any personally identifiable information."
+    },
+    {
+      "type": "heading",
+      "text": "1.3 Crash Reports and Performance Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "We use Sentry (sentry.io) to collect crash reports and performance metrics. This includes:"
+    },
+    {
+      "type": "item",
+      "text": "Error stack traces and diagnostic information"
+    },
+    {
+      "type": "item",
+      "text": "App performance data (startup time, transaction traces)"
+    },
+    {
+      "type": "item",
+      "text": "Device model and operating system version"
+    },
+    {
+      "type": "paragraph",
+      "text": "Crash data helps us identify and fix stability issues. It is tied to the same anonymous device identifier and contains no personal information."
+    },
+    {
+      "type": "heading",
+      "text": "1.4 Quran.com Account and Sync (Optional)"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use the App without an account. If you choose to, you can sign in with your Quran.com account, which is provided by Quran Foundation (quran.foundation). Sign-in takes place on Quran Foundation's own sign-in page, so ISTIMA never sees or stores your password."
+    },
+    {
+      "type": "paragraph",
+      "text": "When you sign in, we receive and keep:"
+    },
+    {
+      "type": "item",
+      "text": "A Quran Foundation account identifier, which we store on our servers only in hashed form"
+    },
+    {
+      "type": "item",
+      "text": "Basic profile details shared by Quran Foundation (your name, email address and profile picture link), which we store on our servers and the App uses to show which account you are signed in with"
+    },
+    {
+      "type": "item",
+      "text": "Access and refresh tokens issued by Quran Foundation, which let us sync on your behalf. These are encrypted and stored only on our servers, never on your device"
+    },
+    {
+      "type": "item",
+      "text": "A ISTIMA session token, which is stored in your device's secure storage (iOS Keychain or Android Keystore) and identifies your signed-in session to our servers"
+    },
+    {
+      "type": "paragraph",
+      "text": "While you are signed in, the following data is synced between the App and your Quran.com account through our servers, so it stays the same across your devices and other apps in the Quran.com family:"
+    },
+    {
+      "type": "item",
+      "text": "Bookmarks"
+    },
+    {
+      "type": "item",
+      "text": "Notes you write on verses. Notes are synced as private notes and are never published by the App"
+    },
+    {
+      "type": "item",
+      "text": "Your reading position (Continue Reading)"
+    },
+    {
+      "type": "item",
+      "text": "App preferences, such as theme, Mushaf display and reading options, text sizes, selected translation and tafsir, playback speed, repeat and ambient sound settings, and Adhkar display settings"
+    },
+    {
+      "type": "paragraph",
+      "text": "The synced data is stored in your Quran.com account by Quran Foundation and is subject to Quran Foundation's privacy policy as well as this one. ISTIMA does not keep its own copy of your bookmarks, notes, reading position or preferences on our servers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some data is never synced: downloaded audio and content files, playback queue and history, sleep timers, your analytics choice and analytics identifier, and other device-specific settings."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you used the App before signing in, the App asks whether to copy the bookmarks and notes saved on your device into your account or to keep them separate. Your anonymous analytics identifier is not linked to your Quran.com account."
+    },
+    {
+      "type": "heading",
+      "text": "1.5 Qur'an Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "Translations and tafsir are provided by Quran Foundation and delivered to the App through our servers. Downloading or updating them does not send any personal information to Quran Foundation. To keep this content accurate, the App periodically checks our servers for corrections and updates, using only an anonymous request."
+    },
+    {
+      "type": "heading",
+      "text": "2. How We Use Information"
+    },
+    {
+      "type": "heading",
+      "text": "2.1 Local Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "Local data is used solely to power app functionality:"
+    },
+    {
+      "type": "item",
+      "text": "Restoring your preferences and settings"
+    },
+    {
+      "type": "item",
+      "text": "Enabling offline access to Qur'anic recitations"
+    },
+    {
+      "type": "item",
+      "text": "Resuming playback where you left off"
+    },
+    {
+      "type": "item",
+      "text": "Providing a personalized experience based on your usage patterns"
+    },
+    {
+      "type": "heading",
+      "text": "2.2 Analytics Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "Anonymous analytics data is used to:"
+    },
+    {
+      "type": "item",
+      "text": "Understand which features are used and how"
+    },
+    {
+      "type": "item",
+      "text": "Identify the most popular reciters, surahs, and reading patterns"
+    },
+    {
+      "type": "item",
+      "text": "Improve app design and prioritize new features"
+    },
+    {
+      "type": "item",
+      "text": "Measure the impact of changes we ship"
+    },
+    {
+      "type": "heading",
+      "text": "2.3 Crash and Performance Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "Crash and performance data is used to identify and fix bugs, monitor stability across devices and OS versions, and improve responsiveness."
+    },
+    {
+      "type": "heading",
+      "text": "2.4 Account and Sync Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you sign in, your account information and tokens are used only to keep your bookmarks, notes, reading position and preferences in sync with your Quran.com account. They are not used for analytics, advertising or any other purpose."
+    },
+    {
+      "type": "heading",
+      "text": "3. Information Sharing and Disclosure"
+    },
+    {
+      "type": "paragraph",
+      "text": "We do not sell, rent, or share your personal information with third parties for advertising purposes. We do not use any advertising networks, social media trackers, or cross-app tracking technologies."
+    },
+    {
+      "type": "heading",
+      "text": "3.1 Third-Party Service Providers"
+    },
+    {
+      "type": "paragraph",
+      "text": "We use the following services to operate the App. These services act as data processors on our behalf and are subject to their own privacy policies:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Service • Purpose • Data Received • Location"
+    },
+    {
+      "type": "paragraph",
+      "text": "PostHog • Usage analytics • Anonymous events tied to device ID • United States"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sentry • Crash reporting • Error reports, performance metrics • United States"
+    },
+    {
+      "type": "paragraph",
+      "text": "Quran Foundation • Quran.com sign-in, account sync, and Qur'an content (translations and tafsir) • If you sign in: your synced bookmarks, notes, reading position and preferences. No personal data for content downloads • See Quran Foundation's privacy policy"
+    },
+    {
+      "type": "paragraph",
+      "text": "Railway • Hosting for ISTIMA's servers • If you sign in: hashed account identifier, name, email address, profile picture link, encrypted Quran Foundation tokens, session records • United States"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cloudflare R2 • Audio file hosting • No user data — serves audio files only • Global CDN"
+    },
+    {
+      "type": "heading",
+      "text": "4. Data Security"
+    },
+    {
+      "type": "paragraph",
+      "text": "We take reasonable measures to protect your information:"
+    },
+    {
+      "type": "item",
+      "text": "All network communication uses HTTPS/TLS encryption"
+    },
+    {
+      "type": "item",
+      "text": "Analytics and crash data are transmitted to secure, SOC 2-compliant services"
+    },
+    {
+      "type": "item",
+      "text": "No passwords or authentication tokens are included in analytics or crash reports"
+    },
+    {
+      "type": "item",
+      "text": "ISTIMA never handles your Quran.com password; sign-in happens on Quran Foundation's own page"
+    },
+    {
+      "type": "item",
+      "text": "Quran Foundation access and refresh tokens are encrypted at rest (AES-256-GCM) on our servers and are never sent to your device"
+    },
+    {
+      "type": "item",
+      "text": "Your device holds only a ISTIMA session token, kept in the operating system's secure storage"
+    },
+    {
+      "type": "item",
+      "text": "Local data is stored using your device's standard storage mechanisms"
+    },
+    {
+      "type": "heading",
+      "text": "5. Children's Privacy"
+    },
+    {
+      "type": "paragraph",
+      "text": "The App is suitable for all ages and does not knowingly collect personal information from children under 13. If we learn that we have inadvertently collected such information, we will promptly delete it."
+    },
+    {
+      "type": "heading",
+      "text": "6. Your Rights and Choices"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can:"
+    },
+    {
+      "type": "item",
+      "text": "Clear local data by uninstalling the App or clearing its storage in your device settings"
+    },
+    {
+      "type": "item",
+      "text": "Sign out at any time in the App. Signing out ends your ISTIMA session and revokes the Quran Foundation tokens we hold for you"
+    },
+    {
+      "type": "item",
+      "text": "Delete the data we hold about your account (hashed identifier, name, email address, profile picture link, encrypted tokens and session records) by contacting us. Your bookmarks, notes, reading position and preferences live in your Quran.com account and can be managed or deleted there"
+    },
+    {
+      "type": "item",
+      "text": "Control permissions through your device's system settings"
+    },
+    {
+      "type": "heading",
+      "text": "For EU Residents (GDPR)"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you are located in the European Economic Area, you have the right to access, correct, or delete your data, and to object to or restrict processing. Contact us at the address below to exercise these rights."
+    },
+    {
+      "type": "heading",
+      "text": "For California Residents (CCPA)"
+    },
+    {
+      "type": "paragraph",
+      "text": "California residents have the right to know what data is collected, request its deletion, and opt out of its sale. We do not sell personal information."
+    },
+    {
+      "type": "heading",
+      "text": "7. International Data Transfers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Analytics and crash data is processed in the United States by PostHog and Sentry. If you sign in, account and session records are stored on ISTIMA's servers hosted by Railway in the United States, and your synced data is stored by Quran Foundation. By using the App, you consent to these transfers. These services maintain appropriate safeguards for international data transfers."
+    },
+    {
+      "type": "heading",
+      "text": "8. Changes to This Privacy Policy"
+    },
+    {
+      "type": "paragraph",
+      "text": "We may update this Privacy Policy from time to time. We will notify you of material changes through the App or by updating the “Last Updated” date above. Continued use of the App after changes constitutes acceptance of the updated policy."
+    },
+    {
+      "type": "heading",
+      "text": "9. Contact Us"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have any questions or concerns about this Privacy Policy, please contact us at: legal@istima.app"
+    }
+  ]
+}

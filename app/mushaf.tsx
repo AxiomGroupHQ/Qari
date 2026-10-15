@@ -1,5 +1,12 @@
-import React, {useEffect, useMemo, useCallback} from 'react';
-import {View, ActivityIndicator, StyleSheet} from 'react-native';
+import React, {useEffect, useMemo, useCallback, useState} from 'react';
+import {
+  View,
+  ActivityIndicator,
+  StyleSheet,
+  Platform,
+  Text,
+  Pressable,
+} from 'react-native';
 import {Stack, useLocalSearchParams} from 'expo-router';
 import * as ScreenOrientation from 'expo-screen-orientation';
 import {useTheme} from '@/hooks/useTheme';
@@ -23,10 +30,28 @@ export default function MushafScreen() {
   const {surah, page, ayah} = useLocalSearchParams<MushafScreenParams>();
   const {theme} = useTheme();
 
-  // Safety net — DK data is initialized at AppInitializer priority 4-5,
-  // so in practice this is always true by the time MushafScreen mounts.
-  // Capture it as a value so the hooks below run unconditionally.
-  const dkReady = digitalKhattDataService.initialized;
+  // Initialize on demand too, so browser deep links can recover from a failed preload.
+  // @ai-start
+  const [dkReady, setDkReady] = useState(digitalKhattDataService.initialized);
+  const [dkFailed, setDkFailed] = useState(false);
+  const [dkAttempt, setDkAttempt] = useState(0);
+  useEffect(() => {
+    if (dkReady) return;
+    let active = true;
+    setDkFailed(false);
+    digitalKhattDataService.initialize().then(
+      () => {
+        if (active) setDkReady(true);
+      },
+      () => {
+        if (active) setDkFailed(true);
+      },
+    );
+    return () => {
+      active = false;
+    };
+  }, [dkReady, dkAttempt]);
+  // @ai-end
   const surahStartPages = dkReady
     ? digitalKhattDataService.getSurahStartPages()
     : {};
@@ -52,6 +77,7 @@ export default function MushafScreen() {
 
   // Allow landscape while the mushaf screen is open; re-lock portrait on exit.
   useEffect(() => {
+    if (Platform.OS === 'web') return; // Browser orientation requires user permission. @ai
     ScreenOrientation.unlockAsync();
     return () => {
       ScreenOrientation.lockAsync(
@@ -96,7 +122,26 @@ export default function MushafScreen() {
     return (
       <View
         style={[styles.loading, {backgroundColor: theme.colors.background}]}>
-        <ActivityIndicator size="large" color={theme.colors.text} />
+        {/* @ai-start */}
+        {dkFailed ? (
+          <>
+            <Text style={{color: theme.colors.text}}>
+              The Mushaf could not load.
+            </Text>
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => setDkAttempt(attempt => attempt + 1)}
+              style={{padding: 16}}>
+              <Text style={{color: theme.colors.text}}>Try again</Text>
+            </Pressable>
+          </>
+        ) : (
+          <>
+            <ActivityIndicator size="large" color={theme.colors.text} />
+            <Text style={{color: theme.colors.text}}>Loading Mushaf…</Text>
+          </>
+        )}
+        {/* @ai-end */}
       </View>
     );
   }

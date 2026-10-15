@@ -1,10 +1,11 @@
 import React from 'react';
-import {View, Text, StyleSheet, ScrollView, Image} from 'react-native';
+import {View, Text, StyleSheet, ScrollView} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import {useTheme} from '@/hooks/useTheme';
 import {Ionicons} from '@expo/vector-icons';
 import Color from 'color';
 import {ChangelogEntry} from '@/types/changelog';
+import {IstimaWordmark} from '@/components/branding/IstimaWordmark'; // @ai
 
 interface ChangelogContentProps {
   changelog: ChangelogEntry;
@@ -32,10 +33,7 @@ export function ChangelogContent({
       contentContainerStyle={styles.scrollContent}>
       {showVersion && (
         <View style={styles.header}>
-          <Image
-            source={require('@/assets/images/icon.png')}
-            style={styles.logo}
-          />
+          <IstimaWordmark compact />
           <Text style={[styles.version, {color: theme.colors.textSecondary}]}>
             Version {changelog.version} · {formatDate(changelog.releaseDate)}
           </Text>

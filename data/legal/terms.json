@@ -1,0 +1,309 @@
+{
+  "title": "Terms of Service",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "ISTIMA Terms of Service"
+    },
+    {
+      "type": "paragraph",
+      "text": "Last Updated: March 2025"
+    },
+    {
+      "type": "paragraph",
+      "text": "Welcome to ISTIMA, a free Qur'an streaming application featuring 200+ reciters and multiple rewayat. These Terms of Service (\"Terms\") govern your use of the ISTIMA application (\"App\") provided by ISTIMA (\"we\", \"us\", or \"our\"). By downloading, installing, or using our App, you agree to be bound by these Terms. If you do not agree with these Terms, please do not use the App."
+    },
+    {
+      "type": "paragraph",
+      "text": "For any questions about these Terms, you can contact us at legal@istima.app."
+    },
+    {
+      "type": "heading",
+      "text": "1. Content Ownership & Licensing"
+    },
+    {
+      "type": "heading",
+      "text": "1.1 External Content Sources"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most Qur'anic audio content is sourced from MP3Quran.com through their public APIs. By using our App, you acknowledge that this content is provided by MP3Quran.com and is subject to their terms of service. We provide appropriate attribution to MP3Quran.com as the source of this content."
+    },
+    {
+      "type": "heading",
+      "text": "1.2 Exclusive Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some exclusive recitations within the App are owned by the reciters themselves. ISTIMA does not own this content but has permission to distribute it. These include live Taraweeh recordings and other exclusive recitations. While we ensure all reciters are legitimate (with ijaza or vouched for by respected sheikhs), we cannot guarantee absolute perfection in recitation as human error is possible. Allah alone is perfect."
+    },
+    {
+      "type": "heading",
+      "text": "1.3 Textual Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "Qur'anic text content is retrieved from Quran.com or Qul.Tarteel.ai. We provide appropriate attribution to these sources. While these platforms are managed by legitimate companies dedicated to accuracy, we encourage users to verify any critical textual information with printed Mushaf editions."
+    },
+    {
+      "type": "heading",
+      "text": "2. User Permissions & Restrictions"
+    },
+    {
+      "type": "heading",
+      "text": "2.1 Permitted Use"
+    },
+    {
+      "type": "paragraph",
+      "text": "You are permitted to use the App for normal day-to-day usage, which includes:"
+    },
+    {
+      "type": "item",
+      "text": "Personal, non-commercial use"
+    },
+    {
+      "type": "item",
+      "text": "Listening to recitations"
+    },
+    {
+      "type": "item",
+      "text": "Downloading content for offline personal use"
+    },
+    {
+      "type": "item",
+      "text": "Sharing links to content within the App"
+    },
+    {
+      "type": "heading",
+      "text": "2.2 Prohibited Use"
+    },
+    {
+      "type": "paragraph",
+      "text": "You are prohibited from:"
+    },
+    {
+      "type": "item",
+      "text": "Reverse engineering, decompiling, or disassembling the App"
+    },
+    {
+      "type": "item",
+      "text": "Attempting to derive the source code"
+    },
+    {
+      "type": "item",
+      "text": "Removing copyright notices or attributions"
+    },
+    {
+      "type": "item",
+      "text": "Using automated systems to access or download content"
+    },
+    {
+      "type": "item",
+      "text": "Redistributing, selling, or licensing content"
+    },
+    {
+      "type": "item",
+      "text": "Using the App for any illegal purposes"
+    },
+    {
+      "type": "item",
+      "text": "Circumventing security measures"
+    },
+    {
+      "type": "heading",
+      "text": "2.3 Content Sharing"
+    },
+    {
+      "type": "paragraph",
+      "text": "You may share links to content within the App and reference recitations for educational or religious purposes. However, you may not redistribute the audio files themselves commercially or claim ownership of the content."
+    },
+    {
+      "type": "heading",
+      "text": "3. Technical Terms"
+    },
+    {
+      "type": "heading",
+      "text": "3.1 Service Availability"
+    },
+    {
+      "type": "paragraph",
+      "text": "While we strive to ensure continuous availability of our App, we do not guarantee uninterrupted access. The service may experience interruptions due to maintenance, updates, or technical issues. We provide the service on a best-efforts basis."
+    },
+    {
+      "type": "heading",
+      "text": "3.2 App Updates"
+    },
+    {
+      "type": "paragraph",
+      "text": "Users may be required to update the App to continue using the service. Older versions may eventually become unsupported. Updates may be necessary for security, functionality, or content access. We recommend keeping the App updated to the latest version."
+    },
+    {
+      "type": "heading",
+      "text": "3.3 Device Compatibility"
+    },
+    {
+      "type": "paragraph",
+      "text": "The App is designed to work on standard iOS and Android devices. Not all features may be available on all devices. Minimum operating system requirements may change over time. The App follows Apple App Store and Google Play Store standards for compatibility."
+    },
+    {
+      "type": "heading",
+      "text": "3.4 Offline Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "Downloaded content is for personal use only. There are no specific restrictions on how long content remains available offline. However, downloaded content should not be extracted from the App or redistributed in any form."
+    },
+    {
+      "type": "heading",
+      "text": "4. User Interactions"
+    },
+    {
+      "type": "heading",
+      "text": "4.1 User Feedback & Submissions"
+    },
+    {
+      "type": "paragraph",
+      "text": "When you submit feedback, bug reports, or feature requests, you grant ISTIMA a royalty-free, perpetual, irrevocable right to use, reproduce, modify, and incorporate the ideas. You confirm that you have the right to share such feedback. No compensation will be provided for implemented suggestions, and ISTIMA has no obligation to implement any suggestions."
+    },
+    {
+      "type": "heading",
+      "text": "4.2 User Communications"
+    },
+    {
+      "type": "paragraph",
+      "text": "ISTIMA may send notifications related to service updates, new features, or content. Users can opt out of non-essential communications through app settings or by contacting us. Essential communications about service changes or updates to these Terms may still be sent regardless of notification preferences."
+    },
+    {
+      "type": "heading",
+      "text": "5. Legal Protections"
+    },
+    {
+      "type": "heading",
+      "text": "5.1 Disclaimers & Warranties"
+    },
+    {
+      "type": "paragraph",
+      "text": "The App is provided \"as is\" without warranties of any kind, either express or implied. We make no guarantees regarding the accuracy of Qur'anic text or recitations. Recitations by exclusive reciters are provided by legitimate reciters with proper credentials, but human error is possible. Allah alone is perfect, and any errors in recitation are human in nature."
+    },
+    {
+      "type": "heading",
+      "text": "5.2 Liability Limitations"
+    },
+    {
+      "type": "paragraph",
+      "text": "To the maximum extent permitted by applicable law, ISTIMA shall not be liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use the App. We are not liable for third-party content or links, or for issues arising from internet connectivity or device functionality."
+    },
+    {
+      "type": "heading",
+      "text": "5.3 Indemnification"
+    },
+    {
+      "type": "paragraph",
+      "text": "You agree to defend, indemnify, and hold harmless ISTIMA from claims arising from your violation of these Terms, laws, or third-party rights. In simpler terms, you are responsible for your own actions when using the App."
+    },
+    {
+      "type": "heading",
+      "text": "6. Administrative Terms"
+    },
+    {
+      "type": "heading",
+      "text": "6.1 Modifications to Terms"
+    },
+    {
+      "type": "paragraph",
+      "text": "These Terms may be updated periodically. Users will be notified of significant changes via in-app notification. Continued use after changes constitutes acceptance of the updated Terms. The date of the last update will be included at the top of the Terms."
+    },
+    {
+      "type": "heading",
+      "text": "6.2 Termination"
+    },
+    {
+      "type": "paragraph",
+      "text": "You may terminate your use of the App by deleting it from your device. ISTIMA reserves the right to terminate access for violations of these Terms. Upon termination, downloaded content may no longer be accessible through the App."
+    },
+    {
+      "type": "heading",
+      "text": "6.3 Governing Law"
+    },
+    {
+      "type": "paragraph",
+      "text": "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction where ISTIMA is registered, without regard to its conflict of law provisions."
+    },
+    {
+      "type": "heading",
+      "text": "6.4 Severability"
+    },
+    {
+      "type": "paragraph",
+      "text": "If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+    },
+    {
+      "type": "heading",
+      "text": "7. Special Considerations"
+    },
+    {
+      "type": "heading",
+      "text": "7.1 Religious Content Respect"
+    },
+    {
+      "type": "paragraph",
+      "text": "The App contains sacred Qur'anic content that must be treated with respect. Users are prohibited from misusing this religious material or using it in a disrespectful manner. By using the App, you acknowledge the sacred nature of the content and agree to treat it accordingly."
+    },
+    {
+      "type": "heading",
+      "text": "7.2 Age Considerations"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are no minimum age restrictions for the App, as it provides access to religious content suitable for all ages. However, parental guidance is recommended for younger users. We comply with the Children's Online Privacy Protection Act (COPPA) for users under 13."
+    },
+    {
+      "type": "heading",
+      "text": "7.3 Future Paid Features"
+    },
+    {
+      "type": "paragraph",
+      "text": "While the App is currently free, we may introduce premium features in the future. If premium features are introduced, we will provide clear information about payment terms, cancellation, and refund policies. Please note that core Qur'anic content will always remain free."
+    },
+    {
+      "type": "heading",
+      "text": "7.4 Third-Party Links & Services"
+    },
+    {
+      "type": "paragraph",
+      "text": "The App contains links to third parties including credits to designers, development libraries, Qur'anic text/info libraries, and audio libraries. ISTIMA is not responsible for third-party content. Users access third-party content at their own risk. Third-party terms may apply when accessing their services."
+    },
+    {
+      "type": "heading",
+      "text": "8. App Store Compliance"
+    },
+    {
+      "type": "heading",
+      "text": "8.1 Apple App Store"
+    },
+    {
+      "type": "paragraph",
+      "text": "For users who download the App from the Apple App Store, you acknowledge that Apple has no obligation for maintenance or support of the App. Apple is not responsible for addressing any claims related to the App. Apple is a third-party beneficiary of these Terms."
+    },
+    {
+      "type": "heading",
+      "text": "8.2 Google Play Store"
+    },
+    {
+      "type": "paragraph",
+      "text": "For users who download the App from the Google Play Store, the App complies with the Google Play Developer Distribution Agreement. You acknowledge that Google is not a party to these Terms."
+    },
+    {
+      "type": "heading",
+      "text": "9. Contact Information"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have any questions, concerns, or feedback about these Terms, please contact us at: legal@istima.app"
+    },
+    {
+      "type": "paragraph",
+      "text": "We welcome your questions and are committed to addressing any concerns you may have about these Terms."
+    }
+  ]
+}

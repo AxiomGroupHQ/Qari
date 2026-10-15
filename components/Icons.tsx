@@ -1,4 +1,5 @@
 import React from 'react';
+import {Image} from 'expo-image'; // @ai
 import Svg, {Path, G, Circle, Rect, Line} from 'react-native-svg';
 
 export interface IconProps {
@@ -500,26 +501,13 @@ export const PlaylistIcon: React.FC<IconProps> = ({color, size}) => (
 );
 
 // @ai-start
-export const LogoIcon: React.FC<IconProps> = ({size, color, isDarkMode}) => (
-  <Svg width={size} height={size} viewBox="0 0 1024 1024" fill="none">
-    {[
-      {x: 240, y: 432, h: 160},
-      {x: 360, y: 352, h: 320},
-      {x: 480, y: 256, h: 512},
-      {x: 600, y: 352, h: 320},
-      {x: 720, y: 432, h: 160},
-    ].map(bar => (
-      <Rect
-        key={bar.x}
-        x={bar.x}
-        y={bar.y}
-        width={64}
-        height={bar.h}
-        rx={32}
-        fill={color ?? (isDarkMode ? '#b8e6ca' : '#0c302b')}
-      />
-    ))}
-  </Svg>
+export const LogoIcon: React.FC<IconProps> = ({size}) => (
+  <Image
+    source={require('@/assets/images/icon.png')}
+    style={{width: size, height: size}}
+    contentFit="contain"
+    accessible={false}
+  />
 );
 // @ai-end
 

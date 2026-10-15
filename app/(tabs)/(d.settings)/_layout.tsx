@@ -35,7 +35,6 @@ export default function SettingsLayout() {
           name="about"
           options={{title: `About ${branding.appName}`}}
         />
-        <Stack.Screen name="credits" options={{title: 'Credits'}} />
         <Stack.Screen
           name="mushaf-settings"
           options={{title: 'Mushaf Settings'}}

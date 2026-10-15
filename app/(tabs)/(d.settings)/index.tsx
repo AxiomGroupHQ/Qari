@@ -32,14 +32,7 @@ import {ThemePicker} from '@/components/settings/ThemePicker';
 import branding from '@/config/branding';
 
 const isExternalLink = (type: string): boolean => {
-  return [
-    'support',
-    'featureRequest',
-    'terms',
-    'privacy',
-    'rateApp',
-    'github',
-  ].includes(type);
+  return ['support', 'featureRequest', 'rateApp'].includes(type);
 };
 
 const settingsItems = [
@@ -135,20 +128,6 @@ const settingsItems = [
         description: 'Learn more about our mission',
         icon: 'infoRounded',
         iconType: 'custom',
-      },
-      {
-        title: 'Credits',
-        type: 'credits',
-        description: 'View contributors and acknowledgments',
-        icon: 'medal',
-        iconType: 'custom',
-      },
-      {
-        title: 'Contribute on GitHub',
-        type: 'github',
-        description: `${branding.appName} is now open source. Star, report issues, or submit a PR`,
-        icon: 'github',
-        iconType: 'feather',
       },
       {
         title: 'Terms of Service',
@@ -266,19 +245,13 @@ export default function SettingsScreen() {
         await Linking.openURL(branding.supportUrl);
         break;
       case 'terms':
-        await Linking.openURL(branding.termsUrl);
+        router.push('/terms'); // @ai
         break;
       case 'privacy':
-        await Linking.openURL(branding.privacyUrl);
+        router.push('/privacy'); // @ai
         break;
       case 'about':
         router.push('/(d.settings)/about');
-        break;
-      case 'credits':
-        router.push('/(d.settings)/credits');
-        break;
-      case 'github':
-        await Linking.openURL('https://github.com/AxiomGroupHQ/Qari');
         break;
       default:
         break;

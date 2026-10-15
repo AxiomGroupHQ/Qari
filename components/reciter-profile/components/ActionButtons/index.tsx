@@ -30,6 +30,8 @@ export const ActionButtons: React.FC<ActionButtonsProps> = ({
         />
       </Pressable>
       <Pressable
+        accessibilityRole="button" // @ai
+        accessibilityLabel="Play all surahs" // @ai
         style={[styles.circleButton, styles.playButton]}
         onPress={onPlayPress}>
         <View style={styles.playIconContainer}>

@@ -1,11 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
-  <title>ISTIMA · استماع</title>
-  <rect width="1024" height="1024" rx="240" fill="#0c302b"/>
-  <g fill="#b8e6ca">
-    <rect x="240" y="432" width="64" height="160" rx="32"/>
-    <rect x="360" y="352" width="64" height="320" rx="32"/>
-    <rect x="480" y="256" width="64" height="512" rx="32" fill="#f4f3ec"/>
-    <rect x="600" y="352" width="64" height="320" rx="32"/>
-    <rect x="720" y="432" width="64" height="160" rx="32"/>
-  </g>
+  <text x="512" y="430" text-anchor="middle" fill="#d1ad5d" font-family="sans-serif" font-weight="700" font-size="152" letter-spacing="12">ISTIMA</text>
+  <text x="512" y="575" text-anchor="middle" fill="#d1ad5d" font-family="sans-serif" font-size="112">استماع</text>
+  <path d="M180 630H844" stroke="#d1ad5d" stroke-width="4"/>
 </svg>

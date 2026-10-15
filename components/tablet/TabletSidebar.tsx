@@ -8,7 +8,6 @@ import {
   SearchIcon,
   CollectionIcon,
   SettingsIcon,
-  LogoIcon,
 } from '@/components/Icons';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {CommonActions} from '@react-navigation/native';
@@ -180,8 +179,7 @@ export const TabletSidebar: React.FC<BottomTabBarProps> = ({
   return (
     <View style={containerStyle}>
       <View style={[styles.header, expanded && styles.headerExpanded]}>
-        <LogoIcon color={theme.colors.text} size={40} isDarkMode={isDarkMode} />
-        {expanded ? <IstimaWordmark compact /> : null}
+        <IstimaWordmark compact /> {/* @ai */}
       </View>
 
       <View style={styles.items}>
@@ -191,8 +189,8 @@ export const TabletSidebar: React.FC<BottomTabBarProps> = ({
             options.tabBarLabel !== undefined
               ? options.tabBarLabel
               : options.title !== undefined
-              ? options.title
-              : route.name;
+                ? options.title
+                : route.name;
           const isFocused = state.index === index;
 
           return (

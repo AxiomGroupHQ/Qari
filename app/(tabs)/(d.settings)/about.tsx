@@ -1,9 +1,11 @@
+// @ai-generated
 import React, {useMemo} from 'react';
-import {View, Text, ScrollView, Image} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
 import {ScaledSheet, moderateScale} from 'react-native-size-matters';
 import {Theme} from '@/utils/themeUtils';
 import Color from 'color';
+import {IstimaWordmark} from '@/components/branding/IstimaWordmark'; // @ai
 import {VersionDisplay} from '@/components/VersionDisplay';
 
 interface FeatureProps {
@@ -32,36 +34,29 @@ export default function AboutScreen() {
         showsVerticalScrollIndicator={false}>
         <View>
           <View style={styles.logoContainer}>
-            <Image
-              source={require('@/assets/images/icon.png')}
-              style={styles.logo}
-              resizeMode="contain"
-            />
+            <IstimaWordmark />
           </View>
 
           <VersionDisplay style={styles.version} />
 
-          <Text style={styles.tagline}>
-            Your Companion for Quranic Recitation
-          </Text>
+          <Text style={styles.tagline}>Listen. Reflect. Remember Allah.</Text>
 
           <View style={styles.section}>
             <Text style={styles.contentHeading}>Alhamdulillah</Text>
             <Text style={styles.bodyText}>
-              All praise is due to Allah for blessing us with the opportunity to
-              serve His Book and the Ummah. We are deeply grateful for being
-              chosen to develop this platform that connects people with the
-              beautiful recitation of the Holy Quran.
+              All praise is due to Allah. ISTIMA — استماع — is a place to
+              listen, reflect, and strengthen your connection with the Quran.
+              Built for the Ummah by Halalweb, it brings Quran recitation,
+              reading, and learning together in one calm space.
             </Text>
           </View>
 
           <View style={styles.section}>
             <Text style={styles.contentHeading}>Our Mission</Text>
             <Text style={styles.bodyText}>
-              ISTIMA is dedicated to making the beautiful recitation of the Holy
-              Quran accessible to everyone. We strive to provide a serene and
-              intuitive experience for listening to the Quran, featuring the
-              world&apos;s most renowned reciters and a few ISTIMA Exclusives.
+              Quran • Bayan • Tafsir • Knowledge. Our aim is to make listening
+              and reflection part of everyday life: at home, on the move, and
+              wherever you have a moment to remember Allah.
             </Text>
           </View>
 
@@ -107,50 +102,23 @@ export default function AboutScreen() {
           </View>
 
           <View style={styles.section}>
-            <Text style={styles.sectionHeader}>COMING SOON</Text>
+            <Text style={styles.contentHeading}>Read, Listen, and Reflect</Text>
             <Text style={styles.bodyText}>
-              We&apos;re working hard to bring you even more features to enhance
-              your Quranic journey, including:
+              Read the Mushaf, explore translations and tafsir, save verses and
+              notes, and return to daily adhkar. Choose your reciter, build
+              playlists, and shape a listening experience that suits your day.
+              Available features vary by device; native apps also support
+              downloads for offline listening.
             </Text>
-            <View style={[styles.featureList, {marginTop: moderateScale(12)}]}>
-              <Feature
-                title="Multiple Translations"
-                description="Access Quran translations in various languages to better understand the meanings"
-                styles={styles}
-              />
-              <Feature
-                title="Word-by-Word Follow Along"
-                description="Real-time word highlighting synchronized with recitations to help you follow and learn"
-                styles={styles}
-              />
-              <Feature
-                title="Smart Bookmarking"
-                description="Save your favorite verses and track your progress across surahs"
-                styles={styles}
-              />
-              <Feature
-                title="Learning Tools"
-                description="Interactive features to help you memorize and understand the Quran better"
-                styles={styles}
-              />
-              <Feature
-                title="Community Features"
-                description="Connect with others, share your journey, and grow together in your Quranic experience"
-                styles={styles}
-              />
-            </View>
           </View>
 
           <View style={styles.section}>
             <Text style={styles.contentHeading}>Our Commitment</Text>
             <Text style={styles.bodyText}>
-              We are committed to continuous improvement and maintaining the
-              highest standards of quality. Our team works diligently to ensure
-              that ISTIMA remains a reliable and respectful platform for Quranic
-              recitation. InshaAllah, with the help of Allah, we will continue
-              to develop and enhance these features to better serve the Ummah.
-              We are grateful for your support and feedback as we continue this
-              blessed journey together.
+              We care about the accuracy of sacred content, respectful design,
+              and reliable access. We continue to improve ISTIMA with care for
+              the people who use it. May Allah accept this effort and make it
+              beneficial for everyone who listens, reads, and reflects.
             </Text>
           </View>
         </View>
