@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Error sa pagsisimula ng player: {{message}}",
+    "errorLoadingFonts": "Error sa pag-load ng mga font"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Home ng ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Lahat",
+      "clearAll": "I-clear lahat",
+      "hasPhoto": "May larawan"
+    },
+    "filterModal": {
+      "apply": "Ilapat",
+      "filterReciters": "Salain ang mga tagabigkas",
+      "recitationStyles": "Mga estilo ng pagbigkas",
+      "reset": "I-reset",
+      "rewayatTypes": "Mga uri ng riwayat"
+    },
+    "recitersFound_one": "May {{count}} tagabigkas na tumutugma sa mga kasalukuyang filter",
+    "recitersFound_other": "May {{count}} tagabigkas na tumutugma sa mga kasalukuyang filter"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Mga minamahal na surah"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "I-bookmark ang mga talata para makita rito",
+      "bookmarks": "Mga bookmark",
+      "noBookmarksYet": "Wala pang bookmark",
+      "removeBookmark": "Alisin ang bookmark"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Riwayat",
+      "searchPlaylistsRecitersSurahsRewayat": "Maghanap ng mga playlist, tagabigkas, surah, riwayat...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Maghanap ng mga playlist, tagabigkas, surah, riwayat, at download",
+      "searchYourCollection": "Maghanap sa iyong koleksiyon",
+      "searching": "Naghahanap...",
+      "tryDifferentKeywords": "Subukan ang ibang salita sa paghahanap"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Mag-download ng mga surah para makita rito",
+      "noDownloadsYet": "Wala pang download",
+      "playAll": "I-play lahat"
+    },
+    "favoritereciters": {
+      "addReciters": "Magdagdag ng mga tagabigkas",
+      "addRecitersToSeeThem": "Magdagdag ng mga tagabigkas para makita rito",
+      "noFavoriteRecitersYet": "Wala pang paboritong tagabigkas",
+      "removeFromFavorites": "Alisin sa mga paborito",
+      "searchFavoriteReciters": "Maghanap ng mga paboritong tagabigkas"
+    },
+    "index": {
+      "addToCollection": "Idagdag sa koleksiyon",
+      "bookmarks": "Mga bookmark",
+      "createYourFirstPlaylist": "Gawin ang iyong unang playlist",
+      "downloads": "Mga download",
+      "items_one": "{{count}} item",
+      "items_other": "{{count}} item",
+      "loved": "Minamahal",
+      "noBookmarksYet": "Wala pang bookmark",
+      "noDownloadsYet": "Wala pang download",
+      "noFavoritesYet": "Wala pang paborito",
+      "noLovedSurahsYet": "Wala pang minamahal na surah",
+      "noNotesYet": "Wala pang tala",
+      "noUploadsYet": "Wala pang upload",
+      "notes": "Mga tala",
+      "playlists": "Mga playlist",
+      "reciters": "Mga tagabigkas",
+      "uploads": "Mga upload"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Na-download na ang lahat ng minamahal na surah.",
+      "allLovedSurahsHaveBeen": "Na-download na ang lahat ng minamahal na surah.",
+      "downloadError": "Error sa pag-download",
+      "loveSurahsToSeeThem": "Markahan ang mga surah bilang minamahal para makita rito",
+      "noLovedSurahsYet": "Wala pang minamahal na surah",
+      "someDownloadsMayHaveFailed": "Maaaring hindi natuloy ang ilang download.",
+      "unloveAllSurahs": "Alisin ang lahat sa mga minamahal na surah"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Magdagdag ng mga tala sa mga talata para makita rito",
+      "editNote": "I-edit ang tala",
+      "noNotesYet": "Wala pang tala",
+      "notes": "Mga tala"
+    },
+    "playlistModal": {
+      "name": "Pangalan"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Gumawa ng mga playlist para makita rito",
+      "noPlaylistsYet": "Wala pang playlist",
+      "playlists": "Mga playlist"
+    },
+    "uploads": {
+      "removeAllUploads": "Alisin ang lahat ng upload",
+      "uploadRecitationsToSeeThem": "Mag-upload ng mga pagbigkas para makita rito"
+    }
+  },
+  "common": {
+    "1Time": "1 beses",
+    "2Times": "2 beses",
+    "3Times": "3 beses",
+    "addToCollection": "Idagdag sa koleksiyon",
+    "addToQueue": "Idagdag sa pila",
+    "allSurahs": "Lahat ng surah",
+    "alreadyDownloaded": "Na-download na",
+    "arabic": "Arabic",
+    "asc": "Pataas",
+    "browseAll": "Tingnan lahat",
+    "browseAllReciters": "Tingnan ang lahat ng tagabigkas",
+    "cancel": "Kanselahin",
+    "clear": "I-clear",
+    "copyToClipboard": "Kopyahin sa clipboard",
+    "createNewPlaylist": "Gumawa ng bagong playlist",
+    "defaultReciter": "Default na tagabigkas",
+    "delete": "Burahin",
+    "deleteNote": "Burahin ang tala",
+    "deleteRecitation": "Burahin ang pagbigkas",
+    "desc": "Pababa",
+    "downloadComplete": "Tapos na ang pag-download",
+    "downloadFailed": "Hindi natuloy ang pag-download",
+    "downloads": "Mga download",
+    "editDetails": "I-edit ang mga detalye",
+    "error": "Error",
+    "favoriteReciters": "Mga paboritong tagabigkas",
+    "followAlong": "Sundan ang teksto",
+    "from": "Mula",
+    "goToReciter": "Pumunta sa tagabigkas",
+    "goToVerse": "Pumunta sa talata",
+    "learnAboutSurah": "Alamin ang tungkol sa surah",
+    "loading": "Naglo-load...",
+    "loop": "Ulit-ulitin",
+    "loved": "Minamahal",
+    "mushafSettings": "Mga setting ng Mushaf",
+    "next": "Susunod",
+    "noRecitersFound": "Walang nahanap na tagabigkas",
+    "noResultsFound": "Walang nahanap na resulta",
+    "noUploadsYet": "Wala pang upload",
+    "play": "I-play",
+    "playEachVerse": "I-play ang bawat talata",
+    "playNow": "I-play ngayon",
+    "playSpeed": "Bilis ng pag-play",
+    "playTheRange": "I-play ang saklaw",
+    "playlistName": "Pangalan ng playlist",
+    "prev": "Nakaraan",
+    "readingTheme": "Tema sa pagbabasa",
+    "recentSearches": "Mga kamakailang paghahanap",
+    "reciter": "Tagabigkas",
+    "reciterChoice": "Pagpili ng tagabigkas",
+    "reciters": "Mga tagabigkas",
+    "remove": "Alisin",
+    "removeAllDownloads": "Alisin ang lahat ng download",
+    "removeHighlight": "Alisin ang highlight",
+    "rev": "Pagpapahayag",
+    "save": "I-save",
+    "search": "Maghanap",
+    "searchReciters": "Maghanap ng mga tagabigkas...",
+    "searchSurahs": "Maghanap ng mga surah",
+    "share": "Ibahagi",
+    "shareAsImage": "Ibahagi bilang larawan",
+    "shareAsText": "Ibahagi bilang teksto",
+    "sharedPhrases": "Mga magkakaparehong parirala",
+    "showBasmallah": "Ipakita ang Basmala",
+    "stop": "Ihinto",
+    "storage": "Storage",
+    "surah": "Surah",
+    "surahs": "Mga surah",
+    "to": "Hanggang",
+    "translation": "Salin",
+    "translationsTafaseer": "Mga salin at tafsir",
+    "transliteration": "Transliterasyon",
+    "uploads": "Mga upload",
+    "useDefaultReciter": "Gamitin ang default na tagabigkas",
+    "verseReference": "Sanggunian ng talata",
+    "verses": "Mga talata",
+    "whatSNew": "Ano ang bago",
+    "wordByWord": "Salita bawat salita",
+    "writeYourNoteHere": "Isulat ang iyong tala rito...",
+    "yourPlaylists": "Mga playlist mo"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "I-play ang lahat ng surah"
+    },
+    "searchHeader": {
+      "searchSurahs": "Maghanap ng mga surah"
+    },
+    "searchView": {
+      "noSurahsFound": "Walang nahanap na surah"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Walang available na surah"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Magdagdag ng pagbigkas",
+      "uploadRecitationsToSeeThem": "Mag-upload ng mga pagbigkas para makita rito"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Na-download • {{count}} surah",
+    "subtitle_other": "Na-download • {{count}} surah"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Paumanhin, nagkaroon ng error"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Tingnan ang lahat ng 114 na surah"
+    },
+    "savedAdhkarHero": {
+      "saved": "Na-save",
+      "yourCollection": "Koleksiyon mo"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SURAH NGAYONG ARAW"
+    },
+    "surahsHero": {
+      "number": "Bilang"
+    }
+  },
+  "language": {
+    "later": "Mamaya",
+    "restartMessage": "I-restart ang app para mailapat ang bagong direksiyon ng layout.",
+    "restartNow": "I-restart ngayon",
+    "restartTitle": "Kailangang i-restart",
+    "search": "Maghanap ng mga wika",
+    "system": "Wika ng device"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Magpatuloy"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Laktawan"
+    }
+  },
+  "mushaf": {
+    "juz": "Juz {{juz}}",
+    "loadingMushaf": "Nilo-load ang Mushaf…",
+    "main": {
+      "mushafSettings": "Mga setting ng Mushaf"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Palitan ang tagabigkas",
+      "changeReciter2": "Palitan ang tagabigkas",
+      "nextAyah": "Susunod na talata",
+      "playbackOptions": "Mga opsiyon sa pag-play",
+      "previousAyah": "Nakaraang talata"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Maghanap ng mga surah, talata, pahina, o juz",
+      "recentReads": "MGA KAMAKAILANG BINASA",
+      "searchSurahsPagesOrJuz": "Maghanap ng mga surah, pahina, o juz...",
+      "searchTheMushaf": "Maghanap sa Mushaf"
+    },
+    "options": "Mga opsiyon",
+    "page": "Pahina {{page}}",
+    "pageAndSurah": "Pahina {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Hindi ma-load ang Mushaf.",
+    "tryAgain": "Subukang muli"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Hina-highlight ang pangalan ni Allah at mga banal na titulong gaya ng Rabb sa Mushaf."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Salit-salitang highlight ayon sa tematikong sipi",
+    "arabicFontSize": "Laki ng Arabic na font",
+    "bold": "Makapal",
+    "book": "Aklat",
+    "colorLegend": "Gabay sa mga kulay",
+    "currentlyReading": "Kasalukuyang binabasa",
+    "divineNames": "MGA BANAL NA PANGALAN",
+    "fontSize": "Laki ng font",
+    "fullscreen": "Buong screen",
+    "hamzaReplacedByLongVowel": "Hamza na pinalitan ng mahabang patinig",
+    "heavyLamInAllahAfter": "Mabigat na lam sa Allah pagkatapos ng mga madiing titik",
+    "highlightAllahRabb": "I-highlight ang Allah / Rabb",
+    "horizontal": "Pahalang",
+    "ibdal": "Ibdal",
+    "list": "Listahan",
+    "loadingSample": "Nilo-load ang halimbawa...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Pinakamatingkad",
+    "medium": "Katamtaman",
+    "modernMadinahPrintedPipeline": "Modernong pagproseso ng limbag ng Madinah",
+    "mushaf": "Mushaf",
+    "normal": "Normal",
+    "originalMushafWeight": "Orihinal na kapal ng teksto ng Mushaf",
+    "pageDesign": "DISENYO NG PAHINA",
+    "prolongedVowelAfterHamza": "Pinahabang patinig pagkatapos ng hamza",
+    "readingTheme": "TEMA SA PAGBABASA",
+    "scrollDirection": "DIREKSIYON NG PAG-SCROLL",
+    "showDifferences": "Ipakita ang mga pagkakaiba",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Bahagyang mas matingkad",
+    "softenedHamzaPronunciation": "Pinalambot na pagbigkas ng hamza",
+    "subcontinentNastaliqStyle": "Estilong Nastaliq ng subkontinente",
+    "taghlizAlLam": "Taghliz al-Lam",
+    "tajweedColoring": "Mga kulay ng tajwid",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "WALA PANG PREVIEW NG TEKSTO",
+    "textThickness": "KAPAL NG TEKSTO",
+    "thematicHighlighting": "Tematikong pag-highlight",
+    "trailingVowelOrMoodChange": "Pagbabago lamang sa panghuling patinig o panagano",
+    "usingSaheehInternationalTranslationWith": "Gamit: Salin ng Saheeh International na may mga talababa",
+    "vertical": "Patayo",
+    "viewType": "URI NG VIEW",
+    "vowelMoodShift": "Pagbabago ng patinig / panagano",
+    "wordByWord": "SALITA BAWAT SALITA",
+    "wordVariant": "Baryante ng salita"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Hindi maabot ang server",
+    "connectionRestored": "Naibalik ang koneksiyon",
+    "noInternetConnection": "Walang koneksiyon sa internet",
+    "showingCachedData": "Ipinapakita ang naka-cache na datos"
+  },
+  "organize": {
+    "createReciter": "Gawin ang \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Pila",
+      "queueIsEmpty": "Walang laman ang pila"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Lagyan ng tag ang pagbigkas na ito para makita ang teksto ng surah at mga detalye"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Playlist • {{count}} surah",
+    "subtitle_other": "Playlist • {{count}} surah"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Walang surah sa playlist na ito"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Talababa"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Isang pagbigkas na pinili para sa sandaling ito",
+      "discover": "Tumuklas",
+      "discoverANewVoice": "Tumuklas ng bagong tinig",
+      "explore": "Tuklasin",
+      "exploreTheUnexpected": "Tuklasin ang di-inaasahan",
+      "hearSomethingNew": "Makarinig ng bago",
+      "letTheQuranSurpriseYou": "Hayaang sorpresahin ka ng Quran",
+      "randomMix": "Random na halo",
+      "randomRecitation": "Random na pagbigkas",
+      "shuffleListen": "I-shuffle at makinig",
+      "surpriseMe": "Sorpresahin ako"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Ang pagbabago ng hitsura ay mailalapat sa buong app"
+  },
+  "reciterBrowse": {
+    "allReciters": "Lahat ng tagabigkas",
+    "browseReciters": "Tingnan ang mga tagabigkas",
+    "favorites": "Mga paborito"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Walang download para sa tagabigkas na ito"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Mga upload ko"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkar",
+    "bestForMemorization": "Pinakamainam sa pagsasaulo",
+    "bestForTajweed": "Pinakamainam sa tajwid",
+    "continueListening": "Magpatuloy sa pakikinig",
+    "exclusives": "Mga eksklusibo",
+    "exploreByRewayah": "Tuklasin ayon sa riwaya",
+    "featuredReciters": "Mga tampok na tagabigkas",
+    "fromYourCollection": "Mula sa koleksiyon mo",
+    "myRecitations": "Mga pagbigkas ko",
+    "newToQuranStartHere": "Bago sa Quran? Dito magsimula",
+    "seeMore": "Tingnan pa",
+    "yourFavorites": "Mga paborito mo"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Aktibo",
+      "activeTafseer": "AKTIBONG TAFSIR",
+      "activeTranslation": "AKTIBONG SALIN",
+      "deleteTafseer": "Burahin ang tafsir",
+      "deleteTranslation": "Burahin ang salin",
+      "noTafaseerFound": "Walang nahanap na tafsir",
+      "noTranslationsFound": "Walang nahanap na salin",
+      "unableToDownloadThisTafseer": "Hindi ma-download ang tafsir na ito. Suriin ang koneksiyon sa internet at subukang muli.",
+      "unableToDownloadThisTranslation": "Hindi ma-download ang salin na ito. Suriin ang koneksiyon sa internet at subukang muli."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Walang kamakailang paghahanap",
+      "tryDifferentKeywordsOrCheck": "Subukan ang ibang salita o suriin ang baybay",
+      "yourSearchHistoryWillAppear": "Dito lilitaw ang iyong kasaysayan ng paghahanap"
+    },
+    "surahsOrReciters": "Maghanap ng mga surah o tagabigkas"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Mga advanced na kontrol sa audio",
+      "browseByJuz": "Tingnan ayon sa juz",
+      "createAndManageYourOwn": "Gumawa at mamahala ng sarili mong mga playlist ng mga paboritong pagbigkas",
+      "crystalClearRecitationsFromThe": "Malilinaw na pagbigkas mula sa pinakamahuhusay na qari sa mundo, na may pinahusay na streaming",
+      "curatedCollections": "Mga piniling koleksiyon",
+      "customPlaylists": "Mga sariling playlist",
+      "customizeThemesAccentColorsAnd": "Iangkop ang mga tema, kulay, at setting ng audio sa iyong gusto",
+      "downloadSurahsForOfflineListening": "Mag-download ng mga surah para mapakinggan offline anumang oras at saanman kahit walang internet",
+      "easilyNavigateThroughTheQuran": "Madaling maghanap sa Quran gamit ang pagkakaayos at pagpapangkat ayon sa juz",
+      "features": "MGA TAMPOK",
+      "highQualityAudio": "De-kalidad na audio",
+      "listenReflectRememberAllah": "Makinig. Magnilay. Alalahanin si Allah.",
+      "offlineDownloads": "Mga offline na download",
+      "ourCommitment": "Ang aming pangako",
+      "ourMission": "Ang aming layunin",
+      "personalization": "Pag-aangkop",
+      "precisePlaybackControlWithContinuous": "Tumpak na kontrol sa pag-play na may tuluy-tuloy na pakikinig at naaayos na bilis ng pagbigkas",
+      "quranBayanTafsirKnowledgeOur": "Quran • Bayan • Tafsir • Kaalaman. Layunin naming maging bahagi ng araw-araw na buhay ang pakikinig at pagninilay: sa bahay, sa paglalakbay, at saanman may sandali kang alalahanin si Allah.",
+      "readListenAndReflect": "Magbasa, makinig, at magnilay",
+      "readTheMushafExploreTranslations": "Basahin ang Mushaf, tuklasin ang mga salin at tafsir, mag-save ng mga talata at tala, at balikan ang pang-araw-araw na adhkar. Piliin ang tagabigkas, gumawa ng mga playlist, at iangkop ang pakikinig sa iyong araw. Nag-iiba ang mga available na tampok ayon sa device; sinusuportahan din ng mga native app ang mga download para sa offline na pakikinig.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Maingat na inayos na mga surah para sa iba't ibang okasyon at tema",
+      "weCareAboutTheAccuracy": "Mahalaga sa amin ang katumpakan ng banal na nilalaman, magalang na disenyo, at maaasahang access. Patuloy naming pinapabuti ang ISTIMA nang may malasakit sa mga gumagamit nito. Nawa'y tanggapin ni Allah ang pagsisikap na ito at gawin itong kapaki-pakinabang sa lahat ng nakikinig, nagbabasa, at nagninilay."
+    },
+    "aboutApp": "Tungkol sa {{name}}",
+    "appearance": "HITSURA",
+    "defaultreciter": {
+      "changeDefaultReciter": "PALITAN ANG DEFAULT NA TAGABIGKAS"
+    },
+    "developer": "DEVELOPER",
+    "floatingDevMenu": "Lumulutang na menu ng developer",
+    "language": "Wika",
+    "languageDescription": "Piliin ang wika ng app",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Palaging gamitin ang napili mong default na tagabigkas",
+      "askEveryTime": "Magtanong sa bawat pagkakataon",
+      "chooseAReciterEachTime": "Pumili ng tagabigkas sa bawat pag-play",
+      "chooseHowYouWantTo": "Piliin kung paano pipili ng tagabigkas kapag nagpe-play ng mga surah",
+      "defaultSelectionMethod": "DEFAULT NA PARAAN NG PAGPILI",
+      "searchThroughOurCompleteCollection": "Maghanap sa aming buong koleksiyon ng mga tagabigkas",
+      "selectionPreference": "PREFERENSIYA SA PAGPILI"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Naalis na ang lahat ng download.",
+      "areYouSureYouWant": "Sigurado ka bang aalisin ang lahat ng na-download na nilalaman? Hindi na ito maibabalik.",
+      "cache": "Cache",
+      "cacheHasBeenCleared": "Na-clear na ang cache.",
+      "clearCache": "I-clear ang cache",
+      "failedToClearCache": "Hindi ma-clear ang cache.",
+      "failedToRemoveDownloads": "Hindi maalis ang mga download.",
+      "free": "Bakante",
+      "loadingStorageInformation": "Nilo-load ang impormasyon sa storage...",
+      "manageStorage": "PAMAHALAAN ANG STORAGE",
+      "otherApps": "Iba pang app",
+      "removeAllDownloads": "Alisin ang lahat ng download",
+      "removeAllTheQuranContent": "Alisin ang lahat ng nilalaman ng Quran na na-download mo para sa offline na paggamit.",
+      "storageBreakdown": "PAGKAKAHATI NG STORAGE",
+      "success": "Tagumpay",
+      "thisWillClearYourCache": "Iki-clear nito ang cache. Hindi aalisin ang iyong mga download.",
+      "youCanFreeUpStorage": "Maaari kang magbakante ng storage sa pag-clear ng cache. Hindi aalisin ang iyong mga download."
+    },
+    "themePicker": {
+      "auto": "Awtomatiko",
+      "dark": "Madilim",
+      "light": "Maliwanag"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Walang talaan ng mga pagbabago"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Tungkol sa {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Magdagdag ng paboritong tagabigkas",
+      "uploadRecitation": "Mag-upload ng pagbigkas"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Mga tunog sa paligid",
+      "none": "Wala",
+      "volume": "Lakas ng tunog"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "hal., Mga pagbigkas sa umaga"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Alisin ang download"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Tapos na"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Idagdag sa koleksiyon",
+      "addToQueue": "Idagdag sa pila",
+      "continuePlaying": "Magpatuloy sa pag-play",
+      "goToReciter": "Pumunta sa tagabigkas",
+      "removeFromRecents": "Alisin sa mga kamakailan"
+    },
+    "mushafLayoutSheet": {
+      "back": "Bumalik"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Huling talata",
+      "playbackSettings": "Mga setting ng pag-play",
+      "selectRange": "Pumili ng saklaw",
+      "startingVerse": "Unang talata"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Mga setting ng pag-uulit",
+      "start": "Magsimula",
+      "verseRange": "Saklaw ng mga talata"
+    },
+    "organizeRecitationSheet": {
+      "category": "Kategorya",
+      "customReciter": "Sariling tagabigkas",
+      "duA": "Du'a",
+      "eGMorningAdhkar": "hal., Adhkar sa umaga",
+      "lecture": "Panayam",
+      "moreOptions": "Iba pang opsiyon",
+      "other": "Iba pa",
+      "recording": "Rekording",
+      "rewayah": "Riwaya",
+      "searchSurahs": "Maghanap ng mga surah...",
+      "style": "Estilo",
+      "tafsir": "Tafsir",
+      "title": "Pamagat",
+      "type": "Uri",
+      "verseRangeOptional": "Saklaw ng mga talata (opsiyonal)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Bilis ng pag-play"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Na-download na ang lahat ng item sa playlist na ito.",
+      "anErrorOccurredWhileDownloading": "Nagkaroon ng error sa pag-download ng playlist. Subukang muli.",
+      "deletePlaylist": "Burahin ang playlist",
+      "downloadingPlaylist": "Dina-download ang playlist...",
+      "editPlaylist": "I-edit ang playlist",
+      "emptyPlaylist": "Walang lamang playlist",
+      "thisPlaylistIsEmpty": "Walang laman ang playlist na ito."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Tungkol sa riwayat",
+      "availableRewayat": "Mga available na riwayat"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Hindi maidagdag ang surah sa playlist",
+      "failedToCreatePlaylist": "Hindi magawa ang playlist",
+      "noPlaylistsYetCreateYour": "Wala pang playlist. Gawin ang iyong unang playlist sa itaas!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Magtanong sa bawat pagkakataon",
+      "randomReciter": "Random na tagabigkas",
+      "selectReciter": "Pumili ng tagabigkas"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Walang nahanap na katulad na talata para sa talatang ito.",
+      "similarWording": "Magkatulad na pananalita"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Timer ng pagtulog",
+      "turnOffTimer": "I-off ang timer"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Alisin sa playlist"
+    },
+    "verseActionsSheet": {
+      "addNote": "Magdagdag ng tala",
+      "copy": "Kopyahin",
+      "repeat": "Ulitin",
+      "similarVerses": "Mga katulad na talata",
+      "tafseer": "Tafsir",
+      "theme": "Tema"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Mga opsiyon sa pagkopya",
+      "selectWhatToCopy": "Piliin ang kokopyahin"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Kulay ng highlight"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Ibahagi ang talata"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Nahanap sa {{count}} talata",
+    "foundIn_other": "Nahanap sa {{count}} talata"
+  },
+  "surahItem": {
+    "moreOptions": "Iba pang opsiyon",
+    "opensMenuWithAdditionalActions": "Nagbubukas ng menu na may dagdag na mga aksiyon para sa surah na ito",
+    "tapToPlaySurah": "I-tap para i-play ang surah"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Hindi wastong ID ng playlist",
+      "playlistNotFound": "Hindi nahanap ang playlist"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Walang nahanap na tagabigkas na may lahat ng surah sa playlist na ito. Subukan ang ibang playlist.",
+      "failedToPlayPlaylistPlease": "Hindi ma-play ang playlist. Subukang muli.",
+      "failedToPlayTrackPlease": "Hindi ma-play ang track. Subukang muli.",
+      "failedToShufflePlaylistPlease": "Hindi ma-shuffle ang playlist. Subukang muli.",
+      "noReciterAvailable": "Walang available na tagabigkas",
+      "noSurahsInThisPlaylist": "Walang surah sa playlist na ito"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Account",
+      "appData": "App at datos",
+      "audioPlayback": "Audio at pag-play",
+      "chooseYourPreferredReciter": "Piliin ang gusto mong tagabigkas",
+      "customizeQuranDisplayOptions": "Iangkop ang pagpapakita ng Quran",
+      "customizeReciterSelection": "Iangkop ang pagpili ng tagabigkas",
+      "featureRequests": "Mga kahilingan para sa tampok",
+      "feedback": "Puna",
+      "helpSupport": "Tulong at suporta",
+      "learnMoreAboutOurMission": "Alamin pa ang tungkol sa aming layunin",
+      "manageQuranTranslationsAndCommentary": "Pamahalaan ang mga salin at paliwanag ng Quran",
+      "privacyPolicy": "Patakaran sa privacy",
+      "quran": "Quran",
+      "readOurTermsOfService": "Basahin ang aming mga tuntunin ng serbisyo",
+      "seeWhatSNewIn": "Tingnan ang bago sa bersiyong ito",
+      "shareYourExperienceWithOthers": "Ibahagi ang iyong karanasan sa iba",
+      "showTheFloatingDeveloperTools": "Ipakita ang lumulutang na button ng mga tool ng developer",
+      "suggestImprovementsAndNewFeatures": "Magmungkahi ng mga pagpapahusay at bagong tampok",
+      "termsOfService": "Mga tuntunin ng serbisyo",
+      "viewAndManageStorageUsage": "Tingnan at pamahalaan ang paggamit ng storage",
+      "viewOurPrivacyPolicy": "Tingnan ang aming patakaran sa privacy",
+      "writeAReview": "Sumulat ng pagsusuri"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Kanselahin",
+    "close": "Isara",
+    "collection": "Koleksiyon",
+    "download": "I-download",
+    "downloads": "Mga download",
+    "error": "May nangyaring mali",
+    "favorites": "Mga paborito",
+    "home": "Home",
+    "language": "Wika",
+    "library": "Aklatan",
+    "loading": "Naglo-load...",
+    "noResults": "Walang nahanap na resulta",
+    "offline": "Offline ka",
+    "pause": "I-pause",
+    "play": "I-play",
+    "retry": "Subukang muli",
+    "save": "I-save",
+    "search": "Maghanap",
+    "settings": "Mga setting",
+    "surahs": "Mga surah"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "PILIIN ANG NILALAMAN"
+    },
+    "highlightContent": {
+      "chooseColor": "PUMILI NG KULAY"
+    },
+    "noteContent": {
+      "saveNote": "I-save ang tala"
+    },
+    "shareContent": {
+      "shareLink": "Ibahagi ang link"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Walang nahanap na katulad na talata para sa talatang ito.",
+      "sharedPhrases": "MGA MAGKAKAPAREHONG PARIRALA",
+      "similarWording": "MAGKATULAD NA PANANALITA"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Walang na-download na tafsir",
+      "tafseerNotAvailableForThis": "Walang tafsir para sa talatang ito",
+      "tapHereToDownloadA": "I-tap dito para mag-download ng tafsir at tingnan ang paliwanag."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Walang tematikong datos para sa talatang ito.",
+      "passage": "Sipi"
+    },
+    "translationContent": {
+      "switch": "Lumipat",
+      "translationNotAvailable": "Walang available na salin"
+    }
+  },
+  "version": {
+    "label": "Bersiyon {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Ano ang bago sa"
+  },
+  "wordDetail": {
+    "context": "Talata {{surah}}:{{ayah}} · Salita {{position}} ng {{total}}"
+  }
+}

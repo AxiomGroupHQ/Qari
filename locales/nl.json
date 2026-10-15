@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Fout bij het initialiseren van de speler: {{message}}",
+    "errorLoadingFonts": "Fout bij het laden van lettertypen"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA-startpagina"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Alle",
+      "clearAll": "Alles wissen",
+      "hasPhoto": "Heeft foto"
+    },
+    "filterModal": {
+      "apply": "Toepassen",
+      "filterReciters": "Recitatoren filteren",
+      "recitationStyles": "Recitatiestijlen",
+      "reset": "Herstellen",
+      "rewayatTypes": "Riwaya-typen"
+    },
+    "recitersFound_one": "{{count}} recitator gevonden met de huidige filters",
+    "recitersFound_other": "{{count}} recitatoren gevonden met de huidige filters"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Geliefde soera's"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Voeg verzen toe aan je bladwijzers om ze hier te zien",
+      "bookmarks": "Bladwijzers",
+      "noBookmarksYet": "Nog geen bladwijzers",
+      "removeBookmark": "Bladwijzer verwijderen"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Riwayat",
+      "searchPlaylistsRecitersSurahsRewayat": "Zoek afspeellijsten, recitatoren, soera's, riwayat...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Zoek afspeellijsten, recitatoren, soera's, riwayat en downloads",
+      "searchYourCollection": "Zoeken in je verzameling",
+      "searching": "Zoeken...",
+      "tryDifferentKeywords": "Probeer andere zoekwoorden"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Download soera's om ze hier te zien",
+      "noDownloadsYet": "Nog geen downloads",
+      "playAll": "Alles afspelen"
+    },
+    "favoritereciters": {
+      "addReciters": "Recitatoren toevoegen",
+      "addRecitersToSeeThem": "Voeg recitatoren toe om ze hier te zien",
+      "noFavoriteRecitersYet": "Nog geen favoriete recitatoren",
+      "removeFromFavorites": "Uit favorieten verwijderen",
+      "searchFavoriteReciters": "Favoriete recitatoren zoeken"
+    },
+    "index": {
+      "addToCollection": "Aan verzameling toevoegen",
+      "bookmarks": "Bladwijzers",
+      "createYourFirstPlaylist": "Maak je eerste afspeellijst",
+      "downloads": "Downloads",
+      "items_one": "{{count}} item",
+      "items_other": "{{count}} items",
+      "loved": "Geliefd",
+      "noBookmarksYet": "Nog geen bladwijzers",
+      "noDownloadsYet": "Nog geen downloads",
+      "noFavoritesYet": "Nog geen favorieten",
+      "noLovedSurahsYet": "Nog geen geliefde soera's",
+      "noNotesYet": "Nog geen notities",
+      "noUploadsYet": "Nog geen uploads",
+      "notes": "Notities",
+      "playlists": "Afspeellijsten",
+      "reciters": "Recitatoren",
+      "uploads": "Uploads"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Alle geliefde soera's zijn al gedownload.",
+      "allLovedSurahsHaveBeen": "Alle geliefde soera's zijn gedownload.",
+      "downloadError": "Downloadfout",
+      "loveSurahsToSeeThem": "Markeer soera's als geliefd om ze hier te zien",
+      "noLovedSurahsYet": "Nog geen geliefde soera's",
+      "someDownloadsMayHaveFailed": "Sommige downloads zijn mogelijk mislukt.",
+      "unloveAllSurahs": "Alle soera's uit geliefd verwijderen"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Voeg notities aan verzen toe om ze hier te zien",
+      "editNote": "Notitie bewerken",
+      "noNotesYet": "Nog geen notities",
+      "notes": "Notities"
+    },
+    "playlistModal": {
+      "name": "Naam"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Maak afspeellijsten om ze hier te zien",
+      "noPlaylistsYet": "Nog geen afspeellijsten",
+      "playlists": "Afspeellijsten"
+    },
+    "uploads": {
+      "removeAllUploads": "Alle uploads verwijderen",
+      "uploadRecitationsToSeeThem": "Upload recitaties om ze hier te zien"
+    }
+  },
+  "common": {
+    "1Time": "1 keer",
+    "2Times": "2 keer",
+    "3Times": "3 keer",
+    "addToCollection": "Aan verzameling toevoegen",
+    "addToQueue": "Aan wachtrij toevoegen",
+    "allSurahs": "Alle soera's",
+    "alreadyDownloaded": "Al gedownload",
+    "arabic": "Arabisch",
+    "asc": "Oplopend",
+    "browseAll": "Alles bekijken",
+    "browseAllReciters": "Alle recitatoren bekijken",
+    "cancel": "Annuleren",
+    "clear": "Wissen",
+    "copyToClipboard": "Naar klembord kopiëren",
+    "createNewPlaylist": "Nieuwe afspeellijst maken",
+    "defaultReciter": "Standaardrecitator",
+    "delete": "Verwijderen",
+    "deleteNote": "Notitie verwijderen",
+    "deleteRecitation": "Recitatie verwijderen",
+    "desc": "Aflopend",
+    "downloadComplete": "Download voltooid",
+    "downloadFailed": "Download mislukt",
+    "downloads": "Downloads",
+    "editDetails": "Gegevens bewerken",
+    "error": "Fout",
+    "favoriteReciters": "Favoriete recitatoren",
+    "followAlong": "Meelezen",
+    "from": "Van",
+    "goToReciter": "Naar recitator",
+    "goToVerse": "Naar vers",
+    "learnAboutSurah": "Meer over de soera",
+    "loading": "Laden...",
+    "loop": "Herhalen",
+    "loved": "Geliefd",
+    "mushafSettings": "Mushaf-instellingen",
+    "next": "Volgende",
+    "noRecitersFound": "Geen recitatoren gevonden",
+    "noResultsFound": "Geen resultaten gevonden",
+    "noUploadsYet": "Nog geen uploads",
+    "play": "Afspelen",
+    "playEachVerse": "Elk vers afspelen",
+    "playNow": "Nu afspelen",
+    "playSpeed": "Afspeelsnelheid",
+    "playTheRange": "Bereik afspelen",
+    "playlistName": "Naam afspeellijst",
+    "prev": "Vorige",
+    "readingTheme": "Leesthema",
+    "recentSearches": "Recente zoekopdrachten",
+    "reciter": "Recitator",
+    "reciterChoice": "Recitatorkeuze",
+    "reciters": "Recitatoren",
+    "remove": "Verwijderen",
+    "removeAllDownloads": "Alle downloads verwijderen",
+    "removeHighlight": "Markering verwijderen",
+    "rev": "Openbaring",
+    "save": "Opslaan",
+    "search": "Zoeken",
+    "searchReciters": "Recitatoren zoeken...",
+    "searchSurahs": "Soera's zoeken",
+    "share": "Delen",
+    "shareAsImage": "Delen als afbeelding",
+    "shareAsText": "Delen als tekst",
+    "sharedPhrases": "Gedeelde zinsdelen",
+    "showBasmallah": "Basmala tonen",
+    "stop": "Stoppen",
+    "storage": "Opslag",
+    "surah": "Soera",
+    "surahs": "Soera's",
+    "to": "Tot",
+    "translation": "Vertaling",
+    "translationsTafaseer": "Vertalingen en tafsir",
+    "transliteration": "Transliteratie",
+    "uploads": "Uploads",
+    "useDefaultReciter": "Standaardrecitator gebruiken",
+    "verseReference": "Versverwijzing",
+    "verses": "Verzen",
+    "whatSNew": "Wat is er nieuw?",
+    "wordByWord": "Woord voor woord",
+    "writeYourNoteHere": "Schrijf je notitie hier...",
+    "yourPlaylists": "Je afspeellijsten"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Alle soera's afspelen"
+    },
+    "searchHeader": {
+      "searchSurahs": "Soera's zoeken"
+    },
+    "searchView": {
+      "noSurahsFound": "Geen soera's gevonden"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Geen soera's beschikbaar"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Recitatie toevoegen",
+      "uploadRecitationsToSeeThem": "Upload recitaties om ze hier te zien"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Gedownload • {{count}} soera",
+    "subtitle_other": "Gedownload • {{count}} soera's"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Sorry, er is een fout opgetreden"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Alle 114 soera's bekijken"
+    },
+    "savedAdhkarHero": {
+      "saved": "Opgeslagen",
+      "yourCollection": "Je verzameling"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SOERA VAN DE DAG"
+    },
+    "surahsHero": {
+      "number": "Nummer"
+    }
+  },
+  "language": {
+    "later": "Later",
+    "restartMessage": "Start de app opnieuw om de nieuwe lay-outrichting toe te passen.",
+    "restartNow": "Nu opnieuw starten",
+    "restartTitle": "Opnieuw starten vereist",
+    "search": "Talen zoeken",
+    "system": "Apparaattaal"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Doorgaan"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Overslaan"
+    }
+  },
+  "mushaf": {
+    "juz": "Djuz {{juz}}",
+    "loadingMushaf": "Mushaf laden…",
+    "main": {
+      "mushafSettings": "Mushaf-instellingen"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Recitator wijzigen",
+      "changeReciter2": "Recitator wijzigen",
+      "nextAyah": "Volgend vers",
+      "playbackOptions": "Afspeelopties",
+      "previousAyah": "Vorig vers"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Zoek soera's, verzen, pagina's of djuz",
+      "recentReads": "RECENT GELEZEN",
+      "searchSurahsPagesOrJuz": "Zoek soera's, pagina's of djuz...",
+      "searchTheMushaf": "Zoeken in de Mushaf"
+    },
+    "options": "Opties",
+    "page": "Pagina {{page}}",
+    "pageAndSurah": "Pagina {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "De Mushaf kon niet worden geladen.",
+    "tryAgain": "Opnieuw proberen"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Markeert Allahs naam en goddelijke titels zoals Rabb in de Mushaf."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Afwisselende markeringen per thematische passage",
+    "arabicFontSize": "Arabische lettergrootte",
+    "bold": "Vet",
+    "book": "Boek",
+    "colorLegend": "Kleurenlegenda",
+    "currentlyReading": "Je leest nu",
+    "divineNames": "GODDELIJKE NAMEN",
+    "fontSize": "Lettergrootte",
+    "fullscreen": "Volledig scherm",
+    "hamzaReplacedByLongVowel": "Hamza vervangen door een lange klinker",
+    "heavyLamInAllahAfter": "Dikke lam in Allah na emfatische letters",
+    "highlightAllahRabb": "Allah / Rabb markeren",
+    "horizontal": "Horizontaal",
+    "ibdal": "Ibdal",
+    "list": "Lijst",
+    "loadingSample": "Voorbeeld laden...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Maximale nadruk",
+    "medium": "Gemiddeld",
+    "modernMadinahPrintedPipeline": "Moderne gedrukte Medina-weergave",
+    "mushaf": "Mushaf",
+    "normal": "Normaal",
+    "originalMushafWeight": "Oorspronkelijke letterdikte van de Mushaf",
+    "pageDesign": "PAGINAONTWERP",
+    "prolongedVowelAfterHamza": "Verlengde klinker na hamza",
+    "readingTheme": "LEESTHEMA",
+    "scrollDirection": "SCROLRICHTING",
+    "showDifferences": "Verschillen tonen",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Iets meer nadruk",
+    "softenedHamzaPronunciation": "Verzachte uitspraak van hamza",
+    "subcontinentNastaliqStyle": "Nastaliq-stijl van het subcontinent",
+    "taghlizAlLam": "Taghliz al-Lam",
+    "tajweedColoring": "Tajwid-kleuren",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "TEKSTVOORBEELD NOG NIET BESCHIKBAAR",
+    "textThickness": "LETTERDIKTE",
+    "thematicHighlighting": "Thematische markering",
+    "trailingVowelOrMoodChange": "Alleen verandering van eindklinker of wijs",
+    "usingSaheehInternationalTranslationWith": "In gebruik: Saheeh International-vertaling met voetnoten",
+    "vertical": "Verticaal",
+    "viewType": "WEERGAVETYPE",
+    "vowelMoodShift": "Klinker- of wijsverandering",
+    "wordByWord": "WOORD VOOR WOORD",
+    "wordVariant": "Woordvariant"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Server niet bereikbaar",
+    "connectionRestored": "Verbinding hersteld",
+    "noInternetConnection": "Geen internetverbinding",
+    "showingCachedData": "Gegevens uit de cache worden getoond"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" maken"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Wachtrij",
+      "queueIsEmpty": "Wachtrij is leeg"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Label deze recitatie om de soeratekst en details te zien"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Afspeellijst • {{count}} soera",
+    "subtitle_other": "Afspeellijst • {{count}} soera's"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Geen soera's in deze afspeellijst"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Voetnoot"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Een recitatie speciaal voor dit moment",
+      "discover": "Ontdekken",
+      "discoverANewVoice": "Ontdek een nieuwe stem",
+      "explore": "Verkennen",
+      "exploreTheUnexpected": "Verken het onverwachte",
+      "hearSomethingNew": "Hoor iets nieuws",
+      "letTheQuranSurpriseYou": "Laat de Koran je verrassen",
+      "randomMix": "Willekeurige mix",
+      "randomRecitation": "Willekeurige recitatie",
+      "shuffleListen": "Willekeurig afspelen en luisteren",
+      "surpriseMe": "Verras me"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "De weergavemodus wijzigen geldt voor de hele app"
+  },
+  "reciterBrowse": {
+    "allReciters": "Alle recitatoren",
+    "browseReciters": "Recitatoren bekijken",
+    "favorites": "Favorieten"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Geen downloads voor deze recitator"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Mijn uploads"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkar",
+    "bestForMemorization": "Beste voor memoriseren",
+    "bestForTajweed": "Beste voor tajwid",
+    "continueListening": "Verder luisteren",
+    "exclusives": "Exclusief",
+    "exploreByRewayah": "Verkennen op riwaya",
+    "featuredReciters": "Uitgelichte recitatoren",
+    "fromYourCollection": "Uit je verzameling",
+    "myRecitations": "Mijn recitaties",
+    "newToQuranStartHere": "Nieuw met de Koran? Begin hier",
+    "seeMore": "Meer bekijken",
+    "yourFavorites": "Je favorieten"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Actief",
+      "activeTafseer": "ACTIEVE TAFSIR",
+      "activeTranslation": "ACTIEVE VERTALING",
+      "deleteTafseer": "Tafsir verwijderen",
+      "deleteTranslation": "Vertaling verwijderen",
+      "noTafaseerFound": "Geen tafsir gevonden",
+      "noTranslationsFound": "Geen vertalingen gevonden",
+      "unableToDownloadThisTafseer": "Deze tafsir kan niet worden gedownload. Controleer je internetverbinding en probeer het opnieuw.",
+      "unableToDownloadThisTranslation": "Deze vertaling kan niet worden gedownload. Controleer je internetverbinding en probeer het opnieuw."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Geen recente zoekopdrachten",
+      "tryDifferentKeywordsOrCheck": "Probeer andere zoekwoorden of controleer de spelling",
+      "yourSearchHistoryWillAppear": "Je zoekgeschiedenis verschijnt hier"
+    },
+    "surahsOrReciters": "Soera's of recitatoren zoeken"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Geavanceerde audiobediening",
+      "browseByJuz": "Bladeren per djuz",
+      "createAndManageYourOwn": "Maak en beheer je eigen afspeellijsten met je favoriete recitaties",
+      "crystalClearRecitationsFromThe": "Kristalheldere recitaties van de beste recitatoren ter wereld met geoptimaliseerde streaming",
+      "curatedCollections": "Samengestelde verzamelingen",
+      "customPlaylists": "Eigen afspeellijsten",
+      "customizeThemesAccentColorsAnd": "Pas thema's, accentkleuren en audio-instellingen aan je voorkeuren aan",
+      "downloadSurahsForOfflineListening": "Download soera's om altijd en overal zonder internet te luisteren",
+      "easilyNavigateThroughTheQuran": "Vind gemakkelijk je weg door de Koran met een indeling in djuz",
+      "features": "FUNCTIES",
+      "highQualityAudio": "Audio van hoge kwaliteit",
+      "listenReflectRememberAllah": "Luister. Denk na. Gedenk Allah.",
+      "offlineDownloads": "Offline downloads",
+      "ourCommitment": "Onze inzet",
+      "ourMission": "Onze missie",
+      "personalization": "Personalisatie",
+      "precisePlaybackControlWithContinuous": "Nauwkeurige afspeelbediening met continu afspelen en instelbare recitatiesnelheid",
+      "quranBayanTafsirKnowledgeOur": "Koran • Bayan • Tafsir • Kennis. We willen luisteren en nadenken deel maken van het dagelijks leven: thuis, onderweg en overal waar je even tijd hebt om Allah te gedenken.",
+      "readListenAndReflect": "Lezen, luisteren en nadenken",
+      "readTheMushafExploreTranslations": "Lees de Mushaf, ontdek vertalingen en tafsir, bewaar verzen en notities en keer terug naar de dagelijkse adhkar. Kies je recitator, maak afspeellijsten en stem het luisteren af op je dag. Beschikbare functies verschillen per apparaat; de native apps ondersteunen ook downloads om offline te luisteren.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Zorgvuldig geordende soera's voor verschillende gelegenheden en thema's",
+      "weCareAboutTheAccuracy": "We hechten aan de nauwkeurigheid van heilige inhoud, een respectvol ontwerp en betrouwbare toegang. We blijven ISTIMA verbeteren met aandacht voor de mensen die het gebruiken. Moge Allah deze inspanning aanvaarden en nuttig maken voor iedereen die luistert, leest en nadenkt."
+    },
+    "aboutApp": "Over {{name}}",
+    "appearance": "WEERGAVE",
+    "defaultreciter": {
+      "changeDefaultReciter": "STANDAARDRECITATOR WIJZIGEN"
+    },
+    "developer": "ONTWIKKELAAR",
+    "floatingDevMenu": "Zwevend ontwikkelaarsmenu",
+    "language": "Taal",
+    "languageDescription": "Kies de taal van de app",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Altijd je gekozen standaardrecitator gebruiken",
+      "askEveryTime": "Elke keer vragen",
+      "chooseAReciterEachTime": "Kies bij elke afspeelbeurt een recitator",
+      "chooseHowYouWantTo": "Kies hoe je recitatoren wilt selecteren bij het afspelen van soera's",
+      "defaultSelectionMethod": "STANDAARDSELECTIEMETHODE",
+      "searchThroughOurCompleteCollection": "Doorzoek onze volledige verzameling recitatoren",
+      "selectionPreference": "SELECTIEVOORKEUR"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Alle downloads zijn verwijderd.",
+      "areYouSureYouWant": "Weet je zeker dat je alle gedownloade inhoud wilt verwijderen? Dit kan niet ongedaan worden gemaakt.",
+      "cache": "Cache",
+      "cacheHasBeenCleared": "Cache is gewist.",
+      "clearCache": "Cache wissen",
+      "failedToClearCache": "Cache wissen mislukt.",
+      "failedToRemoveDownloads": "Downloads verwijderen mislukt.",
+      "free": "Vrij",
+      "loadingStorageInformation": "Opslaginformatie laden...",
+      "manageStorage": "OPSLAG BEHEREN",
+      "otherApps": "Andere apps",
+      "removeAllDownloads": "Alle downloads verwijderen",
+      "removeAllTheQuranContent": "Verwijder alle Koraninhoud die je hebt gedownload voor offline gebruik.",
+      "storageBreakdown": "OPSLAGVERDELING",
+      "success": "Geslaagd",
+      "thisWillClearYourCache": "Hiermee wis je de cache. Je downloads worden niet verwijderd.",
+      "youCanFreeUpStorage": "Je kunt opslagruimte vrijmaken door de cache te wissen. Je downloads worden niet verwijderd."
+    },
+    "themePicker": {
+      "auto": "Automatisch",
+      "dark": "Donker",
+      "light": "Licht"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Geen wijzigingslogboek beschikbaar"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Over {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Favoriete recitator toevoegen",
+      "uploadRecitation": "Recitatie uploaden"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Omgevingsgeluiden",
+      "none": "Geen",
+      "volume": "Volume"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "Bijv. Ochtendrecitaties"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Download verwijderen"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Klaar"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Aan verzameling toevoegen",
+      "addToQueue": "Aan wachtrij toevoegen",
+      "continuePlaying": "Verder afspelen",
+      "goToReciter": "Naar recitator",
+      "removeFromRecents": "Uit recent verwijderen"
+    },
+    "mushafLayoutSheet": {
+      "back": "Terug"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Eindvers",
+      "playbackSettings": "Afspeelinstellingen",
+      "selectRange": "Bereik selecteren",
+      "startingVerse": "Beginvers"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Herhaalinstellingen",
+      "start": "Starten",
+      "verseRange": "Versbereik"
+    },
+    "organizeRecitationSheet": {
+      "category": "Categorie",
+      "customReciter": "Eigen recitator",
+      "duA": "Dua",
+      "eGMorningAdhkar": "Bijv. Ochtendadhkar",
+      "lecture": "Lezing",
+      "moreOptions": "Meer opties",
+      "other": "Overig",
+      "recording": "Opname",
+      "rewayah": "Riwaya",
+      "searchSurahs": "Soera's zoeken...",
+      "style": "Stijl",
+      "tafsir": "Tafsir",
+      "title": "Titel",
+      "type": "Type",
+      "verseRangeOptional": "Versbereik (optioneel)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Afspeelsnelheid"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Alle items in deze afspeellijst zijn al gedownload.",
+      "anErrorOccurredWhileDownloading": "Er is een fout opgetreden bij het downloaden van de afspeellijst. Probeer het opnieuw.",
+      "deletePlaylist": "Afspeellijst verwijderen",
+      "downloadingPlaylist": "Afspeellijst downloaden...",
+      "editPlaylist": "Afspeellijst bewerken",
+      "emptyPlaylist": "Lege afspeellijst",
+      "thisPlaylistIsEmpty": "Deze afspeellijst is leeg."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Over riwayat",
+      "availableRewayat": "Beschikbare riwayat"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Soera toevoegen aan afspeellijst mislukt",
+      "failedToCreatePlaylist": "Afspeellijst maken mislukt",
+      "noPlaylistsYetCreateYour": "Nog geen afspeellijsten. Maak hierboven je eerste afspeellijst!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Elke keer vragen",
+      "randomReciter": "Willekeurige recitator",
+      "selectReciter": "Recitator selecteren"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Geen vergelijkbare verzen gevonden voor dit vers.",
+      "similarWording": "Vergelijkbare bewoording"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Slaaptimer",
+      "turnOffTimer": "Timer uitschakelen"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Uit afspeellijst verwijderen"
+    },
+    "verseActionsSheet": {
+      "addNote": "Notitie toevoegen",
+      "copy": "Kopiëren",
+      "repeat": "Herhalen",
+      "similarVerses": "Vergelijkbare verzen",
+      "tafseer": "Tafsir",
+      "theme": "Thema"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Kopieeropties",
+      "selectWhatToCopy": "Selecteer wat je wilt kopiëren"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Markeringskleur"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Vers delen"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Gevonden in {{count}} vers",
+    "foundIn_other": "Gevonden in {{count}} verzen"
+  },
+  "surahItem": {
+    "moreOptions": "Meer opties",
+    "opensMenuWithAdditionalActions": "Opent een menu met extra acties voor deze soera",
+    "tapToPlaySurah": "Tik om de soera af te spelen"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Ongeldige afspeellijst-ID",
+      "playlistNotFound": "Afspeellijst niet gevonden"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Geen recitator gevonden met alle soera's in deze afspeellijst. Probeer een andere afspeellijst.",
+      "failedToPlayPlaylistPlease": "Afspeellijst afspelen mislukt. Probeer het opnieuw.",
+      "failedToPlayTrackPlease": "Nummer afspelen mislukt. Probeer het opnieuw.",
+      "failedToShufflePlaylistPlease": "Willekeurig afspelen van de afspeellijst mislukt. Probeer het opnieuw.",
+      "noReciterAvailable": "Geen recitator beschikbaar",
+      "noSurahsInThisPlaylist": "Geen soera's in deze afspeellijst"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Account",
+      "appData": "App en gegevens",
+      "audioPlayback": "Audio en afspelen",
+      "chooseYourPreferredReciter": "Kies je favoriete recitator",
+      "customizeQuranDisplayOptions": "Pas de Koranweergave aan",
+      "customizeReciterSelection": "Pas de recitatorselectie aan",
+      "featureRequests": "Functieverzoeken",
+      "feedback": "Feedback",
+      "helpSupport": "Hulp en ondersteuning",
+      "learnMoreAboutOurMission": "Meer over onze missie",
+      "manageQuranTranslationsAndCommentary": "Beheer Koranvertalingen en commentaar",
+      "privacyPolicy": "Privacybeleid",
+      "quran": "Koran",
+      "readOurTermsOfService": "Lees onze gebruiksvoorwaarden",
+      "seeWhatSNewIn": "Bekijk wat er nieuw is in deze versie",
+      "shareYourExperienceWithOthers": "Deel je ervaring met anderen",
+      "showTheFloatingDeveloperTools": "Toon de zwevende knop voor ontwikkelaarstools",
+      "suggestImprovementsAndNewFeatures": "Stel verbeteringen en nieuwe functies voor",
+      "termsOfService": "Gebruiksvoorwaarden",
+      "viewAndManageStorageUsage": "Bekijk en beheer opslaggebruik",
+      "viewOurPrivacyPolicy": "Bekijk ons privacybeleid",
+      "writeAReview": "Een beoordeling schrijven"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Annuleren",
+    "close": "Sluiten",
+    "collection": "Verzameling",
+    "download": "Downloaden",
+    "downloads": "Downloads",
+    "error": "Er is iets misgegaan",
+    "favorites": "Favorieten",
+    "home": "Start",
+    "language": "Taal",
+    "library": "Bibliotheek",
+    "loading": "Laden...",
+    "noResults": "Geen resultaten gevonden",
+    "offline": "Je bent offline",
+    "pause": "Pauzeren",
+    "play": "Afspelen",
+    "retry": "Opnieuw proberen",
+    "save": "Opslaan",
+    "search": "Zoeken",
+    "settings": "Instellingen",
+    "surahs": "Soera's"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "INHOUD SELECTEREN"
+    },
+    "highlightContent": {
+      "chooseColor": "KLEUR KIEZEN"
+    },
+    "noteContent": {
+      "saveNote": "Notitie opslaan"
+    },
+    "shareContent": {
+      "shareLink": "Link delen"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Geen vergelijkbare verzen gevonden voor dit vers.",
+      "sharedPhrases": "GEDEELDE ZINSDELEN",
+      "similarWording": "VERGELIJKBARE BEWOORDING"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Geen tafsir gedownload",
+      "tafseerNotAvailableForThis": "Tafsir niet beschikbaar voor dit vers",
+      "tapHereToDownloadA": "Tik hier om een tafsir te downloaden en commentaar te bekijken."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Geen thematische gegevens voor dit vers.",
+      "passage": "Passage"
+    },
+    "translationContent": {
+      "switch": "Wisselen",
+      "translationNotAvailable": "Vertaling niet beschikbaar"
+    }
+  },
+  "version": {
+    "label": "Versie {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Nieuw in"
+  },
+  "wordDetail": {
+    "context": "Vers {{surah}}:{{ayah}} · Woord {{position}} van {{total}}"
+  }
+}

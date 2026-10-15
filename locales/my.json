@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "အသံဖွင့်စက် စတင်ရာတွင် အမှားဖြစ်ပွားသည်: {{message}}",
+    "errorLoadingFonts": "စာလုံးပုံစံများ တင်ရာတွင် အမှားဖြစ်ပွားသည်"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA ပင်မစာမျက်နှာ"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "အားလုံး",
+      "clearAll": "အားလုံးရှင်းမည်",
+      "hasPhoto": "ဓာတ်ပုံရှိသည်"
+    },
+    "filterModal": {
+      "apply": "အသုံးပြုမည်",
+      "filterReciters": "ကာရီများ စစ်ထုတ်မည်",
+      "recitationStyles": "ရွတ်ဖတ်ဟန်များ",
+      "reset": "ပြန်သတ်မှတ်မည်",
+      "rewayatTypes": "ရိဝါယသ် အမျိုးအစားများ"
+    },
+    "recitersFound_one": "လက်ရှိစစ်ထုတ်မှုနှင့် ကိုက်ညီသော ကာရီ {{count}} ဦး တွေ့ရှိသည်",
+    "recitersFound_other": "လက်ရှိစစ်ထုတ်မှုနှင့် ကိုက်ညီသော ကာရီ {{count}} ဦး တွေ့ရှိသည်"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "နှစ်သက်သော စူရဟ်များ"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "ဤနေရာတွင် မြင်ရန် အာယသ်များကို မှတ်သားထားပါ",
+      "bookmarks": "စာညှပ်များ",
+      "noBookmarksYet": "စာညှပ် မရှိသေးပါ",
+      "removeBookmark": "စာညှပ်ဖယ်မည်"
+    },
+    "collectionSearchModal": {
+      "rewayat": "ရိဝါယသ်",
+      "searchPlaylistsRecitersSurahsRewayat": "ဖွင့်ရန်စာရင်း၊ ကာရီ၊ စူရဟ်၊ ရိဝါယသ် ရှာရန်...",
+      "searchPlaylistsRecitersSurahsRewayat2": "ဖွင့်ရန်စာရင်း၊ ကာရီ၊ စူရဟ်၊ ရိဝါယသ်နှင့် ဒေါင်းလုဒ်များ ရှာရန်",
+      "searchYourCollection": "သင့်စုစည်းမှုတွင် ရှာမည်",
+      "searching": "ရှာနေသည်...",
+      "tryDifferentKeywords": "အခြားရှာဖွေစကားလုံးများ စမ်းကြည့်ပါ"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "ဤနေရာတွင် မြင်ရန် စူရဟ်များ ဒေါင်းလုဒ်လုပ်ပါ",
+      "noDownloadsYet": "ဒေါင်းလုဒ် မရှိသေးပါ",
+      "playAll": "အားလုံးဖွင့်မည်"
+    },
+    "favoritereciters": {
+      "addReciters": "ကာရီများ ထည့်မည်",
+      "addRecitersToSeeThem": "ဤနေရာတွင် မြင်ရန် ကာရီများ ထည့်ပါ",
+      "noFavoriteRecitersYet": "အကြိုက်ဆုံး ကာရီ မရှိသေးပါ",
+      "removeFromFavorites": "အကြိုက်ဆုံးမှ ဖယ်မည်",
+      "searchFavoriteReciters": "အကြိုက်ဆုံး ကာရီများ ရှာမည်"
+    },
+    "index": {
+      "addToCollection": "စုစည်းမှုသို့ ထည့်မည်",
+      "bookmarks": "စာညှပ်များ",
+      "createYourFirstPlaylist": "သင့်ပထမဆုံး ဖွင့်ရန်စာရင်း ဖန်တီးပါ",
+      "downloads": "ဒေါင်းလုဒ်များ",
+      "items_one": "အကြောင်းအရာ {{count}} ခု",
+      "items_other": "အကြောင်းအရာ {{count}} ခု",
+      "loved": "နှစ်သက်ထားသည်",
+      "noBookmarksYet": "စာညှပ် မရှိသေးပါ",
+      "noDownloadsYet": "ဒေါင်းလုဒ် မရှိသေးပါ",
+      "noFavoritesYet": "အကြိုက်ဆုံးများ မရှိသေးပါ",
+      "noLovedSurahsYet": "နှစ်သက်သော စူရဟ် မရှိသေးပါ",
+      "noNotesYet": "မှတ်စု မရှိသေးပါ",
+      "noUploadsYet": "တင်ထားသောဖိုင် မရှိသေးပါ",
+      "notes": "မှတ်စုများ",
+      "playlists": "ဖွင့်ရန်စာရင်းများ",
+      "reciters": "ကာရီများ",
+      "uploads": "တင်ထားသောဖိုင်များ"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "နှစ်သက်သော စူရဟ်အားလုံးကို ဒေါင်းလုဒ်လုပ်ပြီး ဖြစ်သည်။",
+      "allLovedSurahsHaveBeen": "နှစ်သက်သော စူရဟ်အားလုံး ဒေါင်းလုဒ်လုပ်ပြီးပါပြီ။",
+      "downloadError": "ဒေါင်းလုဒ် အမှား",
+      "loveSurahsToSeeThem": "ဤနေရာတွင် မြင်ရန် စူရဟ်များကို နှစ်သက်ကြောင်း မှတ်သားပါ",
+      "noLovedSurahsYet": "နှစ်သက်သော စူရဟ် မရှိသေးပါ",
+      "someDownloadsMayHaveFailed": "ဒေါင်းလုဒ်အချို့ မအောင်မြင်ခြင်း ဖြစ်နိုင်သည်။",
+      "unloveAllSurahs": "စူရဟ်အားလုံးကို နှစ်သက်ထားမှုမှ ဖယ်မည်"
+    },
+    "notes": {
+      "addNotesToVersesTo": "ဤနေရာတွင် မြင်ရန် အာယသ်များ၌ မှတ်စုထည့်ပါ",
+      "editNote": "မှတ်စု ပြင်မည်",
+      "noNotesYet": "မှတ်စု မရှိသေးပါ",
+      "notes": "မှတ်စုများ"
+    },
+    "playlistModal": {
+      "name": "အမည်"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "ဤနေရာတွင် မြင်ရန် ဖွင့်ရန်စာရင်းများ ဖန်တီးပါ",
+      "noPlaylistsYet": "ဖွင့်ရန်စာရင်း မရှိသေးပါ",
+      "playlists": "ဖွင့်ရန်စာရင်းများ"
+    },
+    "uploads": {
+      "removeAllUploads": "တင်ထားသောဖိုင် အားလုံးဖယ်မည်",
+      "uploadRecitationsToSeeThem": "ဤနေရာတွင် မြင်ရန် ရွတ်ဖတ်မှုများ တင်ပါ"
+    }
+  },
+  "common": {
+    "1Time": "၁ ကြိမ်",
+    "2Times": "၂ ကြိမ်",
+    "3Times": "၃ ကြိမ်",
+    "addToCollection": "စုစည်းမှုသို့ ထည့်မည်",
+    "addToQueue": "စောင့်ဆိုင်းစာရင်းသို့ ထည့်မည်",
+    "allSurahs": "စူရဟ်အားလုံး",
+    "alreadyDownloaded": "ဒေါင်းလုဒ်လုပ်ပြီးပြီ",
+    "arabic": "အာရဗီ",
+    "asc": "ငယ်စဉ်ကြီးလိုက်",
+    "browseAll": "အားလုံးကြည့်မည်",
+    "browseAllReciters": "ကာရီအားလုံး ကြည့်မည်",
+    "cancel": "ပယ်ဖျက်မည်",
+    "clear": "ရှင်းမည်",
+    "copyToClipboard": "ကလစ်ဘုတ်သို့ ကူးမည်",
+    "createNewPlaylist": "ဖွင့်ရန်စာရင်းအသစ် ဖန်တီးမည်",
+    "defaultReciter": "ပုံသေကာရီ",
+    "delete": "ဖျက်မည်",
+    "deleteNote": "မှတ်စု ဖျက်မည်",
+    "deleteRecitation": "ရွတ်ဖတ်မှု ဖျက်မည်",
+    "desc": "ကြီးစဉ်ငယ်လိုက်",
+    "downloadComplete": "ဒေါင်းလုဒ် ပြီးပါပြီ",
+    "downloadFailed": "ဒေါင်းလုဒ် မအောင်မြင်ပါ",
+    "downloads": "ဒေါင်းလုဒ်များ",
+    "editDetails": "အသေးစိတ် ပြင်မည်",
+    "error": "အမှား",
+    "favoriteReciters": "အကြိုက်ဆုံး ကာရီများ",
+    "followAlong": "စာသားနှင့်အတူ လိုက်ဖတ်မည်",
+    "from": "မှ",
+    "goToReciter": "ကာရီထံ သွားမည်",
+    "goToVerse": "အာယသ်သို့ သွားမည်",
+    "learnAboutSurah": "စူရဟ်အကြောင်း လေ့လာမည်",
+    "loading": "တင်နေသည်...",
+    "loop": "ဆက်တိုက် ပြန်ဖွင့်မည်",
+    "loved": "နှစ်သက်ထားသည်",
+    "mushafSettings": "မုစ်ဟဖ် ဆက်တင်များ",
+    "next": "နောက်တစ်ခု",
+    "noRecitersFound": "ကာရီ မတွေ့ပါ",
+    "noResultsFound": "ရလဒ် မတွေ့ပါ",
+    "noUploadsYet": "တင်ထားသောဖိုင် မရှိသေးပါ",
+    "play": "ဖွင့်မည်",
+    "playEachVerse": "အာယသ်တစ်ပုဒ်စီ ဖွင့်မည်",
+    "playNow": "ယခုဖွင့်မည်",
+    "playSpeed": "ဖွင့်နှုန်း",
+    "playTheRange": "သတ်မှတ်အပိုင်း ဖွင့်မည်",
+    "playlistName": "ဖွင့်ရန်စာရင်း အမည်",
+    "prev": "ရှေ့တစ်ခု",
+    "readingTheme": "ဖတ်ရှုမှုပုံစံ",
+    "recentSearches": "မကြာသေးမီက ရှာဖွေမှုများ",
+    "reciter": "ကာရီ",
+    "reciterChoice": "ကာရီ ရွေးချယ်မှု",
+    "reciters": "ကာရီများ",
+    "remove": "ဖယ်မည်",
+    "removeAllDownloads": "ဒေါင်းလုဒ်အားလုံး ဖယ်မည်",
+    "removeHighlight": "အရောင်မှတ်သားမှု ဖယ်မည်",
+    "rev": "ဗျာဒိတ်ကျအစဉ်",
+    "save": "သိမ်းမည်",
+    "search": "ရှာမည်",
+    "searchReciters": "ကာရီများ ရှာရန်...",
+    "searchSurahs": "စူရဟ်များ ရှာမည်",
+    "share": "မျှဝေမည်",
+    "shareAsImage": "ပုံအဖြစ် မျှဝေမည်",
+    "shareAsText": "စာသားအဖြစ် မျှဝေမည်",
+    "sharedPhrases": "တူညီသော စကားစုများ",
+    "showBasmallah": "ဗစ်စ်မိလ္လာဟ် ပြမည်",
+    "stop": "ရပ်မည်",
+    "storage": "သိုလှောင်မှု",
+    "surah": "စူရဟ်",
+    "surahs": "စူရဟ်များ",
+    "to": "အထိ",
+    "translation": "ဘာသာပြန်",
+    "translationsTafaseer": "ဘာသာပြန်နှင့် သဖ်စီးရ်များ",
+    "transliteration": "အသံထွက်စာလုံးဖလှယ်ခြင်း",
+    "uploads": "တင်ထားသောဖိုင်များ",
+    "useDefaultReciter": "ပုံသေကာရီကို သုံးမည်",
+    "verseReference": "အာယသ် ကိုးကားချက်",
+    "verses": "အာယသ်များ",
+    "whatSNew": "အသစ်ပါဝင်မှုများ",
+    "wordByWord": "တစ်လုံးချင်း",
+    "writeYourNoteHere": "သင့်မှတ်စုကို ဤနေရာတွင် ရေးပါ...",
+    "yourPlaylists": "သင့်ဖွင့်ရန်စာရင်းများ"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "စူရဟ်အားလုံး ဖွင့်မည်"
+    },
+    "searchHeader": {
+      "searchSurahs": "စူရဟ်များ ရှာမည်"
+    },
+    "searchView": {
+      "noSurahsFound": "စူရဟ် မတွေ့ပါ"
+    },
+    "surahList": {
+      "noSurahsAvailable": "စူရဟ် မရှိပါ"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "ရွတ်ဖတ်မှု ထည့်မည်",
+      "uploadRecitationsToSeeThem": "ဤနေရာတွင် မြင်ရန် ရွတ်ဖတ်မှုများ တင်ပါ"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "ဒေါင်းလုဒ်ပြီး • စူရဟ် {{count}} ပုဒ်",
+    "subtitle_other": "ဒေါင်းလုဒ်ပြီး • စူရဟ် {{count}} ပုဒ်"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "ဝမ်းနည်းပါသည်၊ အမှားဖြစ်ပွားခဲ့သည်"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "စူရဟ် ၁၁၄ ပုဒ်လုံး ကြည့်မည်"
+    },
+    "savedAdhkarHero": {
+      "saved": "သိမ်းပြီး",
+      "yourCollection": "သင့်စုစည်းမှု"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "ယနေ့ စူရဟ်"
+    },
+    "surahsHero": {
+      "number": "နံပါတ်"
+    }
+  },
+  "language": {
+    "later": "နောက်မှ",
+    "restartMessage": "အပြင်အဆင်၏ ဦးတည်ရာအသစ်ကို အသုံးပြုရန် အက်ပ်ကို ပြန်စပါ။",
+    "restartNow": "ယခု ပြန်စမည်",
+    "restartTitle": "ပြန်စရန် လိုအပ်သည်",
+    "search": "ဘာသာစကားများ ရှာမည်",
+    "system": "စက်၏ ဘာသာစကား"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "ဆက်လုပ်မည်"
+    },
+    "whatsNewOnboarding": {
+      "skip": "ကျော်မည်"
+    }
+  },
+  "mushaf": {
+    "juz": "ဂျုဇ် {{juz}}",
+    "loadingMushaf": "မုစ်ဟဖ် တင်နေသည်…",
+    "main": {
+      "mushafSettings": "မုစ်ဟဖ် ဆက်တင်များ"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "ကာရီ ပြောင်းမည်",
+      "changeReciter2": "ကာရီ ပြောင်းမည်",
+      "nextAyah": "နောက်အာယသ်",
+      "playbackOptions": "ဖွင့်ရန် ရွေးချယ်စရာများ",
+      "previousAyah": "ရှေ့အာယသ်"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "စူရဟ်၊ အာယသ်၊ စာမျက်နှာ သို့မဟုတ် ဂျုဇ် ရှာမည်",
+      "recentReads": "မကြာသေးမီက ဖတ်ထားသည်များ",
+      "searchSurahsPagesOrJuz": "စူရဟ်၊ စာမျက်နှာ သို့မဟုတ် ဂျုဇ် ရှာရန်...",
+      "searchTheMushaf": "မုစ်ဟဖ်တွင် ရှာမည်"
+    },
+    "options": "ရွေးချယ်စရာများ",
+    "page": "စာမျက်နှာ {{page}}",
+    "pageAndSurah": "စာမျက်နှာ {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "မုစ်ဟဖ်ကို တင်၍မရပါ။",
+    "tryAgain": "ထပ်စမ်းမည်"
+  },
+  "mushafSettings": {
+    "rabbHelper": "မုစ်ဟဖ်တွင် အလ္လာဟ်အမည်နှင့် ရဗ္ဗ်ကဲ့သို့သော ဂုဏ်တော်များကို အရောင်ဖြင့် မှတ်သားသည်။"
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "အကြောင်းအရာအလိုက် အပိုင်းများကို အလှည့်ကျ အရောင်မှတ်သားခြင်း",
+    "arabicFontSize": "အာရဗီ စာလုံးအရွယ်အစား",
+    "bold": "စာလုံးထူ",
+    "book": "စာအုပ်",
+    "colorLegend": "အရောင်ရှင်းလင်းချက်",
+    "currentlyReading": "လက်ရှိ ဖတ်နေသည်",
+    "divineNames": "မြင့်မြတ်သော အမည်တော်များ",
+    "fontSize": "စာလုံးအရွယ်အစား",
+    "fullscreen": "မျက်နှာပြင်အပြည့်",
+    "hamzaReplacedByLongVowel": "ဟမ်ဇာကို သရရှည်ဖြင့် အစားထိုးထားသည်",
+    "heavyLamInAllahAfter": "အသံပြင်းအက္ခရာများနောက် အလ္လာဟ်ရှိ လာမ်ကို အသံထူထွက်ခြင်း",
+    "highlightAllahRabb": "အလ္လာဟ် / ရဗ္ဗ်ကို အရောင်မှတ်သားမည်",
+    "horizontal": "အလျားလိုက်",
+    "ibdal": "အိဗ်ဒါလ်",
+    "list": "စာရင်း",
+    "loadingSample": "နမူနာ တင်နေသည်...",
+    "maddAlBadal": "မဒ် အလ်ဗဒလ်",
+    "maximumProminence": "အထင်ရှားဆုံး",
+    "medium": "အလယ်အလတ်",
+    "modernMadinahPrintedPipeline": "ခေတ်မီ မဒီနာပုံနှိပ်မူ ဖော်ပြစနစ်",
+    "mushaf": "မုစ်ဟဖ်",
+    "normal": "ပုံမှန်",
+    "originalMushafWeight": "မုစ်ဟဖ် မူရင်းစာလုံးအထူ",
+    "pageDesign": "စာမျက်နှာ ဒီဇိုင်း",
+    "prolongedVowelAfterHamza": "ဟမ်ဇာနောက် သရရှည်",
+    "readingTheme": "ဖတ်ရှုမှုပုံစံ",
+    "scrollDirection": "ရွှေ့ကြည့်ရာ ဦးတည်ချက်",
+    "showDifferences": "ကွာခြားချက်များ ပြမည်",
+    "silah": "စိလဟ်",
+    "slightlyMoreProminent": "အနည်းငယ် ပိုထင်ရှား",
+    "softenedHamzaPronunciation": "ဟမ်ဇာကို ပျော့ပျောင်းစွာ အသံထွက်ခြင်း",
+    "subcontinentNastaliqStyle": "အိန္ဒိယတိုက်ငယ် နတ်စ်သလီးခ်ပုံစံ",
+    "taghlizAlLam": "သဂ်လီးဇ် အလ်လာမ်",
+    "tajweedColoring": "သဂျ်ဝီးဒ် အရောင်များ",
+    "tashilMusahhala": "သစ်ဟီးလ် / မုစ်ဟ်ဟလဟ်",
+    "textPreviewNotYetAvailable": "စာသားအကြိုကြည့်ရန် မရသေးပါ",
+    "textThickness": "စာလုံးအထူ",
+    "thematicHighlighting": "အကြောင်းအရာအလိုက် အရောင်မှတ်သားခြင်း",
+    "trailingVowelOrMoodChange": "နောက်ဆုံးသရ သို့မဟုတ် သဒ္ဒါပုံစံသာ ပြောင်းသည်",
+    "usingSaheehInternationalTranslationWith": "အသုံးပြုနေသည်: အောက်ခြေမှတ်ချက်ပါ Saheeh International ဘာသာပြန်",
+    "vertical": "ဒေါင်လိုက်",
+    "viewType": "မြင်ကွင်း အမျိုးအစား",
+    "vowelMoodShift": "သရ / သဒ္ဒါပုံစံ ပြောင်းလဲမှု",
+    "wordByWord": "တစ်လုံးချင်း",
+    "wordVariant": "စကားလုံး မူကွဲ"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "ဆာဗာသို့ ဆက်သွယ်၍မရပါ",
+    "connectionRestored": "ချိတ်ဆက်မှု ပြန်ရပါပြီ",
+    "noInternetConnection": "အင်တာနက် မချိတ်ဆက်ထားပါ",
+    "showingCachedData": "ယာယီသိမ်းထားသော ဒေတာများ ပြနေသည်"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" ဖန်တီးမည်"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "စောင့်ဆိုင်းစာရင်း",
+      "queueIsEmpty": "စောင့်ဆိုင်းစာရင်း ဗလာဖြစ်သည်"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "စူရဟ်စာသားနှင့် အသေးစိတ်ကို ကြည့်ရန် ဤရွတ်ဖတ်မှုကို အမှတ်အသားတပ်ပါ"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "ဖွင့်ရန်စာရင်း • စူရဟ် {{count}} ပုဒ်",
+    "subtitle_other": "ဖွင့်ရန်စာရင်း • စူရဟ် {{count}} ပုဒ်"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "ဤဖွင့်ရန်စာရင်းတွင် စူရဟ် မရှိပါ"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "အောက်ခြေမှတ်ချက်"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "ယခုအချိန်အတွက် အထူးရွေးချယ်ထားသော ရွတ်ဖတ်မှု",
+      "discover": "ရှာဖွေတွေ့ရှိမည်",
+      "discoverANewVoice": "အသံအသစ်တစ်သံ ရှာဖွေမည်",
+      "explore": "လေ့လာမည်",
+      "exploreTheUnexpected": "မမျှော်လင့်ထားသည်ကို လေ့လာမည်",
+      "hearSomethingNew": "အသစ်တစ်ခု နားထောင်မည်",
+      "letTheQuranSurpriseYou": "ကုရ်အာန်၏ အံ့ဩဖွယ်ရာများကို ခံစားပါ",
+      "randomMix": "ကျပန်းရောစပ်မှု",
+      "randomRecitation": "ကျပန်းရွတ်ဖတ်မှု",
+      "shuffleListen": "ကျပန်းအစီအစဉ်ဖြင့် နားထောင်မည်",
+      "surpriseMe": "အံ့ဩစရာ ရွေးပေးပါ"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "အသွင်အပြင်စနစ် ပြောင်းခြင်းသည် အက်ပ်တစ်ခုလုံးနှင့် သက်ဆိုင်သည်"
+  },
+  "reciterBrowse": {
+    "allReciters": "ကာရီအားလုံး",
+    "browseReciters": "ကာရီများ ကြည့်မည်",
+    "favorites": "အကြိုက်ဆုံးများ"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "ဤကာရီအတွက် ဒေါင်းလုဒ် မရှိပါ"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "ကျွန်ုပ်တင်ထားသောဖိုင်များ"
+    }
+  },
+  "recitersView": {
+    "adhkar": "အဇ်ကာရ်",
+    "bestForMemorization": "အလွတ်ကျက်ရန် အကောင်းဆုံး",
+    "bestForTajweed": "သဂျ်ဝီးဒ်အတွက် အကောင်းဆုံး",
+    "continueListening": "ဆက်နားထောင်မည်",
+    "exclusives": "သီးသန့်များ",
+    "exploreByRewayah": "ရိဝါယသ်အလိုက် လေ့လာမည်",
+    "featuredReciters": "အထူးဖော်ပြထားသော ကာရီများ",
+    "fromYourCollection": "သင့်စုစည်းမှုမှ",
+    "myRecitations": "ကျွန်ုပ်၏ ရွတ်ဖတ်မှုများ",
+    "newToQuranStartHere": "ကုရ်အာန်ကို ယခုမှ စလေ့လာပါသလား။ ဤနေရာမှ စပါ",
+    "seeMore": "ပိုကြည့်မည်",
+    "yourFavorites": "သင့်အကြိုက်ဆုံးများ"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "အသုံးပြုနေသည်",
+      "activeTafseer": "အသုံးပြုနေသော သဖ်စီးရ်",
+      "activeTranslation": "အသုံးပြုနေသော ဘာသာပြန်",
+      "deleteTafseer": "သဖ်စီးရ် ဖျက်မည်",
+      "deleteTranslation": "ဘာသာပြန် ဖျက်မည်",
+      "noTafaseerFound": "သဖ်စီးရ် မတွေ့ပါ",
+      "noTranslationsFound": "ဘာသာပြန် မတွေ့ပါ",
+      "unableToDownloadThisTafseer": "ဤသဖ်စီးရ်ကို ဒေါင်းလုဒ်လုပ်၍မရပါ။ အင်တာနက်ချိတ်ဆက်မှု စစ်ပြီး ထပ်စမ်းပါ။",
+      "unableToDownloadThisTranslation": "ဤဘာသာပြန်ကို ဒေါင်းလုဒ်လုပ်၍မရပါ။ အင်တာနက်ချိတ်ဆက်မှု စစ်ပြီး ထပ်စမ်းပါ။"
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "မကြာသေးမီက ရှာဖွေမှု မရှိပါ",
+      "tryDifferentKeywordsOrCheck": "အခြားရှာဖွေစကားလုံးများ သုံးပါ သို့မဟုတ် စာလုံးပေါင်း စစ်ပါ",
+      "yourSearchHistoryWillAppear": "သင့်ရှာဖွေမှုမှတ်တမ်း ဤနေရာတွင် ပေါ်မည်"
+    },
+    "surahsOrReciters": "စူရဟ် သို့မဟုတ် ကာရီ ရှာမည်"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "အဆင့်မြင့် အသံထိန်းချုပ်မှုများ",
+      "browseByJuz": "ဂျုဇ်အလိုက် ကြည့်မည်",
+      "createAndManageYourOwn": "သင့်အကြိုက်ဆုံး ရွတ်ဖတ်မှုများဖြင့် ကိုယ်ပိုင်ဖွင့်ရန်စာရင်းများ ဖန်တီးစီမံပါ",
+      "crystalClearRecitationsFromThe": "ကမ္ဘာ့အကောင်းဆုံး ကာရီများ၏ ကြည်လင်သော ရွတ်ဖတ်မှုများကို ပိုကောင်းသော တိုက်ရိုက်အသံစနစ်ဖြင့် နားဆင်ပါ",
+      "curatedCollections": "ရွေးချယ်စုစည်းမှုများ",
+      "customPlaylists": "စိတ်ကြိုက် ဖွင့်ရန်စာရင်းများ",
+      "customizeThemesAccentColorsAnd": "ပုံစံ၊ အရောင်နှင့် အသံဆက်တင်များကို သင့်စိတ်ကြိုက် ပြင်ဆင်ပါ",
+      "downloadSurahsForOfflineListening": "အချိန်မရွေး နေရာမရွေး အင်တာနက်မလိုဘဲ နားထောင်ရန် စူရဟ်များ ဒေါင်းလုဒ်လုပ်ပါ",
+      "easilyNavigateThroughTheQuran": "ဂျုဇ်အလိုက် စီစဉ်အုပ်စုဖွဲ့ထားခြင်းဖြင့် ကုရ်အာန်တွင် အလွယ်တကူ ရှာဖတ်ပါ",
+      "features": "လုပ်ဆောင်ချက်များ",
+      "highQualityAudio": "အရည်အသွေးမြင့် အသံ",
+      "listenReflectRememberAllah": "နားထောင်ပါ။ ဆင်ခြင်ပါ။ အလ္လာဟ်ကို သတိရပါ။",
+      "offlineDownloads": "အော့ဖ်လိုင်း ဒေါင်းလုဒ်များ",
+      "ourCommitment": "ကျွန်ုပ်တို့၏ ကတိကဝတ်",
+      "ourMission": "ကျွန်ုပ်တို့၏ ရည်မှန်းချက်",
+      "personalization": "ကိုယ်ပိုင်စိတ်ကြိုက် ပြင်ဆင်မှု",
+      "precisePlaybackControlWithContinuous": "ဆက်တိုက်ဖွင့်ခြင်းနှင့် ရွတ်ဖတ်နှုန်းချိန်ညှိခြင်းပါ တိကျသော အသံထိန်းချုပ်မှု",
+      "quranBayanTafsirKnowledgeOur": "ကုရ်အာန် • ဗယာန် • သဖ်စီးရ် • အသိပညာ။ အိမ်တွင်၊ ခရီးတွင် သို့မဟုတ် အလ္လာဟ်ကို သတိရရန် အချိန်ရသည့် နေရာတိုင်းတွင် နားထောင်ခြင်းနှင့် ဆင်ခြင်ခြင်းကို နေ့စဉ်ဘဝ၏ အစိတ်အပိုင်းဖြစ်စေရန် ရည်ရွယ်ပါသည်။",
+      "readListenAndReflect": "ဖတ်ပါ၊ နားထောင်ပါ၊ ဆင်ခြင်ပါ",
+      "readTheMushafExploreTranslations": "မုစ်ဟဖ်ကို ဖတ်ပါ၊ ဘာသာပြန်နှင့် သဖ်စီးရ်များ လေ့လာပါ၊ အာယသ်နှင့် မှတ်စုများ သိမ်းပါ၊ နေ့စဉ်အဇ်ကာရ်ကို ပြန်လေ့လာပါ။ ကာရီရွေး၊ ဖွင့်ရန်စာရင်းဖန်တီးပြီး နားထောင်မှုကို သင့်နေ့စဉ်ဘဝနှင့် ကိုက်ညီစေပါ။ ရရှိနိုင်သောလုပ်ဆောင်ချက်များသည် စက်အလိုက် ကွာခြားသည်။ မူရင်းအက်ပ်များတွင် အော့ဖ်လိုင်းနားထောင်ရန် ဒေါင်းလုဒ်လုပ်နိုင်သည်။",
+      "thoughtfullyOrganizedSurahsForDifferent": "အချိန်အခါနှင့် အကြောင်းအရာအလိုက် သေချာစီစဉ်ထားသော စူရဟ်များ",
+      "weCareAboutTheAccuracy": "မြင့်မြတ်သောအကြောင်းအရာ၏ တိကျမှု၊ လေးစားမှုရှိသော ဒီဇိုင်းနှင့် ယုံကြည်စိတ်ချရသော ဝင်ရောက်အသုံးပြုမှုကို အလေးထားပါသည်။ အသုံးပြုသူများကို ဂရုစိုက်လျက် ISTIMA ကို ဆက်လက်တိုးတက်အောင် လုပ်ဆောင်နေပါသည်။ အလ္လာဟ်သည် ဤကြိုးပမ်းမှုကို လက်ခံ၍ နားထောင်သူ၊ ဖတ်ရှုသူ၊ ဆင်ခြင်သူအားလုံးအတွက် အကျိုးရှိစေတော်မူပါစေ။"
+    },
+    "aboutApp": "{{name}} အကြောင်း",
+    "appearance": "အသွင်အပြင်",
+    "defaultreciter": {
+      "changeDefaultReciter": "ပုံသေကာရီ ပြောင်းမည်"
+    },
+    "developer": "ဖန်တီးသူ",
+    "floatingDevMenu": "ပေါ်နေသော ဖန်တီးသူမီနူး",
+    "language": "ဘာသာစကား",
+    "languageDescription": "အက်ပ်၏ ဘာသာစကား ရွေးပါ",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "သင်ရွေးထားသော ပုံသေကာရီကို အမြဲသုံးမည်",
+      "askEveryTime": "အကြိမ်တိုင်း မေးမည်",
+      "chooseAReciterEachTime": "ဖွင့်တိုင်း ကာရီရွေးမည်",
+      "chooseHowYouWantTo": "စူရဟ်ဖွင့်ချိန်တွင် ကာရီရွေးချယ်ပုံ သတ်မှတ်ပါ",
+      "defaultSelectionMethod": "ပုံသေ ရွေးချယ်နည်း",
+      "searchThroughOurCompleteCollection": "ကျွန်ုပ်တို့၏ ကာရီစုစည်းမှုအားလုံးတွင် ရှာပါ",
+      "selectionPreference": "ရွေးချယ်မှု ဦးစားပေး"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "ဒေါင်းလုဒ်အားလုံး ဖယ်ရှားပြီးပါပြီ။",
+      "areYouSureYouWant": "ဒေါင်းလုဒ်လုပ်ထားသမျှကို ဖယ်ရှားလိုသည်မှာ သေချာပါသလား။ ဤလုပ်ဆောင်ချက်ကို နောက်ပြန်ပြင်၍မရပါ။",
+      "cache": "ယာယီသိုလှောင်မှု",
+      "cacheHasBeenCleared": "ယာယီသိုလှောင်မှု ရှင်းပြီးပါပြီ။",
+      "clearCache": "ယာယီသိုလှောင်မှု ရှင်းမည်",
+      "failedToClearCache": "ယာယီသိုလှောင်မှု ရှင်း၍မရပါ။",
+      "failedToRemoveDownloads": "ဒေါင်းလုဒ်များ ဖယ်၍မရပါ။",
+      "free": "နေရာလွတ်",
+      "loadingStorageInformation": "သိုလှောင်မှုအချက်အလက် တင်နေသည်...",
+      "manageStorage": "သိုလှောင်မှု စီမံမည်",
+      "otherApps": "အခြားအက်ပ်များ",
+      "removeAllDownloads": "ဒေါင်းလုဒ်အားလုံး ဖယ်မည်",
+      "removeAllTheQuranContent": "အော့ဖ်လိုင်းသုံးရန် ဒေါင်းလုဒ်လုပ်ထားသော ကုရ်အာန်အကြောင်းအရာ အားလုံးဖယ်မည်။",
+      "storageBreakdown": "သိုလှောင်မှု ခွဲခြမ်းပြချက်",
+      "success": "အောင်မြင်ပါပြီ",
+      "thisWillClearYourCache": "ယာယီသိုလှောင်မှုကို ရှင်းမည်။ သင့်ဒေါင်းလုဒ်များကို မဖယ်ပါ။",
+      "youCanFreeUpStorage": "ယာယီသိုလှောင်မှုရှင်းခြင်းဖြင့် နေရာလွတ်ရနိုင်သည်။ သင့်ဒေါင်းလုဒ်များကို မဖယ်ပါ။"
+    },
+    "themePicker": {
+      "auto": "အလိုအလျောက်",
+      "dark": "အမှောင်",
+      "light": "အလင်း"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "ပြောင်းလဲမှုမှတ်တမ်း မရှိပါ"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "{{name}} အကြောင်း",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "အကြိုက်ဆုံး ကာရီ ထည့်မည်",
+      "uploadRecitation": "ရွတ်ဖတ်မှု တင်မည်"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "ပတ်ဝန်းကျင်အသံများ",
+      "none": "မရှိ",
+      "volume": "အသံအတိုးအကျယ်"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "ဥပမာ၊ နံနက် ရွတ်ဖတ်မှုများ"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "ဒေါင်းလုဒ် ဖယ်မည်"
+    },
+    "favoriteRecitersSheet": {
+      "done": "ပြီးပြီ"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "စုစည်းမှုသို့ ထည့်မည်",
+      "addToQueue": "စောင့်ဆိုင်းစာရင်းသို့ ထည့်မည်",
+      "continuePlaying": "ဆက်ဖွင့်မည်",
+      "goToReciter": "ကာရီထံ သွားမည်",
+      "removeFromRecents": "မကြာသေးမီစာရင်းမှ ဖယ်မည်"
+    },
+    "mushafLayoutSheet": {
+      "back": "နောက်သို့"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "အဆုံးအာယသ်",
+      "playbackSettings": "ဖွင့်ရန် ဆက်တင်များ",
+      "selectRange": "အပိုင်း ရွေးမည်",
+      "startingVerse": "အစအာယသ်"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "ထပ်ဖွင့်ရန် ဆက်တင်များ",
+      "start": "စမည်",
+      "verseRange": "အာယသ်အပိုင်းအခြား"
+    },
+    "organizeRecitationSheet": {
+      "category": "အမျိုးအစား",
+      "customReciter": "ကိုယ်ပိုင်ကာရီ",
+      "duA": "ဒုအာ",
+      "eGMorningAdhkar": "ဥပမာ၊ နံနက် အဇ်ကာရ်",
+      "lecture": "ဟောပြောချက်",
+      "moreOptions": "နောက်ထပ် ရွေးချယ်စရာများ",
+      "other": "အခြား",
+      "recording": "အသံသွင်းမှု",
+      "rewayah": "ရိဝါယသ်",
+      "searchSurahs": "စူရဟ်များ ရှာရန်...",
+      "style": "ဟန်",
+      "tafsir": "သဖ်စီးရ်",
+      "title": "ခေါင်းစဉ်",
+      "type": "အမျိုးအစား",
+      "verseRangeOptional": "အာယသ်အပိုင်းအခြား (မဖြစ်မနေ မဟုတ်)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "ဖွင့်နှုန်း"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "ဤစာရင်းရှိ အကြောင်းအရာအားလုံးကို ဒေါင်းလုဒ်လုပ်ပြီး ဖြစ်သည်။",
+      "anErrorOccurredWhileDownloading": "ဖွင့်ရန်စာရင်း ဒေါင်းလုဒ်လုပ်ရာတွင် အမှားဖြစ်ပွားသည်။ ထပ်စမ်းပါ။",
+      "deletePlaylist": "ဖွင့်ရန်စာရင်း ဖျက်မည်",
+      "downloadingPlaylist": "ဖွင့်ရန်စာရင်း ဒေါင်းလုဒ်လုပ်နေသည်...",
+      "editPlaylist": "ဖွင့်ရန်စာရင်း ပြင်မည်",
+      "emptyPlaylist": "ဖွင့်ရန်စာရင်း ဗလာ",
+      "thisPlaylistIsEmpty": "ဤဖွင့်ရန်စာရင်း ဗလာဖြစ်သည်။"
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "ရိဝါယသ်အကြောင်း",
+      "availableRewayat": "ရရှိနိုင်သော ရိဝါယသ်များ"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "စူရဟ်ကို ဖွင့်ရန်စာရင်းသို့ ထည့်၍မရပါ",
+      "failedToCreatePlaylist": "ဖွင့်ရန်စာရင်း ဖန်တီး၍မရပါ",
+      "noPlaylistsYetCreateYour": "ဖွင့်ရန်စာရင်း မရှိသေးပါ။ အပေါ်တွင် သင့်ပထမဆုံးစာရင်း ဖန်တီးပါ။"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "အကြိမ်တိုင်း မေးမည်",
+      "randomReciter": "ကျပန်းကာရီ",
+      "selectReciter": "ကာရီ ရွေးမည်"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "ဤအာယသ်အတွက် ဆင်တူအာယသ် မတွေ့ပါ။",
+      "similarWording": "ဆင်တူ အသုံးအနှုန်း"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "အိပ်ချိန် ပိတ်ချိန်သတ်မှတ်မှု",
+      "turnOffTimer": "အချိန်သတ်မှတ်မှု ပိတ်မည်"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "ဖွင့်ရန်စာရင်းမှ ဖယ်မည်"
+    },
+    "verseActionsSheet": {
+      "addNote": "မှတ်စု ထည့်မည်",
+      "copy": "ကူးမည်",
+      "repeat": "ထပ်ဖွင့်မည်",
+      "similarVerses": "ဆင်တူ အာယသ်များ",
+      "tafseer": "သဖ်စီးရ်",
+      "theme": "အပြင်အဆင်"
+    },
+    "verseCopySheet": {
+      "copyOptions": "ကူးရန် ရွေးချယ်စရာများ",
+      "selectWhatToCopy": "ကူးလိုသည်ကို ရွေးပါ"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "မှတ်သားရန် အရောင်"
+    },
+    "verseShareSheet": {
+      "shareVerse": "အာယသ် မျှဝေမည်"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "အာယသ် {{count}} ပုဒ်တွင် တွေ့ရှိသည်",
+    "foundIn_other": "အာယသ် {{count}} ပုဒ်တွင် တွေ့ရှိသည်"
+  },
+  "surahItem": {
+    "moreOptions": "နောက်ထပ် ရွေးချယ်စရာများ",
+    "opensMenuWithAdditionalActions": "ဤစူရဟ်အတွက် အခြားလုပ်ဆောင်ချက်များပါသော မီနူး ဖွင့်သည်",
+    "tapToPlaySurah": "စူရဟ်ဖွင့်ရန် နှိပ်ပါ"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "ဖွင့်ရန်စာရင်း ID မမှန်ပါ",
+      "playlistNotFound": "ဖွင့်ရန်စာရင်း မတွေ့ပါ"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "ဤစာရင်းရှိ စူရဟ်အားလုံး ရွတ်ဖတ်ထားသော ကာရီ မတွေ့ပါ။ အခြားစာရင်းကို စမ်းကြည့်ပါ။",
+      "failedToPlayPlaylistPlease": "ဖွင့်ရန်စာရင်းကို ဖွင့်၍မရပါ။ ထပ်စမ်းပါ။",
+      "failedToPlayTrackPlease": "အသံဖိုင်ကို ဖွင့်၍မရပါ။ ထပ်စမ်းပါ။",
+      "failedToShufflePlaylistPlease": "ဖွင့်ရန်စာရင်းကို ကျပန်းဖွင့်၍မရပါ။ ထပ်စမ်းပါ။",
+      "noReciterAvailable": "ကာရီ မရှိပါ",
+      "noSurahsInThisPlaylist": "ဤဖွင့်ရန်စာရင်းတွင် စူရဟ် မရှိပါ"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "အကောင့်",
+      "appData": "အက်ပ်နှင့် ဒေတာ",
+      "audioPlayback": "အသံနှင့် ဖွင့်ခြင်း",
+      "chooseYourPreferredReciter": "သင်နှစ်သက်သော ကာရီ ရွေးပါ",
+      "customizeQuranDisplayOptions": "ကုရ်အာန် ပြသမှုကို စိတ်ကြိုက်ပြင်ပါ",
+      "customizeReciterSelection": "ကာရီရွေးချယ်မှုကို စိတ်ကြိုက်ပြင်ပါ",
+      "featureRequests": "လုပ်ဆောင်ချက် တောင်းဆိုမှုများ",
+      "feedback": "အကြံပြုချက်",
+      "helpSupport": "အကူအညီနှင့် ပံ့ပိုးမှု",
+      "learnMoreAboutOurMission": "ကျွန်ုပ်တို့၏ ရည်မှန်းချက်အကြောင်း ပိုလေ့လာပါ",
+      "manageQuranTranslationsAndCommentary": "ကုရ်အာန် ဘာသာပြန်နှင့် ရှင်းလင်းချက်များ စီမံမည်",
+      "privacyPolicy": "ကိုယ်ရေးအချက်အလက် မူဝါဒ",
+      "quran": "ကုရ်အာန်",
+      "readOurTermsOfService": "ဝန်ဆောင်မှု စည်းကမ်းချက်များ ဖတ်ပါ",
+      "seeWhatSNewIn": "ဤဗားရှင်းတွင် အသစ်ပါဝင်သည်များ ကြည့်ပါ",
+      "shareYourExperienceWithOthers": "သင့်အတွေ့အကြုံကို အခြားသူများနှင့် မျှဝေပါ",
+      "showTheFloatingDeveloperTools": "ပေါ်နေသော ဖန်တီးသူကိရိယာ ခလုတ်ကို ပြမည်",
+      "suggestImprovementsAndNewFeatures": "တိုးတက်မှုနှင့် လုပ်ဆောင်ချက်အသစ်များ အကြံပြုပါ",
+      "termsOfService": "ဝန်ဆောင်မှု စည်းကမ်းချက်များ",
+      "viewAndManageStorageUsage": "သိုလှောင်မှုအသုံးပြုပုံ ကြည့်ရှုစီမံမည်",
+      "viewOurPrivacyPolicy": "ကိုယ်ရေးအချက်အလက် မူဝါဒကို ကြည့်ပါ",
+      "writeAReview": "သုံးသပ်ချက် ရေးမည်"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "ပယ်ဖျက်မည်",
+    "close": "ပိတ်မည်",
+    "collection": "စုစည်းမှု",
+    "download": "ဒေါင်းလုဒ်လုပ်မည်",
+    "downloads": "ဒေါင်းလုဒ်များ",
+    "error": "တစ်စုံတစ်ခု မှားယွင်းသွားသည်",
+    "favorites": "အကြိုက်ဆုံးများ",
+    "home": "ပင်မ",
+    "language": "ဘာသာစကား",
+    "library": "စာကြည့်တိုက်",
+    "loading": "တင်နေသည်...",
+    "noResults": "ရလဒ် မတွေ့ပါ",
+    "offline": "အော့ဖ်လိုင်းဖြစ်နေသည်",
+    "pause": "ခဏရပ်မည်",
+    "play": "ဖွင့်မည်",
+    "retry": "ထပ်စမ်းမည်",
+    "save": "သိမ်းမည်",
+    "search": "ရှာမည်",
+    "settings": "ဆက်တင်များ",
+    "surahs": "စူရဟ်များ"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "အကြောင်းအရာ ရွေးမည်"
+    },
+    "highlightContent": {
+      "chooseColor": "အရောင် ရွေးမည်"
+    },
+    "noteContent": {
+      "saveNote": "မှတ်စု သိမ်းမည်"
+    },
+    "shareContent": {
+      "shareLink": "လင့်ခ် မျှဝေမည်"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "ဤအာယသ်အတွက် ဆင်တူအာယသ် မတွေ့ပါ။",
+      "sharedPhrases": "တူညီသော စကားစုများ",
+      "similarWording": "ဆင်တူ အသုံးအနှုန်း"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "သဖ်စီးရ် ဒေါင်းလုဒ် မရှိပါ",
+      "tafseerNotAvailableForThis": "ဤအာယသ်အတွက် သဖ်စီးရ် မရှိပါ",
+      "tapHereToDownloadA": "သဖ်စီးရ် ဒေါင်းလုဒ်လုပ်ပြီး ရှင်းလင်းချက်ကြည့်ရန် ဤနေရာကို နှိပ်ပါ။"
+    },
+    "themeContent": {
+      "noThematicDataForThis": "ဤအာယသ်အတွက် အကြောင်းအရာဆိုင်ရာ ဒေတာ မရှိပါ။",
+      "passage": "စာပိုဒ်"
+    },
+    "translationContent": {
+      "switch": "ပြောင်းမည်",
+      "translationNotAvailable": "ဘာသာပြန် မရှိပါ"
+    }
+  },
+  "version": {
+    "label": "ဗားရှင်း {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "အသစ်ပါဝင်မှုများ -"
+  },
+  "wordDetail": {
+    "context": "အာယသ် {{surah}}:{{ayah}} · စကားလုံး {{total}} လုံးအနက် {{position}} လုံးမြောက်"
+  }
+}

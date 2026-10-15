@@ -1,0 +1,724 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Eroare la inițializarea playerului: {{message}}",
+    "errorLoadingFonts": "Eroare la încărcarea fonturilor"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Pagina principală ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Toți",
+      "clearAll": "Șterge tot",
+      "hasPhoto": "Are fotografie"
+    },
+    "filterModal": {
+      "apply": "Aplică",
+      "filterReciters": "Filtrează recitatorii",
+      "recitationStyles": "Stiluri de recitare",
+      "reset": "Resetează",
+      "rewayatTypes": "Tipuri de riwayat"
+    },
+    "recitersFound_one": "{{count}} recitator găsit cu filtrele actuale",
+    "recitersFound_other": "{{count}} de recitatori găsiți cu filtrele actuale",
+    "recitersFound_few": "{{count}} recitatori găsiți cu filtrele actuale"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Sure îndrăgite"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Adaugă versete la semne de carte pentru a le vedea aici",
+      "bookmarks": "Semne de carte",
+      "noBookmarksYet": "Nu ai încă semne de carte",
+      "removeBookmark": "Elimină semnul de carte"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Riwayat",
+      "searchPlaylistsRecitersSurahsRewayat": "Caută liste, recitatori, sure, riwayat...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Caută liste, recitatori, sure, riwayat și descărcări",
+      "searchYourCollection": "Caută în colecția ta",
+      "searching": "Se caută...",
+      "tryDifferentKeywords": "Încearcă alte cuvinte-cheie"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Descarcă sure pentru a le vedea aici",
+      "noDownloadsYet": "Nu ai încă descărcări",
+      "playAll": "Redă tot"
+    },
+    "favoritereciters": {
+      "addReciters": "Adaugă recitatori",
+      "addRecitersToSeeThem": "Adaugă recitatori pentru a-i vedea aici",
+      "noFavoriteRecitersYet": "Nu ai încă recitatori preferați",
+      "removeFromFavorites": "Elimină din favorite",
+      "searchFavoriteReciters": "Caută recitatori preferați"
+    },
+    "index": {
+      "addToCollection": "Adaugă în colecție",
+      "bookmarks": "Semne de carte",
+      "createYourFirstPlaylist": "Creează prima ta listă de redare",
+      "downloads": "Descărcări",
+      "items_one": "{{count}} element",
+      "items_other": "{{count}} de elemente",
+      "loved": "Îndrăgite",
+      "noBookmarksYet": "Nu ai încă semne de carte",
+      "noDownloadsYet": "Nu ai încă descărcări",
+      "noFavoritesYet": "Nu ai încă favorite",
+      "noLovedSurahsYet": "Nu ai încă sure îndrăgite",
+      "noNotesYet": "Nu ai încă note",
+      "noUploadsYet": "Nu ai încă încărcări",
+      "notes": "Note",
+      "playlists": "Liste de redare",
+      "reciters": "Recitatori",
+      "uploads": "Încărcări",
+      "items_few": "{{count}} elemente"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Toate surele îndrăgite sunt deja descărcate.",
+      "allLovedSurahsHaveBeen": "Toate surele îndrăgite au fost descărcate.",
+      "downloadError": "Eroare la descărcare",
+      "loveSurahsToSeeThem": "Marchează surele ca îndrăgite pentru a le vedea aici",
+      "noLovedSurahsYet": "Nu ai încă sure îndrăgite",
+      "someDownloadsMayHaveFailed": "Este posibil ca unele descărcări să fi eșuat.",
+      "unloveAllSurahs": "Elimină toate surele din cele îndrăgite"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Adaugă note la versete pentru a le vedea aici",
+      "editNote": "Editează nota",
+      "noNotesYet": "Nu ai încă note",
+      "notes": "Note"
+    },
+    "playlistModal": {
+      "name": "Nume"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Creează liste de redare pentru a le vedea aici",
+      "noPlaylistsYet": "Nu ai încă liste de redare",
+      "playlists": "Liste de redare"
+    },
+    "uploads": {
+      "removeAllUploads": "Elimină toate încărcările",
+      "uploadRecitationsToSeeThem": "Încarcă recitări pentru a le vedea aici"
+    }
+  },
+  "common": {
+    "1Time": "O dată",
+    "2Times": "De 2 ori",
+    "3Times": "De 3 ori",
+    "addToCollection": "Adaugă în colecție",
+    "addToQueue": "Adaugă în coadă",
+    "allSurahs": "Toate surele",
+    "alreadyDownloaded": "Deja descărcat",
+    "arabic": "Arabă",
+    "asc": "Crescător",
+    "browseAll": "Explorează tot",
+    "browseAllReciters": "Explorează toți recitatorii",
+    "cancel": "Anulează",
+    "clear": "Șterge",
+    "copyToClipboard": "Copiază în clipboard",
+    "createNewPlaylist": "Creează o listă de redare nouă",
+    "defaultReciter": "Recitator implicit",
+    "delete": "Șterge",
+    "deleteNote": "Șterge nota",
+    "deleteRecitation": "Șterge recitarea",
+    "desc": "Descrescător",
+    "downloadComplete": "Descărcare finalizată",
+    "downloadFailed": "Descărcare eșuată",
+    "downloads": "Descărcări",
+    "editDetails": "Editează detaliile",
+    "error": "Eroare",
+    "favoriteReciters": "Recitatori preferați",
+    "followAlong": "Urmărește textul",
+    "from": "De la",
+    "goToReciter": "Mergi la recitator",
+    "goToVerse": "Mergi la verset",
+    "learnAboutSurah": "Află despre sură",
+    "loading": "Se încarcă...",
+    "loop": "Redare în buclă",
+    "loved": "Îndrăgite",
+    "mushafSettings": "Setările Mushaf-ului",
+    "next": "Următorul",
+    "noRecitersFound": "Nu s-au găsit recitatori",
+    "noResultsFound": "Nu s-au găsit rezultate",
+    "noUploadsYet": "Nu ai încă încărcări",
+    "play": "Redă",
+    "playEachVerse": "Redă fiecare verset",
+    "playNow": "Redă acum",
+    "playSpeed": "Viteza de redare",
+    "playTheRange": "Redă intervalul",
+    "playlistName": "Numele listei de redare",
+    "prev": "Precedentul",
+    "readingTheme": "Tema de lectură",
+    "recentSearches": "Căutări recente",
+    "reciter": "Recitator",
+    "reciterChoice": "Alegerea recitatorului",
+    "reciters": "Recitatori",
+    "remove": "Elimină",
+    "removeAllDownloads": "Elimină toate descărcările",
+    "removeHighlight": "Elimină evidențierea",
+    "rev": "Revelație",
+    "save": "Salvează",
+    "search": "Caută",
+    "searchReciters": "Caută recitatori...",
+    "searchSurahs": "Caută sure",
+    "share": "Distribuie",
+    "shareAsImage": "Distribuie ca imagine",
+    "shareAsText": "Distribuie ca text",
+    "sharedPhrases": "Expresii comune",
+    "showBasmallah": "Arată Basmala",
+    "stop": "Oprește",
+    "storage": "Stocare",
+    "surah": "Sură",
+    "surahs": "Sure",
+    "to": "Până la",
+    "translation": "Traducere",
+    "translationsTafaseer": "Traduceri și tafsir",
+    "transliteration": "Transliterare",
+    "uploads": "Încărcări",
+    "useDefaultReciter": "Folosește recitatorul implicit",
+    "verseReference": "Referința versetului",
+    "verses": "Versete",
+    "whatSNew": "Noutăți",
+    "wordByWord": "Cuvânt cu cuvânt",
+    "writeYourNoteHere": "Scrie nota aici...",
+    "yourPlaylists": "Listele tale de redare"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Redă toate surele"
+    },
+    "searchHeader": {
+      "searchSurahs": "Caută sure"
+    },
+    "searchView": {
+      "noSurahsFound": "Nu s-au găsit sure"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Nu sunt sure disponibile"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Adaugă recitare",
+      "uploadRecitationsToSeeThem": "Încarcă recitări pentru a le vedea aici"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Descărcată • {{count}} sură",
+    "subtitle_other": "Descărcate • {{count}} de sure",
+    "subtitle_few": "Descărcate • {{count}} sure"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Ne pare rău, a apărut o eroare"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Explorează toate cele 114 sure"
+    },
+    "savedAdhkarHero": {
+      "saved": "Salvat",
+      "yourCollection": "Colecția ta"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SURA ZILEI"
+    },
+    "surahsHero": {
+      "number": "Număr"
+    }
+  },
+  "language": {
+    "later": "Mai târziu",
+    "restartMessage": "Repornește aplicația pentru a aplica noua direcție a interfeței.",
+    "restartNow": "Repornește acum",
+    "restartTitle": "Este necesară repornirea",
+    "search": "Caută limbi",
+    "system": "Limba dispozitivului"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Continuă"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Omite"
+    }
+  },
+  "mushaf": {
+    "juz": "Juz {{juz}}",
+    "loadingMushaf": "Se încarcă Mushaf-ul…",
+    "main": {
+      "mushafSettings": "Setările Mushaf-ului"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Schimbă recitatorul",
+      "changeReciter2": "Schimbă recitatorul",
+      "nextAyah": "Versetul următor",
+      "playbackOptions": "Opțiuni de redare",
+      "previousAyah": "Versetul precedent"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Găsește sure, versete, pagini sau juz",
+      "recentReads": "LECTURI RECENTE",
+      "searchSurahsPagesOrJuz": "Caută sure, pagini sau juz...",
+      "searchTheMushaf": "Caută în Mushaf"
+    },
+    "options": "Opțiuni",
+    "page": "Pagina {{page}}",
+    "pageAndSurah": "Pagina {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushaf-ul nu a putut fi încărcat.",
+    "tryAgain": "Încearcă din nou"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Evidențiază numele lui Allah și titluri divine precum Rabb în Mushaf."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Evidențieri alternative pe pasaje tematice",
+    "arabicFontSize": "Mărimea fontului arab",
+    "bold": "Aldin",
+    "book": "Carte",
+    "colorLegend": "Legenda culorilor",
+    "currentlyReading": "În curs de lectură",
+    "divineNames": "NUME DIVINE",
+    "fontSize": "Mărimea fontului",
+    "fullscreen": "Ecran complet",
+    "hamzaReplacedByLongVowel": "Hamza înlocuită cu o vocală lungă",
+    "heavyLamInAllahAfter": "Lam emfatic în Allah după litere emfatice",
+    "highlightAllahRabb": "Evidențiază Allah / Rabb",
+    "horizontal": "Orizontal",
+    "ibdal": "Ibdal",
+    "list": "Listă",
+    "loadingSample": "Se încarcă exemplul...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Evidențiere maximă",
+    "medium": "Mediu",
+    "modernMadinahPrintedPipeline": "Procesare modernă a ediției tipărite la Medina",
+    "mushaf": "Mushaf",
+    "normal": "Normal",
+    "originalMushafWeight": "Grosimea originală a textului Mushaf-ului",
+    "pageDesign": "ASPECTUL PAGINII",
+    "prolongedVowelAfterHamza": "Vocală prelungită după hamza",
+    "readingTheme": "TEMA DE LECTURĂ",
+    "scrollDirection": "DIRECȚIA DE DERULARE",
+    "showDifferences": "Arată diferențele",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Ușor mai evidențiat",
+    "softenedHamzaPronunciation": "Pronunțare atenuată a hamzei",
+    "subcontinentNastaliqStyle": "Stil Nastaliq din subcontinent",
+    "taghlizAlLam": "Taghliz al-Lam",
+    "tajweedColoring": "Colorare tajwid",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "PREVIZUALIZAREA TEXTULUI NU ESTE ÎNCĂ DISPONIBILĂ",
+    "textThickness": "GROSIMEA TEXTULUI",
+    "thematicHighlighting": "Evidențiere tematică",
+    "trailingVowelOrMoodChange": "Doar schimbarea vocalei finale sau a modului",
+    "usingSaheehInternationalTranslationWith": "Se folosește: traducerea Saheeh International cu note de subsol",
+    "vertical": "Vertical",
+    "viewType": "TIPUL VIZUALIZĂRII",
+    "vowelMoodShift": "Schimbarea vocalei sau a modului",
+    "wordByWord": "CUVÂNT CU CUVÂNT",
+    "wordVariant": "Variantă a cuvântului"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Serverul nu este accesibil",
+    "connectionRestored": "Conexiune restabilită",
+    "noInternetConnection": "Fără conexiune la internet",
+    "showingCachedData": "Se afișează datele din cache"
+  },
+  "organize": {
+    "createReciter": "Creează \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Coadă",
+      "queueIsEmpty": "Coada este goală"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Etichetează recitarea pentru a vedea textul surei și detaliile"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Listă de redare • {{count}} sură",
+    "subtitle_other": "Listă de redare • {{count}} de sure",
+    "subtitle_few": "Listă de redare • {{count}} sure"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Nu sunt sure în această listă de redare"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Notă de subsol"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "O recitare aleasă special pentru acest moment",
+      "discover": "Descoperă",
+      "discoverANewVoice": "Descoperă o voce nouă",
+      "explore": "Explorează",
+      "exploreTheUnexpected": "Explorează neașteptatul",
+      "hearSomethingNew": "Ascultă ceva nou",
+      "letTheQuranSurpriseYou": "Lasă Coranul să te surprindă",
+      "randomMix": "Mix aleatoriu",
+      "randomRecitation": "Recitare aleatorie",
+      "shuffleListen": "Redă aleatoriu și ascultă",
+      "surpriseMe": "Surprinde-mă"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Schimbarea modului de afișare se aplică întregii aplicații"
+  },
+  "reciterBrowse": {
+    "allReciters": "Toți recitatorii",
+    "browseReciters": "Explorează recitatorii",
+    "favorites": "Favorite"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Nu sunt descărcări pentru acest recitator"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Încărcările mele"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkar",
+    "bestForMemorization": "Ideale pentru memorare",
+    "bestForTajweed": "Ideale pentru tajwid",
+    "continueListening": "Continuă ascultarea",
+    "exclusives": "Exclusivități",
+    "exploreByRewayah": "Explorează după riwaya",
+    "featuredReciters": "Recitatori recomandați",
+    "fromYourCollection": "Din colecția ta",
+    "myRecitations": "Recitările mele",
+    "newToQuranStartHere": "Abia descoperi Coranul? Începe aici",
+    "seeMore": "Vezi mai mult",
+    "yourFavorites": "Favoritele tale"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Activ",
+      "activeTafseer": "TAFSIR ACTIV",
+      "activeTranslation": "TRADUCERE ACTIVĂ",
+      "deleteTafseer": "Șterge tafsirul",
+      "deleteTranslation": "Șterge traducerea",
+      "noTafaseerFound": "Nu s-au găsit tafsiruri",
+      "noTranslationsFound": "Nu s-au găsit traduceri",
+      "unableToDownloadThisTafseer": "Nu se poate descărca acest tafsir. Verifică conexiunea la internet și încearcă din nou.",
+      "unableToDownloadThisTranslation": "Nu se poate descărca această traducere. Verifică conexiunea la internet și încearcă din nou."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Nu există căutări recente",
+      "tryDifferentKeywordsOrCheck": "Încearcă alte cuvinte-cheie sau verifică ortografia",
+      "yourSearchHistoryWillAppear": "Istoricul căutărilor va apărea aici"
+    },
+    "surahsOrReciters": "Caută sure sau recitatori"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Comenzi audio avansate",
+      "browseByJuz": "Explorează după juz",
+      "createAndManageYourOwn": "Creează și gestionează liste de redare personalizate cu recitările tale preferate",
+      "crystalClearRecitationsFromThe": "Recitări de o claritate deosebită de la cei mai buni recitatori din lume, cu streaming optimizat",
+      "curatedCollections": "Colecții selectate",
+      "customPlaylists": "Liste de redare personalizate",
+      "customizeThemesAccentColorsAnd": "Personalizează temele, culorile de accent și setările audio după preferințe",
+      "downloadSurahsForOfflineListening": "Descarcă sure pentru a le asculta offline oricând și oriunde, fără internet",
+      "easilyNavigateThroughTheQuran": "Explorează ușor Coranul datorită organizării și grupării pe juz",
+      "features": "FUNCȚII",
+      "highQualityAudio": "Sunet de înaltă calitate",
+      "listenReflectRememberAllah": "Ascultă. Reflectează. Amintește-ți de Allah.",
+      "offlineDownloads": "Descărcări offline",
+      "ourCommitment": "Angajamentul nostru",
+      "ourMission": "Misiunea noastră",
+      "personalization": "Personalizare",
+      "precisePlaybackControlWithContinuous": "Control precis al redării, cu redare continuă și viteză de recitare reglabilă",
+      "quranBayanTafsirKnowledgeOur": "Coran • Bayan • Tafsir • Cunoaștere. Dorim ca ascultarea și reflecția să facă parte din viața de zi cu zi: acasă, pe drum și oriunde ai un moment să îți amintești de Allah.",
+      "readListenAndReflect": "Citește, ascultă și reflectează",
+      "readTheMushafExploreTranslations": "Citește Mushaf-ul, explorează traduceri și tafsir, salvează versete și note și revino la adhkar zilnic. Alege recitatorul, creează liste de redare și adaptează ascultarea la ritmul zilei tale. Funcțiile disponibile diferă în funcție de dispozitiv; aplicațiile native permit și descărcări pentru ascultare offline.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Sure organizate cu grijă pentru diferite ocazii și teme",
+      "weCareAboutTheAccuracy": "Ne preocupă exactitatea conținutului sacru, un design respectuos și accesul fiabil. Continuăm să îmbunătățim ISTIMA cu grijă față de cei care îl folosesc. Fie ca Allah să accepte acest efort și să îl facă folositor tuturor celor care ascultă, citesc și reflectează."
+    },
+    "aboutApp": "Despre {{name}}",
+    "appearance": "ASPECT",
+    "defaultreciter": {
+      "changeDefaultReciter": "SCHIMBĂ RECITATORUL IMPLICIT"
+    },
+    "developer": "DEZVOLTATOR",
+    "floatingDevMenu": "Meniu flotant pentru dezvoltatori",
+    "language": "Limbă",
+    "languageDescription": "Alege limba aplicației",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Folosește întotdeauna recitatorul implicit ales",
+      "askEveryTime": "Întreabă de fiecare dată",
+      "chooseAReciterEachTime": "Alege un recitator la fiecare redare",
+      "chooseHowYouWantTo": "Alege modul de selectare a recitatorilor la redarea surelor",
+      "defaultSelectionMethod": "METODA IMPLICITĂ DE SELECTARE",
+      "searchThroughOurCompleteCollection": "Caută în întreaga noastră colecție de recitatori",
+      "selectionPreference": "PREFERINȚA DE SELECTARE"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Toate descărcările au fost eliminate.",
+      "areYouSureYouWant": "Sigur vrei să elimini tot conținutul descărcat? Această acțiune este ireversibilă.",
+      "cache": "Cache",
+      "cacheHasBeenCleared": "Memoria cache a fost golită.",
+      "clearCache": "Golește memoria cache",
+      "failedToClearCache": "Nu s-a putut goli memoria cache.",
+      "failedToRemoveDownloads": "Nu s-au putut elimina descărcările.",
+      "free": "Liber",
+      "loadingStorageInformation": "Se încarcă informațiile de stocare...",
+      "manageStorage": "GESTIONEAZĂ STOCAREA",
+      "otherApps": "Alte aplicații",
+      "removeAllDownloads": "Elimină toate descărcările",
+      "removeAllTheQuranContent": "Elimină tot conținutul Coranului descărcat pentru utilizare offline.",
+      "storageBreakdown": "DISTRIBUȚIA STOCĂRII",
+      "success": "Succes",
+      "thisWillClearYourCache": "Se va goli memoria cache. Descărcările nu vor fi eliminate.",
+      "youCanFreeUpStorage": "Poți elibera spațiu golind memoria cache. Descărcările nu vor fi eliminate."
+    },
+    "themePicker": {
+      "auto": "Automat",
+      "dark": "Întunecat",
+      "light": "Luminos"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Jurnalul modificărilor nu este disponibil"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Despre {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Adaugă recitator preferat",
+      "uploadRecitation": "Încarcă recitare"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Sunete ambientale",
+      "none": "Niciunul",
+      "volume": "Volum"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "De exemplu, Recitări de dimineață"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Elimină descărcarea"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Gata"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Adaugă în colecție",
+      "addToQueue": "Adaugă în coadă",
+      "continuePlaying": "Continuă redarea",
+      "goToReciter": "Mergi la recitator",
+      "removeFromRecents": "Elimină din recente"
+    },
+    "mushafLayoutSheet": {
+      "back": "Înapoi"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Versetul final",
+      "playbackSettings": "Setări de redare",
+      "selectRange": "Selectează intervalul",
+      "startingVerse": "Versetul inițial"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Setări de repetare",
+      "start": "Începe",
+      "verseRange": "Interval de versete"
+    },
+    "organizeRecitationSheet": {
+      "category": "Categorie",
+      "customReciter": "Recitator personalizat",
+      "duA": "Du'a",
+      "eGMorningAdhkar": "De exemplu, Adhkar de dimineață",
+      "lecture": "Prelegere",
+      "moreOptions": "Mai multe opțiuni",
+      "other": "Altele",
+      "recording": "Înregistrare",
+      "rewayah": "Riwaya",
+      "searchSurahs": "Caută sure...",
+      "style": "Stil",
+      "tafsir": "Tafsir",
+      "title": "Titlu",
+      "type": "Tip",
+      "verseRangeOptional": "Interval de versete (opțional)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Viteza de redare"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Toate elementele din această listă sunt deja descărcate.",
+      "anErrorOccurredWhileDownloading": "A apărut o eroare la descărcarea listei. Încearcă din nou.",
+      "deletePlaylist": "Șterge lista de redare",
+      "downloadingPlaylist": "Se descarcă lista...",
+      "editPlaylist": "Editează lista de redare",
+      "emptyPlaylist": "Listă de redare goală",
+      "thisPlaylistIsEmpty": "Această listă de redare este goală."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Despre riwayat",
+      "availableRewayat": "Riwayat disponibile"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Nu s-a putut adăuga sura în lista de redare",
+      "failedToCreatePlaylist": "Nu s-a putut crea lista de redare",
+      "noPlaylistsYetCreateYour": "Nu ai încă liste de redare. Creează prima listă mai sus!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Întreabă de fiecare dată",
+      "randomReciter": "Recitator aleatoriu",
+      "selectReciter": "Selectează recitatorul"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Nu s-au găsit versete similare pentru acest verset.",
+      "similarWording": "Formulare similară"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Temporizator de oprire",
+      "turnOffTimer": "Oprește temporizatorul"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Elimină din lista de redare"
+    },
+    "verseActionsSheet": {
+      "addNote": "Adaugă notă",
+      "copy": "Copiază",
+      "repeat": "Repetă",
+      "similarVerses": "Versete similare",
+      "tafseer": "Tafsir",
+      "theme": "Temă"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Opțiuni de copiere",
+      "selectWhatToCopy": "Selectează ce vrei să copiezi"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Culoarea evidențierii"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Distribuie versetul"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Găsit în {{count}} verset",
+    "foundIn_other": "Găsit în {{count}} de versete",
+    "foundIn_few": "Găsit în {{count}} versete"
+  },
+  "surahItem": {
+    "moreOptions": "Mai multe opțiuni",
+    "opensMenuWithAdditionalActions": "Deschide un meniu cu acțiuni suplimentare pentru această sură",
+    "tapToPlaySurah": "Atinge pentru a reda sura"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "ID de listă nevalid",
+      "playlistNotFound": "Lista de redare nu a fost găsită"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Nu s-a găsit un recitator cu toate surele din această listă. Încearcă altă listă.",
+      "failedToPlayPlaylistPlease": "Nu s-a putut reda lista. Încearcă din nou.",
+      "failedToPlayTrackPlease": "Nu s-a putut reda piesa. Încearcă din nou.",
+      "failedToShufflePlaylistPlease": "Nu s-a putut reda lista aleatoriu. Încearcă din nou.",
+      "noReciterAvailable": "Niciun recitator disponibil",
+      "noSurahsInThisPlaylist": "Nu sunt sure în această listă de redare"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Cont",
+      "appData": "Aplicație și date",
+      "audioPlayback": "Audio și redare",
+      "chooseYourPreferredReciter": "Alege recitatorul preferat",
+      "customizeQuranDisplayOptions": "Personalizează afișarea Coranului",
+      "customizeReciterSelection": "Personalizează selectarea recitatorului",
+      "featureRequests": "Cereri de funcții",
+      "feedback": "Păreri",
+      "helpSupport": "Ajutor și asistență",
+      "learnMoreAboutOurMission": "Află mai multe despre misiunea noastră",
+      "manageQuranTranslationsAndCommentary": "Gestionează traducerile și comentariile Coranului",
+      "privacyPolicy": "Politica de confidențialitate",
+      "quran": "Coran",
+      "readOurTermsOfService": "Citește termenii de utilizare",
+      "seeWhatSNewIn": "Vezi noutățile acestei versiuni",
+      "shareYourExperienceWithOthers": "Împărtășește experiența ta cu ceilalți",
+      "showTheFloatingDeveloperTools": "Arată butonul flotant al instrumentelor pentru dezvoltatori",
+      "suggestImprovementsAndNewFeatures": "Propune îmbunătățiri și funcții noi",
+      "termsOfService": "Termeni de utilizare",
+      "viewAndManageStorageUsage": "Vezi și gestionează spațiul utilizat",
+      "viewOurPrivacyPolicy": "Vezi politica de confidențialitate",
+      "writeAReview": "Scrie o recenzie"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Anulează",
+    "close": "Închide",
+    "collection": "Colecție",
+    "download": "Descarcă",
+    "downloads": "Descărcări",
+    "error": "Ceva nu a mers bine",
+    "favorites": "Favorite",
+    "home": "Acasă",
+    "language": "Limbă",
+    "library": "Bibliotecă",
+    "loading": "Se încarcă...",
+    "noResults": "Nu s-au găsit rezultate",
+    "offline": "Ești offline",
+    "pause": "Pauză",
+    "play": "Redă",
+    "retry": "Încearcă din nou",
+    "save": "Salvează",
+    "search": "Caută",
+    "settings": "Setări",
+    "surahs": "Sure"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "SELECTEAZĂ CONȚINUTUL"
+    },
+    "highlightContent": {
+      "chooseColor": "ALEGE CULOAREA"
+    },
+    "noteContent": {
+      "saveNote": "Salvează nota"
+    },
+    "shareContent": {
+      "shareLink": "Distribuie linkul"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Nu s-au găsit versete similare pentru acest verset.",
+      "sharedPhrases": "EXPRESII COMUNE",
+      "similarWording": "FORMULARE SIMILARĂ"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Niciun tafsir descărcat",
+      "tafseerNotAvailableForThis": "Tafsirul nu este disponibil pentru acest verset",
+      "tapHereToDownloadA": "Atinge aici pentru a descărca un tafsir și a vedea comentariul."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Nu există date tematice pentru acest verset.",
+      "passage": "Pasaj"
+    },
+    "translationContent": {
+      "switch": "Schimbă",
+      "translationNotAvailable": "Traducerea nu este disponibilă"
+    }
+  },
+  "version": {
+    "label": "Versiunea {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Noutăți în"
+  },
+  "wordDetail": {
+    "context": "Versetul {{surah}}:{{ayah}} · Cuvântul {{position}} din {{total}}"
+  }
+}

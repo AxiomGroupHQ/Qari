@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Σφάλμα αρχικοποίησης αναπαραγωγής: {{message}}",
+    "errorLoadingFonts": "Σφάλμα φόρτωσης γραμματοσειρών"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Αρχική ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Όλοι",
+      "clearAll": "Εκκαθάριση όλων",
+      "hasPhoto": "Με φωτογραφία"
+    },
+    "filterModal": {
+      "apply": "Εφαρμογή",
+      "filterReciters": "Φίλτρα απαγγελτών",
+      "recitationStyles": "Ύφη απαγγελίας",
+      "reset": "Επαναφορά",
+      "rewayatTypes": "Τύποι ριουάγια"
+    },
+    "recitersFound_one": "Βρέθηκε {{count}} απαγγελτής με τα τρέχοντα φίλτρα",
+    "recitersFound_other": "Βρέθηκαν {{count}} απαγγελτές με τα τρέχοντα φίλτρα"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Αγαπημένες σούρες"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Προσθέστε σελιδοδείκτες σε εδάφια για να τα δείτε εδώ",
+      "bookmarks": "Σελιδοδείκτες",
+      "noBookmarksYet": "Δεν υπάρχουν ακόμη σελιδοδείκτες",
+      "removeBookmark": "Αφαίρεση σελιδοδείκτη"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Ριουάγια",
+      "searchPlaylistsRecitersSurahsRewayat": "Αναζήτηση λιστών, απαγγελτών, σουρών, ριουάγια...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Αναζήτηση λιστών, απαγγελτών, σουρών, ριουάγια και λήψεων",
+      "searchYourCollection": "Αναζήτηση στη συλλογή σας",
+      "searching": "Αναζήτηση...",
+      "tryDifferentKeywords": "Δοκιμάστε άλλες λέξεις-κλειδιά"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Κατεβάστε σούρες για να τις δείτε εδώ",
+      "noDownloadsYet": "Δεν υπάρχουν ακόμη λήψεις",
+      "playAll": "Αναπαραγωγή όλων"
+    },
+    "favoritereciters": {
+      "addReciters": "Προσθήκη απαγγελτών",
+      "addRecitersToSeeThem": "Προσθέστε απαγγελτές για να τους δείτε εδώ",
+      "noFavoriteRecitersYet": "Δεν υπάρχουν ακόμη αγαπημένοι απαγγελτές",
+      "removeFromFavorites": "Αφαίρεση από τα αγαπημένα",
+      "searchFavoriteReciters": "Αναζήτηση αγαπημένων απαγγελτών"
+    },
+    "index": {
+      "addToCollection": "Προσθήκη στη συλλογή",
+      "bookmarks": "Σελιδοδείκτες",
+      "createYourFirstPlaylist": "Δημιουργήστε την πρώτη σας λίστα",
+      "downloads": "Λήψεις",
+      "items_one": "{{count}} στοιχείο",
+      "items_other": "{{count}} στοιχεία",
+      "loved": "Αγαπημένα",
+      "noBookmarksYet": "Δεν υπάρχουν ακόμη σελιδοδείκτες",
+      "noDownloadsYet": "Δεν υπάρχουν ακόμη λήψεις",
+      "noFavoritesYet": "Δεν υπάρχουν ακόμη αγαπημένα",
+      "noLovedSurahsYet": "Δεν υπάρχουν ακόμη αγαπημένες σούρες",
+      "noNotesYet": "Δεν υπάρχουν ακόμη σημειώσεις",
+      "noUploadsYet": "Δεν υπάρχουν ακόμη μεταφορτώσεις",
+      "notes": "Σημειώσεις",
+      "playlists": "Λίστες αναπαραγωγής",
+      "reciters": "Απαγγελτές",
+      "uploads": "Μεταφορτώσεις"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Όλες οι αγαπημένες σούρες έχουν ήδη ληφθεί.",
+      "allLovedSurahsHaveBeen": "Έγινε λήψη όλων των αγαπημένων σουρών.",
+      "downloadError": "Σφάλμα λήψης",
+      "loveSurahsToSeeThem": "Σημειώστε σούρες ως αγαπημένες για να τις δείτε εδώ",
+      "noLovedSurahsYet": "Δεν υπάρχουν ακόμη αγαπημένες σούρες",
+      "someDownloadsMayHaveFailed": "Ορισμένες λήψεις ενδέχεται να απέτυχαν.",
+      "unloveAllSurahs": "Αφαίρεση όλων των σουρών από τα αγαπημένα"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Προσθέστε σημειώσεις σε εδάφια για να τις δείτε εδώ",
+      "editNote": "Επεξεργασία σημείωσης",
+      "noNotesYet": "Δεν υπάρχουν ακόμη σημειώσεις",
+      "notes": "Σημειώσεις"
+    },
+    "playlistModal": {
+      "name": "Όνομα"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Δημιουργήστε λίστες για να τις δείτε εδώ",
+      "noPlaylistsYet": "Δεν υπάρχουν ακόμη λίστες",
+      "playlists": "Λίστες αναπαραγωγής"
+    },
+    "uploads": {
+      "removeAllUploads": "Αφαίρεση όλων των μεταφορτώσεων",
+      "uploadRecitationsToSeeThem": "Μεταφορτώστε απαγγελίες για να τις δείτε εδώ"
+    }
+  },
+  "common": {
+    "1Time": "1 φορά",
+    "2Times": "2 φορές",
+    "3Times": "3 φορές",
+    "addToCollection": "Προσθήκη στη συλλογή",
+    "addToQueue": "Προσθήκη στην ουρά",
+    "allSurahs": "Όλες οι σούρες",
+    "alreadyDownloaded": "Έχει ήδη ληφθεί",
+    "arabic": "Αραβικά",
+    "asc": "Αύξουσα",
+    "browseAll": "Περιήγηση σε όλα",
+    "browseAllReciters": "Περιήγηση σε όλους τους απαγγελτές",
+    "cancel": "Ακύρωση",
+    "clear": "Εκκαθάριση",
+    "copyToClipboard": "Αντιγραφή στο πρόχειρο",
+    "createNewPlaylist": "Δημιουργία νέας λίστας",
+    "defaultReciter": "Προεπιλεγμένος απαγγελτής",
+    "delete": "Διαγραφή",
+    "deleteNote": "Διαγραφή σημείωσης",
+    "deleteRecitation": "Διαγραφή απαγγελίας",
+    "desc": "Φθίνουσα",
+    "downloadComplete": "Η λήψη ολοκληρώθηκε",
+    "downloadFailed": "Η λήψη απέτυχε",
+    "downloads": "Λήψεις",
+    "editDetails": "Επεξεργασία στοιχείων",
+    "error": "Σφάλμα",
+    "favoriteReciters": "Αγαπημένοι απαγγελτές",
+    "followAlong": "Ακολουθήστε το κείμενο",
+    "from": "Από",
+    "goToReciter": "Μετάβαση στον απαγγελτή",
+    "goToVerse": "Μετάβαση στο εδάφιο",
+    "learnAboutSurah": "Μάθετε για τη σούρα",
+    "loading": "Φόρτωση...",
+    "loop": "Επανάληψη σε βρόχο",
+    "loved": "Αγαπημένα",
+    "mushafSettings": "Ρυθμίσεις Μουσχάφ",
+    "next": "Επόμενο",
+    "noRecitersFound": "Δεν βρέθηκαν απαγγελτές",
+    "noResultsFound": "Δεν βρέθηκαν αποτελέσματα",
+    "noUploadsYet": "Δεν υπάρχουν ακόμη μεταφορτώσεις",
+    "play": "Αναπαραγωγή",
+    "playEachVerse": "Αναπαραγωγή κάθε εδαφίου",
+    "playNow": "Αναπαραγωγή τώρα",
+    "playSpeed": "Ταχύτητα αναπαραγωγής",
+    "playTheRange": "Αναπαραγωγή εύρους",
+    "playlistName": "Όνομα λίστας",
+    "prev": "Προηγούμενο",
+    "readingTheme": "Θέμα ανάγνωσης",
+    "recentSearches": "Πρόσφατες αναζητήσεις",
+    "reciter": "Απαγγελτής",
+    "reciterChoice": "Επιλογή απαγγελτή",
+    "reciters": "Απαγγελτές",
+    "remove": "Αφαίρεση",
+    "removeAllDownloads": "Αφαίρεση όλων των λήψεων",
+    "removeHighlight": "Αφαίρεση επισήμανσης",
+    "rev": "Αποκάλυψη",
+    "save": "Αποθήκευση",
+    "search": "Αναζήτηση",
+    "searchReciters": "Αναζήτηση απαγγελτών...",
+    "searchSurahs": "Αναζήτηση σουρών",
+    "share": "Κοινοποίηση",
+    "shareAsImage": "Κοινοποίηση ως εικόνα",
+    "shareAsText": "Κοινοποίηση ως κείμενο",
+    "sharedPhrases": "Κοινές φράσεις",
+    "showBasmallah": "Εμφάνιση Μπασμάλα",
+    "stop": "Διακοπή",
+    "storage": "Αποθηκευτικός χώρος",
+    "surah": "Σούρα",
+    "surahs": "Σούρες",
+    "to": "Έως",
+    "translation": "Μετάφραση",
+    "translationsTafaseer": "Μεταφράσεις και ταφσίρ",
+    "transliteration": "Μεταγραφή",
+    "uploads": "Μεταφορτώσεις",
+    "useDefaultReciter": "Χρήση προεπιλεγμένου απαγγελτή",
+    "verseReference": "Αναφορά εδαφίου",
+    "verses": "Εδάφια",
+    "whatSNew": "Τι νέο υπάρχει",
+    "wordByWord": "Λέξη προς λέξη",
+    "writeYourNoteHere": "Γράψτε τη σημείωσή σας εδώ...",
+    "yourPlaylists": "Οι λίστες σας"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Αναπαραγωγή όλων των σουρών"
+    },
+    "searchHeader": {
+      "searchSurahs": "Αναζήτηση σουρών"
+    },
+    "searchView": {
+      "noSurahsFound": "Δεν βρέθηκαν σούρες"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Δεν υπάρχουν διαθέσιμες σούρες"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Προσθήκη απαγγελίας",
+      "uploadRecitationsToSeeThem": "Μεταφορτώστε απαγγελίες για να τις δείτε εδώ"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Ελήφθη • {{count}} σούρα",
+    "subtitle_other": "Ελήφθησαν • {{count}} σούρες"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Λυπούμαστε, παρουσιάστηκε σφάλμα"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Περιήγηση και στις 114 σούρες"
+    },
+    "savedAdhkarHero": {
+      "saved": "Αποθηκεύτηκε",
+      "yourCollection": "Η συλλογή σας"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "ΣΟΥΡΑ ΤΗΣ ΗΜΕΡΑΣ"
+    },
+    "surahsHero": {
+      "number": "Αριθμός"
+    }
+  },
+  "language": {
+    "later": "Αργότερα",
+    "restartMessage": "Επανεκκινήστε την εφαρμογή για να εφαρμοστεί η νέα κατεύθυνση διάταξης.",
+    "restartNow": "Επανεκκίνηση τώρα",
+    "restartTitle": "Απαιτείται επανεκκίνηση",
+    "search": "Αναζήτηση γλωσσών",
+    "system": "Γλώσσα συσκευής"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Συνέχεια"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Παράλειψη"
+    }
+  },
+  "mushaf": {
+    "juz": "Τζουζ {{juz}}",
+    "loadingMushaf": "Φόρτωση Μουσχάφ…",
+    "main": {
+      "mushafSettings": "Ρυθμίσεις Μουσχάφ"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Αλλαγή απαγγελτή",
+      "changeReciter2": "Αλλαγή απαγγελτή",
+      "nextAyah": "Επόμενο εδάφιο",
+      "playbackOptions": "Επιλογές αναπαραγωγής",
+      "previousAyah": "Προηγούμενο εδάφιο"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Βρείτε σούρες, εδάφια, σελίδες ή τζουζ",
+      "recentReads": "ΠΡΟΣΦΑΤΕΣ ΑΝΑΓΝΩΣΕΙΣ",
+      "searchSurahsPagesOrJuz": "Αναζήτηση σουρών, σελίδων ή τζουζ...",
+      "searchTheMushaf": "Αναζήτηση στο Μουσχάφ"
+    },
+    "options": "Επιλογές",
+    "page": "Σελίδα {{page}}",
+    "pageAndSurah": "Σελίδα {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Δεν ήταν δυνατή η φόρτωση του Μουσχάφ.",
+    "tryAgain": "Δοκιμάστε ξανά"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Επισημαίνει το όνομα του Αλλάχ και θεϊκούς τίτλους όπως Ραμπ στο Μουσχάφ."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Εναλλασσόμενη επισήμανση ανά θεματικό απόσπασμα",
+    "arabicFontSize": "Μέγεθος αραβικής γραμματοσειράς",
+    "bold": "Έντονα",
+    "book": "Βιβλίο",
+    "colorLegend": "Υπόμνημα χρωμάτων",
+    "currentlyReading": "Τρέχουσα ανάγνωση",
+    "divineNames": "ΘΕΪΚΑ ΟΝΟΜΑΤΑ",
+    "fontSize": "Μέγεθος γραμματοσειράς",
+    "fullscreen": "Πλήρης οθόνη",
+    "hamzaReplacedByLongVowel": "Χάμζα που αντικαθίσταται από μακρό φωνήεν",
+    "heavyLamInAllahAfter": "Εμφατικό λαμ στο Αλλάχ μετά από εμφατικά γράμματα",
+    "highlightAllahRabb": "Επισήμανση Αλλάχ / Ραμπ",
+    "horizontal": "Οριζόντια",
+    "ibdal": "Ιμπντάλ",
+    "list": "Λίστα",
+    "loadingSample": "Φόρτωση δείγματος...",
+    "maddAlBadal": "Μαντ αλ-Μπάνταλ",
+    "maximumProminence": "Μέγιστη έμφαση",
+    "medium": "Μέτριο",
+    "modernMadinahPrintedPipeline": "Απόδοση σύγχρονης έντυπης έκδοσης της Μεδίνας",
+    "mushaf": "Μουσχάφ",
+    "normal": "Κανονικό",
+    "originalMushafWeight": "Αρχικό πάχος γραμμάτων του Μουσχάφ",
+    "pageDesign": "ΣΧΕΔΙΑΣΗ ΣΕΛΙΔΑΣ",
+    "prolongedVowelAfterHamza": "Παρατεταμένο φωνήεν μετά από χάμζα",
+    "readingTheme": "ΘΕΜΑ ΑΝΑΓΝΩΣΗΣ",
+    "scrollDirection": "ΚΑΤΕΥΘΥΝΣΗ ΚΥΛΙΣΗΣ",
+    "showDifferences": "Εμφάνιση διαφορών",
+    "silah": "Σίλα",
+    "slightlyMoreProminent": "Ελαφρώς πιο έντονο",
+    "softenedHamzaPronunciation": "Ηπιότερη προφορά της χάμζα",
+    "subcontinentNastaliqStyle": "Στυλ Νασταλίκ της υποηπείρου",
+    "taghlizAlLam": "Ταγκλίζ αλ-Λαμ",
+    "tajweedColoring": "Χρώματα τατζουίντ",
+    "tashilMusahhala": "Τασχίλ / Μουσαχάλα",
+    "textPreviewNotYetAvailable": "ΠΡΟΕΠΙΣΚΟΠΗΣΗ ΚΕΙΜΕΝΟΥ ΜΗ ΔΙΑΘΕΣΙΜΗ ΑΚΟΜΗ",
+    "textThickness": "ΠΑΧΟΣ ΚΕΙΜΕΝΟΥ",
+    "thematicHighlighting": "Θεματική επισήμανση",
+    "trailingVowelOrMoodChange": "Μόνο αλλαγή τελικού φωνήεντος ή έγκλισης",
+    "usingSaheehInternationalTranslationWith": "Σε χρήση: μετάφραση Saheeh International με υποσημειώσεις",
+    "vertical": "Κάθετα",
+    "viewType": "ΤΥΠΟΣ ΠΡΟΒΟΛΗΣ",
+    "vowelMoodShift": "Αλλαγή φωνήεντος / έγκλισης",
+    "wordByWord": "ΛΕΞΗ ΠΡΟΣ ΛΕΞΗ",
+    "wordVariant": "Παραλλαγή λέξης"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Ο διακομιστής δεν είναι προσβάσιμος",
+    "connectionRestored": "Η σύνδεση αποκαταστάθηκε",
+    "noInternetConnection": "Χωρίς σύνδεση στο διαδίκτυο",
+    "showingCachedData": "Εμφάνιση δεδομένων προσωρινής μνήμης"
+  },
+  "organize": {
+    "createReciter": "Δημιουργία \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Ουρά",
+      "queueIsEmpty": "Η ουρά είναι κενή"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Προσθέστε ετικέτες στην απαγγελία για να δείτε το κείμενο της σούρας και λεπτομέρειες"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Λίστα • {{count}} σούρα",
+    "subtitle_other": "Λίστα • {{count}} σούρες"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Δεν υπάρχουν σούρες σε αυτή τη λίστα"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Υποσημείωση"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Μια απαγγελία επιλεγμένη για αυτή τη στιγμή",
+      "discover": "Ανακαλύψτε",
+      "discoverANewVoice": "Ανακαλύψτε μια νέα φωνή",
+      "explore": "Εξερευνήστε",
+      "exploreTheUnexpected": "Εξερευνήστε το απροσδόκητο",
+      "hearSomethingNew": "Ακούστε κάτι νέο",
+      "letTheQuranSurpriseYou": "Αφήστε το Κοράνι να σας εκπλήξει",
+      "randomMix": "Τυχαία μίξη",
+      "randomRecitation": "Τυχαία απαγγελία",
+      "shuffleListen": "Τυχαία σειρά και ακρόαση",
+      "surpriseMe": "Εκπλήξτε με"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Η αλλαγή εμφάνισης εφαρμόζεται σε ολόκληρη την εφαρμογή"
+  },
+  "reciterBrowse": {
+    "allReciters": "Όλοι οι απαγγελτές",
+    "browseReciters": "Περιήγηση στους απαγγελτές",
+    "favorites": "Αγαπημένα"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Δεν υπάρχουν λήψεις για αυτόν τον απαγγελτή"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Οι μεταφορτώσεις μου"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Αδκάρ",
+    "bestForMemorization": "Ιδανικά για απομνημόνευση",
+    "bestForTajweed": "Ιδανικά για τατζουίντ",
+    "continueListening": "Συνέχεια ακρόασης",
+    "exclusives": "Αποκλειστικά",
+    "exploreByRewayah": "Εξερεύνηση ανά ριουάγια",
+    "featuredReciters": "Προτεινόμενοι απαγγελτές",
+    "fromYourCollection": "Από τη συλλογή σας",
+    "myRecitations": "Οι απαγγελίες μου",
+    "newToQuranStartHere": "Νέοι στο Κοράνι; Ξεκινήστε εδώ",
+    "seeMore": "Δείτε περισσότερα",
+    "yourFavorites": "Τα αγαπημένα σας"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Ενεργό",
+      "activeTafseer": "ΕΝΕΡΓΟ ΤΑΦΣΙΡ",
+      "activeTranslation": "ΕΝΕΡΓΗ ΜΕΤΑΦΡΑΣΗ",
+      "deleteTafseer": "Διαγραφή ταφσίρ",
+      "deleteTranslation": "Διαγραφή μετάφρασης",
+      "noTafaseerFound": "Δεν βρέθηκαν ταφσίρ",
+      "noTranslationsFound": "Δεν βρέθηκαν μεταφράσεις",
+      "unableToDownloadThisTafseer": "Δεν ήταν δυνατή η λήψη του ταφσίρ. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά.",
+      "unableToDownloadThisTranslation": "Δεν ήταν δυνατή η λήψη της μετάφρασης. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Δεν υπάρχουν πρόσφατες αναζητήσεις",
+      "tryDifferentKeywordsOrCheck": "Δοκιμάστε άλλες λέξεις-κλειδιά ή ελέγξτε την ορθογραφία",
+      "yourSearchHistoryWillAppear": "Το ιστορικό αναζητήσεών σας θα εμφανιστεί εδώ"
+    },
+    "surahsOrReciters": "Αναζήτηση σουρών ή απαγγελτών"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Προηγμένοι έλεγχοι ήχου",
+      "browseByJuz": "Περιήγηση ανά τζουζ",
+      "createAndManageYourOwn": "Δημιουργήστε και διαχειριστείτε προσωπικές λίστες με τις αγαπημένες σας απαγγελίες",
+      "crystalClearRecitationsFromThe": "Πεντακάθαρες απαγγελίες από κορυφαίους απαγγελτές του κόσμου με βελτιστοποιημένη ροή ήχου",
+      "curatedCollections": "Επιμελημένες συλλογές",
+      "customPlaylists": "Προσωπικές λίστες",
+      "customizeThemesAccentColorsAnd": "Προσαρμόστε θέματα, χρώματα και ρυθμίσεις ήχου στις προτιμήσεις σας",
+      "downloadSurahsForOfflineListening": "Κατεβάστε σούρες για ακρόαση χωρίς διαδίκτυο, οποτεδήποτε και οπουδήποτε",
+      "easilyNavigateThroughTheQuran": "Περιηγηθείτε εύκολα στο Κοράνι με οργάνωση και ομαδοποίηση ανά τζουζ",
+      "features": "ΛΕΙΤΟΥΡΓΙΕΣ",
+      "highQualityAudio": "Ήχος υψηλής ποιότητας",
+      "listenReflectRememberAllah": "Ακούστε. Στοχαστείτε. Μνημονεύστε τον Αλλάχ.",
+      "offlineDownloads": "Λήψεις εκτός σύνδεσης",
+      "ourCommitment": "Η δέσμευσή μας",
+      "ourMission": "Η αποστολή μας",
+      "personalization": "Εξατομίκευση",
+      "precisePlaybackControlWithContinuous": "Ακριβής έλεγχος με συνεχή αναπαραγωγή και ρυθμιζόμενη ταχύτητα απαγγελίας",
+      "quranBayanTafsirKnowledgeOur": "Κοράνι • Μπαγιάν • Ταφσίρ • Γνώση. Στόχος μας είναι η ακρόαση και ο στοχασμός να γίνουν μέρος της καθημερινότητας: στο σπίτι, στον δρόμο και όπου έχετε μια στιγμή να μνημονεύσετε τον Αλλάχ.",
+      "readListenAndReflect": "Διαβάστε, ακούστε και στοχαστείτε",
+      "readTheMushafExploreTranslations": "Διαβάστε το Μουσχάφ, εξερευνήστε μεταφράσεις και ταφσίρ, αποθηκεύστε εδάφια και σημειώσεις και επιστρέψτε στο καθημερινό αδκάρ. Επιλέξτε απαγγελτή, δημιουργήστε λίστες και προσαρμόστε την ακρόαση στη μέρα σας. Οι διαθέσιμες λειτουργίες διαφέρουν ανά συσκευή· οι εγγενείς εφαρμογές υποστηρίζουν και λήψεις για ακρόαση εκτός σύνδεσης.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Προσεκτικά οργανωμένες σούρες για διαφορετικές περιστάσεις και θέματα",
+      "weCareAboutTheAccuracy": "Μας ενδιαφέρουν η ακρίβεια του ιερού περιεχομένου, ο σεβασμός στον σχεδιασμό και η αξιόπιστη πρόσβαση. Συνεχίζουμε να βελτιώνουμε το ISTIMA με φροντίδα για όσους το χρησιμοποιούν. Είθε ο Αλλάχ να δεχτεί αυτή την προσπάθεια και να την κάνει ωφέλιμη για όλους όσοι ακούν, διαβάζουν και στοχάζονται."
+    },
+    "aboutApp": "Σχετικά με το {{name}}",
+    "appearance": "ΕΜΦΑΝΙΣΗ",
+    "defaultreciter": {
+      "changeDefaultReciter": "ΑΛΛΑΓΗ ΠΡΟΕΠΙΛΕΓΜΕΝΟΥ ΑΠΑΓΓΕΛΤΗ"
+    },
+    "developer": "ΠΡΟΓΡΑΜΜΑΤΙΣΤΗΣ",
+    "floatingDevMenu": "Αιωρούμενο μενού προγραμματιστή",
+    "language": "Γλώσσα",
+    "languageDescription": "Επιλέξτε τη γλώσσα της εφαρμογής",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Πάντα χρήση του προεπιλεγμένου απαγγελτή σας",
+      "askEveryTime": "Ερώτηση κάθε φορά",
+      "chooseAReciterEachTime": "Επιλέξτε απαγγελτή σε κάθε αναπαραγωγή",
+      "chooseHowYouWantTo": "Επιλέξτε πώς θα επιλέγονται οι απαγγελτές κατά την αναπαραγωγή σουρών",
+      "defaultSelectionMethod": "ΠΡΟΕΠΙΛΕΓΜΕΝΗ ΜΕΘΟΔΟΣ ΕΠΙΛΟΓΗΣ",
+      "searchThroughOurCompleteCollection": "Αναζητήστε σε ολόκληρη τη συλλογή απαγγελτών μας",
+      "selectionPreference": "ΠΡΟΤΙΜΗΣΗ ΕΠΙΛΟΓΗΣ"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Όλες οι λήψεις αφαιρέθηκαν.",
+      "areYouSureYouWant": "Σίγουρα θέλετε να αφαιρέσετε όλο το ληφθέν περιεχόμενο; Η ενέργεια δεν αναιρείται.",
+      "cache": "Προσωρινή μνήμη",
+      "cacheHasBeenCleared": "Η προσωρινή μνήμη εκκαθαρίστηκε.",
+      "clearCache": "Εκκαθάριση προσωρινής μνήμης",
+      "failedToClearCache": "Η εκκαθάριση προσωρινής μνήμης απέτυχε.",
+      "failedToRemoveDownloads": "Η αφαίρεση λήψεων απέτυχε.",
+      "free": "Ελεύθερος χώρος",
+      "loadingStorageInformation": "Φόρτωση πληροφοριών αποθήκευσης...",
+      "manageStorage": "ΔΙΑΧΕΙΡΙΣΗ ΑΠΟΘΗΚΕΥΣΗΣ",
+      "otherApps": "Άλλες εφαρμογές",
+      "removeAllDownloads": "Αφαίρεση όλων των λήψεων",
+      "removeAllTheQuranContent": "Αφαιρέστε όλο το περιεχόμενο του Κορανίου που κατεβάσατε για χρήση εκτός σύνδεσης.",
+      "storageBreakdown": "ΚΑΤΑΝΟΜΗ ΑΠΟΘΗΚΕΥΣΗΣ",
+      "success": "Επιτυχία",
+      "thisWillClearYourCache": "Θα εκκαθαριστεί η προσωρινή μνήμη. Οι λήψεις σας δεν θα αφαιρεθούν.",
+      "youCanFreeUpStorage": "Μπορείτε να ελευθερώσετε χώρο εκκαθαρίζοντας την προσωρινή μνήμη. Οι λήψεις σας δεν θα αφαιρεθούν."
+    },
+    "themePicker": {
+      "auto": "Αυτόματο",
+      "dark": "Σκούρο",
+      "light": "Φωτεινό"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Δεν υπάρχει διαθέσιμο ιστορικό αλλαγών"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Σχετικά με το {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Προσθήκη αγαπημένου απαγγελτή",
+      "uploadRecitation": "Μεταφόρτωση απαγγελίας"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Ήχοι περιβάλλοντος",
+      "none": "Κανένα",
+      "volume": "Ένταση"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "π.χ. Πρωινές απαγγελίες"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Αφαίρεση λήψης"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Τέλος"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Προσθήκη στη συλλογή",
+      "addToQueue": "Προσθήκη στην ουρά",
+      "continuePlaying": "Συνέχεια αναπαραγωγής",
+      "goToReciter": "Μετάβαση στον απαγγελτή",
+      "removeFromRecents": "Αφαίρεση από τα πρόσφατα"
+    },
+    "mushafLayoutSheet": {
+      "back": "Πίσω"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Τελικό εδάφιο",
+      "playbackSettings": "Ρυθμίσεις αναπαραγωγής",
+      "selectRange": "Επιλογή εύρους",
+      "startingVerse": "Αρχικό εδάφιο"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Ρυθμίσεις επανάληψης",
+      "start": "Έναρξη",
+      "verseRange": "Εύρος εδαφίων"
+    },
+    "organizeRecitationSheet": {
+      "category": "Κατηγορία",
+      "customReciter": "Προσαρμοσμένος απαγγελτής",
+      "duA": "Ντουά",
+      "eGMorningAdhkar": "π.χ. Πρωινό αδκάρ",
+      "lecture": "Ομιλία",
+      "moreOptions": "Περισσότερες επιλογές",
+      "other": "Άλλο",
+      "recording": "Ηχογράφηση",
+      "rewayah": "Ριουάγια",
+      "searchSurahs": "Αναζήτηση σουρών...",
+      "style": "Ύφος",
+      "tafsir": "Ταφσίρ",
+      "title": "Τίτλος",
+      "type": "Τύπος",
+      "verseRangeOptional": "Εύρος εδαφίων (προαιρετικό)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Ταχύτητα αναπαραγωγής"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Όλα τα στοιχεία αυτής της λίστας έχουν ήδη ληφθεί.",
+      "anErrorOccurredWhileDownloading": "Παρουσιάστηκε σφάλμα κατά τη λήψη της λίστας. Δοκιμάστε ξανά.",
+      "deletePlaylist": "Διαγραφή λίστας",
+      "downloadingPlaylist": "Λήψη λίστας...",
+      "editPlaylist": "Επεξεργασία λίστας",
+      "emptyPlaylist": "Κενή λίστα",
+      "thisPlaylistIsEmpty": "Αυτή η λίστα είναι κενή."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Σχετικά με τις ριουάγια",
+      "availableRewayat": "Διαθέσιμες ριουάγια"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Αποτυχία προσθήκης σούρας στη λίστα",
+      "failedToCreatePlaylist": "Αποτυχία δημιουργίας λίστας",
+      "noPlaylistsYetCreateYour": "Δεν υπάρχουν ακόμη λίστες. Δημιουργήστε την πρώτη σας παραπάνω!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Ερώτηση κάθε φορά",
+      "randomReciter": "Τυχαίος απαγγελτής",
+      "selectReciter": "Επιλογή απαγγελτή"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Δεν βρέθηκαν παρόμοια εδάφια για αυτό το εδάφιο.",
+      "similarWording": "Παρόμοια διατύπωση"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Χρονοδιακόπτης ύπνου",
+      "turnOffTimer": "Απενεργοποίηση χρονοδιακόπτη"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Αφαίρεση από τη λίστα"
+    },
+    "verseActionsSheet": {
+      "addNote": "Προσθήκη σημείωσης",
+      "copy": "Αντιγραφή",
+      "repeat": "Επανάληψη",
+      "similarVerses": "Παρόμοια εδάφια",
+      "tafseer": "Ταφσίρ",
+      "theme": "Θέμα"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Επιλογές αντιγραφής",
+      "selectWhatToCopy": "Επιλέξτε τι θα αντιγραφεί"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Χρώμα επισήμανσης"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Κοινοποίηση εδαφίου"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Βρέθηκε σε {{count}} εδάφιο",
+    "foundIn_other": "Βρέθηκε σε {{count}} εδάφια"
+  },
+  "surahItem": {
+    "moreOptions": "Περισσότερες επιλογές",
+    "opensMenuWithAdditionalActions": "Ανοίγει μενού με πρόσθετες ενέργειες για αυτή τη σούρα",
+    "tapToPlaySurah": "Πατήστε για αναπαραγωγή της σούρας"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Μη έγκυρο αναγνωριστικό λίστας",
+      "playlistNotFound": "Η λίστα δεν βρέθηκε"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Δεν βρέθηκε απαγγελτής με όλες τις σούρες της λίστας. Δοκιμάστε διαφορετική λίστα.",
+      "failedToPlayPlaylistPlease": "Αποτυχία αναπαραγωγής λίστας. Δοκιμάστε ξανά.",
+      "failedToPlayTrackPlease": "Αποτυχία αναπαραγωγής κομματιού. Δοκιμάστε ξανά.",
+      "failedToShufflePlaylistPlease": "Αποτυχία τυχαίας αναπαραγωγής λίστας. Δοκιμάστε ξανά.",
+      "noReciterAvailable": "Δεν υπάρχει διαθέσιμος απαγγελτής",
+      "noSurahsInThisPlaylist": "Δεν υπάρχουν σούρες σε αυτή τη λίστα"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Λογαριασμός",
+      "appData": "Εφαρμογή και δεδομένα",
+      "audioPlayback": "Ήχος και αναπαραγωγή",
+      "chooseYourPreferredReciter": "Επιλέξτε τον απαγγελτή που προτιμάτε",
+      "customizeQuranDisplayOptions": "Προσαρμόστε την εμφάνιση του Κορανίου",
+      "customizeReciterSelection": "Προσαρμόστε την επιλογή απαγγελτή",
+      "featureRequests": "Αιτήματα λειτουργιών",
+      "feedback": "Σχόλια",
+      "helpSupport": "Βοήθεια και υποστήριξη",
+      "learnMoreAboutOurMission": "Μάθετε περισσότερα για την αποστολή μας",
+      "manageQuranTranslationsAndCommentary": "Διαχείριση μεταφράσεων και ερμηνειών του Κορανίου",
+      "privacyPolicy": "Πολιτική απορρήτου",
+      "quran": "Κοράνι",
+      "readOurTermsOfService": "Διαβάστε τους όρους χρήσης",
+      "seeWhatSNewIn": "Δείτε τι νέο υπάρχει σε αυτή την έκδοση",
+      "shareYourExperienceWithOthers": "Μοιραστείτε την εμπειρία σας με άλλους",
+      "showTheFloatingDeveloperTools": "Εμφάνιση αιωρούμενου κουμπιού εργαλείων προγραμματιστή",
+      "suggestImprovementsAndNewFeatures": "Προτείνετε βελτιώσεις και νέες λειτουργίες",
+      "termsOfService": "Όροι χρήσης",
+      "viewAndManageStorageUsage": "Διαχείριση χρήσης αποθηκευτικού χώρου",
+      "viewOurPrivacyPolicy": "Δείτε την πολιτική απορρήτου",
+      "writeAReview": "Γράψτε κριτική"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Ακύρωση",
+    "close": "Κλείσιμο",
+    "collection": "Συλλογή",
+    "download": "Λήψη",
+    "downloads": "Λήψεις",
+    "error": "Κάτι πήγε στραβά",
+    "favorites": "Αγαπημένα",
+    "home": "Αρχική",
+    "language": "Γλώσσα",
+    "library": "Βιβλιοθήκη",
+    "loading": "Φόρτωση...",
+    "noResults": "Δεν βρέθηκαν αποτελέσματα",
+    "offline": "Είστε εκτός σύνδεσης",
+    "pause": "Παύση",
+    "play": "Αναπαραγωγή",
+    "retry": "Δοκιμάστε ξανά",
+    "save": "Αποθήκευση",
+    "search": "Αναζήτηση",
+    "settings": "Ρυθμίσεις",
+    "surahs": "Σούρες"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "ΕΠΙΛΟΓΗ ΠΕΡΙΕΧΟΜΕΝΟΥ"
+    },
+    "highlightContent": {
+      "chooseColor": "ΕΠΙΛΟΓΗ ΧΡΩΜΑΤΟΣ"
+    },
+    "noteContent": {
+      "saveNote": "Αποθήκευση σημείωσης"
+    },
+    "shareContent": {
+      "shareLink": "Κοινοποίηση συνδέσμου"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Δεν βρέθηκαν παρόμοια εδάφια για αυτό το εδάφιο.",
+      "sharedPhrases": "ΚΟΙΝΕΣ ΦΡΑΣΕΙΣ",
+      "similarWording": "ΠΑΡΟΜΟΙΑ ΔΙΑΤΥΠΩΣΗ"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Δεν έχει ληφθεί κανένα ταφσίρ",
+      "tafseerNotAvailableForThis": "Δεν υπάρχει ταφσίρ για αυτό το εδάφιο",
+      "tapHereToDownloadA": "Πατήστε εδώ για λήψη ταφσίρ και προβολή ερμηνείας."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Δεν υπάρχουν θεματικά δεδομένα για αυτό το εδάφιο.",
+      "passage": "Απόσπασμα"
+    },
+    "translationContent": {
+      "switch": "Εναλλαγή",
+      "translationNotAvailable": "Η μετάφραση δεν είναι διαθέσιμη"
+    }
+  },
+  "version": {
+    "label": "Έκδοση {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Τι νέο υπάρχει στο"
+  },
+  "wordDetail": {
+    "context": "Εδάφιο {{surah}}:{{ayah}} · Λέξη {{position}} από {{total}}"
+  }
+}
