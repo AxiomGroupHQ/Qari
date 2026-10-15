@@ -173,3 +173,6 @@ ExportOptions.plist
 **/sentry.properties
 .env.r2
 .env.r2-worker
+
+# Wrangler local state
+.wrangler/
