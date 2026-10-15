@@ -17,10 +17,11 @@ import {
   CARD_CONTENT_WIDTH,
   CARD_PADDING,
   CARD_TOP_PADDING,
-  CARD_HEADER_BOTTOM_GAP,
+  CARD_BLOCK_GAP,
+  CARD_ACCENT_COLOR,
+  CARD_BASMALLAH_BOTTOM_GAP,
   CARD_VERSE_BOTTOM_GAP,
   CARD_SURAH_GAP,
-  CARD_BASMALLAH_BOTTOM_GAP,
 } from './shareCardConstants';
 
 interface ShareCardPreviewProps {
@@ -88,7 +89,12 @@ const ShareCardPreview: React.FC<ShareCardPreviewProps> = ({
   const halalwebImage = useImage(require('@/assets/branding/halalweb.png'));
 
   const scale = contentWidth / CARD_CONTENT_WIDTH;
-  const totalHeight = elements.totalHeight + padding * 2;
+  const naturalHeight = elements.totalHeight + padding * 2;
+  // Instagram square: never shorter than the width (1080x1080 at capture size). Short verses
+  // get the extra room split above the text; the footer is pinned lower. Long selections stay
+  // taller than square so the text is not shrunk or cut.
+  const totalHeight = Math.max(naturalHeight, width);
+  const extra = totalHeight - naturalHeight;
 
   // QCF font has hardcoded black SVG fills — recolor with SrcIn filter
   const nameColorPaint = useMemo(() => {
@@ -113,55 +119,40 @@ const ShareCardPreview: React.FC<ShareCardPreviewProps> = ({
         color={elements.colors.background}
       />
 
+      {/* Thin inset border, like the Ayah a Day card */}
+      <Rect
+        x={padding * 0.4}
+        y={padding * 0.4}
+        width={width - padding * 0.8}
+        height={totalHeight - padding * 0.8}
+        color={CARD_ACCENT_COLOR}
+        style="stroke"
+        strokeWidth={Math.max(1, scale * 2)}
+      />
+
       {/* Sections */}
       {(() => {
-        let y = padding + CARD_TOP_PADDING * scale;
+        let y = padding + CARD_TOP_PADDING * scale + extra * 0.4;
         const nodes: React.ReactNode[] = [];
 
-        elements.sections.forEach((section, i) => {
-          if (i > 0) y += CARD_SURAH_GAP * scale;
-
-          // Divider (ornamental frame)
+        // Small basmala at the top
+        if (elements.basmallahParagraph) {
           nodes.push(
             <Paragraph
-              key={`div-${i}`}
-              paragraph={section.dividerParagraph}
+              key="basmallah"
+              paragraph={elements.basmallahParagraph}
               x={padding}
               y={y}
               width={contentWidth}
             />,
           );
+          y += elements.basmallahHeight + CARD_BASMALLAH_BOTTOM_GAP * scale;
+        }
 
-          // QCF surah name (centered within divider, recolored)
-          const nameY = y + (section.dividerHeight - section.nameHeight) / 2;
-          nodes.push(
-            <Group key={`name-${i}`} layer={nameColorPaint}>
-              <Paragraph
-                paragraph={section.nameParagraph}
-                x={padding}
-                y={nameY}
-                width={contentWidth}
-              />
-            </Group>,
-          );
+        elements.sections.forEach((section, i) => {
+          if (i > 0) y += CARD_SURAH_GAP * scale;
 
-          y += section.dividerHeight + CARD_HEADER_BOTTOM_GAP * scale;
-
-          // Basmallah (between divider and verse text)
-          if (section.basmallahParagraph) {
-            nodes.push(
-              <Paragraph
-                key={`basm-${i}`}
-                paragraph={section.basmallahParagraph}
-                x={padding}
-                y={y}
-                width={contentWidth}
-              />,
-            );
-            y += section.basmallahHeight + CARD_BASMALLAH_BOTTOM_GAP * scale;
-          }
-
-          // Verse text
+          // Arabic verse text
           nodes.push(
             <Paragraph
               key={`verse-${i}`}
@@ -171,8 +162,43 @@ const ShareCardPreview: React.FC<ShareCardPreviewProps> = ({
               width={contentWidth}
             />,
           );
-
           y += section.verseHeight + CARD_VERSE_BOTTOM_GAP * scale;
+
+          // Transliteration (italic), then translation, then the reference line
+          if (section.transliterationParagraph) {
+            nodes.push(
+              <Paragraph
+                key={`translit-${i}`}
+                paragraph={section.transliterationParagraph}
+                x={padding}
+                y={y}
+                width={contentWidth}
+              />,
+            );
+            y += section.transliterationHeight + CARD_BLOCK_GAP * scale;
+          }
+          if (section.translationParagraph) {
+            nodes.push(
+              <Paragraph
+                key={`translation-${i}`}
+                paragraph={section.translationParagraph}
+                x={padding}
+                y={y}
+                width={contentWidth}
+              />,
+            );
+            y += section.translationHeight + CARD_BLOCK_GAP * scale;
+          }
+          nodes.push(
+            <Paragraph
+              key={`ref-${i}`}
+              paragraph={section.referenceParagraph}
+              x={padding}
+              y={y}
+              width={contentWidth}
+            />,
+          );
+          y += section.referenceHeight + CARD_VERSE_BOTTOM_GAP * scale;
         });
 
         // Rewayah disclosure label (non-Hafs only), centered above watermark.
@@ -192,6 +218,8 @@ const ShareCardPreview: React.FC<ShareCardPreviewProps> = ({
         // Footer: ISTIMA wordmark, gold rule and Halalweb (centered), with the
         // site URL at the bottom-right.
         if (elements.watermarkParagraph) {
+          // Push the footer lockup down into the spare square space.
+          y += extra * 0.6;
           const lockup = footerLockup(contentWidth);
           const centerX = padding + contentWidth / 2;
           const markX = centerX - lockup.markW / 2;

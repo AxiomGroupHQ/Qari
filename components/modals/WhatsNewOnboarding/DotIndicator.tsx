@@ -82,6 +82,7 @@ export default React.memo(DotIndicatorComponent);
 
 const styles = StyleSheet.create({
   container: {
+    direction: 'ltr', // dots track a left-to-right pager, so never mirror them
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
