@@ -1,4 +1,5 @@
-import React, {useCallback, useState} from 'react';
+import React from 'react';
+import {useCallback, useState} from 'react';
 import {View, ScrollView, Text, Pressable} from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
@@ -38,6 +39,8 @@ interface CategoryItem {
 
 export default function CollectionScreen() {
   const {theme} = useTheme();
+  const ar = typeof navigator !== 'undefined' && navigator.language.toLowerCase().startsWith('ar');
+  const t = (english: string, arabic: string) => ar ? arabic : english;
   const styles = createStyles(theme);
   const insets = useSafeAreaInsets();
   const bottomInset = useBottomInset();
@@ -71,73 +74,73 @@ export default function CollectionScreen() {
   const categories: CategoryItem[] = [
     {
       id: 'playlists',
-      label: 'Playlists',
+      label: t('Playlists', 'قوائم التشغيل'),
       icon: <PlaylistIcon color="#6366F1" size={moderateScale(22)} />,
       color: '#6366F1',
       count: playlists.length,
-      emptyText: 'Create your first playlist',
+      emptyText: t('Create your first playlist', 'أنشئ قائمة التشغيل الأولى'),
       route: '/collection/playlists',
     },
     {
       id: 'reciters',
-      label: 'Reciters',
+      label: t('Reciters', 'القراء'),
       icon: (
         <ProfileIcon color="#3B82F6" size={moderateScale(22)} filled={true} />
       ),
       color: '#3B82F6',
       count: favoriteReciters.length,
-      emptyText: 'No favorites yet',
+      emptyText: t('No favorites yet', 'لا توجد مفضلات بعد'),
       route: '/collection/favorite-reciters',
     },
     {
       id: 'downloads',
-      label: 'Downloads',
+      label: t('Downloads', 'التنزيلات'),
       icon: <DownloadIcon color="#10AC84" size={moderateScale(22)} />,
       color: '#10AC84',
       count: downloads.length,
-      emptyText: 'No downloads yet',
+      emptyText: t('No downloads yet', 'لا توجد تنزيلات بعد'),
       route: '/collection/downloads',
     },
     {
       id: 'loved',
-      label: 'Loved',
+      label: t('Loved', 'المحبوبة'),
       icon: (
         <HeartIcon color="#FF6B6B" size={moderateScale(22)} filled={true} />
       ),
       color: '#FF6B6B',
       count: lovedTracks.length,
-      emptyText: 'No loved surahs yet',
+      emptyText: t('No loved surahs yet', 'لا توجد سور مفضلة بعد'),
       route: '/collection/loved',
     },
     {
       id: 'bookmarks',
-      label: 'Bookmarks',
+      label: t('Bookmarks', 'العلامات المرجعية'),
       icon: (
         <Feather name="bookmark" size={moderateScale(22)} color="#F59E0B" />
       ),
       color: '#F59E0B',
       count: bookmarkCount,
-      emptyText: 'No bookmarks yet',
+      emptyText: t('No bookmarks yet', 'لا توجد علامات مرجعية بعد'),
       route: '/collection/bookmarks',
     },
     {
       id: 'notes',
-      label: 'Notes',
+      label: t('Notes', 'الملاحظات'),
       icon: (
         <Feather name="file-text" size={moderateScale(22)} color="#3B82F6" />
       ),
       color: '#3B82F6',
       count: noteCount,
-      emptyText: 'No notes yet',
+      emptyText: t('No notes yet', 'لا توجد ملاحظات بعد'),
       route: '/collection/notes',
     },
     {
       id: 'uploads',
-      label: 'Uploads',
+      label: t('Uploads', 'الملفات المرفوعة'),
       icon: <MicrophoneIcon color="#8B5CF6" size={moderateScale(22)} />,
       color: '#8B5CF6',
       count: uploadsTotalCount,
-      emptyText: 'No uploads yet',
+      emptyText: t('No uploads yet', 'لا توجد ملفات مرفوعة بعد'),
       route: '/collection/uploads',
     },
   ];
@@ -164,7 +167,7 @@ export default function CollectionScreen() {
           />
           <Text
             style={[styles.addBarText, {color: theme.colors.textSecondary}]}>
-            Add to Collection
+            {t('Add to Collection', 'إضافة إلى المجموعة')}
           </Text>
         </Pressable>
 
@@ -199,7 +202,7 @@ export default function CollectionScreen() {
                   numberOfLines={1}>
                   {category.count > 0
                     ? `${category.count} ${
-                        category.count === 1 ? 'item' : 'items'
+                        ar ? 'عنصر' : category.count === 1 ? 'item' : 'items'
                       }`
                     : category.emptyText}
                 </Text>
