@@ -1,3 +1,4 @@
+import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useState, useMemo} from 'react';
 import {View, Text, ScrollView, Pressable, Alert} from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
@@ -189,7 +190,7 @@ export default function StorageScreen() {
         ) : (
           <>
             {/* Storage Breakdown */}
-            <Text style={styles.sectionHeader}>STORAGE BREAKDOWN</Text>
+            <Text style={styles.sectionHeader}>{isArabicInterface() ? 'تفاصيل مساحة التخزين' : 'STORAGE BREAKDOWN'}</Text>
 
             {/* Progress Bar */}
             <View style={styles.progressContainer}>
@@ -236,36 +237,36 @@ export default function StorageScreen() {
             <View style={styles.breakdownContainer}>
               <StorageCategory
                 color={colors.otherApps}
-                label="Other apps"
+                label={isArabicInterface() ? 'تطبيقات أخرى' : 'Other apps'}
                 size={otherApps}
                 styles={styles}
               />
               <StorageCategory
                 color={colors.downloads}
-                label="Downloads"
+                label={isArabicInterface() ? 'التنزيلات' : 'Downloads'}
                 size={downloads}
                 styles={styles}
               />
               <StorageCategory
                 color={colors.cache}
-                label="Cache"
+                label={isArabicInterface() ? 'ذاكرة التخزين المؤقت' : 'Cache'}
                 size={cache}
                 styles={styles}
               />
               <StorageCategory
                 color={colors.free}
-                label="Free"
+                label={isArabicInterface() ? 'المساحة المتاحة' : 'Free'}
                 size={free}
                 styles={styles}
               />
             </View>
 
             {/* Manage Storage */}
-            <Text style={styles.sectionHeader}>MANAGE STORAGE</Text>
+            <Text style={styles.sectionHeader}>{isArabicInterface() ? 'إدارة التخزين' : 'MANAGE STORAGE'}</Text>
             <View>
               <ActionSection
-                title="Remove all downloads"
-                description="Remove all the Quran content you have downloaded for offline use."
+                title={isArabicInterface() ? 'حذف جميع التنزيلات' : 'Remove all downloads'}
+                description={isArabicInterface() ? 'حذف جميع محتويات القرآن التي نزّلتها للاستماع دون اتصال.' : 'Remove all the Quran content you have downloaded for offline use.'}
                 buttonLabel="Remove"
                 onPress={handleClearAllDownloads}
                 theme={theme}
@@ -276,8 +277,8 @@ export default function StorageScreen() {
               <View style={styles.actionSpacer} />
 
               <ActionSection
-                title="Clear cache"
-                description="You can free up storage by clearing your cache. Your downloads won't be removed."
+                title={isArabicInterface() ? 'مسح ذاكرة التخزين المؤقت' : 'Clear cache'}
+                description={isArabicInterface() ? 'يمكنك توفير مساحة بمسح ذاكرة التخزين المؤقت دون حذف تنزيلاتك.' : 'You can free up storage by clearing your cache. Your downloads won't be removed.'}
                 buttonLabel="Clear"
                 onPress={handleClearCache}
                 theme={theme}
