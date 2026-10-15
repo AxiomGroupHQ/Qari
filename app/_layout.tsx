@@ -51,6 +51,7 @@ import {USE_GLASS} from '@/hooks/useGlassProps';
 import * as Sentry from '@sentry/react-native';
 import * as ScreenOrientation from 'expo-screen-orientation';
 import {SiteHeader} from '@/components/branding/SiteHeader'; // @ai
+import '@/utils/safeBack'; // @ai
 
 // Configure Reanimated logger
 configureReanimatedLogger({

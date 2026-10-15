@@ -1,10 +1,10 @@
+import {shareMessage} from '@/utils/webShare';
 import React, {useCallback, useState, useEffect} from 'react';
 import {
   View,
   Text,
   ScrollView,
   TouchableOpacity,
-  Share,
   LayoutAnimation,
   Platform,
   UIManager,
@@ -88,9 +88,7 @@ export const DhikrReader: React.FC<DhikrReaderProps> = ({
       dhikr.instruction ? `\n\n${dhikr.instruction}` : '',
     ].join('');
 
-    await Share.share({
-      message: content,
-    });
+    await shareMessage(content);
   }, [dhikr]);
 
   return (

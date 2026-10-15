@@ -16,10 +16,11 @@ export const FollowAlongSheet = (props: SheetProps<'follow-along'>) => {
   const styles = createStyles(theme);
   const {navigateToReciterProfile} = useReciterNavigation();
 
-  const supportedReciters = useMemo(() => {
-    const {supportedReciterIds} = useTimestampStore.getState();
-    return RECITERS.filter(r => supportedReciterIds.has(r.id));
-  }, []);
+  const supportedReciterIds = useTimestampStore(s => s.supportedReciterIds);
+  const supportedReciters = useMemo(
+    () => RECITERS.filter(r => supportedReciterIds.has(r.id)),
+    [supportedReciterIds],
+  );
 
   const handleReciterPress = (reciter: Reciter) => {
     SheetManager.hide('follow-along');
@@ -37,8 +38,9 @@ export const FollowAlongSheet = (props: SheetProps<'follow-along'>) => {
       </View>
       <View style={styles.container}>
         <Text style={styles.description}>
-          Verse-by-verse playback is not supported by the current reciter. Try
-          one of these reciters instead:
+          {supportedReciters.length > 0
+            ? 'Verse-by-verse playback is not supported by the current reciter. Try one of these reciters instead:'
+            : 'Verse-by-verse playback is not supported by the current reciter.'}
         </Text>
         <FlatList
           data={supportedReciters}
