@@ -518,7 +518,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bayaan.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.istima.app;
 				PRODUCT_NAME = Bayaan;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bayaan/Bayaan-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -550,7 +550,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bayaan.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.istima.app;
 				PRODUCT_NAME = Bayaan;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bayaan/Bayaan-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -702,7 +702,7 @@
 				);
 				MARKETING_VERSION = 2.2.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bayaan.app.share-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.istima.app.share-extension";
 				PRODUCT_NAME = ShareExtension;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -728,7 +728,7 @@
 				);
 				MARKETING_VERSION = 2.2.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bayaan.app.share-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.istima.app.share-extension";
 				PRODUCT_NAME = ShareExtension;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
