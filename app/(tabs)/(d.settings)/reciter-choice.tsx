@@ -1,3 +1,4 @@
+import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useMemo} from 'react';
 import {View, Text, Pressable, Switch, ScrollView} from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
@@ -53,11 +54,11 @@ export default function ReciterChoiceScreen() {
         </Text>
 
         <View style={styles.section}>
-          <Text style={styles.sectionHeader}>SELECTION PREFERENCE</Text>
+          <Text style={styles.sectionHeader}>{isArabicInterface() ? 'تفضيلات الاختيار' : 'SELECTION PREFERENCE'}</Text>
           <View style={styles.card}>
             <View style={styles.settingRow}>
               <View style={styles.settingInfo}>
-                <Text style={styles.settingTitle}>Ask Every Time</Text>
+                <Text style={styles.settingTitle}>{isArabicInterface() ? 'اسأل في كل مرة' : 'Ask Every Time'}</Text>
                 <Text style={styles.settingDescription}>
                   Choose a reciter each time you play
                 </Text>
@@ -76,7 +77,7 @@ export default function ReciterChoiceScreen() {
 
         {!askEveryTime && (
           <View style={styles.section}>
-            <Text style={styles.sectionHeader}>DEFAULT SELECTION METHOD</Text>
+            <Text style={styles.sectionHeader}>{isArabicInterface() ? 'طريقة الاختيار الافتراضية' : 'DEFAULT SELECTION METHOD'}</Text>
             <View style={styles.optionsContainer}>
               {options.map(option => {
                 const isSelected = defaultReciterSelection === option.action;
