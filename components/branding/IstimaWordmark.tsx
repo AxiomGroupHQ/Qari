@@ -42,20 +42,23 @@ export function IstimaWordmark({compact = false}: {compact?: boolean}) {
       accessible
       accessibilityLabel="ISTIMA, استماع"
       style={[styles.root, compact && styles.compact]}>
-      <Animated.View style={{opacity}}>
+      <View style={[styles.lockup, compact && styles.compactLockup]}>
+        <Animated.View style={{opacity, width: '100%'}}>
+          <Image
+            source={require('@/assets/branding/istima-wordmark.png')}
+            tintColor={theme.colors.text}
+            style={styles.mark}
+            contentFit="contain"
+          />
+        </Animated.View>
+        <View style={styles.rule} />
         <Image
-          source={require('@/assets/branding/istima-wordmark.png')}
-          tintColor={theme.colors.text}
-          style={compact ? styles.compactMark : styles.mark}
+          source={require('@/assets/branding/halalweb.png')}
+          style={styles.publisher}
           contentFit="contain"
+          accessibilityLabel="Halalweb"
         />
-      </Animated.View>
-      <Image
-        source={require('@/assets/branding/halalweb.png')}
-        style={compact ? styles.compactPublisher : styles.publisher}
-        contentFit="contain"
-        accessibilityLabel="Halalweb"
-      />
+      </View>
       {!compact && (
         <>
           <Text style={[styles.tagline, {color: theme.colors.textSecondary}]}>
@@ -73,10 +76,17 @@ export function IstimaWordmark({compact = false}: {compact?: boolean}) {
 const styles = StyleSheet.create({
   root: {alignItems: 'center', gap: 6, paddingVertical: 24},
   compact: {alignItems: 'flex-start', gap: 2, paddingVertical: 0},
-  mark: {width: 170, aspectRatio: 900 / 258},
-  compactMark: {width: 84, aspectRatio: 900 / 258},
-  publisher: {width: 56, aspectRatio: 400 / 69},
-  compactPublisher: {width: 36, aspectRatio: 400 / 69},
+  lockup: {width: 180, alignItems: 'center'},
+  compactLockup: {width: 92},
+  mark: {width: '100%', aspectRatio: 900 / 258},
+  rule: {
+    alignSelf: 'stretch',
+    height: 1.5,
+    backgroundColor: '#9a7b3c',
+    marginTop: 2,
+    marginBottom: 4,
+  },
+  publisher: {width: '78%', aspectRatio: 400 / 69},
   tagline: {fontFamily: 'Manrope-Medium', fontSize: 12, textAlign: 'center'},
   reflection: {
     fontFamily: 'Manrope-Regular',
