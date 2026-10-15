@@ -1,3 +1,4 @@
+import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useState, useCallback, useEffect, useMemo} from 'react';
 import {View, Text, Pressable, FlatList} from 'react-native';
 import {useRouter} from 'expo-router';
@@ -166,7 +167,7 @@ const ReciterBrowse = ({surahId, initialView = 'all'}: ReciterBrowseProps) => {
       </View>
       <View style={createStyles(theme).searchBarContainer}>
         <SearchBar
-          placeholder="Search reciters..."
+          placeholder={isArabicInterface() ? 'ابحث عن القراء...' : 'Search reciters...'}
           onChangeText={handleSearch}
           value={searchQuery}
           keyboardAppearance={theme.isDarkMode ? 'dark' : 'light'}
