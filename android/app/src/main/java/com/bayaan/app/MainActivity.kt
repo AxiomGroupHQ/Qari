@@ -1,4 +1,4 @@
-package com.bayaan.app
+package com.istima.app
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build
