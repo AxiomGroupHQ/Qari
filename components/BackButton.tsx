@@ -4,6 +4,7 @@ import {Feather} from '@expo/vector-icons';
 import {ScaledSheet, moderateScale} from 'react-native-size-matters';
 import {useTheme} from '@/hooks/useTheme';
 import {useNavigation} from '@react-navigation/native';
+import {router} from 'expo-router';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 interface BackButtonProps {
@@ -25,7 +26,11 @@ export const BackButton: React.FC<BackButtonProps> = ({
     if (onPress) {
       onPress();
     } else {
-      navigation.goBack();
+      if (navigation.canGoBack()) {
+        navigation.goBack();
+      } else {
+        router.replace('/');
+      }
     }
   };
 

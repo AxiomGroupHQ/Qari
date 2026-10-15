@@ -3,7 +3,6 @@ import {
   View,
   Text,
   Pressable,
-  Share,
   Switch,
   useWindowDimensions,
   ActivityIndicator,
@@ -18,12 +17,12 @@ import {useTheme} from '@/hooks/useTheme';
 import {Theme} from '@/utils/themeUtils';
 import {Feather} from '@expo/vector-icons';
 import Color from 'color';
-import * as Sharing from 'expo-sharing';
 import {useCanvasRef} from '@shopify/react-native-skia';
 import {mushafPreloadService} from '@/services/mushaf/MushafPreloadService';
 import {useMushafFontMgr} from '@/hooks/useMushafFontMgr';
 import ShareCardPreview from '@/components/share/ShareCardPreview';
 import {captureShareCard} from '@/components/share/captureShareCard';
+import {shareMessage, shareImageFile} from '@/utils/webShare';
 import {lightHaptics} from '@/utils/haptics';
 import {useMushafSettingsStore} from '@/store/mushafSettingsStore';
 import {ScrollView} from 'react-native-actions-sheet';
@@ -141,10 +140,7 @@ export const ShareContent: React.FC<ShareContentProps> = ({
 
     try {
       const uri = await captureShareCard(captureCanvasRef);
-      await Sharing.shareAsync(uri, {
-        mimeType: 'image/png',
-        UTI: 'public.png',
-      });
+      await shareImageFile(uri);
     } catch (error) {
       console.warn('[ShareContent] Image capture failed:', error);
     } finally {
@@ -159,7 +155,7 @@ export const ShareContent: React.FC<ShareContentProps> = ({
         ? `Quran ${verseRefText}`
         : `Quran ${verseRefText} · ${rewayahLabel}`;
     const message = `${arabicText}\n\n${translation}\n\n-- ${ref}`;
-    await Share.share({message});
+    await shareMessage(message.replace(/<[^>]+>/g, ''));
     SheetManager.hideAll();
   }, [arabicText, translation, verseRefText, rewayah, rewayahLabel]);
 

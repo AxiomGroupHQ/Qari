@@ -16,7 +16,7 @@ export function SiteHeader() {
       <Pressable
         accessibilityRole="link"
         accessibilityLabel="ISTIMA home"
-        onPress={() => router.replace('/')}
+        onPress={() => router.navigate('/(tabs)/(a.home)')}
         style={styles.brand}>
         <IstimaWordmark compact />
       </Pressable>
