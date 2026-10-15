@@ -4,16 +4,13 @@
  */
 import {
   Skia,
+  FontSlant,
   TextDirection,
   TextAlign,
   type SkTypefaceFontProvider,
   type SkParagraph,
   type SkTypeface,
 } from '@shopify/react-native-skia';
-import {
-  SURAH_DIVIDER_CHAR,
-  getQCFSurahNameChar,
-} from '@/constants/surahNameGlyphs';
 import {
   CARD_CONTENT_WIDTH,
   CARD_VERSE_FONT_SIZE,
@@ -22,13 +19,16 @@ import {
   CARD_WATERMARK_GAP,
   CARD_VERSE_LINE_HEIGHT,
   CARD_TOP_PADDING,
-  CARD_HEADER_BOTTOM_GAP,
   CARD_VERSE_BOTTOM_GAP,
   CARD_BOTTOM_PADDING,
   CARD_SURAH_GAP,
-  CARD_HEADER_NAME_RATIO,
-  CARD_BASMALLAH_FONT_RATIO,
+  CARD_BASMALLAH_FONT_SIZE,
   CARD_BASMALLAH_BOTTOM_GAP,
+  CARD_TRANSLIT_FONT_SIZE,
+  CARD_TRANSLATION_FONT_SIZE,
+  CARD_REFERENCE_FONT_SIZE,
+  CARD_BLOCK_GAP,
+  CARD_ACCENT_COLOR,
   LIGHT_COLORS,
   DARK_COLORS,
   type ShareCardColors,
@@ -53,6 +53,36 @@ for (const key of Object.keys(quranRaw)) {
   if (entry?.verse_key) textByKey[entry.verse_key] = entry.text;
 }
 
+interface TextEntry {
+  t?: string;
+}
+const translitRaw = require('@/data/transliteration.json') as Record<
+  string,
+  TextEntry
+>;
+const translationRaw =
+  require('@/data/SaheehInternational.translation-with-footnote-tags.json') as Record<
+    string,
+    TextEntry
+  >;
+const surahMeta = require('@/data/surahData.json') as Array<{
+  id: number;
+  name: string;
+  name_arabic: string;
+}>;
+
+const stripTags = (v: string) => v.replace(/<[^>]*>/g, '').trim();
+
+/** Card reference line, e.g. "An-Naml (النمل) | Al-Quran 27:26" or "...27:26-28". */
+function referenceLine(surahNumber: number, verseKeys: string[]): string {
+  const meta = surahMeta.find(m => m.id === surahNumber);
+  const first = verseKeys[0].split(':')[1];
+  const last = verseKeys[verseKeys.length - 1].split(':')[1];
+  const range = first === last ? first : `${first}-${last}`;
+  const name = meta ? `${meta.name} (${meta.name_arabic})` : '';
+  return `${name} | Al-Quran ${surahNumber}:${range}`;
+}
+
 // Reference coordinate system constants (from DigitalKhatt / QuranTextService)
 const FONTSIZE = 1000;
 const SPACEWIDTH = 100;
@@ -66,16 +96,20 @@ interface SurahSection {
 
 export interface ShareCardElements {
   /** Sections: each is a surah header + optional basmallah + verse text paragraph */
+  /** Small basmala centered at the top of the card. */
+  basmallahParagraph: SkParagraph | null;
+  basmallahHeight: number;
+  /** Sections: Arabic verse text, transliteration, translation and reference line. */
   sections: Array<{
     surahNumber: number;
-    dividerParagraph: SkParagraph;
-    dividerHeight: number;
-    nameParagraph: SkParagraph;
-    nameHeight: number;
-    basmallahParagraph: SkParagraph | null;
-    basmallahHeight: number;
     verseParagraph: SkParagraph;
     verseHeight: number;
+    transliterationParagraph: SkParagraph | null;
+    transliterationHeight: number;
+    translationParagraph: SkParagraph | null;
+    translationHeight: number;
+    referenceParagraph: SkParagraph;
+    referenceHeight: number;
   }>;
   watermarkParagraph: SkParagraph | null;
   watermarkHeight: number;
@@ -118,19 +152,6 @@ function groupBySurah(
   return sections;
 }
 
-/** Compute the font size that makes the divider glyph span exactly `targetWidth`. */
-function computeDividerFontSize(
-  typeface: SkTypeface,
-  targetWidth: number,
-): number {
-  const refSize = 100;
-  const refFont = Skia.Font(typeface, refSize);
-  const ids = refFont.getGlyphIDs(SURAH_DIVIDER_CHAR);
-  const widths = refFont.getGlyphWidths(ids);
-  const measuredW = widths[0] || 1;
-  return (targetWidth / measuredW) * refSize;
-}
-
 /** Prepend U+06DD (Arabic End of Ayah) before trailing Arabic-Indic digits. */
 function addVerseMarker(text: string): string {
   // If a U+06DD (end-of-ayah) is already adjacent to the trailing digits,
@@ -158,76 +179,14 @@ export function buildShareCardParagraphs(
   const verseFontSize = CARD_VERSE_FONT_SIZE * scale;
   const watermarkFontSize = CARD_WATERMARK_FONT_SIZE * scale;
   const topPadding = CARD_TOP_PADDING * scale;
-  const headerBottomGap = CARD_HEADER_BOTTOM_GAP * scale;
   const verseBottomGap = CARD_VERSE_BOTTOM_GAP * scale;
   const bottomPadding = CARD_BOTTOM_PADDING * scale;
   const surahGap = CARD_SURAH_GAP * scale;
-  const basmallahBottomGap = CARD_BASMALLAH_BOTTOM_GAP * scale;
 
   const groups = groupBySurah(verseKeys, rewayah);
 
   // Build sections
   const sections = groups.map(group => {
-    // Divider paragraph (ornamental frame scaled to exact content width)
-    const dividerFontSize = quranCommonTypeface
-      ? computeDividerFontSize(quranCommonTypeface, contentWidth)
-      : verseFontSize * 1.8;
-    const divBuilder = Skia.ParagraphBuilder.Make(
-      {textAlign: TextAlign.Center},
-      fontMgr,
-    );
-    divBuilder.pushStyle({
-      color: Skia.Color(colors.divider),
-      fontFamilies: ['QuranCommon'],
-      fontSize: dividerFontSize,
-    });
-    divBuilder.addText(SURAH_DIVIDER_CHAR);
-    divBuilder.pop();
-    const dividerParagraph = divBuilder.build();
-    dividerParagraph.layout(contentWidth);
-    const dividerHeight = dividerParagraph.getHeight();
-
-    // QCF surah name paragraph (overlaid on divider)
-    const qcfChar = getQCFSurahNameChar(group.surahNumber);
-    const nameBuilder = Skia.ParagraphBuilder.Make(
-      {textAlign: TextAlign.Center},
-      fontMgr,
-    );
-    nameBuilder.pushStyle({
-      color: Skia.Color(colors.text),
-      fontFamilies: ['SurahNameQCF'],
-      fontSize: dividerFontSize * CARD_HEADER_NAME_RATIO,
-    });
-    nameBuilder.addText(qcfChar);
-    nameBuilder.pop();
-    const nameParagraph = nameBuilder.build();
-    nameParagraph.layout(contentWidth);
-    const nameHeight = nameParagraph.getHeight();
-
-    // Basmallah paragraph (between divider and verse text)
-    // Skip for Al-Fatiha (verse 1 IS the basmallah) and At-Tawbah (no basmallah)
-    let basmallahParagraph: SkParagraph | null = null;
-    let basmallahHeight = 0;
-    const skipBasmallah = group.surahNumber === 1 || group.surahNumber === 9;
-    if (showBasmallah && !skipBasmallah && BASMALLAH_TEXT) {
-      const basmallahFontSize = verseFontSize * CARD_BASMALLAH_FONT_RATIO;
-      const basmBuilder = Skia.ParagraphBuilder.Make(
-        {textDirection: TextDirection.RTL, textAlign: TextAlign.Center},
-        fontMgr,
-      );
-      basmBuilder.pushStyle({
-        color: Skia.Color(colors.text),
-        fontFamilies: [fontFamily],
-        fontSize: basmallahFontSize,
-        fontFeatures: [{name: 'basm', value: 1}],
-      });
-      basmBuilder.addText(BASMALLAH_TEXT);
-      basmBuilder.pop();
-      basmallahParagraph = basmBuilder.build();
-      basmallahParagraph.layout(contentWidth);
-      basmallahHeight = basmallahParagraph.getHeight();
-    }
-
     // Verse text paragraph
     const verseBuilder = Skia.ParagraphBuilder.Make(
       {textDirection: TextDirection.RTL, textAlign: TextAlign.Center},
@@ -282,18 +241,101 @@ export function buildShareCardParagraphs(
     verseParagraph.layout(contentWidth);
     const verseHeight = verseParagraph.getHeight();
 
+    const textBlock = (
+      text: string,
+      family: string,
+      size: number,
+      textColor: string,
+      italic: boolean,
+      lineHeight: number,
+    ): SkParagraph | null => {
+      if (!text) return null;
+      const b = Skia.ParagraphBuilder.Make(
+        {textAlign: TextAlign.Center},
+        fontMgr,
+      );
+      b.pushStyle({
+        color: Skia.Color(textColor),
+        // Fall back to the Quran font for Arabic glyphs (Manrope is Latin only).
+        fontFamilies: [family, fontFamily],
+        fontSize: size,
+        heightMultiplier: lineHeight,
+        ...(italic ? {fontStyle: {slant: FontSlant.Italic}} : {}),
+      });
+      b.addText(text);
+      b.pop();
+      const para = b.build();
+      para.layout(contentWidth);
+      return para;
+    };
+
+    const transliterationText = group.verseKeys
+      .map(vk => stripTags(translitRaw[vk]?.t ?? ''))
+      .filter(Boolean)
+      .join(' ');
+    const translationText = group.verseKeys
+      .map(vk => stripTags(translationRaw[vk]?.t ?? ''))
+      .filter(Boolean)
+      .join(' ');
+
+    const transliterationParagraph = textBlock(
+      transliterationText,
+      'ManropeRegular',
+      CARD_TRANSLIT_FONT_SIZE * scale,
+      colors.secondary,
+      true,
+      1.45,
+    );
+    const translationParagraph = textBlock(
+      translationText,
+      'ManropeRegular',
+      CARD_TRANSLATION_FONT_SIZE * scale,
+      colors.text,
+      false,
+      1.45,
+    );
+    const referenceParagraph = textBlock(
+      referenceLine(group.surahNumber, group.verseKeys),
+      'ManropeSemiBold',
+      CARD_REFERENCE_FONT_SIZE * scale,
+      CARD_ACCENT_COLOR,
+      false,
+      1.3,
+    ) as SkParagraph;
+
     return {
       surahNumber: group.surahNumber,
-      dividerParagraph,
-      dividerHeight,
-      nameParagraph,
-      nameHeight,
-      basmallahParagraph,
-      basmallahHeight,
       verseParagraph,
       verseHeight,
+      transliterationParagraph,
+      transliterationHeight: transliterationParagraph?.getHeight() ?? 0,
+      translationParagraph,
+      translationHeight: translationParagraph?.getHeight() ?? 0,
+      referenceParagraph,
+      referenceHeight: referenceParagraph.getHeight(),
     };
   });
+
+  // Small basmala at the top of the card (always shown, as on the Ayah a Day card).
+  let basmallahParagraph: SkParagraph | null = null;
+  let basmallahHeight = 0;
+  if (BASMALLAH_TEXT) {
+    const basmBuilder = Skia.ParagraphBuilder.Make(
+      {textDirection: TextDirection.RTL, textAlign: TextAlign.Center},
+      fontMgr,
+    );
+    basmBuilder.pushStyle({
+      color: Skia.Color(CARD_ACCENT_COLOR),
+      fontFamilies: [fontFamily],
+      fontSize: CARD_BASMALLAH_FONT_SIZE * scale,
+      fontFeatures: [{name: 'basm', value: 1}],
+    });
+    basmBuilder.addText(BASMALLAH_TEXT);
+    basmBuilder.pop();
+    basmallahParagraph = basmBuilder.build();
+    basmallahParagraph.layout(contentWidth);
+    basmallahHeight = basmallahParagraph.getHeight();
+  }
 
   // Rewayah disclosure label (only when non-Hafs). Rendered centered, above
   // the watermark, so the share card makes the reading explicit.
@@ -345,20 +387,29 @@ export function buildShareCardParagraphs(
   }
 
   // Compute total height
+  const blockGap = CARD_BLOCK_GAP * scale;
   let totalHeight = topPadding;
+  if (basmallahParagraph) {
+    totalHeight += basmallahHeight + CARD_BASMALLAH_BOTTOM_GAP * scale;
+  }
   sections.forEach((section, i) => {
     if (i > 0) totalHeight += surahGap;
-    totalHeight += section.dividerHeight + headerBottomGap;
-    if (section.basmallahParagraph) {
-      totalHeight += section.basmallahHeight + basmallahBottomGap;
-    }
     totalHeight += section.verseHeight + verseBottomGap;
+    if (section.transliterationParagraph) {
+      totalHeight += section.transliterationHeight + blockGap;
+    }
+    if (section.translationParagraph) {
+      totalHeight += section.translationHeight + blockGap;
+    }
+    totalHeight += section.referenceHeight + verseBottomGap;
   });
   if (rewayahLabelParagraph) totalHeight += rewayahLabelHeight;
   if (watermarkParagraph) totalHeight += watermarkHeight;
   totalHeight += bottomPadding;
 
   return {
+    basmallahParagraph,
+    basmallahHeight,
     sections,
     watermarkParagraph,
     watermarkHeight,
