@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Gabim gjatë nisjes së luajtësit: {{message}}",
+    "errorLoadingFonts": "Gabim gjatë ngarkimit të shkronjave"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Ballina e ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Të gjitha",
+      "clearAll": "Pastro të gjitha",
+      "hasPhoto": "Ka foto"
+    },
+    "filterModal": {
+      "apply": "Zbato",
+      "filterReciters": "Filtro recituesit",
+      "recitationStyles": "Stilet e recitimit",
+      "reset": "Rivendos",
+      "rewayatTypes": "Llojet e rivajateve"
+    },
+    "recitersFound_one": "U gjet {{count}} recitues me filtrat aktualë",
+    "recitersFound_other": "U gjetën {{count}} recituesa me filtrat aktualë"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Sure të dashura"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Ruaj vargje për t'i parë këtu",
+      "bookmarks": "Faqeshënuesit",
+      "noBookmarksYet": "Ende pa faqeshënues",
+      "removeBookmark": "Hiq faqeshënuesin"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Rivajatet",
+      "searchPlaylistsRecitersSurahsRewayat": "Kërko listat, recituesit, sure, rivajate...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Kërko listat, recituesit, sure, rivajate dhe shkarkime",
+      "searchYourCollection": "Kërko në koleksionin tënd",
+      "searching": "Po kërkohet...",
+      "tryDifferentKeywords": "Provo fjalë kyçe të tjera"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Shkarko sure për t'i parë këtu",
+      "noDownloadsYet": "Ende pa shkarkime",
+      "playAll": "Luaj të gjitha"
+    },
+    "favoritereciters": {
+      "addReciters": "Shto recituesa",
+      "addRecitersToSeeThem": "Shto recituesa për t'i parë këtu",
+      "noFavoriteRecitersYet": "Ende pa recituesa të preferuar",
+      "removeFromFavorites": "Hiq nga të preferuarit",
+      "searchFavoriteReciters": "Kërko recituesit e preferuar"
+    },
+    "index": {
+      "addToCollection": "Shto në koleksion",
+      "bookmarks": "Faqeshënuesit",
+      "createYourFirstPlaylist": "Krijo listën tënde të parë",
+      "downloads": "Shkarkimet",
+      "items_one": "{{count}} element",
+      "items_other": "{{count}} elemente",
+      "loved": "Të dashura",
+      "noBookmarksYet": "Ende pa faqeshënues",
+      "noDownloadsYet": "Ende pa shkarkime",
+      "noFavoritesYet": "Ende pa të preferuara",
+      "noLovedSurahsYet": "Ende pa sure të dashura",
+      "noNotesYet": "Ende pa shënime",
+      "noUploadsYet": "Ende pa ngarkime",
+      "notes": "Shënimet",
+      "playlists": "Listat",
+      "reciters": "Recituesit",
+      "uploads": "Ngarkimet"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Të gjitha suret e dashura janë shkarkuar tashmë.",
+      "allLovedSurahsHaveBeen": "Të gjitha suret e dashura janë shkarkuar.",
+      "downloadError": "Gabim shkarkimi",
+      "loveSurahsToSeeThem": "Vendos zemër sureve për t'i parë këtu",
+      "noLovedSurahsYet": "Ende pa sure të dashura",
+      "someDownloadsMayHaveFailed": "Disa shkarkime mund të kenë dështuar.",
+      "unloveAllSurahs": "Hiq zemrën nga të gjitha surët"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Shto shënime te vargjet për t'i parë këtu",
+      "editNote": "Ndrysho shënimin",
+      "noNotesYet": "Ende pa shënime",
+      "notes": "Shënimet"
+    },
+    "playlistModal": {
+      "name": "Emri"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Krijo lista për t'i parë këtu",
+      "noPlaylistsYet": "Ende pa lista",
+      "playlists": "Listat"
+    },
+    "uploads": {
+      "removeAllUploads": "Hiq të gjitha ngarkimet",
+      "uploadRecitationsToSeeThem": "Ngarko recitime për t'i parë këtu"
+    }
+  },
+  "common": {
+    "1Time": "1 herë",
+    "2Times": "2 herë",
+    "3Times": "3 herë",
+    "addToCollection": "Shto në koleksion",
+    "addToQueue": "Shto në radhë",
+    "allSurahs": "Të gjitha surët",
+    "alreadyDownloaded": "Tashmë i shkarkuar",
+    "arabic": "Arabisht",
+    "asc": "Rritës",
+    "browseAll": "Shfleto të gjitha",
+    "browseAllReciters": "Shfleto të gjithë recituesit",
+    "cancel": "Anulo",
+    "clear": "Pastro",
+    "copyToClipboard": "Kopjo në kujtesën e ndërmjetme",
+    "createNewPlaylist": "Krijo listë të re",
+    "defaultReciter": "Recituesi i parazgjedhur",
+    "delete": "Fshi",
+    "deleteNote": "Fshi shënimin",
+    "deleteRecitation": "Fshi recitimin",
+    "desc": "Zbritës",
+    "downloadComplete": "Shkarkimi përfundoi",
+    "downloadFailed": "Shkarkimi dështoi",
+    "downloads": "Shkarkimet",
+    "editDetails": "Ndrysho detajet",
+    "error": "Gabim",
+    "favoriteReciters": "Recituesit e preferuar",
+    "followAlong": "Ndiq tekstin",
+    "from": "Nga",
+    "goToReciter": "Shko te recituesi",
+    "goToVerse": "Shko te vargu",
+    "learnAboutSurah": "Mëso për suren",
+    "loading": "Po ngarkohet...",
+    "loop": "Përsërit",
+    "loved": "Të dashura",
+    "mushafSettings": "Cilësimet e Mushafit",
+    "next": "Tjetra",
+    "noRecitersFound": "Nuk u gjet asnjë recitues",
+    "noResultsFound": "Nuk u gjet asnjë rezultat",
+    "noUploadsYet": "Ende pa ngarkime",
+    "play": "Luaj",
+    "playEachVerse": "Luaj çdo varg",
+    "playNow": "Luaj tani",
+    "playSpeed": "Shpejtësia e luajtjes",
+    "playTheRange": "Luaj intervalin",
+    "playlistName": "Emri i listës",
+    "prev": "Mëparshmi",
+    "readingTheme": "Tema e leximit",
+    "recentSearches": "Kërkimet e fundit",
+    "reciter": "Recituesi",
+    "reciterChoice": "Zgjedhja e recituesit",
+    "reciters": "Recituesit",
+    "remove": "Hiq",
+    "removeAllDownloads": "Hiq të gjitha shkarkimet",
+    "removeHighlight": "Hiq theksimin",
+    "rev": "Anasjelltas",
+    "save": "Ruaj",
+    "search": "Kërko",
+    "searchReciters": "Kërko recituesa...",
+    "searchSurahs": "Kërko sure",
+    "share": "Ndaj",
+    "shareAsImage": "Ndaj si imazh",
+    "shareAsText": "Ndaj si tekst",
+    "sharedPhrases": "Fraza të përbashkëta",
+    "showBasmallah": "Shfaq Besmelenë",
+    "stop": "Ndalo",
+    "storage": "Hapësira ruajtëse",
+    "surah": "Sureja",
+    "surahs": "Suret",
+    "to": "Deri",
+    "translation": "Përkthimi",
+    "translationsTafaseer": "Përkthime dhe tefsire",
+    "transliteration": "Transliterimi",
+    "uploads": "Ngarkimet",
+    "useDefaultReciter": "Përdor recituesin e parazgjedhur",
+    "verseReference": "Referenca e vargut",
+    "verses": "Vargjet",
+    "whatSNew": "Çfarë ka të re",
+    "wordByWord": "Fjalë për fjalë",
+    "writeYourNoteHere": "Shkruaj shënimin tënd këtu...",
+    "yourPlaylists": "Listat e tua"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Luaj të gjitha suret"
+    },
+    "searchHeader": {
+      "searchSurahs": "Kërko sure"
+    },
+    "searchView": {
+      "noSurahsFound": "Nuk u gjet asnjë sure"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Nuk ka sure të disponueshme"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Shto recitim",
+      "uploadRecitationsToSeeThem": "Ngarko recitime për t'i parë këtu"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Shkarkuar • {{count}} sure",
+    "subtitle_other": "Shkarkuar • {{count}} sure"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Na vjen keq.. ndodhi një gabim"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Shfleto të 114 suret"
+    },
+    "savedAdhkarHero": {
+      "saved": "Të ruajtura",
+      "yourCollection": "Koleksioni yt"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SUREJA E DITËS"
+    },
+    "surahsHero": {
+      "number": "Numri"
+    }
+  },
+  "language": {
+    "later": "Më vonë",
+    "restartMessage": "Rinise aplikacionin që të zbatohet drejtimi i ri i faqosjes.",
+    "restartNow": "Rinise tani",
+    "restartTitle": "Kërkohet rinisje",
+    "search": "Kërko gjuhë",
+    "system": "Gjuha e pajisjes"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Vazhdo"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Kalo"
+    }
+  },
+  "mushaf": {
+    "juz": "Xhuzi {{juz}}",
+    "loadingMushaf": "Po ngarkohet Mushafi…",
+    "main": {
+      "mushafSettings": "Cilësimet e Mushafit"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Ndrysho recituesin",
+      "changeReciter2": "Ndrysho recituesin",
+      "nextAyah": "Ajeti tjetër",
+      "playbackOptions": "Opsionet e luajtjes",
+      "previousAyah": "Ajeti i mëparshëm"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Gjej sure, vargje, faqe ose xhuze",
+      "recentReads": "LEXIMET E FUNDIT",
+      "searchSurahsPagesOrJuz": "Kërko sure, faqe ose xhuze...",
+      "searchTheMushaf": "Kërko në Mushaf"
+    },
+    "options": "Opsione",
+    "page": "Faqja {{page}}",
+    "pageAndSurah": "Faqja {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushafi nuk u ngarkua.",
+    "tryAgain": "Provo përsëri"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Thekson emrin e Allahut dhe format e titujve hyjnorë si Rabb në mushaf."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Theksime alternuese sipas pjesëve tematike",
+    "arabicFontSize": "Madhësia e shkronjave arabe",
+    "bold": "I trashë",
+    "book": "Libër",
+    "colorLegend": "Legjenda e ngjyrave",
+    "currentlyReading": "Duke lexuar tani",
+    "divineNames": "EMRAT HYJNORË",
+    "fontSize": "Madhësia e shkronjave",
+    "fullscreen": "Ekran i plotë",
+    "hamzaReplacedByLongVowel": "Hamza e zëvendësuar nga zanorja e gjatë",
+    "heavyLamInAllahAfter": "Lam i rëndë te Allah pas shkronjave emfatike",
+    "highlightAllahRabb": "Thekso Allah / Rabb",
+    "horizontal": "Horizontal",
+    "ibdal": "Ibdal",
+    "list": "Listë",
+    "loadingSample": "Po ngarkohet shembulli...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Theksim maksimal",
+    "medium": "Mesatar",
+    "modernMadinahPrintedPipeline": "Procesi modern i printuar i Medinës",
+    "mushaf": "Mushaf",
+    "normal": "Normal",
+    "originalMushafWeight": "Trashësia origjinale e mushafit",
+    "pageDesign": "DIZAJNI I FAQES",
+    "prolongedVowelAfterHamza": "Zanore e zgjatur pas hamzës",
+    "readingTheme": "TEMA E LEXIMIT",
+    "scrollDirection": "DREJTIMI I RRAHJES",
+    "showDifferences": "Shfaq dallimet",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Pak më i theksuar",
+    "softenedHamzaPronunciation": "Shqiptim i zbutur i hamzës",
+    "subcontinentNastaliqStyle": "Stili Nastaliq i nënkontinentit",
+    "taghlizAlLam": "Taghliz al-Lam",
+    "tajweedColoring": "Ngjyrosja e texhvidit",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "PARAPAMJA E TEKSTIT NUK ËSHTË ENDE E DISPONUESHME",
+    "textThickness": "TRASHËSIA E TEKSTIT",
+    "thematicHighlighting": "Theksim tematik",
+    "trailingVowelOrMoodChange": "Vetëm ndryshim i zanores së fundit ose i mënyrës",
+    "usingSaheehInternationalTranslationWith": "Përdoret: Përkthimi Saheeh International me shënime",
+    "vertical": "Vertikal",
+    "viewType": "LLOJI I PAMJES",
+    "vowelMoodShift": "Zhvendosje e zanores / e mënyrës",
+    "wordByWord": "FJALË PËR FJALË",
+    "wordVariant": "Varianti i fjalës"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Serveri nuk arrihet",
+    "connectionRestored": "Lidhja u rivendos",
+    "noInternetConnection": "Nuk ka lidhje interneti",
+    "showingCachedData": "Po shfaqen të dhëna të ruajtura"
+  },
+  "organize": {
+    "createReciter": "Krijo \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Radha",
+      "queueIsEmpty": "Radha është bosh"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Etiketo këtë recitim për të parë tekstin dhe detajet e sures"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Listë • {{count}} sure",
+    "subtitle_other": "Listë • {{count}} sure"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Asnjë sure në këtë listë"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Shënim fundor"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Një recitim i zgjedhur posaçërisht për këtë moment",
+      "discover": "Zbulo",
+      "discoverANewVoice": "Zbulo një zë të ri",
+      "explore": "Eksploro",
+      "exploreTheUnexpected": "Eksploro të papriturën",
+      "hearSomethingNew": "Dëgjo diçka të re",
+      "letTheQuranSurpriseYou": "Lëre Kuranin të të befasojë",
+      "randomMix": "Përzierje e rastësishme",
+      "randomRecitation": "Recitim i rastësishëm",
+      "shuffleListen": "Përziej dhe dëgjo",
+      "surpriseMe": "Më befaso"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Ndryshimi i modalitetit të pamjes zbatohet në të gjithë aplikacionin"
+  },
+  "reciterBrowse": {
+    "allReciters": "Të gjithë recituesit",
+    "browseReciters": "Shfleto recituesit",
+    "favorites": "Të preferuarit"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Asnjë shkarkim për këtë recitues"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Ngarkimet e mia"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkar",
+    "bestForMemorization": "Më i miri për memorizim",
+    "bestForTajweed": "Më i miri për texhvid",
+    "continueListening": "Vazhdo dëgjimin",
+    "exclusives": "Ekskluzive",
+    "exploreByRewayah": "Eksploro sipas rivajatit",
+    "featuredReciters": "Recituesit e veçantë",
+    "fromYourCollection": "Nga koleksioni yt",
+    "myRecitations": "Recitimet e mia",
+    "newToQuranStartHere": "I ri në Kuran? Fillo këtu",
+    "seeMore": "Shiko më shumë",
+    "yourFavorites": "Të preferuarit e tu"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Aktiv",
+      "activeTafseer": "TEFSIRI AKTIV",
+      "activeTranslation": "PËRKTHIMI AKTIV",
+      "deleteTafseer": "Fshi tefsirin",
+      "deleteTranslation": "Fshi përkthimin",
+      "noTafaseerFound": "Nuk u gjet asnjë tefsir",
+      "noTranslationsFound": "Nuk u gjet asnjë përkthim",
+      "unableToDownloadThisTafseer": "Ky tefsir nuk mund të shkarkohet. Kontrollo lidhjen me internetin dhe provo përsëri.",
+      "unableToDownloadThisTranslation": "Ky përkthim nuk mund të shkarkohet. Kontrollo lidhjen me internetin dhe provo përsëri."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Asnjë kërkim i fundit",
+      "tryDifferentKeywordsOrCheck": "Provo fjalë të tjera kyçe ose kontrollo drejtshkrimin",
+      "yourSearchHistoryWillAppear": "Historiku i kërkimeve do të shfaqet këtu"
+    },
+    "surahsOrReciters": "Kërko sure ose recituesa"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Kontrolle të avancuara të audios",
+      "browseByJuz": "Shfleto sipas xhuzit",
+      "createAndManageYourOwn": "Krijo dhe menaxho listat e tua të personalizuara me recitimet e tua të preferuara",
+      "crystalClearRecitationsFromThe": "Recitime kristal të qarta nga Qarit më të mirë të botës, me transmetim të optimizuar",
+      "curatedCollections": "Koleksione të përzgjedhura",
+      "customPlaylists": "Lista të personalizuara",
+      "customizeThemesAccentColorsAnd": "Personalizo temat, ngjyrat e theksimit dhe cilësimet e audios sipas dëshirës",
+      "downloadSurahsForOfflineListening": "Shkarko sure për dëgjim pa internet, në çdo kohë dhe kudo",
+      "easilyNavigateThroughTheQuran": "Lundro lehtë nëpër Kuran me organizimin dhe grupimin sipas xhuzit",
+      "features": "VEÇORITË",
+      "highQualityAudio": "Audio me cilësi të lartë",
+      "listenReflectRememberAllah": "Dëgjo. Reflekto. Kujto Allahun.",
+      "offlineDownloads": "Shkarkime pa internet",
+      "ourCommitment": "Angazhimi ynë",
+      "ourMission": "Misioni ynë",
+      "personalization": "Personalizimi",
+      "precisePlaybackControlWithContinuous": "Kontroll i saktë i luajtjes me luajtje të vazhdueshme dhe shpejtësi të rregullueshme të recitimit",
+      "quranBayanTafsirKnowledgeOur": "Kuran • Bejan • Tefsir • Dije. Qëllimi ynë është ta bëjmë dëgjimin dhe reflektimin pjesë të jetës së përditshme: në shtëpi, rrugës dhe kudo që ke një çast për të kujtuar Allahun.",
+      "readListenAndReflect": "Lexo, dëgjo dhe reflekto",
+      "readTheMushafExploreTranslations": "Lexo Mushafin, eksploro përkthimet dhe tefsirin, ruaj vargje dhe shënime dhe kthehu te adhkari i përditshëm. Zgjidh recituesin, krijo lista dhe formo një përvojë dëgjimi që i përshtatet ditës sate. Veçoritë e disponueshme ndryshojnë sipas pajisjes; aplikacionet vendase mbështesin edhe shkarkime për dëgjim pa internet.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Sure të organizuara me kujdes për raste dhe tema të ndryshme",
+      "weCareAboutTheAccuracy": "Kujdesemi për saktësinë e përmbajtjes së shenjtë, dizajnin respektues dhe qasjen e besueshme. Vazhdojmë ta përmirësojmë ISTIMA me kujdes për njerëzit që e përdorin. Allahu e pranoftë këtë përpjekje dhe e bëftë të dobishme për këdo që dëgjon, lexon dhe reflekton."
+    },
+    "aboutApp": "Rreth {{name}}",
+    "appearance": "PAMJA",
+    "defaultreciter": {
+      "changeDefaultReciter": "ZGJIDH RECITUESIN E PARAZGJEDHUR"
+    },
+    "developer": "ZHVILLUESI",
+    "floatingDevMenu": "Menuja lundruese e zhvilluesit",
+    "language": "Gjuha",
+    "languageDescription": "Zgjidh gjuhën e aplikacionit",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Përdor gjithmonë recituesin e zgjedhur si të parazgjedhur",
+      "askEveryTime": "Pyet çdo herë",
+      "chooseAReciterEachTime": "Zgjidh një recitues sa herë që luan",
+      "chooseHowYouWantTo": "Zgjidh si dëshiron të zgjedhësh recituesit kur luan sure",
+      "defaultSelectionMethod": "MËNYRA E ZGJEDHJES SË PARAZGJEDHUR",
+      "searchThroughOurCompleteCollection": "Kërko në koleksionin tonë të plotë të recituesve",
+      "selectionPreference": "PREFERENCA E ZGJEDHJES"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Të gjitha shkarkimet u hoqën.",
+      "areYouSureYouWant": "Je i sigurt që dëshiron të heqësh të gjithë përmbajtjen e shkarkuar? Ky veprim nuk mund të zhbëhet.",
+      "cache": "Memoria e përkohshme",
+      "cacheHasBeenCleared": "Memoria e përkohshme u pastrua.",
+      "clearCache": "Pastro memorien e përkohshme",
+      "failedToClearCache": "Pastrimi i memories së përkohshme dështoi.",
+      "failedToRemoveDownloads": "Heqja e shkarkimeve dështoi.",
+      "free": "Të lira",
+      "loadingStorageInformation": "Po ngarkohen informacionet e ruajtjes...",
+      "manageStorage": "MENAXHO HAPËSIRËN",
+      "otherApps": "Aplikacione të tjera",
+      "removeAllDownloads": "Hiq të gjitha shkarkimet",
+      "removeAllTheQuranContent": "Hiq të gjithë përmbajtjen e Kuranit që ke shkarkuar për përdorim pa internet.",
+      "storageBreakdown": "ndarja e hapësirës",
+      "success": "Sukses",
+      "thisWillClearYourCache": "Kjo do ta pastrojë memorien e përkohshme. Shkarkimet e tua nuk do të hiqen.",
+      "youCanFreeUpStorage": "Mund të lirosh hapësirë duke pastruar memorien e përkohshme. Shkarkimet e tua nuk do të hiqen."
+    },
+    "themePicker": {
+      "auto": "Automatik",
+      "dark": "I errët",
+      "light": "I çelët"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Nuk ka listë ndryshimesh"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Rreth {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Shto recitues të preferuar",
+      "uploadRecitation": "Ngarko recitim"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Tinguj mjedisi",
+      "none": "Asnjë",
+      "volume": "Volumi"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "p.sh., Recitime të mëngjesit"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Hiq shkarkimin"
+    },
+    "favoriteRecitersSheet": {
+      "done": "U krye"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Shto në koleksion",
+      "addToQueue": "Shto në radhë",
+      "continuePlaying": "Vazhdo luajtjen",
+      "goToReciter": "Shko te recituesi",
+      "removeFromRecents": "Hiq nga të fundit"
+    },
+    "mushafLayoutSheet": {
+      "back": "Prapa"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Vargu përfundimtar",
+      "playbackSettings": "Cilësimet e luajtjes",
+      "selectRange": "Zgjidh intervalin",
+      "startingVerse": "Vargu fillestar"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Cilësimet e përsëritjes",
+      "start": "Fillo",
+      "verseRange": "Intervali i vargjeve"
+    },
+    "organizeRecitationSheet": {
+      "category": "Kategoria",
+      "customReciter": "Recitues i personalizuar",
+      "duA": "Dua",
+      "eGMorningAdhkar": "p.sh., Adhkari i mëngjesit",
+      "lecture": "Ligjëratë",
+      "moreOptions": "Më shumë opsione",
+      "other": "Tjetër",
+      "recording": "Regjistrim",
+      "rewayah": "Rivajati",
+      "searchSurahs": "Kërko sure...",
+      "style": "Stili",
+      "tafsir": "Tefsir",
+      "title": "Titulli",
+      "type": "Lloji",
+      "verseRangeOptional": "Intervali i vargjeve (opsional)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Shpejtësia e luajtjes"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Të gjitha elementet në këtë listë janë shkarkuar tashmë.",
+      "anErrorOccurredWhileDownloading": "Ndodhi një gabim gjatë shkarkimit të listës. Provo përsëri.",
+      "deletePlaylist": "Fshi listën",
+      "downloadingPlaylist": "Po shkarkohet lista...",
+      "editPlaylist": "Ndrysho listën",
+      "emptyPlaylist": "Listë bosh",
+      "thisPlaylistIsEmpty": "Kjo listë është bosh."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Rreth rivajateve",
+      "availableRewayat": "Rivajatet e disponueshme"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Shtimi i sures në listë dështoi",
+      "failedToCreatePlaylist": "Krijimi i listës dështoi",
+      "noPlaylistsYetCreateYour": "Ende pa lista. Krijo listën tënde të parë më lart!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Pyet çdo herë",
+      "randomReciter": "Recitues i rastësishëm",
+      "selectReciter": "Zgjidh recituesin"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Nuk u gjetën vargje të ngjashme për këtë ajet.",
+      "similarWording": "Formulim i ngjashëm"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Kohëmatësi i gjumit",
+      "turnOffTimer": "Çaktivizo kohëmatësin"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Hiq nga lista"
+    },
+    "verseActionsSheet": {
+      "addNote": "Shto shënim",
+      "copy": "Kopjo",
+      "repeat": "Përsërit",
+      "similarVerses": "Vargje të ngjashme",
+      "tafseer": "Tefsiri",
+      "theme": "Tema"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Opsionet e kopjimit",
+      "selectWhatToCopy": "Zgjidh çfarë të kopjosh"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Ngjyra e theksimit"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Ndaj vargun"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Gjendet në {{count}} varg",
+    "foundIn_other": "Gjendet në {{count}} vargje"
+  },
+  "surahItem": {
+    "moreOptions": "Më shumë opsione",
+    "opensMenuWithAdditionalActions": "Hap menunë me veprime shtesë për këtë sure",
+    "tapToPlaySurah": "Prek për të luajtur suren"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "ID e listës e pavlefshme",
+      "playlistNotFound": "Lista nuk u gjet"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Nuk u gjet asnjë recitues me të gjitha suret e kësaj liste. Provo një listë tjetër.",
+      "failedToPlayPlaylistPlease": "Luajtja e listës dështoi. Provo përsëri.",
+      "failedToPlayTrackPlease": "Luajtja e pjesës dështoi. Provo përsëri.",
+      "failedToShufflePlaylistPlease": "Përzierja e listës dështoi. Provo përsëri.",
+      "noReciterAvailable": "Asnjë recitues i disponueshëm",
+      "noSurahsInThisPlaylist": "Asnjë sure në këtë listë"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Llogaria",
+      "appData": "Aplikacioni dhe të dhënat",
+      "audioPlayback": "Audio dhe luajtja",
+      "chooseYourPreferredReciter": "Zgjidh recituesin e preferuar",
+      "customizeQuranDisplayOptions": "Personalizo opsionet e shfaqjes së Kuranit",
+      "customizeReciterSelection": "Personalizo zgjedhjen e recituesit",
+      "featureRequests": "Kërkesa për veçori",
+      "feedback": "Komente",
+      "helpSupport": "Ndihma dhe mbështetja",
+      "learnMoreAboutOurMission": "Mëso më shumë për misionin tonë",
+      "manageQuranTranslationsAndCommentary": "Menaxho përkthimet dhe komentet e Kuranit",
+      "privacyPolicy": "Politika e privatësisë",
+      "quran": "Kurani",
+      "readOurTermsOfService": "Lexo kushtet tona të shërbimit",
+      "seeWhatSNewIn": "Shiko çfarë ka të re në këtë version",
+      "shareYourExperienceWithOthers": "Ndaj përvojën tënde me të tjerët",
+      "showTheFloatingDeveloperTools": "Shfaq butonin lundrues të mjeteve të zhvilluesit",
+      "suggestImprovementsAndNewFeatures": "Sugjero përmirësime dhe veçori të reja",
+      "termsOfService": "Kushtet e shërbimit",
+      "viewAndManageStorageUsage": "Shiko dhe menaxho përdorimin e hapësirës",
+      "viewOurPrivacyPolicy": "Shiko politikën tonë të privatësisë",
+      "writeAReview": "Shkruaj një vlerësim"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Anulo",
+    "close": "Mbyll",
+    "collection": "Koleksioni",
+    "download": "Shkarko",
+    "downloads": "Shkarkimet",
+    "error": "Diçka shkoi keq",
+    "favorites": "Të preferuarit",
+    "home": "Ballina",
+    "language": "Gjuha",
+    "library": "Biblioteka",
+    "loading": "Po ngarkohet...",
+    "noResults": "Nuk u gjet asnjë rezultat",
+    "offline": "Je jashtë linje",
+    "pause": "Pauzë",
+    "play": "Luaj",
+    "retry": "Provo përsëri",
+    "save": "Ruaj",
+    "search": "Kërko",
+    "settings": "Cilësimet",
+    "surahs": "Suret"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "ZGJIDH PËRMBAJTJEN"
+    },
+    "highlightContent": {
+      "chooseColor": "ZGJIDH NGJYRËN"
+    },
+    "noteContent": {
+      "saveNote": "Ruaj shënimin"
+    },
+    "shareContent": {
+      "shareLink": "Ndaj lidhjen"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Nuk u gjetën vargje të ngjashme për këtë ajet.",
+      "sharedPhrases": "FRAZA TË PËRBASHKËTA",
+      "similarWording": "FORMULIM I NGJASHËM"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Asnjë tefsir i shkarkuar",
+      "tafseerNotAvailableForThis": "Tefsiri nuk ofrohet për këtë varg",
+      "tapHereToDownloadA": "Prek këtu për të shkarkuar një tefsir dhe për të parë komentin."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Nuk ka të dhëna tematike për këtë varg.",
+      "passage": "Pjesa"
+    },
+    "translationContent": {
+      "switch": "Ndërro",
+      "translationNotAvailable": "Përkthimi nuk ofrohet"
+    }
+  },
+  "version": {
+    "label": "Versioni {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Çfarë ka të re në"
+  },
+  "wordDetail": {
+    "context": "Vargu {{surah}}:{{ayah}} · Fjala {{position}} nga {{total}}"
+  }
+}

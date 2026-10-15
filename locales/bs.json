@@ -1,0 +1,724 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Greška pri pokretanju plejera: {{message}}",
+    "errorLoadingFonts": "Greška pri učitavanju fontova"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA početna"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Sve",
+      "clearAll": "Očisti sve",
+      "hasPhoto": "Ima fotografiju"
+    },
+    "filterModal": {
+      "apply": "Primijeni",
+      "filterReciters": "Filtriraj učače",
+      "recitationStyles": "Stilovi učenja",
+      "reset": "Poništi",
+      "rewayatTypes": "Vrste rivajeta"
+    },
+    "recitersFound_few": "Pronađena su {{count}} učača s trenutnim filterima",
+    "recitersFound_one": "Pronađen {{count}} učač s trenutnim filterima",
+    "recitersFound_other": "Pronađeno učača: {{count}} s trenutnim filterima"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Omiljene sure"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Označite ajete da ih vidite ovdje",
+      "bookmarks": "Oznake",
+      "noBookmarksYet": "Još nema oznaka",
+      "removeBookmark": "Ukloni oznaku"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Rivajeti",
+      "searchPlaylistsRecitersSurahsRewayat": "Pretraži plejliste, učače, sure, rivajete...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Pretraži plejliste, učače, sure, rivajete i preuzimanja",
+      "searchYourCollection": "Pretraži svoju kolekciju",
+      "searching": "Pretraga...",
+      "tryDifferentKeywords": "Probajte druge ključne riječi"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Preuzmite sure da ih vidite ovdje",
+      "noDownloadsYet": "Još nema preuzimanja",
+      "playAll": "Reproduciraj sve"
+    },
+    "favoritereciters": {
+      "addReciters": "Dodaj učače",
+      "addRecitersToSeeThem": "Dodajte učače da ih vidite ovdje",
+      "noFavoriteRecitersYet": "Još nema omiljenih učača",
+      "removeFromFavorites": "Ukloni iz omiljenih",
+      "searchFavoriteReciters": "Pretraži omiljene učače"
+    },
+    "index": {
+      "addToCollection": "Dodaj u kolekciju",
+      "bookmarks": "Oznake",
+      "createYourFirstPlaylist": "Napravite svoju prvu plejlistu",
+      "downloads": "Preuzimanja",
+      "items_few": "{{count}} stavke",
+      "items_one": "{{count}} stavka",
+      "items_other": "Stavki: {{count}}",
+      "loved": "Omiljeno",
+      "noBookmarksYet": "Još nema oznaka",
+      "noDownloadsYet": "Još nema preuzimanja",
+      "noFavoritesYet": "Još nema omiljenih",
+      "noLovedSurahsYet": "Još nema omiljenih sura",
+      "noNotesYet": "Još nema bilješki",
+      "noUploadsYet": "Još nema otpremljenih snimaka",
+      "notes": "Bilješke",
+      "playlists": "Plejliste",
+      "reciters": "Učači",
+      "uploads": "Otpremljeno"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Sve omiljene sure su već preuzete.",
+      "allLovedSurahsHaveBeen": "Sve omiljene sure su preuzete.",
+      "downloadError": "Greška pri preuzimanju",
+      "loveSurahsToSeeThem": "Označite sure kao omiljene da ih vidite ovdje",
+      "noLovedSurahsYet": "Još nema omiljenih sura",
+      "someDownloadsMayHaveFailed": "Neka preuzimanja možda nisu uspjela.",
+      "unloveAllSurahs": "Ukloni sve sure iz omiljenih"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Dodajte bilješke uz ajete da ih vidite ovdje",
+      "editNote": "Uredi bilješku",
+      "noNotesYet": "Još nema bilješki",
+      "notes": "Bilješke"
+    },
+    "playlistModal": {
+      "name": "Naziv"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Napravite plejliste da ih vidite ovdje",
+      "noPlaylistsYet": "Još nema plejlisti",
+      "playlists": "Plejliste"
+    },
+    "uploads": {
+      "removeAllUploads": "Ukloni sve otpremljene snimke",
+      "uploadRecitationsToSeeThem": "Otpremite recitacije da ih vidite ovdje"
+    }
+  },
+  "common": {
+    "1Time": "1 put",
+    "2Times": "2 puta",
+    "3Times": "3 puta",
+    "addToCollection": "Dodaj u kolekciju",
+    "addToQueue": "Dodaj u red čekanja",
+    "allSurahs": "Sve sure",
+    "alreadyDownloaded": "Već preuzeto",
+    "arabic": "Arapski",
+    "asc": "Rastuće",
+    "browseAll": "Pregledaj sve",
+    "browseAllReciters": "Pregledaj sve učače",
+    "cancel": "Otkaži",
+    "clear": "Očisti",
+    "copyToClipboard": "Kopiraj u međuspremnik",
+    "createNewPlaylist": "Napravi novu plejlistu",
+    "defaultReciter": "Zadani učač",
+    "delete": "Izbriši",
+    "deleteNote": "Izbriši bilješku",
+    "deleteRecitation": "Izbriši recitaciju",
+    "desc": "Opadajuće",
+    "downloadComplete": "Preuzimanje završeno",
+    "downloadFailed": "Preuzimanje nije uspjelo",
+    "downloads": "Preuzimanja",
+    "editDetails": "Uredi detalje",
+    "error": "Greška",
+    "favoriteReciters": "Omiljeni učači",
+    "followAlong": "Prati tekst",
+    "from": "Od",
+    "goToReciter": "Idi na učača",
+    "goToVerse": "Idi na ajet",
+    "learnAboutSurah": "Saznaj više o suri",
+    "loading": "Učitavanje...",
+    "loop": "Ponavljaj",
+    "loved": "Omiljeno",
+    "mushafSettings": "Postavke mushafa",
+    "next": "Dalje",
+    "noRecitersFound": "Nema pronađenih učača",
+    "noResultsFound": "Nema rezultata",
+    "noUploadsYet": "Još nema otpremljenih snimaka",
+    "play": "Reproduciraj",
+    "playEachVerse": "Reproduciraj svaki ajet",
+    "playNow": "Reproduciraj sada",
+    "playSpeed": "Brzina reprodukcije",
+    "playTheRange": "Reproduciraj raspon",
+    "playlistName": "Naziv plejliste",
+    "prev": "Nazad",
+    "readingTheme": "Tema čitanja",
+    "recentSearches": "Nedavne pretrage",
+    "reciter": "Učač",
+    "reciterChoice": "Izbor učača",
+    "reciters": "Učači",
+    "remove": "Ukloni",
+    "removeAllDownloads": "Ukloni sva preuzimanja",
+    "removeHighlight": "Ukloni isticanje",
+    "rev": "Obrnuto",
+    "save": "Spremi",
+    "search": "Pretraži",
+    "searchReciters": "Pretraži učače...",
+    "searchSurahs": "Pretraži sure",
+    "share": "Podijeli",
+    "shareAsImage": "Podijeli kao sliku",
+    "shareAsText": "Podijeli kao tekst",
+    "sharedPhrases": "Zajedničke fraze",
+    "showBasmallah": "Prikaži bismillu",
+    "stop": "Zaustavi",
+    "storage": "Pohrana",
+    "surah": "Sura",
+    "surahs": "Sure",
+    "to": "Do",
+    "translation": "Prijevod",
+    "translationsTafaseer": "Prijevodi i tefsiri",
+    "transliteration": "Transliteracija",
+    "uploads": "Otpremljeno",
+    "useDefaultReciter": "Koristi zadanog učača",
+    "verseReference": "Referenca ajeta",
+    "verses": "Ajeti",
+    "whatSNew": "Šta je novo",
+    "wordByWord": "Riječ po riječ",
+    "writeYourNoteHere": "Napišite svoju bilješku ovdje...",
+    "yourPlaylists": "Vaše plejliste"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Reproduciraj sve sure"
+    },
+    "searchHeader": {
+      "searchSurahs": "Pretraži sure"
+    },
+    "searchView": {
+      "noSurahsFound": "Nije pronađena nijedna sura"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Nema dostupnih sura"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Dodaj recitaciju",
+      "uploadRecitationsToSeeThem": "Otpremite recitacije da ih vidite ovdje"
+    }
+  },
+  "downloads": {
+    "subtitle_few": "Preuzeto • {{count}} sure",
+    "subtitle_one": "Preuzeto • {{count}} sura",
+    "subtitle_other": "Preuzeto • sura: {{count}}"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Žao nam je.. došlo je do greške"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Pregledaj svih 114 sura"
+    },
+    "savedAdhkarHero": {
+      "saved": "Spremljeno",
+      "yourCollection": "Vaša kolekcija"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SURA DANA"
+    },
+    "surahsHero": {
+      "number": "Broj"
+    }
+  },
+  "language": {
+    "later": "Kasnije",
+    "restartMessage": "Ponovo pokrenite aplikaciju da se primijeni novi smjer rasporeda.",
+    "restartNow": "Ponovo pokreni sada",
+    "restartTitle": "Potrebno je ponovno pokretanje",
+    "search": "Pretraži jezike",
+    "system": "Jezik uređaja"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Nastavi"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Preskoči"
+    }
+  },
+  "mushaf": {
+    "juz": "Džuz {{juz}}",
+    "loadingMushaf": "Učitavanje mushafa…",
+    "main": {
+      "mushafSettings": "Postavke mushafa"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Promijeni učača",
+      "changeReciter2": "Promijeni učača",
+      "nextAyah": "Sljedeći ajet",
+      "playbackOptions": "Opcije reprodukcije",
+      "previousAyah": "Prethodni ajet"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Pronađite sure, ajete, stranice ili džuzove",
+      "recentReads": "NEDAVNO ČITANO",
+      "searchSurahsPagesOrJuz": "Pretraži sure, stranice ili džuzove...",
+      "searchTheMushaf": "Pretraži mushaf"
+    },
+    "options": "Opcije",
+    "page": "Stranica {{page}}",
+    "pageAndSurah": "Stranica {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushaf se nije mogao učitati.",
+    "tryAgain": "Pokušaj ponovo"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Ističe Allahovo ime i oblike božanskih titula poput Rabb u mushafu."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Naizmjenično isticanje po tematskim cjelinama",
+    "arabicFontSize": "Veličina arapskog fonta",
+    "bold": "Podebljano",
+    "book": "Knjiga",
+    "colorLegend": "Legenda boja",
+    "currentlyReading": "Trenutno čitate",
+    "divineNames": "BOŽIJA IMENA",
+    "fontSize": "Veličina fonta",
+    "fullscreen": "Cijeli ekran",
+    "hamzaReplacedByLongVowel": "Hamza zamijenjena dugim vokalom",
+    "heavyLamInAllahAfter": "Teško lam u riječi Allah nakon emfatičnih slova",
+    "highlightAllahRabb": "Istakni Allah / Rabb",
+    "horizontal": "Horizontalno",
+    "ibdal": "Ibdal",
+    "list": "Lista",
+    "loadingSample": "Učitavanje uzorka...",
+    "maddAlBadal": "Medd el-bedel",
+    "maximumProminence": "Maksimalna izraženost",
+    "medium": "Srednje",
+    "modernMadinahPrintedPipeline": "Moderni medinski štampani sistem",
+    "mushaf": "Mushaf",
+    "normal": "Normalno",
+    "originalMushafWeight": "Originalna debljina mushafa",
+    "pageDesign": "IZGLED STRANICE",
+    "prolongedVowelAfterHamza": "Produženi vokal nakon hamze",
+    "readingTheme": "TEMA ČITANJA",
+    "scrollDirection": "SMJER SKROLANJA",
+    "showDifferences": "Prikaži razlike",
+    "silah": "Sila",
+    "slightlyMoreProminent": "Malo izraženije",
+    "softenedHamzaPronunciation": "Ublažen izgovor hamze",
+    "subcontinentNastaliqStyle": "Nastaliq stil potkontinenta",
+    "taghlizAlLam": "Tagliz el-lam",
+    "tajweedColoring": "Bojenje tedžvida",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "PREGLED TEKSTA JOŠ NIJE DOSTUPAN",
+    "textThickness": "DEBLJINA TEKSTA",
+    "thematicHighlighting": "Tematsko isticanje",
+    "trailingVowelOrMoodChange": "Samo promjena završnog vokala ili načina",
+    "usingSaheehInternationalTranslationWith": "Koristi se: Saheeh International prijevod s fusnotama",
+    "vertical": "Vertikalno",
+    "viewType": "VRSTA PRIKAZA",
+    "vowelMoodShift": "Pomak vokala / načina",
+    "wordByWord": "RIJEČ PO RIJEČ",
+    "wordVariant": "Varijanta riječi"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Server nije dostupan",
+    "connectionRestored": "Veza je uspostavljena",
+    "noInternetConnection": "Nema internetske veze",
+    "showingCachedData": "Prikazuju se keširani podaci"
+  },
+  "organize": {
+    "createReciter": "Napravi \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Red čekanja",
+      "queueIsEmpty": "Red čekanja je prazan"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Označite ovu recitaciju da vidite tekst i detalje sure"
+    }
+  },
+  "playlist": {
+    "subtitle_few": "Plejlista • {{count}} sure",
+    "subtitle_one": "Plejlista • {{count}} sura",
+    "subtitle_other": "Plejlista • sura: {{count}}"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Nema sura u ovoj plejlisti"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Fusnota"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Recitacija odabrana baš za ovaj trenutak",
+      "discover": "Otkrij",
+      "discoverANewVoice": "Otkrijte novi glas",
+      "explore": "Istraži",
+      "exploreTheUnexpected": "Istražite neočekivano",
+      "hearSomethingNew": "Čujte nešto novo",
+      "letTheQuranSurpriseYou": "Neka vas Kur'an iznenadi",
+      "randomMix": "Nasumični miks",
+      "randomRecitation": "Nasumična recitacija",
+      "shuffleListen": "Izmiješaj i slušaj",
+      "surpriseMe": "Iznenadi me"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Promjena načina izgleda primjenjuje se na cijelu aplikaciju"
+  },
+  "reciterBrowse": {
+    "allReciters": "Svi učači",
+    "browseReciters": "Pregledaj učače",
+    "favorites": "Omiljeno"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Nema preuzimanja za ovog učača"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Moje otpremljene snimke"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkar",
+    "bestForMemorization": "Najbolje za memorisanje",
+    "bestForTajweed": "Najbolje za tedžvid",
+    "continueListening": "Nastavi slušati",
+    "exclusives": "Ekskluzivno",
+    "exploreByRewayah": "Istraži po rivajetu",
+    "featuredReciters": "Istaknuti učači",
+    "fromYourCollection": "Iz vaše kolekcije",
+    "myRecitations": "Moje recitacije",
+    "newToQuranStartHere": "Novi ste u Kur'anu? Počnite ovdje",
+    "seeMore": "Prikaži više",
+    "yourFavorites": "Vaši omiljeni"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Aktivno",
+      "activeTafseer": "AKTIVNI TEFSIR",
+      "activeTranslation": "AKTIVNI PRIJEVOD",
+      "deleteTafseer": "Izbriši tefsir",
+      "deleteTranslation": "Izbriši prijevod",
+      "noTafaseerFound": "Nije pronađen nijedan tefsir",
+      "noTranslationsFound": "Nije pronađen nijedan prijevod",
+      "unableToDownloadThisTafseer": "Preuzimanje ovog tefsira nije moguće. Provjerite internetsku vezu i pokušajte ponovo.",
+      "unableToDownloadThisTranslation": "Preuzimanje ovog prijevoda nije moguće. Provjerite internetsku vezu i pokušajte ponovo."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Nema nedavnih pretraga",
+      "tryDifferentKeywordsOrCheck": "Probajte druge ključne riječi ili provjerite pravopis",
+      "yourSearchHistoryWillAppear": "Historija pretrage pojavit će se ovdje"
+    },
+    "surahsOrReciters": "Pretraži sure ili učače"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Napredna kontrola zvuka",
+      "browseByJuz": "Pregled po džuzu",
+      "createAndManageYourOwn": "Napravite i uređujte vlastite plejliste svojih omiljenih recitacija",
+      "crystalClearRecitationsFromThe": "Kristalno čiste recitacije najboljih svjetskih kari s optimiziranim strimingom",
+      "curatedCollections": "Odabrane kolekcije",
+      "customPlaylists": "Vlastite plejliste",
+      "customizeThemesAccentColorsAnd": "Prilagodite teme, boje naglaska i postavke zvuka po svom ukusu",
+      "downloadSurahsForOfflineListening": "Preuzmite sure za slušanje bez interneta bilo kada i bilo gdje",
+      "easilyNavigateThroughTheQuran": "Lako se krećite kroz Kur'an uz organizaciju i grupiranje po džuzovima",
+      "features": "MOGUĆNOSTI",
+      "highQualityAudio": "Zvuk visokog kvaliteta",
+      "listenReflectRememberAllah": "Slušaj. Razmišljaj. Sjeti se Allaha.",
+      "offlineDownloads": "Preuzimanja za rad bez interneta",
+      "ourCommitment": "Naša obaveza",
+      "ourMission": "Naša misija",
+      "personalization": "Personalizacija",
+      "precisePlaybackControlWithContinuous": "Precizna kontrola reprodukcije s neprekidnim puštanjem i podesivom brzinom recitacije",
+      "quranBayanTafsirKnowledgeOur": "Kur'an • Bejan • Tefsir • Znanje. Naš cilj je da slušanje i promišljanje postanu dio svakodnevnog života: kod kuće, na putu i gdje god imate trenutak da se sjetite Allaha.",
+      "readListenAndReflect": "Čitaj, slušaj i razmišljaj",
+      "readTheMushafExploreTranslations": "Čitajte mushaf, istražujte prijevode i tefsir, spremajte ajete i bilješke i vraćajte se svakodnevnim adhkarima. Odaberite svog učača, pravite plejliste i oblikujte slušanje koje odgovara vašem danu. Dostupne mogućnosti zavise od uređaja; izvorne aplikacije podržavaju i preuzimanja za slušanje bez interneta.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Pažljivo organizirane sure za različite prilike i teme",
+      "weCareAboutTheAccuracy": "Brinemo o tačnosti svetog sadržaja, uvažavajućem dizajnu i pouzdanom pristupu. Nastavljamo unapređivati ISTIMA s pažnjom prema ljudima koji je koriste. Neka Allah primi ovaj trud i učini ga korisnim za sve koji slušaju, čitaju i razmišljaju."
+    },
+    "aboutApp": "O aplikaciji {{name}}",
+    "appearance": "IZGLED",
+    "defaultreciter": {
+      "changeDefaultReciter": "PROMIJENI ZADANOG UČAČA"
+    },
+    "developer": "RAZVOJNI ALATI",
+    "floatingDevMenu": "Plutajući razvojni meni",
+    "language": "Jezik",
+    "languageDescription": "Odaberite jezik aplikacije",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Uvijek koristi odabranog zadanog učača",
+      "askEveryTime": "Pitaj svaki put",
+      "chooseAReciterEachTime": "Odaberite učača svaki put kad pokrenete reprodukciju",
+      "chooseHowYouWantTo": "Odaberite kako želite birati učače pri reprodukciji sura",
+      "defaultSelectionMethod": "ZADANI NAČIN IZBORA",
+      "searchThroughOurCompleteCollection": "Pretražite našu cjelovitu kolekciju učača",
+      "selectionPreference": "POSTAVKA IZBORA"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Sva preuzimanja su uklonjena.",
+      "areYouSureYouWant": "Jeste li sigurni da želite ukloniti sav preuzeti sadržaj? Ova radnja se ne može poništiti.",
+      "cache": "Keš",
+      "cacheHasBeenCleared": "Keš je očišćen.",
+      "clearCache": "Očisti keš",
+      "failedToClearCache": "Čišćenje keša nije uspjelo.",
+      "failedToRemoveDownloads": "Uklanjanje preuzimanja nije uspjelo.",
+      "free": "Slobodno",
+      "loadingStorageInformation": "Učitavanje podataka o pohrani...",
+      "manageStorage": "UPRAVLJANJE POHRANOM",
+      "otherApps": "Ostale aplikacije",
+      "removeAllDownloads": "Ukloni sva preuzimanja",
+      "removeAllTheQuranContent": "Uklonite sav sadržaj Kur'ana koji ste preuzeli za korištenje bez interneta.",
+      "storageBreakdown": "RASPODJELA POHRANE",
+      "success": "Uspjeh",
+      "thisWillClearYourCache": "Ovo će očistiti vaš keš. Vaša preuzimanja neće biti uklonjena.",
+      "youCanFreeUpStorage": "Pohranu možete osloboditi čišćenjem keša. Vaša preuzimanja neće biti uklonjena."
+    },
+    "themePicker": {
+      "auto": "Automatski",
+      "dark": "Tamna",
+      "light": "Svijetla"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Nema dostupnog spiska promjena"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "O suri {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Dodaj omiljenog učača",
+      "uploadRecitation": "Otpremi recitaciju"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Ambijentalni zvukovi",
+      "none": "Nema",
+      "volume": "Jačina zvuka"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "npr. Jutarnje recitacije"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Ukloni preuzimanje"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Gotovo"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Dodaj u kolekciju",
+      "addToQueue": "Dodaj u red čekanja",
+      "continuePlaying": "Nastavi reprodukciju",
+      "goToReciter": "Idi na učača",
+      "removeFromRecents": "Ukloni iz nedavnih"
+    },
+    "mushafLayoutSheet": {
+      "back": "Nazad"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Završni ajet",
+      "playbackSettings": "Postavke reprodukcije",
+      "selectRange": "Odaberi raspon",
+      "startingVerse": "Početni ajet"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Postavke ponavljanja",
+      "start": "Početak",
+      "verseRange": "Raspon ajeta"
+    },
+    "organizeRecitationSheet": {
+      "category": "Kategorija",
+      "customReciter": "Vlastiti učač",
+      "duA": "Dova",
+      "eGMorningAdhkar": "npr. Jutarnji adhkar",
+      "lecture": "Predavanje",
+      "moreOptions": "Više opcija",
+      "other": "Ostalo",
+      "recording": "Snimak",
+      "rewayah": "Rivajet",
+      "searchSurahs": "Pretraži sure...",
+      "style": "Stil",
+      "tafsir": "Tefsir",
+      "title": "Naslov",
+      "type": "Vrsta",
+      "verseRangeOptional": "Raspon ajeta (neobavezno)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Brzina reprodukcije"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Sve stavke u ovoj plejlisti su već preuzete.",
+      "anErrorOccurredWhileDownloading": "Došlo je do greške pri preuzimanju plejliste. Pokušajte ponovo.",
+      "deletePlaylist": "Izbriši plejlistu",
+      "downloadingPlaylist": "Preuzimanje plejliste...",
+      "editPlaylist": "Uredi plejlistu",
+      "emptyPlaylist": "Prazna plejlista",
+      "thisPlaylistIsEmpty": "Ova plejlista je prazna."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "O rivajetima",
+      "availableRewayat": "Dostupni rivajeti"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Dodavanje sure u plejlistu nije uspjelo",
+      "failedToCreatePlaylist": "Pravljenje plejliste nije uspjelo",
+      "noPlaylistsYetCreateYour": "Još nema plejlisti. Napravite svoju prvu plejlistu iznad!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Pitaj svaki put",
+      "randomReciter": "Nasumični učač",
+      "selectReciter": "Odaberi učača"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Nisu pronađeni slični ajeti za ovaj ajet.",
+      "similarWording": "Slična formulacija"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Tajmer za spavanje",
+      "turnOffTimer": "Isključi tajmer"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Ukloni iz plejliste"
+    },
+    "verseActionsSheet": {
+      "addNote": "Dodaj bilješku",
+      "copy": "Kopiraj",
+      "repeat": "Ponovi",
+      "similarVerses": "Slični ajeti",
+      "tafseer": "Tefsir",
+      "theme": "Tema"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Opcije kopiranja",
+      "selectWhatToCopy": "Odaberite šta kopirati"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Boja isticanja"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Podijeli ajet"
+    }
+  },
+  "similarVerses": {
+    "foundIn_few": "Pronađeno u {{count}} ajeta",
+    "foundIn_one": "Pronađeno u {{count}} ajetu",
+    "foundIn_other": "Pronađeno u ajeta: {{count}}"
+  },
+  "surahItem": {
+    "moreOptions": "Više opcija",
+    "opensMenuWithAdditionalActions": "Otvara meni s dodatnim radnjama za ovu suru",
+    "tapToPlaySurah": "Dodirnite za reprodukciju sure"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Nevažeći ID plejliste",
+      "playlistNotFound": "Plejlista nije pronađena"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Nije pronađen učač koji ima sve sure iz ove plejliste. Pokušajte s drugom plejlistom.",
+      "failedToPlayPlaylistPlease": "Reprodukcija plejliste nije uspjela. Pokušajte ponovo.",
+      "failedToPlayTrackPlease": "Reprodukcija numere nije uspjela. Pokušajte ponovo.",
+      "failedToShufflePlaylistPlease": "Miješanje plejliste nije uspjelo. Pokušajte ponovo.",
+      "noReciterAvailable": "Nema dostupnog učača",
+      "noSurahsInThisPlaylist": "Nema sura u ovoj plejlisti"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Račun",
+      "appData": "Aplikacija i podaci",
+      "audioPlayback": "Zvuk i reprodukcija",
+      "chooseYourPreferredReciter": "Odaberite željenog učača",
+      "customizeQuranDisplayOptions": "Prilagodite opcije prikaza Kur'ana",
+      "customizeReciterSelection": "Prilagodite izbor učača",
+      "featureRequests": "Zahtjevi za funkcije",
+      "feedback": "Povratne informacije",
+      "helpSupport": "Pomoć i podrška",
+      "learnMoreAboutOurMission": "Saznajte više o našoj misiji",
+      "manageQuranTranslationsAndCommentary": "Upravljajte prijevodima i komentarima Kur'ana",
+      "privacyPolicy": "Politika privatnosti",
+      "quran": "Kur'an",
+      "readOurTermsOfService": "Pročitajte naše uslove korištenja",
+      "seeWhatSNewIn": "Pogledajte šta je novo u ovoj verziji",
+      "shareYourExperienceWithOthers": "Podijelite svoje iskustvo s drugima",
+      "showTheFloatingDeveloperTools": "Prikaži plutajuće dugme razvojnih alata",
+      "suggestImprovementsAndNewFeatures": "Predložite poboljšanja i nove funkcije",
+      "termsOfService": "Uslovi korištenja",
+      "viewAndManageStorageUsage": "Pregledajte i upravljajte korištenjem pohrane",
+      "viewOurPrivacyPolicy": "Pogledajte našu politiku privatnosti",
+      "writeAReview": "Napišite recenziju"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Otkaži",
+    "close": "Zatvori",
+    "collection": "Kolekcija",
+    "download": "Preuzmi",
+    "downloads": "Preuzimanja",
+    "error": "Nešto nije u redu",
+    "favorites": "Omiljeno",
+    "home": "Početna",
+    "language": "Jezik",
+    "library": "Biblioteka",
+    "loading": "Učitavanje...",
+    "noResults": "Nema rezultata",
+    "offline": "Niste na mreži",
+    "pause": "Pauziraj",
+    "play": "Reproduciraj",
+    "retry": "Pokušaj ponovo",
+    "save": "Spremi",
+    "search": "Pretraži",
+    "settings": "Postavke",
+    "surahs": "Sure"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "ODABERITE SADRŽAJ"
+    },
+    "highlightContent": {
+      "chooseColor": "ODABERITE BOJU"
+    },
+    "noteContent": {
+      "saveNote": "Spremi bilješku"
+    },
+    "shareContent": {
+      "shareLink": "Podijeli link"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Nisu pronađeni slični ajeti za ovaj ajet.",
+      "sharedPhrases": "ZAJEDNIČKE FRAZE",
+      "similarWording": "SLIČNA FORMULACIJA"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Nema preuzetih tefsira",
+      "tafseerNotAvailableForThis": "Tefsir nije dostupan za ovaj ajet",
+      "tapHereToDownloadA": "Dodirnite ovdje da preuzmete tefsir i pogledate komentar."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Nema tematskih podataka za ovaj ajet.",
+      "passage": "Odlomak"
+    },
+    "translationContent": {
+      "switch": "Promijeni",
+      "translationNotAvailable": "Prijevod nije dostupan"
+    }
+  },
+  "version": {
+    "label": "Verzija {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Šta je novo u"
+  },
+  "wordDetail": {
+    "context": "Ajet {{surah}}:{{ayah}} · Riječ {{position}} od {{total}}"
+  }
+}
