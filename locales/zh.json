@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "播放器初始化失败：{{message}}",
+    "errorLoadingFonts": "字体加载失败"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA 首页"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "全部",
+      "clearAll": "清空",
+      "hasPhoto": "有照片"
+    },
+    "filterModal": {
+      "apply": "应用",
+      "filterReciters": "筛选诵读者",
+      "recitationStyles": "诵读风格",
+      "reset": "重置",
+      "rewayatTypes": "传承类型"
+    },
+    "recitersFound_one": "按当前条件找到 {{count}} 位诵读者",
+    "recitersFound_other": "按当前条件找到 {{count}} 位诵读者"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "喜爱的苏拉"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "为经文添加书签后即可在此查看",
+      "bookmarks": "书签",
+      "noBookmarksYet": "暂无书签",
+      "removeBookmark": "移除书签"
+    },
+    "collectionSearchModal": {
+      "rewayat": "诵读传承",
+      "searchPlaylistsRecitersSurahsRewayat": "搜索播放列表、诵读者、苏拉、诵读传承……",
+      "searchPlaylistsRecitersSurahsRewayat2": "搜索播放列表、诵读者、苏拉、诵读传承和下载内容",
+      "searchYourCollection": "搜索收藏",
+      "searching": "搜索中……",
+      "tryDifferentKeywords": "试试其他关键词"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "下载苏拉后即可在此查看",
+      "noDownloadsYet": "暂无下载",
+      "playAll": "播放全部"
+    },
+    "favoritereciters": {
+      "addReciters": "添加诵读者",
+      "addRecitersToSeeThem": "添加诵读者后即可在此查看",
+      "noFavoriteRecitersYet": "暂无喜爱的诵读者",
+      "removeFromFavorites": "从喜爱中移除",
+      "searchFavoriteReciters": "搜索喜爱的诵读者"
+    },
+    "index": {
+      "addToCollection": "添加到收藏",
+      "bookmarks": "书签",
+      "createYourFirstPlaylist": "创建第一个播放列表",
+      "downloads": "下载内容",
+      "items_one": "{{count}} 项",
+      "items_other": "{{count}} 项",
+      "loved": "喜爱",
+      "noBookmarksYet": "暂无书签",
+      "noDownloadsYet": "暂无下载",
+      "noFavoritesYet": "暂无喜爱内容",
+      "noLovedSurahsYet": "暂无喜爱的苏拉",
+      "noNotesYet": "暂无笔记",
+      "noUploadsYet": "暂无上传内容",
+      "notes": "笔记",
+      "playlists": "播放列表",
+      "reciters": "诵读者",
+      "uploads": "上传内容"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "所有喜爱的苏拉均已下载。",
+      "allLovedSurahsHaveBeen": "所有喜爱的苏拉已下载完成。",
+      "downloadError": "下载错误",
+      "loveSurahsToSeeThem": "将苏拉标记为喜爱后即可在此查看",
+      "noLovedSurahsYet": "暂无喜爱的苏拉",
+      "someDownloadsMayHaveFailed": "部分内容可能下载失败。",
+      "unloveAllSurahs": "取消喜爱所有苏拉"
+    },
+    "notes": {
+      "addNotesToVersesTo": "为经文添加笔记后即可在此查看",
+      "editNote": "编辑笔记",
+      "noNotesYet": "暂无笔记",
+      "notes": "笔记"
+    },
+    "playlistModal": {
+      "name": "名称"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "创建播放列表后即可在此查看",
+      "noPlaylistsYet": "暂无播放列表",
+      "playlists": "播放列表"
+    },
+    "uploads": {
+      "removeAllUploads": "移除所有上传内容",
+      "uploadRecitationsToSeeThem": "上传诵读音频后即可在此查看"
+    }
+  },
+  "common": {
+    "1Time": "1 次",
+    "2Times": "2 次",
+    "3Times": "3 次",
+    "addToCollection": "添加到收藏",
+    "addToQueue": "添加到播放队列",
+    "allSurahs": "全部苏拉",
+    "alreadyDownloaded": "已下载",
+    "arabic": "阿拉伯语",
+    "asc": "升序",
+    "browseAll": "浏览全部",
+    "browseAllReciters": "浏览全部诵读者",
+    "cancel": "取消",
+    "clear": "清空",
+    "copyToClipboard": "复制到剪贴板",
+    "createNewPlaylist": "新建播放列表",
+    "defaultReciter": "默认诵读者",
+    "delete": "删除",
+    "deleteNote": "删除笔记",
+    "deleteRecitation": "删除诵读音频",
+    "desc": "降序",
+    "downloadComplete": "下载完成",
+    "downloadFailed": "下载失败",
+    "downloads": "下载内容",
+    "editDetails": "编辑详情",
+    "error": "错误",
+    "favoriteReciters": "喜爱的诵读者",
+    "followAlong": "跟读",
+    "from": "从",
+    "goToReciter": "前往诵读者",
+    "goToVerse": "前往经文",
+    "learnAboutSurah": "了解苏拉",
+    "loading": "加载中……",
+    "loop": "循环",
+    "loved": "喜爱",
+    "mushafSettings": "穆斯哈夫设置",
+    "next": "下一项",
+    "noRecitersFound": "未找到诵读者",
+    "noResultsFound": "未找到结果",
+    "noUploadsYet": "暂无上传内容",
+    "play": "播放",
+    "playEachVerse": "逐节播放",
+    "playNow": "立即播放",
+    "playSpeed": "播放速度",
+    "playTheRange": "播放选定范围",
+    "playlistName": "播放列表名称",
+    "prev": "上一项",
+    "readingTheme": "阅读主题",
+    "recentSearches": "最近搜索",
+    "reciter": "诵读者",
+    "reciterChoice": "诵读者选择",
+    "reciters": "诵读者",
+    "remove": "移除",
+    "removeAllDownloads": "移除全部下载内容",
+    "removeHighlight": "移除高亮",
+    "rev": "启示顺序",
+    "save": "保存",
+    "search": "搜索",
+    "searchReciters": "搜索诵读者……",
+    "searchSurahs": "搜索苏拉",
+    "share": "分享",
+    "shareAsImage": "以图片分享",
+    "shareAsText": "以文字分享",
+    "sharedPhrases": "相同短语",
+    "showBasmallah": "显示太斯米",
+    "stop": "停止",
+    "storage": "存储空间",
+    "surah": "苏拉",
+    "surahs": "苏拉",
+    "to": "至",
+    "translation": "译文",
+    "translationsTafaseer": "译文与经注",
+    "transliteration": "音译",
+    "uploads": "上传内容",
+    "useDefaultReciter": "使用默认诵读者",
+    "verseReference": "经文出处",
+    "verses": "经文",
+    "whatSNew": "更新内容",
+    "wordByWord": "逐词",
+    "writeYourNoteHere": "在此撰写笔记……",
+    "yourPlaylists": "你的播放列表"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "播放全部苏拉"
+    },
+    "searchHeader": {
+      "searchSurahs": "搜索苏拉"
+    },
+    "searchView": {
+      "noSurahsFound": "未找到苏拉"
+    },
+    "surahList": {
+      "noSurahsAvailable": "暂无可用的苏拉"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "添加诵读音频",
+      "uploadRecitationsToSeeThem": "上传诵读音频后即可在此查看"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "已下载 · {{count}} 章",
+    "subtitle_other": "已下载 · {{count}} 章"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "抱歉，发生了错误"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "浏览全部 114 章"
+    },
+    "savedAdhkarHero": {
+      "saved": "已保存",
+      "yourCollection": "你的收藏"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "每日苏拉"
+    },
+    "surahsHero": {
+      "number": "编号"
+    }
+  },
+  "language": {
+    "later": "稍后",
+    "restartMessage": "请重启应用以应用新的布局方向。",
+    "restartNow": "立即重启",
+    "restartTitle": "需要重启",
+    "search": "搜索语言",
+    "system": "设备语言"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "继续"
+    },
+    "whatsNewOnboarding": {
+      "skip": "跳过"
+    }
+  },
+  "mushaf": {
+    "juz": "第 {{juz}} 卷",
+    "loadingMushaf": "正在加载穆斯哈夫……",
+    "main": {
+      "mushafSettings": "穆斯哈夫设置"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "更换诵读者",
+      "changeReciter2": "更换诵读者",
+      "nextAyah": "下一节",
+      "playbackOptions": "播放选项",
+      "previousAyah": "上一节"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "查找苏拉、经文、页码或卷",
+      "recentReads": "最近阅读",
+      "searchSurahsPagesOrJuz": "搜索苏拉、页码或卷……",
+      "searchTheMushaf": "搜索穆斯哈夫"
+    },
+    "options": "选项",
+    "page": "第 {{page}} 页",
+    "pageAndSurah": "第 {{page}} 页 · {{surah}}",
+    "theMushafCouldNotLoad": "无法加载穆斯哈夫。",
+    "tryAgain": "重试"
+  },
+  "mushafSettings": {
+    "rabbHelper": "在穆斯哈夫中高亮显示安拉之名及 Rabb 等尊称。"
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "按主题段落交替高亮",
+    "arabicFontSize": "阿拉伯文字号",
+    "bold": "粗体",
+    "book": "书页模式",
+    "colorLegend": "颜色图例",
+    "currentlyReading": "正在阅读",
+    "divineNames": "尊名",
+    "fontSize": "字号",
+    "fullscreen": "全屏",
+    "hamzaReplacedByLongVowel": "将喉塞音替换为长元音",
+    "heavyLamInAllahAfter": "重音字母后“安拉”一词中的厚读拉姆音",
+    "highlightAllahRabb": "高亮安拉 / Rabb",
+    "horizontal": "横向",
+    "ibdal": "伊布达勒",
+    "list": "列表",
+    "loadingSample": "正在加载示例……",
+    "maddAlBadal": "麦德·巴代勒",
+    "maximumProminence": "最醒目",
+    "medium": "中等",
+    "modernMadinahPrintedPipeline": "现代麦地那印刷处理流程",
+    "mushaf": "穆斯哈夫",
+    "normal": "常规",
+    "originalMushafWeight": "原版穆斯哈夫字重",
+    "pageDesign": "页面设计",
+    "prolongedVowelAfterHamza": "喉塞音后的元音延长",
+    "readingTheme": "阅读主题",
+    "scrollDirection": "滚动方向",
+    "showDifferences": "显示差异",
+    "silah": "西拉",
+    "slightlyMoreProminent": "稍醒目",
+    "softenedHamzaPronunciation": "喉塞音的柔化发音",
+    "subcontinentNastaliqStyle": "南亚纳斯塔里克体风格",
+    "taghlizAlLam": "拉姆音厚读",
+    "tajweedColoring": "泰吉威德配色",
+    "tashilMusahhala": "塔斯希勒 / 穆萨哈拉",
+    "textPreviewNotYetAvailable": "文字预览暂不可用",
+    "textThickness": "文字粗细",
+    "thematicHighlighting": "主题高亮",
+    "trailingVowelOrMoodChange": "仅词尾元音或语气变化",
+    "usingSaheehInternationalTranslationWith": "使用：含脚注的 Saheeh International 译本",
+    "vertical": "纵向",
+    "viewType": "视图类型",
+    "vowelMoodShift": "元音 / 语气变化",
+    "wordByWord": "逐词",
+    "wordVariant": "词形变体"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "无法连接后端",
+    "connectionRestored": "连接已恢复",
+    "noInternetConnection": "无网络连接",
+    "showingCachedData": "正在显示缓存数据"
+  },
+  "organize": {
+    "createReciter": "创建“{{name}}”"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "播放队列",
+      "queueIsEmpty": "播放队列为空"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "为此诵读添加标签，以查看苏拉正文和详情"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "播放列表 · {{count}} 章",
+    "subtitle_other": "播放列表 · {{count}} 章"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "此播放列表中没有苏拉"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "脚注"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "为此刻精选的诵读",
+      "discover": "发现",
+      "discoverANewVoice": "发现新的声音",
+      "explore": "探索",
+      "exploreTheUnexpected": "探索意外之喜",
+      "hearSomethingNew": "聆听新内容",
+      "letTheQuranSurpriseYou": "让《古兰经》带来惊喜",
+      "randomMix": "随机混播",
+      "randomRecitation": "随机诵读",
+      "shuffleListen": "随机播放并聆听",
+      "surpriseMe": "给我惊喜"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "更改外观模式将应用于整个应用"
+  },
+  "reciterBrowse": {
+    "allReciters": "全部诵读者",
+    "browseReciters": "浏览诵读者",
+    "favorites": "喜爱"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "暂无此诵读者的下载内容"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "我的上传"
+    }
+  },
+  "recitersView": {
+    "adhkar": "记主词",
+    "bestForMemorization": "适合背诵",
+    "bestForTajweed": "适合学习泰吉威德",
+    "continueListening": "继续聆听",
+    "exclusives": "独家内容",
+    "exploreByRewayah": "按诵读传承探索",
+    "featuredReciters": "推荐诵读者",
+    "fromYourCollection": "来自你的收藏",
+    "myRecitations": "我的诵读",
+    "newToQuranStartHere": "初识《古兰经》？从这里开始",
+    "seeMore": "查看更多",
+    "yourFavorites": "你的喜爱"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "已启用",
+      "activeTafseer": "当前经注",
+      "activeTranslation": "当前译文",
+      "deleteTafseer": "删除经注",
+      "deleteTranslation": "删除译文",
+      "noTafaseerFound": "未找到经注",
+      "noTranslationsFound": "未找到译文",
+      "unableToDownloadThisTafseer": "无法下载此经注。请检查网络连接后重试。",
+      "unableToDownloadThisTranslation": "无法下载此译文。请检查网络连接后重试。"
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "暂无最近搜索",
+      "tryDifferentKeywordsOrCheck": "请尝试其他关键词或检查拼写",
+      "yourSearchHistoryWillAppear": "搜索记录将显示在此处"
+    },
+    "surahsOrReciters": "搜索苏拉或诵读者"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "高级音频控制",
+      "browseByJuz": "按卷浏览",
+      "createAndManageYourOwn": "创建和管理个性化播放列表，收录你喜爱的诵读",
+      "crystalClearRecitationsFromThe": "聆听世界优秀诵读者的清晰诵读，享受优化的流式播放",
+      "curatedCollections": "精选合集",
+      "customPlaylists": "自定义播放列表",
+      "customizeThemesAccentColorsAnd": "按喜好调整主题、强调色和音频设置",
+      "downloadSurahsForOfflineListening": "下载苏拉，无需网络也能随时随地聆听",
+      "easilyNavigateThroughTheQuran": "按卷分类，轻松浏览《古兰经》",
+      "features": "功能",
+      "highQualityAudio": "高品质音频",
+      "listenReflectRememberAllah": "聆听。思考。记念安拉。",
+      "offlineDownloads": "离线下载",
+      "ourCommitment": "我们的承诺",
+      "ourMission": "我们的使命",
+      "personalization": "个性化",
+      "precisePlaybackControlWithContinuous": "精准控制播放，支持连续播放和调节诵读速度",
+      "quranBayanTafsirKnowledgeOur": "古兰经 · 宣讲 · 经注 · 知识。我们希望聆听与思考融入日常生活：无论在家、在路上，还是任何能够记念安拉的片刻。",
+      "readListenAndReflect": "阅读、聆听与思考",
+      "readTheMushafExploreTranslations": "阅读穆斯哈夫，探索译文与经注，保存经文和笔记，并每日诵读记主词。选择诵读者、创建播放列表，让聆听融入你的日常。可用功能因设备而异；原生应用还支持下载，以便离线聆听。",
+      "thoughtfullyOrganizedSurahsForDifferent": "按不同场合和主题精心整理的苏拉",
+      "weCareAboutTheAccuracy": "我们重视宗教内容的准确性、恭敬的设计和可靠的访问体验。我们会继续用心改进 ISTIMA，关怀每一位使用者。愿安拉接受这份努力，让每位聆听、阅读和思考的人都从中受益。"
+    },
+    "aboutApp": "关于 {{name}}",
+    "appearance": "外观",
+    "defaultreciter": {
+      "changeDefaultReciter": "更换默认诵读者"
+    },
+    "developer": "开发者",
+    "floatingDevMenu": "悬浮开发菜单",
+    "language": "语言",
+    "languageDescription": "选择应用语言",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "始终使用所选的默认诵读者",
+      "askEveryTime": "每次询问",
+      "chooseAReciterEachTime": "每次播放时选择诵读者",
+      "chooseHowYouWantTo": "选择播放苏拉时如何选择诵读者",
+      "defaultSelectionMethod": "默认选择方式",
+      "searchThroughOurCompleteCollection": "搜索完整的诵读者合集",
+      "selectionPreference": "选择偏好"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "已移除全部下载内容。",
+      "areYouSureYouWant": "确定移除全部已下载内容吗？此操作无法撤销。",
+      "cache": "缓存",
+      "cacheHasBeenCleared": "缓存已清空。",
+      "clearCache": "清空缓存",
+      "failedToClearCache": "无法清空缓存。",
+      "failedToRemoveDownloads": "无法移除下载内容。",
+      "free": "可用",
+      "loadingStorageInformation": "正在加载存储信息……",
+      "manageStorage": "管理存储空间",
+      "otherApps": "其他应用",
+      "removeAllDownloads": "移除全部下载内容",
+      "removeAllTheQuranContent": "移除所有为离线使用而下载的《古兰经》内容。",
+      "storageBreakdown": "存储空间分布",
+      "success": "成功",
+      "thisWillClearYourCache": "此操作将清空缓存，但不会移除下载内容。",
+      "youCanFreeUpStorage": "清空缓存可释放存储空间。下载内容不会被移除。"
+    },
+    "themePicker": {
+      "auto": "自动",
+      "dark": "深色",
+      "light": "浅色"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "暂无更新日志"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "关于 {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "添加喜爱的诵读者",
+      "uploadRecitation": "上传诵读音频"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "环境音",
+      "none": "无",
+      "volume": "音量"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "例如：晨间诵读"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "移除下载"
+    },
+    "favoriteRecitersSheet": {
+      "done": "完成"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "添加到收藏",
+      "addToQueue": "添加到播放队列",
+      "continuePlaying": "继续播放",
+      "goToReciter": "前往诵读者",
+      "removeFromRecents": "从最近记录中移除"
+    },
+    "mushafLayoutSheet": {
+      "back": "返回"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "结束经文",
+      "playbackSettings": "播放设置",
+      "selectRange": "选择范围",
+      "startingVerse": "起始经文"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "重复设置",
+      "start": "开始",
+      "verseRange": "经文范围"
+    },
+    "organizeRecitationSheet": {
+      "category": "类别",
+      "customReciter": "自定义诵读者",
+      "duA": "祈祷词",
+      "eGMorningAdhkar": "例如：晨间记主词",
+      "lecture": "讲座",
+      "moreOptions": "更多选项",
+      "other": "其他",
+      "recording": "录音",
+      "rewayah": "诵读传承",
+      "searchSurahs": "搜索苏拉……",
+      "style": "风格",
+      "tafsir": "经注",
+      "title": "标题",
+      "type": "类型",
+      "verseRangeOptional": "经文范围（可选）"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "播放速度"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "此播放列表中的全部内容均已下载。",
+      "anErrorOccurredWhileDownloading": "下载播放列表时发生错误。请重试。",
+      "deletePlaylist": "删除播放列表",
+      "downloadingPlaylist": "正在下载播放列表……",
+      "editPlaylist": "编辑播放列表",
+      "emptyPlaylist": "空播放列表",
+      "thisPlaylistIsEmpty": "此播放列表为空。"
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "关于诵读传承",
+      "availableRewayat": "可用诵读传承"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "无法将苏拉添加到播放列表",
+      "failedToCreatePlaylist": "无法创建播放列表",
+      "noPlaylistsYetCreateYour": "暂无播放列表。请在上方创建第一个播放列表！"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "每次询问",
+      "randomReciter": "随机诵读者",
+      "selectReciter": "选择诵读者"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "未找到与此节相似的经文。",
+      "similarWording": "相似措辞"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "睡眠定时器",
+      "turnOffTimer": "关闭定时器"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "从播放列表中移除"
+    },
+    "verseActionsSheet": {
+      "addNote": "添加笔记",
+      "copy": "复制",
+      "repeat": "重复",
+      "similarVerses": "相似经文",
+      "tafseer": "经注",
+      "theme": "主题"
+    },
+    "verseCopySheet": {
+      "copyOptions": "复制选项",
+      "selectWhatToCopy": "选择要复制的内容"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "高亮颜色"
+    },
+    "verseShareSheet": {
+      "shareVerse": "分享经文"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "在 {{count}} 节经文中找到",
+    "foundIn_other": "在 {{count}} 节经文中找到"
+  },
+  "surahItem": {
+    "moreOptions": "更多选项",
+    "opensMenuWithAdditionalActions": "打开含此苏拉更多操作的菜单",
+    "tapToPlaySurah": "轻触播放苏拉"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "无效的播放列表 ID",
+      "playlistNotFound": "未找到播放列表"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "无法找到拥有此播放列表中全部苏拉的诵读者。请尝试其他播放列表。",
+      "failedToPlayPlaylistPlease": "无法播放此播放列表。请重试。",
+      "failedToPlayTrackPlease": "无法播放此音轨。请重试。",
+      "failedToShufflePlaylistPlease": "无法随机播放此播放列表。请重试。",
+      "noReciterAvailable": "暂无可用诵读者",
+      "noSurahsInThisPlaylist": "此播放列表中没有苏拉"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "账户",
+      "appData": "应用与数据",
+      "audioPlayback": "音频与播放",
+      "chooseYourPreferredReciter": "选择喜爱的诵读者",
+      "customizeQuranDisplayOptions": "自定义《古兰经》显示选项",
+      "customizeReciterSelection": "自定义诵读者选择",
+      "featureRequests": "功能建议",
+      "feedback": "反馈",
+      "helpSupport": "帮助与支持",
+      "learnMoreAboutOurMission": "进一步了解我们的使命",
+      "manageQuranTranslationsAndCommentary": "管理《古兰经》译文和经注",
+      "privacyPolicy": "隐私政策",
+      "quran": "古兰经",
+      "readOurTermsOfService": "阅读服务条款",
+      "seeWhatSNewIn": "查看此版本的更新内容",
+      "shareYourExperienceWithOthers": "与他人分享使用体验",
+      "showTheFloatingDeveloperTools": "显示悬浮开发工具按钮",
+      "suggestImprovementsAndNewFeatures": "提出改进和新功能建议",
+      "termsOfService": "服务条款",
+      "viewAndManageStorageUsage": "查看和管理存储空间使用情况",
+      "viewOurPrivacyPolicy": "查看隐私政策",
+      "writeAReview": "撰写评价"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "取消",
+    "close": "关闭",
+    "collection": "收藏",
+    "download": "下载",
+    "downloads": "下载内容",
+    "error": "出了点问题",
+    "favorites": "喜爱",
+    "home": "首页",
+    "language": "语言",
+    "library": "资料库",
+    "loading": "加载中……",
+    "noResults": "未找到结果",
+    "offline": "你已离线",
+    "pause": "暂停",
+    "play": "播放",
+    "retry": "重试",
+    "save": "保存",
+    "search": "搜索",
+    "settings": "设置",
+    "surahs": "苏拉"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "选择内容"
+    },
+    "highlightContent": {
+      "chooseColor": "选择颜色"
+    },
+    "noteContent": {
+      "saveNote": "保存笔记"
+    },
+    "shareContent": {
+      "shareLink": "分享链接"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "未找到与此节相似的经文。",
+      "sharedPhrases": "相同短语",
+      "similarWording": "相似措辞"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "尚未下载经注",
+      "tafseerNotAvailableForThis": "此节暂无经注",
+      "tapHereToDownloadA": "点此下载经注并查看注释。"
+    },
+    "themeContent": {
+      "noThematicDataForThis": "此节暂无主题数据。",
+      "passage": "段落"
+    },
+    "translationContent": {
+      "switch": "切换",
+      "translationNotAvailable": "暂无译文"
+    }
+  },
+  "version": {
+    "label": "版本 {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "更新内容："
+  },
+  "wordDetail": {
+    "context": "经文 {{surah}}:{{ayah}} · 第 {{position}} 个词，共 {{total}} 个"
+  }
+}

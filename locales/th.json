@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "เริ่มต้นเครื่องเล่นไม่สำเร็จ: {{message}}",
+    "errorLoadingFonts": "โหลดแบบอักษรไม่สำเร็จ"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "หน้าแรก ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "ทั้งหมด",
+      "clearAll": "ล้างทั้งหมด",
+      "hasPhoto": "มีรูปภาพ"
+    },
+    "filterModal": {
+      "apply": "นำไปใช้",
+      "filterReciters": "กรองผู้อ่าน",
+      "recitationStyles": "รูปแบบการอ่าน",
+      "reset": "รีเซ็ต",
+      "rewayatTypes": "ประเภทริวายะฮ์"
+    },
+    "recitersFound_one": "พบผู้อ่าน {{count}} คนตามตัวกรองปัจจุบัน",
+    "recitersFound_other": "พบผู้อ่าน {{count}} คนตามตัวกรองปัจจุบัน"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "ซูเราะฮ์ที่ถูกใจ"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "คั่นหน้าอายะฮ์เพื่อดูที่นี่",
+      "bookmarks": "ที่คั่นหน้า",
+      "noBookmarksYet": "ยังไม่มีที่คั่นหน้า",
+      "removeBookmark": "ลบที่คั่นหน้า"
+    },
+    "collectionSearchModal": {
+      "rewayat": "ริวายะฮ์",
+      "searchPlaylistsRecitersSurahsRewayat": "ค้นหาเพลย์ลิสต์ ผู้อ่าน ซูเราะฮ์ ริวายะฮ์...",
+      "searchPlaylistsRecitersSurahsRewayat2": "ค้นหาเพลย์ลิสต์ ผู้อ่าน ซูเราะฮ์ ริวายะฮ์ และรายการดาวน์โหลด",
+      "searchYourCollection": "ค้นหาคอลเลกชันของคุณ",
+      "searching": "กำลังค้นหา...",
+      "tryDifferentKeywords": "ลองใช้คำค้นอื่น"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "ดาวน์โหลดซูเราะฮ์เพื่อดูที่นี่",
+      "noDownloadsYet": "ยังไม่มีรายการดาวน์โหลด",
+      "playAll": "เล่นทั้งหมด"
+    },
+    "favoritereciters": {
+      "addReciters": "เพิ่มผู้อ่าน",
+      "addRecitersToSeeThem": "เพิ่มผู้อ่านเพื่อดูที่นี่",
+      "noFavoriteRecitersYet": "ยังไม่มีผู้อ่านคนโปรด",
+      "removeFromFavorites": "นำออกจากรายการโปรด",
+      "searchFavoriteReciters": "ค้นหาผู้อ่านคนโปรด"
+    },
+    "index": {
+      "addToCollection": "เพิ่มในคอลเลกชัน",
+      "bookmarks": "ที่คั่นหน้า",
+      "createYourFirstPlaylist": "สร้างเพลย์ลิสต์แรกของคุณ",
+      "downloads": "รายการดาวน์โหลด",
+      "items_one": "{{count}} รายการ",
+      "items_other": "{{count}} รายการ",
+      "loved": "ถูกใจ",
+      "noBookmarksYet": "ยังไม่มีที่คั่นหน้า",
+      "noDownloadsYet": "ยังไม่มีรายการดาวน์โหลด",
+      "noFavoritesYet": "ยังไม่มีรายการโปรด",
+      "noLovedSurahsYet": "ยังไม่มีซูเราะฮ์ที่ถูกใจ",
+      "noNotesYet": "ยังไม่มีบันทึก",
+      "noUploadsYet": "ยังไม่มีรายการอัปโหลด",
+      "notes": "บันทึก",
+      "playlists": "เพลย์ลิสต์",
+      "reciters": "ผู้อ่าน",
+      "uploads": "รายการอัปโหลด"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "ดาวน์โหลดซูเราะฮ์ที่ถูกใจทั้งหมดไว้แล้ว",
+      "allLovedSurahsHaveBeen": "ดาวน์โหลดซูเราะฮ์ที่ถูกใจทั้งหมดเรียบร้อยแล้ว",
+      "downloadError": "ข้อผิดพลาดในการดาวน์โหลด",
+      "loveSurahsToSeeThem": "กดถูกใจซูเราะฮ์เพื่อดูที่นี่",
+      "noLovedSurahsYet": "ยังไม่มีซูเราะฮ์ที่ถูกใจ",
+      "someDownloadsMayHaveFailed": "บางรายการอาจดาวน์โหลดไม่สำเร็จ",
+      "unloveAllSurahs": "เลิกถูกใจซูเราะฮ์ทั้งหมด"
+    },
+    "notes": {
+      "addNotesToVersesTo": "เพิ่มบันทึกในอายะฮ์เพื่อดูที่นี่",
+      "editNote": "แก้ไขบันทึก",
+      "noNotesYet": "ยังไม่มีบันทึก",
+      "notes": "บันทึก"
+    },
+    "playlistModal": {
+      "name": "ชื่อ"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "สร้างเพลย์ลิสต์เพื่อดูที่นี่",
+      "noPlaylistsYet": "ยังไม่มีเพลย์ลิสต์",
+      "playlists": "เพลย์ลิสต์"
+    },
+    "uploads": {
+      "removeAllUploads": "ลบรายการอัปโหลดทั้งหมด",
+      "uploadRecitationsToSeeThem": "อัปโหลดเสียงอ่านเพื่อดูที่นี่"
+    }
+  },
+  "common": {
+    "1Time": "1 ครั้ง",
+    "2Times": "2 ครั้ง",
+    "3Times": "3 ครั้ง",
+    "addToCollection": "เพิ่มในคอลเลกชัน",
+    "addToQueue": "เพิ่มในคิว",
+    "allSurahs": "ซูเราะฮ์ทั้งหมด",
+    "alreadyDownloaded": "ดาวน์โหลดแล้ว",
+    "arabic": "ภาษาอาหรับ",
+    "asc": "น้อยไปมาก",
+    "browseAll": "ดูทั้งหมด",
+    "browseAllReciters": "ดูผู้อ่านทั้งหมด",
+    "cancel": "ยกเลิก",
+    "clear": "ล้าง",
+    "copyToClipboard": "คัดลอกไปยังคลิปบอร์ด",
+    "createNewPlaylist": "สร้างเพลย์ลิสต์ใหม่",
+    "defaultReciter": "ผู้อ่านเริ่มต้น",
+    "delete": "ลบ",
+    "deleteNote": "ลบบันทึก",
+    "deleteRecitation": "ลบเสียงอ่าน",
+    "desc": "มากไปน้อย",
+    "downloadComplete": "ดาวน์โหลดเสร็จแล้ว",
+    "downloadFailed": "ดาวน์โหลดไม่สำเร็จ",
+    "downloads": "รายการดาวน์โหลด",
+    "editDetails": "แก้ไขรายละเอียด",
+    "error": "ข้อผิดพลาด",
+    "favoriteReciters": "ผู้อ่านคนโปรด",
+    "followAlong": "ติดตามการอ่าน",
+    "from": "จาก",
+    "goToReciter": "ไปยังผู้อ่าน",
+    "goToVerse": "ไปยังอายะฮ์",
+    "learnAboutSurah": "เรียนรู้เกี่ยวกับซูเราะฮ์",
+    "loading": "กำลังโหลด...",
+    "loop": "เล่นวน",
+    "loved": "ถูกใจ",
+    "mushafSettings": "การตั้งค่ามุศฮัฟ",
+    "next": "ถัดไป",
+    "noRecitersFound": "ไม่พบผู้อ่าน",
+    "noResultsFound": "ไม่พบผลลัพธ์",
+    "noUploadsYet": "ยังไม่มีรายการอัปโหลด",
+    "play": "เล่น",
+    "playEachVerse": "เล่นทีละอายะฮ์",
+    "playNow": "เล่นตอนนี้",
+    "playSpeed": "ความเร็วในการเล่น",
+    "playTheRange": "เล่นช่วงที่เลือก",
+    "playlistName": "ชื่อเพลย์ลิสต์",
+    "prev": "ก่อนหน้า",
+    "readingTheme": "ธีมการอ่าน",
+    "recentSearches": "การค้นหาล่าสุด",
+    "reciter": "ผู้อ่าน",
+    "reciterChoice": "การเลือกผู้อ่าน",
+    "reciters": "ผู้อ่าน",
+    "remove": "นำออก",
+    "removeAllDownloads": "ลบรายการดาวน์โหลดทั้งหมด",
+    "removeHighlight": "ลบการไฮไลต์",
+    "rev": "ลำดับการประทาน",
+    "save": "บันทึก",
+    "search": "ค้นหา",
+    "searchReciters": "ค้นหาผู้อ่าน...",
+    "searchSurahs": "ค้นหาซูเราะฮ์",
+    "share": "แชร์",
+    "shareAsImage": "แชร์เป็นรูปภาพ",
+    "shareAsText": "แชร์เป็นข้อความ",
+    "sharedPhrases": "วลีที่เหมือนกัน",
+    "showBasmallah": "แสดงบัสมะละฮ์",
+    "stop": "หยุด",
+    "storage": "พื้นที่จัดเก็บ",
+    "surah": "ซูเราะฮ์",
+    "surahs": "ซูเราะฮ์",
+    "to": "ถึง",
+    "translation": "คำแปล",
+    "translationsTafaseer": "คำแปลและตัฟซีร",
+    "transliteration": "คำถอดเสียง",
+    "uploads": "รายการอัปโหลด",
+    "useDefaultReciter": "ใช้ผู้อ่านเริ่มต้น",
+    "verseReference": "อ้างอิงอายะฮ์",
+    "verses": "อายะฮ์",
+    "whatSNew": "มีอะไรใหม่",
+    "wordByWord": "ทีละคำ",
+    "writeYourNoteHere": "เขียนบันทึกของคุณที่นี่...",
+    "yourPlaylists": "เพลย์ลิสต์ของคุณ"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "เล่นซูเราะฮ์ทั้งหมด"
+    },
+    "searchHeader": {
+      "searchSurahs": "ค้นหาซูเราะฮ์"
+    },
+    "searchView": {
+      "noSurahsFound": "ไม่พบซูเราะฮ์"
+    },
+    "surahList": {
+      "noSurahsAvailable": "ไม่มีซูเราะฮ์ที่พร้อมใช้งาน"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "เพิ่มเสียงอ่าน",
+      "uploadRecitationsToSeeThem": "อัปโหลดเสียงอ่านเพื่อดูที่นี่"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "ดาวน์โหลดแล้ว • {{count}} ซูเราะฮ์",
+    "subtitle_other": "ดาวน์โหลดแล้ว • {{count}} ซูเราะฮ์"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "ขออภัย เกิดข้อผิดพลาด"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "ดูซูเราะฮ์ทั้งหมด 114 ซูเราะฮ์"
+    },
+    "savedAdhkarHero": {
+      "saved": "บันทึกแล้ว",
+      "yourCollection": "คอลเลกชันของคุณ"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "ซูเราะฮ์ประจำวัน"
+    },
+    "surahsHero": {
+      "number": "หมายเลข"
+    }
+  },
+  "language": {
+    "later": "ภายหลัง",
+    "restartMessage": "เริ่มแอปใหม่เพื่อใช้ทิศทางการจัดวางใหม่",
+    "restartNow": "เริ่มใหม่ตอนนี้",
+    "restartTitle": "ต้องเริ่มแอปใหม่",
+    "search": "ค้นหาภาษา",
+    "system": "ภาษาของอุปกรณ์"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "ดำเนินการต่อ"
+    },
+    "whatsNewOnboarding": {
+      "skip": "ข้าม"
+    }
+  },
+  "mushaf": {
+    "juz": "ญุซอ์ {{juz}}",
+    "loadingMushaf": "กำลังโหลดมุศฮัฟ…",
+    "main": {
+      "mushafSettings": "การตั้งค่ามุศฮัฟ"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "เปลี่ยนผู้อ่าน",
+      "changeReciter2": "เปลี่ยนผู้อ่าน",
+      "nextAyah": "อายะฮ์ถัดไป",
+      "playbackOptions": "ตัวเลือกการเล่น",
+      "previousAyah": "อายะฮ์ก่อนหน้า"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "ค้นหาซูเราะฮ์ อายะฮ์ หน้า หรือญุซอ์",
+      "recentReads": "อ่านล่าสุด",
+      "searchSurahsPagesOrJuz": "ค้นหาซูเราะฮ์ หน้า หรือญุซอ์...",
+      "searchTheMushaf": "ค้นหาในมุศฮัฟ"
+    },
+    "options": "ตัวเลือก",
+    "page": "หน้า {{page}}",
+    "pageAndSurah": "หน้า {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "โหลดมุศฮัฟไม่สำเร็จ",
+    "tryAgain": "ลองอีกครั้ง"
+  },
+  "mushafSettings": {
+    "rabbHelper": "ไฮไลต์พระนามอัลลอฮ์และคำเรียกพระองค์ เช่น ร็อบบ์ ในมุศฮัฟ"
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "สลับสีไฮไลต์ตามเนื้อหาของแต่ละช่วง",
+    "arabicFontSize": "ขนาดอักษรอาหรับ",
+    "bold": "ตัวหนา",
+    "book": "หนังสือ",
+    "colorLegend": "คำอธิบายสี",
+    "currentlyReading": "กำลังอ่าน",
+    "divineNames": "พระนามของพระผู้เป็นเจ้า",
+    "fontSize": "ขนาดอักษร",
+    "fullscreen": "เต็มหน้าจอ",
+    "hamzaReplacedByLongVowel": "แทนฮัมซะฮ์ด้วยสระเสียงยาว",
+    "heavyLamInAllahAfter": "อ่านลามในคำว่าอัลลอฮ์เป็นเสียงหนักหลังอักษรเสียงหนัก",
+    "highlightAllahRabb": "ไฮไลต์อัลลอฮ์ / ร็อบบ์",
+    "horizontal": "แนวนอน",
+    "ibdal": "อิบดาล",
+    "list": "รายการ",
+    "loadingSample": "กำลังโหลดตัวอย่าง...",
+    "maddAlBadal": "มัดด์อัลบะดัล",
+    "maximumProminence": "เด่นชัดที่สุด",
+    "medium": "ปานกลาง",
+    "modernMadinahPrintedPipeline": "กระบวนการจัดพิมพ์แบบมะดีนะฮ์สมัยใหม่",
+    "mushaf": "มุศฮัฟ",
+    "normal": "ปกติ",
+    "originalMushafWeight": "น้ำหนักอักษรดั้งเดิมของมุศฮัฟ",
+    "pageDesign": "การออกแบบหน้า",
+    "prolongedVowelAfterHamza": "ยืดเสียงสระหลังฮัมซะฮ์",
+    "readingTheme": "ธีมการอ่าน",
+    "scrollDirection": "ทิศทางการเลื่อน",
+    "showDifferences": "แสดงความแตกต่าง",
+    "silah": "ศิละฮ์",
+    "slightlyMoreProminent": "เด่นชัดขึ้นเล็กน้อย",
+    "softenedHamzaPronunciation": "ออกเสียงฮัมซะฮ์แบบผ่อน",
+    "subcontinentNastaliqStyle": "รูปแบบนัสตะอ์ลีกของอนุทวีป",
+    "taghlizAlLam": "ตัฆลีซอัลลาม",
+    "tajweedColoring": "สีตามหลักตัจวีด",
+    "tashilMusahhala": "ตัสฮีล / มุสฮะละฮ์",
+    "textPreviewNotYetAvailable": "ยังไม่มีตัวอย่างข้อความ",
+    "textThickness": "ความหนาของตัวอักษร",
+    "thematicHighlighting": "ไฮไลต์ตามหัวข้อ",
+    "trailingVowelOrMoodChange": "เปลี่ยนเฉพาะสระท้ายคำหรือมาลา",
+    "usingSaheehInternationalTranslationWith": "ใช้คำแปล Saheeh International พร้อมเชิงอรรถ",
+    "vertical": "แนวตั้ง",
+    "viewType": "รูปแบบมุมมอง",
+    "vowelMoodShift": "การเปลี่ยนสระ / มาลา",
+    "wordByWord": "ทีละคำ",
+    "wordVariant": "รูปคำที่แตกต่าง"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "เชื่อมต่อเซิร์ฟเวอร์เบื้องหลังไม่ได้",
+    "connectionRestored": "เชื่อมต่ออีกครั้งแล้ว",
+    "noInternetConnection": "ไม่มีการเชื่อมต่ออินเทอร์เน็ต",
+    "showingCachedData": "กำลังแสดงข้อมูลแคช"
+  },
+  "organize": {
+    "createReciter": "สร้าง \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "คิว",
+      "queueIsEmpty": "คิวว่าง"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "ติดแท็กเสียงอ่านนี้เพื่อดูข้อความและรายละเอียดของซูเราะฮ์"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "เพลย์ลิสต์ • {{count}} ซูเราะฮ์",
+    "subtitle_other": "เพลย์ลิสต์ • {{count}} ซูเราะฮ์"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "ไม่มีซูเราะฮ์ในเพลย์ลิสต์นี้"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "เชิงอรรถ"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "เสียงอ่านที่เลือกมาเพื่อช่วงเวลานี้",
+      "discover": "ค้นพบ",
+      "discoverANewVoice": "ค้นพบเสียงอ่านใหม่",
+      "explore": "สำรวจ",
+      "exploreTheUnexpected": "สำรวจสิ่งที่ไม่คาดคิด",
+      "hearSomethingNew": "ฟังสิ่งใหม่",
+      "letTheQuranSurpriseYou": "ให้อัลกุรอานนำความประทับใจมาสู่คุณ",
+      "randomMix": "สุ่มผสม",
+      "randomRecitation": "สุ่มเสียงอ่าน",
+      "shuffleListen": "สุ่มและฟัง",
+      "surpriseMe": "เซอร์ไพรส์ฉัน"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "การเปลี่ยนโหมดรูปลักษณ์จะมีผลกับทั้งแอป"
+  },
+  "reciterBrowse": {
+    "allReciters": "ผู้อ่านทั้งหมด",
+    "browseReciters": "ดูผู้อ่าน",
+    "favorites": "รายการโปรด"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "ไม่มีรายการดาวน์โหลดของผู้อ่านคนนี้"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "รายการที่ฉันอัปโหลด"
+    }
+  },
+  "recitersView": {
+    "adhkar": "อัซการ",
+    "bestForMemorization": "เหมาะสำหรับท่องจำ",
+    "bestForTajweed": "เหมาะสำหรับฝึกตัจวีด",
+    "continueListening": "ฟังต่อ",
+    "exclusives": "เนื้อหาพิเศษ",
+    "exploreByRewayah": "สำรวจตามริวายะฮ์",
+    "featuredReciters": "ผู้อ่านแนะนำ",
+    "fromYourCollection": "จากคอลเลกชันของคุณ",
+    "myRecitations": "เสียงอ่านของฉัน",
+    "newToQuranStartHere": "เพิ่งเริ่มเรียนรู้อัลกุรอาน? เริ่มที่นี่",
+    "seeMore": "ดูเพิ่มเติม",
+    "yourFavorites": "รายการโปรดของคุณ"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "ใช้งานอยู่",
+      "activeTafseer": "ตัฟซีรที่ใช้งานอยู่",
+      "activeTranslation": "คำแปลที่ใช้งานอยู่",
+      "deleteTafseer": "ลบตัฟซีร",
+      "deleteTranslation": "ลบคำแปล",
+      "noTafaseerFound": "ไม่พบตัฟซีร",
+      "noTranslationsFound": "ไม่พบคำแปล",
+      "unableToDownloadThisTafseer": "ดาวน์โหลดตัฟซีรนี้ไม่ได้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตแล้วลองอีกครั้ง",
+      "unableToDownloadThisTranslation": "ดาวน์โหลดคำแปลนี้ไม่ได้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตแล้วลองอีกครั้ง"
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "ไม่มีการค้นหาล่าสุด",
+      "tryDifferentKeywordsOrCheck": "ลองใช้คำค้นอื่นหรือตรวจสอบการสะกด",
+      "yourSearchHistoryWillAppear": "ประวัติการค้นหาของคุณจะแสดงที่นี่"
+    },
+    "surahsOrReciters": "ค้นหาซูเราะฮ์หรือผู้อ่าน"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "การควบคุมเสียงขั้นสูง",
+      "browseByJuz": "ดูตามญุซอ์",
+      "createAndManageYourOwn": "สร้างและจัดการเพลย์ลิสต์เสียงอ่านที่คุณชื่นชอบในแบบของคุณ",
+      "crystalClearRecitationsFromThe": "เสียงอ่านคมชัดจากกอรีชั้นนำของโลก พร้อมระบบสตรีมที่ปรับให้เหมาะสม",
+      "curatedCollections": "คอลเลกชันคัดสรร",
+      "customPlaylists": "เพลย์ลิสต์กำหนดเอง",
+      "customizeThemesAccentColorsAnd": "ปรับธีม สีเน้น และการตั้งค่าเสียงตามที่คุณชอบ",
+      "downloadSurahsForOfflineListening": "ดาวน์โหลดซูเราะฮ์เพื่อฟังออฟไลน์ได้ทุกที่ทุกเวลาโดยไม่ใช้อินเทอร์เน็ต",
+      "easilyNavigateThroughTheQuran": "ค้นหาในอัลกุรอานได้ง่ายด้วยการจัดหมวดหมู่และแบ่งกลุ่มตามญุซอ์",
+      "features": "คุณสมบัติ",
+      "highQualityAudio": "เสียงคุณภาพสูง",
+      "listenReflectRememberAllah": "ฟัง ใคร่ครวญ รำลึกถึงอัลลอฮ์",
+      "offlineDownloads": "ดาวน์โหลดสำหรับออฟไลน์",
+      "ourCommitment": "ความมุ่งมั่นของเรา",
+      "ourMission": "พันธกิจของเรา",
+      "personalization": "ปรับให้เป็นส่วนตัว",
+      "precisePlaybackControlWithContinuous": "ควบคุมการเล่นอย่างแม่นยำ พร้อมเล่นต่อเนื่องและปรับความเร็วเสียงอ่านได้",
+      "quranBayanTafsirKnowledgeOur": "อัลกุรอาน • บะยาน • ตัฟซีร • ความรู้ เรามุ่งให้การฟังและใคร่ครวญเป็นส่วนหนึ่งของชีวิตประจำวัน ทั้งที่บ้าน ระหว่างเดินทาง และทุกช่วงเวลาที่คุณมีโอกาสรำลึกถึงอัลลอฮ์",
+      "readListenAndReflect": "อ่าน ฟัง และใคร่ครวญ",
+      "readTheMushafExploreTranslations": "อ่านมุศฮัฟ สำรวจคำแปลและตัฟซีร บันทึกอายะฮ์และข้อคิด แล้วกลับมาอ่านอัซการประจำวัน เลือกผู้อ่าน สร้างเพลย์ลิสต์ และจัดประสบการณ์การฟังให้เข้ากับวันของคุณ คุณสมบัติที่ใช้ได้แตกต่างกันตามอุปกรณ์ แอปเนทีฟยังรองรับการดาวน์โหลดเพื่อฟังออฟไลน์ด้วย",
+      "thoughtfullyOrganizedSurahsForDifferent": "ซูเราะฮ์ที่จัดไว้อย่างใส่ใจสำหรับโอกาสและหัวข้อต่าง ๆ",
+      "weCareAboutTheAccuracy": "เราให้ความสำคัญกับความถูกต้องของเนื้อหาศักดิ์สิทธิ์ การออกแบบที่ให้เกียรติ และการเข้าถึงที่เชื่อถือได้ เรายังคงพัฒนา ISTIMA ด้วยความใส่ใจต่อผู้ใช้ ขออัลลอฮ์ทรงตอบรับความพยายามนี้และให้เป็นประโยชน์แก่ทุกคนที่ฟัง อ่าน และใคร่ครวญ"
+    },
+    "aboutApp": "เกี่ยวกับ {{name}}",
+    "appearance": "รูปลักษณ์",
+    "defaultreciter": {
+      "changeDefaultReciter": "เปลี่ยนผู้อ่านเริ่มต้น"
+    },
+    "developer": "นักพัฒนา",
+    "floatingDevMenu": "เมนูนักพัฒนาแบบลอย",
+    "language": "ภาษา",
+    "languageDescription": "เลือกภาษาของแอป",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "ใช้ผู้อ่านเริ่มต้นที่คุณเลือกเสมอ",
+      "askEveryTime": "ถามทุกครั้ง",
+      "chooseAReciterEachTime": "เลือกผู้อ่านทุกครั้งที่เล่น",
+      "chooseHowYouWantTo": "เลือกวิธีเลือกผู้อ่านเมื่อเล่นซูเราะฮ์",
+      "defaultSelectionMethod": "วิธีเลือกเริ่มต้น",
+      "searchThroughOurCompleteCollection": "ค้นหาจากผู้อ่านทั้งหมดของเรา",
+      "selectionPreference": "การตั้งค่าการเลือก"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "ลบรายการดาวน์โหลดทั้งหมดแล้ว",
+      "areYouSureYouWant": "คุณแน่ใจหรือไม่ว่าต้องการลบเนื้อหาที่ดาวน์โหลดทั้งหมด? การดำเนินการนี้ย้อนกลับไม่ได้",
+      "cache": "แคช",
+      "cacheHasBeenCleared": "ล้างแคชแล้ว",
+      "clearCache": "ล้างแคช",
+      "failedToClearCache": "ล้างแคชไม่สำเร็จ",
+      "failedToRemoveDownloads": "ลบรายการดาวน์โหลดไม่สำเร็จ",
+      "free": "ว่าง",
+      "loadingStorageInformation": "กำลังโหลดข้อมูลพื้นที่จัดเก็บ...",
+      "manageStorage": "จัดการพื้นที่จัดเก็บ",
+      "otherApps": "แอปอื่น ๆ",
+      "removeAllDownloads": "ลบรายการดาวน์โหลดทั้งหมด",
+      "removeAllTheQuranContent": "ลบเนื้อหาอัลกุรอานทั้งหมดที่คุณดาวน์โหลดไว้ใช้งานออฟไลน์",
+      "storageBreakdown": "รายละเอียดพื้นที่จัดเก็บ",
+      "success": "สำเร็จ",
+      "thisWillClearYourCache": "การดำเนินการนี้จะล้างแคช แต่จะไม่ลบรายการดาวน์โหลด",
+      "youCanFreeUpStorage": "คุณสามารถเพิ่มพื้นที่ว่างได้โดยล้างแคช รายการดาวน์โหลดจะไม่ถูกลบ"
+    },
+    "themePicker": {
+      "auto": "อัตโนมัติ",
+      "dark": "มืด",
+      "light": "สว่าง"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "ไม่มีบันทึกการเปลี่ยนแปลง"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "เกี่ยวกับ {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "เพิ่มผู้อ่านคนโปรด",
+      "uploadRecitation": "อัปโหลดเสียงอ่าน"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "เสียงบรรยากาศ",
+      "none": "ไม่มี",
+      "volume": "ระดับเสียง"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "เช่น เสียงอ่านยามเช้า"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "ลบรายการดาวน์โหลด"
+    },
+    "favoriteRecitersSheet": {
+      "done": "เสร็จสิ้น"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "เพิ่มในคอลเลกชัน",
+      "addToQueue": "เพิ่มในคิว",
+      "continuePlaying": "เล่นต่อ",
+      "goToReciter": "ไปยังผู้อ่าน",
+      "removeFromRecents": "นำออกจากรายการล่าสุด"
+    },
+    "mushafLayoutSheet": {
+      "back": "กลับ"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "อายะฮ์สิ้นสุด",
+      "playbackSettings": "การตั้งค่าการเล่น",
+      "selectRange": "เลือกช่วง",
+      "startingVerse": "อายะฮ์เริ่มต้น"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "การตั้งค่าการเล่นซ้ำ",
+      "start": "เริ่ม",
+      "verseRange": "ช่วงอายะฮ์"
+    },
+    "organizeRecitationSheet": {
+      "category": "หมวดหมู่",
+      "customReciter": "ผู้อ่านกำหนดเอง",
+      "duA": "ดุอาอ์",
+      "eGMorningAdhkar": "เช่น อัซการยามเช้า",
+      "lecture": "บรรยาย",
+      "moreOptions": "ตัวเลือกเพิ่มเติม",
+      "other": "อื่น ๆ",
+      "recording": "การบันทึกเสียง",
+      "rewayah": "ริวายะฮ์",
+      "searchSurahs": "ค้นหาซูเราะฮ์...",
+      "style": "รูปแบบ",
+      "tafsir": "ตัฟซีร",
+      "title": "ชื่อเรื่อง",
+      "type": "ประเภท",
+      "verseRangeOptional": "ช่วงอายะฮ์ (ไม่บังคับ)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "ความเร็วในการเล่น"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "ดาวน์โหลดทุกรายการในเพลย์ลิสต์นี้ไว้แล้ว",
+      "anErrorOccurredWhileDownloading": "เกิดข้อผิดพลาดขณะดาวน์โหลดเพลย์ลิสต์ โปรดลองอีกครั้ง",
+      "deletePlaylist": "ลบเพลย์ลิสต์",
+      "downloadingPlaylist": "กำลังดาวน์โหลดเพลย์ลิสต์...",
+      "editPlaylist": "แก้ไขเพลย์ลิสต์",
+      "emptyPlaylist": "เพลย์ลิสต์ว่าง",
+      "thisPlaylistIsEmpty": "เพลย์ลิสต์นี้ว่าง"
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "เกี่ยวกับริวายะฮ์",
+      "availableRewayat": "ริวายะฮ์ที่มีให้เลือก"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "เพิ่มซูเราะฮ์ในเพลย์ลิสต์ไม่สำเร็จ",
+      "failedToCreatePlaylist": "สร้างเพลย์ลิสต์ไม่สำเร็จ",
+      "noPlaylistsYetCreateYour": "ยังไม่มีเพลย์ลิสต์ สร้างเพลย์ลิสต์แรกของคุณด้านบน"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "ถามทุกครั้ง",
+      "randomReciter": "สุ่มผู้อ่าน",
+      "selectReciter": "เลือกผู้อ่าน"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "ไม่พบอายะฮ์ที่คล้ายกับอายะฮ์นี้",
+      "similarWording": "ถ้อยคำคล้ายกัน"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "ตั้งเวลาปิด",
+      "turnOffTimer": "ปิดตัวตั้งเวลา"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "นำออกจากเพลย์ลิสต์"
+    },
+    "verseActionsSheet": {
+      "addNote": "เพิ่มบันทึก",
+      "copy": "คัดลอก",
+      "repeat": "เล่นซ้ำ",
+      "similarVerses": "อายะฮ์ที่คล้ายกัน",
+      "tafseer": "ตัฟซีร",
+      "theme": "ธีม"
+    },
+    "verseCopySheet": {
+      "copyOptions": "ตัวเลือกการคัดลอก",
+      "selectWhatToCopy": "เลือกสิ่งที่จะคัดลอก"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "สีไฮไลต์"
+    },
+    "verseShareSheet": {
+      "shareVerse": "แชร์อายะฮ์"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "พบใน {{count}} อายะฮ์",
+    "foundIn_other": "พบใน {{count}} อายะฮ์"
+  },
+  "surahItem": {
+    "moreOptions": "ตัวเลือกเพิ่มเติม",
+    "opensMenuWithAdditionalActions": "เปิดเมนูการดำเนินการเพิ่มเติมสำหรับซูเราะฮ์นี้",
+    "tapToPlaySurah": "แตะเพื่อเล่นซูเราะฮ์"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "รหัสเพลย์ลิสต์ไม่ถูกต้อง",
+      "playlistNotFound": "ไม่พบเพลย์ลิสต์"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "ไม่พบผู้อ่านที่มีครบทุกซูเราะฮ์ในเพลย์ลิสต์นี้ โปรดลองเพลย์ลิสต์อื่น",
+      "failedToPlayPlaylistPlease": "เล่นเพลย์ลิสต์ไม่สำเร็จ โปรดลองอีกครั้ง",
+      "failedToPlayTrackPlease": "เล่นแทร็กไม่สำเร็จ โปรดลองอีกครั้ง",
+      "failedToShufflePlaylistPlease": "เล่นเพลย์ลิสต์แบบสุ่มไม่สำเร็จ โปรดลองอีกครั้ง",
+      "noReciterAvailable": "ไม่มีผู้อ่านที่พร้อมใช้งาน",
+      "noSurahsInThisPlaylist": "ไม่มีซูเราะฮ์ในเพลย์ลิสต์นี้"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "บัญชี",
+      "appData": "แอปและข้อมูล",
+      "audioPlayback": "เสียงและการเล่น",
+      "chooseYourPreferredReciter": "เลือกผู้อ่านที่คุณชื่นชอบ",
+      "customizeQuranDisplayOptions": "ปรับตัวเลือกการแสดงอัลกุรอาน",
+      "customizeReciterSelection": "ปรับการเลือกผู้อ่าน",
+      "featureRequests": "คำขอคุณสมบัติ",
+      "feedback": "ข้อเสนอแนะ",
+      "helpSupport": "ความช่วยเหลือและการสนับสนุน",
+      "learnMoreAboutOurMission": "เรียนรู้เพิ่มเติมเกี่ยวกับพันธกิจของเรา",
+      "manageQuranTranslationsAndCommentary": "จัดการคำแปลและคำอธิบายอัลกุรอาน",
+      "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+      "quran": "อัลกุรอาน",
+      "readOurTermsOfService": "อ่านข้อกำหนดการให้บริการ",
+      "seeWhatSNewIn": "ดูสิ่งใหม่ในเวอร์ชันนี้",
+      "shareYourExperienceWithOthers": "แบ่งปันประสบการณ์ของคุณกับผู้อื่น",
+      "showTheFloatingDeveloperTools": "แสดงปุ่มเครื่องมือนักพัฒนาแบบลอย",
+      "suggestImprovementsAndNewFeatures": "เสนอการปรับปรุงและคุณสมบัติใหม่",
+      "termsOfService": "ข้อกำหนดการให้บริการ",
+      "viewAndManageStorageUsage": "ดูและจัดการการใช้พื้นที่จัดเก็บ",
+      "viewOurPrivacyPolicy": "ดูนโยบายความเป็นส่วนตัวของเรา",
+      "writeAReview": "เขียนรีวิว"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "ยกเลิก",
+    "close": "ปิด",
+    "collection": "คอลเลกชัน",
+    "download": "ดาวน์โหลด",
+    "downloads": "รายการดาวน์โหลด",
+    "error": "เกิดข้อผิดพลาดบางอย่าง",
+    "favorites": "รายการโปรด",
+    "home": "หน้าแรก",
+    "language": "ภาษา",
+    "library": "คลัง",
+    "loading": "กำลังโหลด...",
+    "noResults": "ไม่พบผลลัพธ์",
+    "offline": "คุณออฟไลน์อยู่",
+    "pause": "หยุดชั่วคราว",
+    "play": "เล่น",
+    "retry": "ลองอีกครั้ง",
+    "save": "บันทึก",
+    "search": "ค้นหา",
+    "settings": "การตั้งค่า",
+    "surahs": "ซูเราะฮ์"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "เลือกเนื้อหา"
+    },
+    "highlightContent": {
+      "chooseColor": "เลือกสี"
+    },
+    "noteContent": {
+      "saveNote": "บันทึกโน้ต"
+    },
+    "shareContent": {
+      "shareLink": "แชร์ลิงก์"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "ไม่พบอายะฮ์ที่คล้ายกับอายะฮ์นี้",
+      "sharedPhrases": "วลีที่เหมือนกัน",
+      "similarWording": "ถ้อยคำคล้ายกัน"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "ยังไม่ได้ดาวน์โหลดตัฟซีร",
+      "tafseerNotAvailableForThis": "ไม่มีตัฟซีรสำหรับอายะฮ์นี้",
+      "tapHereToDownloadA": "แตะที่นี่เพื่อดาวน์โหลดตัฟซีรและดูคำอธิบาย"
+    },
+    "themeContent": {
+      "noThematicDataForThis": "ไม่มีข้อมูลหัวข้อสำหรับอายะฮ์นี้",
+      "passage": "ช่วงเนื้อหา"
+    },
+    "translationContent": {
+      "switch": "สลับ",
+      "translationNotAvailable": "ไม่มีคำแปล"
+    }
+  },
+  "version": {
+    "label": "เวอร์ชัน {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "มีอะไรใหม่ใน"
+  },
+  "wordDetail": {
+    "context": "อายะฮ์ {{surah}}:{{ayah}} · คำที่ {{position}} จาก {{total}} คำ"
+  }
+}

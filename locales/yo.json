@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Àṣìṣe nígbà bíbẹ̀rẹ̀ ẹ̀rọ ìṣeré: {{message}}",
+    "errorLoadingFonts": "Àṣìṣe nígbà gbígbé àwọn lẹ́tà wọlé"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Ojú ìbẹ̀rẹ̀ ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Gbogbo",
+      "clearAll": "Pa gbogbo rẹ́",
+      "hasPhoto": "Ó ní àwòrán"
+    },
+    "filterModal": {
+      "apply": "Lò",
+      "filterReciters": "Ṣàyọ àwọn olùkà",
+      "recitationStyles": "Àwọn ọ̀nà kíkà",
+      "reset": "Dá padà sí ìpilẹ̀",
+      "rewayatTypes": "Àwọn irú riwáyà"
+    },
+    "recitersFound_one": "A rí olùkà {{count}} pẹ̀lú àwọn àlẹ̀mọ́ yìí",
+    "recitersFound_other": "A rí olùkà {{count}} pẹ̀lú àwọn àlẹ̀mọ́ yìí"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Àwọn súrà tí o fẹ́ràn"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Fi àmì sí àwọn áyà láti rí wọn níbí",
+      "bookmarks": "Àwọn àmì ìwé",
+      "noBookmarksYet": "Kò tíì sí àmì ìwé",
+      "removeBookmark": "Yọ àmì ìwé kúrò"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Riwáyà",
+      "searchPlaylistsRecitersSurahsRewayat": "Wá àtòjọ ìṣeré, olùkà, súrà, riwáyà...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Wá àtòjọ ìṣeré, olùkà, súrà, riwáyà àti ohun tí a gbà sílẹ̀",
+      "searchYourCollection": "Wá nínú àkójọpọ̀ rẹ",
+      "searching": "Ń wá...",
+      "tryDifferentKeywords": "Gbìyànjú àwọn ọ̀rọ̀ àwárí mìíràn"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Gba àwọn súrà sílẹ̀ láti rí wọn níbí",
+      "noDownloadsYet": "Kò tíì sí ohun tí a gbà sílẹ̀",
+      "playAll": "Mu gbogbo rẹ̀ ṣiṣẹ́"
+    },
+    "favoritereciters": {
+      "addReciters": "Fi olùkà kún un",
+      "addRecitersToSeeThem": "Fi àwọn olùkà kún un láti rí wọn níbí",
+      "noFavoriteRecitersYet": "Kò tíì sí olùkà àyànfẹ́",
+      "removeFromFavorites": "Yọ kúrò nínú àwọn àyànfẹ́",
+      "searchFavoriteReciters": "Wá àwọn olùkà àyànfẹ́"
+    },
+    "index": {
+      "addToCollection": "Fi kún àkójọpọ̀",
+      "bookmarks": "Àwọn àmì ìwé",
+      "createYourFirstPlaylist": "Ṣẹ̀dá àtòjọ ìṣeré àkọ́kọ́ rẹ",
+      "downloads": "Àwọn ohun tí a gbà sílẹ̀",
+      "items_one": "Ohun {{count}}",
+      "items_other": "Ohun {{count}}",
+      "loved": "Àwọn tí o fẹ́ràn",
+      "noBookmarksYet": "Kò tíì sí àmì ìwé",
+      "noDownloadsYet": "Kò tíì sí ohun tí a gbà sílẹ̀",
+      "noFavoritesYet": "Kò tíì sí àyànfẹ́",
+      "noLovedSurahsYet": "Kò tíì sí súrà tí o fẹ́ràn",
+      "noNotesYet": "Kò tíì sí àkọsílẹ̀",
+      "noUploadsYet": "Kò tíì sí ohun tí a rán sókè",
+      "notes": "Àwọn àkọsílẹ̀",
+      "playlists": "Àwọn àtòjọ ìṣeré",
+      "reciters": "Àwọn olùkà",
+      "uploads": "Àwọn ohun tí a rán sókè"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Gbogbo súrà tí o fẹ́ràn ti wà ní ìpamọ́ tẹ́lẹ̀.",
+      "allLovedSurahsHaveBeen": "A ti gba gbogbo súrà tí o fẹ́ràn sílẹ̀.",
+      "downloadError": "Àṣìṣe gbígbà sílẹ̀",
+      "loveSurahsToSeeThem": "Ṣàmì sí àwọn súrà tí o fẹ́ràn láti rí wọn níbí",
+      "noLovedSurahsYet": "Kò tíì sí súrà tí o fẹ́ràn",
+      "someDownloadsMayHaveFailed": "Àwọn kan lè má gbà sílẹ̀ dáadáa.",
+      "unloveAllSurahs": "Yọ àmì ìfẹ́ràn kúrò lára gbogbo súrà"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Fi àkọsílẹ̀ kún àwọn áyà láti rí wọn níbí",
+      "editNote": "Ṣàtúnṣe àkọsílẹ̀",
+      "noNotesYet": "Kò tíì sí àkọsílẹ̀",
+      "notes": "Àwọn àkọsílẹ̀"
+    },
+    "playlistModal": {
+      "name": "Orúkọ"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Ṣẹ̀dá àwọn àtòjọ ìṣeré láti rí wọn níbí",
+      "noPlaylistsYet": "Kò tíì sí àtòjọ ìṣeré",
+      "playlists": "Àwọn àtòjọ ìṣeré"
+    },
+    "uploads": {
+      "removeAllUploads": "Yọ gbogbo ohun tí a rán sókè kúrò",
+      "uploadRecitationsToSeeThem": "Rán àwọn kíkà sókè láti rí wọn níbí"
+    }
+  },
+  "common": {
+    "1Time": "Ìgbà 1",
+    "2Times": "Ìgbà 2",
+    "3Times": "Ìgbà 3",
+    "addToCollection": "Fi kún àkójọpọ̀",
+    "addToQueue": "Fi kún ìlà ìṣeré",
+    "allSurahs": "Gbogbo súrà",
+    "alreadyDownloaded": "A ti gbà á sílẹ̀ tẹ́lẹ̀",
+    "arabic": "Lárúbáwá",
+    "asc": "Gòkè",
+    "browseAll": "Wo gbogbo rẹ̀",
+    "browseAllReciters": "Wo gbogbo olùkà",
+    "cancel": "Fagilé",
+    "clear": "Pa rẹ́",
+    "copyToClipboard": "Dàkọ sínú àpótí ìdàkọ",
+    "createNewPlaylist": "Ṣẹ̀dá àtòjọ ìṣeré tuntun",
+    "defaultReciter": "Olùkà àkọ́kọ́",
+    "delete": "Paarẹ́",
+    "deleteNote": "Pa àkọsílẹ̀ rẹ́",
+    "deleteRecitation": "Pa kíkà rẹ́",
+    "desc": "Sọ̀kalẹ̀",
+    "downloadComplete": "Gbígbà sílẹ̀ ti parí",
+    "downloadFailed": "Gbígbà sílẹ̀ kùnà",
+    "downloads": "Àwọn ohun tí a gbà sílẹ̀",
+    "editDetails": "Ṣàtúnṣe ẹ̀kúnrẹ́rẹ́",
+    "error": "Àṣìṣe",
+    "favoriteReciters": "Àwọn olùkà àyànfẹ́",
+    "followAlong": "Tẹ̀ lé kíkà",
+    "from": "Láti",
+    "goToReciter": "Lọ sí olùkà",
+    "goToVerse": "Lọ sí áyà",
+    "learnAboutSurah": "Kọ́ nípa súrà",
+    "loading": "Ń gbé wọlé...",
+    "loop": "Tún ṣe láìdáwọ́",
+    "loved": "Àwọn tí o fẹ́ràn",
+    "mushafSettings": "Ètò muṣaf",
+    "next": "Tókàn",
+    "noRecitersFound": "A kò rí olùkà",
+    "noResultsFound": "A kò rí èsì",
+    "noUploadsYet": "Kò tíì sí ohun tí a rán sókè",
+    "play": "Mu ṣiṣẹ́",
+    "playEachVerse": "Mu áyà kọ̀ọ̀kan ṣiṣẹ́",
+    "playNow": "Mu ṣiṣẹ́ nísinsìnyí",
+    "playSpeed": "Ìyára ìṣeré",
+    "playTheRange": "Mu ààlà tí a yàn ṣiṣẹ́",
+    "playlistName": "Orúkọ àtòjọ ìṣeré",
+    "prev": "Tẹ́lẹ̀",
+    "readingTheme": "Àwọ̀ ìrísí kíkà",
+    "recentSearches": "Àwọn àwárí àìpẹ́",
+    "reciter": "Olùkà",
+    "reciterChoice": "Yíyan olùkà",
+    "reciters": "Àwọn olùkà",
+    "remove": "Yọ kúrò",
+    "removeAllDownloads": "Yọ gbogbo ohun tí a gbà sílẹ̀ kúrò",
+    "removeHighlight": "Yọ ìfihàn pàtàkì kúrò",
+    "rev": "Ìtò bí a ṣe sọ ọ̀rọ̀ Ọlọ́run kalẹ̀",
+    "save": "Fipamọ́",
+    "search": "Wá",
+    "searchReciters": "Wá àwọn olùkà...",
+    "searchSurahs": "Wá àwọn súrà",
+    "share": "Pín",
+    "shareAsImage": "Pín gẹ́gẹ́ bí àwòrán",
+    "shareAsText": "Pín gẹ́gẹ́ bí ọ̀rọ̀",
+    "sharedPhrases": "Àwọn gbólóhùn tó jọra",
+    "showBasmallah": "Fi Basmala hàn",
+    "stop": "Dá dúró",
+    "storage": "Ibi ìpamọ́",
+    "surah": "Súrà",
+    "surahs": "Àwọn súrà",
+    "to": "Sí",
+    "translation": "Ìtumọ̀",
+    "translationsTafaseer": "Àwọn ìtumọ̀ àti tafsír",
+    "transliteration": "Kíkọ bí a ṣe ń pè é",
+    "uploads": "Àwọn ohun tí a rán sókè",
+    "useDefaultReciter": "Lo olùkà àkọ́kọ́",
+    "verseReference": "Ìtọ́kasí áyà",
+    "verses": "Àwọn áyà",
+    "whatSNew": "Kí ló tuntun",
+    "wordByWord": "Ọ̀rọ̀ kọ̀ọ̀kan",
+    "writeYourNoteHere": "Kọ àkọsílẹ̀ rẹ níbí...",
+    "yourPlaylists": "Àwọn àtòjọ ìṣeré rẹ"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Mu gbogbo súrà ṣiṣẹ́"
+    },
+    "searchHeader": {
+      "searchSurahs": "Wá àwọn súrà"
+    },
+    "searchView": {
+      "noSurahsFound": "A kò rí súrà"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Kò sí súrà tó wà"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Fi kíkà kún un",
+      "uploadRecitationsToSeeThem": "Rán àwọn kíkà sókè láti rí wọn níbí"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "A ti gbà sílẹ̀ • súrà {{count}}",
+    "subtitle_other": "A ti gbà sílẹ̀ • súrà {{count}}"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Má bínú, àṣìṣe kan ṣẹlẹ̀"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Wo gbogbo súrà 114"
+    },
+    "savedAdhkarHero": {
+      "saved": "A ti fipamọ́",
+      "yourCollection": "Àkójọpọ̀ rẹ"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SÚRÀ ÒNÍ"
+    },
+    "surahsHero": {
+      "number": "Nọ́ńbà"
+    }
+  },
+  "language": {
+    "later": "Nígbà mìíràn",
+    "restartMessage": "Tún ètò náà bẹ̀rẹ̀ láti lo ìdarí ìṣètò ojú ìwé tuntun.",
+    "restartNow": "Tún bẹ̀rẹ̀ nísinsìnyí",
+    "restartTitle": "Ó yẹ kí a tún bẹ̀rẹ̀",
+    "search": "Wá àwọn èdè",
+    "system": "Èdè ẹ̀rọ"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Tẹ̀ síwájú"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Fò ó"
+    }
+  },
+  "mushaf": {
+    "juz": "Júzù {{juz}}",
+    "loadingMushaf": "Ń gbé muṣaf wọlé…",
+    "main": {
+      "mushafSettings": "Ètò muṣaf"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Yí olùkà padà",
+      "changeReciter2": "Yí olùkà padà",
+      "nextAyah": "Áyà tó kàn",
+      "playbackOptions": "Àwọn àṣàyàn ìṣeré",
+      "previousAyah": "Áyà tó ṣáájú"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Wá súrà, áyà, ojú ìwé tàbí júzù",
+      "recentReads": "ÀWỌN TÍ A KÀ LÁÌPẸ́",
+      "searchSurahsPagesOrJuz": "Wá súrà, ojú ìwé tàbí júzù...",
+      "searchTheMushaf": "Wá nínú muṣaf"
+    },
+    "options": "Àwọn àṣàyàn",
+    "page": "Ojú ìwé {{page}}",
+    "pageAndSurah": "Ojú ìwé {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "A kò lè gbé muṣaf wọlé.",
+    "tryAgain": "Gbìyànjú lẹ́ẹ̀kan sí i"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Ó fi orúkọ Allah àti àwọn oyè Ọlọ́run bí Rabb hàn kedere nínú muṣaf."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Ìfihàn pàtàkì tó ń yí padà gẹ́gẹ́ bí abala àkòrí",
+    "arabicFontSize": "Ìwọ̀n lẹ́tà Lárúbáwá",
+    "bold": "Nínípọn",
+    "book": "Ìwé",
+    "colorLegend": "Àlàyé àwọ̀",
+    "currentlyReading": "Èyí tí a ń kà lọ́wọ́",
+    "divineNames": "ÀWỌN ORÚKỌ ỌLỌ́RUN",
+    "fontSize": "Ìwọ̀n lẹ́tà",
+    "fullscreen": "Gbogbo ojú ẹ̀rọ",
+    "hamzaReplacedByLongVowel": "Ríròpọ̀ hamza pẹ̀lú fáwẹ́lì gígùn",
+    "heavyLamInAllahAfter": "Lam tó nípọn nínú Allah lẹ́yìn àwọn lẹ́tà tó nípọn",
+    "highlightAllahRabb": "Fi Allah / Rabb hàn kedere",
+    "horizontal": "Ní ìbú",
+    "ibdal": "Ìbdál",
+    "list": "Àtòjọ",
+    "loadingSample": "Ń gbé àpẹẹrẹ wọlé...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Ìfarahàn tó pọ̀ jù",
+    "medium": "Àárín",
+    "modernMadinahPrintedPipeline": "Ọ̀nà títẹ̀wé Madinah òde òní",
+    "mushaf": "Muṣaf",
+    "normal": "Bó ṣe máa ń rí",
+    "originalMushafWeight": "Ìnípọn lẹ́tà muṣaf ìpilẹ̀ṣẹ̀",
+    "pageDesign": "ÌṢẸ̀DÁ OJÚ ÌWÉ",
+    "prolongedVowelAfterHamza": "Fáwẹ́lì gígùn lẹ́yìn hamza",
+    "readingTheme": "ÀWỌ̀ ÌRÍSÍ KÍKÀ",
+    "scrollDirection": "ÌDARÍ YÍYÍ OJÚ ÌWÉ",
+    "showDifferences": "Fi ìyàtọ̀ hàn",
+    "silah": "Ṣilah",
+    "slightlyMoreProminent": "Ó hàn díẹ̀ sí i",
+    "softenedHamzaPronunciation": "Pípè hamza ní ọ̀nà fífẹ́",
+    "subcontinentNastaliqStyle": "Ọ̀nà Nastaliq ti agbègbè abẹ́ kọ́ńtínẹ́ńtì",
+    "taghlizAlLam": "Taghliz al-Lam",
+    "tajweedColoring": "Àwọ̀ tajwíd",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "ÀWỌN Ọ̀RỌ̀ KÒ TÍÌ ṢEÉ ṢÀYẸ̀WÒ ṢÁÁJÚ",
+    "textThickness": "ÌNÍPỌN Ọ̀RỌ̀",
+    "thematicHighlighting": "Ìfihàn pàtàkì gẹ́gẹ́ bí àkòrí",
+    "trailingVowelOrMoodChange": "Ìyípadà fáwẹ́lì òpin tàbí ipò gírámà nìkan",
+    "usingSaheehInternationalTranslationWith": "Èyí tí a ń lò: Ìtumọ̀ Saheeh International pẹ̀lú àlàyé abẹ́ ìwé",
+    "vertical": "Ní gígùn",
+    "viewType": "IRÚ ÌWOYE",
+    "vowelMoodShift": "Ìyípadà fáwẹ́lì / ipò gírámà",
+    "wordByWord": "Ọ̀RỌ̀ KỌ̀Ọ̀KAN",
+    "wordVariant": "Ọ̀nà ọ̀rọ̀ mìíràn"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "A kò lè dé ẹ̀rọ ìpèsè ẹ̀yìn",
+    "connectionRestored": "Ìsopọ̀ ti padà",
+    "noInternetConnection": "Kò sí ìsopọ̀ íńtánẹ́ẹ̀tì",
+    "showingCachedData": "Ń fi dátà inú ìpamọ́ ìgbà díẹ̀ hàn"
+  },
+  "organize": {
+    "createReciter": "Ṣẹ̀dá \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Ìlà ìṣeré",
+      "queueIsEmpty": "Ìlà ìṣeré ṣófo"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Fi àmì sí kíkà yìí láti rí ọ̀rọ̀ súrà àti ẹ̀kúnrẹ́rẹ́ rẹ̀"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Àtòjọ ìṣeré • súrà {{count}}",
+    "subtitle_other": "Àtòjọ ìṣeré • súrà {{count}}"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Kò sí súrà nínú àtòjọ ìṣeré yìí"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Àlàyé abẹ́ ìwé"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Kíkà tí a yàn fún àkókò yìí gan-an",
+      "discover": "Ṣàwárí",
+      "discoverANewVoice": "Ṣàwárí ohùn tuntun",
+      "explore": "Ṣèwádìí",
+      "exploreTheUnexpected": "Ṣèwádìí ohun àìròtẹ́lẹ̀",
+      "hearSomethingNew": "Gbọ́ ohun tuntun",
+      "letTheQuranSurpriseYou": "Jẹ́ kí Al-Qur'an yà ọ́ lẹ́nu",
+      "randomMix": "Àdàpọ̀ aláìlétò",
+      "randomRecitation": "Kíkà aláìlétò",
+      "shuffleListen": "Dà pọ̀ kí o sì gbọ́",
+      "surpriseMe": "Yà mí lẹ́nu"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Ìyípadà irú ìrísí kan gbogbo ètò náà"
+  },
+  "reciterBrowse": {
+    "allReciters": "Gbogbo olùkà",
+    "browseReciters": "Wo àwọn olùkà",
+    "favorites": "Àwọn àyànfẹ́"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Kò sí ohun tí a gbà sílẹ̀ fún olùkà yìí"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Àwọn ohun tí mo rán sókè"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkár",
+    "bestForMemorization": "Ó dára jù fún háfísì",
+    "bestForTajweed": "Ó dára jù fún tajwíd",
+    "continueListening": "Tẹ̀ síwájú láti gbọ́",
+    "exclusives": "Àwọn àkànṣe",
+    "exploreByRewayah": "Ṣèwádìí gẹ́gẹ́ bí riwáyà",
+    "featuredReciters": "Àwọn olùkà tí a yàn",
+    "fromYourCollection": "Láti inú àkójọpọ̀ rẹ",
+    "myRecitations": "Àwọn kíkà mi",
+    "newToQuranStartHere": "Ṣé o ṣẹ̀ṣẹ̀ mọ Al-Qur'an? Bẹ̀rẹ̀ níbí",
+    "seeMore": "Wo sí i",
+    "yourFavorites": "Àwọn àyànfẹ́ rẹ"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Ń ṣiṣẹ́",
+      "activeTafseer": "TAFSÍR TÍ A Ń LÒ",
+      "activeTranslation": "ÌTUMỌ̀ TÍ A Ń LÒ",
+      "deleteTafseer": "Pa tafsír rẹ́",
+      "deleteTranslation": "Pa ìtumọ̀ rẹ́",
+      "noTafaseerFound": "A kò rí tafsír",
+      "noTranslationsFound": "A kò rí ìtumọ̀",
+      "unableToDownloadThisTafseer": "A kò lè gba tafsír yìí sílẹ̀. Jọ̀wọ́ ṣàyẹ̀wò ìsopọ̀ íńtánẹ́ẹ̀tì rẹ kí o sì gbìyànjú lẹ́ẹ̀kan sí i.",
+      "unableToDownloadThisTranslation": "A kò lè gba ìtumọ̀ yìí sílẹ̀. Jọ̀wọ́ ṣàyẹ̀wò ìsopọ̀ íńtánẹ́ẹ̀tì rẹ kí o sì gbìyànjú lẹ́ẹ̀kan sí i."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Kò sí àwárí àìpẹ́",
+      "tryDifferentKeywordsOrCheck": "Gbìyànjú ọ̀rọ̀ àwárí mìíràn tàbí ṣàyẹ̀wò ìkọ̀wé",
+      "yourSearchHistoryWillAppear": "Ìtàn àwárí rẹ yóò hàn níbí"
+    },
+    "surahsOrReciters": "Wá súrà tàbí olùkà"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Àwọn ìdarí ohùn tó jinlẹ̀",
+      "browseByJuz": "Wo gẹ́gẹ́ bí júzù",
+      "createAndManageYourOwn": "Ṣẹ̀dá àti ṣàkóso àwọn àtòjọ ìṣeré tirẹ láti àwọn kíkà àyànfẹ́ rẹ",
+      "crystalClearRecitationsFromThe": "Àwọn kíkà tó mọ́ kedere láti ọwọ́ àwọn qárì tó dára jù ní àgbáyé pẹ̀lú ìṣàn ohùn tó dára",
+      "curatedCollections": "Àwọn àkójọpọ̀ tí a yàn",
+      "customPlaylists": "Àwọn àtòjọ ìṣeré tirẹ",
+      "customizeThemesAccentColorsAnd": "Ṣètò ìrísí, àwọn àwọ̀ pàtàkì àti ohùn gẹ́gẹ́ bí o ṣe fẹ́",
+      "downloadSurahsForOfflineListening": "Gba àwọn súrà sílẹ̀ láti gbọ́ láìsí íńtánẹ́ẹ̀tì nígbàkigbà, níbikíbi",
+      "easilyNavigateThroughTheQuran": "Rọrùn láti lọ káàkiri Al-Qur'an pẹ̀lú ìpín àti ìṣètò gẹ́gẹ́ bí júzù",
+      "features": "ÀWỌN Ẹ̀YÀ",
+      "highQualityAudio": "Ohùn tó dára gan-an",
+      "listenReflectRememberAllah": "Gbọ́. Ronú. Rántí Allah.",
+      "offlineDownloads": "Gbígbà sílẹ̀ fún lílò láìsí íńtánẹ́ẹ̀tì",
+      "ourCommitment": "Ìlérí wa",
+      "ourMission": "Ète wa",
+      "personalization": "Ṣíṣe é gẹ́gẹ́ bí ìfẹ́ rẹ",
+      "precisePlaybackControlWithContinuous": "Ìdarí ìṣeré tó péye pẹ̀lú ṣíṣe láìdáwọ́ àti ìyára kíkà tó ṣeé yí padà",
+      "quranBayanTafsirKnowledgeOur": "Al-Qur'an • Bayán • Tafsír • Ìmọ̀. Ète wa ni pé gbígbọ́ àti ìrònú yóò jẹ́ ara ìgbésí ayé ojoojúmọ́: ní ilé, lójú ọ̀nà àti níbikíbi tí o bá ní àkókò láti rántí Allah.",
+      "readListenAndReflect": "Kà, gbọ́, kí o sì ronú",
+      "readTheMushafExploreTranslations": "Ka muṣaf, ṣèwádìí ìtumọ̀ àti tafsír, fipamọ́ áyà àti àkọsílẹ̀, kí o sì padà sí adhkár ojoojúmọ́. Yan olùkà rẹ, ṣe àtòjọ ìṣeré, kí o sì mú gbígbọ́ bá ọjọ́ rẹ mu. Àwọn ẹ̀yà tó wà yàtọ̀ síra gẹ́gẹ́ bí ẹ̀rọ; àwọn ètò abinibi tún gba fífi ohun sílẹ̀ fún gbígbọ́ láìsí íńtánẹ́ẹ̀tì.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Àwọn súrà tí a ṣètò pẹ̀lú ìṣọ́ra fún oríṣiríṣi àkókò àti àkòrí",
+      "weCareAboutTheAccuracy": "A bìkítà nípa ìpéye àwọn ọ̀rọ̀ mímọ́, ìṣètò tó ní ọ̀wọ̀ àti lílò tó ṣeé gbẹ́kẹ̀ lé. A ń mú ISTIMA dára sí i pẹ̀lú ìfẹ́ sí àwọn olùlò rẹ̀. Kí Allah gba iṣẹ́ yìí, kí ó sì ṣe é ní àǹfààní fún gbogbo ẹni tí ń gbọ́, kà àti ronú."
+    },
+    "aboutApp": "Nípa {{name}}",
+    "appearance": "ÌRÍSÍ",
+    "defaultreciter": {
+      "changeDefaultReciter": "YÍ OLÙKÀ ÀKỌ́KỌ́ PADÀ"
+    },
+    "developer": "OLÙDÁ ÈTÒ",
+    "floatingDevMenu": "Àtòjọ olùdá ètò tó léfòó",
+    "language": "Èdè",
+    "languageDescription": "Yan èdè ètò náà",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Máa lo olùkà àkọ́kọ́ tí o yàn ní gbogbo ìgbà",
+      "askEveryTime": "Béèrè ní gbogbo ìgbà",
+      "chooseAReciterEachTime": "Yan olùkà nígbàkigbà tí o bá fẹ́ ṣe",
+      "chooseHowYouWantTo": "Yan bí o ṣe fẹ́ yan olùkà nígbà ṣíṣe àwọn súrà",
+      "defaultSelectionMethod": "Ọ̀NÀ YÍYAN ÀKỌ́KỌ́",
+      "searchThroughOurCompleteCollection": "Wá nínú àkójọpọ̀ gbogbo àwọn olùkà wa",
+      "selectionPreference": "ÌFẸ́ YÍYAN"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "A ti yọ gbogbo ohun tí a gbà sílẹ̀ kúrò.",
+      "areYouSureYouWant": "Ṣé ó dá ọ lójú pé o fẹ́ yọ gbogbo ohun tí a gbà sílẹ̀ kúrò? A kò lè dá èyí padà.",
+      "cache": "Ìpamọ́ ìgbà díẹ̀",
+      "cacheHasBeenCleared": "A ti pa ìpamọ́ ìgbà díẹ̀ rẹ́.",
+      "clearCache": "Pa ìpamọ́ ìgbà díẹ̀ rẹ́",
+      "failedToClearCache": "Pípa ìpamọ́ ìgbà díẹ̀ rẹ́ kùnà.",
+      "failedToRemoveDownloads": "Yíyọ àwọn ohun tí a gbà sílẹ̀ kúrò kùnà.",
+      "free": "Ààyè tó ṣí sílẹ̀",
+      "loadingStorageInformation": "Ń gbé ìsọfúnni ibi ìpamọ́ wọlé...",
+      "manageStorage": "ṢÀKÓSO IBI ÌPAMỌ́",
+      "otherApps": "Àwọn ètò mìíràn",
+      "removeAllDownloads": "Yọ gbogbo ohun tí a gbà sílẹ̀ kúrò",
+      "removeAllTheQuranContent": "Yọ gbogbo àkóónú Al-Qur'an tí o gbà sílẹ̀ fún lílò láìsí íńtánẹ́ẹ̀tì kúrò.",
+      "storageBreakdown": "ÌPÍN IBI ÌPAMỌ́",
+      "success": "Àṣeyọrí",
+      "thisWillClearYourCache": "Èyí yóò pa ìpamọ́ ìgbà díẹ̀ rẹ́. A kò ní yọ àwọn ohun tí o gbà sílẹ̀ kúrò.",
+      "youCanFreeUpStorage": "O lè tú ààyè sílẹ̀ nípa pípa ìpamọ́ ìgbà díẹ̀ rẹ́. A kò ní yọ àwọn ohun tí o gbà sílẹ̀ kúrò."
+    },
+    "themePicker": {
+      "auto": "Aládàáṣiṣẹ́",
+      "dark": "Dúdú",
+      "light": "Ìmọ́lẹ̀"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Kò sí àkọsílẹ̀ ìyípadà"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Nípa {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Fi olùkà àyànfẹ́ kún un",
+      "uploadRecitation": "Rán kíkà sókè"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Ohùn àyíká",
+      "none": "Kò sí",
+      "volume": "Ìró ohùn"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "Fún àpẹẹrẹ, àwọn kíkà òwúrọ̀"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Yọ ohun tí a gbà sílẹ̀ kúrò"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Parí"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Fi kún àkójọpọ̀",
+      "addToQueue": "Fi kún ìlà ìṣeré",
+      "continuePlaying": "Tẹ̀ síwájú láti mu ṣiṣẹ́",
+      "goToReciter": "Lọ sí olùkà",
+      "removeFromRecents": "Yọ kúrò nínú àwọn àìpẹ́"
+    },
+    "mushafLayoutSheet": {
+      "back": "Padà"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Áyà ìparí",
+      "playbackSettings": "Ètò ìṣeré",
+      "selectRange": "Yan ààlà",
+      "startingVerse": "Áyà ìbẹ̀rẹ̀"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Ètò àtúnṣe",
+      "start": "Bẹ̀rẹ̀",
+      "verseRange": "Ààlà áyà"
+    },
+    "organizeRecitationSheet": {
+      "category": "Ẹ̀ka",
+      "customReciter": "Olùkà tirẹ",
+      "duA": "Du'á",
+      "eGMorningAdhkar": "Fún àpẹẹrẹ, adhkár òwúrọ̀",
+      "lecture": "Ìwàásù",
+      "moreOptions": "Àwọn àṣàyàn sí i",
+      "other": "Òmíràn",
+      "recording": "Gbígbasilẹ ohùn",
+      "rewayah": "Riwáyà",
+      "searchSurahs": "Wá àwọn súrà...",
+      "style": "Ọ̀nà",
+      "tafsir": "Tafsír",
+      "title": "Àkọlé",
+      "type": "Irú",
+      "verseRangeOptional": "Ààlà áyà (kì í ṣe dandan)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Ìyára ìṣeré"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "A ti gba gbogbo ohun inú àtòjọ ìṣeré yìí sílẹ̀ tẹ́lẹ̀.",
+      "anErrorOccurredWhileDownloading": "Àṣìṣe ṣẹlẹ̀ nígbà gbígbà àtòjọ ìṣeré sílẹ̀. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i.",
+      "deletePlaylist": "Pa àtòjọ ìṣeré rẹ́",
+      "downloadingPlaylist": "Ń gba àtòjọ ìṣeré sílẹ̀...",
+      "editPlaylist": "Ṣàtúnṣe àtòjọ ìṣeré",
+      "emptyPlaylist": "Àtòjọ ìṣeré tó ṣófo",
+      "thisPlaylistIsEmpty": "Àtòjọ ìṣeré yìí ṣófo."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Nípa riwáyà",
+      "availableRewayat": "Àwọn riwáyà tó wà"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Fífi súrà kún àtòjọ ìṣeré kùnà",
+      "failedToCreatePlaylist": "Ṣíṣẹ̀dá àtòjọ ìṣeré kùnà",
+      "noPlaylistsYetCreateYour": "Kò tíì sí àtòjọ ìṣeré. Ṣẹ̀dá ti àkọ́kọ́ rẹ lókè!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Béèrè ní gbogbo ìgbà",
+      "randomReciter": "Olùkà aláìlétò",
+      "selectReciter": "Yan olùkà"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "A kò rí áyà tó jọ áyà yìí.",
+      "similarWording": "Ọ̀rọ̀ tó jọra"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Aago oorun",
+      "turnOffTimer": "Pa aago"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Yọ kúrò nínú àtòjọ ìṣeré"
+    },
+    "verseActionsSheet": {
+      "addNote": "Fi àkọsílẹ̀ kún un",
+      "copy": "Dàkọ",
+      "repeat": "Tún ṣe",
+      "similarVerses": "Àwọn áyà tó jọra",
+      "tafseer": "Tafsír",
+      "theme": "Àwọ̀ ìrísí"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Àwọn àṣàyàn ìdàkọ",
+      "selectWhatToCopy": "Yan ohun tí o fẹ́ dàkọ"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Àwọ̀ ìfihàn pàtàkì"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Pín áyà"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "A rí i nínú áyà {{count}}",
+    "foundIn_other": "A rí i nínú áyà {{count}}"
+  },
+  "surahItem": {
+    "moreOptions": "Àwọn àṣàyàn sí i",
+    "opensMenuWithAdditionalActions": "Ó ṣí àtòjọ àwọn iṣẹ́ sí i fún súrà yìí",
+    "tapToPlaySurah": "Tẹ̀ láti mu súrà ṣiṣẹ́"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Ìdánimọ̀ àtòjọ ìṣeré kò tọ́",
+      "playlistNotFound": "A kò rí àtòjọ ìṣeré"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "A kò rí olùkà tó ní gbogbo súrà inú àtòjọ yìí. Jọ̀wọ́ gbìyànjú àtòjọ mìíràn.",
+      "failedToPlayPlaylistPlease": "Ṣíṣe àtòjọ ìṣeré kùnà. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i.",
+      "failedToPlayTrackPlease": "Ṣíṣe fáìlì ohùn yìí kùnà. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i.",
+      "failedToShufflePlaylistPlease": "Ṣíṣe àtòjọ ìṣeré ní àìlétò kùnà. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i.",
+      "noReciterAvailable": "Kò sí olùkà tó wà",
+      "noSurahsInThisPlaylist": "Kò sí súrà nínú àtòjọ ìṣeré yìí"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Àkọọ́lẹ̀",
+      "appData": "Ètò àti dátà",
+      "audioPlayback": "Ohùn àti ìṣeré",
+      "chooseYourPreferredReciter": "Yan olùkà tí o fẹ́",
+      "customizeQuranDisplayOptions": "Ṣètò àwọn àṣàyàn fífi Al-Qur'an hàn",
+      "customizeReciterSelection": "Ṣètò yíyan olùkà",
+      "featureRequests": "Ìbéèrè ẹ̀yà tuntun",
+      "feedback": "Èsì",
+      "helpSupport": "Ìrànlọ́wọ́ àti àtìlẹ́yìn",
+      "learnMoreAboutOurMission": "Kọ́ sí i nípa ète wa",
+      "manageQuranTranslationsAndCommentary": "Ṣàkóso àwọn ìtumọ̀ àti àlàyé Al-Qur'an",
+      "privacyPolicy": "Ìlànà àṣírí",
+      "quran": "Al-Qur'an",
+      "readOurTermsOfService": "Ka àwọn òfin iṣẹ́ wa",
+      "seeWhatSNewIn": "Wo ohun tuntun nínú ẹ̀yà yìí",
+      "shareYourExperienceWithOthers": "Pín ìrírí rẹ pẹ̀lú àwọn ẹlòmíràn",
+      "showTheFloatingDeveloperTools": "Fi bọ́tìnì irinṣẹ́ olùdá ètò tó léfòó hàn",
+      "suggestImprovementsAndNewFeatures": "Dábàá ìmúdára àti àwọn ẹ̀yà tuntun",
+      "termsOfService": "Àwọn òfin iṣẹ́",
+      "viewAndManageStorageUsage": "Wo kí o sì ṣàkóso lílo ibi ìpamọ́",
+      "viewOurPrivacyPolicy": "Wo ìlànà àṣírí wa",
+      "writeAReview": "Kọ àyẹ̀wò"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Fagilé",
+    "close": "Tì",
+    "collection": "Àkójọpọ̀",
+    "download": "Gbà sílẹ̀",
+    "downloads": "Àwọn ohun tí a gbà sílẹ̀",
+    "error": "Ohun kan kò lọ dáadáa",
+    "favorites": "Àwọn àyànfẹ́",
+    "home": "Ìbẹ̀rẹ̀",
+    "language": "Èdè",
+    "library": "Ilé ìkàwé",
+    "loading": "Ń gbé wọlé...",
+    "noResults": "A kò rí èsì",
+    "offline": "O kò sí lórí íńtánẹ́ẹ̀tì",
+    "pause": "Dá dúró díẹ̀",
+    "play": "Mu ṣiṣẹ́",
+    "retry": "Gbìyànjú lẹ́ẹ̀kan sí i",
+    "save": "Fipamọ́",
+    "search": "Wá",
+    "settings": "Ètò",
+    "surahs": "Àwọn súrà"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "YAN ÀKÓÓNÚ"
+    },
+    "highlightContent": {
+      "chooseColor": "YAN ÀWỌ̀"
+    },
+    "noteContent": {
+      "saveNote": "Fi àkọsílẹ̀ pamọ́"
+    },
+    "shareContent": {
+      "shareLink": "Pín ìjápọ̀"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "A kò rí áyà tó jọ áyà yìí.",
+      "sharedPhrases": "ÀWỌN GBÓLÓHÙN TÓ JỌRA",
+      "similarWording": "Ọ̀RỌ̀ TÓ JỌRA"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Kò sí tafsír tí a gbà sílẹ̀",
+      "tafseerNotAvailableForThis": "Kò sí tafsír fún áyà yìí",
+      "tapHereToDownloadA": "Tẹ̀ níbí láti gba tafsír sílẹ̀ kí o sì wo àlàyé."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Kò sí dátà àkòrí fún áyà yìí.",
+      "passage": "Abala"
+    },
+    "translationContent": {
+      "switch": "Yí padà",
+      "translationNotAvailable": "Kò sí ìtumọ̀"
+    }
+  },
+  "version": {
+    "label": "Ẹ̀yà {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Ohun tuntun nínú"
+  },
+  "wordDetail": {
+    "context": "Áyà {{surah}}:{{ayah}} · Ọ̀rọ̀ {{position}} nínú {{total}}"
+  }
+}
