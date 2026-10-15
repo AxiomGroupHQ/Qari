@@ -108,9 +108,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.bayaan.app'
+    namespace 'com.istima.app'
     defaultConfig {
-        applicationId 'com.bayaan.app'
+        applicationId 'com.istima.app'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 698
