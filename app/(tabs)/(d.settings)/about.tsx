@@ -1,3 +1,4 @@
+import {isArabicInterface} from '@/localization/arabicInterface';
 // @ai-generated
 import React, {useMemo} from 'react';
 import {View, Text, ScrollView} from 'react-native';
@@ -39,7 +40,7 @@ export default function AboutScreen() {
 
           <VersionDisplay style={styles.version} />
 
-          <Text style={styles.tagline}>Listen. Reflect. Remember Allah.</Text>
+          <Text style={styles.tagline}>{isArabicInterface() ? 'استمع. تدبّر. اذكر الله.' : 'Listen. Reflect. Remember Allah.'}</Text>
 
           <View style={styles.section}>
             <Text style={styles.contentHeading}>Alhamdulillah</Text>
@@ -52,7 +53,7 @@ export default function AboutScreen() {
           </View>
 
           <View style={styles.section}>
-            <Text style={styles.contentHeading}>Our Mission</Text>
+            <Text style={styles.contentHeading}>{isArabicInterface() ? 'رسالتنا' : 'Our Mission'}</Text>
             <Text style={styles.bodyText}>
               Quran • Bayan • Tafsir • Knowledge. Our aim is to make listening
               and reflection part of everyday life: at home, on the move, and
@@ -61,48 +62,48 @@ export default function AboutScreen() {
           </View>
 
           <View style={styles.section}>
-            <Text style={styles.sectionHeader}>FEATURES</Text>
+            <Text style={styles.sectionHeader}>{isArabicInterface() ? 'الميزات' : 'FEATURES'}</Text>
             <View style={styles.featureList}>
               <Feature
-                title="Offline Downloads"
-                description="Download surahs for offline listening anytime, anywhere without internet connection"
+                title={isArabicInterface() ? 'التنزيلات دون اتصال' : 'Offline Downloads'}
+                description={isArabicInterface() ? 'نزّل السور للاستماع إليها دون اتصال بالإنترنت في أي وقت ومكان' : 'Download surahs for offline listening anytime, anywhere without internet connection'}
                 styles={styles}
               />
               <Feature
-                title="Custom Playlists"
-                description="Create and manage your own personalized playlists of your favorite recitations"
+                title={isArabicInterface() ? 'قوائم تشغيل مخصصة' : 'Custom Playlists'}
+                description={isArabicInterface() ? 'أنشئ قوائم تشغيل لتلاواتك المفضلة وأدرها' : 'Create and manage your own personalized playlists of your favorite recitations'}
                 styles={styles}
               />
               <Feature
-                title="Browse by Juz"
-                description="Easily navigate through the Quran with Juz-based organization and grouping"
+                title={isArabicInterface() ? 'التصفح حسب الجزء' : 'Browse by Juz'}
+                description={isArabicInterface() ? 'تصفّح القرآن بسهولة من خلال تنظيمه حسب الأجزاء' : 'Easily navigate through the Quran with Juz-based organization and grouping'}
                 styles={styles}
               />
               <Feature
-                title="Advanced Audio Controls"
-                description="Precise playback control with continuous play and adjustable recitation speed"
+                title={isArabicInterface() ? 'عناصر تحكم صوتية متقدمة' : 'Advanced Audio Controls'}
+                description={isArabicInterface() ? 'تحكّم دقيق في التشغيل المتواصل وسرعة التلاوة' : 'Precise playback control with continuous play and adjustable recitation speed'}
                 styles={styles}
               />
               <Feature
-                title="High-Quality Audio"
-                description="Crystal clear recitations from the world's best Qaris with optimized streaming"
+                title={isArabicInterface() ? 'صوت عالي الجودة' : 'High-Quality Audio'}
+                description={isArabicInterface() ? 'تلاوات واضحة وعالية الجودة من قراء متميزين' : 'Crystal clear recitations from the world's best Qaris with optimized streaming'}
                 styles={styles}
               />
               <Feature
-                title="Curated Collections"
-                description="Thoughtfully organized surahs for different occasions and themes"
+                title={isArabicInterface() ? 'مجموعات مختارة' : 'Curated Collections'}
+                description={isArabicInterface() ? 'سور منظمة بعناية حسب المناسبات والموضوعات' : 'Thoughtfully organized surahs for different occasions and themes'}
                 styles={styles}
               />
               <Feature
-                title="Personalization"
-                description="Customize themes, accent colors, and audio settings to your liking"
+                title={isArabicInterface() ? 'التخصيص' : 'Personalization'}
+                description={isArabicInterface() ? 'خصّص المظهر والألوان وإعدادات الصوت كما تفضّل' : 'Customize themes, accent colors, and audio settings to your liking'}
                 styles={styles}
               />
             </View>
           </View>
 
           <View style={styles.section}>
-            <Text style={styles.contentHeading}>Read, Listen, and Reflect</Text>
+            <Text style={styles.contentHeading}>{isArabicInterface() ? 'اقرأ واستمع وتدبّر' : 'Read, Listen, and Reflect'}</Text>
             <Text style={styles.bodyText}>
               Read the Mushaf, explore translations and tafsir, save verses and
               notes, and return to daily adhkar. Choose your reciter, build
@@ -113,7 +114,7 @@ export default function AboutScreen() {
           </View>
 
           <View style={styles.section}>
-            <Text style={styles.contentHeading}>Our Commitment</Text>
+            <Text style={styles.contentHeading}>{isArabicInterface() ? 'التزامنا' : 'Our Commitment'}</Text>
             <Text style={styles.bodyText}>
               We care about the accuracy of sacred content, respectful design,
               and reliable access. We continue to improve ISTIMA with care for
