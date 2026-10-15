@@ -1,3 +1,7 @@
+// Side-effect import, kept first: Metro's inlineRequires would otherwise delay loading '@/i18n'
+// until initI18n() runs in an effect, after the first render already called useTranslation().
+// That left react-i18next without an instance and the web app blank.
+import '@/i18n';
 import React, {useEffect, useState, useRef, useCallback, useMemo} from 'react';
 import {Stack, useRouter} from 'expo-router';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
