@@ -34,6 +34,6 @@
       <string>com.apple.share-services</string>
     </dict>
     <key>AppGroupIdentifier</key>
-    <string>group.com.bayaan.app</string>
+    <string>group.com.istima.app</string>
   </dict>
 </plist>
