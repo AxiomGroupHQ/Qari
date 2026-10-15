@@ -254,6 +254,8 @@ const styles = StyleSheet.create({
     fontFamily: 'Manrope-SemiBold',
   },
   pagesContainer: {
+    // Horizontal paging needs a left-to-right scroll origin; under RTL it starts on the last slide.
+    direction: 'ltr',
     marginTop: moderateScale(24),
     minHeight: moderateScale(280),
     justifyContent: 'center',

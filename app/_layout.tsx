@@ -462,7 +462,7 @@ function RootLayout() {
   }
 
   return (
-    <ErrorBoundary key={i18nInstance.language}>
+    <ErrorBoundary>
       <PostHogProvider
         apiKey={
           process.env.EXPO_PUBLIC_POSTHOG_API_KEY || 'phc_disabled_placeholder'
@@ -480,7 +480,11 @@ function RootLayout() {
         <ThemeProvider value={navigationTheme}>
           <SafeAreaProvider>
             <ExpoAudioProvider>
+              {/* Keyed by language so screens using the plain t() re-render on a language change.
+                  The key sits below ExpoAudioProvider on purpose: remounting the provider
+                  destroys the audio player and playback hangs until a page refresh. */}
               <GestureHandlerRootView
+                key={i18nInstance.language}
                 style={{flex: 1, backgroundColor: theme.colors.background}}
                 // @ts-expect-error - RN supports this on iOS to override system theme for native UI (keyboard, menus, alerts)
                 overrideUserInterfaceStyle={isDarkMode ? 'dark' : 'light'}
