@@ -1,3 +1,4 @@
+import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useMemo, useEffect, useRef, useCallback} from 'react';
 import {
   View,
@@ -209,7 +210,7 @@ const RenderSectionItem = React.memo(
                 ? (item.reciter?.image_url ?? undefined)
                 : undefined
             }
-            reciterName={item.uploadArtist || 'My Recitations'}
+            reciterName={item.uploadArtist || (isArabicInterface() ? 'تلاواتي' : 'My Recitations')}
             surahName={item.uploadTitle || 'Upload'}
             trackId={`upload:${item.userRecitationId}`}
             reciterId={item.reciter?.id || '__uploads__'}
@@ -567,7 +568,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     'continue-listening':
       validRecentTracks.length > 0 ? (
         <Section
-          title="Continue Listening"
+          title=(isArabicInterface() ? 'متابعة الاستماع' : "Continue Listening")
           data={validRecentTracks}
           variant="recent"
           onReciterPress={onReciterPress}
@@ -579,7 +580,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     'new-to-quran':
       showNewToQuran && beginnerFriendlyReciters.length > 0 ? (
         <Section
-          title="New to Quran? Start Here"
+          title=(isArabicInterface() ? 'جديد على القرآن؟ ابدأ هنا' : "New to Quran? Start Here")
           data={beginnerFriendlyReciters}
           variant="default"
           onReciterPress={onReciterPress}
@@ -590,7 +591,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     favorites:
       favoriteRecitersSection.length > 0 ? (
         <Section
-          title="Your Favorites"
+          title=(isArabicInterface() ? 'مفضلاتك' : "Your Favorites")
           data={favoriteRecitersSection}
           variant="circular"
           onReciterPress={onReciterPress}
@@ -601,7 +602,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     featured:
       featuredReciters.length > 0 ? (
         <Section
-          title="Featured Reciters"
+          title=(isArabicInterface() ? 'قراء مميزون' : "Featured Reciters")
           data={featuredReciters}
           variant="default"
           onReciterPress={onReciterPress}
@@ -646,7 +647,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     'follow-along':
       followAlongReciters.length > 0 ? (
         <Section
-          title="Follow Along"
+          title=(isArabicInterface() ? 'تابع التلاوة' : "Follow Along")
           data={followAlongReciters}
           variant="default"
           onReciterPress={onReciterPress}
@@ -657,7 +658,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     playlists:
       playlists.length > 0 ? (
         <Section
-          title="Your Playlists"
+          title=(isArabicInterface() ? 'قوائم التشغيل الخاصة بك' : "Your Playlists")
           data={seededShuffle(playlists, sessionSeed + 8).slice(0, 10)}
           variant="playlist"
           onReciterPress={onReciterPress}
@@ -669,7 +670,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     exclusives:
       bayaanOriginalsReciters.length > 0 ? (
         <Section
-          title="Exclusives"
+          title=(isArabicInterface() ? 'حصريات' : "Exclusives")
           data={bayaanOriginalsReciters}
           variant="featured"
           onReciterPress={onReciterPress}
@@ -680,7 +681,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     tajweed:
       tajweedReciters.length > 0 ? (
         <Section
-          title="Best for Tajweed"
+          title=(isArabicInterface() ? 'الأفضل للتجويد' : "Best for Tajweed")
           data={tajweedReciters}
           variant="default"
           onReciterPress={onReciterPress}
@@ -691,7 +692,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     memorization:
       memorizationReciters.length > 0 ? (
         <Section
-          title="Best for Memorization"
+          title=(isArabicInterface() ? 'الأفضل للحفظ' : "Best for Memorization")
           data={memorizationReciters}
           variant="default"
           onReciterPress={onReciterPress}
@@ -702,7 +703,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     rewayat:
       rewayatTypes.length > 0 ? (
         <Section
-          title="Explore by Rewayah"
+          title=(isArabicInterface() ? 'استكشف حسب الرواية' : "Explore by Rewayah")
           data={rewayatTypes}
           variant="rewayat"
           onReciterPress={onReciterPress}
@@ -714,7 +715,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     collection:
       collectionReciters.length > 0 ? (
         <Section
-          title="From your Collection"
+          title=(isArabicInterface() ? 'من مجموعتك' : "From your Collection")
           data={collectionReciters}
           variant="default"
           onReciterPress={onReciterPress}
