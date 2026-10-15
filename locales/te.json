@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "ప్లేయర్‌ను ప్రారంభించడంలో లోపం: {{message}}",
+    "errorLoadingFonts": "ఫాంట్‌లను లోడ్ చేయడంలో లోపం"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA హోమ్"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "అన్నీ",
+      "clearAll": "అన్నీ క్లియర్ చేయి",
+      "hasPhoto": "ఫోటో ఉన్నవి"
+    },
+    "filterModal": {
+      "apply": "వర్తింపజేయి",
+      "filterReciters": "పఠనకర్తలను ఫిల్టర్ చేయి",
+      "recitationStyles": "పఠన శైలులు",
+      "reset": "రీసెట్ చేయి",
+      "rewayatTypes": "రివాయత్ రకాలు"
+    },
+    "recitersFound_one": "ప్రస్తుత ఫిల్టర్‌లతో {{count}} పఠనకర్త దొరికారు",
+    "recitersFound_other": "ప్రస్తుత ఫిల్టర్‌లతో {{count}} పఠనకర్తలు దొరికారు"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "ఇష్టమైన సూరాలు"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "వీటిని ఇక్కడ చూడటానికి వచనాలను బుక్‌మార్క్ చేయండి",
+      "bookmarks": "బుక్‌మార్క్‌లు",
+      "noBookmarksYet": "ఇంకా బుక్‌మార్క్‌లు లేవు",
+      "removeBookmark": "బుక్‌మార్క్‌ను తొలగించు"
+    },
+    "collectionSearchModal": {
+      "rewayat": "రివాయత్",
+      "searchPlaylistsRecitersSurahsRewayat": "ప్లేలిస్ట్‌లు, పఠనకర్తలు, సూరాలు, రివాయత్ కోసం వెతకండి...",
+      "searchPlaylistsRecitersSurahsRewayat2": "ప్లేలిస్ట్‌లు, పఠనకర్తలు, సూరాలు, రివాయత్, డౌన్‌లోడ్‌ల కోసం వెతకండి",
+      "searchYourCollection": "మీ సేకరణలో వెతకండి",
+      "searching": "వెతుకుతోంది...",
+      "tryDifferentKeywords": "వేరే కీవర్డ్‌లను ప్రయత్నించండి"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "వీటిని ఇక్కడ చూడటానికి సూరాలను డౌన్‌లోడ్ చేయండి",
+      "noDownloadsYet": "ఇంకా డౌన్‌లోడ్‌లు లేవు",
+      "playAll": "అన్నీ ప్లే చేయి"
+    },
+    "favoritereciters": {
+      "addReciters": "పఠనకర్తలను జోడించండి",
+      "addRecitersToSeeThem": "వీరిని ఇక్కడ చూడటానికి పఠనకర్తలను జోడించండి",
+      "noFavoriteRecitersYet": "ఇంకా ఇష్టమైన పఠనకర్తలు లేరు",
+      "removeFromFavorites": "ఇష్టమైనవాటి నుండి తొలగించు",
+      "searchFavoriteReciters": "ఇష్టమైన పఠనకర్తలను వెతకండి"
+    },
+    "index": {
+      "addToCollection": "సేకరణకు జోడించు",
+      "bookmarks": "బుక్‌మార్క్‌లు",
+      "createYourFirstPlaylist": "మీ మొదటి ప్లేలిస్ట్‌ను సృష్టించండి",
+      "downloads": "డౌన్‌లోడ్‌లు",
+      "items_one": "{{count}} అంశం",
+      "items_other": "{{count}} అంశాలు",
+      "loved": "ఇష్టమైనవి",
+      "noBookmarksYet": "ఇంకా బుక్‌మార్క్‌లు లేవు",
+      "noDownloadsYet": "ఇంకా డౌన్‌లోడ్‌లు లేవు",
+      "noFavoritesYet": "ఇంకా ఇష్టమైనవి లేవు",
+      "noLovedSurahsYet": "ఇంకా ఇష్టమైన సూరాలు లేవు",
+      "noNotesYet": "ఇంకా నోట్స్ లేవు",
+      "noUploadsYet": "ఇంకా అప్‌లోడ్‌లు లేవు",
+      "notes": "నోట్స్",
+      "playlists": "ప్లేలిస్ట్‌లు",
+      "reciters": "పఠనకర్తలు",
+      "uploads": "అప్‌లోడ్‌లు"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "ఇష్టమైన సూరాలన్నీ ఇప్పటికే డౌన్‌లోడ్ అయ్యాయి.",
+      "allLovedSurahsHaveBeen": "ఇష్టమైన సూరాలన్నీ డౌన్‌లోడ్ అయ్యాయి.",
+      "downloadError": "డౌన్‌లోడ్ లోపం",
+      "loveSurahsToSeeThem": "వీటిని ఇక్కడ చూడటానికి సూరాలను ఇష్టపడండి",
+      "noLovedSurahsYet": "ఇంకా ఇష్టమైన సూరాలు లేవు",
+      "someDownloadsMayHaveFailed": "కొన్ని డౌన్‌లోడ్‌లు విఫలమై ఉండవచ్చు.",
+      "unloveAllSurahs": "అన్ని సూరాల ఇష్టాన్ని తొలగించు"
+    },
+    "notes": {
+      "addNotesToVersesTo": "వీటిని ఇక్కడ చూడటానికి వచనాలకు నోట్స్ జోడించండి",
+      "editNote": "నోట్‌ను సవరించు",
+      "noNotesYet": "ఇంకా నోట్స్ లేవు",
+      "notes": "నోట్స్"
+    },
+    "playlistModal": {
+      "name": "పేరు"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "వీటిని ఇక్కడ చూడటానికి ప్లేలిస్ట్‌లను సృష్టించండి",
+      "noPlaylistsYet": "ఇంకా ప్లేలిస్ట్‌లు లేవు",
+      "playlists": "ప్లేలిస్ట్‌లు"
+    },
+    "uploads": {
+      "removeAllUploads": "అన్ని అప్‌లోడ్‌లను తొలగించు",
+      "uploadRecitationsToSeeThem": "వీటిని ఇక్కడ చూడటానికి పఠనాలను అప్‌లోడ్ చేయండి"
+    }
+  },
+  "common": {
+    "1Time": "1 సారి",
+    "2Times": "2 సార్లు",
+    "3Times": "3 సార్లు",
+    "addToCollection": "సేకరణకు జోడించు",
+    "addToQueue": "క్యూకి జోడించు",
+    "allSurahs": "అన్ని సూరాలు",
+    "alreadyDownloaded": "ఇప్పటికే డౌన్‌లోడ్ అయింది",
+    "arabic": "అరబిక్",
+    "asc": "ఆరోహణ",
+    "browseAll": "అన్నీ బ్రౌజ్ చేయి",
+    "browseAllReciters": "అన్ని పఠనకర్తలను బ్రౌజ్ చేయి",
+    "cancel": "రద్దు చేయి",
+    "clear": "క్లియర్ చేయి",
+    "copyToClipboard": "క్లిప్‌బోర్డ్‌కు కాపీ చేయి",
+    "createNewPlaylist": "కొత్త ప్లేలిస్ట్‌ను సృష్టించు",
+    "defaultReciter": "డిఫాల్ట్ పఠనకర్త",
+    "delete": "తొలగించు",
+    "deleteNote": "నోట్‌ను తొలగించు",
+    "deleteRecitation": "పఠనాన్ని తొలగించు",
+    "desc": "అవరోహణ",
+    "downloadComplete": "డౌన్‌లోడ్ పూర్తయింది",
+    "downloadFailed": "డౌన్‌లోడ్ విఫలమైంది",
+    "downloads": "డౌన్‌లోడ్‌లు",
+    "editDetails": "వివరాలను సవరించు",
+    "error": "లోపం",
+    "favoriteReciters": "ఇష్టమైన పఠనకర్తలు",
+    "followAlong": "అనుసరించు",
+    "from": "నుండి",
+    "goToReciter": "పఠనకర్త వద్దకు వెళ్లు",
+    "goToVerse": "వచనానికి వెళ్లు",
+    "learnAboutSurah": "సూరా గురించి తెలుసుకోండి",
+    "loading": "లోడ్ అవుతోంది...",
+    "loop": "లూప్",
+    "loved": "ఇష్టమైనది",
+    "mushafSettings": "ముస్హఫ్ సెట్టింగ్‌లు",
+    "next": "తర్వాత",
+    "noRecitersFound": "పఠనకర్తలు ఎవరూ దొరకలేదు",
+    "noResultsFound": "ఫలితాలు ఏవీ దొరకలేదు",
+    "noUploadsYet": "ఇంకా అప్‌లోడ్‌లు లేవు",
+    "play": "ప్లే చేయి",
+    "playEachVerse": "ప్రతి వచనాన్ని ప్లే చేయి",
+    "playNow": "ఇప్పుడే ప్లే చేయి",
+    "playSpeed": "ప్లే వేగం",
+    "playTheRange": "పరిధిని ప్లే చేయి",
+    "playlistName": "ప్లేలిస్ట్ పేరు",
+    "prev": "మునుపటిది",
+    "readingTheme": "పఠన థీమ్",
+    "recentSearches": "ఇటీవలి శోధనలు",
+    "reciter": "పఠనకర్త",
+    "reciterChoice": "పఠనకర్త ఎంపిక",
+    "reciters": "పఠనకర్తలు",
+    "remove": "తొలగించు",
+    "removeAllDownloads": "అన్ని డౌన్‌లోడ్‌లను తొలగించు",
+    "removeHighlight": "హైలైట్‌ను తొలగించు",
+    "rev": "వెనుకకు",
+    "save": "సేవ్ చేయి",
+    "search": "వెతుకు",
+    "searchReciters": "పఠనకర్తలను వెతకండి...",
+    "searchSurahs": "సూరాలను వెతకండి",
+    "share": "షేర్ చేయి",
+    "shareAsImage": "చిత్రంగా షేర్ చేయి",
+    "shareAsText": "టెక్స్ట్‌గా షేర్ చేయి",
+    "sharedPhrases": "షేర్ చేసిన పదబంధాలు",
+    "showBasmallah": "బిస్మిల్లాహ్ చూపించు",
+    "stop": "ఆపు",
+    "storage": "నిల్వ",
+    "surah": "సూరా",
+    "surahs": "సూరాలు",
+    "to": "వరకు",
+    "translation": "అనువాదం",
+    "translationsTafaseer": "అనువాదాలు & తఫ్సీర్‌లు",
+    "transliteration": "లిప్యంతరీకరణ",
+    "uploads": "అప్‌లోడ్‌లు",
+    "useDefaultReciter": "డిఫాల్ట్ పఠనకర్తను ఉపయోగించు",
+    "verseReference": "వచన సూచిక",
+    "verses": "వచనాలు",
+    "whatSNew": "కొత్తగా ఏముంది",
+    "wordByWord": "పదం వారీగా",
+    "writeYourNoteHere": "మీ నోట్‌ను ఇక్కడ రాయండి...",
+    "yourPlaylists": "మీ ప్లేలిస్ట్‌లు"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "అన్ని సూరాలను ప్లే చేయి"
+    },
+    "searchHeader": {
+      "searchSurahs": "సూరాలను వెతకండి"
+    },
+    "searchView": {
+      "noSurahsFound": "సూరాలు ఏవీ దొరకలేదు"
+    },
+    "surahList": {
+      "noSurahsAvailable": "సూరాలు ఏవీ అందుబాటులో లేవు"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "వీటిని ఇక్కడ చూడటానికి పఠనాలను అప్‌లోడ్ చేయండి",
+      "uploadRecitationsToSeeThem": "పఠనాన్ని జోడించు"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "డౌన్‌లోడ్ అయినవి • {{count}} సూరా",
+    "subtitle_other": "డౌన్‌లోడ్ అయినవి • {{count}} సూరాలు"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "క్షమించండి.. లోపం జరిగింది"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "మొత్తం 114 సూరాలను బ్రౌజ్ చేయండి"
+    },
+    "savedAdhkarHero": {
+      "saved": "సేవ్ చేసినవి",
+      "yourCollection": "మీ సేకరణ"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "ఈ రోజు సూరా"
+    },
+    "surahsHero": {
+      "number": "సంఖ్య"
+    }
+  },
+  "language": {
+    "later": "తర్వాత",
+    "restartMessage": "కొత్త లేఅవుట్ దిశను వర్తింపజేయడానికి యాప్‌ను రీస్టార్ట్ చేయండి.",
+    "restartNow": "ఇప్పుడే రీస్టార్ట్ చేయి",
+    "restartTitle": "రీస్టార్ట్ అవసరం",
+    "search": "భాషలను వెతకండి",
+    "system": "పరికర భాష"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "కొనసాగించు"
+    },
+    "whatsNewOnboarding": {
+      "skip": "దాటవేయి"
+    }
+  },
+  "mushaf": {
+    "juz": "జుజ్ {{juz}}",
+    "loadingMushaf": "ముస్హఫ్ లోడ్ అవుతోంది…",
+    "main": {
+      "mushafSettings": "ముస్హఫ్ సెట్టింగ్‌లు"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "పఠనకర్తను మార్చు",
+      "changeReciter2": "పఠనకర్తను మార్చు",
+      "nextAyah": "తర్వాతి ఆయత్",
+      "playbackOptions": "ప్లేబ్యాక్ ఎంపికలు",
+      "previousAyah": "మునుపటి ఆయత్"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "సూరాలు, వచనాలు, పేజీలు లేదా జుజ్‌ను కనుగొనండి",
+      "recentReads": "ఇటీవలి పఠనాలు",
+      "searchSurahsPagesOrJuz": "సూరాలు, పేజీలు లేదా జుజ్ కోసం వెతకండి...",
+      "searchTheMushaf": "ముస్హఫ్‌లో వెతకండి"
+    },
+    "options": "ఎంపికలు",
+    "page": "పేజీ {{page}}",
+    "pageAndSurah": "పేజీ {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "ముస్హఫ్ లోడ్ కాలేదు.",
+    "tryAgain": "మళ్లీ ప్రయత్నించండి"
+  },
+  "mushafSettings": {
+    "rabbHelper": "ముస్హఫ్‌లో అల్లాహ్ పేరును, రబ్బ్ వంటి దైవిక బిరుదు రూపాలను హైలైట్ చేస్తుంది."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "ఇతివృత్త భాగాల ప్రకారం మార్చి మార్చి హైలైట్",
+    "arabicFontSize": "అరబిక్ ఫాంట్ పరిమాణం",
+    "bold": "బోల్డ్",
+    "book": "పుస్తకం",
+    "colorLegend": "రంగుల వివరణ",
+    "currentlyReading": "ప్రస్తుతం చదువుతున్నది",
+    "divineNames": "దైవ నామాలు",
+    "fontSize": "ఫాంట్ పరిమాణం",
+    "fullscreen": "పూర్తి స్క్రీన్",
+    "hamzaReplacedByLongVowel": "హమ్జా దీర్ఘ అచ్చుతో భర్తీ అవుతుంది",
+    "heavyLamInAllahAfter": "నొక్కి పలికే అక్షరాల తర్వాత అల్లాహ్‌లో బరువైన లామ్",
+    "highlightAllahRabb": "అల్లాహ్ / రబ్బ్‌ను హైలైట్ చేయి",
+    "horizontal": "అడ్డంగా",
+    "ibdal": "ఇబ్దాల్",
+    "list": "జాబితా",
+    "loadingSample": "నమూనా లోడ్ అవుతోంది...",
+    "maddAlBadal": "మద్ అల్-బదల్",
+    "maximumProminence": "గరిష్ట ప్రాధాన్యం",
+    "medium": "మధ్యస్థం",
+    "modernMadinahPrintedPipeline": "ఆధునిక మదీనా ముద్రణా పద్ధతి",
+    "mushaf": "ముస్హఫ్",
+    "normal": "సాధారణం",
+    "originalMushafWeight": "అసలు ముస్హఫ్ మందం",
+    "pageDesign": "పేజీ డిజైన్",
+    "prolongedVowelAfterHamza": "హమ్జా తర్వాత పొడిగించిన అచ్చు",
+    "readingTheme": "పఠన థీమ్",
+    "scrollDirection": "స్క్రోల్ దిశ",
+    "showDifferences": "తేడాలను చూపించు",
+    "silah": "సిలా",
+    "slightlyMoreProminent": "కొంచెం ఎక్కువ ప్రాధాన్యం",
+    "softenedHamzaPronunciation": "మృదువుగా చేసిన హమ్జా ఉచ్చారణ",
+    "subcontinentNastaliqStyle": "ఉపఖండ నస్తాలీఖ్ శైలి",
+    "taghlizAlLam": "తగ్లీజ్ అల్-లామ్",
+    "tajweedColoring": "తజ్వీద్ రంగులు",
+    "tashilMusahhala": "తస్హీల్ / ముసహ్హలా",
+    "textPreviewNotYetAvailable": "టెక్స్ట్ ప్రివ్యూ ఇంకా అందుబాటులో లేదు",
+    "textThickness": "టెక్స్ట్ మందం",
+    "thematicHighlighting": "ఇతివృత్త హైలైటింగ్",
+    "trailingVowelOrMoodChange": "చివరి అచ్చు లేదా వ్యాకరణ స్థితి మార్పు మాత్రమే",
+    "usingSaheehInternationalTranslationWith": "వాడుతున్నది: ఫుట్‌నోట్‌లతో సహీహ్ ఇంటర్నేషనల్ అనువాదం",
+    "vertical": "నిలువుగా",
+    "viewType": "వీక్షణ రకం",
+    "vowelMoodShift": "అచ్చు / వ్యాకరణ స్థితి మార్పు",
+    "wordByWord": "పదం వారీగా",
+    "wordVariant": "పద రూపాంతరం"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "బ్యాకెండ్ చేరుకోలేకపోతోంది",
+    "connectionRestored": "కనెక్షన్ తిరిగి వచ్చింది",
+    "noInternetConnection": "ఇంటర్నెట్ కనెక్షన్ లేదు",
+    "showingCachedData": "కాష్ చేసిన డేటా చూపిస్తోంది"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\"ను సృష్టించు"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "క్యూ",
+      "queueIsEmpty": "క్యూ ఖాళీగా ఉంది"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "సూరా వచనం, వివరాలు చూడటానికి ఈ పఠనానికి ట్యాగ్ చేయండి"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "ప్లేలిస్ట్ • {{count}} సూరా",
+    "subtitle_other": "ప్లేలిస్ట్ • {{count}} సూరాలు"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "ఈ ప్లేలిస్ట్‌లో సూరాలు లేవు"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "ఫుట్‌నోట్"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "ఈ క్షణం కోసమే ఎంచుకున్న పఠనం",
+      "discover": "కనుగొనండి",
+      "discoverANewVoice": "కొత్త స్వరాన్ని కనుగొనండి",
+      "explore": "అన్వేషించండి",
+      "exploreTheUnexpected": "ఊహించనిదాన్ని అన్వేషించండి",
+      "hearSomethingNew": "కొత్తది వినండి",
+      "letTheQuranSurpriseYou": "ఖురాన్ మిమ్మల్ని ఆశ్చర్యపరచనివ్వండి",
+      "randomMix": "యాదృచ్ఛిక మిశ్రమం",
+      "randomRecitation": "యాదృచ్ఛిక పఠనం",
+      "shuffleListen": "షఫుల్ చేసి వినండి",
+      "surpriseMe": "నన్ను ఆశ్చర్యపరచు"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "స్వరూప మోడ్‌ను మార్చడం మొత్తం యాప్‌కు వర్తిస్తుంది"
+  },
+  "reciterBrowse": {
+    "allReciters": "అన్ని పఠనకర్తలు",
+    "browseReciters": "పఠనకర్తలను బ్రౌజ్ చేయి",
+    "favorites": "ఇష్టమైనవి"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "ఈ పఠనకర్తకు డౌన్‌లోడ్‌లు లేవు"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "నా అప్‌లోడ్‌లు"
+    }
+  },
+  "recitersView": {
+    "adhkar": "అద్కార్",
+    "bestForMemorization": "కంఠస్థానికి ఉత్తమమైనవి",
+    "bestForTajweed": "తజ్వీద్‌కు ఉత్తమమైనవి",
+    "continueListening": "వినడం కొనసాగించండి",
+    "exclusives": "ప్రత్యేకమైనవి",
+    "exploreByRewayah": "రివాయా వారీగా అన్వేషించండి",
+    "featuredReciters": "ప్రత్యేక పఠనకర్తలు",
+    "fromYourCollection": "మీ సేకరణ నుండి",
+    "myRecitations": "నా పఠనాలు",
+    "newToQuranStartHere": "ఖురాన్‌కు కొత్తవారా? ఇక్కడ ప్రారంభించండి",
+    "seeMore": "మరిన్ని చూడండి",
+    "yourFavorites": "మీ ఇష్టమైనవి"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "సక్రియం",
+      "activeTafseer": "సక్రియ తఫ్సీర్",
+      "activeTranslation": "సక్రియ అనువాదం",
+      "deleteTafseer": "తఫ్సీర్‌ను తొలగించు",
+      "deleteTranslation": "అనువాదాన్ని తొలగించు",
+      "noTafaseerFound": "తఫ్సీర్‌లు ఏవీ దొరకలేదు",
+      "noTranslationsFound": "అనువాదాలు ఏవీ దొరకలేదు",
+      "unableToDownloadThisTafseer": "ఈ తఫ్సీర్‌ను డౌన్‌లోడ్ చేయలేకపోయాం. దయచేసి మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.",
+      "unableToDownloadThisTranslation": "ఈ అనువాదాన్ని డౌన్‌లోడ్ చేయలేకపోయాం. దయచేసి మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "ఇటీవలి శోధనలు లేవు",
+      "tryDifferentKeywordsOrCheck": "వేరే కీవర్డ్‌లను ప్రయత్నించండి లేదా స్పెల్లింగ్ చూడండి",
+      "yourSearchHistoryWillAppear": "మీ శోధన చరిత్ర ఇక్కడ కనిపిస్తుంది"
+    },
+    "surahsOrReciters": "సూరాలు లేదా పఠనకర్తల కోసం వెతకండి"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "అధునాతన ఆడియో నియంత్రణలు",
+      "browseByJuz": "జుజ్ వారీగా బ్రౌజ్ చేయండి",
+      "createAndManageYourOwn": "మీకు ఇష్టమైన పఠనాల వ్యక్తిగత ప్లేలిస్ట్‌లను సృష్టించి నిర్వహించండి",
+      "crystalClearRecitationsFromThe": "ఆప్టిమైజ్ చేసిన స్ట్రీమింగ్‌తో ప్రపంచంలోని ఉత్తమ ఖారీల స్పష్టమైన పఠనాలు",
+      "curatedCollections": "ఎంపిక చేసిన సేకరణలు",
+      "customPlaylists": "అనుకూల ప్లేలిస్ట్‌లు",
+      "customizeThemesAccentColorsAnd": "థీమ్‌లు, యాక్సెంట్ రంగులు, ఆడియో సెట్టింగ్‌లను మీ ఇష్టానికి మార్చుకోండి",
+      "downloadSurahsForOfflineListening": "ఇంటర్నెట్ కనెక్షన్ లేకుండా ఎప్పుడైనా, ఎక్కడైనా ఆఫ్‌లైన్‌లో వినడానికి సూరాలను డౌన్‌లోడ్ చేయండి",
+      "easilyNavigateThroughTheQuran": "జుజ్ ఆధారిత వర్గీకరణ, సమూహాలతో ఖురాన్‌లో సులభంగా నావిగేట్ చేయండి",
+      "features": "ఫీచర్లు",
+      "highQualityAudio": "అధిక నాణ్యత ఆడియో",
+      "listenReflectRememberAllah": "వినండి. ఆలోచించండి. అల్లాహ్‌ను స్మరించండి.",
+      "offlineDownloads": "ఆఫ్‌లైన్ డౌన్‌లోడ్‌లు",
+      "ourCommitment": "మా నిబద్ధత",
+      "ourMission": "మా లక్ష్యం",
+      "personalization": "వ్యక్తిగతీకరణ",
+      "precisePlaybackControlWithContinuous": "నిరంతర ప్లే, సర్దుబాటు చేయగల పఠన వేగంతో ఖచ్చితమైన ప్లేబ్యాక్ నియంత్రణ",
+      "quranBayanTafsirKnowledgeOur": "ఖురాన్ • బయాన్ • తఫ్సీర్ • జ్ఞానం. ఇంట్లో, ప్రయాణంలో, అల్లాహ్‌ను స్మరించుకోవడానికి మీకు ఒక క్షణం దొరికే ఎక్కడైనా వినడాన్ని, ఆలోచనను రోజువారీ జీవితంలో భాగం చేయడమే మా లక్ష్యం.",
+      "readListenAndReflect": "చదవండి, వినండి, ఆలోచించండి",
+      "readTheMushafExploreTranslations": "ముస్హఫ్ చదవండి, అనువాదాలు, తఫ్సీర్‌ను అన్వేషించండి, వచనాలు, నోట్స్ సేవ్ చేయండి, రోజువారీ అద్కార్‌కు తిరిగి రండి. మీ పఠనకర్తను ఎంచుకోండి, ప్లేలిస్ట్‌లు రూపొందించండి, మీ రోజుకు సరిపోయే వినే అనుభవాన్ని తీర్చిదిద్దుకోండి. అందుబాటులో ఉన్న ఫీచర్లు పరికరాన్ని బట్టి మారతాయి; నేటివ్ యాప్‌లలో ఆఫ్‌లైన్ వినడానికి డౌన్‌లోడ్‌లు కూడా ఉంటాయి.",
+      "thoughtfullyOrganizedSurahsForDifferent": "వివిధ సందర్భాలకు, ఇతివృత్తాలకు తగినట్లు జాగ్రత్తగా వర్గీకరించిన సూరాలు",
+      "weCareAboutTheAccuracy": "పవిత్ర విషయాల ఖచ్చితత్వం, గౌరవప్రదమైన డిజైన్, నమ్మకమైన యాక్సెస్ పట్ల మేము శ్రద్ధ వహిస్తాము. ఉపయోగించే వారి పట్ల శ్రద్ధతో ISTIMAను మెరుగుపరుస్తూనే ఉంటాము. ఈ ప్రయత్నాన్ని అల్లాహ్ స్వీకరించి, వినే, చదివే, ఆలోచించే అందరికీ ప్రయోజనకరంగా చేయుగాక."
+    },
+    "aboutApp": "{{name}} గురించి",
+    "appearance": "స్వరూపం",
+    "defaultreciter": {
+      "changeDefaultReciter": "డిఫాల్ట్ పఠనకర్తను మార్చు"
+    },
+    "developer": "డెవలపర్",
+    "floatingDevMenu": "ఫ్లోటింగ్ డెవ్ మెనూ",
+    "language": "భాష",
+    "languageDescription": "యాప్ భాషను ఎంచుకోండి",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "ఎల్లప్పుడూ మీరు ఎంచుకున్న డిఫాల్ట్ పఠనకర్తను ఉపయోగించు",
+      "askEveryTime": "ప్రతిసారీ అడుగు",
+      "chooseAReciterEachTime": "మీరు ప్లే చేసిన ప్రతిసారీ పఠనకర్తను ఎంచుకోండి",
+      "chooseHowYouWantTo": "సూరాలు ప్లే చేసేటప్పుడు పఠనకర్తలను ఎలా ఎంచుకోవాలో ఎంచుకోండి",
+      "defaultSelectionMethod": "డిఫాల్ట్ ఎంపిక పద్ధతి",
+      "searchThroughOurCompleteCollection": "మా పూర్తి పఠనకర్తల సేకరణలో వెతకండి",
+      "selectionPreference": "ఎంపిక ప్రాధాన్యత"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "అన్ని డౌన్‌లోడ్‌లు తొలగించబడ్డాయి.",
+      "areYouSureYouWant": "డౌన్‌లోడ్ చేసిన కంటెంట్ మొత్తాన్ని తొలగించాలనుకుంటున్నారా? ఈ చర్యను రద్దు చేయలేరు.",
+      "cache": "కాష్",
+      "cacheHasBeenCleared": "కాష్ క్లియర్ చేయబడింది.",
+      "clearCache": "కాష్ క్లియర్ చేయి",
+      "failedToClearCache": "కాష్‌ను క్లియర్ చేయడం విఫలమైంది.",
+      "failedToRemoveDownloads": "డౌన్‌లోడ్‌లను తొలగించడం విఫలమైంది.",
+      "free": "ఖాళీ",
+      "loadingStorageInformation": "నిల్వ సమాచారం లోడ్ అవుతోంది...",
+      "manageStorage": "నిల్వను నిర్వహించండి",
+      "otherApps": "ఇతర యాప్‌లు",
+      "removeAllDownloads": "అన్ని డౌన్‌లోడ్‌లను తొలగించు",
+      "removeAllTheQuranContent": "ఆఫ్‌లైన్ వినియోగం కోసం మీరు డౌన్‌లోడ్ చేసిన ఖురాన్ కంటెంట్ మొత్తాన్ని తొలగించండి.",
+      "storageBreakdown": "నిల్వ వివరాలు",
+      "success": "విజయం",
+      "thisWillClearYourCache": "ఇది మీ కాష్‌ను క్లియర్ చేస్తుంది. మీ డౌన్‌లోడ్‌లు తొలగించబడవు.",
+      "youCanFreeUpStorage": "కాష్‌ను క్లియర్ చేసి మీరు నిల్వ స్థలాన్ని ఖాళీ చేయవచ్చు. మీ డౌన్‌లోడ్‌లు తొలగించబడవు."
+    },
+    "themePicker": {
+      "auto": "ఆటో",
+      "dark": "ముదురు",
+      "light": "లేత"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "మార్పుల లాగ్ అందుబాటులో లేదు"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "{{name}} గురించి",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "ఇష్టమైన పఠనకర్తను జోడించు",
+      "uploadRecitation": "పఠనాన్ని అప్‌లోడ్ చేయి"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "పరిసర శబ్దాలు",
+      "none": "ఏదీ లేదు",
+      "volume": "వాల్యూమ్"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "ఉదా., ఉదయం పఠనాలు"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "డౌన్‌లోడ్‌ను తొలగించు"
+    },
+    "favoriteRecitersSheet": {
+      "done": "పూర్తయింది"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "సేకరణకు జోడించు",
+      "addToQueue": "క్యూకి జోడించు",
+      "continuePlaying": "ప్లే చేయడం కొనసాగించు",
+      "goToReciter": "పఠనకర్త వద్దకు వెళ్లు",
+      "removeFromRecents": "ఇటీవలివాటి నుండి తొలగించు"
+    },
+    "mushafLayoutSheet": {
+      "back": "వెనుకకు"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "ముగింపు వచనం",
+      "playbackSettings": "ప్లేబ్యాక్ సెట్టింగ్‌లు",
+      "selectRange": "పరిధిని ఎంచుకోండి",
+      "startingVerse": "ప్రారంభ వచనం"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "పునరావృత సెట్టింగ్‌లు",
+      "start": "ప్రారంభించు",
+      "verseRange": "వచన పరిధి"
+    },
+    "organizeRecitationSheet": {
+      "category": "వర్గం",
+      "customReciter": "అనుకూల పఠనకర్త",
+      "duA": "దుఆ",
+      "eGMorningAdhkar": "ఉదా., ఉదయం అద్కార్",
+      "lecture": "ఉపన్యాసం",
+      "moreOptions": "మరిన్ని ఎంపికలు",
+      "other": "ఇతరం",
+      "recording": "రికార్డింగ్",
+      "rewayah": "రివాయా",
+      "searchSurahs": "సూరాలను వెతకండి...",
+      "style": "శైలి",
+      "tafsir": "తఫ్సీర్",
+      "title": "శీర్షిక",
+      "type": "రకం",
+      "verseRangeOptional": "వచన పరిధి (ఐచ్ఛికం)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "ప్లేబ్యాక్ వేగం"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "ఈ ప్లేలిస్ట్‌లోని అన్నీ ఇప్పటికే డౌన్‌లోడ్ అయ్యాయి.",
+      "anErrorOccurredWhileDownloading": "ప్లేలిస్ట్‌ను డౌన్‌లోడ్ చేస్తున్నప్పుడు లోపం జరిగింది. దయచేసి మళ్లీ ప్రయత్నించండి.",
+      "deletePlaylist": "ప్లేలిస్ట్‌ను తొలగించు",
+      "downloadingPlaylist": "ప్లేలిస్ట్‌ను డౌన్‌లోడ్ చేస్తోంది...",
+      "editPlaylist": "ప్లేలిస్ట్‌ను సవరించు",
+      "emptyPlaylist": "ఖాళీ ప్లేలిస్ట్",
+      "thisPlaylistIsEmpty": "ఈ ప్లేలిస్ట్ ఖాళీగా ఉంది."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "రివాయత్ గురించి",
+      "availableRewayat": "అందుబాటులో ఉన్న రివాయత్"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "ప్లేలిస్ట్‌కు సూరాను జోడించడం విఫలమైంది",
+      "failedToCreatePlaylist": "ప్లేలిస్ట్‌ను సృష్టించడం విఫలమైంది",
+      "noPlaylistsYetCreateYour": "ఇంకా ప్లేలిస్ట్‌లు లేవు. పైన మీ మొదటి ప్లేలిస్ట్‌ను సృష్టించండి!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "ప్రతిసారీ అడుగు",
+      "randomReciter": "యాదృచ్ఛిక పఠనకర్త",
+      "selectReciter": "పఠనకర్తను ఎంచుకోండి"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "ఈ ఆయత్‌కు సమానమైన వచనాలు ఏవీ దొరకలేదు.",
+      "similarWording": "సమాన పదజాలం"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "స్లీప్ టైమర్",
+      "turnOffTimer": "టైమర్‌ను ఆపివేయి"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "ప్లేలిస్ట్ నుండి తొలగించు"
+    },
+    "verseActionsSheet": {
+      "addNote": "నోట్ జోడించు",
+      "copy": "కాపీ చేయి",
+      "repeat": "పునరావృతం",
+      "similarVerses": "సమాన వచనాలు",
+      "tafseer": "తఫ్సీర్",
+      "theme": "థీమ్"
+    },
+    "verseCopySheet": {
+      "copyOptions": "కాపీ ఎంపికలు",
+      "selectWhatToCopy": "కాపీ చేయాల్సినదాన్ని ఎంచుకోండి"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "హైలైట్ రంగు"
+    },
+    "verseShareSheet": {
+      "shareVerse": "వచనాన్ని షేర్ చేయి"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "{{count}} వచనంలో కనిపించింది",
+    "foundIn_other": "{{count}} వచనాలలో కనిపించింది"
+  },
+  "surahItem": {
+    "moreOptions": "మరిన్ని ఎంపికలు",
+    "opensMenuWithAdditionalActions": "ఈ సూరాకు సంబంధించిన అదనపు చర్యలతో మెనూను తెరుస్తుంది",
+    "tapToPlaySurah": "సూరాను ప్లే చేయడానికి నొక్కండి"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "చెల్లని ప్లేలిస్ట్ ID",
+      "playlistNotFound": "ప్లేలిస్ట్ దొరకలేదు"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "ఈ ప్లేలిస్ట్‌లోని అన్ని సూరాలు ఉన్న పఠనకర్త దొరకలేదు. దయచేసి వేరే ప్లేలిస్ట్‌ను ప్రయత్నించండి.",
+      "failedToPlayPlaylistPlease": "ప్లేలిస్ట్‌ను ప్లే చేయడం విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.",
+      "failedToPlayTrackPlease": "ట్రాక్‌ను ప్లే చేయడం విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.",
+      "failedToShufflePlaylistPlease": "ప్లేలిస్ట్‌ను షఫుల్ చేయడం విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.",
+      "noReciterAvailable": "పఠనకర్త అందుబాటులో లేరు",
+      "noSurahsInThisPlaylist": "ఈ ప్లేలిస్ట్‌లో సూరాలు లేవు"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "ఖాతా",
+      "appData": "యాప్ & డేటా",
+      "audioPlayback": "ఆడియో & ప్లేబ్యాక్",
+      "chooseYourPreferredReciter": "మీకు నచ్చిన పఠనకర్తను ఎంచుకోండి",
+      "customizeQuranDisplayOptions": "ఖురాన్ ప్రదర్శన ఎంపికలను మార్చుకోండి",
+      "customizeReciterSelection": "పఠనకర్త ఎంపికను మార్చుకోండి",
+      "featureRequests": "ఫీచర్ అభ్యర్థనలు",
+      "feedback": "అభిప్రాయం",
+      "helpSupport": "సహాయం & మద్దతు",
+      "learnMoreAboutOurMission": "మా లక్ష్యం గురించి మరింత తెలుసుకోండి",
+      "manageQuranTranslationsAndCommentary": "ఖురాన్ అనువాదాలు, వ్యాఖ్యానాలను నిర్వహించండి",
+      "privacyPolicy": "గోప్యతా విధానం",
+      "quran": "ఖురాన్",
+      "readOurTermsOfService": "మా సేవా నిబంధనలను చదవండి",
+      "seeWhatSNewIn": "ఈ వెర్షన్‌లో కొత్తవి చూడండి",
+      "shareYourExperienceWithOthers": "మీ అనుభవాన్ని ఇతరులతో పంచుకోండి",
+      "showTheFloatingDeveloperTools": "ఫ్లోటింగ్ డెవలపర్ టూల్స్ బటన్‌ను చూపించు",
+      "suggestImprovementsAndNewFeatures": "మెరుగుదలలు, కొత్త ఫీచర్లను సూచించండి",
+      "termsOfService": "సేవా నిబంధనలు",
+      "viewAndManageStorageUsage": "నిల్వ వినియోగాన్ని చూడండి, నిర్వహించండి",
+      "viewOurPrivacyPolicy": "మా గోప్యతా విధానాన్ని చూడండి",
+      "writeAReview": "సమీక్ష రాయండి"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "రద్దు చేయి",
+    "close": "మూసివేయి",
+    "collection": "సేకరణ",
+    "download": "డౌన్‌లోడ్",
+    "downloads": "డౌన్‌లోడ్‌లు",
+    "error": "ఏదో తప్పు జరిగింది",
+    "favorites": "ఇష్టమైనవి",
+    "home": "హోమ్",
+    "language": "భాష",
+    "library": "లైబ్రరీ",
+    "loading": "లోడ్ అవుతోంది...",
+    "noResults": "ఫలితాలు ఏవీ దొరకలేదు",
+    "offline": "మీరు ఆఫ్‌లైన్‌లో ఉన్నారు",
+    "pause": "పాజ్ చేయి",
+    "play": "ప్లే చేయి",
+    "retry": "మళ్లీ ప్రయత్నించండి",
+    "save": "సేవ్ చేయి",
+    "search": "వెతుకు",
+    "settings": "సెట్టింగ్‌లు",
+    "surahs": "సూరాలు"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "కంటెంట్‌ను ఎంచుకోండి"
+    },
+    "highlightContent": {
+      "chooseColor": "రంగును ఎంచుకోండి"
+    },
+    "noteContent": {
+      "saveNote": "నోట్‌ను సేవ్ చేయి"
+    },
+    "shareContent": {
+      "shareLink": "లింక్‌ను షేర్ చేయి"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "ఈ ఆయత్‌కు సమానమైన వచనాలు ఏవీ దొరకలేదు.",
+      "sharedPhrases": "షేర్ చేసిన పదబంధాలు",
+      "similarWording": "సమాన పదజాలం"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "ఏ తఫ్సీర్ డౌన్‌లోడ్ కాలేదు",
+      "tafseerNotAvailableForThis": "ఈ వచనానికి తఫ్సీర్ అందుబాటులో లేదు",
+      "tapHereToDownloadA": "తఫ్సీర్‌ను డౌన్‌లోడ్ చేసి వ్యాఖ్యానం చూడటానికి ఇక్కడ నొక్కండి."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "ఈ వచనానికి ఇతివృత్త డేటా లేదు.",
+      "passage": "భాగం"
+    },
+    "translationContent": {
+      "switch": "మార్చు",
+      "translationNotAvailable": "అనువాదం అందుబాటులో లేదు"
+    }
+  },
+  "version": {
+    "label": "వెర్షన్ {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "కొత్తగా ఏముంది:"
+  },
+  "wordDetail": {
+    "context": "వచనం {{surah}}:{{ayah}} · పదం {{position}} / {{total}}"
+  }
+}
