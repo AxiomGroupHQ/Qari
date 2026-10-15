@@ -1,3 +1,4 @@
+import {isArabicInterface} from '@/localization/arabicInterface';
 import {useEffect, useRef} from 'react';
 import {useApiHealthStore} from '@/store/apiHealthStore';
 import {useNetworkStore} from '@/store/networkStore';
@@ -21,7 +22,7 @@ export function NetworkStatusMonitor(): null {
 
   // On cold start we announce the initial state ONLY if it's offline;
   // the user needs to know they're in a degraded experience. When the
-  // initial state is online we stay silent (no "Connection restored"
+  // initial state is online we stay silent (no (isArabicInterface() ? 'تم استعادة الاتصال' : "Connection restored")
   // toast on every launch). After that, every transition fires a toast.
   const prevOnlineRef = useRef<boolean | null>(null);
   useEffect(() => {
@@ -30,24 +31,24 @@ export function NetworkStatusMonitor(): null {
     prevOnlineRef.current = effectiveOnline;
     if (prev === null) {
       if (!effectiveOnline)
-        showToast('No internet connection', undefined, 'error');
+        showToast((isArabicInterface() ? 'لا يوجد اتصال بالإنترنت' : 'No internet connection'), undefined, 'error');
       return;
     }
     if (prev === effectiveOnline) return;
     if (effectiveOnline) {
-      showToast('Connection restored');
+      showToast((isArabicInterface() ? 'تم استعادة الاتصال' : 'Connection restored'));
     } else {
-      showToast('No internet connection', undefined, 'error');
+      showToast((isArabicInterface() ? 'لا يوجد اتصال بالإنترنت' : 'No internet connection'), undefined, 'error');
     }
   }, [isOnline, forceNetworkBanner]);
 
   // Fire once, at the false→true edge of `isDisrupted`, using whatever
   // cache state is current at that moment. `usingStaleCache` is
-  // intentionally NOT in the deps: we want a single "Showing cached data"
-  // / "Backend unreachable" toast per disruption, not a retoast every
+  // intentionally NOT in the deps: we want a single (isArabicInterface() ? 'عرض البيانات المحفوظة' : "Showing cached data")
+  // / (isArabicInterface() ? 'تعذر الاتصال بالخادم' : "Backend unreachable") toast per disruption, not a retoast every
   // time the cache flips while still disrupted. The recovery edge fires
-  // no toast; the "Connection restored" toast above covers that
-  // narrative, and a dedicated "Backend recovered" would double-fire.
+  // no toast; the (isArabicInterface() ? 'تم استعادة الاتصال' : "Connection restored") toast above covers that
+  // narrative, and a dedicated (isArabicInterface() ? 'تم استعادة الاتصال بالخادم' : "Backend recovered") would double-fire.
   const prevDisruptedRef = useRef<boolean | null>(null);
   useEffect(() => {
     const prev = prevDisruptedRef.current;
@@ -55,7 +56,7 @@ export function NetworkStatusMonitor(): null {
     if (prev === null) return;
     if (!isDisrupted || prev) return;
     showToast(
-      usingStaleCache ? 'Showing cached data' : 'Backend unreachable',
+      usingStaleCache ? (isArabicInterface() ? 'عرض البيانات المحفوظة' : 'Showing cached data') : (isArabicInterface() ? 'تعذر الاتصال بالخادم' : 'Backend unreachable'),
       undefined,
       'error',
     );
