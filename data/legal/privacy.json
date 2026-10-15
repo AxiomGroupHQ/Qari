@@ -3,7 +3,7 @@
   "blocks": [
     {
       "type": "heading",
-      "text": "ISTIMA Privacy Policy"
+      "text": "Istima Privacy Policy"
     },
     {
       "type": "paragraph",
@@ -11,7 +11,7 @@
     },
     {
       "type": "paragraph",
-      "text": "This Privacy Policy describes how ISTIMA ('we', 'us', or 'our') collects, uses, and handles your information when you use our Qur'an application and website (together, 'the App'). We are committed to protecting your privacy and have designed our App with minimal data collection to respect your privacy and align with Islamic ethical principles."
+      "text": "This Privacy Policy describes how Istima ('we', 'us', or 'our') collects, uses, and handles your information when you use our Qur'an application and website (together, 'the App'). We are committed to protecting your privacy and have designed our App with minimal data collection to respect your privacy and align with Islamic ethical principles."
     },
     {
       "type": "paragraph",
@@ -115,7 +115,7 @@
     },
     {
       "type": "paragraph",
-      "text": "You can use the App without an account. If you choose to, you can sign in with your Quran.com account, which is provided by Quran Foundation (quran.foundation). Sign-in takes place on Quran Foundation's own sign-in page, so ISTIMA never sees or stores your password."
+      "text": "You can use the App without an account. If you choose to, you can sign in with your Quran.com account, which is provided by Quran Foundation (quran.foundation). Sign-in takes place on Quran Foundation's own sign-in page, so Istima never sees or stores your password."
     },
     {
       "type": "paragraph",
@@ -135,7 +135,7 @@
     },
     {
       "type": "item",
-      "text": "A ISTIMA session token, which is stored in your device's secure storage (iOS Keychain or Android Keystore) and identifies your signed-in session to our servers"
+      "text": "An Istima session token, which is stored in your device's secure storage (iOS Keychain or Android Keystore) and identifies your signed-in session to our servers"
     },
     {
       "type": "paragraph",
@@ -159,7 +159,7 @@
     },
     {
       "type": "paragraph",
-      "text": "The synced data is stored in your Quran.com account by Quran Foundation and is subject to Quran Foundation's privacy policy as well as this one. ISTIMA does not keep its own copy of your bookmarks, notes, reading position or preferences on our servers."
+      "text": "The synced data is stored in your Quran.com account by Quran Foundation and is subject to Quran Foundation's privacy policy as well as this one. Istima does not keep its own copy of your bookmarks, notes, reading position or preferences on our servers."
     },
     {
       "type": "paragraph",
@@ -279,7 +279,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Railway • Hosting for ISTIMA's servers • If you sign in: hashed account identifier, name, email address, profile picture link, encrypted Quran Foundation tokens, session records • United States"
+      "text": "Railway • Hosting for Istima's servers • If you sign in: hashed account identifier, name, email address, profile picture link, encrypted Quran Foundation tokens, session records • United States"
     },
     {
       "type": "paragraph",
@@ -307,7 +307,7 @@
     },
     {
       "type": "item",
-      "text": "ISTIMA never handles your Quran.com password; sign-in happens on Quran Foundation's own page"
+      "text": "Istima never handles your Quran.com password; sign-in happens on Quran Foundation's own page"
     },
     {
       "type": "item",
@@ -315,7 +315,7 @@
     },
     {
       "type": "item",
-      "text": "Your device holds only a ISTIMA session token, kept in the operating system's secure storage"
+      "text": "Your device holds only an Istima session token, kept in the operating system's secure storage"
     },
     {
       "type": "item",
@@ -343,7 +343,7 @@
     },
     {
       "type": "item",
-      "text": "Sign out at any time in the App. Signing out ends your ISTIMA session and revokes the Quran Foundation tokens we hold for you"
+      "text": "Sign out at any time in the App. Signing out ends your Istima session and revokes the Quran Foundation tokens we hold for you"
     },
     {
       "type": "item",
@@ -375,7 +375,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Analytics and crash data is processed in the United States by PostHog and Sentry. If you sign in, account and session records are stored on ISTIMA's servers hosted by Railway in the United States, and your synced data is stored by Quran Foundation. By using the App, you consent to these transfers. These services maintain appropriate safeguards for international data transfers."
+      "text": "Analytics and crash data is processed in the United States by PostHog and Sentry. If you sign in, account and session records are stored on Istima's servers hosted by Railway in the United States, and your synced data is stored by Quran Foundation. By using the App, you consent to these transfers. These services maintain appropriate safeguards for international data transfers."
     },
     {
       "type": "heading",
