@@ -21,6 +21,7 @@ import {useAdhkarPlayAllStore} from '@/store/adhkarPlayAllStore';
 import {useBottomInset} from '@/hooks/useBottomInset';
 import {useHeaderHeight} from '@react-navigation/elements';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {t} from '@/i18n';
 
 const SavedAdhkarScreen: React.FC = () => {
   const router = useRouter();
@@ -113,7 +114,7 @@ const SavedAdhkarScreen: React.FC = () => {
               fontFamily: theme.fonts.semiBold,
               color: theme.colors.text,
             }}>
-            Saved
+            {t('hero.savedAdhkarHero.saved')}
           </Text>
           <Text
             style={{
@@ -122,7 +123,7 @@ const SavedAdhkarScreen: React.FC = () => {
               color: theme.colors.textSecondary,
               marginTop: moderateScale(2),
             }}>
-            {adhkarList.length} adhkar
+            {t('adhkarUi.count', {count: adhkarList.length})}
           </Text>
         </View>
       ),
@@ -191,9 +192,9 @@ const SavedAdhkarScreen: React.FC = () => {
             size={moderateScale(48)}
             color={theme.colors.textSecondary}
           />
-          <Text style={styles.emptyText}>No saved adhkar yet</Text>
+          <Text style={styles.emptyText}>{t('adhkarUi.noSaved')}</Text>
           <Text style={styles.emptySubtext}>
-            Tap the bookmark icon on any dhikr to save it here
+            {t('adhkarUi.tapBookmarkHint')}
           </Text>
         </View>
       </View>

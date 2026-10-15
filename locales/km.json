@@ -1,4 +1,33 @@
 {
+  "adhkarUi": {
+    "addBookmark": "បន្ថែមចំណាំ",
+    "complete": "បានបញ្ចប់",
+    "copyArabic": "ចម្លងអត្ថបទអារ៉ាប់",
+    "count_other": "ហ្ស៊ីគ្រ {{count}}",
+    "counterLabel": "ម៉ាស៊ីនរាប់តាស្ប៊ីហ៍ {{current}} នៃ {{target}}",
+    "disableRepeat": "បិទការធ្វើម្តងទៀត",
+    "enableRepeat": "បើកការធ្វើម្តងទៀត",
+    "hideInfo": "លាក់ព័ត៌មាន",
+    "hideInstruction": "លាក់ការណែនាំ",
+    "layoutSettings": "ការកំណត់ប្លង់",
+    "noSaved": "មិនទាន់មានហ្ស៊ីគ្រដែលបានរក្សាទុកនៅឡើយទេ",
+    "noSavedShort": "គ្មានហ្ស៊ីគ្រដែលបានរក្សាទុកទេ",
+    "noneFound": "រកមិនឃើញហ្ស៊ីគ្រទេ",
+    "pauseAll": "ផ្អាកទាំងអស់",
+    "pauseAudio": "ផ្អាកសំឡេង",
+    "playAllLabel": "ចាក់ទាំងអស់",
+    "playAudio": "ចាក់សំឡេង",
+    "position": "{{current}} នៃ {{total}}",
+    "removeBookmark": "លុបចំណាំ",
+    "resetCounter": "កំណត់ម៉ាស៊ីនរាប់ឡើងវិញ",
+    "resetHint": "កំណត់ចំនួនត្រឡប់ទៅសូន្យ",
+    "shareDhikr": "ចែករំលែកហ្ស៊ីគ្រ",
+    "showInfo": "បង្ហាញព័ត៌មាន",
+    "showInstruction": "បង្ហាញការណែនាំ",
+    "tapBookmarkHint": "ចុចរូបតំណាងចំណាំលើហ្ស៊ីគ្រណាមួយ ដើម្បីរក្សាទុកនៅទីនេះ",
+    "tapToCount": "ចុចដើម្បីរាប់",
+    "tapToIncrement": "ចុចដើម្បីបង្កើនចំនួន"
+  },
   "app": {
     "errorInitializingPlayer": "កំហុសពេលចាប់ផ្តើមកម្មវិធីចាក់សំឡេង៖ {{message}}",
     "errorLoadingFonts": "កំហុសពេលផ្ទុកពុម្ពអក្សរ"

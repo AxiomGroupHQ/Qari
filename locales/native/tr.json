@@ -1,0 +1,5 @@
+{
+  "NSMicrophoneUsageDescription": "Bu uygulama ses çalmak için mikrofonu kullanır.",
+  "NSAppleMusicUsageDescription": "Bu uygulama ses çalmak için Apple Music'i kullanır.",
+  "NSCameraUsageDescription": "Bu uygulama kamerayı kullanmaz."
+}

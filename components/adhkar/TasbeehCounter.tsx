@@ -8,6 +8,7 @@ import {useTheme} from '@/hooks/useTheme';
 import {useAdhkar} from '@/hooks/useAdhkar';
 import {Theme} from '@/utils/themeUtils';
 import {analyticsService} from '@/services/analytics/AnalyticsService';
+import {t} from '@/i18n';
 
 interface TasbeehCounterProps {
   dhikrId: string;
@@ -85,8 +86,11 @@ export const TasbeehCounter: React.FC<TasbeehCounterProps> = ({
           onPress={handleTap}
           style={styles.tapArea}
           accessibilityRole="button"
-          accessibilityLabel={`Tasbeeh counter, ${count} of ${targetCount}`}
-          accessibilityHint="Tap to increment count">
+          accessibilityLabel={t('adhkarUi.counterLabel', {
+            current: count,
+            target: targetCount,
+          })}
+          accessibilityHint={t('adhkarUi.tapToIncrement')}>
           {/* Circular progress background */}
           <View style={styles.progressCircle}>
             {/* Progress indicator - using a simple overlay technique */}
@@ -118,10 +122,14 @@ export const TasbeehCounter: React.FC<TasbeehCounterProps> = ({
                     size={moderateScale(20)}
                     color={SUCCESS_COLOR}
                   />
-                  <Text style={styles.successText}>Complete</Text>
+                  <Text style={styles.successText}>
+                    {t('adhkarUi.complete')}
+                  </Text>
                 </View>
               ) : (
-                <Text style={styles.instructionText}>Tap to count</Text>
+                <Text style={styles.instructionText}>
+                  {t('adhkarUi.tapToCount')}
+                </Text>
               )}
 
               {/* Progress text */}
@@ -139,14 +147,14 @@ export const TasbeehCounter: React.FC<TasbeehCounterProps> = ({
         onPress={handleReset}
         hitSlop={{top: 10, bottom: 10, left: 10, right: 10}}
         accessibilityRole="button"
-        accessibilityLabel="Reset counter"
-        accessibilityHint="Resets the count to zero">
+        accessibilityLabel={t('adhkarUi.resetCounter')}
+        accessibilityHint={t('adhkarUi.resetHint')}>
         <Feather
           name="refresh-cw"
           size={moderateScale(18)}
           color={theme.colors.textSecondary}
         />
-        <Text style={styles.resetText}>Reset</Text>
+        <Text style={styles.resetText}>{t('browse.filterModal.reset')}</Text>
       </TouchableOpacity>
     </View>
   );

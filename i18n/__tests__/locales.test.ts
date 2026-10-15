@@ -65,3 +65,37 @@ describe('locale files', () => {
     },
   );
 });
+
+describe('extras', () => {
+  const others = fs
+    .readdirSync(localesDir)
+    .filter(f => f.endsWith('.json') && f !== 'en.json');
+  it('common.rev means revelation order, not reverse', () => {
+    const en = JSON.parse(
+      fs.readFileSync(path.join(localesDir, 'en.json'), 'utf8'),
+    );
+    expect(en.common.rev).toBe('Revelation');
+    others.forEach(f => {
+      const j = JSON.parse(fs.readFileSync(path.join(localesDir, f), 'utf8'));
+      expect(j.common.rev).not.toBe('Rev');
+      expect(j.common.rev).not.toBe('Reverse');
+    });
+  });
+  it.each(others)('%s has the Adhkar UI strings', f => {
+    const j = JSON.parse(fs.readFileSync(path.join(localesDir, f), 'utf8'));
+    expect(j.adhkarUi.noneFound).toBeTruthy();
+    expect(j.adhkarUi.position).toContain('{{current}}');
+  });
+  it('every non-English locale has localized permission strings', () => {
+    others.forEach(f => {
+      const p = path.join(localesDir, 'native', f);
+      expect(fs.existsSync(p)).toBe(true);
+      const n = JSON.parse(fs.readFileSync(p, 'utf8'));
+      expect(Object.keys(n).sort()).toEqual([
+        'NSAppleMusicUsageDescription',
+        'NSCameraUsageDescription',
+        'NSMicrophoneUsageDescription',
+      ]);
+    });
+  });
+});

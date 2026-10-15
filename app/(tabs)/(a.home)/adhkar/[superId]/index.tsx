@@ -39,6 +39,7 @@ import {useHeaderHeight} from '@react-navigation/elements';
 import {adhkarShareUrl, shareUrl} from '@/utils/shareUtils';
 import {analyticsService} from '@/services/analytics/AnalyticsService';
 import branding from '@/config/branding';
+import {t} from '@/i18n';
 
 interface DhikrItem {
   dhikr: Dhikr;
@@ -118,7 +119,7 @@ const SuperCategoryListScreen: React.FC = () => {
   }, [superId, getSuperCategoryById]);
 
   const displayTitle =
-    superCategory?.title || storedSuperCategory?.title || 'Loading...';
+    superCategory?.title || storedSuperCategory?.title || t('common.loading');
 
   // Determine if this is a single-category super category
   const isSingleCategory = categoryGroups.length === 1;
@@ -368,7 +369,7 @@ const SuperCategoryListScreen: React.FC = () => {
   const ListEmptyComponent = useMemo(
     () => (
       <View style={styles.emptyContainer}>
-        <Text style={styles.emptyText}>No adhkar found</Text>
+        <Text style={styles.emptyText}>{t('adhkarUi.noneFound')}</Text>
       </View>
     ),
     [styles.emptyContainer, styles.emptyText],

@@ -31,6 +31,7 @@ import {useAdhkarPlayAllStore} from '@/store/adhkarPlayAllStore';
 import {useHeaderHeight} from '@react-navigation/elements';
 import {dhikrShareUrl, shareUrl} from '@/utils/shareUtils';
 import branding from '@/config/branding';
+import {t} from '@/i18n';
 
 const {width: SCREEN_WIDTH} = Dimensions.get('window');
 
@@ -213,7 +214,10 @@ const DhikrReaderScreen: React.FC = () => {
                 color: theme.colors.textSecondary,
                 marginTop: moderateScale(2),
               }}>
-              {currentIndex + 1} of {adhkarList.length}
+              {t('adhkarUi.position', {
+                current: currentIndex + 1,
+                total: adhkarList.length,
+              })}
             </Text>
           )}
         </View>
@@ -315,7 +319,7 @@ const DhikrReaderScreen: React.FC = () => {
     return (
       <View style={styles.container}>
         <View style={[styles.loadingContainer, {paddingTop: headerHeight}]}>
-          <Text style={styles.emptyText}>No adhkar found</Text>
+          <Text style={styles.emptyText}>{t('adhkarUi.noneFound')}</Text>
         </View>
       </View>
     );

@@ -1,0 +1,5 @@
+{
+  "NSMicrophoneUsageDescription": "Приложение использует микрофон для воспроизведения аудио.",
+  "NSAppleMusicUsageDescription": "Приложение использует Apple Music для воспроизведения аудио.",
+  "NSCameraUsageDescription": "Приложение не использует камеру."
+}

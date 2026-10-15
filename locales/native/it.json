@@ -1,0 +1,5 @@
+{
+  "NSMicrophoneUsageDescription": "Questa app usa il microfono per riprodurre l'audio.",
+  "NSAppleMusicUsageDescription": "Questa app usa Apple Music per riprodurre l'audio.",
+  "NSCameraUsageDescription": "Questa app non usa la fotocamera."
+}

@@ -11,6 +11,7 @@ import {ScaledSheet, moderateScale} from 'react-native-size-matters';
 import {useTheme} from '@/hooks/useTheme';
 import {Theme} from '@/utils/themeUtils';
 import {PlayIcon, PauseIcon} from '@/components/Icons';
+import {t} from '@/i18n';
 
 interface PlayAllButtonProps {
   onPress: () => void;
@@ -33,7 +34,9 @@ export const PlayAllButton: React.FC<PlayAllButtonProps> = React.memo(
         activeOpacity={1}
         hitSlop={{top: 10, bottom: 10, left: 10, right: 10}}
         accessibilityRole="button"
-        accessibilityLabel={isPlaying ? 'Pause all' : 'Play all'}>
+        accessibilityLabel={
+          isPlaying ? t('adhkarUi.pauseAll') : t('adhkarUi.playAllLabel')
+        }>
         <View style={styles.iconContainer}>
           {isPlaying ? (
             <PauseIcon size={moderateScale(16)} color={iconColor} />
@@ -42,7 +45,7 @@ export const PlayAllButton: React.FC<PlayAllButtonProps> = React.memo(
           )}
         </View>
         <Text style={[styles.text, disabled && styles.textDisabled]}>
-          {isPlaying ? 'Pause' : 'Play All'}
+          {isPlaying ? t('ui.pause') : t('collection.downloads.playAll')}
         </Text>
       </TouchableOpacity>
     );

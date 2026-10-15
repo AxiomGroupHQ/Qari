@@ -1,4 +1,33 @@
 {
+  "adhkarUi": {
+    "addBookmark": "Tinye akara",
+    "complete": "Emechaala",
+    "copyArabic": "Detuo ederede Arabik",
+    "count_other": "Adhkar {{count}}",
+    "counterLabel": "Ihe ọgụgụ tasbih, {{current}} n'ime {{target}}",
+    "disableRepeat": "Gbanyụọ ikwughachi",
+    "enableRepeat": "Gbanye ikwughachi",
+    "hideInfo": "Zoo ozi",
+    "hideInstruction": "Zoo ntụziaka",
+    "layoutSettings": "Ntọala nhazi",
+    "noSaved": "Enwebeghị adhkar echekwara",
+    "noSavedShort": "Enweghị adhkar echekwara",
+    "noneFound": "Achọtaghị adhkar",
+    "pauseAll": "Kwụsịtụ ha niile",
+    "pauseAudio": "Kwụsịtụ ụda",
+    "playAllLabel": "Kpọọ ha niile",
+    "playAudio": "Kpọọ ụda",
+    "position": "{{current}} n'ime {{total}}",
+    "removeBookmark": "Wepụ akara",
+    "resetCounter": "Tọgharịa ihe ọgụgụ",
+    "resetHint": "Na-eweghachi ọnụọgụ na efu",
+    "shareDhikr": "Kekọrịta dhikr",
+    "showInfo": "Gosi ozi",
+    "showInstruction": "Gosi ntụziaka",
+    "tapBookmarkHint": "Pịa akara akara ihe n'ime dhikr ọ bụla iji chekwaa ya ebe a",
+    "tapToCount": "Pịa iji gụọ",
+    "tapToIncrement": "Pịa iji tinye ọnụọgụ"
+  },
   "app": {
     "errorInitializingPlayer": "Njehie na ịmalite ihe ọkpụkpọ: {{message}}",
     "errorLoadingFonts": "Njehie na ibunye mkpụrụedemede"

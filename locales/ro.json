@@ -1,4 +1,35 @@
 {
+  "adhkarUi": {
+    "addBookmark": "Adaugă semn de carte",
+    "complete": "Finalizat",
+    "copyArabic": "Copiază textul arab",
+    "count_few": "{{count}} adhkar",
+    "count_one": "{{count}} adhkar",
+    "count_other": "{{count}} adhkar",
+    "counterLabel": "Contor tasbih, {{current}} din {{target}}",
+    "disableRepeat": "Dezactivează repetarea",
+    "enableRepeat": "Activează repetarea",
+    "hideInfo": "Ascunde informațiile",
+    "hideInstruction": "Ascunde instrucțiunile",
+    "layoutSettings": "Setări de aspect",
+    "noSaved": "Nu există încă adhkar salvate",
+    "noSavedShort": "Niciun adhkar salvat",
+    "noneFound": "Nu s-a găsit niciun adhkar",
+    "pauseAll": "Pune totul pe pauză",
+    "pauseAudio": "Pune audio pe pauză",
+    "playAllLabel": "Redă tot",
+    "playAudio": "Redă audio",
+    "position": "{{current}} din {{total}}",
+    "removeBookmark": "Elimină semnul de carte",
+    "resetCounter": "Resetează contorul",
+    "resetHint": "Readuce numărătoarea la zero",
+    "shareDhikr": "Distribuie dhikr",
+    "showInfo": "Arată informațiile",
+    "showInstruction": "Arată instrucțiunile",
+    "tapBookmarkHint": "Atinge pictograma de semn de carte la orice dhikr pentru a-l salva aici",
+    "tapToCount": "Atinge pentru a număra",
+    "tapToIncrement": "Atinge pentru a mări numărătoarea"
+  },
   "app": {
     "errorInitializingPlayer": "Eroare la inițializarea playerului: {{message}}",
     "errorLoadingFonts": "Eroare la încărcarea fonturilor"
@@ -23,9 +54,9 @@
       "reset": "Resetează",
       "rewayatTypes": "Tipuri de riwayat"
     },
+    "recitersFound_few": "{{count}} recitatori găsiți cu filtrele actuale",
     "recitersFound_one": "{{count}} recitator găsit cu filtrele actuale",
-    "recitersFound_other": "{{count}} de recitatori găsiți cu filtrele actuale",
-    "recitersFound_few": "{{count}} recitatori găsiți cu filtrele actuale"
+    "recitersFound_other": "{{count}} de recitatori găsiți cu filtrele actuale"
   },
   "cards": {
     "lovedCard": {
@@ -64,6 +95,7 @@
       "bookmarks": "Semne de carte",
       "createYourFirstPlaylist": "Creează prima ta listă de redare",
       "downloads": "Descărcări",
+      "items_few": "{{count}} elemente",
       "items_one": "{{count}} element",
       "items_other": "{{count}} de elemente",
       "loved": "Îndrăgite",
@@ -76,8 +108,7 @@
       "notes": "Note",
       "playlists": "Liste de redare",
       "reciters": "Recitatori",
-      "uploads": "Încărcări",
-      "items_few": "{{count}} elemente"
+      "uploads": "Încărcări"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Toate surele îndrăgite sunt deja descărcate.",
@@ -208,9 +239,9 @@
     }
   },
   "downloads": {
+    "subtitle_few": "Descărcate • {{count}} sure",
     "subtitle_one": "Descărcată • {{count}} sură",
-    "subtitle_other": "Descărcate • {{count}} de sure",
-    "subtitle_few": "Descărcate • {{count}} sure"
+    "subtitle_other": "Descărcate • {{count}} de sure"
   },
   "errorBoundary": {
     "sorryThereWasAnError": "Ne pare rău, a apărut o eroare"
@@ -340,9 +371,9 @@
     }
   },
   "playlist": {
+    "subtitle_few": "Listă de redare • {{count}} sure",
     "subtitle_one": "Listă de redare • {{count}} sură",
-    "subtitle_other": "Listă de redare • {{count}} de sure",
-    "subtitle_few": "Listă de redare • {{count}} sure"
+    "subtitle_other": "Listă de redare • {{count}} de sure"
   },
   "playlistdetail": {
     "playlistDetail": {
@@ -608,9 +639,9 @@
     }
   },
   "similarVerses": {
+    "foundIn_few": "Găsit în {{count}} versete",
     "foundIn_one": "Găsit în {{count}} verset",
-    "foundIn_other": "Găsit în {{count}} de versete",
-    "foundIn_few": "Găsit în {{count}} versete"
+    "foundIn_other": "Găsit în {{count}} de versete"
   },
   "surahItem": {
     "moreOptions": "Mai multe opțiuni",

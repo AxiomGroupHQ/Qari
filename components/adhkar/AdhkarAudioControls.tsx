@@ -23,6 +23,7 @@ import {useAdhkarPlayAllStore} from '@/store/adhkarPlayAllStore';
 import {Theme} from '@/utils/themeUtils';
 import {PlayIcon, PauseIcon, RepeatIcon} from '@/components/Icons';
 import Color from 'color';
+import {t} from '@/i18n';
 
 // Pre-compute scaled values outside component to avoid worklet issues
 const PROGRESS_BAR_HEIGHT = moderateScale(40);
@@ -152,7 +153,7 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
                   activeOpacity={0.7}
                   hitSlop={{top: 10, bottom: 10, left: 10, right: 10}}
                   accessibilityRole="button"
-                  accessibilityLabel="Copy Arabic text">
+                  accessibilityLabel={t('adhkarUi.copyArabic')}>
                   <Feather
                     name="copy"
                     size={moderateScale(18)}
@@ -166,7 +167,9 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
                   hitSlop={{top: 10, bottom: 10, left: 10, right: 10}}
                   accessibilityRole="button"
                   accessibilityLabel={
-                    isBookmarked ? 'Remove bookmark' : 'Add bookmark'
+                    isBookmarked
+                      ? t('adhkarUi.removeBookmark')
+                      : t('adhkarUi.addBookmark')
                   }
                   accessibilityState={{selected: isBookmarked}}>
                   <Ionicons
@@ -185,7 +188,7 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
                   activeOpacity={0.7}
                   hitSlop={{top: 10, bottom: 10, left: 10, right: 10}}
                   accessibilityRole="button"
-                  accessibilityLabel="Share dhikr">
+                  accessibilityLabel={t('adhkarUi.shareDhikr')}>
                   <Feather
                     name="share"
                     size={moderateScale(18)}
@@ -198,7 +201,7 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
                   activeOpacity={0.7}
                   hitSlop={{top: 10, bottom: 10, left: 10, right: 10}}
                   accessibilityRole="button"
-                  accessibilityLabel="Layout settings">
+                  accessibilityLabel={t('adhkarUi.layoutSettings')}>
                   <Feather
                     name="sliders"
                     size={moderateScale(18)}
@@ -237,7 +240,9 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
               onPress={handleToggle}
               activeOpacity={1}
               accessibilityRole="button"
-              accessibilityLabel={isPlaying ? 'Pause audio' : 'Play audio'}>
+              accessibilityLabel={
+                isPlaying ? t('adhkarUi.pauseAudio') : t('adhkarUi.playAudio')
+              }>
               {isPlaying ? (
                 <PauseIcon
                   size={moderateScale(14)}
@@ -261,7 +266,9 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
               activeOpacity={0.7}
               accessibilityRole="button"
               accessibilityLabel={
-                isLooping ? 'Disable repeat' : 'Enable repeat'
+                isLooping
+                  ? t('adhkarUi.disableRepeat')
+                  : t('adhkarUi.enableRepeat')
               }
               accessibilityState={{selected: isLooping}}>
               <RepeatIcon
@@ -280,7 +287,7 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
                 activeOpacity={0.7}
                 hitSlop={{top: 10, bottom: 10, left: 10, right: 10}}
                 accessibilityRole="button"
-                accessibilityLabel="Copy Arabic text">
+                accessibilityLabel={t('adhkarUi.copyArabic')}>
                 <Feather
                   name="copy"
                   size={moderateScale(18)}
@@ -295,7 +302,9 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
                 hitSlop={{top: 10, bottom: 10, left: 10, right: 10}}
                 accessibilityRole="button"
                 accessibilityLabel={
-                  isBookmarked ? 'Remove bookmark' : 'Add bookmark'
+                  isBookmarked
+                    ? t('adhkarUi.removeBookmark')
+                    : t('adhkarUi.addBookmark')
                 }
                 accessibilityState={{selected: isBookmarked}}>
                 <Ionicons
@@ -315,7 +324,7 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
                 activeOpacity={0.7}
                 hitSlop={{top: 10, bottom: 10, left: 10, right: 10}}
                 accessibilityRole="button"
-                accessibilityLabel="Share dhikr">
+                accessibilityLabel={t('adhkarUi.shareDhikr')}>
                 <Feather
                   name="share"
                   size={moderateScale(18)}
@@ -329,7 +338,7 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
                 activeOpacity={0.7}
                 hitSlop={{top: 10, bottom: 10, left: 10, right: 10}}
                 accessibilityRole="button"
-                accessibilityLabel="Layout settings">
+                accessibilityLabel={t('adhkarUi.layoutSettings')}>
                 <Feather
                   name="sliders"
                   size={moderateScale(18)}

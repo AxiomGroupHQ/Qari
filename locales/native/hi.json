@@ -1,0 +1,5 @@
+{
+  "NSMicrophoneUsageDescription": "यह ऐप ऑडियो चलाने के लिए माइक्रोफ़ोन का उपयोग करता है।",
+  "NSAppleMusicUsageDescription": "यह ऐप ऑडियो चलाने के लिए Apple Music का उपयोग करता है।",
+  "NSCameraUsageDescription": "यह ऐप कैमरे का उपयोग नहीं करता।"
+}

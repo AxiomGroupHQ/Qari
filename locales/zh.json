@@ -1,4 +1,33 @@
 {
+  "adhkarUi": {
+    "addBookmark": "添加书签",
+    "complete": "已完成",
+    "copyArabic": "复制阿拉伯语文本",
+    "count_other": "{{count}} 条齐克尔",
+    "counterLabel": "念珠计数器，{{current}} / {{target}}",
+    "disableRepeat": "关闭循环",
+    "enableRepeat": "开启循环",
+    "hideInfo": "隐藏信息",
+    "hideInstruction": "隐藏说明",
+    "layoutSettings": "布局设置",
+    "noSaved": "尚无已保存的齐克尔",
+    "noSavedShort": "没有已保存的齐克尔",
+    "noneFound": "未找到齐克尔",
+    "pauseAll": "全部暂停",
+    "pauseAudio": "暂停音频",
+    "playAllLabel": "全部播放",
+    "playAudio": "播放音频",
+    "position": "第 {{current}} 条，共 {{total}} 条",
+    "removeBookmark": "移除书签",
+    "resetCounter": "重置计数器",
+    "resetHint": "将计数重置为零",
+    "shareDhikr": "分享齐克尔",
+    "showInfo": "显示信息",
+    "showInstruction": "显示说明",
+    "tapBookmarkHint": "点按任意齐克尔上的书签图标即可保存到这里",
+    "tapToCount": "点按计数",
+    "tapToIncrement": "点按增加计数"
+  },
   "app": {
     "errorInitializingPlayer": "播放器初始化失败：{{message}}",
     "errorLoadingFonts": "字体加载失败"
