@@ -1,12 +1,12 @@
-# ISTIMA · استماع
+# **Istima** · استماع
 
-Quran • Bayan • Tafsir • Knowledge
+Quran • Recitations • Tafsir • Knowledge
 
 Listen. Reflect. Remember Allah.
 
 **Open-source Quran recitation app for iOS and Android**
 
-ISTIMA lets you listen to Quran recitations from 200+ reciters with background audio support, a full Uthmani Mushaf, Adhkar, offline downloads, playlists, and ambient sounds.
+Istima lets you listen to Quran recitations from 200+ reciters with background audio support, a full Uthmani Mushaf, Adhkar, offline downloads, playlists, and ambient sounds.
 
 [![React Native](https://img.shields.io/badge/React_Native-0.83-61DAFB?logo=react)](https://reactnative.dev)
 [![Expo](https://img.shields.io/badge/Expo_SDK-55-000020?logo=expo)](https://expo.dev)
@@ -50,7 +50,7 @@ ISTIMA lets you listen to Quran recitations from 200+ reciters with background a
 | Images                 | expo-image                                                |
 | Search                 | fuse.js (client-side fuzzy search)                        |
 | i18n                   | react-i18next with RTL support                            |
-| Backend (optional)     | ISTIMA REST API (Hono/Bun on Railway); Supabase is legacy |
+| Backend (optional)     | Istima REST API (Hono/Bun on Railway); Supabase is legacy |
 | Observability (opt-in) | Sentry + PostHog (both disabled when env keys absent)     |
 
 
