@@ -1,0 +1,749 @@
+{
+  "adhkarUi": {
+    "addBookmark": "Taamasyen fara a kan",
+    "complete": "A ka ban",
+    "copyArabic": "Arabukan sebe kopi",
+    "count_one": "Adhkar {{count}}",
+    "count_other": "Adhkar {{count}}",
+    "counterLabel": "Tasbeeh jatemine, {{current}} {{target}} la",
+    "disableRepeat": "Segin jo",
+    "enableRepeat": "Segin da",
+    "hideInfo": "Kunnafoni dogo",
+    "hideInstruction": "Cikan dogo",
+    "layoutSettings": "Cecogo sigicogo",
+    "noSaved": "Adhkar maarala si té yen folo",
+    "noSavedShort": "Adhkar maarala si té yen",
+    "noneFound": "Adhkar si ma soro",
+    "pauseAll": "Bee jo",
+    "pauseAudio": "Kan jo",
+    "playAllLabel": "Bee karaŋ",
+    "playAudio": "Kan karaŋ",
+    "position": "{{current}}, {{total}} la",
+    "removeBookmark": "Taamasyen bo",
+    "resetCounter": "Jate segin",
+    "resetHint": "A be jate segin zero la",
+    "shareDhikr": "Dhikr tila",
+    "showInfo": "Kunnafoni jira",
+    "showInstruction": "Cikan jira",
+    "tapBookmarkHint": "Dhikr o dhikr la taamasyen digi walasa k'a maara yan",
+    "tapToCount": "A digi ka jate",
+    "tapToIncrement": "A digi ka jate fara a kan"
+  },
+  "app": {
+    "errorInitializingPlayer": "Folifen be ka nyesin jo ka laminbaga damine la: {{message}}",
+    "errorLoadingFonts": "Folifen be ka nyesin sebe cogow ma"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA so"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Bee",
+      "clearAll": "Bee ka bo",
+      "hasPhoto": "Ja be yen"
+    },
+    "filterModal": {
+      "apply": "A laben",
+      "filterReciters": "Karandirilaa sugandi",
+      "recitationStyles": "Karaŋ cogo suguya",
+      "reset": "Ka segin",
+      "rewayatTypes": "Rewayat suguya"
+    },
+    "recitersFound_one": "Karandirilaa {{count}} sorola sugandili in na",
+    "recitersFound_other": "Karandirilaa {{count}} sorola sugandili in na"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Sura kanubagato"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Aya sebe alamaaraba la walasa i k'u ye yan",
+      "bookmarks": "Aya sebeñoluw",
+      "noBookmarksYet": "Aya sebeñolu si té yen folo",
+      "removeBookmark": "Aya sebeñolu bo yen"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Rewayat",
+      "searchPlaylistsRecitersSurahsRewayat": "Playlist, karandirilaa, sura, rewayat ɲini...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Playlist, karandirilaa, sura, rewayat ani jiŋ ɲini",
+      "searchYourCollection": "I ka sunduŋ ɲini",
+      "searching": "Ka ɲini be ka ke...",
+      "tryDifferentKeywords": "Danye werew laje"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Sura jiŋ walasa i k'u ye yan",
+      "noDownloadsYet": "Jiŋ si té yen folo",
+      "playAll": "Bee karaŋ"
+    },
+    "favoritereciters": {
+      "addReciters": "Karandirilaaw fara a kan",
+      "addRecitersToSeeThem": "Karandirilaaw fara a kan walasa i k'u ye yan",
+      "noFavoriteRecitersYet": "Karandirilaa kanubaga si té yen folo",
+      "removeFromFavorites": "A bo kanubagaw la",
+      "searchFavoriteReciters": "Karandirilaa kanubagaw ɲini"
+    },
+    "index": {
+      "addToCollection": "A fara sunduŋ kan",
+      "bookmarks": "Aya sebeñoluw",
+      "createYourFirstPlaylist": "I ka playlist folo dabo",
+      "downloads": "Jiŋw",
+      "items_one": "Fen {{count}}",
+      "items_other": "Fen {{count}}",
+      "loved": "Kanubagaw",
+      "noBookmarksYet": "Aya sebeñolu si té yen folo",
+      "noDownloadsYet": "Jiŋ si té yen folo",
+      "noFavoritesYet": "Kanubaga si té yen folo",
+      "noLovedSurahsYet": "Sura kanubagato si té yen folo",
+      "noNotesYet": "Note si té yen folo",
+      "noUploadsYet": "Karaŋ lakoroto si té yen folo",
+      "notes": "Notew",
+      "playlists": "Playlistw",
+      "reciters": "Karandirilaaw",
+      "uploads": "Karaŋ lakorotow"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Sura kanubagatow bee jiŋna kaban.",
+      "allLovedSurahsHaveBeen": "Sura kanubagatow bee jiŋna.",
+      "downloadError": "Jiŋ fili",
+      "loveSurahsToSeeThem": "Sura kanu walasa i k'u ye yan",
+      "noLovedSurahsYet": "Sura kanubagato si té yen folo",
+      "someDownloadsMayHaveFailed": "Jiŋ dow be se ka ban.",
+      "unloveAllSurahs": "Sura bee kanuya bo"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Note fara aya kan walasa i k'u ye yan",
+      "editNote": "Note yelema",
+      "noNotesYet": "Note si té yen folo",
+      "notes": "Notew"
+    },
+    "playlistModal": {
+      "name": "Togo"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Playlist dabo walasa i k'u ye yan",
+      "noPlaylistsYet": "Playlist si té yen folo",
+      "playlists": "Playlistw"
+    },
+    "uploads": {
+      "removeAllUploads": "Karaŋ lakorotow bee bo",
+      "uploadRecitationsToSeeThem": "Karaŋ lakoro walasa i k'u ye yan"
+    }
+  },
+  "common": {
+    "1Time": "Sinye 1",
+    "2Times": "Sinye 2",
+    "3Times": "Sinye 3",
+    "addToCollection": "A fara sunduŋ kan",
+    "addToQueue": "A fara lamintiŋo dugu kan",
+    "allSurahs": "Sura bee",
+    "alreadyDownloaded": "A jiŋna kaban",
+    "arabic": "Arabukan",
+    "asc": "A be yelen",
+    "browseAll": "Bee laje",
+    "browseAllReciters": "Karandirilaa bee laje",
+    "cancel": "A ban",
+    "clear": "A josi",
+    "copyToClipboard": "A kopi",
+    "createNewPlaylist": "Playlist kura dabo",
+    "defaultReciter": "Karandirilaa kuntilenna",
+    "delete": "A bo",
+    "deleteNote": "Note bo",
+    "deleteRecitation": "Karaŋ bo",
+    "desc": "A be jiŋ",
+    "downloadComplete": "Jiŋ ka ban",
+    "downloadFailed": "Jiŋ ma nye",
+    "downloads": "Jiŋw",
+    "editDetails": "Kuntilenna yelema",
+    "error": "Fili",
+    "favoriteReciters": "Karandirilaa kanubagaw",
+    "followAlong": "Ka bo a fe",
+    "from": "Ka bo",
+    "goToReciter": "Taa karandirilaa fe",
+    "goToVerse": "Taa aya la",
+    "learnAboutSurah": "Sura don",
+    "loading": "A be ka na...",
+    "loop": "Ka ke sinye caman",
+    "loved": "Kanubagaw",
+    "mushafSettings": "Mushaf sigicogo",
+    "next": "Nata",
+    "noRecitersFound": "Karandirilaa si ma soro",
+    "noResultsFound": "Foyi ma soro",
+    "noUploadsYet": "Karaŋ lakoroto si té yen folo",
+    "play": "A karaŋ",
+    "playEachVerse": "Aya kelen-kelen karaŋ",
+    "playNow": "Sisan karaŋ",
+    "playSpeed": "Karaŋ teliya",
+    "playTheRange": "Aya sanga karaŋ",
+    "playlistName": "Playlist togo",
+    "prev": "Kofe",
+    "readingTheme": "Karaŋ ja",
+    "recentSearches": "Ɲinini korow",
+    "reciter": "Karandirilaa",
+    "reciterChoice": "Karandirilaa sugandili",
+    "reciters": "Karandirilaaw",
+    "remove": "A bo",
+    "removeAllDownloads": "Jiŋ bee bo",
+    "removeHighlight": "Nyemogoya bo",
+    "rev": "Jiŋ",
+    "save": "A maara",
+    "search": "Ɲini",
+    "searchReciters": "Karandirilaa ɲini...",
+    "searchSurahs": "Sura ɲini",
+    "share": "A tila",
+    "shareAsImage": "A tila ja ye",
+    "shareAsText": "A tila sebe ye",
+    "sharedPhrases": "Danye tilalenw",
+    "showBasmallah": "Basmala jira",
+    "stop": "A jo",
+    "storage": "Maraso",
+    "surah": "Sura",
+    "surahs": "Surakaw",
+    "to": "Ka nyesin",
+    "translation": "Korofo",
+    "translationsTafaseer": "Korofow ni Tafsiri",
+    "transliteration": "Sebeni cogo",
+    "uploads": "Karaŋ lakorotow",
+    "useDefaultReciter": "Karandirilaa kuntilenna ta",
+    "verseReference": "Aya yoro",
+    "verses": "Ayaw",
+    "whatSNew": "Min kura",
+    "wordByWord": "Danye kelen-kelen",
+    "writeYourNoteHere": "I ka note sebe yan...",
+    "yourPlaylists": "I ka playlistw"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Sura bee karaŋ"
+    },
+    "searchHeader": {
+      "searchSurahs": "Sura ɲini"
+    },
+    "searchView": {
+      "noSurahsFound": "Sura si ma soro"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Sura si té yen"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Karaŋ fara a kan",
+      "uploadRecitationsToSeeThem": "Karaŋ lakoro walasa i k'u ye yan"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Jiŋna • sura {{count}}",
+    "subtitle_other": "Jiŋna • sura {{count}}"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Haketo.. fili do kera"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Sura 114 bee laje"
+    },
+    "savedAdhkarHero": {
+      "saved": "A maarala",
+      "yourCollection": "I ka sunduŋ"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SURA KA DUGUKOLO"
+    },
+    "surahsHero": {
+      "number": "Hake"
+    }
+  },
+  "language": {
+    "later": "Nata",
+    "restartMessage": "A ladon tugun walasa keneya kuraw ka don.",
+    "restartNow": "A ladon sisan",
+    "restartTitle": "Ladon be ka kan",
+    "search": "Kan ɲini",
+    "system": "Fen kan"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "A ko"
+    },
+    "whatsNewOnboarding": {
+      "skip": "A bila"
+    }
+  },
+  "mushaf": {
+    "juz": "Juz {{juz}}",
+    "loadingMushaf": "Mushaf be ka na...",
+    "main": {
+      "mushafSettings": "Mushaf sigicogo"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Karandirilaa yelema",
+      "changeReciter2": "Karandirilaa yelema",
+      "nextAyah": "Aya nata",
+      "playbackOptions": "Karaŋ sugandili",
+      "previousAyah": "Aya kofe"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Sura, aya, nye walima juz ɲini",
+      "recentReads": "KALAN KERE",
+      "searchSurahsPagesOrJuz": "Sura, nye walima juz ɲini...",
+      "searchTheMushaf": "Mushaf ɲini"
+    },
+    "options": "Sugandili",
+    "page": "Nye {{page}}",
+    "pageAndSurah": "Nye {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushaf ma se ka na.",
+    "tryAgain": "A tugun laje"
+  },
+  "mushafSettings": {
+    "rabbHelper": "A be Ala togo ni a ka togo bilenw benkan jira, i n'a fo Rabb, mushaf kono."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Benkan jiralen, ka kenye ni kuma koro ye",
+    "arabicFontSize": "Arabukan bere bonya",
+    "bold": "Nogon",
+    "book": "Kitabu",
+    "colorLegend": "Benkan nyefoli",
+    "currentlyReading": "A be karaŋ sisan",
+    "divineNames": "ALA KA TOGOW",
+    "fontSize": "Sebe bonya",
+    "fullscreen": "Ekran bee",
+    "hamzaReplacedByLongVowel": "Hamza yelemana ni kumakan jan ye",
+    "heavyLamInAllahAfter": "Lam gere Ala kono ka bo sebe gerew kofe",
+    "highlightAllahRabb": "Ala / Rabb jira",
+    "horizontal": "Fan kelen na",
+    "ibdal": "Ibdal",
+    "list": "Lise",
+    "loadingSample": "Misali be ka na...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Jirali bere",
+    "medium": "Cemance",
+    "modernMadinahPrintedPipeline": "Madina bolisebe kura",
+    "mushaf": "Mushaf",
+    "normal": "Cogo koro",
+    "originalMushafWeight": "Mushaf ka cogo folo",
+    "pageDesign": "ƝE CECOGO",
+    "prolongedVowelAfterHamza": "Kumakan jan hamza kofe",
+    "readingTheme": "KALAN JA",
+    "scrollDirection": "JIGIN FAN",
+    "showDifferences": "Ɲogonyelemali jira",
+    "silah": "Silah",
+    "slightlyMoreProminent": "A bo doonin fe",
+    "softenedHamzaPronunciation": "Hamza kumacogo nogoyalen",
+    "subcontinentNastaliqStyle": "Nastaliq cogo (Inidi dugukolo)",
+    "taghlizAlLam": "Taghliz al-Lam",
+    "tajweedColoring": "Tajweed ka rangi",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "SEBENNI MISALI TE YEN TUGUN",
+    "textThickness": "SEBEN BONYA",
+    "thematicHighlighting": "Kuma koro jiralen",
+    "trailingVowelOrMoodChange": "Kumakan laban walima cogo yelema doron",
+    "usingSaheehInternationalTranslationWith": "A be ka Saheeh International korofo ni deme sebew ye ka baara ke",
+    "vertical": "Korolen",
+    "viewType": "JIRALI SUGUYA",
+    "vowelMoodShift": "Kumakan / cogo yelema",
+    "wordByWord": "DAƝE KELEN-KELEN",
+    "wordVariant": "Danye yelemalen"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Backend té se ka soro",
+    "connectionRestored": "Jeɲogonya segila",
+    "noInternetConnection": "Interneti té yen",
+    "showingCachedData": "Fen maarala be jira"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" dabo"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Hakilijiŋ",
+      "queueIsEmpty": "Hakilijiŋ lankolon don"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Nin karaŋ taamasyen ta walasa i k'a sura sebe ni a kunnafoniw ye"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Playlist • sura {{count}}",
+    "subtitle_other": "Playlist • sura {{count}}"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Sura si té nin playlist in kono"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Deme sebe"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Karaŋ min sugandira nin waati in kama doron",
+      "discover": "Ka soro",
+      "discoverANewVoice": "Kan kura soro",
+      "explore": "A laje",
+      "exploreTheUnexpected": "A laje ka a soro i ma a men",
+      "hearSomethingNew": "Fen kura lamin",
+      "letTheQuranSurpriseYou": "Kuran ka i kabakoya",
+      "randomMix": "Ɲogon fara cogo cogo",
+      "randomRecitation": "Karaŋ cogo cogo",
+      "shuffleListen": "Lamin ka a yelema",
+      "surpriseMe": "Kabakoya ne la"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Nyenaje cogo yelema be ke app bee la"
+  },
+  "reciterBrowse": {
+    "allReciters": "Karandirilaa bee",
+    "browseReciters": "Karandirilaaw laje",
+    "favorites": "Kanubagaw"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Jiŋ si té nin karandirilaa ye"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Ne ka karaŋ lakorotow"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkar",
+    "bestForMemorization": "A ka ɲi ka hakili la",
+    "bestForTajweed": "A ka ɲi Tajweed kama",
+    "continueListening": "Ka lamin mobili",
+    "exclusives": "Kerenkerennenw",
+    "exploreByRewayah": "Rewayah laje",
+    "featuredReciters": "Karandirilaa jiralen",
+    "fromYourCollection": "Ka bo i ka sunduŋ na",
+    "myRecitations": "Ne ka karaŋw",
+    "newToQuranStartHere": "Kuran kura don wa? Damine yan",
+    "seeMore": "A to laje",
+    "yourFavorites": "I kanubagaw"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "A be baara la",
+      "activeTafseer": "TAFSIRI BE BAARA LA",
+      "activeTranslation": "KOROFOLI BE BAARA LA",
+      "deleteTafseer": "Tafsiri bo",
+      "deleteTranslation": "Korofoli bo",
+      "noTafaseerFound": "Tafsiri si ma soro",
+      "noTranslationsFound": "Korofoli si ma soro",
+      "unableToDownloadThisTafseer": "Nin tafsiri jiŋ ma se. I ka interneti laje ka a tugun.",
+      "unableToDownloadThisTranslation": "Nin korofoli jiŋ ma se. I ka interneti laje ka a tugun."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Ɲinini koro si té yen",
+      "tryDifferentKeywordsOrCheck": "Danye werew laje walima sebendi laje",
+      "yourSearchHistoryWillAppear": "I ka ɲinini korow be jira yan"
+    },
+    "surahsOrReciters": "Sura walima karandirilaa ɲini"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Karaŋ jocogo sebew",
+      "browseByJuz": "Juz fe laje",
+      "createAndManageYourOwn": "I ka playlistw dabo ka u maara, i ka karaŋ kanubagaw la",
+      "crystalClearRecitationsFromThe": "Karaŋ jelen, ka bo dinye Qari ɲumanw fe, ni jensen ɲuman ye",
+      "curatedCollections": "Sunduŋ sugandilenw",
+      "customPlaylists": "Playlist yere ta",
+      "customizeThemesAccentColorsAnd": "Nyenaje, rangi ani kuma sigicogo yelema i sago la",
+      "downloadSurahsForOfflineListening": "Sura jiŋ walasa k'u lamin waati o waati, interneti ko",
+      "easilyNavigateThroughTheQuran": "Taa Kuran kono ni juz ye, a be tila cogo ɲuman na",
+      "features": "COGOYA",
+      "highQualityAudio": "Kuma ɲuman",
+      "listenReflectRememberAllah": "Lamin. Miiri. Ala hakili to.",
+      "offlineDownloads": "Jiŋ ka lamin interneti ko",
+      "ourCommitment": "An ka ladonni",
+      "ourMission": "An ka baara",
+      "personalization": "I yere ta",
+      "precisePlaybackControlWithContinuous": "Karaŋ jocogo ɲuman, ni teliya yelemali ye",
+      "quranBayanTafsirKnowledgeOur": "Kuran • Bayan • Tafsiri • Donniya. An ka laɲini ye ka lamintiŋo ni miiri ke nyenamaya ye: so kono, sira kan, ani waati o waati i be se ka Ala hakili to.",
+      "readListenAndReflect": "Karaŋ, Lamin ani Miiri",
+      "readTheMushafExploreTranslations": "Mushaf karaŋ, korofow ni tafsiri laje, aya ni note maara, ka segin adhkar donna ko. I ka karandirilaa sugandi, playlistw dabo, ka lamintiŋo cogo dabo min be nye i ka don na. Cogoyaw be yelema ka da telefoni kan; app yerew be jiŋ fana ka lamin interneti ko.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Sura labennen ɲuman ni hakilina ye, waati caman kama",
+      "weCareAboutTheAccuracy": "An be nyenamaya ni sariya fen benbali, dabocogo bonyalen ani sorocogo jelen na. An be ISTIMA nyetaa tugun ni hakilijagabo ye mogow ye minnu be a baara ke. Ala k'a baara in son, ka a ke nafa ye bee ye min be lamin, karaŋ ani miiri."
+    },
+    "aboutApp": "{{name}} ko",
+    "appearance": "ƝENAJE",
+    "defaultreciter": {
+      "changeDefaultReciter": "KALANBAGA KUNTILENNA YELEMA"
+    },
+    "developer": "DABOLA",
+    "floatingDevMenu": "Dabola Menu jiranto",
+    "language": "Kan",
+    "languageDescription": "App kan sugandi",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "I ka karandirilaa kuntilenna ta ke tuma bee",
+      "askEveryTime": "Ɲininka tuma bee",
+      "chooseAReciterEachTime": "Karandirilaa sugandi i be karaŋ ke sinye o sinye",
+      "chooseHowYouWantTo": "Sugandi cogo min be karandirilaa sugandi sura karaŋ tuma na",
+      "defaultSelectionMethod": "SUGANDILI COGO KUNTILENNEN",
+      "searchThroughOurCompleteCollection": "An ka karandirilaaw bee ɲini",
+      "selectionPreference": "SUGANDILI COGO"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Jiŋ bee bora.",
+      "areYouSureYouWant": "I band'i la ko i be jiŋ bee bo wa? Nin té se ka segin ko.",
+      "cache": "Cache",
+      "cacheHasBeenCleared": "Cache josira.",
+      "clearCache": "Cache josi",
+      "failedToClearCache": "Cache josili ma nye.",
+      "failedToRemoveDownloads": "Jiŋ boli ma nye.",
+      "free": "Lankolon",
+      "loadingStorageInformation": "Maraso kunnafoni be ka na...",
+      "manageStorage": "MARASO LAKODON",
+      "otherApps": "App werew",
+      "removeAllDownloads": "Jiŋ bee bo",
+      "removeAllTheQuranContent": "Kuran fen min bee i jiŋna interneti ko lamintiŋo kama, olu bo.",
+      "storageBreakdown": "MARASO TILALI",
+      "success": "A nyena",
+      "thisWillClearYourCache": "Nin be i ka cache josi. I ka jiŋw té bo.",
+      "youCanFreeUpStorage": "I be se ka maaraso lankolon soro ni i ye cache josi. I ka jiŋw té bo."
+    },
+    "themePicker": {
+      "auto": "Yere ma",
+      "dark": "Dibi",
+      "light": "Yeelen"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Changelog si té yen"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "{{name}} ko",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Karandirilaa kanubaga fara a kan",
+      "uploadRecitation": "Karaŋ lakoro"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Duguba mankanw",
+      "none": "Foyi",
+      "volume": "Kan bonya"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "i n'a fo, Sogoma karaŋw"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Jiŋ bo"
+    },
+    "favoriteRecitersSheet": {
+      "done": "A kera"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "A fara sunduŋ kan",
+      "addToQueue": "A fara lamintiŋo dugu kan",
+      "continuePlaying": "Ka karaŋ ko",
+      "goToReciter": "Taa karandirilaa fe",
+      "removeFromRecents": "A bo korow la"
+    },
+    "mushafLayoutSheet": {
+      "back": "Segin"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Aya laban",
+      "playbackSettings": "Karaŋ sigicogo",
+      "selectRange": "Sanga sugandi",
+      "startingVerse": "Aya damine"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Segin sigicogo",
+      "start": "Damine",
+      "verseRange": "Aya sanga"
+    },
+    "organizeRecitationSheet": {
+      "category": "Suguya",
+      "customReciter": "Karandirilaa yere ta",
+      "duA": "Du'a",
+      "eGMorningAdhkar": "i n'a fo, Sogoma Adhkar",
+      "lecture": "Karaŋ",
+      "moreOptions": "Sugandili werew",
+      "other": "Were",
+      "recording": "Karaŋ lakoro",
+      "rewayah": "Rewayah",
+      "searchSurahs": "Sura ɲini...",
+      "style": "Cogo",
+      "tafsir": "Tafsiri",
+      "title": "Kunnafoni kuntilenna",
+      "type": "Suguya",
+      "verseRangeOptional": "Aya sanga (a té wajibi)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Karaŋ teliya"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Nin playlist fen bee jiŋna kaban.",
+      "anErrorOccurredWhileDownloading": "Fili kera playlist jiŋ tuma na. I ka a tugun.",
+      "deletePlaylist": "Playlist bo",
+      "downloadingPlaylist": "Playlist be jiŋ...",
+      "editPlaylist": "Playlist yelema",
+      "emptyPlaylist": "Playlist lankolon",
+      "thisPlaylistIsEmpty": "Nin playlist lankolon don."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Rewayat ko",
+      "availableRewayat": "Rewayat minnu be yen"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Sura fara playlist kan ma nye",
+      "failedToCreatePlaylist": "Playlist daboli ma nye",
+      "noPlaylistsYetCreateYour": "Playlist si té yen folo. I ka folo dabo san fe yan!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Ɲininka tuma bee",
+      "randomReciter": "Karandirilaa cogo cogo",
+      "selectReciter": "Karandirilaa sugandi"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Aya cemance si ma soro nin aya kama.",
+      "similarWording": "Kuma ɲogonman"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Sogo waati jatemine",
+      "turnOffTimer": "Waati jatemine jo"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "A bo playlist la"
+    },
+    "verseActionsSheet": {
+      "addNote": "Note fara a kan",
+      "copy": "A kopi",
+      "repeat": "A segin",
+      "similarVerses": "Aya ɲogonmanw",
+      "tafseer": "Tafsiri",
+      "theme": "Cefe"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Kopi sugandiliw",
+      "selectWhatToCopy": "Min kopi, o sugandi"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Rangi jirali"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Aya tila"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "A sorola aya {{count}} kono",
+    "foundIn_other": "A sorola aya {{count}} kono"
+  },
+  "surahItem": {
+    "moreOptions": "Sugandili werew",
+    "opensMenuWithAdditionalActions": "A be menu da yele ni kewalew ye nin sura kama",
+    "tapToPlaySurah": "A digi walasa ka sura karaŋ"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Playlist ID ma nye",
+      "playlistNotFound": "Playlist ma soro"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Karandirilaa min be sura bee karaŋ nin playlist kono, o ma soro. I ka playlist were laje.",
+      "failedToPlayPlaylistPlease": "Playlist karaŋ ma nye. I ka a tugun.",
+      "failedToPlayTrackPlease": "Karaŋ karaŋ ma nye. I ka a tugun.",
+      "failedToShufflePlaylistPlease": "Playlist ɲogon fara ma nye. I ka a tugun.",
+      "noReciterAvailable": "Karandirilaa si té yen",
+      "noSurahsInThisPlaylist": "Sura si té nin playlist kono"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Jatebo",
+      "appData": "App ni kunnafoniw",
+      "audioPlayback": "Kan ni karaŋ",
+      "chooseYourPreferredReciter": "I ka karandirilaa kanubaga sugandi",
+      "customizeQuranDisplayOptions": "Kuran jiracogo yelema",
+      "customizeReciterSelection": "Karandirilaa sugandili yelema",
+      "featureRequests": "Cogoya ɲini",
+      "feedback": "Hakilina foli",
+      "helpSupport": "Deme ni deme ɲini",
+      "learnMoreAboutOurMission": "An ka baara don ka teme",
+      "manageQuranTranslationsAndCommentary": "Kuran korofow ni tafsiri be nyemogoya",
+      "privacyPolicy": "Gundo ladonni sariya",
+      "quran": "Kuran",
+      "readOurTermsOfService": "An ka baara kecogo sariya karaŋ",
+      "seeWhatSNewIn": "Min kura be nin versiyon na, o laje",
+      "shareYourExperienceWithOthers": "I ka nyenamaya fo mogo werew ye",
+      "showTheFloatingDeveloperTools": "Dabola baarakeminenw do jira",
+      "suggestImprovementsAndNewFeatures": "Nyetaa hakilinaw ni cogoya kuraw fo",
+      "termsOfService": "Baara kecogo sariyaw",
+      "viewAndManageStorageUsage": "Maraso baarakecogo laje ka a nyemogoya",
+      "viewOurPrivacyPolicy": "An ka gundo ladonni sariya laje",
+      "writeAReview": "Hakilina sebe"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "A ban",
+    "close": "A datugu",
+    "collection": "Sunduŋ",
+    "download": "A jiŋ",
+    "downloads": "Jiŋw",
+    "error": "Fen do ma nye",
+    "favorites": "Kanubagaw",
+    "home": "So",
+    "language": "Kan",
+    "library": "Kitabusow",
+    "loading": "A be ka na...",
+    "noResults": "Foyi ma soro",
+    "offline": "I té interneti la",
+    "pause": "A jo doonin",
+    "play": "A karaŋ",
+    "retry": "A tugun laje",
+    "save": "A maara",
+    "search": "Ɲini",
+    "settings": "Sigicogo",
+    "surahs": "Surakaw"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "FEN SUGANDI"
+    },
+    "highlightContent": {
+      "chooseColor": "RANGI SUGANDI"
+    },
+    "noteContent": {
+      "saveNote": "Note maara"
+    },
+    "shareContent": {
+      "shareLink": "Jekabaara tila"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Aya cemance si ma soro nin aya kama.",
+      "sharedPhrases": "DAƝE TILALENW",
+      "similarWording": "KUMA ƝOGONMANW"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Tafsiri si jiŋna",
+      "tafseerNotAvailableForThis": "Tafsiri té nin aya kama",
+      "tapHereToDownloadA": "I digi yan ka tafsiri jiŋ ani ka korofo laje."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Kuma koro jiralen si té nin aya kama.",
+      "passage": "Sanga"
+    },
+    "translationContent": {
+      "switch": "Yelema",
+      "translationNotAvailable": "Korofoli té yen"
+    }
+  },
+  "version": {
+    "label": "Versiyon {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Min kura be"
+  },
+  "wordDetail": {
+    "context": "Aya {{surah}}:{{ayah}} · Danye {{position}}, {{total}} la"
+  }
+}
