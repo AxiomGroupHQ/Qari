@@ -1,7 +1,7 @@
-// Side-effect import, kept first: Metro's inlineRequires would otherwise delay loading '@/i18n'
-// until initI18n() runs in an effect, after the first render already called useTranslation().
-// That left react-i18next without an instance and the web app blank.
-import '@/i18n';
+// Must stay first: initialises i18n before RootLayout's first useTranslation() call.
+// (A bare import of '@/i18n' gets merged with the named import below and then deferred by
+// inlineRequires, so this goes through i18n/bootstrap instead.)
+import '@/i18n/bootstrap';
 import React, {useEffect, useState, useRef, useCallback, useMemo} from 'react';
 import {Stack, useRouter} from 'expo-router';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
