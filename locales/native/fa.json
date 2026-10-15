@@ -1,0 +1,5 @@
+{
+  "NSMicrophoneUsageDescription": "این برنامه از میکروفون برای پخش صدا استفاده می‌کند.",
+  "NSAppleMusicUsageDescription": "این برنامه از Apple Music برای پخش صدا استفاده می‌کند.",
+  "NSCameraUsageDescription": "این برنامه از دوربین استفاده نمی‌کند."
+}

@@ -1,6 +1,6 @@
 # Digital Khatt Documentation Hub
 
-This folder is the implementation source of truth for Bayaan's Uthmani Mushaf renderer (Digital Khatt path).
+This folder is the implementation source of truth for Istima's Uthmani Mushaf renderer (Digital Khatt path).
 
 If you are a new developer (or an AI agent), read these files in order:
 

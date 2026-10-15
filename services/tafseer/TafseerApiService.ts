@@ -5,7 +5,7 @@ import {quranComTafsirProvider} from './QuranComTafsirProvider';
  * RFC-009 — tafsir source resolver.
  *
  * `tafseerApiService` resolves to the fork-supplied
- * `branding.tafsirProvider` when set, otherwise to Bayaan's default
+ * `branding.tafsirProvider` when set, otherwise to Istima's default
  * api.quran.com-backed `quranComTafsirProvider`. The exported name and
  * shape are unchanged, so consumers (`store/tafseerStore.ts`) are
  * untouched.

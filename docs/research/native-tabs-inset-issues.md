@@ -306,9 +306,9 @@ When this occurs, RNScreens logs:
 
 ---
 
-## Recommendations for Bayaan
+## Recommendations for Istima
 
-Given Bayaan's use of NativeTabs (SDK 55 upgrade):
+Given Istima's use of NativeTabs (SDK 55 upgrade):
 
 1. **Proactive Content Inset Management:**
   - Always set `contentInsetAdjustmentBehavior="never"` on ScrollView/FlatList in tab screens

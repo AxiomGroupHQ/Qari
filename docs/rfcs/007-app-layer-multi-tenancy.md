@@ -8,19 +8,19 @@
 
 ## Summary
 
-Introduce three thin config seams — `config/branding.js` (app identity), `config/featureFlags.ts` (feature gating), and a `CatalogProvider` interface (audio-catalog abstraction) — so that a sibling fork can override Bayaan's app identity, suppress features, and supply its own reciter catalog without touching any application code. Zero behavior change for Bayaan itself.
+Introduce three thin config seams — `config/branding.js` (app identity), `config/featureFlags.ts` (feature gating), and a `CatalogProvider` interface (audio-catalog abstraction) — so that a sibling fork can override Istima's app identity, suppress features, and supply its own reciter catalog without touching any application code. Zero behavior change for Istima itself.
 
 ## Motivation
 
-Bayaan is increasingly used as an upstream platform. A sister app, Qariah, forks Bayaan to ship a curated female-reciter catalog under a different brand. Today there is no supported override layer; every divergence is a direct file edit that conflicts on every weekly upstream merge.
+Istima is increasingly used as an upstream platform. A sister app, Qariah, forks Istima to ship a curated female-reciter catalog under a different brand. Today there is no supported override layer; every divergence is a direct file edit that conflicts on every weekly upstream merge.
 
 Three categories of hardcoded values cause friction:
 
-**1. App identity.** `app.config.js` has `name: 'Bayaan'`, `slug: 'Bayaan'`, `scheme: 'bayaan'`, `bundleIdentifier: 'com.bayaan.app'`. App source code has additional hardcoded strings:
+**1. App identity.** `app.config.js` has `name: 'Istima'`, `slug: 'Istima'`, `scheme: 'bayaan'`, `bundleIdentifier: 'com.bayaan.app'`. App source code has additional hardcoded strings:
 
 - `utils/shareUtils.ts:4` — `const BASE_URL = 'https://app.thebayaan.com'`
 - `app/(tabs)/(d.settings)/index.tsx:263–272` — `Linking.openURL('https://thebayaan.com/support')`, `.../terms`, `.../privacy`
-- `services/emailService.ts:23` — `product_name: 'Bayaan'`
+- `services/emailService.ts:23` — `product_name: 'Istima'`
 
 A fork that can't change these safely will either edit the files (conflict risk) or ship a broken identity.
 
@@ -35,10 +35,10 @@ A fork that can't change these safely will either edit the files (conflict risk)
 A CommonJS module (CJS required: `app.config.js` calls `require()` before Expo CLI transpiles the tree). Exports the subset of identity values that vary across forks:
 
 ```js
-// config/branding.js — zero-change defaults for Bayaan
+// config/branding.js — zero-change defaults for Istima
 module.exports = {
-  appName: 'Bayaan',
-  appSlug: 'Bayaan',
+  appName: 'Istima',
+  appSlug: 'Istima',
   urlScheme: 'bayaan',
   bundleId: {
     ios: 'com.bayaan.app',
@@ -48,7 +48,7 @@ module.exports = {
   termsUrl: 'https://thebayaan.com/terms',
   privacyUrl: 'https://thebayaan.com/privacy',
   shareBaseUrl: 'https://app.thebayaan.com',
-  emailProductName: 'Bayaan',
+  emailProductName: 'Istima',
   catalog: {
     source: 'bundled',    // 'bundled' | 'remote'
     fallbackPath: undefined,  // path to a JSON file; undefined = use data/reciters-fallback.json
@@ -80,20 +80,20 @@ declare const branding: Branding;
 export default branding;
 ```
 
-**Migration path for Bayaan call sites (separate PRs, not this RFC):**
+**Migration path for Istima call sites (separate PRs, not this RFC):**
 
 | File | Line | From | To |
 |------|------|------|----|
 | `utils/shareUtils.ts` | 4 | `'https://app.thebayaan.com'` | `require('@/config/branding').shareBaseUrl` |
 | `app/(tabs)/(d.settings)/index.tsx` | 263–272 | inline URL literals | `branding.supportUrl`, `.termsUrl`, `.privacyUrl` |
-| `services/emailService.ts` | 23 | `'Bayaan'` | `branding.emailProductName` |
+| `services/emailService.ts` | 23 | `'Istima'` | `branding.emailProductName` |
 
 This RFC only adds the file. The call-site migrations each fit in a single-line goodwill PR; no RFC needed for those.
 
 ### 2. `config/featureFlags.ts` — feature gating
 
 ```ts
-// config/featureFlags.ts — all features on; Bayaan ships everything
+// config/featureFlags.ts — all features on; Istima ships everything
 export const featureFlags = {
   adhkar: true,
   ambientAudioOverlay: true,
@@ -181,7 +181,7 @@ All identity knobs go into `app.config.js` and are injected as `expo-constants` 
 **Positive**
 - Forks can override brand identity, feature set, and catalog without touching application code.
 - Call-site migrations are small, independent, reviewable PRs — no big-bang rewrite.
-- Zero behavior change for Bayaan at merge time (all flags default to `true`; branding defaults to Bayaan values; default provider wraps existing `RECITERS`).
+- Zero behavior change for Istima at merge time (all flags default to `true`; branding defaults to Istima values; default provider wraps existing `RECITERS`).
 
 **Neutral**
 - Adds three new files (`config/branding.js`, `config/branding.d.ts`, `config/featureFlags.ts`, `types/CatalogProvider.ts`, `data/defaultCatalogProvider.ts`) with no app-side imports yet.
@@ -189,7 +189,7 @@ All identity knobs go into `app.config.js` and are injected as `expo-constants` 
 
 **Negative / risks**
 - `config/featureFlags.ts` introduces a dependency for every feature gate. Discipline required: flags are for fork-configurable features, not per-user A/B tests. Recommend a code comment enforcing the distinction.
-- The `CatalogProvider` interface commits Bayaan to a specific provider contract shape. Getting the interface wrong before call sites are wired means a breaking change. Mitigation: keep the interface minimal (only `getAllReciters` + `getReciterById` in v1).
+- The `CatalogProvider` interface commits Istima to a specific provider contract shape. Getting the interface wrong before call sites are wired means a breaking change. Mitigation: keep the interface minimal (only `getAllReciters` + `getReciterById` in v1).
 
 ## How we'll know it worked
 
@@ -201,5 +201,5 @@ All identity knobs go into `app.config.js` and are injected as `expo-constants` 
 ## Open questions
 
 - **Call-site migration ordering.** Should `config/branding.js` call sites migrate in one PR or file-by-file? No strong opinion; file-by-file is safer and each PR is trivially reviewable.
-- **Feature flag granularity.** The flag list above matches what Qariah currently gates. Bayaan may want flags for other cross-fork features not yet imagined. Additive; flags can be extended without a new RFC.
+- **Feature flag granularity.** The flag list above matches what Qariah currently gates. Istima may want flags for other cross-fork features not yet imagined. Additive; flags can be extended without a new RFC.
 - **`CatalogProvider` v2 shape.** v1 has only `getAllReciters` + `getReciterById`. If remote catalogs need pagination or async loading, the interface will need extension. Deferred to the RFC that introduces remote catalog support.

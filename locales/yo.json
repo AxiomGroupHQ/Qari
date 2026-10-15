@@ -1,4 +1,33 @@
 {
+  "adhkarUi": {
+    "addBookmark": "Fi ìwé-àmì kún",
+    "complete": "Ti parí",
+    "copyArabic": "Ṣe ẹ̀dà ọ̀rọ̀ Lárúbáwá",
+    "count_other": "Àdhkār {{count}}",
+    "counterLabel": "Olùkà tasbīh, {{current}} nínú {{target}}",
+    "disableRepeat": "Pa ìtúnṣe",
+    "enableRepeat": "Tan ìtúnṣe",
+    "hideInfo": "Fi ìròyìn pamọ́",
+    "hideInstruction": "Fi ìtọ́sọ́nà pamọ́",
+    "layoutSettings": "Àwọn ètò ìṣètò",
+    "noSaved": "Kò sí àdhkār tí a fipamọ́ síbẹ̀",
+    "noSavedShort": "Kò sí àdhkār tí a fipamọ́",
+    "noneFound": "A kò rí àdhkār kankan",
+    "pauseAll": "Dá gbogbo rẹ̀ dúró",
+    "pauseAudio": "Dá ohùn dúró",
+    "playAllLabel": "Ṣe gbogbo rẹ̀",
+    "playAudio": "Ṣe ohùn",
+    "position": "{{current}} nínú {{total}}",
+    "removeBookmark": "Yọ ìwé-àmì kúrò",
+    "resetCounter": "Tún olùkà ṣe",
+    "resetHint": "Yóò mú kíkà padà sí òdo",
+    "shareDhikr": "Pín dhikr",
+    "showInfo": "Fi ìròyìn hàn",
+    "showInstruction": "Fi ìtọ́sọ́nà hàn",
+    "tapBookmarkHint": "Tẹ àmì ìwé-àmì lórí dhikr kankan láti fi pamọ́ síbí",
+    "tapToCount": "Tẹ láti ka",
+    "tapToIncrement": "Tẹ láti fi kún kíkà"
+  },
   "app": {
     "errorInitializingPlayer": "Àṣìṣe nígbà bíbẹ̀rẹ̀ ẹ̀rọ ìṣeré: {{message}}",
     "errorLoadingFonts": "Àṣìṣe nígbà gbígbé àwọn lẹ́tà wọlé"

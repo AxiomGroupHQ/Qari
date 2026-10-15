@@ -1,0 +1,749 @@
+{
+  "adhkarUi": {
+    "addBookmark": "Ongeza alama",
+    "complete": "Imekamilika",
+    "copyArabic": "Nakili maandishi ya Kiarabu",
+    "count_one": "adhkari {{count}}",
+    "count_other": "adhkari {{count}}",
+    "counterLabel": "Kihesabu cha tasbihi, {{current}} kati ya {{target}}",
+    "disableRepeat": "Zima kurudia",
+    "enableRepeat": "Washa kurudia",
+    "hideInfo": "Ficha maelezo",
+    "hideInstruction": "Ficha maelekezo",
+    "layoutSettings": "Mipangilio ya mpangilio",
+    "noSaved": "Bado hakuna adhkari zilizohifadhiwa",
+    "noSavedShort": "Hakuna adhkari zilizohifadhiwa",
+    "noneFound": "Hakuna adhkari zilizopatikana",
+    "pauseAll": "Sitisha zote",
+    "pauseAudio": "Sitisha sauti",
+    "playAllLabel": "Cheza zote",
+    "playAudio": "Cheza sauti",
+    "position": "{{current}} kati ya {{total}}",
+    "removeBookmark": "Ondoa alama",
+    "resetCounter": "Weka upya kihesabu",
+    "resetHint": "Hurejesha hesabu kuwa sifuri",
+    "shareDhikr": "Shiriki dhikri",
+    "showInfo": "Onyesha maelezo",
+    "showInstruction": "Onyesha maelekezo",
+    "tapBookmarkHint": "Gusa aikoni ya alama kwenye dhikri yoyote ili kuihifadhi hapa",
+    "tapToCount": "Gusa kuhesabu",
+    "tapToIncrement": "Gusa kuongeza hesabu"
+  },
+  "app": {
+    "errorInitializingPlayer": "Hitilafu ya kuanzisha kicheza: {{message}}",
+    "errorLoadingFonts": "Hitilafu ya kupakia fonti"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Mwanzo wa ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Zote",
+      "clearAll": "Futa Zote",
+      "hasPhoto": "Ina picha"
+    },
+    "filterModal": {
+      "apply": "Tumia",
+      "filterReciters": "Chuja Qari",
+      "recitationStyles": "Mitindo ya Qiraa",
+      "reset": "Weka Upya",
+      "rewayatTypes": "Aina za Riwaya"
+    },
+    "recitersFound_one": "Qari {{count}} amepatikana kwa vichujio vya sasa",
+    "recitersFound_other": "Qari {{count}} wamepatikana kwa vichujio vya sasa"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Sura Pendwa"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Weka alama kwenye aya ili uziione hapa",
+      "bookmarks": "Alama",
+      "noBookmarksYet": "Bado hakuna alama",
+      "removeBookmark": "Ondoa Alama"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Riwaya",
+      "searchPlaylistsRecitersSurahsRewayat": "Tafuta orodha za kucheza, qari, sura, riwaya...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Tafuta orodha za kucheza, qari, sura, riwaya, na vilivyopakuliwa",
+      "searchYourCollection": "Tafuta Mkusanyiko Wako",
+      "searching": "Inatafuta...",
+      "tryDifferentKeywords": "Jaribu maneno mengine"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Pakua sura ili uziione hapa",
+      "noDownloadsYet": "Bado hakuna vilivyopakuliwa",
+      "playAll": "Cheza Zote"
+    },
+    "favoritereciters": {
+      "addReciters": "Ongeza Qari",
+      "addRecitersToSeeThem": "Ongeza qari ili uwaone hapa",
+      "noFavoriteRecitersYet": "Bado hakuna qari pendwa",
+      "removeFromFavorites": "Ondoa kwenye Vipendwa",
+      "searchFavoriteReciters": "Tafuta qari pendwa"
+    },
+    "index": {
+      "addToCollection": "Ongeza kwenye Mkusanyiko",
+      "bookmarks": "Alama",
+      "createYourFirstPlaylist": "Unda orodha yako ya kwanza ya kucheza",
+      "downloads": "Vilivyopakuliwa",
+      "items_one": "kipengee {{count}}",
+      "items_other": "vipengee {{count}}",
+      "loved": "Pendwa",
+      "noBookmarksYet": "Bado hakuna alama",
+      "noDownloadsYet": "Bado hakuna vilivyopakuliwa",
+      "noFavoritesYet": "Bado hakuna vipendwa",
+      "noLovedSurahsYet": "Bado hakuna sura pendwa",
+      "noNotesYet": "Bado hakuna maelezo",
+      "noUploadsYet": "Bado hakuna vilivyopakiwa",
+      "notes": "Maelezo",
+      "playlists": "Orodha za Kucheza",
+      "reciters": "Qari",
+      "uploads": "Vilivyopakiwa"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Sura zote pendwa tayari zimepakuliwa.",
+      "allLovedSurahsHaveBeen": "Sura zote pendwa zimepakuliwa.",
+      "downloadError": "Hitilafu ya Kupakua",
+      "loveSurahsToSeeThem": "Penda sura ili uziione hapa",
+      "noLovedSurahsYet": "Bado hakuna sura pendwa",
+      "someDownloadsMayHaveFailed": "Baadhi ya vipakuliwa huenda vimeshindwa.",
+      "unloveAllSurahs": "Acha Kupenda Sura Zote"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Ongeza maelezo kwenye aya ili uyaone hapa",
+      "editNote": "Hariri Maelezo",
+      "noNotesYet": "Bado hakuna maelezo",
+      "notes": "Maelezo"
+    },
+    "playlistModal": {
+      "name": "Jina"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Unda orodha za kucheza ili uziione hapa",
+      "noPlaylistsYet": "Bado hakuna orodha za kucheza",
+      "playlists": "Orodha za Kucheza"
+    },
+    "uploads": {
+      "removeAllUploads": "Ondoa Vilivyopakiwa Vyote",
+      "uploadRecitationsToSeeThem": "Pakia qiraa ili uziione hapa"
+    }
+  },
+  "common": {
+    "1Time": "Mara 1",
+    "2Times": "Mara 2",
+    "3Times": "Mara 3",
+    "addToCollection": "Ongeza kwenye Mkusanyiko",
+    "addToQueue": "Ongeza kwenye Foleni",
+    "allSurahs": "Sura Zote",
+    "alreadyDownloaded": "Tayari Imepakuliwa",
+    "arabic": "Kiarabu",
+    "asc": "Kupanda",
+    "browseAll": "Vinjari Zote",
+    "browseAllReciters": "Vinjari Qari Wote",
+    "cancel": "Ghairi",
+    "clear": "Futa",
+    "copyToClipboard": "Nakili kwenye Ubao Klipu",
+    "createNewPlaylist": "Unda Orodha Mpya ya Kucheza",
+    "defaultReciter": "Qari Chaguomsingi",
+    "delete": "Futa",
+    "deleteNote": "Futa Maelezo",
+    "deleteRecitation": "Futa Qiraa",
+    "desc": "Kushuka",
+    "downloadComplete": "Upakuaji Umekamilika",
+    "downloadFailed": "Upakuaji Umeshindwa",
+    "downloads": "Vilivyopakuliwa",
+    "editDetails": "Hariri Maelezo",
+    "error": "Hitilafu",
+    "favoriteReciters": "Qari Pendwa",
+    "followAlong": "Fuatilia",
+    "from": "Kuanzia",
+    "goToReciter": "Nenda kwa Qari",
+    "goToVerse": "Nenda kwenye aya",
+    "learnAboutSurah": "Jifunze Kuhusu Sura",
+    "loading": "Inapakia...",
+    "loop": "Rudia",
+    "loved": "Pendwa",
+    "mushafSettings": "Mipangilio ya Mushaf",
+    "next": "Inayofuata",
+    "noRecitersFound": "Hakuna qari aliyepatikana",
+    "noResultsFound": "Hakuna matokeo yaliyopatikana",
+    "noUploadsYet": "Bado hakuna vilivyopakiwa",
+    "play": "Cheza",
+    "playEachVerse": "Cheza kila aya",
+    "playNow": "Cheza Sasa",
+    "playSpeed": "Kasi ya kucheza",
+    "playTheRange": "Cheza kipindi",
+    "playlistName": "Jina la Orodha ya Kucheza",
+    "prev": "Iliyotangulia",
+    "readingTheme": "Mandhari ya Kusoma",
+    "recentSearches": "Utafutaji wa hivi karibuni",
+    "reciter": "Qari",
+    "reciterChoice": "Chaguo la Qari",
+    "reciters": "Qari",
+    "remove": "Ondoa",
+    "removeAllDownloads": "Ondoa Vipakuliwa Vyote",
+    "removeHighlight": "Ondoa Kiangazio",
+    "rev": "Mpangilio wa Wahyi",
+    "save": "Hifadhi",
+    "search": "Tafuta",
+    "searchReciters": "Tafuta qari...",
+    "searchSurahs": "Tafuta sura",
+    "share": "Shiriki",
+    "shareAsImage": "Shiriki kama Picha",
+    "shareAsText": "Shiriki kama Maandishi",
+    "sharedPhrases": "Misemo Inayoshirikiwa",
+    "showBasmallah": "Onyesha Basmala",
+    "stop": "Simamisha",
+    "storage": "Hifadhi",
+    "surah": "Sura",
+    "surahs": "Sura",
+    "to": "Hadi",
+    "translation": "Tafsiri",
+    "translationsTafaseer": "Tafsiri na Tafsiri za Maana",
+    "transliteration": "Tahajia kwa Herufi za Kilatini",
+    "uploads": "Vilivyopakiwa",
+    "useDefaultReciter": "Tumia Qari Chaguomsingi",
+    "verseReference": "Rejea ya Aya",
+    "verses": "Aya",
+    "whatSNew": "Mapya",
+    "wordByWord": "Neno kwa Neno",
+    "writeYourNoteHere": "Andika maelezo yako hapa...",
+    "yourPlaylists": "Orodha Zako za Kucheza"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Cheza sura zote"
+    },
+    "searchHeader": {
+      "searchSurahs": "Tafuta Sura"
+    },
+    "searchView": {
+      "noSurahsFound": "Hakuna sura zilizopatikana"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Hakuna sura zinazopatikana"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Ongeza Qiraa",
+      "uploadRecitationsToSeeThem": "Pakia qiraa ili uziione hapa"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Imepakuliwa • sura {{count}}",
+    "subtitle_other": "Imepakuliwa • sura {{count}}"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Samahani.. kulikuwa na hitilafu"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Vinjari sura zote 114"
+    },
+    "savedAdhkarHero": {
+      "saved": "Zilizohifadhiwa",
+      "yourCollection": "Mkusanyiko wako"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SURA YA SIKU"
+    },
+    "surahsHero": {
+      "number": "Namba"
+    }
+  },
+  "language": {
+    "later": "Baadaye",
+    "restartMessage": "Anzisha programu upya ili kutumia mwelekeo mpya wa mpangilio.",
+    "restartNow": "Anzisha upya sasa",
+    "restartTitle": "Kuanzisha upya kunahitajika",
+    "search": "Tafuta lugha",
+    "system": "Lugha ya kifaa"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Endelea"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Ruka"
+    }
+  },
+  "mushaf": {
+    "juz": "Juzuu {{juz}}",
+    "loadingMushaf": "Inapakia Mushaf…",
+    "main": {
+      "mushafSettings": "Mipangilio ya mushaf"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Badilisha qari",
+      "changeReciter2": "Badilisha Qari",
+      "nextAyah": "Aya inayofuata",
+      "playbackOptions": "Chaguo za uchezaji",
+      "previousAyah": "Aya iliyotangulia"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Tafuta sura, aya, kurasa, au juzuu",
+      "recentReads": "ZILIZOSOMWA KARIBUNI",
+      "searchSurahsPagesOrJuz": "Tafuta sura, kurasa, au juzuu...",
+      "searchTheMushaf": "Tafuta kwenye Mushaf"
+    },
+    "options": "Chaguo",
+    "page": "Ukurasa {{page}}",
+    "pageAndSurah": "Ukurasa {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushaf haukuweza kupakia.",
+    "tryAgain": "Jaribu tena"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Huangazia jina la Allah na majina ya kiungu kama Rabb ndani ya mushaf."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Viangazio vinavyobadilishana kwa sehemu za kimada",
+    "arabicFontSize": "Ukubwa wa Fonti ya Kiarabu",
+    "bold": "Nene",
+    "book": "Kitabu",
+    "colorLegend": "Maelezo ya rangi",
+    "currentlyReading": "Inasomwa sasa",
+    "divineNames": "MAJINA YA KIUNGU",
+    "fontSize": "Ukubwa wa Fonti",
+    "fullscreen": "Skrini Nzima",
+    "hamzaReplacedByLongVowel": "Hamza imebadilishwa na irabu ndefu",
+    "heavyLamInAllahAfter": "Lam nzito katika Allah baada ya herufi nzito",
+    "highlightAllahRabb": "Angazia Allah / Rabb",
+    "horizontal": "Mlalo",
+    "ibdal": "Ibdal",
+    "list": "Orodha",
+    "loadingSample": "Inapakia sampuli...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Inayoonekana zaidi",
+    "medium": "Wastani",
+    "modernMadinahPrintedPipeline": "Uchapishaji wa kisasa wa Madina",
+    "mushaf": "Mushaf",
+    "normal": "Kawaida",
+    "originalMushafWeight": "Unene wa mushaf asilia",
+    "pageDesign": "MUUNDO WA UKURASA",
+    "prolongedVowelAfterHamza": "Irabu ndefu baada ya hamza",
+    "readingTheme": "MANDHARI YA KUSOMA",
+    "scrollDirection": "MWELEKEO WA KUSOGEZA",
+    "showDifferences": "Onyesha Tofauti",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Inayoonekana kidogo zaidi",
+    "softenedHamzaPronunciation": "Matamshi laini ya hamza",
+    "subcontinentNastaliqStyle": "Mtindo wa Nastaliq wa Bara Hindi",
+    "taghlizAlLam": "Taghliz al-Lam",
+    "tajweedColoring": "Rangi za Tajwidi",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "MUHTASARI WA MAANDISHI HAUJAPATIKANA BADO",
+    "textThickness": "UNENE WA MAANDISHI",
+    "thematicHighlighting": "Uangaziaji wa Kimada",
+    "trailingVowelOrMoodChange": "Mabadiliko ya irabu ya mwisho au hali ya i'rabu pekee",
+    "usingSaheehInternationalTranslationWith": "Inatumika: Tafsiri ya Saheeh International yenye tanbihi",
+    "vertical": "Wima",
+    "viewType": "AINA YA MWONEKANO",
+    "vowelMoodShift": "Mabadiliko ya irabu / i'rabu",
+    "wordByWord": "NENO KWA NENO",
+    "wordVariant": "Tofauti ya neno"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Seva haipatikani",
+    "connectionRestored": "Muunganisho umerudi",
+    "noInternetConnection": "Hakuna muunganisho wa intaneti",
+    "showingCachedData": "Inaonyesha data iliyohifadhiwa"
+  },
+  "organize": {
+    "createReciter": "Unda \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Foleni",
+      "queueIsEmpty": "Foleni haina kitu"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Weka lebo qiraa hii ili uone maandishi ya sura na maelezo"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Orodha ya kucheza • sura {{count}}",
+    "subtitle_other": "Orodha ya kucheza • sura {{count}}"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Hakuna sura kwenye orodha hii ya kucheza"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Tanbihi"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Qiraa iliyochaguliwa kwa ajili ya wakati huu tu",
+      "discover": "Gundua",
+      "discoverANewVoice": "Gundua sauti mpya",
+      "explore": "Chunguza",
+      "exploreTheUnexpected": "Chunguza yasiyotarajiwa",
+      "hearSomethingNew": "Sikiliza kitu kipya",
+      "letTheQuranSurpriseYou": "Acha Qur'ani ikushangaze",
+      "randomMix": "Mchanganyiko Nasibu",
+      "randomRecitation": "Qiraa Nasibu",
+      "shuffleListen": "Changanya na Usikilize",
+      "surpriseMe": "Nishangaze"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Kubadilisha hali ya mwonekano kunatumika kwa programu nzima"
+  },
+  "reciterBrowse": {
+    "allReciters": "Qari Wote",
+    "browseReciters": "Vinjari Qari",
+    "favorites": "Vipendwa"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Hakuna vilivyopakuliwa kwa qari huyu"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Vilivyopakiwa Vyangu"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkari",
+    "bestForMemorization": "Bora kwa Kuhifadhi",
+    "bestForTajweed": "Bora kwa Tajwidi",
+    "continueListening": "Endelea Kusikiliza",
+    "exclusives": "Za Kipekee",
+    "exploreByRewayah": "Chunguza kwa Riwaya",
+    "featuredReciters": "Qari Mashuhuri",
+    "fromYourCollection": "Kutoka Mkusanyiko Wako",
+    "myRecitations": "Qiraa Zangu",
+    "newToQuranStartHere": "Mpya kwenye Qur'ani? Anzia Hapa",
+    "seeMore": "Ona Zaidi",
+    "yourFavorites": "Vipendwa Vyako"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Inatumika",
+      "activeTafseer": "TAFSIRI INAYOTUMIKA",
+      "activeTranslation": "TAFSIRI YA MAANA INAYOTUMIKA",
+      "deleteTafseer": "Futa Tafsiri",
+      "deleteTranslation": "Futa Tafsiri ya Maana",
+      "noTafaseerFound": "Hakuna tafsiri zilizopatikana",
+      "noTranslationsFound": "Hakuna tafsiri za maana zilizopatikana",
+      "unableToDownloadThisTafseer": "Imeshindwa kupakua tafsiri hii. Tafadhali angalia muunganisho wako wa intaneti na ujaribu tena.",
+      "unableToDownloadThisTranslation": "Imeshindwa kupakua tafsiri hii ya maana. Tafadhali angalia muunganisho wako wa intaneti na ujaribu tena."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Hakuna utafutaji wa hivi karibuni",
+      "tryDifferentKeywordsOrCheck": "Jaribu maneno mengine au angalia tahajia",
+      "yourSearchHistoryWillAppear": "Historia ya utafutaji wako itaonekana hapa"
+    },
+    "surahsOrReciters": "Tafuta sura au qari"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Vidhibiti vya Hali ya Juu vya Sauti",
+      "browseByJuz": "Vinjari kwa Juzuu",
+      "createAndManageYourOwn": "Unda na usimamie orodha zako binafsi za kucheza za qiraa unazozipenda",
+      "crystalClearRecitationsFromThe": "Qiraa safi kabisa kutoka kwa qari bora duniani kwa utiririshaji ulioboreshwa",
+      "curatedCollections": "Mkusanyiko Teule",
+      "customPlaylists": "Orodha za Kucheza Maalum",
+      "customizeThemesAccentColorsAnd": "Badilisha mandhari, rangi za msisitizo, na mipangilio ya sauti upendavyo",
+      "downloadSurahsForOfflineListening": "Pakua sura ili usikilize nje ya mtandao wakati wowote, popote bila intaneti",
+      "easilyNavigateThroughTheQuran": "Pitia Qur'ani kwa urahisi kwa mpangilio na upangaji wa juzuu",
+      "features": "VIPENGELE",
+      "highQualityAudio": "Sauti ya Ubora wa Juu",
+      "listenReflectRememberAllah": "Sikiliza. Tafakari. Mkumbuke Allah.",
+      "offlineDownloads": "Upakuaji wa Nje ya Mtandao",
+      "ourCommitment": "Ahadi Yetu",
+      "ourMission": "Dhamira Yetu",
+      "personalization": "Ubinafsishaji",
+      "precisePlaybackControlWithContinuous": "Udhibiti sahihi wa uchezaji kwa uchezaji endelevu na kasi ya qiraa inayorekebishwa",
+      "quranBayanTafsirKnowledgeOur": "Qur'ani • Bayan • Tafsiri • Elimu. Lengo letu ni kufanya kusikiliza na kutafakari kuwa sehemu ya maisha ya kila siku: nyumbani, safarini, na popote ulipo na muda wa kumkumbuka Allah.",
+      "readListenAndReflect": "Soma, Sikiliza, na Tafakari",
+      "readTheMushafExploreTranslations": "Soma Mushaf, chunguza tafsiri, hifadhi aya na maelezo, na urudi kwenye adhkari za kila siku. Chagua qari wako, unda orodha za kucheza, na ujenge uzoefu wa kusikiliza unaofaa siku yako. Vipengele vinavyopatikana hutofautiana kwa kifaa; programu asilia pia zinaunga mkono upakuaji kwa kusikiliza nje ya mtandao.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Sura zilizopangwa kwa makini kwa matukio na mada mbalimbali",
+      "weCareAboutTheAccuracy": "Tunajali usahihi wa maudhui matakatifu, muundo wenye heshima, na upatikanaji unaotegemewa. Tunaendelea kuboresha ISTIMA kwa kuwajali wanaoitumia. Allah akubali juhudi hii na aifanye yenye manufaa kwa kila anayesikiliza, anayesoma, na anayetafakari."
+    },
+    "aboutApp": "Kuhusu {{name}}",
+    "appearance": "MWONEKANO",
+    "defaultreciter": {
+      "changeDefaultReciter": "BADILISHA QARI CHAGUOMSINGI"
+    },
+    "developer": "MSANIDI",
+    "floatingDevMenu": "Menyu Elea ya Msanidi",
+    "language": "Lugha",
+    "languageDescription": "Chagua lugha ya programu",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Tumia qari chaguomsingi uliyemchagua kila wakati",
+      "askEveryTime": "Uliza Kila Mara",
+      "chooseAReciterEachTime": "Chagua qari kila unapocheza",
+      "chooseHowYouWantTo": "Chagua jinsi ya kuchagua qari unapocheza Sura",
+      "defaultSelectionMethod": "NJIA CHAGUOMSINGI YA KUCHAGUA",
+      "searchThroughOurCompleteCollection": "Tafuta katika mkusanyiko wetu kamili wa qari",
+      "selectionPreference": "MAPENDEKEZO YA UCHAGUZI"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Vipakuliwa vyote vimeondolewa.",
+      "areYouSureYouWant": "Una uhakika unataka kuondoa maudhui yote yaliyopakuliwa? Kitendo hiki hakiwezi kutenguliwa.",
+      "cache": "Akiba",
+      "cacheHasBeenCleared": "Akiba imefutwa.",
+      "clearCache": "Futa akiba",
+      "failedToClearCache": "Imeshindwa kufuta akiba.",
+      "failedToRemoveDownloads": "Imeshindwa kuondoa vipakuliwa.",
+      "free": "Bure",
+      "loadingStorageInformation": "Inapakia taarifa za hifadhi...",
+      "manageStorage": "SIMAMIA HIFADHI",
+      "otherApps": "Programu nyingine",
+      "removeAllDownloads": "Ondoa vipakuliwa vyote",
+      "removeAllTheQuranContent": "Ondoa maudhui yote ya Qur'ani uliyopakua kwa matumizi ya nje ya mtandao.",
+      "storageBreakdown": "MGAWANYO WA HIFADHI",
+      "success": "Imefanikiwa",
+      "thisWillClearYourCache": "Hii itafuta akiba yako. Vipakuliwa vyako havitaondolewa.",
+      "youCanFreeUpStorage": "Unaweza kuongeza nafasi kwa kufuta akiba. Vipakuliwa vyako havitaondolewa."
+    },
+    "themePicker": {
+      "auto": "Otomatiki",
+      "dark": "Nyeusi",
+      "light": "Nyeupe"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Hakuna orodha ya mabadiliko"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Kuhusu {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Ongeza Qari Pendwa",
+      "uploadRecitation": "Pakia Qiraa"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Sauti za Mazingira",
+      "none": "Hakuna",
+      "volume": "Sauti"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "mf., Qiraa za Asubuhi"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Ondoa Kilichopakuliwa"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Imekamilika"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Ongeza kwenye mkusanyiko",
+      "addToQueue": "Ongeza kwenye foleni",
+      "continuePlaying": "Endelea kucheza",
+      "goToReciter": "Nenda kwa qari",
+      "removeFromRecents": "Ondoa kwenye za hivi karibuni"
+    },
+    "mushafLayoutSheet": {
+      "back": "Rudi"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Aya ya Mwisho",
+      "playbackSettings": "Mipangilio ya Uchezaji",
+      "selectRange": "Chagua Kipindi",
+      "startingVerse": "Aya ya Kuanzia"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Mipangilio ya Kurudia",
+      "start": "Anza",
+      "verseRange": "Kipindi cha aya"
+    },
+    "organizeRecitationSheet": {
+      "category": "Kategoria",
+      "customReciter": "Qari maalum",
+      "duA": "Dua",
+      "eGMorningAdhkar": "mf., Adhkari za Asubuhi",
+      "lecture": "Mhadhara",
+      "moreOptions": "Chaguo Zaidi",
+      "other": "Nyingine",
+      "recording": "Rekodi",
+      "rewayah": "Riwaya",
+      "searchSurahs": "Tafuta sura...",
+      "style": "Mtindo",
+      "tafsir": "Tafsiri",
+      "title": "Kichwa",
+      "type": "Aina",
+      "verseRangeOptional": "Kipindi cha aya (hiari)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Kasi ya Uchezaji"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Vipengee vyote kwenye orodha hii ya kucheza tayari vimepakuliwa.",
+      "anErrorOccurredWhileDownloading": "Hitilafu imetokea wakati wa kupakua orodha ya kucheza. Tafadhali jaribu tena.",
+      "deletePlaylist": "Futa Orodha ya Kucheza",
+      "downloadingPlaylist": "Inapakua orodha ya kucheza...",
+      "editPlaylist": "Hariri Orodha ya Kucheza",
+      "emptyPlaylist": "Orodha ya Kucheza Tupu",
+      "thisPlaylistIsEmpty": "Orodha hii ya kucheza ni tupu."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Kuhusu Riwaya",
+      "availableRewayat": "Riwaya Zinazopatikana"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Imeshindwa kuongeza sura kwenye orodha ya kucheza",
+      "failedToCreatePlaylist": "Imeshindwa kuunda orodha ya kucheza",
+      "noPlaylistsYetCreateYour": "Bado hakuna orodha za kucheza. Unda orodha yako ya kwanza hapo juu!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Uliza kila mara",
+      "randomReciter": "Qari Nasibu",
+      "selectReciter": "Chagua Qari"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Hakuna aya zinazofanana zilizopatikana kwa aya hii.",
+      "similarWording": "Maneno Yanayofanana"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Kipima Muda cha Kulala",
+      "turnOffTimer": "Zima Kipima Muda"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Ondoa kwenye Orodha ya Kucheza"
+    },
+    "verseActionsSheet": {
+      "addNote": "Ongeza Maelezo",
+      "copy": "Nakili",
+      "repeat": "Rudia",
+      "similarVerses": "Aya Zinazofanana",
+      "tafseer": "Tafsiri",
+      "theme": "Mandhari"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Chaguo za Kunakili",
+      "selectWhatToCopy": "Chagua cha kunakili"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Rangi ya Kiangazio"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Shiriki Aya"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Imepatikana katika aya {{count}}",
+    "foundIn_other": "Imepatikana katika aya {{count}}"
+  },
+  "surahItem": {
+    "moreOptions": "Chaguo zaidi",
+    "opensMenuWithAdditionalActions": "Hufungua menyu yenye vitendo vya ziada kwa Sura hii",
+    "tapToPlaySurah": "Gusa kucheza Sura"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Kitambulisho cha orodha ya kucheza si sahihi",
+      "playlistNotFound": "Orodha ya kucheza haijapatikana"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Hakuna qari mwenye sura zote za orodha hii ya kucheza. Tafadhali jaribu orodha nyingine.",
+      "failedToPlayPlaylistPlease": "Imeshindwa kucheza orodha ya kucheza. Tafadhali jaribu tena.",
+      "failedToPlayTrackPlease": "Imeshindwa kucheza wimbo. Tafadhali jaribu tena.",
+      "failedToShufflePlaylistPlease": "Imeshindwa kuchanganya orodha ya kucheza. Tafadhali jaribu tena.",
+      "noReciterAvailable": "Hakuna Qari Anayepatikana",
+      "noSurahsInThisPlaylist": "Hakuna sura kwenye orodha hii ya kucheza"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Akaunti",
+      "appData": "Programu na Data",
+      "audioPlayback": "Sauti na Uchezaji",
+      "chooseYourPreferredReciter": "Chagua qari unayempendelea",
+      "customizeQuranDisplayOptions": "Badilisha chaguo za uonyeshaji wa Qur'ani",
+      "customizeReciterSelection": "Badilisha uchaguzi wa qari",
+      "featureRequests": "Maombi ya Vipengele",
+      "feedback": "Maoni",
+      "helpSupport": "Msaada na Usaidizi",
+      "learnMoreAboutOurMission": "Jifunze zaidi kuhusu dhamira yetu",
+      "manageQuranTranslationsAndCommentary": "Simamia tafsiri na ufafanuzi wa Qur'ani",
+      "privacyPolicy": "Sera ya Faragha",
+      "quran": "Qur'ani",
+      "readOurTermsOfService": "Soma masharti yetu ya huduma",
+      "seeWhatSNewIn": "Ona mapya katika toleo hili",
+      "shareYourExperienceWithOthers": "Shiriki uzoefu wako na wengine",
+      "showTheFloatingDeveloperTools": "Onyesha kitufe elea cha zana za msanidi",
+      "suggestImprovementsAndNewFeatures": "Pendekeza maboresho na vipengele vipya",
+      "termsOfService": "Masharti ya Huduma",
+      "viewAndManageStorageUsage": "Tazama na usimamie matumizi ya hifadhi",
+      "viewOurPrivacyPolicy": "Tazama sera yetu ya faragha",
+      "writeAReview": "Andika Maoni"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Ghairi",
+    "close": "Funga",
+    "collection": "Mkusanyiko",
+    "download": "Pakua",
+    "downloads": "Vilivyopakuliwa",
+    "error": "Hitilafu imetokea",
+    "favorites": "Vipendwa",
+    "home": "Mwanzo",
+    "language": "Lugha",
+    "library": "Maktaba",
+    "loading": "Inapakia...",
+    "noResults": "Hakuna matokeo yaliyopatikana",
+    "offline": "Uko nje ya mtandao",
+    "pause": "Sitisha",
+    "play": "Cheza",
+    "retry": "Jaribu tena",
+    "save": "Hifadhi",
+    "search": "Tafuta",
+    "settings": "Mipangilio",
+    "surahs": "Sura"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "CHAGUA MAUDHUI"
+    },
+    "highlightContent": {
+      "chooseColor": "CHAGUA RANGI"
+    },
+    "noteContent": {
+      "saveNote": "Hifadhi Maelezo"
+    },
+    "shareContent": {
+      "shareLink": "Shiriki Kiungo"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Hakuna aya zinazofanana zilizopatikana kwa aya hii.",
+      "sharedPhrases": "MISEMO INAYOSHIRIKIWA",
+      "similarWording": "MANENO YANAYOFANANA"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Hakuna Tafsiri Iliyopakuliwa",
+      "tafseerNotAvailableForThis": "Tafsiri haipatikani kwa aya hii",
+      "tapHereToDownloadA": "Gusa hapa kupakua tafsiri na kuona ufafanuzi."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Hakuna data ya kimada kwa aya hii.",
+      "passage": "Kifungu"
+    },
+    "translationContent": {
+      "switch": "Badilisha",
+      "translationNotAvailable": "Tafsiri haipatikani"
+    }
+  },
+  "version": {
+    "label": "Toleo {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Mapya katika"
+  },
+  "wordDetail": {
+    "context": "Aya {{surah}}:{{ayah}} · Neno {{position}} kati ya {{total}}"
+  }
+}

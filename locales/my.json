@@ -1,4 +1,33 @@
 {
+  "adhkarUi": {
+    "addBookmark": "bookmark ထည့်ရန်",
+    "complete": "ပြီးပါပြီ",
+    "copyArabic": "အာရဗီစာသား ကူးယူရန်",
+    "count_other": "ဇိက်ရ် {{count}} ခု",
+    "counterLabel": "တစ်ဗီဟ် ကောင်တာ၊ {{target}} အနက် {{current}}",
+    "disableRepeat": "ထပ်ခါထပ်ခါဖွင့်ခြင်း ပိတ်ရန်",
+    "enableRepeat": "ထပ်ခါထပ်ခါဖွင့်ခြင်း ဖွင့်ရန်",
+    "hideInfo": "အချက်အလက် ဖျောက်ရန်",
+    "hideInstruction": "ညွှန်ကြားချက် ဖျောက်ရန်",
+    "layoutSettings": "အပြင်အဆင် ဆက်တင်များ",
+    "noSaved": "သိမ်းထားသော ဇိက်ရ် မရှိသေးပါ",
+    "noSavedShort": "သိမ်းထားသော ဇိက်ရ် မရှိပါ",
+    "noneFound": "ဇိက်ရ် မတွေ့ပါ",
+    "pauseAll": "အားလုံး ခဏရပ်ရန်",
+    "pauseAudio": "အသံ ခဏရပ်ရန်",
+    "playAllLabel": "အားလုံး ဖွင့်ရန်",
+    "playAudio": "အသံ ဖွင့်ရန်",
+    "position": "{{total}} အနက် {{current}}",
+    "removeBookmark": "bookmark ဖယ်ရှားရန်",
+    "resetCounter": "ကောင်တာကို ပြန်လည်သတ်မှတ်ရန်",
+    "resetHint": "ရေတွက်မှုကို သုညသို့ ပြန်ထားသည်",
+    "shareDhikr": "ဇိက်ရ် မျှဝေရန်",
+    "showInfo": "အချက်အလက် ပြရန်",
+    "showInstruction": "ညွှန်ကြားချက် ပြရန်",
+    "tapBookmarkHint": "ဤနေရာတွင် သိမ်းရန် ဇိက်ရ်တစ်ခုခုရှိ bookmark အိုင်ကွန်ကို နှိပ်ပါ",
+    "tapToCount": "ရေတွက်ရန် နှိပ်ပါ",
+    "tapToIncrement": "ရေတွက်မှု တိုးရန် နှိပ်ပါ"
+  },
   "app": {
     "errorInitializingPlayer": "အသံဖွင့်စက် စတင်ရာတွင် အမှားဖြစ်ပွားသည်: {{message}}",
     "errorLoadingFonts": "စာလုံးပုံစံများ တင်ရာတွင် အမှားဖြစ်ပွားသည်"

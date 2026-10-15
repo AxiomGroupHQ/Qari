@@ -1,0 +1,749 @@
+{
+  "adhkarUi": {
+    "addBookmark": "Yer imi ekle",
+    "complete": "Tamamlandı",
+    "copyArabic": "Arapça metni kopyala",
+    "count_one": "{{count}} zikir",
+    "count_other": "{{count}} zikir",
+    "counterLabel": "Tesbih sayacı, {{current}} / {{target}}",
+    "disableRepeat": "Tekrarı kapat",
+    "enableRepeat": "Tekrarı aç",
+    "hideInfo": "Bilgiyi gizle",
+    "hideInstruction": "Talimatı gizle",
+    "layoutSettings": "Yerleşim ayarları",
+    "noSaved": "Henüz kayıtlı zikir yok",
+    "noSavedShort": "Kayıtlı zikir yok",
+    "noneFound": "Zikir bulunamadı",
+    "pauseAll": "Tümünü duraklat",
+    "pauseAudio": "Sesi duraklat",
+    "playAllLabel": "Tümünü çal",
+    "playAudio": "Sesi çal",
+    "position": "{{current}} / {{total}}",
+    "removeBookmark": "Yer imini kaldır",
+    "resetCounter": "Sayacı sıfırla",
+    "resetHint": "Sayıyı sıfıra döndürür",
+    "shareDhikr": "Zikri paylaş",
+    "showInfo": "Bilgiyi göster",
+    "showInstruction": "Talimatı göster",
+    "tapBookmarkHint": "Buraya kaydetmek için herhangi bir zikirdeki yer imi simgesine dokunun",
+    "tapToCount": "Saymak için dokunun",
+    "tapToIncrement": "Sayıyı artırmak için dokunun"
+  },
+  "app": {
+    "errorInitializingPlayer": "Oynatıcı başlatılırken hata: {{message}}",
+    "errorLoadingFonts": "Yazı tipleri yüklenirken hata"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA ana sayfa"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Tümü",
+      "clearAll": "Tümünü Temizle",
+      "hasPhoto": "Fotoğraflı"
+    },
+    "filterModal": {
+      "apply": "Uygula",
+      "filterReciters": "Kârileri Filtrele",
+      "recitationStyles": "Okuyuş Stilleri",
+      "reset": "Sıfırla",
+      "rewayatTypes": "Rivayet Türleri"
+    },
+    "recitersFound_one": "Geçerli filtrelerle {{count}} kâri bulundu",
+    "recitersFound_other": "Geçerli filtrelerle {{count}} kâri bulundu"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Sevilen Sureler"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Ayetleri burada görmek için yer imi ekleyin",
+      "bookmarks": "Yer İmleri",
+      "noBookmarksYet": "Henüz yer imi yok",
+      "removeBookmark": "Yer İmini Kaldır"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Rivayet",
+      "searchPlaylistsRecitersSurahsRewayat": "Çalma listesi, kâri, sure, rivayet ara...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Çalma listesi, kâri, sure, rivayet ve indirmelerde ara",
+      "searchYourCollection": "Koleksiyonunuzda Arayın",
+      "searching": "Aranıyor...",
+      "tryDifferentKeywords": "Farklı anahtar kelimeler deneyin"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Surelerin burada görünmesi için indirin",
+      "noDownloadsYet": "Henüz indirme yok",
+      "playAll": "Tümünü Çal"
+    },
+    "favoritereciters": {
+      "addReciters": "Kâri Ekle",
+      "addRecitersToSeeThem": "Kârileri burada görmek için ekleyin",
+      "noFavoriteRecitersYet": "Henüz favori kâri yok",
+      "removeFromFavorites": "Favorilerden Kaldır",
+      "searchFavoriteReciters": "Favori kârilerde ara"
+    },
+    "index": {
+      "addToCollection": "Koleksiyona Ekle",
+      "bookmarks": "Yer İmleri",
+      "createYourFirstPlaylist": "İlk çalma listenizi oluşturun",
+      "downloads": "İndirmeler",
+      "items_one": "{{count}} öğe",
+      "items_other": "{{count}} öğe",
+      "loved": "Sevilenler",
+      "noBookmarksYet": "Henüz yer imi yok",
+      "noDownloadsYet": "Henüz indirme yok",
+      "noFavoritesYet": "Henüz favori yok",
+      "noLovedSurahsYet": "Henüz sevilen sure yok",
+      "noNotesYet": "Henüz not yok",
+      "noUploadsYet": "Henüz yükleme yok",
+      "notes": "Notlar",
+      "playlists": "Çalma Listeleri",
+      "reciters": "Kâriler",
+      "uploads": "Yüklemeler"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Sevilen tüm sureler zaten indirildi.",
+      "allLovedSurahsHaveBeen": "Sevilen tüm sureler indirildi.",
+      "downloadError": "İndirme Hatası",
+      "loveSurahsToSeeThem": "Surelerin burada görünmesi için sevin",
+      "noLovedSurahsYet": "Henüz sevilen sure yok",
+      "someDownloadsMayHaveFailed": "Bazı indirmeler başarısız olmuş olabilir.",
+      "unloveAllSurahs": "Tüm Surelerin Sevgisini Kaldır"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Burada görmek için ayetlere not ekleyin",
+      "editNote": "Notu Düzenle",
+      "noNotesYet": "Henüz not yok",
+      "notes": "Notlar"
+    },
+    "playlistModal": {
+      "name": "Ad"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Burada görmek için çalma listeleri oluşturun",
+      "noPlaylistsYet": "Henüz çalma listesi yok",
+      "playlists": "Çalma Listeleri"
+    },
+    "uploads": {
+      "removeAllUploads": "Tüm Yüklemeleri Kaldır",
+      "uploadRecitationsToSeeThem": "Burada görmek için okuyuşları yükleyin"
+    }
+  },
+  "common": {
+    "1Time": "1 kez",
+    "2Times": "2 kez",
+    "3Times": "3 kez",
+    "addToCollection": "Koleksiyona Ekle",
+    "addToQueue": "Kuyruğa Ekle",
+    "allSurahs": "Tüm Sureler",
+    "alreadyDownloaded": "Zaten İndirildi",
+    "arabic": "Arapça",
+    "asc": "Artan",
+    "browseAll": "Tümüne Göz At",
+    "browseAllReciters": "Tüm Kârilere Göz At",
+    "cancel": "İptal",
+    "clear": "Temizle",
+    "copyToClipboard": "Panoya Kopyala",
+    "createNewPlaylist": "Yeni Çalma Listesi Oluştur",
+    "defaultReciter": "Varsayılan Kâri",
+    "delete": "Sil",
+    "deleteNote": "Notu Sil",
+    "deleteRecitation": "Okuyuşu Sil",
+    "desc": "Azalan",
+    "downloadComplete": "İndirme Tamamlandı",
+    "downloadFailed": "İndirme Başarısız",
+    "downloads": "İndirmeler",
+    "editDetails": "Ayrıntıları Düzenle",
+    "error": "Hata",
+    "favoriteReciters": "Favori Kâriler",
+    "followAlong": "Takip Et",
+    "from": "Başlangıç",
+    "goToReciter": "Kâriye Git",
+    "goToVerse": "Ayete git",
+    "learnAboutSurah": "Sure Hakkında",
+    "loading": "Yükleniyor...",
+    "loop": "Döngü",
+    "loved": "Sevilenler",
+    "mushafSettings": "Mushaf Ayarları",
+    "next": "Sonraki",
+    "noRecitersFound": "Kâri bulunamadı",
+    "noResultsFound": "Sonuç bulunamadı",
+    "noUploadsYet": "Henüz yükleme yok",
+    "play": "Çal",
+    "playEachVerse": "Her ayeti çal",
+    "playNow": "Şimdi Çal",
+    "playSpeed": "Oynatma hızı",
+    "playTheRange": "Aralığı çal",
+    "playlistName": "Çalma Listesi Adı",
+    "prev": "Önceki",
+    "readingTheme": "Okuma Teması",
+    "recentSearches": "Son aramalar",
+    "reciter": "Kâri",
+    "reciterChoice": "Kâri Seçimi",
+    "reciters": "Kâriler",
+    "remove": "Kaldır",
+    "removeAllDownloads": "Tüm İndirmeleri Kaldır",
+    "removeHighlight": "Vurguyu Kaldır",
+    "rev": "Nüzul Sırası",
+    "save": "Kaydet",
+    "search": "Ara",
+    "searchReciters": "Kâri ara...",
+    "searchSurahs": "Sure ara",
+    "share": "Paylaş",
+    "shareAsImage": "Görsel Olarak Paylaş",
+    "shareAsText": "Metin Olarak Paylaş",
+    "sharedPhrases": "Ortak İfadeler",
+    "showBasmallah": "Besmeleyi Göster",
+    "stop": "Durdur",
+    "storage": "Depolama",
+    "surah": "Sure",
+    "surahs": "Sureler",
+    "to": "Bitiş",
+    "translation": "Meal",
+    "translationsTafaseer": "Mealler ve Tefsirler",
+    "transliteration": "Transliterasyon",
+    "uploads": "Yüklemeler",
+    "useDefaultReciter": "Varsayılan Kâriyi Kullan",
+    "verseReference": "Ayet Referansı",
+    "verses": "Ayetler",
+    "whatSNew": "Yenilikler",
+    "wordByWord": "Kelime Kelime",
+    "writeYourNoteHere": "Notunuzu buraya yazın...",
+    "yourPlaylists": "Çalma Listeleriniz"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Tüm sureleri çal"
+    },
+    "searchHeader": {
+      "searchSurahs": "Sure Ara"
+    },
+    "searchView": {
+      "noSurahsFound": "Sure bulunamadı"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Kullanılabilir sure yok"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Okuyuş Ekle",
+      "uploadRecitationsToSeeThem": "Burada görmek için okuyuşları yükleyin"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "İndirildi • {{count}} sure",
+    "subtitle_other": "İndirildi • {{count}} sure"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Üzgünüz.. bir hata oluştu"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "114 sureye de göz at"
+    },
+    "savedAdhkarHero": {
+      "saved": "Kaydedilenler",
+      "yourCollection": "Koleksiyonunuz"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "GÜNÜN SURESİ"
+    },
+    "surahsHero": {
+      "number": "Numara"
+    }
+  },
+  "language": {
+    "later": "Sonra",
+    "restartMessage": "Yeni yerleşim yönünü uygulamak için uygulamayı yeniden başlatın.",
+    "restartNow": "Şimdi yeniden başlat",
+    "restartTitle": "Yeniden başlatma gerekli",
+    "search": "Dil ara",
+    "system": "Cihaz dili"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Devam"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Atla"
+    }
+  },
+  "mushaf": {
+    "juz": "Cüz {{juz}}",
+    "loadingMushaf": "Mushaf yükleniyor…",
+    "main": {
+      "mushafSettings": "Mushaf ayarları"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Kâriyi değiştir",
+      "changeReciter2": "Kâriyi Değiştir",
+      "nextAyah": "Sonraki ayet",
+      "playbackOptions": "Oynatma seçenekleri",
+      "previousAyah": "Önceki ayet"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Sure, ayet, sayfa veya cüz bul",
+      "recentReads": "SON OKUNANLAR",
+      "searchSurahsPagesOrJuz": "Sure, sayfa veya cüz ara...",
+      "searchTheMushaf": "Mushafta Ara"
+    },
+    "options": "Seçenekler",
+    "page": "Sayfa {{page}}",
+    "pageAndSurah": "Sayfa {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushaf yüklenemedi.",
+    "tryAgain": "Tekrar dene"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Mushafta Allah'ın ismini ve Rab gibi ilahi unvanları vurgular."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Konu bölümüne göre dönüşümlü vurgulama",
+    "arabicFontSize": "Arapça Yazı Boyutu",
+    "bold": "Kalın",
+    "book": "Kitap",
+    "colorLegend": "Renk açıklaması",
+    "currentlyReading": "Şu an okunan",
+    "divineNames": "İLAHİ İSİMLER",
+    "fontSize": "Yazı Boyutu",
+    "fullscreen": "Tam Ekran",
+    "hamzaReplacedByLongVowel": "Hemze uzun ünlüyle değiştirilmiş",
+    "heavyLamInAllahAfter": "Hece-i tefhim harflerinden sonra Allah lafzında kalın lâm",
+    "highlightAllahRabb": "Allah / Rab'bi Vurgula",
+    "horizontal": "Yatay",
+    "ibdal": "İbdal",
+    "list": "Liste",
+    "loadingSample": "Örnek yükleniyor...",
+    "maddAlBadal": "Medd-i Bedel",
+    "maximumProminence": "En belirgin",
+    "medium": "Orta",
+    "modernMadinahPrintedPipeline": "Modern Medine baskısı",
+    "mushaf": "Mushaf",
+    "normal": "Normal",
+    "originalMushafWeight": "Orijinal mushaf kalınlığı",
+    "pageDesign": "SAYFA TASARIMI",
+    "prolongedVowelAfterHamza": "Hemze sonrası uzatılmış ünlü",
+    "readingTheme": "OKUMA TEMASI",
+    "scrollDirection": "KAYDIRMA YÖNÜ",
+    "showDifferences": "Farkları Göster",
+    "silah": "Sıla",
+    "slightlyMoreProminent": "Biraz daha belirgin",
+    "softenedHamzaPronunciation": "Yumuşatılmış hemze telaffuzu",
+    "subcontinentNastaliqStyle": "Hint Yarımadası nestalik stili",
+    "taghlizAlLam": "Lâm'ın Tağlîzi",
+    "tajweedColoring": "Tecvid Renklendirmesi",
+    "tashilMusahhala": "Teshil / Müshele",
+    "textPreviewNotYetAvailable": "METİN ÖNİZLEMESİ HENÜZ MEVCUT DEĞİL",
+    "textThickness": "METİN KALINLIĞI",
+    "thematicHighlighting": "Konu Vurgulama",
+    "trailingVowelOrMoodChange": "Yalnızca son harekenin veya i'rabın değişimi",
+    "usingSaheehInternationalTranslationWith": "Kullanılan: dipnotlu Saheeh International Meali",
+    "vertical": "Dikey",
+    "viewType": "GÖRÜNÜM TÜRÜ",
+    "vowelMoodShift": "Hareke / i'rab değişimi",
+    "wordByWord": "KELİME KELİME",
+    "wordVariant": "Kelime varyantı"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Sunucuya ulaşılamıyor",
+    "connectionRestored": "Bağlantı yeniden kuruldu",
+    "noInternetConnection": "İnternet bağlantısı yok",
+    "showingCachedData": "Önbellekteki veriler gösteriliyor"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" oluştur"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Kuyruk",
+      "queueIsEmpty": "Kuyruk boş"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Sure metnini ve ayrıntılarını görmek için bu okuyuşu etiketleyin"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Çalma listesi • {{count}} sure",
+    "subtitle_other": "Çalma listesi • {{count}} sure"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Bu çalma listesinde sure yok"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Dipnot"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Tam bu an için seçilmiş bir okuyuş",
+      "discover": "Keşfet",
+      "discoverANewVoice": "Yeni bir ses keşfedin",
+      "explore": "Gez",
+      "exploreTheUnexpected": "Beklenmedik olanı keşfedin",
+      "hearSomethingNew": "Yeni bir şey dinleyin",
+      "letTheQuranSurpriseYou": "Kur'an sizi şaşırtsın",
+      "randomMix": "Rastgele Karışık",
+      "randomRecitation": "Rastgele Okuyuş",
+      "shuffleListen": "Karıştır ve Dinle",
+      "surpriseMe": "Beni şaşırt"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Görünüm modunu değiştirmek tüm uygulamaya uygulanır"
+  },
+  "reciterBrowse": {
+    "allReciters": "Tüm Kâriler",
+    "browseReciters": "Kârilere Göz At",
+    "favorites": "Favoriler"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Bu kâri için indirme yok"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Yüklemelerim"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Zikirler",
+    "bestForMemorization": "Ezber İçin En İyiler",
+    "bestForTajweed": "Tecvid İçin En İyiler",
+    "continueListening": "Dinlemeye Devam Et",
+    "exclusives": "Özel İçerikler",
+    "exploreByRewayah": "Rivayete Göre Keşfet",
+    "featuredReciters": "Öne Çıkan Kâriler",
+    "fromYourCollection": "Koleksiyonunuzdan",
+    "myRecitations": "Okuyuşlarım",
+    "newToQuranStartHere": "Kur'an'a yeni mi başlıyorsunuz? Buradan başlayın",
+    "seeMore": "Daha Fazla Gör",
+    "yourFavorites": "Favorileriniz"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Etkin",
+      "activeTafseer": "ETKİN TEFSİR",
+      "activeTranslation": "ETKİN MEAL",
+      "deleteTafseer": "Tefsiri Sil",
+      "deleteTranslation": "Meali Sil",
+      "noTafaseerFound": "Tefsir bulunamadı",
+      "noTranslationsFound": "Meal bulunamadı",
+      "unableToDownloadThisTafseer": "Bu tefsir indirilemedi. Lütfen internet bağlantınızı kontrol edip tekrar deneyin.",
+      "unableToDownloadThisTranslation": "Bu meal indirilemedi. Lütfen internet bağlantınızı kontrol edip tekrar deneyin."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Son arama yok",
+      "tryDifferentKeywordsOrCheck": "Farklı anahtar kelimeler deneyin veya yazımı kontrol edin",
+      "yourSearchHistoryWillAppear": "Arama geçmişiniz burada görünecek"
+    },
+    "surahsOrReciters": "Sure veya kâri ara"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Gelişmiş Ses Kontrolleri",
+      "browseByJuz": "Cüze Göre Gez",
+      "createAndManageYourOwn": "Favori okuyuşlarınızdan kişisel çalma listeleri oluşturun ve yönetin",
+      "crystalClearRecitationsFromThe": "Optimize edilmiş akışla dünyanın en iyi kârilerinden berrak okuyuşlar",
+      "curatedCollections": "Seçilmiş Koleksiyonlar",
+      "customPlaylists": "Özel Çalma Listeleri",
+      "customizeThemesAccentColorsAnd": "Temaları, vurgu renklerini ve ses ayarlarını zevkinize göre özelleştirin",
+      "downloadSurahsForOfflineListening": "Surelerin internetsiz, istediğiniz zaman ve yerde çevrimdışı dinlenmesi için indirin",
+      "easilyNavigateThroughTheQuran": "Cüz tabanlı düzen ve gruplamayla Kur'an'da kolayca gezinin",
+      "features": "ÖZELLİKLER",
+      "highQualityAudio": "Yüksek Kaliteli Ses",
+      "listenReflectRememberAllah": "Dinle. Düşün. Allah'ı an.",
+      "offlineDownloads": "Çevrimdışı İndirmeler",
+      "ourCommitment": "Taahhüdümüz",
+      "ourMission": "Misyonumuz",
+      "personalization": "Kişiselleştirme",
+      "precisePlaybackControlWithContinuous": "Kesintisiz oynatma ve ayarlanabilir okuyuş hızıyla hassas oynatma kontrolü",
+      "quranBayanTafsirKnowledgeOur": "Kur'an • Beyan • Tefsir • İlim. Amacımız dinlemeyi ve tefekkürü gündelik hayatın bir parçası yapmaktır: evde, yolda ve Allah'ı anmak için bir anınız olduğu her yerde.",
+      "readListenAndReflect": "Oku, Dinle ve Tefekkür Et",
+      "readTheMushafExploreTranslations": "Mushafı okuyun, meal ve tefsirlere göz atın, ayetleri ve notları kaydedin, günlük zikirlere dönün. Kârinizi seçin, çalma listeleri oluşturun ve gününüze uygun bir dinleme deneyimi şekillendirin. Kullanılabilir özellikler cihaza göre değişir; yerel uygulamalar çevrimdışı dinleme için indirmeyi de destekler.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Farklı vesileler ve konular için özenle düzenlenmiş sureler",
+      "weCareAboutTheAccuracy": "Kutsal içeriğin doğruluğuna, saygılı tasarıma ve güvenilir erişime önem veriyoruz. ISTIMA'yı kullananlara özen göstererek geliştirmeye devam ediyoruz. Allah bu çabayı kabul etsin ve dinleyen, okuyan, tefekkür eden herkes için faydalı kılsın."
+    },
+    "aboutApp": "{{name}} Hakkında",
+    "appearance": "GÖRÜNÜM",
+    "defaultreciter": {
+      "changeDefaultReciter": "VARSAYILAN KÂRİYİ DEĞİŞTİR"
+    },
+    "developer": "GELİŞTİRİCİ",
+    "floatingDevMenu": "Yüzen Geliştirici Menüsü",
+    "language": "Dil",
+    "languageDescription": "Uygulama dilini seçin",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Her zaman seçtiğiniz varsayılan kâriyi kullan",
+      "askEveryTime": "Her Seferinde Sor",
+      "chooseAReciterEachTime": "Her çaldığınızda bir kâri seçin",
+      "chooseHowYouWantTo": "Sureleri çalarken kârileri nasıl seçeceğinizi belirleyin",
+      "defaultSelectionMethod": "VARSAYILAN SEÇİM YÖNTEMİ",
+      "searchThroughOurCompleteCollection": "Kâri koleksiyonumuzun tamamında arayın",
+      "selectionPreference": "SEÇİM TERCİHİ"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Tüm indirmeler kaldırıldı.",
+      "areYouSureYouWant": "İndirilen tüm içeriği kaldırmak istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+      "cache": "Önbellek",
+      "cacheHasBeenCleared": "Önbellek temizlendi.",
+      "clearCache": "Önbelleği temizle",
+      "failedToClearCache": "Önbellek temizlenemedi.",
+      "failedToRemoveDownloads": "İndirmeler kaldırılamadı.",
+      "free": "Boş",
+      "loadingStorageInformation": "Depolama bilgileri yükleniyor...",
+      "manageStorage": "DEPOLAMAYI YÖNET",
+      "otherApps": "Diğer uygulamalar",
+      "removeAllDownloads": "Tüm indirmeleri kaldır",
+      "removeAllTheQuranContent": "Çevrimdışı kullanım için indirdiğiniz tüm Kur'an içeriğini kaldırın.",
+      "storageBreakdown": "DEPOLAMA DÖKÜMÜ",
+      "success": "Başarılı",
+      "thisWillClearYourCache": "Bu işlem önbelleğinizi temizler. İndirmeleriniz kaldırılmaz.",
+      "youCanFreeUpStorage": "Önbelleği temizleyerek yer açabilirsiniz. İndirmeleriniz kaldırılmaz."
+    },
+    "themePicker": {
+      "auto": "Otomatik",
+      "dark": "Koyu",
+      "light": "Açık"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Değişiklik günlüğü yok"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "{{name}} Hakkında",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Favori Kâri Ekle",
+      "uploadRecitation": "Okuyuş Yükle"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Ortam Sesleri",
+      "none": "Yok",
+      "volume": "Ses Düzeyi"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "ör. Sabah Okuyuşları"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "İndirmeyi Kaldır"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Bitti"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Koleksiyona ekle",
+      "addToQueue": "Kuyruğa ekle",
+      "continuePlaying": "Çalmaya devam et",
+      "goToReciter": "Kâriye git",
+      "removeFromRecents": "Son kullanılanlardan kaldır"
+    },
+    "mushafLayoutSheet": {
+      "back": "Geri"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Bitiş Ayeti",
+      "playbackSettings": "Oynatma Ayarları",
+      "selectRange": "Aralık Seç",
+      "startingVerse": "Başlangıç Ayeti"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Tekrar Ayarları",
+      "start": "Başlangıç",
+      "verseRange": "Ayet aralığı"
+    },
+    "organizeRecitationSheet": {
+      "category": "Kategori",
+      "customReciter": "Özel kâri",
+      "duA": "Dua",
+      "eGMorningAdhkar": "ör. Sabah Zikirleri",
+      "lecture": "Ders",
+      "moreOptions": "Diğer Seçenekler",
+      "other": "Diğer",
+      "recording": "Kayıt",
+      "rewayah": "Rivayet",
+      "searchSurahs": "Sure ara...",
+      "style": "Stil",
+      "tafsir": "Tefsir",
+      "title": "Başlık",
+      "type": "Tür",
+      "verseRangeOptional": "Ayet aralığı (isteğe bağlı)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Oynatma Hızı"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Bu çalma listesindeki tüm öğeler zaten indirildi.",
+      "anErrorOccurredWhileDownloading": "Çalma listesi indirilirken bir hata oluştu. Lütfen tekrar deneyin.",
+      "deletePlaylist": "Çalma Listesini Sil",
+      "downloadingPlaylist": "Çalma listesi indiriliyor...",
+      "editPlaylist": "Çalma Listesini Düzenle",
+      "emptyPlaylist": "Boş Çalma Listesi",
+      "thisPlaylistIsEmpty": "Bu çalma listesi boş."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Rivayetler Hakkında",
+      "availableRewayat": "Mevcut Rivayetler"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Sure çalma listesine eklenemedi",
+      "failedToCreatePlaylist": "Çalma listesi oluşturulamadı",
+      "noPlaylistsYetCreateYour": "Henüz çalma listesi yok. İlk çalma listenizi yukarıda oluşturun!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Her seferinde sor",
+      "randomReciter": "Rastgele Kâri",
+      "selectReciter": "Kâri Seç"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Bu ayet için benzer ayet bulunamadı.",
+      "similarWording": "Benzer İfade"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Uyku Zamanlayıcısı",
+      "turnOffTimer": "Zamanlayıcıyı Kapat"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Çalma Listesinden Kaldır"
+    },
+    "verseActionsSheet": {
+      "addNote": "Not Ekle",
+      "copy": "Kopyala",
+      "repeat": "Tekrarla",
+      "similarVerses": "Benzer Ayetler",
+      "tafseer": "Tefsir",
+      "theme": "Tema"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Kopyalama Seçenekleri",
+      "selectWhatToCopy": "Neyin kopyalanacağını seçin"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Vurgu Rengi"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Ayeti Paylaş"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "{{count}} ayette bulundu",
+    "foundIn_other": "{{count}} ayette bulundu"
+  },
+  "surahItem": {
+    "moreOptions": "Diğer seçenekler",
+    "opensMenuWithAdditionalActions": "Bu Sure için ek işlemler içeren menüyü açar",
+    "tapToPlaySurah": "Sureyi çalmak için dokunun"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Geçersiz çalma listesi kimliği",
+      "playlistNotFound": "Çalma listesi bulunamadı"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Bu çalma listesindeki tüm surelere sahip bir kâri bulunamadı. Lütfen başka bir çalma listesi deneyin.",
+      "failedToPlayPlaylistPlease": "Çalma listesi çalınamadı. Lütfen tekrar deneyin.",
+      "failedToPlayTrackPlease": "Parça çalınamadı. Lütfen tekrar deneyin.",
+      "failedToShufflePlaylistPlease": "Çalma listesi karıştırılamadı. Lütfen tekrar deneyin.",
+      "noReciterAvailable": "Kullanılabilir Kâri Yok",
+      "noSurahsInThisPlaylist": "Bu çalma listesinde sure yok"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Hesap",
+      "appData": "Uygulama ve Veriler",
+      "audioPlayback": "Ses ve Oynatma",
+      "chooseYourPreferredReciter": "Tercih ettiğiniz kâriyi seçin",
+      "customizeQuranDisplayOptions": "Kur'an görüntüleme seçeneklerini özelleştirin",
+      "customizeReciterSelection": "Kâri seçimini özelleştirin",
+      "featureRequests": "Özellik İstekleri",
+      "feedback": "Geri Bildirim",
+      "helpSupport": "Yardım ve Destek",
+      "learnMoreAboutOurMission": "Misyonumuz hakkında daha fazla bilgi edinin",
+      "manageQuranTranslationsAndCommentary": "Kur'an mealleri ve tefsirlerini yönetin",
+      "privacyPolicy": "Gizlilik Politikası",
+      "quran": "Kur'an",
+      "readOurTermsOfService": "Hizmet şartlarımızı okuyun",
+      "seeWhatSNewIn": "Bu sürümdeki yenilikleri görün",
+      "shareYourExperienceWithOthers": "Deneyiminizi başkalarıyla paylaşın",
+      "showTheFloatingDeveloperTools": "Yüzen geliştirici araçları düğmesini göster",
+      "suggestImprovementsAndNewFeatures": "İyileştirme ve yeni özellik önerin",
+      "termsOfService": "Hizmet Şartları",
+      "viewAndManageStorageUsage": "Depolama kullanımını görüntüleyin ve yönetin",
+      "viewOurPrivacyPolicy": "Gizlilik politikamızı görüntüleyin",
+      "writeAReview": "Yorum Yaz"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "İptal",
+    "close": "Kapat",
+    "collection": "Koleksiyon",
+    "download": "İndir",
+    "downloads": "İndirmeler",
+    "error": "Bir şeyler ters gitti",
+    "favorites": "Favoriler",
+    "home": "Ana Sayfa",
+    "language": "Dil",
+    "library": "Kitaplık",
+    "loading": "Yükleniyor...",
+    "noResults": "Sonuç bulunamadı",
+    "offline": "Çevrimdışısınız",
+    "pause": "Duraklat",
+    "play": "Çal",
+    "retry": "Tekrar dene",
+    "save": "Kaydet",
+    "search": "Ara",
+    "settings": "Ayarlar",
+    "surahs": "Sureler"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "İÇERİK SEÇ"
+    },
+    "highlightContent": {
+      "chooseColor": "RENK SEÇ"
+    },
+    "noteContent": {
+      "saveNote": "Notu Kaydet"
+    },
+    "shareContent": {
+      "shareLink": "Bağlantıyı Paylaş"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Bu ayet için benzer ayet bulunamadı.",
+      "sharedPhrases": "ORTAK İFADELER",
+      "similarWording": "BENZER İFADE"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "İndirilmiş Tefsir Yok",
+      "tafseerNotAvailableForThis": "Bu ayet için tefsir mevcut değil",
+      "tapHereToDownloadA": "Tefsir indirmek ve yorumu görüntülemek için buraya dokunun."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Bu ayet için konu verisi yok.",
+      "passage": "Bölüm"
+    },
+    "translationContent": {
+      "switch": "Değiştir",
+      "translationNotAvailable": "Meal mevcut değil"
+    }
+  },
+  "version": {
+    "label": "Sürüm {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Yenilikler:"
+  },
+  "wordDetail": {
+    "context": "Ayet {{surah}}:{{ayah}} · Kelime {{position}}/{{total}}"
+  }
+}

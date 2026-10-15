@@ -1,4 +1,33 @@
 {
+  "adhkarUi": {
+    "addBookmark": "เพิ่มบุ๊กมาร์ก",
+    "complete": "เสร็จสมบูรณ์",
+    "copyArabic": "คัดลอกข้อความภาษาอาหรับ",
+    "count_other": "{{count}} ซิกิร",
+    "counterLabel": "ตัวนับตัสบีห์ {{current}} จาก {{target}}",
+    "disableRepeat": "ปิดการเล่นซ้ำ",
+    "enableRepeat": "เปิดการเล่นซ้ำ",
+    "hideInfo": "ซ่อนข้อมูล",
+    "hideInstruction": "ซ่อนคำแนะนำ",
+    "layoutSettings": "การตั้งค่าเลย์เอาต์",
+    "noSaved": "ยังไม่มีซิกิรที่บันทึกไว้",
+    "noSavedShort": "ไม่มีซิกิรที่บันทึกไว้",
+    "noneFound": "ไม่พบซิกิร",
+    "pauseAll": "หยุดทั้งหมดชั่วคราว",
+    "pauseAudio": "หยุดเสียงชั่วคราว",
+    "playAllLabel": "เล่นทั้งหมด",
+    "playAudio": "เล่นเสียง",
+    "position": "{{current}} จาก {{total}}",
+    "removeBookmark": "ลบบุ๊กมาร์ก",
+    "resetCounter": "รีเซ็ตตัวนับ",
+    "resetHint": "รีเซ็ตจำนวนนับเป็นศูนย์",
+    "shareDhikr": "แชร์ซิกิร",
+    "showInfo": "แสดงข้อมูล",
+    "showInstruction": "แสดงคำแนะนำ",
+    "tapBookmarkHint": "แตะไอคอนบุ๊กมาร์กที่ซิกิรใดก็ได้เพื่อบันทึกไว้ที่นี่",
+    "tapToCount": "แตะเพื่อนับ",
+    "tapToIncrement": "แตะเพื่อเพิ่มจำนวนนับ"
+  },
   "app": {
     "errorInitializingPlayer": "เริ่มต้นเครื่องเล่นไม่สำเร็จ: {{message}}",
     "errorLoadingFonts": "โหลดแบบอักษรไม่สำเร็จ"

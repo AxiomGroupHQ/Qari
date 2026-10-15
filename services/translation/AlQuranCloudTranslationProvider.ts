@@ -5,7 +5,7 @@ import type {
 import type {TranslationProvider} from '@/types/TranslationProvider';
 
 /**
- * RFC-009 — Bayaan's default `TranslationProvider`, backed by the
+ * RFC-009 — Istima's default `TranslationProvider`, backed by the
  * alQuran.cloud aggregator API. Extracted verbatim from the former
  * `TranslationApiService` class body; behaviour is unchanged.
  */

@@ -1,0 +1,5 @@
+{
+  "NSMicrophoneUsageDescription": "Deze app gebruikt de microfoon om audio af te spelen.",
+  "NSAppleMusicUsageDescription": "Deze app gebruikt Apple Music om audio af te spelen.",
+  "NSCameraUsageDescription": "Deze app gebruikt de camera niet."
+}

@@ -18,6 +18,7 @@ import {Theme} from '@/utils/themeUtils';
 import {AdhkarAudioControls} from './AdhkarAudioControls';
 import {useAdhkarSettingsStore} from '@/store/adhkarSettingsStore';
 import {Dhikr} from '@/types/adhkar';
+import {t} from '@/i18n';
 
 // Enable LayoutAnimation for Android
 if (
@@ -164,7 +165,9 @@ export const DhikrReader: React.FC<DhikrReaderProps> = ({
               activeOpacity={1}
               accessibilityRole="button"
               accessibilityLabel={
-                showInstruction ? 'Hide instruction' : 'Show instruction'
+                showInstruction
+                  ? t('adhkarUi.hideInstruction')
+                  : t('adhkarUi.showInstruction')
               }>
               <View style={styles.instructionToggleContent}>
                 <Feather
@@ -173,7 +176,9 @@ export const DhikrReader: React.FC<DhikrReaderProps> = ({
                   color={theme.colors.textSecondary}
                 />
                 <Text style={styles.instructionToggleText}>
-                  {showInstruction ? 'Hide Info' : 'Show Info'}
+                  {showInstruction
+                    ? t('adhkarUi.hideInfo')
+                    : t('adhkarUi.showInfo')}
                 </Text>
               </View>
               <Feather

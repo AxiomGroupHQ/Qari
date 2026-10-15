@@ -1,0 +1,5 @@
+{
+  "NSMicrophoneUsageDescription": "此应用使用麦克风播放音频。",
+  "NSAppleMusicUsageDescription": "此应用使用 Apple Music 播放音频。",
+  "NSCameraUsageDescription": "此应用不使用相机。"
+}

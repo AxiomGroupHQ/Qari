@@ -22,8 +22,26 @@ const ASSOCIATED_DOMAIN = process.env.EXPO_PUBLIC_ASSOCIATED_DOMAIN;
 const PRIVACY_POLICY_URL =
   process.env.EXPO_PUBLIC_PRIVACY_POLICY_URL ?? branding.privacyUrl;
 
+// Localized iOS permission strings (InfoPlist.strings). One JSON per locale in locales/native.
+const NATIVE_LOCALE_TAGS = {zh: 'zh-Hans', prs: 'fa-AF', kmr: 'ku'};
+const nativeLocales = (() => {
+  const dir = require('path').join(__dirname, 'locales', 'native');
+  const fs = require('fs');
+  if (!fs.existsSync(dir)) return {};
+  return Object.fromEntries(
+    fs
+      .readdirSync(dir)
+      .filter(f => f.endsWith('.json') && f !== 'en.json')
+      .map(f => {
+        const code = f.replace('.json', '');
+        return [NATIVE_LOCALE_TAGS[code] ?? code, `./locales/native/${f}`];
+      }),
+  );
+})();
+
 module.exports = {
   expo: {
+    locales: nativeLocales,
     name: branding.appName, // @ai
     slug: branding.appSlug, // @ai
     scheme: branding.urlScheme, // Retain legacy bayaan URL handling for existing installations. @ai
@@ -47,6 +65,7 @@ module.exports = {
         ? {associatedDomains: [`applinks:${ASSOCIATED_DOMAIN}`]}
         : {}),
       infoPlist: {
+        // English defaults; localized versions come from locales/native/<code>.json
         NSMicrophoneUsageDescription:
           'This app uses the microphone to play audio.',
         NSAppleMusicUsageDescription:

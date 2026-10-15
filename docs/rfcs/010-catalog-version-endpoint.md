@@ -11,15 +11,15 @@
 
 Add an optional `branding.catalogVersionEndpoint?: string` field. When set, the app polls this URL on cold-start (and optionally on `AppState 'active'`) to discover whether the published catalog is newer than the locally-cached one, and triggers a `CatalogProvider` refetch when so — without requiring an app rebuild.
 
-Default behavior for Bayaan is unchanged: the field is undefined → no polling → catalog versioning by app build only (today's behavior).
+Default behavior for Istima is unchanged: the field is undefined → no polling → catalog versioning by app build only (today's behavior).
 
 ## Motivation
 
-Bayaan today versions its reciter catalog by app build: `services/dataService.ts:37` declares `const DATA_VERSION = '4'` as the AsyncStorage cache-bust key. A catalog update requires shipping a new app build. For Bayaan's relatively static reciter list this is fine.
+Istima today versions its reciter catalog by app build: `services/dataService.ts:37` declares `const DATA_VERSION = '4'` as the AsyncStorage cache-bust key. A catalog update requires shipping a new app build. For Istima's relatively static reciter list this is fine.
 
 Fork-side context — Qariah (the fork at `omar-zarka/qariah-v2`) recently shipped an ops console (`omar-zarka/qariah-ops-console`) that publishes catalog updates frequently (new reciters, metadata edits, recitation uploads). Tying every catalog change to an app rebuild + TestFlight cycle is incompatible with that workflow. Qariah needs runtime catalog refresh.
 
-The cleanest way to add this is at the multi-tenant config seam established by RFC-007: a single optional URL the app polls. Tenants who don't want runtime refresh (Bayaan, others) simply don't set the field.
+The cleanest way to add this is at the multi-tenant config seam established by RFC-007: a single optional URL the app polls. Tenants who don't want runtime refresh (Istima, others) simply don't set the field.
 
 ## Decision
 
@@ -134,7 +134,7 @@ Forces every tenant with dynamic catalog ops into a custom forked solution. Defe
 - One small additive seam — no API change for `CatalogProvider`.
 
 **Neutral:**
-- Bayaan's default behavior is unchanged (undefined endpoint → no poll).
+- Istima's default behavior is unchanged (undefined endpoint → no poll).
 - No backwards-compat concerns: the field is purely additive.
 
 **Negative / risks:**

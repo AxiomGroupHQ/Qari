@@ -1,6 +1,6 @@
-# Git Workflow Guidelines for Bayaan
+# Git Workflow Guidelines for Istima
 
-This document outlines the Git branching strategy and workflow practices for the Bayaan project. Following these guidelines will help maintain code quality, streamline collaboration, and ensure smooth deployment processes.
+This document outlines the Git branching strategy and workflow practices for the Istima project. Following these guidelines will help maintain code quality, streamline collaboration, and ensure smooth deployment processes.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ This document outlines the Git branching strategy and workflow practices for the
 
 ## Branching Strategy Overview
 
-Bayaan follows a modified Git Flow branching strategy, designed to support continuous development and regular releases. This approach maintains a clean production environment while allowing parallel feature development.
+Istima follows a modified Git Flow branching strategy, designed to support continuous development and regular releases. This approach maintains a clean production environment while allowing parallel feature development.
 
 ![Git Flow Diagram](https://nvie.com/img/git-model@2x.png)
 
@@ -298,6 +298,6 @@ We've successfully implemented:
 
 ## Conclusion
 
-This Git workflow is designed to maintain the stability of the Bayaan app while supporting efficient development. By following these guidelines, we can minimize conflicts, maintain a clean history, and ensure smooth releases.
+This Git workflow is designed to maintain the stability of the Istima app while supporting efficient development. By following these guidelines, we can minimize conflicts, maintain a clean history, and ensure smooth releases.
 
 The strategy should evolve with the project's needs, but the core principles of protecting the production environment and maintaining parallel development tracks should remain. 

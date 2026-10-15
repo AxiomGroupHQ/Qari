@@ -1,0 +1,5 @@
+{
+  "NSMicrophoneUsageDescription": "แอปนี้ใช้ไมโครโฟนเพื่อเล่นเสียง",
+  "NSAppleMusicUsageDescription": "แอปนี้ใช้ Apple Music เพื่อเล่นเสียง",
+  "NSCameraUsageDescription": "แอปนี้ไม่ใช้กล้อง"
+}

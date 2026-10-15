@@ -596,7 +596,7 @@ app.get('/verse/:surah/:ayah', (c) => {
 
   const surahName = SURAH_NAMES[surahNum] ?? `Surah ${surah}`;
   const title = `${surahName}, Verse ${ayah}`;
-  const description = `Read ${surahName} verse ${ayah} in Bayaan's Mushaf reader.`;
+  const description = `Read ${surahName} verse ${ayah} in Istima's Mushaf reader.`;
 
   if (isBotUA(ua)) {
     return c.html(buildOgHtml({ title, description, pageUrl: shareUrl }));
@@ -617,8 +617,8 @@ app.get('/dhikr/:superId/:dhikrId', (c) => {
   const shareUrl = `${BASE_URL}/share/dhikr/${superId}/${dhikrId}`;
   const ua = c.req.header('user-agent');
 
-  const title = 'Dhikr — Bayaan';
-  const description = 'Read and track your daily adhkar (remembrance) in the Bayaan app.';
+  const title = 'Dhikr — Istima';
+  const description = 'Read and track your daily adhkar (remembrance) in the Istima app.';
 
   if (isBotUA(ua)) {
     return c.html(buildOgHtml({ title, description, pageUrl: shareUrl }));

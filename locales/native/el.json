@@ -1,0 +1,5 @@
+{
+  "NSMicrophoneUsageDescription": "Αυτή η εφαρμογή χρησιμοποιεί το μικρόφωνο για την αναπαραγωγή ήχου.",
+  "NSAppleMusicUsageDescription": "Αυτή η εφαρμογή χρησιμοποιεί το Apple Music για την αναπαραγωγή ήχου.",
+  "NSCameraUsageDescription": "Αυτή η εφαρμογή δεν χρησιμοποιεί την κάμερα."
+}

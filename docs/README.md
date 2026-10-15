@@ -1,6 +1,6 @@
-# Bayaan Documentation
+# Istima Documentation
 
-This is the documentation hub for the Bayaan open-source Quran app. All docs live in this directory.
+This is the documentation hub for the Istima open-source Quran app. All docs live in this directory.
 
 **Tech stack:** React Native 0.83 · Expo SDK 55 · Expo Router v4 · expo-audio · Zustand · expo-sqlite · MMKV · Skia
 

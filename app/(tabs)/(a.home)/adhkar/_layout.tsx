@@ -2,6 +2,7 @@ import {Stack} from 'expo-router';
 import {AdhkarAudioProvider} from '@/components/adhkar/AdhkarAudioProvider';
 import {useTheme} from '@/hooks/useTheme';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {t} from '@/i18n';
 
 export default function AdhkarLayout() {
   const {theme} = useTheme();
@@ -28,7 +29,10 @@ export default function AdhkarLayout() {
           headerShadowVisible: false,
           headerBackButtonDisplayMode: 'minimal',
         }}>
-        <Stack.Screen name="index" options={{title: 'Adhkar'}} />
+        <Stack.Screen
+          name="index"
+          options={{title: t('recitersView.adhkar')}}
+        />
         <Stack.Screen name="[superId]/index" />
         <Stack.Screen name="[superId]/[dhikrId]" />
         <Stack.Screen name="saved" />

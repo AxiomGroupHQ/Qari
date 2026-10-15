@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This document describes the current architecture of Bayaan — the app's layers, how they fit together, and where to find what.
+This document describes the current architecture of Istima — the app's layers, how they fit together, and where to find what.
 
 > **Stack:** React Native 0.83 · Expo SDK 55 · Expo Router v4 · expo-audio · Zustand · expo-sqlite · MMKV · Skia
 
@@ -106,7 +106,7 @@ appInitializer.registerService({
 
 ## Navigation structure
 
-Bayaan uses **Expo Router v4** with a file-based routing system.
+Istima uses **Expo Router v4** with a file-based routing system.
 
 ```
 app/
@@ -173,7 +173,7 @@ flowchart LR
 
 ## State management
 
-Bayaan uses **Zustand** for all client state. Stores are split by domain:
+Istima uses **Zustand** for all client state. Stores are split by domain:
 
 ### Player stores (`services/player/store/`)
 

@@ -562,7 +562,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
    * Pre-building (rather than factory functions) avoids
    * `react/no-unstable-nested-components`; runtime cost is identical to
    * inline conditional rendering (each branch's null-return is what
-   * Bayaan already did with `{cond && <Section …/>}`).
+   * Istima already did with `{cond && <Section …/>}`).
    */
   const rowNodes: Record<HomeRowId, React.ReactNode> = {
     'continue-listening':
@@ -728,7 +728,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
 
   // RFC-008 — Listen-tab top-region slot. Forks may replace the default
   // `RecitersHero` via `branding.listenTabTopComponent`; capitalised here
-  // so it can be used as a JSX element. `undefined` keeps Bayaan's hero.
+  // so it can be used as a JSX element. `undefined` keeps Istima's hero.
   const ListenTabTopComponent = branding.listenTabTopComponent;
 
   return (

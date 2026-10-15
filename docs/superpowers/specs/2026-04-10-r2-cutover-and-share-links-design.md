@@ -374,12 +374,12 @@ Use raw `satori` + `@resvg/resvg-js` for server-side image generation (NOT `@ver
 
 | Link type | OG card content |
 |---|---|
-| Reciter | Reciter photo + name + "Listen on Bayaan" |
+| Reciter | Reciter photo + name + "Listen on Istima" |
 | Recitation | Reciter photo + surah name + reciter name (Spotify track card style) |
 | Verse | Arabic text on clean card with surah/ayah reference |
-| Mushaf | "Page X" + surah approximation + Bayaan branding |
-| Adhkar | Category name + description + Bayaan branding |
-| Dhikr | Arabic text of the dhikr + Bayaan branding |
+| Mushaf | "Page X" + surah approximation + Istima branding |
+| Adhkar | Category name + description + Istima branding |
+| Dhikr | Arabic text of the dhikr + Istima branding |
 
 **Caching:** Generated images cached to R2 bucket or in-memory with a TTL. Key = hash of the share URL. Avoids regenerating on every bot crawl.
 

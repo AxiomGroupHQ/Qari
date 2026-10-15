@@ -1,4 +1,36 @@
 {
+  "adhkarUi": {
+    "addBookmark": "Добавить закладку",
+    "complete": "Завершено",
+    "copyArabic": "Копировать арабский текст",
+    "count_few": "Азкаров: {{count}}",
+    "count_many": "Азкаров: {{count}}",
+    "count_one": "Азкаров: {{count}}",
+    "count_other": "Азкаров: {{count}}",
+    "counterLabel": "Счётчик тасбиха, {{current}} из {{target}}",
+    "disableRepeat": "Отключить повтор",
+    "enableRepeat": "Включить повтор",
+    "hideInfo": "Скрыть информацию",
+    "hideInstruction": "Скрыть инструкцию",
+    "layoutSettings": "Настройки макета",
+    "noSaved": "Сохранённых азкаров пока нет",
+    "noSavedShort": "Нет сохранённых азкаров",
+    "noneFound": "Азкары не найдены",
+    "pauseAll": "Приостановить всё",
+    "pauseAudio": "Приостановить аудио",
+    "playAllLabel": "Воспроизвести всё",
+    "playAudio": "Воспроизвести аудио",
+    "position": "{{current}} из {{total}}",
+    "removeBookmark": "Удалить закладку",
+    "resetCounter": "Сбросить счётчик",
+    "resetHint": "Сбрасывает счёт на ноль",
+    "shareDhikr": "Поделиться зикром",
+    "showInfo": "Показать информацию",
+    "showInstruction": "Показать инструкцию",
+    "tapBookmarkHint": "Нажмите значок закладки у любого зикра, чтобы сохранить его здесь",
+    "tapToCount": "Нажмите, чтобы считать",
+    "tapToIncrement": "Нажмите, чтобы увеличить счёт"
+  },
   "app": {
     "errorInitializingPlayer": "Ошибка инициализации проигрывателя: {{message}}",
     "errorLoadingFonts": "Ошибка загрузки шрифтов"
@@ -23,10 +55,10 @@
       "reset": "Сбросить",
       "rewayatTypes": "Виды передач чтения"
     },
-    "recitersFound_one": "С текущими фильтрами найден {{count}} чтец",
-    "recitersFound_other": "С текущими фильтрами найдено {{count}} чтеца",
     "recitersFound_few": "С текущими фильтрами найдено {{count}} чтеца",
-    "recitersFound_many": "С текущими фильтрами найдено {{count}} чтецов"
+    "recitersFound_many": "С текущими фильтрами найдено {{count}} чтецов",
+    "recitersFound_one": "С текущими фильтрами найден {{count}} чтец",
+    "recitersFound_other": "С текущими фильтрами найдено {{count}} чтеца"
   },
   "cards": {
     "lovedCard": {
@@ -65,6 +97,8 @@
       "bookmarks": "Закладки",
       "createYourFirstPlaylist": "Создайте первый плейлист",
       "downloads": "Загрузки",
+      "items_few": "{{count}} элемента",
+      "items_many": "{{count}} элементов",
       "items_one": "{{count}} элемент",
       "items_other": "{{count}} элемента",
       "loved": "Любимые",
@@ -77,9 +111,7 @@
       "notes": "Заметки",
       "playlists": "Плейлисты",
       "reciters": "Чтецы",
-      "uploads": "Загруженные файлы",
-      "items_few": "{{count}} элемента",
-      "items_many": "{{count}} элементов"
+      "uploads": "Загруженные файлы"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Все любимые суры уже скачаны.",
@@ -210,10 +242,10 @@
     }
   },
   "downloads": {
-    "subtitle_one": "Скачано • {{count}} сура",
-    "subtitle_other": "Скачано • {{count}} суры",
     "subtitle_few": "Скачано • {{count}} суры",
-    "subtitle_many": "Скачано • {{count}} сур"
+    "subtitle_many": "Скачано • {{count}} сур",
+    "subtitle_one": "Скачано • {{count}} сура",
+    "subtitle_other": "Скачано • {{count}} суры"
   },
   "errorBoundary": {
     "sorryThereWasAnError": "Извините, произошла ошибка"
@@ -343,10 +375,10 @@
     }
   },
   "playlist": {
-    "subtitle_one": "Плейлист • {{count}} сура",
-    "subtitle_other": "Плейлист • {{count}} суры",
     "subtitle_few": "Плейлист • {{count}} суры",
-    "subtitle_many": "Плейлист • {{count}} сур"
+    "subtitle_many": "Плейлист • {{count}} сур",
+    "subtitle_one": "Плейлист • {{count}} сура",
+    "subtitle_other": "Плейлист • {{count}} суры"
   },
   "playlistdetail": {
     "playlistDetail": {
@@ -612,10 +644,10 @@
     }
   },
   "similarVerses": {
-    "foundIn_one": "Найдено в {{count}} аяте",
-    "foundIn_other": "Аятов с совпадением: {{count}}",
     "foundIn_few": "Найдено в {{count}} аятах",
-    "foundIn_many": "Найдено в {{count}} аятах"
+    "foundIn_many": "Найдено в {{count}} аятах",
+    "foundIn_one": "Найдено в {{count}} аяте",
+    "foundIn_other": "Аятов с совпадением: {{count}}"
   },
   "surahItem": {
     "moreOptions": "Другие параметры",

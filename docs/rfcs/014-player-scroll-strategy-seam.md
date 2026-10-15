@@ -13,7 +13,7 @@ implementation PR.
 
 Add an optional `branding.playerMushafScrollBehavior?: 'gorhom' | 'native'` field. When absent
 from `config/branding.js`, the consumer (`QuranView`) defaults to `'gorhom'` via `??`, preserving
-Bayaan's current behavior byte-equivalent. When a fork sets it to `'native'`, `QuranView` skips
+Istima's current behavior byte-equivalent. When a fork sets it to `'native'`, `QuranView` skips
 `useBottomSheetScrollableCreator()` and passes no `renderScrollComponent` to `FlashList`. The
 swipe-down-to-close gesture on the player sheet is thereby opt-out; forks that need reliable
 imperative `scrollToIndex` calls (range-anchored seeks, bookmark deeplinks, future word-by-word
@@ -43,7 +43,7 @@ window — which spans the full open animation on every player launch, and re-oc
 snap point change — any imperative scroll is silently no-oped. The list stays at its current
 position; no error is thrown, no callback fires.
 
-For Bayaan, which always starts playback from surah position 0 (ayah 1), the sheet transition
+For Istima, which always starts playback from surah position 0 (ayah 1), the sheet transition
 window is irrelevant: the imperative `scrollToOffset({offset: 0})` in the surah-change effect
 lands at the same position the FlashList would already occupy, so the no-op is invisible.
 
@@ -84,10 +84,10 @@ go through the gorhom wrapper).
    returns `undefined`) scroll the list to the top on surah change.
 4. **Active-ayah auto-scroll (`useEffect` on `currentVerseKey` while `isLocked === true`).**
    Fires continuously during playback, including immediately on player open when `isLocked`
-   starts `true`. This call is arguably **the highest-impact one for default Bayaan**: if the
+   starts `true`. This call is arguably **the highest-impact one for default Istima**: if the
    player opens while the sheet is still mid-animation, the first auto-scroll lands at ayah 1
    and stays there until the next `currentVerseKey` tick fires after the sheet settles. The
-   visible symptom on default Bayaan is "the verse-highlight ribbon doesn't follow audio for the
+   visible symptom on default Istima is "the verse-highlight ribbon doesn't follow audio for the
    first few ayahs after a cold player open"; on Qariah's partial-recitation tracks the same
    race additionally combines with site (1)/(2) above.
 
@@ -115,13 +115,13 @@ player header. The comment at `QuranView/index.tsx` lines 20–28 documents the 
 // pan-down-to-close gesture is not required.
 ```
 
-This workaround is a local Qariah divergence — no seam in the shared codebase lets Bayaan
+This workaround is a local Qariah divergence — no seam in the shared codebase lets Istima
 preserve its gesture while Qariah opts out. This RFC proposes that seam.
 
-### Why Bayaan should care beyond Qariah
+### Why Istima should care beyond Qariah
 
 Any future imperative scroll into `QuranView` faces the same race. Concrete candidates already in
-the Bayaan roadmap or community wishlist:
+the Istima roadmap or community wishlist:
 
 - **Bookmark deeplinks** — tapping a shared verse link opens the player and jumps to that ayah.
 - **Word-by-word follow-along auto-scroll** — the active word scrolls into the center of the
@@ -136,7 +136,7 @@ a fork-local divergence every time.
 
 ---
 
-## Today's behavior in Bayaan upstream
+## Today's behavior in Istima upstream
 
 In `components/player/v2/PlayerContent/QuranView/index.tsx`, the relevant lines are:
 
@@ -206,10 +206,10 @@ The string union is forward-compatible: a future strategy (e.g. `'gesture-handle
 v3's scroll-coupling pattern, or `'skia-gesture'` for a Skia-v2 integration) is an additive
 change with no breaking-change field rename.
 
-### `config/branding.js` (Bayaan default)
+### `config/branding.js` (Istima default)
 
-Field omitted. The `?? 'gorhom'` fallback at the call site preserves Bayaan's behavior verbatim.
-Zero diff to `config/branding.js` in the Bayaan distribution.
+Field omitted. The `?? 'gorhom'` fallback at the call site preserves Istima's behavior verbatim.
+Zero diff to `config/branding.js` in the Istima distribution.
 
 ### `QuranView/index.tsx` change (the only code diff)
 
@@ -267,7 +267,7 @@ intrusive timing-instrumentation originally floated.
 
 ## Migration / default behavior
 
-**Bayaan:** no change. Field absent from `config/branding.js` → `?? 'gorhom'` in `QuranView` →
+**Istima:** no change. Field absent from `config/branding.js` → `?? 'gorhom'` in `QuranView` →
 `useBottomSheetScrollableCreator()` called → `renderScrollComponent` passed → behavior
 byte-equivalent to today. Zero action required.
 
@@ -317,7 +317,7 @@ grows more heuristics. The flag is explicit documentation of a fork-level archit
 
 gorhom deliberately parks scroll calls during sheet animation to avoid conflict between the
 sheet's pan responder and an in-progress scroll momentum. Removing that behavior upstream would
-affect every gorhom user, not just Bayaan forks, and could introduce physics artifacts in the
+affect every gorhom user, not just Istima forks, and could introduce physics artifacts in the
 sheet close animation on content that is scrolled mid-dismiss. Not our call to upstream-patch a
 third-party library for a fork-specific edge case.
 
@@ -354,7 +354,7 @@ The three open questions from the original RFC draft are all resolved as of this
 
 1. **FlashList prop shape (absent vs `undefined`).** Resolved as **spread to absent** — the
    conditional spread `{...(renderScrollComponent ? {renderScrollComponent} : {})}` keeps prop
-   parity with Bayaan's no-fork render path. FlashList accepts both forms, but absent is the
+   parity with Istima's no-fork render path. FlashList accepts both forms, but absent is the
    closer-to-no-op shape.
 2. **Dev-mode warning.** Resolved as **include a small one-shot `__DEV__` warning** when a fork
    sets `'native'`. Surfaces the "alternative dismiss affordance" responsibility at dev time.

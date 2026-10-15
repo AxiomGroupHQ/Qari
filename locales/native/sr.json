@@ -1,0 +1,5 @@
+{
+  "NSMicrophoneUsageDescription": "Ова апликација користи микрофон за пуштање звука.",
+  "NSAppleMusicUsageDescription": "Ова апликација користи Apple Music за пуштање звука.",
+  "NSCameraUsageDescription": "Ова апликација не користи камеру."
+}

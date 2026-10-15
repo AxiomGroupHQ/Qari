@@ -29,7 +29,7 @@ Allow users to upload audio recitations from their device for playback within th
 
 ### 1. From Outside the App (Share Sheet)
 
-User shares audio from Voice Memos, Files, WhatsApp, etc. → Bayaan appears as share target → App opens with upload flow.
+User shares audio from Voice Memos, Files, WhatsApp, etc. → Istima appears as share target → App opens with upload flow.
 
 **Technical requirements:**
 - iOS: Share Extension or `CFBundleDocumentTypes` in Info.plist

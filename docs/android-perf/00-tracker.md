@@ -53,7 +53,7 @@ Claude will read both documents, understand the full state, and pick up the next
 
 ## Context
 
-- **App:** Bayaan — React Native/Expo Quran audio app
+- **App:** Istima — React Native/Expo Quran audio app
 - **Problem:** Android performance lags behind iOS due to compounding issues (28MB bundled JSON, eager initialization, missing config)
 - **Key files:** `app/_layout.tsx` (root layout), `services/AppInitializer.ts` (startup), `components/sheets/sheets.tsx` (sheet registration), `data/reciterData.ts` (reciters JSON)
 - **Already confirmed enabled:** New Architecture (`gradle.properties:38`), Hermes (`gradle.properties:42`)

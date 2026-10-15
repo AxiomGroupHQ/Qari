@@ -20,6 +20,7 @@ import {adhkarService} from '@/services/adhkar/AdhkarService';
 import {useAdhkarAudioStore} from '@/store/adhkarAudioStore';
 import {useAdhkarPlayAllStore} from '@/store/adhkarPlayAllStore';
 import {useHeaderHeight} from '@react-navigation/elements';
+import {t} from '@/i18n';
 
 const {width: SCREEN_WIDTH} = Dimensions.get('window');
 
@@ -256,7 +257,7 @@ const SavedDhikrReaderScreen: React.FC = () => {
     return (
       <View style={styles.container}>
         <View style={[styles.loadingContainer, {paddingTop: headerHeight}]}>
-          <Text style={styles.emptyText}>No saved adhkar</Text>
+          <Text style={styles.emptyText}>{t('adhkarUi.noSavedShort')}</Text>
         </View>
       </View>
     );

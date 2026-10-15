@@ -1,0 +1,5 @@
+{
+  "NSMicrophoneUsageDescription": "Această aplicație folosește microfonul pentru a reda audio.",
+  "NSAppleMusicUsageDescription": "Această aplicație folosește Apple Music pentru a reda audio.",
+  "NSCameraUsageDescription": "Această aplicație nu folosește camera."
+}

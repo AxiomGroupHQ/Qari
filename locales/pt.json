@@ -1,4 +1,35 @@
 {
+  "adhkarUi": {
+    "addBookmark": "Adicionar marcador",
+    "complete": "Concluído",
+    "copyArabic": "Copiar texto árabe",
+    "count_many": "{{count}} adhkar",
+    "count_one": "{{count}} adhkar",
+    "count_other": "{{count}} adhkar",
+    "counterLabel": "Contador de tasbih, {{current}} de {{target}}",
+    "disableRepeat": "Desativar repetição",
+    "enableRepeat": "Ativar repetição",
+    "hideInfo": "Ocultar informações",
+    "hideInstruction": "Ocultar instruções",
+    "layoutSettings": "Definições de layout",
+    "noSaved": "Ainda não há adhkar guardados",
+    "noSavedShort": "Nenhum adhkar guardado",
+    "noneFound": "Nenhum adhkar encontrado",
+    "pauseAll": "Pausar tudo",
+    "pauseAudio": "Pausar áudio",
+    "playAllLabel": "Reproduzir tudo",
+    "playAudio": "Reproduzir áudio",
+    "position": "{{current}} de {{total}}",
+    "removeBookmark": "Remover marcador",
+    "resetCounter": "Reiniciar contador",
+    "resetHint": "Repõe a contagem a zero",
+    "shareDhikr": "Partilhar dhikr",
+    "showInfo": "Mostrar informações",
+    "showInstruction": "Mostrar instruções",
+    "tapBookmarkHint": "Toque no ícone de marcador em qualquer dhikr para guardá-lo aqui",
+    "tapToCount": "Toque para contar",
+    "tapToIncrement": "Toque para aumentar a contagem"
+  },
   "app": {
     "errorInitializingPlayer": "Erro ao inicializar o leitor: {{message}}",
     "errorLoadingFonts": "Erro ao carregar as fontes"
@@ -23,9 +54,9 @@
       "reset": "Repor",
       "rewayatTypes": "Tipos de riwayat"
     },
+    "recitersFound_many": "Recitadores encontrados com os filtros atuais: {{count}}",
     "recitersFound_one": "{{count}} recitador encontrado com os filtros atuais",
-    "recitersFound_other": "{{count}} recitadores encontrados com os filtros atuais",
-    "recitersFound_many": "Recitadores encontrados com os filtros atuais: {{count}}"
+    "recitersFound_other": "{{count}} recitadores encontrados com os filtros atuais"
   },
   "cards": {
     "lovedCard": {
@@ -64,6 +95,7 @@
       "bookmarks": "Marcadores",
       "createYourFirstPlaylist": "Crie a sua primeira lista de reprodução",
       "downloads": "Transferências",
+      "items_many": "Itens: {{count}}",
       "items_one": "{{count}} item",
       "items_other": "{{count}} itens",
       "loved": "Apreciados",
@@ -76,8 +108,7 @@
       "notes": "Notas",
       "playlists": "Listas de reprodução",
       "reciters": "Recitadores",
-      "uploads": "Envios",
-      "items_many": "Itens: {{count}}"
+      "uploads": "Envios"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Todas as suras apreciadas já foram transferidas.",
@@ -208,9 +239,9 @@
     }
   },
   "downloads": {
+    "subtitle_many": "Transferidas • Suras: {{count}}",
     "subtitle_one": "Transferida • {{count}} sura",
-    "subtitle_other": "Transferidas • {{count}} suras",
-    "subtitle_many": "Transferidas • Suras: {{count}}"
+    "subtitle_other": "Transferidas • {{count}} suras"
   },
   "errorBoundary": {
     "sorryThereWasAnError": "Ocorreu um erro"
@@ -340,9 +371,9 @@
     }
   },
   "playlist": {
+    "subtitle_many": "Lista de reprodução • Suras: {{count}}",
     "subtitle_one": "Lista de reprodução • {{count}} sura",
-    "subtitle_other": "Lista de reprodução • {{count}} suras",
-    "subtitle_many": "Lista de reprodução • Suras: {{count}}"
+    "subtitle_other": "Lista de reprodução • {{count}} suras"
   },
   "playlistdetail": {
     "playlistDetail": {
@@ -608,9 +639,9 @@
     }
   },
   "similarVerses": {
+    "foundIn_many": "Versículos em que aparece: {{count}}",
     "foundIn_one": "Encontrado em {{count}} versículo",
-    "foundIn_other": "Encontrado em {{count}} versículos",
-    "foundIn_many": "Versículos em que aparece: {{count}}"
+    "foundIn_other": "Encontrado em {{count}} versículos"
   },
   "surahItem": {
     "moreOptions": "Mais opções",

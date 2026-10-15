@@ -1,7 +1,7 @@
 // RFC-010 — catalogVersionPoll behavior.
 //
 // Covers the three behaviors that matter for fork adopters:
-//   - undefined endpoint → no-op (Bayaan default)
+//   - undefined endpoint → no-op (Istima default)
 //   - parse failure / network failure → fail-open (no refetch, no throw)
 //   - version > lastSeen → refetch called with version + optional url
 

@@ -1,11 +1,11 @@
-# Bayaan Project Governance
+# Istima Project Governance
 
-This document describes how decisions are made in the Bayaan project.
+This document describes how decisions are made in the Istima project.
 
 ## Overview
 
-Bayaan is an open-source Quran recitation and reading app. The code is
-licensed under AGPL-3.0-or-later. The "Bayaan" name and logo are trademarks
+Istima is an open-source Quran recitation and reading app. The code is
+licensed under AGPL-3.0-or-later. The "Istima" name and logo are trademarks
 governed by [TRADEMARKS.md](TRADEMARKS.md).
 
 Governance is intentionally lightweight: we favor fast decisions and clear
@@ -43,7 +43,7 @@ contributors disagree, the maintainer's call is final.
 
 ### Content decisions (translations, tafaseer, reciters)
 
-Because Bayaan is a religious app, decisions about which translations,
+Because Istima is a religious app, decisions about which translations,
 tafaseer, and reciters to include have extra scrutiny:
 
 1. **Translations and tafaseer** must come from well-known, mainstream
@@ -51,11 +51,11 @@ tafaseer, and reciters to include have extra scrutiny:
    do not have explicit permission to redistribute.
 2. **Reciters** are added only with the reciter's (or the rights-holder's)
    written permission to distribute the audio.
-3. **Sectarian scope.** Bayaan aims to serve the broad mainstream Muslim
+3. **Sectarian scope.** Istima aims to serve the broad mainstream Muslim
    community. Pull requests that add content from fringe, unattested, or
    sectarian-attack-oriented sources will be declined. This is not a
    judgment on any tradition — it is a scope decision for the official
-   Bayaan build. Forks under a different name are free to take a
+   Istima build. Forks under a different name are free to take a
    different scope (see [TRADEMARKS.md](TRADEMARKS.md)).
 4. **Accuracy.** Reports of incorrect Arabic text, missing diacritics,
    wrong ayah numbering, or misattributed translations are treated as

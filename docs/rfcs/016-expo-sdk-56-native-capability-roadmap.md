@@ -11,7 +11,7 @@ React 19.2, production-ready Expo UI, stable iOS widgets, inline modules,
 faster native builds, a faster Expo Modules runtime, improved file-system APIs,
 Expo Router changes, and several EAS build improvements.
 
-Bayaan is currently on Expo SDK 55 with React Native 0.83.2 and React 19.2.
+Istima is currently on Expo SDK 55 with React Native 0.83.2 and React 19.2.
 The app already uses a development-client workflow, checked-in native projects,
 New Architecture, Hermes, Expo Router, `expo-audio`, `expo-sqlite`,
 `expo-file-system/legacy`, Skia, FlashList, Reanimated, MMKV/Nitro, Sentry,
@@ -29,7 +29,7 @@ Primary upstream references:
 
 ## Goals
 
-- Upgrade Bayaan from SDK 55 to SDK 56 safely.
+- Upgrade Istima from SDK 55 to SDK 56 safely.
 - Identify SDK 56 features that can materially improve Bayaan.
 - Establish a practical native-code roadmap for Mushaf, Android performance,
   widgets, audio, storage, downloads, and native UI.
@@ -44,7 +44,7 @@ Primary upstream references:
 - Migrating every community UI dependency to Expo UI in one pass.
 - Moving away from Expo Router or the development-client workflow.
 
-## Current Bayaan Surfaces That Matter
+## Current Istima Surfaces That Matter
 
 ### Mushaf
 
@@ -67,9 +67,9 @@ considered.
 
 ### Audio
 
-Bayaan uses `expo-audio` for playback and background audio. SDK 56 adds
+Istima uses `expo-audio` for playback and background audio. SDK 56 adds
 audio improvements such as real-time microphone buffer access and live-stream
-status fields. Most of that is not immediately central to Bayaan, but the
+status fields. Most of that is not immediately central to Istima, but the
 broader SDK 56 Expo Modules runtime improvements can help native module call
 overhead.
 
@@ -83,7 +83,7 @@ Audio-related native opportunities:
 
 ### SQLite And Local Data
 
-Bayaan relies heavily on SQLite for Quran-related data, adhkar, tafseer,
+Istima relies heavily on SQLite for Quran-related data, adhkar, tafseer,
 translations, uploads, timestamps, bookmarks, notes, highlights, and playlists.
 SDK 56 includes `expo-sqlite` improvements such as native `ArrayBuffer` blob
 columns, statement bind params, and session changesets.
@@ -94,7 +94,7 @@ compact page or feature payloads.
 
 ### Downloads, Uploads, And File Handling
 
-Bayaan still uses `expo-file-system/legacy` in several services. SDK 56 expands
+Istima still uses `expo-file-system/legacy` in several services. SDK 56 expands
 the new file-system API with progress, abort support, task-based uploads and
 downloads, resumable downloads, overwrite options, multi-file picking, and
 experimental file watching.
@@ -112,7 +112,7 @@ also changes `File.copy()` and `File.move()` to async methods in the new API.
 
 ### Native UI
 
-Bayaan currently uses community components that SDK 56 Expo UI can replace or
+Istima currently uses community components that SDK 56 Expo UI can replace or
 partially replace:
 
 - `@gorhom/bottom-sheet`
@@ -132,7 +132,7 @@ The right adoption strategy is selective:
   in lower-risk surfaces.
 - Use Expo UI for native polish, not as a forced design-system rewrite.
 
-## SDK 56 Features That Can Help Bayaan
+## SDK 56 Features That Can Help Istima
 
 ### 1. Inline Modules
 
@@ -140,7 +140,7 @@ Inline modules let us define Expo native modules directly inside the app
 structure, alongside TypeScript. During prebuild, Expo can add Swift/Kotlin
 files to the native projects and autolink them.
 
-This is important for Bayaan because we can add native code without creating a
+This is important for Istima because we can add native code without creating a
 separate package for every experiment.
 
 Expected benefits:
@@ -177,7 +177,7 @@ SDK 56 promotes iOS widgets to stable. Widgets and Live Activities no longer
 need to be pre-rendered and have better timeline management, error handling,
 config plugin support, and environment access.
 
-High-value Bayaan widgets:
+High-value Istima widgets:
 
 - Continue Reading: last Mushaf page, surah, or ayah.
 - Daily Ayah: one verse with translation and a deep link.
@@ -202,7 +202,7 @@ Implementation considerations:
 
 ### 4. Expo UI
 
-Expo UI can raise Bayaan's native polish, especially for Android, but it should
+Expo UI can raise Istima's native polish, especially for Android, but it should
 be adopted gradually.
 
 Good first targets:
@@ -230,7 +230,7 @@ highly tuned or where Expo UI prop gaps would cause regressions.
 
 SDK 56 includes precompiled Expo packages on iOS by default and EAS prebuilt
 artifacts for major community libraries such as Reanimated and Screens. This
-matters because Bayaan has a large native dependency graph.
+matters because Istima has a large native dependency graph.
 
 Expected impact:
 
@@ -245,7 +245,7 @@ stable.
 
 ### 6. Expo Router Changes
 
-SDK 56 decouples Expo Router from React Navigation. Bayaan currently has direct
+SDK 56 decouples Expo Router from React Navigation. Istima currently has direct
 imports from React Navigation packages for theme providers, tab props, focus
 effects, header height, and actions.
 
@@ -262,7 +262,7 @@ This is likely one of the highest-risk upgrade areas.
 ### 7. Status Bar And Navigation Bar
 
 SDK 56 gives `expo-status-bar` and `expo-navigation-bar` a more consistent
-declarative component API. Bayaan currently configures Android navigation bar
+declarative component API. Istima currently configures Android navigation bar
 styling imperatively in the root layout.
 
 After the upgrade, consider replacing imperative setup with declarative status
@@ -270,7 +270,7 @@ and navigation bar components where possible.
 
 ### 8. File System
 
-The improved SDK 56 file-system API can help Bayaan's downloads and uploads,
+The improved SDK 56 file-system API can help Istima's downloads and uploads,
 but it should not block the SDK upgrade.
 
 Recommended path:
@@ -284,7 +284,7 @@ Recommended path:
 ### 9. Vector Icons
 
 SDK 56 deprecates `@expo/vector-icons` in favor of scoped
-`@react-native-vector-icons/*` packages. Bayaan uses `@expo/vector-icons`
+`@react-native-vector-icons/*` packages. Istima uses `@expo/vector-icons`
 heavily.
 
 Recommended path:
@@ -296,7 +296,7 @@ Recommended path:
 
 ## Native Mushaf Strategy
 
-Bayaan should consider a native Mushaf future, but it should be approached as a
+Istima should consider a native Mushaf future, but it should be approached as a
 measured roadmap rather than a rewrite.
 
 ### Phase 1: Profile Current Android Mushaf
@@ -438,7 +438,7 @@ Replace one low-risk settings control group with Expo UI.
 Acceptance criteria:
 
 - native feel improves or dependency surface is reduced.
-- Android and iOS both match Bayaan's theme.
+- Android and iOS both match Istima's theme.
 - no regressions in accessibility, dark mode, or RTL-adjacent layouts.
 
 ### PR 4: Android Mushaf Profiling
@@ -464,7 +464,7 @@ Acceptance criteria:
 
 ## Open Questions
 
-- Should Bayaan continue checking in generated native directories, or move
+- Should Istima continue checking in generated native directories, or move
   closer to Continuous Native Generation for easier SDK upgrades?
 - Which Mushaf mode is the worst on Android: page mode, continuous mode, or
   follow-along mode?
@@ -489,5 +489,5 @@ The highest-value roadmap is:
 7. Vector-icons migration.
 8. Android native Mushaf renderer prototype only if profiling justifies it.
 
-This keeps Bayaan fast to develop while opening the door to native-level
+This keeps Istima fast to develop while opening the door to native-level
 performance and platform polish where users will actually feel it.

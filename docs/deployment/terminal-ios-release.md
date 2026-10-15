@@ -1,6 +1,6 @@
 # Terminal-Only iOS Release Guide
 
-Build, archive, upload, and submit Bayaan to the App Store entirely from the terminal — no Xcode GUI or browser required.
+Build, archive, upload, and submit Istima to the App Store entirely from the terminal — no Xcode GUI or browser required.
 
 Uses `xcodebuild` for building and `asc` ([asccli.sh](https://asccli.sh)) for App Store Connect operations.
 
@@ -33,7 +33,7 @@ brew install asc
 
 # Authenticate (credentials stored in system keychain)
 asc auth login \
-  --name "Bayaan" \
+  --name "Istima" \
   --key-id "89436RZQQ2" \
   --issuer-id "11bd7cc0-6b65-4e93-bc4e-e2218eb4a185" \
   --private-key ~/Documents/app-credentials/bayaan/appstoreconnect/AuthKey_89436RZQQ2.p8
@@ -77,7 +77,7 @@ mkdir -p build
 
 xcodebuild archive \
   -workspace ios/Bayaan.xcworkspace \
-  -scheme Bayaan \
+  -scheme Istima \
   -configuration Release \
   -destination "generic/platform=iOS" \
   -archivePath build/Bayaan.xcarchive \
@@ -128,7 +128,7 @@ asc publish testflight \
 asc publish testflight \
   --app 6648769980 \
   --build-number BUILD_NUM \
-  --group "Family,Bayaan Team,Experimental" \
+  --group "Family,Istima Team,Experimental" \
   --notify
 
 # Wait for processing before distributing
@@ -176,10 +176,10 @@ gh release create vX.Y.Z --notes "Release notes here"
 
 | Group | ID | Type | Public Link |
 |-------|----|------|-------------|
-| Bayaan Internal | `43f885ac-6107-439c-8b1a-5ea16cce032f` | Internal | Auto (all builds) |
+| Istima Internal | `43f885ac-6107-439c-8b1a-5ea16cce032f` | Internal | Auto (all builds) |
 | Family | `68456f9f-6d19-46a1-b3c5-a9f1599279d3` | External | `testflight.apple.com/join/YK9CqkxH` |
 | Experimental | `e18ff87e-fc91-4839-9c46-cce86db1d30e` | External | `testflight.apple.com/join/51BjDRen` |
-| Bayaan Team | `ece383d1-1326-4ded-91f0-573b30510011` | External | `testflight.apple.com/join/rJ8xgHU1` |
+| Istima Team | `ece383d1-1326-4ded-91f0-573b30510011` | External | `testflight.apple.com/join/rJ8xgHU1` |
 
 You can use either the group **name** or **ID** with `--group`.
 
@@ -289,7 +289,7 @@ npx expo prebuild --platform ios --clean && \
 mkdir -p build && \
 xcodebuild archive \
   -workspace ios/Bayaan.xcworkspace \
-  -scheme Bayaan \
+  -scheme Istima \
   -configuration Release \
   -destination "generic/platform=iOS" \
   -archivePath build/Bayaan.xcarchive \
@@ -314,7 +314,7 @@ npx expo prebuild --platform ios --clean && \
 mkdir -p build && \
 xcodebuild archive \
   -workspace ios/Bayaan.xcworkspace \
-  -scheme Bayaan \
+  -scheme Istima \
   -configuration Release \
   -destination "generic/platform=iOS" \
   -archivePath build/Bayaan.xcarchive \

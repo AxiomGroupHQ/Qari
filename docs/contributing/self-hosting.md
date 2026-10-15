@@ -1,14 +1,14 @@
-# Self-Hosting Bayaan
+# Self-Hosting Istima
 
-This guide is for contributors who want to run Bayaan against their own backend instead of the community API, or for teams who want to fork and deploy the app independently.
+This guide is for contributors who want to run Istima against their own backend instead of the community API, or for teams who want to fork and deploy the app independently.
 
 ---
 
 ## Overview
 
-Bayaan has two backend dependencies:
+Istima has two backend dependencies:
 
-1. **Bayaan REST API** — serves reciter metadata, audio URL resolution, and ayah timestamps. The hosted version is at `api.thebayaan.com`. The backend source is at [thebayaan/Backend--bayaan](https://github.com/thebayaan/Backend--bayaan).
+1. **Istima REST API** — serves reciter metadata, audio URL resolution, and ayah timestamps. The hosted version is at `api.thebayaan.com`. The backend source is at [thebayaan/Backend--bayaan](https://github.com/thebayaan/Backend--bayaan).
 2. **Supabase** — used for audio file storage (reciters' MP3s) and as the source of truth for reciter/rewayat data. The Supabase client in the app is legacy for most features; the REST API is the primary data source.
 
 For most contributors, the **community API key** is all you need. Self-hosting is only necessary if you want to add reciters, modify the data model, or run a fully independent deployment.
@@ -104,7 +104,7 @@ Use this if you are building an independent fork of Bayaan.
 
 ```bash
 git clone https://github.com/your-org/Bayaan.git
-cd Bayaan
+cd Istima
 npm install
 ```
 

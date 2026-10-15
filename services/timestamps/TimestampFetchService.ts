@@ -4,7 +4,7 @@ import {timestampDatabaseService} from './TimestampDatabaseService';
 import type {AyahTimestamp} from '@/types/timestamps';
 
 // RFC-015 — fork-supplied timestamp CDN base. Absent from `branding.js`
-// → fallback to Bayaan's production CDN (byte-equivalent to the
+// → fallback to Istima's production CDN (byte-equivalent to the
 // pre-RFC-015 hardcoded value). Forks set `branding.timestampCdnBase`
 // to their own mirror's base. The URL is composed below as
 // `${R2_BASE}/${rewayatId}/${paddedSurah}.json`.
