@@ -88,7 +88,12 @@ const ShareCardPreview: React.FC<ShareCardPreviewProps> = ({
   const halalwebImage = useImage(require('@/assets/branding/halalweb.png'));
 
   const scale = contentWidth / CARD_CONTENT_WIDTH;
-  const totalHeight = elements.totalHeight + padding * 2;
+  const naturalHeight = elements.totalHeight + padding * 2;
+  // Instagram square: never shorter than the width (1080x1080 at capture size). Short verses
+  // get the extra room split above the text; the footer is pinned lower. Long selections stay
+  // taller than square so the text is not shrunk or cut.
+  const totalHeight = Math.max(naturalHeight, width);
+  const extra = totalHeight - naturalHeight;
 
   // QCF font has hardcoded black SVG fills — recolor with SrcIn filter
   const nameColorPaint = useMemo(() => {
@@ -115,7 +120,7 @@ const ShareCardPreview: React.FC<ShareCardPreviewProps> = ({
 
       {/* Sections */}
       {(() => {
-        let y = padding + CARD_TOP_PADDING * scale;
+        let y = padding + CARD_TOP_PADDING * scale + extra * 0.4;
         const nodes: React.ReactNode[] = [];
 
         elements.sections.forEach((section, i) => {
@@ -192,6 +197,8 @@ const ShareCardPreview: React.FC<ShareCardPreviewProps> = ({
         // Footer: ISTIMA wordmark, gold rule and Halalweb (centered), with the
         // site URL at the bottom-right.
         if (elements.watermarkParagraph) {
+          // Push the footer lockup down into the spare square space.
+          y += extra * 0.6;
           const lockup = footerLockup(contentWidth);
           const centerX = padding + contentWidth / 2;
           const markX = centerX - lockup.markW / 2;

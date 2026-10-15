@@ -79,10 +79,15 @@ export const LanguageSheet = () => {
 
   const renderItem = ({item}: {item: Row}) => {
     const selected = item.id === preference;
-    const title = item.info ? item.info.nativeName : t('language.system');
-    const subtitle = item.info
+    // Column 1: the language name in English. Column 2: the name in its own language.
+    const englishName = item.info
       ? item.info.englishName
+      : t('language.system');
+    const nativeName = item.info
+      ? item.info.nativeName
       : (LOCALES.find(l => l.code === deviceCode)?.nativeName ?? '');
+    const title = englishName;
+    const subtitle = nativeName;
     return (
       <Pressable
         accessibilityRole="radio"
@@ -90,10 +95,12 @@ export const LanguageSheet = () => {
         accessibilityLabel={`${title}, ${subtitle}`}
         style={({pressed}) => [styles.row, pressed && styles.rowPressed]}
         onPress={() => onSelect(item.id)}>
-        <View style={styles.rowText}>
-          <Text style={styles.title}>{title}</Text>
-          {!!subtitle && <Text style={styles.subtitle}>{subtitle}</Text>}
-        </View>
+        <Text style={styles.colEnglish} numberOfLines={1}>
+          {englishName}
+        </Text>
+        <Text style={styles.colNative} numberOfLines={1}>
+          {nativeName}
+        </Text>
         {selected && (
           <Feather
             name="check"
@@ -191,24 +198,27 @@ const createStyles = (theme: Theme) =>
     listFlex: {flex: 1},
     list: {paddingBottom: '40@vs'},
     row: {
+      // Fixed left-to-right so the English column is always first, even in RTL locales.
+      direction: 'ltr',
       flexDirection: 'row',
       alignItems: 'center',
       paddingHorizontal: '16@s',
       paddingVertical: '12@vs',
     },
     rowPressed: {opacity: 0.6},
-    rowText: {flex: 1},
-    title: {
+    colEnglish: {
+      flex: 1,
       fontFamily: 'Manrope-SemiBold',
       fontSize: '16@s',
       color: theme.colors.text,
-      textAlign: 'auto',
+      textAlign: 'left',
     },
-    subtitle: {
+    colNative: {
+      flex: 1,
       fontFamily: 'Manrope-Regular',
-      fontSize: '13@s',
+      fontSize: '16@s',
       color: theme.colors.textSecondary,
-      marginTop: '2@vs',
-      textAlign: 'auto',
+      textAlign: 'left',
+      writingDirection: 'auto',
     },
   });
