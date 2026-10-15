@@ -30,6 +30,8 @@ import {NowPlayingIndicator} from '@/components/NowPlayingIndicator';
 import {GradientText} from '@/components/GradientText';
 import {ReciterImage} from '@/components/ReciterImage';
 import {useCollectionNativeHeader} from '@/hooks/useCollectionNativeHeader';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 function stripExtension(filename: string): string {
   return filename.replace(/\.[^/.]+$/, '');
@@ -248,11 +250,11 @@ export default function UploadsScreen() {
   const handleOptionsMenu = useCallback(() => {
     SheetManager.show('collection-options', {
       payload: {
-        title: 'Uploads',
+        title: t('common.uploads'),
         subtitle: `${totalCount} recitation${totalCount !== 1 ? 's' : ''}`,
         options: [
           {
-            label: 'Remove All Uploads',
+            label: t('collection.uploads.removeAllUploads'),
             icon: 'trash-2',
             destructive: true,
             onPress: () => deleteAllRecitations(),
@@ -276,7 +278,7 @@ export default function UploadsScreen() {
   );
 
   useCollectionNativeHeader({
-    title: 'Uploads',
+    title: t('common.uploads'),
     scrollY,
     hasContent: recitations.length > 0,
     headerRight: recitations.length > 0 ? renderHeaderRight : undefined,
@@ -386,12 +388,12 @@ export default function UploadsScreen() {
               onPress={() => router.back()}
               hitSlop={8}>
               <Feather
-                name="arrow-left"
+                name={dirIcon('arrow-left')}
                 size={moderateScale(22)}
                 color={theme.colors.text}
               />
             </Pressable>
-            <Text style={styles.emptyHeaderTitle}>Uploads</Text>
+            <Text style={styles.emptyHeaderTitle}>{t('common.uploads')}</Text>
             <View style={styles.emptyHeaderBack} />
           </View>
         )}
@@ -402,9 +404,9 @@ export default function UploadsScreen() {
               size={moderateScale(48)}
             />
           </View>
-          <Text style={styles.emptyTitle}>No uploads yet</Text>
+          <Text style={styles.emptyTitle}>{t('common.noUploadsYet')}</Text>
           <Text style={styles.emptySubtitle}>
-            Upload recitations to see them here
+            {t('collection.uploads.uploadRecitationsToSeeThem')}
           </Text>
           <Pressable
             style={styles.emptyActionBar}
@@ -453,7 +455,7 @@ export default function UploadsScreen() {
                 />
               </View>
             </View>
-            <Text style={styles.title}>Uploads</Text>
+            <Text style={styles.title}>{t('common.uploads')}</Text>
             <Text style={styles.subtitle}>
               {totalCount} recitation{totalCount !== 1 ? 's' : ''}
             </Text>
@@ -547,7 +549,7 @@ export default function UploadsScreen() {
           ]}>
           <Pressable onPress={() => router.back()} hitSlop={8}>
             <Feather
-              name="arrow-left"
+              name={dirIcon('arrow-left')}
               size={moderateScale(24)}
               color={theme.colors.text}
             />
@@ -570,7 +572,7 @@ export default function UploadsScreen() {
         contentInsetAdjustmentBehavior="automatic"
       />
       {!USE_GLASS && (
-        <CollectionStickyHeader title="Uploads" scrollY={scrollY} />
+        <CollectionStickyHeader title={t('common.uploads')} scrollY={scrollY} />
       )}
     </View>
   );

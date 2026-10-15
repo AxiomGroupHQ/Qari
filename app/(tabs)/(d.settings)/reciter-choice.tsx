@@ -1,4 +1,3 @@
-import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useMemo} from 'react';
 import {View, Text, Pressable, Switch, ScrollView} from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
@@ -7,6 +6,7 @@ import {Theme} from '@/utils/themeUtils';
 import {AntDesign, Feather} from '@expo/vector-icons';
 import Color from 'color';
 import {useSettings} from '@/hooks/useSettings';
+import {t} from '@/i18n';
 
 export default function ReciterChoiceScreen() {
   const {theme} = useTheme();
@@ -28,16 +28,18 @@ export default function ReciterChoiceScreen() {
 
   const options = [
     {
-      label: 'Browse All Reciters',
+      label: t('common.browseAllReciters'),
       action: 'browseAll',
-      description: 'Search through our complete collection of reciters',
+      description: t(
+        'settings.reciterchoice.searchThroughOurCompleteCollection',
+      ),
       icon: 'search1',
       iconType: 'antdesign',
     },
     {
-      label: 'Use Default Reciter',
+      label: t('common.useDefaultReciter'),
       action: 'useDefault',
-      description: 'Always use your selected default reciter',
+      description: t('settings.reciterchoice.alwaysUseYourSelectedDefault'),
       icon: 'user',
       iconType: 'feather',
     },
@@ -50,17 +52,21 @@ export default function ReciterChoiceScreen() {
         contentInsetAdjustmentBehavior="automatic"
         showsVerticalScrollIndicator={false}>
         <Text style={styles.subtitle}>
-          Choose how you want to select reciters when playing Surahs
+          {t('settings.reciterchoice.chooseHowYouWantTo')}
         </Text>
 
         <View style={styles.section}>
-          <Text style={styles.sectionHeader}>{isArabicInterface() ? 'تفضيلات الاختيار' : 'SELECTION PREFERENCE'}</Text>
+          <Text style={styles.sectionHeader}>
+            {t('settings.reciterchoice.selectionPreference')}
+          </Text>
           <View style={styles.card}>
             <View style={styles.settingRow}>
               <View style={styles.settingInfo}>
-                <Text style={styles.settingTitle}>{isArabicInterface() ? 'اسأل في كل مرة' : 'Ask Every Time'}</Text>
+                <Text style={styles.settingTitle}>
+                  {t('settings.reciterchoice.askEveryTime')}
+                </Text>
                 <Text style={styles.settingDescription}>
-                  Choose a reciter each time you play
+                  {t('settings.reciterchoice.chooseAReciterEachTime')}
                 </Text>
               </View>
               <Switch
@@ -77,7 +83,9 @@ export default function ReciterChoiceScreen() {
 
         {!askEveryTime && (
           <View style={styles.section}>
-            <Text style={styles.sectionHeader}>{isArabicInterface() ? 'طريقة الاختيار الافتراضية' : 'DEFAULT SELECTION METHOD'}</Text>
+            <Text style={styles.sectionHeader}>
+              {t('settings.reciterchoice.defaultSelectionMethod')}
+            </Text>
             <View style={styles.optionsContainer}>
               {options.map(option => {
                 const isSelected = defaultReciterSelection === option.action;

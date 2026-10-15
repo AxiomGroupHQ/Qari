@@ -13,6 +13,7 @@ import {HIGHLIGHT_COLORS, HighlightColor} from '@/types/verse-annotations';
 import {useVerseAnnotationsStore} from '@/store/verseAnnotationsStore';
 import {verseAnnotationService} from '@/services/verse-annotations/VerseAnnotationService';
 import SkiaVersePreview from '@/components/share/SkiaVersePreview';
+import {t} from '@/i18n';
 
 const COLORS = Object.entries(HIGHLIGHT_COLORS) as [HighlightColor, string][];
 
@@ -77,7 +78,9 @@ export const HighlightContent: React.FC<HighlightContentProps> = ({
         />
       </View>
 
-      <Text style={styles.sectionLabel}>CHOOSE COLOR</Text>
+      <Text style={styles.sectionLabel}>
+        {t('verseactions.highlightContent.chooseColor')}
+      </Text>
       <View style={styles.card}>
         <View style={styles.colorsGrid}>
           {COLORS.map(([name, hex]) => {
@@ -108,7 +111,9 @@ export const HighlightContent: React.FC<HighlightContentProps> = ({
           ]}
           onPress={handleRemove}>
           <Feather name="x-circle" size={moderateScale(16)} color="#ff4444" />
-          <Text style={styles.removeButtonText}>Remove Highlight</Text>
+          <Text style={styles.removeButtonText}>
+            {t('common.removeHighlight')}
+          </Text>
         </Pressable>
       ) : null}
     </View>

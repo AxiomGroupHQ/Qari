@@ -38,6 +38,7 @@ import {useHeaderHeight} from '@react-navigation/elements';
 import branding from '@/config/branding';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import {useBottomInset} from '@/hooks/useBottomInset';
+import {t} from '@/i18n';
 
 interface BrowseRecitersProps {
   theme: Theme;
@@ -176,7 +177,11 @@ export default function BrowseReciters({
     const chips: Chip[] = [];
     const isAllSelected = !selectedTeacher && !selectedStudent;
 
-    chips.push({label: 'All', type: 'all', isSelected: isAllSelected});
+    chips.push({
+      label: t('browse.browseReciters.all'),
+      type: 'all',
+      isSelected: isAllSelected,
+    });
 
     if (!selectedTeacher) {
       primaryTeachers.forEach(teacher => {
@@ -539,7 +544,7 @@ export default function BrowseReciters({
             },
           ]}>
           <SearchInput
-            placeholder="Search reciters..."
+            placeholder={t('common.searchReciters')}
             value={searchQuery}
             onChangeText={setSearchQuery}
             onCancel={handleSearchCancel}
@@ -624,7 +629,7 @@ export default function BrowseReciters({
                 layout={LinearTransition.duration(300)}>
                 <Pressable
                   accessibilityRole="togglebutton"
-                  accessibilityLabel="Has photo"
+                  accessibilityLabel={t('browse.browseReciters.hasPhoto')}
                   accessibilityState={{selected: hasPhoto}}
                   style={({pressed}) => [
                     styles.filterChip,
@@ -640,7 +645,7 @@ export default function BrowseReciters({
                       styles.filterChipText,
                       hasPhoto && styles.filterChipTextActive,
                     ]}>
-                    Has photo
+                    {t('browse.browseReciters.hasPhoto')}
                   </Text>
                 </Pressable>
               </Animated.View>
@@ -652,7 +657,7 @@ export default function BrowseReciters({
         {hasActiveFilters && (
           <View style={styles.activeFiltersContainer}>
             <Text style={styles.activeFiltersText}>
-              {filteredReciters.length} reciters found with current filters
+              {t('browse.recitersFound', {count: filteredReciters.length})}
             </Text>
             <Pressable
               style={({pressed}) => [
@@ -663,7 +668,9 @@ export default function BrowseReciters({
                 Keyboard.dismiss();
                 handleClearFilters();
               }}>
-              <Text style={styles.clearFiltersText}>Clear All</Text>
+              <Text style={styles.clearFiltersText}>
+                {t('browse.browseReciters.clearAll')}
+              </Text>
             </Pressable>
           </View>
         )}

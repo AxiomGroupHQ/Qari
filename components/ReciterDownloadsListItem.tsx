@@ -7,6 +7,7 @@ import {Reciter} from '@/data/reciterData';
 import {ReciterImage} from '@/components/ReciterImage';
 import {getReciterById} from '@/services/dataService';
 import {Feather} from '@expo/vector-icons';
+import {t} from '@/i18n';
 
 interface ReciterDownloadsListItemProps {
   reciterId: string;
@@ -60,8 +61,7 @@ export const ReciterDownloadsListItem: React.FC<ReciterDownloadsListItemProps> =
           <View style={styles.reciterInfo}>
             <Text style={styles.reciterName}>{reciter.name}</Text>
             <Text style={styles.reciterSubtitle} numberOfLines={1}>
-              Downloaded • {downloadCount}{' '}
-              {downloadCount === 1 ? 'surah' : 'surahs'}
+              {t('downloads.subtitle', {count: downloadCount})}
             </Text>
           </View>
           {onOptionsPress && (

@@ -15,6 +15,8 @@ import Color from 'color';
 import {Feather} from '@expo/vector-icons';
 import {MushafSettingsContent} from '@/components/MushafSettingsContent';
 import {ReadingThemeContent} from '@/components/ReadingThemeContent';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 
@@ -69,13 +71,17 @@ export const MushafLayoutSheet = (props: SheetProps<'mushaf-layout'>) => {
                 pressed && {opacity: 0.6},
               ]}>
               <Feather
-                name="chevron-left"
+                name={dirIcon('chevron-left')}
                 size={moderateScale(20)}
                 color={theme.colors.text}
               />
-              <Text style={styles.backText}>Back</Text>
+              <Text style={styles.backText}>
+                {t('sheets.mushafLayoutSheet.back')}
+              </Text>
             </Pressable>
-            <Text style={styles.subScreenTitle}>Reading Theme</Text>
+            <Text style={styles.subScreenTitle}>
+              {t('common.readingTheme')}
+            </Text>
             <View style={styles.backRowSpacer} />
           </View>
 

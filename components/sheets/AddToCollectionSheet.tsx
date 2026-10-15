@@ -13,6 +13,7 @@ import Color from 'color';
 import {useUploadsStore} from '@/store/uploadsStore';
 import {usePlaylists} from '@/hooks/usePlaylists';
 import {pickAndImportAudioFiles} from '@/utils/importAudio';
+import {t} from '@/i18n';
 
 export const AddToCollectionSheet = (
   props: SheetProps<'add-to-collection'>,
@@ -79,7 +80,7 @@ export const AddToCollectionSheet = (
       gestureEnabled={true}>
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text style={styles.title}>Add to Collection</Text>
+          <Text style={styles.title}>{t('common.addToCollection')}</Text>
         </View>
 
         <View style={styles.card}>
@@ -94,7 +95,9 @@ export const AddToCollectionSheet = (
               size={moderateScale(18)}
               color={theme.colors.text}
             />
-            <Text style={styles.optionText}>Upload Recitation</Text>
+            <Text style={styles.optionText}>
+              {t('sheets.addToCollectionSheet.uploadRecitation')}
+            </Text>
           </Pressable>
 
           <View style={styles.divider} />
@@ -106,7 +109,9 @@ export const AddToCollectionSheet = (
             ]}
             onPress={handleNewPlaylist}>
             <PlaylistIcon color={theme.colors.text} size={moderateScale(18)} />
-            <Text style={styles.optionText}>Create New Playlist</Text>
+            <Text style={styles.optionText}>
+              {t('common.createNewPlaylist')}
+            </Text>
           </Pressable>
 
           <View style={styles.divider} />
@@ -122,7 +127,9 @@ export const AddToCollectionSheet = (
               size={moderateScale(18)}
               color={theme.colors.text}
             />
-            <Text style={styles.optionText}>Add Favorite Reciter</Text>
+            <Text style={styles.optionText}>
+              {t('sheets.addToCollectionSheet.addFavoriteReciter')}
+            </Text>
           </Pressable>
         </View>
       </View>

@@ -6,6 +6,7 @@ import {
   getBuildTypeLabel,
 } from '@/utils/appVersion';
 import {useTheme} from '@/hooks/useTheme';
+import {t} from '@/i18n';
 
 interface VersionDisplayProps {
   showBuildNumber?: boolean;
@@ -29,7 +30,7 @@ export const VersionDisplay: React.FC<VersionDisplayProps> = ({
   return (
     <Text
       style={[styles.versionText, {color: theme.colors.textSecondary}, style]}>
-      Version {versionText}
+      {t('version.label', {version: versionText})}
       {buildTypeLabel ? ` - ${buildTypeLabel}` : ''}
     </Text>
   );

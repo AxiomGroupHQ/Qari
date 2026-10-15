@@ -5,6 +5,7 @@ import {ScaledSheet} from 'react-native-size-matters';
 import {useTheme} from '@/hooks/useTheme';
 import {Feather} from '@expo/vector-icons';
 import {useRouter} from 'expo-router';
+import {dirIcon} from '@/i18n/direction';
 
 interface NavigationButtonsProps {
   insets: {
@@ -40,7 +41,7 @@ export const NavigationButtons: React.FC<NavigationButtonsProps> = ({
         ]}>
         <Pressable onPress={() => router.back()}>
           <Feather
-            name="arrow-left"
+            name={dirIcon('arrow-left')}
             size={moderateScale(24)}
             color={theme.colors.text}
           />

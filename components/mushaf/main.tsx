@@ -65,6 +65,7 @@ import PageEdgeDecoration, {
 import {analyticsService} from '@/services/analytics/AnalyticsService';
 import {qcfFontLoader} from '@/services/mushaf/QCFFontLoader';
 import {mushafPreloadService} from '@/services/mushaf/MushafPreloadService';
+import {t} from '@/i18n';
 
 const TOTAL_PAGES = 604;
 const ANIMATION_DURATION = 300;
@@ -367,7 +368,7 @@ const DKSpreadView: React.FC<{
           pageNumber={pageNumber}
           textColor={textColor}
           surahLabel={getSurahNamesForPage(pageNumber)}
-          juzLabel={`Juz ${getJuzForPage(pageNumber)}`}
+          juzLabel={t('mushaf.juz', {juz: getJuzForPage(pageNumber)})}
           pageLabel={String(pageNumber)}
           labelColor={labelColor}
           borderColor={borderColor}
@@ -391,7 +392,7 @@ const DKSpreadView: React.FC<{
         pageNumber={pageNumber}
         textColor={textColor}
         surahLabel={getSurahNamesForPage(pageNumber)}
-        juzLabel={`Juz ${getJuzForPage(pageNumber)}`}
+        juzLabel={t('mushaf.juz', {juz: getJuzForPage(pageNumber)})}
         pageLabel={String(pageNumber)}
         labelColor={labelColor}
         borderColor={borderColor}
@@ -438,7 +439,7 @@ const DKSpreadView: React.FC<{
           pageNumber={pageNumber}
           textColor={textColor}
           surahLabel={getSurahNamesForPage(pageNumber)}
-          juzLabel={`Juz ${getJuzForPage(pageNumber)}`}
+          juzLabel={t('mushaf.juz', {juz: getJuzForPage(pageNumber)})}
           pageLabel={String(pageNumber)}
           labelColor={labelColor}
           borderColor={borderColor}
@@ -465,7 +466,7 @@ const DKSpreadView: React.FC<{
         pageNumber={pageNumber}
         textColor={textColor}
         surahLabel={getSurahNamesForPage(pageNumber)}
-        juzLabel={`Juz ${getJuzForPage(pageNumber)}`}
+        juzLabel={t('mushaf.juz', {juz: getJuzForPage(pageNumber)})}
         pageLabel={String(pageNumber)}
         labelColor={labelColor}
         borderColor={borderColor}
@@ -732,7 +733,7 @@ export default function MushafViewer({
           <Pressable
             onPress={() => setIsSearchMode(true)}
             accessibilityRole="button"
-            accessibilityLabel="Search surahs"
+            accessibilityLabel={t('common.searchSurahs')}
             style={{alignItems: 'center'}}>
             <View
               style={{
@@ -1185,7 +1186,7 @@ export default function MushafViewer({
                   style={styles.headerCenter}
                   onPress={openSearchMode}
                   accessibilityRole="button"
-                  accessibilityLabel="Search surahs">
+                  accessibilityLabel={t('common.searchSurahs')}>
                   <View
                     style={[
                       styles.headerBox,
@@ -1231,7 +1232,7 @@ export default function MushafViewer({
                       })
                     }
                     accessibilityRole="button"
-                    accessibilityLabel="Mushaf settings">
+                    accessibilityLabel={t('mushaf.main.mushafSettings')}>
                     <Ionicons
                       name="options-outline"
                       size={moderateScale(22)}

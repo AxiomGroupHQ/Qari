@@ -9,6 +9,7 @@ import {Feather} from '@expo/vector-icons';
 import {useTheme} from '@/hooks/useTheme';
 import {Theme} from '@/utils/themeUtils';
 import {useRouter} from 'expo-router';
+import {dirIcon} from '@/i18n/direction';
 
 interface ScreenHeaderProps {
   title: string;
@@ -23,7 +24,7 @@ export const ScreenHeader: React.FC<ScreenHeaderProps> = ({title}) => {
     <View style={styles.header}>
       <Pressable onPress={() => router.back()} style={styles.backButton}>
         <Feather
-          name="arrow-left"
+          name={dirIcon('arrow-left')}
           size={moderateScale(24)}
           color={theme.colors.text}
         />

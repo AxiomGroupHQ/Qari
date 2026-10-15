@@ -1,4 +1,3 @@
-import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useMemo, useCallback, useState} from 'react';
 import {
   View,
@@ -19,6 +18,7 @@ import {useBottomInset} from '@/hooks/useBottomInset';
 import {USE_GLASS, useGlassColorScheme} from '@/hooks/useGlassProps';
 import {useResponsive} from '@/hooks/useResponsive';
 import {GlassView} from 'expo-glass-effect';
+import {t} from '@/i18n';
 
 // CONFIGURABLE ROW HEIGHT MULTIPLIER - This is the 'x' variable you can adjust
 const ROW_HEIGHT_UNIT = 80; // Base unit 'x' in points - adjust this value to change all card heights proportionally
@@ -42,8 +42,12 @@ interface BentoTile {
 const BROWSE_TILES: BentoTile[] = [
   {
     id: 'all-reciters',
-    title: (isArabicInterface() ? 'تصفح الكل' : 'Browse All'),
-    subtitle: (isArabicInterface() ? 'القراء' : 'Reciters'),
+    get title() {
+      return t('common.browseAll');
+    },
+    get subtitle() {
+      return t('common.reciters');
+    },
     backgroundColor: '#1E40AF',
     route: '/(tabs)/(b.search)/browse-all',
     heightMultiplier: 1,
@@ -53,8 +57,12 @@ const BROWSE_TILES: BentoTile[] = [
   },
   {
     id: 'all-surahs',
-    title: (isArabicInterface() ? 'تصفح الكل' : 'Browse All'),
-    subtitle: (isArabicInterface() ? 'السور' : 'Surahs'),
+    get title() {
+      return t('common.browseAll');
+    },
+    get subtitle() {
+      return t('common.surahs');
+    },
     backgroundColor: '#7C3AED',
     route: '/(tabs)/(b.search)/browse-all-surahs',
     heightMultiplier: 1,
@@ -245,14 +253,14 @@ const tileInnerStyles = StyleSheet.create({
   title: {
     fontFamily: 'Manrope-Bold',
     lineHeight: moderateScale(22),
-    textAlign: 'left',
+    textAlign: 'auto',
     letterSpacing: 0.2,
   },
   subtitle: {
     fontFamily: 'Manrope-Medium',
     marginTop: moderateScale(2),
     lineHeight: moderateScale(16),
-    textAlign: 'left',
+    textAlign: 'auto',
     opacity: 0.9,
     letterSpacing: 0.1,
   },
@@ -271,15 +279,19 @@ export const ExploreView = React.memo(
     // visible area and tiles don't overlap. On phones we keep the original
     // `useWindowDimensions` behavior untouched.
     const [measuredWidth, setMeasuredWidth] = useState<number | null>(null);
-    const onContentLayout = useCallback((e: LayoutChangeEvent) => {
-      if (!isTablet) return;
-      const w = e.nativeEvent.layout.width;
-      if (w > 0) {
-        setMeasuredWidth(prev => (prev === w ? prev : w));
-      }
-    }, [isTablet]);
+    const onContentLayout = useCallback(
+      (e: LayoutChangeEvent) => {
+        if (!isTablet) return;
+        const w = e.nativeEvent.layout.width;
+        if (w > 0) {
+          setMeasuredWidth(prev => (prev === w ? prev : w));
+        }
+      },
+      [isTablet],
+    );
 
-    const width = isTablet && measuredWidth != null ? measuredWidth : windowWidth;
+    const width =
+      isTablet && measuredWidth != null ? measuredWidth : windowWidth;
 
     // Calculate tile dimensions based on screen width - strict two-column grid
     const tileDimensions = useMemo(() => {

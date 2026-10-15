@@ -29,6 +29,7 @@ import RenderHtml, {
   RenderHTMLProps,
   defaultSystemFonts,
 } from 'react-native-render-html';
+import {t} from '@/i18n';
 
 const surahInfo = require('@/data/surahInfo.json');
 
@@ -224,12 +225,12 @@ export const UploadOptionsSheet = (props: SheetProps<'upload-options'>) => {
     if (!recitation) return;
     const title = getDisplayTitle(recitation);
     Alert.alert(
-      'Delete Recitation',
+      t('common.deleteRecitation'),
       `Are you sure you want to delete "${title}"?`,
       [
-        {text: 'Cancel', style: 'cancel'},
+        {text: t('common.cancel'), style: 'cancel'},
         {
-          text: 'Delete',
+          text: t('common.delete'),
           style: 'destructive',
           onPress: () => {
             handleClose();
@@ -263,7 +264,7 @@ export const UploadOptionsSheet = (props: SheetProps<'upload-options'>) => {
         style={({pressed}) => [styles.option, pressed && styles.optionPressed]}
         onPress={handlePlay}>
         <PlayIcon color={theme.colors.text} size={moderateScale(18)} />
-        <Text style={styles.optionText}>Play Now</Text>
+        <Text style={styles.optionText}>{t('common.playNow')}</Text>
       </Pressable>
     ),
   });
@@ -279,7 +280,7 @@ export const UploadOptionsSheet = (props: SheetProps<'upload-options'>) => {
           size={moderateScale(18)}
           color={theme.colors.text}
         />
-        <Text style={styles.optionText}>Edit Details</Text>
+        <Text style={styles.optionText}>{t('common.editDetails')}</Text>
       </Pressable>
     ),
   });
@@ -297,7 +298,7 @@ export const UploadOptionsSheet = (props: SheetProps<'upload-options'>) => {
             filled={true}
           />
         </View>
-        <Text style={styles.optionText}>Add to Queue</Text>
+        <Text style={styles.optionText}>{t('common.addToQueue')}</Text>
       </Pressable>
     ),
   });
@@ -338,7 +339,7 @@ export const UploadOptionsSheet = (props: SheetProps<'upload-options'>) => {
             size={moderateScale(18)}
             color={theme.colors.text}
           />
-          <Text style={styles.optionText}>Add to Collection</Text>
+          <Text style={styles.optionText}>{t('common.addToCollection')}</Text>
         </Pressable>
       ),
     });
@@ -359,7 +360,7 @@ export const UploadOptionsSheet = (props: SheetProps<'upload-options'>) => {
             size={moderateScale(18)}
             filled={false}
           />
-          <Text style={styles.optionText}>Go to Reciter</Text>
+          <Text style={styles.optionText}>{t('common.goToReciter')}</Text>
         </Pressable>
       ),
     });
@@ -380,7 +381,7 @@ export const UploadOptionsSheet = (props: SheetProps<'upload-options'>) => {
             size={moderateScale(18)}
             color={theme.colors.text}
           />
-          <Text style={styles.optionText}>Learn About Surah</Text>
+          <Text style={styles.optionText}>{t('common.learnAboutSurah')}</Text>
         </Pressable>
       ),
     });
@@ -399,7 +400,9 @@ export const UploadOptionsSheet = (props: SheetProps<'upload-options'>) => {
       {showSurahInfo ? (
         <>
           <View style={styles.headerContainer}>
-            <Text style={styles.headerTitle}>About {surah?.name}</Text>
+            <Text style={styles.headerTitle}>
+              {t('sheets.aboutSurah', {name: surah?.name})}
+            </Text>
           </View>
           <ScrollView
             style={styles.scrollView}
@@ -457,7 +460,9 @@ export const UploadOptionsSheet = (props: SheetProps<'upload-options'>) => {
                 size={moderateScale(18)}
                 color="#ff4444"
               />
-              <Text style={styles.optionTextDestructive}>Delete</Text>
+              <Text style={styles.optionTextDestructive}>
+                {t('common.delete')}
+              </Text>
             </Pressable>
           </View>
         </View>

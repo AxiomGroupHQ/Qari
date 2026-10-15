@@ -39,6 +39,8 @@ import {useCollectionDownloadState} from '@/hooks/useCollectionDownloadState';
 import {CollectionStickyHeader} from '@/components/collection/CollectionStickyHeader';
 import {SheetManager} from 'react-native-actions-sheet';
 import {useCollectionNativeHeader} from '@/hooks/useCollectionNativeHeader';
+import {t as translate} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 interface LovedTrack {
   reciterId: string;
@@ -403,8 +405,8 @@ const LovedScreen = () => {
 
       if (itemsToDownload.length === 0) {
         Alert.alert(
-          'Already Downloaded',
-          'All loved surahs are already downloaded.',
+          translate('common.alreadyDownloaded'),
+          translate('collection.loved.allLovedSurahsAreAlready'),
         );
         setIsDownloadingBulk(false);
         return;
@@ -485,12 +487,15 @@ const LovedScreen = () => {
       }
 
       Alert.alert(
-        'Download Complete',
-        'All loved surahs have been downloaded.',
+        translate('common.downloadComplete'),
+        translate('collection.loved.allLovedSurahsHaveBeen'),
       );
     } catch (error) {
       console.error('Error in bulk download:', error);
-      Alert.alert('Download Error', 'Some downloads may have failed.');
+      Alert.alert(
+        translate('collection.loved.downloadError'),
+        translate('collection.loved.someDownloadsMayHaveFailed'),
+      );
     } finally {
       setIsDownloadingBulk(false);
     }
@@ -514,7 +519,7 @@ const LovedScreen = () => {
   const handleOptionsMenu = useCallback(() => {
     SheetManager.show('collection-options', {
       payload: {
-        title: 'Loved',
+        title: translate('common.loved'),
         subtitle: `${lovedData.length} ${
           lovedData.length === 1 ? 'surah' : 'surahs'
         }`,
@@ -532,7 +537,7 @@ const LovedScreen = () => {
               ) : undefined,
           },
           {
-            label: 'Unlove All Surahs',
+            label: translate('collection.loved.unloveAllSurahs'),
             icon: 'heart',
             destructive: true,
             customIcon: (
@@ -569,7 +574,7 @@ const LovedScreen = () => {
   );
 
   useCollectionNativeHeader({
-    title: 'Loved',
+    title: translate('common.loved'),
     scrollY,
     hasContent: lovedData.length > 0 && !loading,
     headerRight: lovedData.length > 0 ? renderHeaderRight : undefined,
@@ -617,7 +622,7 @@ const LovedScreen = () => {
   const ListHeaderComponent = useCallback(() => {
     return (
       <LovedHeader
-        title="Loved"
+        title={translate('common.loved')}
         subtitle={`${lovedData.length} ${
           lovedData.length === 1 ? 'surah' : 'surahs'
         }`}
@@ -673,17 +678,19 @@ const LovedScreen = () => {
               onPress={() => router.back()}
               hitSlop={8}>
               <Feather
-                name="arrow-left"
+                name={dirIcon('arrow-left')}
                 size={moderateScale(22)}
                 color={theme.colors.text}
               />
             </Pressable>
-            <Text style={styles.emptyHeaderTitle}>Loved</Text>
+            <Text style={styles.emptyHeaderTitle}>
+              {translate('common.loved')}
+            </Text>
             <View style={styles.emptyHeaderBack} />
           </View>
         )}
         <View style={styles.emptyContent}>
-          <Text style={styles.loadingText}>Loading...</Text>
+          <Text style={styles.loadingText}>{translate('common.loading')}</Text>
         </View>
       </View>
     );
@@ -699,12 +706,14 @@ const LovedScreen = () => {
               onPress={() => router.back()}
               hitSlop={8}>
               <Feather
-                name="arrow-left"
+                name={dirIcon('arrow-left')}
                 size={moderateScale(22)}
                 color={theme.colors.text}
               />
             </Pressable>
-            <Text style={styles.emptyHeaderTitle}>Loved</Text>
+            <Text style={styles.emptyHeaderTitle}>
+              {translate('common.loved')}
+            </Text>
             <View style={styles.emptyHeaderBack} />
           </View>
         )}
@@ -716,8 +725,12 @@ const LovedScreen = () => {
               filled={true}
             />
           </View>
-          <Text style={styles.emptyTitle}>No loved surahs yet</Text>
-          <Text style={styles.emptySubtitle}>Love surahs to see them here</Text>
+          <Text style={styles.emptyTitle}>
+            {translate('collection.loved.noLovedSurahsYet')}
+          </Text>
+          <Text style={styles.emptySubtitle}>
+            {translate('collection.loved.loveSurahsToSeeThem')}
+          </Text>
         </View>
       </View>
     );
@@ -741,7 +754,7 @@ const LovedScreen = () => {
           ]}>
           <Pressable onPress={() => router.back()} hitSlop={8}>
             <Feather
-              name="arrow-left"
+              name={dirIcon('arrow-left')}
               size={moderateScale(24)}
               color={theme.colors.text}
             />
@@ -763,7 +776,12 @@ const LovedScreen = () => {
         scrollEventThrottle={16}
         showsVerticalScrollIndicator={false}
       />
-      {!USE_GLASS && <CollectionStickyHeader title="Loved" scrollY={scrollY} />}
+      {!USE_GLASS && (
+        <CollectionStickyHeader
+          title={translate('common.loved')}
+          scrollY={scrollY}
+        />
+      )}
     </View>
   );
 };

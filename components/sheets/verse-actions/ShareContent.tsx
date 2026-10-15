@@ -32,6 +32,7 @@ import {verseShareUrl, shareUrl as nativeShareUrl} from '@/utils/shareUtils';
 import {digitalKhattDataService} from '@/services/mushaf/DigitalKhattDataService';
 import {getRewayahShortLabel} from '@/utils/rewayahLabels';
 import type {RewayahId} from '@/store/mushafSettingsStore';
+import {t} from '@/i18n';
 
 const surahData = require('@/data/surahData.json') as Array<{
   id: number;
@@ -207,7 +208,7 @@ export const ShareContent: React.FC<ShareContentProps> = ({
       </View>
 
       <View style={styles.toggleRow}>
-        <Text style={styles.toggleLabel}>Show Basmallah</Text>
+        <Text style={styles.toggleLabel}>{t('common.showBasmallah')}</Text>
         <Switch
           trackColor={{
             false: Color(theme.colors.text).alpha(0.1).toString(),
@@ -239,7 +240,9 @@ export const ShareContent: React.FC<ShareContentProps> = ({
               color={theme.colors.text}
             />
           )}
-          <Text style={styles.primaryButtonText}>Share as Image</Text>
+          <Text style={styles.primaryButtonText}>
+            {t('common.shareAsImage')}
+          </Text>
         </Pressable>
 
         <Pressable
@@ -253,7 +256,9 @@ export const ShareContent: React.FC<ShareContentProps> = ({
             size={moderateScale(16)}
             color={theme.colors.text}
           />
-          <Text style={styles.secondaryButtonText}>Share as Text</Text>
+          <Text style={styles.secondaryButtonText}>
+            {t('common.shareAsText')}
+          </Text>
         </Pressable>
 
         <Pressable
@@ -267,7 +272,9 @@ export const ShareContent: React.FC<ShareContentProps> = ({
             size={moderateScale(16)}
             color={theme.colors.text}
           />
-          <Text style={styles.secondaryButtonText}>Share Link</Text>
+          <Text style={styles.secondaryButtonText}>
+            {t('verseactions.shareContent.shareLink')}
+          </Text>
         </Pressable>
       </View>
     </ScrollView>

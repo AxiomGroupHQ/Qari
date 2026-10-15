@@ -31,6 +31,8 @@ import {CollectionStickyHeader} from '@/components/collection/CollectionStickyHe
 import {shuffleArray} from '@/utils/arrayUtils';
 import Color from 'color';
 import {useCollectionNativeHeader} from '@/hooks/useCollectionNativeHeader';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 interface DownloadDataItem {
   download: DownloadedSurah;
@@ -60,13 +62,13 @@ export default function DownloadsScreen() {
   const handleOptionsMenu = useCallback(() => {
     SheetManager.show('collection-options', {
       payload: {
-        title: 'Downloads',
+        title: t('common.downloads'),
         subtitle: `${downloads.length} ${
           downloads.length === 1 ? 'surah' : 'surahs'
         } downloaded`,
         options: [
           {
-            label: 'Remove All Downloads',
+            label: t('common.removeAllDownloads'),
             icon: 'trash-2',
             destructive: true,
             onPress: () => clearAllDownloads(),
@@ -90,7 +92,7 @@ export default function DownloadsScreen() {
   );
 
   useCollectionNativeHeader({
-    title: 'Downloads',
+    title: t('common.downloads'),
     scrollY,
     hasContent: downloads.length > 0,
     headerRight: downloads.length > 0 ? renderHeaderRight : undefined,
@@ -372,7 +374,7 @@ export default function DownloadsScreen() {
           } downloaded`,
           options: [
             {
-              label: 'Play All',
+              label: t('collection.downloads.playAll'),
               icon: 'play',
               customIcon: (
                 <PlayIcon color={theme.colors.text} size={moderateScale(20)} />
@@ -395,7 +397,7 @@ export default function DownloadsScreen() {
               },
             },
             {
-              label: 'Remove All Downloads',
+              label: t('common.removeAllDownloads'),
               icon: 'trash-2',
               destructive: true,
               onPress: async () => {
@@ -480,12 +482,12 @@ export default function DownloadsScreen() {
               onPress={() => router.back()}
               hitSlop={8}>
               <Feather
-                name="arrow-left"
+                name={dirIcon('arrow-left')}
                 size={moderateScale(22)}
                 color={theme.colors.text}
               />
             </Pressable>
-            <Text style={styles.emptyHeaderTitle}>Downloads</Text>
+            <Text style={styles.emptyHeaderTitle}>{t('common.downloads')}</Text>
             <View style={styles.emptyHeaderBack} />
           </View>
         )}
@@ -497,9 +499,11 @@ export default function DownloadsScreen() {
               filled={true}
             />
           </View>
-          <Text style={styles.emptyTitle}>No downloads yet</Text>
+          <Text style={styles.emptyTitle}>
+            {t('collection.downloads.noDownloadsYet')}
+          </Text>
           <Text style={styles.emptySubtitle}>
-            Download surahs to see them here
+            {t('collection.downloads.downloadSurahsToSeeThem')}
           </Text>
         </View>
       </View>
@@ -520,7 +524,7 @@ export default function DownloadsScreen() {
                 />
               </View>
             </View>
-            <Text style={styles.title}>Downloads</Text>
+            <Text style={styles.title}>{t('common.downloads')}</Text>
             <Text style={styles.subtitle}>
               {downloads.length} {downloads.length === 1 ? 'surah' : 'surahs'}{' '}
               downloaded
@@ -623,7 +627,7 @@ export default function DownloadsScreen() {
           ]}>
           <Pressable onPress={() => router.back()} hitSlop={8}>
             <Feather
-              name="arrow-left"
+              name={dirIcon('arrow-left')}
               size={moderateScale(24)}
               color={theme.colors.text}
             />
@@ -650,7 +654,10 @@ export default function DownloadsScreen() {
         contentInsetAdjustmentBehavior="automatic"
       />
       {!USE_GLASS && (
-        <CollectionStickyHeader title="Downloads" scrollY={scrollY} />
+        <CollectionStickyHeader
+          title={t('common.downloads')}
+          scrollY={scrollY}
+        />
       )}
     </View>
   );

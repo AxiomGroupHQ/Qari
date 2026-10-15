@@ -28,6 +28,8 @@ import {
   type TafseerResult,
 } from '@/services/tafseer/TafseerDbService';
 import {TafseerHtmlRenderer} from './TafseerHtmlRenderer';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 // ─── Data loading (module scope, runs once) ───────────────────────────────
 const quranData = require('@/data/quran.json') as QuranData;
@@ -183,9 +185,11 @@ export const TafseerContent: React.FC<TafseerContentProps> = ({
               size={moderateScale(32)}
               color={Color(theme.colors.text).alpha(0.2).toString()}
             />
-            <Text style={styles.emptyStateTitle}>No Tafaseer Downloaded</Text>
+            <Text style={styles.emptyStateTitle}>
+              {t('verseactions.tafseerContent.noTafaseerDownloaded')}
+            </Text>
             <Text style={styles.emptyStateText}>
-              Tap here to download a tafseer and view commentary.
+              {t('verseactions.tafseerContent.tapHereToDownloadA')}
             </Text>
           </Pressable>
         ) : (
@@ -276,7 +280,7 @@ export const TafseerContent: React.FC<TafseerContentProps> = ({
               </>
             ) : (
               <Text style={styles.noTafseer}>
-                Tafseer not available for this verse
+                {t('verseactions.tafseerContent.tafseerNotAvailableForThis')}
               </Text>
             )}
           </>
@@ -294,7 +298,7 @@ export const TafseerContent: React.FC<TafseerContentProps> = ({
             pressed && !isFirst && {opacity: 0.6},
           ]}>
           <Feather
-            name="chevron-left"
+            name={dirIcon('chevron-left')}
             size={moderateScale(16)}
             color={
               isFirst
@@ -307,7 +311,7 @@ export const TafseerContent: React.FC<TafseerContentProps> = ({
               styles.navButtonText,
               isFirst && styles.navButtonTextDisabled,
             ]}>
-            Prev
+            {t('common.prev')}
           </Text>
         </Pressable>
 
@@ -326,10 +330,10 @@ export const TafseerContent: React.FC<TafseerContentProps> = ({
               styles.navButtonText,
               isLast && styles.navButtonTextDisabled,
             ]}>
-            Next
+            {t('common.next')}
           </Text>
           <Feather
-            name="chevron-right"
+            name={dirIcon('chevron-right')}
             size={moderateScale(16)}
             color={
               isLast

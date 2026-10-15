@@ -1,0 +1,89 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Error initializing player: {{message}}",
+    "errorLoadingFonts": "Error loading fonts"
+  },
+  "playlist": {
+    "subtitle_one": "Playlist • {{count}} surah",
+    "subtitle_other": "Playlist • {{count}} surahs"
+  },
+  "downloads": {
+    "subtitle_one": "Downloaded • {{count}} surah",
+    "subtitle_other": "Downloaded • {{count}} surahs"
+  },
+  "version": {
+    "label": "Version {{version}}"
+  },
+  "browse": {
+    "recitersFound_one": "{{count}} reciter found with current filters",
+    "recitersFound_other": "{{count}} reciters found with current filters"
+  },
+  "whatsNew": {
+    "titlePrefix": "What's new in"
+  },
+  "mushaf": {
+    "page": "Page {{page}}",
+    "pageAndSurah": "Page {{page}} · {{surah}}",
+    "juz": "Juz {{juz}}"
+  },
+  "organize": {
+    "createReciter": "Create \"{{name}}\""
+  },
+  "similarVerses": {
+    "foundIn_one": "Found in {{count}} verse",
+    "foundIn_other": "Found in {{count}} verses"
+  },
+  "wordDetail": {
+    "context": "Verse {{surah}}:{{ayah}} · Word {{position}} of {{total}}"
+  },
+  "sheets": {
+    "aboutSurah": "About {{name}}"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Highlights Allah's name and divine title forms like Rabb in the mushaf."
+  },
+  "common": {
+    "reciters": "Reciters",
+    "surahs": "Surahs"
+  },
+  "search": {
+    "surahsOrReciters": "Search surahs or reciters"
+  },
+  "settings": {
+    "aboutApp": "About {{name}}",
+    "appearance": "APPEARANCE",
+    "developer": "DEVELOPER",
+    "floatingDevMenu": "Floating Dev Menu",
+    "language": "Language",
+    "languageDescription": "Choose the app language"
+  },
+  "collection": {
+    "index": {
+      "playlists": "Playlists",
+      "createYourFirstPlaylist": "Create your first playlist",
+      "reciters": "Reciters",
+      "noFavoritesYet": "No favorites yet",
+      "downloads": "Downloads",
+      "noDownloadsYet": "No downloads yet",
+      "loved": "Loved",
+      "noLovedSurahsYet": "No loved surahs yet",
+      "bookmarks": "Bookmarks",
+      "noBookmarksYet": "No bookmarks yet",
+      "notes": "Notes",
+      "noNotesYet": "No notes yet",
+      "uploads": "Uploads",
+      "noUploadsYet": "No uploads yet",
+      "addToCollection": "Add to Collection",
+      "items_one": "{{count}} item",
+      "items_other": "{{count}} items"
+    }
+  },
+  "language": {
+    "system": "Device language",
+    "search": "Search languages",
+    "restartTitle": "Restart required",
+    "restartMessage": "Restart the app to apply the new layout direction.",
+    "restartNow": "Restart now",
+    "later": "Later"
+  }
+}

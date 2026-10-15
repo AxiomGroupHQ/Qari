@@ -1,4 +1,3 @@
-import {getInterfaceMessages} from '@/localization/interfaceMessages';
 import React, {useState, useRef} from 'react';
 import {
   View,
@@ -16,11 +15,10 @@ import {moderateScale} from 'react-native-size-matters';
 import {Feather} from '@expo/vector-icons';
 import Color from 'color';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {t} from '@/i18n';
 
 export default function SearchScreen() {
   const {theme} = useTheme();
-  const isArabic = typeof navigator !== 'undefined' && navigator.language.toLowerCase().startsWith('ar');
-  const labels = getInterfaceMessages(isArabic ? 'ar' : 'en');
   const insets = useSafeAreaInsets();
   const [query, setQuery] = useState('');
   const [isSearchActive, setIsSearchActive] = useState(false);
@@ -39,7 +37,7 @@ export default function SearchScreen() {
       {USE_GLASS && (
         <Stack.SearchBar
           placement="automatic"
-          placeholder={isArabic ? 'ابحث عن السور أو القراء' : 'Search surahs or reciters'}
+          placeholder={t('search.surahsOrReciters')}
           onChangeText={e => setQuery(e.nativeEvent.text)}
           onFocus={() => setIsSearchActive(true)}
           onCancelButtonPress={() => {
@@ -82,7 +80,7 @@ export default function SearchScreen() {
               <TextInput
                 ref={inputRef}
                 style={[styles.androidSearchInput, {color: theme.colors.text}]}
-                placeholder={isArabic ? 'ابحث عن السور أو القراء' : 'Search surahs or reciters'}
+                placeholder={t('search.surahsOrReciters')}
                 placeholderTextColor={Color(theme.colors.text)
                   .alpha(0.35)
                   .toString()}
@@ -108,7 +106,7 @@ export default function SearchScreen() {
             {isSearchActive && (
               <Pressable onPress={handleCancel} hitSlop={4}>
                 <Text style={[styles.cancelText, {color: theme.colors.text}]}>
-                  {labels.cancel}
+                  {t('ui.cancel')}
                 </Text>
               </Pressable>
             )}

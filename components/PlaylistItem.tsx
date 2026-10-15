@@ -6,6 +6,7 @@ import {Theme} from '@/utils/themeUtils';
 import {MaterialIcons, Feather} from '@expo/vector-icons';
 import {PlaylistIcon} from '@/components/Icons';
 import Color from 'color';
+import {t} from '@/i18n';
 
 interface PlaylistItemProps {
   id: string;
@@ -56,7 +57,7 @@ export const PlaylistItem: React.FC<PlaylistItemProps> = React.memo(
         <View style={styles.playlistInfo}>
           <Text style={styles.playlistName}>{name}</Text>
           <Text style={styles.playlistSubtitle} numberOfLines={1}>
-            Playlist • {itemCount} {itemCount === 1 ? 'surah' : 'surahs'}
+            {t('playlist.subtitle', {count: itemCount})}
           </Text>
         </View>
         {onOptionsPress && !isSelected && (

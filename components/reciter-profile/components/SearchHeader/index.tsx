@@ -6,6 +6,7 @@ import {Theme} from '@/utils/themeUtils';
 import {useTheme} from '@/hooks/useTheme';
 import SearchBar from '@/components/SearchBar';
 import {SearchHeaderProps} from '@/components/reciter-profile/types';
+import {t} from '@/i18n';
 
 /**
  * SearchHeader component for the ReciterProfile
@@ -33,7 +34,7 @@ export const SearchHeader: React.FC<SearchHeaderProps> = ({
         {paddingTop: insets.top + moderateScale(15)},
       ]}>
       <SearchBar
-        placeholder="Search Surahs"
+        placeholder={t('components.searchHeader.searchSurahs')}
         onChangeText={onSearchChange}
         value={searchQuery}
       />

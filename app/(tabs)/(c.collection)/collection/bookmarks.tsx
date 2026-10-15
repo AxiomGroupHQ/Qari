@@ -28,6 +28,8 @@ import type {VerseBookmark} from '@/types/verse-annotations';
 import {useMushafSettingsStore} from '@/store/mushafSettingsStore';
 import {getRewayahShortLabel} from '@/utils/rewayahLabels';
 import {showToast} from '@/utils/toastUtils';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 interface BookmarkData {
   bookmark: VerseBookmark;
@@ -44,7 +46,7 @@ const BookmarksScreen = () => {
   const scrollY = useRef(new RNAnimated.Value(0)).current;
 
   useCollectionNativeHeader({
-    title: 'Bookmarks',
+    title: t('collection.bookmarks.bookmarks'),
     scrollY,
     hasContent: bookmarks.length > 0 && !loading,
   });
@@ -88,7 +90,7 @@ const BookmarksScreen = () => {
           subtitle: `Ayah ${item.bookmark.ayahNumber}`,
           options: [
             {
-              label: 'Remove Bookmark',
+              label: t('collection.bookmarks.removeBookmark'),
               icon: 'minus-circle',
               destructive: true,
               onPress: () => handleRemoveBookmark(item.bookmark),
@@ -120,7 +122,7 @@ const BookmarksScreen = () => {
             </View>
           </View>
           <Text style={[styles.headerTitle, {color: theme.colors.text}]}>
-            Bookmarks
+            {t('collection.bookmarks.bookmarks')}
           </Text>
           <Text
             style={[
@@ -186,13 +188,13 @@ const BookmarksScreen = () => {
               onPress={() => router.back()}
               hitSlop={8}>
               <Feather
-                name="arrow-left"
+                name={dirIcon('arrow-left')}
                 size={moderateScale(22)}
                 color={theme.colors.text}
               />
             </Pressable>
             <Text style={[styles.emptyHeaderTitle, {color: theme.colors.text}]}>
-              Bookmarks
+              {t('collection.bookmarks.bookmarks')}
             </Text>
             <View style={styles.emptyHeaderBack} />
           </View>
@@ -200,7 +202,7 @@ const BookmarksScreen = () => {
         <View style={styles.emptyContent}>
           <Text
             style={[styles.loadingText, {color: theme.colors.textSecondary}]}>
-            Loading...
+            {t('common.loading')}
           </Text>
         </View>
       </View>
@@ -218,13 +220,13 @@ const BookmarksScreen = () => {
               onPress={() => router.back()}
               hitSlop={8}>
               <Feather
-                name="arrow-left"
+                name={dirIcon('arrow-left')}
                 size={moderateScale(22)}
                 color={theme.colors.text}
               />
             </Pressable>
             <Text style={[styles.emptyHeaderTitle, {color: theme.colors.text}]}>
-              Bookmarks
+              {t('collection.bookmarks.bookmarks')}
             </Text>
             <View style={styles.emptyHeaderBack} />
           </View>
@@ -238,11 +240,11 @@ const BookmarksScreen = () => {
             />
           </View>
           <Text style={[styles.emptyTitle, {color: theme.colors.text}]}>
-            No bookmarks yet
+            {t('collection.bookmarks.noBookmarksYet')}
           </Text>
           <Text
             style={[styles.emptySubtitle, {color: theme.colors.textSecondary}]}>
-            Bookmark verses to see them here
+            {t('collection.bookmarks.bookmarkVersesToSeeThem')}
           </Text>
         </View>
       </View>
@@ -269,7 +271,7 @@ const BookmarksScreen = () => {
           ]}>
           <Pressable onPress={() => router.back()} hitSlop={8}>
             <Feather
-              name="arrow-left"
+              name={dirIcon('arrow-left')}
               size={moderateScale(24)}
               color={theme.colors.text}
             />
@@ -292,7 +294,10 @@ const BookmarksScreen = () => {
         contentInsetAdjustmentBehavior="automatic"
       />
       {!USE_GLASS && (
-        <CollectionStickyHeader title="Bookmarks" scrollY={scrollY} />
+        <CollectionStickyHeader
+          title={t('collection.bookmarks.bookmarks')}
+          scrollY={scrollY}
+        />
       )}
     </View>
   );

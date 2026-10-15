@@ -3,6 +3,7 @@ import {useTheme} from '@/hooks/useTheme';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import {MaxWidthContainer} from '@/components/layout/MaxWidthContainer';
 import branding from '@/config/branding';
+import {t} from '@/i18n';
 
 export default function SettingsLayout() {
   const {theme} = useTheme();
@@ -30,30 +31,43 @@ export default function SettingsLayout() {
           headerBackButtonDisplayMode: 'minimal',
         }}>
         <Stack.Screen name="index" options={{headerShown: false}} />
-        <Stack.Screen name="storage" options={{title: 'Storage'}} />
+        <Stack.Screen
+          name="language"
+          options={{title: t('settings.language')}}
+        />
+        <Stack.Screen name="storage" options={{title: t('common.storage')}} />
         <Stack.Screen
           name="about"
-          options={{title: `About ${branding.appName}`}}
+          options={{title: t('settings.aboutApp', {name: branding.appName})}}
         />
         <Stack.Screen
           name="mushaf-settings"
-          options={{title: 'Mushaf Settings'}}
+          options={{title: t('common.mushafSettings')}}
         />
         <Stack.Screen
           name="default-reciter"
-          options={{title: 'Default Reciter'}}
+          options={{title: t('common.defaultReciter')}}
         />
         <Stack.Screen
           name="reciter-choice"
-          options={{title: 'Reciter Choice'}}
+          options={{title: t('common.reciterChoice')}}
         />
-        <Stack.Screen name="account" options={{title: 'Account'}} />
+        <Stack.Screen
+          name="account"
+          options={{title: t('tabs.settings.account')}}
+        />
         <Stack.Screen
           name="translations"
-          options={{title: 'Translations & Tafaseer'}}
+          options={{title: t('common.translationsTafaseer')}}
         />
-        <Stack.Screen name="reading-theme" options={{title: 'Reading Theme'}} />
-        <Stack.Screen name="whats-new" options={{title: "What's New"}} />
+        <Stack.Screen
+          name="reading-theme"
+          options={{title: t('common.readingTheme')}}
+        />
+        <Stack.Screen
+          name="whats-new"
+          options={{title: t('common.whatSNew')}}
+        />
       </Stack>
     </MaxWidthContainer>
   );

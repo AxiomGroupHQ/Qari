@@ -4,6 +4,7 @@ import {useTheme} from '@/hooks/useTheme';
 import {moderateScale, verticalScale} from 'react-native-size-matters';
 import {HeartIcon} from '@/components/Icons';
 import Color from 'color';
+import {t} from '@/i18n';
 
 interface LovedCardProps {
   itemCount: number;
@@ -68,7 +69,7 @@ export const LovedCard: React.FC<LovedCardProps> = ({
         <HeartIcon color={lovedColor} size={iconSize} filled={true} />
       </View>
       <Text style={styles.name} numberOfLines={1}>
-        Loved Surahs
+        {t('cards.lovedCard.lovedSurahs')}
       </Text>
       <Text style={styles.subtitle} numberOfLines={1}>
         {itemCount} {itemCount === 1 ? 'surah' : 'surahs'}

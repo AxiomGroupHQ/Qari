@@ -26,6 +26,8 @@ import {useFocusEffect} from '@react-navigation/native';
 import {verseAnnotationService} from '@/services/verse-annotations/VerseAnnotationService';
 import {useBottomInset} from '@/hooks/useBottomInset';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 interface CategoryItem {
   id: string;
@@ -39,8 +41,6 @@ interface CategoryItem {
 
 export default function CollectionScreen() {
   const {theme} = useTheme();
-  const ar = typeof navigator !== 'undefined' && navigator.language.toLowerCase().startsWith('ar');
-  const t = (english: string, arabic: string) => ar ? arabic : english;
   const styles = createStyles(theme);
   const insets = useSafeAreaInsets();
   const bottomInset = useBottomInset();
@@ -74,73 +74,73 @@ export default function CollectionScreen() {
   const categories: CategoryItem[] = [
     {
       id: 'playlists',
-      label: t('Playlists', 'قوائم التشغيل'),
+      label: t('collection.index.playlists'),
       icon: <PlaylistIcon color="#6366F1" size={moderateScale(22)} />,
       color: '#6366F1',
       count: playlists.length,
-      emptyText: t('Create your first playlist', 'أنشئ قائمة التشغيل الأولى'),
+      emptyText: t('collection.index.createYourFirstPlaylist'),
       route: '/collection/playlists',
     },
     {
       id: 'reciters',
-      label: t('Reciters', 'القراء'),
+      label: t('collection.index.reciters'),
       icon: (
         <ProfileIcon color="#3B82F6" size={moderateScale(22)} filled={true} />
       ),
       color: '#3B82F6',
       count: favoriteReciters.length,
-      emptyText: t('No favorites yet', 'لا توجد مفضلات بعد'),
+      emptyText: t('collection.index.noFavoritesYet'),
       route: '/collection/favorite-reciters',
     },
     {
       id: 'downloads',
-      label: t('Downloads', 'التنزيلات'),
+      label: t('collection.index.downloads'),
       icon: <DownloadIcon color="#10AC84" size={moderateScale(22)} />,
       color: '#10AC84',
       count: downloads.length,
-      emptyText: t('No downloads yet', 'لا توجد تنزيلات بعد'),
+      emptyText: t('collection.index.noDownloadsYet'),
       route: '/collection/downloads',
     },
     {
       id: 'loved',
-      label: t('Loved', 'المحبوبة'),
+      label: t('collection.index.loved'),
       icon: (
         <HeartIcon color="#FF6B6B" size={moderateScale(22)} filled={true} />
       ),
       color: '#FF6B6B',
       count: lovedTracks.length,
-      emptyText: t('No loved surahs yet', 'لا توجد سور مفضلة بعد'),
+      emptyText: t('collection.index.noLovedSurahsYet'),
       route: '/collection/loved',
     },
     {
       id: 'bookmarks',
-      label: t('Bookmarks', 'العلامات المرجعية'),
+      label: t('collection.index.bookmarks'),
       icon: (
         <Feather name="bookmark" size={moderateScale(22)} color="#F59E0B" />
       ),
       color: '#F59E0B',
       count: bookmarkCount,
-      emptyText: t('No bookmarks yet', 'لا توجد علامات مرجعية بعد'),
+      emptyText: t('collection.index.noBookmarksYet'),
       route: '/collection/bookmarks',
     },
     {
       id: 'notes',
-      label: t('Notes', 'الملاحظات'),
+      label: t('collection.index.notes'),
       icon: (
         <Feather name="file-text" size={moderateScale(22)} color="#3B82F6" />
       ),
       color: '#3B82F6',
       count: noteCount,
-      emptyText: t('No notes yet', 'لا توجد ملاحظات بعد'),
+      emptyText: t('collection.index.noNotesYet'),
       route: '/collection/notes',
     },
     {
       id: 'uploads',
-      label: t('Uploads', 'الملفات المرفوعة'),
+      label: t('collection.index.uploads'),
       icon: <MicrophoneIcon color="#8B5CF6" size={moderateScale(22)} />,
       color: '#8B5CF6',
       count: uploadsTotalCount,
-      emptyText: t('No uploads yet', 'لا توجد ملفات مرفوعة بعد'),
+      emptyText: t('collection.index.noUploadsYet'),
       route: '/collection/uploads',
     },
   ];
@@ -167,7 +167,7 @@ export default function CollectionScreen() {
           />
           <Text
             style={[styles.addBarText, {color: theme.colors.textSecondary}]}>
-            {t('Add to Collection', 'إضافة إلى المجموعة')}
+            {t('collection.index.addToCollection')}
           </Text>
         </Pressable>
 
@@ -201,14 +201,14 @@ export default function CollectionScreen() {
                   ]}
                   numberOfLines={1}>
                   {category.count > 0
-                    ? `${category.count} ${
-                        ar ? 'عنصر' : category.count === 1 ? 'item' : 'items'
-                      }`
+                    ? `${category.count} ${t('collection.index.items', {
+                        count: category.count,
+                      })}`
                     : category.emptyText}
                 </Text>
               </View>
               <Feather
-                name="chevron-right"
+                name={dirIcon('chevron-right')}
                 size={moderateScale(18)}
                 color={theme.colors.textSecondary}
               />

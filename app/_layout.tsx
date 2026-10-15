@@ -52,6 +52,8 @@ import * as Sentry from '@sentry/react-native';
 import * as ScreenOrientation from 'expo-screen-orientation';
 import {SiteHeader} from '@/components/branding/SiteHeader'; // @ai
 import '@/utils/safeBack'; // @ai
+import {t, initI18n} from '@/i18n';
+import {useTranslation} from 'react-i18next';
 
 // Configure Reanimated logger
 configureReanimatedLogger({
@@ -115,6 +117,7 @@ function AnalyticsConnector(): null {
 }
 
 function RootLayout() {
+  const {i18n: i18nInstance} = useTranslation();
   const [appIsReady, setAppIsReady] = useState(false);
   const [isPlayerReady, setIsPlayerReady] = useState(false);
   const [mushafRestoreHandled, setMushafRestoreHandled] = useState(false);
@@ -218,6 +221,9 @@ function RootLayout() {
       try {
         if (__DEV__)
           console.log('[App] Starting initialization with expo-audio...');
+
+        // Initialize i18n first so every screen can translate on first render
+        await initI18n();
 
         // Initialize expo-audio service
         await expoAudioService.initialize();
@@ -431,7 +437,7 @@ function RootLayout() {
     SplashScreen.hideAsync();
     return (
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Error loading fonts</Text>
+        <Text>{t('app.errorLoadingFonts')}</Text>
       </View>
     );
   }
@@ -440,7 +446,9 @@ function RootLayout() {
     SplashScreen.hideAsync();
     return (
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Error initializing player: {setupError.message}</Text>
+        <Text>
+          {t('app.errorInitializingPlayer', {message: setupError.message})}
+        </Text>
       </View>
     );
   }
@@ -450,7 +458,7 @@ function RootLayout() {
   }
 
   return (
-    <ErrorBoundary>
+    <ErrorBoundary key={i18nInstance.language}>
       <PostHogProvider
         apiKey={
           process.env.EXPO_PUBLIC_POSTHOG_API_KEY || 'phc_disabled_placeholder'

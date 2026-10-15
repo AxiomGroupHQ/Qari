@@ -21,6 +21,7 @@ import ActionSheet, {
 } from 'react-native-actions-sheet';
 import Color from 'color';
 import {LinearGradient} from 'expo-linear-gradient';
+import {t} from '@/i18n';
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 
@@ -92,7 +93,7 @@ export const CreatePlaylistSheet = (props: SheetProps<'create-playlist'>) => {
       {/* Header */}
       <View style={styles.headerContainer}>
         <Pressable onPress={handleClose} style={styles.headerButton}>
-          <Text style={styles.cancelText}>Cancel</Text>
+          <Text style={styles.cancelText}>{t('common.cancel')}</Text>
         </Pressable>
         <Text style={styles.headerTitle}>
           {isEditMode ? 'Edit Playlist' : 'New Playlist'}
@@ -104,7 +105,7 @@ export const CreatePlaylistSheet = (props: SheetProps<'create-playlist'>) => {
             {opacity: playlistName.trim() ? 1 : 0.4},
           ]}
           disabled={!playlistName.trim()}>
-          <Text style={styles.saveText}>Save</Text>
+          <Text style={styles.saveText}>{t('common.save')}</Text>
         </Pressable>
       </View>
 
@@ -149,10 +150,10 @@ export const CreatePlaylistSheet = (props: SheetProps<'create-playlist'>) => {
 
         {/* Input Section */}
         <Input
-          label="Playlist Name"
+          label={t('common.playlistName')}
           showIcon
           iconName="edit-3"
-          placeholder="e.g., Morning Recitations"
+          placeholder={t('sheets.createPlaylistSheet.eGMorningRecitations')}
           value={playlistName}
           onChangeText={setPlaylistName}
           maxLength={50}

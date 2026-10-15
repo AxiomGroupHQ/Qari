@@ -11,6 +11,7 @@ import {useTheme} from '@/hooks/useTheme';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useRouter} from 'expo-router';
 import {Feather} from '@expo/vector-icons';
+import {dirIcon} from '@/i18n/direction';
 
 interface CollectionStickyHeaderProps {
   title: string;
@@ -54,7 +55,7 @@ export const CollectionStickyHeader: React.FC<CollectionStickyHeaderProps> = ({
           onPress={() => router.back()}
           hitSlop={8}>
           <Feather
-            name="arrow-left"
+            name={dirIcon('arrow-left')}
             size={moderateScale(22)}
             color={theme.colors.text}
           />

@@ -32,6 +32,7 @@ import {lightHaptics} from '@/utils/haptics';
 import {useMushafSettingsStore} from '@/store/mushafSettingsStore';
 import {digitalKhattDataService} from '@/services/mushaf/DigitalKhattDataService';
 import {getRewayahShortLabel} from '@/utils/rewayahLabels';
+import {t} from '@/i18n';
 
 const surahData = require('@/data/surahData.json') as Array<{
   id: number;
@@ -162,7 +163,9 @@ export const VerseShareSheet = (props: SheetProps<'verse-share'>) => {
         contentContainerStyle={styles.container}
         showsVerticalScrollIndicator={false}
         bounces={true}>
-        <Text style={styles.title}>Share Verse</Text>
+        <Text style={styles.title}>
+          {t('sheets.verseShareSheet.shareVerse')}
+        </Text>
 
         {/* Visible preview */}
         <View style={styles.previewContent}>
@@ -197,7 +200,7 @@ export const VerseShareSheet = (props: SheetProps<'verse-share'>) => {
 
         {/* Basmallah toggle */}
         <View style={styles.toggleRow}>
-          <Text style={styles.toggleLabel}>Show Basmallah</Text>
+          <Text style={styles.toggleLabel}>{t('common.showBasmallah')}</Text>
           <Switch
             trackColor={{
               false: Color(theme.colors.textSecondary).alpha(0.3).toString(),
@@ -228,7 +231,9 @@ export const VerseShareSheet = (props: SheetProps<'verse-share'>) => {
                 color={theme.colors.background}
               />
             )}
-            <Text style={styles.primaryButtonText}>Share as Image</Text>
+            <Text style={styles.primaryButtonText}>
+              {t('common.shareAsImage')}
+            </Text>
           </Pressable>
 
           <Pressable style={styles.secondaryButton} onPress={handleShareAsText}>
@@ -237,7 +242,9 @@ export const VerseShareSheet = (props: SheetProps<'verse-share'>) => {
               size={moderateScale(18)}
               color={theme.colors.text}
             />
-            <Text style={styles.secondaryButtonText}>Share as Text</Text>
+            <Text style={styles.secondaryButtonText}>
+              {t('common.shareAsText')}
+            </Text>
           </Pressable>
         </View>
       </ScrollView>

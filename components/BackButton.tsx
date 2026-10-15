@@ -6,6 +6,7 @@ import {useTheme} from '@/hooks/useTheme';
 import {useNavigation} from '@react-navigation/native';
 import {router} from 'expo-router';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {dirIcon} from '@/i18n/direction';
 
 interface BackButtonProps {
   onPress?: () => void;
@@ -39,7 +40,7 @@ export const BackButton: React.FC<BackButtonProps> = ({
       style={[styles.backButton, style, {marginLeft: insets.left}]}
       onPress={handlePress}>
       <Feather
-        name="arrow-left"
+        name={dirIcon('arrow-left')}
         color={theme.colors.text}
         size={moderateScale(iconSize)}
       />

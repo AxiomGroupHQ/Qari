@@ -28,6 +28,8 @@ import {LinearGradient} from 'expo-linear-gradient';
 import {getRandomColors} from '@/utils/gradientColors';
 import {GlassView} from 'expo-glass-effect';
 import {USE_GLASS, useGlassColorScheme} from '@/hooks/useGlassProps';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 // Error Boundary for ScrollingHero
 class ScrollingHeroErrorBoundary extends React.Component<{
@@ -166,9 +168,9 @@ const BrowseButton = React.memo(
         ]}
         onPress={onPress}
         activeOpacity={0.8}>
-        <Text style={styles.buttonText}>Browse All</Text>
+        <Text style={styles.buttonText}>{t('common.browseAll')}</Text>
         <Feather
-          name="arrow-right"
+          name={dirIcon('arrow-right')}
           size={moderateScale(18)}
           color={theme.colors.text}
           style={styles.buttonIcon}
@@ -451,9 +453,9 @@ export const ScrollingHero = React.memo(
               style={[styles.browseButton, {borderRadius: moderateScale(25)}]}
               glassEffectStyle="regular"
               colorScheme={glassColorScheme}>
-              <Text style={styles.buttonText}>Browse All</Text>
+              <Text style={styles.buttonText}>{t('common.browseAll')}</Text>
               <Feather
-                name="arrow-right"
+                name={dirIcon('arrow-right')}
                 size={moderateScale(16)}
                 color={theme.colors.text}
                 style={styles.buttonIcon}
@@ -472,9 +474,9 @@ export const ScrollingHero = React.memo(
                   borderRadius: moderateScale(25),
                 },
               ]}>
-              <Text style={styles.buttonText}>Browse All</Text>
+              <Text style={styles.buttonText}>{t('common.browseAll')}</Text>
               <Feather
-                name="arrow-right"
+                name={dirIcon('arrow-right')}
                 size={moderateScale(16)}
                 color={theme.colors.text}
                 style={styles.buttonIcon}

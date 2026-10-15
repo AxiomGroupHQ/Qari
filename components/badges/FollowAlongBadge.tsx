@@ -4,6 +4,7 @@ import {moderateScale} from 'react-native-size-matters';
 import {Ionicons} from '@expo/vector-icons';
 import {useTheme} from '@/hooks/useTheme';
 import Color from 'color';
+import {t} from '@/i18n';
 
 interface FollowAlongBadgeProps {
   size?: 'small' | 'default';
@@ -43,7 +44,7 @@ export const FollowAlongBadge: React.FC<FollowAlongBadgeProps> = React.memo(
               fontFamily: theme.fonts.medium,
             },
           ]}>
-          Follow Along
+          {t('common.followAlong')}
         </Text>
       </View>
     );

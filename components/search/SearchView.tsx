@@ -31,6 +31,7 @@ import {SheetManager} from 'react-native-actions-sheet';
 import {ExploreView} from '@/components/search/ExploreView';
 import {useBottomInset} from '@/hooks/useBottomInset';
 import {analyticsService} from '@/services/analytics/AnalyticsService';
+import {t} from '@/i18n';
 
 const RECENT_SEARCHES_KEY = 'recentSearches';
 const MAX_RECENT_SEARCHES = 10;
@@ -479,7 +480,7 @@ export function SearchView({
                           .toString(),
                       },
                     ]}>
-                    Recent searches
+                    {t('common.recentSearches')}
                   </Text>
                   <Pressable onPress={clearRecentSearches}>
                     <Text
@@ -491,7 +492,7 @@ export function SearchView({
                             .toString(),
                         },
                       ]}>
-                      Clear
+                      {t('common.clear')}
                     </Text>
                   </Pressable>
                 </View>
@@ -528,7 +529,7 @@ export function SearchView({
                         .toString(),
                     },
                   ]}>
-                  No recent searches
+                  {t('search.searchView.noRecentSearches')}
                 </Text>
                 <Text
                   style={[
@@ -539,7 +540,7 @@ export function SearchView({
                         .toString(),
                     },
                   ]}>
-                  Your search history will appear here
+                  {t('search.searchView.yourSearchHistoryWillAppear')}
                 </Text>
               </View>
             )}
@@ -580,7 +581,7 @@ export function SearchView({
                           .toString(),
                       },
                     ]}>
-                    No results found
+                    {t('common.noResultsFound')}
                   </Text>
                   <Text
                     style={[
@@ -591,7 +592,7 @@ export function SearchView({
                           .toString(),
                       },
                     ]}>
-                    Try different keywords or check the spelling
+                    {t('search.searchView.tryDifferentKeywordsOrCheck')}
                   </Text>
                 </View>
               ) : null

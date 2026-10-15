@@ -15,6 +15,7 @@ import {
   AMBIENT_SOUND_LIST,
   AMBIENT_SOUNDS,
 } from '@/types/ambient';
+import {t} from '@/i18n';
 
 /**
  * AmbientSoundsSheet
@@ -77,7 +78,9 @@ export const AmbientSoundsSheet = (props: SheetProps<'ambient-sounds'>) => {
       gestureEnabled={true}
       onBeforeClose={handleBeforeClose}>
       <View style={styles.headerContainer}>
-        <Text style={styles.headerTitle}>Ambient Sounds</Text>
+        <Text style={styles.headerTitle}>
+          {t('sheets.ambientSoundsSheet.ambientSounds')}
+        </Text>
       </View>
       <View style={styles.container}>
         {/* Sound Grid */}
@@ -95,7 +98,7 @@ export const AmbientSoundsSheet = (props: SheetProps<'ambient-sounds'>) => {
                 styles.soundLabel,
                 isNoneSelected && styles.soundLabelSelected,
               ]}>
-              None
+              {t('sheets.ambientSoundsSheet.none')}
             </Text>
           </Pressable>
 
@@ -128,7 +131,9 @@ export const AmbientSoundsSheet = (props: SheetProps<'ambient-sounds'>) => {
         {isEnabled && (
           <View style={styles.volumeSection}>
             <View style={styles.volumeHeader}>
-              <Text style={styles.volumeLabel}>Volume</Text>
+              <Text style={styles.volumeLabel}>
+                {t('sheets.ambientSoundsSheet.volume')}
+              </Text>
               <Text style={styles.volumeValue}>
                 {Math.round(volume * 100)}%
               </Text>

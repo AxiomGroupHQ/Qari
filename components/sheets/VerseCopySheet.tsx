@@ -15,6 +15,7 @@ import Color from 'color';
 import {Feather} from '@expo/vector-icons';
 import * as Clipboard from 'expo-clipboard';
 import SkiaVersePreview from '@/components/share/SkiaVersePreview';
+import {t} from '@/i18n';
 
 interface CheckboxRowProps {
   label: string;
@@ -140,8 +141,12 @@ export const VerseCopySheet = (props: SheetProps<'verse-copy'>) => {
       indicatorStyle={styles.indicator}
       gestureEnabled={true}>
       <View style={styles.container}>
-        <Text style={styles.title}>Copy Options</Text>
-        <Text style={styles.subtitle}>Select what to copy</Text>
+        <Text style={styles.title}>
+          {t('sheets.verseCopySheet.copyOptions')}
+        </Text>
+        <Text style={styles.subtitle}>
+          {t('sheets.verseCopySheet.selectWhatToCopy')}
+        </Text>
 
         <View style={styles.ayahContainer}>
           <SkiaVersePreview
@@ -153,7 +158,7 @@ export const VerseCopySheet = (props: SheetProps<'verse-copy'>) => {
 
         <View style={styles.optionsContainer}>
           <CheckboxRow
-            label="Arabic"
+            label={t('common.arabic')}
             checked={copyArabic}
             onToggle={() => setCopyArabic(!copyArabic)}
             disabled={!arabicText}
@@ -161,7 +166,7 @@ export const VerseCopySheet = (props: SheetProps<'verse-copy'>) => {
             styles={styles}
           />
           <CheckboxRow
-            label="Transliteration"
+            label={t('common.transliteration')}
             checked={copyTransliteration}
             onToggle={() => setCopyTransliteration(!copyTransliteration)}
             disabled={!transliterationRaw}
@@ -169,7 +174,7 @@ export const VerseCopySheet = (props: SheetProps<'verse-copy'>) => {
             styles={styles}
           />
           <CheckboxRow
-            label="Translation"
+            label={t('common.translation')}
             checked={copyTranslation}
             onToggle={() => setCopyTranslation(!copyTranslation)}
             disabled={!translation}
@@ -177,7 +182,7 @@ export const VerseCopySheet = (props: SheetProps<'verse-copy'>) => {
             styles={styles}
           />
           <CheckboxRow
-            label="Verse Reference"
+            label={t('common.verseReference')}
             checked={copyReference}
             onToggle={() => setCopyReference(!copyReference)}
             theme={theme}
@@ -199,7 +204,7 @@ export const VerseCopySheet = (props: SheetProps<'verse-copy'>) => {
               styles.copyButtonText,
               !canCopy && styles.copyButtonTextDisabled,
             ]}>
-            Copy to Clipboard
+            {t('common.copyToClipboard')}
           </Text>
         </Pressable>
       </View>

@@ -15,6 +15,7 @@ import Animated, {
   withSpring,
 } from 'react-native-reanimated';
 import branding from '@/config/branding';
+import {dirIcon} from '@/i18n/direction';
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const isGlass = USE_GLASS;
@@ -88,7 +89,7 @@ export const SystemPlaylistHeader: React.FC<SystemPlaylistHeaderProps> = ({
             onPress={() => router.back()}
             hitSlop={8}>
             <Feather
-              name="arrow-left"
+              name={dirIcon('arrow-left')}
               size={moderateScale(24)}
               color={theme.colors.text}
             />
@@ -99,7 +100,8 @@ export const SystemPlaylistHeader: React.FC<SystemPlaylistHeaderProps> = ({
         <View style={styles.contentContainer}>
           {/* System Playlist Badge */}
           <View style={styles.badge}>
-            <Text style={styles.badgeText}>{`${branding.appName} Curated`}</Text>
+            <Text
+              style={styles.badgeText}>{`${branding.appName} Curated`}</Text>
           </View>
 
           {/* Title and Description */}

@@ -67,6 +67,7 @@ import {reciterShareUrl, shareUrl} from '@/utils/shareUtils';
 import branding from '@/config/branding';
 import {analyticsService} from '@/services/analytics/AnalyticsService';
 import {getDisplayLabelFromName} from '@/services/rewayah/RewayahIdentity';
+import {t} from '@/i18n';
 
 interface ReciterProfileProps {
   id: string;
@@ -291,7 +292,9 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
                   const slug = reciter?.slug ?? currentReciterId;
                   shareUrl(
                     reciterShareUrl(slug),
-                    `Listen to ${reciter?.name ?? 'this reciter'} on ${branding.appName}`,
+                    `Listen to ${reciter?.name ?? 'this reciter'} on ${
+                      branding.appName
+                    }`,
                   );
                 }}
                 hitSlop={8}>
@@ -692,7 +695,10 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
   // The pager uses opacity-gated reveal to scroll to index 1 before showing.
   const tabs = useMemo(() => {
     const result: Array<{id: string; label: string}> = [];
-    result.push({id: 'uploads', label: 'My Uploads'});
+    result.push({
+      id: 'uploads',
+      label: t('reciterprofile.reciterProfile.myUploads'),
+    });
     if (reciter?.rewayat) {
       reciter.rewayat.forEach(r => {
         const style =
@@ -956,7 +962,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
                             styles.optionButtonText,
                             sortOption === 'asc' && styles.activeOptionText,
                           ]}>
-                          Asc
+                          {t('common.asc')}
                         </Text>
                       </Pressable>
                       <Pressable
@@ -970,7 +976,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
                             styles.optionButtonText,
                             sortOption === 'desc' && styles.activeOptionText,
                           ]}>
-                          Desc
+                          {t('common.desc')}
                         </Text>
                       </Pressable>
                       <Pressable
@@ -986,7 +992,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
                             sortOption === 'revelation' &&
                               styles.activeOptionText,
                           ]}>
-                          Rev
+                          {t('common.rev')}
                         </Text>
                       </Pressable>
                     </View>
@@ -1163,7 +1169,9 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
                 const slug = reciter?.slug ?? currentReciterId;
                 shareUrl(
                   reciterShareUrl(slug),
-                  `Listen to ${reciter?.name ?? 'this reciter'} on ${branding.appName}`,
+                  `Listen to ${reciter?.name ?? 'this reciter'} on ${
+                    branding.appName
+                  }`,
                 );
               }}
             />

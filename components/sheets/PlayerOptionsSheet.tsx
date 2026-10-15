@@ -39,6 +39,7 @@ import RenderHtml, {
   defaultSystemFonts,
 } from 'react-native-render-html';
 import {useUploadsStore} from '@/store/uploadsStore';
+import {t} from '@/i18n';
 
 // Import surah info data
 const surahInfo = require('@/data/surahInfo.json');
@@ -315,7 +316,7 @@ export const PlayerOptionsSheet = (props: SheetProps<'player-options'>) => {
             size={moderateScale(16)}
             color={theme.colors.text}
           />
-          <Text style={styles.optionText}>Edit Details</Text>
+          <Text style={styles.optionText}>{t('common.editDetails')}</Text>
         </Pressable>
       ),
     });
@@ -374,7 +375,7 @@ export const PlayerOptionsSheet = (props: SheetProps<'player-options'>) => {
             size={moderateScale(18)}
             color={theme.colors.text}
           />
-          <Text style={styles.optionText}>Add to Collection</Text>
+          <Text style={styles.optionText}>{t('common.addToCollection')}</Text>
         </Pressable>
       ),
     });
@@ -418,7 +419,7 @@ export const PlayerOptionsSheet = (props: SheetProps<'player-options'>) => {
             size={moderateScale(18)}
             color={theme.colors.text}
           />
-          <Text style={styles.optionText}>Share</Text>
+          <Text style={styles.optionText}>{t('common.share')}</Text>
         </Pressable>
       ),
     });
@@ -439,7 +440,7 @@ export const PlayerOptionsSheet = (props: SheetProps<'player-options'>) => {
             size={moderateScale(18)}
             filled={false}
           />
-          <Text style={styles.optionText}>Go to Reciter</Text>
+          <Text style={styles.optionText}>{t('common.goToReciter')}</Text>
         </Pressable>
       ),
     });
@@ -460,7 +461,7 @@ export const PlayerOptionsSheet = (props: SheetProps<'player-options'>) => {
             size={moderateScale(18)}
             color={theme.colors.text}
           />
-          <Text style={styles.optionText}>Learn About Surah</Text>
+          <Text style={styles.optionText}>{t('common.learnAboutSurah')}</Text>
         </Pressable>
       ),
     });
@@ -479,7 +480,9 @@ export const PlayerOptionsSheet = (props: SheetProps<'player-options'>) => {
       {showSurahInfo ? (
         <>
           <View style={styles.headerContainer}>
-            <Text style={styles.headerTitle}>About {surah!.name}</Text>
+            <Text style={styles.headerTitle}>
+              {t('sheets.aboutSurah', {name: surah!.name})}
+            </Text>
           </View>
           <ScrollView
             style={styles.scrollView}

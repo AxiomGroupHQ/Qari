@@ -5,6 +5,7 @@ import {ScaledSheet, moderateScale} from 'react-native-size-matters';
 import {useTheme} from '@/hooks/useTheme';
 import {Theme} from '@/utils/themeUtils';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {dirIcon} from '@/i18n/direction';
 
 interface HeaderProps {
   title: string;
@@ -43,7 +44,7 @@ export const Header: React.FC<HeaderProps> = ({
             style={[styles.backButton, backButtonStyle]}
             onPress={onBack}>
             <Feather
-              name="arrow-left"
+              name={dirIcon('arrow-left')}
               size={moderateScale(24)}
               color={theme.colors.text}
             />

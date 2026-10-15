@@ -132,7 +132,7 @@ const createStyles = (
       fontFamily: 'Manrope-SemiBold',
       color: theme.colors.text,
       lineHeight: LABEL_LINE_HEIGHT,
-      textAlign: 'left',
+      textAlign: 'auto',
       marginTop: LABEL_MARGIN_TOP,
       paddingHorizontal: moderateScale(2),
     },

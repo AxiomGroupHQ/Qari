@@ -28,6 +28,7 @@ import {
   isBundledTranslation,
   getBundledFootnotes,
 } from '@/utils/translationLookup';
+import {t} from '@/i18n';
 
 // Type for processed word data from store
 interface ProcessedTajweedWord {
@@ -517,7 +518,7 @@ export const VerseItem = memo<VerseItemProps>(
             ]}>
             <View style={styles.footnoteHeader}>
               <Text style={[styles.footnoteTitle, {color: textColor}]}>
-                Footnote
+                {t('quranView.verseItem.footnote')}
               </Text>
               <Pressable
                 onPress={closeFootnote}

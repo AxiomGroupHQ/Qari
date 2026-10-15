@@ -30,6 +30,8 @@ import {useTajweedStore} from '@/store/tajweedStore';
 import {useMushafFontMgr} from '@/hooks/useMushafFontMgr';
 import SkiaVerseText from '@/components/player/v2/PlayerContent/QuranView/SkiaVerseText';
 import type {SimilarAyah, MutashabihatPhrase} from '@/types/qul';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 const surahData = require('@/data/surahData.json') as Array<{
   id: number;
@@ -208,7 +210,9 @@ export const SimilarVersesSheet = (props: SheetProps<'similar-verses'>) => {
                     size={moderateScale(14)}
                     color={theme.colors.textSecondary}
                   />
-                  <Text style={styles.sectionTitle}>Shared Phrases</Text>
+                  <Text style={styles.sectionTitle}>
+                    {t('common.sharedPhrases')}
+                  </Text>
                 </View>
 
                 {mutashabihat.map(phrase => {
@@ -241,7 +245,9 @@ export const SimilarVersesSheet = (props: SheetProps<'similar-verses'>) => {
                         </View>
                       ) : null}
                       <Text style={styles.phraseCount}>
-                        Found in {phrase.totalOccurrences} verses
+                        {t('similarVerses.foundIn', {
+                          count: phrase.totalOccurrences,
+                        })}
                       </Text>
                       {(expandedPhrases.has(phrase.phraseId)
                         ? otherMatches
@@ -308,10 +314,10 @@ export const SimilarVersesSheet = (props: SheetProps<'similar-verses'>) => {
                                     handleVersePress(match.verseKey)
                                   }>
                                   <Text style={styles.goToVerseText}>
-                                    Go to verse
+                                    {t('common.goToVerse')}
                                   </Text>
                                   <Feather
-                                    name="arrow-right"
+                                    name={dirIcon('arrow-right')}
                                     size={moderateScale(14)}
                                     color={theme.colors.text}
                                   />
@@ -345,7 +351,9 @@ export const SimilarVersesSheet = (props: SheetProps<'similar-verses'>) => {
                     size={moderateScale(14)}
                     color={theme.colors.textSecondary}
                   />
-                  <Text style={styles.sectionTitle}>Similar Wording</Text>
+                  <Text style={styles.sectionTitle}>
+                    {t('sheets.similarVersesSheet.similarWording')}
+                  </Text>
                 </View>
 
                 {(showAllSimilar
@@ -403,7 +411,7 @@ export const SimilarVersesSheet = (props: SheetProps<'similar-verses'>) => {
 
             {mutashabihat.length === 0 && similarAyahs.length === 0 && (
               <Text style={styles.emptyText}>
-                No similar verses found for this ayah.
+                {t('sheets.similarVersesSheet.noSimilarVersesFoundFor')}
               </Text>
             )}
           </ScrollView>

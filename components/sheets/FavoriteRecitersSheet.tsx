@@ -24,6 +24,7 @@ import {SearchInput} from '@/components/SearchInput';
 import {ReciterImage} from '@/components/ReciterImage';
 import {Feather} from '@expo/vector-icons';
 import {getDisplayLabelFromName} from '@/services/rewayah/RewayahIdentity';
+import {t} from '@/i18n';
 
 export const FavoriteRecitersSheet = (
   props: SheetProps<'favorite-reciters'>,
@@ -115,7 +116,7 @@ export const FavoriteRecitersSheet = (
       <View style={styles.header}>
         <View style={styles.headerSpacer} />
         <View style={styles.headerCenter}>
-          <Text style={styles.headerTitle}>Favorite Reciters</Text>
+          <Text style={styles.headerTitle}>{t('common.favoriteReciters')}</Text>
           <Text style={styles.headerSubtitle}>
             {favoriteReciters.length} selected
           </Text>
@@ -124,7 +125,9 @@ export const FavoriteRecitersSheet = (
           style={styles.doneButton}
           onPress={() => SheetManager.hide('favorite-reciters')}
           hitSlop={8}>
-          <Text style={styles.doneButtonText}>Done</Text>
+          <Text style={styles.doneButtonText}>
+            {t('sheets.favoriteRecitersSheet.done')}
+          </Text>
         </Pressable>
       </View>
 
@@ -132,7 +135,7 @@ export const FavoriteRecitersSheet = (
         <View style={styles.searchContainer}>
           <SearchInput
             ref={searchInputRef}
-            placeholder="Search reciters..."
+            placeholder={t('common.searchReciters')}
             value={searchQuery}
             onChangeText={setSearchQuery}
             backgroundColor={Color(theme.colors.text).alpha(0.04).toString()}
@@ -159,7 +162,9 @@ export const FavoriteRecitersSheet = (
           keyboardShouldPersistTaps="handled"
           ListEmptyComponent={
             <View style={styles.emptyContainer}>
-              <Text style={styles.emptyText}>No reciters found</Text>
+              <Text style={styles.emptyText}>
+                {t('common.noRecitersFound')}
+              </Text>
             </View>
           }
         />

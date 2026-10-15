@@ -26,6 +26,7 @@ import {UserPlaylist} from '@/services/database/DatabaseService';
 import {CollectionStickyHeader} from '@/components/collection/CollectionStickyHeader';
 import {useCollectionNativeHeader} from '@/hooks/useCollectionNativeHeader';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {t as translate} from '@/i18n';
 
 interface PlaylistTrack {
   id: string;
@@ -421,7 +422,7 @@ const PlaylistDetail: React.FC<PlaylistDetailProps> = ({id}) => {
   if (loading || !playlist) {
     return (
       <View style={styles.container}>
-        <Text style={styles.emptyText}>Loading...</Text>
+        <Text style={styles.emptyText}>{translate('common.loading')}</Text>
       </View>
     );
   }
@@ -436,7 +437,9 @@ const PlaylistDetail: React.FC<PlaylistDetailProps> = ({id}) => {
         contentContainerStyle={styles.listContentContainer}
         contentInsetAdjustmentBehavior="automatic"
         ListEmptyComponent={
-          <Text style={styles.emptyText}>No surahs in this playlist</Text>
+          <Text style={styles.emptyText}>
+            {translate('playlistdetail.playlistDetail.noSurahsInThisPlaylist')}
+          </Text>
         }
         onScroll={RNAnimated.event(
           [{nativeEvent: {contentOffset: {y: scrollY}}}],

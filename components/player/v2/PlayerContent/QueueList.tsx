@@ -14,6 +14,7 @@ import {NowPlayingIndicator} from '@/components/NowPlayingIndicator';
 import {GradientText} from '@/components/GradientText';
 import {useUploadsStore} from '@/store/uploadsStore';
 import Color from 'color';
+import {t} from '@/i18n';
 
 interface UploadQueueItemProps {
   track: Track;
@@ -281,7 +282,7 @@ export const QueueList: React.FC<QueueListProps> = ({
       <View style={[styles.header, {borderBottomColor: theme.colors.border}]}>
         <View style={styles.headerLeft}>
           <Text style={[styles.headerTitle, {color: theme.colors.text}]}>
-            Queue
+            {t('playerContent.queueList.queue')}
           </Text>
         </View>
         <View style={styles.headerRight}>
@@ -305,7 +306,7 @@ export const QueueList: React.FC<QueueListProps> = ({
             style={styles.emptyIcon}
           />
           <Text style={[styles.emptyText, {color: theme.colors.text}]}>
-            Queue is empty
+            {t('playerContent.queueList.queueIsEmpty')}
           </Text>
         </View>
       </View>

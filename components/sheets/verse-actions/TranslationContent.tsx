@@ -24,6 +24,8 @@ import {
   type BundledTranslationId,
 } from '@/types/translation';
 import {analyticsService} from '@/services/analytics/AnalyticsService';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 // ─── Data loading (module scope, runs once) ───────────────────────────────
 const quranData = require('@/data/quran.json') as QuranData;
@@ -204,7 +206,9 @@ export const TranslationContent: React.FC<TranslationContentProps> = ({
         {activeTranslationText ? (
           <Text style={styles.translationText}>{activeTranslationText}</Text>
         ) : (
-          <Text style={styles.noTranslation}>Translation not available</Text>
+          <Text style={styles.noTranslation}>
+            {t('verseactions.translationContent.translationNotAvailable')}
+          </Text>
         )}
 
         {/* Other translations (bundled + downloaded) */}
@@ -224,7 +228,9 @@ export const TranslationContent: React.FC<TranslationContentProps> = ({
                     {name.toUpperCase()}
                   </Text>
                   <View style={styles.switchPill}>
-                    <Text style={styles.switchPillText}>Switch</Text>
+                    <Text style={styles.switchPillText}>
+                      {t('verseactions.translationContent.switch')}
+                    </Text>
                   </View>
                 </View>
               </Pressable>
@@ -232,7 +238,7 @@ export const TranslationContent: React.FC<TranslationContentProps> = ({
                 <Text style={styles.translationTextSecondary}>{text}</Text>
               ) : (
                 <Text style={styles.noTranslation}>
-                  Translation not available
+                  {t('verseactions.translationContent.translationNotAvailable')}
                 </Text>
               )}
             </React.Fragment>
@@ -251,7 +257,7 @@ export const TranslationContent: React.FC<TranslationContentProps> = ({
             pressed && !isFirst && {opacity: 0.6},
           ]}>
           <Feather
-            name="chevron-left"
+            name={dirIcon('chevron-left')}
             size={moderateScale(16)}
             color={
               isFirst
@@ -264,7 +270,7 @@ export const TranslationContent: React.FC<TranslationContentProps> = ({
               styles.navButtonText,
               isFirst && styles.navButtonTextDisabled,
             ]}>
-            Prev
+            {t('common.prev')}
           </Text>
         </Pressable>
 
@@ -283,10 +289,10 @@ export const TranslationContent: React.FC<TranslationContentProps> = ({
               styles.navButtonText,
               isLast && styles.navButtonTextDisabled,
             ]}>
-            Next
+            {t('common.next')}
           </Text>
           <Feather
-            name="chevron-right"
+            name={dirIcon('chevron-right')}
             size={moderateScale(16)}
             color={
               isLast

@@ -13,6 +13,7 @@ import Color from 'color';
 import {verseAnnotationService} from '@/services/verse-annotations/VerseAnnotationService';
 import {useVerseAnnotationsStore} from '@/store/verseAnnotationsStore';
 import SkiaVersePreview from '@/components/share/SkiaVersePreview';
+import {t} from '@/i18n';
 
 interface NoteContentProps {
   verseKey: string;
@@ -83,7 +84,7 @@ export const NoteContent: React.FC<NoteContentProps> = ({
         style={styles.textInput}
         value={noteText}
         onChangeText={setNoteText}
-        placeholder="Write your note here..."
+        placeholder={t('common.writeYourNoteHere')}
         placeholderTextColor={Color(theme.colors.textSecondary)
           .alpha(0.5)
           .toString()}
@@ -105,7 +106,9 @@ export const NoteContent: React.FC<NoteContentProps> = ({
           size={moderateScale(16)}
           color={theme.colors.text}
         />
-        <Text style={styles.saveButtonText}>Save Note</Text>
+        <Text style={styles.saveButtonText}>
+          {t('verseactions.noteContent.saveNote')}
+        </Text>
       </Pressable>
     </ScrollView>
   );

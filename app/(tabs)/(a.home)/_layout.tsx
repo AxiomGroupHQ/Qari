@@ -1,6 +1,7 @@
 import {Stack} from 'expo-router';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import {MaxWidthContainer} from '@/components/layout/MaxWidthContainer';
+import {t} from '@/i18n';
 
 export default function HomeLayout() {
   return (
@@ -44,12 +45,12 @@ export default function HomeLayout() {
         <Stack.Screen name="settings/account" options={{}} />
         <Stack.Screen
           name="translations"
-          options={{title: 'Translations & Tafaseer'}}
+          options={{title: t('common.translationsTafaseer')}}
         />
         <Stack.Screen
           name="browse-all"
           options={{
-            title: 'Browse All',
+            title: t('common.browseAll'),
             // Non-glass devices use custom Header component; hide native header to avoid clash
             headerShown: USE_GLASS,
           }}

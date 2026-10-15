@@ -26,6 +26,8 @@ import {useTajweedStore} from '@/store/tajweedStore';
 import {useMushafFontMgr} from '@/hooks/useMushafFontMgr';
 import SkiaVerseText from '@/components/player/v2/PlayerContent/QuranView/SkiaVerseText';
 import type {SimilarAyah, MutashabihatPhrase} from '@/types/qul';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 const surahData = require('@/data/surahData.json') as Array<{
   id: number;
@@ -193,7 +195,9 @@ export const SimilarVersesContent: React.FC<SimilarVersesContentProps> = ({
       onLayout={handleContentLayout}>
       {mutashabihat.length > 0 && (
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>SHARED PHRASES</Text>
+          <Text style={styles.sectionLabel}>
+            {t('verseactions.similarVersesContent.sharedPhrases')}
+          </Text>
 
           {mutashabihat.map(phrase => {
             const phraseText = getPhraseText(
@@ -225,7 +229,7 @@ export const SimilarVersesContent: React.FC<SimilarVersesContentProps> = ({
                   </View>
                 ) : null}
                 <Text style={styles.phraseCount}>
-                  Found in {phrase.totalOccurrences} verses
+                  {t('similarVerses.foundIn', {count: phrase.totalOccurrences})}
                 </Text>
                 {(expandedPhrases.has(phrase.phraseId)
                   ? otherMatches
@@ -278,10 +282,10 @@ export const SimilarVersesContent: React.FC<SimilarVersesContentProps> = ({
                             ]}
                             onPress={() => handleVersePress(match.verseKey)}>
                             <Text style={styles.goToVerseText}>
-                              Go to verse
+                              {t('common.goToVerse')}
                             </Text>
                             <Feather
-                              name="arrow-right"
+                              name={dirIcon('arrow-right')}
                               size={moderateScale(14)}
                               color={theme.colors.text}
                             />
@@ -309,7 +313,9 @@ export const SimilarVersesContent: React.FC<SimilarVersesContentProps> = ({
 
       {similarAyahs.length > 0 && (
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>SIMILAR WORDING</Text>
+          <Text style={styles.sectionLabel}>
+            {t('verseactions.similarVersesContent.similarWording')}
+          </Text>
 
           {(showAllSimilar ? similarAyahs : similarAyahs.slice(0, 20)).map(
             similar => {
@@ -363,7 +369,7 @@ export const SimilarVersesContent: React.FC<SimilarVersesContentProps> = ({
 
       {mutashabihat.length === 0 && similarAyahs.length === 0 && (
         <Text style={styles.emptyText}>
-          No similar verses found for this ayah.
+          {t('verseactions.similarVersesContent.noSimilarVersesFoundFor')}
         </Text>
       )}
     </ScrollView>

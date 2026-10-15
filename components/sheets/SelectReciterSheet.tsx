@@ -15,6 +15,7 @@ import Color from 'color';
 import {useRouter} from 'expo-router';
 import {Ionicons} from '@expo/vector-icons';
 import {DiscoverIcon} from '@/components/Icons';
+import {t} from '@/i18n';
 
 export const SelectReciterSheet = (props: SheetProps<'select-reciter'>) => {
   const {theme} = useTheme();
@@ -110,7 +111,9 @@ export const SelectReciterSheet = (props: SheetProps<'select-reciter'>) => {
       gestureEnabled={true}>
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text style={styles.headerTitle}>Select Reciter</Text>
+          <Text style={styles.headerTitle}>
+            {t('sheets.selectReciterSheet.selectReciter')}
+          </Text>
         </View>
 
         <View style={styles.optionsGrid}>
@@ -127,7 +130,9 @@ export const SelectReciterSheet = (props: SheetProps<'select-reciter'>) => {
               size={moderateScale(20)}
               color={theme.colors.text}
             />
-            <Text style={styles.optionText}>Use Default Reciter</Text>
+            <Text style={styles.optionText}>
+              {t('common.useDefaultReciter')}
+            </Text>
           </Pressable>
 
           <Pressable
@@ -139,7 +144,9 @@ export const SelectReciterSheet = (props: SheetProps<'select-reciter'>) => {
               handleReciterSelection(handleUseRandomReciter, 'randomReciter')
             }>
             <DiscoverIcon size={moderateScale(20)} color={theme.colors.text} />
-            <Text style={styles.optionText}>Random Reciter</Text>
+            <Text style={styles.optionText}>
+              {t('sheets.selectReciterSheet.randomReciter')}
+            </Text>
           </Pressable>
 
           <Pressable
@@ -155,12 +162,16 @@ export const SelectReciterSheet = (props: SheetProps<'select-reciter'>) => {
               size={moderateScale(20)}
               color={theme.colors.text}
             />
-            <Text style={styles.optionText}>Browse All Reciters</Text>
+            <Text style={styles.optionText}>
+              {t('common.browseAllReciters')}
+            </Text>
           </Pressable>
         </View>
 
         <View style={styles.askEveryTimeContainer}>
-          <Text style={styles.askEveryTimeText}>Ask every time</Text>
+          <Text style={styles.askEveryTimeText}>
+            {t('sheets.selectReciterSheet.askEveryTime')}
+          </Text>
           <Switch
             value={askEveryTime}
             onValueChange={handleAskEveryTimeToggle}

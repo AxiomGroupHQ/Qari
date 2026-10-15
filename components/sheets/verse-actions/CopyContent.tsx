@@ -11,6 +11,7 @@ import {Feather} from '@expo/vector-icons';
 import Color from 'color';
 import * as Clipboard from 'expo-clipboard';
 import SkiaVersePreview from '@/components/share/SkiaVersePreview';
+import {t} from '@/i18n';
 
 interface CopyContentProps {
   verseKey: string;
@@ -157,10 +158,12 @@ export const CopyContent: React.FC<CopyContentProps> = ({
         />
       </View>
 
-      <Text style={styles.sectionLabel}>SELECT CONTENT</Text>
+      <Text style={styles.sectionLabel}>
+        {t('verseactions.copyContent.selectContent')}
+      </Text>
       <View style={styles.card}>
         <CheckboxRow
-          label="Arabic"
+          label={t('common.arabic')}
           checked={copyArabic}
           onToggle={() => setCopyArabic(!copyArabic)}
           disabled={!arabicText}
@@ -168,7 +171,7 @@ export const CopyContent: React.FC<CopyContentProps> = ({
         />
         <View style={styles.separator} />
         <CheckboxRow
-          label="Transliteration"
+          label={t('common.transliteration')}
           checked={copyTransliteration}
           onToggle={() => setCopyTransliteration(!copyTransliteration)}
           disabled={!transliteration}
@@ -176,7 +179,7 @@ export const CopyContent: React.FC<CopyContentProps> = ({
         />
         <View style={styles.separator} />
         <CheckboxRow
-          label="Translation"
+          label={t('common.translation')}
           checked={copyTranslation}
           onToggle={() => setCopyTranslation(!copyTranslation)}
           disabled={!translation}
@@ -184,7 +187,7 @@ export const CopyContent: React.FC<CopyContentProps> = ({
         />
         <View style={styles.separator} />
         <CheckboxRow
-          label="Verse Reference"
+          label={t('common.verseReference')}
           checked={copyReference}
           onToggle={() => setCopyReference(!copyReference)}
           theme={theme}
@@ -204,7 +207,7 @@ export const CopyContent: React.FC<CopyContentProps> = ({
           size={moderateScale(16)}
           color={theme.colors.text}
         />
-        <Text style={styles.copyButtonText}>Copy to Clipboard</Text>
+        <Text style={styles.copyButtonText}>{t('common.copyToClipboard')}</Text>
       </Pressable>
     </View>
   );

@@ -9,6 +9,7 @@ import {Theme} from '@/utils/themeUtils';
 import {PlaylistIcon, PlayIcon, ShuffleIcon} from '@/components/Icons';
 import Color from 'color';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {dirIcon} from '@/i18n/direction';
 
 interface PlaylistHeaderProps {
   title: string;
@@ -41,7 +42,7 @@ export const PlaylistHeader: React.FC<PlaylistHeaderProps> = ({
             onPress={() => router.back()}
             hitSlop={8}>
             <Feather
-              name="arrow-left"
+              name={dirIcon('arrow-left')}
               size={moderateScale(24)}
               color={theme.colors.text}
             />

@@ -51,6 +51,7 @@ type SimplifiedLovedTrack = {
   rewayatId: string;
 };
 import {DownloadedSurah} from '@/services/player/store/downloadStore';
+import {t} from '@/i18n';
 
 /**
  * SEARCH DEBOUNCE TIME
@@ -406,8 +407,10 @@ export const CollectionSearchModal: React.FC<CollectionSearchModalProps> = ({
           results.push({
             type: 'rewayat',
             id: rewayat.id,
-            title: `${getDisplayLabelFromName(rewayat.name)} by ${reciter.name}`,
-            subtitle: 'Rewayat',
+            title: `${getDisplayLabelFromName(rewayat.name)} by ${
+              reciter.name
+            }`,
+            subtitle: t('collection.collectionSearchModal.rewayat'),
             metadata: {kind: 'rewayat', data: {reciter, rewayat}},
           });
           console.log('  ✓ Found rewayat:', rewayat.name);
@@ -677,7 +680,9 @@ export const CollectionSearchModal: React.FC<CollectionSearchModalProps> = ({
           <View style={styles.headerContent}>
             <SearchInput
               ref={searchInputRef}
-              placeholder="Search playlists, reciters, surahs, rewayat..."
+              placeholder={t(
+                'collection.collectionSearchModal.searchPlaylistsRecitersSurahsRewayat',
+              )}
               value={query}
               onChangeText={setQuery}
               onCancel={() => {
@@ -710,14 +715,16 @@ export const CollectionSearchModal: React.FC<CollectionSearchModalProps> = ({
               color={activeTheme.colors.textSecondary}
             />
             <Text style={[styles.emptyTitle, {color: activeTheme.colors.text}]}>
-              Search Your Collection
+              {t('collection.collectionSearchModal.searchYourCollection')}
             </Text>
             <Text
               style={[
                 styles.emptySubtitle,
                 {color: activeTheme.colors.textSecondary},
               ]}>
-              Search playlists, reciters, surahs, rewayat, and downloads
+              {t(
+                'collection.collectionSearchModal.searchPlaylistsRecitersSurahsRewayat2',
+              )}
             </Text>
           </View>
         ) : (
@@ -744,7 +751,7 @@ export const CollectionSearchModal: React.FC<CollectionSearchModalProps> = ({
                       styles.loadingText,
                       {color: activeTheme.colors.textSecondary},
                     ]}>
-                    Searching...
+                    {t('collection.collectionSearchModal.searching')}
                   </Text>
                 </View>
               ) : searchResults.length === 0 ? (
@@ -759,14 +766,14 @@ export const CollectionSearchModal: React.FC<CollectionSearchModalProps> = ({
                       styles.noResultsText,
                       {color: activeTheme.colors.text},
                     ]}>
-                    No results found
+                    {t('common.noResultsFound')}
                   </Text>
                   <Text
                     style={[
                       styles.noResultsSubtext,
                       {color: activeTheme.colors.textSecondary},
                     ]}>
-                    Try different keywords
+                    {t('collection.collectionSearchModal.tryDifferentKeywords')}
                   </Text>
                 </View>
               ) : (

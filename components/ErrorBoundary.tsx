@@ -1,6 +1,6 @@
-import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {Component, ErrorInfo, ReactNode} from 'react';
 import {View, Text} from 'react-native';
+import {t} from '@/i18n';
 
 interface Props {
   children: ReactNode;
@@ -27,7 +27,7 @@ class ErrorBoundary extends Component<Props, State> {
     if (this.state.hasError) {
       return (
         <View>
-          <Text>{isArabicInterface() ? 'عذرًا، حدث خطأ' : 'Sorry.. there was an error'}</Text>
+          <Text>{t('errorBoundary.sorryThereWasAnError')}</Text>
         </View>
       );
     }

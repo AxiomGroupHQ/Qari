@@ -14,6 +14,7 @@ import {SurahItem} from '@/components/SurahItem';
 import {SurahCard} from '@/components/cards/SurahCard';
 import {Surah} from '@/data/surahData';
 import {getJuzForSurah, getJuzName} from '@/data/juzData';
+import {t} from '@/i18n';
 
 // Define types matching useSettings and ReciterProfile
 type ReciterProfileViewMode = 'card' | 'list';
@@ -298,7 +299,9 @@ export const SurahList = React.forwardRef<
         return (
           <View style={styles.surahsContainer}>
             {surahs.length === 0 ? (
-              <Text style={styles.emptyText}>No surahs available</Text>
+              <Text style={styles.emptyText}>
+                {t('components.surahList.noSurahsAvailable')}
+              </Text>
             ) : (
               <View style={styles.cardGrid}>
                 {visibleSurahs.map(surah => (
@@ -318,7 +321,9 @@ export const SurahList = React.forwardRef<
       return (
         <View style={styles.surahsContainer}>
           {data.length === 0 ? (
-            <Text style={styles.emptyText}>No surahs available</Text>
+            <Text style={styles.emptyText}>
+              {t('components.surahList.noSurahsAvailable')}
+            </Text>
           ) : (
             visibleData.map((item, index) => (
               <React.Fragment key={item.key}>
@@ -349,7 +354,9 @@ export const SurahList = React.forwardRef<
           }
           drawDistance={moderateScale(300)}
           ListEmptyComponent={
-            <Text style={styles.emptyText}>No surahs available</Text>
+            <Text style={styles.emptyText}>
+              {t('components.surahList.noSurahsAvailable')}
+            </Text>
           }
         />
       </View>

@@ -10,6 +10,7 @@ import {PlayIcon, ShuffleIcon} from '@/components/Icons';
 import {ReciterImage} from '@/components/ReciterImage';
 import Color from 'color';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {dirIcon} from '@/i18n/direction';
 
 interface ReciterDownloadsHeaderProps {
   reciterId: string;
@@ -50,7 +51,7 @@ export const ReciterDownloadsHeader: React.FC<ReciterDownloadsHeaderProps> = ({
             onPress={() => router.back()}
             hitSlop={8}>
             <Feather
-              name="arrow-left"
+              name={dirIcon('arrow-left')}
               size={moderateScale(24)}
               color={theme.colors.text}
             />

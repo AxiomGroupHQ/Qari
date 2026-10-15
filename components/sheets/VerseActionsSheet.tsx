@@ -57,6 +57,8 @@ import {TranslationContent} from './verse-actions/TranslationContent';
 import {TafseerContent} from './verse-actions/TafseerContent';
 import {ThemeContent} from './verse-actions/ThemeContent';
 import {WBWContent} from './verse-actions/WBWContent';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 const surahData = require('@/data/surahData.json');
 const quranVerses = require('@/data/quran.json');
@@ -552,7 +554,7 @@ export const VerseActionsSheet = (props: SheetProps<'verse-actions'>) => {
                 ]}
                 hitSlop={8}>
                 <Feather
-                  name="chevron-left"
+                  name={dirIcon('chevron-left')}
                   size={moderateScale(16)}
                   color={theme.colors.text}
                 />
@@ -704,7 +706,9 @@ export const VerseActionsSheet = (props: SheetProps<'verse-actions'>) => {
                   size={moderateScale(24)}
                   color={theme.colors.text}
                 />
-                <Text style={styles.optionText}>Repeat</Text>
+                <Text style={styles.optionText}>
+                  {t('sheets.verseActionsSheet.repeat')}
+                </Text>
               </Pressable>
             </View>
 
@@ -759,7 +763,9 @@ export const VerseActionsSheet = (props: SheetProps<'verse-actions'>) => {
                   size={moderateScale(18)}
                   color={theme.colors.text}
                 />
-                <Text style={styles.optionText}>Add Note</Text>
+                <Text style={styles.optionText}>
+                  {t('sheets.verseActionsSheet.addNote')}
+                </Text>
               </Pressable>
             </View>
 
@@ -776,7 +782,7 @@ export const VerseActionsSheet = (props: SheetProps<'verse-actions'>) => {
                   size={moderateScale(19)}
                   color={theme.colors.text}
                 />
-                <Text style={styles.optionText}>Translation</Text>
+                <Text style={styles.optionText}>{t('common.translation')}</Text>
               </Pressable>
               {!isRange ? (
                 <>
@@ -791,7 +797,9 @@ export const VerseActionsSheet = (props: SheetProps<'verse-actions'>) => {
                       size={moderateScale(18)}
                       color={theme.colors.text}
                     />
-                    <Text style={styles.optionText}>Tafseer</Text>
+                    <Text style={styles.optionText}>
+                      {t('sheets.verseActionsSheet.tafseer')}
+                    </Text>
                   </Pressable>
                 </>
               ) : null}
@@ -808,7 +816,9 @@ export const VerseActionsSheet = (props: SheetProps<'verse-actions'>) => {
                       size={moderateScale(18)}
                       color={theme.colors.text}
                     />
-                    <Text style={styles.optionText}>Theme</Text>
+                    <Text style={styles.optionText}>
+                      {t('sheets.verseActionsSheet.theme')}
+                    </Text>
                   </Pressable>
                 </>
               ) : null}
@@ -825,7 +835,9 @@ export const VerseActionsSheet = (props: SheetProps<'verse-actions'>) => {
                       size={moderateScale(18)}
                       color={theme.colors.text}
                     />
-                    <Text style={styles.optionText}>Word by Word</Text>
+                    <Text style={styles.optionText}>
+                      {t('common.wordByWord')}
+                    </Text>
                   </Pressable>
                 </>
               ) : null}
@@ -842,7 +854,9 @@ export const VerseActionsSheet = (props: SheetProps<'verse-actions'>) => {
                       size={moderateScale(18)}
                       color={theme.colors.text}
                     />
-                    <Text style={styles.optionText}>Similar Verses</Text>
+                    <Text style={styles.optionText}>
+                      {t('sheets.verseActionsSheet.similarVerses')}
+                    </Text>
                   </Pressable>
                 </>
               ) : null}
@@ -859,7 +873,9 @@ export const VerseActionsSheet = (props: SheetProps<'verse-actions'>) => {
                       size={moderateScale(18)}
                       color={theme.colors.text}
                     />
-                    <Text style={styles.optionText}>Shared Phrases</Text>
+                    <Text style={styles.optionText}>
+                      {t('common.sharedPhrases')}
+                    </Text>
                   </Pressable>
                 </>
               ) : null}
@@ -874,7 +890,9 @@ export const VerseActionsSheet = (props: SheetProps<'verse-actions'>) => {
                 ]}
                 onPress={handleCopy}>
                 <CopyIcon size={moderateScale(18)} color={theme.colors.text} />
-                <Text style={styles.optionText}>Copy</Text>
+                <Text style={styles.optionText}>
+                  {t('sheets.verseActionsSheet.copy')}
+                </Text>
               </Pressable>
               <View style={styles.divider} />
               <Pressable
@@ -884,7 +902,7 @@ export const VerseActionsSheet = (props: SheetProps<'verse-actions'>) => {
                 ]}
                 onPress={handleShare}>
                 <ShareIcon size={moderateScale(18)} color={theme.colors.text} />
-                <Text style={styles.optionText}>Share</Text>
+                <Text style={styles.optionText}>{t('common.share')}</Text>
               </Pressable>
             </View>
           </ScrollView>

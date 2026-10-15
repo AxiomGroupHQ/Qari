@@ -8,6 +8,7 @@ import {MicrophoneIcon} from '@/components/Icons';
 import {SheetManager} from 'react-native-actions-sheet';
 import {FontAwesome5} from '@expo/vector-icons';
 import type {Track} from '@/types/audio';
+import {t} from '@/i18n';
 
 interface UploadPlaceholderProps {
   currentTrack: Track;
@@ -42,7 +43,7 @@ export const UploadPlaceholder: React.FC<UploadPlaceholderProps> = ({
         color={theme.colors.textSecondary}
       />
       <Text style={[styles.hintText, {color: theme.colors.textSecondary}]}>
-        Tag this recitation to see surah text and details
+        {t('playerContent.uploadPlaceholder.tagThisRecitationToSee')}
       </Text>
       <Pressable
         onPress={handleEditDetails}
@@ -59,7 +60,7 @@ export const UploadPlaceholder: React.FC<UploadPlaceholderProps> = ({
           color={theme.colors.text}
         />
         <Text style={[styles.editButtonText, {color: theme.colors.text}]}>
-          Edit Details
+          {t('common.editDetails')}
         </Text>
       </Pressable>
     </View>

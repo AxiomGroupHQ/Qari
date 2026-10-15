@@ -44,6 +44,7 @@ import RenderHtml, {
   RenderHTMLProps,
   defaultSystemFonts,
 } from 'react-native-render-html';
+import {t} from '@/i18n';
 
 // Import surah info data
 const surahInfo = require('@/data/surahInfo.json');
@@ -286,7 +287,9 @@ export const SurahOptionsSheet = (props: SheetProps<'surah-options'>) => {
       {showSurahInfo ? (
         <>
           <View style={styles.headerContainer}>
-            <Text style={styles.headerTitle}>About {surah.name}</Text>
+            <Text style={styles.headerTitle}>
+              {t('sheets.aboutSurah', {name: surah.name})}
+            </Text>
           </View>
           <ScrollView
             style={styles.scrollView}
@@ -397,7 +400,7 @@ export const SurahOptionsSheet = (props: SheetProps<'surah-options'>) => {
                   styles.optionText,
                   !onAddToQueue && styles.optionTextDisabled,
                 ]}>
-                Add to Queue
+                {t('common.addToQueue')}
               </Text>
             </Pressable>
 
@@ -420,7 +423,7 @@ export const SurahOptionsSheet = (props: SheetProps<'surah-options'>) => {
                   styles.optionText,
                   !reciterId && styles.optionTextDisabled,
                 ]}>
-                Add to Collection
+                {t('common.addToCollection')}
               </Text>
             </Pressable>
 
@@ -438,7 +441,7 @@ export const SurahOptionsSheet = (props: SheetProps<'surah-options'>) => {
                     size={moderateScale(18)}
                     color={theme.colors.text}
                   />
-                  <Text style={styles.optionText}>Share</Text>
+                  <Text style={styles.optionText}>{t('common.share')}</Text>
                 </Pressable>
               </>
             )}
@@ -457,7 +460,9 @@ export const SurahOptionsSheet = (props: SheetProps<'surah-options'>) => {
                     size={moderateScale(18)}
                     filled={false}
                   />
-                  <Text style={styles.optionText}>Go to Reciter</Text>
+                  <Text style={styles.optionText}>
+                    {t('common.goToReciter')}
+                  </Text>
                 </Pressable>
               </>
             )}
@@ -474,7 +479,9 @@ export const SurahOptionsSheet = (props: SheetProps<'surah-options'>) => {
                 size={moderateScale(18)}
                 color={theme.colors.text}
               />
-              <Text style={styles.optionText}>Learn About Surah</Text>
+              <Text style={styles.optionText}>
+                {t('common.learnAboutSurah')}
+              </Text>
             </Pressable>
           </View>
 
@@ -492,7 +499,7 @@ export const SurahOptionsSheet = (props: SheetProps<'surah-options'>) => {
                   color="#ff4444"
                 />
                 <Text style={styles.optionTextDestructive}>
-                  Remove from Playlist
+                  {t('sheets.surahOptionsSheet.removeFromPlaylist')}
                 </Text>
               </Pressable>
             </View>

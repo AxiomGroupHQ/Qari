@@ -17,6 +17,7 @@ import {Feather} from '@expo/vector-icons';
 import {verseAnnotationService} from '@/services/verse-annotations/VerseAnnotationService';
 import {useVerseAnnotationsStore} from '@/store/verseAnnotationsStore';
 import SkiaVersePreview from '@/components/share/SkiaVersePreview';
+import {t} from '@/i18n';
 
 export const VerseNoteSheet = (props: SheetProps<'verse-note'>) => {
   const {theme} = useTheme();
@@ -133,7 +134,7 @@ export const VerseNoteSheet = (props: SheetProps<'verse-note'>) => {
           style={styles.textInput}
           value={noteText}
           onChangeText={setNoteText}
-          placeholder="Write your note here..."
+          placeholder={t('common.writeYourNoteHere')}
           placeholderTextColor={theme.colors.textSecondary}
           multiline
           textAlignVertical="top"
@@ -165,7 +166,9 @@ export const VerseNoteSheet = (props: SheetProps<'verse-note'>) => {
               size={moderateScale(18)}
               color="#ff4444"
             />
-            <Text style={styles.deleteButtonText}>Delete Note</Text>
+            <Text style={styles.deleteButtonText}>
+              {t('common.deleteNote')}
+            </Text>
           </Pressable>
         ) : null}
       </ScrollView>

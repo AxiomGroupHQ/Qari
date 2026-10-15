@@ -19,6 +19,7 @@ import Animated, {
   withSpring,
 } from 'react-native-reanimated';
 import {useRouter} from 'expo-router';
+import {t} from '@/i18n';
 
 // Create animated TouchableOpacity
 const AnimatedTouchableOpacity =
@@ -108,8 +109,10 @@ export const BrowseAllHeroSection: React.FC<BrowseAllHeroSectionProps> =
               color={theme.colors.text}
             />
           </View>
-          <Text style={styles.title}>All Surahs</Text>
-          <Text style={styles.subtitle}>Browse all 114 surahs</Text>
+          <Text style={styles.title}>{t('common.allSurahs')}</Text>
+          <Text style={styles.subtitle}>
+            {t('hero.browseAllReciters.browseAll114Surahs')}
+          </Text>
         </LinearGradient>
       </AnimatedTouchableOpacity>
     );

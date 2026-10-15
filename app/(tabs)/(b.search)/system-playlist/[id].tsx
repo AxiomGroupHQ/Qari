@@ -5,6 +5,7 @@ import SystemPlaylistDetail from '@/components/system-playlist/SystemPlaylistDet
 import {getSystemPlaylistById} from '@/utils/systemPlaylistHelpers';
 import {useTheme} from '@/hooks/useTheme';
 import {moderateScale} from 'react-native-size-matters';
+import {t} from '@/i18n';
 
 const SystemPlaylistScreen: React.FC = () => {
   const {id} = useLocalSearchParams<{id: string}>();
@@ -14,7 +15,7 @@ const SystemPlaylistScreen: React.FC = () => {
     return (
       <View style={styles.errorContainer}>
         <Text style={[styles.errorText, {color: theme.colors.textSecondary}]}>
-          Invalid playlist ID
+          {t('systemplaylist.id.invalidPlaylistId')}
         </Text>
       </View>
     );
@@ -26,7 +27,7 @@ const SystemPlaylistScreen: React.FC = () => {
     return (
       <View style={styles.errorContainer}>
         <Text style={[styles.errorText, {color: theme.colors.textSecondary}]}>
-          Playlist not found
+          {t('systemplaylist.id.playlistNotFound')}
         </Text>
       </View>
     );

@@ -14,6 +14,7 @@ import {StyleSheet} from 'react-native';
 import {StatusBar} from 'expo-status-bar';
 import {SurahCard} from '@/components/cards/SurahCard';
 import {getDisplayLabelFromName} from '@/services/rewayah/RewayahIdentity';
+import {t} from '@/i18n';
 
 // Define view mode type
 type ReciterProfileViewMode = 'card' | 'list';
@@ -170,7 +171,7 @@ export const SearchView: React.FC<SearchViewProps> = ({
         </Text>
         <View style={styles.searchBoxContainer}>
           <SearchInput
-            placeholder="Search surahs"
+            placeholder={t('common.searchSurahs')}
             value={searchQuery}
             onChangeText={onSearchChange}
             onCancel={onCloseSearch}
@@ -207,7 +208,7 @@ export const SearchView: React.FC<SearchViewProps> = ({
             <View style={styles.emptyContainer}>
               <Text
                 style={[styles.emptyText, {color: theme.colors.textSecondary}]}>
-                No surahs found
+                {t('components.searchView.noSurahsFound')}
               </Text>
             </View>
           }

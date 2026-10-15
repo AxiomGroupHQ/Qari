@@ -42,6 +42,7 @@ import {SheetManager} from 'react-native-actions-sheet';
 import {useNavigation} from 'expo-router';
 import {useHeaderHeight} from '@react-navigation/elements';
 import {CollectionStickyHeader} from '@/components/collection/CollectionStickyHeader';
+import {t} from '@/i18n';
 
 interface PlaylistTrack {
   surahId: number;
@@ -286,8 +287,8 @@ const SystemPlaylistDetail: React.FC<SystemPlaylistDetailProps> = ({
       if (!selectedReciter || !selectedRewayatId) {
         console.error('No suitable reciter found for playlist');
         Alert.alert(
-          'No Reciter Available',
-          'Could not find a reciter with all surahs in this playlist. Please try a different playlist.',
+          t('systemplaylist.systemPlaylistDetail.noReciterAvailable'),
+          t('systemplaylist.systemPlaylistDetail.couldNotFindAReciter'),
         );
         return null;
       }
@@ -408,7 +409,10 @@ const SystemPlaylistDetail: React.FC<SystemPlaylistDetailProps> = ({
       }
     } catch (error) {
       console.error('Error playing system playlist:', error);
-      Alert.alert('Error', 'Failed to play playlist. Please try again.');
+      Alert.alert(
+        t('common.error'),
+        t('systemplaylist.systemPlaylistDetail.failedToPlayPlaylistPlease'),
+      );
     }
   }, [
     playlist.type,
@@ -461,7 +465,10 @@ const SystemPlaylistDetail: React.FC<SystemPlaylistDetailProps> = ({
       }
     } catch (error) {
       console.error('Error shuffling system playlist:', error);
-      Alert.alert('Error', 'Failed to shuffle playlist. Please try again.');
+      Alert.alert(
+        t('common.error'),
+        t('systemplaylist.systemPlaylistDetail.failedToShufflePlaylistPlease'),
+      );
     }
   }, [
     playlist.type,
@@ -512,7 +519,10 @@ const SystemPlaylistDetail: React.FC<SystemPlaylistDetailProps> = ({
         }
       } catch (error) {
         console.error('Error playing track:', error);
-        Alert.alert('Error', 'Failed to play track. Please try again.');
+        Alert.alert(
+          t('common.error'),
+          t('systemplaylist.systemPlaylistDetail.failedToPlayTrackPlease'),
+        );
       }
     },
     [
@@ -574,7 +584,7 @@ const SystemPlaylistDetail: React.FC<SystemPlaylistDetailProps> = ({
               )}
             </View>
             <View style={styles.playButton}>
-              <Text style={styles.playButtonText}>Play</Text>
+              <Text style={styles.playButtonText}>{t('common.play')}</Text>
             </View>
           </Pressable>
         );
@@ -648,14 +658,18 @@ const SystemPlaylistDetail: React.FC<SystemPlaylistDetailProps> = ({
   );
 
   const listEmptyComponent = useMemo(
-    () => <Text style={styles.emptyText}>No surahs in this playlist</Text>,
+    () => (
+      <Text style={styles.emptyText}>
+        {t('systemplaylist.systemPlaylistDetail.noSurahsInThisPlaylist')}
+      </Text>
+    ),
     [styles.emptyText],
   );
 
   if (loading) {
     return (
       <View style={styles.container}>
-        <Text style={styles.emptyText}>Loading...</Text>
+        <Text style={styles.emptyText}>{t('common.loading')}</Text>
       </View>
     );
   }
