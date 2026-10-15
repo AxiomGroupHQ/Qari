@@ -272,6 +272,10 @@ function MushafToolbar() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    // The mushaf is a fixed-layout book with an inverted horizontal pager. Under an RTL
+    // document/layout (Urdu, Arabic...) the pager's scroll origin flips and the pages render
+    // blank, so the reader always lays out left-to-right.
+    direction: 'ltr',
   },
   loading: {
     flex: 1,
