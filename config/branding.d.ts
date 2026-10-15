@@ -89,7 +89,7 @@ export interface Branding {
    * Order + visibility of Listen-tab home rows.
    *
    * Optional — when undefined, RecitersView falls back to the built-in
-   * default order (preserving today's Bayaan behavior verbatim). Forks
+   * default order (preserving today's Istima behavior verbatim). Forks
    * override by declaring their own array. Order in the array == render
    * order. Empty-data rows self-hide regardless of `enabled`.
    *
@@ -113,7 +113,7 @@ export interface Branding {
    * immutable per-version snapshot — preferred over the live catalog URL
    * because the URL itself is the CDN cache key.
    *
-   * Undefined (default) → no polling. Bayaan ships undefined; forks with
+   * Undefined (default) → no polling. Istima ships undefined; forks with
    * dynamic catalog operations (e.g. Qariah's ops console) set it.
    *
    * Fail-open: any poll failure is swallowed. The bundled catalog is
@@ -123,7 +123,7 @@ export interface Branding {
   /**
    * RFC-008 — optional component that replaces the Listen-tab top
    * region (the default `RecitersHero`). Forks return a React
-   * component; `undefined` keeps Bayaan's `RecitersHero` verbatim.
+   * component; `undefined` keeps Istima's `RecitersHero` verbatim.
    *
    * The component renders directly inside the Listen-tab ScrollView at
    * the top, above the rows controlled by `homeRowConfig`. It receives
@@ -136,13 +136,13 @@ export interface Branding {
    * Search tab renders a user-editable chip per id; tiles on the Home
    * tab can deeplink in with chips pre-applied via the matching URL
    * params on the `reciter/browse` route. RFC-012 chips render AFTER
-   * Bayaan's existing bespoke chips (teacher/student) — trailing
+   * Istima's existing bespoke chips (teacher/student) — trailing
    * position is intentional so users of a forked build see the
    * familiar chips first and the fork's additions after.
    *
    * Tri-state semantics:
    *   - `undefined` (default) — "not migrated"; Search tab keeps
-   *     today's bespoke chip set unchanged. Bayaan ships this.
+   *     today's bespoke chip set unchanged. Istima ships this.
    *   - `[]` — "explicitly disable all RFC-012 chips". Observably the
    *     same as `undefined` today, but the intent is distinct for
    *     future v2 migration when bespoke chips themselves move under
@@ -184,13 +184,13 @@ export interface Branding {
   initialPlayerVerseKey?: (track: Track) => string | undefined;
   /**
    * RFC-009 — optional translation source for Settings → Translations.
-   * `undefined` keeps Bayaan's default (the alQuran.cloud-backed
+   * `undefined` keeps Istima's default (the alQuran.cloud-backed
    * `alQuranCloudTranslationProvider`).
    */
   translationProvider?: TranslationProvider;
   /**
    * RFC-009 — optional tafsir source for Settings → Tafsir. `undefined`
-   * keeps Bayaan's default (the api.quran.com-backed
+   * keeps Istima's default (the api.quran.com-backed
    * `quranComTafsirProvider`).
    */
   tafsirProvider?: TafsirProvider;
@@ -234,7 +234,7 @@ export interface Branding {
    *
    * Forks set this to their own mirror's base when the `has_timestamps`
    * flag is true for any reciter in their catalog and the timestamp
-   * JSONs live somewhere other than the Bayaan production CDN. No
+   * JSONs live somewhere other than the legacy production CDN. No
    * trailing slash; consumer composes
    * `${timestampCdnBase}/${rewayatId}/${paddedSurah}.json`.
    *
