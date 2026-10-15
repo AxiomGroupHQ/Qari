@@ -4,7 +4,7 @@ Short definitions used across Digital Khatt documentation and code.
 
 ## Terms
 
-- `DigitalKhatt`: the Uthmani font/rendering path used by Bayaan's Skia Mushaf.
+- `DigitalKhatt`: the Uthmani font/rendering path used by Istima's Skia Mushaf.
 - `DKLine`: one layout row from `dk_layout.db` (`surah_name`, `basmallah`, or `ayah`).
 - `lineType`:
   - `0` = ayah

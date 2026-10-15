@@ -10,7 +10,7 @@
 
 ## Overview
 
-Add a comprehensive Adhkar/Dhikr feature to Bayaan, providing users with the complete Hisnul Muslim (Fortress of the Muslim) collection with Arabic text, translation, transliteration, and audio.
+Add a comprehensive Adhkar/Dhikr feature to Istima, providing users with the complete Hisnul Muslim (Fortress of the Muslim) collection with Arabic text, translation, transliteration, and audio.
 
 **Reference:** https://lifewithallah.com/dhikr-dua/
 

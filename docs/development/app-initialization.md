@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Bayaan app uses a centralized initialization system (`AppInitializer`) to manage all SQLite-based services and critical app data loading. This ensures consistent, reliable, and performant app startup.
+The Istima app uses a centralized initialization system (`AppInitializer`) to manage all SQLite-based services and critical app data loading. This ensures consistent, reliable, and performant app startup.
 
 ## Architecture
 

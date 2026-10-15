@@ -1,10 +1,10 @@
-# Bayaan App Deployment Guide
+# Istima App Deployment Guide
 
-This document outlines the complete process for deploying the Bayaan app to both Google Play Store (Android) and Apple App Store (iOS).
+This document outlines the complete process for deploying the Istima app to both Google Play Store (Android) and Apple App Store (iOS).
 
 ## Version Management
 
-Bayaan uses a Git-based version management system described in detail in [version-management.md](version-management.md).
+Istima uses a Git-based version management system described in detail in [version-management.md](version-management.md).
 
 ### Quick Version Summary
 
@@ -43,7 +43,7 @@ Bayaan uses a Git-based version management system described in detail in [versio
 
 ### Android Signing Configuration
 
-Bayaan uses an Expo Config Plugin (`withAndroidSigning.js` in the project root) to automatically manage Android signing configuration. The plugin:
+Istima uses an Expo Config Plugin (`withAndroidSigning.js` in the project root) to automatically manage Android signing configuration. The plugin:
 
 - Adds proper signing configurations to `android/app/build.gradle`
 - Ensures correct signing for release builds
@@ -76,7 +76,7 @@ This approach eliminates the need for an external `signing.gradle` file that was
 ### Upload to Google Play Console
 
 1. Go to [Google Play Console](https://play.google.com/console/)
-2. Select the Bayaan app
+2. Select the Istima app
 3. Navigate to "Production" (or your desired track)
 4. Click "Create new release"
 5. Upload the AAB file
@@ -105,7 +105,7 @@ For detailed information on keystore management, refer to:
 
 ### iOS Team Configuration
 
-Bayaan uses an Expo Config Plugin (`withIOSTeam.js` in the project root) to automatically maintain the iOS Team ID configuration. This plugin:
+Istima uses an Expo Config Plugin (`withIOSTeam.js` in the project root) to automatically maintain the iOS Team ID configuration. This plugin:
 
 - Ensures the correct Apple Developer Team ID ('S4W5Q2L53W') is set in the Xcode project
 - Maintains this configuration even when native projects are regenerated with `expo prebuild`

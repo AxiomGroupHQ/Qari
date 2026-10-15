@@ -1,6 +1,6 @@
 # Queue System
 
-The queue in Bayaan is a flat array of `Track` objects inside `playerStore`. There is no separate queue service or context — the store is the single source of truth.
+The queue in Istima is a flat array of `Track` objects inside `playerStore`. There is no separate queue service or context — the store is the single source of truth.
 
 ---
 

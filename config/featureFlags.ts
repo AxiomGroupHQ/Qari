@@ -1,7 +1,7 @@
 /**
- * Bayaan feature flags.
+ * Istima feature flags.
  *
- * All flags default to true — Bayaan ships every feature.
+ * All flags default to true — Istima ships every feature.
  * Forks override by replacing this file with their own values.
  *
  * These flags are for fork-configurable feature gating, not per-user A/B tests.

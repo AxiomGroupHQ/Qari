@@ -1,4 +1,4 @@
-# Feature: Bayaan Web Application
+# Feature: Istima Web Application
 
 **Status:** Proposal
 **Priority:** High
@@ -7,7 +7,7 @@
 
 ## Overview
 
-Build a ground-up, web-native version of Bayaan at **thebayaan.com** — a full-featured Quran audio and Mushaf experience for the browser. Not a React Native Web port, but a proper web application built with Next.js, Tailwind CSS, and the Web Audio API, borrowing the design language and data layer from the mobile app.
+Build a ground-up, web-native version of Istima at **thebayaan.com** — a full-featured Quran audio and Mushaf experience for the browser. Not a React Native Web port, but a proper web application built with Next.js, Tailwind CSS, and the Web Audio API, borrowing the design language and data layer from the mobile app.
 
 ## User Story
 
@@ -205,7 +205,7 @@ The Web Audio API is dramatically simpler than mobile audio:
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│  ┌────┐  Bayaan                          🔍 Search         ⚙    │
+│  ┌────┐  Istima                          🔍 Search         ⚙    │
 ├──┤    ├──────────────────────────────────────────────────────────┤
 │  │    │                                                          │
 │  │ 🏠 │   Featured Reciters                                     │
@@ -243,7 +243,7 @@ The Web Audio API is dramatically simpler than mobile audio:
 
 ```
 ┌─────────────────────────┐
-│  Bayaan            🔍 ⚙ │
+│  Istima            🔍 ⚙ │
 ├─────────────────────────┤
 │                         │
 │  Featured Reciters      │
@@ -277,15 +277,15 @@ Every page is server-rendered and indexable:
 
 | URL | Page | SEO Title |
 |-----|------|-----------|
-| `/` | Home | Bayaan — Listen to the Holy Quran |
-| `/reciters` | All reciters | Quran Reciters — Bayaan |
-| `/reciters/al-husary` | Reciter detail | Sheikh Al-Husary — Bayaan |
-| `/surah/2` | Surah page | Surah Al-Baqarah — Listen Online — Bayaan |
-| `/surah/2?reciter=al-husary` | Surah + reciter | Al-Baqarah by Al-Husary — Bayaan |
-| `/mushaf` | Mushaf viewer | Read the Holy Quran — Bayaan |
-| `/mushaf/604` | Mushaf page N | Quran Page 604 — Bayaan |
-| `/queue` | Queue | Queue — Bayaan |
-| `/settings` | Settings | Settings — Bayaan |
+| `/` | Home | Istima — Listen to the Holy Quran |
+| `/reciters` | All reciters | Quran Reciters — Istima |
+| `/reciters/al-husary` | Reciter detail | Sheikh Al-Husary — Istima |
+| `/surah/2` | Surah page | Surah Al-Baqarah — Listen Online — Istima |
+| `/surah/2?reciter=al-husary` | Surah + reciter | Al-Baqarah by Al-Husary — Istima |
+| `/mushaf` | Mushaf viewer | Read the Holy Quran — Istima |
+| `/mushaf/604` | Mushaf page N | Quran Page 604 — Istima |
+| `/queue` | Queue | Queue — Istima |
+| `/settings` | Settings | Settings — Istima |
 
 ### Keyboard Shortcuts
 
@@ -509,8 +509,8 @@ bayaan-web/
 - [@opennextjs/cloudflare](https://github.com/opennextjs/opennextjs-cloudflare)
 - [Service Workers (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 - [Web App Manifest (MDN)](https://developer.mozilla.org/en-US/docs/Web/Manifest)
-- [Bayaan Mobile App — TV Feature Doc](./tv-app.md)
-- [Bayaan Mobile App — Smartwatch Feature Doc](./smartwatch.md)
+- [Istima Mobile App — TV Feature Doc](./tv-app.md)
+- [Istima Mobile App — Smartwatch Feature Doc](./smartwatch.md)
 
 ---
 

@@ -2,13 +2,13 @@
 
 **Date:** February 2026
 **Status:** Research Complete — Awaiting Decision
-**Scope:** Adding multi-translation and tafseer support to Bayaan
+**Scope:** Adding multi-translation and tafseer support to Istima
 
 ---
 
 ## Executive Summary
 
-Bayaan already has working translation infrastructure (Saheeh International + Clear Quran bundled, inline display in VerseItem, TranslationContent sheet). The work is **not greenfield** — it's about making the hardcoded system dynamic and extensible.
+Istima already has working translation infrastructure (Saheeh International + Clear Quran bundled, inline display in VerseItem, TranslationContent sheet). The work is **not greenfield** — it's about making the hardcoded system dynamic and extensible.
 
 Three viable API sources exist. The recommended approach is a **hybrid strategy**: use the free, no-auth **Al Quran Cloud API** as the primary data source (101 translations, simple REST), with pre-bundled Saheeh International for offline-first, and SQLite + FTS5 for local storage of downloaded translations. Tafaseer should be API-only due to their massive size (500MB-5GB each).
 
@@ -82,7 +82,7 @@ Three viable API sources exist. The recommended approach is a **hybrid strategy*
 | Language | Count | Notable Tafaseer |
 |---|---|---|
 | Arabic | 6 | Ibn Kathir, Tabari, Qurtubi, Sa'di, Baghawi, Wasit (Tantawi), Muyassar |
-| Bengali | 4 | Tafsir Abu Bakr Zakaria, Ahsanul Bayaan, Fathul Majid, Ibn Kathir |
+| Bengali | 4 | Tafsir Abu Bakr Zakaria, Ahsanul Istima, Fathul Majid, Ibn Kathir |
 | Urdu | 4 | Fi Zilal al-Quran (Qutb), Bayan ul Quran (Israr Ahmad), Ibn Kathir, Tazkir |
 | English | 3 | Ibn Kathir (Abridged), Ma'arif al-Qur'an (Shafi), Tazkirul Quran |
 | Russian | 1 | Al-Sa'di |
@@ -646,7 +646,7 @@ Albanian (3), Azerbaijani (1), Bengali (1), Bosnian (1), Bulgarian (1), Chinese 
 | 93 | Al-Tafsir al-Wasit (Tantawi) | Arabic |
 | 94 | Tafseer Al-Baghawi | Arabic |
 | 164 | Tafseer Ibn Kathir | Bengali |
-| 165 | Tafsir Ahsanul Bayaan | Bengali |
+| 165 | Tafsir Ahsanul Istima | Bengali |
 | 166 | Tafsir Abu Bakr Zakaria | Bengali |
 | 381 | Tafsir Fathul Majid | Bengali |
 | 159 | Bayan ul Quran (Israr Ahmad) | Urdu |

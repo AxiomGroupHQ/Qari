@@ -8,13 +8,13 @@
 
 ## Overview
 
-Comprehensive analytics system for Bayaan — Spotify-level listening insights, Tarteel-level reading tracking, adhkar engagement, and the data foundation for future features like a stats dashboard, activity calendar, and Bayaan Wrapped.
+Comprehensive analytics system for Istima — Spotify-level listening insights, Tarteel-level reading tracking, adhkar engagement, and the data foundation for future features like a stats dashboard, activity calendar, and Istima Wrapped.
 
 This document covers the **full vision** (what we're building toward) and the **Phase 1 scope** (what ships first). Phase 1 is the data foundation: event tracking, local aggregation, and PostHog dashboards. UI features (stats dashboard, activity calendar, Wrapped) are future phases that build on this foundation.
 
 ## Problem Statement
 
-Bayaan has zero analytics, zero crash reporting, and no visibility into user behavior. We don't know:
+Istima has zero analytics, zero crash reporting, and no visibility into user behavior. We don't know:
 
 - How many active users we have
 - Which reciters/surahs are most popular
@@ -57,7 +57,7 @@ Dedicated tab with listening summary, reading summary, khatmah tracker, adhkar s
 ### 5. Deep Insights Hub (Future)
 Trends over time, time-of-day heat map (mapped to prayer times), reciter discovery stats, surah completion grid (all 114), personal milestones.
 
-### 6. Bayaan Wrapped (Future)
+### 6. Istima Wrapped (Future)
 Ramadan Wrapped (released on Eid al-Fitr) and Annual Wrapped. Shareable story-format cards. Listening personality archetypes. Percentile rankings.
 
 ---
@@ -280,7 +280,7 @@ Dedicated tab with: listening summary, reading summary, khatmah tracker, adhkar 
 ### Deep Insights Hub
 Extension of stats dashboard: trends over time (listening up/down vs last month), time-of-day heat map mapped to prayer times, reciter discovery stats, surah completion grid (all 114 surahs), personal milestones.
 
-### Bayaan Wrapped
+### Istima Wrapped
 Ramadan Wrapped (released Eid al-Fitr) + Annual Wrapped. Story-format shareable cards. Listening personality archetypes (The Devoted, The Explorer, The Consistent, The Night Listener, The Ramadan Warrior, The Scholar, The Mushaf Companion). Percentile rankings. Backend computation via PostHog API/data export.
 
 ### Optional Auth

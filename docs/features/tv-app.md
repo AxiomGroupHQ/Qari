@@ -7,11 +7,11 @@
 
 ## Overview
 
-Extend Bayaan to run on Apple TV (tvOS) and Android TV platforms, allowing users to listen to Quran recitations on their television with a remote-friendly, 10-foot UI experience.
+Extend Istima to run on Apple TV (tvOS) and Android TV platforms, allowing users to listen to Quran recitations on their television with a remote-friendly, 10-foot UI experience.
 
 ## User Story
 
-As a user, I want to use Bayaan on my Apple TV or Android TV so that I can listen to Quran recitations in my living room with a beautiful, large-screen interface navigable by remote control.
+As a user, I want to use Istima on my Apple TV or Android TV so that I can listen to Quran recitations in my living room with a beautiful, large-screen interface navigable by remote control.
 
 ## Platform Requirements
 

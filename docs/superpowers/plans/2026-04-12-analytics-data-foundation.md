@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Instrument every user interaction in Bayaan with PostHog analytics and local MMKV aggregation, establishing the data foundation for future stats dashboard, activity calendar, and Wrapped features.
+**Goal:** Instrument every user interaction in Istima with PostHog analytics and local MMKV aggregation, establishing the data foundation for future stats dashboard, activity calendar, and Wrapped features.
 
 **Architecture:** PostHog Cloud as sole analytics destination via `posthog-react-native` SDK. AnalyticsService singleton dual-writes events to PostHog (remote) and LocalAggregationStore (MMKV). Sentry for crash reporting. Device UUID for anonymous identity.
 

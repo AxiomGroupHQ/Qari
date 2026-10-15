@@ -6,7 +6,7 @@
  * stub adapter satisfies the PlayerController contract.
  *
  * Behavior tests for real implementations live in their owning packages
- * (consumer-side: Bayaan's playerStore-backed controller in app code).
+ * (consumer-side: Istima's playerStore-backed controller in app code).
  */
 
 import type {BaseTrack, PlaybackState} from '@bayaan/types';

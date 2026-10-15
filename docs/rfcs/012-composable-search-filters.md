@@ -22,7 +22,7 @@ The destination is *already* unified — `app/(tabs)/(a.home)/reciter/browse.tsx
 
 The user feedback that triggered this RFC (on the Qariah fork's TestFlight beta, 2026-05-19) crystallized the problem: tapping "Surah Al-Baqarah" from the Home/Listen tab dropped the user into a reciter list filtered to Al-Baqarah, but the user couldn't tell *why* the list was filtered, couldn't relax the filter to see more reciters, and couldn't add a second filter ("show me Spanish-translation reciters who have Al-Baqarah"). The hidden-filter UX masks the platform's actual capability.
 
-A targeted fix shipped Qariah-side for the Al-Baqarah case (cross-reciter recitations flat list when `surahId` is set), but the deeper pattern remains: each new Browse-by-X tile is bespoke UI, and the filtering capability stays invisible. RFC-012 proposes the structural fix that benefits both Bayaan and forks.
+A targeted fix shipped Qariah-side for the Al-Baqarah case (cross-reciter recitations flat list when `surahId` is set), but the deeper pattern remains: each new Browse-by-X tile is bespoke UI, and the filtering capability stays invisible. RFC-012 proposes the structural fix that benefits both Istima and forks.
 
 ---
 
@@ -73,9 +73,9 @@ export type SearchFilterDimension =
   | 'translation';        // ⚠ prerequisite: add Reciter.translation, then slug-compare
 ```
 
-**Field prerequisites.** `Reciter` in `data/reciterData.ts` is `{id, name, slug, date, image_url, rewayat}` today, and `Rewayat` carries `name`, `surah_list`, and `style` — so `rewaya`, `has-surah`, `has-photo`, and `recitation-style` are implementable against existing fields, but `country` and `translation` first need their fields added to the `Reciter` type and populated from the catalog API. A tenant that lists those two dimensions in `branding.searchFilters` without the fields present should get a dev-time warning and a no-op chip. Bayaan can ship the four exists-today dimensions immediately; the rest land as the catalog model grows.
+**Field prerequisites.** `Reciter` in `data/reciterData.ts` is `{id, name, slug, date, image_url, rewayat}` today, and `Rewayat` carries `name`, `surah_list`, and `style` — so `rewaya`, `has-surah`, `has-photo`, and `recitation-style` are implementable against existing fields, but `country` and `translation` first need their fields added to the `Reciter` type and populated from the catalog API. A tenant that lists those two dimensions in `branding.searchFilters` without the fields present should get a dev-time warning and a no-op chip. Istima can ship the four exists-today dimensions immediately; the rest land as the catalog model grows.
 
-Bayaan adopts with whatever subset fits its product — initially the exists-today dimensions (`['rewaya', 'has-surah', 'has-photo', 'recitation-style']`), adding `country` / `translation` once their `Reciter` fields land. Forks add their preferred dims on top.
+Istima adopts with whatever subset fits its product — initially the exists-today dimensions (`['rewaya', 'has-surah', 'has-photo', 'recitation-style']`), adding `country` / `translation` once their `Reciter` fields land. Forks add their preferred dims on top.
 
 Pro: each chip dimension lives in shared chip UI. New filter dims need a code PR per dim (the chip's value picker, label, predicate).
 Con: extensibility requires a code PR — but the cost is small (each new dim is ~50 LOC).
@@ -100,7 +100,7 @@ export interface SearchFiltersSlotProps {
 }
 ```
 
-Pro: each tenant fully owns their chip UI; zero code in Bayaan beyond the slot wiring.
+Pro: each tenant fully owns their chip UI; zero code in Istima beyond the slot wiring.
 Con: greater divergence — each fork builds its own composer; no shared UI / interaction patterns. Same trade-off RFC-008 lives with.
 
 ### Browse-by-X tile reduction
@@ -137,15 +137,15 @@ Each "Browse by X" tile builds its own filtered list. Works today. Loses to user
 ### Filters on BrowseReciters (not Search tab)
 Add composable chips to `BrowseReciters` directly; Home-tab tiles still deeplink in with pre-set chips. Considered and rejected because Search is where users *expect* filters to live; BrowseReciters is a "render a filtered list" surface, not a "compose a query" surface. Adding chips there muddles the two surfaces.
 
-### Don't lift to Bayaan — keep fork-local
-Loses the multi-tenant-first principle that motivated RFC-007. Bayaan would benefit equally from composable filters when its reciter catalog grows.
+### Don't lift to Istima — keep fork-local
+Loses the multi-tenant-first principle that motivated RFC-007. Istima would benefit equally from composable filters when its reciter catalog grows.
 
 ---
 
 ## Migration plan
 
-1. **Land config seam upstream** (this RFC + its accompanying code PR). Bayaan ships with `searchFilters: undefined` (no chips visible) — zero behavior change.
-2. **Bayaan adopts** with a chosen subset of dims. Each Browse-by-X Home tile flips its `href` to deeplink into Search with the chip pre-set. The carousel rows stay; the destination changes.
+1. **Land config seam upstream** (this RFC + its accompanying code PR). Istima ships with `searchFilters: undefined` (no chips visible) — zero behavior change.
+2. **Istima adopts** with a chosen subset of dims. Each Browse-by-X Home tile flips its `href` to deeplink into Search with the chip pre-set. The carousel rows stay; the destination changes.
 3. **Forks adopt** the same seam with their extended dim sets.
 4. **Deprecate per-screen filter knobs** that `BrowseReciters` has accumulated (style filter, etc) over time — they all become Search-tab chips. Several sprints of cleanup.
 

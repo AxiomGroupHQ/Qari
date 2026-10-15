@@ -7,7 +7,7 @@
 | Author  | Omar Zarka (Qariah fork)                                                                                                                                    |
 | Related | RFC-007 (multi-tenant config seam, merged), RFC-008 (listen-tab top component slot, merged), RFC-010 (catalog version endpoint, merged), RFC-011 (in flight) |
 
-> Combined doc + code PR — opt-in seam with default-`undefined` no-op preserves today's Bayaan behavior verbatim.
+> Combined doc + code PR — opt-in seam with default-`undefined` no-op preserves today's Istima behavior verbatim.
 
 ---
 
@@ -17,13 +17,13 @@ Add an optional `branding.initialPlayerVerseKey?: (track: Track) => string | und
 
 The motivating use case is fork-supplied **range-restricted recitations** — audio tracks that cover only a subset of a surah (e.g. ayahs 197–202 of Al-Baqarah). When such a track plays, today's QuranView still scrolls to ayah 1, so the visible ayah list is ~196 ayahs misaligned from the audio that's actually playing. The fork knows the partial range; the hook gives it a place to express it.
 
-The PR also lands a small **2-`requestAnimationFrame` deferral** on imperative `scrollToIndex` calls — needed for the new hook to work on in-app surah switches (FlashList v2 silently no-ops `scrollToIndex` calls made before the new `data` has finished laying out, with no `onScrollToIndexFailed` escape hatch like FlatList). The same defer pattern shores up the existing active-ayah autoscroll effect when it fires close to a track change, so it's a small reliability bonus for the default Bayaan code path too.
+The PR also lands a small **2-`requestAnimationFrame` deferral** on imperative `scrollToIndex` calls — needed for the new hook to work on in-app surah switches (FlashList v2 silently no-ops `scrollToIndex` calls made before the new `data` has finished laying out, with no `onScrollToIndexFailed` escape hatch like FlatList). The same defer pattern shores up the existing active-ayah autoscroll effect when it fires close to a track change, so it's a small reliability bonus for the default Istima code path too.
 
 ---
 
 ## Motivation
 
-The destination is *already* a single component — `QuranView` is shared by every PlayerSheet open path in both Bayaan and forks. Today the surah-change effect at L205–211 reads:
+The destination is *already* a single component — `QuranView` is shared by every PlayerSheet open path in both Istima and forks. Today the surah-change effect at L205–211 reads:
 
 ```typescript
 useEffect(() => {
@@ -38,7 +38,7 @@ This is correct for the common case (full-surah recitation: audio starts at ayah
 
 The Qariah fork shipped 326 such tracks across 54 reciters (Sprint-19 off-sprint catalog patch, 2026-05-18). Each carries a `range: {from, to}` in catalog metadata. Without the hook this RFC proposes, every Qariah fork user opening one of these tracks sees an ayah list scrolled to ayah 1 while listening to audio reciting ayahs 197–202 — a real, actively-shipped UX defect.
 
-A Qariah-only fix in the shared `QuranView` file is doable, but it puts a permanent ~50 LOC divergence in a hot file that already takes upstream churn well. Lifting the seam to `branding` retires the divergence and gives any other fork (or Bayaan itself, if it ever adopts range-restricted recitations like an "ayahs of the Mufassal" curated set) the same capability with zero per-fork QuranView edits.
+A Qariah-only fix in the shared `QuranView` file is doable, but it puts a permanent ~50 LOC divergence in a hot file that already takes upstream churn well. Lifting the seam to `branding` retires the divergence and gives any other fork (or Istima itself, if it ever adopts range-restricted recitations like an "ayahs of the Mufassal" curated set) the same capability with zero per-fork QuranView edits.
 
 ---
 
@@ -113,7 +113,7 @@ A single rAF works most of the time but races against fast Arabic-glyph cell mea
 
 ### What does NOT change
 
-- The default Bayaan behavior — no `initialPlayerVerseKey` defined → branding default surfaces `undefined` → QuranView falls through to today's `scrollToOffset({offset: 0})`. No behavioral diff on the default path.
+- The default Istima behavior — no `initialPlayerVerseKey` defined → branding default surfaces `undefined` → QuranView falls through to today's `scrollToOffset({offset: 0})`. No behavioral diff on the default path.
 - The active-ayah autoscroll effect (L213–225). It already has the `try/catch` escape hatch and works fine because it fires after the user has been on the track for some time (FlashList is well-measured by then).
 - Track type, player store, expanding the PlayerSheet, sheet-mode transitions — all untouched.
 
@@ -127,7 +127,7 @@ Each fork patches `QuranView/index.tsx` directly. Works (it's what Qariah is shi
 
 ### Declarative range-config on the catalog
 
-Add `Reciter.rewayat[].surah_metadata?: SurahMetadata[]` upstream and have QuranView read it directly. Considered and rejected because the catalog shape upstream is forks' business (Qariah ships custom-curated reciters with custom metadata; Bayaan's catalog has none of those reciters). Lifting the data shape upstream forces Bayaan to take on schema fields it doesn't populate. The hook keeps the data flow fork-internal and only the *behavioral seam* upstream.
+Add `Reciter.rewayat[].surah_metadata?: SurahMetadata[]` upstream and have QuranView read it directly. Considered and rejected because the catalog shape upstream is forks' business (Qariah ships custom-curated reciters with custom metadata; Istima's catalog has none of those reciters). Lifting the data shape upstream forces Istima to take on schema fields it doesn't populate. The hook keeps the data flow fork-internal and only the *behavioral seam* upstream.
 
 ### Imperative API instead of a hook
 
@@ -141,7 +141,7 @@ Add `Reciter.rewayat[].surah_metadata?: SurahMetadata[]` upstream and have Quran
 
 ## Migration plan
 
-1. **Land this RFC + code together** (single PR). Bayaan ships `initialPlayerVerseKey: undefined` — zero behavior change for the default app.
+1. **Land this RFC + code together** (single PR). Istima ships `initialPlayerVerseKey: undefined` — zero behavior change for the default app.
 2. **Forks adopt** by defining the hook against whatever catalog metadata they ship. Qariah's implementation:
    ```typescript
    import {getSurahMetadataSync} from '@/services/dataService';
@@ -183,7 +183,7 @@ Add `Reciter.rewayat[].surah_metadata?: SurahMetadata[]` upstream and have Quran
 - The RFC text reflects the shipped hook signature + the QuranView edits in this same PR.
 - `npm run typecheck` clean.
 - `node node_modules/prettier/bin/prettier.cjs --check .` clean (Prettier 3 indent rules).
-- Default Bayaan path (`initialPlayerVerseKey: undefined`) is byte-identical to today — the diff in `QuranView/index.tsx` only adds the gated code path, leaves the `else { scrollToOffset({offset:0}) }` branch verbatim.
+- Default Istima path (`initialPlayerVerseKey: undefined`) is byte-identical to today — the diff in `QuranView/index.tsx` only adds the gated code path, leaves the `else { scrollToOffset({offset:0}) }` branch verbatim.
 - A fork sets the hook to a function returning a known verse_key → PlayerSheet anchors on that ayah on cold-mount and after in-app surah switches.
 
 ---

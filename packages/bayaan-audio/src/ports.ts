@@ -46,7 +46,7 @@ export interface PlayerController<TTrack extends BaseTrack = BaseTrack> {
    * equivalent of expo-audio's `didJustFinish`). The consumer decides what
    * happens next — repeat, advance, or stop. The package does not make
    * this decision: repeat modes, queue advance, and shuffle are consumer
-   * concerns (see Bayaan's playerStore and Qariah's queueRecitations).
+   * concerns (see Istima's playerStore and Qariah's queueRecitations).
    *
    * Ordering note: after didJustFinish fires, the native player's
    * currentItem is nil; seekTo(0) + play() on the same source is a no-op.
@@ -131,7 +131,7 @@ export const NullPlayerEventSink: PlayerEventSink<BaseTrack> = {
 // ============================================================
 
 /**
- * The package consumes a Promise; data origin is opaque (Bayaan hosts its
+ * The package consumes a Promise; data origin is opaque (Istima hosts its
  * own DB; Qariah uses per-recitation timestamps from its backend).
  *
  * Keyed by recitation, not by reciter — both consumers have cases where a

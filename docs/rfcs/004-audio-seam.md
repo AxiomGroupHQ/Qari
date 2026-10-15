@@ -90,7 +90,7 @@ Three reasons to land the seam before any refactor that consumes it:
 | Port too narrow → RFC-005 has to widen mid-refactor. | Hew exactly to the interface drafted and reviewed in `bayaan-platform/scratch/ports.ts`. The `.contract.ts` file there has been the working reference for ~2 weeks. |
 | Port too wide → adapter spans too many call sites in RFC-005. | Every port method maps to a single existing call site in `services/audio/*`. The mapping is documented in ADR-0001 §Decision and verified by the consumer-side stub being a class (not a free-function bag). |
 | Stub adapter sets a bad precedent for "scaffolding without behavior". | The stub is class-based, every method has a `// RFC-005: ...` comment naming the migration that fills it in. The `ports.test.ts` exercises the stub through realistic call ordering so the contract is real, not paper. |
-| `MockAudioPlayer` drifts from `expo-audio`'s actual `AudioPlayer` surface. | The shape is taken from current Bayaan service code that wraps `useAudioPlayer`. Drift becomes visible the moment a real service test is written against it (RFC-005). Acceptable risk given the alternative is hand-mocking the same surface in every test file. |
+| `MockAudioPlayer` drifts from `expo-audio`'s actual `AudioPlayer` surface. | The shape is taken from current Istima service code that wraps `useAudioPlayer`. Drift becomes visible the moment a real service test is written against it (RFC-005). Acceptable risk given the alternative is hand-mocking the same surface in every test file. |
 
 ## Where the adapter lives
 

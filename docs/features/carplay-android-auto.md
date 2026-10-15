@@ -7,7 +7,7 @@
 
 ## Overview
 
-Add Apple CarPlay and Android Auto support to Bayaan, allowing users to browse reciters, select surahs, and control Quran playback directly from their car's infotainment display. As an audio-focused app, Bayaan is a strong candidate for both platforms' audio app templates.
+Add Apple CarPlay and Android Auto support to Istima, allowing users to browse reciters, select surahs, and control Quran playback directly from their car's infotainment display. As an audio-focused app, Istima is a strong candidate for both platforms' audio app templates.
 
 ## User Story
 
@@ -39,7 +39,7 @@ As a user driving with my phone connected to my car, I want to browse reciters a
 
 ## Technical Foundation (Already Exists)
 
-Bayaan already has significant infrastructure that CarPlay/Android Auto builds on:
+Istima already has significant infrastructure that CarPlay/Android Auto builds on:
 
 | Component | Status | File |
 |-----------|--------|------|
@@ -303,7 +303,7 @@ Responsible for:
 
 | Risk | Mitigation |
 |------|------------|
-| Apple entitlement rejection | Apply early; Bayaan is a clear audio app candidate |
+| Apple entitlement rejection | Apply early; Istima is a clear audio app candidate |
 | Scene architecture breaks Expo | Use config plugin; test thoroughly after prebuild |
 | expo-media-control conflicts | Test MediaSession token sharing; may need patch |
 | Template update performance | Batch updates, avoid rapid syncs from store |

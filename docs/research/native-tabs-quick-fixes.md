@@ -1,6 +1,6 @@
 # NativeTabs Inset Issues - Quick Reference & Fixes
 
-**For Bayaan SDK 55 NativeTabs upgrade**
+**For Istima SDK 55 NativeTabs upgrade**
 
 ---
 

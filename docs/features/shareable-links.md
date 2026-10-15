@@ -9,7 +9,7 @@
 
 ## Overview
 
-Enable users to share links to reciters, recitations, surahs, playlists, mushaf pages, and other app content. Tapping a link should open the relevant screen in Bayaan (or redirect to the App/Play Store if not installed). Links shared on social media and messaging apps should display rich preview cards (title, image, description).
+Enable users to share links to reciters, recitations, surahs, playlists, mushaf pages, and other app content. Tapping a link should open the relevant screen in Istima (or redirect to the App/Play Store if not installed). Links shared on social media and messaging apps should display rich preview cards (title, image, description).
 
 ## User Stories
 

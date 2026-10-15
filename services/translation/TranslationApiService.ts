@@ -5,7 +5,7 @@ import {alQuranCloudTranslationProvider} from './AlQuranCloudTranslationProvider
  * RFC-009 — translation source resolver.
  *
  * `translationApiService` resolves to the fork-supplied
- * `branding.translationProvider` when set, otherwise to Bayaan's default
+ * `branding.translationProvider` when set, otherwise to Istima's default
  * alQuran.cloud-backed `alQuranCloudTranslationProvider`. The exported
  * name and shape are unchanged, so consumers (`store/translationStore.ts`)
  * are untouched.

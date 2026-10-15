@@ -18,7 +18,7 @@ This PR ships:
 
 The audio extraction (ADR-0001) plans 8 PRs that culminate in `services/audio/` moving into `@bayaan/audio`. PRs 2–8 mutate `AudioCoordinator`, `ExpoAudioProvider`, and `LockScreenService` to consume the `PlayerController` port that landed in [#236](https://github.com/thebayaan/Bayaan/pull/236). Without behavior-locking tests, every refactor reviewer is on the hook for "does this preserve subtle behavior?" — which neither scales nor sleeps well at night.
 
-Per ADR-0001 §"Sequencing": **PR #1 = characterization tests. PRs #2–8 = refactors that keep the tests green.** Bayaan currently has zero tests on `services/audio/`, `services/mushaf/`, `services/player/`. This PR seeds that test surface for audio specifically.
+Per ADR-0001 §"Sequencing": **PR #1 = characterization tests. PRs #2–8 = refactors that keep the tests green.** Istima currently has zero tests on `services/audio/`, `services/mushaf/`, `services/player/`. This PR seeds that test surface for audio specifically.
 
 ## A note on RFC numbering
 

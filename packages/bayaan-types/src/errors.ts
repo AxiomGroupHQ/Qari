@@ -1,5 +1,5 @@
 /**
- * Bayaan platform error machinery.
+ * Istima platform error machinery.
  *
  * Every error produced by `@bayaan/*` packages is a `BayaanError` subclass.
  * Consumers branch on `error.code` (stable enum) or `error instanceof

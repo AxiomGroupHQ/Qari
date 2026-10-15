@@ -44,7 +44,7 @@ The What's New feature has been successfully implemented! This feature automatic
 
 ### 2. Manual Access from Settings
 
-- ✅ "What's New" item in Settings → About Bayaan section
+- ✅ "What's New" item in Settings → About Istima section
 - ✅ Full-screen changelog view
 - ✅ Gift icon for visual appeal
 - ✅ Smooth navigation with back button
@@ -86,7 +86,7 @@ await quickTestWhatsNew();
 
 1. Open the app
 2. Navigate to Settings tab
-3. Scroll to "About Bayaan" section
+3. Scroll to "About Istima" section
 4. Tap "What's New" (with gift 🎁 icon)
 5. View the changelog
 6. Tap back to return

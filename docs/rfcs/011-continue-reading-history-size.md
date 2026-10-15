@@ -8,7 +8,7 @@
 
 ## Summary
 
-Add an optional numeric config field to `Branding` that lets forks widen the Surahs-tab "CONTINUE READING" hero from a single most-recent-page card into a horizontal carousel of the last *N* stopping points. Bayaan's behavior is unchanged when the field is omitted (or set to `1`).
+Add an optional numeric config field to `Branding` that lets forks widen the Surahs-tab "CONTINUE READING" hero from a single most-recent-page card into a horizontal carousel of the last *N* stopping points. Istima's behavior is unchanged when the field is omitted (or set to `1`).
 
 This RFC is the fourth in the XF-NNN multi-tenancy series, following RFC-007 (the `Branding` interface itself), RFC-008 (`branding.listenTabTopComponent`), and RFC-010 (`branding.catalogVersionEndpoint`). It targets the only remaining hardcoded reading-history shape in `services/mushaf/MushafSessionStore.ts` + `components/hero/ContinueReadingHero.tsx`.
 
@@ -22,7 +22,7 @@ Concrete cost in Qariah's user testing: roughly **40% of returning users open th
 
 Qariah ships a horizontal 5-card carousel of the last 5 stopping points to address this. The diff is structurally similar to RFC-008's component-slot pattern but only along one axis: how many cards the hero shows. The render shape (a `FlatList` of `SurahHeroSection` cards) is the same; the data shape (an array vs. a singleton) is the difference.
 
-Today Qariah achieves this by forking both `services/mushaf/MushafSessionStore.ts` (widening the persistence layer) and `components/hero/ContinueReadingHero.tsx` (swapping in a `RecentReadingCarousel` when the flag is on). Every Bayaan touch to either file creates a merge conflict for Qariah even when Bayaan's edit is unrelated to history-size. This RFC pulls the size out as a single number on `Branding`, so the persistence layer and the hero both stay upstream-shared.
+Today Qariah achieves this by forking both `services/mushaf/MushafSessionStore.ts` (widening the persistence layer) and `components/hero/ContinueReadingHero.tsx` (swapping in a `RecentReadingCarousel` when the flag is on). Every Istima touch to either file creates a merge conflict for Qariah even when Istima's edit is unrelated to history-size. This RFC pulls the size out as a single number on `Branding`, so the persistence layer and the hero both stay upstream-shared.
 
 ## Decision
 
@@ -35,7 +35,7 @@ export interface Branding {
 
   /**
    * Optional. Maximum number of recent reading positions the Continue
-   * Reading hero shows. Defaults to `1` (Bayaan's existing single-card
+   * Reading hero shows. Defaults to `1` (Istima's existing single-card
    * behavior). Forks setting this to a value greater than `1` get a
    * horizontal carousel of the last N stopping points, ordered most-
    * recent first. The persistence layer (`MushafSessionStore`) honors
@@ -90,8 +90,8 @@ Total Bayaan-side diff: ~80 lines (50 in `MushafSessionStore.ts` for the persist
 Hand the entire `ContinueReadingHero` over to forks via a component slot, like RFC-008's `listenTabTopComponent`.
 
 **Rejected** because:
-- The render shape of the carousel doesn't actually diverge from Bayaan's single-hero render — both layouts use `SurahHeroSection`. Only the data shape (1 vs. N entries) differs. A component-slot would force Qariah to duplicate `SurahHeroSection` rendering boilerplate it could just share.
-- The persistence layer (`MushafSessionStore`) ALSO needs to know the history size for its FIFO cap. A component-slot doesn't address that — Bayaan's store would still need to expose `getRecentPages()` to the slot's consumer regardless. So we end up changing the store anyway; might as well make the size a real config and keep both files upstream-shared.
+- The render shape of the carousel doesn't actually diverge from Istima's single-hero render — both layouts use `SurahHeroSection`. Only the data shape (1 vs. N entries) differs. A component-slot would force Qariah to duplicate `SurahHeroSection` rendering boilerplate it could just share.
+- The persistence layer (`MushafSessionStore`) ALSO needs to know the history size for its FIFO cap. A component-slot doesn't address that — Istima's store would still need to expose `getRecentPages()` to the slot's consumer regardless. So we end up changing the store anyway; might as well make the size a real config and keep both files upstream-shared.
 - Numeric config is the smallest and most-targeted seam that solves the divergence.
 
 ### Alt 2 — Boolean toggle: `branding.continueReadingMultiPage?: boolean`
@@ -107,12 +107,12 @@ Same idea but a binary on/off, where "on" means "show 5".
 Forks continue to fork `MushafSessionStore` + `ContinueReadingHero` and accept ongoing merge conflicts.
 
 **Rejected** because:
-- This is the status quo Qariah is paying. Merge cost is small but real (each Bayaan touch to either file requires manual conflict resolution).
+- This is the status quo Qariah is paying. Merge cost is small but real (each Istima touch to either file requires manual conflict resolution).
 - The proposed seam is small (~80 lines of straightforward code) and unblocks not just Qariah but any future fork interested in multi-position history.
 
 ## Consequences
 
-**For Bayaan:** No behavior change. The numeric config defaults to `1`; existing branding.js entries don't need updating. Migration of MMKV is a one-time read-and-rewrite that happens transparently the first time any code calls `getRecentPages()` or `getLastReadPage()` after the upgrade — legacy users see no data loss.
+**For Istima:** No behavior change. The numeric config defaults to `1`; existing branding.js entries don't need updating. Migration of MMKV is a one-time read-and-rewrite that happens transparently the first time any code calls `getRecentPages()` or `getLastReadPage()` after the upgrade — legacy users see no data loss.
 
 **For forks:** Set `branding.continueReadingHistorySize = N` (e.g. `5`) and the carousel appears with no further code changes. Qariah ships at `5`.
 
@@ -120,9 +120,9 @@ Forks continue to fork `MushafSessionStore` + `ContinueReadingHero` and accept o
 
 ## Open questions
 
-1. **Clamping behavior.** RFC proposes clamping out-of-range values (`< 1` or `> 10`) at read time with a `console.warn`. Should this be stricter (throw in dev, warn in prod) per Bayaan's existing config-validation patterns? Pinging the maintainer for direction.
+1. **Clamping behavior.** RFC proposes clamping out-of-range values (`< 1` or `> 10`) at read time with a `console.warn`. Should this be stricter (throw in dev, warn in prod) per Istima's existing config-validation patterns? Pinging the maintainer for direction.
 
-2. **Persisted-entry shape.** This RFC proposes `{page, openedAt}` per entry — `openedAt` enables the "3h ago" / "yesterday" / "2 days ago" labels that motivated the change. Bayaan doesn't currently track per-page timestamps. The migration from legacy `lastReadPage: number` seeds `openedAt: Date.now()` on first read, which is harmless but inaccurate for the legacy entry. Acceptable?
+2. **Persisted-entry shape.** This RFC proposes `{page, openedAt}` per entry — `openedAt` enables the "3h ago" / "yesterday" / "2 days ago" labels that motivated the change. Istima doesn't currently track per-page timestamps. The migration from legacy `lastReadPage: number` seeds `openedAt: Date.now()` on first read, which is harmless but inaccurate for the legacy entry. Acceptable?
 
 ## References
 

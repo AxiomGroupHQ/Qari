@@ -12,10 +12,10 @@ Add an npm workspace at `packages/*` so reusable platform layers can live alongs
 
 ## Motivation
 
-The Bayaan codebase combines two kinds of code:
+The Istima codebase combines two kinds of code:
 
 1. **Application concerns** — UI, screens, navigation, branding, app-specific stores.
-2. **Platform concerns** — audio engine, mushaf rendering, rewayat logic, downloads. These don't depend on Bayaan's UI and could in principle serve additional consumers (an alternate UI, a web client, a headless tool).
+2. **Platform concerns** — audio engine, mushaf rendering, rewayat logic, downloads. These don't depend on Istima's UI and could in principle serve additional consumers (an alternate UI, a web client, a headless tool).
 
 Today they live intermixed. Whenever someone wants to reuse a platform layer — even informally, e.g. for testing in isolation — they have to navigate the application layer to find it.
 
@@ -70,7 +70,7 @@ Rejected for now. Cross-repo refactors (move code from app repo to platform repo
 
 Both offer better install performance and stricter hoisting than npm workspaces.
 
-Rejected for this RFC. Bayaan currently uses npm. Switching package managers is a separate decision worth its own RFC if install-time performance becomes a real problem; not worth bundling into this proposal. npm workspaces are sufficient for the immediate need.
+Rejected for this RFC. Istima currently uses npm. Switching package managers is a separate decision worth its own RFC if install-time performance becomes a real problem; not worth bundling into this proposal. npm workspaces are sufficient for the immediate need.
 
 ### D — RFC convention in GitHub Discussions
 

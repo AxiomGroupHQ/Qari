@@ -12,7 +12,7 @@ export async function captureShareCard(
   if (!image) throw new Error('Failed to capture share card image');
 
   const base64 = image.encodeToBase64(ImageFormat.PNG, 100);
-  const uri = `${FileSystem.cacheDirectory}bayaan-share.png`;
+  const uri = `${FileSystem.cacheDirectory}istima-share.png`;
   await FileSystem.writeAsStringAsync(uri, base64, {
     encoding: FileSystem.EncodingType.Base64,
   });

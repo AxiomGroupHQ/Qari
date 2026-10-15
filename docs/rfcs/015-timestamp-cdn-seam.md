@@ -24,7 +24,7 @@ Forks that want to mirror ayah-timestamp JSONs to their own R2 bucket are
 forced to shadow the entire file today — there is no seam to swap just the
 URL base. This RFC adds an optional `branding.timestampCdnBase?: string`
 field; when absent, the consumer applies
-`?? 'https://cdn.thebayaan.com/timestamps'` and Bayaan's behavior is
+`?? 'https://cdn.thebayaan.com/timestamps'` and Istima's behavior is
 preserved byte-equivalent. When set, the consumer reads the fork's URL.
 
 The change is two files (`config/branding.d.ts` + `services/timestamps/TimestampFetchService.ts`)
@@ -82,7 +82,7 @@ export interface Branding {
    *
    * Forks set this to their own mirror's base when the
    * `has_timestamps` flag is true for any reciter in their catalog
-   * and the timestamp JSONs live somewhere other than the Bayaan
+   * and the timestamp JSONs live somewhere other than the Istima
    * production CDN. No trailing slash; consumer composes
    * `${timestampCdnBase}/${rewayatId}/${paddedSurah}.json`.
    */
@@ -90,11 +90,11 @@ export interface Branding {
 }
 ```
 
-### `config/branding.js` (Bayaan default)
+### `config/branding.js` (Istima default)
 
 Field omitted. The `?? 'https://cdn.thebayaan.com/timestamps'` fallback at
-the consumer site preserves Bayaan's behavior verbatim. Zero diff to
-`config/branding.js` in the Bayaan distribution.
+the consumer site preserves Istima's behavior verbatim. Zero diff to
+`config/branding.js` in the Istima distribution.
 
 ### `services/timestamps/TimestampFetchService.ts` change (the only code diff)
 
@@ -120,7 +120,7 @@ TimestampFetchService import + R2_BASE line). No new files.
 
 ## Migration / default behavior
 
-**Bayaan:** no change. Field absent → fallback fires → URL is
+**Istima:** no change. Field absent → fallback fires → URL is
 `https://cdn.thebayaan.com/timestamps`. Zero action required; byte-equivalent
 to today.
 
@@ -142,10 +142,10 @@ TimestampFetchService constructs (already documented in PR #278's RFC text).
 
 2. **Default inline at the consumer vs in `config/branding.js`.** This RFC
    uses the inline `??` fallback (consistent with RFC-010 and RFC-014).
-   An alternative would be to set the field explicitly in Bayaan's
+   An alternative would be to set the field explicitly in Istima's
    `config/branding.js` and read without a fallback. The inline pattern is
    more fork-friendly (a fork that forgets the field still gets sensible
-   behavior); the explicit pattern makes Bayaan's default URL more
+   behavior); the explicit pattern makes Istima's default URL more
    discoverable. Happy to flip if there's a maintainer preference.
 
 ---
