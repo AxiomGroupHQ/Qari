@@ -43,9 +43,7 @@ export const TabletDockedPlayer: React.FC<TabletDockedPlayerProps> = React.memo(
       if (currentTrack?.id) {
         prevTrackIdRef.current = currentTrack.id;
       }
-      return (
-        (trackLoading && isTrackChanging) || playbackState === 'buffering'
-      );
+      return (trackLoading && isTrackChanging) || playbackState === 'buffering';
     }, [trackLoading, playbackState, currentTrack?.id]);
 
     const handlePress = useCallback(() => {

@@ -42,7 +42,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = join(__dirname, '../data/mushaf/qcf/qcf-pages.json');
 
 const args = process.argv.slice(2);
-const SEVERITY_FILTER = args.find(a => a.startsWith('--severity='))
+const SEVERITY_FILTER = args
+  .find(a => a.startsWith('--severity='))
   ?.split('=')[1]; // 'high' | 'all'
 const JSON_OUTPUT = args.includes('--json');
 
@@ -94,11 +95,7 @@ for (const page of data.pages) {
     page.l.length < TOO_FEW_LINES_PER_PAGE &&
     !EXPECTED_SHORT_PAGES.has(page.p)
   ) {
-    add(
-      'too-few-lines',
-      SOFT,
-      `${page.l.length} lines (typical 13–15)`,
-    );
+    add('too-few-lines', SOFT, `${page.l.length} lines (typical 13–15)`);
   }
 
   // Page-level: gap in line numbering. Lines should be a contiguous
@@ -189,7 +186,9 @@ for (const page of data.pages) {
         add(
           'backwards-codepoint-jump',
           HARD,
-          `line ${line.n}: U+${prevPuaCp.toString(16).toUpperCase()} → U+${cp.toString(16).toUpperCase()}`,
+          `line ${line.n}: U+${prevPuaCp.toString(16).toUpperCase()} → U+${cp
+            .toString(16)
+            .toUpperCase()}`,
         );
         break;
       }
@@ -214,7 +213,9 @@ for (const page of data.pages) {
       add(
         'line-spans-many-verses',
         HARD,
-        `line ${line.n}: ${verseSet.size} verses (${[...verseSet].slice(0, 4).join(', ')}${verseSet.size > 4 ? '...' : ''})`,
+        `line ${line.n}: ${verseSet.size} verses (${[...verseSet]
+          .slice(0, 4)
+          .join(', ')}${verseSet.size > 4 ? '...' : ''})`,
       );
     }
 
@@ -226,7 +227,9 @@ for (const page of data.pages) {
         add(
           'backwards-verse-range',
           HARD,
-          `line ${line.n} starts at ${fmtLoc(firstLoc)} but previous line ended at ${fmtLoc(prevLineLastLoc)}`,
+          `line ${line.n} starts at ${fmtLoc(
+            firstLoc,
+          )} but previous line ended at ${fmtLoc(prevLineLastLoc)}`,
         );
       }
       prevLineLastLoc = lastLoc;
@@ -254,7 +257,9 @@ for (const page of data.pages) {
         add(
           'page-boundary-discontinuity',
           HARD,
-          `page starts at ${fmtLoc(firstLoc)} but previous page ended at ${fmtLoc(prevPageLastLoc)}`,
+          `page starts at ${fmtLoc(
+            firstLoc,
+          )} but previous page ended at ${fmtLoc(prevPageLastLoc)}`,
         );
       }
     }
@@ -287,19 +292,27 @@ if (JSON_OUTPUT) {
 }
 
 const SEVERE_PAGES = filtered.filter(f => f.score >= 6).map(f => f.page);
-const HARD_PAGES = filtered.filter(f => f.score >= HARD && f.score < 6).map(f => f.page);
+const HARD_PAGES = filtered
+  .filter(f => f.score >= HARD && f.score < 6)
+  .map(f => f.page);
 const SOFT_PAGES = filtered.filter(f => f.score < HARD).map(f => f.page);
 
 console.log(`Found ${filtered.length} suspect page(s).\n`);
 
 console.log(
-  `Severe (score ≥ 6): ${SEVERE_PAGES.length} pages — ${SEVERE_PAGES.join(', ') || '(none)'}`,
+  `Severe (score ≥ 6): ${SEVERE_PAGES.length} pages — ${
+    SEVERE_PAGES.join(', ') || '(none)'
+  }`,
 );
 console.log(
-  `Hard   (score 3–5): ${HARD_PAGES.length} pages — ${HARD_PAGES.join(', ') || '(none)'}`,
+  `Hard   (score 3–5): ${HARD_PAGES.length} pages — ${
+    HARD_PAGES.join(', ') || '(none)'
+  }`,
 );
 console.log(
-  `Soft   (score 1–2): ${SOFT_PAGES.length} pages — ${SOFT_PAGES.join(', ') || '(none)'}`,
+  `Soft   (score 1–2): ${SOFT_PAGES.length} pages — ${
+    SOFT_PAGES.join(', ') || '(none)'
+  }`,
 );
 console.log();
 

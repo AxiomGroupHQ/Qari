@@ -83,7 +83,9 @@ function makeService(): {service: ExpoAudioService; player: FakeAudioPlayer} {
   const service = ExpoAudioService.getInstance();
   service.reset();
   const player = new FakeAudioPlayer();
-  service.setPlayer(player as unknown as Parameters<typeof service.setPlayer>[0]);
+  service.setPlayer(
+    player as unknown as Parameters<typeof service.setPlayer>[0],
+  );
   return {service, player};
 }
 
@@ -111,12 +113,16 @@ describe('ExpoAudioService — Group A characterization', () => {
     service.reset();
 
     const first = new FakeAudioPlayer();
-    service.setPlayer(first as unknown as Parameters<typeof service.setPlayer>[0]);
+    service.setPlayer(
+      first as unknown as Parameters<typeof service.setPlayer>[0],
+    );
     expect(service.getPlayer()).toBe(first);
     expect(service.hasPlayer()).toBe(true);
 
     const second = new FakeAudioPlayer();
-    service.setPlayer(second as unknown as Parameters<typeof service.setPlayer>[0]);
+    service.setPlayer(
+      second as unknown as Parameters<typeof service.setPlayer>[0],
+    );
     expect(service.getPlayer()).toBe(second);
     expect(service.getPlayer()).not.toBe(first);
   });
@@ -141,7 +147,9 @@ describe('ExpoAudioService — Group A characterization', () => {
 
     expect(service.getPlaybackState()).toBe('ready');
     expect(service.getCurrentUrl()).toBe('https://example.test/track.mp3');
-    expect(player.replace).toHaveBeenCalledWith({uri: 'https://example.test/track.mp3'});
+    expect(player.replace).toHaveBeenCalledWith({
+      uri: 'https://example.test/track.mp3',
+    });
     // Listeners observed loading then ready (idle is the pre-listener baseline).
     expect(states).toContain('loading');
     expect(states[states.length - 1]).toBe('ready');
@@ -238,7 +246,9 @@ describe('ExpoAudioService — Group A characterization', () => {
 
     // At minimum: loading, ready, playing — plus any intermediate notifications.
     const states = observed.map(s => s.playbackState);
-    expect(states).toEqual(expect.arrayContaining(['loading', 'ready', 'playing']));
+    expect(states).toEqual(
+      expect.arrayContaining(['loading', 'ready', 'playing']),
+    );
 
     // Every notification carries the full state shape.
     for (const s of observed) {

@@ -61,10 +61,12 @@ export const HomeCardOptionsSheet = (
       ? isLovedWithRewayat(reciterId, surahId, rewayatId)
       : false;
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const handleClose = useCallback(() => {
     SheetManager.hide('home-card-options');
   }, []);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const handleGoToReciter = useCallback(() => {
     handleClose();
     setTimeout(() => {
@@ -75,12 +77,14 @@ export const HomeCardOptionsSheet = (
     }, 300);
   }, [handleClose, router, reciterId]);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const handleToggleFavorite = useCallback(async () => {
     const reciter = await getReciterById(reciterId);
     if (reciter) toggleFavorite(reciter);
     handleClose();
   }, [reciterId, toggleFavorite, handleClose]);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const handleToggleLoved = useCallback(() => {
     if (surahId !== undefined && rewayatId) {
       toggleLoved(reciterId, surahId, rewayatId);
@@ -88,6 +92,7 @@ export const HomeCardOptionsSheet = (
     handleClose();
   }, [reciterId, surahId, rewayatId, toggleLoved, handleClose]);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const handleAddToQueue = useCallback(async () => {
     if (surahId === undefined) return;
     const reciter = await getReciterById(reciterId);
@@ -114,6 +119,7 @@ export const HomeCardOptionsSheet = (
     handleClose();
   }, [reciterId, surahId, rewayatId, addToQueue, handleClose]);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const handleAddToPlaylist = useCallback(() => {
     if (surahId === undefined) return;
     const surah = getSurahById(surahId);
@@ -126,6 +132,7 @@ export const HomeCardOptionsSheet = (
     }, 300);
   }, [reciterId, surahId, rewayatId, handleClose]);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const handleShare = useCallback(async () => {
     const reciter = await getReciterById(reciterId);
     const slug = reciter?.slug ?? String(reciterId);
@@ -159,6 +166,7 @@ export const HomeCardOptionsSheet = (
     handleClose,
   ]);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const handleRemoveFromRecents = useCallback(() => {
     if (recentIndex !== undefined) {
       useRecentlyPlayedStore.getState().removeTrack(recentIndex);
@@ -166,6 +174,7 @@ export const HomeCardOptionsSheet = (
     handleClose();
   }, [recentIndex, handleClose]);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const handleContinuePlaying = useCallback(() => {
     handleClose();
     payload.onContinuePlaying?.();

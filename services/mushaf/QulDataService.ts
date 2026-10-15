@@ -60,7 +60,9 @@ class QulDataService {
     const check = await db
       .getFirstAsync<{
         name: string;
-      }>("SELECT name FROM sqlite_master WHERE type='table' AND name='similar_ayahs';")
+      }>(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='similar_ayahs';",
+      )
       .catch(() => null);
     if (!check) {
       await db.closeAsync();
@@ -79,7 +81,9 @@ class QulDataService {
     const check = await db
       .getFirstAsync<{
         name: string;
-      }>("SELECT name FROM sqlite_master WHERE type='table' AND name='phrases';")
+      }>(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='phrases';",
+      )
       .catch(() => null);
     if (!check) {
       await db.closeAsync();

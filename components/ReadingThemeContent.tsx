@@ -345,6 +345,7 @@ interface MiniaturePreviewProps {
   dkFontFamily: string;
 }
 
+// eslint-disable-next-line react/display-name -- memo wrapper, name inferred from the const
 const MiniaturePreview: React.FC<MiniaturePreviewProps> = React.memo(
   ({readingTheme, fontMgr, dkFontFamily}) => {
     const [containerWidth, setContainerWidth] = useState(0);
@@ -401,6 +402,7 @@ function computeDividerFontSize(
   return (targetWidth / measuredW) * refSize;
 }
 
+// eslint-disable-next-line react/display-name -- memo wrapper, name inferred from the const
 const MushafPreviewCanvas: React.FC<MushafPreviewCanvasProps> = React.memo(
   ({width, fontMgr, fontFamily, textColor, dividerColor}) => {
     const quranCommonTypeface = mushafPreloadService.quranCommonTypeface;

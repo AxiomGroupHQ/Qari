@@ -161,6 +161,7 @@ export default function BrowseSurahs({theme, onBack}: BrowseSurahsProps) {
   const navigation = useNavigation();
   const glassColorScheme = useGlassColorScheme();
   const insets = useSafeAreaInsets();
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const iosHeaderHeight = isGlass ? useHeaderHeight() : 0;
   const {askEveryTime, defaultReciterSelection} = useSettings();
   const defaultReciter = useReciterStore(state => state.defaultReciter);

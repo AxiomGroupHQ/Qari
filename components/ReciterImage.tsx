@@ -59,7 +59,7 @@ export const ReciterImage: React.FC<ReciterImageProps> = React.memo(
     // Catalog entries with `image_url` should win so reciters without a bundled
     // asset still render their photo. Local stays as a fallback for reciters
     // whose catalog entry has no image_url.
-    const imageSource = imageUrl ? {uri: imageUrl} : localImageSource ?? null;
+    const imageSource = imageUrl ? {uri: imageUrl} : (localImageSource ?? null);
 
     return (
       <View style={[styles.container, style]}>

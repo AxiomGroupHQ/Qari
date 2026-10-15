@@ -25,7 +25,10 @@ export async function fetchMp3QuranSurah(
 ): Promise<AyahTimestamp[]> {
   const url = `${MP3QURAN_BASE}?read=${readId}&surah=${surahNumber}`;
   const res = await fetch(url);
-  if (!res.ok) throw new Error(`mp3quran ${res.status} for read=${readId} surah=${surahNumber}`);
+  if (!res.ok)
+    throw new Error(
+      `mp3quran ${res.status} for read=${readId} surah=${surahNumber}`,
+    );
   const raw = (await res.json()) as Mp3QuranEntry[];
   if (!Array.isArray(raw) || raw.length === 0) return [];
   return raw.map(e => ({
@@ -43,7 +46,10 @@ export async function fetchQdcSurah(
 ): Promise<AyahTimestamp[]> {
   const url = `${QDC_BASE}/${reciterId}/audio_files?chapter=${surahNumber}&segments=true`;
   const res = await fetch(url);
-  if (!res.ok) throw new Error(`qdc ${res.status} for reciter=${reciterId} surah=${surahNumber}`);
+  if (!res.ok)
+    throw new Error(
+      `qdc ${res.status} for reciter=${reciterId} surah=${surahNumber}`,
+    );
   const json = (await res.json()) as QdcResponse;
   const timings = json.audio_files?.[0]?.verse_timings ?? [];
   if (timings.length === 0) return [];

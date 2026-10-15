@@ -1,4 +1,8 @@
-import {S3Client, PutObjectCommand, HeadObjectCommand} from '@aws-sdk/client-s3';
+import {
+  S3Client,
+  PutObjectCommand,
+  HeadObjectCommand,
+} from '@aws-sdk/client-s3';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -60,7 +64,8 @@ export async function objectExists(key: string): Promise<boolean> {
       e &&
       typeof e === 'object' &&
       '$metadata' in e &&
-      (e as {$metadata: {httpStatusCode: number}}).$metadata.httpStatusCode === 404
+      (e as {$metadata: {httpStatusCode: number}}).$metadata.httpStatusCode ===
+        404
     ) {
       return false;
     }

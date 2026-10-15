@@ -13,7 +13,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-const ADMIN_URL = process.env.BAYAAN_ADMIN_URL || process.env.EXPO_PUBLIC_BAYAAN_API_URL;
+const ADMIN_URL =
+  process.env.BAYAAN_ADMIN_URL || process.env.EXPO_PUBLIC_BAYAAN_API_URL;
 const ADMIN_TOKEN = process.env.BAYAAN_ADMIN_TOKEN;
 
 if (!ADMIN_URL || !ADMIN_TOKEN) {
@@ -22,9 +23,14 @@ if (!ADMIN_URL || !ADMIN_TOKEN) {
 
 const dryRun = process.argv.includes('--dry-run');
 
-const reportPath = path.resolve(process.cwd(), 'scripts/.mirror-timestamps-report.json');
+const reportPath = path.resolve(
+  process.cwd(),
+  'scripts/.mirror-timestamps-report.json',
+);
 if (!fs.existsSync(reportPath)) {
-  throw new Error(`Report file not found at ${reportPath}. Run mirror:timestamps first.`);
+  throw new Error(
+    `Report file not found at ${reportPath}. Run mirror:timestamps first.`,
+  );
 }
 
 const report = JSON.parse(fs.readFileSync(reportPath, 'utf-8')) as {
@@ -63,4 +69,7 @@ async function main() {
   }
 }
 
-main().catch(e => { console.error(e); process.exit(1); });
+main().catch(e => {
+  console.error(e);
+  process.exit(1);
+});

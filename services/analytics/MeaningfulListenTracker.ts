@@ -10,8 +10,8 @@ interface TrackInfo {
 
 export class MeaningfulListenTracker {
   private currentTrack: TrackInfo | null = null;
-  private thresholdMs: number = 0;
-  private hasFired: boolean = false;
+  private thresholdMs = 0;
+  private hasFired = false;
   private readonly onMeaningfulListen: (props: MeaningfulListenProps) => void;
 
   constructor(onMeaningfulListen: (props: MeaningfulListenProps) => void) {

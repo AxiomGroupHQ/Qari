@@ -32,9 +32,9 @@ import type {PlayerController} from '../ports';
  * is a no-op the consumer overrides via subclass or composition. The full
  * implementation arrives with RFC-005.
  */
-export class ExpoAudioPlayerControllerAdapter<TTrack extends BaseTrack = BaseTrack>
-  implements PlayerController<TTrack>
-{
+export class ExpoAudioPlayerControllerAdapter<
+  TTrack extends BaseTrack = BaseTrack,
+> implements PlayerController<TTrack> {
   onPlaybackStateChange(_state: PlaybackState): void {
     // RFC-005: forward state to consumer store.
   }

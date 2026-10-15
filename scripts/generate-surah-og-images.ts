@@ -395,19 +395,27 @@ function buildHtml(surah: SurahData, dark: boolean): string {
   <svg class="mesh" width="${SIZE}" height="${SIZE}" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <radialGradient id="g1" cx="0.2" cy="0.3" r="0.45">
-        <stop offset="0%" stop-color="${palette[0]}" stop-opacity="${mainOpacity}"/>
+        <stop offset="0%" stop-color="${
+          palette[0]
+        }" stop-opacity="${mainOpacity}"/>
         <stop offset="100%" stop-color="${palette[0]}" stop-opacity="0"/>
       </radialGradient>
       <radialGradient id="g2" cx="0.8" cy="0.75" r="0.4">
-        <stop offset="0%" stop-color="${palette[1]}" stop-opacity="${mainOpacity}"/>
+        <stop offset="0%" stop-color="${
+          palette[1]
+        }" stop-opacity="${mainOpacity}"/>
         <stop offset="100%" stop-color="${palette[1]}" stop-opacity="0"/>
       </radialGradient>
       <radialGradient id="g3" cx="0.6" cy="0.2" r="0.32">
-        <stop offset="0%" stop-color="${palette[2]}" stop-opacity="${secondaryOpacity}"/>
+        <stop offset="0%" stop-color="${
+          palette[2]
+        }" stop-opacity="${secondaryOpacity}"/>
         <stop offset="100%" stop-color="${palette[2]}" stop-opacity="0"/>
       </radialGradient>
       <radialGradient id="g4" cx="0.3" cy="0.85" r="0.28">
-        <stop offset="0%" stop-color="${palette[3]}" stop-opacity="${secondaryOpacity}"/>
+        <stop offset="0%" stop-color="${
+          palette[3]
+        }" stop-opacity="${secondaryOpacity}"/>
         <stop offset="100%" stop-color="${palette[3]}" stop-opacity="0"/>
       </radialGradient>
     </defs>
@@ -423,7 +431,9 @@ function buildHtml(surah: SurahData, dark: boolean): string {
         <span class="place-icon">${placeIcon}</span>
       </div>
     </div>
-    <div class="arabic-name">&#x${(SURAH_GLYPHS[surah.id]?.codePointAt(0) ?? 0xe904).toString(16)};</div>
+    <div class="arabic-name">&#x${(
+      SURAH_GLYPHS[surah.id]?.codePointAt(0) ?? 0xe904
+    ).toString(16)};</div>
     <div class="surah-name">${surah.name}</div>
     <div class="translated">${surah.translated_name_english}</div>
     <div class="bottom-row">

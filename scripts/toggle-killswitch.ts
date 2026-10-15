@@ -59,9 +59,9 @@ async function fetchCurrentConfig(): Promise<AppConfig> {
 }
 
 function buildS3Client(env: Record<string, string>): S3Client {
-  const accountId = env['R2_ACCOUNT_ID'];
-  const accessKeyId = env['R2_ACCESS_KEY_ID'];
-  const secretAccessKey = env['R2_SECRET_ACCESS_KEY'];
+  const accountId = env.R2_ACCOUNT_ID;
+  const accessKeyId = env.R2_ACCESS_KEY_ID;
+  const secretAccessKey = env.R2_SECRET_ACCESS_KEY;
 
   if (!accountId || !accessKeyId || !secretAccessKey) {
     console.error('Missing R2 credentials in .env.r2');
@@ -136,7 +136,9 @@ async function main(): Promise<void> {
   const config: AppConfig = {useBackendApi};
 
   console.log(
-    `Setting useBackendApi to ${useBackendApi} (${useBackendApi ? 'backend enabled' : 'killswitch active'})...`,
+    `Setting useBackendApi to ${useBackendApi} (${
+      useBackendApi ? 'backend enabled' : 'killswitch active'
+    })...`,
   );
 
   await uploadConfig(client, config);

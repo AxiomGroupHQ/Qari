@@ -35,7 +35,12 @@ module.exports = {
     // "@typescript-eslint/no-use-before-define": ["error"],
     // Add this rule to allow ES module imports in the server file
     '@typescript-eslint/no-var-requires': 'off',
+    // Empty functions are used as intentional no-ops (callbacks, default props).
+    '@typescript-eslint/no-empty-function': 'off',
+    // Polling loops use while (true) with explicit breaks/returns.
+    'no-constant-condition': ['error', {checkLoops: false}],
   },
+  overrides: [{files: ['scripts/**'], env: {node: true}}],
   settings: {
     react: {
       version: 'detect',
