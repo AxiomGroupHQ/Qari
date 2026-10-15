@@ -1,0 +1,724 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Fitaande jooɗorde jaɓɓi: {{message}}",
+    "errorLoadingFonts": "Fitaande rewtugo ɗemngal binndi"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA suudu"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Fuu",
+      "clearAll": "Raɓɓu fuu",
+      "hasPhoto": "Woodi foto"
+    },
+    "filterModal": {
+      "apply": "Ƴamu",
+      "filterReciters": "Suɓtu ɗiɗɗorɓe",
+      "recitationStyles": "Ngonka ɗiɗɗugo",
+      "reset": "Fillitaago",
+      "rewayatTypes": "Ɓaylooji Rewayaat"
+    },
+    "recitersFound_many": "{{count}} ɗiɗɗorɓe ngiɗaama e suɓtirde jooni",
+    "recitersFound_one": "{{count}} ɗiɗɗoowo yiɗaama e suɓtirde jooni",
+    "recitersFound_other": "{{count}} ɗiɗɗorɓe ngiɗaama e suɓtirde jooni"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Sura yiɗaaɗe"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Maɓɓu aaya ngam yi'ugo ɗo",
+      "bookmarks": "Maɓɓooji",
+      "noBookmarksYet": "Alaa maɓɓoojol tawaaɗo",
+      "removeBookmark": "Ittu maɓɓooje"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Rewayaat",
+      "searchPlaylistsRecitersSurahsRewayat": "Yiylo liste, ɗiɗɗorɓe, sura, rewayaat...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Yiylo liste, ɗiɗɗorɓe, sura, rewayaat e ndaɓɓooje",
+      "searchYourCollection": "Yiylo jooɗorde maaɗa",
+      "searching": "Ɗum yiylo...",
+      "tryDifferentKeywords": "Haaɗtu kelle goɗɗe"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Ndaɓɓu sura ngam yi'ugo ɗo",
+      "noDownloadsYet": "Alaa ndaɓɓooje tawaaɗe",
+      "playAll": "Ɗiɗɗu fuu"
+    },
+    "favoritereciters": {
+      "addReciters": "Ɓeydu ɗiɗɗorɓe",
+      "addRecitersToSeeThem": "Ɓeydu ɗiɗɗorɓe ngam yi'ugo ɗo",
+      "noFavoriteRecitersYet": "Alaa ɗiɗɗoowo suɓaaɗo tawaaɗo",
+      "removeFromFavorites": "Ittu e suɓaaɓe",
+      "searchFavoriteReciters": "Yiylo ɗiɗɗorɓe suɓaaɓe"
+    },
+    "index": {
+      "addToCollection": "Ɓeydu e jooɗorde",
+      "bookmarks": "Maɓɓooji",
+      "createYourFirstPlaylist": "Hawtu liste maaɗa artungo",
+      "downloads": "Ndaɓɓooje",
+      "items_many": "{{count}} huuɗe",
+      "items_one": "{{count}} huunde",
+      "items_other": "{{count}} huuɗe",
+      "loved": "Yiɗaaɗe",
+      "noBookmarksYet": "Alaa maɓɓoojol tawaaɗo",
+      "noDownloadsYet": "Alaa ndaɓɓooje tawaaɗe",
+      "noFavoritesYet": "Alaa suɓaaɗo tawaaɗo",
+      "noLovedSurahsYet": "Alaa sura yiɗaaɗe tawaaɗe",
+      "noNotesYet": "Alaa hoorɗe tawaaɗe",
+      "noUploadsYet": "Alaa ɗum nastinaa tawaaɗo",
+      "notes": "Hoorɗe",
+      "playlists": "Liste",
+      "reciters": "Ɗiɗɗorɓe",
+      "uploads": "Nastinaaɗe"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Sura yiɗaaɗe fuu ndaɓɓaama.",
+      "allLovedSurahsHaveBeen": "Sura yiɗaaɗe fuu ndaɓɓaama.",
+      "downloadError": "Fitaande ndaɓɓugo",
+      "loveSurahsToSeeThem": "Yiɗ sura ngam yi'ugo ɗo",
+      "noLovedSurahsYet": "Alaa sura yiɗaaɗe tawaaɗe",
+      "someDownloadsMayHaveFailed": "Ndaɓɓooje feere ngaɗaaka.",
+      "unloveAllSurahs": "Ittu yiɗde sura fuu"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Ɓeydu hoorɗe e aaya ngam yi'ugo ɗo",
+      "editNote": "Taaskin hoore",
+      "noNotesYet": "Alaa hoorɗe tawaaɗe",
+      "notes": "Hoorɗe"
+    },
+    "playlistModal": {
+      "name": "Innde"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Hawtu liste ngam yi'ugo ɗo",
+      "noPlaylistsYet": "Alaa liste tawaaɗe",
+      "playlists": "Liste"
+    },
+    "uploads": {
+      "removeAllUploads": "Ittu nastinaaɗe fuu",
+      "uploadRecitationsToSeeThem": "Nastin ɗiɗɗugo ngam yi'ugo ɗo"
+    }
+  },
+  "common": {
+    "1Time": "Cilol 1",
+    "2Times": "Cilol 2",
+    "3Times": "Cilol 3",
+    "addToCollection": "Ɓeydu e jooɗorde",
+    "addToQueue": "Ɓeydu e ɗuɗal",
+    "allSurahs": "Sura fuu",
+    "alreadyDownloaded": "Ndaɓɓaama ɗoon",
+    "arabic": "Arabeere",
+    "asc": "Ɓesdugo",
+    "browseAll": "Yiylo fuu",
+    "browseAllReciters": "Yiylo ɗiɗɗorɓe fuu",
+    "cancel": "Haaytu",
+    "clear": "Raɓɓu",
+    "copyToClipboard": "Kopir e clipboard",
+    "createNewPlaylist": "Hawtu liste hesere",
+    "defaultReciter": "Ɗiɗɗoowo artiiɗo",
+    "delete": "Ittu",
+    "deleteNote": "Ittu hoore",
+    "deleteRecitation": "Ittu ɗiɗɗugo",
+    "desc": "Nanndugo",
+    "downloadComplete": "Ndaɓɓugo timmi",
+    "downloadFailed": "Ndaɓɓugo waɗaaka",
+    "downloads": "Ndaɓɓooje",
+    "editDetails": "Taaskin firo",
+    "error": "Fitaande",
+    "favoriteReciters": "Ɗiɗɗorɓe suɓaaɓe",
+    "followAlong": "Ɗaɓɓu binndol",
+    "from": "Immorde",
+    "goToReciter": "Yah e ɗiɗɗoowo",
+    "goToVerse": "Yah e aaya",
+    "learnAboutSurah": "Anndu ko wayi e sura",
+    "loading": "Ɗum rewtina...",
+    "loop": "Wilitaago",
+    "loved": "Yiɗaaɗe",
+    "mushafSettings": "Teelte Mushaf",
+    "next": "Faahaare",
+    "noRecitersFound": "Alaa ɗiɗɗoowo tawaaɗo",
+    "noResultsFound": "Alaa ko tawaa",
+    "noUploadsYet": "Alaa ɗum nastinaaɗo tawaaɗo",
+    "play": "Ɗiɗɗu",
+    "playEachVerse": "Ɗiɗɗu aaya kala",
+    "playNow": "Ɗiɗɗu jooni",
+    "playSpeed": "Ɓaawal ɗiɗɗugo",
+    "playTheRange": "Ɗiɗɗu ballal",
+    "playlistName": "Innde liste",
+    "prev": "Jaŋnde",
+    "readingTheme": "Ngonka ɗaɓɓugo",
+    "recentSearches": "Yiylooji sakitiiji",
+    "reciter": "Ɗiɗɗoowo",
+    "reciterChoice": "Suɓtugo ɗiɗɗoowo",
+    "reciters": "Ɗiɗɗorɓe",
+    "remove": "Ittu",
+    "removeAllDownloads": "Ittu ndaɓɓooje fuu",
+    "removeHighlight": "Ittu mooɓtugo",
+    "rev": "Rewru",
+    "save": "Hisnu",
+    "search": "Yiylo",
+    "searchReciters": "Yiylo ɗiɗɗorɓe...",
+    "searchSurahs": "Yiylo sura",
+    "share": "Séédu",
+    "shareAsImage": "Séédu ko foto",
+    "shareAsText": "Séédu ko binndol",
+    "sharedPhrases": "Haala wuttere",
+    "showBasmallah": "Hollu Bismillaah",
+    "stop": "Ɗon",
+    "storage": "Reeni",
+    "surah": "Sura",
+    "surahs": "Sura",
+    "to": "Haa",
+    "translation": "Firo",
+    "translationsTafaseer": "Firooji e Tafsiir",
+    "transliteration": "Binndol ko haaɗi",
+    "uploads": "Nastinaaɗe",
+    "useDefaultReciter": "Huutoro ɗiɗɗoowo artiiɗo",
+    "verseReference": "Hollirde aaya",
+    "verses": "Aaya",
+    "whatSNew": "Ko hesɗi",
+    "wordByWord": "Daande e daande",
+    "writeYourNoteHere": "Winndu hoore maaɗa ɗo...",
+    "yourPlaylists": "Liste maaɗa"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Ɗiɗɗu sura fuu"
+    },
+    "searchHeader": {
+      "searchSurahs": "Yiylo sura"
+    },
+    "searchView": {
+      "noSurahsFound": "Sura tawaaka"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Alaa sura"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Ɓeydu ɗiɗɗugo",
+      "uploadRecitationsToSeeThem": "Nastin ɗiɗɗugo ngam yi'ugo ɗo"
+    }
+  },
+  "downloads": {
+    "subtitle_many": "Ndaɓɓaama • sura {{count}}",
+    "subtitle_one": "Ndaɓɓaama • sura {{count}}",
+    "subtitle_other": "Ndaɓɓaama • sura {{count}}"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Yaafo.. fitaande waɗii"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Yiylo sura 114 fuu"
+    },
+    "savedAdhkarHero": {
+      "saved": "Hisnaaɗe",
+      "yourCollection": "Jooɗorde maaɗa"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SURA ŊAAL"
+    },
+    "surahsHero": {
+      "number": "Limgal"
+    }
+  },
+  "language": {
+    "later": "Caggal",
+    "restartMessage": "Fuɗɗitu app ngam ƴamugo anndal hesere.",
+    "restartNow": "Fuɗɗito jooni",
+    "restartTitle": "Fuɗɗitaago ina haani",
+    "search": "Yiylo ɗemɗe",
+    "system": "Ɗemngal kuutoral"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Jokku"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Diwu"
+    }
+  },
+  "mushaf": {
+    "juz": "Juz {{juz}}",
+    "loadingMushaf": "Mushaf ina rewtina…",
+    "main": {
+      "mushafSettings": "Teelte Mushaf"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Sanjo ɗiɗɗoowo",
+      "changeReciter2": "Sanjo ɗiɗɗoowo",
+      "nextAyah": "Aaya faahaaɗa",
+      "playbackOptions": "Suɓtooji ɗiɗɗugo",
+      "previousAyah": "Aaya adɗa"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Tawtu sura, aaya, hoodere malla juz",
+      "recentReads": "ƊIƊƊAAGU SAKITIINGU",
+      "searchSurahsPagesOrJuz": "Yiylo sura, hoodere malla juz...",
+      "searchTheMushaf": "Yiylo ka Mushaf"
+    },
+    "options": "Suɓtooji",
+    "page": "Hoodere {{page}}",
+    "pageAndSurah": "Hoodere {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushaf waawaa rewtineede.",
+    "tryAgain": "Haaɗtu fahin"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Ina feeñnina innde Allah e innde Alla manngu bana Rabb ka mushaf."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Feeñnugo jooɓaaɗo e hiirde",
+    "arabicFontSize": "Mawnugol binndol Arabeere",
+    "bold": "Tiiɗɗo",
+    "book": "Defte",
+    "colorLegend": "Tinndinol kuuɗe",
+    "currentlyReading": "Ɗum ɗaɓɓaa jooni",
+    "divineNames": "INNDE ALLAH",
+    "fontSize": "Mawnugol binndol",
+    "fullscreen": "Ekraan timmuɗo",
+    "hamzaReplacedByLongVowel": "Hamza waylaama e dawrugol ɗuɗɗo",
+    "heavyLamInAllahAfter": "Lam teddungo e Allah caggal binndi tiiɗɗe",
+    "highlightAllahRabb": "Feeñnin Allah / Rabb",
+    "horizontal": "Dow-dow",
+    "ibdal": "Ibdaal",
+    "list": "Lisde",
+    "loadingSample": "Ɗum rewtina misaalu...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Feeñnugo ɓurɗo",
+    "medium": "Hakkunde",
+    "modernMadinahPrintedPipeline": "Ɗaɓɓugo Madiina hesere",
+    "mushaf": "Mushaf",
+    "normal": "Normaal",
+    "originalMushafWeight": "Tiiɗal Mushaf artiiɗo",
+    "pageDesign": "NASTUGO HOODERE",
+    "prolongedVowelAfterHamza": "Dawrugol ɗuɗɗo caggal hamza",
+    "readingTheme": "NGONKA ƊAƁƁUGO",
+    "scrollDirection": "SIGGUGO HEEWNDE",
+    "showDifferences": "Hollu ɓaylooji",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Feeñnugo seɗɗa ɓurɗo",
+    "softenedHamzaPronunciation": "Ɗemɓingo hamza labbinaaɗo",
+    "subcontinentNastaliqStyle": "Teskoode Nastaliiq",
+    "taghlizAlLam": "Taghliiz al-Laam",
+    "tajweedColoring": "Kuule Tajwiid",
+    "tashilMusahhala": "Tashiil / Musahhala",
+    "textPreviewNotYetAvailable": "JOOGORDE BINNDOL ALAA TAWAAKA",
+    "textThickness": "TIIƊAL BINNDOL",
+    "thematicHighlighting": "Feeñnugo e hiirde",
+    "trailingVowelOrMoodChange": "Waylugo dawrugol laabi malla ngonka tan",
+    "usingSaheehInternationalTranslationWith": "Huutoraama: Firo Saheeh International e hoorɗe les",
+    "vertical": "Dow-les",
+    "viewType": "NDIGU JOOGORDE",
+    "vowelMoodShift": "Waylugo dawrugol / ngonka",
+    "wordByWord": "DAANDE E DAANDE",
+    "wordVariant": "Ndiga daande"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Serveer tawaaka",
+    "connectionRestored": "Hawtanki ruttii",
+    "noInternetConnection": "Alaa internet",
+    "showingCachedData": "Ɗum hollata keɓal reenaaɗal"
+  },
+  "organize": {
+    "createReciter": "Hawtu \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Ɗuɗal",
+      "queueIsEmpty": "Ɗuɗal ina bonndi"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Maɓɓu ɗiɗɗugo ngam yi'ugo binndol e firo sura"
+    }
+  },
+  "playlist": {
+    "subtitle_many": "Liste • sura {{count}}",
+    "subtitle_one": "Liste • sura {{count}}",
+    "subtitle_other": "Liste • sura {{count}}"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Alaa sura e liste ndee"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Hoorɗe les"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Ɗiɗɗugo suɓaaɗo ngam sahaa nde tan",
+      "discover": "Tawtu",
+      "discoverANewVoice": "Tawtu ɓaawo hesere",
+      "explore": "Ɗaɓɓu",
+      "exploreTheUnexpected": "Ɗaɓɓu ko wanaa miijaaɗo",
+      "hearSomethingNew": "Nanndu huunde hesere",
+      "letTheQuranSurpriseYou": "Accu Alqur'aan haɓɓita ma",
+      "randomMix": "Hawtugo nde fotaa",
+      "randomRecitation": "Ɗiɗɗugo nde fotaa",
+      "shuffleListen": "Hawtu e nannde",
+      "surpriseMe": "Haɓɓita-mi"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Waylugo ngonka sendu ina ɗaɓɓi e app fuu"
+  },
+  "reciterBrowse": {
+    "allReciters": "Ɗiɗɗorɓe fuu",
+    "browseReciters": "Yiylo ɗiɗɗorɓe",
+    "favorites": "Suɓaaɓe"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Alaa ndaɓɓooje ngam ɗiɗɗoowo oo"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Nastinaaɗe am"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkaar",
+    "bestForMemorization": "Ɓuri ɓanndu ngam haɗdugo",
+    "bestForTajweed": "Ɓuri ngam tajwiid",
+    "continueListening": "Jokku nannde",
+    "exclusives": "Ko hoore",
+    "exploreByRewayah": "Ɗaɓɓu e rewayaat",
+    "featuredReciters": "Ɗiɗɗorɓe feeñnaaɓe",
+    "fromYourCollection": "E jooɗorde maaɗa",
+    "myRecitations": "Ɗiɗɗooji am",
+    "newToQuranStartHere": "Hesɗi e Alqur'aan? Fuɗɗu ɗo",
+    "seeMore": "Yiylo ɓuri",
+    "yourFavorites": "Ɓe ngiɗɗa"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Hakkilaaɗo",
+      "activeTafseer": "TAFSIIR HAKKILAAƊO",
+      "activeTranslation": "FIRO HAKKILAAƊO",
+      "deleteTafseer": "Ittu tafsiir",
+      "deleteTranslation": "Ittu firo",
+      "noTafaseerFound": "Alaa tafsiir tawaaɗo",
+      "noTranslationsFound": "Alaa firo tawaaɗo",
+      "unableToDownloadThisTafseer": "Tafsiir ɗoo waawaa ndaɓɓeede. Ƴeewtu hawtanki internet maaɗa, haaɗtu fahin.",
+      "unableToDownloadThisTranslation": "Firo ɗoo waawaa ndaɓɓeede. Ƴeewtu hawtanki internet maaɗa, haaɗtu fahin."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Alaa yiylooji sakitiiji",
+      "tryDifferentKeywordsOrCheck": "Haaɗtu kelle goɗɗe malla ƴeewtu binndol",
+      "yourSearchHistoryWillAppear": "Fuɗɗoode yiylooji maaɗa ina feeñan ɗo"
+    },
+    "surahsOrReciters": "Yiylo sura malla ɗiɗɗorɓe"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Hakkilaago sawru ɓurngo",
+      "browseByJuz": "Yiylo e juz",
+      "createAndManageYourOwn": "Hawtu e hooreejo liste maaɗa ɗiɗɗooji ɗi ngiɗɗa",
+      "crystalClearRecitationsFromThe": "Ɗiɗɗooji laabɗi immorde e ɗiɗɗorɓe ɓurɓe boɗɗum aduna, e yaadu moƴƴu",
+      "curatedCollections": "Jooɗorde suɓaaɗe",
+      "customPlaylists": "Liste hoore",
+      "customizeThemesAccentColorsAnd": "Taaskin ngonka, kuule feeñnooje e teelte sawru ko ngiɗɗa",
+      "downloadSurahsForOfflineListening": "Ndaɓɓu sura ngam nannugo bannda internet, ɗoon e fuu",
+      "easilyNavigateThroughTheQuran": "Yahru ɓaleere e Alqur'aan e ɗoyngol juz e ɗoftugol",
+      "features": "KUUƊE",
+      "highQualityAudio": "Sawru moƴƴo",
+      "listenReflectRememberAllah": "Nannu. Miijo. Haɓɓitaaɗo Allah.",
+      "offlineDownloads": "Ndaɓɓooje bannda internet",
+      "ourCommitment": "Ngiɗɗo amen",
+      "ourMission": "Ndeeƴal amen",
+      "personalization": "Kuutogo ko woni maaɗa",
+      "precisePlaybackControlWithContinuous": "Hakkilaago ɗiɗɗugo e ɗiɗɗugo jokkotooɗo e ɓaawal ɗiɗɗugo waylitaaɗal",
+      "quranBayanTafsirKnowledgeOur": "Alqur'aan • Bayaan • Tafsiir • Anndal. Muuɗum amen woni waɗugo nannugo e miijugo wonndu e ngurndan ñalnde kala: ka saare, ka laawol, e ko fuu ɗo a yiɗi hakkilaago Allah.",
+      "readListenAndReflect": "Ɗaɓɓu, Nannu, Miijo",
+      "readTheMushafExploreTranslations": "Ɗaɓɓu Mushaf, ɗaɓɓu firooji e tafsiir, hisnu aaya e hoorɗe, ruttu e adhkaar ñalnde kala. Suɓtu ɗiɗɗoowo maaɗa, hawtu liste, waɗu nannugo ngo yaadi e ñalnde maaɗa. Kuuɗe ɗe tawata ina ɓayloo e kuutoral; app ɗe ngomnaama ina mballa kadi ndaɓɓooje ngam nannugo bannda internet.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Sura jooɓaaɗe moƴƴum ngam sahaaji e hiirde ceertuɗe",
+      "weCareAboutTheAccuracy": "Min kaaɗii ngam goonga e ko seniiɗo, nastugo teddungo e dawrugol hoolaaɗo. Min njokki moƴƴinde ISTIMA ngam yimɓe kuutorooɓe. Allah ƴami ndeeƴal ngal, waɗa ngal ɓuri ngam fuu nannoowo, ɗaɓɓoowo e miijoowo."
+    },
+    "aboutApp": "Fii {{name}}",
+    "appearance": "FEEÑNUGO",
+    "defaultreciter": {
+      "changeDefaultReciter": "SANJO ƊIƊƊOOWO ARTIIƊO"
+    },
+    "developer": "WAƊOOWO",
+    "floatingDevMenu": "Lisde waɗooɓe wuuɗoore",
+    "language": "Ɗemngal",
+    "languageDescription": "Suɓtu ɗemngal app",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Huutoro ɗiɗɗoowo artiiɗo ngo suɓɗa kala",
+      "askEveryTime": "Ƴamu fii kala",
+      "chooseAReciterEachTime": "Suɓtu ɗiɗɗoowo fii kala nde ɗiɗɗata",
+      "chooseHowYouWantTo": "Suɓtu no ngiɗɗa suɓtugo ɗiɗɗorɓe nde ɗiɗɗata sura",
+      "defaultSelectionMethod": "NGOO SUƁTUGO ARTIIƊO",
+      "searchThroughOurCompleteCollection": "Yiylo jooɗorde amen ɗiɗɗorɓe timmuɗo",
+      "selectionPreference": "SUƁTUGO"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Ndaɓɓooje fuu ittaama.",
+      "areYouSureYouWant": "A hoolii ko a yiɗi ittugo ko ndaɓɓaama fuu? Kuugal ngal waylitaaka.",
+      "cache": "Cache",
+      "cacheHasBeenCleared": "Cache raɓɓaama.",
+      "clearCache": "Raɓɓu cache",
+      "failedToClearCache": "Raɓɓugo cache waɗaaka.",
+      "failedToRemoveDownloads": "Ittugo ndaɓɓooje waɗaaka.",
+      "free": "Hoyre",
+      "loadingStorageInformation": "Ɗum rewtina anndal reeni...",
+      "manageStorage": "HOOREEJO REENI",
+      "otherApps": "App goɗɗe",
+      "removeAllDownloads": "Ittu ndaɓɓooje fuu",
+      "removeAllTheQuranContent": "Ittu ko woni Alqur'aan fuu ndaɓɓuɗa ngam huutoragol bannda internet.",
+      "storageBreakdown": "TOONYUGO REENI",
+      "success": "Jaɓaama",
+      "thisWillClearYourCache": "Ɗum raɓɓan cache maaɗa. Ndaɓɓooje maaɗa ittaaka.",
+      "youCanFreeUpStorage": "A waawi hoyrinde reeni ko raɓɓi cache. Ndaɓɓooje maaɗa ittaaka."
+    },
+    "themePicker": {
+      "auto": "Ko hoore mum",
+      "dark": "Niɓɓe",
+      "light": "Njamndi"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Alaa tinndinoode waylooji"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Fii {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Ɓeydu ɗiɗɗoowo suɓaaɗo",
+      "uploadRecitation": "Nastin ɗiɗɗugo"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Sawru ladde",
+      "none": "Alaa",
+      "volume": "Tiiɗal sawru"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "misaal: Ɗiɗɗooji weetere"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Ittu ndaɓɓugo"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Timmi"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Ɓeydu e jooɗorde",
+      "addToQueue": "Ɓeydu e ɗuɗal",
+      "continuePlaying": "Jokku ɗiɗɗugo",
+      "goToReciter": "Yah e ɗiɗɗoowo",
+      "removeFromRecents": "Ittu e sakitiiji"
+    },
+    "mushafLayoutSheet": {
+      "back": "Rutto"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Aaya cakkitiiɗa",
+      "playbackSettings": "Teelte ɗiɗɗugo",
+      "selectRange": "Suɓtu ballal",
+      "startingVerse": "Aaya artiiɗa"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Teelte wilitaago",
+      "start": "Fuɗɗu",
+      "verseRange": "Ballal aaya"
+    },
+    "organizeRecitationSheet": {
+      "category": "Fedde",
+      "customReciter": "Ɗiɗɗoowo hoore",
+      "duA": "Du'aa",
+      "eGMorningAdhkar": "misaal: Adhkaar weetere",
+      "lecture": "Ekkitinol",
+      "moreOptions": "Suɓtooji ɓeydaaɗi",
+      "other": "Goɗɗum",
+      "recording": "Cannjirgol",
+      "rewayah": "Rewayaat",
+      "searchSurahs": "Yiylo sura...",
+      "style": "Ndiga",
+      "tafsir": "Tafsiir",
+      "title": "Hoorewol",
+      "type": "Ngaal",
+      "verseRangeOptional": "Ballal aaya (to a yiɗi)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Ɓaawal ɗiɗɗugo"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Huunde fuu e liste ndee ndaɓɓaama ɗoon.",
+      "anErrorOccurredWhileDownloading": "Fitaande waɗii nde ndaɓɓata liste. Haaɗtu fahin.",
+      "deletePlaylist": "Ittu liste",
+      "downloadingPlaylist": "Ndaɓɓata liste...",
+      "editPlaylist": "Taaskin liste",
+      "emptyPlaylist": "Liste bonndunde",
+      "thisPlaylistIsEmpty": "Liste ndee ina bonndi."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Fii Rewayaat",
+      "availableRewayat": "Rewayaat ɗe tawata"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Ɓeydugo sura e liste waɗaaka",
+      "failedToCreatePlaylist": "Hawtugo liste waɗaaka",
+      "noPlaylistsYetCreateYour": "Alaa liste tawaaɗe. Hawtu liste maaɗa artungo dow!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Ƴamu fii kala",
+      "randomReciter": "Ɗiɗɗoowo nde fotaa",
+      "selectReciter": "Suɓtu ɗiɗɗoowo"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Alaa aaya nanndi e aaya ɗoo tawaaɗa.",
+      "similarWording": "Haala nanndunde"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Ɗuɗal ɗoñgol",
+      "turnOffTimer": "Maaygu ɗuɗal"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Ittu e liste"
+    },
+    "verseActionsSheet": {
+      "addNote": "Ɓeydu hoore",
+      "copy": "Kopir",
+      "repeat": "Wilitaago",
+      "similarVerses": "Aaya nanndɗe",
+      "tafseer": "Tafsiir",
+      "theme": "Hiirde"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Suɓtooji kopir",
+      "selectWhatToCopy": "Suɓtu ko kopirata"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Kuul feeñnugo"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Séédu aaya"
+    }
+  },
+  "similarVerses": {
+    "foundIn_many": "Tawaama e aaya {{count}}",
+    "foundIn_one": "Tawaama e aaya {{count}}",
+    "foundIn_other": "Tawaama e aaya {{count}}"
+  },
+  "surahItem": {
+    "moreOptions": "Suɓtooji ɓeydaaɗi",
+    "opensMenuWithAdditionalActions": "Ina maɓɓa lisde kuuɗe ɓeydaaɗe ngam sura ndee",
+    "tapToPlaySurah": "Ƴoyu ngam ɗiɗɗugo sura"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "ID liste moƴƴaaka",
+      "playlistNotFound": "Liste tawaaka"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Alaa ɗiɗɗoowo tawaaɗo walaa sura fuu e liste ndee. Haaɗtu liste goɗɗo.",
+      "failedToPlayPlaylistPlease": "Ɗiɗɗugo liste waɗaaka. Haaɗtu fahin.",
+      "failedToPlayTrackPlease": "Ɗiɗɗugo ɗiɗɗol waɗaaka. Haaɗtu fahin.",
+      "failedToShufflePlaylistPlease": "Hawtugo liste waɗaaka. Haaɗtu fahin.",
+      "noReciterAvailable": "Alaa ɗiɗɗoowo",
+      "noSurahsInThisPlaylist": "Alaa sura e liste ndee"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Konte",
+      "appData": "App e keɓal",
+      "audioPlayback": "Sawru e ɗiɗɗugo",
+      "chooseYourPreferredReciter": "Suɓtu ɗiɗɗoowo ngo yiɗɗa",
+      "customizeQuranDisplayOptions": "Taaskin suɓtooji hollugo Alqur'aan",
+      "customizeReciterSelection": "Taaskin suɓtugo ɗiɗɗoowo",
+      "featureRequests": "Ƴamooje kuuɗe",
+      "feedback": "Jawaabu",
+      "helpSupport": "Walliigu e mballal",
+      "learnMoreAboutOurMission": "Anndu ɓuri ko wayi e ndeeƴal amen",
+      "manageQuranTranslationsAndCommentary": "Hooreejo firooji e tinndinooje Alqur'aan",
+      "privacyPolicy": "Sirru suturo",
+      "quran": "Alqur'aan",
+      "readOurTermsOfService": "Ɗaɓɓu laawol kuutoral amen",
+      "seeWhatSNewIn": "Ɗuɗɗu ko hesɗi e ndee version",
+      "shareYourExperienceWithOthers": "Séédu ko yi'ɗa e yimɓe goɗɗe",
+      "showTheFloatingDeveloperTools": "Hollu butoŋ kuuɗe waɗooɓe wuuɗoore",
+      "suggestImprovementsAndNewFeatures": "Hollu moƴƴinol e kuuɗe hesere",
+      "termsOfService": "Laawol kuutoral",
+      "viewAndManageStorageUsage": "Ƴeewtu e hooreejo kuutoral reeni",
+      "viewOurPrivacyPolicy": "Ƴeewtu sirru suturo amen",
+      "writeAReview": "Winndu ƴeewndo"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Haaytu",
+    "close": "Uddu",
+    "collection": "Jooɗorde",
+    "download": "Ndaɓɓu",
+    "downloads": "Ndaɓɓooje",
+    "error": "Huunde waɗii wooto",
+    "favorites": "Suɓaaɓe",
+    "home": "Suudu",
+    "language": "Ɗemngal",
+    "library": "Suudu deftere",
+    "loading": "Ɗum rewtina...",
+    "noResults": "Alaa ko tawaa",
+    "offline": "A walaa internet",
+    "pause": "Hippu",
+    "play": "Ɗiɗɗu",
+    "retry": "Haaɗtu fahin",
+    "save": "Hisnu",
+    "search": "Yiylo",
+    "settings": "Teelte",
+    "surahs": "Sura"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "SUƁTU KO AƊA YIƊI"
+    },
+    "highlightContent": {
+      "chooseColor": "SUƁTU KUUL"
+    },
+    "noteContent": {
+      "saveNote": "Hisnu hoore"
+    },
+    "shareContent": {
+      "shareLink": "Séédu hawtanki"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Alaa aaya nanndi e aaya ɗoo tawaaɗa.",
+      "sharedPhrases": "HAALA WUTTERE",
+      "similarWording": "HAALA NANNDUNDE"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Alaa tafsiir ndaɓɓaaɗo",
+      "tafseerNotAvailableForThis": "Tafsiir walaa ngam aaya ɗoo",
+      "tapHereToDownloadA": "Ƴoyu ɗo ngam ndaɓɓugo tafsiir e yi'ugo tinndinoore."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Alaa keɓal hiirde ngam aaya ɗoo.",
+      "passage": "Ballal"
+    },
+    "translationContent": {
+      "switch": "Waylu",
+      "translationNotAvailable": "Firo walaa"
+    }
+  },
+  "version": {
+    "label": "Version {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Ko hesɗi e"
+  },
+  "wordDetail": {
+    "context": "Aaya {{surah}}:{{ayah}} · Daande {{position}} e {{total}}"
+  }
+}

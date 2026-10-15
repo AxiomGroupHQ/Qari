@@ -1,0 +1,724 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Njumte ci tambali joŋantekat bi: {{message}}",
+    "errorLoadingFonts": "Njumte ci yeb araf yi"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Kër ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Yépp",
+      "clearAll": "Far yépp",
+      "hasPhoto": "Am na nataal"
+    },
+    "filterModal": {
+      "apply": "Jëfandikoo",
+      "filterReciters": "Sànni jàngalekat yi",
+      "recitationStyles": "Anam yu jàng",
+      "reset": "Jëlaat",
+      "rewayatTypes": "Xeetu Rewayaat"
+    },
+    "recitersFound_many": "Am na {{count}} jàngalekat ci sàmm yi nekk",
+    "recitersFound_one": "Am na {{count}} jàngalekat ci sàmm yi nekk",
+    "recitersFound_other": "Am na {{count}} jàngalekat ci sàmm yi nekk"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Surat yi ñu bëgg"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Maamal ayaat yi ngir gis leen fii",
+      "bookmarks": "Màndarga yi",
+      "noBookmarksYet": "Amul màndarga ba tey",
+      "removeBookmark": "Jële màndarga"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Rewayaat",
+      "searchPlaylistsRecitersSurahsRewayat": "Wut liste, jàngalekat, surat, rewayaat...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Wut liste, jàngalekat, surat, rewayaat ak yeb yi",
+      "searchYourCollection": "Wut sa jaayu",
+      "searching": "Ñuy wut...",
+      "tryDifferentKeywords": "Jéem baat yu ñaar"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Yeb surat yi ngir gis leen fii",
+      "noDownloadsYet": "Amul yeb ba tey",
+      "playAll": "Dëkkal yépp"
+    },
+    "favoritereciters": {
+      "addReciters": "Yokk jàngalekat",
+      "addRecitersToSeeThem": "Yokk jàngalekat ngir gis leen fii",
+      "noFavoriteRecitersYet": "Amul jàngalekat bu ñu bëgg ba tey",
+      "removeFromFavorites": "Jële ci ñi ñu bëgg",
+      "searchFavoriteReciters": "Wut jàngalekat yi ñu bëgg"
+    },
+    "index": {
+      "addToCollection": "Yokk ci jaay bi",
+      "bookmarks": "Màndarga yi",
+      "createYourFirstPlaylist": "Sos sa liste bu njëkk",
+      "downloads": "Yeb yi",
+      "items_many": "{{count}} yëf",
+      "items_one": "{{count}} yëf",
+      "items_other": "{{count}} yëf",
+      "loved": "Yi ñu bëgg",
+      "noBookmarksYet": "Amul màndarga ba tey",
+      "noDownloadsYet": "Amul yeb ba tey",
+      "noFavoritesYet": "Amul yu ñu bëgg ba tey",
+      "noLovedSurahsYet": "Amul surat bu ñu bëgg ba tey",
+      "noNotesYet": "Amul bind ba tey",
+      "noUploadsYet": "Amul yu ñu yokk ba tey",
+      "notes": "Bind yi",
+      "playlists": "Liste yi",
+      "reciters": "Jàngalekat yi",
+      "uploads": "Yu ñu yokk"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Surat yi ñu bëgg yépp yeb nañu ko ba noppi.",
+      "allLovedSurahsHaveBeen": "Surat yi ñu bëgg yépp yeb nañu ko.",
+      "downloadError": "Njumte ci yeb",
+      "loveSurahsToSeeThem": "Bëgg surat yi ngir gis leen fii",
+      "noLovedSurahsYet": "Amul surat bu ñu bëgg ba tey",
+      "someDownloadsMayHaveFailed": "Yenn yeb yi mën nañu ñàkk.",
+      "unloveAllSurahs": "Jële bëgg ci surat yépp"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Yokk bind ci ayaat yi ngir gis leen fii",
+      "editNote": "Soppi bind bi",
+      "noNotesYet": "Amul bind ba tey",
+      "notes": "Bind yi"
+    },
+    "playlistModal": {
+      "name": "Tur"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Sos liste ngir gis leen fii",
+      "noPlaylistsYet": "Amul liste ba tey",
+      "playlists": "Liste yi"
+    },
+    "uploads": {
+      "removeAllUploads": "Jële yu ñu yokk yépp",
+      "uploadRecitationsToSeeThem": "Yokk jàng yi ngir gis leen fii"
+    }
+  },
+  "common": {
+    "1Time": "1 yoon",
+    "2Times": "2 yoon",
+    "3Times": "3 yoon",
+    "addToCollection": "Yokk ci jaay bi",
+    "addToQueue": "Yokk ci tali bi",
+    "allSurahs": "Surat yépp",
+    "alreadyDownloaded": "Yeb nañu ko ba noppi",
+    "arabic": "Araab",
+    "asc": "Yokku",
+    "browseAll": "Seet yépp",
+    "browseAllReciters": "Seet jàngalekat yépp",
+    "cancel": "Neenal",
+    "clear": "Far",
+    "copyToClipboard": "Kopi ci clipboard",
+    "createNewPlaylist": "Sos liste bu bees",
+    "defaultReciter": "Jàngalekat bi njëkk",
+    "delete": "Far",
+    "deleteNote": "Far bind bi",
+    "deleteRecitation": "Far jàng bi",
+    "desc": "Wàññiku",
+    "downloadComplete": "Yeb bi jeex na",
+    "downloadFailed": "Yeb bi ñàkk na",
+    "downloads": "Yeb yi",
+    "editDetails": "Soppi xibaar yi",
+    "error": "Njumte",
+    "favoriteReciters": "Jàngalekat yi ñu bëgg",
+    "followAlong": "Topp ci bind bi",
+    "from": "Ci",
+    "goToReciter": "Dem ci jàngalekat bi",
+    "goToVerse": "Dem ci aaya bi",
+    "learnAboutSurah": "Xam ci surat bi",
+    "loading": "Ñuy yeb...",
+    "loop": "Dellu",
+    "loved": "Yi ñu bëgg",
+    "mushafSettings": "Tànn yu Mushaf",
+    "next": "Ci topp",
+    "noRecitersFound": "Amul jàngalekat bu ñu gis",
+    "noResultsFound": "Amul njeexital bu ñu gis",
+    "noUploadsYet": "Amul yu ñu yokk ba tey",
+    "play": "Dëkkal",
+    "playEachVerse": "Dëkkal aaya bu nekk",
+    "playNow": "Dëkkal léegi",
+    "playSpeed": "Gaaw gi ci dëkkal",
+    "playTheRange": "Dëkkal sori bi",
+    "playlistName": "Tur liste bi",
+    "prev": "Jëkk",
+    "readingTheme": "Melo jàng",
+    "recentSearches": "Wut yu mujj",
+    "reciter": "Jàngalekat",
+    "reciterChoice": "Tànnitu jàngalekat",
+    "reciters": "Jàngalekat yi",
+    "remove": "Jële",
+    "removeAllDownloads": "Jële yeb yépp",
+    "removeHighlight": "Jële melo bi",
+    "rev": "Dellu",
+    "save": "Denc",
+    "search": "Wut",
+    "searchReciters": "Wut jàngalekat yi...",
+    "searchSurahs": "Wut surat yi",
+    "share": "Séddoo",
+    "shareAsImage": "Séddoo ni nataal",
+    "shareAsText": "Séddoo ni bind",
+    "sharedPhrases": "Kàddu yu bokk",
+    "showBasmallah": "Wone Bismillaah",
+    "stop": "Taxaw",
+    "storage": "Dencukaay",
+    "surah": "Surat",
+    "surahs": "Surat yi",
+    "to": "Ba",
+    "translation": "Tekki",
+    "translationsTafaseer": "Tekki ak Tafsiir",
+    "transliteration": "Bind ci araf yu latin",
+    "uploads": "Yu ñu yokk",
+    "useDefaultReciter": "Jëfandikoo jàngalekat bi njëkk",
+    "verseReference": "Seetlu aaya",
+    "verses": "Ayaat yi",
+    "whatSNew": "Lu bees",
+    "wordByWord": "Baat ak baat",
+    "writeYourNoteHere": "Bindal sa bind fii...",
+    "yourPlaylists": "Sa liste yi"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Dëkkal surat yépp"
+    },
+    "searchHeader": {
+      "searchSurahs": "Wut surat yi"
+    },
+    "searchView": {
+      "noSurahsFound": "Amul surat bu ñu gis"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Amul surat"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Yokk jàng",
+      "uploadRecitationsToSeeThem": "Yokk jàng yi ngir gis leen fii"
+    }
+  },
+  "downloads": {
+    "subtitle_many": "Yeb nañu • {{count}} surat",
+    "subtitle_one": "Yeb na • {{count}} surat",
+    "subtitle_other": "Yeb nañu • {{count}} surat"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Baal ma.. am na njumte"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Seet 114 surat yépp"
+    },
+    "savedAdhkarHero": {
+      "saved": "Yu ñu denc",
+      "yourCollection": "Sa jaay bi"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SURAT BU BËS BI"
+    },
+    "surahsHero": {
+      "number": "Limu"
+    }
+  },
+  "language": {
+    "later": "Ginnaaw",
+    "restartMessage": "Tàmbalaat app bi ngir jëfandikoo ni mu tëraloo bees.",
+    "restartNow": "Tàmbalaat léegi",
+    "restartTitle": "Wuute ngir tàmbalaat",
+    "search": "Wut làkk yi",
+    "system": "Làkku jumtukaay bi"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Kontine"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Daw"
+    }
+  },
+  "mushaf": {
+    "juz": "Juz {{juz}}",
+    "loadingMushaf": "Mushaf bi ñuy yeb…",
+    "main": {
+      "mushafSettings": "Tànn yu Mushaf"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Soppi jàngalekat",
+      "changeReciter2": "Soppi jàngalekat",
+      "nextAyah": "Aaya bi toppu",
+      "playbackOptions": "Tànn yu dëkkal",
+      "previousAyah": "Aaya bi jëkk"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Gis surat, ayaat, xët walla juz",
+      "recentReads": "YU ÑU JÀNG GINNAAW",
+      "searchSurahsPagesOrJuz": "Wut surat, xët walla juz...",
+      "searchTheMushaf": "Wut ci Mushaf bi"
+    },
+    "options": "Tànn yi",
+    "page": "Xët {{page}}",
+    "pageAndSurah": "Xët {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushaf bi mënul yeb.",
+    "tryAgain": "Jéemaat"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Mu ngi feeñal tur wi Yàlla ak yoonu tur yu Yàlla ni Rabb ci mushaf bi."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Feeñal ci kaddu yu wuute ci xalaat yi",
+    "arabicFontSize": "Ndaayu araf Araab",
+    "bold": "Dëgër",
+    "book": "Téere",
+    "colorLegend": "Melo yi ak seen li",
+    "currentlyReading": "Léegi ñuy jàng",
+    "divineNames": "TURU YÀLLA",
+    "fontSize": "Ndaayu araf",
+    "fullscreen": "Ekraŋ bu fees",
+    "hamzaReplacedByLongVowel": "Hamza bu ñu wuutu ak ci kàddu bu gudd",
+    "heavyLamInAllahAfter": "Lam bu diis ci Allah ginnaaw araf yu dëgër",
+    "highlightAllahRabb": "Feeñal Allah / Rabb",
+    "horizontal": "Fi ci wetu",
+    "ibdal": "Ibdaal",
+    "list": "Liste",
+    "loadingSample": "Ñuy yeb ab misaal...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Feeñal bu ëpp",
+    "medium": "Digg-digg",
+    "modernMadinahPrintedPipeline": "Doxalin bu bees bu Madiina ci njëlbeen",
+    "mushaf": "Mushaf",
+    "normal": "Normal",
+    "originalMushafWeight": "Ndëgër bu njëkk bu mushaf bi",
+    "pageDesign": "XËT BI ŋGI MEL",
+    "prolongedVowelAfterHamza": "Kàddu bu gudd ginnaaw hamza",
+    "readingTheme": "MELO JÀNG",
+    "scrollDirection": "SÀKKU BI MU DOXE",
+    "showDifferences": "Wone wuute yi",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Dafa feeñ tuuti",
+    "softenedHamzaPronunciation": "Kàddu hamza bu ñu yombal",
+    "subcontinentNastaliqStyle": "Anamu Nastaliiq ci Asi bu Kaw",
+    "taghlizAlLam": "Taghliiz al-Laam",
+    "tajweedColoring": "Melo Tajwiid",
+    "tashilMusahhala": "Tashiil / Musahhala",
+    "textPreviewNotYetAvailable": "XËT BU JÀNG BI AMUL BA TEY",
+    "textThickness": "NDËGËR BU BIND BI",
+    "thematicHighlighting": "Feeñal ci xalaat",
+    "trailingVowelOrMoodChange": "Soppi kàddu bu mujj walla anam rekk",
+    "usingSaheehInternationalTranslationWith": "Jëfandikoo: Tekki Saheeh International ak bind yu suuf",
+    "vertical": "Kaw ak suuf",
+    "viewType": "XEETU TÀNNU",
+    "vowelMoodShift": "Soppi kàddu / anam",
+    "wordByWord": "BAAT AK BAAT",
+    "wordVariant": "Xeetu baat"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Serveer bi àttanul ñu",
+    "connectionRestored": "Jokkoo bi dellusi na",
+    "noInternetConnection": "Amul internet",
+    "showingCachedData": "Ñuy wone xibaar yu ñu denc"
+  },
+  "organize": {
+    "createReciter": "Sos \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Tali",
+      "queueIsEmpty": "Tali bi neen la"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Màndargal jàng bi ngir gis bind bi ak xibaar yu surat bi"
+    }
+  },
+  "playlist": {
+    "subtitle_many": "Liste • {{count}} surat",
+    "subtitle_one": "Liste • {{count}} surat",
+    "subtitle_other": "Liste • {{count}} surat"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Amul surat ci liste bi"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Bind bu suuf"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Jàng bu ñu tànn ngir jamono jii rekk",
+      "discover": "Gis",
+      "discoverANewVoice": "Gis baat bu bees",
+      "explore": "Seet",
+      "exploreTheUnexpected": "Seet li ñu bëggul",
+      "hearSomethingNew": "Dégg lu bees",
+      "letTheQuranSurpriseYou": "Bàyyi Alxuraan yëg la",
+      "randomMix": "Rawante",
+      "randomRecitation": "Jàng bu amul tànn",
+      "shuffleListen": "Rawante te dégg",
+      "surpriseMe": "Yéem ma"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Soppi ci melo bi dafay jëfandikoo ci app bi mépp"
+  },
+  "reciterBrowse": {
+    "allReciters": "Jàngalekat yépp",
+    "browseReciters": "Seet jàngalekat yi",
+    "favorites": "Yi ñu bëgg"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Amul yeb ngir jàngalekat bii"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Yu ma yokk"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkaar",
+    "bestForMemorization": "Li gën ngir xala",
+    "bestForTajweed": "Li gën ngir tajwiid",
+    "continueListening": "Kontine déglu",
+    "exclusives": "Yu ñu sàkku",
+    "exploreByRewayah": "Seet ci rewayaat",
+    "featuredReciters": "Jàngalekat yu ñu wone",
+    "fromYourCollection": "Ci sa jaay bi",
+    "myRecitations": "Samay jàng",
+    "newToQuranStartHere": "Bees nga ci Alxuraan? Tambali fii",
+    "seeMore": "Gis yu ëpp",
+    "yourFavorites": "Yi nga bëgg"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Dox",
+      "activeTafseer": "TAFSIIR BU DOX",
+      "activeTranslation": "TEKKI BU DOX",
+      "deleteTafseer": "Far tafsiir bi",
+      "deleteTranslation": "Far tekki bi",
+      "noTafaseerFound": "Amul tafsiir bu ñu gis",
+      "noTranslationsFound": "Amul tekki bu ñu gis",
+      "unableToDownloadThisTafseer": "Tafsiir bii mënuñu ko yeb. Seetal sa jokkoo internet te jéemaat.",
+      "unableToDownloadThisTranslation": "Tekki bii mënuñu ko yeb. Seetal sa jokkoo internet te jéemaat."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Amul wut yu mujj",
+      "tryDifferentKeywordsOrCheck": "Jéem baat yu ñaar walla seetal nga bind",
+      "yourSearchHistoryWillAppear": "Sa lu wut yi dina feeñ fii"
+    },
+    "surahsOrReciters": "Wut surat walla jàngalekat"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Wàllu sas bu kawe",
+      "browseByJuz": "Seet ci juz",
+      "createAndManageYourOwn": "Sos te saytu sa liste yi ci jàng yi nga bëgg",
+      "crystalClearRecitationsFromThe": "Jàng yu leer yu jàngalekat yi gën ci àdduna ak yëgg bu baax",
+      "curatedCollections": "Jaay yu ñu tànn",
+      "customPlaylists": "Liste yu sa bopp",
+      "customizeThemesAccentColorsAnd": "Soppi melo yi, kuleur yi ak tànn yu baat ni nga ko bëgge",
+      "downloadSurahsForOfflineListening": "Yeb surat yi ngir déglu ci amul internet, saa su nekk ak fu nekk",
+      "easilyNavigateThroughTheQuran": "Doxal ci Alxuraan ak lëkkale ci juz",
+      "features": "LI MU AM",
+      "highQualityAudio": "Baat bu baax",
+      "listenReflectRememberAllah": "Déglu. Xalaat. Fàttali Yàlla.",
+      "offlineDownloads": "Yeb yu amul internet",
+      "ourCommitment": "Sunu yoon",
+      "ourMission": "Sunu liggéey",
+      "personalization": "Sa bopp",
+      "precisePlaybackControlWithContinuous": "Wàllu dëkkal bu leer ak dëkkal bu amul tàggat ak gaaw gi mën a soppiku",
+      "quranBayanTafsirKnowledgeOur": "Alxuraan • Bayaan • Tafsiir • Xam-xam. Sunu yéene mooy def déglu ak xalaat bokk ci ay bés: ci kër, ci yoon, ak fu nga am ab ñaar ngir fàttali Yàlla.",
+      "readListenAndReflect": "Jàng, Déglu te Xalaat",
+      "readTheMushafExploreTranslations": "Jàng Mushaf bi, seet tekki ak tafsiir, denc ayaat ak bind, te dellusi ci adhkaar bu bés. Tànn sa jàngalekat, sos liste te defar déglu bu jëm ci sa bés. Li app bi am mën na wuute ci jumtukaay; app yu dëkk ci jumtukaay it dañuy yeb ngir déglu ci amul internet.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Surat yu ñu tëral bu baax ngir jamono ak xalaat yu wuute",
+      "weCareAboutTheAccuracy": "Danuy fiirndeel dëgg-dëgg ci li sell, tëralin bu teey ak jëfandikoo bu wóor. Dinanu wéy di ëppal ISTIMA ngir ñi koy jëfandikoo. Yàlla nangu ko te def ko lu baax ngir ñépp ñuy déglu, jàng te xalaat."
+    },
+    "aboutApp": "Ci {{name}}",
+    "appearance": "MEL",
+    "defaultreciter": {
+      "changeDefaultReciter": "SOPPI JÀNGALEKAT BI NJËKK"
+    },
+    "developer": "JÀNGKAT",
+    "floatingDevMenu": "Menu bu ñu def ngir jàngkat",
+    "language": "Làkk",
+    "languageDescription": "Tànn làkku app bi",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Jëfandikoo saa su nekk jàngalekat bi nga tànn",
+      "askEveryTime": "Laaj saa su nekk",
+      "chooseAReciterEachTime": "Tànn jàngalekat saa su nga dëkkal",
+      "chooseHowYouWantTo": "Tànn nan nga bëgg a tànn jàngalekat yi ci dëkkal surat yi",
+      "defaultSelectionMethod": "XEETU TÀNN BI NJËKK",
+      "searchThroughOurCompleteCollection": "Wut ci sunu jaay bu mat jàngalekat yi",
+      "selectionPreference": "TÀNNIT"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Yeb yi yépp ñu jële nañu leen.",
+      "areYouSureYouWant": "Wóor na la ne bëgg nga jële li ñu yeb yépp? Jëf jii mënul a dellu.",
+      "cache": "Cache",
+      "cacheHasBeenCleared": "Cache bi far nañu ko.",
+      "clearCache": "Far cache",
+      "failedToClearCache": "Far cache bi ñàkk na.",
+      "failedToRemoveDownloads": "Jële yeb yi ñàkk na.",
+      "free": "Yaatu",
+      "loadingStorageInformation": "Ñuy yeb xibaar ci dencukaay...",
+      "manageStorage": "SAYTU DENCUKAAY BI",
+      "otherApps": "App yu ñeneen",
+      "removeAllDownloads": "Jële yeb yépp",
+      "removeAllTheQuranContent": "Jële li nga yeb ci Alxuraan yépp ngir jëfandikoo ko ci amul internet.",
+      "storageBreakdown": "SÀNNI DENCUKAAY BI",
+      "success": "Ndam",
+      "thisWillClearYourCache": "Loolu dina far sa cache. Yeb yi dañuñu leen jële.",
+      "youCanFreeUpStorage": "Mën nga yaatal dencukaay bi ci far sa cache. Yeb yi dañuñu leen jële."
+    },
+    "themePicker": {
+      "auto": "Boppam",
+      "dark": "Lëndëm",
+      "light": "Leer"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Amul lisiit bu soppi"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Ci {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Yokk jàngalekat bu ñu bëgg",
+      "uploadRecitation": "Yokk jàng"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Baat yu àdduna",
+      "none": "Amul",
+      "volume": "Sawar"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "ni: Jàng yu fajar"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Jële yeb bi"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Jeex na"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Yokk ci jaay bi",
+      "addToQueue": "Yokk ci tali bi",
+      "continuePlaying": "Kontine dëkkal",
+      "goToReciter": "Dem ci jàngalekat bi",
+      "removeFromRecents": "Jële ci yu mujj"
+    },
+    "mushafLayoutSheet": {
+      "back": "Dellu"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Aaya bu mujj",
+      "playbackSettings": "Tànn yu dëkkal",
+      "selectRange": "Tànn sori",
+      "startingVerse": "Aaya bu njëkk"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Tànn yu dellu",
+      "start": "Tambali",
+      "verseRange": "Sori ayaat"
+    },
+    "organizeRecitationSheet": {
+      "category": "Xeet",
+      "customReciter": "Jàngalekat bu sa bopp",
+      "duA": "Du'aa",
+      "eGMorningAdhkar": "ni: Adhkaar bu fajar",
+      "lecture": "Njàng",
+      "moreOptions": "Yeneen tànn",
+      "other": "Yeneen",
+      "recording": "Rekoor",
+      "rewayah": "Rewayaat",
+      "searchSurahs": "Wut surat yi...",
+      "style": "Anam",
+      "tafsir": "Tafsiir",
+      "title": "Bopp",
+      "type": "Xeet",
+      "verseRangeOptional": "Sori ayaat (bu ñu bëgg)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Gaaw gi ci dëkkal"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Li nekk ci liste bii yépp yeb nañu ko ba noppi.",
+      "anErrorOccurredWhileDownloading": "Am na njumte ci yeb liste bi. Jéemaat.",
+      "deletePlaylist": "Far liste bi",
+      "downloadingPlaylist": "Ñuy yeb liste bi...",
+      "editPlaylist": "Soppi liste bi",
+      "emptyPlaylist": "Liste bu neen",
+      "thisPlaylistIsEmpty": "Liste bii neen la."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Ci Rewayaat",
+      "availableRewayat": "Rewayaat yi nekk"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Yokk surat bi ci liste bi ñàkk na",
+      "failedToCreatePlaylist": "Sos liste bi ñàkk na",
+      "noPlaylistsYetCreateYour": "Amul liste ba tey. Sos sa liste bu njëkk ci kaw!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Laaj saa su nekk",
+      "randomReciter": "Jàngalekat bu amul tànn",
+      "selectReciter": "Tànn jàngalekat"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Amul aaya yu ni mel ci aaya bii.",
+      "similarWording": "Kàddu yu ni mel"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Waxtu nelaw",
+      "turnOffTimer": "Dindi waxtu bi"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Jële ci liste bi"
+    },
+    "verseActionsSheet": {
+      "addNote": "Yokk bind",
+      "copy": "Kopi",
+      "repeat": "Defaat",
+      "similarVerses": "Ayaat yu ni mel",
+      "tafseer": "Tafsiir",
+      "theme": "Xalaat"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Tànn yu kopi",
+      "selectWhatToCopy": "Tànn li nga bëgg a kopi"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Kuleuru feeñal"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Séddoo aaya bi"
+    }
+  },
+  "similarVerses": {
+    "foundIn_many": "Am na ci {{count}} aaya",
+    "foundIn_one": "Am na ci {{count}} aaya",
+    "foundIn_other": "Am na ci {{count}} aaya"
+  },
+  "surahItem": {
+    "moreOptions": "Yeneen tànn",
+    "opensMenuWithAdditionalActions": "Dayubbi menu bu am jëf yu ëpp ngir surat bii",
+    "tapToPlaySurah": "Laal ngir dëkkal surat bi"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "ID liste bi baaxul",
+      "playlistNotFound": "Liste bi amul"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Amul jàngalekat bu am surat yépp ci liste bii. Jéem liste bu ñeneen.",
+      "failedToPlayPlaylistPlease": "Dëkkal liste bi ñàkk na. Jéemaat.",
+      "failedToPlayTrackPlease": "Dëkkal tàkk bi ñàkk na. Jéemaat.",
+      "failedToShufflePlaylistPlease": "Rawante liste bi ñàkk na. Jéemaat.",
+      "noReciterAvailable": "Amul jàngalekat",
+      "noSurahsInThisPlaylist": "Amul surat ci liste bii"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Kont",
+      "appData": "App ak xibaar",
+      "audioPlayback": "Baat ak dëkkal",
+      "chooseYourPreferredReciter": "Tànn jàngalekat bi nga bëgg",
+      "customizeQuranDisplayOptions": "Soppi tànn yu wone Alxuraan",
+      "customizeReciterSelection": "Soppi tànn jàngalekat",
+      "featureRequests": "Ndaw yu mën a am",
+      "feedback": "Tontu",
+      "helpSupport": "Ndimbal ak jàppale",
+      "learnMoreAboutOurMission": "Xam ëpp ci sunu liggéey",
+      "manageQuranTranslationsAndCommentary": "Saytu tekki ak tafsiir Alxuraan",
+      "privacyPolicy": "Politigu kumpa",
+      "quran": "Alxuraan",
+      "readOurTermsOfService": "Jàng sunu yoon yu jëfandikoo",
+      "seeWhatSNewIn": "Gis lu bees ci version bii",
+      "shareYourExperienceWithOthers": "Séddoo sa jariñ ak ñeneen",
+      "showTheFloatingDeveloperTools": "Wone bouton bu jàngkat bu ñu def",
+      "suggestImprovementsAndNewFeatures": "Digal yokkute ak yu bees",
+      "termsOfService": "Yoon yu jëfandikoo",
+      "viewAndManageStorageUsage": "Seet te saytu jëfandikoo dencukaay bi",
+      "viewOurPrivacyPolicy": "Seet sunu politigu kumpa",
+      "writeAReview": "Bind ab saytu"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Neenal",
+    "close": "Tëj",
+    "collection": "Jaay",
+    "download": "Yeb",
+    "downloads": "Yeb yi",
+    "error": "Lu ñu deful am na",
+    "favorites": "Yi ñu bëgg",
+    "home": "Kër",
+    "language": "Làkk",
+    "library": "Biblioteek",
+    "loading": "Ñuy yeb...",
+    "noResults": "Amul njeexital bu ñu gis",
+    "offline": "Amul internet fi nga nekk",
+    "pause": "Taxaw tuuti",
+    "play": "Dëkkal",
+    "retry": "Jéemaat",
+    "save": "Denc",
+    "search": "Wut",
+    "settings": "Tànn yi",
+    "surahs": "Surat yi"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "TÀNN LI NGA BËGG"
+    },
+    "highlightContent": {
+      "chooseColor": "TÀNN KULEUR"
+    },
+    "noteContent": {
+      "saveNote": "Denc bind bi"
+    },
+    "shareContent": {
+      "shareLink": "Séddoo lëkkaloo bi"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Amul aaya yu ni mel ci aaya bii.",
+      "sharedPhrases": "KÀDDU YU BOKK",
+      "similarWording": "KÀDDU YU NI MEL"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Amul tafsiir bu ñu yeb",
+      "tafseerNotAvailableForThis": "Tafsiir bi amul ci aaya bii",
+      "tapHereToDownloadA": "Laal fii ngir yeb tafsiir te gis leeral bi."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Amul xibaar ci xalaat ngir aaya bii.",
+      "passage": "Cat"
+    },
+    "translationContent": {
+      "switch": "Soppi",
+      "translationNotAvailable": "Tekki bi amul"
+    }
+  },
+  "version": {
+    "label": "Version {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Lu bees ci"
+  },
+  "wordDetail": {
+    "context": "Aaya {{surah}}:{{ayah}} · Baat {{position}} ci {{total}}"
+  }
+}

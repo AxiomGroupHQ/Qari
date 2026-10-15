@@ -1,0 +1,724 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Dogoggora taphachiisaa jalqabuu: {{message}}",
+    "errorLoadingFonts": "Dogoggora fonti fe'uu"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Fuula jalqabaa ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Hundaa",
+      "clearAll": "Hunda haqi",
+      "hasPhoto": "Suuraa qaba"
+    },
+    "filterModal": {
+      "apply": "Hojiirra oolchi",
+      "filterReciters": "Qaraaoota calaqqisi",
+      "recitationStyles": "Akkaataa Qara'uu",
+      "reset": "Deebisii saagi",
+      "rewayatTypes": "Gosoota Rewayaat"
+    },
+    "recitersFound_many": "Calaqqisaa ammaa waliin qaraa {{count}} argaman",
+    "recitersFound_one": "Calaqqisaa ammaa waliin qaraa {{count}} argame",
+    "recitersFound_other": "Calaqqisaa ammaa waliin qaraa {{count}} argaman"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Suuraalee jaallataman"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Aayaata mallatteessi as akka argitaniif",
+      "bookmarks": "Mallattoolee",
+      "noBookmarksYet": "Mallattoon hin jiru",
+      "removeBookmark": "Mallattoo balleessi"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Rewayaat",
+      "searchPlaylistsRecitersSurahsRewayat": "Tarreeffama sirna, qaraa, suuraa, rewayaat barbaadi...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Tarreeffama sirna, qaraa, suuraa, rewayaat fi buufata barbaadi",
+      "searchYourCollection": "Walitti qabama kee barbaadi",
+      "searching": "Barbaadaa jira...",
+      "tryDifferentKeywords": "Jecha furtuu biraa yaali"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Suuraalee buufadhu as akka argitaniif",
+      "noDownloadsYet": "Buufannaan hin jiru",
+      "playAll": "Hunda taphachiisi"
+    },
+    "favoritereciters": {
+      "addReciters": "Qaraa dabali",
+      "addRecitersToSeeThem": "Qaraa dabali as akka argitaniif",
+      "noFavoriteRecitersYet": "Qaraan filatamaan hin jiru",
+      "removeFromFavorites": "Filatamoo keessaa balleessi",
+      "searchFavoriteReciters": "Qaraa filatamoo barbaadi"
+    },
+    "index": {
+      "addToCollection": "Walitti qabamatti dabali",
+      "bookmarks": "Mallattoolee",
+      "createYourFirstPlaylist": "Tarreeffama sirna kee jalqabaa uumi",
+      "downloads": "Buufannaa",
+      "items_many": "Wantoonni {{count}}",
+      "items_one": "Wanti {{count}}",
+      "items_other": "Wantoonni {{count}}",
+      "loved": "Jaallatame",
+      "noBookmarksYet": "Mallattoon hin jiru",
+      "noDownloadsYet": "Buufannaan hin jiru",
+      "noFavoritesYet": "Filatamaan hin jiru",
+      "noLovedSurahsYet": "Suuraan jaallatame hin jiru",
+      "noNotesYet": "Yaadannoon hin jiru",
+      "noUploadsYet": "Fe'amaan hin jiru",
+      "notes": "Yaadannoo",
+      "playlists": "Tarreeffama sirna",
+      "reciters": "Qaraa",
+      "uploads": "Fe'amaa"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Suuraaleen jaallataman hundi duraanuu buufataniiru.",
+      "allLovedSurahsHaveBeen": "Suuraaleen jaallataman hundi buufatamaniiru.",
+      "downloadError": "Dogoggora buufachuu",
+      "loveSurahsToSeeThem": "Suuraalee jaalladhu as akka argitaniif",
+      "noLovedSurahsYet": "Suuraan jaallatame hin jiru",
+      "someDownloadsMayHaveFailed": "Buufannaan tokko tokko dhabamuu danda'a.",
+      "unloveAllSurahs": "Suuraalee hunda jaallachuu dhiisi"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Aayaatatti yaadannoo dabali as akka argitaniif",
+      "editNote": "Yaadannoo gulaali",
+      "noNotesYet": "Yaadannoon hin jiru",
+      "notes": "Yaadannoo"
+    },
+    "playlistModal": {
+      "name": "Maqaa"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Tarreeffama sirna uumi as akka argitaniif",
+      "noPlaylistsYet": "Tarreeffamni sirna hin jiru",
+      "playlists": "Tarreeffama sirna"
+    },
+    "uploads": {
+      "removeAllUploads": "Fe'amaa hunda balleessi",
+      "uploadRecitationsToSeeThem": "Qara'uu fe'i as akka argitaniif"
+    }
+  },
+  "common": {
+    "1Time": "Altokko",
+    "2Times": "Altokko lama",
+    "3Times": "Altokko sadi",
+    "addToCollection": "Walitti qabamatti dabali",
+    "addToQueue": "Tarreeffamatti dabali",
+    "allSurahs": "Suuraalee hunda",
+    "alreadyDownloaded": "Duraanuu buufateera",
+    "arabic": "Arabiffaa",
+    "asc": "Ol-ba'aa",
+    "browseAll": "Hunda ilaali",
+    "browseAllReciters": "Qaraa hunda ilaali",
+    "cancel": "Haqi",
+    "clear": "Qulqulleessi",
+    "copyToClipboard": "Gara clipboard-tti waraabi",
+    "createNewPlaylist": "Tarreeffama sirna haaraa uumi",
+    "defaultReciter": "Qaraa durtii",
+    "delete": "Haqi",
+    "deleteNote": "Yaadannoo haqi",
+    "deleteRecitation": "Qara'uu haqi",
+    "desc": "Gadi-bu'aa",
+    "downloadComplete": "Buufannaan xumurameera",
+    "downloadFailed": "Buufannaan hin milkoofne",
+    "downloads": "Buufannaa",
+    "editDetails": "Bal'ina gulaali",
+    "error": "Dogoggora",
+    "favoriteReciters": "Qaraa filatamoo",
+    "followAlong": "Barreeffama hordofi",
+    "from": "Irraa",
+    "goToReciter": "Gara qaraa deemi",
+    "goToVerse": "Gara aayataa deemi",
+    "learnAboutSurah": "Suuraa waa'ee beeki",
+    "loading": "Fe'aa jira...",
+    "loop": "Irra deddeebi'i",
+    "loved": "Jaallatame",
+    "mushafSettings": "Qindaa'ina Mushaafaa",
+    "next": "Itti aanu",
+    "noRecitersFound": "Qaraan hin argamne",
+    "noResultsFound": "Bu'aan hin argamne",
+    "noUploadsYet": "Fe'amaan hin jiru",
+    "play": "Taphachiisi",
+    "playEachVerse": "Aayata hunda taphachiisi",
+    "playNow": "Amma taphachiisi",
+    "playSpeed": "Saffisa taphachiisuu",
+    "playTheRange": "Daangaa taphachiisi",
+    "playlistName": "Maqaa tarreeffamaa",
+    "prev": "Duraa",
+    "readingTheme": "Mooraa qara'uu",
+    "recentSearches": "Barbaacha dhiyoo",
+    "reciter": "Qaraa",
+    "reciterChoice": "Filannoo qaraa",
+    "reciters": "Qaraa",
+    "remove": "Balleessi",
+    "removeAllDownloads": "Buufannaa hunda balleessi",
+    "removeHighlight": "Calaqqisa balleessi",
+    "rev": "Duubatti",
+    "save": "Olkaa'i",
+    "search": "Barbaadi",
+    "searchReciters": "Qaraa barbaadi...",
+    "searchSurahs": "Suuraalee barbaadi",
+    "share": "Qooddadhu",
+    "shareAsImage": "Akka suuraatti qooddadhu",
+    "shareAsText": "Akka barreeffamaatti qooddadhu",
+    "sharedPhrases": "Hima waloo",
+    "showBasmallah": "Bismillaa agarsiisi",
+    "stop": "Dhaabi",
+    "storage": "Kuusaa",
+    "surah": "Suuraa",
+    "surahs": "Suuraalee",
+    "to": "Hanga",
+    "translation": "Hiika",
+    "translationsTafaseer": "Hiika fi Tafsiira",
+    "transliteration": "Dubbisa Laatiiniin",
+    "uploads": "Fe'amaa",
+    "useDefaultReciter": "Qaraa durtii fayyadami",
+    "verseReference": "Wabii aayataa",
+    "verses": "Aayaata",
+    "whatSNew": "Wanti haaraa",
+    "wordByWord": "Jecha jechaan",
+    "writeYourNoteHere": "Yaadannoo kee as barreessi...",
+    "yourPlaylists": "Tarreeffama sirna kee"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Suuraalee hunda taphachiisi"
+    },
+    "searchHeader": {
+      "searchSurahs": "Suuraalee barbaadi"
+    },
+    "searchView": {
+      "noSurahsFound": "Suuraan hin argamne"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Suuraan hin jiru"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Qara'uu dabali",
+      "uploadRecitationsToSeeThem": "Qara'uu fe'i as akka argitaniif"
+    }
+  },
+  "downloads": {
+    "subtitle_many": "Buufatame • suuraalee {{count}}",
+    "subtitle_one": "Buufatame • suuraa {{count}}",
+    "subtitle_other": "Buufatame • suuraalee {{count}}"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Dhiifama.. dogoggorri uumameera"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Suuraalee 114 hunda ilaali"
+    },
+    "savedAdhkarHero": {
+      "saved": "Olkaa'ame",
+      "yourCollection": "Walitti qabama kee"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SUURAA HARRAA"
+    },
+    "surahsHero": {
+      "number": "Lakkoofsa"
+    }
+  },
+  "language": {
+    "later": "Booda",
+    "restartMessage": "Qajeelfama haaraa dhaqqabsiisuuf appii deebisii banii.",
+    "restartNow": "Amma deebisii bani",
+    "restartTitle": "Deebisanii banuun barbaachisaadha",
+    "search": "Afaan barbaadi",
+    "system": "Afaan meeshaa"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Itti fufi"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Darbi"
+    }
+  },
+  "mushaf": {
+    "juz": "Juz {{juz}}",
+    "loadingMushaf": "Mushaafni fe'aa jira…",
+    "main": {
+      "mushafSettings": "Qindaa'ina Mushaafaa"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Qaraa jijjiiri",
+      "changeReciter2": "Qaraa jijjiiri",
+      "nextAyah": "Aayata itti aanu",
+      "playbackOptions": "Filannoo taphachiisuu",
+      "previousAyah": "Aayata duraa"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Suuraa, aayaata, fuula ykn juz argadhu",
+      "recentReads": "QARA'AMAN DHIYOO",
+      "searchSurahsPagesOrJuz": "Suuraa, fuula ykn juz barbaadi...",
+      "searchTheMushaf": "Mushaafa keessatti barbaadi"
+    },
+    "options": "Filannoo",
+    "page": "Fuula {{page}}",
+    "pageAndSurah": "Fuula {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushaafni fe'amuu hin dandeenye.",
+    "tryAgain": "Irra deebi'ii yaali"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Maqaa Rabbii fi bifa maqaa Rabbii akka Rabb mushaafa keessatti calaqqisa."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Calaqqisa gara mata-duree walii jijjiiramu",
+    "arabicFontSize": "Hamma fonti Arabaa",
+    "bold": "Jabaa",
+    "book": "Kitaaba",
+    "colorLegend": "Ibsa halluu",
+    "currentlyReading": "Amma qara'amaa jira",
+    "divineNames": "MAQAALEE RABBII",
+    "fontSize": "Hamma fonti",
+    "fullscreen": "Dallaa guutuu",
+    "hamzaReplacedByLongVowel": "Hamzaan sagalee dheeraadhaan bakka bu'e",
+    "heavyLamInAllahAfter": "Laam ulfaataa Allaah keessatti qubee cimaa booda",
+    "highlightAllahRabb": "Allaah / Rabb calaqqisi",
+    "horizontal": "Bal'ina",
+    "ibdal": "Ibdaal",
+    "list": "Tarree",
+    "loadingSample": "Fakkeenyi fe'aa jira...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Calaqqisa olaanaa",
+    "medium": "Giddu galeessa",
+    "modernMadinahPrintedPipeline": "Adeemsa maxxansaa Madiinaa ammayyaa",
+    "mushaf": "Mushaafa",
+    "normal": "Idilee",
+    "originalMushafWeight": "Furdina mushaafa jalqabaa",
+    "pageDesign": "DIZAAYINII FUULAA",
+    "prolongedVowelAfterHamza": "Sagalee dheeressaa hamza booda",
+    "readingTheme": "MOORAA QARA'UU",
+    "scrollDirection": "QAJEELFAMA SKROOLII",
+    "showDifferences": "Garaagarummaa agarsiisi",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Xiqqoo caalaa calaqqisa",
+    "softenedHamzaPronunciation": "Dubbisa hamza laafeeffame",
+    "subcontinentNastaliqStyle": "Akaakuu Nastaliiq Eeshiyaa Kibbaa",
+    "taghlizAlLam": "Taghliiz al-Laam",
+    "tajweedColoring": "Halluu Tajwiidaa",
+    "tashilMusahhala": "Tashiil / Musahhala",
+    "textPreviewNotYetAvailable": "ILAALCHA BARREEFFAMAA ammatti hin jiru",
+    "textThickness": "FURDINA BARREEFFAMAA",
+    "thematicHighlighting": "Calaqqisa mata-duree",
+    "trailingVowelOrMoodChange": "Jijjiirama sagalee xumuraa ykn akkaataa qofa",
+    "usingSaheehInternationalTranslationWith": "Fayyadamaa jira: Hiika Saheeh International waliin yaada gadii",
+    "vertical": "Dhaabbataa",
+    "viewType": "GOOSA ILAALCHAA",
+    "vowelMoodShift": "Jijjiirama sagalee / akkaataa",
+    "wordByWord": "JECHA JECHAAN",
+    "wordVariant": "Gosa jechaa"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Serverii hin argamu",
+    "connectionRestored": "Walqunnamtiin deebi'eera",
+    "noInternetConnection": "Intarneetiin hin jiru",
+    "showingCachedData": "Daataa kuufame agarsiisaa jira"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" uumi"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Tarree",
+      "queueIsEmpty": "Tarreen duwwaadha"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Qara'uu kana mallatteessi barreeffama suuraa fi bal'ina argachuuf"
+    }
+  },
+  "playlist": {
+    "subtitle_many": "Tarreeffama • suuraalee {{count}}",
+    "subtitle_one": "Tarreeffama • suuraa {{count}}",
+    "subtitle_other": "Tarreeffama • suuraalee {{count}}"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Tarreeffama kana keessa suuraan hin jiru"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Yaada gadii"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Qara'uu yeroo kanaaf filatame",
+      "discover": "Argadhu",
+      "discoverANewVoice": "Sagalee haaraa argadhu",
+      "explore": "Qo'adhu",
+      "exploreTheUnexpected": "Waan hin eegamne qo'adhu",
+      "hearSomethingNew": "Wanta haaraa dhaggeeffadhu",
+      "letTheQuranSurpriseYou": "Qur'aanni si dinqisiifachuu haa danda'u",
+      "randomMix": "Makaa carraa",
+      "randomRecitation": "Qara'uu carraa",
+      "shuffleListen": "Makii dhaggeeffadhu",
+      "surpriseMe": "Na dinqisiisi"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Jijjiirama haalaa mul'ataa appii guutuu irratti hojiirra oola"
+  },
+  "reciterBrowse": {
+    "allReciters": "Qaraa hunda",
+    "browseReciters": "Qaraa ilaali",
+    "favorites": "Filatamoo"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Qaraa kanaaf buufannaan hin jiru"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Kan ani fe'e"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkaar",
+    "bestForMemorization": "Qalbii qabachuuf isa caalu",
+    "bestForTajweed": "Tajwiidaaf isa caalu",
+    "continueListening": "Dhaggeeffachuu itti fufi",
+    "exclusives": "Addaa",
+    "exploreByRewayah": "Rewayaadhaan qo'adhu",
+    "featuredReciters": "Qaraa filatamoo",
+    "fromYourCollection": "Walitti qabama kee irraa",
+    "myRecitations": "Qara'uu koo",
+    "newToQuranStartHere": "Qur'aanaaf haaraa? As jalqabi",
+    "seeMore": "Dabalata ilaali",
+    "yourFavorites": "Filatamoo kee"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Hojiirra jira",
+      "activeTafseer": "TAFSIIRA HOJIIRRA JIRU",
+      "activeTranslation": "HIIKA HOJIIRRA JIRU",
+      "deleteTafseer": "Tafsiira haqi",
+      "deleteTranslation": "Hiika haqi",
+      "noTafaseerFound": "Tafsiirri hin argamne",
+      "noTranslationsFound": "Hiikni hin argamne",
+      "unableToDownloadThisTafseer": "Tafsiira kana buufachuun hin danda'amu. Maaloo walqunnamtii intarneetii mirkaneessiitii irra deebi'ii yaali.",
+      "unableToDownloadThisTranslation": "Hiika kana buufachuun hin danda'amu. Maaloo walqunnamtii intarneetii mirkaneessiitii irra deebi'ii yaali."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Barbaacha dhiyoo hin jiru",
+      "tryDifferentKeywordsOrCheck": "Jecha furtuu biraa yaali ykn hubadhu",
+      "yourSearchHistoryWillAppear": "Seenaan barbaachaa kee as mul'ata"
+    },
+    "surahsOrReciters": "Suuraa ykn qaraa barbaadi"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "To'annoo sagalee olaanaa",
+      "browseByJuz": "Juzidhaan ilaali",
+      "createAndManageYourOwn": "Tarreeffama sirna qara'uu jaallatamaa kee mataa keetii uumii bulchi",
+      "crystalClearRecitationsFromThe": "Qara'uu calaqqisaa qaraa addunyaa isa gaarii waliin, gara dhaggeeffannaa gaariitiin",
+      "curatedCollections": "Walitti qabama filatame",
+      "customPlaylists": "Tarreeffama sirna mataa",
+      "customizeThemesAccentColorsAnd": "Mooraa, halluu fi qindaa'ina sagalee akka feetetti sirreessi",
+      "downloadSurahsForOfflineListening": "Suuraalee buufadhu intarneetii malee yeroo fi bakka kamittuu dhaggeeffachuuf",
+      "easilyNavigateThroughTheQuran": "Qur'aana keessa salphaatti deemi gurmeessa fi gareessa Juzidhaan",
+      "features": "BAKKA TOKKO",
+      "highQualityAudio": "Sagalee qulqullina olaanaa",
+      "listenReflectRememberAllah": "Dhaggeeffadhu. Yaadi. Rabbi yaadadhu.",
+      "offlineDownloads": "Buufannaa intarneetii malee",
+      "ourCommitment": "Of-kennaa keenya",
+      "ourMission": "Ergama keenya",
+      "personalization": "Dhuunfaa gochuu",
+      "precisePlaybackControlWithContinuous": "To'annoo taphachiisuu sirrii taphachiisuu itti fufiinsaa fi saffisa qara'uu sirreeffamuu waliin",
+      "quranBayanTafsirKnowledgeOur": "Qur'aana • Bayaan • Tafsiira • Beekumsa. Kaayyoon keenya dhaggeeffachuu fi yaaduun jireenya guyyaa guyyaa keessaa akka ta'u gochuudha: mana, daandii irra, fi yeroo Rabbi yaaddu hundumaa.",
+      "readListenAndReflect": "Dubbisi, Dhaggeeffadhu, Yaadi",
+      "readTheMushafExploreTranslations": "Mushaafa dubbisi, hiika fi tafsiira qo'adhu, aayaata fi yaadannoo olkaa'i, adhkaara guyyaa guyyaatti deebi'i. Qaraa kee filadhu, tarreeffama sirna uumi, muuxannoo dhaggeeffannaa guyyaa keetiif ta'u qopheessi. Amaloonni jiran meeshaadhaan garaagarummaa qabu; appiin dhaabbataa buufannaa dhaggeeffannaa intarneetii malee deeggarsa.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Suuraaleen yeroo fi mata-duree garaagaraaf ofeeggannoodhaan gurmaa'an",
+      "weCareAboutTheAccuracy": "Sirrummaa qabiyyee qulqulluu, dizaayinii ulfina qabuu fi argannoo amanamaa ni eegna. ISTIMA nama itti fayyadamaniif of eeggannoodhaan fooyyessuu itti fufna. Rabbiin carraaqqii kana haa fudhatu, dhaggeeffatu, dubbisu fi yaadu hundaaf bu'aa qabeessa haa godhu."
+    },
+    "aboutApp": "Waa'ee {{name}}",
+    "appearance": "BIFA",
+    "defaultreciter": {
+      "changeDefaultReciter": "QARAA DURTII JIJJIIRI"
+    },
+    "developer": "GALMEESSAA",
+    "floatingDevMenu": "Menu galmeessaa sammuu",
+    "language": "Afaan",
+    "languageDescription": "Afaan appii filadhu",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Yeroo hunda qaraa durtii filatte fayyadami",
+      "askEveryTime": "Yeroo hunda gaafadhu",
+      "chooseAReciterEachTime": "Yeroo taphachiistu hundatti qaraa filadhu",
+      "chooseHowYouWantTo": "Suuraalee yeroo taphachiistu akkamitti qaraa filachuu akka barbaaddu filadhu",
+      "defaultSelectionMethod": "FILANNOO DURTII",
+      "searchThroughOurCompleteCollection": "Walitti qabama qaraa keenya guutuu barbaadi",
+      "selectionPreference": "FILANNOO MIRKANEESSUU"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Buufannaan hundi balleeffameera.",
+      "areYouSureYouWant": "Dhugaadhaa qabiyyee buufame hunda balleessuu barbaaddaa? Hojiin kun deebi'ee hin sirreeffamu.",
+      "cache": "Cache",
+      "cacheHasBeenCleared": "Cache qulqulleeffameera.",
+      "clearCache": "Cache qulqulleessi",
+      "failedToClearCache": "Cache qulqulleessuun hin milkoofne.",
+      "failedToRemoveDownloads": "Buufannaa balleessuun hin milkoofne.",
+      "free": "Bilisa",
+      "loadingStorageInformation": "Odeeffannoo kuusaa fe'aa jira...",
+      "manageStorage": "KUUSAA BULCHI",
+      "otherApps": "Appiiwwan biroo",
+      "removeAllDownloads": "Buufannaa hunda balleessi",
+      "removeAllTheQuranContent": "Qabiyyee Qur'aanaa intarneetii malee fayyadamuuf buufatte hunda balleessi.",
+      "storageBreakdown": "QAJEELFAMA KUUSAA",
+      "success": "Milkaa'ina",
+      "thisWillClearYourCache": "Kun cache kee qulqulleessa. Buufannaan kee hin balleeffamu.",
+      "youCanFreeUpStorage": "Cache qulqulleessuudhaan iddoo bilisa gochuu dandeessa. Buufannaan kee hin balleeffamu."
+    },
+    "themePicker": {
+      "auto": "Of-eeggannoo",
+      "dark": "Dukkana",
+      "light": "Ifa"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Tarreeffamni jijjiiramaa hin jiru"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Waa'ee {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Qaraa filatamaa dabali",
+      "uploadRecitation": "Qara'uu fe'i"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Sagalee naannoo",
+      "none": "Hin jiru",
+      "volume": "Hamma sagalee"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "fkn Qara'uu ganamaa"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Buufannaa balleessi"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Xumurameera"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Walitti qabamatti dabali",
+      "addToQueue": "Tarreeffamatti dabali",
+      "continuePlaying": "Taphachuu itti fufi",
+      "goToReciter": "Gara qaraa deemi",
+      "removeFromRecents": "Dhiyoo irraa balleessi"
+    },
+    "mushafLayoutSheet": {
+      "back": "Duubatti"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Aayata xumuraa",
+      "playbackSettings": "Qindaa'ina taphachiisuu",
+      "selectRange": "Daangaa filadhu",
+      "startingVerse": "Aayata jalqabaa"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Qindaa'ina irra deddeebi'uu",
+      "start": "Jalqabi",
+      "verseRange": "Daangaa aayataa"
+    },
+    "organizeRecitationSheet": {
+      "category": "Ramaddii",
+      "customReciter": "Qaraa mataa",
+      "duA": "Du'aa",
+      "eGMorningAdhkar": "fkn Adhkaara ganamaa",
+      "lecture": "Leecaloo",
+      "moreOptions": "Filannoo dabalataa",
+      "other": "Kan biraa",
+      "recording": "Waraabbii",
+      "rewayah": "Rewayaat",
+      "searchSurahs": "Suuraalee barbaadi...",
+      "style": "Akaakuu",
+      "tafsir": "Tafsiira",
+      "title": "Mata-duree",
+      "type": "Gosa",
+      "verseRangeOptional": "Daangaa aayataa (filannoo)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Saffisa taphachiisuu"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Wantoonni tarreeffama kana keessa jiran hundi duraanuu buufataniiru.",
+      "anErrorOccurredWhileDownloading": "Tarreeffama buufachuu irratti dogoggorri uumame. Maaloo irra deebi'ii yaali.",
+      "deletePlaylist": "Tarreeffama haqi",
+      "downloadingPlaylist": "Tarreeffama buufachaa jira...",
+      "editPlaylist": "Tarreeffama gulaali",
+      "emptyPlaylist": "Tarreeffama duwwaa",
+      "thisPlaylistIsEmpty": "Tarreeffamni kun duwwaadha."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Waa'ee Rewayaat",
+      "availableRewayat": "Rewayaat argaman"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Tarreeffamatti suuraa dabaluun hin milkoofne",
+      "failedToCreatePlaylist": "Tarreeffama uumuun hin milkoofne",
+      "noPlaylistsYetCreateYour": "Tarreeffamni sirna hin jiru. Tarreeffama sirna kee jalqabaa gubbaatti uumi!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Yeroo hunda gaafadhu",
+      "randomReciter": "Qaraa carraa",
+      "selectReciter": "Qaraa filadhu"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Aayata kanaaf aayaatni walfakkaatu hin argamne.",
+      "similarWording": "Hima walfakkaataa"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Tooftaa rafuu",
+      "turnOffTimer": "Tooftaa cufi"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Tarreeffama irraa balleessi"
+    },
+    "verseActionsSheet": {
+      "addNote": "Yaadannoo dabali",
+      "copy": "Waraabi",
+      "repeat": "Irra deddeebi'i",
+      "similarVerses": "Aayaata walfakkaatu",
+      "tafseer": "Tafsiira",
+      "theme": "Mata-duree"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Filannoo waraabuu",
+      "selectWhatToCopy": "Wanta waraabamu filadhu"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Halluu calaqqisaa"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Aayata qooddadhu"
+    }
+  },
+  "similarVerses": {
+    "foundIn_many": "Aayaata {{count}} keessatti argame",
+    "foundIn_one": "Aayata {{count}} keessatti argame",
+    "foundIn_other": "Aayaata {{count}} keessatti argame"
+  },
+  "surahItem": {
+    "moreOptions": "Filannoo dabalataa",
+    "opensMenuWithAdditionalActions": "Suuraa kanaaf gocha dabalataa qabu menu bana",
+    "tapToPlaySurah": "Suuraa taphachiisuuf tuqi"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "ID tarreeffamaa sirrii miti",
+      "playlistNotFound": "Tarreeffamni hin argamne"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Qaraan suuraalee tarreeffama kanaa hunda qabu hin argamne. Maaloo tarreeffama biraa yaali.",
+      "failedToPlayPlaylistPlease": "Tarreeffama taphachiisuun hin milkoofne. Maaloo irra deebi'ii yaali.",
+      "failedToPlayTrackPlease": "Kuusaa taphachiisuun hin milkoofne. Maaloo irra deebi'ii yaali.",
+      "failedToShufflePlaylistPlease": "Tarreeffama makuun hin milkoofne. Maaloo irra deebi'ii yaali.",
+      "noReciterAvailable": "Qaraan hin jiru",
+      "noSurahsInThisPlaylist": "Tarreeffama kana keessa suuraan hin jiru"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Herrega",
+      "appData": "Appii fi Daataa",
+      "audioPlayback": "Sagalee fi Taphachiisuu",
+      "chooseYourPreferredReciter": "Qaraa kee filadhu",
+      "customizeQuranDisplayOptions": "Filannoo agarsiisa Qur'aanaa sirreessi",
+      "customizeReciterSelection": "Filannoo qaraa sirreessi",
+      "featureRequests": "Gaaffii amaloota",
+      "feedback": "Yaada deebii",
+      "helpSupport": "Gargaarsa fi Deeggarsa",
+      "learnMoreAboutOurMission": "Ergama keenya dabalata baradhu",
+      "manageQuranTranslationsAndCommentary": "Hiika Qur'aanaa fi yaada bulchi",
+      "privacyPolicy": "Imaammata dhuunfaa",
+      "quran": "Qur'aana",
+      "readOurTermsOfService": "Haala tajaajilaa keenya dubbisi",
+      "seeWhatSNewIn": "Wanta haaraa gosa kana keessa jiru ilaali",
+      "shareYourExperienceWithOthers": "Muuxannoo kee nama biraa waliin qooddadhu",
+      "showTheFloatingDeveloperTools": "Qabduu meeshaa galmeessaa sammuu agarsiisi",
+      "suggestImprovementsAndNewFeatures": "Fooyya'iinsaa fi amaloota haaraa kaa'i",
+      "termsOfService": "Haala Tajaajilaa",
+      "viewAndManageStorageUsage": "Fayyadama kuusaa ilaali bulchi",
+      "viewOurPrivacyPolicy": "Imaammata dhuunfaa keenya ilaali",
+      "writeAReview": "Gamaaggama barreessi"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Haqi",
+    "close": "Cufi",
+    "collection": "Walitti qabama",
+    "download": "Buufadhu",
+    "downloads": "Buufannaa",
+    "error": "Wanti tokko dogoggore",
+    "favorites": "Filatamoo",
+    "home": "Mana",
+    "language": "Afaan",
+    "library": "Kuusaa kitaabaa",
+    "loading": "Fe'aa jira...",
+    "noResults": "Bu'aan hin argamne",
+    "offline": "Intarneetii irra hin jirtu",
+    "pause": "Dhaabi xiqqoo",
+    "play": "Taphachiisi",
+    "retry": "Irra deebi'ii yaali",
+    "save": "Olkaa'i",
+    "search": "Barbaadi",
+    "settings": "Qindaa'ina",
+    "surahs": "Suuraalee"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "QABIYYEE FILADHU"
+    },
+    "highlightContent": {
+      "chooseColor": "HALLUU FILADHU"
+    },
+    "noteContent": {
+      "saveNote": "Yaadannoo olkaa'i"
+    },
+    "shareContent": {
+      "shareLink": "Hidhaa qooddadhu"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Aayata kanaaf aayaatni walfakkaatu hin argamne.",
+      "sharedPhrases": "HIMA WALOO",
+      "similarWording": "HIMA WALFAKKAATAA"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Tafsiirri buufame hin jiru",
+      "tafseerNotAvailableForThis": "Aayata kanaaf tafsiirri hin jiru",
+      "tapHereToDownloadA": "Tafsiira buufachuuf fi yaada ilaaluuf as tuqi."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Aayata kanaaf daataan mata-duree hin jiru.",
+      "passage": "Kutaa"
+    },
+    "translationContent": {
+      "switch": "Jijjiiri",
+      "translationNotAvailable": "Hiikni hin jiru"
+    }
+  },
+  "version": {
+    "label": "Gosa {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Wanti haaraa keessa"
+  },
+  "wordDetail": {
+    "context": "Aayata {{surah}}:{{ayah}} · Jecha {{position}} keessaa {{total}}"
+  }
+}

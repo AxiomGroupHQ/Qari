@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Khalad bilaabista daaraha: {{message}}",
+    "errorLoadingFonts": "Khalad ku jiray rarista farta"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Bogga hore ee ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Dhammaan",
+      "clearAll": "Nadiifi dhammaan",
+      "hasPhoto": "Sawir leh"
+    },
+    "filterModal": {
+      "apply": "Codsi",
+      "filterReciters": "Shaandhee akhristayaasha",
+      "recitationStyles": "Qaababka akhriska",
+      "reset": "Dib u deji",
+      "rewayatTypes": "Noocyada Rewayaadka"
+    },
+    "recitersFound_one": "{{count}} akhriste ayaa lagu helay shaandhooyinka hadda jira",
+    "recitersFound_other": "{{count}} akhristayaal ayaa lagu helay shaandhooyinka hadda jira"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Suurooyinka la jecelyahay"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Calaamadee aayadaha si aad halkan u aragto",
+      "bookmarks": "Calaamadaha",
+      "noBookmarksYet": "Weli calaamado ma jiraan",
+      "removeBookmark": "Ka saar calaamadda"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Rewayaad",
+      "searchPlaylistsRecitersSurahsRewayat": "Raadi liisaska, akhristayaasha, suurooyinka, rewayaadka...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Raadi liisaska, akhristayaasha, suurooyinka, rewayaadka iyo soo dejinta",
+      "searchYourCollection": "Raadi ururintaada",
+      "searching": "Waa la raadinayaa...",
+      "tryDifferentKeywords": "Isku day erayo kale"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Soo deji suurooyin si aad halkan u aragto",
+      "noDownloadsYet": "Weli wax soo dejin ah ma jiraan",
+      "playAll": "Dhammaan daa"
+    },
+    "favoritereciters": {
+      "addReciters": "Ku dar akhristayaal",
+      "addRecitersToSeeThem": "Ku dar akhristayaal si aad halkan u aragto",
+      "noFavoriteRecitersYet": "Weli akhristayaal la door bidey ma jiraan",
+      "removeFromFavorites": "Ka saar kuwa la door biday",
+      "searchFavoriteReciters": "Raadi akhristayaasha la door biday"
+    },
+    "index": {
+      "addToCollection": "Ku dar ururinta",
+      "bookmarks": "Calaamadaha",
+      "createYourFirstPlaylist": "Samee liiskaaga ugu horreeya",
+      "downloads": "Soo dejinta",
+      "items_one": "{{count}} shay",
+      "items_other": "{{count}} shay",
+      "loved": "La jecelyahay",
+      "noBookmarksYet": "Weli calaamado ma jiraan",
+      "noDownloadsYet": "Weli wax soo dejin ah ma jiraan",
+      "noFavoritesYet": "Weli wax la door bidey ma jiraan",
+      "noLovedSurahsYet": "Weli suurooyin la jecelyahay ma jiraan",
+      "noNotesYet": "Weli xusuus-qorro ma jiraan",
+      "noUploadsYet": "Weli wax la geliyey ma jiraan",
+      "notes": "Xusuus-qorrooyin",
+      "playlists": "Liisaska",
+      "reciters": "Akhristayaasha",
+      "uploads": "La geliyey"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Dhammaan suurooyinka la jecelyahay hore ayaa loo soo dejiyey.",
+      "allLovedSurahsHaveBeen": "Dhammaan suurooyinka la jecelyahay waa la soo dejiyey.",
+      "downloadError": "Khalad soo dejin",
+      "loveSurahsToSeeThem": "U jeclow suurooyin si aad halkan u aragto",
+      "noLovedSurahsYet": "Weli suurooyin la jecelyahay ma jiraan",
+      "someDownloadsMayHaveFailed": "Qaar ka mid ah soo dejinta ayaa laga yaabaa inay fashilmeen.",
+      "unloveAllSurahs": "Ka saar jacaylka dhammaan suurooyinka"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Ku dar xusuus-qorro aayadaha si aad halkan u aragto",
+      "editNote": "Wax ka beddel xusuus-qorrada",
+      "noNotesYet": "Weli xusuus-qorro ma jiraan",
+      "notes": "Xusuus-qorrooyin"
+    },
+    "playlistModal": {
+      "name": "Magac"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Samee liisas si aad halkan u aragto",
+      "noPlaylistsYet": "Weli liisas ma jiraan",
+      "playlists": "Liisaska"
+    },
+    "uploads": {
+      "removeAllUploads": "Ka saar dhammaan waxa la geliyey",
+      "uploadRecitationsToSeeThem": "Geli akhrisyo si aad halkan u aragto"
+    }
+  },
+  "common": {
+    "1Time": "1 mar",
+    "2Times": "2 jeer",
+    "3Times": "3 jeer",
+    "addToCollection": "Ku dar ururinta",
+    "addToQueue": "Ku dar safka",
+    "allSurahs": "Dhammaan suurooyinka",
+    "alreadyDownloaded": "Hore ayaa loo soo dejiyey",
+    "arabic": "Carabi",
+    "asc": "Kor u kac",
+    "browseAll": "Dhammaan baadh",
+    "browseAllReciters": "Dhammaan akhristayaasha baadh",
+    "cancel": "Jooji",
+    "clear": "Nadiifi",
+    "copyToClipboard": "U koobi clipboard-ka",
+    "createNewPlaylist": "Samee liis cusub",
+    "defaultReciter": "Akhristaha caadiga ah",
+    "delete": "Tir",
+    "deleteNote": "Tir xusuus-qorrada",
+    "deleteRecitation": "Tir akhriska",
+    "desc": "Hoos u dhac",
+    "downloadComplete": "Soo dejintii way dhammaatay",
+    "downloadFailed": "Soo dejintii way fashilantay",
+    "downloads": "Soo dejinta",
+    "editDetails": "Wax ka beddel faahfaahinta",
+    "error": "Khalad",
+    "favoriteReciters": "Akhristayaasha la door biday",
+    "followAlong": "Raac qoraalka",
+    "from": "Laga bilaabo",
+    "goToReciter": "U gudub akhristaha",
+    "goToVerse": "U gudub aayadda",
+    "learnAboutSurah": "Wax ka baro suuradda",
+    "loading": "Waa la rarayaa...",
+    "loop": "Ku celi",
+    "loved": "La jecelyahay",
+    "mushafSettings": "Dejinta Mushafka",
+    "next": "Xiga",
+    "noRecitersFound": "Akhriste lama helin",
+    "noResultsFound": "Natiijo lama helin",
+    "noUploadsYet": "Weli wax la geliyey ma jiraan",
+    "play": "Daa",
+    "playEachVerse": "Daa aayad kasta",
+    "playNow": "Hadda daa",
+    "playSpeed": "Xawaaraha daaritaanka",
+    "playTheRange": "Daa xadka",
+    "playlistName": "Magaca liiska",
+    "prev": "Hore",
+    "readingTheme": "Muuqaalka akhriska",
+    "recentSearches": "Raadinta dhawaan",
+    "reciter": "Akhriste",
+    "reciterChoice": "Doorashada akhristaha",
+    "reciters": "Akhristayaasha",
+    "remove": "Ka saar",
+    "removeAllDownloads": "Ka saar dhammaan soo dejinta",
+    "removeHighlight": "Ka saar iftiinsiga",
+    "rev": "Dib u rog",
+    "save": "Kaydi",
+    "search": "Raadi",
+    "searchReciters": "Raadi akhristayaasha...",
+    "searchSurahs": "Raadi suurooyinka",
+    "share": "La wadaag",
+    "shareAsImage": "La wadaag sawir ahaan",
+    "shareAsText": "La wadaag qoraal ahaan",
+    "sharedPhrases": "Weedho wadaag ah",
+    "showBasmallah": "Muuji Bismillaah",
+    "stop": "Jooji",
+    "storage": "Kaydka",
+    "surah": "Suurad",
+    "surahs": "Suurooyinka",
+    "to": "Ilaa",
+    "translation": "Tarjumaad",
+    "translationsTafaseer": "Tarjumaado iyo Tafsiirro",
+    "transliteration": "Higgaadin",
+    "uploads": "La geliyey",
+    "useDefaultReciter": "Isticmaal akhristaha caadiga ah",
+    "verseReference": "Tixraaca aayadda",
+    "verses": "Aayadaha",
+    "whatSNew": "Waxa cusub",
+    "wordByWord": "Eray ba eray",
+    "writeYourNoteHere": "Halkan ku qor xusuus-qorradaada...",
+    "yourPlaylists": "Liisaskaaga"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Daa dhammaan suurooyinka"
+    },
+    "searchHeader": {
+      "searchSurahs": "Raadi suurooyinka"
+    },
+    "searchView": {
+      "noSurahsFound": "Suurad lama helin"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Suurooyin lama hayo"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Ku dar akhris",
+      "uploadRecitationsToSeeThem": "Geli akhrisyo si aad halkan u aragto"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "La soo dejiyey • {{count}} suurad",
+    "subtitle_other": "La soo dejiyey • {{count}} suurooyin"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Waan ka xunnahay.. khalad ayaa dhacay"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Baadh dhammaan 114-ka suurad"
+    },
+    "savedAdhkarHero": {
+      "saved": "La keydiyey",
+      "yourCollection": "Ururintaada"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SUURADDA MAANTA"
+    },
+    "surahsHero": {
+      "number": "Lambar"
+    }
+  },
+  "language": {
+    "later": "Hadhow",
+    "restartMessage": "Dib u bilow abka si loo dabaqo jihada cusub ee habaynta.",
+    "restartNow": "Hadda dib u bilow",
+    "restartTitle": "Dib u bilaabid ayaa loo baahan yahay",
+    "search": "Raadi luuqado",
+    "system": "Luqadda qalabka"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Sii wad"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Ka bood"
+    }
+  },
+  "mushaf": {
+    "juz": "Juz {{juz}}",
+    "loadingMushaf": "Mushafka waa la rarayaa…",
+    "main": {
+      "mushafSettings": "Dejinta Mushafka"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Beddel akhristaha",
+      "changeReciter2": "Beddel akhristaha",
+      "nextAyah": "Aayadda xigta",
+      "playbackOptions": "Xulashooyinka daaritaanka",
+      "previousAyah": "Aayadda hore"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Hel suurooyin, aayado, bogag, ama juz",
+      "recentReads": "AKHRISYADII UGU DAMBEEYEY",
+      "searchSurahsPagesOrJuz": "Raadi suurooyin, bogag, ama juz...",
+      "searchTheMushaf": "Raadi Mushafka"
+    },
+    "options": "Xulashooyin",
+    "page": "Bogga {{page}}",
+    "pageAndSurah": "Bogga {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushafka lama rari karin.",
+    "tryAgain": "Isku day mar kale"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Wuxuu iftiiminayaa magaca Alle iyo qaababka magacyada Ilaahay sida Rabb ee mushafka."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Iftiinsi is beddelaya iyadoo loo eegayo qaybaha mawduuc",
+    "arabicFontSize": "Cabbirka farta Carabiga",
+    "bold": "Dufan",
+    "book": "Buug",
+    "colorLegend": "Tilmaanta midabada",
+    "currentlyReading": "Hadda waa la akhrinayaa",
+    "divineNames": "MAGACYADA ILAAHAY",
+    "fontSize": "Cabbirka farta",
+    "fullscreen": "Shaashad buuxda",
+    "hamzaReplacedByLongVowel": "Hamza oo lagu beddelay shaqal dheer",
+    "heavyLamInAllahAfter": "Lam culus oo ku jira Allaah ka dib xarfaha culus",
+    "highlightAllahRabb": "Iftiimi Allaah / Rabb",
+    "horizontal": "Toosan",
+    "ibdal": "Ibdaal",
+    "list": "Liis",
+    "loadingSample": "Muunad ayaa la rarayaa...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Muuqaal ugu sarreeya",
+    "medium": "Dhexdhexaad",
+    "modernMadinahPrintedPipeline": "Habka casriga ah ee daabacaadda Madiina",
+    "mushaf": "Mushaf",
+    "normal": "Caadi",
+    "originalMushafWeight": "Dhumucda asalka ah ee mushafka",
+    "pageDesign": "NAQSHADDA BOGGA",
+    "prolongedVowelAfterHamza": "Shaqal dheeraaday hamza ka dib",
+    "readingTheme": "MUUQAALKA AKHRISKA",
+    "scrollDirection": "JIHADA SKROOLKA",
+    "showDifferences": "Muuji kala duwanaanshaha",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Wax yar muuqaal badan",
+    "softenedHamzaPronunciation": "Ku dhawaaqista hamza oo la jilciyey",
+    "subcontinentNastaliqStyle": "Qaabka Nastaliiq ee qaarad-hoosaadka",
+    "taghlizAlLam": "Taghliiz al-Laam",
+    "tajweedColoring": "Midabaynta Tajwiidka",
+    "tashilMusahhala": "Tashiil / Musahhala",
+    "textPreviewNotYetAvailable": "HORAYDARIDDA QORAALKA MA JIRO WELI",
+    "textThickness": "DHUMUCDA QORAALKA",
+    "thematicHighlighting": "Iftiinsiga mawduuc",
+    "trailingVowelOrMoodChange": "Beddelka shaqalka dhamaadka ama habka oo keliya",
+    "usingSaheehInternationalTranslationWith": "Waa la isticmaalayaa: Tarjumaadda Saheeh International oo leh qoraallo hoose",
+    "vertical": "Istaag",
+    "viewType": "NOOCA MUUQAALKA",
+    "vowelMoodShift": "Beddelka shaqalka / habka",
+    "wordByWord": "ERAY BA ERAY",
+    "wordVariant": "Nooca erayga"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Seerfarka lama gaari karo",
+    "connectionRestored": "Isku xirka waa soo noqday",
+    "noInternetConnection": "Internet ma jiro",
+    "showingCachedData": "Xogta kaydsan ayaa la muujinayaa"
+  },
+  "organize": {
+    "createReciter": "Samee \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Safka",
+      "queueIsEmpty": "Safku waa madhan yahay"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Calaamadee akhriskan si aad u aragto qoraalka suuradda iyo faahfaahinta"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Liis • {{count}} suurad",
+    "subtitle_other": "Liis • {{count}} suurooyin"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Suurooyin kuma jiraan liiskan"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Qoraal hoose"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Akhris loo xushay waqtigan gaarkiisa",
+      "discover": "Ogaaw",
+      "discoverANewVoice": "Ogow cod cusub",
+      "explore": "Sahamin",
+      "exploreTheUnexpected": "Sahami waxa aan la filayn",
+      "hearSomethingNew": "Maqal wax cusub",
+      "letTheQuranSurpriseYou": "Ha kuyaabiso Qur'aanku",
+      "randomMix": "Isku dhafka random",
+      "randomRecitation": "Akhris random ah",
+      "shuffleListen": "Isku walaaq oo maqal",
+      "surpriseMe": "Yaab igu geli"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Beddelka qaabka muuqaalka wuxuu quseeyaa abka oo dhan"
+  },
+  "reciterBrowse": {
+    "allReciters": "Dhammaan akhristayaasha",
+    "browseReciters": "Baadh akhristayaasha",
+    "favorites": "La door biday"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Akhristahan soo dejin kuma jirto"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Waxa aan geliyey"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkaar",
+    "bestForMemorization": "Ugu fiican xifdinta",
+    "bestForTajweed": "Ugu fiican tajwiidka",
+    "continueListening": "Sii wad dhegaysiga",
+    "exclusives": "Gaar ah",
+    "exploreByRewayah": "Sahami iyadoo loo eegayo Rewayaad",
+    "featuredReciters": "Akhristayaasha la soo bandhigay",
+    "fromYourCollection": "Ururintaada",
+    "myRecitations": "Akhrisyadayda",
+    "newToQuranStartHere": "Qur'aanka cusub tahay? Halkan ka bilow",
+    "seeMore": "Arag wax dheeraad ah",
+    "yourFavorites": "Kuwa aad door bidday"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Firfircoon",
+      "activeTafseer": "TAFSIIRKA FIRFIRCOON",
+      "activeTranslation": "TARJUMAADDA FIRFIRCOON",
+      "deleteTafseer": "Tir tafsiirka",
+      "deleteTranslation": "Tir tarjumaadda",
+      "noTafaseerFound": "Tafsiirro lama helin",
+      "noTranslationsFound": "Tarjumaado lama helin",
+      "unableToDownloadThisTafseer": "Tafsiirkan lama soo dejin karo. Fadlan hubi isku xirka internetka oo mar kale isku day.",
+      "unableToDownloadThisTranslation": "Tarjumaaddan lama soo dejin karo. Fadlan hubi isku xirka internetka oo mar kale isku day."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Raadin dhawaan ah ma jirto",
+      "tryDifferentKeywordsOrCheck": "Isku day erayo kale ama hubi higgaadda",
+      "yourSearchHistoryWillAppear": "Taariikhda raadintaada halkan ayay ka muuqan doontaa"
+    },
+    "surahsOrReciters": "Raadi suurooyin ama akhristayaal"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Xakamaynta codka horumarsan",
+      "browseByJuz": "Baadh iyadoo loo eegayo Juz",
+      "createAndManageYourOwn": "Samee oo maaree liisaskaaga gaarka ah ee akhrisyadaada aad jeceshahay",
+      "crystalClearRecitationsFromThe": "Akhrisyo cad oo kuwa ugu fiican adduunka ah oo leh baaqitaan la hagaajiyey",
+      "curatedCollections": "Ururin la xushay",
+      "customPlaylists": "Liisas gaar ah",
+      "customizeThemesAccentColorsAnd": "Hagaaji muuqaalada, midabada iyo dejinta codka sidaad rabto",
+      "downloadSurahsForOfflineListening": "Soo deji suurooyin si aad u dhegaysato internet la'aan mar kasta iyo meel kasta",
+      "easilyNavigateThroughTheQuran": "Si fudud ugu socodsii Qur'aanka abaabulka iyo kooxaynta Juz-ka",
+      "features": "SIFOOYIN",
+      "highQualityAudio": "Cod tayo sare leh",
+      "listenReflectRememberAllah": "Dhegayso. Ka fikir. Xusuuso Allaah.",
+      "offlineDownloads": "Soo dejin internet la'aan",
+      "ourCommitment": "Ballanqaadkeena",
+      "ourMission": "Hadafkeena",
+      "personalization": "Shakhsiyeyn",
+      "precisePlaybackControlWithContinuous": "Xakamayn sax ah oo daaritaan joogto ah iyo xawaare akhris la hagaajin karo leh",
+      "quranBayanTafsirKnowledgeOur": "Qur'aan • Bayaan • Tafsiir • Aqoon. Hadafkeennu waa in dhegaysiga iyo kaftanka fikirku noqdaan qayb ka mid ah nolosha maalinlaha ah: guriga, waddada, iyo meel kasta oo aad ku xusuusan karto Allaah.",
+      "readListenAndReflect": "Akhri, Dhegayso, oo Ka Fikir",
+      "readTheMushafExploreTranslations": "Akhri Mushafka, sahami tarjumaado iyo tafsiir, kaydi aayado iyo xusuus-qorro, oo ku noqo adhkaarta maalinlaha ah. Dooro akhristahaaga, samee liisas, oo qaabee waayo-aragnimo dhegaysi oo maalintaada ku habboon. Sifooyinka la heli karo way kala duwan yihiin qalab ahaan; abka asalka ah wuxuu sidoo kale taageeraa soo dejin loogu talagalay dhegaysi internet la'aan.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Suurooyin si taxadar leh loo abaabulay munaasabado iyo mawduucyo kala duwan",
+      "weCareAboutTheAccuracy": "Waxaan danaynaa saxnaanta nuxurka quduuska ah, naqshad ixtiraam leh, iyo gelid la isku halleyn karo. Waxaan sii wadnaa hagaajinta ISTIMA annagoo danaynayna dadka isticmaala. Allaah ha aqbalo dadaalkan oo ha ka dhigo mid waxtar leh qof kasta oo dhegaysta, akhriya, oo ka fikira."
+    },
+    "aboutApp": "Ku saabsan {{name}}",
+    "appearance": "MUUQAALKA",
+    "defaultreciter": {
+      "changeDefaultReciter": "BEDDEL AKHRISTAHA CAADIGA AH"
+    },
+    "developer": "HORUMARIYAHA",
+    "floatingDevMenu": "Menu-ga sabbaynaya ee horumariyaha",
+    "language": "Luqadda",
+    "languageDescription": "Dooro luqadda abka",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Mar walba isticmaal akhristaha caadiga ah ee aad dooratay",
+      "askEveryTime": "Mar kasta weydii",
+      "chooseAReciterEachTime": "Dooro akhriste mar kasta oo aad daayso",
+      "chooseHowYouWantTo": "Dooro sida aad u doorato akhristayaasha markaad daayso Suurooyinka",
+      "defaultSelectionMethod": "QAABKA DOORASHADA CAADIGA AH",
+      "searchThroughOurCompleteCollection": "Raadi ururintayada buuxda ee akhristayaasha",
+      "selectionPreference": "DOORBIDKA DOORASHADA"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Dhammaan soo dejintii waa la saaray.",
+      "areYouSureYouWant": "Ma hubtaa inaad rabto inaad ka saarto dhammaan nuxurka la soo dejiyey? Ficilkan dib looguma noqon karo.",
+      "cache": "Kaydka ku meel gaarka ah",
+      "cacheHasBeenCleared": "Kaydka ku meel gaarka ah waa la nadiifiyey.",
+      "clearCache": "Nadiifi kaydka ku meel gaarka ah",
+      "failedToClearCache": "Nadiifinta kaydka ku meel gaarka ah way fashilantay.",
+      "failedToRemoveDownloads": "Ka saarista soo dejinta way fashilantay.",
+      "free": "Bannaan",
+      "loadingStorageInformation": "Macluumaadka kaydka waa la rarayaa...",
+      "manageStorage": "MAAREE KAYDKA",
+      "otherApps": "Abab kale",
+      "removeAllDownloads": "Ka saar dhammaan soo dejinta",
+      "removeAllTheQuranContent": "Ka saar dhammaan nuxurka Qur'aanka ee aad u soo dejisay isticmaalka internet la'aanta.",
+      "storageBreakdown": "DAYNTA KAYDKA",
+      "success": "Guul",
+      "thisWillClearYourCache": "Tani waxay nadiifinaysaa kaydkaaga ku meel gaarka ah. Soo dejintaada lama saarayo.",
+      "youCanFreeUpStorage": "Waxaad bannaynkarta kayd adigoo nadiifinaya kaydka ku meel gaarka ah. Soo dejintaada lama saarayo."
+    },
+    "themePicker": {
+      "auto": "Otomaatig",
+      "dark": "Madow",
+      "light": "Iftiin"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Liis isbeddello ma jiro"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Ku saabsan {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Ku dar akhriste la door biday",
+      "uploadRecitation": "Geli akhris"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Codadka jawiga",
+      "none": "Midna",
+      "volume": "Mugga"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "tusaale: Akhrisyada subaxda"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Ka saar soo dejinta"
+    },
+    "favoriteRecitersSheet": {
+      "done": "La dhammeeyey"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Ku dar ururinta",
+      "addToQueue": "Ku dar safka",
+      "continuePlaying": "Sii wad daaritaanka",
+      "goToReciter": "U gudub akhristaha",
+      "removeFromRecents": "Ka saar kuwii dhawaan"
+    },
+    "mushafLayoutSheet": {
+      "back": "Dib"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Aayadda dhamaadka",
+      "playbackSettings": "Dejinta daaritaanka",
+      "selectRange": "Dooro xadka",
+      "startingVerse": "Aayadda bilowga"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Dejinta ku celinta",
+      "start": "Bilow",
+      "verseRange": "Xadka aayadaha"
+    },
+    "organizeRecitationSheet": {
+      "category": "Qayb",
+      "customReciter": "Akhriste gaar ah",
+      "duA": "Du'aa",
+      "eGMorningAdhkar": "tusaale: Adhkaarta subaxda",
+      "lecture": "Muxaadaro",
+      "moreOptions": "Xulashooyin dheeraad ah",
+      "other": "Kale",
+      "recording": "Duubis",
+      "rewayah": "Rewayaad",
+      "searchSurahs": "Raadi suurooyin...",
+      "style": "Qaab",
+      "tafsir": "Tafsiir",
+      "title": "Cinwaan",
+      "type": "Nooc",
+      "verseRangeOptional": "Xadka aayadaha (ikhtiyaari)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Xawaaraha daaritaanka"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Dhammaan shayada liiskan hore ayaa loo soo dejiyey.",
+      "anErrorOccurredWhileDownloading": "Khalad ayaa dhacay markii liiska la soo dejinayay. Fadlan mar kale isku day.",
+      "deletePlaylist": "Tir liiska",
+      "downloadingPlaylist": "Liiska waa la soo dejinayaa...",
+      "editPlaylist": "Wax ka beddel liiska",
+      "emptyPlaylist": "Liis madhan",
+      "thisPlaylistIsEmpty": "Liiskan waa madhan yahay."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Ku saabsan Rewayaadka",
+      "availableRewayat": "Rewayaadka la heli karo"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Ku darista suuradda liiska way fashilantay",
+      "failedToCreatePlaylist": "Samaynta liiska way fashilantay",
+      "noPlaylistsYetCreateYour": "Weli liisas ma jiraan. Samee liiskaaga ugu horreeya kor ku xusan!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Mar kasta weydii",
+      "randomReciter": "Akhriste random ah",
+      "selectReciter": "Dooro akhriste"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Aayado la mid ah looma helin aayaddan.",
+      "similarWording": "Eray-bixin la mid ah"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Saacadda hurdada",
+      "turnOffTimer": "Dami saacadda"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Ka saar liiska"
+    },
+    "verseActionsSheet": {
+      "addNote": "Ku dar xusuus-qorro",
+      "copy": "Koobi",
+      "repeat": "Ku celi",
+      "similarVerses": "Aayado la mid ah",
+      "tafseer": "Tafsiir",
+      "theme": "Mawduuc"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Xulashooyinka koobiyeynta",
+      "selectWhatToCopy": "Dooro waxa la koobiyeynayo"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Midabka iftiinsiga"
+    },
+    "verseShareSheet": {
+      "shareVerse": "La wadaag aayadda"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Waxaa laga helay {{count}} aayad",
+    "foundIn_other": "Waxaa laga helay {{count}} aayado"
+  },
+  "surahItem": {
+    "moreOptions": "Xulashooyin dheeraad ah",
+    "opensMenuWithAdditionalActions": "Waxay furaysaa menu leh ficillo dheeraad ah oo suuraddan ah",
+    "tapToPlaySurah": "Taabo si aad u daayso suuradda"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "ID-ga liiska waa khalad",
+      "playlistNotFound": "Liiska lama helin"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Akhriste leh dhammaan suurooyinka liiskan lama helin. Fadlan isku day liis kale.",
+      "failedToPlayPlaylistPlease": "Daaritaanka liiska way fashilantay. Fadlan mar kale isku day.",
+      "failedToPlayTrackPlease": "Daaritaanka heesta way fashilantay. Fadlan mar kale isku day.",
+      "failedToShufflePlaylistPlease": "Isku walaaqista liiska way fashilantay. Fadlan mar kale isku day.",
+      "noReciterAvailable": "Akhriste lama hayo",
+      "noSurahsInThisPlaylist": "Suurooyin kuma jiraan liiskan"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Akoon",
+      "appData": "Abka iyo Xogta",
+      "audioPlayback": "Codka iyo Daaritaanka",
+      "chooseYourPreferredReciter": "Dooro akhristaha aad door bidayso",
+      "customizeQuranDisplayOptions": "Habee xulashooyinka muujinta Qur'aanka",
+      "customizeReciterSelection": "Habee doorashada akhristaha",
+      "featureRequests": "Codsiyada sifooyin",
+      "feedback": "Jawaab celin",
+      "helpSupport": "Caawimaad iyo Taageero",
+      "learnMoreAboutOurMission": "Wax badan ka baro hadafkeena",
+      "manageQuranTranslationsAndCommentary": "Maaree tarjumaadaha iyo faallooyinka Qur'aanka",
+      "privacyPolicy": "Siyaasadda Gaarnimada",
+      "quran": "Qur'aan",
+      "readOurTermsOfService": "Akhri shuruudaha adeegga",
+      "seeWhatSNewIn": "Eeg waxa cusub ee nooca kan ku jira",
+      "shareYourExperienceWithOthers": "La wadaag waayo-aragnimadaada dadka kale",
+      "showTheFloatingDeveloperTools": "Muuji badhanka qalabka horumariyaha ee sabbaynaya",
+      "suggestImprovementsAndNewFeatures": "Soo jeedi hagaajin iyo sifooyin cusub",
+      "termsOfService": "Shuruudaha Adeegga",
+      "viewAndManageStorageUsage": "Eeg oo maaree isticmaalka kaydka",
+      "viewOurPrivacyPolicy": "Eeg siyaasadda gaarnimadayada",
+      "writeAReview": "Qor dib-u-eegis"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Jooji",
+    "close": "Xidh",
+    "collection": "Ururin",
+    "download": "Soo deji",
+    "downloads": "Soo dejinta",
+    "error": "Wax baa khaldamay",
+    "favorites": "La door biday",
+    "home": "Hoy",
+    "language": "Luqadda",
+    "library": "Maktabadda",
+    "loading": "Waa la rarayaa...",
+    "noResults": "Natiijo lama helin",
+    "offline": "Internet kuma xidhna",
+    "pause": "Hakad",
+    "play": "Daa",
+    "retry": "Isku day mar kale",
+    "save": "Kaydi",
+    "search": "Raadi",
+    "settings": "Dejinta",
+    "surahs": "Suurooyinka"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "DOORO NUXURKA"
+    },
+    "highlightContent": {
+      "chooseColor": "DOORO MIDABKA"
+    },
+    "noteContent": {
+      "saveNote": "Kaydi xusuus-qorrada"
+    },
+    "shareContent": {
+      "shareLink": "La wadaag xiriirka"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Aayado la mid ah looma helin aayaddan.",
+      "sharedPhrases": "WEEDHO WADAAG AH",
+      "similarWording": "ERAY-BIXIN LA MID AH"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Tafsiir lama soo dejin",
+      "tafseerNotAvailableForThis": "Tafsiirka looma hayo aayaddan",
+      "tapHereToDownloadA": "Halkan taabo si aad u soo dejiso tafsiir oo aad u aragto faallada."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Xog mawduuc ah looma hayo aayaddan.",
+      "passage": "Qaybta"
+    },
+    "translationContent": {
+      "switch": "Beddel",
+      "translationNotAvailable": "Tarjumaadda looma hayo"
+    }
+  },
+  "version": {
+    "label": "Nooca {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Waxa cusub ee"
+  },
+  "wordDetail": {
+    "context": "Aayadda {{surah}}:{{ayah}} · Erayga {{position}} ee {{total}}"
+  }
+}

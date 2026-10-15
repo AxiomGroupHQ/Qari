@@ -1,0 +1,724 @@
+{
+  "app": {
+    "errorInitializingPlayer": "ተጻዋታይ ምጅማር ኣይተኻእለን፦ {{message}}",
+    "errorLoadingFonts": "ፊደላት ምጽዓን ኣይተኻእለን"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "መበገሲ ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "ኩሉ",
+      "clearAll": "ኩሉ ኣጽሪ",
+      "hasPhoto": "ስእሊ ኣለዎ"
+    },
+    "filterModal": {
+      "apply": "ተግብር",
+      "filterReciters": "ቀሪኦትን ኣጽርይ",
+      "recitationStyles": "ኣገባብ ቀራኣት",
+      "reset": "ከም ሓድሽ ኣቐምጥ",
+      "rewayatTypes": "ዓይነታት ሪዋያት"
+    },
+    "recitersFound_many": "ብዘለዉ መጻረዪታት {{count}} ቀሪኦት ተረኺቦም",
+    "recitersFound_one": "ብዘለዉ መጻረዪታት {{count}} ቀራኢ ተረኺቡ",
+    "recitersFound_other": "ብዘለዉ መጻረዪታት {{count}} ቀሪኦት ተረኺቦም"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "ዝተፈትዉ ሱራታት"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "ኣብዚ ንምርኣይ ኣያታት ምልክት ግበሩ",
+      "bookmarks": "ምልክታት",
+      "noBookmarksYet": "ገና ዝኾነ ምልክት የለን",
+      "removeBookmark": "ምልክት ኣወግድ"
+    },
+    "collectionSearchModal": {
+      "rewayat": "ሪዋያት",
+      "searchPlaylistsRecitersSurahsRewayat": "ዝርዝራት መጻወቲ፣ ቀሪኦት፣ ሱራታት፣ ሪዋያት ድለይ...",
+      "searchPlaylistsRecitersSurahsRewayat2": "ዝርዝራት መጻወቲ፣ ቀሪኦት፣ ሱራታት፣ ሪዋያትን ኣውሪዶትን ድለይ",
+      "searchYourCollection": "ኣኼባኹም ድለዩ",
+      "searching": "ይድለ ኣሎ...",
+      "tryDifferentKeywords": "ካልኦት ቁልፊ ቃላት ፈትኑ"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "ኣብዚ ንምርኣይ ሱራታት ኣውርዱ",
+      "noDownloadsYet": "ገና ዝኾነ ኣውሪድ የለን",
+      "playAll": "ኩሉ ጻወት"
+    },
+    "favoritereciters": {
+      "addReciters": "ቀሪኦት ወስኽ",
+      "addRecitersToSeeThem": "ኣብዚ ንምርኣይ ቀሪኦት ወስኹ",
+      "noFavoriteRecitersYet": "ገና ዝኾነ ዝተፈተወ ቀራኢ የለን",
+      "removeFromFavorites": "ካብ ዝተፈትዉ ኣወግድ",
+      "searchFavoriteReciters": "ዝተፈትዉ ቀሪኦት ድለይ"
+    },
+    "index": {
+      "addToCollection": "ናብ ኣኼባ ወስኽ",
+      "bookmarks": "ምልክታት",
+      "createYourFirstPlaylist": "ናይ መጀመርታ ዝርዝር መጻወቲኹም ፍጠሩ",
+      "downloads": "ኣውሪዶት",
+      "items_many": "{{count}} ነገራት",
+      "items_one": "{{count}} ነገር",
+      "items_other": "{{count}} ነገራት",
+      "loved": "ዝተፈትዉ",
+      "noBookmarksYet": "ገና ዝኾነ ምልክት የለን",
+      "noDownloadsYet": "ገና ዝኾነ ኣውሪድ የለን",
+      "noFavoritesYet": "ገና ዝኾነ ዝተፈተወ የለን",
+      "noLovedSurahsYet": "ገና ዝኾነ ዝተፈተወ ሱራ የለን",
+      "noNotesYet": "ገና ዝኾነ መዘክር የለን",
+      "noUploadsYet": "ገና ዝኾነ ዝተጻዕነ የለን",
+      "notes": "መዘክራት",
+      "playlists": "ዝርዝራት መጻወቲ",
+      "reciters": "ቀሪኦት",
+      "uploads": "ዝተጻዕኑ"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "ኩሎም ዝተፈትዉ ሱራታት ብዘይካ ሕጂ ወሪዶም ኣለዉ።",
+      "allLovedSurahsHaveBeen": "ኩሎም ዝተፈትዉ ሱራታት ወሪዶም።",
+      "downloadError": "ጌጋ ምውራድ",
+      "loveSurahsToSeeThem": "ኣብዚ ንምርኣይ ሱራታት ፍተዉ",
+      "noLovedSurahsYet": "ገና ዝኾነ ዝተፈተወ ሱራ የለን",
+      "someDownloadsMayHaveFailed": "ገሊኦም ውርዶት ከይተዓወቱ ይኽእሉ።",
+      "unloveAllSurahs": "ፍቕሪ ኩሉ ሱራታት ኣወግድ"
+    },
+    "notes": {
+      "addNotesToVersesTo": "ኣብዚ ንምርኣይ ኣብ ኣያታት መዘክር ወስኹ",
+      "editNote": "መዘክር ኣርትዕ",
+      "noNotesYet": "ገና ዝኾነ መዘክር የለን",
+      "notes": "መዘክራት"
+    },
+    "playlistModal": {
+      "name": "ስም"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "ኣብዚ ንምርኣይ ዝርዝራት መጻወቲ ፍጠሩ",
+      "noPlaylistsYet": "ገና ዝኾነ ዝርዝር መጻወቲ የለን",
+      "playlists": "ዝርዝራት መጻወቲ"
+    },
+    "uploads": {
+      "removeAllUploads": "ኩሉ ዝተጻዕነ ኣወግድ",
+      "uploadRecitationsToSeeThem": "ኣብዚ ንምርኣይ ቅራኣት ጸዓኑ"
+    }
+  },
+  "common": {
+    "1Time": "1 ግዜ",
+    "2Times": "2 ግዜ",
+    "3Times": "3 ግዜ",
+    "addToCollection": "ናብ ኣኼባ ወስኽ",
+    "addToQueue": "ናብ ሰልፊ ወስኽ",
+    "allSurahs": "ኩሉ ሱራታት",
+    "alreadyDownloaded": "ብዘይካ ሕጂ ወሪዱ",
+    "arabic": "ዓረብ",
+    "asc": "ደይባ",
+    "browseAll": "ኩሉ ኣብጽሕ",
+    "browseAllReciters": "ኩሎም ቀሪኦት ኣብጽሕ",
+    "cancel": "ሰርዝ",
+    "clear": "ኣጽሪ",
+    "copyToClipboard": "ናብ ክሊፕቦርድ ቅዳሕ",
+    "createNewPlaylist": "ሓድሽ ዝርዝር መጻወቲ ፍጠር",
+    "defaultReciter": "ቀዳማይ ቀራኢ",
+    "delete": "ደምስስ",
+    "deleteNote": "መዘክር ደምስስ",
+    "deleteRecitation": "ቅራኣት ደምስስ",
+    "desc": "ወራዲ",
+    "downloadComplete": "ምውራድ ተወዲኡ",
+    "downloadFailed": "ምውራድ ኣይተዓወተን",
+    "downloads": "ኣውሪዶት",
+    "editDetails": "ሓበሬታ ኣርትዕ",
+    "error": "ጌጋ",
+    "favoriteReciters": "ዝተፈትዉ ቀሪኦት",
+    "followAlong": "ጽሑፍ ስዓብ",
+    "from": "ካብ",
+    "goToReciter": "ናብ ቀራኢ ኪድ",
+    "goToVerse": "ናብ ኣያ ኪድ",
+    "learnAboutSurah": "ብዛዕባ ሱራ ተማሃር",
+    "loading": "ይጽዕን ኣሎ...",
+    "loop": "ደጋግም",
+    "loved": "ዝተፈትዉ",
+    "mushafSettings": "ቅጥዕታት ሙስሓፍ",
+    "next": "ዝቕጽል",
+    "noRecitersFound": "ዝተረኽበ ቀራኢ የለን",
+    "noResultsFound": "ዝተረኽበ ውጽኢት የለን",
+    "noUploadsYet": "ገና ዝኾነ ዝተጻዕነ የለን",
+    "play": "ጻወት",
+    "playEachVerse": "ነፍሲ ወከፍ ኣያ ጻወት",
+    "playNow": "ሕጂ ጻወት",
+    "playSpeed": "ቅልጣፈ ምጽዋት",
+    "playTheRange": "ወሰን ጻወት",
+    "playlistName": "ስም ዝርዝር መጻወቲ",
+    "prev": "ዝሓለፈ",
+    "readingTheme": "ዓይነት ቀራኣት",
+    "recentSearches": "ናይ ቀረባ ዝተድለዩ",
+    "reciter": "ቀራኢ",
+    "reciterChoice": "ምምራጽ ቀራኢ",
+    "reciters": "ቀሪኦት",
+    "remove": "ኣወግድ",
+    "removeAllDownloads": "ኩሉ ኣውሪዶት ኣወግድ",
+    "removeHighlight": "ምልዓል ኣወግድ",
+    "rev": "ዝምለስ",
+    "save": "ዓቅብ",
+    "search": "ድለይ",
+    "searchReciters": "ቀሪኦት ድለይ...",
+    "searchSurahs": "ሱራታት ድለይ",
+    "share": "ኣካፍል",
+    "shareAsImage": "ከም ስእሊ ኣካፍል",
+    "shareAsText": "ከም ጽሑፍ ኣካፍል",
+    "sharedPhrases": "ሓባራዊ ሓረጋት",
+    "showBasmallah": "ቢስሚላህ ኣርእይ",
+    "stop": "ኣቋርጽ",
+    "storage": "መዘወሪ",
+    "surah": "ሱራ",
+    "surahs": "ሱራታት",
+    "to": "ክሳብ",
+    "translation": "ትርጉም",
+    "translationsTafaseer": "ትርጉማትን ተፍሲራትን",
+    "transliteration": "ትርጉመ-ድምጺ",
+    "uploads": "ዝተጻዕኑ",
+    "useDefaultReciter": "ቀዳማይ ቀራኢ ተጠቐም",
+    "verseReference": "መወከሲ ኣያ",
+    "verses": "ኣያታት",
+    "whatSNew": "ሓድሽ ነገር",
+    "wordByWord": "ቃል ብቃል",
+    "writeYourNoteHere": "መዘክርካ ኣብዚ ጽሓፍ...",
+    "yourPlaylists": "ዝርዝራት መጻወቲኹም"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "ኩሎም ሱራታት ጻወት"
+    },
+    "searchHeader": {
+      "searchSurahs": "ሱራታት ድለይ"
+    },
+    "searchView": {
+      "noSurahsFound": "ሱራታት ኣይተረኽቡን"
+    },
+    "surahList": {
+      "noSurahsAvailable": "ዝርከብ ሱራ የለን"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "ቅራኣት ወስኽ",
+      "uploadRecitationsToSeeThem": "ኣብዚ ንምርኣይ ቅራኣት ጸዓኑ"
+    }
+  },
+  "downloads": {
+    "subtitle_many": "ወሪዶም • {{count}} ሱራታት",
+    "subtitle_one": "ወሪዱ • {{count}} ሱራ",
+    "subtitle_other": "ወሪዶም • {{count}} ሱራታት"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "ይቕሬታ.. ጌጋ ተፈጢሩ"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "ኩሎም 114 ሱራታት ኣብጽሑ"
+    },
+    "savedAdhkarHero": {
+      "saved": "ዝተዓቀቡ",
+      "yourCollection": "ኣኼባኹም"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "ሱራ ናይ ሎሚ"
+    },
+    "surahsHero": {
+      "number": "ቍጽሪ"
+    }
+  },
+  "language": {
+    "later": "ደሓር",
+    "restartMessage": "ሓድሽ ኣንፈት ኣቀማምጣ ንምትግባር ኣፕሊኬሽን ከም ሓድሽ ጀምሩ።",
+    "restartNow": "ሕጂ ከም ሓድሽ ጀምር",
+    "restartTitle": "ከም ሓድሽ ምጅማር የድሊ",
+    "search": "ቋንቋታት ድለይ",
+    "system": "ቋንቋ መሳርሒ"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "ቀጽል"
+    },
+    "whatsNewOnboarding": {
+      "skip": "ሕለፍ"
+    }
+  },
+  "mushaf": {
+    "juz": "ጁዝ {{juz}}",
+    "loadingMushaf": "ሙስሓፍ ይጽዕን ኣሎ…",
+    "main": {
+      "mushafSettings": "ቅጥዕታት ሙስሓፍ"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "ቀራኢ ቀይር",
+      "changeReciter2": "ቀራኢ ቀይር",
+      "nextAyah": "ዝቕጽል ኣያ",
+      "playbackOptions": "ኣማራጺታት ምጽዋት",
+      "previousAyah": "ዝሓለፈ ኣያ"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "ሱራታት፣ ኣያታት፣ ገጻት ወይ ጁዝ ረኽቡ",
+      "recentReads": "ናይ ቀረባ ቅራኣት",
+      "searchSurahsPagesOrJuz": "ሱራታት፣ ገጻት ወይ ጁዝ ድለይ...",
+      "searchTheMushaf": "ኣብ ሙስሓፍ ድለይ"
+    },
+    "options": "ኣማራጺታት",
+    "page": "ገጽ {{page}}",
+    "pageAndSurah": "ገጽ {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "ሙስሓፍ ክጽዕን ኣይከኣለን።",
+    "tryAgain": "ዳግማይ ፈትን"
+  },
+  "mushafSettings": {
+    "rabbHelper": "ኣብ ሙስሓፍ ስም ኣላህን ከም ረብ ዝኣመሰሉ መለኮታዊ ስማትን የድምቕ።"
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "ብጭብጢ ክፍሊ ዝፈራረቕ ምድማቕ",
+    "arabicFontSize": "ዓቐን ዓረብኛ ፊደል",
+    "bold": "ደበኽ",
+    "book": "መጽሓፍ",
+    "colorLegend": "መመሪሒ ሕብሪ",
+    "currentlyReading": "ሕጂ ይንበብ ኣሎ",
+    "divineNames": "መለኮታዊ ስማት",
+    "fontSize": "ዓቐን ፊደል",
+    "fullscreen": "ምሉእ ስክሪን",
+    "hamzaReplacedByLongVowel": "ሓምዛ ብነዊሕ ድምጺ ተተኪኡ",
+    "heavyLamInAllahAfter": "ድሕሪ ሓያል ፊደላት ኣብ ኣላህ ከቢድ ላም",
+    "highlightAllahRabb": "ኣላህ / ረብ ኣድምቕ",
+    "horizontal": "ጎድኒ",
+    "ibdal": "ኢብዳል",
+    "list": "ዝርዝር",
+    "loadingSample": "ኣብነት ይጽዕን ኣሎ...",
+    "maddAlBadal": "መድ ኣል-በዳል",
+    "maximumProminence": "ዝለዓለ ምድማቕ",
+    "medium": "ማእከላይ",
+    "modernMadinahPrintedPipeline": "ዘመናዊ ናይ መዲና ኣተሓሕዛ ሕትመት",
+    "mushaf": "ሙስሓፍ",
+    "normal": "ልዑል",
+    "originalMushafWeight": "ቀዳማይ ሕብታት ሙስሓፍ",
+    "pageDesign": "ዲዛይን ገጽ",
+    "prolongedVowelAfterHamza": "ድሕሪ ሓምዛ ዝተሰጋገረ ድምጺ",
+    "readingTheme": "ዓይነት ቀራኣት",
+    "scrollDirection": "ኣንፈት ምስሕሓብ",
+    "showDifferences": "ፍልልያት ኣርእይ",
+    "silah": "ሲላህ",
+    "slightlyMoreProminent": "ቁሩብ ዝያዳ ዝረአ",
+    "softenedHamzaPronunciation": "ዝለዘበ ኣነባብራ ሓምዛ",
+    "subcontinentNastaliqStyle": "ናይ ንኡስ-ክፍለ ዓለም ነስታሊቕ ዓይነት",
+    "taghlizAlLam": "ታግሊዝ ኣል-ላም",
+    "tajweedColoring": "ምሕባር ተጅዊድ",
+    "tashilMusahhala": "ተሲሂል / ሙሰሃላ",
+    "textPreviewNotYetAvailable": "ቅድመ-ርእየት ጽሑፍ ገና ኣይተዳለወን",
+    "textThickness": "ሕብታት ጽሑፍ",
+    "thematicHighlighting": "ጭብጣዊ ምድማቕ",
+    "trailingVowelOrMoodChange": "ለውጢ መወዳእታ ድምጺ ወይ ኣነባብራ ጥራይ",
+    "usingSaheehInternationalTranslationWith": "ይጥቀም ኣሎ፦ ትርጉም ሰሒሕ ኢንተርናሽናል ምስ ኣብ ታሕቲ ዝሰፍሩ መዘክራት",
+    "vertical": "ደቀቕ",
+    "viewType": "ዓይነት ርእየት",
+    "vowelMoodShift": "ለውጢ ድምጺ / ኣነባብራ",
+    "wordByWord": "ቃል ብቃል",
+    "wordVariant": "ዓይነት ቃል"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "ሰርቨር ኣይርከብን",
+    "connectionRestored": "ርክብ ተመሊሱ",
+    "noInternetConnection": "ርክብ ኢንተርኔት የለን",
+    "showingCachedData": "ዝተዓቀበ ዳታ ይርአ ኣሎ"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" ፍጠር"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "ሰልፊ",
+      "queueIsEmpty": "ሰልፊ ባዶ እዩ"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "ጽሑፍን ሓበሬታን ሱራ ንምርኣይ እዚ ቅራኣት ምልክት ግበሩ"
+    }
+  },
+  "playlist": {
+    "subtitle_many": "ዝርዝር መጻወቲ • {{count}} ሱራታት",
+    "subtitle_one": "ዝርዝር መጻወቲ • {{count}} ሱራ",
+    "subtitle_other": "ዝርዝር መጻወቲ • {{count}} ሱራታት"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "ኣብዚ ዝርዝር መጻወቲ ሱራ የለን"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "ኣብ ታሕቲ ዝሰፍር መዘክር"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "ንዚ ግዜ ኢሉ ዝተመርጸ ቅራኣት",
+      "discover": "ርኸብ",
+      "discoverANewVoice": "ሓድሽ ድምጺ ርኸብ",
+      "explore": "መርምር",
+      "exploreTheUnexpected": "ዘይተሓሰበ መርምር",
+      "hearSomethingNew": "ሓድሽ ነገር ስማዕ",
+      "letTheQuranSurpriseYou": "ቁርኣን የገርመካ",
+      "randomMix": "ዘፈናዊ ሕውስዋስ",
+      "randomRecitation": "ዘፈናዊ ቅራኣት",
+      "shuffleListen": "ሓውስን ስማዕን",
+      "surpriseMe": "ኣገርመኒ"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "ለውጢ ኣገባብ ርእየት ኣብ ምሉእ ኣፕሊኬሽን ይትግበር"
+  },
+  "reciterBrowse": {
+    "allReciters": "ኩሎም ቀሪኦት",
+    "browseReciters": "ቀሪኦት ኣብጽሕ",
+    "favorites": "ዝተፈትዉ"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "ን እዚ ቀራኢ ኣውሪድ የለን"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "ናተይ ዝተጻዕኑ"
+    }
+  },
+  "recitersView": {
+    "adhkar": "ኣዝካር",
+    "bestForMemorization": "ንሕፍዚ ዝበለጸ",
+    "bestForTajweed": "ንተጅዊድ ዝበለጸ",
+    "continueListening": "ምስማዕ ቀጽል",
+    "exclusives": "ብፍላይ",
+    "exploreByRewayah": "ብሪዋያ መርምር",
+    "featuredReciters": "ፍሉያት ቀሪኦት",
+    "fromYourCollection": "ካብ ኣኼባኹም",
+    "myRecitations": "ናተይ ቅራኣት",
+    "newToQuranStartHere": "ንቁርኣን ሓድሽ ዲኹም? ካብዚ ጀምሩ",
+    "seeMore": "ዝያዳ ርኣዩ",
+    "yourFavorites": "ዝተፈተዉኩም"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "ንጡፍ",
+      "activeTafseer": "ንጡፍ ተፍሲር",
+      "activeTranslation": "ንጡፍ ትርጉም",
+      "deleteTafseer": "ተፍሲር ደምስስ",
+      "deleteTranslation": "ትርጉም ደምስስ",
+      "noTafaseerFound": "ተፍሲራት ኣይተረኽቡን",
+      "noTranslationsFound": "ትርጉማት ኣይተረኽቡን",
+      "unableToDownloadThisTafseer": "እዚ ተፍሲር ምውራድ ኣይተኻእለን። ርክብ ኢንተርኔት ኣረጋግጹ ከም ሓድሽ ድማ ፈትኑ።",
+      "unableToDownloadThisTranslation": "እዚ ትርጉም ምውራድ ኣይተኻእለን። ርክብ ኢንተርኔት ኣረጋግጹ ከም ሓድሽ ድማ ፈትኑ።"
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "ናይ ቀረባ ድለያ የለን",
+      "tryDifferentKeywordsOrCheck": "ካልኦት ቁልፊ ቃላት ፈትኑ ወይ ሆጅያት ኣረጋግጹ",
+      "yourSearchHistoryWillAppear": "ታሪኽ ድለያኹም ኣብዚ ክርአ እዩ"
+    },
+    "surahsOrReciters": "ሱራታት ወይ ቀሪኦት ድለይ"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "ምዕቡል ቁጽጽር ድምጺ",
+      "browseByJuz": "ብጁዝ ኣብጽሕ",
+      "createAndManageYourOwn": "ናትኩም ብጾታ ዝተፈተዉ ቅራኣት ዝርዝራት መጻወቲ ፍጠሩ ኣመሓድሩ",
+      "crystalClearRecitationsFromThe": "ካብ ዝበለጹ ናይ ዓለም ቃሪኦት ጽሩይ ቅራኣት ብዝተመሓየሸ ምፍናው",
+      "curatedCollections": "ዝተመርጹ ኣኼባታት",
+      "customPlaylists": "ብጁ ዝርዝራት መጻወቲ",
+      "customizeThemesAccentColorsAnd": "ገጽታታት፣ ሕብሪ ምድማቕን ቅጥዕታት ድምጺን ከም ድሌትኩም ኣዘጋግሙ",
+      "downloadSurahsForOfflineListening": "ብዘይ ኢንተርኔት ኣብ ዝኾነ ግዜን ቦታን ንምስማዕ ሱራታት ኣውርዱ",
+      "easilyNavigateThroughTheQuran": "ብኣደራርባን ምጥርናፍን ጁዝ ቁርኣን ብቐሊሉ ኣብጽሑ",
+      "features": "ባህርያት",
+      "highQualityAudio": "ዓይነት ልዑል ድምጺ",
+      "listenReflectRememberAllah": "ስማዕ። ኣስተንትን። ኣላህ ዘክር።",
+      "offlineDownloads": "ብዘይ ኢንተርኔት ኣውሪዶት",
+      "ourCommitment": "ተወፋይነትና",
+      "ourMission": "ተልእኾና",
+      "personalization": "ውልቃዊ ምግባር",
+      "precisePlaybackControlWithContinuous": "ብቀጻልነት ምጽዋትን ዝተዓራረየ ቅልጣፈ ቅራኣትን ትኽክለኛ ቁጽጽር ምጽዋት",
+      "quranBayanTafsirKnowledgeOur": "ቁርኣን • በያን • ተፍሲር • ፍልጠት። ዕላማና ምስማዕን ምስትንታንን ከም ክፋል መዓልታዊ ሂወት ምግባር እዩ፦ ኣብ ገዛ፣ ኣብ መገሻን ኣላህ ንምዝካር ግዜ ዘለኩም ቦታ ኩሉ።",
+      "readListenAndReflect": "ኣንብብ፣ ስማዕ፣ ኣስተንትን",
+      "readTheMushafExploreTranslations": "ሙስሓፍ ኣንብቡ፣ ትርጉማትን ተፍሲርን መርምሩ፣ ኣያታትን መዘክራትን ዓቅቡ፣ ናብ መዓልታዊ ኣዝካር ተመለሱ። ቀራኢኹም ሕረዩ፣ ዝርዝራት መጻወቲ ሃንጹ፣ ንመዓልትኹም ዝሰማማዕ ተመክሮ ምስማዕ ቀርጹ። ዝርከቡ ባህርያት ከም መሳርሒ ይፈላለዩ፤ ቤተኛ ኣፕሊኬሽናት ብዘይ ኢንተርኔት ንምስማዕ ኣውሪዶትውን የዕቝቡ።",
+      "thoughtfullyOrganizedSurahsForDifferent": "ንዝተፈላለዩ ኣጋጣሚታትን ጭብጥታትን ብጥንቃቐ ዝተወደቡ ሱራታት",
+      "weCareAboutTheAccuracy": "ብዛዕባ ትኽክለኛነት ቅዱስ ትሕዝቶ፣ ኣኽብሮታዊ ዲዛይንን ዝእመን ምርካብን ንጸዓር። ንዝጥቀሙ ሰባት ብምሕላው ISTIMA ምምሕያሽ ንቕጽል። ኣላህ እዚ ጻዕሪ ይቕበል፣ ንዝሰምዑን ዝኣንብቡን ዘስተንትኑን ኩሎም ጠቓሚ ይግበሮ።"
+    },
+    "aboutApp": "ብዛዕባ {{name}}",
+    "appearance": "ኣነባብራ",
+    "defaultreciter": {
+      "changeDefaultReciter": "ቀዳማይ ቀራኢ ቀይር"
+    },
+    "developer": "ኣማዕቢሊ",
+    "floatingDevMenu": "ተንሳፋፊ ዝርዝር ኣማዕቢሊ",
+    "language": "ቋንቋ",
+    "languageDescription": "ቋንቋ ኣፕሊኬሽን ምረጹ",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "ኩሉ ግዜ ዝመረጽኩሞ ቀዳማይ ቀራኢ ተጠቐሙ",
+      "askEveryTime": "ኩሉ ግዜ ሕተት",
+      "chooseAReciterEachTime": "ኣብ ዝጻወቱሉ ኩሉ ግዜ ቀራኢ ምረጹ",
+      "chooseHowYouWantTo": "ሱራታት ክትጻወቱ ከለኹም ቀሪኦት ከመይ ከም ትመርጹ ምረጹ",
+      "defaultSelectionMethod": "ቀዳማይ ኣገባብ ምምራጽ",
+      "searchThroughOurCompleteCollection": "ምሉእ ኣኼባ ቀሪኦትና ድለዩ",
+      "selectionPreference": "ምርጫ ምምራጽ"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "ኩሎም ኣውሪዶት ተኣልዮም።",
+      "areYouSureYouWant": "ኩሉ ዝወረደ ትሕዝቶ ከተወግዱ ርግጸኛ ዲኹም? እዚ ተግባር ክምለስ ኣይክእልን።",
+      "cache": "ካሽ",
+      "cacheHasBeenCleared": "ካሽ ጸሪዩ።",
+      "clearCache": "ካሽ ኣጽሪ",
+      "failedToClearCache": "ካሽ ምጽራይ ኣይተዓወተን።",
+      "failedToRemoveDownloads": "ኣውሪዶት ምውጋድ ኣይተዓወተን።",
+      "free": "ናጻ",
+      "loadingStorageInformation": "ሓበሬታ መዘወሪ ይጽዕን ኣሎ...",
+      "manageStorage": "መዘወሪ ኣመሓድር",
+      "otherApps": "ካልኦት ኣፕሊኬሽናት",
+      "removeAllDownloads": "ኩሉ ኣውሪዶት ኣወግድ",
+      "removeAllTheQuranContent": "ብዘይ ኢንተርኔት ንምጥቃም ዘውረድኩሞ ኩሉ ትሕዝቶ ቁርኣን ኣወግዱ።",
+      "storageBreakdown": "ኣዳላልዋ መዘወሪ",
+      "success": "ዓወት",
+      "thisWillClearYourCache": "እዚ ካሽኩም ከጽርዮ እዩ። ኣውሪዶትኩም ኣይውገዱን።",
+      "youCanFreeUpStorage": "ካሽኩም ብምጽራይ መዘወሪ ክትናጽፉ ትኽእሉ። ኣውሪዶትኩም ኣይውገዱን።"
+    },
+    "themePicker": {
+      "auto": "ባዕሉ",
+      "dark": "ጸልማት",
+      "light": "ብርሃን"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "ዝርከብ ዝርዝር ለውጢ የለን"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "ብዛዕባ {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "ዝተፈተወ ቀራኢ ወስኽ",
+      "uploadRecitation": "ቅራኣት ጸዓን"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "ድምጺ ከባቢ",
+      "none": "ዋላ ሓንቲ",
+      "volume": "ደረጃ ድምጺ"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "ንኣብነት፦ ናይ ንግሆ ቅራኣት"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "ኣውሪድ ኣወግድ"
+    },
+    "favoriteRecitersSheet": {
+      "done": "ተወዲኡ"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "ናብ ኣኼባ ወስኽ",
+      "addToQueue": "ናብ ሰልፊ ወስኽ",
+      "continuePlaying": "ምጽዋት ቀጽል",
+      "goToReciter": "ናብ ቀራኢ ኪድ",
+      "removeFromRecents": "ካብ ናይ ቀረባ ኣወግድ"
+    },
+    "mushafLayoutSheet": {
+      "back": "ተመለስ"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "መወዳእታ ኣያ",
+      "playbackSettings": "ቅጥዕታት ምጽዋት",
+      "selectRange": "ወሰን ምረጽ",
+      "startingVerse": "መጀመሪ ኣያ"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "ቅጥዕታት ምድጋም",
+      "start": "ጀምር",
+      "verseRange": "ወሰን ኣያታት"
+    },
+    "organizeRecitationSheet": {
+      "category": "ምድብ",
+      "customReciter": "ብጁ ቀራኢ",
+      "duA": "ዱዓ",
+      "eGMorningAdhkar": "ንኣብነት፦ ናይ ንግሆ ኣዝካር",
+      "lecture": "ትምህርቲ",
+      "moreOptions": "ተወሳኺ ኣማራጺታት",
+      "other": "ካልእ",
+      "recording": "ቀዳሕ",
+      "rewayah": "ሪዋያ",
+      "searchSurahs": "ሱራታት ድለይ...",
+      "style": "ዓይነት",
+      "tafsir": "ተፍሲር",
+      "title": "ኣርእስቲ",
+      "type": "ዓይነት",
+      "verseRangeOptional": "ወሰን ኣያታት (ኣማራጺ)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "ቅልጣፈ ምጽዋት"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "ኩሎም ኣብዚ ዝርዝር መጻወቲ ዘለዉ ነገራት ብዘይካ ሕጂ ወሪዶም ኣለዉ።",
+      "anErrorOccurredWhileDownloading": "ዝርዝር መጻወቲ ኣብ ምውራድ ጌጋ ተፈጢሩ። በጃኹም ከም ሓድሽ ፈትኑ።",
+      "deletePlaylist": "ዝርዝር መጻወቲ ደምስስ",
+      "downloadingPlaylist": "ዝርዝር መጻወቲ ይወርድ ኣሎ...",
+      "editPlaylist": "ዝርዝር መጻወቲ ኣርትዕ",
+      "emptyPlaylist": "ባዶ ዝርዝር መጻወቲ",
+      "thisPlaylistIsEmpty": "እዚ ዝርዝር መጻወቲ ባዶ እዩ።"
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "ብዛዕባ ሪዋያት",
+      "availableRewayat": "ዝርከቡ ሪዋያት"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "ሱራ ናብ ዝርዝር መጻወቲ ምውሳኽ ኣይተዓወተን",
+      "failedToCreatePlaylist": "ዝርዝር መጻወቲ ምፍጣር ኣይተዓወተን",
+      "noPlaylistsYetCreateYour": "ገና ዝኾነ ዝርዝር መጻወቲ የለን። ናይ መጀመርታ ዝርዝር መጻወቲኹም ኣብ ላዕሊ ፍጠሩ!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "ኩሉ ግዜ ሕተት",
+      "randomReciter": "ዘፈናዊ ቀራኢ",
+      "selectReciter": "ቀራኢ ምረጽ"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "ንዚ ኣያ ተመሳሳሊ ኣያታት ኣይተረኽቡን።",
+      "similarWording": "ተመሳሳሊ ኣገላልጻ"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "ቆጻሪ እንቅልፍ",
+      "turnOffTimer": "ቆጻሪ ሰርዝ"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "ካብ ዝርዝር መጻወቲ ኣወግድ"
+    },
+    "verseActionsSheet": {
+      "addNote": "መዘክር ወስኽ",
+      "copy": "ቅዳሕ",
+      "repeat": "ደጋግም",
+      "similarVerses": "ተመሳሳሊ ኣያታት",
+      "tafseer": "ተፍሲር",
+      "theme": "ጭብጢ"
+    },
+    "verseCopySheet": {
+      "copyOptions": "ኣማራጺታት ምቕዳሕ",
+      "selectWhatToCopy": "ዝቕደሕ ምረጹ"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "ሕብሪ ምድማቕ"
+    },
+    "verseShareSheet": {
+      "shareVerse": "ኣያ ኣካፍል"
+    }
+  },
+  "similarVerses": {
+    "foundIn_many": "ኣብ {{count}} ኣያታት ተረኺቡ",
+    "foundIn_one": "ኣብ {{count}} ኣያ ተረኺቡ",
+    "foundIn_other": "ኣብ {{count}} ኣያታት ተረኺቡ"
+  },
+  "surahItem": {
+    "moreOptions": "ተወሳኺ ኣማራጺታት",
+    "opensMenuWithAdditionalActions": "ንዚ ሱራ ተወሳኺ ተግባራት ዘለዎ ዝርዝር ይኸፍት",
+    "tapToPlaySurah": "ሱራ ንምጽዋት ጥዕዩ"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "ዘይሰሓሕ መለለዪ ዝርዝር መጻወቲ",
+      "playlistNotFound": "ዝርዝር መጻወቲ ኣይተረኽበን"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "ኩሎም ሱራታት እዚ ዝርዝር መጻወቲ ዘለዎ ቀራኢ ኣይተረኽበን። በጃኹም ካልእ ዝርዝር መጻወቲ ፈትኑ።",
+      "failedToPlayPlaylistPlease": "ዝርዝር መጻወቲ ምጽዋት ኣይተዓወተን። በጃኹም ከም ሓድሽ ፈትኑ።",
+      "failedToPlayTrackPlease": "ትራክ ምጽዋት ኣይተዓወተን። በጃኹም ከም ሓድሽ ፈትኑ።",
+      "failedToShufflePlaylistPlease": "ዝርዝር መጻወቲ ምሕዋስ ኣይተዓወተን። በጃኹም ከም ሓድሽ ፈትኑ።",
+      "noReciterAvailable": "ዝርከብ ቀራኢ የለን",
+      "noSurahsInThisPlaylist": "ኣብዚ ዝርዝር መጻወቲ ሱራ የለን"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "ሕሳብ",
+      "appData": "ኣፕሊኬሽንን ዳታን",
+      "audioPlayback": "ድምጺን ምጽዋትን",
+      "chooseYourPreferredReciter": "ዝመረጽኩሞ ቀራኢ ምረጹ",
+      "customizeQuranDisplayOptions": "ኣማራጺታት ርእየት ቁርኣን ኣዘጋግሙ",
+      "customizeReciterSelection": "ምርጫ ቀራኢ ኣዘጋግሙ",
+      "featureRequests": "ሕቶታት ባህርያት",
+      "feedback": "ርእይቶ",
+      "helpSupport": "ሓገዝን ደገፍን",
+      "learnMoreAboutOurMission": "ብዛዕባ ተልእኾና ዝያዳ ፍለጡ",
+      "manageQuranTranslationsAndCommentary": "ትርጉማትን ሓተታን ቁርኣን ኣመሓድሩ",
+      "privacyPolicy": "ፖሊሲ ብሕትነት",
+      "quran": "ቁርኣን",
+      "readOurTermsOfService": "ውዕላት ኣገልግሎትና ኣንብቡ",
+      "seeWhatSNewIn": "ኣብዚ ስሪት ሓድሽ ዝኾነ ርኣዩ",
+      "shareYourExperienceWithOthers": "ተመክሮኹም ምስ ካልኦት ኣካፍሉ",
+      "showTheFloatingDeveloperTools": "ተንሳፋፊ ጠውቒ መሳርሒታት ኣማዕቢሊ ኣርእዩ",
+      "suggestImprovementsAndNewFeatures": "ምምሕያሻትን ሓደስቲ ባህርያትን ሕብሩ",
+      "termsOfService": "ውዕላት ኣገልግሎት",
+      "viewAndManageStorageUsage": "ኣጠቓቕማ መዘወሪ ርኣዩ ኣመሓድሩ",
+      "viewOurPrivacyPolicy": "ፖሊሲ ብሕትነትና ርኣዩ",
+      "writeAReview": "ግምጋም ጽሓፍ"
+    }
+  },
+  "ui": {
+    "appName": "ኢስቲማ",
+    "cancel": "ሰርዝ",
+    "close": "ዕጸው",
+    "collection": "ኣኼባ",
+    "download": "ኣውርድ",
+    "downloads": "ኣውሪዶት",
+    "error": "ገለ ነገር ተጋግዩ",
+    "favorites": "ዝተፈትዉ",
+    "home": "ገዛ",
+    "language": "ቋንቋ",
+    "library": "ቤተ-መጻሕፍቲ",
+    "loading": "ይጽዕን ኣሎ...",
+    "noResults": "ውጽኢት ኣይተረኽበን",
+    "offline": "ካብ መስመር ወጻኢ ኢኹም",
+    "pause": "ሰጋሕ",
+    "play": "ጻወት",
+    "retry": "ዳግማይ ፈትን",
+    "save": "ዓቅብ",
+    "search": "ድለይ",
+    "settings": "ቅጥዕታት",
+    "surahs": "ሱራታት"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "ትሕዝቶ ምረጹ"
+    },
+    "highlightContent": {
+      "chooseColor": "ሕብሪ ምረጹ"
+    },
+    "noteContent": {
+      "saveNote": "መዘክር ዓቅብ"
+    },
+    "shareContent": {
+      "shareLink": "መላግቦ ኣካፍል"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "ንዚ ኣያ ተመሳሳሊ ኣያታት ኣይተረኽቡን።",
+      "sharedPhrases": "ሓባራዊ ሓረጋት",
+      "similarWording": "ተመሳሳሊ ኣገላልጻ"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "ዝወረደ ተፍሲር የለን",
+      "tafseerNotAvailableForThis": "ንዚ ኣያ ተፍሲር የለን",
+      "tapHereToDownloadA": "ተፍሲር ንምውራድን ሓተታ ንምርኣይን ኣብዚ ጥዕዩ።"
+    },
+    "themeContent": {
+      "noThematicDataForThis": "ንዚ ኣያ ጭብጣዊ ዳታ የለን።",
+      "passage": "ክፋል"
+    },
+    "translationContent": {
+      "switch": "ቀይር",
+      "translationNotAvailable": "ትርጉም የለን"
+    }
+  },
+  "version": {
+    "label": "ስሪት {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "ሓድሽ ነገር ኣብ"
+  },
+  "wordDetail": {
+    "context": "ኣያ {{surah}}:{{ayah}} · ቃል {{position}} ካብ {{total}}"
+  }
+}

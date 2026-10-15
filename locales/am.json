@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "ማጫወቻውን ማስጀመር አልተሳካም፦ {{message}}",
+    "errorLoadingFonts": "ፊደላትን መጫን አልተሳካም"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "የISTIMA መነሻ"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "ሁሉም",
+      "clearAll": "ሁሉንም አጽዳ",
+      "hasPhoto": "ፎቶ አለው"
+    },
+    "filterModal": {
+      "apply": "ተግብር",
+      "filterReciters": "አንባቢዎችን አጣራ",
+      "recitationStyles": "የንባብ ስልቶች",
+      "reset": "ዳግም አስጀምር",
+      "rewayatTypes": "የሪዋያት ዓይነቶች"
+    },
+    "recitersFound_one": "በአሁኑ ማጣሪያዎች {{count}} አንባቢ ተገኝቷል",
+    "recitersFound_other": "በአሁኑ ማጣሪያዎች {{count}} አንባቢዎች ተገኝተዋል"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "የተወደዱ ሱራዎች"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "እዚህ ለማየት አያዎችን ዕልባት ያድርጉ",
+      "bookmarks": "ዕልባቶች",
+      "noBookmarksYet": "ገና ምንም ዕልባት የለም",
+      "removeBookmark": "ዕልባት አስወግድ"
+    },
+    "collectionSearchModal": {
+      "rewayat": "ሪዋያት",
+      "searchPlaylistsRecitersSurahsRewayat": "አጫዋች ዝርዝሮችን፣ አንባቢዎችን፣ ሱራዎችን፣ ሪዋያትን ፈልግ...",
+      "searchPlaylistsRecitersSurahsRewayat2": "አጫዋች ዝርዝሮችን፣ አንባቢዎችን፣ ሱራዎችን፣ ሪዋያትንና ውርዶችን ፈልግ",
+      "searchYourCollection": "ስብስብዎን ይፈልጉ",
+      "searching": "በመፈለግ ላይ...",
+      "tryDifferentKeywords": "ሌሎች ቁልፍ ቃላትን ይሞክሩ"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "እዚህ ለማየት ሱራዎችን ያውርዱ",
+      "noDownloadsYet": "ገና ምንም ውርድ የለም",
+      "playAll": "ሁሉንም አጫውት"
+    },
+    "favoritereciters": {
+      "addReciters": "አንባቢዎችን ጨምር",
+      "addRecitersToSeeThem": "እዚህ ለማየት አንባቢዎችን ይጨምሩ",
+      "noFavoriteRecitersYet": "ገና ምንም ተወዳጅ አንባቢ የለም",
+      "removeFromFavorites": "ከተወዳጆች አስወግድ",
+      "searchFavoriteReciters": "ተወዳጅ አንባቢዎችን ፈልግ"
+    },
+    "index": {
+      "addToCollection": "ወደ ስብስብ ጨምር",
+      "bookmarks": "ዕልባቶች",
+      "createYourFirstPlaylist": "የመጀመሪያ አጫዋች ዝርዝርዎን ይፍጠሩ",
+      "downloads": "ውርዶች",
+      "items_one": "{{count}} ንጥል",
+      "items_other": "{{count}} ንጥሎች",
+      "loved": "የተወደዱ",
+      "noBookmarksYet": "ገና ምንም ዕልባት የለም",
+      "noDownloadsYet": "ገና ምንም ውርድ የለም",
+      "noFavoritesYet": "ገና ምንም ተወዳጅ የለም",
+      "noLovedSurahsYet": "ገና ምንም የተወደደ ሱራ የለም",
+      "noNotesYet": "ገና ምንም ማስታወሻ የለም",
+      "noUploadsYet": "ገና ምንም ሰቀላ የለም",
+      "notes": "ማስታወሻዎች",
+      "playlists": "አጫዋች ዝርዝሮች",
+      "reciters": "አንባቢዎች",
+      "uploads": "ሰቀላዎች"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "ሁሉም የተወደዱ ሱራዎች አስቀድመው ወርደዋል።",
+      "allLovedSurahsHaveBeen": "ሁሉም የተወደዱ ሱራዎች ወርደዋል።",
+      "downloadError": "የውርድ ስህተት",
+      "loveSurahsToSeeThem": "እዚህ ለማየት ሱራዎችን ይውደዱ",
+      "noLovedSurahsYet": "ገና ምንም የተወደደ ሱራ የለም",
+      "someDownloadsMayHaveFailed": "አንዳንድ ውርዶች ላይሳኩ ይችላሉ።",
+      "unloveAllSurahs": "የሁሉንም ሱራዎች ውዴታ አስወግድ"
+    },
+    "notes": {
+      "addNotesToVersesTo": "እዚህ ለማየት በአያዎች ላይ ማስታወሻ ይጨምሩ",
+      "editNote": "ማስታወሻ አርትዕ",
+      "noNotesYet": "ገና ምንም ማስታወሻ የለም",
+      "notes": "ማስታወሻዎች"
+    },
+    "playlistModal": {
+      "name": "ስም"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "እዚህ ለማየት አጫዋች ዝርዝሮችን ይፍጠሩ",
+      "noPlaylistsYet": "ገና ምንም አጫዋች ዝርዝር የለም",
+      "playlists": "አጫዋች ዝርዝሮች"
+    },
+    "uploads": {
+      "removeAllUploads": "ሁሉንም ሰቀላዎች አስወግድ",
+      "uploadRecitationsToSeeThem": "እዚህ ለማየት ንባቦችን ይስቀሉ"
+    }
+  },
+  "common": {
+    "1Time": "1 ጊዜ",
+    "2Times": "2 ጊዜ",
+    "3Times": "3 ጊዜ",
+    "addToCollection": "ወደ ስብስብ ጨምር",
+    "addToQueue": "ወደ ወረፋ ጨምር",
+    "allSurahs": "ሁሉም ሱራዎች",
+    "alreadyDownloaded": "አስቀድሞ ወርዷል",
+    "arabic": "አረብኛ",
+    "asc": "ወደ ላይ",
+    "browseAll": "ሁሉንም አስስ",
+    "browseAllReciters": "ሁሉንም አንባቢዎች አስስ",
+    "cancel": "ሰርዝ",
+    "clear": "አጽዳ",
+    "copyToClipboard": "ወደ ቅንጥብ ሰሌዳ ቅዳ",
+    "createNewPlaylist": "አዲስ አጫዋች ዝርዝር ፍጠር",
+    "defaultReciter": "ነባሪ አንባቢ",
+    "delete": "ሰርዝ",
+    "deleteNote": "ማስታወሻ ሰርዝ",
+    "deleteRecitation": "ንባብ ሰርዝ",
+    "desc": "ወደ ታች",
+    "downloadComplete": "ውርዱ ተጠናቅቋል",
+    "downloadFailed": "ውርዱ አልተሳካም",
+    "downloads": "ውርዶች",
+    "editDetails": "ዝርዝሮችን አርትዕ",
+    "error": "ስህተት",
+    "favoriteReciters": "ተወዳጅ አንባቢዎች",
+    "followAlong": "ጽሑፉን ተከተል",
+    "from": "ከ",
+    "goToReciter": "ወደ አንባቢው ሂድ",
+    "goToVerse": "ወደ አያ ሂድ",
+    "learnAboutSurah": "ስለ ሱራው ተማር",
+    "loading": "በመጫን ላይ...",
+    "loop": "ድገም",
+    "loved": "የተወደዱ",
+    "mushafSettings": "የሙስሐፍ ቅንብሮች",
+    "next": "ቀጣይ",
+    "noRecitersFound": "ምንም አንባቢ አልተገኘም",
+    "noResultsFound": "ምንም ውጤት አልተገኘም",
+    "noUploadsYet": "ገና ምንም ሰቀላ የለም",
+    "play": "አጫውት",
+    "playEachVerse": "እያንዳንዱን አያ አጫውት",
+    "playNow": "አሁን አጫውት",
+    "playSpeed": "የመጫወቻ ፍጥነት",
+    "playTheRange": "ክልሉን አጫውት",
+    "playlistName": "የአጫዋች ዝርዝር ስም",
+    "prev": "ቀዳሚ",
+    "readingTheme": "የንባብ ገጽታ",
+    "recentSearches": "የቅርብ ጊዜ ፍለጋዎች",
+    "reciter": "አንባቢ",
+    "reciterChoice": "የአንባቢ ምርጫ",
+    "reciters": "አንባቢዎች",
+    "remove": "አስወግድ",
+    "removeAllDownloads": "ሁሉንም ውርዶች አስወግድ",
+    "removeHighlight": "ማድመቂያውን አስወግድ",
+    "rev": "ተገላቢጦሽ",
+    "save": "አስቀምጥ",
+    "search": "ፈልግ",
+    "searchReciters": "አንባቢዎችን ፈልግ...",
+    "searchSurahs": "ሱራዎችን ፈልግ",
+    "share": "አጋራ",
+    "shareAsImage": "እንደ ምስል አጋራ",
+    "shareAsText": "እንደ ጽሑፍ አጋራ",
+    "sharedPhrases": "የጋራ ሐረጎች",
+    "showBasmallah": "ቢስሚላህን አሳይ",
+    "stop": "አቁም",
+    "storage": "ማከማቻ",
+    "surah": "ሱራ",
+    "surahs": "ሱራዎች",
+    "to": "እስከ",
+    "translation": "ትርጉም",
+    "translationsTafaseer": "ትርጉሞችና ተፍሲሮች",
+    "transliteration": "ትርጉመ-ድምፅ",
+    "uploads": "ሰቀላዎች",
+    "useDefaultReciter": "ነባሪ አንባቢን ተጠቀም",
+    "verseReference": "የአያ ማጣቀሻ",
+    "verses": "አያዎች",
+    "whatSNew": "አዲስ ነገር",
+    "wordByWord": "ቃል በቃል",
+    "writeYourNoteHere": "ማስታወሻዎን እዚህ ይጻፉ...",
+    "yourPlaylists": "የእርስዎ አጫዋች ዝርዝሮች"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "ሁሉንም ሱራዎች አጫውት"
+    },
+    "searchHeader": {
+      "searchSurahs": "ሱራዎችን ፈልግ"
+    },
+    "searchView": {
+      "noSurahsFound": "ምንም ሱራ አልተገኘም"
+    },
+    "surahList": {
+      "noSurahsAvailable": "ምንም ሱራ የለም"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "ንባብ ጨምር",
+      "uploadRecitationsToSeeThem": "እዚህ ለማየት ንባቦችን ይስቀሉ"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "ወርዷል • {{count}} ሱራ",
+    "subtitle_other": "ወርደዋል • {{count}} ሱራዎች"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "ይቅርታ.. ስህተት ተፈጥሯል"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "ሁሉንም 114 ሱራዎች አስስ"
+    },
+    "savedAdhkarHero": {
+      "saved": "የተቀመጡ",
+      "yourCollection": "ስብስብዎ"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "የዕለቱ ሱራ"
+    },
+    "surahsHero": {
+      "number": "ቁጥር"
+    }
+  },
+  "language": {
+    "later": "በኋላ",
+    "restartMessage": "አዲሱ የአቀማመጥ አቅጣጫ እንዲተገበር መተግበሪያውን እንደገና ያስጀምሩ።",
+    "restartNow": "አሁን እንደገና አስጀምር",
+    "restartTitle": "እንደገና መጀመር ያስፈልጋል",
+    "search": "ቋንቋዎችን ፈልግ",
+    "system": "የመሣሪያ ቋንቋ"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "ቀጥል"
+    },
+    "whatsNewOnboarding": {
+      "skip": "ዝለል"
+    }
+  },
+  "mushaf": {
+    "juz": "ጁዝ {{juz}}",
+    "loadingMushaf": "ሙስሐፍ በመጫን ላይ…",
+    "main": {
+      "mushafSettings": "የሙስሐፍ ቅንብሮች"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "አንባቢ ቀይር",
+      "changeReciter2": "አንባቢ ቀይር",
+      "nextAyah": "ቀጣይ አያ",
+      "playbackOptions": "የመጫወቻ አማራጮች",
+      "previousAyah": "ቀዳሚ አያ"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "ሱራዎችን፣ አያዎችን፣ ገጾችን ወይም ጁዝ ያግኙ",
+      "recentReads": "የቅርብ ጊዜ ንባቦች",
+      "searchSurahsPagesOrJuz": "ሱራዎችን፣ ገጾችን ወይም ጁዝ ፈልግ...",
+      "searchTheMushaf": "ሙስሐፍን ፈልግ"
+    },
+    "options": "አማራጮች",
+    "page": "ገጽ {{page}}",
+    "pageAndSurah": "ገጽ {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "ሙስሐፉን መጫን አልተቻለም።",
+    "tryAgain": "እንደገና ሞክር"
+  },
+  "mushafSettings": {
+    "rabbHelper": "በሙስሐፉ ውስጥ የአላህን ስምና እንደ ረብ ያሉ መለኮታዊ የስም ቅርጾችን ያደምቃል።"
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "በጭብጥ ምንባብ መሠረት ተለዋጭ ማድመቂያ",
+    "arabicFontSize": "የአረብኛ ፊደል መጠን",
+    "bold": "ደማቅ",
+    "book": "መጽሐፍ",
+    "colorLegend": "የቀለም መመሪያ",
+    "currentlyReading": "አሁን በማንበብ ላይ",
+    "divineNames": "መለኮታዊ ስሞች",
+    "fontSize": "የፊደል መጠን",
+    "fullscreen": "ሙሉ ማያ",
+    "hamzaReplacedByLongVowel": "ሐምዛ በረጅም አናባቢ ተተክቷል",
+    "heavyLamInAllahAfter": "ከአጽንዖት ፊደላት በኋላ በአላህ ውስጥ ከባድ ላም",
+    "highlightAllahRabb": "አላህ / ረብ አድምቅ",
+    "horizontal": "አግድም",
+    "ibdal": "ኢብዳል",
+    "list": "ዝርዝር",
+    "loadingSample": "ናሙና በመጫን ላይ...",
+    "maddAlBadal": "መድ አል-በዳል",
+    "maximumProminence": "ከፍተኛ ጎልቶ መታየት",
+    "medium": "መካከለኛ",
+    "modernMadinahPrintedPipeline": "ዘመናዊ የመዲና የህትመት ሂደት",
+    "mushaf": "ሙስሐፍ",
+    "normal": "መደበኛ",
+    "originalMushafWeight": "የመጀመሪያው የሙስሐፍ ውፍረት",
+    "pageDesign": "የገጽ ንድፍ",
+    "prolongedVowelAfterHamza": "ከሐምዛ በኋላ የተራዘመ አናባቢ",
+    "readingTheme": "የንባብ ገጽታ",
+    "scrollDirection": "የማሸብለል አቅጣጫ",
+    "showDifferences": "ልዩነቶችን አሳይ",
+    "silah": "ሲላህ",
+    "slightlyMoreProminent": "ትንሽ ጎልቶ የሚታይ",
+    "softenedHamzaPronunciation": "የለዘበ የሐምዛ አነባበብ",
+    "subcontinentNastaliqStyle": "የክፍለ አህጉሩ የነስታሊቅ ስልት",
+    "taghlizAlLam": "ታግሊዝ አል-ላም",
+    "tajweedColoring": "የተጅዊድ ቀለም",
+    "tashilMusahhala": "ተሲህል / ሙሰህሀላ",
+    "textPreviewNotYetAvailable": "የጽሑፍ ቅድመ እይታ ገና አልተዘጋጀም",
+    "textThickness": "የጽሑፍ ውፍረት",
+    "thematicHighlighting": "ጭብጣዊ ማድመቅ",
+    "trailingVowelOrMoodChange": "የመጨረሻ አናባቢ ወይም የአነባበብ ሁኔታ ለውጥ ብቻ",
+    "usingSaheehInternationalTranslationWith": "በመጠቀም ላይ፦ የሰሒሕ ኢንተርናሽናል ትርጉም ከግርጌ ማስታወሻዎች ጋር",
+    "vertical": "ቋሚ",
+    "viewType": "የእይታ ዓይነት",
+    "vowelMoodShift": "የአናባቢ / የአነባበብ ለውጥ",
+    "wordByWord": "ቃል በቃል",
+    "wordVariant": "የቃል ልዩነት"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "ሰርቨሩ አይደረስም",
+    "connectionRestored": "ግንኙነቱ ተመልሷል",
+    "noInternetConnection": "የበይነመረብ ግንኙነት የለም",
+    "showingCachedData": "የተቀመጠ ውሂብ እየታየ ነው"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" ፍጠር"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "ወረፋ",
+      "queueIsEmpty": "ወረፋው ባዶ ነው"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "የሱራውን ጽሑፍና ዝርዝር ለማየት ይህን ንባብ ይሰይሙ"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "አጫዋች ዝርዝር • {{count}} ሱራ",
+    "subtitle_other": "አጫዋች ዝርዝር • {{count}} ሱራዎች"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "በዚህ አጫዋች ዝርዝር ውስጥ ሱራ የለም"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "የግርጌ ማስታወሻ"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "ለዚህ ጊዜ ብቻ የተመረጠ ንባብ",
+      "discover": "ያግኙ",
+      "discoverANewVoice": "አዲስ ድምፅ ያግኙ",
+      "explore": "ያስሱ",
+      "exploreTheUnexpected": "ያልተጠበቀውን ያስሱ",
+      "hearSomethingNew": "አዲስ ነገር ያዳምጡ",
+      "letTheQuranSurpriseYou": "ቁርአን ያስደንቅዎት",
+      "randomMix": "የዘፈቀደ ቅልቅል",
+      "randomRecitation": "የዘፈቀደ ንባብ",
+      "shuffleListen": "አዋህድና አዳምጥ",
+      "surpriseMe": "አስገርመኝ"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "የመልክ ሁነታ ለውጥ በመላው መተግበሪያ ላይ ይተገበራል"
+  },
+  "reciterBrowse": {
+    "allReciters": "ሁሉም አንባቢዎች",
+    "browseReciters": "አንባቢዎችን አስስ",
+    "favorites": "ተወዳጆች"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "ለዚህ አንባቢ ምንም ውርድ የለም"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "የእኔ ሰቀላዎች"
+    }
+  },
+  "recitersView": {
+    "adhkar": "አዝካር",
+    "bestForMemorization": "ለሒፍዝ በጣም ተስማሚ",
+    "bestForTajweed": "ለተጅዊድ በጣም ተስማሚ",
+    "continueListening": "ማዳመጥ ቀጥል",
+    "exclusives": "ልዩ",
+    "exploreByRewayah": "በሪዋያ አስስ",
+    "featuredReciters": "ተመራጭ አንባቢዎች",
+    "fromYourCollection": "ከስብስብዎ",
+    "myRecitations": "የእኔ ንባቦች",
+    "newToQuranStartHere": "ለቁርአን አዲስ ነዎት? እዚህ ይጀምሩ",
+    "seeMore": "ተጨማሪ ይመልከቱ",
+    "yourFavorites": "የእርስዎ ተወዳጆች"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "ንቁ",
+      "activeTafseer": "ንቁ ተፍሲር",
+      "activeTranslation": "ንቁ ትርጉም",
+      "deleteTafseer": "ተፍሲር ሰርዝ",
+      "deleteTranslation": "ትርጉም ሰርዝ",
+      "noTafaseerFound": "ምንም ተፍሲር አልተገኘም",
+      "noTranslationsFound": "ምንም ትርጉም አልተገኘም",
+      "unableToDownloadThisTafseer": "ይህን ተፍሲር ማውረድ አልተቻለም። የበይነመረብ ግንኙነትዎን ያረጋግጡና እንደገና ይሞክሩ።",
+      "unableToDownloadThisTranslation": "ይህን ትርጉም ማውረድ አልተቻለም። የበይነመረብ ግንኙነትዎን ያረጋግጡና እንደገና ይሞክሩ።"
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "ምንም የቅርብ ጊዜ ፍለጋ የለም",
+      "tryDifferentKeywordsOrCheck": "ሌሎች ቁልፍ ቃላትን ይሞክሩ ወይም ሆሄያትን ያረጋግጡ",
+      "yourSearchHistoryWillAppear": "የፍለጋ ታሪክዎ እዚህ ይታያል"
+    },
+    "surahsOrReciters": "ሱራዎችን ወይም አንባቢዎችን ፈልግ"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "የላቀ የድምፅ ቁጥጥር",
+      "browseByJuz": "በጁዝ አስስ",
+      "createAndManageYourOwn": "የሚወዷቸውን ንባቦች የራስዎን አጫዋች ዝርዝሮች ይፍጠሩና ያስተዳድሩ",
+      "crystalClearRecitationsFromThe": "ከዓለም ምርጥ ቃሪዎች ግልጽ ንባቦች በተመቻቸ ስርጭት",
+      "curatedCollections": "የተመረጡ ስብስቦች",
+      "customPlaylists": "ብጁ አጫዋች ዝርዝሮች",
+      "customizeThemesAccentColorsAnd": "ገጽታዎችን፣ የአነጋገር ቀለሞችንና የድምፅ ቅንብሮችን እንደ ምርጫዎ ያበጁ",
+      "downloadSurahsForOfflineListening": "ያለ በይነመረብ በማንኛውም ጊዜና ቦታ ለማዳመጥ ሱራዎችን ያውርዱ",
+      "easilyNavigateThroughTheQuran": "በጁዝ ላይ በተመሠረተ አደረጃጀትና ቡድን ቁርአንን በቀላሉ ያስሱ",
+      "features": "ባህሪያት",
+      "highQualityAudio": "ከፍተኛ ጥራት ያለው ድምፅ",
+      "listenReflectRememberAllah": "አዳምጡ። አስተውሉ። አላህን አስታውሱ።",
+      "offlineDownloads": "ከመስመር ውጭ ውርዶች",
+      "ourCommitment": "ቁርጠኝነታችን",
+      "ourMission": "ተልዕኳችን",
+      "personalization": "ግላዊነት ማላበስ",
+      "precisePlaybackControlWithContinuous": "በተከታታይ መጫወትና ሊስተካከል በሚችል የንባብ ፍጥነት ትክክለኛ የመጫወት ቁጥጥር",
+      "quranBayanTafsirKnowledgeOur": "ቁርአን • ባያን • ተፍሲር • እውቀት። ዓላማችን ማዳመጥና ማስተዋል የዕለት ተዕለት ሕይወት አካል እንዲሆኑ ማድረግ ነው፦ በቤት፣ በጉዞ ላይ እና አላህን ለማስታወስ ጊዜ ባገኙበት ቦታ ሁሉ።",
+      "readListenAndReflect": "አንብብ፣ አዳምጥ እና አስተውል",
+      "readTheMushafExploreTranslations": "ሙስሐፍን ያንብቡ፣ ትርጉሞችንና ተፍሲርን ያስሱ፣ አያዎችንና ማስታወሻዎችን ያስቀምጡ እና ወደ ዕለታዊ አዝካር ይመለሱ። አንባቢዎን ይምረጡ፣ አጫዋች ዝርዝሮችን ይገንቡ እና ለቀንዎ የሚስማማ የማዳመጥ ተሞክሮ ይቅረጹ። ያሉት ባህሪያት እንደ መሣሪያው ይለያያሉ፤ ቤተኛ መተግበሪያዎች ለከመስመር ውጭ ማዳመጥ ውርዶችንም ይደግፋሉ።",
+      "thoughtfullyOrganizedSurahsForDifferent": "ለተለያዩ አጋጣሚዎችና ጭብጦች በጥንቃቄ የተደራጁ ሱራዎች",
+      "weCareAboutTheAccuracy": "ለቅዱስ ይዘት ትክክለኛነት፣ ለአክብሮታዊ ንድፍ እና ለአስተማማኝ ተደራሽነት እንጨነቃለን። ISTIMAን የሚጠቀሙ ሰዎችን በመንከባከብ ማሻሻላችንን እንቀጥላለን። አላህ ይህን ጥረት ይቀበል፤ ለሚያዳምጡ፣ ለሚያነቡና ለሚያስተውሉ ሁሉ ጠቃሚ ያድርገው።"
+    },
+    "aboutApp": "ስለ {{name}}",
+    "appearance": "መልክ",
+    "defaultreciter": {
+      "changeDefaultReciter": "ነባሪ አንባቢን ቀይር"
+    },
+    "developer": "አልሚ",
+    "floatingDevMenu": "ተንሳፋፊ የአልሚ ምናሌ",
+    "language": "ቋንቋ",
+    "languageDescription": "የመተግበሪያውን ቋንቋ ይምረጡ",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "ሁልጊዜ የመረጡትን ነባሪ አንባቢ ተጠቀም",
+      "askEveryTime": "ሁልጊዜ ጠይቅ",
+      "chooseAReciterEachTime": "በሚያጫውቱ ቁጥር አንባቢ ይምረጡ",
+      "chooseHowYouWantTo": "ሱራዎችን ሲያጫውቱ አንባቢዎችን እንዴት መምረጥ እንደሚፈልጉ ይምረጡ",
+      "defaultSelectionMethod": "ነባሪ የምርጫ ዘዴ",
+      "searchThroughOurCompleteCollection": "ሙሉ የአንባቢዎች ስብስባችንን ይፈልጉ",
+      "selectionPreference": "የምርጫ ምርጫ"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "ሁሉም ውርዶች ተወግደዋል።",
+      "areYouSureYouWant": "ሁሉንም የወረደ ይዘት ማስወገድ እንደሚፈልጉ እርግጠኛ ነዎት? ይህ እርምጃ ሊቀለበስ አይችልም።",
+      "cache": "መሸጎጫ",
+      "cacheHasBeenCleared": "መሸጎጫው ጸድቷል።",
+      "clearCache": "መሸጎጫ አጽዳ",
+      "failedToClearCache": "መሸጎጫውን ማጽዳት አልተሳካም።",
+      "failedToRemoveDownloads": "ውርዶችን ማስወገድ አልተሳካም።",
+      "free": "ነጻ",
+      "loadingStorageInformation": "የማከማቻ መረጃ በመጫን ላይ...",
+      "manageStorage": "ማከማቻ አስተዳድር",
+      "otherApps": "ሌሎች መተግበሪያዎች",
+      "removeAllDownloads": "ሁሉንም ውርዶች አስወግድ",
+      "removeAllTheQuranContent": "ለከመስመር ውጭ አገልግሎት ያወረዱትን ሁሉንም የቁርአን ይዘት ያስወግዱ።",
+      "storageBreakdown": "የማከማቻ ዝርዝር",
+      "success": "ተሳክቷል",
+      "thisWillClearYourCache": "ይህ መሸጎጫዎን ያጸዳል። ውርዶችዎ አይወገዱም።",
+      "youCanFreeUpStorage": "መሸጎጫዎን በማጽዳት ማከማቻ ማስለቀቅ ይችላሉ። ውርዶችዎ አይወገዱም።"
+    },
+    "themePicker": {
+      "auto": "ራስ-ሰር",
+      "dark": "ጨለማ",
+      "light": "ብርሃን"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "ምንም የለውጥ ዝርዝር የለም"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "ስለ {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "ተወዳጅ አንባቢ ጨምር",
+      "uploadRecitation": "ንባብ ስቀል"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "የአካባቢ ድምፆች",
+      "none": "ምንም",
+      "volume": "ድምፅ"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "ለምሳሌ፦ የማለዳ ንባቦች"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "ውርድ አስወግድ"
+    },
+    "favoriteRecitersSheet": {
+      "done": "ተጠናቅቋል"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "ወደ ስብስብ ጨምር",
+      "addToQueue": "ወደ ወረፋ ጨምር",
+      "continuePlaying": "መጫወት ቀጥል",
+      "goToReciter": "ወደ አንባቢው ሂድ",
+      "removeFromRecents": "ከቅርብ ጊዜያት አስወግድ"
+    },
+    "mushafLayoutSheet": {
+      "back": "ተመለስ"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "የመጨረሻ አያ",
+      "playbackSettings": "የመጫወቻ ቅንብሮች",
+      "selectRange": "ክልል ምረጥ",
+      "startingVerse": "የመጀመሪያ አያ"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "የድግግሞሽ ቅንብሮች",
+      "start": "ጀምር",
+      "verseRange": "የአያ ክልል"
+    },
+    "organizeRecitationSheet": {
+      "category": "ምድብ",
+      "customReciter": "ብጁ አንባቢ",
+      "duA": "ዱዓ",
+      "eGMorningAdhkar": "ለምሳሌ፦ የማለዳ አዝካር",
+      "lecture": "ትምህርት",
+      "moreOptions": "ተጨማሪ አማራጮች",
+      "other": "ሌላ",
+      "recording": "ቀረጻ",
+      "rewayah": "ሪዋያ",
+      "searchSurahs": "ሱራዎችን ፈልግ...",
+      "style": "ስልት",
+      "tafsir": "ተፍሲር",
+      "title": "ርዕስ",
+      "type": "ዓይነት",
+      "verseRangeOptional": "የአያ ክልል (አማራጭ)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "የመጫወቻ ፍጥነት"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "በዚህ አጫዋች ዝርዝር ውስጥ ያሉ ሁሉም ንጥሎች አስቀድመው ወርደዋል።",
+      "anErrorOccurredWhileDownloading": "አጫዋች ዝርዝሩን ሲያወርድ ስህተት ተፈጥሯል። እባክዎ እንደገና ይሞክሩ።",
+      "deletePlaylist": "አጫዋች ዝርዝር ሰርዝ",
+      "downloadingPlaylist": "አጫዋች ዝርዝር በማውረድ ላይ...",
+      "editPlaylist": "አጫዋች ዝርዝር አርትዕ",
+      "emptyPlaylist": "ባዶ አጫዋች ዝርዝር",
+      "thisPlaylistIsEmpty": "ይህ አጫዋች ዝርዝር ባዶ ነው።"
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "ስለ ሪዋያት",
+      "availableRewayat": "ያሉ ሪዋያት"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "ሱራውን ወደ አጫዋች ዝርዝር ማከል አልተሳካም",
+      "failedToCreatePlaylist": "አጫዋች ዝርዝር መፍጠር አልተሳካም",
+      "noPlaylistsYetCreateYour": "ገና ምንም አጫዋች ዝርዝር የለም። የመጀመሪያ አጫዋች ዝርዝርዎን ከላይ ይፍጠሩ!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "ሁልጊዜ ጠይቅ",
+      "randomReciter": "የዘፈቀደ አንባቢ",
+      "selectReciter": "አንባቢ ምረጥ"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "ለዚህ አያ ተመሳሳይ አያዎች አልተገኙም።",
+      "similarWording": "ተመሳሳይ አገላለጽ"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "የእንቅልፍ ሰዓት ቆጣሪ",
+      "turnOffTimer": "ሰዓት ቆጣሪን አጥፋ"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "ከአጫዋች ዝርዝር አስወግድ"
+    },
+    "verseActionsSheet": {
+      "addNote": "ማስታወሻ ጨምር",
+      "copy": "ቅዳ",
+      "repeat": "ድገም",
+      "similarVerses": "ተመሳሳይ አያዎች",
+      "tafseer": "ተፍሲር",
+      "theme": "ገጽታ"
+    },
+    "verseCopySheet": {
+      "copyOptions": "የመቅዳት አማራጮች",
+      "selectWhatToCopy": "የሚቀዳውን ይምረጡ"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "የማድመቂያ ቀለም"
+    },
+    "verseShareSheet": {
+      "shareVerse": "አያ አጋራ"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "በ{{count}} አያ ውስጥ ተገኝቷል",
+    "foundIn_other": "በ{{count}} አያዎች ውስጥ ተገኝቷል"
+  },
+  "surahItem": {
+    "moreOptions": "ተጨማሪ አማራጮች",
+    "opensMenuWithAdditionalActions": "ለዚህ ሱራ ተጨማሪ እርምጃዎች ያለው ምናሌ ይከፍታል",
+    "tapToPlaySurah": "ሱራውን ለማጫወት ይንኩ"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "ልክ ያልሆነ የአጫዋች ዝርዝር መታወቂያ",
+      "playlistNotFound": "አጫዋች ዝርዝሩ አልተገኘም"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "በዚህ አጫዋች ዝርዝር ውስጥ ያሉትን ሁሉንም ሱራዎች የያዘ አንባቢ አልተገኘም። እባክዎ ሌላ አጫዋች ዝርዝር ይሞክሩ።",
+      "failedToPlayPlaylistPlease": "አጫዋች ዝርዝሩን ማጫወት አልተሳካም። እባክዎ እንደገና ይሞክሩ።",
+      "failedToPlayTrackPlease": "ትራኩን ማጫወት አልተሳካም። እባክዎ እንደገና ይሞክሩ።",
+      "failedToShufflePlaylistPlease": "አጫዋች ዝርዝሩን ማደባለቅ አልተሳካም። እባክዎ እንደገና ይሞክሩ።",
+      "noReciterAvailable": "ምንም አንባቢ የለም",
+      "noSurahsInThisPlaylist": "በዚህ አጫዋች ዝርዝር ውስጥ ሱራ የለም"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "መለያ",
+      "appData": "መተግበሪያና ውሂብ",
+      "audioPlayback": "ድምፅና መጫወት",
+      "chooseYourPreferredReciter": "የሚመርጡትን አንባቢ ይምረጡ",
+      "customizeQuranDisplayOptions": "የቁርአን ማሳያ አማራጮችን ያበጁ",
+      "customizeReciterSelection": "የአንባቢ ምርጫን ያበጁ",
+      "featureRequests": "የባህሪ ጥያቄዎች",
+      "feedback": "አስተያየት",
+      "helpSupport": "እገዛና ድጋፍ",
+      "learnMoreAboutOurMission": "ስለ ተልዕኳችን የበለጠ ይወቁ",
+      "manageQuranTranslationsAndCommentary": "የቁርአን ትርጉሞችንና ማብራሪያዎችን ያስተዳድሩ",
+      "privacyPolicy": "የግላዊነት ፖሊሲ",
+      "quran": "ቁርአን",
+      "readOurTermsOfService": "የአገልግሎት ውሎቻችንን ያንብቡ",
+      "seeWhatSNewIn": "በዚህ ስሪት ውስጥ አዲስ የሆነውን ይመልከቱ",
+      "shareYourExperienceWithOthers": "ተሞክሮዎን ለሌሎች ያካፍሉ",
+      "showTheFloatingDeveloperTools": "ተንሳፋፊውን የአልሚ መሣሪያዎች አዝራር አሳይ",
+      "suggestImprovementsAndNewFeatures": "ማሻሻያዎችንና አዳዲስ ባህሪያትን ይጠቁሙ",
+      "termsOfService": "የአገልግሎት ውሎች",
+      "viewAndManageStorageUsage": "የማከማቻ አጠቃቀምን ይመልከቱና ያስተዳድሩ",
+      "viewOurPrivacyPolicy": "የግላዊነት ፖሊሲያችንን ይመልከቱ",
+      "writeAReview": "ግምገማ ጻፍ"
+    }
+  },
+  "ui": {
+    "appName": "ኢስቲማ",
+    "cancel": "ሰርዝ",
+    "close": "ዝጋ",
+    "collection": "ስብስብ",
+    "download": "አውርድ",
+    "downloads": "ውርዶች",
+    "error": "የሆነ ችግር ተፈጥሯል",
+    "favorites": "ተወዳጆች",
+    "home": "መነሻ",
+    "language": "ቋንቋ",
+    "library": "ቤተ-መጽሐፍት",
+    "loading": "በመጫን ላይ...",
+    "noResults": "ምንም ውጤት አልተገኘም",
+    "offline": "ከመስመር ውጭ ነዎት",
+    "pause": "ለአፍታ አቁም",
+    "play": "አጫውት",
+    "retry": "እንደገና ሞክር",
+    "save": "አስቀምጥ",
+    "search": "ፈልግ",
+    "settings": "ቅንብሮች",
+    "surahs": "ሱራዎች"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "ይዘት ይምረጡ"
+    },
+    "highlightContent": {
+      "chooseColor": "ቀለም ይምረጡ"
+    },
+    "noteContent": {
+      "saveNote": "ማስታወሻ አስቀምጥ"
+    },
+    "shareContent": {
+      "shareLink": "አገናኝ አጋራ"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "ለዚህ አያ ተመሳሳይ አያዎች አልተገኙም።",
+      "sharedPhrases": "የጋራ ሐረጎች",
+      "similarWording": "ተመሳሳይ አገላለጽ"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "ምንም ተፍሲር አልወረደም",
+      "tafseerNotAvailableForThis": "ለዚህ አያ ተፍሲር የለም",
+      "tapHereToDownloadA": "ተፍሲር ለማውረድና ማብራሪያ ለማየት እዚህ ይንኩ።"
+    },
+    "themeContent": {
+      "noThematicDataForThis": "ለዚህ አያ ምንም ጭብጣዊ ውሂብ የለም።",
+      "passage": "ምንባብ"
+    },
+    "translationContent": {
+      "switch": "ቀይር",
+      "translationNotAvailable": "ትርጉሙ አይገኝም"
+    }
+  },
+  "version": {
+    "label": "ስሪት {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "አዲስ ነገር በ"
+  },
+  "wordDetail": {
+    "context": "አያ {{surah}}:{{ayah}} · ቃል {{position}} ከ{{total}}"
+  }
+}
