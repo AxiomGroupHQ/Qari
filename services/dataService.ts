@@ -6,8 +6,15 @@ import {useReciterStore} from '../store/reciterStore';
 import {useApiHealthStore} from '../store/apiHealthStore';
 import fallbackReciters from '../data/reciters-fallback.json';
 
-const BAYAAN_API_URL = process.env.EXPO_PUBLIC_BAYAAN_API_URL;
-const BAYAAN_API_KEY = process.env.EXPO_PUBLIC_BAYAAN_API_KEY;
+// EXPO_PUBLIC_ISTIMA_* is the current name. The legacy EXPO_PUBLIC_BAYAAN_* names still work so
+// existing .env files and CI settings keep working. Keep each process.env access a literal so
+// Expo can inline it at build time.
+const ISTIMA_API_URL =
+  process.env.EXPO_PUBLIC_ISTIMA_API_URL ??
+  process.env.EXPO_PUBLIC_BAYAAN_API_URL;
+const ISTIMA_API_KEY =
+  process.env.EXPO_PUBLIC_ISTIMA_API_KEY ??
+  process.env.EXPO_PUBLIC_BAYAAN_API_KEY;
 
 // ── Killswitch ───────────────────────────────────────────────────────────────
 // Only fetched when EXPO_PUBLIC_KILLSWITCH_URL is set. Forks that don't
@@ -74,8 +81,8 @@ function populateReciters(data: Reciter[]): void {
 
 // ── API client ────────────────────────────────────────────────────────────────
 
-const API_BASE = BAYAAN_API_URL;
-const API_KEY = BAYAAN_API_KEY;
+const API_BASE = ISTIMA_API_URL;
+const API_KEY = ISTIMA_API_KEY;
 
 async function fetchAllRecitersFromApi(): Promise<Reciter[]> {
   const PAGE_SIZE = 200;
@@ -86,7 +93,7 @@ async function fetchAllRecitersFromApi(): Promise<Reciter[]> {
     const headers: Record<string, string> = {
       'Content-Type': 'application/json',
     };
-    if (API_KEY) headers['Authorization'] = `Bearer ${API_KEY}`;
+    if (API_KEY) headers.Authorization = `Bearer ${API_KEY}`;
 
     const res = await fetch(
       `${API_BASE}/v1/reciters?page=${page}&limit=${PAGE_SIZE}`,
@@ -152,7 +159,7 @@ export async function getAllReciters(): Promise<Reciter[]> {
 
   if (!canFetchFromApi) {
     console.warn(
-      '[dataService] EXPO_PUBLIC_BAYAAN_API_URL or EXPO_PUBLIC_BAYAAN_API_KEY is not set.',
+      '[dataService] EXPO_PUBLIC_ISTIMA_API_URL or EXPO_PUBLIC_ISTIMA_API_KEY is not set (using bundled reciter data).',
     );
   }
 

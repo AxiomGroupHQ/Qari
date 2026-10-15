@@ -49,8 +49,8 @@ cp .env.example .env
 
 | Variable                          | Required | Description                                                                        |
 | --------------------------------- | -------- | ---------------------------------------------------------------------------------- |
-| `EXPO_PUBLIC_BAYAAN_API_URL`      | No       | Istima backend base URL. Blank = bundled reciter data only (no API calls).         |
-| `EXPO_PUBLIC_BAYAAN_API_KEY`      | No       | API key for reciter data, timestamps, etc. Blank = bundled data.                   |
+| `EXPO_PUBLIC_ISTIMA_API_URL`      | No       | Istima backend base URL. Blank = bundled reciter data only (no API calls).         |
+| `EXPO_PUBLIC_ISTIMA_API_KEY`      | No       | API key for reciter data, timestamps, etc. Blank = bundled data.                   |
 | `EXPO_PUBLIC_KILLSWITCH_URL`      | No       | Backend-disable check on launch. Blank = skipped (no network call on start).       |
 | `APPLE_TEAM_ID`                   | iOS      | Apple Developer Team ID for code signing. Required to build iOS for a device.     |
 | `EXPO_PUBLIC_EAS_PROJECT_ID`      | OTA      | EAS project UUID. Blank = OTA updates disabled (no phone-home on launch).          |
@@ -65,15 +65,15 @@ cp .env.example .env
 
 ### API key for development
 
-The app works out of the box with bundled reciter data — no API key required for most development work. Leave `EXPO_PUBLIC_BAYAAN_API_KEY` blank and the app will use the fallback data under `data/reciters-fallback.json`.
+The app works out of the box with bundled reciter data — no API key required for most development work. Leave `EXPO_PUBLIC_ISTIMA_API_KEY` blank and the app will use the fallback data under `data/reciters-fallback.json`.
 
 The bundled fallback ships **224 reciters sourced from public CDNs** (`mp3quran.net`, `quranicaudio.com`). It is a curated subset of the full catalogue — reciters that were only available via private hosts (R2, Supabase) are excluded, and reciter images are omitted. Live verse-sync timestamps are also unavailable for fallback reciters. This is intentional: forks can build and demo without depending on the maintainer's infrastructure.
 
 If you are working on a feature that needs the live reciter catalogue, timestamp service, or other backend-only data, request a rate-limited **community key** by opening an issue titled "Community API key request". Then set:
 
 ```
-EXPO_PUBLIC_BAYAAN_API_URL=https://api.thebayaan.com
-EXPO_PUBLIC_BAYAAN_API_KEY=<community key>
+EXPO_PUBLIC_ISTIMA_API_URL=https://api.thebayaan.com
+EXPO_PUBLIC_ISTIMA_API_KEY=<community key>
 ```
 
 ### Running your own fork
