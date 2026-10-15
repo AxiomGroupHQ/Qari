@@ -10,8 +10,8 @@ import Social
 import UIKit
 
 class ShareViewController: UIViewController {
-  let hostAppGroupIdentifier = "group.com.bayaan.app"
-  let shareProtocol = "bayaan"
+  let hostAppGroupIdentifier = "group.com.istima.app"
+  let shareProtocol = "istima"
   let sharedKey = "bayaanShareKey"
   var sharedMedia: [SharedMediaFile] = []
   var sharedWebUrl: [WebUrl] = []
