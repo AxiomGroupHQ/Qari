@@ -26,8 +26,8 @@ cp .env.example .env
 Set in `.env`:
 
 ```
-EXPO_PUBLIC_BAYAAN_API_URL=https://api.thebayaan.com
-EXPO_PUBLIC_BAYAAN_API_KEY=<community key>
+EXPO_PUBLIC_ISTIMA_API_URL=https://api.thebayaan.com
+EXPO_PUBLIC_ISTIMA_API_KEY=<community key>
 ```
 
 Get the community key from the pinned issue on GitHub. The community key has a lower rate limit than the production key but is sufficient for all development and testing work.
@@ -138,7 +138,7 @@ This will create a new EAS project and update `eas.json`. Replace the `projectId
 
 Either:
 
-- Deploy the [Backend--bayaan](https://github.com/thebayaan/Backend--bayaan) to your own infrastructure and point `EXPO_PUBLIC_BAYAAN_API_URL` at it, or
+- Deploy the [Backend--bayaan](https://github.com/thebayaan/Backend--bayaan) to your own infrastructure and point `EXPO_PUBLIC_ISTIMA_API_URL` at it, or
 - Populate your Supabase project with reciter data and use `npm run fetch-reciters` to generate `data/reciters.json` for use as a bundled fallback.
 
 ### Step 5: iOS signing

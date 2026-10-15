@@ -66,8 +66,8 @@ function loadEnv() {
 
 loadEnv();
 
-const API_URL = process.env.BAYAAN_API_URL || process.env.EXPO_PUBLIC_BAYAAN_API_URL;
-const API_KEY = process.env.BAYAAN_API_KEY || process.env.EXPO_PUBLIC_BAYAAN_API_KEY;
+const API_URL = process.env.BAYAAN_API_URL || process.env.EXPO_PUBLIC_ISTIMA_API_URL || process.env.EXPO_PUBLIC_BAYAAN_API_URL;
+const API_KEY = process.env.BAYAAN_API_KEY || process.env.EXPO_PUBLIC_ISTIMA_API_KEY || process.env.EXPO_PUBLIC_BAYAAN_API_KEY;
 
 if (!API_URL || !API_KEY) {
   throw new Error('Set BAYAAN_API_URL and BAYAAN_API_KEY (or EXPO_PUBLIC_* equivalents).');
