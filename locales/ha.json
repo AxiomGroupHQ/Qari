@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Kuskure wajen fara na'urar kunna sauti: {{message}}",
+    "errorLoadingFonts": "Kuskure wajen loda fonts"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Shafin farko na ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Duka",
+      "clearAll": "Share Duka",
+      "hasPhoto": "Yana da hoto"
+    },
+    "filterModal": {
+      "apply": "Aiwatar",
+      "filterReciters": "Tace Makaranta",
+      "recitationStyles": "Salon Karatu",
+      "reset": "Sake saita",
+      "rewayatTypes": "Nau'o'in Riwaya"
+    },
+    "recitersFound_one": "An sami makaranci {{count}} da tacewar yanzu",
+    "recitersFound_other": "An sami makaranta {{count}} da tacewar yanzu"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Surori Abin So"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Yi alamar aya domin ganinta a nan",
+      "bookmarks": "Alamomi",
+      "noBookmarksYet": "Babu alama tukuna",
+      "removeBookmark": "Cire Alama"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Riwaya",
+      "searchPlaylistsRecitersSurahsRewayat": "Nemo jerin sauraro, makaranta, surori, riwaya...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Nemo jerin sauraro, makaranta, surori, riwaya, da abubuwan da aka sauke",
+      "searchYourCollection": "Bincika Tarinka",
+      "searching": "Ana nema...",
+      "tryDifferentKeywords": "Gwada wasu kalmomi daban"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Sauke surori domin ganinsu a nan",
+      "noDownloadsYet": "Babu abin da aka sauke tukuna",
+      "playAll": "Kunna Duka"
+    },
+    "favoritereciters": {
+      "addReciters": "Ƙara Makaranta",
+      "addRecitersToSeeThem": "Ƙara makaranta domin ganinsu a nan",
+      "noFavoriteRecitersYet": "Babu makarancin da aka fi so tukuna",
+      "removeFromFavorites": "Cire daga Abubuwan da Aka Fi So",
+      "searchFavoriteReciters": "Nemo makarantan da aka fi so"
+    },
+    "index": {
+      "addToCollection": "Ƙara zuwa Tarin",
+      "bookmarks": "Alamomi",
+      "createYourFirstPlaylist": "Ƙirƙiri jerin sauraronka na farko",
+      "downloads": "Abubuwan da Aka Sauke",
+      "items_one": "abu {{count}}",
+      "items_other": "abubuwa {{count}}",
+      "loved": "Abin So",
+      "noBookmarksYet": "Babu alama tukuna",
+      "noDownloadsYet": "Babu abin da aka sauke tukuna",
+      "noFavoritesYet": "Babu abin da aka fi so tukuna",
+      "noLovedSurahsYet": "Babu sura mai so tukuna",
+      "noNotesYet": "Babu bayanin kula tukuna",
+      "noUploadsYet": "Babu abin da aka ɗora tukuna",
+      "notes": "Bayanan kula",
+      "playlists": "Jerin Sauraro",
+      "reciters": "Makaranta",
+      "uploads": "Abubuwan da Aka Ɗora"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "An riga an sauke dukkan surorin da ake so.",
+      "allLovedSurahsHaveBeen": "An sauke dukkan surorin da ake so.",
+      "downloadError": "Kuskuren Sauke Abu",
+      "loveSurahsToSeeThem": "Ka so surori domin ganinsu a nan",
+      "noLovedSurahsYet": "Babu sura mai so tukuna",
+      "someDownloadsMayHaveFailed": "Wasu abubuwan da aka sauke ƙila sun gaza.",
+      "unloveAllSurahs": "Daina Son Dukkan Surori"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Ƙara bayanin kula ga ayoyi domin ganinsu a nan",
+      "editNote": "Gyara Bayanin Kula",
+      "noNotesYet": "Babu bayanin kula tukuna",
+      "notes": "Bayanan kula"
+    },
+    "playlistModal": {
+      "name": "Suna"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Ƙirƙiri jerin sauraro domin ganinsu a nan",
+      "noPlaylistsYet": "Babu jerin sauraro tukuna",
+      "playlists": "Jerin Sauraro"
+    },
+    "uploads": {
+      "removeAllUploads": "Cire Dukkan Abubuwan da Aka Ɗora",
+      "uploadRecitationsToSeeThem": "Ɗora karatuttuka domin ganinsu a nan"
+    }
+  },
+  "common": {
+    "1Time": "Sau 1",
+    "2Times": "Sau 2",
+    "3Times": "Sau 3",
+    "addToCollection": "Ƙara zuwa Tarin",
+    "addToQueue": "Ƙara zuwa Layi",
+    "allSurahs": "Dukkan Surori",
+    "alreadyDownloaded": "An Riga An Sauke",
+    "arabic": "Larabci",
+    "asc": "Hawa",
+    "browseAll": "Duba Duka",
+    "browseAllReciters": "Duba Dukkan Makaranta",
+    "cancel": "Soke",
+    "clear": "Share",
+    "copyToClipboard": "Kwafa zuwa Clipboard",
+    "createNewPlaylist": "Ƙirƙiri Sabon Jerin Sauraro",
+    "defaultReciter": "Makaranci na Asali",
+    "delete": "Share",
+    "deleteNote": "Share Bayanin Kula",
+    "deleteRecitation": "Share Karatu",
+    "desc": "Sauka",
+    "downloadComplete": "An Gama Saukewa",
+    "downloadFailed": "Saukewa Ya Gaza",
+    "downloads": "Abubuwan da Aka Sauke",
+    "editDetails": "Gyara Bayanai",
+    "error": "Kuskure",
+    "favoriteReciters": "Makarantan da Aka Fi So",
+    "followAlong": "Bi Tare",
+    "from": "Daga",
+    "goToReciter": "Je zuwa Makaranci",
+    "goToVerse": "Je zuwa aya",
+    "learnAboutSurah": "Koyi Game da Sura",
+    "loading": "Ana lodawa...",
+    "loop": "Maimaita",
+    "loved": "Abin So",
+    "mushafSettings": "Saitunan Mushaf",
+    "next": "Na gaba",
+    "noRecitersFound": "Ba a sami makaranci ba",
+    "noResultsFound": "Ba a sami sakamako ba",
+    "noUploadsYet": "Babu abin da aka ɗora tukuna",
+    "play": "Kunna",
+    "playEachVerse": "Kunna kowace aya",
+    "playNow": "Kunna Yanzu",
+    "playSpeed": "Gudun kunnawa",
+    "playTheRange": "Kunna iyakar ayoyi",
+    "playlistName": "Sunan Jerin Sauraro",
+    "prev": "Na baya",
+    "readingTheme": "Jigon Karatu",
+    "recentSearches": "Binciken kwanan nan",
+    "reciter": "Makaranci",
+    "reciterChoice": "Zaɓin Makaranci",
+    "reciters": "Makaranta",
+    "remove": "Cire",
+    "removeAllDownloads": "Cire Dukkan Abubuwan da Aka Sauke",
+    "removeHighlight": "Cire Haske",
+    "rev": "Juya",
+    "save": "Ajiye",
+    "search": "Bincika",
+    "searchReciters": "Nemo makaranta...",
+    "searchSurahs": "Nemo surori",
+    "share": "Raba",
+    "shareAsImage": "Raba a Matsayin Hoto",
+    "shareAsText": "Raba a Matsayin Rubutu",
+    "sharedPhrases": "Jimlolin Bai ɗaya",
+    "showBasmallah": "Nuna Basmala",
+    "stop": "Tsaya",
+    "storage": "Ma'ajiya",
+    "surah": "Sura",
+    "surahs": "Surori",
+    "to": "Zuwa",
+    "translation": "Fassara",
+    "translationsTafaseer": "Fassara da Tafsiri",
+    "transliteration": "Rubuta da Haruffan Latin",
+    "uploads": "Abubuwan da Aka Ɗora",
+    "useDefaultReciter": "Yi Amfani da Makaranci na Asali",
+    "verseReference": "Bayanin Aya",
+    "verses": "Ayoyi",
+    "whatSNew": "Sabbin Abubuwa",
+    "wordByWord": "Kalma da Kalma",
+    "writeYourNoteHere": "Rubuta bayaninka a nan...",
+    "yourPlaylists": "Jerin Sauraronka"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Kunna dukkan surori"
+    },
+    "searchHeader": {
+      "searchSurahs": "Nemo Surori"
+    },
+    "searchView": {
+      "noSurahsFound": "Ba a sami sura ba"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Babu surori"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Ƙara Karatu",
+      "uploadRecitationsToSeeThem": "Ɗora karatuttuka domin ganinsu a nan"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "An sauke • sura {{count}}",
+    "subtitle_other": "An sauke • surori {{count}}"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Yi haƙuri.. an sami kuskure"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Duba dukkan surori 114"
+    },
+    "savedAdhkarHero": {
+      "saved": "An Ajiye",
+      "yourCollection": "Tarinka"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SURAR YAU"
+    },
+    "surahsHero": {
+      "number": "Lamba"
+    }
+  },
+  "language": {
+    "later": "Daga baya",
+    "restartMessage": "Sake kunna manhajar domin aiwatar da sabon alkiblar tsari.",
+    "restartNow": "Sake kunnawa yanzu",
+    "restartTitle": "Ana buƙatar sake kunnawa",
+    "search": "Nemo harsuna",
+    "system": "Harshen na'ura"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Ci gaba"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Tsallake"
+    }
+  },
+  "mushaf": {
+    "juz": "Juz'i {{juz}}",
+    "loadingMushaf": "Ana loda Mushaf…",
+    "main": {
+      "mushafSettings": "Saitunan mushaf"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Canja makaranci",
+      "changeReciter2": "Canja Makaranci",
+      "nextAyah": "Aya ta gaba",
+      "playbackOptions": "Zaɓuɓɓukan kunnawa",
+      "previousAyah": "Aya ta baya"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Nemo surori, ayoyi, shafuka, ko juz'i",
+      "recentReads": "KARATUN KWANAN NAN",
+      "searchSurahsPagesOrJuz": "Nemo surori, shafuka, ko juz'i...",
+      "searchTheMushaf": "Bincika Mushaf"
+    },
+    "options": "Zaɓuɓɓuka",
+    "page": "Shafi na {{page}}",
+    "pageAndSurah": "Shafi na {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Ba a iya loda Mushaf ba.",
+    "tryAgain": "Sake gwadawa"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Yana haskaka sunan Allah da laƙabin Ubangiji kamar Rabb a cikin mushaf."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Haske mai canzawa bisa sassan jigo",
+    "arabicFontSize": "Girman Harufan Larabci",
+    "bold": "Kauri",
+    "book": "Littafi",
+    "colorLegend": "Bayanin launuka",
+    "currentlyReading": "Ana karantawa yanzu",
+    "divineNames": "SUNAYEN ALLAH",
+    "fontSize": "Girman Haruffa",
+    "fullscreen": "Cikakken Allo",
+    "hamzaReplacedByLongVowel": "An maye gurbin hamza da doguwar wasali",
+    "heavyLamInAllahAfter": "Lam mai nauyi a cikin Allah bayan haruffa masu nauyi",
+    "highlightAllahRabb": "Haskaka Allah / Rabb",
+    "horizontal": "A Kwance",
+    "ibdal": "Ibdal",
+    "list": "Jeri",
+    "loadingSample": "Ana loda samfur...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Mafi bayyana",
+    "medium": "Matsakaici",
+    "modernMadinahPrintedPipeline": "Bugun Madina na zamani",
+    "mushaf": "Mushaf",
+    "normal": "Na kullum",
+    "originalMushafWeight": "Kaurin mushaf na asali",
+    "pageDesign": "ƘIRAR SHAFI",
+    "prolongedVowelAfterHamza": "Dogon wasali bayan hamza",
+    "readingTheme": "JIGON KARATU",
+    "scrollDirection": "ALKIBLAR GUNGURAWA",
+    "showDifferences": "Nuna Bambance-bambance",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Ɗan ƙara bayyana",
+    "softenedHamzaPronunciation": "Lausasa furucin hamza",
+    "subcontinentNastaliqStyle": "Salon Nastaliq na yankin Indiya",
+    "taghlizAlLam": "Taghliz al-Lam",
+    "tajweedColoring": "Launin Tajwidi",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "HASKEN RUBUTU BAI SAMU BA TUKUNA",
+    "textThickness": "KAURIN RUBUTU",
+    "thematicHighlighting": "Haskaka bisa Jigo",
+    "trailingVowelOrMoodChange": "Canjin wasali na ƙarshe ko i'irabi kawai",
+    "usingSaheehInternationalTranslationWith": "Ana amfani da: Fassarar Saheeh International mai bayanan ƙasa",
+    "vertical": "A Tsaye",
+    "viewType": "NAU'IN NUNI",
+    "vowelMoodShift": "Canjin wasali / i'irabi",
+    "wordByWord": "KALMA DA KALMA",
+    "wordVariant": "Bambancin kalma"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Ba a iya samun sabar ba",
+    "connectionRestored": "An dawo da haɗin kai",
+    "noInternetConnection": "Babu haɗin intanet",
+    "showingCachedData": "Ana nuna bayanan da aka adana"
+  },
+  "organize": {
+    "createReciter": "Ƙirƙiri \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Layi",
+      "queueIsEmpty": "Layin babu komai"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Yi wa wannan karatu alama domin ganin rubutun sura da bayanai"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Jerin sauraro • sura {{count}}",
+    "subtitle_other": "Jerin sauraro • surori {{count}}"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Babu surori a cikin wannan jerin sauraro"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Bayanin ƙasa"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Karatun da aka zaɓa musamman don wannan lokaci",
+      "discover": "Gano",
+      "discoverANewVoice": "Gano sabuwar murya",
+      "explore": "Bincika",
+      "exploreTheUnexpected": "Bincika abin da ba a zata ba",
+      "hearSomethingNew": "Saurari wani sabon abu",
+      "letTheQuranSurpriseYou": "Bari Alƙur'ani ya ba ka mamaki",
+      "randomMix": "Gaurayen Bazuwar",
+      "randomRecitation": "Karatu na Bazuwar",
+      "shuffleListen": "Gauraya & Saurara",
+      "surpriseMe": "Ba ni mamaki"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Canza yanayin bayyanar yana shafar dukkan manhajar"
+  },
+  "reciterBrowse": {
+    "allReciters": "Dukkan Makaranta",
+    "browseReciters": "Duba Makaranta",
+    "favorites": "Abubuwan da Aka Fi So"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Babu abin da aka sauke na wannan makaranci"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Abubuwan da Na Ɗora"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Azkar",
+    "bestForMemorization": "Mafi Dacewa da Haddace",
+    "bestForTajweed": "Mafi Dacewa da Tajwidi",
+    "continueListening": "Ci gaba da Saurare",
+    "exclusives": "Na Musamman",
+    "exploreByRewayah": "Bincika bisa Riwaya",
+    "featuredReciters": "Fitattun Makaranta",
+    "fromYourCollection": "Daga Tarinka",
+    "myRecitations": "Karatuttukana",
+    "newToQuranStartHere": "Sabon zuwa Alƙur'ani? Fara a Nan",
+    "seeMore": "Duba Ƙari",
+    "yourFavorites": "Abubuwan da Ka Fi So"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Mai aiki",
+      "activeTafseer": "TAFSIRI MAI AIKI",
+      "activeTranslation": "FASSARA MAI AIKI",
+      "deleteTafseer": "Share Tafsiri",
+      "deleteTranslation": "Share Fassara",
+      "noTafaseerFound": "Ba a sami tafsiri ba",
+      "noTranslationsFound": "Ba a sami fassara ba",
+      "unableToDownloadThisTafseer": "Ba a iya sauke wannan tafsiri ba. Da fatan za a duba haɗin intanet ɗinka ka sake gwadawa.",
+      "unableToDownloadThisTranslation": "Ba a iya sauke wannan fassara ba. Da fatan za a duba haɗin intanet ɗinka ka sake gwadawa."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Babu bincike na kwanan nan",
+      "tryDifferentKeywordsOrCheck": "Gwada wasu kalmomi ko ka duba rubutun",
+      "yourSearchHistoryWillAppear": "Tarihin bincikenka zai bayyana a nan"
+    },
+    "surahsOrReciters": "Nemo surori ko makaranta"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Ingantattun Sarrafa Sauti",
+      "browseByJuz": "Bincika bisa Juz'i",
+      "createAndManageYourOwn": "Ƙirƙira da sarrafa jerin sauraro naka na karatuttukan da ka fi so",
+      "crystalClearRecitationsFromThe": "Karatuttuka masu haske daga mafi kyawun makarantan duniya tare da ingantaccen kai tsaye",
+      "curatedCollections": "Tarin da Aka Zaɓa",
+      "customPlaylists": "Jerin Sauraro na Musamman",
+      "customizeThemesAccentColorsAnd": "Daidaita jigogi, launukan jan hankali, da saitunan sauti yadda kake so",
+      "downloadSurahsForOfflineListening": "Sauke surori domin saurare ba tare da intanet ba a kowane lokaci da wuri",
+      "easilyNavigateThroughTheQuran": "Kewaya Alƙur'ani cikin sauƙi ta hanyar tsarin juz'i da rukuni",
+      "features": "ABUBUWAN DA YAKE DA SU",
+      "highQualityAudio": "Sauti Mai Inganci",
+      "listenReflectRememberAllah": "Saurara. Yi tunani. Ka tuna da Allah.",
+      "offlineDownloads": "Saukewa don Amfani Ba Intanet",
+      "ourCommitment": "Alƙawarinmu",
+      "ourMission": "Manufarmu",
+      "personalization": "Keɓancewa",
+      "precisePlaybackControlWithContinuous": "Ingantaccen sarrafa kunnawa tare da kunnawa mara yankewa da gudun karatu mai daidaitawa",
+      "quranBayanTafsirKnowledgeOur": "Alƙur'ani • Bayani • Tafsiri • Ilimi. Burinmu shi ne mu mai da saurare da tunani wani ɓangare na rayuwar yau da kullum: a gida, a hanya, da duk inda kake da lokacin tunawa da Allah.",
+      "readListenAndReflect": "Karanta, Saurara, kuma Yi Tunani",
+      "readTheMushafExploreTranslations": "Karanta Mushaf, bincika fassara da tafsiri, ajiye ayoyi da bayanan kula, kuma ka koma ga azkar na yau da kullum. Zaɓi makarancinka, ƙirƙiri jerin sauraro, kuma ka tsara yadda kake saurare daidai da ranarka. Abubuwan da ake da su sun bambanta bisa na'ura; manhajoji na asali suna tallafa wa saukewa don saurare ba tare da intanet ba.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Surori da aka tsara cikin tunani don lokuta da jigogi daban-daban",
+      "weCareAboutTheAccuracy": "Muna kula da daidaiton abun mai tsarki, ƙira mai girmamawa, da samuwa mai inganci. Muna ci gaba da inganta ISTIMA da kulawa ga masu amfani da shi. Allah Ya karɓi wannan ƙoƙari kuma Ya sa ya zama alheri ga duk wanda ke saurare, karantawa, da tunani."
+    },
+    "aboutApp": "Game da {{name}}",
+    "appearance": "BAYYANA",
+    "defaultreciter": {
+      "changeDefaultReciter": "CANZA MAKARANCI NA ASALI"
+    },
+    "developer": "MAI GINA MANHAJA",
+    "floatingDevMenu": "Menu na Mai Gina Mai Shawagi",
+    "language": "Harshe",
+    "languageDescription": "Zaɓi harshen manhaja",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Koyaushe yi amfani da makarancin asali da ka zaɓa",
+      "askEveryTime": "Tambaya Kowane Lokaci",
+      "chooseAReciterEachTime": "Zaɓi makaranci kowane lokaci da ka kunna",
+      "chooseHowYouWantTo": "Zaɓi yadda kake son zaɓar makaranta lokacin kunna Surori",
+      "defaultSelectionMethod": "HANYAR ZAɓE TA ASALI",
+      "searchThroughOurCompleteCollection": "Nemo cikin cikakken tarin makarantanmu",
+      "selectionPreference": "ZAɓIN ZAɓE"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "An cire dukkan abubuwan da aka sauke.",
+      "areYouSureYouWant": "Ka tabbata kana son cire dukkan abubuwan da aka sauke? Ba za a iya mayar da wannan ba.",
+      "cache": "Cache",
+      "cacheHasBeenCleared": "An share cache.",
+      "clearCache": "Share cache",
+      "failedToClearCache": "An kasa share cache.",
+      "failedToRemoveDownloads": "An kasa cire abubuwan da aka sauke.",
+      "free": "Fanko",
+      "loadingStorageInformation": "Ana loda bayanin ma'aji...",
+      "manageStorage": "SARRAFA MA'AJIYA",
+      "otherApps": "Sauran manhajoji",
+      "removeAllDownloads": "Cire dukkan abubuwan da aka sauke",
+      "removeAllTheQuranContent": "Cire dukkan abubuwan Alƙur'ani da ka sauke don amfani ba tare da intanet ba.",
+      "storageBreakdown": "RABON MA'AJIYA",
+      "success": "An yi nasara",
+      "thisWillClearYourCache": "Wannan zai share cache ɗinka. Ba za a cire abubuwan da ka sauke ba.",
+      "youCanFreeUpStorage": "Za ka iya 'yantar da ma'aji ta hanyar share cache. Ba za a cire abubuwan da ka sauke ba."
+    },
+    "themePicker": {
+      "auto": "Kai tsaye",
+      "dark": "Duhu",
+      "light": "Haske"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Babu bayanin canje-canje"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Game da {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Ƙara Makarancin da Aka Fi So",
+      "uploadRecitation": "Ɗora Karatu"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Sautunan Muhalli",
+      "none": "Babu",
+      "volume": "Ƙarar Sauti"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "misali, Karatuttukan Safe"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Cire Abin da Aka Sauke"
+    },
+    "favoriteRecitersSheet": {
+      "done": "An gama"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Ƙara zuwa tarin",
+      "addToQueue": "Ƙara zuwa layi",
+      "continuePlaying": "Ci gaba da kunnawa",
+      "goToReciter": "Je zuwa makaranci",
+      "removeFromRecents": "Cire daga na kwanan nan"
+    },
+    "mushafLayoutSheet": {
+      "back": "Koma"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Ayar Ƙarshe",
+      "playbackSettings": "Saitunan Kunnawa",
+      "selectRange": "Zaɓi Iyaka",
+      "startingVerse": "Ayar Farko"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Saitunan Maimaitawa",
+      "start": "Fara",
+      "verseRange": "Iyakar ayoyi"
+    },
+    "organizeRecitationSheet": {
+      "category": "Rukuni",
+      "customReciter": "Makaranci na musamman",
+      "duA": "Addu'a",
+      "eGMorningAdhkar": "misali, Azkar na Safe",
+      "lecture": "Lacca",
+      "moreOptions": "Ƙarin Zaɓuɓɓuka",
+      "other": "Sauran",
+      "recording": "Rikodi",
+      "rewayah": "Riwaya",
+      "searchSurahs": "Nemo surori...",
+      "style": "Salo",
+      "tafsir": "Tafsiri",
+      "title": "Take",
+      "type": "Nau'i",
+      "verseRangeOptional": "Iyakar ayoyi (na zaɓi)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Gudun Kunnawa"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "An riga an sauke dukkan abubuwan da ke cikin wannan jerin sauraro.",
+      "anErrorOccurredWhileDownloading": "An sami kuskure yayin saukar da jerin sauraro. Da fatan a sake gwadawa.",
+      "deletePlaylist": "Share Jerin Sauraro",
+      "downloadingPlaylist": "Ana saukar da jerin sauraro...",
+      "editPlaylist": "Gyara Jerin Sauraro",
+      "emptyPlaylist": "Jerin Sauraro Fanko",
+      "thisPlaylistIsEmpty": "Wannan jerin sauraro fanko ne."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Game da Riwaya",
+      "availableRewayat": "Riwayoyin da Ake Da Su"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "An kasa ƙara sura zuwa jerin sauraro",
+      "failedToCreatePlaylist": "An kasa ƙirƙirar jerin sauraro",
+      "noPlaylistsYetCreateYour": "Babu jerin sauraro tukuna. Ƙirƙiri jerin sauraronka na farko a sama!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Tambaya kowane lokaci",
+      "randomReciter": "Makaranci na Bazuwar",
+      "selectReciter": "Zaɓi Makaranci"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Ba a sami ayoyi masu kama da wannan aya ba.",
+      "similarWording": "Kamannin Lafazi"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Lokacin Barci",
+      "turnOffTimer": "Kashe Lokaci"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Cire daga Jerin Sauraro"
+    },
+    "verseActionsSheet": {
+      "addNote": "Ƙara Bayanin Kula",
+      "copy": "Kwafa",
+      "repeat": "Maimaita",
+      "similarVerses": "Ayoyi Masu Kama",
+      "tafseer": "Tafsiri",
+      "theme": "Jigo"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Zaɓuɓɓukan Kwafa",
+      "selectWhatToCopy": "Zaɓi abin da za a kwafa"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Launin Haske"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Raba Aya"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "An same shi a aya {{count}}",
+    "foundIn_other": "An same shi a ayoyi {{count}}"
+  },
+  "surahItem": {
+    "moreOptions": "Ƙarin zaɓuɓɓuka",
+    "opensMenuWithAdditionalActions": "Yana buɗe menu mai ƙarin ayyuka don wannan Sura",
+    "tapToPlaySurah": "Taɓa don kunna Sura"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Lambar jerin sauraro ba ta da inganci",
+      "playlistNotFound": "Ba a sami jerin sauraro ba"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Ba a sami makaranci mai dukkan surorin wannan jerin sauraro ba. Da fatan a gwada wani jerin sauraro.",
+      "failedToPlayPlaylistPlease": "An kasa kunna jerin sauraro. Da fatan a sake gwadawa.",
+      "failedToPlayTrackPlease": "An kasa kunna wannan sauti. Da fatan a sake gwadawa.",
+      "failedToShufflePlaylistPlease": "An kasa gauraya jerin sauraro. Da fatan a sake gwadawa.",
+      "noReciterAvailable": "Babu Makaranci",
+      "noSurahsInThisPlaylist": "Babu surori a cikin wannan jerin sauraro"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Asusu",
+      "appData": "Manhaja & Bayanai",
+      "audioPlayback": "Sauti & Kunnawa",
+      "chooseYourPreferredReciter": "Zaɓi makarancin da kake so",
+      "customizeQuranDisplayOptions": "Daidaita zaɓuɓɓukan nunin Alƙur'ani",
+      "customizeReciterSelection": "Daidaita zaɓen makaranci",
+      "featureRequests": "Buƙatun Sabbin Abubuwa",
+      "feedback": "Ra'ayi",
+      "helpSupport": "Taimako & Tallafi",
+      "learnMoreAboutOurMission": "Ƙara koyo game da manufarmu",
+      "manageQuranTranslationsAndCommentary": "Sarrafa fassarar Alƙur'ani da tafsiri",
+      "privacyPolicy": "Manufar Sirri",
+      "quran": "Alƙur'ani",
+      "readOurTermsOfService": "Karanta sharuɗɗan amfani da mu",
+      "seeWhatSNewIn": "Duba sabbin abubuwa a wannan sigar",
+      "shareYourExperienceWithOthers": "Raba abin da ka gani da wasu",
+      "showTheFloatingDeveloperTools": "Nuna maɓallin kayan aikin mai gina manhaja mai shawagi",
+      "suggestImprovementsAndNewFeatures": "Ba da shawarar ingantawa da sabbin abubuwa",
+      "termsOfService": "Sharuɗɗan Amfani",
+      "viewAndManageStorageUsage": "Duba da sarrafa amfani da ma'aji",
+      "viewOurPrivacyPolicy": "Duba manufar sirrinmu",
+      "writeAReview": "Rubuta Bita"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Soke",
+    "close": "Rufe",
+    "collection": "Tarin",
+    "download": "Sauke",
+    "downloads": "Abubuwan da Aka Sauke",
+    "error": "Wani abu ya faru",
+    "favorites": "Abubuwan da Aka Fi So",
+    "home": "Farko",
+    "language": "Harshe",
+    "library": "Ɗakin Karatu",
+    "loading": "Ana lodawa...",
+    "noResults": "Ba a sami sakamako ba",
+    "offline": "Ba ka da intanet",
+    "pause": "Dakata",
+    "play": "Kunna",
+    "retry": "Sake gwadawa",
+    "save": "Ajiye",
+    "search": "Bincika",
+    "settings": "Saituna",
+    "surahs": "Surori"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "ZAɓI ABUN CIKI"
+    },
+    "highlightContent": {
+      "chooseColor": "ZAɓI LAUNI"
+    },
+    "noteContent": {
+      "saveNote": "Ajiye Bayanin Kula"
+    },
+    "shareContent": {
+      "shareLink": "Raba Hanyar Haɗi"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Ba a sami ayoyi masu kama da wannan aya ba.",
+      "sharedPhrases": "JIMLOLIN BAI ɗAYA",
+      "similarWording": "KAMANNIN LAFAZI"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Babu Tafsirin da Aka Sauke",
+      "tafseerNotAvailableForThis": "Babu tafsiri don wannan aya",
+      "tapHereToDownloadA": "Taɓa a nan don saukar da tafsiri da duba bayani."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Babu bayanan jigo don wannan aya.",
+      "passage": "Sashe"
+    },
+    "translationContent": {
+      "switch": "Canja",
+      "translationNotAvailable": "Babu fassara"
+    }
+  },
+  "version": {
+    "label": "Sigar {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Sabbin abubuwa a"
+  },
+  "wordDetail": {
+    "context": "Aya {{surah}}:{{ayah}} · Kalma {{position}} cikin {{total}}"
+  }
+}
