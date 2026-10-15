@@ -6,7 +6,7 @@ export const WORDMARK_ASPECT = 900 / 258;
 export const HALALWEB_ASPECT = 400 / 69;
 
 export function footerLockup(contentWidth: number) {
-  const markW = contentWidth * 0.2;
+  const markW = contentWidth * 0.13;
   const markH = markW / WORDMARK_ASPECT;
   const ruleH = Math.max(1.5, contentWidth * 0.004);
   const gapTop = contentWidth * 0.006;
