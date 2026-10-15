@@ -1,3 +1,4 @@
+import {getInterfaceMessages} from '@/localization/interfaceMessages';
 // app/(tabs)/_layout.tsx
 
 import React from 'react';
@@ -44,6 +45,7 @@ const tabletSidebarComponent = (props: BottomTabBarProps) => (
 );
 
 function IOSTabs() {
+  const labels = getInterfaceMessages(typeof navigator !== 'undefined' ? navigator.language : 'en');
   const {theme} = useTheme();
   const hasTrack = usePlayerStore(state => {
     const tracks = state.queue.tracks;
@@ -66,7 +68,7 @@ function IOSTabs() {
         name="(a.home)"
         contentStyle={{backgroundColor: theme.colors.background}}>
         <NativeTabs.Trigger.Icon src={tabIcons.home} renderingMode="template" />
-        <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{labels.home}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger
@@ -87,7 +89,7 @@ function IOSTabs() {
           src={tabIcons.search}
           renderingMode="template"
         />
-        <NativeTabs.Trigger.Label>Search</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{labels.search}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger
@@ -106,13 +108,14 @@ function IOSTabs() {
         <NativeTabs.Trigger.Icon
           sf={{default: 'gearshape', selected: 'gearshape.fill'}}
         />
-        <NativeTabs.Trigger.Label>Settings</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{labels.settings}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
     </NativeTabs>
   );
 }
 
 function AndroidTabs() {
+  const labels = getInterfaceMessages(typeof navigator !== 'undefined' ? navigator.language : 'en');
   return (
     <View style={{flex: 1}}>
       <Tabs
@@ -128,11 +131,11 @@ function AndroidTabs() {
           },
         }}
         tabBar={tabBarComponent}>
-        <Tabs.Screen name="(a.home)" options={{title: 'Home'}} />
+        <Tabs.Screen name="(a.home)" options={{title: labels.home}} />
         <Tabs.Screen name="(b.surahs)" options={{title: 'Surahs'}} />
-        <Tabs.Screen name="(b.search)" options={{title: 'Search'}} />
+        <Tabs.Screen name="(b.search)" options={{title: labels.search}} />
         <Tabs.Screen name="(c.collection)" options={{title: 'Collection'}} />
-        <Tabs.Screen name="(d.settings)" options={{title: 'Settings'}} />
+        <Tabs.Screen name="(d.settings)" options={{title: labels.settings}} />
       </Tabs>
       <FloatingPlayer />
     </View>
@@ -145,6 +148,7 @@ function AndroidTabs() {
  * NativeTabs and the Android floating pill when `isTablet` is true.
  */
 function TabletTabs() {
+  const labels = getInterfaceMessages(typeof navigator !== 'undefined' ? navigator.language : 'en');
   return (
     <View style={{flex: 1}}>
       <Tabs
@@ -160,11 +164,11 @@ function TabletTabs() {
           },
         }}
         tabBar={tabletSidebarComponent}>
-        <Tabs.Screen name="(a.home)" options={{title: 'Home'}} />
+        <Tabs.Screen name="(a.home)" options={{title: labels.home}} />
         <Tabs.Screen name="(b.surahs)" options={{title: 'Surahs'}} />
-        <Tabs.Screen name="(b.search)" options={{title: 'Search'}} />
+        <Tabs.Screen name="(b.search)" options={{title: labels.search}} />
         <Tabs.Screen name="(c.collection)" options={{title: 'Collection'}} />
-        <Tabs.Screen name="(d.settings)" options={{title: 'Settings'}} />
+        <Tabs.Screen name="(d.settings)" options={{title: labels.settings}} />
       </Tabs>
     </View>
   );
