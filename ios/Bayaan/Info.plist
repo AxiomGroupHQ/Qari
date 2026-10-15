@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>AppGroupIdentifier</key>
-	<string>group.com.bayaan.app</string>
+	<string>group.com.istima.app</string>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>com.bayaan.app.audio</string>
+		<string>com.istima.app.audio</string>
 	</array>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
