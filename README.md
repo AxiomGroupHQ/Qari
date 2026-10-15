@@ -1,6 +1,6 @@
 # **Istima** · استماع
 
-Quran • Recitations • Tafsir • Knowledge
+Quran • Bayan • Tafsir • Knowledge
 
 Listen. Reflect. Remember Allah.
 
