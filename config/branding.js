@@ -8,9 +8,9 @@
  * See docs/rfcs/007-app-layer-multi-tenancy.md for the design rationale.
  */
 module.exports = {
-  appName: 'ISTIMA',
+  appName: 'Istima',
   arabicName: 'استماع',
-  contentTagline: 'Quran • Bayan • Tafsir • Knowledge',
+  contentTagline: 'Quran • Recitations • Tafsir • Knowledge',
   reflectionTagline: 'Listen. Reflect. Remember Allah.',
   websiteUrl: 'https://istima.app',
   appSlug: 'istima',
@@ -23,13 +23,13 @@ module.exports = {
   termsUrl: 'https://istima.app/terms',
   privacyUrl: 'https://istima.app/privacy',
   shareBaseUrl: 'https://istima.app',
-  emailProductName: 'ISTIMA',
+  emailProductName: 'Istima',
   catalog: {
     source: 'bundled',
     fallbackPath: undefined,
   },
   /**
-   * Order + visibility of Listen-tab home rows. ISTIMA's default mirrors
+   * Order + visibility of Listen-tab home rows. Istima's default mirrors
    * the historical hardcoded order in RecitersView.tsx for parity. Forks
    * override this to reorder, hide, or omit rows entirely.
    */
