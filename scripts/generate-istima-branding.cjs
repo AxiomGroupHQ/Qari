@@ -43,10 +43,10 @@ for (const name of [
 
 (async () => {
   const publisher = await sharp(path.join(root, 'assets/branding/halalweb.png'))
-    .resize({width: 400})
+    .resize({width: 600})
     .toBuffer();
   const wordmark = await sharp(mark)
-    .composite([{input: publisher, left: 312, top: 665}])
+    .composite([{input: publisher, left: 212, top: 571}])
     .png()
     .toBuffer();
   for (const file of targets) {
