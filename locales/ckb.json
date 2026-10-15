@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "هەڵە لە دەستپێکردنی لێدەر: {{message}}",
+    "errorLoadingFonts": "هەڵە لە بارکردنی فۆنتەکان"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "سەرەکیی ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "هەموو",
+      "clearAll": "پاککردنەوەی هەموو",
+      "hasPhoto": "وێنەی هەیە"
+    },
+    "filterModal": {
+      "apply": "جێبەجێکردن",
+      "filterReciters": "پاڵاوتنی قارییەکان",
+      "recitationStyles": "شێوازەکانی خوێندنەوە",
+      "reset": "گەڕاندنەوەی بنەڕەت",
+      "rewayatTypes": "جۆرەکانی ڕیوایەت"
+    },
+    "recitersFound_one": "بەپێی پاڵاوتنەکانی ئێستا {{count}} قاری دۆزرایەوە",
+    "recitersFound_other": "بەپێی پاڵاوتنەکانی ئێستا {{count}} قاری دۆزرایەوە"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "سوورەتە دڵخوازەکان"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "ئایەتەکان نیشانە بکە بۆ ئەوەی لێرە بیانبینیت",
+      "bookmarks": "نیشانەکان",
+      "noBookmarksYet": "هێشتا نیشانەیەک نییە",
+      "removeBookmark": "لابردنی نیشانە"
+    },
+    "collectionSearchModal": {
+      "rewayat": "ڕیوایەت",
+      "searchPlaylistsRecitersSurahsRewayat": "گەڕان بەدوای لیستی لێدان، قاری، سوورەت، ڕیوایەت...",
+      "searchPlaylistsRecitersSurahsRewayat2": "گەڕان بەدوای لیستی لێدان، قاری، سوورەت، ڕیوایەت و داگرتنەکان",
+      "searchYourCollection": "گەڕان لە کۆکراوەکەت",
+      "searching": "لە گەڕاندایە...",
+      "tryDifferentKeywords": "وشەی تری گەڕان تاقی بکەرەوە"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "سوورەتەکان دابگرە بۆ ئەوەی لێرە بیانبینیت",
+      "noDownloadsYet": "هێشتا هیچ داگیراوە نییە",
+      "playAll": "لێدانی هەموو"
+    },
+    "favoritereciters": {
+      "addReciters": "زیادکردنی قاری",
+      "addRecitersToSeeThem": "قاری زیاد بکە بۆ ئەوەی لێرە بیانبینیت",
+      "noFavoriteRecitersYet": "هێشتا قاریی دڵخواز نییە",
+      "removeFromFavorites": "لابردن لە دڵخوازەکان",
+      "searchFavoriteReciters": "گەڕان بەدوای قارییە دڵخوازەکان"
+    },
+    "index": {
+      "addToCollection": "زیادکردن بۆ کۆکراوە",
+      "bookmarks": "نیشانەکان",
+      "createYourFirstPlaylist": "یەکەم لیستی لێدانت دروست بکە",
+      "downloads": "داگرتنەکان",
+      "items_one": "{{count}} دانە",
+      "items_other": "{{count}} دانە",
+      "loved": "دڵخواز",
+      "noBookmarksYet": "هێشتا نیشانەیەک نییە",
+      "noDownloadsYet": "هێشتا هیچ داگیراوە نییە",
+      "noFavoritesYet": "هێشتا دڵخوازەکان بەتاڵە",
+      "noLovedSurahsYet": "هێشتا سوورەتی دڵخواز نییە",
+      "noNotesYet": "هێشتا تێبینی نییە",
+      "noUploadsYet": "هێشتا هیچ بارنەکراوە",
+      "notes": "تێبینییەکان",
+      "playlists": "لیستەکانی لێدان",
+      "reciters": "قارییەکان",
+      "uploads": "بارکراوەکان"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "هەموو سوورەتە دڵخوازەکان پێشتر داگیراون.",
+      "allLovedSurahsHaveBeen": "هەموو سوورەتە دڵخوازەکان داگیران.",
+      "downloadError": "هەڵەی داگرتن",
+      "loveSurahsToSeeThem": "سوورەتەکان بکە بە دڵخواز بۆ ئەوەی لێرە بیانبینیت",
+      "noLovedSurahsYet": "هێشتا سوورەتی دڵخواز نییە",
+      "someDownloadsMayHaveFailed": "لەوانەیە هەندێک داگرتن سەرکەوتوو نەبووبێت.",
+      "unloveAllSurahs": "لابردنی هەموو سوورەتەکان لە دڵخوازەکان"
+    },
+    "notes": {
+      "addNotesToVersesTo": "تێبینی بۆ ئایەتەکان زیاد بکە بۆ ئەوەی لێرە بیانبینیت",
+      "editNote": "دەستکاریکردنی تێبینی",
+      "noNotesYet": "هێشتا تێبینی نییە",
+      "notes": "تێبینییەکان"
+    },
+    "playlistModal": {
+      "name": "ناو"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "لیستی لێدان دروست بکە بۆ ئەوەی لێرە بیانبینیت",
+      "noPlaylistsYet": "هێشتا لیستی لێدان نییە",
+      "playlists": "لیستەکانی لێدان"
+    },
+    "uploads": {
+      "removeAllUploads": "لابردنی هەموو بارکراوەکان",
+      "uploadRecitationsToSeeThem": "خوێندنەوەکان بار بکە بۆ ئەوەی لێرە بیانبینیت"
+    }
+  },
+  "common": {
+    "1Time": "١ جار",
+    "2Times": "٢ جار",
+    "3Times": "٣ جار",
+    "addToCollection": "زیادکردن بۆ کۆکراوە",
+    "addToQueue": "زیادکردن بۆ ڕیز",
+    "allSurahs": "هەموو سوورەتەکان",
+    "alreadyDownloaded": "پێشتر داگیراوە",
+    "arabic": "عەرەبی",
+    "asc": "بەرەو سەرەوە",
+    "browseAll": "گەڕان بە هەموویاندا",
+    "browseAllReciters": "گەڕان بە هەموو قارییەکاندا",
+    "cancel": "هەڵوەشاندنەوە",
+    "clear": "پاککردنەوە",
+    "copyToClipboard": "کۆپیکردن بۆ کلیپبۆرد",
+    "createNewPlaylist": "دروستکردنی لیستی لێدانی نوێ",
+    "defaultReciter": "قاریی بنەڕەت",
+    "delete": "سڕینەوە",
+    "deleteNote": "سڕینەوەی تێبینی",
+    "deleteRecitation": "سڕینەوەی خوێندنەوە",
+    "desc": "بەرەو خوارەوە",
+    "downloadComplete": "داگرتن تەواو بوو",
+    "downloadFailed": "داگرتن سەرکەوتوو نەبوو",
+    "downloads": "داگرتنەکان",
+    "editDetails": "دەستکاریکردنی وردەکارییەکان",
+    "error": "هەڵە",
+    "favoriteReciters": "قارییە دڵخوازەکان",
+    "followAlong": "شوێنکەوتنی خوێندنەوە",
+    "from": "لە",
+    "goToReciter": "چوون بۆ قاری",
+    "goToVerse": "چوون بۆ ئایەت",
+    "learnAboutSurah": "دربارەی سوورەت بزانە",
+    "loading": "بار دەکرێت...",
+    "loop": "دووبارەکردنەوەی بەردەوام",
+    "loved": "دڵخواز",
+    "mushafSettings": "ڕێکخستنەکانی موسحەف",
+    "next": "دواتر",
+    "noRecitersFound": "هیچ قارییەک نەدۆزرایەوە",
+    "noResultsFound": "هیچ ئەنجامێک نەدۆزرایەوە",
+    "noUploadsYet": "هێشتا هیچ بارنەکراوە",
+    "play": "لێدان",
+    "playEachVerse": "لێدانی هەر ئایەتێک",
+    "playNow": "ئێستا لێبدە",
+    "playSpeed": "خێرایی لێدان",
+    "playTheRange": "لێدانی مەوداکە",
+    "playlistName": "ناوی لیستی لێدان",
+    "prev": "پێشتر",
+    "readingTheme": "ڕووکارەکەی خوێندنەوە",
+    "recentSearches": "گەڕانەکانی دوایی",
+    "reciter": "قاری",
+    "reciterChoice": "هەڵبژاردنی قاری",
+    "reciters": "قارییەکان",
+    "remove": "لابردن",
+    "removeAllDownloads": "لابردنی هەموو داگیراوەکان",
+    "removeHighlight": "لابردنی تۆخکردنەوە",
+    "rev": "ڕیزبەندی دابەزین",
+    "save": "پاشەکەوتکردن",
+    "search": "گەڕان",
+    "searchReciters": "گەڕان بەدوای قاری...",
+    "searchSurahs": "گەڕان بەدوای سوورەت",
+    "share": "هاوبەشکردن",
+    "shareAsImage": "هاوبەشکردن وەک وێنە",
+    "shareAsText": "هاوبەشکردن وەک دەق",
+    "sharedPhrases": "دەستەواژە هاوبەشەکان",
+    "showBasmallah": "پیشاندانی بیسمیلا",
+    "stop": "وەستاندن",
+    "storage": "بیرگە",
+    "surah": "سوورەت",
+    "surahs": "سوورەتەکان",
+    "to": "بۆ",
+    "translation": "وەرگێڕان",
+    "translationsTafaseer": "وەرگێڕان و تەفسیرەکان",
+    "transliteration": "دەنگنووسی",
+    "uploads": "بارکراوەکان",
+    "useDefaultReciter": "بەکارهێنانی قاریی بنەڕەت",
+    "verseReference": "ناونیشانی ئایەت",
+    "verses": "ئایەتەکان",
+    "whatSNew": "چی نوێیە",
+    "wordByWord": "وشە بە وشە",
+    "writeYourNoteHere": "تێبینییەکەت لێرە بنووسە...",
+    "yourPlaylists": "لیستەکانی لێدانت"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "لێدانی هەموو سوورەتەکان"
+    },
+    "searchHeader": {
+      "searchSurahs": "گەڕان بەدوای سوورەت"
+    },
+    "searchView": {
+      "noSurahsFound": "هیچ سوورەتێک نەدۆزرایەوە"
+    },
+    "surahList": {
+      "noSurahsAvailable": "هیچ سوورەتێک بەردەست نییە"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "زیادکردنی خوێندنەوە",
+      "uploadRecitationsToSeeThem": "خوێندنەوەکان بار بکە بۆ ئەوەی لێرە بیانبینیت"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "داگیراوە • {{count}} سوورەت",
+    "subtitle_other": "داگیراوە • {{count}} سوورەت"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "ببورە، هەڵەیەک ڕوویدا"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "گەڕان بە هەموو ١١٤ سوورەتەکەدا"
+    },
+    "savedAdhkarHero": {
+      "saved": "پاشەکەوتکراو",
+      "yourCollection": "کۆکراوەکەت"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "سوورەتی ڕۆژ"
+    },
+    "surahsHero": {
+      "number": "ژمارە"
+    }
+  },
+  "language": {
+    "later": "دواتر",
+    "restartMessage": "بۆ جێبەجێکردنی ئاراستەی نوێی ڕیزبەندی، ئەپەکە دووبارە دەست پێ بکەرەوە.",
+    "restartNow": "ئێستا دووبارە دەست پێ بکەرەوە",
+    "restartTitle": "پێویستە دووبارە دەست پێ بکرێتەوە",
+    "search": "گەڕان بەدوای زمان",
+    "system": "زمانی ئامێر"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "بەردەوامبوون"
+    },
+    "whatsNewOnboarding": {
+      "skip": "تێپەڕاندن"
+    }
+  },
+  "mushaf": {
+    "juz": "جوزی {{juz}}",
+    "loadingMushaf": "موسحەف بار دەکرێت…",
+    "main": {
+      "mushafSettings": "ڕێکخستنەکانی موسحەف"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "گۆڕینی قاری",
+      "changeReciter2": "گۆڕینی قاری",
+      "nextAyah": "ئایەتی دواتر",
+      "playbackOptions": "هەڵبژاردەکانی لێدان",
+      "previousAyah": "ئایەتی پێشتر"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "دۆزینەوەی سوورەت، ئایەت، لاپەڕە یان جوز",
+      "recentReads": "خوێندنەوەکانی دوایی",
+      "searchSurahsPagesOrJuz": "گەڕان بەدوای سوورەت، لاپەڕە یان جوز...",
+      "searchTheMushaf": "گەڕان لە موسحەف"
+    },
+    "options": "هەڵبژاردەکان",
+    "page": "لاپەڕە {{page}}",
+    "pageAndSurah": "لاپەڕە {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "موسحەف بار نەکرا.",
+    "tryAgain": "دووبارە هەوڵ بدەرەوە"
+  },
+  "mushafSettings": {
+    "rabbHelper": "ناوی خوای گەورە و نازناوە خوداییەکان وەک ڕەب لە موسحەف تۆخ دەکاتەوە."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "تۆخکردنەوەی بە نۆرە بەپێی بەشی بابەتەکان",
+    "arabicFontSize": "قەبارەی فۆنتی عەرەبی",
+    "bold": "ئەستوور",
+    "book": "کتێب",
+    "colorLegend": "ڕێنمایی ڕەنگەکان",
+    "currentlyReading": "ئێستا دەخوێنرێتەوە",
+    "divineNames": "ناوە خوداییەکان",
+    "fontSize": "قەبارەی فۆنت",
+    "fullscreen": "پڕشاشە",
+    "hamzaReplacedByLongVowel": "گۆڕینی هەمزە بە بزوێنی درێژ",
+    "heavyLamInAllahAfter": "لامی ئەستوور لە وشەی الله دوای پیتە ئەستوورەکان",
+    "highlightAllahRabb": "تۆخکردنەوەی الله / ڕەب",
+    "horizontal": "ئاسۆیی",
+    "ibdal": "ئیبدال",
+    "list": "لیست",
+    "loadingSample": "نموونە بار دەکرێت...",
+    "maddAlBadal": "مەدی بەدەل",
+    "maximumProminence": "زۆرترین دیاری",
+    "medium": "مامناوەند",
+    "modernMadinahPrintedPipeline": "ڕەوتی چاپی مۆدێرنی مەدینە",
+    "mushaf": "موسحەف",
+    "normal": "ئاسایی",
+    "originalMushafWeight": "ئەستووریی ڕەسەنی نووسینی موسحەف",
+    "pageDesign": "دیزاینی لاپەڕە",
+    "prolongedVowelAfterHamza": "بزوێنی درێژ دوای هەمزە",
+    "readingTheme": "ڕووکاری خوێندنەوە",
+    "scrollDirection": "ئاراستەی جووڵاندن",
+    "showDifferences": "پیشاندانی جیاوازییەکان",
+    "silah": "سیلە",
+    "slightlyMoreProminent": "کەمێک دیارتر",
+    "softenedHamzaPronunciation": "خوێندنەوەی نەرمکراوی هەمزە",
+    "subcontinentNastaliqStyle": "شێوازی نەستەعلیقی نیمچەکیشوەر",
+    "taghlizAlLam": "تەغلیزی لام",
+    "tajweedColoring": "ڕەنگکردنی تەجوید",
+    "tashilMusahhala": "تەسهیل / موسەهەلە",
+    "textPreviewNotYetAvailable": "پێشبینینی دەق هێشتا بەردەست نییە",
+    "textThickness": "ئەستووریی دەق",
+    "thematicHighlighting": "تۆخکردنەوە بەپێی بابەت",
+    "trailingVowelOrMoodChange": "تەنیا گۆڕینی بزوێنی کۆتایی یان دۆخی ڕێزمانی",
+    "usingSaheehInternationalTranslationWith": "بەکارهاتوو: وەرگێڕانی Saheeh International لەگەڵ پەراوێز",
+    "vertical": "ستوونی",
+    "viewType": "جۆری پیشاندان",
+    "vowelMoodShift": "گۆڕینی بزوێن / دۆخی ڕێزمانی",
+    "wordByWord": "وشە بە وشە",
+    "wordVariant": "شێوەی جیاوازی وشە"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "پەیوەندی بە ڕاژەکاری پشتەوە ناکرێت",
+    "connectionRestored": "پەیوەندی گەڕایەوە",
+    "noInternetConnection": "پەیوەندیی ئینتەرنێت نییە",
+    "showingCachedData": "داتای کاشکراو پیشان دەدرێت"
+  },
+  "organize": {
+    "createReciter": "دروستکردنی «{{name}}»"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "ڕیز",
+      "queueIsEmpty": "ڕیزەکە بەتاڵە"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "تاگ بۆ ئەم خوێندنەوەیە زیاد بکە بۆ بینینی دەقی سوورەت و وردەکارییەکان"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "لیستی لێدان • {{count}} سوورەت",
+    "subtitle_other": "لیستی لێدان • {{count}} سوورەت"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "هیچ سوورەتێک لەم لیستی لێدانەدا نییە"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "پەراوێز"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "خوێندنەوەیەکی هەڵبژێردراو تەنیا بۆ ئەم ساتە",
+      "discover": "بدۆزەرەوە",
+      "discoverANewVoice": "دەنگێکی نوێ بدۆزەرەوە",
+      "explore": "بگەڕێ",
+      "exploreTheUnexpected": "بەدوای چاوەڕواننەکراوەکاندا بگەڕێ",
+      "hearSomethingNew": "گوێ لە شتێکی نوێ بگرە",
+      "letTheQuranSurpriseYou": "با قورئان سەرسامت بکات",
+      "randomMix": "تێکەڵەی هەڕەمەکی",
+      "randomRecitation": "خوێندنەوەی هەڕەمەکی",
+      "shuffleListen": "تێکەڵ بکە و گوێ بگرە",
+      "surpriseMe": "سەرسامم بکە"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "گۆڕینی دۆخی ڕووکار بۆ تەواوی ئەپەکە جێبەجێ دەکرێت"
+  },
+  "reciterBrowse": {
+    "allReciters": "هەموو قارییەکان",
+    "browseReciters": "گەڕان بە قارییەکاندا",
+    "favorites": "دڵخوازەکان"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "هیچ داگیراوەیەک بۆ ئەم قارییە نییە"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "بارکراوەکانی من"
+    }
+  },
+  "recitersView": {
+    "adhkar": "ئەزکار",
+    "bestForMemorization": "باشترین بۆ لەبەرکردن",
+    "bestForTajweed": "باشترین بۆ تەجوید",
+    "continueListening": "بەردەوامبوون لە گوێگرتن",
+    "exclusives": "تایبەتەکان",
+    "exploreByRewayah": "گەڕان بەپێی ڕیوایەت",
+    "featuredReciters": "قارییە هەڵبژێردراوەکان",
+    "fromYourCollection": "لە کۆکراوەکەتەوە",
+    "myRecitations": "خوێندنەوەکانی من",
+    "newToQuranStartHere": "تازە لەگەڵ قورئان ئاشنا بوویت؟ لێرە دەست پێ بکە",
+    "seeMore": "زیاتر ببینە",
+    "yourFavorites": "دڵخوازەکانت"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "چالاک",
+      "activeTafseer": "تەفسیری چالاک",
+      "activeTranslation": "وەرگێڕانی چالاک",
+      "deleteTafseer": "سڕینەوەی تەفسیر",
+      "deleteTranslation": "سڕینەوەی وەرگێڕان",
+      "noTafaseerFound": "هیچ تەفسیرێک نەدۆزرایەوە",
+      "noTranslationsFound": "هیچ وەرگێڕانێک نەدۆزرایەوە",
+      "unableToDownloadThisTafseer": "ئەم تەفسیرە داگیرانەکرا. تکایە پەیوەندیی ئینتەرنێتەکەت بپشکنە و دووبارە هەوڵ بدەرەوە.",
+      "unableToDownloadThisTranslation": "ئەم وەرگێڕانە داگیرانەکرا. تکایە پەیوەندیی ئینتەرنێتەکەت بپشکنە و دووبارە هەوڵ بدەرەوە."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "گەڕانی دوایی نییە",
+      "tryDifferentKeywordsOrCheck": "وشەی تری گەڕان تاقی بکەرەوە یان ڕێنووس بپشکنە",
+      "yourSearchHistoryWillAppear": "مێژووی گەڕانەکانت لێرە دەردەکەوێت"
+    },
+    "surahsOrReciters": "گەڕان بەدوای سوورەت یان قاری"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "کۆنترۆڵە پێشکەوتووەکانی دەنگ",
+      "browseByJuz": "گەڕان بەپێی جوز",
+      "createAndManageYourOwn": "لیستی لێدانی تایبەتی خۆت لە خوێندنەوە دڵخوازەکانت دروست بکە و بەڕێوەی ببە",
+      "crystalClearRecitationsFromThe": "خوێندنەوەی زۆر ڕوون لە باشترین قارییەکانی جیهانەوە بە پەخشی ئۆنلاینی باشکراو",
+      "curatedCollections": "کۆکراوە هەڵبژێردراوەکان",
+      "customPlaylists": "لیستە تایبەتییەکانی لێدان",
+      "customizeThemesAccentColorsAnd": "ڕووکار، ڕەنگە جەختکراوەکان و ڕێکخستنەکانی دەنگ بەپێی ئارەزووت ڕێک بخە",
+      "downloadSurahsForOfflineListening": "سوورەتەکان دابگرە بۆ گوێگرتنی ئۆفلاین لە هەر کات و شوێنێک بەبێ ئینتەرنێت",
+      "easilyNavigateThroughTheQuran": "بە ڕێکخستن و پۆلێنکردن بەپێی جوز بە ئاسانی بە قورئاندا بگەڕێ",
+      "features": "تایبەتمەندییەکان",
+      "highQualityAudio": "دەنگی بەرزکوالێتی",
+      "listenReflectRememberAllah": "گوێ بگرە. بیر بکەرەوە. یادی خوا بکە.",
+      "offlineDownloads": "داگرتنی ئۆفلاین",
+      "ourCommitment": "پابەندبوونمان",
+      "ourMission": "ئامانجمان",
+      "personalization": "تایبەتکردن",
+      "precisePlaybackControlWithContinuous": "کۆنترۆڵی وردی لێدان بە لێدانی بەردەوام و خێرایی خوێندنەوەی ڕێکخراو",
+      "quranBayanTafsirKnowledgeOur": "قورئان • بەیان • تەفسیر • زانست. ئامانجمان ئەوەیە گوێگرتن و بیرکردنەوە ببنە بەشێک لە ژیانی ڕۆژانە: لە ماڵەوە، لە ڕێگا و هەر شوێنێک کە کاتێکت هەیە بۆ یادکردنی خوا.",
+      "readListenAndReflect": "بخوێنەوە، گوێ بگرە و بیر بکەرەوە",
+      "readTheMushafExploreTranslations": "موسحەف بخوێنەوە، وەرگێڕان و تەفسیر ببینە، ئایەت و تێبینی پاشەکەوت بکە و بگەڕێوە بۆ ئەزکاری ڕۆژانە. قارییەکەت هەڵبژێرە، لیستی لێدان دروست بکە و گوێگرتن لەگەڵ ڕۆژەکەت بگونجێنە. تایبەتمەندییە بەردەستەکان بەپێی ئامێر دەگۆڕێن؛ ئەپە ڕەسەنەکان داگرتن بۆ گوێگرتنی ئۆفلاینیش پشتگیری دەکەن.",
+      "thoughtfullyOrganizedSurahsForDifferent": "سوورەتەکان بە وردی بۆ بۆنە و بابەتە جیاوازەکان ڕێکخراون",
+      "weCareAboutTheAccuracy": "ئێمە گرنگی بە دروستیی ناوەڕۆکی پیرۆز، دیزاینی بەڕێز و دەستگەیشتنی متمانەپێکراو دەدەین. بەردەوام ISTIMA بە گرنگیدان بە بەکارهێنەران باشتر دەکەین. خوا ئەم هەوڵە قبووڵ بکات و بۆ هەموو ئەوانەی گوێ دەگرن، دەخوێننەوە و بیر دەکەنەوە بەسوود بێت."
+    },
+    "aboutApp": "دەربارەی {{name}}",
+    "appearance": "ڕووکار",
+    "defaultreciter": {
+      "changeDefaultReciter": "گۆڕینی قاریی بنەڕەت"
+    },
+    "developer": "گەشەپێدەر",
+    "floatingDevMenu": "مینیوی هەڵواسراوی گەشەپێدەر",
+    "language": "زمان",
+    "languageDescription": "زمانی ئەپەکە هەڵبژێرە",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "هەمیشە قاریی بنەڕەتی هەڵبژێردراوت بەکار بهێنە",
+      "askEveryTime": "هەموو جارێک بپرسە",
+      "chooseAReciterEachTime": "هەر جارێک لێدەدەیت قارییەک هەڵبژێرە",
+      "chooseHowYouWantTo": "هەڵبژێرە چۆن قاری لە کاتی لێدانی سوورەتدا دیاری بکەیت",
+      "defaultSelectionMethod": "ڕێگای بنەڕەتی هەڵبژاردن",
+      "searchThroughOurCompleteCollection": "لە کۆکراوەی تەواوی قارییەکانمان بگەڕێ",
+      "selectionPreference": "ئارەزووی هەڵبژاردن"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "هەموو داگیراوەکان لابران.",
+      "areYouSureYouWant": "دڵنیایت دەتەوێت هەموو ناوەڕۆکی داگیراو لاببەیت؟ ئەم کردارە ناگەڕێتەوە.",
+      "cache": "کاش",
+      "cacheHasBeenCleared": "کاش پاک کرایەوە.",
+      "clearCache": "پاککردنەوەی کاش",
+      "failedToClearCache": "پاککردنەوەی کاش سەرکەوتوو نەبوو.",
+      "failedToRemoveDownloads": "لابردنی داگیراوەکان سەرکەوتوو نەبوو.",
+      "free": "بەتاڵ",
+      "loadingStorageInformation": "زانیاریی بیرگە بار دەکرێت...",
+      "manageStorage": "بەڕێوەبردنی بیرگە",
+      "otherApps": "ئەپەکانی تر",
+      "removeAllDownloads": "لابردنی هەموو داگیراوەکان",
+      "removeAllTheQuranContent": "هەموو ناوەڕۆکی قورئانی داگیراو بۆ بەکارهێنانی ئۆفلاین لاببە.",
+      "storageBreakdown": "وردەکاریی بەکارهێنانی بیرگە",
+      "success": "سەرکەوتوو",
+      "thisWillClearYourCache": "ئەمە کاش پاک دەکاتەوە. داگیراوەکانت نالابرێن.",
+      "youCanFreeUpStorage": "بە پاککردنەوەی کاش دەتوانیت بۆشایی لە بیرگەدا بەتاڵ بکەیت. داگیراوەکانت نالابرێن."
+    },
+    "themePicker": {
+      "auto": "خۆکار",
+      "dark": "تاریک",
+      "light": "ڕووناک"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "تۆماری گۆڕانکاری بەردەست نییە"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "دەربارەی {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "زیادکردنی قاریی دڵخواز",
+      "uploadRecitation": "بارکردنی خوێندنەوە"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "دەنگەکانی دەوروبەر",
+      "none": "هیچ",
+      "volume": "بەرزیی دەنگ"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "بۆ نموونە: خوێندنەوەکانی بەیانی"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "لابردنی داگیراو"
+    },
+    "favoriteRecitersSheet": {
+      "done": "تەواو"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "زیادکردن بۆ کۆکراوە",
+      "addToQueue": "زیادکردن بۆ ڕیز",
+      "continuePlaying": "بەردەوامبوون لە لێدان",
+      "goToReciter": "چوون بۆ قاری",
+      "removeFromRecents": "لابردن لە دواییەکان"
+    },
+    "mushafLayoutSheet": {
+      "back": "گەڕانەوە"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "ئایەتی کۆتایی",
+      "playbackSettings": "ڕێکخستنەکانی لێدان",
+      "selectRange": "هەڵبژاردنی مەودا",
+      "startingVerse": "ئایەتی دەستپێک"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "ڕێکخستنەکانی دووبارەکردنەوە",
+      "start": "دەستپێکردن",
+      "verseRange": "مەودای ئایەتەکان"
+    },
+    "organizeRecitationSheet": {
+      "category": "پۆل",
+      "customReciter": "قاریی تایبەت",
+      "duA": "دوعا",
+      "eGMorningAdhkar": "بۆ نموونە: ئەزکاری بەیانی",
+      "lecture": "وانە",
+      "moreOptions": "هەڵبژاردەی زیاتر",
+      "other": "هی تر",
+      "recording": "تۆمارکردنی دەنگ",
+      "rewayah": "ڕیوایەت",
+      "searchSurahs": "گەڕان بەدوای سوورەت...",
+      "style": "شێواز",
+      "tafsir": "تەفسیر",
+      "title": "ناونیشان",
+      "type": "جۆر",
+      "verseRangeOptional": "مەودای ئایەتەکان (ئارەزوومەندانە)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "خێرایی لێدان"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "هەموو دانەکانی ئەم لیستی لێدانە پێشتر داگیراون.",
+      "anErrorOccurredWhileDownloading": "لە کاتی داگرتنی لیستی لێدان هەڵەیەک ڕوویدا. تکایە دووبارە هەوڵ بدەرەوە.",
+      "deletePlaylist": "سڕینەوەی لیستی لێدان",
+      "downloadingPlaylist": "لیستی لێدان دادەگیرێت...",
+      "editPlaylist": "دەستکاریکردنی لیستی لێدان",
+      "emptyPlaylist": "لیستی لێدانی بەتاڵ",
+      "thisPlaylistIsEmpty": "ئەم لیستی لێدانە بەتاڵە."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "دەربارەی ڕیوایەتەکان",
+      "availableRewayat": "ڕیوایەتە بەردەستەکان"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "زیادکردنی سوورەت بۆ لیستی لێدان سەرکەوتوو نەبوو",
+      "failedToCreatePlaylist": "دروستکردنی لیستی لێدان سەرکەوتوو نەبوو",
+      "noPlaylistsYetCreateYour": "هێشتا لیستی لێدان نییە. یەکەم لیستەکەت لە سەرەوە دروست بکە!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "هەموو جارێک بپرسە",
+      "randomReciter": "قاریی هەڕەمەکی",
+      "selectReciter": "هەڵبژاردنی قاری"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "هیچ ئایەتێکی هاوشێوە بۆ ئەم ئایەتە نەدۆزرایەوە.",
+      "similarWording": "وشەسازیی هاوشێوە"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "کاتژمێری خەو",
+      "turnOffTimer": "کوژاندنەوەی کاتژمێر"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "لابردن لە لیستی لێدان"
+    },
+    "verseActionsSheet": {
+      "addNote": "زیادکردنی تێبینی",
+      "copy": "کۆپیکردن",
+      "repeat": "دووبارەکردنەوە",
+      "similarVerses": "ئایەتە هاوشێوەکان",
+      "tafseer": "تەفسیر",
+      "theme": "ڕووکار"
+    },
+    "verseCopySheet": {
+      "copyOptions": "هەڵبژاردەکانی کۆپیکردن",
+      "selectWhatToCopy": "ئەوەی کۆپی دەکەیت هەڵبژێرە"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "ڕەنگی تۆخکردنەوە"
+    },
+    "verseShareSheet": {
+      "shareVerse": "هاوبەشکردنی ئایەت"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "لە {{count}} ئایەتدا دۆزرایەوە",
+    "foundIn_other": "لە {{count}} ئایەتدا دۆزرایەوە"
+  },
+  "surahItem": {
+    "moreOptions": "هەڵبژاردەی زیاتر",
+    "opensMenuWithAdditionalActions": "مینیوی کردارە زیادەکانی ئەم سوورەتە دەکاتەوە",
+    "tapToPlaySurah": "بۆ لێدانی سوورەت دەستی لێ بدە"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "ناسنامەی لیستی لێدان نادروستە",
+      "playlistNotFound": "لیستی لێدان نەدۆزرایەوە"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "قارییەک بە هەموو سوورەتەکانی ئەم لیستە نەدۆزرایەوە. تکایە لیستێکی تر تاقی بکەرەوە.",
+      "failedToPlayPlaylistPlease": "لێدانی لیست سەرکەوتوو نەبوو. تکایە دووبارە هەوڵ بدەرەوە.",
+      "failedToPlayTrackPlease": "لێدانی بڕگە سەرکەوتوو نەبوو. تکایە دووبارە هەوڵ بدەرەوە.",
+      "failedToShufflePlaylistPlease": "لێدانی تێکەڵی لیست سەرکەوتوو نەبوو. تکایە دووبارە هەوڵ بدەرەوە.",
+      "noReciterAvailable": "قاری بەردەست نییە",
+      "noSurahsInThisPlaylist": "هیچ سوورەتێک لەم لیستی لێدانەدا نییە"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "هەژمار",
+      "appData": "ئەپ و داتا",
+      "audioPlayback": "دەنگ و لێدان",
+      "chooseYourPreferredReciter": "قاریی دڵخوازت هەڵبژێرە",
+      "customizeQuranDisplayOptions": "هەڵبژاردەکانی پیشاندانی قورئان ڕێک بخە",
+      "customizeReciterSelection": "هەڵبژاردنی قاری ڕێک بخە",
+      "featureRequests": "داواکاریی تایبەتمەندی",
+      "feedback": "بۆچوون",
+      "helpSupport": "یارمەتی و پشتگیری",
+      "learnMoreAboutOurMission": "زیاتر لەبارەی ئامانجمان بزانە",
+      "manageQuranTranslationsAndCommentary": "وەرگێڕان و ڕاڤەکانی قورئان بەڕێوە ببە",
+      "privacyPolicy": "سیاسەتی تایبەتمەندی",
+      "quran": "قورئان",
+      "readOurTermsOfService": "مەرجەکانی خزمەتگوزارییەکەمان بخوێنەوە",
+      "seeWhatSNewIn": "نوێکارییەکانی ئەم وەشانە ببینە",
+      "shareYourExperienceWithOthers": "ئەزموونەکەت لەگەڵ کەسانی تر هاوبەش بکە",
+      "showTheFloatingDeveloperTools": "دوگمەی هەڵواسراوی ئامرازەکانی گەشەپێدەر پیشان بدە",
+      "suggestImprovementsAndNewFeatures": "پێشنیاری باشترکردن و تایبەتمەندیی نوێ بکە",
+      "termsOfService": "مەرجەکانی خزمەتگوزاری",
+      "viewAndManageStorageUsage": "بەکارهێنانی بیرگە ببینە و بەڕێوەی ببە",
+      "viewOurPrivacyPolicy": "سیاسەتی تایبەتمەندییەکەمان ببینە",
+      "writeAReview": "هەڵسەنگاندن بنووسە"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "هەڵوەشاندنەوە",
+    "close": "داخستن",
+    "collection": "کۆکراوە",
+    "download": "داگرتن",
+    "downloads": "داگرتنەکان",
+    "error": "کێشەیەک ڕوویدا",
+    "favorites": "دڵخوازەکان",
+    "home": "سەرەکی",
+    "language": "زمان",
+    "library": "کتێبخانە",
+    "loading": "بار دەکرێت...",
+    "noResults": "هیچ ئەنجامێک نەدۆزرایەوە",
+    "offline": "تۆ ئۆفلاینیت",
+    "pause": "ڕاگرتن",
+    "play": "لێدان",
+    "retry": "دووبارە هەوڵ بدەرەوە",
+    "save": "پاشەکەوتکردن",
+    "search": "گەڕان",
+    "settings": "ڕێکخستنەکان",
+    "surahs": "سوورەتەکان"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "هەڵبژاردنی ناوەڕۆک"
+    },
+    "highlightContent": {
+      "chooseColor": "هەڵبژاردنی ڕەنگ"
+    },
+    "noteContent": {
+      "saveNote": "پاشەکەوتکردنی تێبینی"
+    },
+    "shareContent": {
+      "shareLink": "هاوبەشکردنی بەستەر"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "هیچ ئایەتێکی هاوشێوە بۆ ئەم ئایەتە نەدۆزرایەوە.",
+      "sharedPhrases": "دەستەواژە هاوبەشەکان",
+      "similarWording": "وشەسازیی هاوشێوە"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "هیچ تەفسیرێک دانەگیراوە",
+      "tafseerNotAvailableForThis": "تەفسیر بۆ ئەم ئایەتە بەردەست نییە",
+      "tapHereToDownloadA": "لێرە دەست لێ بدە بۆ داگرتنی تەفسیر و بینینی ڕاڤە."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "داتای بابەتی بۆ ئەم ئایەتە نییە.",
+      "passage": "بەش"
+    },
+    "translationContent": {
+      "switch": "گۆڕین",
+      "translationNotAvailable": "وەرگێڕان بەردەست نییە"
+    }
+  },
+  "version": {
+    "label": "وەشانی {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "چی نوێیە لە"
+  },
+  "wordDetail": {
+    "context": "ئایەتی {{surah}}:{{ayah}} · وشەی {{position}} لە {{total}}"
+  }
+}

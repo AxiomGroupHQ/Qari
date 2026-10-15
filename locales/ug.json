@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "قويغۇچنى قوزغىتىشتا خاتالىق: {{message}}",
+    "errorLoadingFonts": "خەت نۇسخىلىرىنى يۈكلەشتە خاتالىق"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA باش بېتى"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "ھەممىسى",
+      "clearAll": "ھەممىنى تازىلاش",
+      "hasPhoto": "سۈرىتى بار"
+    },
+    "filterModal": {
+      "apply": "قوللىنىش",
+      "filterReciters": "قارىلارنى سۈزۈش",
+      "recitationStyles": "تىلاۋەت ئۇسلۇبلىرى",
+      "reset": "ئەسلىگە قايتۇرۇش",
+      "rewayatTypes": "رىۋايەت تۈرلىرى"
+    },
+    "recitersFound_one": "نۆۋەتتىكى سۈزگۈچلەر بويىچە {{count}} قارى تېپىلدى",
+    "recitersFound_other": "نۆۋەتتىكى سۈزگۈچلەر بويىچە {{count}} قارى تېپىلدى"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "ياقتۇرغان سۈرىلەر"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "ئايەتلەرگە خەتكۈچ قويۇپ بۇ يەردە كۆرۈڭ",
+      "bookmarks": "خەتكۈچلەر",
+      "noBookmarksYet": "تېخى خەتكۈچ يوق",
+      "removeBookmark": "خەتكۈچنى چىقىرىۋېتىش"
+    },
+    "collectionSearchModal": {
+      "rewayat": "رىۋايەت",
+      "searchPlaylistsRecitersSurahsRewayat": "قويۇش تىزىملىكلىرى، قارىلار، سۈرىلەر، رىۋايەتلەردىن ئىزدەش...",
+      "searchPlaylistsRecitersSurahsRewayat2": "قويۇش تىزىملىكلىرى، قارىلار، سۈرىلەر، رىۋايەتلەر ۋە چۈشۈرۈلمىلەردىن ئىزدەش",
+      "searchYourCollection": "توپلىمىڭىزدىن ئىزدەش",
+      "searching": "ئىزدەۋاتىدۇ...",
+      "tryDifferentKeywords": "باشقا ئاچقۇچلۇق سۆزلەرنى سىناپ بېقىڭ"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "سۈرىلەرنى چۈشۈرۈپ بۇ يەردە كۆرۈڭ",
+      "noDownloadsYet": "تېخى چۈشۈرۈلمە يوق",
+      "playAll": "ھەممىنى قويۇش"
+    },
+    "favoritereciters": {
+      "addReciters": "قارىلارنى قوشۇش",
+      "addRecitersToSeeThem": "قارىلارنى قوشۇپ بۇ يەردە كۆرۈڭ",
+      "noFavoriteRecitersYet": "تېخى ياقتۇرغان قارى يوق",
+      "removeFromFavorites": "ياقتۇرغانلاردىن چىقىرىۋېتىش",
+      "searchFavoriteReciters": "ياقتۇرغان قارىلاردىن ئىزدەش"
+    },
+    "index": {
+      "addToCollection": "توپلامغا قوشۇش",
+      "bookmarks": "خەتكۈچلەر",
+      "createYourFirstPlaylist": "تۇنجى قويۇش تىزىملىكىڭىزنى قۇرۇڭ",
+      "downloads": "چۈشۈرۈلمىلەر",
+      "items_one": "{{count}} تۈر",
+      "items_other": "{{count}} تۈر",
+      "loved": "ياقتۇرغانلار",
+      "noBookmarksYet": "تېخى خەتكۈچ يوق",
+      "noDownloadsYet": "تېخى چۈشۈرۈلمە يوق",
+      "noFavoritesYet": "تېخى ياقتۇرغان نەرسە يوق",
+      "noLovedSurahsYet": "تېخى ياقتۇرغان سۈرە يوق",
+      "noNotesYet": "تېخى ئىزاھات يوق",
+      "noUploadsYet": "تېخى يوللانغان نەرسە يوق",
+      "notes": "ئىزاھاتلار",
+      "playlists": "قويۇش تىزىملىكلىرى",
+      "reciters": "قارىلار",
+      "uploads": "يوللانمىلار"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "ياقتۇرغان سۈرىلەرنىڭ ھەممىسى ئاللىبۇرۇن چۈشۈرۈلگەن.",
+      "allLovedSurahsHaveBeen": "ياقتۇرغان سۈرىلەرنىڭ ھەممىسى چۈشۈرۈلدى.",
+      "downloadError": "چۈشۈرۈش خاتالىقى",
+      "loveSurahsToSeeThem": "سۈرىلەرنى ياقتۇرغانلارغا قوشۇپ بۇ يەردە كۆرۈڭ",
+      "noLovedSurahsYet": "تېخى ياقتۇرغان سۈرە يوق",
+      "someDownloadsMayHaveFailed": "بەزى چۈشۈرۈشلەر مەغلۇپ بولغان بولۇشى مۇمكىن.",
+      "unloveAllSurahs": "بارلىق سۈرىلەرنى ياقتۇرغانلاردىن چىقىرىۋېتىش"
+    },
+    "notes": {
+      "addNotesToVersesTo": "ئايەتلەرگە ئىزاھات قوشۇپ بۇ يەردە كۆرۈڭ",
+      "editNote": "ئىزاھاتنى تەھرىرلەش",
+      "noNotesYet": "تېخى ئىزاھات يوق",
+      "notes": "ئىزاھاتلار"
+    },
+    "playlistModal": {
+      "name": "نامى"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "قويۇش تىزىملىكى قۇرۇپ بۇ يەردە كۆرۈڭ",
+      "noPlaylistsYet": "تېخى قويۇش تىزىملىكى يوق",
+      "playlists": "قويۇش تىزىملىكلىرى"
+    },
+    "uploads": {
+      "removeAllUploads": "بارلىق يوللانمىلارنى چىقىرىۋېتىش",
+      "uploadRecitationsToSeeThem": "تىلاۋەتلەرنى يوللاپ بۇ يەردە كۆرۈڭ"
+    }
+  },
+  "common": {
+    "1Time": "1 قېتىم",
+    "2Times": "2 قېتىم",
+    "3Times": "3 قېتىم",
+    "addToCollection": "توپلامغا قوشۇش",
+    "addToQueue": "ئۆچىرەتكە قوشۇش",
+    "allSurahs": "بارلىق سۈرىلەر",
+    "alreadyDownloaded": "ئاللىبۇرۇن چۈشۈرۈلگەن",
+    "arabic": "ئەرەبچە",
+    "asc": "ئۆسۈش تەرتىپى",
+    "browseAll": "ھەممىنى كۆرۈش",
+    "browseAllReciters": "بارلىق قارىلارنى كۆرۈش",
+    "cancel": "ۋاز كېچىش",
+    "clear": "تازىلاش",
+    "copyToClipboard": "چاپلاش تاختىسىغا كۆچۈرۈش",
+    "createNewPlaylist": "يېڭى قويۇش تىزىملىكى قۇرۇش",
+    "defaultReciter": "سۈكۈتتىكى قارى",
+    "delete": "ئۆچۈرۈش",
+    "deleteNote": "ئىزاھاتنى ئۆچۈرۈش",
+    "deleteRecitation": "تىلاۋەتنى ئۆچۈرۈش",
+    "desc": "كېمىيىش تەرتىپى",
+    "downloadComplete": "چۈشۈرۈش تاماملاندى",
+    "downloadFailed": "چۈشۈرۈش مەغلۇپ بولدى",
+    "downloads": "چۈشۈرۈلمىلەر",
+    "editDetails": "تەپسىلاتلارنى تەھرىرلەش",
+    "error": "خاتالىق",
+    "favoriteReciters": "ياقتۇرغان قارىلار",
+    "followAlong": "ئەگىشىپ ئوقۇش",
+    "from": "دىن",
+    "goToReciter": "قارىغا بېرىش",
+    "goToVerse": "ئايەتكە بېرىش",
+    "learnAboutSurah": "سۈرە ھەققىدە بىلىش",
+    "loading": "يۈكلىنىۋاتىدۇ...",
+    "loop": "دەۋرىي قويۇش",
+    "loved": "ياقتۇرغانلار",
+    "mushafSettings": "مۇسھەپ تەڭشەكلىرى",
+    "next": "كېيىنكى",
+    "noRecitersFound": "قارى تېپىلمىدى",
+    "noResultsFound": "نەتىجە تېپىلمىدى",
+    "noUploadsYet": "تېخى يوللانغان نەرسە يوق",
+    "play": "قويۇش",
+    "playEachVerse": "ھەر بىر ئايەتنى قويۇش",
+    "playNow": "ھازىر قويۇش",
+    "playSpeed": "قويۇش سۈرئىتى",
+    "playTheRange": "تاللانغان دائىرىنى قويۇش",
+    "playlistName": "قويۇش تىزىملىكىنىڭ نامى",
+    "prev": "ئالدىنقى",
+    "readingTheme": "ئوقۇش ئۇسلۇبى",
+    "recentSearches": "يېقىنقى ئىزدەشلەر",
+    "reciter": "قارى",
+    "reciterChoice": "قارى تاللاش",
+    "reciters": "قارىلار",
+    "remove": "چىقىرىۋېتىش",
+    "removeAllDownloads": "بارلىق چۈشۈرۈلمىلەرنى چىقىرىۋېتىش",
+    "removeHighlight": "يورۇتۇشنى چىقىرىۋېتىش",
+    "rev": "نازىل بولۇش تەرتىپى",
+    "save": "ساقلاش",
+    "search": "ئىزدەش",
+    "searchReciters": "قارىلاردىن ئىزدەش...",
+    "searchSurahs": "سۈرىلەردىن ئىزدەش",
+    "share": "ھەمبەھىرلەش",
+    "shareAsImage": "رەسىم شەكلىدە ھەمبەھىرلەش",
+    "shareAsText": "تېكىست شەكلىدە ھەمبەھىرلەش",
+    "sharedPhrases": "ئورتاق ئىبارىلەر",
+    "showBasmallah": "بىسمىللانى كۆرسىتىش",
+    "stop": "توختىتىش",
+    "storage": "ساقلاش بوشلۇقى",
+    "surah": "سۈرە",
+    "surahs": "سۈرىلەر",
+    "to": "غىچە",
+    "translation": "تەرجىمە",
+    "translationsTafaseer": "تەرجىمىلەر ۋە تەپسىرلەر",
+    "transliteration": "تەلەپپۇز يېزىقى",
+    "uploads": "يوللانمىلار",
+    "useDefaultReciter": "سۈكۈتتىكى قارىنى ئىشلىتىش",
+    "verseReference": "ئايەتنىڭ ئورنى",
+    "verses": "ئايەتلەر",
+    "whatSNew": "يېڭىلىقلار",
+    "wordByWord": "سۆزمۇسۆز",
+    "writeYourNoteHere": "ئىزاھاتىڭىزنى بۇ يەرگە يېزىڭ...",
+    "yourPlaylists": "قويۇش تىزىملىكلىرىڭىز"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "بارلىق سۈرىلەرنى قويۇش"
+    },
+    "searchHeader": {
+      "searchSurahs": "سۈرىلەردىن ئىزدەش"
+    },
+    "searchView": {
+      "noSurahsFound": "سۈرە تېپىلمىدى"
+    },
+    "surahList": {
+      "noSurahsAvailable": "ئىشلەتكىلى بولىدىغان سۈرە يوق"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "تىلاۋەت قوشۇش",
+      "uploadRecitationsToSeeThem": "تىلاۋەتلەرنى يوللاپ بۇ يەردە كۆرۈڭ"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "چۈشۈرۈلگەن • {{count}} سۈرە",
+    "subtitle_other": "چۈشۈرۈلگەن • {{count}} سۈرە"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "كەچۈرۈڭ، خاتالىق كۆرۈلدى"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "بارلىق 114 سۈرىنى كۆرۈش"
+    },
+    "savedAdhkarHero": {
+      "saved": "ساقلاندى",
+      "yourCollection": "توپلىمىڭىز"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "بۈگۈنكى سۈرە"
+    },
+    "surahsHero": {
+      "number": "نومۇر"
+    }
+  },
+  "language": {
+    "later": "كېيىن",
+    "restartMessage": "يېڭى ئورۇنلاشتۇرۇش يۆنىلىشىنى قوللىنىش ئۈچۈن ئەپنى قايتا قوزغىتىڭ.",
+    "restartNow": "ھازىر قايتا قوزغىتىش",
+    "restartTitle": "قايتا قوزغىتىش كېرەك",
+    "search": "تىللاردىن ئىزدەش",
+    "system": "ئۈسكۈنە تىلى"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "داۋاملاشتۇرۇش"
+    },
+    "whatsNewOnboarding": {
+      "skip": "ئاتلاپ ئۆتۈش"
+    }
+  },
+  "mushaf": {
+    "juz": "{{juz}}-جۈز",
+    "loadingMushaf": "مۇسھەپ يۈكلىنىۋاتىدۇ…",
+    "main": {
+      "mushafSettings": "مۇسھەپ تەڭشەكلىرى"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "قارىنى ئالماشتۇرۇش",
+      "changeReciter2": "قارىنى ئالماشتۇرۇش",
+      "nextAyah": "كېيىنكى ئايەت",
+      "playbackOptions": "قويۇش تاللانمىلىرى",
+      "previousAyah": "ئالدىنقى ئايەت"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "سۈرە، ئايەت، بەت ياكى جۈزنى تېپىش",
+      "recentReads": "يېقىندا ئوقۇلغانلار",
+      "searchSurahsPagesOrJuz": "سۈرە، بەت ياكى جۈزدىن ئىزدەش...",
+      "searchTheMushaf": "مۇسھەپتىن ئىزدەش"
+    },
+    "options": "تاللانمىلار",
+    "page": "{{page}}-بەت",
+    "pageAndSurah": "{{page}}-بەت · {{surah}}",
+    "theMushafCouldNotLoad": "مۇسھەپنى يۈكلىگىلى بولمىدى.",
+    "tryAgain": "قايتا سىناش"
+  },
+  "mushafSettings": {
+    "rabbHelper": "مۇسھەپتە ئاللاھنىڭ ئىسمى ۋە رەبكە ئوخشاش ئىلاھىي ناملىرىنى يورۇتىدۇ."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "مەزمۇن بۆلەكلىرى بويىچە نۆۋەتلىشىپ يورۇتۇش",
+    "arabicFontSize": "ئەرەبچە خەت چوڭلۇقى",
+    "bold": "توم",
+    "book": "كىتاب",
+    "colorLegend": "رەڭ ئىزاھاتى",
+    "currentlyReading": "ھازىر ئوقۇلۇۋاتقىنى",
+    "divineNames": "ئىلاھىي ئىسىملار",
+    "fontSize": "خەت چوڭلۇقى",
+    "fullscreen": "پۈتۈن ئېكران",
+    "hamzaReplacedByLongVowel": "ھەمزىنىڭ ئۇزۇن سوزۇق تاۋۇشقا ئالماشتۇرۇلۇشى",
+    "heavyLamInAllahAfter": "توم ھەرپلەردىن كېيىن ئاللاھ سۆزىدىكى لامنى توم ئوقۇش",
+    "highlightAllahRabb": "ئاللاھ / رەبنى يورۇتۇش",
+    "horizontal": "توغرىسىغا",
+    "ibdal": "ئىبدال",
+    "list": "تىزىملىك",
+    "loadingSample": "ئۈلگە يۈكلىنىۋاتىدۇ...",
+    "maddAlBadal": "مەددى بەدەل",
+    "maximumProminence": "ئەڭ گەۋدىلىك",
+    "medium": "ئوتتۇراھال",
+    "modernMadinahPrintedPipeline": "زامانىۋى مەدىنە باسما جەريانى",
+    "mushaf": "مۇسھەپ",
+    "normal": "ئادەتتىكى",
+    "originalMushafWeight": "مۇسھەپنىڭ ئەسلى خەت توملۇقى",
+    "pageDesign": "بەت لايىھەسى",
+    "prolongedVowelAfterHamza": "ھەمزىدىن كېيىن سوزۇق تاۋۇشنى ئۇزارتىش",
+    "readingTheme": "ئوقۇش ئۇسلۇبى",
+    "scrollDirection": "سىيرىش يۆنىلىشى",
+    "showDifferences": "پەرقلەرنى كۆرسىتىش",
+    "silah": "سىلە",
+    "slightlyMoreProminent": "سەل گەۋدىلىكرەك",
+    "softenedHamzaPronunciation": "ھەمزىنى يۇمشاق تەلەپپۇز قىلىش",
+    "subcontinentNastaliqStyle": "جەنۇبىي ئاسىيا نەستەئلىق ئۇسلۇبى",
+    "taghlizAlLam": "لامنى توم ئوقۇش",
+    "tajweedColoring": "تەجۋىد بويىچە رەڭلەش",
+    "tashilMusahhala": "تەسھىل / مۇسەھھەلە",
+    "textPreviewNotYetAvailable": "تېكىستنى ئالدىن كۆرۈش تېخى يوق",
+    "textThickness": "تېكىست توملۇقى",
+    "thematicHighlighting": "مەزمۇن بويىچە يورۇتۇش",
+    "trailingVowelOrMoodChange": "پەقەت ئاخىرقى سوزۇق تاۋۇش ياكى گرامماتىكىلىق شەكىل ئۆزگىرىشى",
+    "usingSaheehInternationalTranslationWith": "ئىشلىتىلىۋاتقىنى: ئىزاھاتلىق Saheeh International تەرجىمىسى",
+    "vertical": "تىك",
+    "viewType": "كۆرۈنۈش تۈرى",
+    "vowelMoodShift": "سوزۇق تاۋۇش / گرامماتىكىلىق شەكىل ئۆزگىرىشى",
+    "wordByWord": "سۆزمۇسۆز",
+    "wordVariant": "سۆزنىڭ باشقا شەكلى"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "ئارقا مۇلازىمېتىرغا ئۇلانغىلى بولمىدى",
+    "connectionRestored": "ئۇلىنىش ئەسلىگە كەلدى",
+    "noInternetConnection": "تور ئۇلىنىشى يوق",
+    "showingCachedData": "غەملەنگەن سانلىق مەلۇماتلار كۆرسىتىلىۋاتىدۇ"
+  },
+  "organize": {
+    "createReciter": "«{{name}}» قۇرۇش"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "ئۆچىرەت",
+      "queueIsEmpty": "ئۆچىرەت قۇرۇق"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "سۈرە تېكىستى ۋە تەپسىلاتلىرىنى كۆرۈش ئۈچۈن بۇ تىلاۋەتكە بەلگە قويۇڭ"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "قويۇش تىزىملىكى • {{count}} سۈرە",
+    "subtitle_other": "قويۇش تىزىملىكى • {{count}} سۈرە"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "بۇ قويۇش تىزىملىكىدە سۈرە يوق"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "بەت ئاستى ئىزاھاتى"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "دەل مۇشۇ پەيت ئۈچۈن تاللانغان تىلاۋەت",
+      "discover": "بايقاش",
+      "discoverANewVoice": "يېڭى بىر ئاۋازنى بايقاش",
+      "explore": "ئىزدىنىش",
+      "exploreTheUnexpected": "كۈتۈلمىگەننى ئىزدەش",
+      "hearSomethingNew": "يېڭى بىر نەرسە ئاڭلاش",
+      "letTheQuranSurpriseYou": "قۇرئان سىزنى ھەيران قالدۇرسۇن",
+      "randomMix": "ئىختىيارىي ئارىلاشما",
+      "randomRecitation": "ئىختىيارىي تىلاۋەت",
+      "shuffleListen": "ئارىلاشتۇرۇپ ئاڭلاش",
+      "surpriseMe": "مېنى ھەيران قالدۇر"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "كۆرۈنۈش ھالىتىنى ئۆزگەرتىش پۈتۈن ئەپكە قوللىنىلىدۇ"
+  },
+  "reciterBrowse": {
+    "allReciters": "بارلىق قارىلار",
+    "browseReciters": "قارىلارنى كۆرۈش",
+    "favorites": "ياقتۇرغانلار"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "بۇ قارىنىڭ چۈشۈرۈلمىلىرى يوق"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "يوللانمىلىرىم"
+    }
+  },
+  "recitersView": {
+    "adhkar": "ئەزكار",
+    "bestForMemorization": "يادلاشقا ئەڭ ماس",
+    "bestForTajweed": "تەجۋىدكە ئەڭ ماس",
+    "continueListening": "ئاڭلاشنى داۋاملاشتۇرۇش",
+    "exclusives": "مەخسۇس مەزمۇنلار",
+    "exploreByRewayah": "رىۋايەت بويىچە ئىزدىنىش",
+    "featuredReciters": "تاللانغان قارىلار",
+    "fromYourCollection": "توپلىمىڭىزدىن",
+    "myRecitations": "تىلاۋەتلىرىم",
+    "newToQuranStartHere": "قۇرئان بىلەن يېڭى تونۇشتىڭىزمۇ؟ بۇ يەردىن باشلاڭ",
+    "seeMore": "تېخىمۇ كۆپ كۆرۈش",
+    "yourFavorites": "ياقتۇرغانلىرىڭىز"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "ئاكتىپ",
+      "activeTafseer": "ئاكتىپ تەپسىر",
+      "activeTranslation": "ئاكتىپ تەرجىمە",
+      "deleteTafseer": "تەپسىرنى ئۆچۈرۈش",
+      "deleteTranslation": "تەرجىمىنى ئۆچۈرۈش",
+      "noTafaseerFound": "تەپسىر تېپىلمىدى",
+      "noTranslationsFound": "تەرجىمە تېپىلمىدى",
+      "unableToDownloadThisTafseer": "بۇ تەپسىرنى چۈشۈرگىلى بولمىدى. تور ئۇلىنىشىڭىزنى تەكشۈرۈپ قايتا سىناڭ.",
+      "unableToDownloadThisTranslation": "بۇ تەرجىمىنى چۈشۈرگىلى بولمىدى. تور ئۇلىنىشىڭىزنى تەكشۈرۈپ قايتا سىناڭ."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "يېقىنقى ئىزدەش يوق",
+      "tryDifferentKeywordsOrCheck": "باشقا ئاچقۇچلۇق سۆزلەرنى سىناڭ ياكى ئىملانى تەكشۈرۈڭ",
+      "yourSearchHistoryWillAppear": "ئىزدەش تارىخىڭىز بۇ يەردە كۆرۈنىدۇ"
+    },
+    "surahsOrReciters": "سۈرە ياكى قارىلاردىن ئىزدەش"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "ئىلغار ئاۋاز كونتروللىرى",
+      "browseByJuz": "جۈز بويىچە كۆرۈش",
+      "createAndManageYourOwn": "ياقتۇرغان تىلاۋەتلىرىڭىزدىن ئۆزىڭىزگە خاس قويۇش تىزىملىكلىرىنى قۇرۇپ باشقۇرۇڭ",
+      "crystalClearRecitationsFromThe": "دۇنيادىكى داڭلىق قارىلارنىڭ سۈزۈك تىلاۋەتلىرى، ئەلالاشتۇرۇلغان توردا قويۇش بىلەن",
+      "curatedCollections": "تاللانغان توپلاملار",
+      "customPlaylists": "خاس قويۇش تىزىملىكلىرى",
+      "customizeThemesAccentColorsAnd": "ئۇسلۇب، تەكىت رەڭلىرى ۋە ئاۋاز تەڭشەكلىرىنى ئۆزىڭىزگە ماسلاشتۇرۇڭ",
+      "downloadSurahsForOfflineListening": "سۈرىلەرنى چۈشۈرۈپ، خالىغان ۋاقىت ۋە جايدا تورسىز ئاڭلاڭ",
+      "easilyNavigateThroughTheQuran": "جۈز بويىچە رەتلەش ۋە گۇرۇپپىلاش ئارقىلىق قۇرئاننى ئاسان كۆرۈڭ",
+      "features": "ئىقتىدارلار",
+      "highQualityAudio": "يۇقىرى سۈپەتلىك ئاۋاز",
+      "listenReflectRememberAllah": "ئاڭلاڭ. تەپەككۇر قىلىڭ. ئاللاھنى ياد ئېتىڭ.",
+      "offlineDownloads": "تورسىز ئاڭلاش ئۈچۈن چۈشۈرۈش",
+      "ourCommitment": "ۋەدىمىز",
+      "ourMission": "مەقسىتىمىز",
+      "personalization": "خاسلاشتۇرۇش",
+      "precisePlaybackControlWithContinuous": "ئۇدا قويۇش ۋە تەڭشىگىلى بولىدىغان تىلاۋەت سۈرئىتى بىلەن توغرا كونترول قىلىش",
+      "quranBayanTafsirKnowledgeOur": "قۇرئان • بايان • تەپسىر • بىلىم. مەقسىتىمىز ئاڭلاش ۋە تەپەككۇرنى كۈندىلىك تۇرمۇشنىڭ بىر قىسمىغا ئايلاندۇرۇش: ئۆيدە، سەپەردە ۋە ئاللاھنى ياد ئېتىشقا پەيت تاپقان ھەر قانداق جايدا.",
+      "readListenAndReflect": "ئوقۇڭ، ئاڭلاڭ ۋە تەپەككۇر قىلىڭ",
+      "readTheMushafExploreTranslations": "مۇسھەپنى ئوقۇڭ، تەرجىمە ۋە تەپسىرلەرنى كۆرۈڭ، ئايەت ۋە ئىزاھاتلارنى ساقلاڭ ھەمدە كۈندىلىك ئەزكارغا قايتىڭ. قارىڭىزنى تاللاڭ، قويۇش تىزىملىكلىرىنى قۇرۇڭ ۋە ئاڭلاشنى كۈندىلىك ھاياتىڭىزغا ماسلاشتۇرۇڭ. ئىقتىدارلار ئۈسكۈنىگە قاراپ پەرقلىنىدۇ؛ يەرلىك ئەپلەر تورسىز ئاڭلاش ئۈچۈن چۈشۈرۈشنىمۇ قوللايدۇ.",
+      "thoughtfullyOrganizedSurahsForDifferent": "تۈرلۈك سورۇن ۋە مەزمۇنلارغا ئەستايىدىل رەتلەنگەن سۈرىلەر",
+      "weCareAboutTheAccuracy": "بىز مۇقەددەس مەزمۇننىڭ توغرىلىقى، ھۆرمەتكە تولغان لايىھە ۋە ئىشەنچلىك زىيارەتكە ئەھمىيەت بېرىمىز. ISTIMA نى ئىشلەتكۈچىلەرگە كۆڭۈل بۆلۈپ ئۈزلۈكسىز ياخشىلايمىز. ئاللاھ بۇ تىرىشچانلىقنى قوبۇل قىلسۇن ۋە ئاڭلىغان، ئوقۇغان، تەپەككۇر قىلغان ھەممەيلەنگە پايدىلىق قىلسۇن."
+    },
+    "aboutApp": "{{name}} ھەققىدە",
+    "appearance": "كۆرۈنۈش",
+    "defaultreciter": {
+      "changeDefaultReciter": "سۈكۈتتىكى قارىنى ئالماشتۇرۇش"
+    },
+    "developer": "ئاچقۇچى",
+    "floatingDevMenu": "لەيلىمە ئاچقۇچى تىزىملىكى",
+    "language": "تىل",
+    "languageDescription": "ئەپ تىلىنى تاللاڭ",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "ھەمىشە تاللىغان سۈكۈتتىكى قارىڭىزنى ئىشلىتىش",
+      "askEveryTime": "ھەر قېتىم سوراش",
+      "chooseAReciterEachTime": "ھەر قېتىم قويغاندا بىر قارى تاللاڭ",
+      "chooseHowYouWantTo": "سۈرىلەرنى قويغاندا قارىلارنى قانداق تاللاشنى بەلگىلەڭ",
+      "defaultSelectionMethod": "سۈكۈتتىكى تاللاش ئۇسۇلى",
+      "searchThroughOurCompleteCollection": "بارلىق قارىلار توپلىمىمىزدىن ئىزدەڭ",
+      "selectionPreference": "تاللاش مايىللىقى"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "بارلىق چۈشۈرۈلمىلەر چىقىرىۋېتىلدى.",
+      "areYouSureYouWant": "چۈشۈرۈلگەن بارلىق مەزمۇننى چىقىرىۋېتىشنى جەزملەشتۈرەمسىز؟ بۇ مەشغۇلاتنى قايتۇرغىلى بولمايدۇ.",
+      "cache": "غەملەك",
+      "cacheHasBeenCleared": "غەملەك تازىلاندى.",
+      "clearCache": "غەملەكنى تازىلاش",
+      "failedToClearCache": "غەملەكنى تازىلاش مەغلۇپ بولدى.",
+      "failedToRemoveDownloads": "چۈشۈرۈلمىلەرنى چىقىرىۋېتىش مەغلۇپ بولدى.",
+      "free": "بوش",
+      "loadingStorageInformation": "ساقلاش ئۇچۇرلىرى يۈكلىنىۋاتىدۇ...",
+      "manageStorage": "ساقلاش بوشلۇقىنى باشقۇرۇش",
+      "otherApps": "باشقا ئەپلەر",
+      "removeAllDownloads": "بارلىق چۈشۈرۈلمىلەرنى چىقىرىۋېتىش",
+      "removeAllTheQuranContent": "تورسىز ئىشلىتىش ئۈچۈن چۈشۈرگەن بارلىق قۇرئان مەزمۇنىنى چىقىرىۋېتىڭ.",
+      "storageBreakdown": "ساقلاش بوشلۇقىنىڭ تەپسىلاتى",
+      "success": "مۇۋەپپەقىيەتلىك",
+      "thisWillClearYourCache": "بۇ غەملەكنى تازىلايدۇ. چۈشۈرۈلمىلىرىڭىز چىقىرىۋېتىلمەيدۇ.",
+      "youCanFreeUpStorage": "غەملەكنى تازىلاپ ساقلاش بوشلۇقىنى بوشىتالايسىز. چۈشۈرۈلمىلىرىڭىز چىقىرىۋېتىلمەيدۇ."
+    },
+    "themePicker": {
+      "auto": "ئاپتوماتىك",
+      "dark": "قاراڭغۇ",
+      "light": "يورۇق"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "ئۆزگىرىش خاتىرىسى يوق"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "{{name}} ھەققىدە",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "ياقتۇرغان قارىنى قوشۇش",
+      "uploadRecitation": "تىلاۋەت يوللاش"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "مۇھىت ئاۋازلىرى",
+      "none": "يوق",
+      "volume": "ئاۋاز دەرىجىسى"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "مەسىلەن: ئەتىگەنلىك تىلاۋەتلەر"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "چۈشۈرۈلمىنى چىقىرىۋېتىش"
+    },
+    "favoriteRecitersSheet": {
+      "done": "تامام"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "توپلامغا قوشۇش",
+      "addToQueue": "ئۆچىرەتكە قوشۇش",
+      "continuePlaying": "قويۇشنى داۋاملاشتۇرۇش",
+      "goToReciter": "قارىغا بېرىش",
+      "removeFromRecents": "يېقىنقىلاردىن چىقىرىۋېتىش"
+    },
+    "mushafLayoutSheet": {
+      "back": "قايتىش"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "ئاخىرقى ئايەت",
+      "playbackSettings": "قويۇش تەڭشەكلىرى",
+      "selectRange": "دائىرە تاللاش",
+      "startingVerse": "باشلىنىش ئايىتى"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "تەكرارلاش تەڭشەكلىرى",
+      "start": "باشلاش",
+      "verseRange": "ئايەت دائىرىسى"
+    },
+    "organizeRecitationSheet": {
+      "category": "تۈر",
+      "customReciter": "خاس قارى",
+      "duA": "دۇئا",
+      "eGMorningAdhkar": "مەسىلەن: ئەتىگەنلىك ئەزكار",
+      "lecture": "دەرس",
+      "moreOptions": "تېخىمۇ كۆپ تاللانما",
+      "other": "باشقا",
+      "recording": "ئاۋازغا ئېلىش",
+      "rewayah": "رىۋايەت",
+      "searchSurahs": "سۈرىلەردىن ئىزدەش...",
+      "style": "ئۇسلۇب",
+      "tafsir": "تەپسىر",
+      "title": "ماۋزۇ",
+      "type": "تىپى",
+      "verseRangeOptional": "ئايەت دائىرىسى (ئىختىيارىي)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "قويۇش سۈرئىتى"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "بۇ قويۇش تىزىملىكىدىكى ھەممە تۈر ئاللىبۇرۇن چۈشۈرۈلگەن.",
+      "anErrorOccurredWhileDownloading": "قويۇش تىزىملىكىنى چۈشۈرۈشتە خاتالىق كۆرۈلدى. قايتا سىناڭ.",
+      "deletePlaylist": "قويۇش تىزىملىكىنى ئۆچۈرۈش",
+      "downloadingPlaylist": "قويۇش تىزىملىكى چۈشۈرۈلۈۋاتىدۇ...",
+      "editPlaylist": "قويۇش تىزىملىكىنى تەھرىرلەش",
+      "emptyPlaylist": "قۇرۇق قويۇش تىزىملىكى",
+      "thisPlaylistIsEmpty": "بۇ قويۇش تىزىملىكى قۇرۇق."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "رىۋايەتلەر ھەققىدە",
+      "availableRewayat": "ئىشلەتكىلى بولىدىغان رىۋايەتلەر"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "سۈرىنى قويۇش تىزىملىكىگە قوشۇش مەغلۇپ بولدى",
+      "failedToCreatePlaylist": "قويۇش تىزىملىكى قۇرۇش مەغلۇپ بولدى",
+      "noPlaylistsYetCreateYour": "تېخى قويۇش تىزىملىكى يوق. يۇقىرىدا تۇنجى تىزىملىكىڭىزنى قۇرۇڭ!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "ھەر قېتىم سوراش",
+      "randomReciter": "ئىختىيارىي قارى",
+      "selectReciter": "قارى تاللاش"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "بۇ ئايەتكە ئوخشاش ئايەت تېپىلمىدى.",
+      "similarWording": "ئوخشاش ئىپادە"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "ئۇيقۇ ۋاقىتلىغۇچى",
+      "turnOffTimer": "ۋاقىتلىغۇچنى تاقاش"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "قويۇش تىزىملىكىدىن چىقىرىۋېتىش"
+    },
+    "verseActionsSheet": {
+      "addNote": "ئىزاھات قوشۇش",
+      "copy": "كۆچۈرۈش",
+      "repeat": "تەكرارلاش",
+      "similarVerses": "ئوخشاش ئايەتلەر",
+      "tafseer": "تەپسىر",
+      "theme": "ئۇسلۇب"
+    },
+    "verseCopySheet": {
+      "copyOptions": "كۆچۈرۈش تاللانمىلىرى",
+      "selectWhatToCopy": "كۆچۈرمەكچى بولغان مەزمۇننى تاللاڭ"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "يورۇتۇش رەڭگى"
+    },
+    "verseShareSheet": {
+      "shareVerse": "ئايەتنى ھەمبەھىرلەش"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "{{count}} ئايەتتە تېپىلدى",
+    "foundIn_other": "{{count}} ئايەتتە تېپىلدى"
+  },
+  "surahItem": {
+    "moreOptions": "تېخىمۇ كۆپ تاللانما",
+    "opensMenuWithAdditionalActions": "بۇ سۈرە ئۈچۈن قوشۇمچە مەشغۇلات تىزىملىكىنى ئاچىدۇ",
+    "tapToPlaySurah": "سۈرىنى قويۇش ئۈچۈن چېكىڭ"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "قويۇش تىزىملىكىنىڭ كىملىكى ئىناۋەتسىز",
+      "playlistNotFound": "قويۇش تىزىملىكى تېپىلمىدى"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "بۇ تىزىملىكتىكى بارلىق سۈرىلەرنى ئوقۇغان قارى تېپىلمىدى. باشقا تىزىملىكنى سىناڭ.",
+      "failedToPlayPlaylistPlease": "قويۇش تىزىملىكىنى قويۇش مەغلۇپ بولدى. قايتا سىناڭ.",
+      "failedToPlayTrackPlease": "ئاۋازنى قويۇش مەغلۇپ بولدى. قايتا سىناڭ.",
+      "failedToShufflePlaylistPlease": "تىزىملىكنى ئارىلاشتۇرۇپ قويۇش مەغلۇپ بولدى. قايتا سىناڭ.",
+      "noReciterAvailable": "ئىشلەتكىلى بولىدىغان قارى يوق",
+      "noSurahsInThisPlaylist": "بۇ قويۇش تىزىملىكىدە سۈرە يوق"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "ھېسابات",
+      "appData": "ئەپ ۋە سانلىق مەلۇمات",
+      "audioPlayback": "ئاۋاز ۋە قويۇش",
+      "chooseYourPreferredReciter": "ياقتۇرغان قارىڭىزنى تاللاڭ",
+      "customizeQuranDisplayOptions": "قۇرئان كۆرسىتىش تاللانمىلىرىنى خاسلاشتۇرۇش",
+      "customizeReciterSelection": "قارى تاللاشنى خاسلاشتۇرۇش",
+      "featureRequests": "ئىقتىدار تەلەپلىرى",
+      "feedback": "پىكىر",
+      "helpSupport": "ياردەم ۋە قوللاش",
+      "learnMoreAboutOurMission": "مەقسىتىمىز ھەققىدە كۆپرەك بىلىڭ",
+      "manageQuranTranslationsAndCommentary": "قۇرئان تەرجىمىلىرى ۋە تەپسىرلەرنى باشقۇرۇش",
+      "privacyPolicy": "مەخپىيەتلىك سىياسىتى",
+      "quran": "قۇرئان",
+      "readOurTermsOfService": "مۇلازىمەت شەرتلىرىمىزنى ئوقۇڭ",
+      "seeWhatSNewIn": "بۇ نەشرىدىكى يېڭىلىقلارنى كۆرۈڭ",
+      "shareYourExperienceWithOthers": "تەجرىبىڭىزنى باشقىلار بىلەن ھەمبەھىرلەڭ",
+      "showTheFloatingDeveloperTools": "لەيلىمە ئاچقۇچى قورال كۇنۇپكىسىنى كۆرسىتىش",
+      "suggestImprovementsAndNewFeatures": "ياخشىلاش ۋە يېڭى ئىقتىدارلارغا تەكلىپ بېرىڭ",
+      "termsOfService": "مۇلازىمەت شەرتلىرى",
+      "viewAndManageStorageUsage": "ساقلاش بوشلۇقى ئىشلىتىلىشىنى كۆرۈش ۋە باشقۇرۇش",
+      "viewOurPrivacyPolicy": "مەخپىيەتلىك سىياسىتىمىزنى كۆرۈڭ",
+      "writeAReview": "باھا يېزىش"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "ۋاز كېچىش",
+    "close": "تاقاش",
+    "collection": "توپلام",
+    "download": "چۈشۈرۈش",
+    "downloads": "چۈشۈرۈلمىلەر",
+    "error": "بىر ئىش خاتا بولدى",
+    "favorites": "ياقتۇرغانلار",
+    "home": "باش بەت",
+    "language": "تىل",
+    "library": "كۈتۈپخانا",
+    "loading": "يۈكلىنىۋاتىدۇ...",
+    "noResults": "نەتىجە تېپىلمىدى",
+    "offline": "تورسىز ھالەتتە تۇرۇۋاتىسىز",
+    "pause": "ۋاقىتلىق توختىتىش",
+    "play": "قويۇش",
+    "retry": "قايتا سىناش",
+    "save": "ساقلاش",
+    "search": "ئىزدەش",
+    "settings": "تەڭشەكلەر",
+    "surahs": "سۈرىلەر"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "مەزمۇن تاللاش"
+    },
+    "highlightContent": {
+      "chooseColor": "رەڭ تاللاش"
+    },
+    "noteContent": {
+      "saveNote": "ئىزاھاتنى ساقلاش"
+    },
+    "shareContent": {
+      "shareLink": "ئۇلانمىنى ھەمبەھىرلەش"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "بۇ ئايەتكە ئوخشاش ئايەت تېپىلمىدى.",
+      "sharedPhrases": "ئورتاق ئىبارىلەر",
+      "similarWording": "ئوخشاش ئىپادە"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "تەپسىر چۈشۈرۈلمىگەن",
+      "tafseerNotAvailableForThis": "بۇ ئايەتنىڭ تەپسىرى يوق",
+      "tapHereToDownloadA": "تەپسىرنى چۈشۈرۈش ۋە ئىزاھىنى كۆرۈش ئۈچۈن بۇ يەرنى چېكىڭ."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "بۇ ئايەتنىڭ مەزمۇن ئۇچۇرى يوق.",
+      "passage": "بۆلەك"
+    },
+    "translationContent": {
+      "switch": "ئالماشتۇرۇش",
+      "translationNotAvailable": "تەرجىمە يوق"
+    }
+  },
+  "version": {
+    "label": "نەشرى {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "يېڭىلىقلار:"
+  },
+  "wordDetail": {
+    "context": "ئايەت {{surah}}:{{ayah}} · {{total}} سۆزنىڭ {{position}}-سۆزى"
+  }
+}

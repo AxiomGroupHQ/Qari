@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Di destpêkirina lêkerê de çewtî: {{message}}",
+    "errorLoadingFonts": "Di barkirina curetîpan de çewtî"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Rûpela sereke ya ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Hemû",
+      "clearAll": "Hemûyan paqij bike",
+      "hasPhoto": "Wêne heye"
+    },
+    "filterModal": {
+      "apply": "Bisepîne",
+      "filterReciters": "Xwîneran parzûn bike",
+      "recitationStyles": "Şêwazên xwendinê",
+      "reset": "Vegerîne destpêkê",
+      "rewayatTypes": "Cureyên riwayetan"
+    },
+    "recitersFound_one": "Bi parzûnên heyî {{count}} xwîner hat dîtin",
+    "recitersFound_other": "Bi parzûnên heyî {{count}} xwîner hatin dîtin"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Sûreyên hezkirî"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Ayetên xwe nîşan bike da ku li vir bibînî",
+      "bookmarks": "Nîşanker",
+      "noBookmarksYet": "Hê nîşanker tune ne",
+      "removeBookmark": "Nîşankerê rake"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Riwayet",
+      "searchPlaylistsRecitersSurahsRewayat": "Li lîsteyên lêdanê, xwîneran, sûreyan, riwayetan bigere...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Li lîsteyên lêdanê, xwîneran, sûreyan, riwayetan û daxistinan bigere",
+      "searchYourCollection": "Di berhevoka xwe de bigere",
+      "searching": "Li lêgerînê ye...",
+      "tryDifferentKeywords": "Peyvên din biceribîne"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Sûreyan daxe da ku li vir bibînî",
+      "noDownloadsYet": "Hê daxistin tune ne",
+      "playAll": "Hemûyan lê bide"
+    },
+    "favoritereciters": {
+      "addReciters": "Xwîneran zêde bike",
+      "addRecitersToSeeThem": "Xwîneran zêde bike da ku li vir bibînî",
+      "noFavoriteRecitersYet": "Hê xwînerên bijare tune ne",
+      "removeFromFavorites": "Ji bijareyan rake",
+      "searchFavoriteReciters": "Li xwînerên bijare bigere"
+    },
+    "index": {
+      "addToCollection": "Li berhevokê zêde bike",
+      "bookmarks": "Nîşanker",
+      "createYourFirstPlaylist": "Lîsteya xwe ya lêdanê ya yekem biafirîne",
+      "downloads": "Daxistin",
+      "items_one": "{{count}} hêman",
+      "items_other": "{{count}} hêman",
+      "loved": "Hezkirî",
+      "noBookmarksYet": "Hê nîşanker tune ne",
+      "noDownloadsYet": "Hê daxistin tune ne",
+      "noFavoritesYet": "Hê bijare tune ne",
+      "noLovedSurahsYet": "Hê sûreyên hezkirî tune ne",
+      "noNotesYet": "Hê têbînî tune ne",
+      "noUploadsYet": "Hê barkirin tune ne",
+      "notes": "Têbînî",
+      "playlists": "Lîsteyên lêdanê",
+      "reciters": "Xwîner",
+      "uploads": "Barkirin"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Hemû sûreyên hezkirî jixwe hatine daxistin.",
+      "allLovedSurahsHaveBeen": "Hemû sûreyên hezkirî hatin daxistin.",
+      "downloadError": "Çewtiya daxistinê",
+      "loveSurahsToSeeThem": "Ji sûreyan hez bike da ku li vir bibînî",
+      "noLovedSurahsYet": "Hê sûreyên hezkirî tune ne",
+      "someDownloadsMayHaveFailed": "Dibe ku hin daxistin biserneketibin.",
+      "unloveAllSurahs": "Hezkirina hemû sûreyan rake"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Li ayetan têbînî zêde bike da ku li vir bibînî",
+      "editNote": "Têbîniyê biguherîne",
+      "noNotesYet": "Hê têbînî tune ne",
+      "notes": "Têbînî"
+    },
+    "playlistModal": {
+      "name": "Nav"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Lîsteyên lêdanê biafirîne da ku li vir bibînî",
+      "noPlaylistsYet": "Hê lîsteyên lêdanê tune ne",
+      "playlists": "Lîsteyên lêdanê"
+    },
+    "uploads": {
+      "removeAllUploads": "Hemû barkirinan rake",
+      "uploadRecitationsToSeeThem": "Xwendinan bar bike da ku li vir bibînî"
+    }
+  },
+  "common": {
+    "1Time": "1 car",
+    "2Times": "2 car",
+    "3Times": "3 car",
+    "addToCollection": "Li berhevokê zêde bike",
+    "addToQueue": "Li dorê zêde bike",
+    "allSurahs": "Hemû sûre",
+    "alreadyDownloaded": "Jixwe hatiye daxistin",
+    "arabic": "Erebî",
+    "asc": "Ber bi jor",
+    "browseAll": "Hemûyan bigere",
+    "browseAllReciters": "Hemû xwîneran bigere",
+    "cancel": "Betal bike",
+    "clear": "Paqij bike",
+    "copyToClipboard": "Li panoya kopîkirinê kopî bike",
+    "createNewPlaylist": "Lîsteya lêdanê ya nû biafirîne",
+    "defaultReciter": "Xwînerê standard",
+    "delete": "Jê bibe",
+    "deleteNote": "Têbîniyê jê bibe",
+    "deleteRecitation": "Xwendinê jê bibe",
+    "desc": "Ber bi jêr",
+    "downloadComplete": "Daxistin qediya",
+    "downloadFailed": "Daxistin biserneket",
+    "downloads": "Daxistin",
+    "editDetails": "Hûrgiliyan biguherîne",
+    "error": "Çewtî",
+    "favoriteReciters": "Xwînerên bijare",
+    "followAlong": "Bi xwendinê re bişopîne",
+    "from": "Ji",
+    "goToReciter": "Biçe xwîner",
+    "goToVerse": "Biçe ayetê",
+    "learnAboutSurah": "Derbarê sûreyê de bizane",
+    "loading": "Tê barkirin...",
+    "loop": "Dubarekirina domdar",
+    "loved": "Hezkirî",
+    "mushafSettings": "Mîhengên mishefê",
+    "next": "Pêş",
+    "noRecitersFound": "Xwîner nehatin dîtin",
+    "noResultsFound": "Encam nehatin dîtin",
+    "noUploadsYet": "Hê barkirin tune ne",
+    "play": "Lê bide",
+    "playEachVerse": "Her ayetê lê bide",
+    "playNow": "Niha lê bide",
+    "playSpeed": "Leza lêdanê",
+    "playTheRange": "Navberê lê bide",
+    "playlistName": "Navê lîsteya lêdanê",
+    "prev": "Paş",
+    "readingTheme": "Dirba xwendinê",
+    "recentSearches": "Lêgerînên dawî",
+    "reciter": "Xwîner",
+    "reciterChoice": "Hilbijartina xwîner",
+    "reciters": "Xwîner",
+    "remove": "Rake",
+    "removeAllDownloads": "Hemû daxistinan rake",
+    "removeHighlight": "Ronîkirinê rake",
+    "rev": "Rêza daxistina wehiyê",
+    "save": "Tomar bike",
+    "search": "Bigere",
+    "searchReciters": "Li xwîneran bigere...",
+    "searchSurahs": "Li sûreyan bigere",
+    "share": "Parve bike",
+    "shareAsImage": "Wek wêne parve bike",
+    "shareAsText": "Wek nivîs parve bike",
+    "sharedPhrases": "Gotinên hevpar",
+    "showBasmallah": "Bismîllahê nîşan bide",
+    "stop": "Bisekinîne",
+    "storage": "Cihê hilanînê",
+    "surah": "Sûre",
+    "surahs": "Sûre",
+    "to": "Bo",
+    "translation": "Werger",
+    "translationsTafaseer": "Werger û tefsîr",
+    "transliteration": "Veguhastina tîpan",
+    "uploads": "Barkirin",
+    "useDefaultReciter": "Xwînerê standard bi kar bîne",
+    "verseReference": "Navnîşana ayetê",
+    "verses": "Ayet",
+    "whatSNew": "Çi nû heye",
+    "wordByWord": "Peyv bi peyv",
+    "writeYourNoteHere": "Têbîniya xwe li vir binivîse...",
+    "yourPlaylists": "Lîsteyên te yên lêdanê"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Hemû sûreyan lê bide"
+    },
+    "searchHeader": {
+      "searchSurahs": "Li sûreyan bigere"
+    },
+    "searchView": {
+      "noSurahsFound": "Sûre nehatin dîtin"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Sûre tune ne"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Xwendin zêde bike",
+      "uploadRecitationsToSeeThem": "Xwendinan bar bike da ku li vir bibînî"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Hatiye daxistin • {{count}} sûre",
+    "subtitle_other": "Hatiye daxistin • {{count}} sûre"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Bibore, çewtiyek çêbû"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Li hemû 114 sûreyan bigere"
+    },
+    "savedAdhkarHero": {
+      "saved": "Tomarkirî",
+      "yourCollection": "Berhevoka te"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SÛREYA ROJÊ"
+    },
+    "surahsHero": {
+      "number": "Hejmara"
+    }
+  },
+  "language": {
+    "later": "Paşê",
+    "restartMessage": "Ji bo sepandina arasteya nû ya bicihkirinê, sepanê ji nû ve bide destpêkirin.",
+    "restartNow": "Niha ji nû ve bide destpêkirin",
+    "restartTitle": "Destpêkirina ji nû ve pêwîst e",
+    "search": "Li zimanan bigere",
+    "system": "Zimanê amûrê"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Berdewam bike"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Derbas bike"
+    }
+  },
+  "mushaf": {
+    "juz": "Cuz {{juz}}",
+    "loadingMushaf": "Mishef tê barkirin…",
+    "main": {
+      "mushafSettings": "Mîhengên mishefê"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Xwîner biguherîne",
+      "changeReciter2": "Xwîner biguherîne",
+      "nextAyah": "Ayeta pêş",
+      "playbackOptions": "Vebijarkên lêdanê",
+      "previousAyah": "Ayeta paş"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Sûre, ayet, rûpel an cuz bibîne",
+      "recentReads": "XWENDINÊN DAWÎ",
+      "searchSurahsPagesOrJuz": "Li sûre, rûpel an cuzan bigere...",
+      "searchTheMushaf": "Di mishefê de bigere"
+    },
+    "options": "Vebijark",
+    "page": "Rûpel {{page}}",
+    "pageAndSurah": "Rûpel {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mishef nehat barkirin.",
+    "tryAgain": "Dîsa biceribîne"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Navê Allah û sernavên îlahî yên wek Rabb di mishefê de ronî dike."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Ronîkirinên veguhêrbar li gorî beşên mijarî",
+    "arabicFontSize": "Mezinahiya tîpên erebî",
+    "bold": "Stûr",
+    "book": "Pirtûk",
+    "colorLegend": "Raveya rengan",
+    "currentlyReading": "Niha tê xwendin",
+    "divineNames": "NAVÊN ÎLAHÎ",
+    "fontSize": "Mezinahiya tîpan",
+    "fullscreen": "Dîmendera tijî",
+    "hamzaReplacedByLongVowel": "Hemze bi dengdêra dirêj tê guherandin",
+    "heavyLamInAllahAfter": "Lama stûr di peyva Allah de piştî tîpên stûr",
+    "highlightAllahRabb": "Allah / Rabb ronî bike",
+    "horizontal": "Berwar",
+    "ibdal": "Îbdal",
+    "list": "Lîste",
+    "loadingSample": "Nimûne tê barkirin...",
+    "maddAlBadal": "Medda bedelê",
+    "maximumProminence": "Herî berbiçav",
+    "medium": "Navîn",
+    "modernMadinahPrintedPipeline": "Pêvajoya çapê ya Medîneya nûjen",
+    "mushaf": "Mishef",
+    "normal": "Asayî",
+    "originalMushafWeight": "Stûrbûna orîjînal a tîpên mishefê",
+    "pageDesign": "SAZKIRINA RÛPELÊ",
+    "prolongedVowelAfterHamza": "Dengdêra dirêj piştî hemzeyê",
+    "readingTheme": "DIRBA XWENDINÊ",
+    "scrollDirection": "ARASTEYA XISANDINÊ",
+    "showDifferences": "Cudahiyan nîşan bide",
+    "silah": "Sîle",
+    "slightlyMoreProminent": "Hinekî berbiçavtir",
+    "softenedHamzaPronunciation": "Bilêvkirina nerm a hemzeyê",
+    "subcontinentNastaliqStyle": "Şêwaza nestelîq a nîvparzemînê",
+    "taghlizAlLam": "Texlîza lamê",
+    "tajweedColoring": "Rengkirina tecwîdê",
+    "tashilMusahhala": "Teshîl / Musehhele",
+    "textPreviewNotYetAvailable": "PÊŞDÎTINA NIVÎSÊ HÊ TUNE YE",
+    "textThickness": "STÛRBÛNA NIVÎSÊ",
+    "thematicHighlighting": "Ronîkirina mijarî",
+    "trailingVowelOrMoodChange": "Tenê guherîna dengdêra dawî an awayê lêkerê",
+    "usingSaheehInternationalTranslationWith": "Tê bikaranîn: Wergera Saheeh International bi jêrenotan",
+    "vertical": "Stûnî",
+    "viewType": "CUREYA DÎTINÊ",
+    "vowelMoodShift": "Guherîna dengdêrê / awayê lêkerê",
+    "wordByWord": "PEYV BI PEYV",
+    "wordVariant": "Guherteya peyvê"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Gihîştina pêşkêşkerê pêk nayê",
+    "connectionRestored": "Girêdan hate vegerandin",
+    "noInternetConnection": "Girêdana înternetê tune ye",
+    "showingCachedData": "Daneyên di bîra demkî de tên nîşandan"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" biafirîne"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Dor",
+      "queueIsEmpty": "Dor vala ye"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Vê xwendinê etîket bike da ku nivîsa sûreyê û hûrgiliyan bibînî"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Lîsteya lêdanê • {{count}} sûre",
+    "subtitle_other": "Lîsteya lêdanê • {{count}} sûre"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Di vê lîsteya lêdanê de sûre tune ne"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Jêrenot"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Xwendinek ku tenê ji bo vê kêliyê hatiye hilbijartin",
+      "discover": "Keşf bike",
+      "discoverANewVoice": "Dengekî nû keşf bike",
+      "explore": "Bigere",
+      "exploreTheUnexpected": "Li tiştên neçaverêkirî bigere",
+      "hearSomethingNew": "Tiştekî nû bibihîze",
+      "letTheQuranSurpriseYou": "Bihêle Quran te şaş bike",
+      "randomMix": "Tevliheviya rasthatî",
+      "randomRecitation": "Xwendina rasthatî",
+      "shuffleListen": "Tevlihev bike û guhdar bike",
+      "surpriseMe": "Min şaş bike"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Guherandina awayê xuyangê li ser tevahiya sepanê tê sepandin"
+  },
+  "reciterBrowse": {
+    "allReciters": "Hemû xwîner",
+    "browseReciters": "Li xwîneran bigere",
+    "favorites": "Bijare"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Ji bo vî xwînerî daxistin tune ne"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Barkirinên min"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Zikir",
+    "bestForMemorization": "Ji bo jiberkirinê herî baş",
+    "bestForTajweed": "Ji bo tecwîdê herî baş",
+    "continueListening": "Guhdarîkirinê berdewam bike",
+    "exclusives": "Taybet",
+    "exploreByRewayah": "Li gorî riwayetê bigere",
+    "featuredReciters": "Xwînerên hilbijartî",
+    "fromYourCollection": "Ji berhevoka te",
+    "myRecitations": "Xwendinên min",
+    "newToQuranStartHere": "Bi Quranê nû nas dibî? Li vir dest pê bike",
+    "seeMore": "Zêdetir bibîne",
+    "yourFavorites": "Bijareyên te"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Çalak",
+      "activeTafseer": "TEFSÎRA ÇALAK",
+      "activeTranslation": "WERGERA ÇALAK",
+      "deleteTafseer": "Tefsîrê jê bibe",
+      "deleteTranslation": "Wergerê jê bibe",
+      "noTafaseerFound": "Tefsîr nehatin dîtin",
+      "noTranslationsFound": "Werger nehatin dîtin",
+      "unableToDownloadThisTafseer": "Ev tefsîr nehat daxistin. Ji kerema xwe girêdana înternetê kontrol bike û dîsa biceribîne.",
+      "unableToDownloadThisTranslation": "Ev werger nehat daxistin. Ji kerema xwe girêdana înternetê kontrol bike û dîsa biceribîne."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Lêgerînên dawî tune ne",
+      "tryDifferentKeywordsOrCheck": "Peyvên din biceribîne an rastnivîsê kontrol bike",
+      "yourSearchHistoryWillAppear": "Dîroka lêgerîna te wê li vir xuya bibe"
+    },
+    "surahsOrReciters": "Li sûre an xwîneran bigere"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Kontrolên pêşketî yên deng",
+      "browseByJuz": "Li gorî cuzan bigere",
+      "createAndManageYourOwn": "Lîsteyên lêdanê yên kesane ji xwendinên xwe yên bijare biafirîne û bi rê ve bibe",
+      "crystalClearRecitationsFromThe": "Xwendinên zelal ji xwînerên herî baş ên cîhanê bi weşana serhêl a başkirî",
+      "curatedCollections": "Berhevokên hilbijartî",
+      "customPlaylists": "Lîsteyên lêdanê yên taybet",
+      "customizeThemesAccentColorsAnd": "Dirb, rengên diyarker û mîhengên deng li gorî xwe biguherîne",
+      "downloadSurahsForOfflineListening": "Sûreyan daxe da ku her dem û li her derê bê înternetê guhdar bikî",
+      "easilyNavigateThroughTheQuran": "Bi rêxistina li gorî cuzan di Quranê de bi hêsanî bigere",
+      "features": "TAYBETMENDÎ",
+      "highQualityAudio": "Dengê bi kalîteya bilind",
+      "listenReflectRememberAllah": "Guhdar bike. Bifikire. Allah bi bîr bîne.",
+      "offlineDownloads": "Daxistinên ji bo bê înternetê",
+      "ourCommitment": "Soza me",
+      "ourMission": "Armanca me",
+      "personalization": "Kesanekirin",
+      "precisePlaybackControlWithContinuous": "Kontrola rast a lêdanê bi lêdana domdar û leza xwendinê ya guhêrbar",
+      "quranBayanTafsirKnowledgeOur": "Quran • Beyan • Tefsîr • Zanîn. Armanca me ew e ku guhdarîkirin û fikirîn bibin beşek ji jiyana rojane: li malê, di rê de û li her derê ku demeke te ji bo bîranîna Allah heye.",
+      "readListenAndReflect": "Bixwîne, guhdar bike û bifikire",
+      "readTheMushafExploreTranslations": "Mishefê bixwîne, werger û tefsîran bibîne, ayet û têbîniyan tomar bike û vegere zikirên rojane. Xwînerê xwe hilbijêre, lîsteyên lêdanê biafirîne û guhdarîkirinê li gorî roja xwe saz bike. Taybetmendiyên berdest li gorî amûrê diguherin; sepanên xwemalî daxistina ji bo guhdarîkirina bê înternetê jî piştgirî dikin.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Sûreyên ku bi baldarî ji bo derfet û mijarên cuda hatine rêxistin",
+      "weCareAboutTheAccuracy": "Em girîngiyê didin rastiya naveroka pîroz, sêwirana bi rêz û gihîştina pêbawer. Em ISTIMA bi baldarî ji bo kesên ku wê bi kar tînin baştir dikin. Bila Allah vê hewlê qebûl bike û ji bo her kesê ku guhdar dike, dixwîne û difikire sûdmend bike."
+    },
+    "aboutApp": "Derbarê {{name}}",
+    "appearance": "XUYANG",
+    "defaultreciter": {
+      "changeDefaultReciter": "XWÎNERÊ STANDARD BIGUHERÎNE"
+    },
+    "developer": "PÊŞDEBIR",
+    "floatingDevMenu": "Menuya pêşdebir a herikbar",
+    "language": "Ziman",
+    "languageDescription": "Zimanê sepanê hilbijêre",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Her tim xwînerê standard ê hilbijartî bi kar bîne",
+      "askEveryTime": "Her car bipirse",
+      "chooseAReciterEachTime": "Her car ku lê didî xwînerek hilbijêre",
+      "chooseHowYouWantTo": "Dema lêdana sûreyan awayê hilbijartina xwîneran hilbijêre",
+      "defaultSelectionMethod": "RÊBAZA HILBIJARTINÊ YA STANDARD",
+      "searchThroughOurCompleteCollection": "Di tevahiya berhevoka me ya xwîneran de bigere",
+      "selectionPreference": "TERCÎHA HILBIJARTINÊ"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Hemû daxistin hatin rakirin.",
+      "areYouSureYouWant": "Tu bawer î ku dixwazî hemû naveroka daxistî rakî? Ev kiryar nayê vegerandin.",
+      "cache": "Bîra demkî",
+      "cacheHasBeenCleared": "Bîra demkî hat paqijkirin.",
+      "clearCache": "Bîra demkî paqij bike",
+      "failedToClearCache": "Paqijkirina bîra demkî biserneket.",
+      "failedToRemoveDownloads": "Rakirina daxistinan biserneket.",
+      "free": "Vala",
+      "loadingStorageInformation": "Agahiyên hilanînê tên barkirin...",
+      "manageStorage": "HILANÎNÊ BI RÊ VE BIBE",
+      "otherApps": "Sepanên din",
+      "removeAllDownloads": "Hemû daxistinan rake",
+      "removeAllTheQuranContent": "Hemû naveroka Quranê ya ku ji bo bikaranîna bê înternetê daxistiye rake.",
+      "storageBreakdown": "DABEŞBÛNA HILANÎNÊ",
+      "success": "Serkeftin",
+      "thisWillClearYourCache": "Ev bîra demkî paqij dike. Daxistinên te nayên rakirin.",
+      "youCanFreeUpStorage": "Bi paqijkirina bîra demkî tu dikarî cihê hilanînê vala bikî. Daxistinên te nayên rakirin."
+    },
+    "themePicker": {
+      "auto": "Xweber",
+      "dark": "Tarî",
+      "light": "Ronahî"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Lîsteya guherînan tune ye"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Derbarê {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Xwînerê bijare zêde bike",
+      "uploadRecitation": "Xwendin bar bike"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Dengên derdorê",
+      "none": "Tu yek",
+      "volume": "Bilindahiya deng"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "Mînak: Xwendinên sibehê"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Daxistinê rake"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Qediya"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Li berhevokê zêde bike",
+      "addToQueue": "Li dorê zêde bike",
+      "continuePlaying": "Lêdanê berdewam bike",
+      "goToReciter": "Biçe xwîner",
+      "removeFromRecents": "Ji yên dawî rake"
+    },
+    "mushafLayoutSheet": {
+      "back": "Vegere"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Ayeta dawiyê",
+      "playbackSettings": "Mîhengên lêdanê",
+      "selectRange": "Navberê hilbijêre",
+      "startingVerse": "Ayeta destpêkê"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Mîhengên dubarekirinê",
+      "start": "Dest pê bike",
+      "verseRange": "Navbera ayetan"
+    },
+    "organizeRecitationSheet": {
+      "category": "Kategorî",
+      "customReciter": "Xwînerê taybet",
+      "duA": "Dua",
+      "eGMorningAdhkar": "Mînak: Zikirên sibehê",
+      "lecture": "Ders",
+      "moreOptions": "Vebijarkên zêdetir",
+      "other": "Yên din",
+      "recording": "Tomarkirina deng",
+      "rewayah": "Riwayet",
+      "searchSurahs": "Li sûreyan bigere...",
+      "style": "Şêwaz",
+      "tafsir": "Tefsîr",
+      "title": "Sernav",
+      "type": "Cure",
+      "verseRangeOptional": "Navbera ayetan (nepêwîst)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Leza lêdanê"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Hemû hêmanên vê lîsteya lêdanê jixwe hatine daxistin.",
+      "anErrorOccurredWhileDownloading": "Di daxistina lîsteya lêdanê de çewtiyek çêbû. Ji kerema xwe dîsa biceribîne.",
+      "deletePlaylist": "Lîsteya lêdanê jê bibe",
+      "downloadingPlaylist": "Lîsteya lêdanê tê daxistin...",
+      "editPlaylist": "Lîsteya lêdanê biguherîne",
+      "emptyPlaylist": "Lîsteya lêdanê ya vala",
+      "thisPlaylistIsEmpty": "Ev lîsteya lêdanê vala ye."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Derbarê riwayetan",
+      "availableRewayat": "Riwayetên berdest"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Zêdekirina sûreyê li lîsteya lêdanê biserneket",
+      "failedToCreatePlaylist": "Afirandina lîsteya lêdanê biserneket",
+      "noPlaylistsYetCreateYour": "Hê lîsteya lêdanê tune ye. Li jor lîsteya xwe ya yekem biafirîne!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Her car bipirse",
+      "randomReciter": "Xwînerê rasthatî",
+      "selectReciter": "Xwîner hilbijêre"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Ji bo vê ayetê ayetên wekhev nehatin dîtin.",
+      "similarWording": "Peyvên wekhev"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Demjimêra xewê",
+      "turnOffTimer": "Demjimêrê bigire"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Ji lîsteya lêdanê rake"
+    },
+    "verseActionsSheet": {
+      "addNote": "Têbînî zêde bike",
+      "copy": "Kopî bike",
+      "repeat": "Dubare bike",
+      "similarVerses": "Ayetên wekhev",
+      "tafseer": "Tefsîr",
+      "theme": "Dirb"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Vebijarkên kopîkirinê",
+      "selectWhatToCopy": "Tiştê ku dê kopî bikî hilbijêre"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Rengê ronîkirinê"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Ayetê parve bike"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Di {{count}} ayetê de hat dîtin",
+    "foundIn_other": "Di {{count}} ayetan de hat dîtin"
+  },
+  "surahItem": {
+    "moreOptions": "Vebijarkên zêdetir",
+    "opensMenuWithAdditionalActions": "Menuya bi kiryarên zêdetir ên vê sûreyê vedike",
+    "tapToPlaySurah": "Ji bo lêdana sûreyê pê ve bide"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Nasnameya lîsteya lêdanê nederbasdar e",
+      "playlistNotFound": "Lîsteya lêdanê nehat dîtin"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Xwînerek bi hemû sûreyên vê lîsteyê nehat dîtin. Ji kerema xwe lîsteyeke din biceribîne.",
+      "failedToPlayPlaylistPlease": "Lêdana lîsteyê biserneket. Ji kerema xwe dîsa biceribîne.",
+      "failedToPlayTrackPlease": "Lêdana parçeyê biserneket. Ji kerema xwe dîsa biceribîne.",
+      "failedToShufflePlaylistPlease": "Lêdana tevlihev a lîsteyê biserneket. Ji kerema xwe dîsa biceribîne.",
+      "noReciterAvailable": "Xwînerê berdest tune ye",
+      "noSurahsInThisPlaylist": "Di vê lîsteya lêdanê de sûre tune ne"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Hesab",
+      "appData": "Sepan û dane",
+      "audioPlayback": "Deng û lêdan",
+      "chooseYourPreferredReciter": "Xwînerê xwe yê bijare hilbijêre",
+      "customizeQuranDisplayOptions": "Vebijarkên nîşandana Quranê saz bike",
+      "customizeReciterSelection": "Hilbijartina xwîneran saz bike",
+      "featureRequests": "Daxwazên taybetmendiyan",
+      "feedback": "Paşvegotin",
+      "helpSupport": "Alîkarî û piştgirî",
+      "learnMoreAboutOurMission": "Derbarê armanca me de zêdetir bizane",
+      "manageQuranTranslationsAndCommentary": "Werger û şiroveyên Quranê bi rê ve bibe",
+      "privacyPolicy": "Siyaseta nepeniyê",
+      "quran": "Quran",
+      "readOurTermsOfService": "Şertên me yên xizmetê bixwîne",
+      "seeWhatSNewIn": "Di vê guhertoyê de nûbûnan bibîne",
+      "shareYourExperienceWithOthers": "Tecrûbeya xwe bi kesên din re parve bike",
+      "showTheFloatingDeveloperTools": "Bişkoka herikbar a amûrên pêşdebir nîşan bide",
+      "suggestImprovementsAndNewFeatures": "Pêşniyarên başkirin û taybetmendiyên nû bike",
+      "termsOfService": "Şertên xizmetê",
+      "viewAndManageStorageUsage": "Bikaranîna hilanînê bibîne û bi rê ve bibe",
+      "viewOurPrivacyPolicy": "Siyaseta me ya nepeniyê bibîne",
+      "writeAReview": "Nirxandinek binivîse"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Betal bike",
+    "close": "Bigire",
+    "collection": "Berhevok",
+    "download": "Daxe",
+    "downloads": "Daxistin",
+    "error": "Tiştek çewt bû",
+    "favorites": "Bijare",
+    "home": "Destpêk",
+    "language": "Ziman",
+    "library": "Pirtûkxane",
+    "loading": "Tê barkirin...",
+    "noResults": "Encam nehatin dîtin",
+    "offline": "Tu ne li ser înternetê yî",
+    "pause": "Rawestîne",
+    "play": "Lê bide",
+    "retry": "Dîsa biceribîne",
+    "save": "Tomar bike",
+    "search": "Bigere",
+    "settings": "Mîheng",
+    "surahs": "Sûre"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "NAVEROKÊ HILBIJÊRE"
+    },
+    "highlightContent": {
+      "chooseColor": "RENG HILBIJÊRE"
+    },
+    "noteContent": {
+      "saveNote": "Têbîniyê tomar bike"
+    },
+    "shareContent": {
+      "shareLink": "Girêdanê parve bike"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Ji bo vê ayetê ayetên wekhev nehatin dîtin.",
+      "sharedPhrases": "GOTINÊN HEVPAR",
+      "similarWording": "PEYVÊN WEKHEV"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Tefsîr nehatine daxistin",
+      "tafseerNotAvailableForThis": "Ji bo vê ayetê tefsîr tune ye",
+      "tapHereToDownloadA": "Li vir pê ve bide da ku tefsîrek daxî û şiroveyê bibînî."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Ji bo vê ayetê daneyên mijarî tune ne.",
+      "passage": "Beş"
+    },
+    "translationContent": {
+      "switch": "Biguherîne",
+      "translationNotAvailable": "Werger tune ye"
+    }
+  },
+  "version": {
+    "label": "Guherto {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Çi nû heye di"
+  },
+  "wordDetail": {
+    "context": "Ayeta {{surah}}:{{ayah}} · Peyva {{position}} ji {{total}}"
+  }
+}

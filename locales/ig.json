@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Njehie na ịmalite ihe ọkpụkpọ: {{message}}",
+    "errorLoadingFonts": "Njehie na ibunye mkpụrụedemede"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Peeji mbu ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Ha niile",
+      "clearAll": "Hichapụ ha niile",
+      "hasPhoto": "Nwere foto"
+    },
+    "filterModal": {
+      "apply": "Tinye n'ọrụ",
+      "filterReciters": "Yọchaa ndị na-agụ",
+      "recitationStyles": "Ụdị ọgụgụ",
+      "reset": "Weghachite ntọala",
+      "rewayatTypes": "Ụdị riwaya"
+    },
+    "recitersFound_one": "Achọtara onye na-agụ {{count}} site na nzacha ndị a",
+    "recitersFound_other": "Achọtara ndị na-agụ {{count}} site na nzacha ndị a"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Sura ndị ị hụrụ n'anya"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Kaa amaokwu akara ka ị hụ ha ebe a",
+      "bookmarks": "Akara ibe",
+      "noBookmarksYet": "Enwebeghị akara ibe",
+      "removeBookmark": "Wepụ akara ibe"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Riwaya",
+      "searchPlaylistsRecitersSurahsRewayat": "Chọọ ndepụta ọkpụkpọ, ndị na-agụ, sura, riwaya...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Chọọ ndepụta ọkpụkpọ, ndị na-agụ, sura, riwaya na ihe ebudatara",
+      "searchYourCollection": "Chọọ na nchịkọta gị",
+      "searching": "Na-achọ...",
+      "tryDifferentKeywords": "Nwaa okwu ọchụchọ ndị ọzọ"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Budata sura ka ị hụ ha ebe a",
+      "noDownloadsYet": "Enwebeghị ihe ebudatara",
+      "playAll": "Kpọọ ha niile"
+    },
+    "favoritereciters": {
+      "addReciters": "Tinye ndị na-agụ",
+      "addRecitersToSeeThem": "Tinye ndị na-agụ ka ị hụ ha ebe a",
+      "noFavoriteRecitersYet": "Enwebeghị ndị na-agụ masịrị gị",
+      "removeFromFavorites": "Wepụ na ọkacha mmasị",
+      "searchFavoriteReciters": "Chọọ ndị na-agụ masịrị gị"
+    },
+    "index": {
+      "addToCollection": "Tinye na nchịkọta",
+      "bookmarks": "Akara ibe",
+      "createYourFirstPlaylist": "Mepụta ndepụta ọkpụkpọ mbụ gị",
+      "downloads": "Ihe ebudatara",
+      "items_one": "Ihe {{count}}",
+      "items_other": "Ihe {{count}}",
+      "loved": "Ndị ị hụrụ n'anya",
+      "noBookmarksYet": "Enwebeghị akara ibe",
+      "noDownloadsYet": "Enwebeghị ihe ebudatara",
+      "noFavoritesYet": "Enwebeghị ọkacha mmasị",
+      "noLovedSurahsYet": "Enwebeghị sura ị hụrụ n'anya",
+      "noNotesYet": "Enwebeghị ndetu",
+      "noUploadsYet": "Enwebeghị ihe ebugoro",
+      "notes": "Ndetu",
+      "playlists": "Ndepụta ọkpụkpọ",
+      "reciters": "Ndị na-agụ",
+      "uploads": "Ihe ebugoro"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Ebudatala sura niile ị hụrụ n'anya tupu ugbu a.",
+      "allLovedSurahsHaveBeen": "Ebudatala sura niile ị hụrụ n'anya.",
+      "downloadError": "Njehie nbudata",
+      "loveSurahsToSeeThem": "Kaa sura dị ka ndị ị hụrụ n'anya ka ị hụ ha ebe a",
+      "noLovedSurahsYet": "Enwebeghị sura ị hụrụ n'anya",
+      "someDownloadsMayHaveFailed": "Ụfọdụ nbudata nwere ike ghara ịga nke ọma.",
+      "unloveAllSurahs": "Wepụ sura niile na ndị ị hụrụ n'anya"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Tinye ndetu na amaokwu ka ị hụ ha ebe a",
+      "editNote": "Dezie ndetu",
+      "noNotesYet": "Enwebeghị ndetu",
+      "notes": "Ndetu"
+    },
+    "playlistModal": {
+      "name": "Aha"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Mepụta ndepụta ọkpụkpọ ka ị hụ ha ebe a",
+      "noPlaylistsYet": "Enwebeghị ndepụta ọkpụkpọ",
+      "playlists": "Ndepụta ọkpụkpọ"
+    },
+    "uploads": {
+      "removeAllUploads": "Wepụ ihe niile ebugoro",
+      "uploadRecitationsToSeeThem": "Bulite ọgụgụ ka ị hụ ha ebe a"
+    }
+  },
+  "common": {
+    "1Time": "Oge 1",
+    "2Times": "Oge 2",
+    "3Times": "Oge 3",
+    "addToCollection": "Tinye na nchịkọta",
+    "addToQueue": "Tinye n'ahịrị ọkpụkpọ",
+    "allSurahs": "Sura niile",
+    "alreadyDownloaded": "Ebudatala ya",
+    "arabic": "Arabik",
+    "asc": "Site na obere gaa na nnukwu",
+    "browseAll": "Lelee ha niile",
+    "browseAllReciters": "Lelee ndị na-agụ niile",
+    "cancel": "Kagbuo",
+    "clear": "Hichapụ",
+    "copyToClipboard": "Detuo na ebe nchekwa nwa oge",
+    "createNewPlaylist": "Mepụta ndepụta ọkpụkpọ ọhụrụ",
+    "defaultReciter": "Onye na-agụ ndabara",
+    "delete": "Hichapụ kpamkpam",
+    "deleteNote": "Hichapụ ndetu",
+    "deleteRecitation": "Hichapụ ọgụgụ",
+    "desc": "Site na nnukwu gaa na obere",
+    "downloadComplete": "Nbudata agwụla",
+    "downloadFailed": "Nbudata agaghị nke ọma",
+    "downloads": "Ihe ebudatara",
+    "editDetails": "Dezie nkọwa",
+    "error": "Njehie",
+    "favoriteReciters": "Ndị na-agụ masịrị gị",
+    "followAlong": "Soro ọgụgụ",
+    "from": "Site na",
+    "goToReciter": "Gaa na onye na-agụ",
+    "goToVerse": "Gaa na amaokwu",
+    "learnAboutSurah": "Mụta banyere sura",
+    "loading": "Na-ebunye...",
+    "loop": "Kpọgharịa n'esepụghị aka",
+    "loved": "Ndị ị hụrụ n'anya",
+    "mushafSettings": "Ntọala mushaf",
+    "next": "Ọzọ",
+    "noRecitersFound": "Achọtaghị ndị na-agụ",
+    "noResultsFound": "Achọtaghị nsonaazụ",
+    "noUploadsYet": "Enwebeghị ihe ebugoro",
+    "play": "Kpọọ",
+    "playEachVerse": "Kpọọ amaokwu ọ bụla",
+    "playNow": "Kpọọ ugbu a",
+    "playSpeed": "Ọsọ ọkpụkpọ",
+    "playTheRange": "Kpọọ akụkụ ahọpụtara",
+    "playlistName": "Aha ndepụta ọkpụkpọ",
+    "prev": "Nke gara aga",
+    "readingTheme": "Ọdịdị ọgụgụ",
+    "recentSearches": "Ọchụchọ ndị na-adịbeghị anya",
+    "reciter": "Onye na-agụ",
+    "reciterChoice": "Nhọrọ onye na-agụ",
+    "reciters": "Ndị na-agụ",
+    "remove": "Wepụ",
+    "removeAllDownloads": "Wepụ ihe niile ebudatara",
+    "removeHighlight": "Wepụ ime ka ọ pụta ìhè",
+    "rev": "Usoro mkpughe",
+    "save": "Chekwaa",
+    "search": "Chọọ",
+    "searchReciters": "Chọọ ndị na-agụ...",
+    "searchSurahs": "Chọọ sura",
+    "share": "Kekọrịta",
+    "shareAsImage": "Kekọrịta dịka onyonyo",
+    "shareAsText": "Kekọrịta dịka ederede",
+    "sharedPhrases": "Nkebiokwu ndị jikọrọ ọnụ",
+    "showBasmallah": "Gosi Basmala",
+    "stop": "Kwụsị",
+    "storage": "Ebe nchekwa",
+    "surah": "Sura",
+    "surahs": "Sura",
+    "to": "Ruo",
+    "translation": "Ntụgharị asụsụ",
+    "translationsTafaseer": "Ntụgharị asụsụ na tafsir",
+    "transliteration": "Ide ụda okwu",
+    "uploads": "Ihe ebugoro",
+    "useDefaultReciter": "Jiri onye na-agụ ndabara",
+    "verseReference": "Nrụtụ aka amaokwu",
+    "verses": "Amaokwu",
+    "whatSNew": "Ihe ọhụrụ",
+    "wordByWord": "Okwu n'okwu",
+    "writeYourNoteHere": "Dee ndetu gị ebe a...",
+    "yourPlaylists": "Ndepụta ọkpụkpọ gị"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Kpọọ sura niile"
+    },
+    "searchHeader": {
+      "searchSurahs": "Chọọ sura"
+    },
+    "searchView": {
+      "noSurahsFound": "Achọtaghị sura"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Enweghị sura dị"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Tinye ọgụgụ",
+      "uploadRecitationsToSeeThem": "Bulite ọgụgụ ka ị hụ ha ebe a"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Ebudatara • sura {{count}}",
+    "subtitle_other": "Ebudatara • sura {{count}}"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Ndo, njehie mere"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Lelee sura 114 niile"
+    },
+    "savedAdhkarHero": {
+      "saved": "Echekwara",
+      "yourCollection": "Nchịkọta gị"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SURA ỤBỌCHỊ"
+    },
+    "surahsHero": {
+      "number": "Nọmba"
+    }
+  },
+  "language": {
+    "later": "E mesịa",
+    "restartMessage": "Malitegharịa ngwa ahụ iji tinye ntụziaka nhazi ọhụrụ n'ọrụ.",
+    "restartNow": "Malitegharịa ugbu a",
+    "restartTitle": "A chọrọ ịmalitegharịa",
+    "search": "Chọọ asụsụ",
+    "system": "Asụsụ ngwaọrụ"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Gaa n'ihu"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Mafee"
+    }
+  },
+  "mushaf": {
+    "juz": "Juz {{juz}}",
+    "loadingMushaf": "Na-ebunye mushaf…",
+    "main": {
+      "mushafSettings": "Ntọala mushaf"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Gbanwee onye na-agụ",
+      "changeReciter2": "Gbanwee onye na-agụ",
+      "nextAyah": "Amaokwu ọzọ",
+      "playbackOptions": "Nhọrọ ọkpụkpọ",
+      "previousAyah": "Amaokwu gara aga"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Chọta sura, amaokwu, ibe ma ọ bụ juz",
+      "recentReads": "IHE A GỤRỤ N'OGE NA-ADỊBEGHỊ ANYA",
+      "searchSurahsPagesOrJuz": "Chọọ sura, ibe ma ọ bụ juz...",
+      "searchTheMushaf": "Chọọ na mushaf"
+    },
+    "options": "Nhọrọ",
+    "page": "Ibe {{page}}",
+    "pageAndSurah": "Ibe {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Enweghị ike ibunye mushaf.",
+    "tryAgain": "Nwaa ọzọ"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Ọ na-eme ka aha Allah na utu aha Chineke dịka Rabb pụta ìhè na mushaf."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Ime ka akụkụ isiokwu pụta ìhè n'otu n'otu",
+    "arabicFontSize": "Nha mkpụrụedemede Arabik",
+    "bold": "Ọkpụrụkpụ",
+    "book": "Akwụkwọ",
+    "colorLegend": "Nkọwa agba",
+    "currentlyReading": "Ihe a na-agụ ugbu a",
+    "divineNames": "AHA CHINEKE",
+    "fontSize": "Nha mkpụrụedemede",
+    "fullscreen": "Ihuenyo zuru ezu",
+    "hamzaReplacedByLongVowel": "Iji ụdaume ogologo dochie hamza",
+    "heavyLamInAllahAfter": "Lam siri ike n'okwu Allah mgbe mkpụrụedemede siri ike gasịrị",
+    "highlightAllahRabb": "Mee ka Allah / Rabb pụta ìhè",
+    "horizontal": "N'akụkụ",
+    "ibdal": "Ibdal",
+    "list": "Ndepụta",
+    "loadingSample": "Na-ebunye ihe atụ...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Ka ọ pụta ìhè nke ukwuu",
+    "medium": "Etiti",
+    "modernMadinahPrintedPipeline": "Usoro mbipụta Madinah nke oge a",
+    "mushaf": "Mushaf",
+    "normal": "Nkịtị",
+    "originalMushafWeight": "Ọkpụrụkpụ mkpụrụedemede mushaf mbụ",
+    "pageDesign": "NHAZI IBE",
+    "prolongedVowelAfterHamza": "Ụdaume ogologo mgbe hamza gasịrị",
+    "readingTheme": "ỌDỊDỊ ỌGỤGỤ",
+    "scrollDirection": "NTỤZIAKA MPỊAKỌTA",
+    "showDifferences": "Gosi ihe dị iche",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Ka ọ pụta ìhè ntakịrị",
+    "softenedHamzaPronunciation": "Ịkpọ hamza nwayọọ",
+    "subcontinentNastaliqStyle": "Ụdị Nastaliq nke mpaghara South Asia",
+    "taghlizAlLam": "Taghliz al-Lam",
+    "tajweedColoring": "Agba tajwid",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "NLELE EDEREDE TUPU OGE ADỊBEGHỊ",
+    "textThickness": "ỌKPỤRỤKPỤ EDEREDE",
+    "thematicHighlighting": "Ime ka isiokwu pụta ìhè",
+    "trailingVowelOrMoodChange": "Naanị mgbanwe ụdaume ikpeazụ ma ọ bụ ọnọdụ ụtọasụsụ",
+    "usingSaheehInternationalTranslationWith": "A na-eji: Ntụgharị Saheeh International nwere nkọwa ala ibe",
+    "vertical": "N'ụzọ kwụ ọtọ",
+    "viewType": "ỤDỊ NLELE",
+    "vowelMoodShift": "Mgbanwe ụdaume / ọnọdụ ụtọasụsụ",
+    "wordByWord": "OKWU N'OKWU",
+    "wordVariant": "Ụdị okwu ọzọ"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Enweghị ike iru sava azụ",
+    "connectionRestored": "Njikọ alọghachila",
+    "noInternetConnection": "Enweghị njikọ ịntanetị",
+    "showingCachedData": "Na-egosi data echekwara nwa oge"
+  },
+  "organize": {
+    "createReciter": "Mepụta \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Ahịrị ọkpụkpọ",
+      "queueIsEmpty": "Ahịrị ọkpụkpọ tọgbọ chakoo"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Kaa ọgụgụ a akara ka ị hụ ederede sura na nkọwa ya"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Ndepụta ọkpụkpọ • sura {{count}}",
+    "subtitle_other": "Ndepụta ọkpụkpọ • sura {{count}}"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Enweghị sura na ndepụta ọkpụkpọ a"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Nkọwa ala ibe"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Ọgụgụ a họpụtara maka oge a kpọmkwem",
+      "discover": "Chọpụta",
+      "discoverANewVoice": "Chọpụta olu ọhụrụ",
+      "explore": "Nyochaa",
+      "exploreTheUnexpected": "Nyochaa ihe a na-atụghị anya ya",
+      "hearSomethingNew": "Nụrụ ihe ọhụrụ",
+      "letTheQuranSurpriseYou": "Ka Koran ju gị anya",
+      "randomMix": "Ngwakọta na-enweghị usoro",
+      "randomRecitation": "Ọgụgụ na-enweghị usoro",
+      "shuffleListen": "Gwakọta ma gee ntị",
+      "surpriseMe": "Juru m anya"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Ịgbanwe ụdị ọdịdị ga-emetụta ngwa ahụ dum"
+  },
+  "reciterBrowse": {
+    "allReciters": "Ndị na-agụ niile",
+    "browseReciters": "Lelee ndị na-agụ",
+    "favorites": "Ọkacha mmasị"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Enweghị ihe ebudatara maka onye na-agụ a"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Ihe m bugoro"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkar",
+    "bestForMemorization": "Kacha mma maka iburu n'isi",
+    "bestForTajweed": "Kacha mma maka tajwid",
+    "continueListening": "Gaa n'ihu ige ntị",
+    "exclusives": "Ihe pụrụ iche",
+    "exploreByRewayah": "Nyochaa dịka riwaya si dị",
+    "featuredReciters": "Ndị na-agụ a họpụtara",
+    "fromYourCollection": "Site na nchịkọta gị",
+    "myRecitations": "Ọgụgụ m",
+    "newToQuranStartHere": "Ị bụ onye ọhụrụ na Koran? Malite ebe a",
+    "seeMore": "Hụkwuo",
+    "yourFavorites": "Ọkacha mmasị gị"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Na-arụ ọrụ",
+      "activeTafseer": "TAFSIR A NA-EJI",
+      "activeTranslation": "NTỤGHARỊ A NA-EJI",
+      "deleteTafseer": "Hichapụ tafsir",
+      "deleteTranslation": "Hichapụ ntụgharị asụsụ",
+      "noTafaseerFound": "Achọtaghị tafsir",
+      "noTranslationsFound": "Achọtaghị ntụgharị asụsụ",
+      "unableToDownloadThisTafseer": "Enweghị ike ibudata tafsir a. Biko lelee njikọ ịntanetị gị ma nwaa ọzọ.",
+      "unableToDownloadThisTranslation": "Enweghị ike ibudata ntụgharị a. Biko lelee njikọ ịntanetị gị ma nwaa ọzọ."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Enweghị ọchụchọ na-adịbeghị anya",
+      "tryDifferentKeywordsOrCheck": "Nwaa okwu ọchụchọ ndị ọzọ ma ọ bụ lelee nsụpe",
+      "yourSearchHistoryWillAppear": "Akụkọ ọchụchọ gị ga-apụta ebe a"
+    },
+    "surahsOrReciters": "Chọọ sura ma ọ bụ ndị na-agụ"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Njikwa olu dị elu",
+      "browseByJuz": "Lelee dịka juz si dị",
+      "createAndManageYourOwn": "Mepụta ma jikwaa ndepụta ọkpụkpọ nke gị nke ọgụgụ ndị masịrị gị",
+      "crystalClearRecitationsFromThe": "Ọgụgụ doro anya sitere n'aka ndị qari kacha mma n'ụwa na nkwanye emelitere",
+      "curatedCollections": "Nchịkọta a họpụtara",
+      "customPlaylists": "Ndepụta ọkpụkpọ nke gị",
+      "customizeThemesAccentColorsAnd": "Hazie ọdịdị, agba ndị pụtara ìhè na ntọala olu dịka ịchọrọ",
+      "downloadSurahsForOfflineListening": "Budata sura ka ị gee ntị n'oge ọ bụla, ebe ọ bụla na-enweghị ịntanetị",
+      "easilyNavigateThroughTheQuran": "Gagharịa na Koran n'ụzọ dị mfe site n'ịhazi na ikewa ya dịka juz si dị",
+      "features": "NJIRIMARA",
+      "highQualityAudio": "Olu dị elu",
+      "listenReflectRememberAllah": "Gee ntị. Tụgharịa uche. Cheta Allah.",
+      "offlineDownloads": "Nbudata maka ojiji na-enweghị ịntanetị",
+      "ourCommitment": "Nkwa anyị",
+      "ourMission": "Ebumnuche anyị",
+      "personalization": "Ịhazi maka onwe gị",
+      "precisePlaybackControlWithContinuous": "Njikwa ọkpụkpọ ziri ezi na ọkpụkpọ na-aga n'ihu na ọsọ ọgụgụ enwere ike ịgbanwe",
+      "quranBayanTafsirKnowledgeOur": "Koran • Bayan • Tafsir • Ihe ọmụma. Ebumnuche anyị bụ ime ka ige ntị na ịtụgharị uche bụrụ akụkụ nke ndụ kwa ụbọchị: n'ụlọ, n'ụzọ na ebe ọ bụla ị nwere oge icheta Allah.",
+      "readListenAndReflect": "Gụọ, gee ntị ma tụgharịa uche",
+      "readTheMushafExploreTranslations": "Gụọ mushaf, nyochaa ntụgharị na tafsir, chekwaa amaokwu na ndetu, ma laghachi na adhkar kwa ụbọchị. Họrọ onye na-agụ gị, mepụta ndepụta ọkpụkpọ ma mee ka ige ntị dabara n'ụbọchị gị. Njirimara dị na-adabere na ngwaọrụ; ngwa ala na-akwadokwa nbudata maka ige ntị na-enweghị ịntanetị.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Sura a haziri nke ọma maka oge na isiokwu dị iche iche",
+      "weCareAboutTheAccuracy": "Anyị na-eleba anya n'izi ezi nke ọdịnaya dị nsọ, nhazi nwere nkwanye ùgwù na ohere a pụrụ ịtụkwasị obi. Anyị na-aga n'ihu ime ka ISTIMA ka mma site n'ilebara ndị na-eji ya anya. Ka Allah nabata mbọ a ma mee ka ọ baara onye ọ bụla na-ege ntị, na-agụ ma na-atụgharị uche uru."
+    },
+    "aboutApp": "Banyere {{name}}",
+    "appearance": "ỌDỊDỊ",
+    "defaultreciter": {
+      "changeDefaultReciter": "GBANWEE ONYE NA-AGỤ NDABARA"
+    },
+    "developer": "ONYE MMEMME",
+    "floatingDevMenu": "Nchịkọta onye mmemme na-ese n'elu",
+    "language": "Asụsụ",
+    "languageDescription": "Họrọ asụsụ ngwa ahụ",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Jiri onye na-agụ ndabara ị họpụtara mgbe niile",
+      "askEveryTime": "Jụọ oge ọ bụla",
+      "chooseAReciterEachTime": "Họrọ onye na-agụ mgbe ọ bụla ị na-akpọ",
+      "chooseHowYouWantTo": "Họrọ otu ị ga-esi họrọ ndị na-agụ mgbe ị na-akpọ sura",
+      "defaultSelectionMethod": "ỤZỌ NHỌRỌ NDABARA",
+      "searchThroughOurCompleteCollection": "Chọọ na nchịkọta ndị na-agụ anyị niile",
+      "selectionPreference": "Mmasị nhọrọ"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Ewepụla ihe niile ebudatara.",
+      "areYouSureYouWant": "Ị ji n'aka na ịchọrọ iwepụ ihe niile ebudatara? Enweghị ike iweghachi omume a.",
+      "cache": "Nchekwa nwa oge",
+      "cacheHasBeenCleared": "Ehichapụla nchekwa nwa oge.",
+      "clearCache": "Hichapụ nchekwa nwa oge",
+      "failedToClearCache": "Enweghị ike ihichapụ nchekwa nwa oge.",
+      "failedToRemoveDownloads": "Enweghị ike iwepụ ihe ebudatara.",
+      "free": "Ebe efu",
+      "loadingStorageInformation": "Na-ebunye ozi nchekwa...",
+      "manageStorage": "JIKWAA NCHEKWA",
+      "otherApps": "Ngwa ndị ọzọ",
+      "removeAllDownloads": "Wepụ ihe niile ebudatara",
+      "removeAllTheQuranContent": "Wepụ ọdịnaya Koran niile ị budatara maka ojiji na-enweghị ịntanetị.",
+      "storageBreakdown": "NKỌWA NCHEKWA",
+      "success": "Ihe ịga nke ọma",
+      "thisWillClearYourCache": "Nke a ga-ehichapụ nchekwa nwa oge gị. A gaghị ewepụ ihe ị budatara.",
+      "youCanFreeUpStorage": "Ị nwere ike ime ka ohere dị na nchekwa site n'ihichapụ nchekwa nwa oge. A gaghị ewepụ ihe ị budatara."
+    },
+    "themePicker": {
+      "auto": "Akpaka",
+      "dark": "Ọchịchịrị",
+      "light": "Ìhè"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Enweghị ndekọ mgbanwe"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Banyere {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Tinye onye na-agụ masịrị gị",
+      "uploadRecitation": "Bulite ọgụgụ"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Ụda gburugburu",
+      "none": "Ọ dịghị",
+      "volume": "Ogo olu"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "Dịka ọmụmaatụ, ọgụgụ ụtụtụ"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Wepụ ihe ebudatara"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Emechaala"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Tinye na nchịkọta",
+      "addToQueue": "Tinye n'ahịrị ọkpụkpọ",
+      "continuePlaying": "Gaa n'ihu ịkpọ",
+      "goToReciter": "Gaa na onye na-agụ",
+      "removeFromRecents": "Wepụ na ndị na-adịbeghị anya"
+    },
+    "mushafLayoutSheet": {
+      "back": "Laghachi"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Amaokwu ikpeazụ",
+      "playbackSettings": "Ntọala ọkpụkpọ",
+      "selectRange": "Họrọ akụkụ",
+      "startingVerse": "Amaokwu mbụ"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Ntọala ikwugharị",
+      "start": "Malite",
+      "verseRange": "Oke amaokwu"
+    },
+    "organizeRecitationSheet": {
+      "category": "Ụdị",
+      "customReciter": "Onye na-agụ nke gị",
+      "duA": "Du'a",
+      "eGMorningAdhkar": "Dịka ọmụmaatụ, adhkar ụtụtụ",
+      "lecture": "Nkuzi",
+      "moreOptions": "Nhọrọ ndị ọzọ",
+      "other": "Ndị ọzọ",
+      "recording": "Ndekọ olu",
+      "rewayah": "Riwaya",
+      "searchSurahs": "Chọọ sura...",
+      "style": "Usoro",
+      "tafsir": "Tafsir",
+      "title": "Isiokwu",
+      "type": "Ụdị",
+      "verseRangeOptional": "Oke amaokwu (ọ bụghị iwu)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Ọsọ ọkpụkpọ"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Ebudatala ihe niile dị na ndepụta ọkpụkpọ a tupu ugbu a.",
+      "anErrorOccurredWhileDownloading": "Njehie mere mgbe a na-ebudata ndepụta ọkpụkpọ. Biko nwaa ọzọ.",
+      "deletePlaylist": "Hichapụ ndepụta ọkpụkpọ",
+      "downloadingPlaylist": "Na-ebudata ndepụta ọkpụkpọ...",
+      "editPlaylist": "Dezie ndepụta ọkpụkpọ",
+      "emptyPlaylist": "Ndepụta ọkpụkpọ efu",
+      "thisPlaylistIsEmpty": "Ndepụta ọkpụkpọ a tọgbọ chakoo."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Banyere riwaya",
+      "availableRewayat": "Riwaya ndị dị"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Enweghị ike itinye sura na ndepụta ọkpụkpọ",
+      "failedToCreatePlaylist": "Enweghị ike ịmepụta ndepụta ọkpụkpọ",
+      "noPlaylistsYetCreateYour": "Enwebeghị ndepụta ọkpụkpọ. Mepụta nke mbụ gị n'elu!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Jụọ oge ọ bụla",
+      "randomReciter": "Onye na-agụ na-enweghị usoro",
+      "selectReciter": "Họrọ onye na-agụ"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Achọtaghị amaokwu ndị yiri amaokwu a.",
+      "similarWording": "Okwu ndị yiri ibe ha"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Ngụ oge ụra",
+      "turnOffTimer": "Gbanyụọ ngụ oge"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Wepụ na ndepụta ọkpụkpọ"
+    },
+    "verseActionsSheet": {
+      "addNote": "Tinye ndetu",
+      "copy": "Detuo",
+      "repeat": "Kpọgharịa",
+      "similarVerses": "Amaokwu ndị yiri ibe ha",
+      "tafseer": "Tafsir",
+      "theme": "Ọdịdị"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Nhọrọ idetu",
+      "selectWhatToCopy": "Họrọ ihe ị ga-edetu"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Agba ime ka ọ pụta ìhè"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Kekọrịta amaokwu"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Achọtara na amaokwu {{count}}",
+    "foundIn_other": "Achọtara na amaokwu {{count}}"
+  },
+  "surahItem": {
+    "moreOptions": "Nhọrọ ndị ọzọ",
+    "opensMenuWithAdditionalActions": "Mepee nchịkọta nwere omume ndị ọzọ maka sura a",
+    "tapToPlaySurah": "Pịa ka ị kpọọ sura"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Nọmba njirimara ndepụta ọkpụkpọ adịghị mma",
+      "playlistNotFound": "Achọtaghị ndepụta ọkpụkpọ"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Achọtaghị onye na-agụ nwere sura niile dị na ndepụta a. Biko nwaa ndepụta ọzọ.",
+      "failedToPlayPlaylistPlease": "Enweghị ike ịkpọ ndepụta ọkpụkpọ. Biko nwaa ọzọ.",
+      "failedToPlayTrackPlease": "Enweghị ike ịkpọ faịlụ olu. Biko nwaa ọzọ.",
+      "failedToShufflePlaylistPlease": "Enweghị ike ịkpọ ndepụta ahụ na-enweghị usoro. Biko nwaa ọzọ.",
+      "noReciterAvailable": "Enweghị onye na-agụ dị",
+      "noSurahsInThisPlaylist": "Enweghị sura na ndepụta ọkpụkpọ a"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Akaụntụ",
+      "appData": "Ngwa na data",
+      "audioPlayback": "Olu na ọkpụkpọ",
+      "chooseYourPreferredReciter": "Họrọ onye na-agụ masịrị gị",
+      "customizeQuranDisplayOptions": "Hazie nhọrọ igosi Koran",
+      "customizeReciterSelection": "Hazie nhọrọ onye na-agụ",
+      "featureRequests": "Arịrịọ njirimara",
+      "feedback": "Nzaghachi",
+      "helpSupport": "Enyemaka na nkwado",
+      "learnMoreAboutOurMission": "Mụtakwuo banyere ebumnuche anyị",
+      "manageQuranTranslationsAndCommentary": "Jikwaa ntụgharị asụsụ Koran na nkọwa ya",
+      "privacyPolicy": "Iwu nzuzo",
+      "quran": "Koran",
+      "readOurTermsOfService": "Gụọ usoro ọrụ anyị",
+      "seeWhatSNewIn": "Hụ ihe ọhụrụ na mbipụta a",
+      "shareYourExperienceWithOthers": "Kekọrịta ahụmịhe gị na ndị ọzọ",
+      "showTheFloatingDeveloperTools": "Gosi bọtịnụ ngwaọrụ onye mmemme na-ese n'elu",
+      "suggestImprovementsAndNewFeatures": "Tụọ aro ndozi na njirimara ọhụrụ",
+      "termsOfService": "Usoro ọrụ",
+      "viewAndManageStorageUsage": "Lelee ma jikwaa ojiji nchekwa",
+      "viewOurPrivacyPolicy": "Lelee iwu nzuzo anyị",
+      "writeAReview": "Dee nyocha"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Kagbuo",
+    "close": "Mechie",
+    "collection": "Nchịkọta",
+    "download": "Budata",
+    "downloads": "Ihe ebudatara",
+    "error": "E nwere ihe na-agaghị nke ọma",
+    "favorites": "Ọkacha mmasị",
+    "home": "Mbido",
+    "language": "Asụsụ",
+    "library": "Ọbá akwụkwọ",
+    "loading": "Na-ebunye...",
+    "noResults": "Achọtaghị nsonaazụ",
+    "offline": "Ị nọ na-enweghị ịntanetị",
+    "pause": "Kwụsịtụ",
+    "play": "Kpọọ",
+    "retry": "Nwaa ọzọ",
+    "save": "Chekwaa",
+    "search": "Chọọ",
+    "settings": "Ntọala",
+    "surahs": "Sura"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "HỌRỌ ỌDỊNAYA"
+    },
+    "highlightContent": {
+      "chooseColor": "HỌRỌ AGBA"
+    },
+    "noteContent": {
+      "saveNote": "Chekwaa ndetu"
+    },
+    "shareContent": {
+      "shareLink": "Kekọrịta njikọ"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Achọtaghị amaokwu ndị yiri amaokwu a.",
+      "sharedPhrases": "NKEBIOKWU NDỊ JIKỌRỌ ỌNỤ",
+      "similarWording": "OKWU NDỊ YIRI IBE HA"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Enweghị tafsir ebudatara",
+      "tafseerNotAvailableForThis": "Tafsir adịghị maka amaokwu a",
+      "tapHereToDownloadA": "Pịa ebe a ka ị budata tafsir ma lelee nkọwa."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Enweghị data isiokwu maka amaokwu a.",
+      "passage": "Akụkụ"
+    },
+    "translationContent": {
+      "switch": "Gbanwee",
+      "translationNotAvailable": "Ntụgharị asụsụ adịghị"
+    }
+  },
+  "version": {
+    "label": "Mbipụta {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Ihe ọhụrụ na"
+  },
+  "wordDetail": {
+    "context": "Amaokwu {{surah}}:{{ayah}} · Okwu {{position}} n'ime {{total}}"
+  }
+}
