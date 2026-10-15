@@ -1,3 +1,4 @@
+import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useState, useCallback, useMemo} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
@@ -101,9 +102,9 @@ export default function DefaultReciterScreen() {
         )}
 
         <View style={styles.searchSection}>
-          <Text style={styles.searchLabel}>CHANGE DEFAULT RECITER</Text>
+          <Text style={styles.searchLabel}>{isArabicInterface() ? 'تغيير القارئ الافتراضي' : 'CHANGE DEFAULT RECITER'}</Text>
           <SearchInput
-            placeholder="Search reciters..."
+            placeholder={isArabicInterface() ? 'ابحث عن القراء...' : 'Search reciters...'}
             value={searchQuery}
             onChangeText={handleSearch}
             showCancelButton={false}
