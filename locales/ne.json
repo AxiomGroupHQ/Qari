@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "प्लेयर सुरु गर्दा त्रुटि: {{message}}",
+    "errorLoadingFonts": "फन्ट लोड गर्दा त्रुटि"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA गृहपृष्ठ"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "सबै",
+      "clearAll": "सबै खाली गर्नुहोस्",
+      "hasPhoto": "तस्बिर छ"
+    },
+    "filterModal": {
+      "apply": "लागू गर्नुहोस्",
+      "filterReciters": "कारीहरू छान्नुहोस्",
+      "recitationStyles": "तिलावत शैलीहरू",
+      "reset": "रिसेट गर्नुहोस्",
+      "rewayatTypes": "रिवायतका प्रकारहरू"
+    },
+    "recitersFound_one": "हालका फिल्टरअनुसार {{count}} कारी भेटियो",
+    "recitersFound_other": "हालका फिल्टरअनुसार {{count}} कारी भेटिए"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "मन पराइएका सुराहरू"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "आयतहरू यहाँ हेर्न बुकमार्क गर्नुहोस्",
+      "bookmarks": "बुकमार्कहरू",
+      "noBookmarksYet": "अहिलेसम्म बुकमार्क छैन",
+      "removeBookmark": "बुकमार्क हटाउनुहोस्"
+    },
+    "collectionSearchModal": {
+      "rewayat": "रिवायत",
+      "searchPlaylistsRecitersSurahsRewayat": "प्लेलिस्ट, कारी, सुरा, रिवायत खोज्नुहोस्...",
+      "searchPlaylistsRecitersSurahsRewayat2": "प्लेलिस्ट, कारी, सुरा, रिवायत र डाउनलोड खोज्नुहोस्",
+      "searchYourCollection": "आफ्नो सङ्ग्रहमा खोज्नुहोस्",
+      "searching": "खोज्दै...",
+      "tryDifferentKeywords": "फरक मुख्य शब्दहरू प्रयोग गर्नुहोस्"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "सुराहरू यहाँ हेर्न डाउनलोड गर्नुहोस्",
+      "noDownloadsYet": "अहिलेसम्म डाउनलोड छैन",
+      "playAll": "सबै बजाउनुहोस्"
+    },
+    "favoritereciters": {
+      "addReciters": "कारी थप्नुहोस्",
+      "addRecitersToSeeThem": "कारीहरू यहाँ हेर्न थप्नुहोस्",
+      "noFavoriteRecitersYet": "अहिलेसम्म मनपर्ने कारी छैन",
+      "removeFromFavorites": "मनपर्नेबाट हटाउनुहोस्",
+      "searchFavoriteReciters": "मनपर्ने कारी खोज्नुहोस्"
+    },
+    "index": {
+      "addToCollection": "सङ्ग्रहमा थप्नुहोस्",
+      "bookmarks": "बुकमार्कहरू",
+      "createYourFirstPlaylist": "आफ्नो पहिलो प्लेलिस्ट बनाउनुहोस्",
+      "downloads": "डाउनलोडहरू",
+      "items_one": "{{count}} वस्तु",
+      "items_other": "{{count}} वस्तुहरू",
+      "loved": "मन पराइएका",
+      "noBookmarksYet": "अहिलेसम्म बुकमार्क छैन",
+      "noDownloadsYet": "अहिलेसम्म डाउनलोड छैन",
+      "noFavoritesYet": "अहिलेसम्म मनपर्ने छैन",
+      "noLovedSurahsYet": "अहिलेसम्म मन पराइएको सुरा छैन",
+      "noNotesYet": "अहिलेसम्म टिप्पणी छैन",
+      "noUploadsYet": "अहिलेसम्म अपलोड छैन",
+      "notes": "टिप्पणीहरू",
+      "playlists": "प्लेलिस्टहरू",
+      "reciters": "कारीहरू",
+      "uploads": "अपलोडहरू"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "मन पराइएका सबै सुराहरू पहिल्यै डाउनलोड गरिएका छन्।",
+      "allLovedSurahsHaveBeen": "मन पराइएका सबै सुराहरू डाउनलोड भएका छन्।",
+      "downloadError": "डाउनलोड त्रुटि",
+      "loveSurahsToSeeThem": "सुराहरू यहाँ हेर्न मन पराउनुहोस्",
+      "noLovedSurahsYet": "अहिलेसम्म मन पराइएको सुरा छैन",
+      "someDownloadsMayHaveFailed": "केही डाउनलोड असफल भएका हुन सक्छन्।",
+      "unloveAllSurahs": "सबै सुरालाई मन पराइएकोबाट हटाउनुहोस्"
+    },
+    "notes": {
+      "addNotesToVersesTo": "टिप्पणीहरू यहाँ हेर्न आयतहरूमा टिप्पणी थप्नुहोस्",
+      "editNote": "टिप्पणी सम्पादन गर्नुहोस्",
+      "noNotesYet": "अहिलेसम्म टिप्पणी छैन",
+      "notes": "टिप्पणीहरू"
+    },
+    "playlistModal": {
+      "name": "नाम"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "प्लेलिस्टहरू यहाँ हेर्न बनाउनुहोस्",
+      "noPlaylistsYet": "अहिलेसम्म प्लेलिस्ट छैन",
+      "playlists": "प्लेलिस्टहरू"
+    },
+    "uploads": {
+      "removeAllUploads": "सबै अपलोड हटाउनुहोस्",
+      "uploadRecitationsToSeeThem": "तिलावतहरू यहाँ हेर्न अपलोड गर्नुहोस्"
+    }
+  },
+  "common": {
+    "1Time": "१ पटक",
+    "2Times": "२ पटक",
+    "3Times": "३ पटक",
+    "addToCollection": "सङ्ग्रहमा थप्नुहोस्",
+    "addToQueue": "लाममा थप्नुहोस्",
+    "allSurahs": "सबै सुराहरू",
+    "alreadyDownloaded": "पहिल्यै डाउनलोड गरिएको",
+    "arabic": "अरबी",
+    "asc": "बढ्दो क्रम",
+    "browseAll": "सबै हेर्नुहोस्",
+    "browseAllReciters": "सबै कारी हेर्नुहोस्",
+    "cancel": "रद्द गर्नुहोस्",
+    "clear": "खाली गर्नुहोस्",
+    "copyToClipboard": "क्लिपबोर्डमा प्रतिलिपि गर्नुहोस्",
+    "createNewPlaylist": "नयाँ प्लेलिस्ट बनाउनुहोस्",
+    "defaultReciter": "पूर्वनिर्धारित कारी",
+    "delete": "मेटाउनुहोस्",
+    "deleteNote": "टिप्पणी मेटाउनुहोस्",
+    "deleteRecitation": "तिलावत मेटाउनुहोस्",
+    "desc": "घट्दो क्रम",
+    "downloadComplete": "डाउनलोड पूरा भयो",
+    "downloadFailed": "डाउनलोड असफल भयो",
+    "downloads": "डाउनलोडहरू",
+    "editDetails": "विवरण सम्पादन गर्नुहोस्",
+    "error": "त्रुटि",
+    "favoriteReciters": "मनपर्ने कारीहरू",
+    "followAlong": "सँगै पढ्नुहोस्",
+    "from": "देखि",
+    "goToReciter": "कारीमा जानुहोस्",
+    "goToVerse": "आयतमा जानुहोस्",
+    "learnAboutSurah": "सुराबारे जान्नुहोस्",
+    "loading": "लोड हुँदै...",
+    "loop": "दोहोर्‍याएर बजाउनुहोस्",
+    "loved": "मन पराइएका",
+    "mushafSettings": "मुसहफ सेटिङहरू",
+    "next": "अर्को",
+    "noRecitersFound": "कारी भेटिएन",
+    "noResultsFound": "नतिजा भेटिएन",
+    "noUploadsYet": "अहिलेसम्म अपलोड छैन",
+    "play": "बजाउनुहोस्",
+    "playEachVerse": "प्रत्येक आयत बजाउनुहोस्",
+    "playNow": "अहिले बजाउनुहोस्",
+    "playSpeed": "बजाउने गति",
+    "playTheRange": "चयनित दायरा बजाउनुहोस्",
+    "playlistName": "प्लेलिस्टको नाम",
+    "prev": "अघिल्लो",
+    "readingTheme": "पठन थिम",
+    "recentSearches": "हालका खोजहरू",
+    "reciter": "कारी",
+    "reciterChoice": "कारीको छनोट",
+    "reciters": "कारीहरू",
+    "remove": "हटाउनुहोस्",
+    "removeAllDownloads": "सबै डाउनलोड हटाउनुहोस्",
+    "removeHighlight": "हाइलाइट हटाउनुहोस्",
+    "rev": "अवतरण क्रम",
+    "save": "सुरक्षित गर्नुहोस्",
+    "search": "खोज्नुहोस्",
+    "searchReciters": "कारी खोज्नुहोस्...",
+    "searchSurahs": "सुरा खोज्नुहोस्",
+    "share": "साझा गर्नुहोस्",
+    "shareAsImage": "तस्बिरका रूपमा साझा गर्नुहोस्",
+    "shareAsText": "पाठका रूपमा साझा गर्नुहोस्",
+    "sharedPhrases": "साझा वाक्यांशहरू",
+    "showBasmallah": "बिस्मिल्लाह देखाउनुहोस्",
+    "stop": "रोक्नुहोस्",
+    "storage": "भण्डारण",
+    "surah": "सुरा",
+    "surahs": "सुराहरू",
+    "to": "सम्म",
+    "translation": "अनुवाद",
+    "translationsTafaseer": "अनुवाद र तफ्सिरहरू",
+    "transliteration": "लिप्यन्तरण",
+    "uploads": "अपलोडहरू",
+    "useDefaultReciter": "पूर्वनिर्धारित कारी प्रयोग गर्नुहोस्",
+    "verseReference": "आयतको सन्दर्भ",
+    "verses": "आयतहरू",
+    "whatSNew": "नयाँ के छ",
+    "wordByWord": "शब्दशः",
+    "writeYourNoteHere": "आफ्नो टिप्पणी यहाँ लेख्नुहोस्...",
+    "yourPlaylists": "तपाईंका प्लेलिस्टहरू"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "सबै सुरा बजाउनुहोस्"
+    },
+    "searchHeader": {
+      "searchSurahs": "सुरा खोज्नुहोस्"
+    },
+    "searchView": {
+      "noSurahsFound": "सुरा भेटिएन"
+    },
+    "surahList": {
+      "noSurahsAvailable": "सुरा उपलब्ध छैन"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "तिलावत थप्नुहोस्",
+      "uploadRecitationsToSeeThem": "तिलावतहरू यहाँ हेर्न अपलोड गर्नुहोस्"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "डाउनलोड गरिएको • {{count}} सुरा",
+    "subtitle_other": "डाउनलोड गरिएको • {{count}} सुराहरू"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "माफ गर्नुहोस्, त्रुटि भयो"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "सबै ११४ सुरा हेर्नुहोस्"
+    },
+    "savedAdhkarHero": {
+      "saved": "सुरक्षित गरिएको",
+      "yourCollection": "तपाईंको सङ्ग्रह"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "आजको सुरा"
+    },
+    "surahsHero": {
+      "number": "नम्बर"
+    }
+  },
+  "language": {
+    "later": "पछि",
+    "restartMessage": "नयाँ लेआउट दिशा लागू गर्न एप पुनः सुरु गर्नुहोस्।",
+    "restartNow": "अहिले पुनः सुरु गर्नुहोस्",
+    "restartTitle": "पुनः सुरु गर्नुपर्छ",
+    "search": "भाषा खोज्नुहोस्",
+    "system": "उपकरणको भाषा"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "जारी राख्नुहोस्"
+    },
+    "whatsNewOnboarding": {
+      "skip": "छोड्नुहोस्"
+    }
+  },
+  "mushaf": {
+    "juz": "जुज {{juz}}",
+    "loadingMushaf": "मुसहफ लोड हुँदै…",
+    "main": {
+      "mushafSettings": "मुसहफ सेटिङहरू"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "कारी बदल्नुहोस्",
+      "changeReciter2": "कारी बदल्नुहोस्",
+      "nextAyah": "अर्को आयत",
+      "playbackOptions": "बजाउने विकल्पहरू",
+      "previousAyah": "अघिल्लो आयत"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "सुरा, आयत, पृष्ठ वा जुज फेला पार्नुहोस्",
+      "recentReads": "हालै पढिएका",
+      "searchSurahsPagesOrJuz": "सुरा, पृष्ठ वा जुज खोज्नुहोस्...",
+      "searchTheMushaf": "मुसहफमा खोज्नुहोस्"
+    },
+    "options": "विकल्पहरू",
+    "page": "पृष्ठ {{page}}",
+    "pageAndSurah": "पृष्ठ {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "मुसहफ लोड हुन सकेन।",
+    "tryAgain": "फेरि प्रयास गर्नुहोस्"
+  },
+  "mushafSettings": {
+    "rabbHelper": "मुसहफमा अल्लाहको नाम र रब्बजस्ता ईश्वरीय उपाधिहरू हाइलाइट गर्छ।"
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "विषयगत खण्डअनुसार पालैपालो हाइलाइट",
+    "arabicFontSize": "अरबी फन्टको आकार",
+    "bold": "बाक्लो",
+    "book": "पुस्तक",
+    "colorLegend": "रङको अर्थ",
+    "currentlyReading": "हाल पढ्दै",
+    "divineNames": "ईश्वरीय नामहरू",
+    "fontSize": "फन्टको आकार",
+    "fullscreen": "पूरा स्क्रिन",
+    "hamzaReplacedByLongVowel": "हम्जाको सट्टा लामो स्वर",
+    "heavyLamInAllahAfter": "बाक्ला अक्षरपछि अल्लाह शब्दमा बाक्लो लाम",
+    "highlightAllahRabb": "अल्लाह / रब्ब हाइलाइट गर्नुहोस्",
+    "horizontal": "तेर्सो",
+    "ibdal": "इब्दाल",
+    "list": "सूची",
+    "loadingSample": "नमुना लोड हुँदै...",
+    "maddAlBadal": "मद्द अल-बदल",
+    "maximumProminence": "सबैभन्दा स्पष्ट",
+    "medium": "मध्यम",
+    "modernMadinahPrintedPipeline": "आधुनिक मदिना मुद्रण पद्धति",
+    "mushaf": "मुसहफ",
+    "normal": "सामान्य",
+    "originalMushafWeight": "मूल मुसहफको अक्षर मोटाइ",
+    "pageDesign": "पृष्ठको डिजाइन",
+    "prolongedVowelAfterHamza": "हम्जापछिको दीर्घ स्वर",
+    "readingTheme": "पठन थिम",
+    "scrollDirection": "स्क्रोल गर्ने दिशा",
+    "showDifferences": "भिन्नताहरू देखाउनुहोस्",
+    "silah": "सिला",
+    "slightlyMoreProminent": "अलि बढी स्पष्ट",
+    "softenedHamzaPronunciation": "हम्जाको नरम उच्चारण",
+    "subcontinentNastaliqStyle": "उपमहाद्वीपको नस्तालिक शैली",
+    "taghlizAlLam": "तग्लीज अल-लाम",
+    "tajweedColoring": "तज्विद रङ",
+    "tashilMusahhala": "तस्हिल / मुसह्हला",
+    "textPreviewNotYetAvailable": "पाठको पूर्वावलोकन अझै उपलब्ध छैन",
+    "textThickness": "पाठको मोटाइ",
+    "thematicHighlighting": "विषयगत हाइलाइट",
+    "trailingVowelOrMoodChange": "अन्तिम स्वर वा क्रियार्थको परिवर्तन मात्र",
+    "usingSaheehInternationalTranslationWith": "प्रयोगमा: पादटिप्पणीसहितको Saheeh International अनुवाद",
+    "vertical": "ठाडो",
+    "viewType": "दृश्यको प्रकार",
+    "vowelMoodShift": "स्वर / क्रियार्थ परिवर्तन",
+    "wordByWord": "शब्दशः",
+    "wordVariant": "शब्दको रूपान्तर"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "सर्भरमा पहुँच भएन",
+    "connectionRestored": "जडान पुनःस्थापित भयो",
+    "noInternetConnection": "इन्टरनेट जडान छैन",
+    "showingCachedData": "क्यासमा रहेका डेटा देखाइँदै"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" बनाउनुहोस्"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "लाम",
+      "queueIsEmpty": "लाम खाली छ"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "सुराको पाठ र विवरण हेर्न यो तिलावतमा ट्याग लगाउनुहोस्"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "प्लेलिस्ट • {{count}} सुरा",
+    "subtitle_other": "प्लेलिस्ट • {{count}} सुराहरू"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "यो प्लेलिस्टमा सुरा छैन"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "पादटिप्पणी"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "यही क्षणका लागि छानिएको तिलावत",
+      "discover": "पत्ता लगाउनुहोस्",
+      "discoverANewVoice": "नयाँ आवाज पत्ता लगाउनुहोस्",
+      "explore": "अन्वेषण गर्नुहोस्",
+      "exploreTheUnexpected": "नसोचेका कुरा पत्ता लगाउनुहोस्",
+      "hearSomethingNew": "केही नयाँ सुन्नुहोस्",
+      "letTheQuranSurpriseYou": "कुरआनले तपाईंलाई चकित पारोस्",
+      "randomMix": "अनियमित मिश्रण",
+      "randomRecitation": "अनियमित तिलावत",
+      "shuffleListen": "मिसाएर सुन्नुहोस्",
+      "surpriseMe": "मलाई चकित पार्नुहोस्"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "दृश्य मोड परिवर्तन पूरै एपमा लागू हुन्छ"
+  },
+  "reciterBrowse": {
+    "allReciters": "सबै कारीहरू",
+    "browseReciters": "कारीहरू हेर्नुहोस्",
+    "favorites": "मनपर्नेहरू"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "यो कारीका डाउनलोड छैनन्"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "मेरा अपलोडहरू"
+    }
+  },
+  "recitersView": {
+    "adhkar": "अज्कार",
+    "bestForMemorization": "कण्ठ गर्न उत्तम",
+    "bestForTajweed": "तज्विदका लागि उत्तम",
+    "continueListening": "सुन्न जारी राख्नुहोस्",
+    "exclusives": "विशेष तिलावतहरू",
+    "exploreByRewayah": "रिवायतअनुसार खोज्नुहोस्",
+    "featuredReciters": "छानिएका कारीहरू",
+    "fromYourCollection": "तपाईंको सङ्ग्रहबाट",
+    "myRecitations": "मेरा तिलावतहरू",
+    "newToQuranStartHere": "कुरआनसँग नयाँ परिचय हो? यहाँबाट सुरु गर्नुहोस्",
+    "seeMore": "थप हेर्नुहोस्",
+    "yourFavorites": "तपाईंका मनपर्नेहरू"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "सक्रिय",
+      "activeTafseer": "सक्रिय तफ्सिर",
+      "activeTranslation": "सक्रिय अनुवाद",
+      "deleteTafseer": "तफ्सिर मेटाउनुहोस्",
+      "deleteTranslation": "अनुवाद मेटाउनुहोस्",
+      "noTafaseerFound": "तफ्सिर भेटिएन",
+      "noTranslationsFound": "अनुवाद भेटिएन",
+      "unableToDownloadThisTafseer": "यो तफ्सिर डाउनलोड गर्न सकिएन। इन्टरनेट जडान जाँचेर फेरि प्रयास गर्नुहोस्।",
+      "unableToDownloadThisTranslation": "यो अनुवाद डाउनलोड गर्न सकिएन। इन्टरनेट जडान जाँचेर फेरि प्रयास गर्नुहोस्।"
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "हालका खोजहरू छैनन्",
+      "tryDifferentKeywordsOrCheck": "फरक मुख्य शब्द प्रयोग गर्नुहोस् वा हिज्जे जाँच्नुहोस्",
+      "yourSearchHistoryWillAppear": "तपाईंको खोज इतिहास यहाँ देखिनेछ"
+    },
+    "surahsOrReciters": "सुरा वा कारी खोज्नुहोस्"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "उन्नत अडियो नियन्त्रण",
+      "browseByJuz": "जुजअनुसार हेर्नुहोस्",
+      "createAndManageYourOwn": "आफ्ना मनपर्ने तिलावतहरूको व्यक्तिगत प्लेलिस्ट बनाउनुहोस् र व्यवस्थापन गर्नुहोस्",
+      "crystalClearRecitationsFromThe": "अनुकूलित स्ट्रिमिङसहित विश्वका उत्कृष्ट कारीहरूका स्पष्ट तिलावतहरू",
+      "curatedCollections": "छानिएका सङ्ग्रहहरू",
+      "customPlaylists": "व्यक्तिगत प्लेलिस्टहरू",
+      "customizeThemesAccentColorsAnd": "थिम, प्रमुख रङ र अडियो सेटिङ आफ्नै रुचिअनुसार मिलाउनुहोस्",
+      "downloadSurahsForOfflineListening": "जुनसुकै बेला र ठाउँमा इन्टरनेटबिना सुन्न सुराहरू डाउनलोड गर्नुहोस्",
+      "easilyNavigateThroughTheQuran": "जुजअनुसारको व्यवस्था र समूहीकरणबाट कुरआनमा सजिलै जानुहोस्",
+      "features": "सुविधाहरू",
+      "highQualityAudio": "उच्च गुणस्तरको अडियो",
+      "listenReflectRememberAllah": "सुन्नुहोस्। मनन गर्नुहोस्। अल्लाहलाई सम्झनुहोस्।",
+      "offlineDownloads": "अफलाइन डाउनलोडहरू",
+      "ourCommitment": "हाम्रो प्रतिबद्धता",
+      "ourMission": "हाम्रो उद्देश्य",
+      "personalization": "व्यक्तिगत अनुकूलन",
+      "precisePlaybackControlWithContinuous": "निरन्तर बजाउने सुविधा र समायोज्य तिलावत गतिसहित सटीक नियन्त्रण",
+      "quranBayanTafsirKnowledgeOur": "कुरआन • बयान • तफ्सिर • ज्ञान। सुन्ने र मनन गर्ने बानीलाई दैनिक जीवनको हिस्सा बनाउनु हाम्रो लक्ष्य हो: घरमा, यात्रामा र अल्लाहलाई सम्झने समय मिल्ने हरेक ठाउँमा।",
+      "readListenAndReflect": "पढ्नुहोस्, सुन्नुहोस् र मनन गर्नुहोस्",
+      "readTheMushafExploreTranslations": "मुसहफ पढ्नुहोस्, अनुवाद र तफ्सिर अन्वेषण गर्नुहोस्, आयत र टिप्पणी सुरक्षित गर्नुहोस् र दैनिक अज्कारमा फर्कनुहोस्। कारी छान्नुहोस्, प्लेलिस्ट बनाउनुहोस् र आफ्नो दिनअनुकूल सुन्ने अनुभव बनाउनुहोस्। उपलब्ध सुविधाहरू उपकरणअनुसार फरक हुन्छन्; मोबाइल एपले अफलाइन सुन्न डाउनलोड पनि समर्थन गर्छन्।",
+      "thoughtfullyOrganizedSurahsForDifferent": "विभिन्न अवसर र विषयका लागि ध्यानपूर्वक व्यवस्थित सुराहरू",
+      "weCareAboutTheAccuracy": "हामी पवित्र सामग्रीको शुद्धता, सम्मानपूर्ण डिजाइन र भरपर्दो पहुँचमा ध्यान दिन्छौँ। प्रयोगकर्ताको ख्याल गर्दै ISTIMA सुधार्दै जान्छौँ। अल्लाहले यो प्रयास स्वीकार गरून् र सुन्ने, पढ्ने तथा मनन गर्ने सबैलाई लाभदायक बनाऊन्।"
+    },
+    "aboutApp": "{{name}} बारे",
+    "appearance": "दृश्य",
+    "defaultreciter": {
+      "changeDefaultReciter": "पूर्वनिर्धारित कारी बदल्नुहोस्"
+    },
+    "developer": "विकासकर्ता",
+    "floatingDevMenu": "तैरिने विकासकर्ता मेनु",
+    "language": "भाषा",
+    "languageDescription": "एपको भाषा छान्नुहोस्",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "सधैँ चयन गरिएको पूर्वनिर्धारित कारी प्रयोग गर्नुहोस्",
+      "askEveryTime": "हरेक पटक सोध्नुहोस्",
+      "chooseAReciterEachTime": "हरेक पटक बजाउँदा कारी छान्नुहोस्",
+      "chooseHowYouWantTo": "सुराहरू बजाउँदा कारी कसरी छान्ने भन्ने रोज्नुहोस्",
+      "defaultSelectionMethod": "पूर्वनिर्धारित छनोट विधि",
+      "searchThroughOurCompleteCollection": "हाम्रो कारीहरूको पूर्ण सङ्ग्रहमा खोज्नुहोस्",
+      "selectionPreference": "छनोट प्राथमिकता"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "सबै डाउनलोड हटाइएका छन्।",
+      "areYouSureYouWant": "के सबै डाउनलोड गरिएको सामग्री हटाउन चाहनुहुन्छ? यो कार्य उल्टाउन सकिँदैन।",
+      "cache": "क्यास",
+      "cacheHasBeenCleared": "क्यास खाली भयो।",
+      "clearCache": "क्यास खाली गर्नुहोस्",
+      "failedToClearCache": "क्यास खाली गर्न सकिएन।",
+      "failedToRemoveDownloads": "डाउनलोड हटाउन सकिएन।",
+      "free": "खाली",
+      "loadingStorageInformation": "भण्डारण जानकारी लोड हुँदै...",
+      "manageStorage": "भण्डारण व्यवस्थापन",
+      "otherApps": "अन्य एपहरू",
+      "removeAllDownloads": "सबै डाउनलोड हटाउनुहोस्",
+      "removeAllTheQuranContent": "अफलाइन प्रयोगका लागि डाउनलोड गर्नुभएको कुरआनको सबै सामग्री हटाउनुहोस्।",
+      "storageBreakdown": "भण्डारणको विवरण",
+      "success": "सफल",
+      "thisWillClearYourCache": "यसले क्यास खाली गर्नेछ। डाउनलोडहरू हटाइने छैनन्।",
+      "youCanFreeUpStorage": "क्यास खाली गरेर भण्डारणमा ठाउँ बनाउन सक्नुहुन्छ। डाउनलोडहरू हटाइने छैनन्।"
+    },
+    "themePicker": {
+      "auto": "स्वचालित",
+      "dark": "गाढा",
+      "light": "उज्यालो"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "परिवर्तन विवरण उपलब्ध छैन"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "{{name}} बारे",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "मनपर्ने कारी थप्नुहोस्",
+      "uploadRecitation": "तिलावत अपलोड गर्नुहोस्"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "वातावरणका आवाजहरू",
+      "none": "कुनै पनि छैन",
+      "volume": "आवाजको स्तर"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "जस्तै, बिहानका तिलावतहरू"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "डाउनलोड हटाउनुहोस्"
+    },
+    "favoriteRecitersSheet": {
+      "done": "सकियो"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "सङ्ग्रहमा थप्नुहोस्",
+      "addToQueue": "लाममा थप्नुहोस्",
+      "continuePlaying": "बजाउन जारी राख्नुहोस्",
+      "goToReciter": "कारीमा जानुहोस्",
+      "removeFromRecents": "हालैका सूचीबाट हटाउनुहोस्"
+    },
+    "mushafLayoutSheet": {
+      "back": "पछाडि"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "अन्तिम आयत",
+      "playbackSettings": "बजाउने सेटिङहरू",
+      "selectRange": "दायरा छान्नुहोस्",
+      "startingVerse": "सुरुको आयत"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "दोहोर्‍याउने सेटिङहरू",
+      "start": "सुरु गर्नुहोस्",
+      "verseRange": "आयतको दायरा"
+    },
+    "organizeRecitationSheet": {
+      "category": "वर्ग",
+      "customReciter": "आफ्नै कारी",
+      "duA": "दुआ",
+      "eGMorningAdhkar": "जस्तै, बिहानका अज्कार",
+      "lecture": "प्रवचन",
+      "moreOptions": "थप विकल्पहरू",
+      "other": "अन्य",
+      "recording": "रेकर्डिङ",
+      "rewayah": "रिवायत",
+      "searchSurahs": "सुरा खोज्नुहोस्...",
+      "style": "शैली",
+      "tafsir": "तफ्सिर",
+      "title": "शीर्षक",
+      "type": "प्रकार",
+      "verseRangeOptional": "आयतको दायरा (वैकल्पिक)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "बजाउने गति"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "यो प्लेलिस्टका सबै वस्तु पहिल्यै डाउनलोड गरिएका छन्।",
+      "anErrorOccurredWhileDownloading": "प्लेलिस्ट डाउनलोड गर्दा त्रुटि भयो। फेरि प्रयास गर्नुहोस्।",
+      "deletePlaylist": "प्लेलिस्ट मेटाउनुहोस्",
+      "downloadingPlaylist": "प्लेलिस्ट डाउनलोड हुँदै...",
+      "editPlaylist": "प्लेलिस्ट सम्पादन गर्नुहोस्",
+      "emptyPlaylist": "खाली प्लेलिस्ट",
+      "thisPlaylistIsEmpty": "यो प्लेलिस्ट खाली छ।"
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "रिवायतबारे",
+      "availableRewayat": "उपलब्ध रिवायतहरू"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "सुरा प्लेलिस्टमा थप्न सकिएन",
+      "failedToCreatePlaylist": "प्लेलिस्ट बनाउन सकिएन",
+      "noPlaylistsYetCreateYour": "अहिलेसम्म प्लेलिस्ट छैन। माथि आफ्नो पहिलो प्लेलिस्ट बनाउनुहोस्!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "हरेक पटक सोध्नुहोस्",
+      "randomReciter": "अनियमित कारी",
+      "selectReciter": "कारी छान्नुहोस्"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "यो आयतसँग मिल्दोजुल्दो आयत भेटिएन।",
+      "similarWording": "मिल्दोजुल्दो शब्दावली"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "निद्रा टाइमर",
+      "turnOffTimer": "टाइमर बन्द गर्नुहोस्"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "प्लेलिस्टबाट हटाउनुहोस्"
+    },
+    "verseActionsSheet": {
+      "addNote": "टिप्पणी थप्नुहोस्",
+      "copy": "प्रतिलिपि गर्नुहोस्",
+      "repeat": "दोहोर्‍याउनुहोस्",
+      "similarVerses": "मिल्दोजुल्दा आयतहरू",
+      "tafseer": "तफ्सिर",
+      "theme": "थिम"
+    },
+    "verseCopySheet": {
+      "copyOptions": "प्रतिलिपिका विकल्पहरू",
+      "selectWhatToCopy": "के प्रतिलिपि गर्ने छान्नुहोस्"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "हाइलाइटको रङ"
+    },
+    "verseShareSheet": {
+      "shareVerse": "आयत साझा गर्नुहोस्"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "{{count}} आयतमा भेटियो",
+    "foundIn_other": "{{count}} आयतहरूमा भेटियो"
+  },
+  "surahItem": {
+    "moreOptions": "थप विकल्पहरू",
+    "opensMenuWithAdditionalActions": "यो सुराका थप कार्यहरूको मेनु खोल्छ",
+    "tapToPlaySurah": "सुरा बजाउन ट्याप गर्नुहोस्"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "अमान्य प्लेलिस्ट आईडी",
+      "playlistNotFound": "प्लेलिस्ट भेटिएन"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "यो प्लेलिस्टका सबै सुरा भएका कारी भेटिएनन्। अर्को प्लेलिस्ट प्रयास गर्नुहोस्।",
+      "failedToPlayPlaylistPlease": "प्लेलिस्ट बजाउन सकिएन। फेरि प्रयास गर्नुहोस्।",
+      "failedToPlayTrackPlease": "ट्र्याक बजाउन सकिएन। फेरि प्रयास गर्नुहोस्।",
+      "failedToShufflePlaylistPlease": "प्लेलिस्ट मिसाउन सकिएन। फेरि प्रयास गर्नुहोस्।",
+      "noReciterAvailable": "कारी उपलब्ध छैन",
+      "noSurahsInThisPlaylist": "यो प्लेलिस्टमा सुरा छैन"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "खाता",
+      "appData": "एप र डेटा",
+      "audioPlayback": "अडियो र प्लेब्याक",
+      "chooseYourPreferredReciter": "आफ्नो मनपर्ने कारी छान्नुहोस्",
+      "customizeQuranDisplayOptions": "कुरआन प्रदर्शनका विकल्प मिलाउनुहोस्",
+      "customizeReciterSelection": "कारी छनोट मिलाउनुहोस्",
+      "featureRequests": "सुविधाका अनुरोधहरू",
+      "feedback": "प्रतिक्रिया",
+      "helpSupport": "मद्दत र सहायता",
+      "learnMoreAboutOurMission": "हाम्रो उद्देश्यबारे थप जान्नुहोस्",
+      "manageQuranTranslationsAndCommentary": "कुरआनका अनुवाद र व्याख्या व्यवस्थापन गर्नुहोस्",
+      "privacyPolicy": "गोपनीयता नीति",
+      "quran": "कुरआन",
+      "readOurTermsOfService": "हाम्रा सेवा सर्तहरू पढ्नुहोस्",
+      "seeWhatSNewIn": "यो संस्करणमा नयाँ के छ हेर्नुहोस्",
+      "shareYourExperienceWithOthers": "आफ्नो अनुभव अरूसँग साझा गर्नुहोस्",
+      "showTheFloatingDeveloperTools": "तैरिने विकासकर्ता उपकरणको बटन देखाउनुहोस्",
+      "suggestImprovementsAndNewFeatures": "सुधार र नयाँ सुविधाका सुझाव दिनुहोस्",
+      "termsOfService": "सेवा सर्तहरू",
+      "viewAndManageStorageUsage": "भण्डारण प्रयोग हेर्नुहोस् र व्यवस्थापन गर्नुहोस्",
+      "viewOurPrivacyPolicy": "हाम्रो गोपनीयता नीति हेर्नुहोस्",
+      "writeAReview": "समीक्षा लेख्नुहोस्"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "रद्द गर्नुहोस्",
+    "close": "बन्द गर्नुहोस्",
+    "collection": "सङ्ग्रह",
+    "download": "डाउनलोड गर्नुहोस्",
+    "downloads": "डाउनलोडहरू",
+    "error": "केही गडबड भयो",
+    "favorites": "मनपर्नेहरू",
+    "home": "गृहपृष्ठ",
+    "language": "भाषा",
+    "library": "पुस्तकालय",
+    "loading": "लोड हुँदै...",
+    "noResults": "नतिजा भेटिएन",
+    "offline": "तपाईं अफलाइन हुनुहुन्छ",
+    "pause": "पज गर्नुहोस्",
+    "play": "बजाउनुहोस्",
+    "retry": "फेरि प्रयास गर्नुहोस्",
+    "save": "सुरक्षित गर्नुहोस्",
+    "search": "खोज्नुहोस्",
+    "settings": "सेटिङहरू",
+    "surahs": "सुराहरू"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "सामग्री छान्नुहोस्"
+    },
+    "highlightContent": {
+      "chooseColor": "रङ छान्नुहोस्"
+    },
+    "noteContent": {
+      "saveNote": "टिप्पणी सुरक्षित गर्नुहोस्"
+    },
+    "shareContent": {
+      "shareLink": "लिङ्क साझा गर्नुहोस्"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "यो आयतसँग मिल्दोजुल्दो आयत भेटिएन।",
+      "sharedPhrases": "साझा वाक्यांशहरू",
+      "similarWording": "मिल्दोजुल्दो शब्दावली"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "तफ्सिर डाउनलोड गरिएको छैन",
+      "tafseerNotAvailableForThis": "यो आयतका लागि तफ्सिर उपलब्ध छैन",
+      "tapHereToDownloadA": "तफ्सिर डाउनलोड गर्न र व्याख्या हेर्न यहाँ ट्याप गर्नुहोस्।"
+    },
+    "themeContent": {
+      "noThematicDataForThis": "यो आयतका लागि विषयगत डेटा छैन।",
+      "passage": "खण्ड"
+    },
+    "translationContent": {
+      "switch": "बदल्नुहोस्",
+      "translationNotAvailable": "अनुवाद उपलब्ध छैन"
+    }
+  },
+  "version": {
+    "label": "संस्करण {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "यसमा नयाँ के छ"
+  },
+  "wordDetail": {
+    "context": "आयत {{surah}}:{{ayah}} · {{total}} मध्ये शब्द {{position}}"
+  }
+}

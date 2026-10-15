@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Хато ҳангоми оғоз кардани плеер: {{message}}",
+    "errorLoadingFonts": "Хато ҳангоми боркунии ҳуруф"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Саҳифаи асосии ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Ҳама",
+      "clearAll": "Ҳамаро пок кардан",
+      "hasPhoto": "Акс дорад"
+    },
+    "filterModal": {
+      "apply": "Татбиқ кардан",
+      "filterReciters": "Полоиши қориён",
+      "recitationStyles": "Услубҳои тиловат",
+      "reset": "Барқарор кардан",
+      "rewayatTypes": "Навъҳои ривоят"
+    },
+    "recitersFound_one": "Бо полоишҳои ҷорӣ {{count}} қорӣ ёфт шуд",
+    "recitersFound_other": "Бо полоишҳои ҷорӣ {{count}} қорӣ ёфт шуд"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Сураҳои писандида"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Барои дидани оятҳо дар ин ҷо ба онҳо хатчӯб гузоред",
+      "bookmarks": "Хатчӯбҳо",
+      "noBookmarksYet": "Ҳоло хатчӯб нест",
+      "removeBookmark": "Нест кардани хатчӯб"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Ривоятҳо",
+      "searchPlaylistsRecitersSurahsRewayat": "Ҷустуҷӯи рӯйхатҳо, қориён, сураҳо, ривоятҳо...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Ҷустуҷӯи рӯйхатҳо, қориён, сураҳо, ривоятҳо ва боргириҳо",
+      "searchYourCollection": "Ҷустуҷӯ дар маҷмӯаи шумо",
+      "searching": "Ҷустуҷӯ мешавад...",
+      "tryDifferentKeywords": "Калимаҳои дигари ҷустуҷӯро санҷед"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Барои дидани сураҳо дар ин ҷо онҳоро боргирӣ кунед",
+      "noDownloadsYet": "Ҳоло боргирӣ нест",
+      "playAll": "Пахши ҳама"
+    },
+    "favoritereciters": {
+      "addReciters": "Илова кардани қориён",
+      "addRecitersToSeeThem": "Барои дидани қориён дар ин ҷо онҳоро илова кунед",
+      "noFavoriteRecitersYet": "Ҳоло қорӣ дар дӯстдоштаҳо нест",
+      "removeFromFavorites": "Аз дӯстдоштаҳо баровардан",
+      "searchFavoriteReciters": "Ҷустуҷӯи қориёни дӯстдошта"
+    },
+    "index": {
+      "addToCollection": "Ба маҷмӯа илова кардан",
+      "bookmarks": "Хатчӯбҳо",
+      "createYourFirstPlaylist": "Аввалин рӯйхати пахши худро созед",
+      "downloads": "Боргириҳо",
+      "items_one": "{{count}} ҷузъ",
+      "items_other": "{{count}} ҷузъ",
+      "loved": "Писандидаҳо",
+      "noBookmarksYet": "Ҳоло хатчӯб нест",
+      "noDownloadsYet": "Ҳоло боргирӣ нест",
+      "noFavoritesYet": "Ҳоло дӯстдоштае нест",
+      "noLovedSurahsYet": "Ҳоло сураи писандида нест",
+      "noNotesYet": "Ҳоло ёддошт нест",
+      "noUploadsYet": "Ҳоло боргузорӣ нест",
+      "notes": "Ёддоштҳо",
+      "playlists": "Рӯйхатҳои пахш",
+      "reciters": "Қориён",
+      "uploads": "Боргузориҳо"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Ҳамаи сураҳои писандида аллакай боргирӣ шудаанд.",
+      "allLovedSurahsHaveBeen": "Ҳамаи сураҳои писандида боргирӣ шуданд.",
+      "downloadError": "Хатои боргирӣ",
+      "loveSurahsToSeeThem": "Барои дидани сураҳо дар ин ҷо онҳоро писанд кунед",
+      "noLovedSurahsYet": "Ҳоло сураи писандида нест",
+      "someDownloadsMayHaveFailed": "Баъзе боргириҳо шояд анҷом наёфта бошанд.",
+      "unloveAllSurahs": "Бекор кардани писанди ҳамаи сураҳо"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Барои дидани ёддоштҳо дар ин ҷо ба оятҳо ёддошт илова кунед",
+      "editNote": "Таҳрири ёддошт",
+      "noNotesYet": "Ҳоло ёддошт нест",
+      "notes": "Ёддоштҳо"
+    },
+    "playlistModal": {
+      "name": "Ном"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Барои дидани рӯйхатҳои пахш дар ин ҷо онҳоро созед",
+      "noPlaylistsYet": "Ҳоло рӯйхати пахш нест",
+      "playlists": "Рӯйхатҳои пахш"
+    },
+    "uploads": {
+      "removeAllUploads": "Нест кардани ҳамаи боргузориҳо",
+      "uploadRecitationsToSeeThem": "Барои дидани тиловатҳо дар ин ҷо онҳоро боргузорӣ кунед"
+    }
+  },
+  "common": {
+    "1Time": "1 бор",
+    "2Times": "2 бор",
+    "3Times": "3 бор",
+    "addToCollection": "Ба маҷмӯа илова кардан",
+    "addToQueue": "Ба навбат илова кардан",
+    "allSurahs": "Ҳамаи сураҳо",
+    "alreadyDownloaded": "Аллакай боргирӣ шудааст",
+    "arabic": "Арабӣ",
+    "asc": "Афзоянда",
+    "browseAll": "Дидани ҳама",
+    "browseAllReciters": "Дидани ҳамаи қориён",
+    "cancel": "Бекор кардан",
+    "clear": "Пок кардан",
+    "copyToClipboard": "Нусхабардорӣ ба ҳофизаи муваққатӣ",
+    "createNewPlaylist": "Сохтани рӯйхати пахши нав",
+    "defaultReciter": "Қории пешфарз",
+    "delete": "Нест кардан",
+    "deleteNote": "Нест кардани ёддошт",
+    "deleteRecitation": "Нест кардани тиловат",
+    "desc": "Коҳишёбанда",
+    "downloadComplete": "Боргирӣ анҷом ёфт",
+    "downloadFailed": "Боргирӣ нашуд",
+    "downloads": "Боргириҳо",
+    "editDetails": "Таҳрири тафсилот",
+    "error": "Хато",
+    "favoriteReciters": "Қориёни дӯстдошта",
+    "followAlong": "Ҳамроҳ хондан",
+    "from": "Аз",
+    "goToReciter": "Гузаштан ба қорӣ",
+    "goToVerse": "Гузаштан ба оят",
+    "learnAboutSurah": "Маълумот дар бораи сура",
+    "loading": "Бор мешавад...",
+    "loop": "Пахши даврӣ",
+    "loved": "Писандидаҳо",
+    "mushafSettings": "Танзимоти мусҳаф",
+    "next": "Баъдӣ",
+    "noRecitersFound": "Қорӣ ёфт нашуд",
+    "noResultsFound": "Натиҷа ёфт нашуд",
+    "noUploadsYet": "Ҳоло боргузорӣ нест",
+    "play": "Пахш кардан",
+    "playEachVerse": "Пахши ҳар оят",
+    "playNow": "Ҳозир пахш кардан",
+    "playSpeed": "Суръати пахш",
+    "playTheRange": "Пахши фосила",
+    "playlistName": "Номи рӯйхати пахш",
+    "prev": "Пешина",
+    "readingTheme": "Мавзӯи хониш",
+    "recentSearches": "Ҷустуҷӯҳои охирин",
+    "reciter": "Қорӣ",
+    "reciterChoice": "Интихоби қорӣ",
+    "reciters": "Қориён",
+    "remove": "Хориҷ кардан",
+    "removeAllDownloads": "Нест кардани ҳамаи боргириҳо",
+    "removeHighlight": "Бардоштани равшаннамоӣ",
+    "rev": "Тартиби нозилшавӣ",
+    "save": "Захира кардан",
+    "search": "Ҷустуҷӯ",
+    "searchReciters": "Ҷустуҷӯи қориён...",
+    "searchSurahs": "Ҷустуҷӯи сураҳо",
+    "share": "Мубодила кардан",
+    "shareAsImage": "Мубодила ҳамчун тасвир",
+    "shareAsText": "Мубодила ҳамчун матн",
+    "sharedPhrases": "Ибораҳои муштарак",
+    "showBasmallah": "Намоиши басмала",
+    "stop": "Қатъ кардан",
+    "storage": "Ҳофиза",
+    "surah": "Сура",
+    "surahs": "Сураҳо",
+    "to": "То",
+    "translation": "Тарҷума",
+    "translationsTafaseer": "Тарҷумаҳо ва тафсирҳо",
+    "transliteration": "Баргардони ҳарфӣ",
+    "uploads": "Боргузориҳо",
+    "useDefaultReciter": "Истифодаи қории пешфарз",
+    "verseReference": "Нишонии оят",
+    "verses": "Оятҳо",
+    "whatSNew": "Чӣ нав аст",
+    "wordByWord": "Калима ба калима",
+    "writeYourNoteHere": "Ёддошти худро ин ҷо нависед...",
+    "yourPlaylists": "Рӯйхатҳои пахши шумо"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Пахши ҳамаи сураҳо"
+    },
+    "searchHeader": {
+      "searchSurahs": "Ҷустуҷӯи сураҳо"
+    },
+    "searchView": {
+      "noSurahsFound": "Сура ёфт нашуд"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Сура дастрас нест"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Илова кардани тиловат",
+      "uploadRecitationsToSeeThem": "Барои дидани тиловатҳо дар ин ҷо онҳоро боргузорӣ кунед"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Боргиришуда • {{count}} сура",
+    "subtitle_other": "Боргиришуда • {{count}} сура"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Бубахшед, хатое рух дод"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Дидани ҳамаи 114 сура"
+    },
+    "savedAdhkarHero": {
+      "saved": "Захирашуда",
+      "yourCollection": "Маҷмӯаи шумо"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "СУРАИ РӮЗ"
+    },
+    "surahsHero": {
+      "number": "Рақам"
+    }
+  },
+  "language": {
+    "later": "Баъдтар",
+    "restartMessage": "Барои татбиқи самти нави тарҳ барномаро аз нав оғоз кунед.",
+    "restartNow": "Ҳозир аз нав оғоз кардан",
+    "restartTitle": "Оғози дубора лозим аст",
+    "search": "Ҷустуҷӯи забонҳо",
+    "system": "Забони дастгоҳ"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Идома додан"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Гузарондан"
+    }
+  },
+  "mushaf": {
+    "juz": "Ҷузъи {{juz}}",
+    "loadingMushaf": "Мусҳаф бор мешавад…",
+    "main": {
+      "mushafSettings": "Танзимоти мусҳаф"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Иваз кардани қорӣ",
+      "changeReciter2": "Иваз кардани қорӣ",
+      "nextAyah": "Ояти баъдӣ",
+      "playbackOptions": "Имконоти пахш",
+      "previousAyah": "Ояти пешина"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Ёфтани сураҳо, оятҳо, саҳифаҳо ё ҷузъҳо",
+      "recentReads": "ХОНИШҲОИ ОХИРИН",
+      "searchSurahsPagesOrJuz": "Ҷустуҷӯи сураҳо, саҳифаҳо ё ҷузъҳо...",
+      "searchTheMushaf": "Ҷустуҷӯ дар мусҳаф"
+    },
+    "options": "Имконот",
+    "page": "Саҳифаи {{page}}",
+    "pageAndSurah": "Саҳифаи {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Мусҳаф бор нашуд.",
+    "tryAgain": "Аз нав кӯшиш кунед"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Номи Аллоҳ ва унвонҳои илоҳӣ монанди Раббро дар мусҳаф равшан мекунад."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Равшаннамоии навбатии порчаҳо аз рӯйи мавзӯъ",
+    "arabicFontSize": "Андозаи ҳуруфи арабӣ",
+    "bold": "Ғафс",
+    "book": "Китоб",
+    "colorLegend": "Шарҳи рангҳо",
+    "currentlyReading": "Ҳоло хонда мешавад",
+    "divineNames": "НОМҲОИ ИЛОҲӢ",
+    "fontSize": "Андозаи ҳуруф",
+    "fullscreen": "Тамоми экран",
+    "hamzaReplacedByLongVowel": "Ивазшавии ҳамза бо садоноки дароз",
+    "heavyLamInAllahAfter": "Ломи ғафс дар калимаи Аллоҳ пас аз ҳарфҳои ғафс",
+    "highlightAllahRabb": "Равшан кардани Аллоҳ / Рабб",
+    "horizontal": "Уфуқӣ",
+    "ibdal": "Ибдол",
+    "list": "Рӯйхат",
+    "loadingSample": "Намуна бор мешавад...",
+    "maddAlBadal": "Мадди бадал",
+    "maximumProminence": "Равшаннамоии бештар",
+    "medium": "Миёна",
+    "modernMadinahPrintedPipeline": "Равиши чопи муосири Мадина",
+    "mushaf": "Мусҳаф",
+    "normal": "Муқаррарӣ",
+    "originalMushafWeight": "Ғафсии аслии ҳуруфи мусҳаф",
+    "pageDesign": "ТАРҲИ САҲИФА",
+    "prolongedVowelAfterHamza": "Садоноки дароз пас аз ҳамза",
+    "readingTheme": "МАВЗӮИ ХОНИШ",
+    "scrollDirection": "САМТИ ҲАРАКАТИ САҲИФА",
+    "showDifferences": "Намоиши фарқҳо",
+    "silah": "Сила",
+    "slightlyMoreProminent": "Каме барҷастатар",
+    "softenedHamzaPronunciation": "Талаффузи сабуки ҳамза",
+    "subcontinentNastaliqStyle": "Услуби настаълиқи нимҷазираи Ҳинд",
+    "taghlizAlLam": "Тағлиз ал-лом",
+    "tajweedColoring": "Рангҳои таҷвид",
+    "tashilMusahhala": "Тасҳил / Мусаҳҳала",
+    "textPreviewNotYetAvailable": "ПЕШНАМОИШИ МАТН ҲОЛО ДАСТРАС НЕСТ",
+    "textThickness": "ҒАФСИИ МАТН",
+    "thematicHighlighting": "Равшаннамоӣ аз рӯйи мавзӯъ",
+    "trailingVowelOrMoodChange": "Танҳо тағйири садоноки охир ё сиға",
+    "usingSaheehInternationalTranslationWith": "Истифода мешавад: тарҷумаи Saheeh International бо поварақҳо",
+    "vertical": "Амудӣ",
+    "viewType": "НАВЪИ НАМОИШ",
+    "vowelMoodShift": "Тағйири садонок / сиға",
+    "wordByWord": "КАЛИМА БА КАЛИМА",
+    "wordVariant": "Гунаи калима"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Пайвастшавӣ ба сервер имкон надорад",
+    "connectionRestored": "Пайваст барқарор шуд",
+    "noInternetConnection": "Пайвасти интернет нест",
+    "showingCachedData": "Маълумоти ҳофизаи ниҳон нишон дода мешавад"
+  },
+  "organize": {
+    "createReciter": "Сохтани \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Навбат",
+      "queueIsEmpty": "Навбат холӣ аст"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Барои дидани матн ва тафсилоти сура ин тиловатро барчасп гузоред"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Рӯйхати пахш • {{count}} сура",
+    "subtitle_other": "Рӯйхати пахш • {{count}} сура"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Дар ин рӯйхати пахш сура нест"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Поварақ"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Тиловате, ки барои ҳамин лаҳза интихоб шудааст",
+      "discover": "Кашф кардан",
+      "discoverANewVoice": "Овози наверо кашф кунед",
+      "explore": "Омӯхтан",
+      "exploreTheUnexpected": "Чизҳои ғайричашмдоштро кашф кунед",
+      "hearSomethingNew": "Чизи наверо бишнавед",
+      "letTheQuranSurpriseYou": "Бигзор Қуръон шуморо ба ҳайрат орад",
+      "randomMix": "Омехтаи тасодуфӣ",
+      "randomRecitation": "Тиловати тасодуфӣ",
+      "shuffleListen": "Омехта кунед ва гӯш диҳед",
+      "surpriseMe": "Маро ба ҳайрат ор"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Тағйири намуди зоҳирӣ ба тамоми барнома татбиқ мешавад"
+  },
+  "reciterBrowse": {
+    "allReciters": "Ҳамаи қориён",
+    "browseReciters": "Дидани қориён",
+    "favorites": "Дӯстдоштаҳо"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Барои ин қорӣ боргирӣ нест"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Боргузориҳои ман"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Азкор",
+    "bestForMemorization": "Беҳтарин барои ҳифз",
+    "bestForTajweed": "Беҳтарин барои таҷвид",
+    "continueListening": "Идома додани шунидан",
+    "exclusives": "Тиловатҳои махсус",
+    "exploreByRewayah": "Омӯхтан аз рӯйи ривоят",
+    "featuredReciters": "Қориёни баргузида",
+    "fromYourCollection": "Аз маҷмӯаи шумо",
+    "myRecitations": "Тиловатҳои ман",
+    "newToQuranStartHere": "Бо Қуръон нав ошно мешавед? Аз ин ҷо оғоз кунед",
+    "seeMore": "Дидани бештар",
+    "yourFavorites": "Дӯстдоштаҳои шумо"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Фаъол",
+      "activeTafseer": "ТАФСИРИ ФАЪОЛ",
+      "activeTranslation": "ТАРҶУМАИ ФАЪОЛ",
+      "deleteTafseer": "Нест кардани тафсир",
+      "deleteTranslation": "Нест кардани тарҷума",
+      "noTafaseerFound": "Тафсир ёфт нашуд",
+      "noTranslationsFound": "Тарҷума ёфт нашуд",
+      "unableToDownloadThisTafseer": "Ин тафсир боргирӣ нашуд. Пайвасти интернетро санҷед ва аз нав кӯшиш кунед.",
+      "unableToDownloadThisTranslation": "Ин тарҷума боргирӣ нашуд. Пайвасти интернетро санҷед ва аз нав кӯшиш кунед."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Ҷустуҷӯи охирин нест",
+      "tryDifferentKeywordsOrCheck": "Калимаҳои дигарро санҷед ё имлоро тафтиш кунед",
+      "yourSearchHistoryWillAppear": "Таърихи ҷустуҷӯятон ин ҷо пайдо мешавад"
+    },
+    "surahsOrReciters": "Ҷустуҷӯи сураҳо ё қориён"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Идоракунии пешрафтаи садо",
+      "browseByJuz": "Дидан аз рӯйи ҷузъ",
+      "createAndManageYourOwn": "Аз тиловатҳои дӯстдоштаи худ рӯйхатҳои шахсӣ созед ва идора кунед",
+      "crystalClearRecitationsFromThe": "Тиловатҳои соф аз беҳтарин қориёни ҷаҳон бо пахши ҷараёнии беҳина",
+      "curatedCollections": "Маҷмӯаҳои баргузида",
+      "customPlaylists": "Рӯйхатҳои шахсии пахш",
+      "customizeThemesAccentColorsAnd": "Мавзӯъҳо, рангҳои асосӣ ва танзимоти садоро ба завқи худ мувофиқ кунед",
+      "downloadSurahsForOfflineListening": "Сураҳоро барои шунидани бидуни интернет дар ҳар ҷой ва ҳар вақт боргирӣ кунед",
+      "easilyNavigateThroughTheQuran": "Бо тартиб ва гурӯҳбандии ҷузъӣ ба осонӣ дар Қуръон ҳаракат кунед",
+      "features": "ИМКОНИЯТҲО",
+      "highQualityAudio": "Садои баландсифат",
+      "listenReflectRememberAllah": "Бишнавед. Тафаккур кунед. Аллоҳро ёд кунед.",
+      "offlineDownloads": "Боргириҳои офлайн",
+      "ourCommitment": "Уҳдадории мо",
+      "ourMission": "Рисолати мо",
+      "personalization": "Шахсисозӣ",
+      "precisePlaybackControlWithContinuous": "Идоракунии дақиқ бо пахши пайваста ва суръати танзимшавандаи тиловат",
+      "quranBayanTafsirKnowledgeOur": "Қуръон • Баён • Тафсир • Дониш. Ҳадафи мо ин аст, ки шунидан ва тафаккур қисми зиндагии ҳаррӯза гардад: дар хона, дар роҳ ва ҳар ҷое, ки барои ёди Аллоҳ фурсат доред.",
+      "readListenAndReflect": "Бихонед, бишнавед ва тафаккур кунед",
+      "readTheMushafExploreTranslations": "Мусҳафро бихонед, тарҷума ва тафсирро омӯзед, оятҳо ва ёддоштҳоро захира кунед ва ба азкори ҳаррӯза баргардед. Қории худро интихоб кунед, рӯйхатҳои пахш созед ва шуниданро ба рӯзи худ мувофиқ кунед. Имкониятҳо вобаста ба дастгоҳ фарқ мекунанд; барномаҳои мобилӣ боргирӣ барои шунидани офлайнро низ дастгирӣ мекунанд.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Сураҳои бодиққат тартибдодашуда барои ҳолатҳо ва мавзӯъҳои гуногун",
+      "weCareAboutTheAccuracy": "Мо ба дурустии муҳтавои муқаддас, тарҳи эҳтиромона ва дастрасии боэътимод аҳамият медиҳем. ISTIMA-ро бо ғамхорӣ ба истифодабарандагон беҳтар месозем. Аллоҳ ин кӯшишро қабул кунад ва онро барои ҳар шунаванда, хонанда ва тафаккуркунанда судманд гардонад."
+    },
+    "aboutApp": "Дар бораи {{name}}",
+    "appearance": "НАМУДИ ЗОҲИРӢ",
+    "defaultreciter": {
+      "changeDefaultReciter": "ИВАЗ КАРДАНИ ҚОРИИ ПЕШФАРЗ"
+    },
+    "developer": "ТАҲИЯГАР",
+    "floatingDevMenu": "Менюи шинокунандаи таҳиягар",
+    "language": "Забон",
+    "languageDescription": "Забони барномаро интихоб кунед",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Ҳамеша қории пешфарзи интихобшударо истифода баред",
+      "askEveryTime": "Ҳар бор пурсидан",
+      "chooseAReciterEachTime": "Ҳар бор ҳангоми пахш қорӣ интихоб кунед",
+      "chooseHowYouWantTo": "Тарзи интихоби қориёнро ҳангоми пахши сураҳо муайян кунед",
+      "defaultSelectionMethod": "УСУЛИ ИНТИХОБИ ПЕШФАРЗ",
+      "searchThroughOurCompleteCollection": "Дар маҷмӯаи пурраи қориёни мо ҷустуҷӯ кунед",
+      "selectionPreference": "АФЗАЛИЯТИ ИНТИХОБ"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Ҳамаи боргириҳо нест шуданд.",
+      "areYouSureYouWant": "Мутмаинед, ки мехоҳед тамоми муҳтавои боргиришударо нест кунед? Ин амал бозгардонида намешавад.",
+      "cache": "Ҳофизаи ниҳон",
+      "cacheHasBeenCleared": "Ҳофизаи ниҳон пок шуд.",
+      "clearCache": "Пок кардани ҳофизаи ниҳон",
+      "failedToClearCache": "Ҳофизаи ниҳон пок нашуд.",
+      "failedToRemoveDownloads": "Боргириҳо нест нашуданд.",
+      "free": "Холӣ",
+      "loadingStorageInformation": "Маълумоти ҳофиза бор мешавад...",
+      "manageStorage": "ИДОРАКУНИИ ҲОФИЗА",
+      "otherApps": "Барномаҳои дигар",
+      "removeAllDownloads": "Нест кардани ҳамаи боргириҳо",
+      "removeAllTheQuranContent": "Ҳамаи муҳтавои Қуръонро, ки барои истифодаи офлайн боргирӣ кардаед, нест кунед.",
+      "storageBreakdown": "ТАҚСИМОТИ ҲОФИЗА",
+      "success": "Муваффақ",
+      "thisWillClearYourCache": "Ин ҳофизаи ниҳонро пок мекунад. Боргириҳои шумо нест намешаванд.",
+      "youCanFreeUpStorage": "Бо пок кардани ҳофизаи ниҳон метавонед ҷой холӣ кунед. Боргириҳои шумо нест намешаванд."
+    },
+    "themePicker": {
+      "auto": "Худкор",
+      "dark": "Торик",
+      "light": "Равшан"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Рӯйхати тағйирот дастрас нест"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Дар бораи {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Илова кардани қории дӯстдошта",
+      "uploadRecitation": "Боргузории тиловат"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Садоҳои муҳит",
+      "none": "Ҳеҷ кадом",
+      "volume": "Баландии садо"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "Масалан, тиловатҳои субҳгоҳӣ"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Нест кардани боргирӣ"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Тайёр"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Ба маҷмӯа илова кардан",
+      "addToQueue": "Ба навбат илова кардан",
+      "continuePlaying": "Идома додани пахш",
+      "goToReciter": "Гузаштан ба қорӣ",
+      "removeFromRecents": "Аз охиринҳо баровардан"
+    },
+    "mushafLayoutSheet": {
+      "back": "Бозгашт"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Ояти охир",
+      "playbackSettings": "Танзимоти пахш",
+      "selectRange": "Интихоби фосила",
+      "startingVerse": "Ояти оғоз"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Танзимоти такрор",
+      "start": "Оғоз",
+      "verseRange": "Фосилаи оятҳо"
+    },
+    "organizeRecitationSheet": {
+      "category": "Гурӯҳ",
+      "customReciter": "Қории шахсӣ",
+      "duA": "Дуо",
+      "eGMorningAdhkar": "Масалан, азкори субҳгоҳӣ",
+      "lecture": "Дарс",
+      "moreOptions": "Имконоти бештар",
+      "other": "Дигар",
+      "recording": "Сабт",
+      "rewayah": "Ривоят",
+      "searchSurahs": "Ҷустуҷӯи сураҳо...",
+      "style": "Услуб",
+      "tafsir": "Тафсир",
+      "title": "Сарлавҳа",
+      "type": "Навъ",
+      "verseRangeOptional": "Фосилаи оятҳо (ихтиёрӣ)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Суръати пахш"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Ҳамаи ҷузъҳои ин рӯйхати пахш аллакай боргирӣ шудаанд.",
+      "anErrorOccurredWhileDownloading": "Ҳангоми боргирии рӯйхати пахш хато рух дод. Аз нав кӯшиш кунед.",
+      "deletePlaylist": "Нест кардани рӯйхати пахш",
+      "downloadingPlaylist": "Рӯйхати пахш боргирӣ мешавад...",
+      "editPlaylist": "Таҳрири рӯйхати пахш",
+      "emptyPlaylist": "Рӯйхати пахши холӣ",
+      "thisPlaylistIsEmpty": "Ин рӯйхати пахш холӣ аст."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Дар бораи ривоятҳо",
+      "availableRewayat": "Ривоятҳои дастрас"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Сура ба рӯйхати пахш илова нашуд",
+      "failedToCreatePlaylist": "Рӯйхати пахш сохта нашуд",
+      "noPlaylistsYetCreateYour": "Ҳоло рӯйхати пахш нест. Аввалин рӯйхати худро дар боло созед!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Ҳар бор пурсидан",
+      "randomReciter": "Қории тасодуфӣ",
+      "selectReciter": "Интихоби қорӣ"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Барои ин оят оятҳои монанд ёфт нашуданд.",
+      "similarWording": "Ифодаҳои монанд"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Вақтсанҷи хоб",
+      "turnOffTimer": "Хомӯш кардани вақтсанҷ"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Аз рӯйхати пахш баровардан"
+    },
+    "verseActionsSheet": {
+      "addNote": "Илова кардани ёддошт",
+      "copy": "Нусхабардорӣ",
+      "repeat": "Такрор",
+      "similarVerses": "Оятҳои монанд",
+      "tafseer": "Тафсир",
+      "theme": "Мавзӯъ"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Имконоти нусхабардорӣ",
+      "selectWhatToCopy": "Чиро нусхабардорӣ кардан мехоҳед, интихоб кунед"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Ранги равшаннамоӣ"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Мубодилаи оят"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Дар {{count}} оят ёфт шуд",
+    "foundIn_other": "Дар {{count}} оят ёфт шуд"
+  },
+  "surahItem": {
+    "moreOptions": "Имконоти бештар",
+    "opensMenuWithAdditionalActions": "Менюи амалҳои иловагии ин сураро мекушояд",
+    "tapToPlaySurah": "Барои пахши сура ламс кунед"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Шиносаи рӯйхати пахш нодуруст аст",
+      "playlistNotFound": "Рӯйхати пахш ёфт нашуд"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Қорие, ки тамоми сураҳои ин рӯйхатро дошта бошад, ёфт нашуд. Рӯйхати дигарро санҷед.",
+      "failedToPlayPlaylistPlease": "Рӯйхати пахш садо надод. Аз нав кӯшиш кунед.",
+      "failedToPlayTrackPlease": "Сабт садо надод. Аз нав кӯшиш кунед.",
+      "failedToShufflePlaylistPlease": "Рӯйхати пахш омехта нашуд. Аз нав кӯшиш кунед.",
+      "noReciterAvailable": "Қорӣ дастрас нест",
+      "noSurahsInThisPlaylist": "Дар ин рӯйхати пахш сура нест"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Ҳисоб",
+      "appData": "Барнома ва маълумот",
+      "audioPlayback": "Садо ва пахш",
+      "chooseYourPreferredReciter": "Қории писандидаи худро интихоб кунед",
+      "customizeQuranDisplayOptions": "Намоиши Қуръонро танзим кунед",
+      "customizeReciterSelection": "Интихоби қориро танзим кунед",
+      "featureRequests": "Дархости имкониятҳо",
+      "feedback": "Бозхӯрд",
+      "helpSupport": "Кӯмак ва дастгирӣ",
+      "learnMoreAboutOurMission": "Дар бораи рисолати мо бештар омӯзед",
+      "manageQuranTranslationsAndCommentary": "Тарҷумаҳо ва шарҳҳои Қуръонро идора кунед",
+      "privacyPolicy": "Сиёсати махфият",
+      "quran": "Қуръон",
+      "readOurTermsOfService": "Шартҳои хизматрасонии моро бихонед",
+      "seeWhatSNewIn": "Навгониҳои ин версияро бинед",
+      "shareYourExperienceWithOthers": "Таҷрибаи худро бо дигарон мубодила кунед",
+      "showTheFloatingDeveloperTools": "Намоиши тугмаи шинокунандаи абзорҳои таҳиягар",
+      "suggestImprovementsAndNewFeatures": "Беҳбудиҳо ва имкониятҳои нав пешниҳод кунед",
+      "termsOfService": "Шартҳои хизматрасонӣ",
+      "viewAndManageStorageUsage": "Дидан ва идора кардани истифодаи ҳофиза",
+      "viewOurPrivacyPolicy": "Дидани сиёсати махфияти мо",
+      "writeAReview": "Навиштани назар"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Бекор кардан",
+    "close": "Пӯшидан",
+    "collection": "Маҷмӯа",
+    "download": "Боргирӣ",
+    "downloads": "Боргириҳо",
+    "error": "Хатое рух дод",
+    "favorites": "Дӯстдоштаҳо",
+    "home": "Асосӣ",
+    "language": "Забон",
+    "library": "Китобхона",
+    "loading": "Бор мешавад...",
+    "noResults": "Натиҷа ёфт нашуд",
+    "offline": "Шумо ба интернет пайваст нестед",
+    "pause": "Таваққуф",
+    "play": "Пахш кардан",
+    "retry": "Аз нав кӯшиш кунед",
+    "save": "Захира кардан",
+    "search": "Ҷустуҷӯ",
+    "settings": "Танзимот",
+    "surahs": "Сураҳо"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "ИНТИХОБИ МУҲТАВО"
+    },
+    "highlightContent": {
+      "chooseColor": "ИНТИХОБИ РАНГ"
+    },
+    "noteContent": {
+      "saveNote": "Захира кардани ёддошт"
+    },
+    "shareContent": {
+      "shareLink": "Мубодилаи пайванд"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Барои ин оят оятҳои монанд ёфт нашуданд.",
+      "sharedPhrases": "ИБОРАҲОИ МУШТАРАК",
+      "similarWording": "ИФОДАҲОИ МОНАНД"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Тафсир боргирӣ нашудааст",
+      "tafseerNotAvailableForThis": "Барои ин оят тафсир дастрас нест",
+      "tapHereToDownloadA": "Барои боргирии тафсир ва дидани шарҳ ин ҷоро ламс кунед."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Барои ин оят маълумоти мавзӯӣ нест.",
+      "passage": "Порча"
+    },
+    "translationContent": {
+      "switch": "Иваз кардан",
+      "translationNotAvailable": "Тарҷума дастрас нест"
+    }
+  },
+  "version": {
+    "label": "Версияи {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Навгониҳо дар"
+  },
+  "wordDetail": {
+    "context": "Ояти {{surah}}:{{ayah}} · Калимаи {{position}} аз {{total}}"
+  }
+}

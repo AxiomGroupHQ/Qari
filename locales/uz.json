@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Pleyerni ishga tushirishda xato: {{message}}",
+    "errorLoadingFonts": "Shriftlarni yuklashda xato"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA bosh sahifasi"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Barchasi",
+      "clearAll": "Barchasini tozalash",
+      "hasPhoto": "Surati bor"
+    },
+    "filterModal": {
+      "apply": "Qo'llash",
+      "filterReciters": "Qorilarni filtrlash",
+      "recitationStyles": "Tilovat uslublari",
+      "reset": "Tiklash",
+      "rewayatTypes": "Rivoyat turlari"
+    },
+    "recitersFound_one": "Joriy filtrlar bo'yicha {{count}} qori topildi",
+    "recitersFound_other": "Joriy filtrlar bo'yicha {{count}} qori topildi"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Sevimli suralar"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Oyatlarni shu yerda ko'rish uchun xatcho'p qo'ying",
+      "bookmarks": "Xatcho'plar",
+      "noBookmarksYet": "Hali xatcho'plar yo'q",
+      "removeBookmark": "Xatcho'pni olib tashlash"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Rivoyatlar",
+      "searchPlaylistsRecitersSurahsRewayat": "Pleylistlar, qorilar, suralar, rivoyatlarni qidirish...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Pleylistlar, qorilar, suralar, rivoyatlar va yuklamalarni qidirish",
+      "searchYourCollection": "To'plamingizdan qidirish",
+      "searching": "Qidirilmoqda...",
+      "tryDifferentKeywords": "Boshqa kalit so'zlarni sinab ko'ring"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Suralarni shu yerda ko'rish uchun yuklab oling",
+      "noDownloadsYet": "Hali yuklamalar yo'q",
+      "playAll": "Barchasini ijro etish"
+    },
+    "favoritereciters": {
+      "addReciters": "Qorilarni qo'shish",
+      "addRecitersToSeeThem": "Qorilarni shu yerda ko'rish uchun qo'shing",
+      "noFavoriteRecitersYet": "Hali sevimli qorilar yo'q",
+      "removeFromFavorites": "Sevimlilardan olib tashlash",
+      "searchFavoriteReciters": "Sevimli qorilarni qidirish"
+    },
+    "index": {
+      "addToCollection": "To'plamga qo'shish",
+      "bookmarks": "Xatcho'plar",
+      "createYourFirstPlaylist": "Birinchi pleylistingizni yarating",
+      "downloads": "Yuklamalar",
+      "items_one": "{{count}} ta element",
+      "items_other": "{{count}} ta element",
+      "loved": "Sevimlilar",
+      "noBookmarksYet": "Hali xatcho'plar yo'q",
+      "noDownloadsYet": "Hali yuklamalar yo'q",
+      "noFavoritesYet": "Hali sevimlilar yo'q",
+      "noLovedSurahsYet": "Hali sevimli suralar yo'q",
+      "noNotesYet": "Hali qaydlar yo'q",
+      "noUploadsYet": "Hali yuklangan fayllar yo'q",
+      "notes": "Qaydlar",
+      "playlists": "Pleylistlar",
+      "reciters": "Qorilar",
+      "uploads": "Yuklangan fayllar"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Barcha sevimli suralar allaqachon yuklab olingan.",
+      "allLovedSurahsHaveBeen": "Barcha sevimli suralar yuklab olindi.",
+      "downloadError": "Yuklab olishda xato",
+      "loveSurahsToSeeThem": "Suralarni shu yerda ko'rish uchun sevimlilarga qo'shing",
+      "noLovedSurahsYet": "Hali sevimli suralar yo'q",
+      "someDownloadsMayHaveFailed": "Ayrim yuklamalar bajarilmagan bo'lishi mumkin.",
+      "unloveAllSurahs": "Barcha suralarni sevimlilardan olib tashlash"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Qaydlarni shu yerda ko'rish uchun oyatlarga qayd qo'shing",
+      "editNote": "Qaydni tahrirlash",
+      "noNotesYet": "Hali qaydlar yo'q",
+      "notes": "Qaydlar"
+    },
+    "playlistModal": {
+      "name": "Nomi"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Pleylistlarni shu yerda ko'rish uchun yarating",
+      "noPlaylistsYet": "Hali pleylistlar yo'q",
+      "playlists": "Pleylistlar"
+    },
+    "uploads": {
+      "removeAllUploads": "Barcha yuklangan fayllarni olib tashlash",
+      "uploadRecitationsToSeeThem": "Tilovatlarni shu yerda ko'rish uchun yuklang"
+    }
+  },
+  "common": {
+    "1Time": "1 marta",
+    "2Times": "2 marta",
+    "3Times": "3 marta",
+    "addToCollection": "To'plamga qo'shish",
+    "addToQueue": "Navbatga qo'shish",
+    "allSurahs": "Barcha suralar",
+    "alreadyDownloaded": "Allaqachon yuklab olingan",
+    "arabic": "Arabcha",
+    "asc": "O'sish tartibida",
+    "browseAll": "Barchasini ko'rish",
+    "browseAllReciters": "Barcha qorilarni ko'rish",
+    "cancel": "Bekor qilish",
+    "clear": "Tozalash",
+    "copyToClipboard": "Buferga nusxalash",
+    "createNewPlaylist": "Yangi pleylist yaratish",
+    "defaultReciter": "Standart qori",
+    "delete": "O'chirish",
+    "deleteNote": "Qaydni o'chirish",
+    "deleteRecitation": "Tilovatni o'chirish",
+    "desc": "Kamayish tartibida",
+    "downloadComplete": "Yuklab olish tugadi",
+    "downloadFailed": "Yuklab olinmadi",
+    "downloads": "Yuklamalar",
+    "editDetails": "Tafsilotlarni tahrirlash",
+    "error": "Xato",
+    "favoriteReciters": "Sevimli qorilar",
+    "followAlong": "Birga o'qish",
+    "from": "Dan",
+    "goToReciter": "Qoriga o'tish",
+    "goToVerse": "Oyatga o'tish",
+    "learnAboutSurah": "Sura haqida bilish",
+    "loading": "Yuklanmoqda...",
+    "loop": "Takroriy ijro",
+    "loved": "Sevimlilar",
+    "mushafSettings": "Mushaf sozlamalari",
+    "next": "Keyingi",
+    "noRecitersFound": "Qorilar topilmadi",
+    "noResultsFound": "Natijalar topilmadi",
+    "noUploadsYet": "Hali yuklangan fayllar yo'q",
+    "play": "Ijro etish",
+    "playEachVerse": "Har bir oyatni ijro etish",
+    "playNow": "Hozir ijro etish",
+    "playSpeed": "Ijro tezligi",
+    "playTheRange": "Oraliqni ijro etish",
+    "playlistName": "Pleylist nomi",
+    "prev": "Oldingi",
+    "readingTheme": "O'qish mavzusi",
+    "recentSearches": "Oxirgi qidiruvlar",
+    "reciter": "Qori",
+    "reciterChoice": "Qori tanlovi",
+    "reciters": "Qorilar",
+    "remove": "Olib tashlash",
+    "removeAllDownloads": "Barcha yuklamalarni olib tashlash",
+    "removeHighlight": "Ajratishni olib tashlash",
+    "rev": "Vahiy tartibi",
+    "save": "Saqlash",
+    "search": "Qidirish",
+    "searchReciters": "Qorilarni qidirish...",
+    "searchSurahs": "Suralarni qidirish",
+    "share": "Ulashish",
+    "shareAsImage": "Rasm sifatida ulashish",
+    "shareAsText": "Matn sifatida ulashish",
+    "sharedPhrases": "Umumiy iboralar",
+    "showBasmallah": "Basmalani ko'rsatish",
+    "stop": "To'xtatish",
+    "storage": "Xotira",
+    "surah": "Sura",
+    "surahs": "Suralar",
+    "to": "Gacha",
+    "translation": "Tarjima",
+    "translationsTafaseer": "Tarjimalar va tafsirlar",
+    "transliteration": "Transliteratsiya",
+    "uploads": "Yuklangan fayllar",
+    "useDefaultReciter": "Standart qoridan foydalanish",
+    "verseReference": "Oyat manzili",
+    "verses": "Oyatlar",
+    "whatSNew": "Yangiliklar",
+    "wordByWord": "So'zma-so'z",
+    "writeYourNoteHere": "Qaydingizni shu yerga yozing...",
+    "yourPlaylists": "Pleylistlaringiz"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Barcha suralarni ijro etish"
+    },
+    "searchHeader": {
+      "searchSurahs": "Suralarni qidirish"
+    },
+    "searchView": {
+      "noSurahsFound": "Suralar topilmadi"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Suralar mavjud emas"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Tilovat qo'shish",
+      "uploadRecitationsToSeeThem": "Tilovatlarni shu yerda ko'rish uchun yuklang"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Yuklab olingan • {{count}} ta sura",
+    "subtitle_other": "Yuklab olingan • {{count}} ta sura"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Kechirasiz, xato yuz berdi"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Barcha 114 surani ko'rish"
+    },
+    "savedAdhkarHero": {
+      "saved": "Saqlandi",
+      "yourCollection": "To'plamingiz"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "KUN SURASI"
+    },
+    "surahsHero": {
+      "number": "Raqam"
+    }
+  },
+  "language": {
+    "later": "Keyinroq",
+    "restartMessage": "Yangi joylashuv yo'nalishini qo'llash uchun ilovani qayta ishga tushiring.",
+    "restartNow": "Hozir qayta ishga tushirish",
+    "restartTitle": "Qayta ishga tushirish kerak",
+    "search": "Tillarni qidirish",
+    "system": "Qurilma tili"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Davom etish"
+    },
+    "whatsNewOnboarding": {
+      "skip": "O'tkazib yuborish"
+    }
+  },
+  "mushaf": {
+    "juz": "{{juz}}-juz",
+    "loadingMushaf": "Mushaf yuklanmoqda…",
+    "main": {
+      "mushafSettings": "Mushaf sozlamalari"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Qorini almashtirish",
+      "changeReciter2": "Qorini almashtirish",
+      "nextAyah": "Keyingi oyat",
+      "playbackOptions": "Ijro parametrlari",
+      "previousAyah": "Oldingi oyat"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Suralar, oyatlar, sahifalar yoki juzlarni topish",
+      "recentReads": "OXIRGI O'QILGANLAR",
+      "searchSurahsPagesOrJuz": "Suralar, sahifalar yoki juzlarni qidirish...",
+      "searchTheMushaf": "Mushafdan qidirish"
+    },
+    "options": "Parametrlar",
+    "page": "{{page}}-sahifa",
+    "pageAndSurah": "{{page}}-sahifa · {{surah}}",
+    "theMushafCouldNotLoad": "Mushaf yuklanmadi.",
+    "tryAgain": "Qayta urinib ko'ring"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Mushafda Alloh nomini va Rabb kabi ilohiy unvonlarni ajratib ko'rsatadi."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Mavzuli parchalar bo'yicha navbatma-navbat ajratish",
+    "arabicFontSize": "Arabcha shrift o'lchami",
+    "bold": "Qalin",
+    "book": "Kitob",
+    "colorLegend": "Ranglar izohi",
+    "currentlyReading": "Hozir o'qilmoqda",
+    "divineNames": "ILOHIY NOMLAR",
+    "fontSize": "Shrift o'lchami",
+    "fullscreen": "To'liq ekran",
+    "hamzaReplacedByLongVowel": "Hamza o'rniga cho'ziq unli",
+    "heavyLamInAllahAfter": "Yo'g'on harflardan keyin Alloh so'zidagi yo'g'on lom",
+    "highlightAllahRabb": "Alloh / Rabbni ajratish",
+    "horizontal": "Gorizontal",
+    "ibdal": "Ibdol",
+    "list": "Ro'yxat",
+    "loadingSample": "Namuna yuklanmoqda...",
+    "maddAlBadal": "Maddi badal",
+    "maximumProminence": "Eng kuchli ajratish",
+    "medium": "O'rtacha",
+    "modernMadinahPrintedPipeline": "Zamonaviy Madina bosma usuli",
+    "mushaf": "Mushaf",
+    "normal": "Oddiy",
+    "originalMushafWeight": "Mushafning asl shrift qalinligi",
+    "pageDesign": "SAHIFA DIZAYNI",
+    "prolongedVowelAfterHamza": "Hamzadan keyin cho'zilgan unli",
+    "readingTheme": "O'QISH MAVZUSI",
+    "scrollDirection": "AYLANTIRISH YO'NALISHI",
+    "showDifferences": "Farqlarni ko'rsatish",
+    "silah": "Sila",
+    "slightlyMoreProminent": "Biroz kuchliroq ajratish",
+    "softenedHamzaPronunciation": "Hamzani yengillashtirib talaffuz qilish",
+    "subcontinentNastaliqStyle": "Hind yarimoroli nasta'liq uslubi",
+    "taghlizAlLam": "Tag'liz al-lom",
+    "tajweedColoring": "Tajvid ranglari",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "MATNNI OLDINDAN KO'RISH HALI MAVJUD EMAS",
+    "textThickness": "MATN QALINLIGI",
+    "thematicHighlighting": "Mavzular bo'yicha ajratish",
+    "trailingVowelOrMoodChange": "Faqat oxirgi unli yoki mayl o'zgarishi",
+    "usingSaheehInternationalTranslationWith": "Foydalanilmoqda: izohli Saheeh International tarjimasi",
+    "vertical": "Vertikal",
+    "viewType": "KO'RINISH TURI",
+    "vowelMoodShift": "Unli / mayl o'zgarishi",
+    "wordByWord": "SO'ZMA-SO'Z",
+    "wordVariant": "So'z varianti"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Server bilan bog'lanib bo'lmadi",
+    "connectionRestored": "Ulanish tiklandi",
+    "noInternetConnection": "Internet aloqasi yo'q",
+    "showingCachedData": "Keshlangan ma'lumotlar ko'rsatilmoqda"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" yaratish"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Navbat",
+      "queueIsEmpty": "Navbat bo'sh"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Sura matni va tafsilotlarini ko'rish uchun bu tilovatni belgilang"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Pleylist • {{count}} ta sura",
+    "subtitle_other": "Pleylist • {{count}} ta sura"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Bu pleylistda suralar yo'q"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Izoh"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Aynan shu lahza uchun tanlangan tilovat",
+      "discover": "Kashf etish",
+      "discoverANewVoice": "Yangi ovozni kashf eting",
+      "explore": "O'rganish",
+      "exploreTheUnexpected": "Kutilmagan narsalarni kashf eting",
+      "hearSomethingNew": "Yangi bir narsa tinglang",
+      "letTheQuranSurpriseYou": "Qur'on sizni hayratlantirsin",
+      "randomMix": "Tasodifiy aralashma",
+      "randomRecitation": "Tasodifiy tilovat",
+      "shuffleListen": "Aralashtirib tinglash",
+      "surpriseMe": "Meni hayratlantir"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Ko'rinish rejimini o'zgartirish butun ilovaga ta'sir qiladi"
+  },
+  "reciterBrowse": {
+    "allReciters": "Barcha qorilar",
+    "browseReciters": "Qorilarni ko'rish",
+    "favorites": "Sevimlilar"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Bu qori uchun yuklamalar yo'q"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Yuklagan fayllarim"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Azkor",
+    "bestForMemorization": "Yodlash uchun eng yaxshi",
+    "bestForTajweed": "Tajvid uchun eng yaxshi",
+    "continueListening": "Tinglashni davom ettirish",
+    "exclusives": "Maxsus tilovatlar",
+    "exploreByRewayah": "Rivoyat bo'yicha ko'rish",
+    "featuredReciters": "Tavsiya etilgan qorilar",
+    "fromYourCollection": "To'plamingizdan",
+    "myRecitations": "Tilovatlarim",
+    "newToQuranStartHere": "Qur'on bilan endi tanishyapsizmi? Shu yerdan boshlang",
+    "seeMore": "Ko'proq ko'rish",
+    "yourFavorites": "Sevimlilaringiz"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Faol",
+      "activeTafseer": "FAOL TAFSIR",
+      "activeTranslation": "FAOL TARJIMA",
+      "deleteTafseer": "Tafsirni o'chirish",
+      "deleteTranslation": "Tarjimani o'chirish",
+      "noTafaseerFound": "Tafsirlar topilmadi",
+      "noTranslationsFound": "Tarjimalar topilmadi",
+      "unableToDownloadThisTafseer": "Bu tafsirni yuklab bo'lmadi. Internet aloqangizni tekshirib, qayta urinib ko'ring.",
+      "unableToDownloadThisTranslation": "Bu tarjimani yuklab bo'lmadi. Internet aloqangizni tekshirib, qayta urinib ko'ring."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Oxirgi qidiruvlar yo'q",
+      "tryDifferentKeywordsOrCheck": "Boshqa kalit so'zlarni sinab ko'ring yoki imloni tekshiring",
+      "yourSearchHistoryWillAppear": "Qidiruv tarixingiz shu yerda ko'rinadi"
+    },
+    "surahsOrReciters": "Suralar yoki qorilarni qidirish"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Kengaytirilgan audio boshqaruvi",
+      "browseByJuz": "Juz bo'yicha ko'rish",
+      "createAndManageYourOwn": "Sevimli tilovatlaringizdan o'zingizga mos pleylistlar yarating va boshqaring",
+      "crystalClearRecitationsFromThe": "Dunyoning eng yaxshi qorilaridan tiniq tilovatlar, oqimli uzatish uchun moslashtirilgan",
+      "curatedCollections": "Saralangan to'plamlar",
+      "customPlaylists": "Shaxsiy pleylistlar",
+      "customizeThemesAccentColorsAnd": "Mavzular, asosiy ranglar va audio sozlamalarini didingizga moslang",
+      "downloadSurahsForOfflineListening": "Istalgan joyda va vaqtda internetsiz tinglash uchun suralarni yuklab oling",
+      "easilyNavigateThroughTheQuran": "Juzlar asosida tartiblash va guruhlash bilan Qur'on bo'ylab oson harakatlaning",
+      "features": "IMKONIYATLAR",
+      "highQualityAudio": "Yuqori sifatli audio",
+      "listenReflectRememberAllah": "Tinglang. Tafakkur qiling. Allohni zikr qiling.",
+      "offlineDownloads": "Oflayn yuklamalar",
+      "ourCommitment": "Bizning mas'uliyatimiz",
+      "ourMission": "Maqsadimiz",
+      "personalization": "Shaxsiylashtirish",
+      "precisePlaybackControlWithContinuous": "Uzluksiz ijro va sozlanadigan tilovat tezligi bilan aniq boshqaruv",
+      "quranBayanTafsirKnowledgeOur": "Qur'on • Bayon • Tafsir • Ilm. Maqsadimiz tinglash va tafakkurni kundalik hayotning bir qismiga aylantirish: uyda, yo'lda va Allohni zikr qilishga vaqt topgan har bir joyda.",
+      "readListenAndReflect": "O'qing, tinglang va tafakkur qiling",
+      "readTheMushafExploreTranslations": "Mushafni o'qing, tarjima va tafsirlarni o'rganing, oyatlar va qaydlarni saqlang, kundalik azkorga qayting. Qorini tanlang, pleylistlar yarating va kuningizga mos tinglash tajribasini tuzing. Mavjud imkoniyatlar qurilmaga qarab farq qiladi; mobil ilovalar oflayn tinglash uchun yuklab olishni ham qo'llab-quvvatlaydi.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Turli vaziyatlar va mavzular uchun puxta tartiblangan suralar",
+      "weCareAboutTheAccuracy": "Biz muqaddas matnlarning aniqligi, hurmatli dizayn va ishonchli foydalanishga e'tibor beramiz. ISTIMA'ni undan foydalanuvchilarni o'ylab takomillashtirishda davom etamiz. Alloh bu sa'y-harakatni qabul qilsin va uni tinglaydigan, o'qiydigan va tafakkur qiladigan barchaga foydali qilsin."
+    },
+    "aboutApp": "{{name}} haqida",
+    "appearance": "KO'RINISH",
+    "defaultreciter": {
+      "changeDefaultReciter": "STANDART QORINI ALMASHTIRISH"
+    },
+    "developer": "ISHLAB CHIQUVCHI",
+    "floatingDevMenu": "Suzuvchi dasturchi menyusi",
+    "language": "Til",
+    "languageDescription": "Ilova tilini tanlang",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Doim tanlangan standart qoridan foydalanish",
+      "askEveryTime": "Har safar so'rash",
+      "chooseAReciterEachTime": "Har safar ijro etishda qori tanlash",
+      "chooseHowYouWantTo": "Suralarni ijro etishda qorilarni qanday tanlashni belgilang",
+      "defaultSelectionMethod": "STANDART TANLASH USULI",
+      "searchThroughOurCompleteCollection": "To'liq qorilar to'plamimizdan qidiring",
+      "selectionPreference": "TANLASH ISTAGI"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Barcha yuklamalar olib tashlandi.",
+      "areYouSureYouWant": "Barcha yuklab olingan kontentni olib tashlashga ishonchingiz komilmi? Bu amalni bekor qilib bo'lmaydi.",
+      "cache": "Kesh",
+      "cacheHasBeenCleared": "Kesh tozalandi.",
+      "clearCache": "Keshni tozalash",
+      "failedToClearCache": "Keshni tozalab bo'lmadi.",
+      "failedToRemoveDownloads": "Yuklamalarni olib tashlab bo'lmadi.",
+      "free": "Bo'sh",
+      "loadingStorageInformation": "Xotira ma'lumotlari yuklanmoqda...",
+      "manageStorage": "XOTIRANI BOSHQARISH",
+      "otherApps": "Boshqa ilovalar",
+      "removeAllDownloads": "Barcha yuklamalarni olib tashlash",
+      "removeAllTheQuranContent": "Oflayn foydalanish uchun yuklab olingan barcha Qur'on kontentini olib tashlang.",
+      "storageBreakdown": "XOTIRA TAQSIMOTI",
+      "success": "Muvaffaqiyatli",
+      "thisWillClearYourCache": "Bu keshni tozalaydi. Yuklamalaringiz olib tashlanmaydi.",
+      "youCanFreeUpStorage": "Keshni tozalab xotiradan joy bo'shatishingiz mumkin. Yuklamalaringiz olib tashlanmaydi."
+    },
+    "themePicker": {
+      "auto": "Avtomatik",
+      "dark": "Qorong'i",
+      "light": "Yorug'"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "O'zgarishlar ro'yxati mavjud emas"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "{{name}} haqida",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Sevimli qori qo'shish",
+      "uploadRecitation": "Tilovat yuklash"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Tabiat tovushlari",
+      "none": "Yo'q",
+      "volume": "Ovoz balandligi"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "Masalan, tonggi tilovatlar"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Yuklamani olib tashlash"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Tayyor"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "To'plamga qo'shish",
+      "addToQueue": "Navbatga qo'shish",
+      "continuePlaying": "Ijroni davom ettirish",
+      "goToReciter": "Qoriga o'tish",
+      "removeFromRecents": "Oxirgilardan olib tashlash"
+    },
+    "mushafLayoutSheet": {
+      "back": "Orqaga"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Oxirgi oyat",
+      "playbackSettings": "Ijro sozlamalari",
+      "selectRange": "Oraliqni tanlash",
+      "startingVerse": "Boshlang'ich oyat"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Takrorlash sozlamalari",
+      "start": "Boshlash",
+      "verseRange": "Oyatlar oralig'i"
+    },
+    "organizeRecitationSheet": {
+      "category": "Toifa",
+      "customReciter": "Shaxsiy qori",
+      "duA": "Duo",
+      "eGMorningAdhkar": "Masalan, tonggi azkor",
+      "lecture": "Ma'ruza",
+      "moreOptions": "Qo'shimcha parametrlar",
+      "other": "Boshqa",
+      "recording": "Yozuv",
+      "rewayah": "Rivoyat",
+      "searchSurahs": "Suralarni qidirish...",
+      "style": "Uslub",
+      "tafsir": "Tafsir",
+      "title": "Sarlavha",
+      "type": "Tur",
+      "verseRangeOptional": "Oyatlar oralig'i (ixtiyoriy)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Ijro tezligi"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Bu pleylistdagi barcha elementlar allaqachon yuklab olingan.",
+      "anErrorOccurredWhileDownloading": "Pleylistni yuklab olishda xato yuz berdi. Qayta urinib ko'ring.",
+      "deletePlaylist": "Pleylistni o'chirish",
+      "downloadingPlaylist": "Pleylist yuklab olinmoqda...",
+      "editPlaylist": "Pleylistni tahrirlash",
+      "emptyPlaylist": "Bo'sh pleylist",
+      "thisPlaylistIsEmpty": "Bu pleylist bo'sh."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Rivoyatlar haqida",
+      "availableRewayat": "Mavjud rivoyatlar"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Surani pleylistga qo'shib bo'lmadi",
+      "failedToCreatePlaylist": "Pleylist yaratib bo'lmadi",
+      "noPlaylistsYetCreateYour": "Hali pleylistlar yo'q. Yuqorida birinchi pleylistingizni yarating!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Har safar so'rash",
+      "randomReciter": "Tasodifiy qori",
+      "selectReciter": "Qorini tanlash"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Bu oyatga o'xshash oyatlar topilmadi.",
+      "similarWording": "O'xshash ifodalar"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Uyqu taymeri",
+      "turnOffTimer": "Taymerni o'chirish"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Pleylistdan olib tashlash"
+    },
+    "verseActionsSheet": {
+      "addNote": "Qayd qo'shish",
+      "copy": "Nusxalash",
+      "repeat": "Takrorlash",
+      "similarVerses": "O'xshash oyatlar",
+      "tafseer": "Tafsir",
+      "theme": "Mavzu"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Nusxalash parametrlari",
+      "selectWhatToCopy": "Nimani nusxalashni tanlang"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Ajratish rangi"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Oyatni ulashish"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "{{count}} ta oyatda topildi",
+    "foundIn_other": "{{count}} ta oyatda topildi"
+  },
+  "surahItem": {
+    "moreOptions": "Qo'shimcha parametrlar",
+    "opensMenuWithAdditionalActions": "Bu sura uchun qo'shimcha amallar menyusini ochadi",
+    "tapToPlaySurah": "Surani ijro etish uchun bosing"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Pleylist identifikatori noto'g'ri",
+      "playlistNotFound": "Pleylist topilmadi"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Bu pleylistdagi barcha suralarni o'qigan qori topilmadi. Boshqa pleylistni sinab ko'ring.",
+      "failedToPlayPlaylistPlease": "Pleylistni ijro etib bo'lmadi. Qayta urinib ko'ring.",
+      "failedToPlayTrackPlease": "Trekni ijro etib bo'lmadi. Qayta urinib ko'ring.",
+      "failedToShufflePlaylistPlease": "Pleylistni aralashtirib bo'lmadi. Qayta urinib ko'ring.",
+      "noReciterAvailable": "Qori mavjud emas",
+      "noSurahsInThisPlaylist": "Bu pleylistda suralar yo'q"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Hisob",
+      "appData": "Ilova va ma'lumotlar",
+      "audioPlayback": "Audio va ijro",
+      "chooseYourPreferredReciter": "O'zingiz yoqtirgan qorini tanlang",
+      "customizeQuranDisplayOptions": "Qur'on ko'rinishi parametrlarini sozlang",
+      "customizeReciterSelection": "Qori tanlashni sozlang",
+      "featureRequests": "Yangi imkoniyat so'rovlari",
+      "feedback": "Fikr-mulohaza",
+      "helpSupport": "Yordam va qo'llab-quvvatlash",
+      "learnMoreAboutOurMission": "Maqsadimiz haqida ko'proq bilib oling",
+      "manageQuranTranslationsAndCommentary": "Qur'on tarjimalari va sharhlarini boshqaring",
+      "privacyPolicy": "Maxfiylik siyosati",
+      "quran": "Qur'on",
+      "readOurTermsOfService": "Foydalanish shartlarimizni o'qing",
+      "seeWhatSNewIn": "Bu versiyadagi yangiliklarni ko'ring",
+      "shareYourExperienceWithOthers": "Tajribangizni boshqalar bilan ulashing",
+      "showTheFloatingDeveloperTools": "Suzuvchi dasturchi vositalari tugmasini ko'rsatish",
+      "suggestImprovementsAndNewFeatures": "Yaxshilanish va yangi imkoniyatlarni taklif qiling",
+      "termsOfService": "Foydalanish shartlari",
+      "viewAndManageStorageUsage": "Xotira sarfini ko'rish va boshqarish",
+      "viewOurPrivacyPolicy": "Maxfiylik siyosatimizni ko'ring",
+      "writeAReview": "Sharh yozish"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Bekor qilish",
+    "close": "Yopish",
+    "collection": "To'plam",
+    "download": "Yuklab olish",
+    "downloads": "Yuklamalar",
+    "error": "Xatolik yuz berdi",
+    "favorites": "Sevimlilar",
+    "home": "Bosh sahifa",
+    "language": "Til",
+    "library": "Kutubxona",
+    "loading": "Yuklanmoqda...",
+    "noResults": "Natijalar topilmadi",
+    "offline": "Siz oflaynsiz",
+    "pause": "Pauza",
+    "play": "Ijro etish",
+    "retry": "Qayta urinib ko'ring",
+    "save": "Saqlash",
+    "search": "Qidirish",
+    "settings": "Sozlamalar",
+    "surahs": "Suralar"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "KONTENTNI TANLASH"
+    },
+    "highlightContent": {
+      "chooseColor": "RANGNI TANLASH"
+    },
+    "noteContent": {
+      "saveNote": "Qaydni saqlash"
+    },
+    "shareContent": {
+      "shareLink": "Havolani ulashish"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Bu oyatga o'xshash oyatlar topilmadi.",
+      "sharedPhrases": "UMUMIY IBORALAR",
+      "similarWording": "O'XSHASH IFODALAR"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Tafsirlar yuklab olinmagan",
+      "tafseerNotAvailableForThis": "Bu oyat uchun tafsir mavjud emas",
+      "tapHereToDownloadA": "Tafsirni yuklab olish va sharhni ko'rish uchun shu yerga bosing."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Bu oyat uchun mavzu ma'lumotlari yo'q.",
+      "passage": "Parcha"
+    },
+    "translationContent": {
+      "switch": "Almashtirish",
+      "translationNotAvailable": "Tarjima mavjud emas"
+    }
+  },
+  "version": {
+    "label": "Versiya {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Yangiliklar:"
+  },
+  "wordDetail": {
+    "context": "{{surah}}:{{ayah}}-oyat · {{total}} so'zdan {{position}}-so'z"
+  }
+}

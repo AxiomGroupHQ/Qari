@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "প্লেয়াৰ আৰম্ভ কৰোঁতে ত্ৰুটি: {{message}}",
+    "errorLoadingFonts": "ফণ্ট লোড কৰোঁতে ত্ৰুটি"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA মুখ্যপৃষ্ঠা"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "সকলো",
+      "clearAll": "সকলো মচক",
+      "hasPhoto": "ফটো আছে"
+    },
+    "filterModal": {
+      "apply": "প্ৰয়োগ কৰক",
+      "filterReciters": "কাৰীসকল ফিল্টাৰ কৰক",
+      "recitationStyles": "তিলাৱতৰ শৈলী",
+      "reset": "পুনৰ নিৰ্ধাৰণ কৰক",
+      "rewayatTypes": "ৰিৱায়তৰ প্ৰকাৰ"
+    },
+    "recitersFound_one": "বৰ্তমানৰ ফিল্টাৰ অনুসৰি {{count}} জন কাৰী পোৱা গ'ল",
+    "recitersFound_other": "বৰ্তমানৰ ফিল্টাৰ অনুসৰি {{count}} জন কাৰী পোৱা গ'ল"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "ভাল লগা ছুৰাসমূহ"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "আয়াতসমূহ ইয়াত চাবলৈ বুকমাৰ্ক কৰক",
+      "bookmarks": "বুকমাৰ্কসমূহ",
+      "noBookmarksYet": "এতিয়ালৈকে বুকমাৰ্ক নাই",
+      "removeBookmark": "বুকমাৰ্ক আঁতৰাওক"
+    },
+    "collectionSearchModal": {
+      "rewayat": "ৰিৱায়ত",
+      "searchPlaylistsRecitersSurahsRewayat": "প্লেলিষ্ট, কাৰী, ছুৰা, ৰিৱায়ত বিচাৰক...",
+      "searchPlaylistsRecitersSurahsRewayat2": "প্লেলিষ্ট, কাৰী, ছুৰা, ৰিৱায়ত আৰু ডাউনলোড বিচাৰক",
+      "searchYourCollection": "আপোনাৰ সংগ্ৰহত বিচাৰক",
+      "searching": "বিচাৰি থকা হৈছে...",
+      "tryDifferentKeywords": "বেলেগ মূল শব্দ ব্যৱহাৰ কৰি চাওক"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "ছুৰাসমূহ ইয়াত চাবলৈ ডাউনলোড কৰক",
+      "noDownloadsYet": "এতিয়ালৈকে ডাউনলোড নাই",
+      "playAll": "সকলো বজাওক"
+    },
+    "favoritereciters": {
+      "addReciters": "কাৰী যোগ কৰক",
+      "addRecitersToSeeThem": "কাৰীসকলক ইয়াত চাবলৈ যোগ কৰক",
+      "noFavoriteRecitersYet": "এতিয়ালৈকে প্ৰিয় কাৰী নাই",
+      "removeFromFavorites": "প্ৰিয়ৰ পৰা আঁতৰাওক",
+      "searchFavoriteReciters": "প্ৰিয় কাৰী বিচাৰক"
+    },
+    "index": {
+      "addToCollection": "সংগ্ৰহত যোগ কৰক",
+      "bookmarks": "বুকমাৰ্কসমূহ",
+      "createYourFirstPlaylist": "আপোনাৰ প্ৰথম প্লেলিষ্ট সৃষ্টি কৰক",
+      "downloads": "ডাউনলোডসমূহ",
+      "items_one": "{{count}} টা বস্তু",
+      "items_other": "{{count}} টা বস্তু",
+      "loved": "ভাল লগা",
+      "noBookmarksYet": "এতিয়ালৈকে বুকমাৰ্ক নাই",
+      "noDownloadsYet": "এতিয়ালৈকে ডাউনলোড নাই",
+      "noFavoritesYet": "এতিয়ালৈকে প্ৰিয় বস্তু নাই",
+      "noLovedSurahsYet": "এতিয়ালৈকে ভাল লগা ছুৰা নাই",
+      "noNotesYet": "এতিয়ালৈকে টোকা নাই",
+      "noUploadsYet": "এতিয়ালৈকে আপলোড নাই",
+      "notes": "টোকাসমূহ",
+      "playlists": "প্লেলিষ্টসমূহ",
+      "reciters": "কাৰীসকল",
+      "uploads": "আপলোডসমূহ"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "ভাল লগা সকলো ছুৰা ইতিমধ্যে ডাউনলোড কৰা হৈছে।",
+      "allLovedSurahsHaveBeen": "ভাল লগা সকলো ছুৰা ডাউনলোড হ'ল।",
+      "downloadError": "ডাউনলোডৰ ত্ৰুটি",
+      "loveSurahsToSeeThem": "ছুৰাসমূহ ইয়াত চাবলৈ ভাল লগা হিচাপে চিহ্নিত কৰক",
+      "noLovedSurahsYet": "এতিয়ালৈকে ভাল লগা ছুৰা নাই",
+      "someDownloadsMayHaveFailed": "কিছুমান ডাউনলোড বিফল হোৱা হ'ব পাৰে।",
+      "unloveAllSurahs": "সকলো ছুৰাৰ ভাল লগা চিহ্ন আঁতৰাওক"
+    },
+    "notes": {
+      "addNotesToVersesTo": "টোকাসমূহ ইয়াত চাবলৈ আয়াতত টোকা যোগ কৰক",
+      "editNote": "টোকা সম্পাদনা কৰক",
+      "noNotesYet": "এতিয়ালৈকে টোকা নাই",
+      "notes": "টোকাসমূহ"
+    },
+    "playlistModal": {
+      "name": "নাম"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "প্লেলিষ্টসমূহ ইয়াত চাবলৈ সৃষ্টি কৰক",
+      "noPlaylistsYet": "এতিয়ালৈকে প্লেলিষ্ট নাই",
+      "playlists": "প্লেলিষ্টসমূহ"
+    },
+    "uploads": {
+      "removeAllUploads": "সকলো আপলোড আঁতৰাওক",
+      "uploadRecitationsToSeeThem": "তিলাৱতসমূহ ইয়াত চাবলৈ আপলোড কৰক"
+    }
+  },
+  "common": {
+    "1Time": "১ বাৰ",
+    "2Times": "২ বাৰ",
+    "3Times": "৩ বাৰ",
+    "addToCollection": "সংগ্ৰহত যোগ কৰক",
+    "addToQueue": "শাৰীত যোগ কৰক",
+    "allSurahs": "সকলো ছুৰা",
+    "alreadyDownloaded": "ইতিমধ্যে ডাউনলোড কৰা হৈছে",
+    "arabic": "আৰবী",
+    "asc": "ঊৰ্ধ্বক্ৰম",
+    "browseAll": "সকলো চাওক",
+    "browseAllReciters": "সকলো কাৰী চাওক",
+    "cancel": "বাতিল কৰক",
+    "clear": "মচক",
+    "copyToClipboard": "ক্লিপব'ৰ্ডলৈ প্ৰতিলিপি কৰক",
+    "createNewPlaylist": "নতুন প্লেলিষ্ট সৃষ্টি কৰক",
+    "defaultReciter": "অবিকল্পিত কাৰী",
+    "delete": "মচি পেলাওক",
+    "deleteNote": "টোকা মচি পেলাওক",
+    "deleteRecitation": "তিলাৱত মচি পেলাওক",
+    "desc": "অধঃক্ৰম",
+    "downloadComplete": "ডাউনলোড সম্পূৰ্ণ",
+    "downloadFailed": "ডাউনলোড বিফল",
+    "downloads": "ডাউনলোডসমূহ",
+    "editDetails": "বিৱৰণ সম্পাদনা কৰক",
+    "error": "ত্ৰুটি",
+    "favoriteReciters": "প্ৰিয় কাৰীসকল",
+    "followAlong": "লগে লগে পঢ়ক",
+    "from": "পৰা",
+    "goToReciter": "কাৰীলৈ যাওক",
+    "goToVerse": "আয়াতলৈ যাওক",
+    "learnAboutSurah": "ছুৰাৰ বিষয়ে জানক",
+    "loading": "লোড হৈ আছে...",
+    "loop": "বাৰে বাৰে বজাওক",
+    "loved": "ভাল লগা",
+    "mushafSettings": "মুছহাফৰ ছেটিংছ",
+    "next": "পৰৱৰ্তী",
+    "noRecitersFound": "কাৰী পোৱা নগ'ল",
+    "noResultsFound": "ফলাফল পোৱা নগ'ল",
+    "noUploadsYet": "এতিয়ালৈকে আপলোড নাই",
+    "play": "বজাওক",
+    "playEachVerse": "প্ৰতিটো আয়াত বজাওক",
+    "playNow": "এতিয়াই বজাওক",
+    "playSpeed": "বজোৱাৰ গতি",
+    "playTheRange": "নিৰ্বাচিত পৰিসৰ বজাওক",
+    "playlistName": "প্লেলিষ্টৰ নাম",
+    "prev": "আগৰ",
+    "readingTheme": "পঢ়াৰ থীম",
+    "recentSearches": "শেহতীয়া সন্ধানসমূহ",
+    "reciter": "কাৰী",
+    "reciterChoice": "কাৰীৰ বাছনি",
+    "reciters": "কাৰীসকল",
+    "remove": "আঁতৰাওক",
+    "removeAllDownloads": "সকলো ডাউনলোড আঁতৰাওক",
+    "removeHighlight": "উজ্জ্বল চিহ্ন আঁতৰাওক",
+    "rev": "অৱতৰণৰ ক্ৰম",
+    "save": "সংৰক্ষণ কৰক",
+    "search": "বিচাৰক",
+    "searchReciters": "কাৰী বিচাৰক...",
+    "searchSurahs": "ছুৰা বিচাৰক",
+    "share": "ভাগ-বতৰা কৰক",
+    "shareAsImage": "ছবি হিচাপে ভাগ-বতৰা কৰক",
+    "shareAsText": "পাঠ হিচাপে ভাগ-বতৰা কৰক",
+    "sharedPhrases": "উমৈহতীয়া বাক্যাংশ",
+    "showBasmallah": "বিছমিল্লাহ দেখুৱাওক",
+    "stop": "ৰখাওক",
+    "storage": "সংৰক্ষণ স্থান",
+    "surah": "ছুৰা",
+    "surahs": "ছুৰাসমূহ",
+    "to": "লৈ",
+    "translation": "অনুবাদ",
+    "translationsTafaseer": "অনুবাদ আৰু তাফছীৰ",
+    "transliteration": "লিপ্যন্তৰ",
+    "uploads": "আপলোডসমূহ",
+    "useDefaultReciter": "অবিকল্পিত কাৰী ব্যৱহাৰ কৰক",
+    "verseReference": "আয়াতৰ প্ৰসংগ",
+    "verses": "আয়াতসমূহ",
+    "whatSNew": "নতুন কি আছে",
+    "wordByWord": "শব্দে শব্দে",
+    "writeYourNoteHere": "আপোনাৰ টোকা ইয়াত লিখক...",
+    "yourPlaylists": "আপোনাৰ প্লেলিষ্টসমূহ"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "সকলো ছুৰা বজাওক"
+    },
+    "searchHeader": {
+      "searchSurahs": "ছুৰা বিচাৰক"
+    },
+    "searchView": {
+      "noSurahsFound": "ছুৰা পোৱা নগ'ল"
+    },
+    "surahList": {
+      "noSurahsAvailable": "ছুৰা উপলব্ধ নহয়"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "তিলাৱত যোগ কৰক",
+      "uploadRecitationsToSeeThem": "তিলাৱতসমূহ ইয়াত চাবলৈ আপলোড কৰক"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "ডাউনলোড কৰা • {{count}} টা ছুৰা",
+    "subtitle_other": "ডাউনলোড কৰা • {{count}} টা ছুৰা"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "দুঃখিত, এটা ত্ৰুটি হ'ল"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "আটাইকেইটা ১১৪ ছুৰা চাওক"
+    },
+    "savedAdhkarHero": {
+      "saved": "সংৰক্ষিত",
+      "yourCollection": "আপোনাৰ সংগ্ৰহ"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "আজিৰ ছুৰা"
+    },
+    "surahsHero": {
+      "number": "নম্বৰ"
+    }
+  },
+  "language": {
+    "later": "পিছত",
+    "restartMessage": "নতুন বিন্যাসৰ দিশ প্ৰয়োগ কৰিবলৈ এপটো পুনৰ আৰম্ভ কৰক।",
+    "restartNow": "এতিয়াই পুনৰ আৰম্ভ কৰক",
+    "restartTitle": "পুনৰ আৰম্ভ কৰা প্ৰয়োজন",
+    "search": "ভাষা বিচাৰক",
+    "system": "ডিভাইচৰ ভাষা"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "আগবাঢ়ক"
+    },
+    "whatsNewOnboarding": {
+      "skip": "এৰি যাওক"
+    }
+  },
+  "mushaf": {
+    "juz": "জুজ {{juz}}",
+    "loadingMushaf": "মুছহাফ লোড হৈ আছে…",
+    "main": {
+      "mushafSettings": "মুছহাফৰ ছেটিংছ"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "কাৰী সলনি কৰক",
+      "changeReciter2": "কাৰী সলনি কৰক",
+      "nextAyah": "পৰৱৰ্তী আয়াত",
+      "playbackOptions": "প্লেবেকৰ বিকল্পসমূহ",
+      "previousAyah": "আগৰ আয়াত"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "ছুৰা, আয়াত, পৃষ্ঠা বা জুজ বিচাৰক",
+      "recentReads": "শেহতীয়াকৈ পঢ়া",
+      "searchSurahsPagesOrJuz": "ছুৰা, পৃষ্ঠা বা জুজ বিচাৰক...",
+      "searchTheMushaf": "মুছহাফত বিচাৰক"
+    },
+    "options": "বিকল্পসমূহ",
+    "page": "পৃষ্ঠা {{page}}",
+    "pageAndSurah": "পৃষ্ঠা {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "মুছহাফ লোড কৰিব পৰা নগ'ল।",
+    "tryAgain": "পুনৰ চেষ্টা কৰক"
+  },
+  "mushafSettings": {
+    "rabbHelper": "মুছহাফত আল্লাহৰ নাম আৰু ৰব্বৰ দৰে ঐশ্বৰিক উপাধিসমূহ উজ্জ্বল কৰি দেখুৱায়।"
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "বিষয়ভিত্তিক অংশ অনুসৰি পাল পাতি উজ্জ্বল চিহ্ন",
+    "arabicFontSize": "আৰবী ফণ্টৰ আকাৰ",
+    "bold": "ডাঠ",
+    "book": "কিতাপ",
+    "colorLegend": "ৰঙৰ ব্যাখ্যা",
+    "currentlyReading": "এতিয়া পঢ়ি আছে",
+    "divineNames": "ঐশ্বৰিক নামসমূহ",
+    "fontSize": "ফণ্টৰ আকাৰ",
+    "fullscreen": "পূৰ্ণ পৰ্দা",
+    "hamzaReplacedByLongVowel": "হামজাৰ সলনি দীঘল স্বৰ",
+    "heavyLamInAllahAfter": "গধুৰ উচ্চাৰণৰ আখৰৰ পিছত আল্লাহ শব্দৰ গধুৰ লাম",
+    "highlightAllahRabb": "আল্লাহ / ৰব্ব উজ্জ্বল কৰক",
+    "horizontal": "পথালি",
+    "ibdal": "ইবদাল",
+    "list": "তালিকা",
+    "loadingSample": "নমুনা লোড হৈ আছে...",
+    "maddAlBadal": "মাদ্দ আল-বদল",
+    "maximumProminence": "সৰ্বাধিক স্পষ্ট",
+    "medium": "মজলীয়া",
+    "modernMadinahPrintedPipeline": "আধুনিক মদিনা মুদ্ৰণ পদ্ধতি",
+    "mushaf": "মুছহাফ",
+    "normal": "স্বাভাৱিক",
+    "originalMushafWeight": "মূল মুছহাফৰ আখৰৰ ডাঠতা",
+    "pageDesign": "পৃষ্ঠাৰ নক্সা",
+    "prolongedVowelAfterHamza": "হামজাৰ পিছত দীঘল স্বৰ",
+    "readingTheme": "পঢ়াৰ থীম",
+    "scrollDirection": "স্ক্ৰল কৰাৰ দিশ",
+    "showDifferences": "পাৰ্থক্যসমূহ দেখুৱাওক",
+    "silah": "ছিলাহ",
+    "slightlyMoreProminent": "অলপ বেছি স্পষ্ট",
+    "softenedHamzaPronunciation": "হামজাৰ কোমল উচ্চাৰণ",
+    "subcontinentNastaliqStyle": "উপমহাদেশীয় নস্তালিক শৈলী",
+    "taghlizAlLam": "তাগলিজ আল-লাম",
+    "tajweedColoring": "তাজৱীদৰ ৰং",
+    "tashilMusahhala": "তাছহীল / মুছাহহালা",
+    "textPreviewNotYetAvailable": "পাঠৰ পূৰ্বদৰ্শন এতিয়াও উপলব্ধ নহয়",
+    "textThickness": "পাঠৰ ডাঠতা",
+    "thematicHighlighting": "বিষয়ভিত্তিক উজ্জ্বল চিহ্ন",
+    "trailingVowelOrMoodChange": "কেৱল শেষৰ স্বৰ বা ক্ৰিয়াৰ ভাবৰ পৰিৱৰ্তন",
+    "usingSaheehInternationalTranslationWith": "ব্যৱহৃত: পাদটীকাসহ Saheeh International অনুবাদ",
+    "vertical": "উলম্ব",
+    "viewType": "দৃশ্যৰ প্ৰকাৰ",
+    "vowelMoodShift": "স্বৰ / ক্ৰিয়াৰ ভাবৰ পৰিৱৰ্তন",
+    "wordByWord": "শব্দে শব্দে",
+    "wordVariant": "শব্দৰ ভিন্ন ৰূপ"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "ছাৰ্ভাৰৰ সৈতে সংযোগ কৰিব পৰা নাই",
+    "connectionRestored": "সংযোগ পুনৰ স্থাপন হ'ল",
+    "noInternetConnection": "ইণ্টাৰনেট সংযোগ নাই",
+    "showingCachedData": "কেছত থকা তথ্য দেখুওৱা হৈছে"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" সৃষ্টি কৰক"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "শাৰী",
+      "queueIsEmpty": "শাৰী খালী"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "ছুৰাৰ পাঠ আৰু বিৱৰণ চাবলৈ এই তিলাৱতত টেগ দিয়ক"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "প্লেলিষ্ট • {{count}} টা ছুৰা",
+    "subtitle_other": "প্লেলিষ্ট • {{count}} টা ছুৰা"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "এই প্লেলিষ্টত ছুৰা নাই"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "পাদটীকা"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "ঠিক এই মুহূৰ্তৰ বাবে বাছি লোৱা তিলাৱত",
+      "discover": "আৱিষ্কাৰ কৰক",
+      "discoverANewVoice": "নতুন কণ্ঠ আৱিষ্কাৰ কৰক",
+      "explore": "অন্বেষণ কৰক",
+      "exploreTheUnexpected": "অপ্ৰত্যাশিত কিবা আৱিষ্কাৰ কৰক",
+      "hearSomethingNew": "নতুন কিবা শুনক",
+      "letTheQuranSurpriseYou": "কুৰআনে আপোনাক চমকিত কৰক",
+      "randomMix": "যাদৃচ্ছিক মিশ্ৰণ",
+      "randomRecitation": "যাদৃচ্ছিক তিলাৱত",
+      "shuffleListen": "সানমিহলি কৰি শুনক",
+      "surpriseMe": "মোক চমকিত কৰক"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "দৃশ্য মোড সলনি কৰিলে সমগ্ৰ এপত প্ৰযোজ্য হয়"
+  },
+  "reciterBrowse": {
+    "allReciters": "সকলো কাৰী",
+    "browseReciters": "কাৰীসকল চাওক",
+    "favorites": "প্ৰিয়সমূহ"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "এই কাৰীৰ কোনো ডাউনলোড নাই"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "মোৰ আপলোডসমূহ"
+    }
+  },
+  "recitersView": {
+    "adhkar": "আজকাৰ",
+    "bestForMemorization": "মুখস্থ কৰাৰ বাবে উত্তম",
+    "bestForTajweed": "তাজৱীদৰ বাবে উত্তম",
+    "continueListening": "শুনি থাকক",
+    "exclusives": "বিশেষ তিলাৱতসমূহ",
+    "exploreByRewayah": "ৰিৱায়ত অনুসৰি অন্বেষণ কৰক",
+    "featuredReciters": "নিৰ্বাচিত কাৰীসকল",
+    "fromYourCollection": "আপোনাৰ সংগ্ৰহৰ পৰা",
+    "myRecitations": "মোৰ তিলাৱতসমূহ",
+    "newToQuranStartHere": "কুৰআনৰ সৈতে নতুন পৰিচয়? ইয়াৰ পৰা আৰম্ভ কৰক",
+    "seeMore": "অধিক চাওক",
+    "yourFavorites": "আপোনাৰ প্ৰিয়সমূহ"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "সক্ৰিয়",
+      "activeTafseer": "সক্ৰিয় তাফছীৰ",
+      "activeTranslation": "সক্ৰিয় অনুবাদ",
+      "deleteTafseer": "তাফছীৰ মচি পেলাওক",
+      "deleteTranslation": "অনুবাদ মচি পেলাওক",
+      "noTafaseerFound": "তাফছীৰ পোৱা নগ'ল",
+      "noTranslationsFound": "অনুবাদ পোৱা নগ'ল",
+      "unableToDownloadThisTafseer": "এই তাফছীৰ ডাউনলোড কৰিব পৰা নগ'ল। আপোনাৰ ইণ্টাৰনেট সংযোগ পৰীক্ষা কৰি পুনৰ চেষ্টা কৰক।",
+      "unableToDownloadThisTranslation": "এই অনুবাদ ডাউনলোড কৰিব পৰা নগ'ল। আপোনাৰ ইণ্টাৰনেট সংযোগ পৰীক্ষা কৰি পুনৰ চেষ্টা কৰক।"
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "শেহতীয়া সন্ধান নাই",
+      "tryDifferentKeywordsOrCheck": "বেলেগ মূল শব্দ ব্যৱহাৰ কৰক বা বানান পৰীক্ষা কৰক",
+      "yourSearchHistoryWillAppear": "আপোনাৰ সন্ধানৰ ইতিহাস ইয়াত দেখা যাব"
+    },
+    "surahsOrReciters": "ছুৰা বা কাৰী বিচাৰক"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "উন্নত অডিঅ' নিয়ন্ত্ৰণ",
+      "browseByJuz": "জুজ অনুসৰি চাওক",
+      "createAndManageYourOwn": "আপোনাৰ প্ৰিয় তিলাৱতৰ নিজা প্লেলিষ্ট সৃষ্টি আৰু পৰিচালনা কৰক",
+      "crystalClearRecitationsFromThe": "উন্নত ষ্ট্ৰিমিঙৰ সৈতে বিশ্বৰ শ্ৰেষ্ঠ কাৰীসকলৰ স্পষ্ট তিলাৱত",
+      "curatedCollections": "বাছনি কৰা সংগ্ৰহ",
+      "customPlaylists": "নিজা প্লেলিষ্ট",
+      "customizeThemesAccentColorsAnd": "থীম, মুখ্য ৰং আৰু অডিঅ' ছেটিংছ আপোনাৰ পছন্দমতে সজাওক",
+      "downloadSurahsForOfflineListening": "যিকোনো সময়ত, যিকোনো ঠাইত ইণ্টাৰনেট অবিহনে শুনিবলৈ ছুৰা ডাউনলোড কৰক",
+      "easilyNavigateThroughTheQuran": "জুজভিত্তিক ব্যৱস্থা আৰু গোটৰ সহায়ত কুৰআনত সহজে আগবাঢ়ক",
+      "features": "সুবিধাসমূহ",
+      "highQualityAudio": "উচ্চ মানৰ অডিঅ'",
+      "listenReflectRememberAllah": "শুনক। চিন্তা কৰক। আল্লাহক স্মৰণ কৰক।",
+      "offlineDownloads": "অফলাইন ডাউনলোড",
+      "ourCommitment": "আমাৰ প্ৰতিশ্ৰুতি",
+      "ourMission": "আমাৰ উদ্দেশ্য",
+      "personalization": "ব্যক্তিগতকৰণ",
+      "precisePlaybackControlWithContinuous": "নিৰৱচ্ছিন্ন প্লেবেক আৰু সালসলনি কৰিব পৰা তিলাৱতৰ গতিৰ সৈতে সঠিক নিয়ন্ত্ৰণ",
+      "quranBayanTafsirKnowledgeOur": "কুৰআন • বয়ান • তাফছীৰ • জ্ঞান। শুনা আৰু চিন্তা কৰাক দৈনন্দিন জীৱনৰ অংশ কৰি তোলাই আমাৰ লক্ষ্য: ঘৰত, বাটত আৰু আল্লাহক স্মৰণ কৰিবলৈ ক্ষণ পোৱা প্ৰতিটো ঠাইত।",
+      "readListenAndReflect": "পঢ়ক, শুনক আৰু চিন্তা কৰক",
+      "readTheMushafExploreTranslations": "মুছহাফ পঢ়ক, অনুবাদ আৰু তাফছীৰ অন্বেষণ কৰক, আয়াত আৰু টোকা সংৰক্ষণ কৰক আৰু দৈনিক আজকাৰলৈ ঘূৰি আহক। আপোনাৰ কাৰী বাছক, প্লেলিষ্ট সৃষ্টি কৰক আৰু দিনটোৰ সৈতে খাপ খোৱা শুনাৰ অভিজ্ঞতা গঢ়ক। উপলব্ধ সুবিধাসমূহ ডিভাইচ অনুসৰি বেলেগ হয়; ম'বাইল এপত অফলাইন শুনিবলৈ ডাউনলোডৰো সুবিধা আছে।",
+      "thoughtfullyOrganizedSurahsForDifferent": "বিভিন্ন উপলক্ষ আৰু বিষয়ৰ বাবে যত্নেৰে সজোৱা ছুৰাসমূহ",
+      "weCareAboutTheAccuracy": "পৱিত্ৰ বিষয়বস্তুৰ শুদ্ধতা, সন্মানজনক নক্সা আৰু নিৰ্ভৰযোগ্য ব্যৱহাৰৰ প্ৰতি আমি যত্নবান। ব্যৱহাৰকাৰীৰ কথা ভাবি ISTIMA উন্নত কৰি থাকোঁ। আল্লাহে এই প্ৰয়াস গ্ৰহণ কৰক আৰু শুনা, পঢ়া আৰু চিন্তা কৰা সকলোৰে বাবে উপকাৰী কৰক।"
+    },
+    "aboutApp": "{{name}}ৰ বিষয়ে",
+    "appearance": "ৰূপ",
+    "defaultreciter": {
+      "changeDefaultReciter": "অবিকল্পিত কাৰী সলনি কৰক"
+    },
+    "developer": "বিকাশকাৰী",
+    "floatingDevMenu": "ভাসমান বিকাশকাৰী মেনু",
+    "language": "ভাষা",
+    "languageDescription": "এপৰ ভাষা বাছক",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "সদায় নিৰ্বাচিত অবিকল্পিত কাৰী ব্যৱহাৰ কৰক",
+      "askEveryTime": "প্ৰতিবাৰ সোধক",
+      "chooseAReciterEachTime": "প্ৰতিবাৰ বজোৱাৰ সময়ত কাৰী বাছক",
+      "chooseHowYouWantTo": "ছুৰা বজোৱাৰ সময়ত কাৰী কেনেকৈ বাছিব বিচাৰে নিৰ্ধাৰণ কৰক",
+      "defaultSelectionMethod": "অবিকল্পিত বাছনি পদ্ধতি",
+      "searchThroughOurCompleteCollection": "আমাৰ সম্পূৰ্ণ কাৰী সংগ্ৰহত বিচাৰক",
+      "selectionPreference": "বাছনিৰ পছন্দ"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "সকলো ডাউনলোড আঁতৰোৱা হৈছে।",
+      "areYouSureYouWant": "আপুনি ডাউনলোড কৰা সকলো বিষয়বস্তু আঁতৰাব বিচৰাটো নিশ্চিতনে? এই কাম উভতাব নোৱাৰি।",
+      "cache": "কেছ",
+      "cacheHasBeenCleared": "কেছ মচা হৈছে।",
+      "clearCache": "কেছ মচক",
+      "failedToClearCache": "কেছ মচিব পৰা নগ'ল।",
+      "failedToRemoveDownloads": "ডাউনলোড আঁতৰাব পৰা নগ'ল।",
+      "free": "খালী",
+      "loadingStorageInformation": "সংৰক্ষণ স্থানৰ তথ্য লোড হৈ আছে...",
+      "manageStorage": "সংৰক্ষণ স্থান পৰিচালনা",
+      "otherApps": "অন্য এপসমূহ",
+      "removeAllDownloads": "সকলো ডাউনলোড আঁতৰাওক",
+      "removeAllTheQuranContent": "অফলাইন ব্যৱহাৰৰ বাবে ডাউনলোড কৰা কুৰআনৰ সকলো বিষয়বস্তু আঁতৰাওক।",
+      "storageBreakdown": "সংৰক্ষণ স্থানৰ বিৱৰণ",
+      "success": "সফল",
+      "thisWillClearYourCache": "ই কেছ মচিব। আপোনাৰ ডাউনলোড আঁতৰোৱা নহ'ব।",
+      "youCanFreeUpStorage": "কেছ মচি সংৰক্ষণ স্থান খালী কৰিব পাৰে। আপোনাৰ ডাউনলোড আঁতৰোৱা নহ'ব।"
+    },
+    "themePicker": {
+      "auto": "স্বয়ংক্ৰিয়",
+      "dark": "গাঢ়",
+      "light": "পাতল"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "সলনিৰ তালিকা উপলব্ধ নহয়"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "{{name}}ৰ বিষয়ে",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "প্ৰিয় কাৰী যোগ কৰক",
+      "uploadRecitation": "তিলাৱত আপলোড কৰক"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "চৌপাশৰ শব্দ",
+      "none": "একো নাই",
+      "volume": "শব্দৰ মাত্ৰা"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "যেনে, পুৱাৰ তিলাৱত"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "ডাউনলোড আঁতৰাওক"
+    },
+    "favoriteRecitersSheet": {
+      "done": "হ'ল"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "সংগ্ৰহত যোগ কৰক",
+      "addToQueue": "শাৰীত যোগ কৰক",
+      "continuePlaying": "বজাই থাকক",
+      "goToReciter": "কাৰীলৈ যাওক",
+      "removeFromRecents": "শেহতীয়া তালিকাৰ পৰা আঁতৰাওক"
+    },
+    "mushafLayoutSheet": {
+      "back": "পিছলৈ"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "শেষৰ আয়াত",
+      "playbackSettings": "প্লেবেক ছেটিংছ",
+      "selectRange": "পৰিসৰ বাছক",
+      "startingVerse": "আৰম্ভণিৰ আয়াত"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "পুনৰাবৃত্তিৰ ছেটিংছ",
+      "start": "আৰম্ভ কৰক",
+      "verseRange": "আয়াতৰ পৰিসৰ"
+    },
+    "organizeRecitationSheet": {
+      "category": "শ্ৰেণী",
+      "customReciter": "নিজা কাৰী",
+      "duA": "দুআ",
+      "eGMorningAdhkar": "যেনে, পুৱাৰ আজকাৰ",
+      "lecture": "বক্তৃতা",
+      "moreOptions": "অধিক বিকল্প",
+      "other": "অন্য",
+      "recording": "ৰেকৰ্ডিং",
+      "rewayah": "ৰিৱায়ত",
+      "searchSurahs": "ছুৰা বিচাৰক...",
+      "style": "শৈলী",
+      "tafsir": "তাফছীৰ",
+      "title": "শিৰোনাম",
+      "type": "প্ৰকাৰ",
+      "verseRangeOptional": "আয়াতৰ পৰিসৰ (ঐচ্ছিক)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "প্লেবেকৰ গতি"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "এই প্লেলিষ্টৰ সকলো বস্তু ইতিমধ্যে ডাউনলোড কৰা হৈছে।",
+      "anErrorOccurredWhileDownloading": "প্লেলিষ্ট ডাউনলোড কৰোঁতে ত্ৰুটি হ'ল। পুনৰ চেষ্টা কৰক।",
+      "deletePlaylist": "প্লেলিষ্ট মচি পেলাওক",
+      "downloadingPlaylist": "প্লেলিষ্ট ডাউনলোড হৈ আছে...",
+      "editPlaylist": "প্লেলিষ্ট সম্পাদনা কৰক",
+      "emptyPlaylist": "খালী প্লেলিষ্ট",
+      "thisPlaylistIsEmpty": "এই প্লেলিষ্ট খালী।"
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "ৰিৱায়তৰ বিষয়ে",
+      "availableRewayat": "উপলব্ধ ৰিৱায়ত"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "ছুৰা প্লেলিষ্টত যোগ কৰিব পৰা নগ'ল",
+      "failedToCreatePlaylist": "প্লেলিষ্ট সৃষ্টি কৰিব পৰা নগ'ল",
+      "noPlaylistsYetCreateYour": "এতিয়ালৈকে প্লেলিষ্ট নাই। ওপৰত আপোনাৰ প্ৰথম প্লেলিষ্ট সৃষ্টি কৰক!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "প্ৰতিবাৰ সোধক",
+      "randomReciter": "যাদৃচ্ছিক কাৰী",
+      "selectReciter": "কাৰী বাছক"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "এই আয়াতৰ বাবে সদৃশ আয়াত পোৱা নগ'ল।",
+      "similarWording": "সদৃশ শব্দৰ গাঁথনি"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "নিদ্ৰা টাইমাৰ",
+      "turnOffTimer": "টাইমাৰ বন্ধ কৰক"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "প্লেলিষ্টৰ পৰা আঁতৰাওক"
+    },
+    "verseActionsSheet": {
+      "addNote": "টোকা যোগ কৰক",
+      "copy": "প্ৰতিলিপি কৰক",
+      "repeat": "পুনৰ বজাওক",
+      "similarVerses": "সদৃশ আয়াতসমূহ",
+      "tafseer": "তাফছীৰ",
+      "theme": "থীম"
+    },
+    "verseCopySheet": {
+      "copyOptions": "প্ৰতিলিপিৰ বিকল্পসমূহ",
+      "selectWhatToCopy": "কি প্ৰতিলিপি কৰিব বাছক"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "উজ্জ্বল চিহ্নৰ ৰং"
+    },
+    "verseShareSheet": {
+      "shareVerse": "আয়াত ভাগ-বতৰা কৰক"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "{{count}} টা আয়াতত পোৱা গ'ল",
+    "foundIn_other": "{{count}} টা আয়াতত পোৱা গ'ল"
+  },
+  "surahItem": {
+    "moreOptions": "অধিক বিকল্প",
+    "opensMenuWithAdditionalActions": "এই ছুৰাৰ অতিৰিক্ত কামৰ মেনু খোলে",
+    "tapToPlaySurah": "ছুৰা বজাবলৈ টেপ কৰক"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "প্লেলিষ্ট আইডি অবৈধ",
+      "playlistNotFound": "প্লেলিষ্ট পোৱা নগ'ল"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "এই প্লেলিষ্টৰ সকলো ছুৰা থকা কাৰী পোৱা নগ'ল। বেলেগ প্লেলিষ্ট ব্যৱহাৰ কৰি চাওক।",
+      "failedToPlayPlaylistPlease": "প্লেলিষ্ট বজাব পৰা নগ'ল। পুনৰ চেষ্টা কৰক।",
+      "failedToPlayTrackPlease": "ট্ৰেক বজাব পৰা নগ'ল। পুনৰ চেষ্টা কৰক।",
+      "failedToShufflePlaylistPlease": "প্লেলিষ্টৰ ক্ৰম সলনি কৰিব পৰা নগ'ল। পুনৰ চেষ্টা কৰক।",
+      "noReciterAvailable": "কাৰী উপলব্ধ নহয়",
+      "noSurahsInThisPlaylist": "এই প্লেলিষ্টত ছুৰা নাই"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "একাউণ্ট",
+      "appData": "এপ আৰু তথ্য",
+      "audioPlayback": "অডিঅ' আৰু প্লেবেক",
+      "chooseYourPreferredReciter": "আপোনাৰ পছন্দৰ কাৰী বাছক",
+      "customizeQuranDisplayOptions": "কুৰআন প্ৰদৰ্শনৰ বিকল্প সজাওক",
+      "customizeReciterSelection": "কাৰীৰ বাছনি সজাওক",
+      "featureRequests": "নতুন সুবিধাৰ অনুৰোধ",
+      "feedback": "মতামত",
+      "helpSupport": "সহায় আৰু সমৰ্থন",
+      "learnMoreAboutOurMission": "আমাৰ উদ্দেশ্যৰ বিষয়ে অধিক জানক",
+      "manageQuranTranslationsAndCommentary": "কুৰআনৰ অনুবাদ আৰু ব্যাখ্যা পৰিচালনা কৰক",
+      "privacyPolicy": "গোপনীয়তা নীতি",
+      "quran": "কুৰআন",
+      "readOurTermsOfService": "আমাৰ সেৱাৰ চৰ্তসমূহ পঢ়ক",
+      "seeWhatSNewIn": "এই সংস্কৰণত নতুন কি আছে চাওক",
+      "shareYourExperienceWithOthers": "আপোনাৰ অভিজ্ঞতা আনৰ সৈতে ভাগ-বতৰা কৰক",
+      "showTheFloatingDeveloperTools": "ভাসমান বিকাশকাৰী সঁজুলিৰ বুটাম দেখুৱাওক",
+      "suggestImprovementsAndNewFeatures": "উন্নতি আৰু নতুন সুবিধাৰ পৰামৰ্শ দিয়ক",
+      "termsOfService": "সেৱাৰ চৰ্তসমূহ",
+      "viewAndManageStorageUsage": "সংৰক্ষণ স্থানৰ ব্যৱহাৰ চাওক আৰু পৰিচালনা কৰক",
+      "viewOurPrivacyPolicy": "আমাৰ গোপনীয়তা নীতি চাওক",
+      "writeAReview": "পৰ্যালোচনা লিখক"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "বাতিল কৰক",
+    "close": "বন্ধ কৰক",
+    "collection": "সংগ্ৰহ",
+    "download": "ডাউনলোড কৰক",
+    "downloads": "ডাউনলোডসমূহ",
+    "error": "কিবা ভুল হ'ল",
+    "favorites": "প্ৰিয়সমূহ",
+    "home": "মুখ্যপৃষ্ঠা",
+    "language": "ভাষা",
+    "library": "পুথিভঁৰাল",
+    "loading": "লোড হৈ আছে...",
+    "noResults": "ফলাফল পোৱা নগ'ল",
+    "offline": "আপুনি অফলাইন আছে",
+    "pause": "বিৰতি দিয়ক",
+    "play": "বজাওক",
+    "retry": "পুনৰ চেষ্টা কৰক",
+    "save": "সংৰক্ষণ কৰক",
+    "search": "বিচাৰক",
+    "settings": "ছেটিংছ",
+    "surahs": "ছুৰাসমূহ"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "বিষয়বস্তু বাছক"
+    },
+    "highlightContent": {
+      "chooseColor": "ৰং বাছক"
+    },
+    "noteContent": {
+      "saveNote": "টোকা সংৰক্ষণ কৰক"
+    },
+    "shareContent": {
+      "shareLink": "লিংক ভাগ-বতৰা কৰক"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "এই আয়াতৰ বাবে সদৃশ আয়াত পোৱা নগ'ল।",
+      "sharedPhrases": "উমৈহতীয়া বাক্যাংশ",
+      "similarWording": "সদৃশ শব্দৰ গাঁথনি"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "তাফছীৰ ডাউনলোড কৰা হোৱা নাই",
+      "tafseerNotAvailableForThis": "এই আয়াতৰ বাবে তাফছীৰ উপলব্ধ নহয়",
+      "tapHereToDownloadA": "তাফছীৰ ডাউনলোড কৰিবলৈ আৰু ব্যাখ্যা চাবলৈ ইয়াত টেপ কৰক।"
+    },
+    "themeContent": {
+      "noThematicDataForThis": "এই আয়াতৰ বাবে বিষয়ভিত্তিক তথ্য নাই।",
+      "passage": "অংশ"
+    },
+    "translationContent": {
+      "switch": "সলনি কৰক",
+      "translationNotAvailable": "অনুবাদ উপলব্ধ নহয়"
+    }
+  },
+  "version": {
+    "label": "সংস্কৰণ {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "ইয়াত নতুন কি আছে"
+  },
+  "wordDetail": {
+    "context": "আয়াত {{surah}}:{{ayah}} · {{total}} টাৰ ভিতৰত {{position}} নং শব্দ"
+  }
+}
