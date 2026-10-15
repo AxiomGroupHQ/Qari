@@ -1,0 +1,729 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Ошибка инициализации проигрывателя: {{message}}",
+    "errorLoadingFonts": "Ошибка загрузки шрифтов"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Главная страница ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Все",
+      "clearAll": "Очистить всё",
+      "hasPhoto": "С фотографией"
+    },
+    "filterModal": {
+      "apply": "Применить",
+      "filterReciters": "Фильтр чтецов",
+      "recitationStyles": "Стили чтения",
+      "reset": "Сбросить",
+      "rewayatTypes": "Виды передач чтения"
+    },
+    "recitersFound_one": "С текущими фильтрами найден {{count}} чтец",
+    "recitersFound_other": "С текущими фильтрами найдено {{count}} чтеца",
+    "recitersFound_few": "С текущими фильтрами найдено {{count}} чтеца",
+    "recitersFound_many": "С текущими фильтрами найдено {{count}} чтецов"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Любимые суры"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Добавьте аяты в закладки, чтобы видеть их здесь",
+      "bookmarks": "Закладки",
+      "noBookmarksYet": "Закладок пока нет",
+      "removeBookmark": "Удалить закладку"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Передачи чтения",
+      "searchPlaylistsRecitersSurahsRewayat": "Поиск плейлистов, чтецов, сур, передач чтения…",
+      "searchPlaylistsRecitersSurahsRewayat2": "Поиск плейлистов, чтецов, сур, передач чтения и загрузок",
+      "searchYourCollection": "Поиск в вашей коллекции",
+      "searching": "Поиск…",
+      "tryDifferentKeywords": "Попробуйте другие ключевые слова"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Скачайте суры, чтобы видеть их здесь",
+      "noDownloadsYet": "Загрузок пока нет",
+      "playAll": "Воспроизвести всё"
+    },
+    "favoritereciters": {
+      "addReciters": "Добавить чтецов",
+      "addRecitersToSeeThem": "Добавьте чтецов, чтобы видеть их здесь",
+      "noFavoriteRecitersYet": "Любимых чтецов пока нет",
+      "removeFromFavorites": "Убрать из избранного",
+      "searchFavoriteReciters": "Поиск любимых чтецов"
+    },
+    "index": {
+      "addToCollection": "Добавить в коллекцию",
+      "bookmarks": "Закладки",
+      "createYourFirstPlaylist": "Создайте первый плейлист",
+      "downloads": "Загрузки",
+      "items_one": "{{count}} элемент",
+      "items_other": "{{count}} элемента",
+      "loved": "Любимые",
+      "noBookmarksYet": "Закладок пока нет",
+      "noDownloadsYet": "Загрузок пока нет",
+      "noFavoritesYet": "Избранного пока нет",
+      "noLovedSurahsYet": "Любимых сур пока нет",
+      "noNotesYet": "Заметок пока нет",
+      "noUploadsYet": "Загруженных файлов пока нет",
+      "notes": "Заметки",
+      "playlists": "Плейлисты",
+      "reciters": "Чтецы",
+      "uploads": "Загруженные файлы",
+      "items_few": "{{count}} элемента",
+      "items_many": "{{count}} элементов"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Все любимые суры уже скачаны.",
+      "allLovedSurahsHaveBeen": "Все любимые суры скачаны.",
+      "downloadError": "Ошибка скачивания",
+      "loveSurahsToSeeThem": "Отметьте суры как любимые, чтобы видеть их здесь",
+      "noLovedSurahsYet": "Любимых сур пока нет",
+      "someDownloadsMayHaveFailed": "Некоторые загрузки могли завершиться с ошибкой.",
+      "unloveAllSurahs": "Убрать все суры из любимых"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Добавьте заметки к аятам, чтобы видеть их здесь",
+      "editNote": "Изменить заметку",
+      "noNotesYet": "Заметок пока нет",
+      "notes": "Заметки"
+    },
+    "playlistModal": {
+      "name": "Название"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Создайте плейлисты, чтобы видеть их здесь",
+      "noPlaylistsYet": "Плейлистов пока нет",
+      "playlists": "Плейлисты"
+    },
+    "uploads": {
+      "removeAllUploads": "Удалить все загруженные файлы",
+      "uploadRecitationsToSeeThem": "Загрузите записи чтения, чтобы видеть их здесь"
+    }
+  },
+  "common": {
+    "1Time": "1 раз",
+    "2Times": "2 раза",
+    "3Times": "3 раза",
+    "addToCollection": "Добавить в коллекцию",
+    "addToQueue": "Добавить в очередь",
+    "allSurahs": "Все суры",
+    "alreadyDownloaded": "Уже скачано",
+    "arabic": "Арабский",
+    "asc": "По возрастанию",
+    "browseAll": "Смотреть всё",
+    "browseAllReciters": "Все чтецы",
+    "cancel": "Отмена",
+    "clear": "Очистить",
+    "copyToClipboard": "Копировать в буфер обмена",
+    "createNewPlaylist": "Создать плейлист",
+    "defaultReciter": "Чтец по умолчанию",
+    "delete": "Удалить",
+    "deleteNote": "Удалить заметку",
+    "deleteRecitation": "Удалить запись чтения",
+    "desc": "По убыванию",
+    "downloadComplete": "Скачивание завершено",
+    "downloadFailed": "Не удалось скачать",
+    "downloads": "Загрузки",
+    "editDetails": "Изменить сведения",
+    "error": "Ошибка",
+    "favoriteReciters": "Любимые чтецы",
+    "followAlong": "Следить по тексту",
+    "from": "От",
+    "goToReciter": "Перейти к чтецу",
+    "goToVerse": "Перейти к аяту",
+    "learnAboutSurah": "О суре",
+    "loading": "Загрузка…",
+    "loop": "Зациклить",
+    "loved": "Любимые",
+    "mushafSettings": "Настройки мусхафа",
+    "next": "Далее",
+    "noRecitersFound": "Чтецы не найдены",
+    "noResultsFound": "Ничего не найдено",
+    "noUploadsYet": "Загруженных файлов пока нет",
+    "play": "Воспроизвести",
+    "playEachVerse": "Воспроизводить каждый аят",
+    "playNow": "Воспроизвести сейчас",
+    "playSpeed": "Скорость воспроизведения",
+    "playTheRange": "Воспроизвести диапазон",
+    "playlistName": "Название плейлиста",
+    "prev": "Назад",
+    "readingTheme": "Тема чтения",
+    "recentSearches": "Недавние запросы",
+    "reciter": "Чтец",
+    "reciterChoice": "Выбор чтеца",
+    "reciters": "Чтецы",
+    "remove": "Убрать",
+    "removeAllDownloads": "Удалить все загрузки",
+    "removeHighlight": "Убрать выделение",
+    "rev": "Порядок ниспослания",
+    "save": "Сохранить",
+    "search": "Поиск",
+    "searchReciters": "Поиск чтецов…",
+    "searchSurahs": "Поиск сур",
+    "share": "Поделиться",
+    "shareAsImage": "Поделиться изображением",
+    "shareAsText": "Поделиться текстом",
+    "sharedPhrases": "Общие фразы",
+    "showBasmallah": "Показывать басмалу",
+    "stop": "Остановить",
+    "storage": "Хранилище",
+    "surah": "Сура",
+    "surahs": "Суры",
+    "to": "До",
+    "translation": "Перевод",
+    "translationsTafaseer": "Переводы и тафсиры",
+    "transliteration": "Транслитерация",
+    "uploads": "Загруженные файлы",
+    "useDefaultReciter": "Использовать чтеца по умолчанию",
+    "verseReference": "Ссылка на аят",
+    "verses": "Аяты",
+    "whatSNew": "Что нового",
+    "wordByWord": "По словам",
+    "writeYourNoteHere": "Напишите заметку здесь…",
+    "yourPlaylists": "Ваши плейлисты"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Воспроизвести все суры"
+    },
+    "searchHeader": {
+      "searchSurahs": "Поиск сур"
+    },
+    "searchView": {
+      "noSurahsFound": "Суры не найдены"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Нет доступных сур"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Добавить запись чтения",
+      "uploadRecitationsToSeeThem": "Загрузите записи чтения, чтобы видеть их здесь"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Скачано • {{count}} сура",
+    "subtitle_other": "Скачано • {{count}} суры",
+    "subtitle_few": "Скачано • {{count}} суры",
+    "subtitle_many": "Скачано • {{count}} сур"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Извините, произошла ошибка"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Все 114 сур"
+    },
+    "savedAdhkarHero": {
+      "saved": "Сохранено",
+      "yourCollection": "Ваша коллекция"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "СУРА ДНЯ"
+    },
+    "surahsHero": {
+      "number": "Номер"
+    }
+  },
+  "language": {
+    "later": "Позже",
+    "restartMessage": "Перезапустите приложение, чтобы применить новое направление интерфейса.",
+    "restartNow": "Перезапустить",
+    "restartTitle": "Требуется перезапуск",
+    "search": "Поиск языков",
+    "system": "Язык устройства"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Продолжить"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Пропустить"
+    }
+  },
+  "mushaf": {
+    "juz": "Джуз {{juz}}",
+    "loadingMushaf": "Загрузка мусхафа…",
+    "main": {
+      "mushafSettings": "Настройки мусхафа"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Сменить чтеца",
+      "changeReciter2": "Сменить чтеца",
+      "nextAyah": "Следующий аят",
+      "playbackOptions": "Параметры воспроизведения",
+      "previousAyah": "Предыдущий аят"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Поиск сур, аятов, страниц или джузов",
+      "recentReads": "НЕДАВНО ПРОЧИТАННОЕ",
+      "searchSurahsPagesOrJuz": "Поиск сур, страниц или джузов…",
+      "searchTheMushaf": "Поиск по мусхафу"
+    },
+    "options": "Параметры",
+    "page": "Страница {{page}}",
+    "pageAndSurah": "Страница {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Не удалось загрузить мусхаф.",
+    "tryAgain": "Повторить"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Выделяет в мусхафе имя Аллаха и божественные наименования, такие как «Рабб»."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Чередующееся выделение тематических отрывков",
+    "arabicFontSize": "Размер арабского шрифта",
+    "bold": "Жирный",
+    "book": "Книжный",
+    "colorLegend": "Обозначения цветов",
+    "currentlyReading": "Читается сейчас",
+    "divineNames": "БОЖЕСТВЕННЫЕ ИМЕНА",
+    "fontSize": "Размер шрифта",
+    "fullscreen": "На весь экран",
+    "hamzaReplacedByLongVowel": "Замена хамзы долгой гласной",
+    "heavyLamInAllahAfter": "Твёрдый лям в имени Аллах после эмфатических букв",
+    "highlightAllahRabb": "Выделять Аллах / Рабб",
+    "horizontal": "Горизонтально",
+    "ibdal": "Ибдаль",
+    "list": "Список",
+    "loadingSample": "Загрузка примера…",
+    "maddAlBadal": "Мадд аль-бадаль",
+    "maximumProminence": "Максимальное выделение",
+    "medium": "Средний",
+    "modernMadinahPrintedPipeline": "Обработка современной мединской печатной версии",
+    "mushaf": "Мусхаф",
+    "normal": "Обычный",
+    "originalMushafWeight": "Исходная толщина шрифта мусхафа",
+    "pageDesign": "ОФОРМЛЕНИЕ СТРАНИЦЫ",
+    "prolongedVowelAfterHamza": "Удлинённая гласная после хамзы",
+    "readingTheme": "ТЕМА ЧТЕНИЯ",
+    "scrollDirection": "НАПРАВЛЕНИЕ ПРОКРУТКИ",
+    "showDifferences": "Показывать различия",
+    "silah": "Сыля",
+    "slightlyMoreProminent": "Немного более выраженный",
+    "softenedHamzaPronunciation": "Облегчённое произношение хамзы",
+    "subcontinentNastaliqStyle": "Стиль насталик Индийского субконтинента",
+    "taghlizAlLam": "Таглиз аль-лям",
+    "tajweedColoring": "Цвета таджвида",
+    "tashilMusahhala": "Тасхиль / мусаххаля",
+    "textPreviewNotYetAvailable": "ПРЕДПРОСМОТР ТЕКСТА ПОКА НЕДОСТУПЕН",
+    "textThickness": "ТОЛЩИНА ТЕКСТА",
+    "thematicHighlighting": "Тематическое выделение",
+    "trailingVowelOrMoodChange": "Только изменение конечной гласной или наклонения",
+    "usingSaheehInternationalTranslationWith": "Используется: перевод Saheeh International со сносками",
+    "vertical": "Вертикально",
+    "viewType": "ВИД ОТОБРАЖЕНИЯ",
+    "vowelMoodShift": "Изменение гласной / наклонения",
+    "wordByWord": "ПО СЛОВАМ",
+    "wordVariant": "Вариант слова"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Сервер недоступен",
+    "connectionRestored": "Соединение восстановлено",
+    "noInternetConnection": "Нет подключения к интернету",
+    "showingCachedData": "Показаны данные из кеша"
+  },
+  "organize": {
+    "createReciter": "Создать «{{name}}»"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Очередь",
+      "queueIsEmpty": "Очередь пуста"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Укажите данные этой записи, чтобы видеть текст суры и сведения о ней"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Плейлист • {{count}} сура",
+    "subtitle_other": "Плейлист • {{count}} суры",
+    "subtitle_few": "Плейлист • {{count}} суры",
+    "subtitle_many": "Плейлист • {{count}} сур"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "В этом плейлисте нет сур"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Сноска"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Чтение, выбранное именно для этого момента",
+      "discover": "Открыть для себя",
+      "discoverANewVoice": "Откройте для себя новый голос",
+      "explore": "Исследовать",
+      "exploreTheUnexpected": "Откройте для себя неожиданное",
+      "hearSomethingNew": "Послушайте что-нибудь новое",
+      "letTheQuranSurpriseYou": "Пусть Коран удивит вас",
+      "randomMix": "Случайный микс",
+      "randomRecitation": "Случайное чтение",
+      "shuffleListen": "Перемешать и слушать",
+      "surpriseMe": "Удивите меня"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Изменение режима оформления применяется ко всему приложению"
+  },
+  "reciterBrowse": {
+    "allReciters": "Все чтецы",
+    "browseReciters": "Выбор чтецов",
+    "favorites": "Избранное"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Нет загрузок этого чтеца"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Мои загруженные файлы"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Азкары",
+    "bestForMemorization": "Для заучивания",
+    "bestForTajweed": "Для изучения таджвида",
+    "continueListening": "Продолжить слушать",
+    "exclusives": "Эксклюзивные записи",
+    "exploreByRewayah": "Выбор по передаче чтения",
+    "featuredReciters": "Рекомендуемые чтецы",
+    "fromYourCollection": "Из вашей коллекции",
+    "myRecitations": "Мои записи чтения",
+    "newToQuranStartHere": "Знакомитесь с Кораном? Начните здесь",
+    "seeMore": "Показать больше",
+    "yourFavorites": "Ваше избранное"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Активно",
+      "activeTafseer": "АКТИВНЫЙ ТАФСИР",
+      "activeTranslation": "АКТИВНЫЙ ПЕРЕВОД",
+      "deleteTafseer": "Удалить тафсир",
+      "deleteTranslation": "Удалить перевод",
+      "noTafaseerFound": "Тафсиры не найдены",
+      "noTranslationsFound": "Переводы не найдены",
+      "unableToDownloadThisTafseer": "Не удалось скачать этот тафсир. Проверьте подключение к интернету и повторите попытку.",
+      "unableToDownloadThisTranslation": "Не удалось скачать этот перевод. Проверьте подключение к интернету и повторите попытку."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Недавних запросов нет",
+      "tryDifferentKeywordsOrCheck": "Попробуйте другие ключевые слова или проверьте написание",
+      "yourSearchHistoryWillAppear": "Здесь появится история поиска"
+    },
+    "surahsOrReciters": "Поиск сур или чтецов"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Расширенное управление звуком",
+      "browseByJuz": "Выбор по джузам",
+      "createAndManageYourOwn": "Создавайте собственные плейлисты любимых записей чтения и управляйте ими",
+      "crystalClearRecitationsFromThe": "Чистое звучание лучших чтецов мира с оптимизированной потоковой передачей",
+      "curatedCollections": "Подборки",
+      "customPlaylists": "Собственные плейлисты",
+      "customizeThemesAccentColorsAnd": "Настройте темы, акцентные цвета и параметры звука по своему вкусу",
+      "downloadSurahsForOfflineListening": "Скачайте суры и слушайте их без интернета в любое время и в любом месте",
+      "easilyNavigateThroughTheQuran": "Удобно переходите по Корану благодаря группировке по джузам",
+      "features": "ВОЗМОЖНОСТИ",
+      "highQualityAudio": "Высокое качество звука",
+      "listenReflectRememberAllah": "Слушайте. Размышляйте. Поминайте Аллаха.",
+      "offlineDownloads": "Загрузки для прослушивания без интернета",
+      "ourCommitment": "Наши обязательства",
+      "ourMission": "Наша миссия",
+      "personalization": "Персонализация",
+      "precisePlaybackControlWithContinuous": "Точное управление непрерывным воспроизведением и настраиваемая скорость чтения",
+      "quranBayanTafsirKnowledgeOur": "Коран • Баян • Тафсир • Знания. Мы стремимся сделать слушание и размышление частью повседневной жизни: дома, в пути и везде, где есть возможность вспомнить Аллаха.",
+      "readListenAndReflect": "Читайте, слушайте и размышляйте",
+      "readTheMushafExploreTranslations": "Читайте мусхаф, изучайте переводы и тафсиры, сохраняйте аяты и заметки, возвращайтесь к ежедневным азкарам. Выбирайте чтеца, создавайте плейлисты и слушайте так, как удобно вам. Доступные функции зависят от устройства; приложения для мобильных устройств также поддерживают загрузки для прослушивания без интернета.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Суры, тщательно подобранные по разным темам и случаям",
+      "weCareAboutTheAccuracy": "Мы заботимся о точности священного содержания, уважительном оформлении и надёжном доступе. Мы продолжаем улучшать ISTIMA, думая о тех, кто им пользуется. Пусть Аллах примет этот труд и сделает его полезным для каждого, кто слушает, читает и размышляет."
+    },
+    "aboutApp": "О {{name}}",
+    "appearance": "ОФОРМЛЕНИЕ",
+    "defaultreciter": {
+      "changeDefaultReciter": "СМЕНИТЬ ЧТЕЦА ПО УМОЛЧАНИЮ"
+    },
+    "developer": "РАЗРАБОТЧИК",
+    "floatingDevMenu": "Плавающее меню разработчика",
+    "language": "Язык",
+    "languageDescription": "Выберите язык приложения",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Всегда использовать выбранного чтеца по умолчанию",
+      "askEveryTime": "Спрашивать каждый раз",
+      "chooseAReciterEachTime": "Выбирать чтеца при каждом воспроизведении",
+      "chooseHowYouWantTo": "Выберите способ выбора чтеца при воспроизведении сур",
+      "defaultSelectionMethod": "СПОСОБ ВЫБОРА ПО УМОЛЧАНИЮ",
+      "searchThroughOurCompleteCollection": "Поиск по полной коллекции чтецов",
+      "selectionPreference": "ПРЕДПОЧТЕНИЯ ВЫБОРА"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Все загрузки удалены.",
+      "areYouSureYouWant": "Удалить весь скачанный контент? Это действие нельзя отменить.",
+      "cache": "Кеш",
+      "cacheHasBeenCleared": "Кеш очищен.",
+      "clearCache": "Очистить кеш",
+      "failedToClearCache": "Не удалось очистить кеш.",
+      "failedToRemoveDownloads": "Не удалось удалить загрузки.",
+      "free": "Свободно",
+      "loadingStorageInformation": "Загрузка сведений о хранилище…",
+      "manageStorage": "УПРАВЛЕНИЕ ХРАНИЛИЩЕМ",
+      "otherApps": "Другие приложения",
+      "removeAllDownloads": "Удалить все загрузки",
+      "removeAllTheQuranContent": "Удалить весь контент Корана, скачанный для использования без интернета.",
+      "storageBreakdown": "ИСПОЛЬЗОВАНИЕ ХРАНИЛИЩА",
+      "success": "Готово",
+      "thisWillClearYourCache": "Кеш будет очищен. Загрузки не будут удалены.",
+      "youCanFreeUpStorage": "Можно освободить место, очистив кеш. Загрузки не будут удалены."
+    },
+    "themePicker": {
+      "auto": "Автоматически",
+      "dark": "Тёмная",
+      "light": "Светлая"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Список изменений недоступен"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "О {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Добавить любимого чтеца",
+      "uploadRecitation": "Загрузить запись чтения"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Фоновые звуки",
+      "none": "Нет",
+      "volume": "Громкость"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "например, Утреннее чтение"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Удалить загрузку"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Готово"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Добавить в коллекцию",
+      "addToQueue": "Добавить в очередь",
+      "continuePlaying": "Продолжить воспроизведение",
+      "goToReciter": "Перейти к чтецу",
+      "removeFromRecents": "Убрать из недавнего"
+    },
+    "mushafLayoutSheet": {
+      "back": "Назад"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Последний аят",
+      "playbackSettings": "Настройки воспроизведения",
+      "selectRange": "Выбрать диапазон",
+      "startingVerse": "Первый аят"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Настройки повтора",
+      "start": "Начать",
+      "verseRange": "Диапазон аятов"
+    },
+    "organizeRecitationSheet": {
+      "category": "Категория",
+      "customReciter": "Свой чтец",
+      "duA": "Дуа",
+      "eGMorningAdhkar": "например, Утренние азкары",
+      "lecture": "Лекция",
+      "moreOptions": "Другие параметры",
+      "other": "Другое",
+      "recording": "Запись",
+      "rewayah": "Передача чтения",
+      "searchSurahs": "Поиск сур…",
+      "style": "Стиль",
+      "tafsir": "Тафсир",
+      "title": "Заголовок",
+      "type": "Тип",
+      "verseRangeOptional": "Диапазон аятов (необязательно)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Скорость воспроизведения"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Все элементы этого плейлиста уже скачаны.",
+      "anErrorOccurredWhileDownloading": "При скачивании плейлиста произошла ошибка. Повторите попытку.",
+      "deletePlaylist": "Удалить плейлист",
+      "downloadingPlaylist": "Скачивание плейлиста…",
+      "editPlaylist": "Изменить плейлист",
+      "emptyPlaylist": "Пустой плейлист",
+      "thisPlaylistIsEmpty": "Этот плейлист пуст."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "О передачах чтения",
+      "availableRewayat": "Доступные передачи чтения"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Не удалось добавить суру в плейлист",
+      "failedToCreatePlaylist": "Не удалось создать плейлист",
+      "noPlaylistsYetCreateYour": "Плейлистов пока нет. Создайте первый плейлист выше!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Спрашивать каждый раз",
+      "randomReciter": "Случайный чтец",
+      "selectReciter": "Выбрать чтеца"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Для этого аята не найдено похожих аятов.",
+      "similarWording": "Похожие формулировки"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Таймер сна",
+      "turnOffTimer": "Выключить таймер"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Убрать из плейлиста"
+    },
+    "verseActionsSheet": {
+      "addNote": "Добавить заметку",
+      "copy": "Копировать",
+      "repeat": "Повторить",
+      "similarVerses": "Похожие аяты",
+      "tafseer": "Тафсир",
+      "theme": "Тема"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Параметры копирования",
+      "selectWhatToCopy": "Выберите, что копировать"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Цвет выделения"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Поделиться аятом"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Найдено в {{count}} аяте",
+    "foundIn_other": "Аятов с совпадением: {{count}}",
+    "foundIn_few": "Найдено в {{count}} аятах",
+    "foundIn_many": "Найдено в {{count}} аятах"
+  },
+  "surahItem": {
+    "moreOptions": "Другие параметры",
+    "opensMenuWithAdditionalActions": "Открывает меню дополнительных действий для этой суры",
+    "tapToPlaySurah": "Нажмите, чтобы воспроизвести суру"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Недопустимый идентификатор плейлиста",
+      "playlistNotFound": "Плейлист не найден"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Не найден чтец, у которого есть все суры этого плейлиста. Попробуйте другой плейлист.",
+      "failedToPlayPlaylistPlease": "Не удалось воспроизвести плейлист. Повторите попытку.",
+      "failedToPlayTrackPlease": "Не удалось воспроизвести запись. Повторите попытку.",
+      "failedToShufflePlaylistPlease": "Не удалось перемешать плейлист. Повторите попытку.",
+      "noReciterAvailable": "Нет доступных чтецов",
+      "noSurahsInThisPlaylist": "В этом плейлисте нет сур"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Аккаунт",
+      "appData": "Приложение и данные",
+      "audioPlayback": "Звук и воспроизведение",
+      "chooseYourPreferredReciter": "Выберите предпочитаемого чтеца",
+      "customizeQuranDisplayOptions": "Настройте отображение Корана",
+      "customizeReciterSelection": "Настройте выбор чтеца",
+      "featureRequests": "Запросы функций",
+      "feedback": "Обратная связь",
+      "helpSupport": "Помощь и поддержка",
+      "learnMoreAboutOurMission": "Узнайте больше о нашей миссии",
+      "manageQuranTranslationsAndCommentary": "Управление переводами Корана и комментариями",
+      "privacyPolicy": "Политика конфиденциальности",
+      "quran": "Коран",
+      "readOurTermsOfService": "Прочитайте условия использования",
+      "seeWhatSNewIn": "Узнайте, что нового в этой версии",
+      "shareYourExperienceWithOthers": "Поделитесь своим опытом с другими",
+      "showTheFloatingDeveloperTools": "Показывать плавающую кнопку инструментов разработчика",
+      "suggestImprovementsAndNewFeatures": "Предлагайте улучшения и новые функции",
+      "termsOfService": "Условия использования",
+      "viewAndManageStorageUsage": "Просмотр и управление хранилищем",
+      "viewOurPrivacyPolicy": "Прочитайте политику конфиденциальности",
+      "writeAReview": "Написать отзыв"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Отмена",
+    "close": "Закрыть",
+    "collection": "Коллекция",
+    "download": "Скачать",
+    "downloads": "Загрузки",
+    "error": "Что-то пошло не так",
+    "favorites": "Избранное",
+    "home": "Главная",
+    "language": "Язык",
+    "library": "Библиотека",
+    "loading": "Загрузка…",
+    "noResults": "Ничего не найдено",
+    "offline": "Вы не в сети",
+    "pause": "Пауза",
+    "play": "Воспроизвести",
+    "retry": "Повторить",
+    "save": "Сохранить",
+    "search": "Поиск",
+    "settings": "Настройки",
+    "surahs": "Суры"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "ВЫБЕРИТЕ СОДЕРЖИМОЕ"
+    },
+    "highlightContent": {
+      "chooseColor": "ВЫБЕРИТЕ ЦВЕТ"
+    },
+    "noteContent": {
+      "saveNote": "Сохранить заметку"
+    },
+    "shareContent": {
+      "shareLink": "Поделиться ссылкой"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Для этого аята не найдено похожих аятов.",
+      "sharedPhrases": "ОБЩИЕ ФРАЗЫ",
+      "similarWording": "ПОХОЖИЕ ФОРМУЛИРОВКИ"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Нет скачанных тафсиров",
+      "tafseerNotAvailableForThis": "Тафсир для этого аята недоступен",
+      "tapHereToDownloadA": "Нажмите здесь, чтобы скачать тафсир и прочитать комментарий."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Для этого аята нет тематических данных.",
+      "passage": "Отрывок"
+    },
+    "translationContent": {
+      "switch": "Переключить",
+      "translationNotAvailable": "Перевод недоступен"
+    }
+  },
+  "version": {
+    "label": "Версия {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Что нового в"
+  },
+  "wordDetail": {
+    "context": "Аят {{surah}}:{{ayah}} · Слово {{position}} из {{total}}"
+  }
+}
