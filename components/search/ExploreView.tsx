@@ -1,3 +1,4 @@
+import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useMemo, useCallback, useState} from 'react';
 import {
   View,
@@ -41,8 +42,8 @@ interface BentoTile {
 const BROWSE_TILES: BentoTile[] = [
   {
     id: 'all-reciters',
-    title: 'Browse All',
-    subtitle: 'Reciters',
+    title: (isArabicInterface() ? 'تصفح الكل' : 'Browse All'),
+    subtitle: (isArabicInterface() ? 'القراء' : 'Reciters'),
     backgroundColor: '#1E40AF',
     route: '/(tabs)/(b.search)/browse-all',
     heightMultiplier: 1,
@@ -52,8 +53,8 @@ const BROWSE_TILES: BentoTile[] = [
   },
   {
     id: 'all-surahs',
-    title: 'Browse All',
-    subtitle: 'Surahs',
+    title: (isArabicInterface() ? 'تصفح الكل' : 'Browse All'),
+    subtitle: (isArabicInterface() ? 'السور' : 'Surahs'),
     backgroundColor: '#7C3AED',
     route: '/(tabs)/(b.search)/browse-all-surahs',
     heightMultiplier: 1,
