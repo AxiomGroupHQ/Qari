@@ -36,7 +36,7 @@ module.exports = {
       version: '>= 5.9.1',
     },
     ios: {
-      bundleIdentifier: 'com.bayaan.app',
+      bundleIdentifier: 'com.istima.app',
       buildNumber: versionInfo.buildNumber,
       supportsTablet: true,
       config: {
@@ -56,7 +56,7 @@ module.exports = {
         UIRequiresFullScreen: true,
         ITSAppUsesNonExemptEncryption: false,
         NSCameraUsageDescription: 'This app does not use the camera.',
-        BGTaskSchedulerPermittedIdentifiers: ['com.bayaan.app.audio'],
+        BGTaskSchedulerPermittedIdentifiers: ['com.istima.app.audio'],
         UIBackgroundModes: ['audio', 'remote-notification'],
         CFBundleURLTypes: [
           {
@@ -114,7 +114,7 @@ module.exports = {
       },
     },
     android: {
-      package: 'com.bayaan.app',
+      package: 'com.istima.app',
       versionCode: versionInfo.versionCode,
       userInterfaceStyle: 'automatic',
       adaptiveIcon: {
