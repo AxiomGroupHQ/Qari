@@ -8,6 +8,7 @@ import ActionSheet, {
   SheetManager,
 } from 'react-native-actions-sheet';
 import Color from 'color';
+import {t} from '@/i18n';
 
 const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
 
@@ -33,7 +34,9 @@ export const PlaybackSpeedSheet = (props: SheetProps<'playback-speed'>) => {
       indicatorStyle={styles.indicator}
       gestureEnabled={true}>
       <View style={styles.headerContainer}>
-        <Text style={styles.headerTitle}>Playback Speed</Text>
+        <Text style={styles.headerTitle}>
+          {t('sheets.playbackSpeedSheet.playbackSpeed')}
+        </Text>
       </View>
       <View style={styles.container}>
         <View style={styles.speedContainer}>

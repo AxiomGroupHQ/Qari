@@ -10,6 +10,7 @@ import Animated, {
   useAnimatedStyle,
   withSpring,
 } from 'react-native-reanimated';
+import {t} from '@/i18n';
 
 interface ReciterDownloadsStackCardProps {
   reciterId: string;
@@ -121,7 +122,7 @@ export const ReciterDownloadsStackCard: React.FC<
         {reciter.name}
       </Text>
       <Text style={styles.subtitle} numberOfLines={1}>
-        Downloaded • {downloadCount} {downloadCount === 1 ? 'surah' : 'surahs'}
+        {t('downloads.subtitle', {count: downloadCount})}
       </Text>
     </AnimatedTouchableOpacity>
   );

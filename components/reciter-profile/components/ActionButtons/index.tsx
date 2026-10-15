@@ -8,6 +8,7 @@ import {PlayIcon, ShuffleIcon} from '@/components/Icons';
 import {ActionButtonsProps} from '@/components/reciter-profile/types';
 import Color from 'color';
 import {Ionicons} from '@expo/vector-icons';
+import {t} from '@/i18n';
 
 const GOLD_COLOR = '#FFD700';
 
@@ -31,7 +32,7 @@ export const ActionButtons: React.FC<ActionButtonsProps> = ({
       </Pressable>
       <Pressable
         accessibilityRole="button" // @ai
-        accessibilityLabel="Play all surahs" // @ai
+        accessibilityLabel={t('components.actionButtons.playAllSurahs')} // @ai
         style={[styles.circleButton, styles.playButton]}
         onPress={onPlayPress}>
         <View style={styles.playIconContainer}>

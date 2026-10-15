@@ -25,6 +25,7 @@ import RenderHtml, {
   RenderHTMLProps,
   defaultSystemFonts,
 } from 'react-native-render-html';
+import {t} from '@/i18n';
 
 const surahInfo = require('@/data/surahInfo.json');
 
@@ -141,12 +142,12 @@ export const DownloadOptionsSheet = (props: SheetProps<'download-options'>) => {
   const handleRemoveDownload = useCallback(() => {
     if (!download) return;
     Alert.alert(
-      'Remove Download',
+      t('sheets.downloadOptionsSheet.removeDownload'),
       `Are you sure you want to remove this download?`,
       [
-        {text: 'Cancel', style: 'cancel'},
+        {text: t('common.cancel'), style: 'cancel'},
         {
-          text: 'Remove',
+          text: t('common.remove'),
           style: 'destructive',
           onPress: () => {
             handleClose();
@@ -180,7 +181,9 @@ export const DownloadOptionsSheet = (props: SheetProps<'download-options'>) => {
       {showSurahInfo ? (
         <>
           <View style={styles.headerContainer}>
-            <Text style={styles.headerTitle}>About {surah.name}</Text>
+            <Text style={styles.headerTitle}>
+              {t('sheets.aboutSurah', {name: surah.name})}
+            </Text>
           </View>
           <ScrollView
             style={styles.scrollView}
@@ -221,7 +224,7 @@ export const DownloadOptionsSheet = (props: SheetProps<'download-options'>) => {
               ]}
               onPress={handlePlay}>
               <PlayIcon color={theme.colors.text} size={moderateScale(18)} />
-              <Text style={styles.optionText}>Play Now</Text>
+              <Text style={styles.optionText}>{t('common.playNow')}</Text>
             </Pressable>
 
             <View style={styles.divider} />
@@ -262,7 +265,7 @@ export const DownloadOptionsSheet = (props: SheetProps<'download-options'>) => {
                   filled={true}
                 />
               </View>
-              <Text style={styles.optionText}>Add to Queue</Text>
+              <Text style={styles.optionText}>{t('common.addToQueue')}</Text>
             </Pressable>
 
             <View style={styles.divider} />
@@ -284,7 +287,7 @@ export const DownloadOptionsSheet = (props: SheetProps<'download-options'>) => {
                   styles.optionText,
                   !reciterId && styles.optionTextDisabled,
                 ]}>
-                Add to Collection
+                {t('common.addToCollection')}
               </Text>
             </Pressable>
 
@@ -301,7 +304,9 @@ export const DownloadOptionsSheet = (props: SheetProps<'download-options'>) => {
                 size={moderateScale(18)}
                 color={theme.colors.text}
               />
-              <Text style={styles.optionText}>Learn About Surah</Text>
+              <Text style={styles.optionText}>
+                {t('common.learnAboutSurah')}
+              </Text>
             </Pressable>
           </View>
 
@@ -317,7 +322,9 @@ export const DownloadOptionsSheet = (props: SheetProps<'download-options'>) => {
                 size={moderateScale(18)}
                 color="#ff4444"
               />
-              <Text style={styles.optionTextDestructive}>Remove Download</Text>
+              <Text style={styles.optionTextDestructive}>
+                {t('sheets.downloadOptionsSheet.removeDownload')}
+              </Text>
             </Pressable>
           </View>
         </View>

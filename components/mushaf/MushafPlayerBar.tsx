@@ -23,6 +23,7 @@ import {useMushafPlayerStore} from '@/store/mushafPlayerStore';
 import {mushafAudioService} from '@/services/audio/MushafAudioService';
 import {SURAHS} from '@/data/surahData';
 import {PlayIcon, PauseIcon} from '@/components/Icons';
+import {t} from '@/i18n';
 
 interface MushafPlayerBarProps {
   currentPage: number;
@@ -119,9 +120,9 @@ export const MushafPlayerBar: React.FC<MushafPlayerBarProps> = ({
           ]}
           onPress={handleChangeReciter}
           accessibilityRole="button"
-          accessibilityLabel="Change reciter">
+          accessibilityLabel={t('mushaf.mushafPlayerBar.changeReciter')}>
           <Text style={[styles.changeReciterText, {color: theme.colors.text}]}>
-            Change Reciter
+            {t('mushaf.mushafPlayerBar.changeReciter2')}
           </Text>
         </Pressable>
       </View>
@@ -136,7 +137,7 @@ export const MushafPlayerBar: React.FC<MushafPlayerBarProps> = ({
           style={styles.edgeButton}
           onPress={onSearch}
           accessibilityRole="button"
-          accessibilityLabel="Search">
+          accessibilityLabel={t('common.search')}>
           <Feather
             name="search"
             size={moderateScale(20)}
@@ -152,7 +153,7 @@ export const MushafPlayerBar: React.FC<MushafPlayerBarProps> = ({
             ]}
             onPress={handlePlayPress}
             accessibilityRole="button"
-            accessibilityLabel="Play">
+            accessibilityLabel={t('common.play')}>
             <PlayIcon color={theme.colors.text} size={moderateScale(16)} />
           </Pressable>
         </View>
@@ -161,7 +162,7 @@ export const MushafPlayerBar: React.FC<MushafPlayerBarProps> = ({
           style={styles.edgeButton}
           onPress={handleOptions}
           accessibilityRole="button"
-          accessibilityLabel="Playback options">
+          accessibilityLabel={t('mushaf.mushafPlayerBar.playbackOptions')}>
           <Ionicons
             name="ellipsis-horizontal"
             size={moderateScale(20)}
@@ -183,7 +184,7 @@ export const MushafPlayerBar: React.FC<MushafPlayerBarProps> = ({
           style={styles.edgeButton}
           onPress={handleStop}
           accessibilityRole="button"
-          accessibilityLabel="Stop">
+          accessibilityLabel={t('common.stop')}>
           <Ionicons
             name="stop"
             size={moderateScale(20)}
@@ -196,7 +197,7 @@ export const MushafPlayerBar: React.FC<MushafPlayerBarProps> = ({
             style={styles.chevronButton}
             onPress={handlePrevAyah}
             accessibilityRole="button"
-            accessibilityLabel="Previous ayah">
+            accessibilityLabel={t('mushaf.mushafPlayerBar.previousAyah')}>
             <Feather
               name="chevrons-left"
               size={moderateScale(22)}
@@ -225,7 +226,7 @@ export const MushafPlayerBar: React.FC<MushafPlayerBarProps> = ({
             style={styles.chevronButton}
             onPress={handleNextAyah}
             accessibilityRole="button"
-            accessibilityLabel="Next ayah">
+            accessibilityLabel={t('mushaf.mushafPlayerBar.nextAyah')}>
             <Feather
               name="chevrons-right"
               size={moderateScale(22)}
@@ -238,7 +239,7 @@ export const MushafPlayerBar: React.FC<MushafPlayerBarProps> = ({
           style={styles.edgeButton}
           onPress={handleOptions}
           accessibilityRole="button"
-          accessibilityLabel="Playback options">
+          accessibilityLabel={t('mushaf.mushafPlayerBar.playbackOptions')}>
           <Ionicons
             name="ellipsis-horizontal"
             size={moderateScale(20)}

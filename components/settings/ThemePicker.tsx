@@ -6,15 +6,34 @@ import {ThemeMode, Theme} from '@/utils/themeUtils';
 import Color from 'color';
 import {SunIcon, MoonIcon, AutoThemeIcon} from '@/components/Icons';
 import * as Haptics from 'expo-haptics';
+import {t} from '@/i18n';
 
 const THEME_OPTIONS: {
   mode: ThemeMode;
   label: string;
   icon: 'sun' | 'moon' | 'auto';
 }[] = [
-  {mode: 'light', label: 'Light', icon: 'sun'},
-  {mode: 'dark', label: 'Dark', icon: 'moon'},
-  {mode: 'system', label: 'Auto', icon: 'auto'},
+  {
+    mode: 'light',
+    get label() {
+      return t('settings.themePicker.light');
+    },
+    icon: 'sun',
+  },
+  {
+    mode: 'dark',
+    get label() {
+      return t('settings.themePicker.dark');
+    },
+    icon: 'moon',
+  },
+  {
+    mode: 'system',
+    get label() {
+      return t('settings.themePicker.auto');
+    },
+    icon: 'auto',
+  },
 ];
 
 const IconMap = {

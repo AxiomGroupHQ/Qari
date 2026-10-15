@@ -42,6 +42,7 @@ import {
   digitalKhattDataService,
   BASMALLAH_TEXT,
 } from '@/services/mushaf/DigitalKhattDataService';
+import {t} from '@/i18n';
 
 const PREVIEW_BA = '\u0628';
 
@@ -216,7 +217,7 @@ export const ReadingThemeContent: React.FC<ReadingThemeContentProps> = ({
 
       {/* Segmented control: System | Light | Dark */}
       <Text style={styles.disclosureText}>
-        Changing appearance mode applies to the entire app
+        {t('readingThemeContent.changingAppearanceModeAppliesTo')}
       </Text>
       {Platform.OS === 'ios' ? (
         <SegmentedControl

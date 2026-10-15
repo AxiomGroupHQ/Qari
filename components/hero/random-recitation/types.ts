@@ -1,4 +1,4 @@
-// 5 design families for icon-based cards
+import {t} from '@/i18n'; // 5 design families for icon-based cards
 export type DesignFamily = 'arabesque' | 'bloom' | 'aurora' | 'mosaic' | 'mesh';
 
 // Icon variants per design (4B compass excluded)
@@ -78,12 +78,54 @@ export const ALL_VARIANTS: CardVariant[] = [
 
 // All 6 copy variants
 export const COPY_VARIANTS: CopyVariant[] = [
-  {label: 'Shuffle & Listen', subtitle: 'Let the Quran surprise you'},
-  {label: 'Discover', subtitle: 'Hear something new'},
-  {label: 'Explore', subtitle: 'Discover a new voice'},
-  {label: 'Random Recitation', subtitle: 'Surprise me'},
-  {label: 'Shuffle & Listen', subtitle: 'Explore the unexpected'},
-  {label: 'Random Mix', subtitle: 'A recitation chosen just for this moment'},
+  {
+    get label() {
+      return t('randomrecitation.types.shuffleListen');
+    },
+    get subtitle() {
+      return t('randomrecitation.types.letTheQuranSurpriseYou');
+    },
+  },
+  {
+    get label() {
+      return t('randomrecitation.types.discover');
+    },
+    get subtitle() {
+      return t('randomrecitation.types.hearSomethingNew');
+    },
+  },
+  {
+    get label() {
+      return t('randomrecitation.types.explore');
+    },
+    get subtitle() {
+      return t('randomrecitation.types.discoverANewVoice');
+    },
+  },
+  {
+    get label() {
+      return t('randomrecitation.types.randomRecitation');
+    },
+    get subtitle() {
+      return t('randomrecitation.types.surpriseMe');
+    },
+  },
+  {
+    get label() {
+      return t('randomrecitation.types.shuffleListen');
+    },
+    get subtitle() {
+      return t('randomrecitation.types.exploreTheUnexpected');
+    },
+  },
+  {
+    get label() {
+      return t('randomrecitation.types.randomMix');
+    },
+    get subtitle() {
+      return t('randomrecitation.types.aRecitationChosenJustFor');
+    },
+  },
 ];
 
 // Deterministic pick based on seed

@@ -1,4 +1,3 @@
-import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useMemo, useCallback} from 'react';
 import {View, Text, StyleSheet, Pressable, Platform} from 'react-native';
 import {FlashList, type ListRenderItemInfo} from '@shopify/flash-list';
@@ -16,6 +15,7 @@ import {getJuzForSurah, getJuzName} from '@/data/juzData';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {ContinueReadingHero} from '@/components/hero/ContinueReadingHero';
+import {t} from '@/i18n';
 
 interface SurahsViewProps {
   onSurahPress: (surah: Surah) => void;
@@ -213,7 +213,11 @@ export default function SurahsView({
                     ? 'arrow-down'
                     : 'calendar';
               const label =
-                option === 'asc' ? (isArabicInterface() ? 'تصاعدي' : 'Asc') : option === 'desc' ? (isArabicInterface() ? 'تنازلي' : 'Desc') : (isArabicInterface() ? 'النزول' : 'Rev');
+                option === 'asc'
+                  ? t('common.asc')
+                  : option === 'desc'
+                    ? t('common.desc')
+                    : t('common.rev');
               return (
                 <Pressable
                   key={option}

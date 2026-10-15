@@ -17,6 +17,7 @@ import {HIGHLIGHT_COLORS, HighlightColor} from '@/types/verse-annotations';
 import {useVerseAnnotationsStore} from '@/store/verseAnnotationsStore';
 import {verseAnnotationService} from '@/services/verse-annotations/VerseAnnotationService';
 import SkiaVersePreview from '@/components/share/SkiaVersePreview';
+import {t} from '@/i18n';
 
 const COLORS = Object.entries(HIGHLIGHT_COLORS) as [HighlightColor, string][];
 
@@ -68,7 +69,9 @@ export const VerseHighlightSheet = (props: SheetProps<'verse-highlight'>) => {
       indicatorStyle={styles.indicator}
       gestureEnabled={true}>
       <View style={styles.container}>
-        <Text style={styles.title}>Highlight Color</Text>
+        <Text style={styles.title}>
+          {t('sheets.verseHighlightSheet.highlightColor')}
+        </Text>
 
         <View style={styles.ayahContainer}>
           <SkiaVersePreview
@@ -101,7 +104,9 @@ export const VerseHighlightSheet = (props: SheetProps<'verse-highlight'>) => {
         {currentColor ? (
           <Pressable style={styles.removeButton} onPress={handleRemove}>
             <Feather name="x-circle" size={moderateScale(18)} color="#ff4444" />
-            <Text style={styles.removeButtonText}>Remove Highlight</Text>
+            <Text style={styles.removeButtonText}>
+              {t('common.removeHighlight')}
+            </Text>
           </Pressable>
         ) : null}
       </View>

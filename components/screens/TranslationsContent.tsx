@@ -41,6 +41,7 @@ import {lightHaptics} from '@/utils/haptics';
 import {useBottomInset} from '@/hooks/useBottomInset';
 import {AVAILABLE_TRANSLATIONS} from '@/data/availableTranslations';
 import {AVAILABLE_TAFASEER} from '@/data/availableTafaseer';
+import {t} from '@/i18n';
 
 type ActiveTab = 'Translations' | 'Tafaseer';
 const TAB_OPTIONS: ActiveTab[] = ['Translations', 'Tafaseer'];
@@ -199,8 +200,8 @@ export default function TranslationsContent() {
         await downloadTranslation(editionId);
       } catch {
         Alert.alert(
-          'Download Failed',
-          'Unable to download this translation. Please check your internet connection and try again.',
+          t('common.downloadFailed'),
+          t('screens.translationsContent.unableToDownloadThisTranslation'),
         );
       }
     },
@@ -210,12 +211,12 @@ export default function TranslationsContent() {
   const handleDelete = useCallback(
     (meta: DownloadedTranslationMeta) => {
       Alert.alert(
-        'Delete Translation',
+        t('screens.translationsContent.deleteTranslation'),
         `Remove "${meta.englishName}"? You can download it again later.`,
         [
-          {text: 'Cancel', style: 'cancel'},
+          {text: t('common.cancel'), style: 'cancel'},
           {
-            text: 'Delete',
+            text: t('common.delete'),
             style: 'destructive',
             onPress: async () => {
               if (selectedTranslationId === meta.identifier) {
@@ -246,8 +247,8 @@ export default function TranslationsContent() {
         await downloadTafseer(editionId);
       } catch {
         Alert.alert(
-          'Download Failed',
-          'Unable to download this tafseer. Please check your internet connection and try again.',
+          t('common.downloadFailed'),
+          t('screens.translationsContent.unableToDownloadThisTafseer'),
         );
       }
     },
@@ -257,12 +258,12 @@ export default function TranslationsContent() {
   const handleDeleteTafseer = useCallback(
     (meta: DownloadedTafseerMeta) => {
       Alert.alert(
-        'Delete Tafseer',
+        t('screens.translationsContent.deleteTafseer'),
         `Remove "${meta.englishName}"? You can download it again later.`,
         [
-          {text: 'Cancel', style: 'cancel'},
+          {text: t('common.cancel'), style: 'cancel'},
           {
-            text: 'Delete',
+            text: t('common.delete'),
             style: 'destructive',
             onPress: async () => {
               await deleteTafseer(meta.identifier);
@@ -483,7 +484,9 @@ export default function TranslationsContent() {
     return (
       <>
         <View style={styles.metaHeaderContainer}>
-          <Text style={styles.metaHeader}>ACTIVE TRANSLATION</Text>
+          <Text style={styles.metaHeader}>
+            {t('screens.translationsContent.activeTranslation')}
+          </Text>
         </View>
         <View style={styles.activeCard}>
           <View style={styles.activeCardText}>
@@ -493,7 +496,9 @@ export default function TranslationsContent() {
             <Text style={styles.activeCardLanguage}>{activeLang}</Text>
           </View>
           <View style={styles.activeBadge}>
-            <Text style={styles.activeBadgeText}>Active</Text>
+            <Text style={styles.activeBadgeText}>
+              {t('screens.translationsContent.active')}
+            </Text>
           </View>
         </View>
       </>
@@ -509,7 +514,9 @@ export default function TranslationsContent() {
     return (
       <>
         <View style={styles.metaHeaderContainer}>
-          <Text style={styles.metaHeader}>ACTIVE TAFSEER</Text>
+          <Text style={styles.metaHeader}>
+            {t('screens.translationsContent.activeTafseer')}
+          </Text>
         </View>
         <View style={styles.activeCard}>
           <View style={styles.activeCardText}>
@@ -521,7 +528,9 @@ export default function TranslationsContent() {
             </Text>
           </View>
           <View style={styles.activeBadge}>
-            <Text style={styles.activeBadgeText}>Active</Text>
+            <Text style={styles.activeBadgeText}>
+              {t('screens.translationsContent.active')}
+            </Text>
           </View>
         </View>
       </>
@@ -758,12 +767,20 @@ export default function TranslationsContent() {
   }, [navigation, activeTab, handleTabChange, theme.colors.text]);
 
   const translationEmptyComponent = useMemo(
-    () => <Text style={styles.emptyText}>No translations found</Text>,
+    () => (
+      <Text style={styles.emptyText}>
+        {t('screens.translationsContent.noTranslationsFound')}
+      </Text>
+    ),
     [styles],
   );
 
   const tafseerEmptyComponent = useMemo(
-    () => <Text style={styles.emptyText}>No tafaseer found</Text>,
+    () => (
+      <Text style={styles.emptyText}>
+        {t('screens.translationsContent.noTafaseerFound')}
+      </Text>
+    ),
     [styles],
   );
 

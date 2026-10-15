@@ -6,6 +6,7 @@ import {Theme} from '@/utils/themeUtils';
 import {ChangelogContent} from '@/components/changelog/ChangelogContent';
 import changelogData from '@/data/changelog.json';
 import {ChangelogEntry} from '@/types/changelog';
+import {t} from '@/i18n';
 
 export default function WhatsNewScreen() {
   const {theme} = useTheme();
@@ -20,7 +21,7 @@ export default function WhatsNewScreen() {
       <View style={styles.container}>
         <View style={styles.emptyContainer}>
           <Text style={[styles.emptyText, {color: theme.colors.textSecondary}]}>
-            No changelog available
+            {t('settings.whatsnew.noChangelogAvailable')}
           </Text>
         </View>
       </View>

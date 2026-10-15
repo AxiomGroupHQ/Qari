@@ -15,6 +15,7 @@ import {Feather} from '@expo/vector-icons';
 import Color from 'color';
 import {Link} from 'expo-router';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {t} from '@/i18n';
 
 interface CircularReciterCardProps {
   imageUrl?: string;
@@ -166,7 +167,7 @@ export const CircularReciterCard: React.FC<CircularReciterCardProps> = ({
             </View>
           ) : (
             <Text style={styles.subtitle} numberOfLines={1}>
-              Reciter
+              {t('common.reciter')}
             </Text>
           )}
         </>

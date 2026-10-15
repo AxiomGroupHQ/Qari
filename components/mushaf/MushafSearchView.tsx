@@ -31,6 +31,8 @@ import {BookmarkChips} from './BookmarkChips';
 import {JUZ_START_PAGES} from './constants';
 import {useMushafSettingsStore, RecentRead} from '@/store/mushafSettingsStore';
 import {digitalKhattDataService} from '@/services/mushaf/DigitalKhattDataService';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 // ============================================================================
 // Types
@@ -115,7 +117,7 @@ function parseSearchQuery(
       results.push({
         type: 'page',
         page,
-        primary: `Page ${page}`,
+        primary: t('mushaf.page', {page}),
         secondary: surahName,
       });
     }
@@ -134,7 +136,7 @@ function parseSearchQuery(
         juz: i,
         page,
         primary: i === 30 ? "Juz 'Amma" : i === 29 ? 'Juz Tabarak' : `Juz ${i}`,
-        secondary: `Page ${page} \u00B7 ${surahName}`,
+        secondary: t('mushaf.pageAndSurah', {page, surah: surahName}),
       });
     }
     return results;
@@ -162,7 +164,7 @@ function parseSearchQuery(
         page,
         primary:
           juz === 30 ? "Juz 'Amma" : juz === 29 ? 'Juz Tabarak' : `Juz ${juz}`,
-        secondary: `Page ${page} \u00B7 ${surahName}`,
+        secondary: t('mushaf.pageAndSurah', {page, surah: surahName}),
       });
     }
     if (juzMatch) return results; // Only return early if it was an explicit "juz N" search
@@ -212,7 +214,7 @@ function parseSearchQuery(
         juz: plainNum,
         page,
         primary: `Juz ${plainNum}`,
-        secondary: `Page ${page} \u00B7 ${surahName}`,
+        secondary: t('mushaf.pageAndSurah', {page, surah: surahName}),
       });
     }
     // Page result
@@ -223,7 +225,7 @@ function parseSearchQuery(
       results.push({
         type: 'page',
         page: plainNum,
-        primary: `Page ${plainNum}`,
+        primary: t('mushaf.page', {page: plainNum}),
         secondary: surahName,
       });
     }
@@ -337,7 +339,7 @@ const RecentReadChips: React.FC<{
                 flex: 1,
               },
             ]}>
-            RECENT READS
+            {t('mushaf.mushafSearchView.recentReads')}
           </Text>
           <Pressable
             onPress={onClear}
@@ -348,7 +350,7 @@ const RecentReadChips: React.FC<{
                 styles.recentClearText,
                 {color: Color(secondaryColor).alpha(0.45).toString()},
               ]}>
-              Clear
+              {t('common.clear')}
             </Text>
           </Pressable>
         </View>
@@ -853,7 +855,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
             onPress={onClose}
             hitSlop={8}>
             <Feather
-              name="chevron-left"
+              name={dirIcon('chevron-left')}
               size={ms(20)}
               color={theme.colors.text}
             />
@@ -862,7 +864,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
             <SearchInput
               value=""
               onChangeText={() => {}}
-              placeholder="Search surahs, pages, or juz..."
+              placeholder={t('mushaf.mushafSearchView.searchSurahsPagesOrJuz')}
               showCancelButton={false}
               editable={false}
               pointerEvents="none"
@@ -916,7 +918,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
           value={searchQuery}
           onChangeText={setSearchQuery}
           onCancel={exitSearchMode}
-          placeholder="Search surahs, pages, or juz..."
+          placeholder={t('mushaf.mushafSearchView.searchSurahsPagesOrJuz')}
           showCancelButton={true}
           autoFocus={autoFocusSearch}
           iconColor={theme.colors.textSecondary}
@@ -937,7 +939,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
                 <View style={styles.historyHeader}>
                   <Text
                     style={[styles.historyTitle, {color: theme.colors.text}]}>
-                    Recent searches
+                    {t('common.recentSearches')}
                   </Text>
                   <Pressable onPress={clearHistory}>
                     <Text
@@ -945,7 +947,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
                         styles.historyClear,
                         {color: theme.colors.textSecondary},
                       ]}>
-                      Clear
+                      {t('common.clear')}
                     </Text>
                   </Pressable>
                 </View>
@@ -977,7 +979,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
                         .toString(),
                     },
                   ]}>
-                  Search the Mushaf
+                  {t('mushaf.mushafSearchView.searchTheMushaf')}
                 </Text>
                 <Text
                   style={[
@@ -988,7 +990,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
                         .toString(),
                     },
                   ]}>
-                  Find surahs, verses, pages, or juz
+                  {t('mushaf.mushafSearchView.findSurahsVersesPagesOr')}
                 </Text>
               </View>
             )}
@@ -1023,7 +1025,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
                         .toString(),
                     },
                   ]}>
-                  No results found
+                  {t('common.noResultsFound')}
                 </Text>
               </View>
             }

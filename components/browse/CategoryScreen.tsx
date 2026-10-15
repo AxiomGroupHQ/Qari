@@ -9,6 +9,7 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 import Animated, {FadeInDown} from 'react-native-reanimated';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Color from 'color';
+import {dirIcon} from '@/i18n/direction';
 
 interface CategoryScreenProps {
   category: Category;
@@ -73,7 +74,7 @@ export function CategoryScreen({
           )}
         </View>
         <Feather
-          name="chevron-right"
+          name={dirIcon('chevron-right')}
           size={20}
           color={theme.colors.textSecondary}
         />
@@ -96,7 +97,7 @@ export function CategoryScreen({
           style={styles.backButton}
           activeOpacity={0.7}
           onPress={() => router.back()}>
-          <Feather name="arrow-left" size={24} color={'#FFFFFF'} />
+          <Feather name={dirIcon('arrow-left')} size={24} color={'#FFFFFF'} />
         </TouchableOpacity>
         <View style={styles.titleContainer}>
           <Feather

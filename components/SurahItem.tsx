@@ -21,6 +21,7 @@ import {
 } from '@/services/player/store/downloadSelectors';
 import {CircularProgress} from '@/components/CircularProgress';
 import {GradientText} from '@/components/GradientText';
+import {t} from '@/i18n';
 
 interface SurahItemProps {
   item: Surah;
@@ -173,7 +174,7 @@ export const SurahItem: React.FC<SurahItemProps> = React.memo(
           }, ${item.verses_count} verses${
             isCurrentlyPlaying ? ', currently playing' : ''
           }`}
-          accessibilityHint="Tap to play Surah">
+          accessibilityHint={t('surahItem.tapToPlaySurah')}>
           <View
             style={styles.surahGlyphContainer}
             accessibilityElementsHidden={true}>
@@ -267,8 +268,8 @@ export const SurahItem: React.FC<SurahItemProps> = React.memo(
             style={styles.optionsZone}
             onPress={handleOptionsPress}
             accessibilityRole="button"
-            accessibilityLabel="More options"
-            accessibilityHint="Opens menu with additional actions for this Surah">
+            accessibilityLabel={t('surahItem.moreOptions')}
+            accessibilityHint={t('surahItem.opensMenuWithAdditionalActions')}>
             {isCurrentTrack ? (
               <NowPlayingIndicator
                 isPlaying={

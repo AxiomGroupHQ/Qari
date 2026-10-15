@@ -2,6 +2,7 @@ import React from 'react';
 import {ViewStyle} from 'react-native';
 import {Surah} from '@/data/surahData';
 import {SurahHeroSection} from '@/components/hero/SurahsHero';
+import {t} from '@/i18n';
 
 interface SurahOfTheDayProps {
   surah: Surah;
@@ -18,7 +19,7 @@ export function SurahOfTheDay({surah, onLongPress, style}: SurahOfTheDayProps) {
     <SurahHeroSection
       surah={surah}
       onLongPress={onLongPress}
-      title="SURAH OF THE DAY"
+      title={t('hero.surahOfTheDay.surahOfTheDay')}
       isCompact={true}
       style={style}
     />

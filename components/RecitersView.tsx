@@ -1,4 +1,3 @@
-import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useMemo, useEffect, useRef, useCallback} from 'react';
 import {
   View,
@@ -48,6 +47,7 @@ import {useAdhkarStore} from '@/store/adhkarStore';
 import {AdhkarBentoCard} from '@/components/adhkar/AdhkarBentoCard';
 import {SuperCategory} from '@/types/adhkar';
 import branding, {type HomeRow, type HomeRowId} from '@/config/branding';
+import {t} from '@/i18n';
 
 /**
  * Fallback row order used when `branding.homeRowConfig` is undefined.
@@ -210,7 +210,7 @@ const RenderSectionItem = React.memo(
                 ? (item.reciter?.image_url ?? undefined)
                 : undefined
             }
-            reciterName={item.uploadArtist || (isArabicInterface() ? 'تلاواتي' : 'My Recitations')}
+            reciterName={item.uploadArtist || t('recitersView.myRecitations')}
             surahName={item.uploadTitle || 'Upload'}
             trackId={`upload:${item.userRecitationId}`}
             reciterId={item.reciter?.id || '__uploads__'}
@@ -359,7 +359,7 @@ const Section = React.memo(
                       .toString(),
                   },
                 ]}>
-                Clear
+                {t('common.clear')}
               </Text>
             </Pressable>
           )}
@@ -568,7 +568,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     'continue-listening':
       validRecentTracks.length > 0 ? (
         <Section
-          title={(isArabicInterface() ? 'متابعة الاستماع' : "Continue Listening")}
+          title={t('recitersView.continueListening')}
           data={validRecentTracks}
           variant="recent"
           onReciterPress={onReciterPress}
@@ -580,7 +580,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     'new-to-quran':
       showNewToQuran && beginnerFriendlyReciters.length > 0 ? (
         <Section
-          title={(isArabicInterface() ? 'جديد على القرآن؟ ابدأ هنا' : "New to Quran? Start Here")}
+          title={t('recitersView.newToQuranStartHere')}
           data={beginnerFriendlyReciters}
           variant="default"
           onReciterPress={onReciterPress}
@@ -591,7 +591,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     favorites:
       favoriteRecitersSection.length > 0 ? (
         <Section
-          title={(isArabicInterface() ? 'مفضلاتك' : "Your Favorites")}
+          title={t('recitersView.yourFavorites')}
           data={favoriteRecitersSection}
           variant="circular"
           onReciterPress={onReciterPress}
@@ -602,7 +602,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     featured:
       featuredReciters.length > 0 ? (
         <Section
-          title={(isArabicInterface() ? 'قراء مميزون' : "Featured Reciters")}
+          title={t('recitersView.featuredReciters')}
           data={featuredReciters}
           variant="default"
           onReciterPress={onReciterPress}
@@ -615,7 +615,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={[styles.sectionTitle, {color: theme.colors.text}]}>
-              Adhkar
+              {t('recitersView.adhkar')}
             </Text>
             <Pressable
               onPress={() => router.push('/(tabs)/(a.home)/adhkar')}
@@ -629,7 +629,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
                       .toString(),
                   },
                 ]}>
-                See More
+                {t('recitersView.seeMore')}
               </Text>
             </Pressable>
           </View>
@@ -647,7 +647,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     'follow-along':
       followAlongReciters.length > 0 ? (
         <Section
-          title={(isArabicInterface() ? 'تابع التلاوة' : "Follow Along")}
+          title={t('common.followAlong')}
           data={followAlongReciters}
           variant="default"
           onReciterPress={onReciterPress}
@@ -658,7 +658,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     playlists:
       playlists.length > 0 ? (
         <Section
-          title={(isArabicInterface() ? 'قوائم التشغيل الخاصة بك' : "Your Playlists")}
+          title={t('common.yourPlaylists')}
           data={seededShuffle(playlists, sessionSeed + 8).slice(0, 10)}
           variant="playlist"
           onReciterPress={onReciterPress}
@@ -670,7 +670,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     exclusives:
       bayaanOriginalsReciters.length > 0 ? (
         <Section
-          title={(isArabicInterface() ? 'حصريات' : "Exclusives")}
+          title={t('recitersView.exclusives')}
           data={bayaanOriginalsReciters}
           variant="featured"
           onReciterPress={onReciterPress}
@@ -681,7 +681,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     tajweed:
       tajweedReciters.length > 0 ? (
         <Section
-          title={(isArabicInterface() ? 'الأفضل للتجويد' : "Best for Tajweed")}
+          title={t('recitersView.bestForTajweed')}
           data={tajweedReciters}
           variant="default"
           onReciterPress={onReciterPress}
@@ -692,7 +692,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     memorization:
       memorizationReciters.length > 0 ? (
         <Section
-          title={(isArabicInterface() ? 'الأفضل للحفظ' : "Best for Memorization")}
+          title={t('recitersView.bestForMemorization')}
           data={memorizationReciters}
           variant="default"
           onReciterPress={onReciterPress}
@@ -703,7 +703,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     rewayat:
       rewayatTypes.length > 0 ? (
         <Section
-          title={(isArabicInterface() ? 'استكشف حسب الرواية' : "Explore by Rewayah")}
+          title={t('recitersView.exploreByRewayah')}
           data={rewayatTypes}
           variant="rewayat"
           onReciterPress={onReciterPress}
@@ -715,7 +715,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     collection:
       collectionReciters.length > 0 ? (
         <Section
-          title={(isArabicInterface() ? 'من مجموعتك' : "From your Collection")}
+          title={t('recitersView.fromYourCollection')}
           data={collectionReciters}
           variant="default"
           onReciterPress={onReciterPress}

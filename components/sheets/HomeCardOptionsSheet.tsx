@@ -30,6 +30,7 @@ import {
   shareUrl,
 } from '@/utils/shareUtils';
 import branding from '@/config/branding';
+import {t} from '@/i18n';
 
 export const HomeCardOptionsSheet = (
   props: SheetProps<'home-card-options'>,
@@ -198,7 +199,9 @@ export const HomeCardOptionsSheet = (
                 ]}
                 onPress={handleContinuePlaying}>
                 <PlayIcon color={iconColor} size={iconSize} />
-                <Text style={styles.optionText}>Continue playing</Text>
+                <Text style={styles.optionText}>
+                  {t('sheets.homeCardOptionsSheet.continuePlaying')}
+                </Text>
               </Pressable>
 
               <View style={styles.divider} />
@@ -212,7 +215,9 @@ export const HomeCardOptionsSheet = (
                 <View style={styles.rotatedIcon}>
                   <QueueIcon color={iconColor} size={iconSize} filled={true} />
                 </View>
-                <Text style={styles.optionText}>Add to queue</Text>
+                <Text style={styles.optionText}>
+                  {t('sheets.homeCardOptionsSheet.addToQueue')}
+                </Text>
               </Pressable>
 
               <View style={styles.divider} />
@@ -226,7 +231,9 @@ export const HomeCardOptionsSheet = (
             ]}
             onPress={handleGoToReciter}>
             <ProfileIcon color={iconColor} size={iconSize} filled={false} />
-            <Text style={styles.optionText}>Go to reciter</Text>
+            <Text style={styles.optionText}>
+              {t('sheets.homeCardOptionsSheet.goToReciter')}
+            </Text>
           </Pressable>
 
           <View style={styles.divider} />
@@ -274,7 +281,9 @@ export const HomeCardOptionsSheet = (
                 ]}
                 onPress={handleAddToPlaylist}>
                 <Feather name="plus-circle" size={iconSize} color={iconColor} />
-                <Text style={styles.optionText}>Add to collection</Text>
+                <Text style={styles.optionText}>
+                  {t('sheets.homeCardOptionsSheet.addToCollection')}
+                </Text>
               </Pressable>
             </>
           )}
@@ -288,7 +297,7 @@ export const HomeCardOptionsSheet = (
             ]}
             onPress={handleShare}>
             <Feather name="share" size={iconSize} color={iconColor} />
-            <Text style={styles.optionText}>Share</Text>
+            <Text style={styles.optionText}>{t('common.share')}</Text>
           </Pressable>
         </View>
 
@@ -302,7 +311,7 @@ export const HomeCardOptionsSheet = (
               onPress={handleRemoveFromRecents}>
               <Feather name="minus-circle" size={iconSize} color="#ff4444" />
               <Text style={styles.optionTextDestructive}>
-                Remove from recents
+                {t('sheets.homeCardOptionsSheet.removeFromRecents')}
               </Text>
             </Pressable>
           </View>

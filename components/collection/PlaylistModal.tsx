@@ -15,6 +15,7 @@ import {PlaylistIcon} from '@/components/Icons';
 import {Input} from '@/components/Input';
 import Color from 'color';
 import {LinearGradient} from 'expo-linear-gradient';
+import {t} from '@/i18n';
 
 interface PlaylistModalProps {
   visible: boolean;
@@ -143,7 +144,7 @@ export const PlaylistModal: React.FC<PlaylistModalProps> = ({
                   color: theme.colors.text,
                 },
               ]}>
-              Save
+              {t('common.save')}
             </Text>
           </TouchableOpacity>
         </View>
@@ -192,10 +193,10 @@ export const PlaylistModal: React.FC<PlaylistModalProps> = ({
 
           {/* Input Section */}
           <Input
-            label="Playlist Name"
+            label={t('common.playlistName')}
             showIcon
             iconName="edit-3"
-            placeholder="Name"
+            placeholder={t('collection.playlistModal.name')}
             value={playlistName}
             onChangeText={setPlaylistName}
             maxLength={50}

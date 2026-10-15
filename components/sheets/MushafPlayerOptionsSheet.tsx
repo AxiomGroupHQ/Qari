@@ -35,6 +35,7 @@ import {
 import {SURAHS} from '@/data/surahData';
 import {mushafVerseMapService} from '@/services/mushaf/MushafVerseMapService';
 import Color from 'color';
+import {t} from '@/i18n';
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -43,17 +44,57 @@ import Color from 'color';
 const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
 
 const VERSE_REPEAT_OPTIONS = [
-  {label: '1 time', value: 1},
-  {label: '2 times', value: 2},
-  {label: '3 times', value: 3},
-  {label: 'Loop', value: 0},
+  {
+    get label() {
+      return t('common.1Time');
+    },
+    value: 1,
+  },
+  {
+    get label() {
+      return t('common.2Times');
+    },
+    value: 2,
+  },
+  {
+    get label() {
+      return t('common.3Times');
+    },
+    value: 3,
+  },
+  {
+    get label() {
+      return t('common.loop');
+    },
+    value: 0,
+  },
 ];
 
 const RANGE_REPEAT_OPTIONS = [
-  {label: '1 time', value: 1},
-  {label: '2 times', value: 2},
-  {label: '3 times', value: 3},
-  {label: 'Loop', value: 0},
+  {
+    get label() {
+      return t('common.1Time');
+    },
+    value: 1,
+  },
+  {
+    get label() {
+      return t('common.2Times');
+    },
+    value: 2,
+  },
+  {
+    get label() {
+      return t('common.3Times');
+    },
+    value: 3,
+  },
+  {
+    get label() {
+      return t('common.loop');
+    },
+    value: 0,
+  },
 ];
 
 type AccordionSection = 'startVerse' | 'endVerse' | 'reciter' | null;
@@ -383,13 +424,17 @@ export const MushafPlayerOptionsSheet = (
         showsVerticalScrollIndicator={false}
         bounces={true}>
         {/* Title */}
-        <Text style={styles.title}>Playback Settings</Text>
+        <Text style={styles.title}>
+          {t('sheets.mushafPlayerOptionsSheet.playbackSettings')}
+        </Text>
 
         {/* ============================================================== */}
         {/* Select Range                                                   */}
         {/* ============================================================== */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>Select Range</Text>
+          <Text style={styles.sectionLabel}>
+            {t('sheets.mushafPlayerOptionsSheet.selectRange')}
+          </Text>
 
           {/* Starting Verse */}
           <Pressable
@@ -398,7 +443,9 @@ export const MushafPlayerOptionsSheet = (
               pressed && styles.dropdownRowPressed,
             ]}
             onPress={() => toggleSection('startVerse')}>
-            <Text style={styles.dropdownLabel}>Starting Verse</Text>
+            <Text style={styles.dropdownLabel}>
+              {t('sheets.mushafPlayerOptionsSheet.startingVerse')}
+            </Text>
             <Text style={styles.dropdownValue} numberOfLines={1}>
               {formatVerseKey(startVerseKey)}
             </Text>
@@ -428,7 +475,9 @@ export const MushafPlayerOptionsSheet = (
               pressed && styles.dropdownRowPressed,
             ]}
             onPress={() => toggleSection('endVerse')}>
-            <Text style={styles.dropdownLabel}>Ending Verse</Text>
+            <Text style={styles.dropdownLabel}>
+              {t('sheets.mushafPlayerOptionsSheet.endingVerse')}
+            </Text>
             <Text style={styles.dropdownValue} numberOfLines={1}>
               {formatVerseKey(endVerseKey)}
             </Text>
@@ -456,7 +505,7 @@ export const MushafPlayerOptionsSheet = (
         {/* Reciter                                                        */}
         {/* ============================================================== */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>Reciter</Text>
+          <Text style={styles.sectionLabel}>{t('common.reciter')}</Text>
           <Pressable
             style={({pressed}) => [
               styles.dropdownRow,
@@ -464,7 +513,7 @@ export const MushafPlayerOptionsSheet = (
             ]}
             onPress={() => toggleSection('reciter')}>
             <Text
-              style={[styles.dropdownValue, {textAlign: 'left'}]}
+              style={[styles.dropdownValue, {textAlign: 'auto'}]}
               numberOfLines={1}>
               {selectedReciterName || 'Select Reciter'}
             </Text>
@@ -516,7 +565,7 @@ export const MushafPlayerOptionsSheet = (
         {/* Play speed                                                     */}
         {/* ============================================================== */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>Play speed</Text>
+          <Text style={styles.sectionLabel}>{t('common.playSpeed')}</Text>
           <View style={styles.chipRowFlex}>
             {SPEEDS.map(speed => {
               const isActive = storeRate === speed;
@@ -542,7 +591,7 @@ export const MushafPlayerOptionsSheet = (
         {/* Play each verse                                                */}
         {/* ============================================================== */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>Play each verse</Text>
+          <Text style={styles.sectionLabel}>{t('common.playEachVerse')}</Text>
           <View style={styles.chipRowFlex}>
             {VERSE_REPEAT_OPTIONS.map(opt => {
               const isActive = verseRepeat === opt.value;
@@ -568,7 +617,7 @@ export const MushafPlayerOptionsSheet = (
         {/* Play the range                                                 */}
         {/* ============================================================== */}
         <View style={styles.section}>
-          <Text style={styles.sectionLabel}>Play the range</Text>
+          <Text style={styles.sectionLabel}>{t('common.playTheRange')}</Text>
           <View style={styles.chipRowFlex}>
             {RANGE_REPEAT_OPTIONS.map(opt => {
               const isActive = rangeRepeat === opt.value;
@@ -612,7 +661,7 @@ export const MushafPlayerOptionsSheet = (
               styles.playButtonText,
               !canPlay && styles.playButtonTextDisabled,
             ]}>
-            Play
+            {t('common.play')}
           </Text>
         </Pressable>
       </View>

@@ -10,6 +10,7 @@ import {useTimestampStore} from '@/store/timestampStore';
 import {ReciterItem} from '@/components/ReciterItem';
 import {useReciterNavigation} from '@/hooks/useReciterNavigation';
 import {SheetManager} from 'react-native-actions-sheet';
+import {t} from '@/i18n';
 
 export const FollowAlongSheet = (props: SheetProps<'follow-along'>) => {
   const {theme} = useTheme();
@@ -34,7 +35,7 @@ export const FollowAlongSheet = (props: SheetProps<'follow-along'>) => {
       indicatorStyle={styles.indicator}
       gestureEnabled={true}>
       <View style={styles.headerContainer}>
-        <Text style={styles.headerTitle}>Follow Along</Text>
+        <Text style={styles.headerTitle}>{t('common.followAlong')}</Text>
       </View>
       <View style={styles.container}>
         <Text style={styles.description}>

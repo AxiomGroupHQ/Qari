@@ -24,6 +24,7 @@ import {getJuzForSurah, getJuzName} from '@/data/juzData';
 import {useHeaderHeight} from '@react-navigation/elements';
 import {GlassView} from 'expo-glass-effect';
 import {USE_GLASS, useGlassColorScheme} from '@/hooks/useGlassProps';
+import {t} from '@/i18n';
 
 const isGlass = USE_GLASS;
 
@@ -178,7 +179,7 @@ export default function BrowseSurahs({theme, onBack}: BrowseSurahsProps) {
   useLayoutEffect(() => {
     if (!isGlass) return;
     navigation.setOptions({
-      headerTitle: 'All Surahs',
+      headerTitle: t('common.allSurahs'),
     });
   }, [navigation]);
 
@@ -470,7 +471,7 @@ export default function BrowseSurahs({theme, onBack}: BrowseSurahsProps) {
       style={[styles.container, {backgroundColor: theme.colors.background}]}>
       {/* Android: custom header | iOS: native header via layout */}
       {!isGlass && (
-        <Header title="All Surahs" onBack={onBack} showBlur={true} />
+        <Header title={t('common.allSurahs')} onBack={onBack} showBlur={true} />
       )}
 
       <View

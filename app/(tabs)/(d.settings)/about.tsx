@@ -1,4 +1,3 @@
-import {isArabicInterface} from '@/localization/arabicInterface';
 // @ai-generated
 import React, {useMemo} from 'react';
 import {View, Text, ScrollView} from 'react-native';
@@ -8,6 +7,7 @@ import {Theme} from '@/utils/themeUtils';
 import Color from 'color';
 import {IstimaWordmark} from '@/components/branding/IstimaWordmark'; // @ai
 import {VersionDisplay} from '@/components/VersionDisplay';
+import {t} from '@/i18n';
 
 interface FeatureProps {
   title: string;
@@ -40,7 +40,9 @@ export default function AboutScreen() {
 
           <VersionDisplay style={styles.version} />
 
-          <Text style={styles.tagline}>{isArabicInterface() ? 'استمع. تدبّر. اذكر الله.' : 'Listen. Reflect. Remember Allah.'}</Text>
+          <Text style={styles.tagline}>
+            {t('settings.about.listenReflectRememberAllah')}
+          </Text>
 
           <View style={styles.section}>
             <Text style={styles.contentHeading}>Alhamdulillah</Text>
@@ -53,73 +55,78 @@ export default function AboutScreen() {
           </View>
 
           <View style={styles.section}>
-            <Text style={styles.contentHeading}>{isArabicInterface() ? 'رسالتنا' : 'Our Mission'}</Text>
+            <Text style={styles.contentHeading}>
+              {t('settings.about.ourMission')}
+            </Text>
             <Text style={styles.bodyText}>
-              Quran • Bayan • Tafsir • Knowledge. Our aim is to make listening
-              and reflection part of everyday life: at home, on the move, and
-              wherever you have a moment to remember Allah.
+              {t('settings.about.quranBayanTafsirKnowledgeOur')}
             </Text>
           </View>
 
           <View style={styles.section}>
-            <Text style={styles.sectionHeader}>{isArabicInterface() ? 'الميزات' : 'FEATURES'}</Text>
+            <Text style={styles.sectionHeader}>
+              {t('settings.about.features')}
+            </Text>
             <View style={styles.featureList}>
               <Feature
-                title={isArabicInterface() ? 'التنزيلات دون اتصال' : 'Offline Downloads'}
-                description={isArabicInterface() ? 'نزّل السور للاستماع إليها دون اتصال بالإنترنت في أي وقت ومكان' : 'Download surahs for offline listening anytime, anywhere without internet connection'}
+                title={t('settings.about.offlineDownloads')}
+                description={t(
+                  'settings.about.downloadSurahsForOfflineListening',
+                )}
                 styles={styles}
               />
               <Feature
-                title={isArabicInterface() ? 'قوائم تشغيل مخصصة' : 'Custom Playlists'}
-                description={isArabicInterface() ? 'أنشئ قوائم تشغيل لتلاواتك المفضلة وأدرها' : 'Create and manage your own personalized playlists of your favorite recitations'}
+                title={t('settings.about.customPlaylists')}
+                description={t('settings.about.createAndManageYourOwn')}
                 styles={styles}
               />
               <Feature
-                title={isArabicInterface() ? 'التصفح حسب الجزء' : 'Browse by Juz'}
-                description={isArabicInterface() ? 'تصفّح القرآن بسهولة من خلال تنظيمه حسب الأجزاء' : 'Easily navigate through the Quran with Juz-based organization and grouping'}
+                title={t('settings.about.browseByJuz')}
+                description={t('settings.about.easilyNavigateThroughTheQuran')}
                 styles={styles}
               />
               <Feature
-                title={isArabicInterface() ? 'عناصر تحكم صوتية متقدمة' : 'Advanced Audio Controls'}
-                description={isArabicInterface() ? 'تحكّم دقيق في التشغيل المتواصل وسرعة التلاوة' : 'Precise playback control with continuous play and adjustable recitation speed'}
+                title={t('settings.about.advancedAudioControls')}
+                description={t(
+                  'settings.about.precisePlaybackControlWithContinuous',
+                )}
                 styles={styles}
               />
               <Feature
-                title={isArabicInterface() ? 'صوت عالي الجودة' : 'High-Quality Audio'}
-                description={isArabicInterface() ? 'تلاوات واضحة وعالية الجودة من قراء متميزين' : 'Crystal clear recitations from the world's best Qaris with optimized streaming'}
+                title={t('settings.about.highQualityAudio')}
+                description={t('settings.about.crystalClearRecitationsFromThe')}
                 styles={styles}
               />
               <Feature
-                title={isArabicInterface() ? 'مجموعات مختارة' : 'Curated Collections'}
-                description={isArabicInterface() ? 'سور منظمة بعناية حسب المناسبات والموضوعات' : 'Thoughtfully organized surahs for different occasions and themes'}
+                title={t('settings.about.curatedCollections')}
+                description={t(
+                  'settings.about.thoughtfullyOrganizedSurahsForDifferent',
+                )}
                 styles={styles}
               />
               <Feature
-                title={isArabicInterface() ? 'التخصيص' : 'Personalization'}
-                description={isArabicInterface() ? 'خصّص المظهر والألوان وإعدادات الصوت كما تفضّل' : 'Customize themes, accent colors, and audio settings to your liking'}
+                title={t('settings.about.personalization')}
+                description={t('settings.about.customizeThemesAccentColorsAnd')}
                 styles={styles}
               />
             </View>
           </View>
 
           <View style={styles.section}>
-            <Text style={styles.contentHeading}>{isArabicInterface() ? 'اقرأ واستمع وتدبّر' : 'Read, Listen, and Reflect'}</Text>
+            <Text style={styles.contentHeading}>
+              {t('settings.about.readListenAndReflect')}
+            </Text>
             <Text style={styles.bodyText}>
-              Read the Mushaf, explore translations and tafsir, save verses and
-              notes, and return to daily adhkar. Choose your reciter, build
-              playlists, and shape a listening experience that suits your day.
-              Available features vary by device; native apps also support
-              downloads for offline listening.
+              {t('settings.about.readTheMushafExploreTranslations')}
             </Text>
           </View>
 
           <View style={styles.section}>
-            <Text style={styles.contentHeading}>{isArabicInterface() ? 'التزامنا' : 'Our Commitment'}</Text>
+            <Text style={styles.contentHeading}>
+              {t('settings.about.ourCommitment')}
+            </Text>
             <Text style={styles.bodyText}>
-              We care about the accuracy of sacred content, respectful design,
-              and reliable access. We continue to improve ISTIMA with care for
-              the people who use it. May Allah accept this effort and make it
-              beneficial for everyone who listens, reads, and reflects.
+              {t('settings.about.weCareAboutTheAccuracy')}
             </Text>
           </View>
         </View>

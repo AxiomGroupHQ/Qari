@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Error initializing player: {{message}}",
+    "errorLoadingFonts": "Error loading fonts"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA home"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "All",
+      "clearAll": "Clear All",
+      "hasPhoto": "Has photo"
+    },
+    "filterModal": {
+      "apply": "Apply",
+      "filterReciters": "Filter Reciters",
+      "recitationStyles": "Recitation Styles",
+      "reset": "Reset",
+      "rewayatTypes": "Rewayat Types"
+    },
+    "recitersFound_one": "{{count}} reciter found with current filters",
+    "recitersFound_other": "{{count}} reciters found with current filters"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Loved Surahs"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Bookmark verses to see them here",
+      "bookmarks": "Bookmarks",
+      "noBookmarksYet": "No bookmarks yet",
+      "removeBookmark": "Remove Bookmark"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Rewayat",
+      "searchPlaylistsRecitersSurahsRewayat": "Search playlists, reciters, surahs, rewayat...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Search playlists, reciters, surahs, rewayat, and downloads",
+      "searchYourCollection": "Search Your Collection",
+      "searching": "Searching...",
+      "tryDifferentKeywords": "Try different keywords"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Download surahs to see them here",
+      "noDownloadsYet": "No downloads yet",
+      "playAll": "Play All"
+    },
+    "favoritereciters": {
+      "addReciters": "Add Reciters",
+      "addRecitersToSeeThem": "Add reciters to see them here",
+      "noFavoriteRecitersYet": "No favorite reciters yet",
+      "removeFromFavorites": "Remove from Favorites",
+      "searchFavoriteReciters": "Search favorite reciters"
+    },
+    "index": {
+      "addToCollection": "Add to Collection",
+      "bookmarks": "Bookmarks",
+      "createYourFirstPlaylist": "Create your first playlist",
+      "downloads": "Downloads",
+      "items_one": "{{count}} item",
+      "items_other": "{{count}} items",
+      "loved": "Loved",
+      "noBookmarksYet": "No bookmarks yet",
+      "noDownloadsYet": "No downloads yet",
+      "noFavoritesYet": "No favorites yet",
+      "noLovedSurahsYet": "No loved surahs yet",
+      "noNotesYet": "No notes yet",
+      "noUploadsYet": "No uploads yet",
+      "notes": "Notes",
+      "playlists": "Playlists",
+      "reciters": "Reciters",
+      "uploads": "Uploads"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "All loved surahs are already downloaded.",
+      "allLovedSurahsHaveBeen": "All loved surahs have been downloaded.",
+      "downloadError": "Download Error",
+      "loveSurahsToSeeThem": "Love surahs to see them here",
+      "noLovedSurahsYet": "No loved surahs yet",
+      "someDownloadsMayHaveFailed": "Some downloads may have failed.",
+      "unloveAllSurahs": "Unlove All Surahs"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Add notes to verses to see them here",
+      "editNote": "Edit Note",
+      "noNotesYet": "No notes yet",
+      "notes": "Notes"
+    },
+    "playlistModal": {
+      "name": "Name"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Create playlists to see them here",
+      "noPlaylistsYet": "No playlists yet",
+      "playlists": "Playlists"
+    },
+    "uploads": {
+      "removeAllUploads": "Remove All Uploads",
+      "uploadRecitationsToSeeThem": "Upload recitations to see them here"
+    }
+  },
+  "common": {
+    "1Time": "1 time",
+    "2Times": "2 times",
+    "3Times": "3 times",
+    "addToCollection": "Add to Collection",
+    "addToQueue": "Add to Queue",
+    "allSurahs": "All Surahs",
+    "alreadyDownloaded": "Already Downloaded",
+    "arabic": "Arabic",
+    "asc": "Asc",
+    "browseAll": "Browse All",
+    "browseAllReciters": "Browse All Reciters",
+    "cancel": "Cancel",
+    "clear": "Clear",
+    "copyToClipboard": "Copy to Clipboard",
+    "createNewPlaylist": "Create New Playlist",
+    "defaultReciter": "Default Reciter",
+    "delete": "Delete",
+    "deleteNote": "Delete Note",
+    "deleteRecitation": "Delete Recitation",
+    "desc": "Desc",
+    "downloadComplete": "Download Complete",
+    "downloadFailed": "Download Failed",
+    "downloads": "Downloads",
+    "editDetails": "Edit Details",
+    "error": "Error",
+    "favoriteReciters": "Favorite Reciters",
+    "followAlong": "Follow Along",
+    "from": "From",
+    "goToReciter": "Go to Reciter",
+    "goToVerse": "Go to verse",
+    "learnAboutSurah": "Learn About Surah",
+    "loading": "Loading...",
+    "loop": "Loop",
+    "loved": "Loved",
+    "mushafSettings": "Mushaf Settings",
+    "next": "Next",
+    "noRecitersFound": "No reciters found",
+    "noResultsFound": "No results found",
+    "noUploadsYet": "No uploads yet",
+    "play": "Play",
+    "playEachVerse": "Play each verse",
+    "playNow": "Play Now",
+    "playSpeed": "Play speed",
+    "playTheRange": "Play the range",
+    "playlistName": "Playlist Name",
+    "prev": "Prev",
+    "readingTheme": "Reading Theme",
+    "recentSearches": "Recent searches",
+    "reciter": "Reciter",
+    "reciterChoice": "Reciter Choice",
+    "reciters": "Reciters",
+    "remove": "Remove",
+    "removeAllDownloads": "Remove All Downloads",
+    "removeHighlight": "Remove Highlight",
+    "rev": "Rev",
+    "save": "Save",
+    "search": "Search",
+    "searchReciters": "Search reciters...",
+    "searchSurahs": "Search surahs",
+    "share": "Share",
+    "shareAsImage": "Share as Image",
+    "shareAsText": "Share as Text",
+    "sharedPhrases": "Shared Phrases",
+    "showBasmallah": "Show Basmallah",
+    "stop": "Stop",
+    "storage": "Storage",
+    "surah": "Surah",
+    "surahs": "Surahs",
+    "to": "To",
+    "translation": "Translation",
+    "translationsTafaseer": "Translations & Tafaseer",
+    "transliteration": "Transliteration",
+    "uploads": "Uploads",
+    "useDefaultReciter": "Use Default Reciter",
+    "verseReference": "Verse Reference",
+    "verses": "Verses",
+    "whatSNew": "What's New",
+    "wordByWord": "Word by Word",
+    "writeYourNoteHere": "Write your note here...",
+    "yourPlaylists": "Your Playlists"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Play all surahs"
+    },
+    "searchHeader": {
+      "searchSurahs": "Search Surahs"
+    },
+    "searchView": {
+      "noSurahsFound": "No surahs found"
+    },
+    "surahList": {
+      "noSurahsAvailable": "No surahs available"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Add Recitation",
+      "uploadRecitationsToSeeThem": "Upload recitations to see them here"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Downloaded • {{count}} surah",
+    "subtitle_other": "Downloaded • {{count}} surahs"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Sorry.. there was an error"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Browse all 114 surahs"
+    },
+    "savedAdhkarHero": {
+      "saved": "Saved",
+      "yourCollection": "Your collection"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SURAH OF THE DAY"
+    },
+    "surahsHero": {
+      "number": "Number"
+    }
+  },
+  "language": {
+    "later": "Later",
+    "restartMessage": "Restart the app to apply the new layout direction.",
+    "restartNow": "Restart now",
+    "restartTitle": "Restart required",
+    "search": "Search languages",
+    "system": "Device language"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Continue"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Skip"
+    }
+  },
+  "mushaf": {
+    "juz": "Juz {{juz}}",
+    "loadingMushaf": "Loading Mushaf…",
+    "main": {
+      "mushafSettings": "Mushaf settings"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Change reciter",
+      "changeReciter2": "Change Reciter",
+      "nextAyah": "Next ayah",
+      "playbackOptions": "Playback options",
+      "previousAyah": "Previous ayah"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Find surahs, verses, pages, or juz",
+      "recentReads": "RECENT READS",
+      "searchSurahsPagesOrJuz": "Search surahs, pages, or juz...",
+      "searchTheMushaf": "Search the Mushaf"
+    },
+    "options": "Options",
+    "page": "Page {{page}}",
+    "pageAndSurah": "Page {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "The Mushaf could not load.",
+    "tryAgain": "Try again"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Highlights Allah's name and divine title forms like Rabb in the mushaf."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Alternating highlights by thematic passage",
+    "arabicFontSize": "Arabic Font Size",
+    "bold": "Bold",
+    "book": "Book",
+    "colorLegend": "Color legend",
+    "currentlyReading": "Currently reading",
+    "divineNames": "DIVINE NAMES",
+    "fontSize": "Font Size",
+    "fullscreen": "Fullscreen",
+    "hamzaReplacedByLongVowel": "Hamza replaced by long vowel",
+    "heavyLamInAllahAfter": "Heavy lam in Allah after emphatic letters",
+    "highlightAllahRabb": "Highlight Allah / Rabb",
+    "horizontal": "Horizontal",
+    "ibdal": "Ibdal",
+    "list": "List",
+    "loadingSample": "Loading sample...",
+    "maddAlBadal": "Madd al-Badal",
+    "maximumProminence": "Maximum prominence",
+    "medium": "Medium",
+    "modernMadinahPrintedPipeline": "Modern Madinah printed pipeline",
+    "mushaf": "Mushaf",
+    "normal": "Normal",
+    "originalMushafWeight": "Original mushaf weight",
+    "pageDesign": "PAGE DESIGN",
+    "prolongedVowelAfterHamza": "Prolonged vowel after hamza",
+    "readingTheme": "READING THEME",
+    "scrollDirection": "SCROLL DIRECTION",
+    "showDifferences": "Show Differences",
+    "silah": "Silah",
+    "slightlyMoreProminent": "Slightly more prominent",
+    "softenedHamzaPronunciation": "Softened hamza pronunciation",
+    "subcontinentNastaliqStyle": "Subcontinent Nastaliq style",
+    "taghlizAlLam": "Taghliz al-Lam",
+    "tajweedColoring": "Tajweed Coloring",
+    "tashilMusahhala": "Tashil / Musahhala",
+    "textPreviewNotYetAvailable": "TEXT PREVIEW NOT YET AVAILABLE",
+    "textThickness": "TEXT THICKNESS",
+    "thematicHighlighting": "Thematic Highlighting",
+    "trailingVowelOrMoodChange": "Trailing-vowel or mood change only",
+    "usingSaheehInternationalTranslationWith": "Using: Saheeh International Translation with footnotes",
+    "vertical": "Vertical",
+    "viewType": "VIEW TYPE",
+    "vowelMoodShift": "Vowel / mood shift",
+    "wordByWord": "WORD BY WORD",
+    "wordVariant": "Word variant"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Backend unreachable",
+    "connectionRestored": "Connection restored",
+    "noInternetConnection": "No internet connection",
+    "showingCachedData": "Showing cached data"
+  },
+  "organize": {
+    "createReciter": "Create \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Queue",
+      "queueIsEmpty": "Queue is empty"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Tag this recitation to see surah text and details"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Playlist • {{count}} surah",
+    "subtitle_other": "Playlist • {{count}} surahs"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "No surahs in this playlist"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Footnote"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "A recitation chosen just for this moment",
+      "discover": "Discover",
+      "discoverANewVoice": "Discover a new voice",
+      "explore": "Explore",
+      "exploreTheUnexpected": "Explore the unexpected",
+      "hearSomethingNew": "Hear something new",
+      "letTheQuranSurpriseYou": "Let the Quran surprise you",
+      "randomMix": "Random Mix",
+      "randomRecitation": "Random Recitation",
+      "shuffleListen": "Shuffle & Listen",
+      "surpriseMe": "Surprise me"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Changing appearance mode applies to the entire app"
+  },
+  "reciterBrowse": {
+    "allReciters": "All Reciters",
+    "browseReciters": "Browse Reciters",
+    "favorites": "Favorites"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "No downloads for this reciter"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "My Uploads"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Adhkar",
+    "bestForMemorization": "Best for Memorization",
+    "bestForTajweed": "Best for Tajweed",
+    "continueListening": "Continue Listening",
+    "exclusives": "Exclusives",
+    "exploreByRewayah": "Explore by Rewayah",
+    "featuredReciters": "Featured Reciters",
+    "fromYourCollection": "From your Collection",
+    "myRecitations": "My Recitations",
+    "newToQuranStartHere": "New to Quran? Start Here",
+    "seeMore": "See More",
+    "yourFavorites": "Your Favorites"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Active",
+      "activeTafseer": "ACTIVE TAFSEER",
+      "activeTranslation": "ACTIVE TRANSLATION",
+      "deleteTafseer": "Delete Tafseer",
+      "deleteTranslation": "Delete Translation",
+      "noTafaseerFound": "No tafaseer found",
+      "noTranslationsFound": "No translations found",
+      "unableToDownloadThisTafseer": "Unable to download this tafseer. Please check your internet connection and try again.",
+      "unableToDownloadThisTranslation": "Unable to download this translation. Please check your internet connection and try again."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "No recent searches",
+      "tryDifferentKeywordsOrCheck": "Try different keywords or check the spelling",
+      "yourSearchHistoryWillAppear": "Your search history will appear here"
+    },
+    "surahsOrReciters": "Search surahs or reciters"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Advanced Audio Controls",
+      "browseByJuz": "Browse by Juz",
+      "createAndManageYourOwn": "Create and manage your own personalized playlists of your favorite recitations",
+      "crystalClearRecitationsFromThe": "Crystal clear recitations from the world's best Qaris with optimized streaming",
+      "curatedCollections": "Curated Collections",
+      "customPlaylists": "Custom Playlists",
+      "customizeThemesAccentColorsAnd": "Customize themes, accent colors, and audio settings to your liking",
+      "downloadSurahsForOfflineListening": "Download surahs for offline listening anytime, anywhere without internet connection",
+      "easilyNavigateThroughTheQuran": "Easily navigate through the Quran with Juz-based organization and grouping",
+      "features": "FEATURES",
+      "highQualityAudio": "High-Quality Audio",
+      "listenReflectRememberAllah": "Listen. Reflect. Remember Allah.",
+      "offlineDownloads": "Offline Downloads",
+      "ourCommitment": "Our Commitment",
+      "ourMission": "Our Mission",
+      "personalization": "Personalization",
+      "precisePlaybackControlWithContinuous": "Precise playback control with continuous play and adjustable recitation speed",
+      "quranBayanTafsirKnowledgeOur": "Quran • Bayan • Tafsir • Knowledge. Our aim is to make listening and reflection part of everyday life: at home, on the move, and wherever you have a moment to remember Allah.",
+      "readListenAndReflect": "Read, Listen, and Reflect",
+      "readTheMushafExploreTranslations": "Read the Mushaf, explore translations and tafsir, save verses and notes, and return to daily adhkar. Choose your reciter, build playlists, and shape a listening experience that suits your day. Available features vary by device; native apps also support downloads for offline listening.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Thoughtfully organized surahs for different occasions and themes",
+      "weCareAboutTheAccuracy": "We care about the accuracy of sacred content, respectful design, and reliable access. We continue to improve ISTIMA with care for the people who use it. May Allah accept this effort and make it beneficial for everyone who listens, reads, and reflects."
+    },
+    "aboutApp": "About {{name}}",
+    "appearance": "APPEARANCE",
+    "defaultreciter": {
+      "changeDefaultReciter": "CHANGE DEFAULT RECITER"
+    },
+    "developer": "DEVELOPER",
+    "floatingDevMenu": "Floating Dev Menu",
+    "language": "Language",
+    "languageDescription": "Choose the app language",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Always use your selected default reciter",
+      "askEveryTime": "Ask Every Time",
+      "chooseAReciterEachTime": "Choose a reciter each time you play",
+      "chooseHowYouWantTo": "Choose how you want to select reciters when playing Surahs",
+      "defaultSelectionMethod": "DEFAULT SELECTION METHOD",
+      "searchThroughOurCompleteCollection": "Search through our complete collection of reciters",
+      "selectionPreference": "SELECTION PREFERENCE"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "All downloads have been removed.",
+      "areYouSureYouWant": "Are you sure you want to remove all downloaded content? This action cannot be undone.",
+      "cache": "Cache",
+      "cacheHasBeenCleared": "Cache has been cleared.",
+      "clearCache": "Clear cache",
+      "failedToClearCache": "Failed to clear cache.",
+      "failedToRemoveDownloads": "Failed to remove downloads.",
+      "free": "Free",
+      "loadingStorageInformation": "Loading storage information...",
+      "manageStorage": "MANAGE STORAGE",
+      "otherApps": "Other apps",
+      "removeAllDownloads": "Remove all downloads",
+      "removeAllTheQuranContent": "Remove all the Quran content you have downloaded for offline use.",
+      "storageBreakdown": "STORAGE BREAKDOWN",
+      "success": "Success",
+      "thisWillClearYourCache": "This will clear your cache. Your downloads won't be removed.",
+      "youCanFreeUpStorage": "You can free up storage by clearing your cache. Your downloads won't be removed."
+    },
+    "themePicker": {
+      "auto": "Auto",
+      "dark": "Dark",
+      "light": "Light"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "No changelog available"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "About {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Add Favorite Reciter",
+      "uploadRecitation": "Upload Recitation"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Ambient Sounds",
+      "none": "None",
+      "volume": "Volume"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "e.g., Morning Recitations"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Remove Download"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Done"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Add to collection",
+      "addToQueue": "Add to queue",
+      "continuePlaying": "Continue playing",
+      "goToReciter": "Go to reciter",
+      "removeFromRecents": "Remove from recents"
+    },
+    "mushafLayoutSheet": {
+      "back": "Back"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Ending Verse",
+      "playbackSettings": "Playback Settings",
+      "selectRange": "Select Range",
+      "startingVerse": "Starting Verse"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Repeat Settings",
+      "start": "Start",
+      "verseRange": "Verse range"
+    },
+    "organizeRecitationSheet": {
+      "category": "Category",
+      "customReciter": "Custom reciter",
+      "duA": "Du'a",
+      "eGMorningAdhkar": "e.g., Morning Adhkar",
+      "lecture": "Lecture",
+      "moreOptions": "More Options",
+      "other": "Other",
+      "recording": "Recording",
+      "rewayah": "Rewayah",
+      "searchSurahs": "Search surahs...",
+      "style": "Style",
+      "tafsir": "Tafsir",
+      "title": "Title",
+      "type": "Type",
+      "verseRangeOptional": "Verse range (optional)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Playback Speed"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "All items in this playlist are already downloaded.",
+      "anErrorOccurredWhileDownloading": "An error occurred while downloading the playlist. Please try again.",
+      "deletePlaylist": "Delete Playlist",
+      "downloadingPlaylist": "Downloading playlist...",
+      "editPlaylist": "Edit Playlist",
+      "emptyPlaylist": "Empty Playlist",
+      "thisPlaylistIsEmpty": "This playlist is empty."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "About Rewayat",
+      "availableRewayat": "Available Rewayat"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Failed to add surah to playlist",
+      "failedToCreatePlaylist": "Failed to create playlist",
+      "noPlaylistsYetCreateYour": "No playlists yet. Create your first playlist above!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Ask every time",
+      "randomReciter": "Random Reciter",
+      "selectReciter": "Select Reciter"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "No similar verses found for this ayah.",
+      "similarWording": "Similar Wording"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Sleep Timer",
+      "turnOffTimer": "Turn Off Timer"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Remove from Playlist"
+    },
+    "verseActionsSheet": {
+      "addNote": "Add Note",
+      "copy": "Copy",
+      "repeat": "Repeat",
+      "similarVerses": "Similar Verses",
+      "tafseer": "Tafseer",
+      "theme": "Theme"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Copy Options",
+      "selectWhatToCopy": "Select what to copy"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Highlight Color"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Share Verse"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "Found in {{count}} verse",
+    "foundIn_other": "Found in {{count}} verses"
+  },
+  "surahItem": {
+    "moreOptions": "More options",
+    "opensMenuWithAdditionalActions": "Opens menu with additional actions for this Surah",
+    "tapToPlaySurah": "Tap to play Surah"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Invalid playlist ID",
+      "playlistNotFound": "Playlist not found"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Could not find a reciter with all surahs in this playlist. Please try a different playlist.",
+      "failedToPlayPlaylistPlease": "Failed to play playlist. Please try again.",
+      "failedToPlayTrackPlease": "Failed to play track. Please try again.",
+      "failedToShufflePlaylistPlease": "Failed to shuffle playlist. Please try again.",
+      "noReciterAvailable": "No Reciter Available",
+      "noSurahsInThisPlaylist": "No surahs in this playlist"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Account",
+      "appData": "App & Data",
+      "audioPlayback": "Audio & Playback",
+      "chooseYourPreferredReciter": "Choose your preferred reciter",
+      "customizeQuranDisplayOptions": "Customize Quran display options",
+      "customizeReciterSelection": "Customize reciter selection",
+      "featureRequests": "Feature Requests",
+      "feedback": "Feedback",
+      "helpSupport": "Help & Support",
+      "learnMoreAboutOurMission": "Learn more about our mission",
+      "manageQuranTranslationsAndCommentary": "Manage Quran translations and commentary",
+      "privacyPolicy": "Privacy Policy",
+      "quran": "Quran",
+      "readOurTermsOfService": "Read our terms of service",
+      "seeWhatSNewIn": "See what's new in this version",
+      "shareYourExperienceWithOthers": "Share your experience with others",
+      "showTheFloatingDeveloperTools": "Show the floating developer tools button",
+      "suggestImprovementsAndNewFeatures": "Suggest improvements and new features",
+      "termsOfService": "Terms of Service",
+      "viewAndManageStorageUsage": "View and manage storage usage",
+      "viewOurPrivacyPolicy": "View our privacy policy",
+      "writeAReview": "Write a Review"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Cancel",
+    "close": "Close",
+    "collection": "Collection",
+    "download": "Download",
+    "downloads": "Downloads",
+    "error": "Something went wrong",
+    "favorites": "Favorites",
+    "home": "Home",
+    "language": "Language",
+    "library": "Library",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "offline": "You are offline",
+    "pause": "Pause",
+    "play": "Play",
+    "retry": "Try again",
+    "save": "Save",
+    "search": "Search",
+    "settings": "Settings",
+    "surahs": "Surahs"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "SELECT CONTENT"
+    },
+    "highlightContent": {
+      "chooseColor": "CHOOSE COLOR"
+    },
+    "noteContent": {
+      "saveNote": "Save Note"
+    },
+    "shareContent": {
+      "shareLink": "Share Link"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "No similar verses found for this ayah.",
+      "sharedPhrases": "SHARED PHRASES",
+      "similarWording": "SIMILAR WORDING"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "No Tafaseer Downloaded",
+      "tafseerNotAvailableForThis": "Tafseer not available for this verse",
+      "tapHereToDownloadA": "Tap here to download a tafseer and view commentary."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "No thematic data for this verse.",
+      "passage": "Passage"
+    },
+    "translationContent": {
+      "switch": "Switch",
+      "translationNotAvailable": "Translation not available"
+    }
+  },
+  "version": {
+    "label": "Version {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "What's new in"
+  },
+  "wordDetail": {
+    "context": "Verse {{surah}}:{{ayah}} · Word {{position}} of {{total}}"
+  }
+}

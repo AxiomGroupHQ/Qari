@@ -54,6 +54,8 @@ import {
   type MushafAllahNameHighlightColor,
   type RewayahId,
 } from '@/store/mushafSettingsStore';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 // --- Pre-cache Translation/Transliteration Data --- //
 interface TransliterationData {
@@ -117,12 +119,16 @@ const FONT_OPTIONS: FontOption[] = [
   {
     value: 'dk_indopak',
     label: 'IndoPak',
-    description: 'Subcontinent Nastaliq style',
+    get description() {
+      return t('mushafSettingsContent.subcontinentNastaliqStyle');
+    },
   },
   {
     value: 'qcf_v2',
     label: 'Mushaf 1440',
-    description: 'Modern Madinah printed pipeline',
+    get description() {
+      return t('mushafSettingsContent.modernMadinahPrintedPipeline');
+    },
   },
 ];
 
@@ -135,18 +141,30 @@ interface TextWeightOption {
 const TEXT_WEIGHT_OPTIONS: TextWeightOption[] = [
   {
     value: 'normal',
-    label: 'Normal',
-    description: 'Original mushaf weight',
+    get label() {
+      return t('mushafSettingsContent.normal');
+    },
+    get description() {
+      return t('mushafSettingsContent.originalMushafWeight');
+    },
   },
   {
     value: 'medium',
-    label: 'Medium',
-    description: 'Slightly more prominent',
+    get label() {
+      return t('mushafSettingsContent.medium');
+    },
+    get description() {
+      return t('mushafSettingsContent.slightlyMoreProminent');
+    },
   },
   {
     value: 'bold',
-    label: 'Bold',
-    description: 'Maximum prominence',
+    get label() {
+      return t('mushafSettingsContent.bold');
+    },
+    get description() {
+      return t('mushafSettingsContent.maximumProminence');
+    },
   },
 ];
 
@@ -268,7 +286,11 @@ const FontSizeControl: React.FC<FontSizeControlProps> = ({
         <FormattedTextRenderer text={sampleText} baseStyle={sampleBaseStyle} />
       );
     } else {
-      return <Text style={sampleBaseStyle}>Loading sample...</Text>;
+      return (
+        <Text style={sampleBaseStyle}>
+          {t('mushafSettingsContent.loadingSample')}
+        </Text>
+      );
     }
   }, [
     currentActualSize,
@@ -713,12 +735,16 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
 
   return (
     <View style={[styles.container, containerStyle]}>
-      {showTitle && <Text style={styles.title}>Mushaf Settings</Text>}
+      {showTitle && (
+        <Text style={styles.title}>{t('common.mushafSettings')}</Text>
+      )}
 
       {/* VIEW TYPE Section (hidden from player context) */}
       {context !== 'player' && (
         <>
-          <Text style={styles.sectionHeader}>VIEW TYPE</Text>
+          <Text style={styles.sectionHeader}>
+            {t('mushafSettingsContent.viewType')}
+          </Text>
           <View style={styles.card}>
             <Pressable
               style={({pressed}) => [
@@ -730,7 +756,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
                 size={moderateScale(20)}
                 color={Color(theme.colors.text).alpha(0.7).toString()}
               />
-              <Text style={styles.settingRowLabel}>Mushaf</Text>
+              <Text style={styles.settingRowLabel}>
+                {t('mushafSettingsContent.mushaf')}
+              </Text>
               {viewMode === 'mushaf' && (
                 <Feather
                   name="check"
@@ -750,7 +778,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
                 size={moderateScale(20)}
                 color={Color(theme.colors.text).alpha(0.7).toString()}
               />
-              <Text style={styles.settingRowLabel}>List</Text>
+              <Text style={styles.settingRowLabel}>
+                {t('mushafSettingsContent.list')}
+              </Text>
               {viewMode === 'list' && (
                 <Feather
                   name="check"
@@ -761,7 +791,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
             </Pressable>
           </View>
 
-          <Text style={styles.sectionHeader}>SCROLL DIRECTION</Text>
+          <Text style={styles.sectionHeader}>
+            {t('mushafSettingsContent.scrollDirection')}
+          </Text>
           <View style={styles.card}>
             <Pressable
               style={({pressed}) => [
@@ -773,7 +805,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
                 size={moderateScale(20)}
                 color={Color(theme.colors.text).alpha(0.7).toString()}
               />
-              <Text style={styles.settingRowLabel}>Horizontal</Text>
+              <Text style={styles.settingRowLabel}>
+                {t('mushafSettingsContent.horizontal')}
+              </Text>
               {scrollDirection === 'horizontal' && (
                 <Feather
                   name="check"
@@ -793,7 +827,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
                 size={moderateScale(20)}
                 color={Color(theme.colors.text).alpha(0.7).toString()}
               />
-              <Text style={styles.settingRowLabel}>Vertical</Text>
+              <Text style={styles.settingRowLabel}>
+                {t('mushafSettingsContent.vertical')}
+              </Text>
               {scrollDirection === 'vertical' && (
                 <Feather
                   name="check"
@@ -807,7 +843,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
           {/* PAGE DESIGN: only in mushaf view + horizontal */}
           {viewMode === 'mushaf' && scrollDirection === 'horizontal' && (
             <>
-              <Text style={styles.sectionHeader}>PAGE DESIGN</Text>
+              <Text style={styles.sectionHeader}>
+                {t('mushafSettingsContent.pageDesign')}
+              </Text>
               <View style={styles.card}>
                 <Pressable
                   style={({pressed}) => [
@@ -819,7 +857,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
                     size={moderateScale(20)}
                     color={Color(theme.colors.text).alpha(0.7).toString()}
                   />
-                  <Text style={styles.settingRowLabel}>Fullscreen</Text>
+                  <Text style={styles.settingRowLabel}>
+                    {t('mushafSettingsContent.fullscreen')}
+                  </Text>
                   {pageLayout === 'fullscreen' && (
                     <Feather
                       name="check"
@@ -839,7 +879,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
                     size={moderateScale(20)}
                     color={Color(theme.colors.text).alpha(0.7).toString()}
                   />
-                  <Text style={styles.settingRowLabel}>Book</Text>
+                  <Text style={styles.settingRowLabel}>
+                    {t('mushafSettingsContent.book')}
+                  </Text>
                   {pageLayout === 'book' && (
                     <Feather
                       name="check"
@@ -855,7 +897,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
       )}
 
       {/* READING THEME Section */}
-      <Text style={styles.sectionHeader}>READING THEME</Text>
+      <Text style={styles.sectionHeader}>
+        {t('mushafSettingsContent.readingTheme')}
+      </Text>
       <View style={styles.card}>
         <Pressable
           style={({pressed}) => [
@@ -871,7 +915,7 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
                 )?.name ?? 'System')}
           </Text>
           <Feather
-            name="chevron-right"
+            name={dirIcon('chevron-right')}
             size={moderateScale(18)}
             color={Color(theme.colors.text).alpha(0.2).toString()}
           />
@@ -881,10 +925,12 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
       {/* Word by Word Section; only in list view */}
       {context !== 'player' && viewMode === 'list' && (
         <>
-          <Text style={styles.sectionHeader}>WORD BY WORD</Text>
+          <Text style={styles.sectionHeader}>
+            {t('mushafSettingsContent.wordByWord')}
+          </Text>
           <View style={styles.card}>
             <View style={styles.optionRow}>
-              <Text style={styles.optionLabel}>Word by Word</Text>
+              <Text style={styles.optionLabel}>{t('common.wordByWord')}</Text>
               <Switch
                 trackColor={trackColor}
                 thumbColor="#FFFFFF"
@@ -903,7 +949,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
                     pressed && styles.settingRowPressed,
                   ]}
                   onPress={toggleWBWTranslation}>
-                  <Text style={styles.settingRowLabel}>Translation</Text>
+                  <Text style={styles.settingRowLabel}>
+                    {t('common.translation')}
+                  </Text>
                   {wbwShowTranslation && (
                     <Feather
                       name="check"
@@ -919,7 +967,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
                     pressed && styles.settingRowPressed,
                   ]}
                   onPress={toggleWBWTransliteration}>
-                  <Text style={styles.settingRowLabel}>Transliteration</Text>
+                  <Text style={styles.settingRowLabel}>
+                    {t('common.transliteration')}
+                  </Text>
                   {wbwShowTransliteration && (
                     <Feather
                       name="check"
@@ -939,7 +989,7 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
         <>
           <View style={styles.card}>
             <FontSizeControl
-              label="Arabic Font Size"
+              label={t('mushafSettingsContent.arabicFontSize')}
               currentActualSize={arabicFontSize}
               onChange={setArabicFontSize}
               theme={theme}
@@ -959,7 +1009,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
 
           <View style={styles.card}>
             <View style={styles.optionRow}>
-              <Text style={styles.optionLabel}>Transliteration</Text>
+              <Text style={styles.optionLabel}>
+                {t('common.transliteration')}
+              </Text>
               <Switch
                 trackColor={trackColor}
                 thumbColor="#FFFFFF"
@@ -973,7 +1025,7 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
               <>
                 <View style={styles.divider} />
                 <FontSizeControl
-                  label="Font Size"
+                  label={t('mushafSettingsContent.fontSize')}
                   currentActualSize={transliterationFontSize}
                   onChange={setTransliterationFontSize}
                   theme={theme}
@@ -987,7 +1039,7 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
 
           <View style={styles.card}>
             <View style={styles.optionRow}>
-              <Text style={styles.optionLabel}>Translation</Text>
+              <Text style={styles.optionLabel}>{t('common.translation')}</Text>
               <Switch
                 trackColor={trackColor}
                 thumbColor="#FFFFFF"
@@ -998,13 +1050,15 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
               />
             </View>
             <Text style={styles.helperText}>
-              Using: Saheeh International Translation with footnotes
+              {t(
+                'mushafSettingsContent.usingSaheehInternationalTranslationWith',
+              )}
             </Text>
             {showTranslation && (
               <>
                 <View style={styles.divider} />
                 <FontSizeControl
-                  label="Font Size"
+                  label={t('mushafSettingsContent.fontSize')}
                   currentActualSize={translationFontSize}
                   onChange={setTranslationFontSize}
                   theme={theme}
@@ -1019,7 +1073,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
       )}
 
       {/* TEXT THICKNESS Section */}
-      <Text style={styles.sectionHeader}>TEXT THICKNESS</Text>
+      <Text style={styles.sectionHeader}>
+        {t('mushafSettingsContent.textThickness')}
+      </Text>
       <TextWeightControl
         value={arabicTextWeight}
         onChange={setArabicTextWeight}
@@ -1027,10 +1083,14 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
         theme={theme}
       />
 
-      <Text style={styles.sectionHeader}>DIVINE NAMES</Text>
+      <Text style={styles.sectionHeader}>
+        {t('mushafSettingsContent.divineNames')}
+      </Text>
       <View style={styles.card}>
         <View style={styles.optionRow}>
-          <Text style={styles.optionLabel}>Highlight Allah / Rabb</Text>
+          <Text style={styles.optionLabel}>
+            {t('mushafSettingsContent.highlightAllahRabb')}
+          </Text>
           <Switch
             trackColor={trackColor}
             thumbColor="#FFFFFF"
@@ -1040,10 +1100,7 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
             style={styles.switchStyle}
           />
         </View>
-        <Text style={styles.helperText}>
-          Highlights Allah&apos;s name and divine title forms like Rabb in the
-          mushaf.
-        </Text>
+        <Text style={styles.helperText}>{t('mushafSettings.rabbHelper')}</Text>
         {showAllahNameHighlight && (
           <>
             <View style={styles.divider} />
@@ -1060,7 +1117,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
       {/* THEMES Section */}
       <View style={styles.card}>
         <View style={styles.optionRow}>
-          <Text style={styles.optionLabel}>Thematic Highlighting</Text>
+          <Text style={styles.optionLabel}>
+            {t('mushafSettingsContent.thematicHighlighting')}
+          </Text>
           <Switch
             trackColor={trackColor}
             thumbColor="#FFFFFF"
@@ -1071,7 +1130,7 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
           />
         </View>
         <Text style={styles.helperText}>
-          Alternating highlights by thematic passage
+          {t('mushafSettingsContent.alternatingHighlightsByThematicPassage')}
         </Text>
       </View>
 
@@ -1081,7 +1140,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
         {/* Tajweed Toggle */}
         <View style={styles.tajweedOptionRow}>
           <View style={styles.tajweedLabelContainer}>
-            <Text style={styles.tajweedLabel}>Tajweed Coloring</Text>
+            <Text style={styles.tajweedLabel}>
+              {t('mushafSettingsContent.tajweedColoring')}
+            </Text>
             <Text style={styles.tajweedSubLabel}>
               {isQCF1440
                 ? 'Unavailable in Mushaf 1440 beta'
@@ -1194,11 +1255,15 @@ const RewayahAccordion: React.FC<RewayahAccordionProps> = ({
         ]}
         accessibilityRole="button"
         accessibilityState={{expanded, disabled}}
-        accessibilityLabel={`Rewayah: ${getLongLabel(selectedId)}. ${expanded ? 'Collapse' : 'Expand'} to change.`}
+        accessibilityLabel={`Rewayah: ${getLongLabel(selectedId)}. ${
+          expanded ? 'Collapse' : 'Expand'
+        } to change.`}
         disabled={disabled}
         onPress={() => setExpanded(e => !e)}>
         <View style={styles.radioTextContainer}>
-          <Text style={styles.accordionHeaderEyebrow}>Currently reading</Text>
+          <Text style={styles.accordionHeaderEyebrow}>
+            {t('mushafSettingsContent.currentlyReading')}
+          </Text>
           <Text style={styles.accordionHeaderTitle}>
             {getLongLabel(selectedId)}
           </Text>
@@ -1248,7 +1313,7 @@ const RewayahAccordion: React.FC<RewayahAccordionProps> = ({
           })}
           <View style={styles.divider} />
           <Text style={styles.accordionSubHeader}>
-            TEXT PREVIEW NOT YET AVAILABLE
+            {t('mushafSettingsContent.textPreviewNotYetAvailable')}
           </Text>
           {UNAVAILABLE_REWAYAH_IDS.map((id, idx) => (
             <React.Fragment key={id}>
@@ -1256,7 +1321,9 @@ const RewayahAccordion: React.FC<RewayahAccordionProps> = ({
               <View
                 style={[styles.radioRow, styles.radioRowDisabled]}
                 accessibilityRole="text"
-                accessibilityLabel={`${getLongLabel(id)}, text preview not yet available`}>
+                accessibilityLabel={`${getLongLabel(
+                  id,
+                )}, text preview not yet available`}>
                 <View style={styles.radioCircle} />
                 <View style={styles.radioTextContainer}>
                   <Text style={[styles.radioLabel, styles.radioLabelDisabled]}>
@@ -1298,7 +1365,9 @@ const RewayahDiffCard: React.FC<RewayahDiffCardProps> = ({
   return (
     <View style={styles.card}>
       <View style={styles.optionRow}>
-        <Text style={styles.optionLabel}>Show Differences</Text>
+        <Text style={styles.optionLabel}>
+          {t('mushafSettingsContent.showDifferences')}
+        </Text>
         <Switch
           trackColor={trackColor}
           thumbColor="#FFFFFF"
@@ -1321,7 +1390,9 @@ const RewayahDiffCard: React.FC<RewayahDiffCardProps> = ({
           size={moderateScale(16)}
           color={Color(theme.colors.text).alpha(0.7).toString()}
         />
-        <Text style={styles.settingRowLabel}>Color legend</Text>
+        <Text style={styles.settingRowLabel}>
+          {t('mushafSettingsContent.colorLegend')}
+        </Text>
         <Feather
           name={showLegend ? 'chevron-up' : 'chevron-down'}
           size={moderateScale(18)}
@@ -1384,13 +1455,19 @@ const REWAYAH_LEGEND: Record<RewayahWithDiffs, RewayahLegend> = {
       {
         color: REWAYAH_DIFF_BACKGROUND,
         isBackground: true,
-        label: 'Word variant',
+        get label() {
+          return t('mushafSettingsContent.wordVariant');
+        },
         description: 'Letter-level difference from Hafs',
       },
       {
         color: tajweedColors.minor,
-        label: 'Vowel / mood shift',
-        description: 'Trailing-vowel or mood change only',
+        get label() {
+          return t('mushafSettingsContent.vowelMoodShift');
+        },
+        get description() {
+          return t('mushafSettingsContent.trailingVowelOrMoodChange');
+        },
       },
     ],
   },
@@ -1401,17 +1478,25 @@ const REWAYAH_LEGEND: Record<RewayahWithDiffs, RewayahLegend> = {
       {
         color: REWAYAH_DIFF_BACKGROUND,
         isBackground: true,
-        label: 'Word variant',
+        get label() {
+          return t('mushafSettingsContent.wordVariant');
+        },
         description: 'Letter-level difference from Hafs',
       },
       {
         color: tajweedColors.minor,
-        label: 'Vowel / mood shift',
-        description: 'Trailing-vowel or mood change only',
+        get label() {
+          return t('mushafSettingsContent.vowelMoodShift');
+        },
+        get description() {
+          return t('mushafSettingsContent.trailingVowelOrMoodChange');
+        },
       },
       {
         color: tajweedColors.silah,
-        label: 'Silah',
+        get label() {
+          return t('mushafSettingsContent.silah');
+        },
         description: 'Pronoun-lengthening mark (ۥ / ۦ)',
       },
     ],
@@ -1423,17 +1508,25 @@ const REWAYAH_LEGEND: Record<RewayahWithDiffs, RewayahLegend> = {
       {
         color: REWAYAH_DIFF_BACKGROUND,
         isBackground: true,
-        label: 'Word variant',
+        get label() {
+          return t('mushafSettingsContent.wordVariant');
+        },
         description: 'Letter-level difference from Hafs',
       },
       {
         color: tajweedColors.minor,
-        label: 'Vowel / mood shift',
-        description: 'Trailing-vowel or mood change only',
+        get label() {
+          return t('mushafSettingsContent.vowelMoodShift');
+        },
+        get description() {
+          return t('mushafSettingsContent.trailingVowelOrMoodChange');
+        },
       },
       {
         color: tajweedColors.silah,
-        label: 'Silah',
+        get label() {
+          return t('mushafSettingsContent.silah');
+        },
         description: 'Pronoun-lengthening mark (ۥ / ۦ)',
       },
     ],
@@ -1444,33 +1537,53 @@ const REWAYAH_LEGEND: Record<RewayahWithDiffs, RewayahLegend> = {
     entries: [
       {
         color: tajweedColors.madd,
-        label: 'Madd al-Badal',
-        description: 'Prolonged vowel after hamza',
+        get label() {
+          return t('mushafSettingsContent.maddAlBadal');
+        },
+        get description() {
+          return t('mushafSettingsContent.prolongedVowelAfterHamza');
+        },
       },
       {
         color: tajweedColors.tashil,
-        label: 'Tashil / Musahhala',
-        description: 'Softened hamza pronunciation',
+        get label() {
+          return t('mushafSettingsContent.tashilMusahhala');
+        },
+        get description() {
+          return t('mushafSettingsContent.softenedHamzaPronunciation');
+        },
       },
       {
         color: tajweedColors.ibdal,
-        label: 'Ibdal',
-        description: 'Hamza replaced by long vowel',
+        get label() {
+          return t('mushafSettingsContent.ibdal');
+        },
+        get description() {
+          return t('mushafSettingsContent.hamzaReplacedByLongVowel');
+        },
       },
       {
         color: tajweedColors.taghliz,
-        label: 'Taghliz al-Lam',
-        description: 'Heavy lam in Allah after emphatic letters',
+        get label() {
+          return t('mushafSettingsContent.taghlizAlLam');
+        },
+        get description() {
+          return t('mushafSettingsContent.heavyLamInAllahAfter');
+        },
       },
       {
         color: tajweedColors.silah,
-        label: 'Silah',
+        get label() {
+          return t('mushafSettingsContent.silah');
+        },
         description: 'Pronoun-lengthening mark (ۥ / ۦ)',
       },
       {
         color: REWAYAH_DIFF_BACKGROUND,
         isBackground: true,
-        label: 'Word variant',
+        get label() {
+          return t('mushafSettingsContent.wordVariant');
+        },
         description: 'Genuine letter-level difference from Hafs',
       },
     ],
@@ -1481,33 +1594,53 @@ const REWAYAH_LEGEND: Record<RewayahWithDiffs, RewayahLegend> = {
     entries: [
       {
         color: tajweedColors.madd,
-        label: 'Madd al-Badal',
-        description: 'Prolonged vowel after hamza',
+        get label() {
+          return t('mushafSettingsContent.maddAlBadal');
+        },
+        get description() {
+          return t('mushafSettingsContent.prolongedVowelAfterHamza');
+        },
       },
       {
         color: tajweedColors.tashil,
-        label: 'Tashil / Musahhala',
-        description: 'Softened hamza pronunciation',
+        get label() {
+          return t('mushafSettingsContent.tashilMusahhala');
+        },
+        get description() {
+          return t('mushafSettingsContent.softenedHamzaPronunciation');
+        },
       },
       {
         color: tajweedColors.ibdal,
-        label: 'Ibdal',
-        description: 'Hamza replaced by long vowel',
+        get label() {
+          return t('mushafSettingsContent.ibdal');
+        },
+        get description() {
+          return t('mushafSettingsContent.hamzaReplacedByLongVowel');
+        },
       },
       {
         color: tajweedColors.taghliz,
-        label: 'Taghliz al-Lam',
-        description: 'Heavy lam in Allah after emphatic letters',
+        get label() {
+          return t('mushafSettingsContent.taghlizAlLam');
+        },
+        get description() {
+          return t('mushafSettingsContent.heavyLamInAllahAfter');
+        },
       },
       {
         color: tajweedColors.silah,
-        label: 'Silah',
+        get label() {
+          return t('mushafSettingsContent.silah');
+        },
         description: 'Pronoun-lengthening mark (ۥ / ۦ)',
       },
       {
         color: REWAYAH_DIFF_BACKGROUND,
         isBackground: true,
-        label: 'Word variant',
+        get label() {
+          return t('mushafSettingsContent.wordVariant');
+        },
         description: 'Genuine letter-level difference from Hafs',
       },
     ],
@@ -1519,7 +1652,9 @@ const REWAYAH_LEGEND: Record<RewayahWithDiffs, RewayahLegend> = {
       {
         color: REWAYAH_DIFF_BACKGROUND,
         isBackground: true,
-        label: 'Word variant',
+        get label() {
+          return t('mushafSettingsContent.wordVariant');
+        },
         description: 'Genuine letter-level difference from Hafs',
       },
     ],
@@ -1531,7 +1666,9 @@ const REWAYAH_LEGEND: Record<RewayahWithDiffs, RewayahLegend> = {
       {
         color: REWAYAH_DIFF_BACKGROUND,
         isBackground: true,
-        label: 'Word variant',
+        get label() {
+          return t('mushafSettingsContent.wordVariant');
+        },
         description: 'Genuine letter-level difference from Hafs',
       },
     ],

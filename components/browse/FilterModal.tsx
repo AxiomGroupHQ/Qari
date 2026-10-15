@@ -19,6 +19,7 @@ import {
   getShortLabel,
   resolveRewayahFromName,
 } from '@/services/rewayah/RewayahIdentity';
+import {t} from '@/i18n';
 
 interface FilterModalProps {
   visible: boolean;
@@ -315,7 +316,9 @@ export default function FilterModal({
           <View style={styles.innerContent}>
             <View style={styles.contentWrapper}>
               <View style={styles.header}>
-                <Text style={styles.headerTitle}>Filter Reciters</Text>
+                <Text style={styles.headerTitle}>
+                  {t('browse.filterModal.filterReciters')}
+                </Text>
                 <TouchableOpacity
                   style={styles.closeButton}
                   onPress={onClose}
@@ -341,7 +344,9 @@ export default function FilterModal({
                 scrollEventThrottle={16}>
                 {/* Recitation Styles */}
                 <View style={styles.section}>
-                  <Text style={styles.sectionTitle}>Recitation Styles</Text>
+                  <Text style={styles.sectionTitle}>
+                    {t('browse.filterModal.recitationStyles')}
+                  </Text>
                   <View style={styles.optionsContainer}>
                     {STYLE_OPTIONS.map(style => (
                       <TouchableOpacity
@@ -368,7 +373,9 @@ export default function FilterModal({
 
                 {/* Rewayat Types */}
                 <View style={styles.section}>
-                  <Text style={styles.sectionTitle}>Rewayat Types</Text>
+                  <Text style={styles.sectionTitle}>
+                    {t('browse.filterModal.rewayatTypes')}
+                  </Text>
                   <View style={styles.optionsContainer}>
                     {rewayahChips.map(({key, label}) => (
                       <TouchableOpacity
@@ -404,13 +411,17 @@ export default function FilterModal({
                     style={styles.resetButton}
                     onPress={handleReset}
                     activeOpacity={0.7}>
-                    <Text style={styles.resetButtonText}>Reset</Text>
+                    <Text style={styles.resetButtonText}>
+                      {t('browse.filterModal.reset')}
+                    </Text>
                   </TouchableOpacity>
                   <TouchableOpacity
                     style={styles.applyButton}
                     onPress={handleApply}
                     activeOpacity={0.7}>
-                    <Text style={styles.applyButtonText}>Apply</Text>
+                    <Text style={styles.applyButtonText}>
+                      {t('browse.filterModal.apply')}
+                    </Text>
                   </TouchableOpacity>
                 </View>
               </View>

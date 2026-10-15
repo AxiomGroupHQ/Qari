@@ -11,6 +11,7 @@ import {GlassView} from 'expo-glass-effect';
 import {USE_GLASS, useGlassColorScheme} from '@/hooks/useGlassProps';
 import Svg, {Circle, Path, Defs, RadialGradient, Stop} from 'react-native-svg';
 import {pickHeroTheme, HeroColorTheme} from '@/components/hero/heroThemes';
+import {t} from '@/i18n';
 
 // Match SurahsHero height
 const SECTION_HEIGHT = moderateScale(150);
@@ -58,9 +59,13 @@ const TasbihBeadsSvg = ({theme, isDarkMode}: TasbihBeadsSvgProps) => {
   ];
 
   // Thread path connecting beads on left side
-  const leftThread = `M ${leftBeads[0].cx},${leftBeads[0].cy} ${leftBeads.map(b => `L ${b.cx},${b.cy}`).join(' ')}`;
+  const leftThread = `M ${leftBeads[0].cx},${leftBeads[0].cy} ${leftBeads
+    .map(b => `L ${b.cx},${b.cy}`)
+    .join(' ')}`;
   // Thread path connecting beads on right side
-  const rightThread = `M ${rightBeads[0].cx},${rightBeads[0].cy} ${rightBeads.map(b => `L ${b.cx},${b.cy}`).join(' ')}`;
+  const rightThread = `M ${rightBeads[0].cx},${rightBeads[0].cy} ${rightBeads
+    .map(b => `L ${b.cx},${b.cy}`)
+    .join(' ')}`;
 
   return (
     <Svg
@@ -174,8 +179,13 @@ const SavedAdhkarCard = ({savedCount, style}: SavedAdhkarCardProps) => {
 
         {/* Bottom section - matching SurahHeroSection layout exactly */}
         <View style={styles.bottomSection}>
-          <Text style={styles.heroSurahName}> Saved </Text>
-          <Text style={styles.translatedName}>Your collection</Text>
+          <Text style={styles.heroSurahName}>
+            {' '}
+            {t('hero.savedAdhkarHero.saved')}{' '}
+          </Text>
+          <Text style={styles.translatedName}>
+            {t('hero.savedAdhkarHero.yourCollection')}
+          </Text>
         </View>
       </View>
     </>

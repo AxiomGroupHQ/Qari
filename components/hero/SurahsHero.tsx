@@ -16,6 +16,7 @@ import {
   MESH_PALETTES,
   SurahGradientMesh,
 } from '@/components/hero/SurahGradientMesh';
+import {t} from '@/i18n';
 
 // Same SECTION_HEIGHT as ScrollingHero for consistency
 const SECTION_HEIGHT = moderateScale(150);
@@ -102,11 +103,13 @@ export const SurahHeroSection = ({
           <View style={styles.statsRow}>
             <View style={styles.stat}>
               <Text style={styles.statValue}>{surah.verses_count}</Text>
-              <Text style={styles.statLabel}>Verses</Text>
+              <Text style={styles.statLabel}>{t('common.verses')}</Text>
             </View>
             <View style={styles.stat}>
               <Text style={styles.statValue}>{surah.id}</Text>
-              <Text style={styles.statLabel}>Number</Text>
+              <Text style={styles.statLabel}>
+                {t('hero.surahsHero.number')}
+              </Text>
             </View>
           </View>
         </View>

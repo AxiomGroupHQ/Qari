@@ -1,4 +1,3 @@
-import {getInterfaceMessages} from '@/localization/interfaceMessages';
 // app/(tabs)/_layout.tsx
 
 import React from 'react';
@@ -15,6 +14,7 @@ import {FloatingPlayer} from '@/components/player/v2/FloatingPlayer';
 import {TabletSidebar} from '@/components/tablet/TabletSidebar';
 import {useResponsive} from '@/hooks/useResponsive';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {t} from '@/i18n';
 
 // PNG tab icons for NativeTabs (iOS) — template-rendered by the native tab bar
 const tabIcons = {
@@ -45,7 +45,6 @@ const tabletSidebarComponent = (props: BottomTabBarProps) => (
 );
 
 function IOSTabs() {
-  const labels = getInterfaceMessages(typeof navigator !== 'undefined' ? navigator.language : (Intl.DateTimeFormat().resolvedOptions().locale || 'en'));
   const {theme} = useTheme();
   const hasTrack = usePlayerStore(state => {
     const tracks = state.queue.tracks;
@@ -68,7 +67,7 @@ function IOSTabs() {
         name="(a.home)"
         contentStyle={{backgroundColor: theme.colors.background}}>
         <NativeTabs.Trigger.Icon src={tabIcons.home} renderingMode="template" />
-        <NativeTabs.Trigger.Label>{labels.home}</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{t('ui.home')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger
@@ -78,7 +77,7 @@ function IOSTabs() {
           src={tabIcons.surahs}
           renderingMode="template"
         />
-        <NativeTabs.Trigger.Label>{labels.surahs}</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{t('ui.surahs')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger
@@ -89,7 +88,7 @@ function IOSTabs() {
           src={tabIcons.search}
           renderingMode="template"
         />
-        <NativeTabs.Trigger.Label>{labels.search}</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{t('ui.search')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger
@@ -99,7 +98,9 @@ function IOSTabs() {
           src={tabIcons.collection}
           renderingMode="template"
         />
-        <NativeTabs.Trigger.Label>{labels.collection}</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>
+          {t('ui.collection')}
+        </NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger
@@ -108,14 +109,13 @@ function IOSTabs() {
         <NativeTabs.Trigger.Icon
           sf={{default: 'gearshape', selected: 'gearshape.fill'}}
         />
-        <NativeTabs.Trigger.Label>{labels.settings}</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{t('ui.settings')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
     </NativeTabs>
   );
 }
 
 function AndroidTabs() {
-  const labels = getInterfaceMessages(typeof navigator !== 'undefined' ? navigator.language : (Intl.DateTimeFormat().resolvedOptions().locale || 'en'));
   return (
     <View style={{flex: 1}}>
       <Tabs
@@ -131,11 +131,14 @@ function AndroidTabs() {
           },
         }}
         tabBar={tabBarComponent}>
-        <Tabs.Screen name="(a.home)" options={{title: labels.home}} />
-        <Tabs.Screen name="(b.surahs)" options={{title: labels.surahs}} />
-        <Tabs.Screen name="(b.search)" options={{title: labels.search}} />
-        <Tabs.Screen name="(c.collection)" options={{title: labels.collection}} />
-        <Tabs.Screen name="(d.settings)" options={{title: labels.settings}} />
+        <Tabs.Screen name="(a.home)" options={{title: t('ui.home')}} />
+        <Tabs.Screen name="(b.surahs)" options={{title: t('ui.surahs')}} />
+        <Tabs.Screen name="(b.search)" options={{title: t('ui.search')}} />
+        <Tabs.Screen
+          name="(c.collection)"
+          options={{title: t('ui.collection')}}
+        />
+        <Tabs.Screen name="(d.settings)" options={{title: t('ui.settings')}} />
       </Tabs>
       <FloatingPlayer />
     </View>
@@ -148,7 +151,6 @@ function AndroidTabs() {
  * NativeTabs and the Android floating pill when `isTablet` is true.
  */
 function TabletTabs() {
-  const labels = getInterfaceMessages(typeof navigator !== 'undefined' ? navigator.language : (Intl.DateTimeFormat().resolvedOptions().locale || 'en'));
   return (
     <View style={{flex: 1}}>
       <Tabs
@@ -164,11 +166,14 @@ function TabletTabs() {
           },
         }}
         tabBar={tabletSidebarComponent}>
-        <Tabs.Screen name="(a.home)" options={{title: labels.home}} />
-        <Tabs.Screen name="(b.surahs)" options={{title: labels.surahs}} />
-        <Tabs.Screen name="(b.search)" options={{title: labels.search}} />
-        <Tabs.Screen name="(c.collection)" options={{title: labels.collection}} />
-        <Tabs.Screen name="(d.settings)" options={{title: labels.settings}} />
+        <Tabs.Screen name="(a.home)" options={{title: t('ui.home')}} />
+        <Tabs.Screen name="(b.surahs)" options={{title: t('ui.surahs')}} />
+        <Tabs.Screen name="(b.search)" options={{title: t('ui.search')}} />
+        <Tabs.Screen
+          name="(c.collection)"
+          options={{title: t('ui.collection')}}
+        />
+        <Tabs.Screen name="(d.settings)" options={{title: t('ui.settings')}} />
       </Tabs>
     </View>
   );

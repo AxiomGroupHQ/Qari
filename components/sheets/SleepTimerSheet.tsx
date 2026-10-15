@@ -8,6 +8,7 @@ import ActionSheet, {
   SheetManager,
 } from 'react-native-actions-sheet';
 import Color from 'color';
+import {t} from '@/i18n';
 
 const TIMER_OPTIONS = [5, 15, 30, 45, 60];
 
@@ -42,7 +43,9 @@ export const SleepTimerSheet = (props: SheetProps<'sleep-timer'>) => {
       indicatorStyle={styles.indicator}
       gestureEnabled={true}>
       <View style={styles.headerContainer}>
-        <Text style={styles.headerTitle}>Sleep Timer</Text>
+        <Text style={styles.headerTitle}>
+          {t('sheets.sleepTimerSheet.sleepTimer')}
+        </Text>
       </View>
       <View style={styles.container}>
         {remainingTime !== null && remainingTime > 0 && (
@@ -92,7 +95,9 @@ export const SleepTimerSheet = (props: SheetProps<'sleep-timer'>) => {
               pressed && styles.optionPressed,
             ]}
             onPress={handleTurnOff}>
-            <Text style={styles.turnOffText}>Turn Off Timer</Text>
+            <Text style={styles.turnOffText}>
+              {t('sheets.sleepTimerSheet.turnOffTimer')}
+            </Text>
           </Pressable>
         )}
       </View>

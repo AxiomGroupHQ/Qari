@@ -32,6 +32,7 @@ import {
 import {getOnboardingPages, OnboardingPage} from '@/data/onboardingPages';
 import OnboardingPageComponent from './OnboardingPage';
 import DotIndicator from './DotIndicator';
+import {t} from '@/i18n';
 
 const {width: SCREEN_WIDTH, height: SCREEN_HEIGHT} = Dimensions.get('window');
 
@@ -168,7 +169,7 @@ export const WhatsNewModal = forwardRef<WhatsNewModalRef>((_, ref) => {
             hitSlop={12}>
             <Text
               style={[styles.skipText, {color: theme.colors.textSecondary}]}>
-              Skip
+              {t('modals.whatsNewOnboarding.skip')}
             </Text>
           </Pressable>
 

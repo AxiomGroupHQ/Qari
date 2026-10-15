@@ -12,6 +12,7 @@ import Color from 'color';
 import {RewayatIcon} from '@/components/Icons';
 import ReadMore from '@fawazahmed/react-native-read-more';
 import {getDisplayLabelFromName} from '@/services/rewayah/RewayahIdentity';
+import {t} from '@/i18n';
 
 export const RewayatInfoSheet = (props: SheetProps<'rewayat-info'>) => {
   const {theme} = useTheme();
@@ -57,7 +58,9 @@ Each Rewayah may have slight variations in pronunciation, elongation, or articul
       ]}
       gestureEnabled={true}>
       <View style={styles.headerContainer}>
-        <Text style={styles.headerTitle}>About Rewayat</Text>
+        <Text style={styles.headerTitle}>
+          {t('sheets.rewayatInfoSheet.aboutRewayat')}
+        </Text>
       </View>
       <ScrollView
         style={styles.scrollView}
@@ -83,7 +86,9 @@ Each Rewayah may have slight variations in pronunciation, elongation, or articul
 
           <View style={styles.divider} />
 
-          <Text style={styles.sectionTitle}>Available Rewayat</Text>
+          <Text style={styles.sectionTitle}>
+            {t('sheets.rewayatInfoSheet.availableRewayat')}
+          </Text>
           <View style={styles.rewayatList}>
             {availableRewayat.map(rewayat => (
               <Pressable

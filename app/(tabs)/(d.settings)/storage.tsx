@@ -1,4 +1,3 @@
-import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useState, useMemo} from 'react';
 import {View, Text, ScrollView, Pressable, Alert} from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
@@ -9,6 +8,7 @@ import {useStorageBreakdown} from '@/hooks/useStorageBreakdown';
 import {useDownloadStore} from '@/services/player/store/downloadStore';
 import {clearPlayerCache} from '@/services/player/utils/storage';
 import {Feather} from '@expo/vector-icons';
+import {t} from '@/i18n';
 
 interface StorageCategoryProps {
   color: string;
@@ -74,21 +74,27 @@ export default function StorageScreen() {
 
   const handleClearAllDownloads = () => {
     Alert.alert(
-      'Remove all downloads',
-      'Are you sure you want to remove all downloaded content? This action cannot be undone.',
+      t('settings.storage.removeAllDownloads'),
+      t('settings.storage.areYouSureYouWant'),
       [
-        {text: 'Cancel', style: 'cancel'},
+        {text: t('common.cancel'), style: 'cancel'},
         {
-          text: 'Remove',
+          text: t('common.remove'),
           style: 'destructive',
           onPress: async () => {
             try {
               setIsClearing(true);
               await useDownloadStore.getState().clearAllDownloads();
               refresh();
-              Alert.alert('Success', 'All downloads have been removed.');
+              Alert.alert(
+                t('settings.storage.success'),
+                t('settings.storage.allDownloadsHaveBeenRemoved'),
+              );
             } catch (downloadError) {
-              Alert.alert('Error', 'Failed to remove downloads.');
+              Alert.alert(
+                t('common.error'),
+                t('settings.storage.failedToRemoveDownloads'),
+              );
             } finally {
               setIsClearing(false);
             }
@@ -100,21 +106,27 @@ export default function StorageScreen() {
 
   const handleClearCache = () => {
     Alert.alert(
-      'Clear cache',
-      "This will clear your cache. Your downloads won't be removed.",
+      t('settings.storage.clearCache'),
+      t('settings.storage.thisWillClearYourCache'),
       [
-        {text: 'Cancel', style: 'cancel'},
+        {text: t('common.cancel'), style: 'cancel'},
         {
-          text: 'Clear',
+          text: t('common.clear'),
           style: 'destructive',
           onPress: async () => {
             try {
               setIsClearing(true);
               await clearPlayerCache();
               refresh();
-              Alert.alert('Success', 'Cache has been cleared.');
+              Alert.alert(
+                t('settings.storage.success'),
+                t('settings.storage.cacheHasBeenCleared'),
+              );
             } catch (cacheError) {
-              Alert.alert('Error', 'Failed to clear cache.');
+              Alert.alert(
+                t('common.error'),
+                t('settings.storage.failedToClearCache'),
+              );
             } finally {
               setIsClearing(false);
             }
@@ -175,7 +187,7 @@ export default function StorageScreen() {
         {loading ? (
           <View style={styles.loadingContainer}>
             <Text style={styles.loadingText}>
-              Loading storage information...
+              {t('settings.storage.loadingStorageInformation')}
             </Text>
           </View>
         ) : error ? (
@@ -190,7 +202,9 @@ export default function StorageScreen() {
         ) : (
           <>
             {/* Storage Breakdown */}
-            <Text style={styles.sectionHeader}>{isArabicInterface() ? 'تفاصيل مساحة التخزين' : 'STORAGE BREAKDOWN'}</Text>
+            <Text style={styles.sectionHeader}>
+              {t('settings.storage.storageBreakdown')}
+            </Text>
 
             {/* Progress Bar */}
             <View style={styles.progressContainer}>
@@ -237,36 +251,38 @@ export default function StorageScreen() {
             <View style={styles.breakdownContainer}>
               <StorageCategory
                 color={colors.otherApps}
-                label={isArabicInterface() ? 'تطبيقات أخرى' : 'Other apps'}
+                label={t('settings.storage.otherApps')}
                 size={otherApps}
                 styles={styles}
               />
               <StorageCategory
                 color={colors.downloads}
-                label={isArabicInterface() ? 'التنزيلات' : 'Downloads'}
+                label={t('common.downloads')}
                 size={downloads}
                 styles={styles}
               />
               <StorageCategory
                 color={colors.cache}
-                label={isArabicInterface() ? 'ذاكرة التخزين المؤقت' : 'Cache'}
+                label={t('settings.storage.cache')}
                 size={cache}
                 styles={styles}
               />
               <StorageCategory
                 color={colors.free}
-                label={isArabicInterface() ? 'المساحة المتاحة' : 'Free'}
+                label={t('settings.storage.free')}
                 size={free}
                 styles={styles}
               />
             </View>
 
             {/* Manage Storage */}
-            <Text style={styles.sectionHeader}>{isArabicInterface() ? 'إدارة التخزين' : 'MANAGE STORAGE'}</Text>
+            <Text style={styles.sectionHeader}>
+              {t('settings.storage.manageStorage')}
+            </Text>
             <View>
               <ActionSection
-                title={isArabicInterface() ? 'حذف جميع التنزيلات' : 'Remove all downloads'}
-                description={isArabicInterface() ? 'حذف جميع محتويات القرآن التي نزّلتها للاستماع دون اتصال.' : 'Remove all the Quran content you have downloaded for offline use.'}
+                title={t('settings.storage.removeAllDownloads')}
+                description={t('settings.storage.removeAllTheQuranContent')}
                 buttonLabel="Remove"
                 onPress={handleClearAllDownloads}
                 theme={theme}
@@ -277,8 +293,8 @@ export default function StorageScreen() {
               <View style={styles.actionSpacer} />
 
               <ActionSection
-                title={isArabicInterface() ? 'مسح ذاكرة التخزين المؤقت' : 'Clear cache'}
-                description={isArabicInterface() ? 'يمكنك توفير مساحة بمسح ذاكرة التخزين المؤقت دون حذف تنزيلاتك.' : 'You can free up storage by clearing your cache. Your downloads won't be removed.'}
+                title={t('settings.storage.clearCache')}
+                description={t('settings.storage.youCanFreeUpStorage')}
                 buttonLabel="Clear"
                 onPress={handleClearCache}
                 theme={theme}

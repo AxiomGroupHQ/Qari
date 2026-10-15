@@ -1,4 +1,3 @@
-import {isArabicInterface} from '@/localization/arabicInterface';
 import React, {useState, useCallback, useMemo} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
@@ -18,6 +17,7 @@ import {ReciterImage} from '@/components/ReciterImage';
 import {useHeaderHeight} from '@react-navigation/elements';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import {getDisplayLabelFromName} from '@/services/rewayah/RewayahIdentity';
+import {t} from '@/i18n';
 
 export default function DefaultReciterScreen() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -102,9 +102,11 @@ export default function DefaultReciterScreen() {
         )}
 
         <View style={styles.searchSection}>
-          <Text style={styles.searchLabel}>{isArabicInterface() ? 'تغيير القارئ الافتراضي' : 'CHANGE DEFAULT RECITER'}</Text>
+          <Text style={styles.searchLabel}>
+            {t('settings.defaultreciter.changeDefaultReciter')}
+          </Text>
           <SearchInput
-            placeholder={isArabicInterface() ? 'ابحث عن القراء...' : 'Search reciters...'}
+            placeholder={t('common.searchReciters')}
             value={searchQuery}
             onChangeText={handleSearch}
             showCancelButton={false}

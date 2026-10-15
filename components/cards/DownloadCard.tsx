@@ -4,6 +4,7 @@ import {useTheme} from '@/hooks/useTheme';
 import {moderateScale, verticalScale} from 'react-native-size-matters';
 import {DownloadIcon} from '@/components/Icons';
 import Color from 'color';
+import {t} from '@/i18n';
 
 interface DownloadCardProps {
   itemCount: number;
@@ -68,7 +69,7 @@ export const DownloadCard: React.FC<DownloadCardProps> = ({
         <DownloadIcon color={downloadColor} size={iconSize} />
       </View>
       <Text style={styles.name} numberOfLines={1}>
-        Downloads
+        {t('common.downloads')}
       </Text>
       <Text style={styles.subtitle} numberOfLines={1}>
         {itemCount} {itemCount === 1 ? 'surah' : 'surahs'}

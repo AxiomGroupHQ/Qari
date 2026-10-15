@@ -27,6 +27,7 @@ import {
   getCurrentVersion,
 } from '@/utils/versionUtils';
 import Animated, {FadeIn, ZoomIn} from 'react-native-reanimated';
+import {t} from '@/i18n';
 
 const {width} = Dimensions.get('window');
 
@@ -135,7 +136,8 @@ export const WhatsNewModal = forwardRef<WhatsNewModalRef>((props, ref) => {
             />
 
             <Text style={[styles.title, {color: theme.colors.text}]}>
-              What&apos;s new in <Text style={styles.bayaanText}>ISTIMA</Text>
+              {t('whatsNew.titlePrefix')}{' '}
+              <Text style={styles.bayaanText}>ISTIMA</Text>
             </Text>
 
             <Text style={[styles.version, {color: theme.colors.textSecondary}]}>
@@ -223,7 +225,7 @@ export const WhatsNewModal = forwardRef<WhatsNewModalRef>((props, ref) => {
               onPressOut={() => setPressedButton(false)}>
               <Text
                 style={[styles.buttonText, {color: theme.colors.background}]}>
-                Continue
+                {t('modals.whatsNewModal.continue')}
               </Text>
             </TouchableOpacity>
           </Animated.View>

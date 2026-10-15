@@ -30,6 +30,7 @@ import {usePlayerActions} from '@/hooks/usePlayerActions';
 import {useCollectionNativeHeader} from '@/hooks/useCollectionNativeHeader';
 import {Feather} from '@expo/vector-icons';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {t} from '@/i18n';
 
 interface DownloadTrackData {
   download: DownloadedSurah;
@@ -130,7 +131,9 @@ export const ReciterDownloadsList: React.FC<ReciterDownloadsListProps> = ({
               // Capitalize style
               const capitalizedStyle =
                 rewayat.style.charAt(0).toUpperCase() + rewayat.style.slice(1);
-              rewayatName = `${getDisplayLabelFromName(rewayat.name)} \u2022 ${capitalizedStyle}`;
+              rewayatName = `${getDisplayLabelFromName(
+                rewayat.name,
+              )} \u2022 ${capitalizedStyle}`;
             }
           }
 
@@ -349,7 +352,7 @@ export const ReciterDownloadsList: React.FC<ReciterDownloadsListProps> = ({
         } downloaded`,
         options: [
           {
-            label: 'Remove All Downloads',
+            label: t('common.removeAllDownloads'),
             icon: 'trash-2',
             destructive: true,
             onPress: async () => {
@@ -441,7 +444,7 @@ export const ReciterDownloadsList: React.FC<ReciterDownloadsListProps> = ({
   if (loading) {
     return (
       <View style={styles.container}>
-        <Text style={styles.emptyText}>Loading...</Text>
+        <Text style={styles.emptyText}>{t('common.loading')}</Text>
       </View>
     );
   }
@@ -456,7 +459,11 @@ export const ReciterDownloadsList: React.FC<ReciterDownloadsListProps> = ({
         contentContainerStyle={styles.listContentContainer}
         contentInsetAdjustmentBehavior="automatic"
         ListEmptyComponent={
-          <Text style={styles.emptyText}>No downloads for this reciter</Text>
+          <Text style={styles.emptyText}>
+            {t(
+              'reciterdownloads.reciterDownloadsList.noDownloadsForThisReciter',
+            )}
+          </Text>
         }
         onScroll={RNAnimated.event(
           [{nativeEvent: {contentOffset: {y: scrollY}}}],

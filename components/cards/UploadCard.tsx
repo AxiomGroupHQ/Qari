@@ -4,6 +4,7 @@ import {useTheme} from '@/hooks/useTheme';
 import {moderateScale, verticalScale} from 'react-native-size-matters';
 import {MicrophoneIcon} from '@/components/Icons';
 import Color from 'color';
+import {t} from '@/i18n';
 
 interface UploadCardProps {
   itemCount: number;
@@ -68,7 +69,7 @@ export const UploadCard: React.FC<UploadCardProps> = ({
         <MicrophoneIcon color={uploadColor} size={iconSize} />
       </View>
       <Text style={styles.name} numberOfLines={1}>
-        Uploads
+        {t('common.uploads')}
       </Text>
       <Text style={styles.subtitle} numberOfLines={1}>
         {itemCount} {itemCount === 1 ? 'recitation' : 'recitations'}

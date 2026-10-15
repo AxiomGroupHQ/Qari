@@ -18,6 +18,7 @@ import Color from 'color';
 import {wbwDataService, type WBWWord} from '@/services/wbw/WBWDataService';
 import {createAudioPlayer, AudioPlayer} from 'expo-audio';
 import {PlayIcon, PauseIcon} from '@/components/Icons';
+import {t} from '@/i18n';
 
 export const WordDetailSheet = (props: SheetProps<'word-detail'>) => {
   const {theme} = useTheme();
@@ -214,8 +215,12 @@ export const WordDetailSheet = (props: SheetProps<'word-detail'>) => {
 
             {/* Context footer */}
             <Text style={styles.contextText}>
-              Verse {surahNum}:{ayahNum} {'\u00B7'} Word {position} of{' '}
-              {totalWords}
+              {t('wordDetail.context', {
+                surah: surahNum,
+                ayah: ayahNum,
+                position,
+                total: totalWords,
+              })}
             </Text>
           </>
         )}

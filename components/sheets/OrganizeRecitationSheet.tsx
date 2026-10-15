@@ -37,6 +37,7 @@ import {
   RECORDING_TYPE_OPTIONS,
 } from '@/constants/recitationOptions';
 import type {RecordingType} from '@/types/uploads';
+import {t} from '@/i18n';
 
 type RecitationType = 'surah' | 'other';
 
@@ -46,10 +47,30 @@ const CATEGORY_OPTIONS: {
   id: UploadedRecitation['category'];
   label: string;
 }[] = [
-  {id: 'dua', label: "Du'a"},
-  {id: 'lecture', label: 'Lecture'},
-  {id: 'tafsir', label: 'Tafsir'},
-  {id: 'other', label: 'Other'},
+  {
+    id: 'dua',
+    get label() {
+      return t('sheets.organizeRecitationSheet.duA');
+    },
+  },
+  {
+    id: 'lecture',
+    get label() {
+      return t('sheets.organizeRecitationSheet.lecture');
+    },
+  },
+  {
+    id: 'tafsir',
+    get label() {
+      return t('sheets.organizeRecitationSheet.tafsir');
+    },
+  },
+  {
+    id: 'other',
+    get label() {
+      return t('sheets.organizeRecitationSheet.other');
+    },
+  },
 ];
 
 function formatDuration(seconds: number | null): string {
@@ -442,14 +463,14 @@ export const OrganizeRecitationSheet = (
       {/* Header */}
       <View style={styles.headerContainer}>
         <Pressable onPress={handleClose} style={styles.headerButton}>
-          <Text style={styles.cancelText}>Cancel</Text>
+          <Text style={styles.cancelText}>{t('common.cancel')}</Text>
         </Pressable>
-        <Text style={styles.headerTitle}>Edit Details</Text>
+        <Text style={styles.headerTitle}>{t('common.editDetails')}</Text>
         <Pressable
           onPress={handleSave}
           style={[styles.headerButton, {opacity: hasChanges ? 1 : 0.4}]}
           disabled={!hasChanges}>
-          <Text style={styles.saveText}>Save</Text>
+          <Text style={styles.saveText}>{t('common.save')}</Text>
         </Pressable>
       </View>
 
@@ -486,7 +507,9 @@ export const OrganizeRecitationSheet = (
         </View>
 
         {/* Type Chips */}
-        <Text style={styles.sectionLabel}>Type</Text>
+        <Text style={styles.sectionLabel}>
+          {t('sheets.organizeRecitationSheet.type')}
+        </Text>
         <View style={styles.chipRow}>
           <Pressable
             style={[styles.chip, type === 'surah' && styles.chipSelected]}
@@ -496,7 +519,7 @@ export const OrganizeRecitationSheet = (
                 styles.chipText,
                 type === 'surah' && styles.chipTextSelected,
               ]}>
-              Surah
+              {t('common.surah')}
             </Text>
           </Pressable>
           <Pressable
@@ -507,7 +530,7 @@ export const OrganizeRecitationSheet = (
                 styles.chipText,
                 type === 'other' && styles.chipTextSelected,
               ]}>
-              Other
+              {t('sheets.organizeRecitationSheet.other')}
             </Text>
           </Pressable>
         </View>
@@ -519,7 +542,7 @@ export const OrganizeRecitationSheet = (
             onLayout={e => {
               surahSectionY.current = e.nativeEvent.layout.y;
             }}>
-            <Text style={styles.sectionLabel}>Surah</Text>
+            <Text style={styles.sectionLabel}>{t('common.surah')}</Text>
             {selectedSurah ? (
               <View style={styles.selectedItemRow}>
                 <View style={styles.selectedItemChip}>
@@ -550,7 +573,9 @@ export const OrganizeRecitationSheet = (
                   />
                   <TextInput
                     style={styles.searchInput}
-                    placeholder="Search surahs..."
+                    placeholder={t(
+                      'sheets.organizeRecitationSheet.searchSurahs',
+                    )}
                     placeholderTextColor={Color(theme.colors.textSecondary)
                       .alpha(0.5)
                       .toString()}
@@ -600,13 +625,13 @@ export const OrganizeRecitationSheet = (
             {selectedSurah && (
               <View style={styles.verseRangeContainer}>
                 <Text style={styles.verseRangeLabel}>
-                  Verse range (optional)
+                  {t('sheets.organizeRecitationSheet.verseRangeOptional')}
                 </Text>
                 <View style={styles.verseRangeRow}>
                   <View style={styles.verseInputWrapper}>
                     <TextInput
                       style={styles.verseInput}
-                      placeholder="From"
+                      placeholder={t('common.from')}
                       placeholderTextColor={Color(theme.colors.textSecondary)
                         .alpha(0.5)
                         .toString()}
@@ -621,7 +646,7 @@ export const OrganizeRecitationSheet = (
                   <View style={styles.verseInputWrapper}>
                     <TextInput
                       style={styles.verseInput}
-                      placeholder="To"
+                      placeholder={t('common.to')}
                       placeholderTextColor={Color(theme.colors.textSecondary)
                         .alpha(0.5)
                         .toString()}
@@ -644,11 +669,15 @@ export const OrganizeRecitationSheet = (
         {/* Other Type Section */}
         {type === 'other' && (
           <View style={styles.section}>
-            <Text style={styles.sectionLabel}>Title</Text>
+            <Text style={styles.sectionLabel}>
+              {t('sheets.organizeRecitationSheet.title')}
+            </Text>
             <View style={styles.searchInputContainer}>
               <TextInput
                 style={[styles.searchInput, {paddingLeft: 0}]}
-                placeholder="e.g., Morning Adhkar"
+                placeholder={t(
+                  'sheets.organizeRecitationSheet.eGMorningAdhkar',
+                )}
                 placeholderTextColor={Color(theme.colors.textSecondary)
                   .alpha(0.5)
                   .toString()}
@@ -661,7 +690,7 @@ export const OrganizeRecitationSheet = (
             </View>
 
             <Text style={[styles.sectionLabel, {marginTop: moderateScale(16)}]}>
-              Category
+              {t('sheets.organizeRecitationSheet.category')}
             </Text>
             <View style={styles.chipRow}>
               {CATEGORY_OPTIONS.map(opt => (
@@ -692,7 +721,7 @@ export const OrganizeRecitationSheet = (
             onLayout={e => {
               reciterSectionY.current = e.nativeEvent.layout.y;
             }}>
-            <Text style={styles.sectionLabel}>Reciter</Text>
+            <Text style={styles.sectionLabel}>{t('common.reciter')}</Text>
             {reciterDisplayName ? (
               <View style={styles.selectedItemRow}>
                 <View style={styles.selectedItemChip}>
@@ -720,7 +749,7 @@ export const OrganizeRecitationSheet = (
                   />
                   <TextInput
                     style={styles.searchInput}
-                    placeholder="Search reciters..."
+                    placeholder={t('common.searchReciters')}
                     placeholderTextColor={Color(theme.colors.textSecondary)
                       .alpha(0.5)
                       .toString()}
@@ -762,7 +791,9 @@ export const OrganizeRecitationSheet = (
                               {marginLeft: moderateScale(10)},
                             ]}>
                             <Text style={styles.resultName}>
-                              Create "{reciterQuery.trim()}"
+                              {t('organize.createReciter', {
+                                name: reciterQuery.trim(),
+                              })}
                             </Text>
                           </View>
                         </Pressable>
@@ -789,7 +820,9 @@ export const OrganizeRecitationSheet = (
                           <View style={styles.resultTextContainer}>
                             <Text style={styles.resultName}>{r.name}</Text>
                             <Text style={styles.resultTranslation}>
-                              Custom reciter
+                              {t(
+                                'sheets.organizeRecitationSheet.customReciter',
+                              )}
                             </Text>
                           </View>
                         </Pressable>
@@ -804,7 +837,9 @@ export const OrganizeRecitationSheet = (
               <Pressable
                 style={styles.moreOptionsToggle}
                 onPress={() => setShowMoreOptions(prev => !prev)}>
-                <Text style={styles.moreOptionsText}>More Options</Text>
+                <Text style={styles.moreOptionsText}>
+                  {t('sheets.organizeRecitationSheet.moreOptions')}
+                </Text>
                 <Feather
                   name={showMoreOptions ? 'chevron-up' : 'chevron-down'}
                   size={moderateScale(14)}
@@ -816,7 +851,9 @@ export const OrganizeRecitationSheet = (
             {/* Rewayah + Style picklists */}
             {showMoreOptions && reciterDisplayName !== '' && (
               <View style={styles.moreOptionsContainer}>
-                <Text style={styles.verseRangeLabel}>Rewayah</Text>
+                <Text style={styles.verseRangeLabel}>
+                  {t('sheets.organizeRecitationSheet.rewayah')}
+                </Text>
                 <ScrollView
                   horizontal
                   showsHorizontalScrollIndicator={false}
@@ -848,7 +885,7 @@ export const OrganizeRecitationSheet = (
                     styles.verseRangeLabel,
                     {marginTop: moderateScale(14)},
                   ]}>
-                  Style
+                  {t('sheets.organizeRecitationSheet.style')}
                 </Text>
                 <View style={styles.chipRow}>
                   {STYLE_OPTIONS.map(opt => (
@@ -877,7 +914,9 @@ export const OrganizeRecitationSheet = (
         {/* Recording Type */}
         {type === 'surah' && (
           <View style={styles.section}>
-            <Text style={styles.sectionLabel}>Recording</Text>
+            <Text style={styles.sectionLabel}>
+              {t('sheets.organizeRecitationSheet.recording')}
+            </Text>
             <View style={styles.chipRow}>
               {RECORDING_TYPE_OPTIONS.map(opt => (
                 <Pressable
@@ -911,7 +950,7 @@ export const OrganizeRecitationSheet = (
             size={moderateScale(16)}
             color="#EF4444"
           />
-          <Text style={styles.deleteText}>Delete Recitation</Text>
+          <Text style={styles.deleteText}>{t('common.deleteRecitation')}</Text>
         </Pressable>
       </ScrollView>
     </ActionSheet>

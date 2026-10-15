@@ -24,6 +24,8 @@ import {SheetManager} from 'react-native-actions-sheet';
 import Color from 'color';
 import {useCollectionNativeHeader} from '@/hooks/useCollectionNativeHeader';
 import type {VerseNote} from '@/types/verse-annotations';
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 interface NoteData {
   note: VerseNote;
@@ -40,7 +42,7 @@ const NotesScreen = () => {
   const scrollY = useRef(new RNAnimated.Value(0)).current;
 
   useCollectionNativeHeader({
-    title: 'Notes',
+    title: t('collection.notes.notes'),
     scrollY,
     hasContent: notes.length > 0 && !loading,
   });
@@ -100,12 +102,12 @@ const NotesScreen = () => {
           subtitle: `Ayah ${item.note.ayahNumber}`,
           options: [
             {
-              label: 'Edit Note',
+              label: t('collection.notes.editNote'),
               icon: 'edit-2',
               onPress: () => handleNotePress(item),
             },
             {
-              label: 'Delete Note',
+              label: t('common.deleteNote'),
               icon: 'minus-circle',
               destructive: true,
               onPress: () => handleDeleteNote(item.note),
@@ -137,7 +139,7 @@ const NotesScreen = () => {
             </View>
           </View>
           <Text style={[styles.headerTitle, {color: theme.colors.text}]}>
-            Notes
+            {t('collection.notes.notes')}
           </Text>
           <Text
             style={[
@@ -178,13 +180,13 @@ const NotesScreen = () => {
               onPress={() => router.back()}
               hitSlop={8}>
               <Feather
-                name="arrow-left"
+                name={dirIcon('arrow-left')}
                 size={moderateScale(22)}
                 color={theme.colors.text}
               />
             </Pressable>
             <Text style={[styles.emptyHeaderTitle, {color: theme.colors.text}]}>
-              Notes
+              {t('collection.notes.notes')}
             </Text>
             <View style={styles.emptyHeaderBack} />
           </View>
@@ -192,7 +194,7 @@ const NotesScreen = () => {
         <View style={styles.emptyContent}>
           <Text
             style={[styles.loadingText, {color: theme.colors.textSecondary}]}>
-            Loading...
+            {t('common.loading')}
           </Text>
         </View>
       </View>
@@ -210,13 +212,13 @@ const NotesScreen = () => {
               onPress={() => router.back()}
               hitSlop={8}>
               <Feather
-                name="arrow-left"
+                name={dirIcon('arrow-left')}
                 size={moderateScale(22)}
                 color={theme.colors.text}
               />
             </Pressable>
             <Text style={[styles.emptyHeaderTitle, {color: theme.colors.text}]}>
-              Notes
+              {t('collection.notes.notes')}
             </Text>
             <View style={styles.emptyHeaderBack} />
           </View>
@@ -230,11 +232,11 @@ const NotesScreen = () => {
             />
           </View>
           <Text style={[styles.emptyTitle, {color: theme.colors.text}]}>
-            No notes yet
+            {t('collection.notes.noNotesYet')}
           </Text>
           <Text
             style={[styles.emptySubtitle, {color: theme.colors.textSecondary}]}>
-            Add notes to verses to see them here
+            {t('collection.notes.addNotesToVersesTo')}
           </Text>
         </View>
       </View>
@@ -261,7 +263,7 @@ const NotesScreen = () => {
           ]}>
           <Pressable onPress={() => router.back()} hitSlop={8}>
             <Feather
-              name="arrow-left"
+              name={dirIcon('arrow-left')}
               size={moderateScale(24)}
               color={theme.colors.text}
             />
@@ -283,7 +285,12 @@ const NotesScreen = () => {
         showsVerticalScrollIndicator={false}
         contentInsetAdjustmentBehavior="automatic"
       />
-      {!USE_GLASS && <CollectionStickyHeader title="Notes" scrollY={scrollY} />}
+      {!USE_GLASS && (
+        <CollectionStickyHeader
+          title={t('collection.notes.notes')}
+          scrollY={scrollY}
+        />
+      )}
     </View>
   );
 };

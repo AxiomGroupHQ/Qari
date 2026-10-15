@@ -22,6 +22,7 @@ import type {UploadedRecitation, RecordingType} from '@/types/uploads';
 import {usePlayerStore} from '@/services/player/store/playerStore';
 import {NowPlayingIndicator} from '@/components/NowPlayingIndicator';
 import {GradientText} from '@/components/GradientText';
+import {t} from '@/i18n';
 
 interface UploadsTabContentProps {
   reciterId: string;
@@ -341,7 +342,9 @@ export const UploadsTabContent = React.forwardRef<
             size={moderateScale(16)}
             color={theme.colors.textSecondary}
           />
-          <Text style={styles.addButtonText}>Add Recitation</Text>
+          <Text style={styles.addButtonText}>
+            {t('components.uploadsTabContent.addRecitation')}
+          </Text>
         </Pressable>
       ),
       [handleAddRecitation, theme.colors.textSecondary, styles],
@@ -355,9 +358,9 @@ export const UploadsTabContent = React.forwardRef<
             size={moderateScale(40)}
             color={theme.colors.textSecondary}
           />
-          <Text style={styles.emptyTitle}>No uploads yet</Text>
+          <Text style={styles.emptyTitle}>{t('common.noUploadsYet')}</Text>
           <Text style={styles.emptySubtitle}>
-            Upload recitations to see them here
+            {t('components.uploadsTabContent.uploadRecitationsToSeeThem')}
           </Text>
           <Pressable
             style={styles.emptyAddButton}
@@ -367,7 +370,9 @@ export const UploadsTabContent = React.forwardRef<
               size={moderateScale(16)}
               color={theme.colors.textSecondary}
             />
-            <Text style={styles.addButtonText}>Add Recitation</Text>
+            <Text style={styles.addButtonText}>
+              {t('components.uploadsTabContent.addRecitation')}
+            </Text>
           </Pressable>
         </View>
       ),

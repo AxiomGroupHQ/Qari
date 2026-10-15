@@ -10,6 +10,7 @@ import {useTheme} from '@/hooks/useTheme';
 import {Theme} from '@/utils/themeUtils';
 import Color from 'color';
 import {themeDataService} from '@/services/mushaf/ThemeDataService';
+import {t} from '@/i18n';
 
 const surahData = require('@/data/surahData.json');
 
@@ -40,7 +41,9 @@ export const ThemeContent: React.FC<ThemeContentProps> = ({
           contentContainerStyle={styles.scrollInner}
           showsVerticalScrollIndicator={false}
           bounces={true}>
-          <Text style={styles.emptyText}>No thematic data for this verse.</Text>
+          <Text style={styles.emptyText}>
+            {t('verseactions.themeContent.noThematicDataForThis')}
+          </Text>
         </ScrollView>
       </View>
     );
@@ -67,7 +70,7 @@ export const ThemeContent: React.FC<ThemeContentProps> = ({
         <View style={styles.card}>
           {/* Surah name row */}
           <View style={styles.infoRow}>
-            <Text style={styles.infoLabel}>Surah</Text>
+            <Text style={styles.infoLabel}>{t('common.surah')}</Text>
             <Text style={styles.infoValue}>{surahName}</Text>
           </View>
 
@@ -75,7 +78,9 @@ export const ThemeContent: React.FC<ThemeContentProps> = ({
 
           {/* Passage range row */}
           <View style={styles.infoRow}>
-            <Text style={styles.infoLabel}>Passage</Text>
+            <Text style={styles.infoLabel}>
+              {t('verseactions.themeContent.passage')}
+            </Text>
             <Text style={styles.infoValue}>{passageRange}</Text>
           </View>
 
@@ -83,7 +88,7 @@ export const ThemeContent: React.FC<ThemeContentProps> = ({
 
           {/* Verse count row */}
           <View style={styles.infoRow}>
-            <Text style={styles.infoLabel}>Verses</Text>
+            <Text style={styles.infoLabel}>{t('common.verses')}</Text>
             <Text style={styles.infoValue}>{verseCount}</Text>
           </View>
         </View>

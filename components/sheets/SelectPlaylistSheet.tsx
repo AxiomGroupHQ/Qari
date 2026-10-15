@@ -21,6 +21,7 @@ import {useLoved} from '@/hooks/useLoved';
 import {PlaylistItem} from '@/components/PlaylistItem';
 import {Feather} from '@expo/vector-icons';
 import Color from 'color';
+import {t} from '@/i18n';
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 
@@ -65,7 +66,10 @@ export const SelectPlaylistSheet = (props: SheetProps<'select-playlist'>) => {
         handleClose();
       } catch (error) {
         console.error('Failed to add to playlist:', error);
-        Alert.alert('Error', 'Failed to add surah to playlist');
+        Alert.alert(
+          t('common.error'),
+          t('sheets.selectPlaylistSheet.failedToAddSurahTo'),
+        );
       }
     },
     [surah, reciterId, rewayatId, userRecitationId, addToPlaylist, handleClose],
@@ -107,7 +111,10 @@ export const SelectPlaylistSheet = (props: SheetProps<'select-playlist'>) => {
         handleClose();
       } catch (error) {
         console.error('Failed to create playlist:', error);
-        Alert.alert('Error', 'Failed to create playlist');
+        Alert.alert(
+          t('common.error'),
+          t('sheets.selectPlaylistSheet.failedToCreatePlaylist'),
+        );
       } finally {
         setIsCreating(false);
       }
@@ -144,7 +151,7 @@ export const SelectPlaylistSheet = (props: SheetProps<'select-playlist'>) => {
         indicatorStyle={styles.indicator}
         gestureEnabled={true}>
         <View style={styles.headerContainer}>
-          <Text style={styles.headerTitle}>Add to Collection</Text>
+          <Text style={styles.headerTitle}>{t('common.addToCollection')}</Text>
         </View>
         <View style={styles.container}>
           <View style={styles.header}>
@@ -183,7 +190,7 @@ export const SelectPlaylistSheet = (props: SheetProps<'select-playlist'>) => {
                     styles.lovedText,
                     isLovedState && styles.lovedTextActive,
                   ]}>
-                  Loved
+                  {t('common.loved')}
                 </Text>
               </Pressable>
             )}
@@ -211,7 +218,9 @@ export const SelectPlaylistSheet = (props: SheetProps<'select-playlist'>) => {
             {/* Existing Playlists */}
             {playlists.length > 0 && (
               <View style={styles.playlistsContainer}>
-                <Text style={styles.sectionTitle}>Your Playlists</Text>
+                <Text style={styles.sectionTitle}>
+                  {t('common.yourPlaylists')}
+                </Text>
                 {playlists.map(playlist => (
                   <PlaylistItem
                     key={playlist.id}
@@ -233,7 +242,7 @@ export const SelectPlaylistSheet = (props: SheetProps<'select-playlist'>) => {
                   filled={false}
                 />
                 <Text style={styles.emptyStateText}>
-                  No playlists yet. Create your first playlist above!
+                  {t('sheets.selectPlaylistSheet.noPlaylistsYetCreateYour')}
                 </Text>
               </View>
             )}

@@ -30,32 +30,10 @@ import {
 import {useDevSettingsStore} from '@/store/devSettingsStore';
 import {ThemePicker} from '@/components/settings/ThemePicker';
 import branding from '@/config/branding';
-
+import {t} from '@/i18n';
+import {dirIcon} from '@/i18n/direction';
 
 // User-facing settings copy only; Quran text and religious content are untouched.
-const arabicSettings: Record<string, string> = {
-  'APPEARANCE':'المظهر','DEVELOPER':'المطور','Floating Dev Menu':'قائمة أدوات المطور العائمة',
-  'Show the floating developer tools button':'إظهار زر أدوات المطور العائم',
-  'Quran':'القرآن','Audio & Playback':'الصوت والتشغيل','App & Data':'التطبيق والبيانات',
-  'Feedback':'الملاحظات','Mushaf Settings':'إعدادات المصحف',
-  'Customize Quran display options':'تخصيص خيارات عرض القرآن',
-  'Translations & Tafaseer':'الترجمات والتفاسير',
-  'Manage Quran translations and commentary':'إدارة ترجمات القرآن وتفاسيره',
-  'Default Reciter':'القارئ الافتراضي','Choose your preferred reciter':'اختر قارئك المفضل',
-  'Reciter Choice':'اختيار القارئ','Customize reciter selection':'تخصيص اختيار القارئ',
-  'Storage':'التخزين','View and manage storage usage':'عرض مساحة التخزين وإدارتها',
-  'Write a Review':'كتابة تقييم','Share your experience with others':'شارك تجربتك مع الآخرين',
-  'Feature Requests':'اقتراحات الميزات','Suggest improvements and new features':'اقترح تحسينات وميزات جديدة',
-  'Help & Support':'المساعدة والدعم','What\'s New':'ما الجديد',
-  'See what\'s new in this version':'اطلع على الجديد في هذا الإصدار',
-  'Learn more about our mission':'تعرّف على رسالتنا',
-  'Terms of Service':'شروط الخدمة','Read our terms of service':'اقرأ شروط الخدمة',
-  'Privacy Policy':'سياسة الخصوصية','View our privacy policy':'اطلع على سياسة الخصوصية',
-};
-const arabicSettingsEnabled = typeof navigator !== 'undefined' && navigator.language.toLowerCase().startsWith('ar');
-const settingsText = (value: string) => arabicSettingsEnabled
-  ? (arabicSettings[value] ?? (value.startsWith('About ') ? 'حول Istima' : value.startsWith('Get assistance') ? 'احصل على مساعدة في استخدام Istima' : value))
-  : value;
 
 const isExternalLink = (type: string): boolean => {
   return ['support', 'featureRequest', 'rateApp'].includes(type);
@@ -63,74 +41,123 @@ const isExternalLink = (type: string): boolean => {
 
 const settingsItems = [
   {
-    section: 'Quran',
+    get section() {
+      return t('tabs.settings.quran');
+    },
     items: [
       {
-        title: 'Mushaf Settings',
+        get title() {
+          return t('common.mushafSettings');
+        },
         type: 'mushafSettings',
-        description: 'Customize Quran display options',
+        get description() {
+          return t('tabs.settings.customizeQuranDisplayOptions');
+        },
         icon: 'quran',
         iconType: 'custom',
       },
       {
-        title: 'Translations & Tafaseer',
+        get title() {
+          return t('common.translationsTafaseer');
+        },
         type: 'translations',
-        description: 'Manage Quran translations and commentary',
+        get description() {
+          return t('tabs.settings.manageQuranTranslationsAndCommentary');
+        },
         icon: 'dualPages',
         iconType: 'custom',
       },
     ],
   },
   {
-    section: 'Audio & Playback',
+    get section() {
+      return t('tabs.settings.audioPlayback');
+    },
     items: [
       {
-        title: 'Default Reciter',
+        get title() {
+          return t('common.defaultReciter');
+        },
         type: 'defaultReciter',
-        description: 'Choose your preferred reciter',
+        get description() {
+          return t('tabs.settings.chooseYourPreferredReciter');
+        },
         icon: 'personAudio',
         iconType: 'custom',
       },
       {
-        title: 'Reciter Choice',
+        get title() {
+          return t('common.reciterChoice');
+        },
         type: 'reciterChoice',
-        description: 'Customize reciter selection',
+        get description() {
+          return t('tabs.settings.customizeReciterSelection');
+        },
         icon: 'selectionList',
         iconType: 'custom',
       },
     ],
   },
   {
-    section: 'App & Data',
+    get section() {
+      return t('tabs.settings.appData');
+    },
     items: [
       {
-        title: 'Storage',
+        get title() {
+          return t('settings.language');
+        },
+        type: 'language',
+        get description() {
+          return t('settings.languageDescription');
+        },
+        icon: 'selectionList',
+        iconType: 'custom',
+      },
+      {
+        get title() {
+          return t('common.storage');
+        },
         type: 'storage',
-        description: 'View and manage storage usage',
+        get description() {
+          return t('tabs.settings.viewAndManageStorageUsage');
+        },
         icon: 'database',
         iconType: 'custom',
       },
     ],
   },
   {
-    section: 'Feedback',
+    get section() {
+      return t('tabs.settings.feedback');
+    },
     items: [
       {
-        title: 'Write a Review',
+        get title() {
+          return t('tabs.settings.writeAReview');
+        },
         type: 'rateApp',
-        description: 'Share your experience with others',
+        get description() {
+          return t('tabs.settings.shareYourExperienceWithOthers');
+        },
         icon: 'star',
         iconType: 'custom',
       },
       {
-        title: 'Feature Requests',
+        get title() {
+          return t('tabs.settings.featureRequests');
+        },
         type: 'featureRequest',
-        description: 'Suggest improvements and new features',
+        get description() {
+          return t('tabs.settings.suggestImprovementsAndNewFeatures');
+        },
         icon: 'lightbulb',
         iconType: 'custom',
       },
       {
-        title: 'Help & Support',
+        get title() {
+          return t('tabs.settings.helpSupport');
+        },
         type: 'support',
         description: `Get assistance with using ${branding.appName}`,
         icon: 'chatBubble',
@@ -139,33 +166,51 @@ const settingsItems = [
     ],
   },
   {
-    section: `About ${branding.appName}`,
+    get section() {
+      return t('settings.aboutApp', {name: branding.appName});
+    },
     items: [
       {
-        title: "What's New",
+        get title() {
+          return t('common.whatSNew');
+        },
         type: 'whatsNew',
-        description: "See what's new in this version",
+        get description() {
+          return t('tabs.settings.seeWhatSNewIn');
+        },
         icon: 'giftBox',
         iconType: 'custom',
       },
       {
-        title: `About ${branding.appName}`,
+        get title() {
+          return t('settings.aboutApp', {name: branding.appName});
+        },
         type: 'about',
-        description: 'Learn more about our mission',
+        get description() {
+          return t('tabs.settings.learnMoreAboutOurMission');
+        },
         icon: 'infoRounded',
         iconType: 'custom',
       },
       {
-        title: 'Terms of Service',
+        get title() {
+          return t('tabs.settings.termsOfService');
+        },
         type: 'terms',
-        description: 'Read our terms of service',
+        get description() {
+          return t('tabs.settings.readOurTermsOfService');
+        },
         icon: 'docCheck',
         iconType: 'custom',
       },
       {
-        title: 'Privacy Policy',
+        get title() {
+          return t('tabs.settings.privacyPolicy');
+        },
         type: 'privacy',
-        description: 'View our privacy policy',
+        get description() {
+          return t('tabs.settings.viewOurPrivacyPolicy');
+        },
         icon: 'shieldLock',
         iconType: 'custom',
       },
@@ -251,6 +296,9 @@ export default function SettingsScreen() {
       case 'reciterChoice':
         router.push('/(d.settings)/reciter-choice');
         break;
+      case 'language':
+        router.push('/(d.settings)/language');
+        break;
       case 'storage':
         router.push('/(d.settings)/storage');
         break;
@@ -314,7 +362,7 @@ export default function SettingsScreen() {
         showsVerticalScrollIndicator={false}>
         {/* Appearance */}
         <View style={styles.section}>
-          <Text style={styles.sectionHeader}>{settingsText('APPEARANCE')}</Text>
+          <Text style={styles.sectionHeader}>{t('settings.appearance')}</Text>
           <ThemePicker />
         </View>
 
@@ -322,7 +370,7 @@ export default function SettingsScreen() {
         {settingsItems.map(section => (
           <View key={section.section} style={styles.section}>
             <Text style={styles.sectionHeader}>
-              {settingsText(section.section).toUpperCase()}
+              {section.section.toUpperCase()}
             </Text>
             {renderCard(
               section.items.map((item, itemIndex) => (
@@ -338,16 +386,16 @@ export default function SettingsScreen() {
                       {renderIcon(item, iconColor)}
                     </View>
                     <View style={styles.settingsTextContainer}>
-                      <Text style={styles.settingsTitle}>{settingsText(item.title)}</Text>
+                      <Text style={styles.settingsTitle}>{item.title}</Text>
                       <Text style={styles.settingsDescription}>
-                        {settingsText(item.description)}
+                        {item.description}
                       </Text>
                     </View>
                     <Feather
                       name={
                         isExternalLink(item.type)
                           ? 'external-link'
-                          : 'chevron-right'
+                          : dirIcon('chevron-right')
                       }
                       size={moderateScale(16)}
                       color={chevronColor}
@@ -362,7 +410,7 @@ export default function SettingsScreen() {
         {/* Developer Section */}
         {__DEV__ && (
           <View style={styles.section}>
-            <Text style={styles.sectionHeader}>{settingsText('DEVELOPER')}</Text>
+            <Text style={styles.sectionHeader}>{t('settings.developer')}</Text>
             {renderCard(
               <View style={styles.settingsRow}>
                 <View style={styles.settingsItemIcon}>
@@ -373,9 +421,11 @@ export default function SettingsScreen() {
                   />
                 </View>
                 <View style={styles.settingsTextContainer}>
-                  <Text style={styles.settingsTitle}>{settingsText('Floating Dev Menu')}</Text>
+                  <Text style={styles.settingsTitle}>
+                    {t('settings.floatingDevMenu')}
+                  </Text>
                   <Text style={styles.settingsDescription}>
-                    Show the floating developer tools button
+                    {t('tabs.settings.showTheFloatingDeveloperTools')}
                   </Text>
                 </View>
                 <Switch
