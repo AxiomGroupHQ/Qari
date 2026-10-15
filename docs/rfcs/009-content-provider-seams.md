@@ -8,7 +8,7 @@
 
 ## Summary
 
-Add two optional `Branding` slots — `translationProvider?: TranslationProvider` and `tafsirProvider?: TafsirProvider` — so forks can supply their own translation and tafsir sources for the Settings → Translations and Settings → Tafsir download flows. Bayaan's default behavior is unchanged when the slots are empty (the existing alQuran.cloud-backed translation service and api.quran.com-backed tafsir service stay the defaults). The SQLite cache layers that already wrap each service do not move and do not change shape.
+Add two optional `Branding` slots — `translationProvider?: TranslationProvider` and `tafsirProvider?: TafsirProvider` — so forks can supply their own translation and tafsir sources for the Settings → Translations and Settings → Tafsir download flows. Istima's default behavior is unchanged when the slots are empty (the existing alQuran.cloud-backed translation service and api.quran.com-backed tafsir service stay the defaults). The SQLite cache layers that already wrap each service do not move and do not change shape.
 
 This RFC is the third in the XF-NNN multi-tenancy series, following RFC-007 (the `Branding` interface itself + `CatalogProvider`) and RFC-008 (`branding.listenTabTopComponent`). It covers the two external content-source seams in the app together because the consumers, lifecycles, and provider contracts are structurally identical — splitting them into two RFCs would mean duplicated reviewer overhead and a risk of half-migrated state if one merged and the other stalled.
 
@@ -26,7 +26,7 @@ Each service is a third-party choice that forks may legitimately want to change.
 
 This is the same divergence shape RFC-007 resolved for the catalog (`CatalogProvider`): the concrete data source is hardcoded; the interface the rest of the app needs is small and stable; a provider seam makes the source swappable without forcing forks to maintain parallel copies of the service files.
 
-Concrete cost today: every Bayaan change to `TranslationApiService.ts` (e.g. the recent `direction`-default fallback at lines 90–95) or to `TafseerApiService.ts` (e.g. the verse-grouping logic at lines 127–157, which has been iterated on) creates a merge conflict for any fork that has swapped the base URL, even when the change is orthogonal to the source choice.
+Concrete cost today: every Istima change to `TranslationApiService.ts` (e.g. the recent `direction`-default fallback at lines 90–95) or to `TafseerApiService.ts` (e.g. the verse-grouping logic at lines 127–157, which has been iterated on) creates a merge conflict for any fork that has swapped the base URL, even when the change is orthogonal to the source choice.
 
 Two parallel seams introduced together also signal architecture rather than ad-hoc point fixes — they establish the pattern alongside RFC-007's `CatalogProvider` for the next external-content seam that surfaces.
 
@@ -106,13 +106,13 @@ export interface Branding {
   // …existing fields…
 
   /**
-   * Optional translation source. `undefined` keeps Bayaan's default
+   * Optional translation source. `undefined` keeps Istima's default
    * (the alQuran.cloud-backed `AlQuranCloudTranslationProvider`).
    */
   translationProvider?: TranslationProvider;
 
   /**
-   * Optional tafsir source. `undefined` keeps Bayaan's default
+   * Optional tafsir source. `undefined` keeps Istima's default
    * (the api.quran.com-backed `QuranComTafsirProvider`).
    */
   tafsirProvider?: TafsirProvider;
@@ -149,7 +149,7 @@ The SQLite cache layers (`translationDbService`, `tafseerDbService`) sit *outsid
 
 ## Backwards compatibility
 
-None broken. With both `branding.translationProvider` and `branding.tafsirProvider` unset (Bayaan's default), the exported singletons resolve to the current class bodies extracted unchanged. Base URLs, response shapes, RTL-language fallbacks, paginated-chapter fetch loops, verse-grouping logic, progress-callback semantics, and error messages are all preserved verbatim. Neither store changes.
+None broken. With both `branding.translationProvider` and `branding.tafsirProvider` unset (Istima's default), the exported singletons resolve to the current class bodies extracted unchanged. Base URLs, response shapes, RTL-language fallbacks, paginated-chapter fetch loops, verse-grouping logic, progress-callback semantics, and error messages are all preserved verbatim. Neither store changes.
 
 ## Alternatives considered
 
@@ -169,13 +169,13 @@ Define a single `ContentEditionProvider<TVerse, TEdition>` interface with `fetch
 
 Bayaan-side code knows about both alQuran.cloud and QF (and any future provider), and a `branding.translationProviderId: 'alquran-cloud' | 'qf' | …` enum selects between them. Same for tafsir.
 
-**Rejected** for the same reason RFC-008 rejected its string-enum alternative: it conflates fork code with Bayaan-source code. Bayaan would either carry QF-specific (or any-fork-specific) client code permanently or leave the enum value as a no-op outside the matching forks. The whole point of the seam is that fork-specific source choices live in the fork.
+**Rejected** for the same reason RFC-008 rejected its string-enum alternative: it conflates fork code with Bayaan-source code. Istima would either carry QF-specific (or any-fork-specific) client code permanently or leave the enum value as a no-op outside the matching forks. The whole point of the seam is that fork-specific source choices live in the fork.
 
 ### Alt 4 — Just swap the defaults upstream
 
 Replace alQuran.cloud / api.quran.com with whatever a particular fork prefers.
 
-**Rejected.** Default-switching is a Bayaan product decision orthogonal to multi-tenancy and not something this RFC should drive. The current defaults have served Bayaan reliably. The seams are neutral: if Bayaan later decides to switch a default, it sets the corresponding branding field in its own `config/branding.js`. Same machinery.
+**Rejected.** Default-switching is a Istima product decision orthogonal to multi-tenancy and not something this RFC should drive. The current defaults have served Istima reliably. The seams are neutral: if Istima later decides to switch a default, it sets the corresponding branding field in its own `config/branding.js`. Same machinery.
 
 ### Alt 5 — Split into two RFCs (translations, tafsir)
 
@@ -188,14 +188,14 @@ Open one RFC for translations and a separate one for tafsir later.
 **Positive**
 - Forks override translation source and/or tafsir source via one field each in `config/branding.js`; no fork of either service file.
 - Pattern matches RFC-007 (`CatalogProvider`) exactly — no new architectural concept to learn, and a second instance of the pattern signals it's the convention for external-content seams.
-- Zero behavior change for Bayaan; the default resolution paths return the same singletons they do today.
+- Zero behavior change for Istima; the default resolution paths return the same singletons they do today.
 
 **Neutral**
 - Adds two new type files (`types/TranslationProvider.ts`, `types/TafsirProvider.ts`) and two extracted provider files (`AlQuranCloudTranslationProvider.ts`, `QuranComTafsirProvider.ts`). The two `*ApiService.ts` files collapse to ~5 lines each (the resolvers).
 - `TranslationVerse` and `TafseerVerse` move to their respective `types/` files; existing imports update mechanically.
 
 **Negative / risks**
-- The interfaces commit Bayaan to specific provider contracts. If a future provider needs (e.g.) per-verse streaming or async edition discovery, the interface needs extension. Mitigation: keep v1 minimal — only the two methods each store actually calls today — and extend additively when a concrete need surfaces. Same trade-off RFC-007's `CatalogProvider` made.
+- The interfaces commit Istima to specific provider contracts. If a future provider needs (e.g.) per-verse streaming or async edition discovery, the interface needs extension. Mitigation: keep v1 minimal — only the two methods each store actually calls today — and extend additively when a concrete need surfaces. Same trade-off RFC-007's `CatalogProvider` made.
 - `branding.translationProvider` and `branding.tafsirProvider` are "live code in config" fields, the same pattern RFC-008's `listenTabTopComponent` introduces. Two more precedents now — confirming the convention.
 
 ## How we'll know it worked
@@ -217,13 +217,13 @@ Open one RFC for translations and a separate one for tafsir later.
 
 This is a doc-only RFC. If accepted:
 
-1. **Code PR(s) — Bayaan side.** Translations and tafsir can land in one PR or two separate PRs; maintainer's / fork's call. The per-service diff is symmetric:
+1. **Code PR(s) — Istima side.** Translations and tafsir can land in one PR or two separate PRs; maintainer's / fork's call. The per-service diff is symmetric:
    - Add `types/{Translation,Tafsir}Provider.ts`.
    - Move `{Translation,Tafseer}Verse` to the respective `types/` file.
    - Extract the existing class into `services/{translation,tafseer}/{AlQuranCloud,QuranCom}{Translation,Tafsir}Provider.ts`.
    - Collapse `{Translation,Tafseer}ApiService.ts` to the resolver.
    - Add the optional field to `Branding`.
-   - Default Bayaan branding leaves the field unset; behavior unchanged.
+   - Default Istima branding leaves the field unset; behavior unchanged.
    - ~80 lines diff per service.
 
 2. **Code PR — Qariah-side (in qariah-v2 repo).** Add `services/translation/QfTranslationProvider.ts` and/or `services/tafseer/QfTafsirProvider.ts` implementing the respective interfaces against `apis.quran.foundation`, set the branding fields in `config/branding.js`. Qariah's divergence-ledger rows for both service files flip from "would-be Local" to "Upstreamed".

@@ -1,4 +1,4 @@
-# Contributing to Bayaan
+# Contributing to Istima
 
 Thank you for contributing to Bayaan. This guide covers everything you need to get the app running locally, follow the project's code standards, and submit a pull request.
 
@@ -31,7 +31,7 @@ Thank you for contributing to Bayaan. This guide covers everything you need to g
 
 ```bash
 git clone https://github.com/thebayaan/Bayaan.git
-cd Bayaan
+cd Istima
 npm install
 ```
 
@@ -49,7 +49,7 @@ cp .env.example .env
 
 | Variable                          | Required | Description                                                                        |
 | --------------------------------- | -------- | ---------------------------------------------------------------------------------- |
-| `EXPO_PUBLIC_BAYAAN_API_URL`      | No       | Bayaan backend base URL. Blank = bundled reciter data only (no API calls).         |
+| `EXPO_PUBLIC_BAYAAN_API_URL`      | No       | Istima backend base URL. Blank = bundled reciter data only (no API calls).         |
 | `EXPO_PUBLIC_BAYAAN_API_KEY`      | No       | API key for reciter data, timestamps, etc. Blank = bundled data.                   |
 | `EXPO_PUBLIC_KILLSWITCH_URL`      | No       | Backend-disable check on launch. Blank = skipped (no network call on start).       |
 | `APPLE_TEAM_ID`                   | iOS      | Apple Developer Team ID for code signing. Required to build iOS for a device.     |
@@ -269,7 +269,7 @@ AI tools (Cursor, Copilot, Claude, etc.) are welcome and encouraged. See [docs/c
 
 ### Forks and Claude Code tooling
 
-Bayaan's `.gitignore` excludes the entire `.claude/` directory because it can contain operational paths private to a maintainer's machine. Forks that want to ship their own project-versioned Claude Code skills or scheduled tasks (so they survive across machines and collaborators) can opt-in by adding negation rules to the fork's own `.gitignore`, e.g.:
+Istima's `.gitignore` excludes the entire `.claude/` directory because it can contain operational paths private to a maintainer's machine. Forks that want to ship their own project-versioned Claude Code skills or scheduled tasks (so they survive across machines and collaborators) can opt-in by adding negation rules to the fork's own `.gitignore`, e.g.:
 
 ```gitignore
 # Un-ignore project-versioned Claude Code tooling
@@ -355,4 +355,4 @@ If you're not sure whether your change warrants an RFC: when in doubt, open a re
 
 ## Self-hosting
 
-If you want to run Bayaan against your own backend instead of the community API, see the [self-hosting guide](docs/contributing/self-hosting.md).
+If you want to run Istima against your own backend instead of the community API, see the [self-hosting guide](docs/contributing/self-hosting.md).

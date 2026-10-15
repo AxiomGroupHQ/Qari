@@ -237,7 +237,7 @@ Similar layouts but adapted for round displays:
 1. Set up `rn-watch-connect` in the Expo project (requires `expo prebuild`)
 2. Add a minimal watchOS target in Xcode with SwiftUI
 3. Verify bidirectional `WCSession` messaging between RN and SwiftUI
-4. Display a "Hello from Bayaan" screen on Apple Watch simulator
+4. Display a "Hello from Istima" screen on Apple Watch simulator
 5. Send a play/pause command from watch → phone and verify it triggers `ExpoAudioService`
 6. Document Xcode project setup steps for reproducibility
 
@@ -270,7 +270,7 @@ Similar layouts but adapted for round displays:
 
 1. Watch face complication showing current surah name
 2. Complication showing reciter name or playback state
-3. Tapping complication opens the Bayaan watch app
+3. Tapping complication opens the Istima watch app
 
 ### Phase 4: Wear OS Remote Control
 
@@ -300,7 +300,7 @@ Similar layouts but adapted for round displays:
 
 ## Market Context
 
-No major Quran app currently offers full standalone audio playback on smartwatches. Existing apps (Muslim Pro, Quran Explorer) focus on complications and basic info display. A well-executed Bayaan watch app with remote control + standalone playback would be a differentiator.
+No major Quran app currently offers full standalone audio playback on smartwatches. Existing apps (Muslim Pro, Quran Explorer) focus on complications and basic info display. A well-executed Istima watch app with remote control + standalone playback would be a differentiator.
 
 ## Dependencies
 

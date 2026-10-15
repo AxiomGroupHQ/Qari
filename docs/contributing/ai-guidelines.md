@@ -1,6 +1,6 @@
 # AI-Assisted Development Guidelines
 
-Bayaan welcomes AI-assisted development. This document explains the project's policy on using AI tools, how to mark AI-generated code, and what reviewers should expect.
+Istima welcomes AI-assisted development. This document explains the project's policy on using AI tools, how to mark AI-generated code, and what reviewers should expect.
 
 ---
 

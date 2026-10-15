@@ -9,7 +9,7 @@
 // swallowed. The bundled (or last-cached) catalog always wins on
 // cold-start; the poll only upgrades.
 //
-// Undefined endpoint → no-op. Bayaan ships undefined; forks set it when
+// Undefined endpoint → no-op. Istima ships undefined; forks set it when
 // they have a runtime catalog publisher.
 
 import {AppState, type AppStateStatus} from 'react-native';

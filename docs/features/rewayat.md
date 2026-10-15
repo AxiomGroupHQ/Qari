@@ -6,7 +6,7 @@
 
 ## Overview
 
-Bayaan supports all 8 canonical KFGQPC rewayat (transmissions) of the Quran as interchangeable reading modes. Users switch rewayah in Mushaf Settings; the mushaf rerenders in the selected reading, and the switch ripples into the audio player, share/copy surfaces, and saved user annotations.
+Istima supports all 8 canonical KFGQPC rewayat (transmissions) of the Quran as interchangeable reading modes. Users switch rewayah in Mushaf Settings; the mushaf rerenders in the selected reading, and the switch ripples into the audio player, share/copy surfaces, and saved user annotations.
 
 ## Supported rewayat
 
@@ -37,7 +37,7 @@ Foreground categories (see `constants/tajweedColors.ts`):
 - `silah` — purple, pronoun-lengthening marks (ۥ / ۦ) and their carrier vowel
 - `minor` — teal, trailing-vowel / mood-shift (close-rewayah legacy)
 
-The published-mushaf convention reserves background for whole-word variants and foreground for letter-level rules. Bayaan follows that split; `mukhtalif` (far rewayat) and `major` (close rewayat) are unified on the background channel.
+The published-mushaf convention reserves background for whole-word variants and foreground for letter-level rules. Istima follows that split; `mukhtalif` (far rewayat) and `major` (close rewayat) are unified on the background channel.
 
 ## Data architecture
 

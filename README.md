@@ -195,7 +195,7 @@ In plain English:
 - You are free to use, study, modify, and redistribute this code.
 - If you run a modified version as a network service, you must make your modified source code available to users of that service.
 - Any fork or derivative must be licensed under AGPL-3.0-or-later as well.
-- ISTIMA is a rebranded fork of [Bayaan](https://github.com/thebayaan/Bayaan). Upstream attribution and trademark notices are preserved in [TRADEMARKS.md](TRADEMARKS.md).
+- ISTIMA is a rebranded fork of [Istima](https://github.com/thebayaan/Bayaan). Upstream attribution and trademark notices are preserved in [TRADEMARKS.md](TRADEMARKS.md).
 
 See [LICENSE](LICENSE) for the full terms.
 

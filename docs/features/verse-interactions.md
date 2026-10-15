@@ -9,7 +9,7 @@
 
 Verse-level interactions enable users to bookmark, annotate, highlight, copy, share, and read tafseer for individual Quran verses (ayahs). This builds a shared architecture that both the existing list view and a future mushaf (page) view can use seamlessly.
 
-Currently, all Bayaan features (loved tracks, downloads, playlists) operate at the **surah level**. The `handleVersePress` stub in `PlayerContent/index.tsx` only logs to console. This feature introduces the first ayah-level interaction layer.
+Currently, all Istima features (loved tracks, downloads, playlists) operate at the **surah level**. The `handleVersePress` stub in `PlayerContent/index.tsx` only logs to console. This feature introduces the first ayah-level interaction layer.
 
 ### Motivation
 

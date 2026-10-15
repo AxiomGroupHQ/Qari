@@ -1,6 +1,6 @@
 # Downloads Feature Documentation
 
-This document provides comprehensive documentation for the offline download feature in the Bayaan Quran audio app.
+This document provides comprehensive documentation for the offline download feature in the Istima Quran audio app.
 
 ## Overview
 

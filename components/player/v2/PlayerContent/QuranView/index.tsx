@@ -300,7 +300,7 @@ export const QuranView: React.FC<QuranViewProps> = ({
   // partially behind the header. `viewPosition: 0.05` then places the
   // verse 5% down from the post-header viewport top.
   //
-  // Multi-surah double-fire note: in single-surah Bayaan tracks, a track
+  // Multi-surah double-fire note: in single-surah Istima tracks, a track
   // change always changes currentSurah, so this effect fires exactly once.
   // If multi-surah tracks ship later (e.g. Juz-spanning recitations), the
   // dep array can fire twice — once from `currentSurah` advancing within

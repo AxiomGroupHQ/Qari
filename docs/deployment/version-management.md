@@ -1,10 +1,10 @@
-# Bayaan Version Management
+# Istima Version Management
 
-This document explains how the Git-based version management system works in the Bayaan app.
+This document explains how the Git-based version management system works in the Istima app.
 
 ## Overview
 
-Bayaan uses Git metadata (tags and commit history) to automatically manage app version numbers. This ensures that:
+Istima uses Git metadata (tags and commit history) to automatically manage app version numbers. This ensures that:
 
 1. Version numbers are directly tied to Git history
 2. Versions increase automatically with each build

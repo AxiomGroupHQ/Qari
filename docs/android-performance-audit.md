@@ -1,4 +1,4 @@
-# Android Performance Audit — Bayaan
+# Android Performance Audit — Istima
 
 **Date:** February 2026
 **Scope:** Mounting/unmounting jank, sheet navigation lag, bundled data loading, general Android weakness

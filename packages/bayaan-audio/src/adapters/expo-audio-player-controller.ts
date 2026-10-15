@@ -8,7 +8,7 @@
  *
  * Why ship a stub now rather than waiting:
  *  - Demonstrates that the port is implementable as a class wrapping a
- *    consumer store (Bayaan's `playerStore`) — which is what ADR-0001
+ *    consumer store (Istima's `playerStore`) — which is what ADR-0001
  *    promises for the migration.
  *  - Lets the package self-contain its tests (the contract suite and the
  *    `MockAudioPlayer`-driven test both reference this class).

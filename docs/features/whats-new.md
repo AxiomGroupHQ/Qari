@@ -55,7 +55,7 @@ The What's New feature automatically shows users a changelog modal when they upd
 ### Manual Access from Settings
 
 1. User opens Settings
-2. User taps "What's New" in the "About Bayaan" section
+2. User taps "What's New" in the "About Istima" section
 3. Full-screen changelog page opens
 4. User can review all changes at their own pace
 5. User taps back button to return to Settings
@@ -97,7 +97,7 @@ If you prefer programmatic testing:
 
 1. Open the app
 2. Navigate to Settings
-3. Scroll to "About Bayaan" section
+3. Scroll to "About Istima" section
 4. Tap "What's New" (has gift icon)
 5. **Expected behavior**:
    - Full-screen changelog page opens

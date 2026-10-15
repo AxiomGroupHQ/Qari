@@ -1,6 +1,6 @@
 # Player System
 
-This document describes the Bayaan audio player architecture — how playback works, how state flows, and how to extend the system.
+This document describes the Istima audio player architecture — how playback works, how state flows, and how to extend the system.
 
 ---
 
