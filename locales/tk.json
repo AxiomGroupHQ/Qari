@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Pleýeri işe girizmekde ýalňyşlyk: {{message}}",
+    "errorLoadingFonts": "Şriftleri ýüklemekde ýalňyşlyk"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "ISTIMA baş sahypasy"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Ählisi",
+      "clearAll": "Ählisini arassala",
+      "hasPhoto": "Suraty bar"
+    },
+    "filterModal": {
+      "apply": "Ulan",
+      "filterReciters": "Karylary süzgüçle",
+      "recitationStyles": "Tilawat usullary",
+      "reset": "Başlangyç ýagdaýa getir",
+      "rewayatTypes": "Riwaýat görnüşleri"
+    },
+    "recitersFound_one": "Häzirki süzgüçler boýunça {{count}} kary tapyldy",
+    "recitersFound_other": "Häzirki süzgüçler boýunça {{count}} kary tapyldy"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Halanan süreler"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Aýatlary şu ýerde görmek üçin bellik goýuň",
+      "bookmarks": "Bellikler",
+      "noBookmarksYet": "Entek bellik ýok",
+      "removeBookmark": "Belligi aýyr"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Riwaýatlar",
+      "searchPlaylistsRecitersSurahsRewayat": "Pleýlistleri, karylary, süreleri, riwaýatlary gözle...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Pleýlistleri, karylary, süreleri, riwaýatlary we ýüklemeleri gözle",
+      "searchYourCollection": "Ýygyndyňyzdan gözle",
+      "searching": "Gözlenýär...",
+      "tryDifferentKeywords": "Başga açar sözleri synap görüň"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Süreleri şu ýerde görmek üçin ýükläp alyň",
+      "noDownloadsYet": "Entek ýükleme ýok",
+      "playAll": "Ählisini diňlet"
+    },
+    "favoritereciters": {
+      "addReciters": "Kary goş",
+      "addRecitersToSeeThem": "Karylary şu ýerde görmek üçin goşuň",
+      "noFavoriteRecitersYet": "Entek halaýan kary ýok",
+      "removeFromFavorites": "Halananlardan aýyr",
+      "searchFavoriteReciters": "Halaýan karylary gözle"
+    },
+    "index": {
+      "addToCollection": "Ýygynda goş",
+      "bookmarks": "Bellikler",
+      "createYourFirstPlaylist": "Ilkinji pleýlistiňizi dörediň",
+      "downloads": "Ýüklemeler",
+      "items_one": "{{count}} element",
+      "items_other": "{{count}} element",
+      "loved": "Halananlar",
+      "noBookmarksYet": "Entek bellik ýok",
+      "noDownloadsYet": "Entek ýükleme ýok",
+      "noFavoritesYet": "Entek halanan ýok",
+      "noLovedSurahsYet": "Entek halanan süre ýok",
+      "noNotesYet": "Entek ýazgy ýok",
+      "noUploadsYet": "Entek ýükläp iberilen faýl ýok",
+      "notes": "Ýazgylar",
+      "playlists": "Pleýlistler",
+      "reciters": "Karylar",
+      "uploads": "Ýükläp iberilenler"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Ähli halanan süreler eýýäm ýükläp alnan.",
+      "allLovedSurahsHaveBeen": "Ähli halanan süreler ýükläp alyndy.",
+      "downloadError": "Ýükleme ýalňyşlygy",
+      "loveSurahsToSeeThem": "Süreleri şu ýerde görmek üçin halananlara goşuň",
+      "noLovedSurahsYet": "Entek halanan süre ýok",
+      "someDownloadsMayHaveFailed": "Käbir ýüklemeler şowsuz bolan bolmagy mümkin.",
+      "unloveAllSurahs": "Ähli süreleri halananlardan aýyr"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Ýazgylary şu ýerde görmek üçin aýatlara ýazgy goşuň",
+      "editNote": "Ýazgyny üýtget",
+      "noNotesYet": "Entek ýazgy ýok",
+      "notes": "Ýazgylar"
+    },
+    "playlistModal": {
+      "name": "Ady"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Pleýlistleri şu ýerde görmek üçin dörediň",
+      "noPlaylistsYet": "Entek pleýlist ýok",
+      "playlists": "Pleýlistler"
+    },
+    "uploads": {
+      "removeAllUploads": "Ähli ýükläp iberilenleri aýyr",
+      "uploadRecitationsToSeeThem": "Tilawatlary şu ýerde görmek üçin ýükläp iberiň"
+    }
+  },
+  "common": {
+    "1Time": "1 gezek",
+    "2Times": "2 gezek",
+    "3Times": "3 gezek",
+    "addToCollection": "Ýygynda goş",
+    "addToQueue": "Nobata goş",
+    "allSurahs": "Ähli süreler",
+    "alreadyDownloaded": "Eýýäm ýükläp alnan",
+    "arabic": "Arapça",
+    "asc": "Artýan tertip",
+    "browseAll": "Ählisine seret",
+    "browseAllReciters": "Ähli karylara seret",
+    "cancel": "Ýatyr",
+    "clear": "Arassala",
+    "copyToClipboard": "Alyş-çalyş buferine göçür",
+    "createNewPlaylist": "Täze pleýlist döret",
+    "defaultReciter": "Esasy kary",
+    "delete": "Poz",
+    "deleteNote": "Ýazgyny poz",
+    "deleteRecitation": "Tilawaty poz",
+    "desc": "Kemelýän tertip",
+    "downloadComplete": "Ýükleme tamamlandy",
+    "downloadFailed": "Ýükläp bolmady",
+    "downloads": "Ýüklemeler",
+    "editDetails": "Jikme-jiklikleri üýtget",
+    "error": "Ýalňyşlyk",
+    "favoriteReciters": "Halaýan karylar",
+    "followAlong": "Bile oka",
+    "from": "Başlangyç",
+    "goToReciter": "Kara geç",
+    "goToVerse": "Aýata geç",
+    "learnAboutSurah": "Süre barada öwren",
+    "loading": "Ýüklenýär...",
+    "loop": "Gaýtalap diňlet",
+    "loved": "Halananlar",
+    "mushafSettings": "Mushaf sazlamalary",
+    "next": "Indiki",
+    "noRecitersFound": "Kary tapylmady",
+    "noResultsFound": "Netije tapylmady",
+    "noUploadsYet": "Entek ýükläp iberilen faýl ýok",
+    "play": "Diňlet",
+    "playEachVerse": "Her aýaty diňlet",
+    "playNow": "Häzir diňlet",
+    "playSpeed": "Diňletme tizligi",
+    "playTheRange": "Aralygy diňlet",
+    "playlistName": "Pleýlistiň ady",
+    "prev": "Öňki",
+    "readingTheme": "Okaýyş temasy",
+    "recentSearches": "Soňky gözlegler",
+    "reciter": "Kary",
+    "reciterChoice": "Kary saýlawy",
+    "reciters": "Karylar",
+    "remove": "Aýyr",
+    "removeAllDownloads": "Ähli ýüklemeleri aýyr",
+    "removeHighlight": "Tapawutlandyrmany aýyr",
+    "rev": "Wahyý tertibi",
+    "save": "Ýatda sakla",
+    "search": "Gözle",
+    "searchReciters": "Karylary gözle...",
+    "searchSurahs": "Süreleri gözle",
+    "share": "Paýlaş",
+    "shareAsImage": "Surat hökmünde paýlaş",
+    "shareAsText": "Tekst hökmünde paýlaş",
+    "sharedPhrases": "Umumy söz düzümleri",
+    "showBasmallah": "Besmeläni görkez",
+    "stop": "Duruz",
+    "storage": "Ýat",
+    "surah": "Süre",
+    "surahs": "Süreler",
+    "to": "Ahyrky",
+    "translation": "Terjime",
+    "translationsTafaseer": "Terjimeler we tefsirler",
+    "transliteration": "Transliterasiýa",
+    "uploads": "Ýükläp iberilenler",
+    "useDefaultReciter": "Esasy karyny ulan",
+    "verseReference": "Aýat salgysy",
+    "verses": "Aýatlar",
+    "whatSNew": "Täzelikler",
+    "wordByWord": "Sözme-söz",
+    "writeYourNoteHere": "Ýazgyňyzy şu ýere ýazyň...",
+    "yourPlaylists": "Pleýlistleriňiz"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Ähli süreleri diňlet"
+    },
+    "searchHeader": {
+      "searchSurahs": "Süreleri gözle"
+    },
+    "searchView": {
+      "noSurahsFound": "Süre tapylmady"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Elýeterli süre ýok"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Tilawat goş",
+      "uploadRecitationsToSeeThem": "Tilawatlary şu ýerde görmek üçin ýükläp iberiň"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "Ýükläp alnan • {{count}} süre",
+    "subtitle_other": "Ýükläp alnan • {{count}} süre"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Bagyşlaň, ýalňyşlyk ýüze çykdy"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Ähli 114 sürä seret"
+    },
+    "savedAdhkarHero": {
+      "saved": "Ýatda saklanan",
+      "yourCollection": "Ýygyndyňyz"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "GÜNÜŇ SÜRESI"
+    },
+    "surahsHero": {
+      "number": "Belgisi"
+    }
+  },
+  "language": {
+    "later": "Soňra",
+    "restartMessage": "Täze ýerleşiş ugruny ulanmak üçin programmany täzeden açyň.",
+    "restartNow": "Häzir täzeden aç",
+    "restartTitle": "Täzeden açmak gerek",
+    "search": "Dilleri gözle",
+    "system": "Enjamyň dili"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Dowam et"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Geç"
+    }
+  },
+  "mushaf": {
+    "juz": "Jüz {{juz}}",
+    "loadingMushaf": "Mushaf ýüklenýär…",
+    "main": {
+      "mushafSettings": "Mushaf sazlamalary"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Karyny çalyş",
+      "changeReciter2": "Karyny çalyş",
+      "nextAyah": "Indiki aýat",
+      "playbackOptions": "Diňletme opsiýalary",
+      "previousAyah": "Öňki aýat"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Süreleri, aýatlary, sahypalary ýa-da jüzleri tapyň",
+      "recentReads": "SOŇKY OKALANLAR",
+      "searchSurahsPagesOrJuz": "Süreleri, sahypalary ýa-da jüzleri gözle...",
+      "searchTheMushaf": "Mushafdan gözle"
+    },
+    "options": "Opsiýalar",
+    "page": "Sahypa {{page}}",
+    "pageAndSurah": "Sahypa {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushaf ýüklenip bilinmedi.",
+    "tryAgain": "Täzeden synanyş"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Mushafda Allanyň adyny we Rabb ýaly ylahy atlary tapawutlandyrýar."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Tema boýunça bölekleri gezekleşdirip tapawutlandyrmak",
+    "arabicFontSize": "Arap şriftiniň ölçegi",
+    "bold": "Goýy",
+    "book": "Kitap",
+    "colorLegend": "Reňk düşündirişi",
+    "currentlyReading": "Häzir okalýar",
+    "divineNames": "YLAHY ATLAR",
+    "fontSize": "Şrift ölçegi",
+    "fullscreen": "Doly ekran",
+    "hamzaReplacedByLongVowel": "Hemzäniň uzyn çekimli bilen çalşylmagy",
+    "heavyLamInAllahAfter": "Ýogyn harplardan soň Allah sözündäki ýogyn lam",
+    "highlightAllahRabb": "Allah / Rabb sözlerini tapawutlandyr",
+    "horizontal": "Keseligine",
+    "ibdal": "Ibdal",
+    "list": "Sanaw",
+    "loadingSample": "Nusga ýüklenýär...",
+    "maddAlBadal": "Meddi bedel",
+    "maximumProminence": "Iň güýçli tapawutlandyrma",
+    "medium": "Orta",
+    "modernMadinahPrintedPipeline": "Häzirki zaman Medine çap usuly",
+    "mushaf": "Mushaf",
+    "normal": "Adaty",
+    "originalMushafWeight": "Mushafyň asyl şrift galyňlygy",
+    "pageDesign": "SAHYPA DIZAÝNY",
+    "prolongedVowelAfterHamza": "Hemzeden soň uzaldylan çekimli",
+    "readingTheme": "OKAÝYŞ TEMASY",
+    "scrollDirection": "AÝLAMAK UGRY",
+    "showDifferences": "Tapawutlary görkez",
+    "silah": "Syla",
+    "slightlyMoreProminent": "Biraz güýçli tapawutlandyrma",
+    "softenedHamzaPronunciation": "Hemzäniň ýumşadylan aýdylyşy",
+    "subcontinentNastaliqStyle": "Hindi ýarymadasynyň nastalik usuly",
+    "taghlizAlLam": "Tagliz al-lam",
+    "tajweedColoring": "Tejwit reňkleri",
+    "tashilMusahhala": "Teshil / Musahhala",
+    "textPreviewNotYetAvailable": "TEKSTIŇ ÖŇÜNDEN GÖRNÜŞI ENTEK ÝOK",
+    "textThickness": "TEKSTIŇ GALYŇLYGY",
+    "thematicHighlighting": "Tema boýunça tapawutlandyrma",
+    "trailingVowelOrMoodChange": "Diňe soňky çekimli ýa-da işlik şekiliniň üýtgemegi",
+    "usingSaheehInternationalTranslationWith": "Ulanylýar: aşaky bellikli Saheeh International terjimesi",
+    "vertical": "Dikligine",
+    "viewType": "GÖRKEZILIŞ GÖRNÜŞI",
+    "vowelMoodShift": "Çekimli / işlik şekiliniň üýtgemegi",
+    "wordByWord": "SÖZME-SÖZ",
+    "wordVariant": "Sözüň görnüşi"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Serwere birigip bolmaýar",
+    "connectionRestored": "Baglanyşyk dikeldildi",
+    "noInternetConnection": "Internet baglanyşygy ýok",
+    "showingCachedData": "Keşdäki maglumatlar görkezilýär"
+  },
+  "organize": {
+    "createReciter": "\"{{name}}\" döret"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Nobat",
+      "queueIsEmpty": "Nobat boş"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Süräniň tekstini we jikme-jikliklerini görmek üçin bu tilawata bellik ediň"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "Pleýlist • {{count}} süre",
+    "subtitle_other": "Pleýlist • {{count}} süre"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Bu pleýlistde süre ýok"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Aşaky bellik"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Hut şu pursat üçin saýlanan tilawat",
+      "discover": "Açyp gör",
+      "discoverANewVoice": "Täze ses açyň",
+      "explore": "Öwren",
+      "exploreTheUnexpected": "Garaşylmadyk zatlary açyň",
+      "hearSomethingNew": "Täze bir zat diňläň",
+      "letTheQuranSurpriseYou": "Gurhan sizi haýran galdyrsyn",
+      "randomMix": "Tötänleýin garyndy",
+      "randomRecitation": "Tötänleýin tilawat",
+      "shuffleListen": "Garyşdyr we diňle",
+      "surpriseMe": "Meni haýran galdyr"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Görnüş tertibiniň üýtgemegi tutuş programma täsir edýär"
+  },
+  "reciterBrowse": {
+    "allReciters": "Ähli karylar",
+    "browseReciters": "Karylara seret",
+    "favorites": "Halananlar"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Bu kary üçin ýükleme ýok"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Ýükläp iberenlerim"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Zikirler",
+    "bestForMemorization": "Ýat tutmak üçin iň gowy",
+    "bestForTajweed": "Tejwit üçin iň gowy",
+    "continueListening": "Diňlemegi dowam et",
+    "exclusives": "Ýörite tilawatlar",
+    "exploreByRewayah": "Riwaýat boýunça öwren",
+    "featuredReciters": "Saýlanan karylar",
+    "fromYourCollection": "Ýygyndyňyzdan",
+    "myRecitations": "Tilawatlarym",
+    "newToQuranStartHere": "Gurhan bilen täze tanyşýarsyňyzmy? Şu ýerden başlaň",
+    "seeMore": "Has köp gör",
+    "yourFavorites": "Halananlaryňyz"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Işjeň",
+      "activeTafseer": "IŞJEŇ TEFSIR",
+      "activeTranslation": "IŞJEŇ TERJIME",
+      "deleteTafseer": "Tefsiri poz",
+      "deleteTranslation": "Terjimäni poz",
+      "noTafaseerFound": "Tefsir tapylmady",
+      "noTranslationsFound": "Terjime tapylmady",
+      "unableToDownloadThisTafseer": "Bu tefsiri ýükläp alyp bolmady. Internet baglanyşygyňyzy barlap, täzeden synanyşyň.",
+      "unableToDownloadThisTranslation": "Bu terjimäni ýükläp alyp bolmady. Internet baglanyşygyňyzy barlap, täzeden synanyşyň."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Soňky gözleg ýok",
+      "tryDifferentKeywordsOrCheck": "Başga açar sözleri synap görüň ýa-da ýazuwyny barlaň",
+      "yourSearchHistoryWillAppear": "Gözleg taryhyňyz şu ýerde görkeziler"
+    },
+    "surahsOrReciters": "Süreleri ýa-da karylary gözle"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Giňişleýin ses dolandyryşy",
+      "browseByJuz": "Jüz boýunça seret",
+      "createAndManageYourOwn": "Halaýan tilawatlaryňyzdan öz pleýlistleriňizi dörediň we dolandyryň",
+      "crystalClearRecitationsFromThe": "Dünýäniň iň gowy karylaryndan akym üçin sazlanan dury tilawatlar",
+      "curatedCollections": "Saýlanan ýygyndylar",
+      "customPlaylists": "Şahsy pleýlistler",
+      "customizeThemesAccentColorsAnd": "Temalary, esasy reňkleri we ses sazlamalaryny öz islegiňize görä düzüň",
+      "downloadSurahsForOfflineListening": "Islendik wagt we ýerde internetsiz diňlemek üçin süreleri ýükläp alyň",
+      "easilyNavigateThroughTheQuran": "Jüzler boýunça tertipleme we toparlama bilen Gurhanda aňsat geçiň",
+      "features": "MÜMKINÇILIKLER",
+      "highQualityAudio": "Ýokary hilli ses",
+      "listenReflectRememberAllah": "Diňle. Pikirlen. Allany ýatla.",
+      "offlineDownloads": "Internetsiz diňlemek üçin ýüklemeler",
+      "ourCommitment": "Borjumyz",
+      "ourMission": "Maksadymyz",
+      "personalization": "Şahsylaşdyrma",
+      "precisePlaybackControlWithContinuous": "Üznüksiz diňletme we sazlanylýan tilawat tizligi bilen takyk dolandyryş",
+      "quranBayanTafsirKnowledgeOur": "Gurhan • Beýan • Tefsir • Bilim. Maksadymyz diňlemegi we oýlanmagy gündelik durmuşyň bir bölegine öwürmekdir: öýde, ýolda we Allany ýatlamaga pursat tapýan her ýeriňizde.",
+      "readListenAndReflect": "Oka, diňle we pikirlen",
+      "readTheMushafExploreTranslations": "Mushafy okaň, terjimeleri we tefsirleri öwreniň, aýatlary we ýazgylary saklaň, gündelik zikirlere gaýdyň. Karyňyzy saýlaň, pleýlistler dörediň we günüňize laýyk diňleýiş tejribesini düzüň. Mümkinçilikler enjama görä üýtgeýär; mobil programmalar internetsiz diňlemek üçin ýüklemeleri hem goldaýar.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Dürli ýagdaýlar we temalar üçin oýlanyşykly tertiplenen süreler",
+      "weCareAboutTheAccuracy": "Mukaddes mazmunyň takyklygyna, hormat goýýan dizaýna we ygtybarly elýeterlilige üns berýäris. ISTIMA-ny ony ulanýan adamlary göz öňünde tutup kämilleşdirýäris. Alla bu tagallany kabul etsin we diňleýän, okaýan hem oýlanýan her bir adama peýdaly etsin."
+    },
+    "aboutApp": "{{name}} barada",
+    "appearance": "GÖRNÜŞ",
+    "defaultreciter": {
+      "changeDefaultReciter": "ESASY KARYNY ÇALYŞ"
+    },
+    "developer": "IŞLÄP DÜZÜJI",
+    "floatingDevMenu": "Ýüzýän işläp düzüji menýusy",
+    "language": "Dil",
+    "languageDescription": "Programmanyň dilini saýlaň",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Elmydama saýlanan esasy karyny ulan",
+      "askEveryTime": "Her gezek sora",
+      "chooseAReciterEachTime": "Her gezek diňledeniňizde kary saýlaň",
+      "chooseHowYouWantTo": "Süreleri diňledeniňizde karylary nähili saýlamak isleýändigiňizi kesgitläň",
+      "defaultSelectionMethod": "ESASY SAÝLAW USULY",
+      "searchThroughOurCompleteCollection": "Doly karylar ýygyndymyzdan gözläň",
+      "selectionPreference": "SAÝLAW ISLEGI"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Ähli ýüklemeler aýryldy.",
+      "areYouSureYouWant": "Ähli ýükläp alnan mazmuny aýyrmak isleýändigiňize ynanýarsyňyzmy? Bu hereketi yzyna gaýtaryp bolmaz.",
+      "cache": "Keş",
+      "cacheHasBeenCleared": "Keş arassalandy.",
+      "clearCache": "Keşi arassala",
+      "failedToClearCache": "Keşi arassalap bolmady.",
+      "failedToRemoveDownloads": "Ýüklemeleri aýryp bolmady.",
+      "free": "Boş",
+      "loadingStorageInformation": "Ýat maglumatlary ýüklenýär...",
+      "manageStorage": "ÝADY DOLANDYR",
+      "otherApps": "Beýleki programmalar",
+      "removeAllDownloads": "Ähli ýüklemeleri aýyr",
+      "removeAllTheQuranContent": "Internetsiz ulanmak üçin ýükläp alan ähli Gurhan mazmunyňyzy aýryň.",
+      "storageBreakdown": "ÝADYŇ PAÝLANYŞY",
+      "success": "Üstünlikli",
+      "thisWillClearYourCache": "Bu keşi arassalar. Ýüklemeleriňiz aýrylmaz.",
+      "youCanFreeUpStorage": "Keşi arassalap ýatda ýer boşadyp bilersiňiz. Ýüklemeleriňiz aýrylmaz."
+    },
+    "themePicker": {
+      "auto": "Awtomatik",
+      "dark": "Garaňky",
+      "light": "Ýagty"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Üýtgeşmeler sanawy ýok"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "{{name}} barada",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Halaýan kary goş",
+      "uploadRecitation": "Tilawat ýükläp iber"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Töweregiň sesleri",
+      "none": "Hiç biri",
+      "volume": "Ses derejesi"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "Meselem, ertirki tilawatlar"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Ýüklemäni aýyr"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Taýýar"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Ýygynda goş",
+      "addToQueue": "Nobata goş",
+      "continuePlaying": "Diňletmegi dowam et",
+      "goToReciter": "Kara geç",
+      "removeFromRecents": "Soňky ýazgylardan aýyr"
+    },
+    "mushafLayoutSheet": {
+      "back": "Yza"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Soňky aýat",
+      "playbackSettings": "Diňletme sazlamalary",
+      "selectRange": "Aralyk saýla",
+      "startingVerse": "Başlangyç aýat"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Gaýtalama sazlamalary",
+      "start": "Başla",
+      "verseRange": "Aýat aralygy"
+    },
+    "organizeRecitationSheet": {
+      "category": "Kategoriýa",
+      "customReciter": "Şahsy kary",
+      "duA": "Doga",
+      "eGMorningAdhkar": "Meselem, ertirki zikirler",
+      "lecture": "Wagyz",
+      "moreOptions": "Goşmaça opsiýalar",
+      "other": "Beýleki",
+      "recording": "Ses ýazgysy",
+      "rewayah": "Riwaýat",
+      "searchSurahs": "Süreleri gözle...",
+      "style": "Usul",
+      "tafsir": "Tefsir",
+      "title": "Sözbaşy",
+      "type": "Görnüş",
+      "verseRangeOptional": "Aýat aralygy (hökmany däl)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Diňletme tizligi"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Bu pleýlistdäki ähli elementler eýýäm ýükläp alnan.",
+      "anErrorOccurredWhileDownloading": "Pleýlist ýüklenende ýalňyşlyk ýüze çykdy. Täzeden synanyşyň.",
+      "deletePlaylist": "Pleýlisti poz",
+      "downloadingPlaylist": "Pleýlist ýüklenýär...",
+      "editPlaylist": "Pleýlisti üýtget",
+      "emptyPlaylist": "Boş pleýlist",
+      "thisPlaylistIsEmpty": "Bu pleýlist boş."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Riwaýatlar barada",
+      "availableRewayat": "Elýeterli riwaýatlar"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Süräni pleýliste goşup bolmady",
+      "failedToCreatePlaylist": "Pleýlist döredip bolmady",
+      "noPlaylistsYetCreateYour": "Entek pleýlist ýok. Ýokarda ilkinji pleýlistiňizi dörediň!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Her gezek sora",
+      "randomReciter": "Tötänleýin kary",
+      "selectReciter": "Kary saýla"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Bu aýat üçin meňzeş aýat tapylmady.",
+      "similarWording": "Meňzeş sözler"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Uky taýmeri",
+      "turnOffTimer": "Taýmeri öçür"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Pleýlistden aýyr"
+    },
+    "verseActionsSheet": {
+      "addNote": "Ýazgy goş",
+      "copy": "Göçür",
+      "repeat": "Gaýtala",
+      "similarVerses": "Meňzeş aýatlar",
+      "tafseer": "Tefsir",
+      "theme": "Tema"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Göçürme opsiýalary",
+      "selectWhatToCopy": "Nämäni göçürmelidigini saýlaň"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Tapawutlandyrma reňki"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Aýaty paýlaş"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "{{count}} aýatda tapyldy",
+    "foundIn_other": "{{count}} aýatda tapyldy"
+  },
+  "surahItem": {
+    "moreOptions": "Goşmaça opsiýalar",
+    "opensMenuWithAdditionalActions": "Bu süre üçin goşmaça hereketler menýusyny açýar",
+    "tapToPlaySurah": "Süräni diňletmek üçin degiň"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "Nädogry pleýlist belgisi",
+      "playlistNotFound": "Pleýlist tapylmady"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Bu pleýlistdäki ähli süreleri okaýan kary tapylmady. Başga pleýlisti synap görüň.",
+      "failedToPlayPlaylistPlease": "Pleýlisti diňledip bolmady. Täzeden synanyşyň.",
+      "failedToPlayTrackPlease": "Ýazgyny diňledip bolmady. Täzeden synanyşyň.",
+      "failedToShufflePlaylistPlease": "Pleýlisti garyşdyryp bolmady. Täzeden synanyşyň.",
+      "noReciterAvailable": "Elýeterli kary ýok",
+      "noSurahsInThisPlaylist": "Bu pleýlistde süre ýok"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Hasap",
+      "appData": "Programma we maglumatlar",
+      "audioPlayback": "Ses we diňletme",
+      "chooseYourPreferredReciter": "Halaýan karyňyzy saýlaň",
+      "customizeQuranDisplayOptions": "Gurhanyň görkeziliş opsiýalaryny sazlaň",
+      "customizeReciterSelection": "Kary saýlawyny sazlaň",
+      "featureRequests": "Täze mümkinçilik islegleri",
+      "feedback": "Pikirler",
+      "helpSupport": "Kömek we goldaw",
+      "learnMoreAboutOurMission": "Maksadymyz barada has köp öwreniň",
+      "manageQuranTranslationsAndCommentary": "Gurhan terjimelerini we düşündirişlerini dolandyryň",
+      "privacyPolicy": "Gizlinlik syýasaty",
+      "quran": "Gurhan",
+      "readOurTermsOfService": "Hyzmat şertlerimizi okaň",
+      "seeWhatSNewIn": "Bu wersiýadaky täzelikleri görüň",
+      "shareYourExperienceWithOthers": "Tejribäňizi beýlekiler bilen paýlaşyň",
+      "showTheFloatingDeveloperTools": "Ýüzýän işläp düzüji gurallarynyň düwmesini görkez",
+      "suggestImprovementsAndNewFeatures": "Gowulandyrmalary we täze mümkinçilikleri teklip ediň",
+      "termsOfService": "Hyzmat şertleri",
+      "viewAndManageStorageUsage": "Ýadyň ulanylyşyny gör we dolandyr",
+      "viewOurPrivacyPolicy": "Gizlinlik syýasatymyza serediň",
+      "writeAReview": "Syn ýaz"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Ýatyr",
+    "close": "Ýap",
+    "collection": "Ýygyndy",
+    "download": "Ýükläp al",
+    "downloads": "Ýüklemeler",
+    "error": "Ýalňyşlyk ýüze çykdy",
+    "favorites": "Halananlar",
+    "home": "Baş sahypa",
+    "language": "Dil",
+    "library": "Kitaphana",
+    "loading": "Ýüklenýär...",
+    "noResults": "Netije tapylmady",
+    "offline": "Siz internete birikmedik",
+    "pause": "Sägin",
+    "play": "Diňlet",
+    "retry": "Täzeden synanyş",
+    "save": "Ýatda sakla",
+    "search": "Gözle",
+    "settings": "Sazlamalar",
+    "surahs": "Süreler"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "MAZMUNY SAÝLA"
+    },
+    "highlightContent": {
+      "chooseColor": "REŇK SAÝLA"
+    },
+    "noteContent": {
+      "saveNote": "Ýazgyny sakla"
+    },
+    "shareContent": {
+      "shareLink": "Salgyny paýlaş"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Bu aýat üçin meňzeş aýat tapylmady.",
+      "sharedPhrases": "UMUMY SÖZ DÜZÜMLERI",
+      "similarWording": "MEŇZEŞ SÖZLER"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Tefsir ýüklenmedik",
+      "tafseerNotAvailableForThis": "Bu aýat üçin tefsir ýok",
+      "tapHereToDownloadA": "Tefsiri ýükläp almak we düşündirişe seretmek üçin şu ýere degiň."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Bu aýat üçin tema maglumaty ýok.",
+      "passage": "Bölek"
+    },
+    "translationContent": {
+      "switch": "Çalyş",
+      "translationNotAvailable": "Terjime ýok"
+    }
+  },
+  "version": {
+    "label": "Wersiýa {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Täzelikler:"
+  },
+  "wordDetail": {
+    "context": "Aýat {{surah}}:{{ayah}} · {{total}} sözüň {{position}}-nji sözi"
+  }
+}
