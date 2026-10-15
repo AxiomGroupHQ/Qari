@@ -15,6 +15,7 @@ import {CreatePlaylistSheet} from './CreatePlaylistSheet';
 import {PlaylistContextSheet} from './PlaylistContextSheet';
 import {PlayerOptionsSheet} from './PlayerOptionsSheet';
 import {PlaybackSpeedSheet} from './PlaybackSpeedSheet';
+import {LanguageSheet} from './LanguageSheet';
 import {SleepTimerSheet} from './SleepTimerSheet';
 import {MushafLayoutSheet} from './MushafLayoutSheet';
 import {AdhkarLayoutSheet} from './AdhkarLayoutSheet';
@@ -47,6 +48,7 @@ registerSheet('create-playlist', CreatePlaylistSheet);
 registerSheet('playlist-context', PlaylistContextSheet);
 registerSheet('player-options', PlayerOptionsSheet);
 registerSheet('playback-speed', PlaybackSpeedSheet);
+registerSheet('language-picker', LanguageSheet);
 registerSheet('sleep-timer', SleepTimerSheet);
 registerSheet('mushaf-layout', MushafLayoutSheet);
 registerSheet('adhkar-layout', AdhkarLayoutSheet);
@@ -137,6 +139,7 @@ declare module 'react-native-actions-sheet' {
         userRecitationId?: string;
       };
     }>;
+    'language-picker': SheetDefinition;
     'playback-speed': SheetDefinition<{
       payload: {
         currentSpeed: number;

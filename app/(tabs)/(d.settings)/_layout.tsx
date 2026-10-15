@@ -31,10 +31,6 @@ export default function SettingsLayout() {
           headerBackButtonDisplayMode: 'minimal',
         }}>
         <Stack.Screen name="index" options={{headerShown: false}} />
-        <Stack.Screen
-          name="language"
-          options={{title: t('settings.language')}}
-        />
         <Stack.Screen name="storage" options={{title: t('common.storage')}} />
         <Stack.Screen
           name="about"

@@ -9,14 +9,15 @@ import {
   Text,
   View,
 } from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 import {ScaledSheet, moderateScale} from 'react-native-size-matters';
-import {useHeaderHeight} from '@react-navigation/elements';
 import {Feather} from '@expo/vector-icons';
 import * as Haptics from 'expo-haptics';
 import * as Updates from 'expo-updates';
 import {useTranslation} from 'react-i18next';
+import ActionSheet, {SheetManager} from 'react-native-actions-sheet';
+import Color from 'color';
 import {useTheme} from '@/hooks/useTheme';
-import {USE_GLASS} from '@/hooks/useGlassProps';
 import {Theme} from '@/utils/themeUtils';
 import {SearchInput} from '@/components/SearchInput';
 import {LOCALES, LocaleInfo} from '@/i18n/locales';
@@ -37,14 +38,12 @@ async function reloadApp(): Promise<void> {
   DevSettings.reload();
 }
 
-export default function LanguageScreen() {
+export const LanguageSheet = () => {
   const {t} = useTranslation();
   const {theme} = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
   const preference = useLanguageStore(s => s.preference);
   const [query, setQuery] = useState('');
-  const rawHeaderHeight = useHeaderHeight();
-  const headerHeight = USE_GLASS ? rawHeaderHeight : 0;
 
   const rows: Row[] = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -107,12 +106,37 @@ export default function LanguageScreen() {
   };
 
   return (
-    <View style={[styles.container, {paddingTop: headerHeight}]}>
+    <ActionSheet
+      containerStyle={styles.sheetContainer}
+      indicatorStyle={styles.indicator}
+      gestureEnabled={true}>
+      <View style={styles.header}>
+        <View style={styles.headerSpacer} />
+        <Text style={styles.headerTitle}>{t('settings.language')}</Text>
+        <Pressable
+          style={styles.doneButton}
+          onPress={() => SheetManager.hide('language-picker')}
+          accessibilityRole="button"
+          hitSlop={8}>
+          <Feather
+            name="x"
+            size={moderateScale(20)}
+            color={theme.colors.text}
+          />
+        </Pressable>
+      </View>
       <View style={styles.searchWrap}>
         <SearchInput
           value={query}
           onChangeText={setQuery}
           placeholder={t('language.search')}
+          showCancelButton={false}
+          iconColor={theme.colors.textSecondary}
+          textColor={theme.colors.text}
+          placeholderTextColor={Color(theme.colors.text).alpha(0.45).toString()}
+          backgroundColor={Color(theme.colors.text).alpha(0.06).toString()}
+          borderColor={Color(theme.colors.text).alpha(0.12).toString()}
+          containerStyle={styles.searchInputContainer}
         />
       </View>
       <FlatList
@@ -121,15 +145,50 @@ export default function LanguageScreen() {
         renderItem={renderItem}
         keyboardShouldPersistTaps="handled"
         contentContainerStyle={styles.list}
+        style={styles.listFlex}
       />
-    </View>
+    </ActionSheet>
   );
-}
+};
+
+const SCREEN_HEIGHT = Dimensions.get('window').height;
 
 const createStyles = (theme: Theme) =>
   ScaledSheet.create({
-    container: {flex: 1, backgroundColor: theme.colors.background},
+    sheetContainer: {
+      backgroundColor: theme.colors.background,
+      borderTopLeftRadius: moderateScale(20),
+      borderTopRightRadius: moderateScale(20),
+      paddingTop: moderateScale(8),
+      height: SCREEN_HEIGHT * 0.85,
+      borderTopWidth: StyleSheet.hairlineWidth,
+      borderLeftWidth: StyleSheet.hairlineWidth,
+      borderRightWidth: StyleSheet.hairlineWidth,
+      borderColor: Color(theme.colors.text).alpha(0.08).toString(),
+    },
+    indicator: {
+      backgroundColor: Color(theme.colors.text).alpha(0.3).toString(),
+      width: moderateScale(40),
+      height: 2.5,
+    },
+    header: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      paddingVertical: moderateScale(12),
+      paddingHorizontal: moderateScale(16),
+    },
+    headerSpacer: {width: moderateScale(28)},
+    headerTitle: {
+      flex: 1,
+      textAlign: 'center',
+      fontSize: moderateScale(20),
+      fontFamily: 'Manrope-Bold',
+      color: theme.colors.text,
+    },
+    doneButton: {width: moderateScale(28), alignItems: 'flex-end'},
     searchWrap: {paddingHorizontal: '16@s', paddingVertical: '8@vs'},
+    searchInputContainer: {paddingHorizontal: 0, paddingVertical: 0},
+    listFlex: {flex: 1},
     list: {paddingBottom: '40@vs'},
     row: {
       flexDirection: 'row',
