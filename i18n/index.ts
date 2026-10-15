@@ -54,7 +54,22 @@ function applyDirection(code: string): boolean {
   return false;
 }
 
+// Register react-i18next and initialise English synchronously at import time. Components such
+// as RootLayout call useTranslation on first render, before initI18n() has finished; without an
+// instance there the web bundle throws and the page stays blank.
 let initialized = false;
+if (!i18next.isInitialized) {
+  i18next.use(initReactI18next).init({
+    resources: {[DEFAULT_LOCALE]: {translation: loadBundle(DEFAULT_LOCALE)}},
+    lng: DEFAULT_LOCALE,
+    fallbackLng: DEFAULT_LOCALE,
+    interpolation: {escapeValue: false},
+    returnNull: false,
+    compatibilityJSON: 'v4',
+    react: {useSuspense: false},
+    initAsync: false,
+  });
+}
 
 /** Initialise i18next. Call once before first render (after store rehydrate). */
 export async function initI18n(): Promise<{
@@ -64,22 +79,11 @@ export async function initI18n(): Promise<{
   await useLanguageStore.persist.rehydrate?.();
   const locale = resolveLocale(useLanguageStore.getState().preference);
   const needsReload = applyDirection(locale);
-  const resources: Record<string, {translation: Record<string, unknown>}> = {
-    [DEFAULT_LOCALE]: {translation: loadBundle(DEFAULT_LOCALE)},
-  };
-  if (locale !== DEFAULT_LOCALE)
-    resources[locale] = {translation: loadBundle(locale)};
   if (!initialized) {
-    await i18next.use(initReactI18next).init({
-      resources,
-      lng: locale,
-      fallbackLng: DEFAULT_LOCALE,
-      interpolation: {escapeValue: false},
-      returnNull: false,
-      compatibilityJSON: 'v4',
-      react: {useSuspense: false},
-    });
     initialized = true;
+    if (locale !== DEFAULT_LOCALE) {
+      await changeLocale(locale);
+    }
   } else {
     await changeLocale(locale);
   }
