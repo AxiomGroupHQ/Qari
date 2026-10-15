@@ -10,14 +10,14 @@
 module.exports = {
   appName: 'Istima',
   arabicName: 'استماع',
-  contentTagline: 'Quran • Recitations • Tafsir • Knowledge',
+  contentTagline: 'Quran • Bayan • Tafsir • Knowledge',
   reflectionTagline: 'Listen. Reflect. Remember Allah.',
   websiteUrl: 'https://istima.app',
   appSlug: 'istima',
   urlScheme: 'istima',
   bundleId: {
-    ios: 'com.bayaan.app',
-    android: 'com.bayaan.app',
+    ios: 'com.istima.app',
+    android: 'com.istima.app',
   },
   supportUrl: 'https://istima.app/support',
   termsUrl: 'https://istima.app/terms',
