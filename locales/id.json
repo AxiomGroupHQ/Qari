@@ -1,0 +1,714 @@
+{
+  "app": {
+    "errorInitializingPlayer": "Gagal memulai pemutar: {{message}}",
+    "errorLoadingFonts": "Gagal memuat font"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "Beranda ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "Semua",
+      "clearAll": "Hapus Semua",
+      "hasPhoto": "Ada foto"
+    },
+    "filterModal": {
+      "apply": "Terapkan",
+      "filterReciters": "Filter Qari",
+      "recitationStyles": "Gaya Bacaan",
+      "reset": "Atur Ulang",
+      "rewayatTypes": "Jenis Riwayat"
+    },
+    "recitersFound_other": "{{count}} qari ditemukan dengan filter saat ini"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "Surah Favorit"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "Beri penanda pada ayat untuk melihatnya di sini",
+      "bookmarks": "Penanda",
+      "noBookmarksYet": "Belum ada penanda",
+      "removeBookmark": "Hapus Penanda"
+    },
+    "collectionSearchModal": {
+      "rewayat": "Riwayat",
+      "searchPlaylistsRecitersSurahsRewayat": "Cari playlist, qari, surah, riwayat...",
+      "searchPlaylistsRecitersSurahsRewayat2": "Cari playlist, qari, surah, riwayat, dan unduhan",
+      "searchYourCollection": "Cari di Koleksi Anda",
+      "searching": "Mencari...",
+      "tryDifferentKeywords": "Coba kata kunci lain"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "Unduh surah untuk melihatnya di sini",
+      "noDownloadsYet": "Belum ada unduhan",
+      "playAll": "Putar Semua"
+    },
+    "favoritereciters": {
+      "addReciters": "Tambah Qari",
+      "addRecitersToSeeThem": "Tambahkan qari untuk melihatnya di sini",
+      "noFavoriteRecitersYet": "Belum ada qari favorit",
+      "removeFromFavorites": "Hapus dari Favorit",
+      "searchFavoriteReciters": "Cari qari favorit"
+    },
+    "index": {
+      "addToCollection": "Tambah ke Koleksi",
+      "bookmarks": "Penanda",
+      "createYourFirstPlaylist": "Buat playlist pertama Anda",
+      "downloads": "Unduhan",
+      "items_other": "{{count}} item",
+      "loved": "Favorit",
+      "noBookmarksYet": "Belum ada penanda",
+      "noDownloadsYet": "Belum ada unduhan",
+      "noFavoritesYet": "Belum ada favorit",
+      "noLovedSurahsYet": "Belum ada surah favorit",
+      "noNotesYet": "Belum ada catatan",
+      "noUploadsYet": "Belum ada unggahan",
+      "notes": "Catatan",
+      "playlists": "Playlist",
+      "reciters": "Qari",
+      "uploads": "Unggahan"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "Semua surah favorit sudah diunduh.",
+      "allLovedSurahsHaveBeen": "Semua surah favorit telah diunduh.",
+      "downloadError": "Kesalahan Unduhan",
+      "loveSurahsToSeeThem": "Sukai surah untuk melihatnya di sini",
+      "noLovedSurahsYet": "Belum ada surah favorit",
+      "someDownloadsMayHaveFailed": "Beberapa unduhan mungkin gagal.",
+      "unloveAllSurahs": "Batalkan Suka Semua Surah"
+    },
+    "notes": {
+      "addNotesToVersesTo": "Tambahkan catatan pada ayat untuk melihatnya di sini",
+      "editNote": "Ubah Catatan",
+      "noNotesYet": "Belum ada catatan",
+      "notes": "Catatan"
+    },
+    "playlistModal": {
+      "name": "Nama"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "Buat playlist untuk melihatnya di sini",
+      "noPlaylistsYet": "Belum ada playlist",
+      "playlists": "Playlist"
+    },
+    "uploads": {
+      "removeAllUploads": "Hapus Semua Unggahan",
+      "uploadRecitationsToSeeThem": "Unggah bacaan untuk melihatnya di sini"
+    }
+  },
+  "common": {
+    "1Time": "1 kali",
+    "2Times": "2 kali",
+    "3Times": "3 kali",
+    "addToCollection": "Tambah ke Koleksi",
+    "addToQueue": "Tambah ke Antrean",
+    "allSurahs": "Semua Surah",
+    "alreadyDownloaded": "Sudah Diunduh",
+    "arabic": "Arab",
+    "asc": "Naik",
+    "browseAll": "Jelajahi Semua",
+    "browseAllReciters": "Jelajahi Semua Qari",
+    "cancel": "Batal",
+    "clear": "Bersihkan",
+    "copyToClipboard": "Salin ke Papan Klip",
+    "createNewPlaylist": "Buat Playlist Baru",
+    "defaultReciter": "Qari Default",
+    "delete": "Hapus",
+    "deleteNote": "Hapus Catatan",
+    "deleteRecitation": "Hapus Bacaan",
+    "desc": "Turun",
+    "downloadComplete": "Unduhan Selesai",
+    "downloadFailed": "Unduhan Gagal",
+    "downloads": "Unduhan",
+    "editDetails": "Ubah Detail",
+    "error": "Kesalahan",
+    "favoriteReciters": "Qari Favorit",
+    "followAlong": "Ikuti Bacaan",
+    "from": "Dari",
+    "goToReciter": "Buka Qari",
+    "goToVerse": "Buka ayat",
+    "learnAboutSurah": "Pelajari Surah",
+    "loading": "Memuat...",
+    "loop": "Ulangi",
+    "loved": "Favorit",
+    "mushafSettings": "Pengaturan Mushaf",
+    "next": "Berikutnya",
+    "noRecitersFound": "Qari tidak ditemukan",
+    "noResultsFound": "Hasil tidak ditemukan",
+    "noUploadsYet": "Belum ada unggahan",
+    "play": "Putar",
+    "playEachVerse": "Putar setiap ayat",
+    "playNow": "Putar Sekarang",
+    "playSpeed": "Kecepatan putar",
+    "playTheRange": "Putar rentang",
+    "playlistName": "Nama Playlist",
+    "prev": "Sebelumnya",
+    "readingTheme": "Tema Baca",
+    "recentSearches": "Pencarian terbaru",
+    "reciter": "Qari",
+    "reciterChoice": "Pilihan Qari",
+    "reciters": "Qari",
+    "remove": "Hapus",
+    "removeAllDownloads": "Hapus Semua Unduhan",
+    "removeHighlight": "Hapus Sorotan",
+    "rev": "Balik",
+    "save": "Simpan",
+    "search": "Cari",
+    "searchReciters": "Cari qari...",
+    "searchSurahs": "Cari surah",
+    "share": "Bagikan",
+    "shareAsImage": "Bagikan sebagai Gambar",
+    "shareAsText": "Bagikan sebagai Teks",
+    "sharedPhrases": "Frasa Serupa",
+    "showBasmallah": "Tampilkan Basmalah",
+    "stop": "Berhenti",
+    "storage": "Penyimpanan",
+    "surah": "Surah",
+    "surahs": "Surah",
+    "to": "Sampai",
+    "translation": "Terjemahan",
+    "translationsTafaseer": "Terjemahan & Tafsir",
+    "transliteration": "Transliterasi",
+    "uploads": "Unggahan",
+    "useDefaultReciter": "Gunakan Qari Default",
+    "verseReference": "Rujukan Ayat",
+    "verses": "Ayat",
+    "whatSNew": "Yang Baru",
+    "wordByWord": "Kata per Kata",
+    "writeYourNoteHere": "Tulis catatan Anda di sini...",
+    "yourPlaylists": "Playlist Anda"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "Putar semua surah"
+    },
+    "searchHeader": {
+      "searchSurahs": "Cari Surah"
+    },
+    "searchView": {
+      "noSurahsFound": "Surah tidak ditemukan"
+    },
+    "surahList": {
+      "noSurahsAvailable": "Tidak ada surah tersedia"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "Tambah Bacaan",
+      "uploadRecitationsToSeeThem": "Unggah bacaan untuk melihatnya di sini"
+    }
+  },
+  "downloads": {
+    "subtitle_other": "Diunduh • {{count}} surah"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "Maaf.. terjadi kesalahan"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "Jelajahi semua 114 surah"
+    },
+    "savedAdhkarHero": {
+      "saved": "Tersimpan",
+      "yourCollection": "Koleksi Anda"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "SURAH HARI INI"
+    },
+    "surahsHero": {
+      "number": "Nomor"
+    }
+  },
+  "language": {
+    "later": "Nanti",
+    "restartMessage": "Mulai ulang aplikasi untuk menerapkan arah tata letak baru.",
+    "restartNow": "Mulai ulang sekarang",
+    "restartTitle": "Perlu mulai ulang",
+    "search": "Cari bahasa",
+    "system": "Bahasa perangkat"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "Lanjutkan"
+    },
+    "whatsNewOnboarding": {
+      "skip": "Lewati"
+    }
+  },
+  "mushaf": {
+    "juz": "Juz {{juz}}",
+    "loadingMushaf": "Memuat Mushaf…",
+    "main": {
+      "mushafSettings": "Pengaturan mushaf"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "Ganti qari",
+      "changeReciter2": "Ganti Qari",
+      "nextAyah": "Ayat berikutnya",
+      "playbackOptions": "Opsi pemutaran",
+      "previousAyah": "Ayat sebelumnya"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "Cari surah, ayat, halaman, atau juz",
+      "recentReads": "BACAAN TERAKHIR",
+      "searchSurahsPagesOrJuz": "Cari surah, halaman, atau juz...",
+      "searchTheMushaf": "Cari di Mushaf"
+    },
+    "options": "Opsi",
+    "page": "Halaman {{page}}",
+    "pageAndSurah": "Halaman {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "Mushaf tidak dapat dimuat.",
+    "tryAgain": "Coba lagi"
+  },
+  "mushafSettings": {
+    "rabbHelper": "Menyorot nama Allah dan sebutan ilahi seperti Rabb di mushaf."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "Sorotan bergantian menurut bagian tematik",
+    "arabicFontSize": "Ukuran Font Arab",
+    "bold": "Tebal",
+    "book": "Buku",
+    "colorLegend": "Legenda warna",
+    "currentlyReading": "Sedang dibaca",
+    "divineNames": "NAMA-NAMA ILAHI",
+    "fontSize": "Ukuran Font",
+    "fullscreen": "Layar Penuh",
+    "hamzaReplacedByLongVowel": "Hamzah diganti huruf mad",
+    "heavyLamInAllahAfter": "Lam tebal pada lafaz Allah setelah huruf isti'la",
+    "highlightAllahRabb": "Sorot Allah / Rabb",
+    "horizontal": "Horizontal",
+    "ibdal": "Ibdal",
+    "list": "Daftar",
+    "loadingSample": "Memuat contoh...",
+    "maddAlBadal": "Mad Badal",
+    "maximumProminence": "Paling menonjol",
+    "medium": "Sedang",
+    "modernMadinahPrintedPipeline": "Cetakan modern Madinah",
+    "mushaf": "Mushaf",
+    "normal": "Normal",
+    "originalMushafWeight": "Ketebalan mushaf asli",
+    "pageDesign": "DESAIN HALAMAN",
+    "prolongedVowelAfterHamza": "Vokal panjang setelah hamzah",
+    "readingTheme": "TEMA BACA",
+    "scrollDirection": "ARAH GULIR",
+    "showDifferences": "Tampilkan Perbedaan",
+    "silah": "Shilah",
+    "slightlyMoreProminent": "Sedikit lebih menonjol",
+    "softenedHamzaPronunciation": "Pelafalan hamzah yang dilunakkan",
+    "subcontinentNastaliqStyle": "Gaya Nastaliq anak benua",
+    "taghlizAlLam": "Taghlizh Lam",
+    "tajweedColoring": "Pewarnaan Tajwid",
+    "tashilMusahhala": "Tasyhil / Musahhalah",
+    "textPreviewNotYetAvailable": "PRATINJAU TEKS BELUM TERSEDIA",
+    "textThickness": "KETEBALAN TEKS",
+    "thematicHighlighting": "Sorotan Tematik",
+    "trailingVowelOrMoodChange": "Hanya perubahan vokal akhir atau i'rab",
+    "usingSaheehInternationalTranslationWith": "Digunakan: Terjemahan Saheeh International dengan catatan kaki",
+    "vertical": "Vertikal",
+    "viewType": "JENIS TAMPILAN",
+    "vowelMoodShift": "Perubahan vokal / i'rab",
+    "wordByWord": "KATA PER KATA",
+    "wordVariant": "Varian kata"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "Server tidak dapat dijangkau",
+    "connectionRestored": "Koneksi pulih",
+    "noInternetConnection": "Tidak ada koneksi internet",
+    "showingCachedData": "Menampilkan data tersimpan"
+  },
+  "organize": {
+    "createReciter": "Buat \"{{name}}\""
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "Antrean",
+      "queueIsEmpty": "Antrean kosong"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "Beri tag bacaan ini untuk melihat teks surah dan detailnya"
+    }
+  },
+  "playlist": {
+    "subtitle_other": "Playlist • {{count}} surah"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "Tidak ada surah di playlist ini"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "Catatan kaki"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "Bacaan yang dipilih khusus untuk saat ini",
+      "discover": "Temukan",
+      "discoverANewVoice": "Temukan suara baru",
+      "explore": "Jelajah",
+      "exploreTheUnexpected": "Jelajahi hal tak terduga",
+      "hearSomethingNew": "Dengarkan yang baru",
+      "letTheQuranSurpriseYou": "Biarkan Al-Qur'an mengejutkan Anda",
+      "randomMix": "Campuran Acak",
+      "randomRecitation": "Bacaan Acak",
+      "shuffleListen": "Acak & Dengarkan",
+      "surpriseMe": "Kejutkan saya"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "Perubahan mode tampilan berlaku untuk seluruh aplikasi"
+  },
+  "reciterBrowse": {
+    "allReciters": "Semua Qari",
+    "browseReciters": "Jelajahi Qari",
+    "favorites": "Favorit"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "Tidak ada unduhan untuk qari ini"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "Unggahan Saya"
+    }
+  },
+  "recitersView": {
+    "adhkar": "Dzikir",
+    "bestForMemorization": "Terbaik untuk Menghafal",
+    "bestForTajweed": "Terbaik untuk Tajwid",
+    "continueListening": "Lanjutkan Mendengarkan",
+    "exclusives": "Eksklusif",
+    "exploreByRewayah": "Jelajahi menurut Riwayat",
+    "featuredReciters": "Qari Pilihan",
+    "fromYourCollection": "Dari Koleksi Anda",
+    "myRecitations": "Bacaan Saya",
+    "newToQuranStartHere": "Baru mengenal Al-Qur'an? Mulai dari Sini",
+    "seeMore": "Lihat Lainnya",
+    "yourFavorites": "Favorit Anda"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "Aktif",
+      "activeTafseer": "TAFSIR AKTIF",
+      "activeTranslation": "TERJEMAHAN AKTIF",
+      "deleteTafseer": "Hapus Tafsir",
+      "deleteTranslation": "Hapus Terjemahan",
+      "noTafaseerFound": "Tafsir tidak ditemukan",
+      "noTranslationsFound": "Terjemahan tidak ditemukan",
+      "unableToDownloadThisTafseer": "Tidak dapat mengunduh tafsir ini. Periksa koneksi internet Anda dan coba lagi.",
+      "unableToDownloadThisTranslation": "Tidak dapat mengunduh terjemahan ini. Periksa koneksi internet Anda dan coba lagi."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "Tidak ada pencarian terbaru",
+      "tryDifferentKeywordsOrCheck": "Coba kata kunci lain atau periksa ejaan",
+      "yourSearchHistoryWillAppear": "Riwayat pencarian Anda akan muncul di sini"
+    },
+    "surahsOrReciters": "Cari surah atau qari"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "Kontrol Audio Lanjutan",
+      "browseByJuz": "Jelajahi menurut Juz",
+      "createAndManageYourOwn": "Buat dan kelola playlist pribadi dari bacaan favorit Anda",
+      "crystalClearRecitationsFromThe": "Bacaan jernih dari qari terbaik dunia dengan streaming yang dioptimalkan",
+      "curatedCollections": "Koleksi Pilihan",
+      "customPlaylists": "Playlist Kustom",
+      "customizeThemesAccentColorsAnd": "Sesuaikan tema, warna aksen, dan pengaturan audio sesuai selera Anda",
+      "downloadSurahsForOfflineListening": "Unduh surah untuk didengarkan offline kapan saja, di mana saja tanpa koneksi internet",
+      "easilyNavigateThroughTheQuran": "Navigasi Al-Qur'an dengan mudah melalui pengelompokan berdasarkan Juz",
+      "features": "FITUR",
+      "highQualityAudio": "Audio Berkualitas Tinggi",
+      "listenReflectRememberAllah": "Dengarkan. Renungkan. Ingatlah Allah.",
+      "offlineDownloads": "Unduhan Offline",
+      "ourCommitment": "Komitmen Kami",
+      "ourMission": "Misi Kami",
+      "personalization": "Personalisasi",
+      "precisePlaybackControlWithContinuous": "Kontrol pemutaran yang presisi dengan putar berkelanjutan dan kecepatan bacaan yang dapat diatur",
+      "quranBayanTafsirKnowledgeOur": "Al-Qur'an • Bayan • Tafsir • Ilmu. Tujuan kami adalah menjadikan mendengarkan dan merenung bagian dari kehidupan sehari-hari: di rumah, dalam perjalanan, dan di mana pun Anda punya waktu untuk mengingat Allah.",
+      "readListenAndReflect": "Baca, Dengarkan, dan Renungkan",
+      "readTheMushafExploreTranslations": "Baca Mushaf, jelajahi terjemahan dan tafsir, simpan ayat dan catatan, dan kembali ke dzikir harian. Pilih qari Anda, buat playlist, dan bentuk pengalaman mendengarkan yang sesuai dengan hari Anda. Fitur yang tersedia berbeda di tiap perangkat; aplikasi native juga mendukung unduhan untuk mendengarkan secara offline.",
+      "thoughtfullyOrganizedSurahsForDifferent": "Surah yang disusun dengan cermat untuk berbagai kesempatan dan tema",
+      "weCareAboutTheAccuracy": "Kami peduli pada keakuratan konten suci, desain yang santun, dan akses yang andal. Kami terus menyempurnakan ISTIMA dengan penuh perhatian kepada para penggunanya. Semoga Allah menerima usaha ini dan menjadikannya bermanfaat bagi siapa pun yang mendengarkan, membaca, dan merenung."
+    },
+    "aboutApp": "Tentang {{name}}",
+    "appearance": "TAMPILAN",
+    "defaultreciter": {
+      "changeDefaultReciter": "GANTI QARI DEFAULT"
+    },
+    "developer": "PENGEMBANG",
+    "floatingDevMenu": "Menu Pengembang Mengambang",
+    "language": "Bahasa",
+    "languageDescription": "Pilih bahasa aplikasi",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "Selalu gunakan qari default pilihan Anda",
+      "askEveryTime": "Tanya Setiap Kali",
+      "chooseAReciterEachTime": "Pilih qari setiap kali memutar",
+      "chooseHowYouWantTo": "Pilih cara memilih qari saat memutar Surah",
+      "defaultSelectionMethod": "METODE PEMILIHAN DEFAULT",
+      "searchThroughOurCompleteCollection": "Cari di seluruh koleksi qari kami",
+      "selectionPreference": "PREFERENSI PEMILIHAN"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "Semua unduhan telah dihapus.",
+      "areYouSureYouWant": "Yakin ingin menghapus semua konten yang diunduh? Tindakan ini tidak dapat dibatalkan.",
+      "cache": "Cache",
+      "cacheHasBeenCleared": "Cache telah dibersihkan.",
+      "clearCache": "Bersihkan cache",
+      "failedToClearCache": "Gagal membersihkan cache.",
+      "failedToRemoveDownloads": "Gagal menghapus unduhan.",
+      "free": "Kosong",
+      "loadingStorageInformation": "Memuat informasi penyimpanan...",
+      "manageStorage": "KELOLA PENYIMPANAN",
+      "otherApps": "Aplikasi lain",
+      "removeAllDownloads": "Hapus semua unduhan",
+      "removeAllTheQuranContent": "Hapus semua konten Al-Qur'an yang Anda unduh untuk penggunaan offline.",
+      "storageBreakdown": "RINCIAN PENYIMPANAN",
+      "success": "Berhasil",
+      "thisWillClearYourCache": "Ini akan membersihkan cache Anda. Unduhan Anda tidak akan dihapus.",
+      "youCanFreeUpStorage": "Anda dapat mengosongkan penyimpanan dengan membersihkan cache. Unduhan Anda tidak akan dihapus."
+    },
+    "themePicker": {
+      "auto": "Otomatis",
+      "dark": "Gelap",
+      "light": "Terang"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "Tidak ada catatan perubahan"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "Tentang {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "Tambah Qari Favorit",
+      "uploadRecitation": "Unggah Bacaan"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "Suara Latar",
+      "none": "Tidak ada",
+      "volume": "Volume"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "mis., Bacaan Pagi"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "Hapus Unduhan"
+    },
+    "favoriteRecitersSheet": {
+      "done": "Selesai"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "Tambah ke koleksi",
+      "addToQueue": "Tambah ke antrean",
+      "continuePlaying": "Lanjutkan memutar",
+      "goToReciter": "Buka qari",
+      "removeFromRecents": "Hapus dari terbaru"
+    },
+    "mushafLayoutSheet": {
+      "back": "Kembali"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "Ayat Akhir",
+      "playbackSettings": "Pengaturan Pemutaran",
+      "selectRange": "Pilih Rentang",
+      "startingVerse": "Ayat Awal"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "Pengaturan Ulang",
+      "start": "Mulai",
+      "verseRange": "Rentang ayat"
+    },
+    "organizeRecitationSheet": {
+      "category": "Kategori",
+      "customReciter": "Qari kustom",
+      "duA": "Doa",
+      "eGMorningAdhkar": "mis., Dzikir Pagi",
+      "lecture": "Kajian",
+      "moreOptions": "Opsi Lainnya",
+      "other": "Lainnya",
+      "recording": "Rekaman",
+      "rewayah": "Riwayat",
+      "searchSurahs": "Cari surah...",
+      "style": "Gaya",
+      "tafsir": "Tafsir",
+      "title": "Judul",
+      "type": "Jenis",
+      "verseRangeOptional": "Rentang ayat (opsional)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "Kecepatan Pemutaran"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "Semua item di playlist ini sudah diunduh.",
+      "anErrorOccurredWhileDownloading": "Terjadi kesalahan saat mengunduh playlist. Silakan coba lagi.",
+      "deletePlaylist": "Hapus Playlist",
+      "downloadingPlaylist": "Mengunduh playlist...",
+      "editPlaylist": "Ubah Playlist",
+      "emptyPlaylist": "Playlist Kosong",
+      "thisPlaylistIsEmpty": "Playlist ini kosong."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "Tentang Riwayat",
+      "availableRewayat": "Riwayat yang Tersedia"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "Gagal menambahkan surah ke playlist",
+      "failedToCreatePlaylist": "Gagal membuat playlist",
+      "noPlaylistsYetCreateYour": "Belum ada playlist. Buat playlist pertama Anda di atas!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "Tanya setiap kali",
+      "randomReciter": "Qari Acak",
+      "selectReciter": "Pilih Qari"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "Tidak ditemukan ayat serupa untuk ayat ini.",
+      "similarWording": "Redaksi Serupa"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "Timer Tidur",
+      "turnOffTimer": "Matikan Timer"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "Hapus dari Playlist"
+    },
+    "verseActionsSheet": {
+      "addNote": "Tambah Catatan",
+      "copy": "Salin",
+      "repeat": "Ulangi",
+      "similarVerses": "Ayat Serupa",
+      "tafseer": "Tafsir",
+      "theme": "Tema"
+    },
+    "verseCopySheet": {
+      "copyOptions": "Opsi Salin",
+      "selectWhatToCopy": "Pilih yang akan disalin"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "Warna Sorotan"
+    },
+    "verseShareSheet": {
+      "shareVerse": "Bagikan Ayat"
+    }
+  },
+  "similarVerses": {
+    "foundIn_other": "Ditemukan di {{count}} ayat"
+  },
+  "surahItem": {
+    "moreOptions": "Opsi lainnya",
+    "opensMenuWithAdditionalActions": "Membuka menu dengan tindakan tambahan untuk Surah ini",
+    "tapToPlaySurah": "Ketuk untuk memutar Surah"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "ID playlist tidak valid",
+      "playlistNotFound": "Playlist tidak ditemukan"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "Tidak ditemukan qari yang memiliki semua surah dalam playlist ini. Coba playlist lain.",
+      "failedToPlayPlaylistPlease": "Gagal memutar playlist. Silakan coba lagi.",
+      "failedToPlayTrackPlease": "Gagal memutar trek. Silakan coba lagi.",
+      "failedToShufflePlaylistPlease": "Gagal mengacak playlist. Silakan coba lagi.",
+      "noReciterAvailable": "Tidak Ada Qari Tersedia",
+      "noSurahsInThisPlaylist": "Tidak ada surah di playlist ini"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "Akun",
+      "appData": "Aplikasi & Data",
+      "audioPlayback": "Audio & Pemutaran",
+      "chooseYourPreferredReciter": "Pilih qari pilihan Anda",
+      "customizeQuranDisplayOptions": "Sesuaikan opsi tampilan Al-Qur'an",
+      "customizeReciterSelection": "Sesuaikan pemilihan qari",
+      "featureRequests": "Permintaan Fitur",
+      "feedback": "Masukan",
+      "helpSupport": "Bantuan & Dukungan",
+      "learnMoreAboutOurMission": "Pelajari lebih lanjut misi kami",
+      "manageQuranTranslationsAndCommentary": "Kelola terjemahan dan tafsir Al-Qur'an",
+      "privacyPolicy": "Kebijakan Privasi",
+      "quran": "Al-Qur'an",
+      "readOurTermsOfService": "Baca ketentuan layanan kami",
+      "seeWhatSNewIn": "Lihat yang baru di versi ini",
+      "shareYourExperienceWithOthers": "Bagikan pengalaman Anda kepada orang lain",
+      "showTheFloatingDeveloperTools": "Tampilkan tombol alat pengembang mengambang",
+      "suggestImprovementsAndNewFeatures": "Usulkan perbaikan dan fitur baru",
+      "termsOfService": "Ketentuan Layanan",
+      "viewAndManageStorageUsage": "Lihat dan kelola penggunaan penyimpanan",
+      "viewOurPrivacyPolicy": "Lihat kebijakan privasi kami",
+      "writeAReview": "Tulis Ulasan"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "Batal",
+    "close": "Tutup",
+    "collection": "Koleksi",
+    "download": "Unduh",
+    "downloads": "Unduhan",
+    "error": "Terjadi kesalahan",
+    "favorites": "Favorit",
+    "home": "Beranda",
+    "language": "Bahasa",
+    "library": "Pustaka",
+    "loading": "Memuat...",
+    "noResults": "Hasil tidak ditemukan",
+    "offline": "Anda sedang offline",
+    "pause": "Jeda",
+    "play": "Putar",
+    "retry": "Coba lagi",
+    "save": "Simpan",
+    "search": "Cari",
+    "settings": "Pengaturan",
+    "surahs": "Surah"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "PILIH KONTEN"
+    },
+    "highlightContent": {
+      "chooseColor": "PILIH WARNA"
+    },
+    "noteContent": {
+      "saveNote": "Simpan Catatan"
+    },
+    "shareContent": {
+      "shareLink": "Bagikan Tautan"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "Tidak ditemukan ayat serupa untuk ayat ini.",
+      "sharedPhrases": "FRASA SERUPA",
+      "similarWording": "REDAKSI SERUPA"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "Belum Ada Tafsir yang Diunduh",
+      "tafseerNotAvailableForThis": "Tafsir tidak tersedia untuk ayat ini",
+      "tapHereToDownloadA": "Ketuk di sini untuk mengunduh tafsir dan melihat penjelasan."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "Tidak ada data tematik untuk ayat ini.",
+      "passage": "Bagian"
+    },
+    "translationContent": {
+      "switch": "Ganti",
+      "translationNotAvailable": "Terjemahan tidak tersedia"
+    }
+  },
+  "version": {
+    "label": "Versi {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "Yang baru di"
+  },
+  "wordDetail": {
+    "context": "Ayat {{surah}}:{{ayah}} · Kata {{position}} dari {{total}}"
+  }
+}
