@@ -26,7 +26,7 @@ module.exports = {
   expo: {
     name: branding.appName, // @ai
     slug: branding.appSlug, // @ai
-    scheme: 'istima', // Legacy bayaan links remain registered on mobile. @ai
+    scheme: branding.urlScheme, // Retain legacy bayaan URL handling for existing installations. @ai
     description: branding.contentTagline + '. ' + branding.reflectionTagline, // @ai
     web: {name: branding.appName, favicon: './assets/images/icon.png'}, // @ai
     version: getVersionString(),
@@ -60,7 +60,7 @@ module.exports = {
         UIBackgroundModes: ['audio', 'remote-notification'],
         CFBundleURLTypes: [
           {
-            CFBundleURLSchemes: ['istima', 'bayaan'],
+            CFBundleURLSchemes: [branding.urlScheme, 'bayaan'],
           },
         ],
         NSPrivacyPolicyURL: PRIVACY_POLICY_URL,
