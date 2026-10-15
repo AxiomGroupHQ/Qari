@@ -1,0 +1,719 @@
+{
+  "app": {
+    "errorInitializingPlayer": "خطا در راه‌اندازی پخش‌کننده: {{message}}",
+    "errorLoadingFonts": "خطا در بارگیری فونت‌ها"
+  },
+  "branding": {
+    "siteHeader": {
+      "web": {
+        "istimaHome": "صفحهٔ اصلی ISTIMA"
+      }
+    }
+  },
+  "browse": {
+    "browseReciters": {
+      "all": "همه",
+      "clearAll": "پاک کردن همه",
+      "hasPhoto": "دارای عکس"
+    },
+    "filterModal": {
+      "apply": "اعمال",
+      "filterReciters": "فیلتر قاریان",
+      "recitationStyles": "سبک‌های تلاوت",
+      "reset": "بازنشانی",
+      "rewayatTypes": "انواع روایت"
+    },
+    "recitersFound_one": "{{count}} قاری با فیلترهای فعلی یافت شد",
+    "recitersFound_other": "{{count}} قاری با فیلترهای فعلی یافت شد"
+  },
+  "cards": {
+    "lovedCard": {
+      "lovedSurahs": "سوره‌های محبوب"
+    }
+  },
+  "collection": {
+    "bookmarks": {
+      "bookmarkVersesToSeeThem": "آیات را نشان‌گذاری کنید تا اینجا ببینید",
+      "bookmarks": "نشانک‌ها",
+      "noBookmarksYet": "هنوز نشانکی نیست",
+      "removeBookmark": "حذف نشانک"
+    },
+    "collectionSearchModal": {
+      "rewayat": "روایت",
+      "searchPlaylistsRecitersSurahsRewayat": "جستجوی فهرست پخش، قاری، سوره، روایت...",
+      "searchPlaylistsRecitersSurahsRewayat2": "جستجوی فهرست پخش، قاری، سوره، روایت و دانلودها",
+      "searchYourCollection": "جستجو در مجموعهٔ شما",
+      "searching": "در حال جستجو...",
+      "tryDifferentKeywords": "کلمات دیگری امتحان کنید"
+    },
+    "downloads": {
+      "downloadSurahsToSeeThem": "سوره‌ها را دانلود کنید تا اینجا ببینید",
+      "noDownloadsYet": "هنوز دانلودی نیست",
+      "playAll": "پخش همه"
+    },
+    "favoritereciters": {
+      "addReciters": "افزودن قاری",
+      "addRecitersToSeeThem": "قاریان را اضافه کنید تا اینجا ببینید",
+      "noFavoriteRecitersYet": "هنوز قاری مورد علاقه‌ای نیست",
+      "removeFromFavorites": "حذف از موارد دلخواه",
+      "searchFavoriteReciters": "جستجوی قاریان دلخواه"
+    },
+    "index": {
+      "addToCollection": "افزودن به مجموعه",
+      "bookmarks": "نشانک‌ها",
+      "createYourFirstPlaylist": "اولین فهرست پخش خود را بسازید",
+      "downloads": "دانلودها",
+      "items_one": "{{count}} مورد",
+      "items_other": "{{count}} مورد",
+      "loved": "محبوب",
+      "noBookmarksYet": "هنوز نشانکی نیست",
+      "noDownloadsYet": "هنوز دانلودی نیست",
+      "noFavoritesYet": "هنوز مورد دلخواهی نیست",
+      "noLovedSurahsYet": "هنوز سورهٔ محبوبی نیست",
+      "noNotesYet": "هنوز یادداشتی نیست",
+      "noUploadsYet": "هنوز بارگذاری‌ای نیست",
+      "notes": "یادداشت‌ها",
+      "playlists": "فهرست‌های پخش",
+      "reciters": "قاریان",
+      "uploads": "بارگذاری‌ها"
+    },
+    "loved": {
+      "allLovedSurahsAreAlready": "همهٔ سوره‌های محبوب قبلاً دانلود شده‌اند.",
+      "allLovedSurahsHaveBeen": "همهٔ سوره‌های محبوب دانلود شدند.",
+      "downloadError": "خطای دانلود",
+      "loveSurahsToSeeThem": "سوره‌ها را محبوب کنید تا اینجا ببینید",
+      "noLovedSurahsYet": "هنوز سورهٔ محبوبی نیست",
+      "someDownloadsMayHaveFailed": "ممکن است برخی دانلودها ناموفق بوده باشند.",
+      "unloveAllSurahs": "برداشتن علامت محبوب از همهٔ سوره‌ها"
+    },
+    "notes": {
+      "addNotesToVersesTo": "به آیات یادداشت اضافه کنید تا اینجا ببینید",
+      "editNote": "ویرایش یادداشت",
+      "noNotesYet": "هنوز یادداشتی نیست",
+      "notes": "یادداشت‌ها"
+    },
+    "playlistModal": {
+      "name": "نام"
+    },
+    "playlists": {
+      "createPlaylistsToSeeThem": "فهرست پخش بسازید تا اینجا ببینید",
+      "noPlaylistsYet": "هنوز فهرست پخشی نیست",
+      "playlists": "فهرست‌های پخش"
+    },
+    "uploads": {
+      "removeAllUploads": "حذف همهٔ بارگذاری‌ها",
+      "uploadRecitationsToSeeThem": "تلاوت‌ها را بارگذاری کنید تا اینجا ببینید"
+    }
+  },
+  "common": {
+    "1Time": "۱ بار",
+    "2Times": "۲ بار",
+    "3Times": "۳ بار",
+    "addToCollection": "افزودن به مجموعه",
+    "addToQueue": "افزودن به صف",
+    "allSurahs": "همهٔ سوره‌ها",
+    "alreadyDownloaded": "قبلاً دانلود شده",
+    "arabic": "عربی",
+    "asc": "صعودی",
+    "browseAll": "مرور همه",
+    "browseAllReciters": "مرور همهٔ قاریان",
+    "cancel": "لغو",
+    "clear": "پاک کردن",
+    "copyToClipboard": "کپی در کلیپ‌بورد",
+    "createNewPlaylist": "ساخت فهرست پخش جدید",
+    "defaultReciter": "قاری پیش‌فرض",
+    "delete": "حذف",
+    "deleteNote": "حذف یادداشت",
+    "deleteRecitation": "حذف تلاوت",
+    "desc": "نزولی",
+    "downloadComplete": "دانلود کامل شد",
+    "downloadFailed": "دانلود ناموفق بود",
+    "downloads": "دانلودها",
+    "editDetails": "ویرایش جزئیات",
+    "error": "خطا",
+    "favoriteReciters": "قاریان دلخواه",
+    "followAlong": "همراهی با تلاوت",
+    "from": "از",
+    "goToReciter": "رفتن به قاری",
+    "goToVerse": "رفتن به آیه",
+    "learnAboutSurah": "آشنایی با سوره",
+    "loading": "در حال بارگیری...",
+    "loop": "تکرار",
+    "loved": "محبوب",
+    "mushafSettings": "تنظیمات مصحف",
+    "next": "بعدی",
+    "noRecitersFound": "قاری‌ای یافت نشد",
+    "noResultsFound": "نتیجه‌ای یافت نشد",
+    "noUploadsYet": "هنوز بارگذاری‌ای نیست",
+    "play": "پخش",
+    "playEachVerse": "پخش هر آیه",
+    "playNow": "اکنون پخش کن",
+    "playSpeed": "سرعت پخش",
+    "playTheRange": "پخش محدوده",
+    "playlistName": "نام فهرست پخش",
+    "prev": "قبلی",
+    "readingTheme": "پوستهٔ مطالعه",
+    "recentSearches": "جستجوهای اخیر",
+    "reciter": "قاری",
+    "reciterChoice": "انتخاب قاری",
+    "reciters": "قاریان",
+    "remove": "حذف",
+    "removeAllDownloads": "حذف همهٔ دانلودها",
+    "removeHighlight": "حذف رنگ برجسته",
+    "rev": "معکوس",
+    "save": "ذخیره",
+    "search": "جستجو",
+    "searchReciters": "جستجوی قاریان...",
+    "searchSurahs": "جستجوی سوره‌ها",
+    "share": "اشتراک‌گذاری",
+    "shareAsImage": "اشتراک‌گذاری به‌صورت تصویر",
+    "shareAsText": "اشتراک‌گذاری به‌صورت متن",
+    "sharedPhrases": "عبارت‌های مشترک",
+    "showBasmallah": "نمایش بسم‌الله",
+    "stop": "توقف",
+    "storage": "فضای ذخیره‌سازی",
+    "surah": "سوره",
+    "surahs": "سوره‌ها",
+    "to": "تا",
+    "translation": "ترجمه",
+    "translationsTafaseer": "ترجمه‌ها و تفسیرها",
+    "transliteration": "آوانویسی",
+    "uploads": "بارگذاری‌ها",
+    "useDefaultReciter": "استفاده از قاری پیش‌فرض",
+    "verseReference": "ارجاع آیه",
+    "verses": "آیات",
+    "whatSNew": "تازه‌ها",
+    "wordByWord": "کلمه به کلمه",
+    "writeYourNoteHere": "یادداشت خود را اینجا بنویسید...",
+    "yourPlaylists": "فهرست‌های پخش شما"
+  },
+  "components": {
+    "actionButtons": {
+      "playAllSurahs": "پخش همهٔ سوره‌ها"
+    },
+    "searchHeader": {
+      "searchSurahs": "جستجوی سوره‌ها"
+    },
+    "searchView": {
+      "noSurahsFound": "سوره‌ای یافت نشد"
+    },
+    "surahList": {
+      "noSurahsAvailable": "سوره‌ای موجود نیست"
+    },
+    "uploadsTabContent": {
+      "addRecitation": "افزودن تلاوت",
+      "uploadRecitationsToSeeThem": "تلاوت‌ها را بارگذاری کنید تا اینجا ببینید"
+    }
+  },
+  "downloads": {
+    "subtitle_one": "دانلودشده • {{count}} سوره",
+    "subtitle_other": "دانلودشده • {{count}} سوره"
+  },
+  "errorBoundary": {
+    "sorryThereWasAnError": "متأسفیم.. خطایی رخ داد"
+  },
+  "hero": {
+    "browseAllReciters": {
+      "browseAll114Surahs": "مرور هر ۱۱۴ سوره"
+    },
+    "savedAdhkarHero": {
+      "saved": "ذخیره‌شده",
+      "yourCollection": "مجموعهٔ شما"
+    },
+    "surahOfTheDay": {
+      "surahOfTheDay": "سورهٔ امروز"
+    },
+    "surahsHero": {
+      "number": "شماره"
+    }
+  },
+  "language": {
+    "later": "بعداً",
+    "restartMessage": "برای اعمال جهت جدید چیدمان، برنامه را دوباره راه‌اندازی کنید.",
+    "restartNow": "اکنون راه‌اندازی مجدد",
+    "restartTitle": "راه‌اندازی مجدد لازم است",
+    "search": "جستجوی زبان‌ها",
+    "system": "زبان دستگاه"
+  },
+  "modals": {
+    "whatsNewModal": {
+      "continue": "ادامه"
+    },
+    "whatsNewOnboarding": {
+      "skip": "رد کردن"
+    }
+  },
+  "mushaf": {
+    "juz": "جزء {{juz}}",
+    "loadingMushaf": "در حال بارگیری مصحف…",
+    "main": {
+      "mushafSettings": "تنظیمات مصحف"
+    },
+    "mushafPlayerBar": {
+      "changeReciter": "تغییر قاری",
+      "changeReciter2": "تغییر قاری",
+      "nextAyah": "آیهٔ بعدی",
+      "playbackOptions": "گزینه‌های پخش",
+      "previousAyah": "آیهٔ قبلی"
+    },
+    "mushafSearchView": {
+      "findSurahsVersesPagesOr": "جستجوی سوره، آیه، صفحه یا جزء",
+      "recentReads": "مطالعات اخیر",
+      "searchSurahsPagesOrJuz": "جستجوی سوره، صفحه یا جزء...",
+      "searchTheMushaf": "جستجو در مصحف"
+    },
+    "options": "گزینه‌ها",
+    "page": "صفحهٔ {{page}}",
+    "pageAndSurah": "صفحهٔ {{page}} · {{surah}}",
+    "theMushafCouldNotLoad": "مصحف بارگیری نشد.",
+    "tryAgain": "تلاش دوباره"
+  },
+  "mushafSettings": {
+    "rabbHelper": "نام «الله» و عناوین الهی مانند «رب» را در مصحف برجسته می‌کند."
+  },
+  "mushafSettingsContent": {
+    "alternatingHighlightsByThematicPassage": "برجسته‌سازی متناوب بر اساس بخش موضوعی",
+    "arabicFontSize": "اندازهٔ فونت عربی",
+    "bold": "ضخیم",
+    "book": "کتاب",
+    "colorLegend": "راهنمای رنگ‌ها",
+    "currentlyReading": "در حال مطالعه",
+    "divineNames": "نام‌های الهی",
+    "fontSize": "اندازهٔ فونت",
+    "fullscreen": "تمام‌صفحه",
+    "hamzaReplacedByLongVowel": "همزه به مد تبدیل شده",
+    "heavyLamInAllahAfter": "لام پر در «الله» پس از حروف مفخّم",
+    "highlightAllahRabb": "برجسته‌سازی الله / رب",
+    "horizontal": "افقی",
+    "ibdal": "ابدال",
+    "list": "فهرست",
+    "loadingSample": "در حال بارگیری نمونه...",
+    "maddAlBadal": "مدّ بدل",
+    "maximumProminence": "حداکثر برجستگی",
+    "medium": "متوسط",
+    "modernMadinahPrintedPipeline": "چاپ مدرن مدینه",
+    "mushaf": "مصحف",
+    "normal": "عادی",
+    "originalMushafWeight": "ضخامت اصلی مصحف",
+    "pageDesign": "طراحی صفحه",
+    "prolongedVowelAfterHamza": "مدّ پس از همزه",
+    "readingTheme": "پوستهٔ مطالعه",
+    "scrollDirection": "جهت پیمایش",
+    "showDifferences": "نمایش تفاوت‌ها",
+    "silah": "صله",
+    "slightlyMoreProminent": "اندکی برجسته‌تر",
+    "softenedHamzaPronunciation": "تلفظ نرم‌شدهٔ همزه",
+    "subcontinentNastaliqStyle": "سبک نستعلیق شبه‌قاره",
+    "taghlizAlLam": "تغلیظ لام",
+    "tajweedColoring": "رنگ‌آمیزی تجوید",
+    "tashilMusahhala": "تسهیل / مسهّله",
+    "textPreviewNotYetAvailable": "پیش‌نمایش متن هنوز در دسترس نیست",
+    "textThickness": "ضخامت متن",
+    "thematicHighlighting": "برجسته‌سازی موضوعی",
+    "trailingVowelOrMoodChange": "فقط تغییر حرکت پایانی یا حالت اعرابی",
+    "usingSaheehInternationalTranslationWith": "در حال استفاده: ترجمهٔ صحیح اینترنشنال همراه با پاورقی",
+    "vertical": "عمودی",
+    "viewType": "نوع نمایش",
+    "vowelMoodShift": "تغییر حرکت / حالت اعرابی",
+    "wordByWord": "کلمه به کلمه",
+    "wordVariant": "تفاوت کلمه"
+  },
+  "networkStatusMonitor": {
+    "backendUnreachable": "سرور در دسترس نیست",
+    "connectionRestored": "اتصال برقرار شد",
+    "noInternetConnection": "اتصال به اینترنت وجود ندارد",
+    "showingCachedData": "نمایش داده‌های ذخیره‌شده"
+  },
+  "organize": {
+    "createReciter": "ساخت «{{name}}»"
+  },
+  "playerContent": {
+    "queueList": {
+      "queue": "صف",
+      "queueIsEmpty": "صف خالی است"
+    },
+    "uploadPlaceholder": {
+      "tagThisRecitationToSee": "این تلاوت را برچسب بزنید تا متن و جزئیات سوره را ببینید"
+    }
+  },
+  "playlist": {
+    "subtitle_one": "فهرست پخش • {{count}} سوره",
+    "subtitle_other": "فهرست پخش • {{count}} سوره"
+  },
+  "playlistdetail": {
+    "playlistDetail": {
+      "noSurahsInThisPlaylist": "سوره‌ای در این فهرست پخش نیست"
+    }
+  },
+  "quranView": {
+    "verseItem": {
+      "footnote": "پاورقی"
+    }
+  },
+  "randomrecitation": {
+    "types": {
+      "aRecitationChosenJustFor": "تلاوتی که فقط برای همین لحظه انتخاب شده",
+      "discover": "کشف",
+      "discoverANewVoice": "صدایی تازه کشف کنید",
+      "explore": "گشت‌وگذار",
+      "exploreTheUnexpected": "ناشناخته‌ها را کاوش کنید",
+      "hearSomethingNew": "چیزی تازه بشنوید",
+      "letTheQuranSurpriseYou": "بگذارید قرآن شما را شگفت‌زده کند",
+      "randomMix": "ترکیب تصادفی",
+      "randomRecitation": "تلاوت تصادفی",
+      "shuffleListen": "بُر بزن و گوش کن",
+      "surpriseMe": "مرا شگفت‌زده کن"
+    }
+  },
+  "readingThemeContent": {
+    "changingAppearanceModeAppliesTo": "تغییر حالت ظاهری برای کل برنامه اعمال می‌شود"
+  },
+  "reciterBrowse": {
+    "allReciters": "همهٔ قاریان",
+    "browseReciters": "مرور قاریان",
+    "favorites": "دلخواه‌ها"
+  },
+  "reciterdownloads": {
+    "reciterDownloadsList": {
+      "noDownloadsForThisReciter": "این قاری دانلودی ندارد"
+    }
+  },
+  "reciterprofile": {
+    "reciterProfile": {
+      "myUploads": "بارگذاری‌های من"
+    }
+  },
+  "recitersView": {
+    "adhkar": "اذکار",
+    "bestForMemorization": "مناسب برای حفظ",
+    "bestForTajweed": "مناسب برای تجوید",
+    "continueListening": "ادامهٔ شنیدن",
+    "exclusives": "اختصاصی",
+    "exploreByRewayah": "کاوش بر اساس روایت",
+    "featuredReciters": "قاریان ویژه",
+    "fromYourCollection": "از مجموعهٔ شما",
+    "myRecitations": "تلاوت‌های من",
+    "newToQuranStartHere": "با قرآن تازه آشنا شده‌اید؟ از اینجا شروع کنید",
+    "seeMore": "دیدن بیشتر",
+    "yourFavorites": "دلخواه‌های شما"
+  },
+  "screens": {
+    "translationsContent": {
+      "active": "فعال",
+      "activeTafseer": "تفسیر فعال",
+      "activeTranslation": "ترجمهٔ فعال",
+      "deleteTafseer": "حذف تفسیر",
+      "deleteTranslation": "حذف ترجمه",
+      "noTafaseerFound": "تفسیری یافت نشد",
+      "noTranslationsFound": "ترجمه‌ای یافت نشد",
+      "unableToDownloadThisTafseer": "دانلود این تفسیر ممکن نشد. لطفاً اتصال اینترنت خود را بررسی کنید و دوباره تلاش کنید.",
+      "unableToDownloadThisTranslation": "دانلود این ترجمه ممکن نشد. لطفاً اتصال اینترنت خود را بررسی کنید و دوباره تلاش کنید."
+    }
+  },
+  "search": {
+    "searchView": {
+      "noRecentSearches": "جستجوی اخیری نیست",
+      "tryDifferentKeywordsOrCheck": "کلمات دیگری امتحان کنید یا املا را بررسی کنید",
+      "yourSearchHistoryWillAppear": "سابقهٔ جستجوی شما اینجا نمایش داده می‌شود"
+    },
+    "surahsOrReciters": "جستجوی سوره‌ها یا قاریان"
+  },
+  "settings": {
+    "about": {
+      "advancedAudioControls": "کنترل‌های پیشرفتهٔ صدا",
+      "browseByJuz": "مرور بر اساس جزء",
+      "createAndManageYourOwn": "فهرست‌های پخش شخصی از تلاوت‌های محبوب خود بسازید و مدیریت کنید",
+      "crystalClearRecitationsFromThe": "تلاوت‌های شفاف از برترین قاریان جهان با پخش آنلاین بهینه",
+      "curatedCollections": "مجموعه‌های منتخب",
+      "customPlaylists": "فهرست‌های پخش سفارشی",
+      "customizeThemesAccentColorsAnd": "پوسته‌ها، رنگ‌های تأکیدی و تنظیمات صدا را به دلخواه خود تغییر دهید",
+      "downloadSurahsForOfflineListening": "سوره‌ها را دانلود کنید و هر زمان و هر جا بدون اینترنت گوش دهید",
+      "easilyNavigateThroughTheQuran": "با دسته‌بندی بر اساس جزء، به‌راحتی در قرآن پیمایش کنید",
+      "features": "ویژگی‌ها",
+      "highQualityAudio": "صدای باکیفیت",
+      "listenReflectRememberAllah": "بشنو. تأمل کن. خدا را یاد کن.",
+      "offlineDownloads": "دانلود برای استفادهٔ آفلاین",
+      "ourCommitment": "تعهد ما",
+      "ourMission": "مأموریت ما",
+      "personalization": "شخصی‌سازی",
+      "precisePlaybackControlWithContinuous": "کنترل دقیق پخش با پخش پیوسته و سرعت قابل‌تنظیم تلاوت",
+      "quranBayanTafsirKnowledgeOur": "قرآن • بیان • تفسیر • دانش. هدف ما این است که شنیدن و تأمل بخشی از زندگی روزمره شود: در خانه، در مسیر و هر لحظه‌ای که فرصت یاد خدا را دارید.",
+      "readListenAndReflect": "بخوانید، بشنوید و تأمل کنید",
+      "readTheMushafExploreTranslations": "مصحف را بخوانید، ترجمه‌ها و تفسیرها را ببینید، آیات و یادداشت‌ها را ذخیره کنید و به اذکار روزانه بازگردید. قاری خود را انتخاب کنید، فهرست پخش بسازید و تجربهٔ شنیداری متناسب با روز خود را شکل دهید. ویژگی‌های موجود بسته به دستگاه متفاوت است؛ برنامه‌های بومی از دانلود برای شنیدن آفلاین نیز پشتیبانی می‌کنند.",
+      "thoughtfullyOrganizedSurahsForDifferent": "سوره‌هایی که با دقت برای مناسبت‌ها و موضوعات مختلف دسته‌بندی شده‌اند",
+      "weCareAboutTheAccuracy": "ما به درستی محتوای مقدس، طراحی محترمانه و دسترسی قابل‌اعتماد اهمیت می‌دهیم. با دقت برای کسانی که از ISTIMA استفاده می‌کنند، آن را بهبود می‌دهیم. خداوند این تلاش را بپذیرد و آن را برای هر کسی که می‌شنود، می‌خواند و تأمل می‌کند مفید گرداند."
+    },
+    "aboutApp": "دربارهٔ {{name}}",
+    "appearance": "ظاهر",
+    "defaultreciter": {
+      "changeDefaultReciter": "تغییر قاری پیش‌فرض"
+    },
+    "developer": "توسعه‌دهنده",
+    "floatingDevMenu": "منوی شناور توسعه",
+    "language": "زبان",
+    "languageDescription": "زبان برنامه را انتخاب کنید",
+    "reciterchoice": {
+      "alwaysUseYourSelectedDefault": "همیشه از قاری پیش‌فرض انتخاب‌شدهٔ شما استفاده شود",
+      "askEveryTime": "هر بار بپرس",
+      "chooseAReciterEachTime": "هر بار پخش، یک قاری انتخاب کنید",
+      "chooseHowYouWantTo": "انتخاب کنید هنگام پخش سوره‌ها چگونه قاری را برگزینید",
+      "defaultSelectionMethod": "روش پیش‌فرض انتخاب",
+      "searchThroughOurCompleteCollection": "در مجموعهٔ کامل قاریان ما جستجو کنید",
+      "selectionPreference": "ترجیح انتخاب"
+    },
+    "storage": {
+      "allDownloadsHaveBeenRemoved": "همهٔ دانلودها حذف شدند.",
+      "areYouSureYouWant": "آیا مطمئن هستید که می‌خواهید همهٔ محتوای دانلودشده را حذف کنید؟ این کار قابل بازگشت نیست.",
+      "cache": "حافظهٔ پنهان",
+      "cacheHasBeenCleared": "حافظهٔ پنهان پاک شد.",
+      "clearCache": "پاک کردن حافظهٔ پنهان",
+      "failedToClearCache": "پاک کردن حافظهٔ پنهان ناموفق بود.",
+      "failedToRemoveDownloads": "حذف دانلودها ناموفق بود.",
+      "free": "آزاد",
+      "loadingStorageInformation": "در حال بارگیری اطلاعات ذخیره‌سازی...",
+      "manageStorage": "مدیریت فضای ذخیره‌سازی",
+      "otherApps": "سایر برنامه‌ها",
+      "removeAllDownloads": "حذف همهٔ دانلودها",
+      "removeAllTheQuranContent": "همهٔ محتوای قرآنی را که برای استفادهٔ آفلاین دانلود کرده‌اید حذف کنید.",
+      "storageBreakdown": "جزئیات فضای ذخیره‌سازی",
+      "success": "موفق",
+      "thisWillClearYourCache": "حافظهٔ پنهان شما پاک می‌شود. دانلودهای شما حذف نخواهند شد.",
+      "youCanFreeUpStorage": "می‌توانید با پاک کردن حافظهٔ پنهان فضا آزاد کنید. دانلودهای شما حذف نخواهند شد."
+    },
+    "themePicker": {
+      "auto": "خودکار",
+      "dark": "تیره",
+      "light": "روشن"
+    },
+    "whatsnew": {
+      "noChangelogAvailable": "تاریخچهٔ تغییرات موجود نیست"
+    }
+  },
+  "sheets": {
+    "aboutSurah": "دربارهٔ {{name}}",
+    "addToCollectionSheet": {
+      "addFavoriteReciter": "افزودن قاری دلخواه",
+      "uploadRecitation": "بارگذاری تلاوت"
+    },
+    "ambientSoundsSheet": {
+      "ambientSounds": "صداهای محیطی",
+      "none": "هیچ",
+      "volume": "صدا"
+    },
+    "createPlaylistSheet": {
+      "eGMorningRecitations": "مثلاً تلاوت‌های صبحگاهی"
+    },
+    "downloadOptionsSheet": {
+      "removeDownload": "حذف دانلود"
+    },
+    "favoriteRecitersSheet": {
+      "done": "تمام"
+    },
+    "homeCardOptionsSheet": {
+      "addToCollection": "افزودن به مجموعه",
+      "addToQueue": "افزودن به صف",
+      "continuePlaying": "ادامهٔ پخش",
+      "goToReciter": "رفتن به قاری",
+      "removeFromRecents": "حذف از اخیرها"
+    },
+    "mushafLayoutSheet": {
+      "back": "بازگشت"
+    },
+    "mushafPlayerOptionsSheet": {
+      "endingVerse": "آیهٔ پایان",
+      "playbackSettings": "تنظیمات پخش",
+      "selectRange": "انتخاب محدوده",
+      "startingVerse": "آیهٔ شروع"
+    },
+    "mushafRepeatOptionsSheet": {
+      "repeatSettings": "تنظیمات تکرار",
+      "start": "شروع",
+      "verseRange": "محدودهٔ آیات"
+    },
+    "organizeRecitationSheet": {
+      "category": "دسته‌بندی",
+      "customReciter": "قاری سفارشی",
+      "duA": "دعا",
+      "eGMorningAdhkar": "مثلاً اذکار صبحگاهی",
+      "lecture": "سخنرانی",
+      "moreOptions": "گزینه‌های بیشتر",
+      "other": "سایر",
+      "recording": "ضبط",
+      "rewayah": "روایت",
+      "searchSurahs": "جستجوی سوره‌ها...",
+      "style": "سبک",
+      "tafsir": "تفسیر",
+      "title": "عنوان",
+      "type": "نوع",
+      "verseRangeOptional": "محدودهٔ آیات (اختیاری)"
+    },
+    "playbackSpeedSheet": {
+      "playbackSpeed": "سرعت پخش"
+    },
+    "playlistContextSheet": {
+      "allItemsInThisPlaylist": "همهٔ موارد این فهرست پخش قبلاً دانلود شده‌اند.",
+      "anErrorOccurredWhileDownloading": "هنگام دانلود فهرست پخش خطایی رخ داد. لطفاً دوباره تلاش کنید.",
+      "deletePlaylist": "حذف فهرست پخش",
+      "downloadingPlaylist": "در حال دانلود فهرست پخش...",
+      "editPlaylist": "ویرایش فهرست پخش",
+      "emptyPlaylist": "فهرست پخش خالی",
+      "thisPlaylistIsEmpty": "این فهرست پخش خالی است."
+    },
+    "rewayatInfoSheet": {
+      "aboutRewayat": "دربارهٔ روایت‌ها",
+      "availableRewayat": "روایت‌های موجود"
+    },
+    "selectPlaylistSheet": {
+      "failedToAddSurahTo": "افزودن سوره به فهرست پخش ناموفق بود",
+      "failedToCreatePlaylist": "ساخت فهرست پخش ناموفق بود",
+      "noPlaylistsYetCreateYour": "هنوز فهرست پخشی نیست. اولین فهرست پخش خود را بالا بسازید!"
+    },
+    "selectReciterSheet": {
+      "askEveryTime": "هر بار بپرس",
+      "randomReciter": "قاری تصادفی",
+      "selectReciter": "انتخاب قاری"
+    },
+    "similarVersesSheet": {
+      "noSimilarVersesFoundFor": "آیهٔ مشابهی برای این آیه یافت نشد.",
+      "similarWording": "عبارت‌پردازی مشابه"
+    },
+    "sleepTimerSheet": {
+      "sleepTimer": "زمان‌سنج خواب",
+      "turnOffTimer": "خاموش کردن زمان‌سنج"
+    },
+    "surahOptionsSheet": {
+      "removeFromPlaylist": "حذف از فهرست پخش"
+    },
+    "verseActionsSheet": {
+      "addNote": "افزودن یادداشت",
+      "copy": "کپی",
+      "repeat": "تکرار",
+      "similarVerses": "آیات مشابه",
+      "tafseer": "تفسیر",
+      "theme": "پوسته"
+    },
+    "verseCopySheet": {
+      "copyOptions": "گزینه‌های کپی",
+      "selectWhatToCopy": "انتخاب کنید چه چیزی کپی شود"
+    },
+    "verseHighlightSheet": {
+      "highlightColor": "رنگ برجسته‌سازی"
+    },
+    "verseShareSheet": {
+      "shareVerse": "اشتراک‌گذاری آیه"
+    }
+  },
+  "similarVerses": {
+    "foundIn_one": "در {{count}} آیه یافت شد",
+    "foundIn_other": "در {{count}} آیه یافت شد"
+  },
+  "surahItem": {
+    "moreOptions": "گزینه‌های بیشتر",
+    "opensMenuWithAdditionalActions": "منویی با اقدامات بیشتر برای این سوره باز می‌کند",
+    "tapToPlaySurah": "برای پخش سوره ضربه بزنید"
+  },
+  "systemplaylist": {
+    "id": {
+      "invalidPlaylistId": "شناسهٔ فهرست پخش نامعتبر است",
+      "playlistNotFound": "فهرست پخش یافت نشد"
+    },
+    "systemPlaylistDetail": {
+      "couldNotFindAReciter": "قاری‌ای که همهٔ سوره‌های این فهرست پخش را داشته باشد یافت نشد. لطفاً فهرست پخش دیگری امتحان کنید.",
+      "failedToPlayPlaylistPlease": "پخش فهرست پخش ناموفق بود. لطفاً دوباره تلاش کنید.",
+      "failedToPlayTrackPlease": "پخش ترک ناموفق بود. لطفاً دوباره تلاش کنید.",
+      "failedToShufflePlaylistPlease": "بُر زدن فهرست پخش ناموفق بود. لطفاً دوباره تلاش کنید.",
+      "noReciterAvailable": "قاری‌ای در دسترس نیست",
+      "noSurahsInThisPlaylist": "سوره‌ای در این فهرست پخش نیست"
+    }
+  },
+  "tabs": {
+    "settings": {
+      "account": "حساب کاربری",
+      "appData": "برنامه و داده‌ها",
+      "audioPlayback": "صدا و پخش",
+      "chooseYourPreferredReciter": "قاری مورد علاقهٔ خود را انتخاب کنید",
+      "customizeQuranDisplayOptions": "گزینه‌های نمایش قرآن را سفارشی کنید",
+      "customizeReciterSelection": "انتخاب قاری را سفارشی کنید",
+      "featureRequests": "درخواست ویژگی",
+      "feedback": "بازخورد",
+      "helpSupport": "راهنما و پشتیبانی",
+      "learnMoreAboutOurMission": "بیشتر دربارهٔ مأموریت ما بدانید",
+      "manageQuranTranslationsAndCommentary": "مدیریت ترجمه‌ها و تفسیرهای قرآن",
+      "privacyPolicy": "سیاست حریم خصوصی",
+      "quran": "قرآن",
+      "readOurTermsOfService": "شرایط خدمات ما را بخوانید",
+      "seeWhatSNewIn": "ببینید در این نسخه چه چیزی تازه است",
+      "shareYourExperienceWithOthers": "تجربهٔ خود را با دیگران به اشتراک بگذارید",
+      "showTheFloatingDeveloperTools": "دکمهٔ شناور ابزارهای توسعه‌دهنده را نمایش دهید",
+      "suggestImprovementsAndNewFeatures": "پیشنهاد بهبود و ویژگی‌های جدید",
+      "termsOfService": "شرایط خدمات",
+      "viewAndManageStorageUsage": "مشاهده و مدیریت مصرف فضای ذخیره‌سازی",
+      "viewOurPrivacyPolicy": "سیاست حریم خصوصی ما را ببینید",
+      "writeAReview": "نوشتن نقد"
+    }
+  },
+  "ui": {
+    "appName": "Istima",
+    "cancel": "لغو",
+    "close": "بستن",
+    "collection": "مجموعه",
+    "download": "دانلود",
+    "downloads": "دانلودها",
+    "error": "مشکلی پیش آمد",
+    "favorites": "دلخواه‌ها",
+    "home": "خانه",
+    "language": "زبان",
+    "library": "کتابخانه",
+    "loading": "در حال بارگیری...",
+    "noResults": "نتیجه‌ای یافت نشد",
+    "offline": "آفلاین هستید",
+    "pause": "مکث",
+    "play": "پخش",
+    "retry": "تلاش دوباره",
+    "save": "ذخیره",
+    "search": "جستجو",
+    "settings": "تنظیمات",
+    "surahs": "سوره‌ها"
+  },
+  "verseactions": {
+    "copyContent": {
+      "selectContent": "انتخاب محتوا"
+    },
+    "highlightContent": {
+      "chooseColor": "انتخاب رنگ"
+    },
+    "noteContent": {
+      "saveNote": "ذخیرهٔ یادداشت"
+    },
+    "shareContent": {
+      "shareLink": "اشتراک‌گذاری پیوند"
+    },
+    "similarVersesContent": {
+      "noSimilarVersesFoundFor": "آیهٔ مشابهی برای این آیه یافت نشد.",
+      "sharedPhrases": "عبارت‌های مشترک",
+      "similarWording": "عبارت‌پردازی مشابه"
+    },
+    "tafseerContent": {
+      "noTafaseerDownloaded": "تفسیری دانلود نشده است",
+      "tafseerNotAvailableForThis": "تفسیر برای این آیه موجود نیست",
+      "tapHereToDownloadA": "برای دانلود تفسیر و مشاهدهٔ شرح، اینجا ضربه بزنید."
+    },
+    "themeContent": {
+      "noThematicDataForThis": "داده‌ای موضوعی برای این آیه نیست.",
+      "passage": "بخش"
+    },
+    "translationContent": {
+      "switch": "تغییر",
+      "translationNotAvailable": "ترجمه موجود نیست"
+    }
+  },
+  "version": {
+    "label": "نسخهٔ {{version}}"
+  },
+  "whatsNew": {
+    "titlePrefix": "تازه‌ها در"
+  },
+  "wordDetail": {
+    "context": "آیهٔ {{surah}}:{{ayah}} · کلمهٔ {{position}} از {{total}}"
+  }
+}
