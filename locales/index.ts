@@ -5,5 +5,7 @@ export const localeLoaders: Record<string, () => LocaleResource> = {
   'ar': () => require('./ar.json') as LocaleResource,
   'fa': () => require('./fa.json') as LocaleResource,
   'id': () => require('./id.json') as LocaleResource,
+  'ms': () => require('./ms.json') as LocaleResource,
+  'tr': () => require('./tr.json') as LocaleResource,
   'ur': () => require('./ur.json') as LocaleResource,
 };
