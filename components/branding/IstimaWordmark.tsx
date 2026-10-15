@@ -40,7 +40,7 @@ export function IstimaWordmark({compact = false}: {compact?: boolean}) {
     <View
       pointerEvents="none"
       accessible
-      accessibilityLabel="ISTIMA, استماع"
+      accessibilityLabel="Istima, استماع"
       style={[styles.root, compact && styles.compact]}>
       <View style={[styles.lockup, compact && styles.compactLockup]}>
         <Animated.View style={{opacity, width: '100%'}}>
