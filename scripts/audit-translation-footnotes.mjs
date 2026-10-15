@@ -79,7 +79,11 @@ async function main() {
     .sort((a, b) => b.markers - a.markers)
     .forEach(r => {
       console.log(
-        `  ${String(r.id).padStart(3)}  ${r.language.padEnd(14)}  ${r.verses.toString().padStart(4)} verses / ${r.markers.toString().padStart(5)} markers  ${r.name}`,
+        `  ${String(r.id).padStart(3)}  ${r.language.padEnd(14)}  ${r.verses
+          .toString()
+          .padStart(4)} verses / ${r.markers.toString().padStart(5)} markers  ${
+          r.name
+        }`,
       );
     });
 

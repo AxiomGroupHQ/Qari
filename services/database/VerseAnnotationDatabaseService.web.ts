@@ -45,7 +45,9 @@ class VerseAnnotationDatabaseServiceWeb {
   }
 
   async getAllBookmarks(): Promise<VerseBookmark[]> {
-    return [...this.bookmarks.values()].sort((a, b) => b.createdAt - a.createdAt);
+    return [...this.bookmarks.values()].sort(
+      (a, b) => b.createdAt - a.createdAt,
+    );
   }
 
   async isBookmarked(verseKey: string): Promise<boolean> {
@@ -88,7 +90,10 @@ class VerseAnnotationDatabaseServiceWeb {
 
   async getNotesForVerse(verseKey: string): Promise<VerseNote[]> {
     return [...this.notes.values()]
-      .filter(note => note.verseKey === verseKey || note.verseKeys?.includes(verseKey))
+      .filter(
+        note =>
+          note.verseKey === verseKey || note.verseKeys?.includes(verseKey),
+      )
       .sort((a, b) => b.createdAt - a.createdAt);
   }
 

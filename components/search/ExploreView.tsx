@@ -94,7 +94,7 @@ function getAllTiles(): BentoTile[] {
   return [...BROWSE_TILES, ...systemPlaylistTiles];
 }
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
+// eslint-disable-next-line @typescript-eslint/no-empty-interface -- intentionally empty props type
 interface ExploreViewProps {}
 
 interface ColumnLayout {
@@ -202,6 +202,7 @@ const BentoTileComponent = React.memo(
 
     // Non-glass fallback: keep the thin tinted hollow border so Android /
     // pre-iOS-26 still get a recognizable card shape.
+    // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
     const fallbackStyle = useMemo(
       () => ({
         ...outerStyle,
@@ -267,6 +268,7 @@ const tileInnerStyles = StyleSheet.create({
 });
 
 export const ExploreView = React.memo(
+  // eslint-disable-next-line no-empty-pattern -- no props used
   function ExploreView({}: ExploreViewProps) {
     const {theme} = useTheme();
     const {width: windowWidth} = useWindowDimensions();

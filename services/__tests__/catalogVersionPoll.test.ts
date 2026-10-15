@@ -47,7 +47,7 @@ const mockStore = (
 ).__mockStore;
 const mockBranding = branding as unknown as {catalogVersionEndpoint?: string};
 
-const flush = () => new Promise((r) => setImmediate(r));
+const flush = () => new Promise(r => setImmediate(r));
 
 beforeEach(() => {
   mockStore.clear();
@@ -101,7 +101,10 @@ describe('initCatalogVersionPolling', () => {
     initCatalogVersionPolling(refetch);
     await flush();
     await flush();
-    expect(refetch).toHaveBeenCalledWith(8, 'https://example.test/catalog/v8.json');
+    expect(refetch).toHaveBeenCalledWith(
+      8,
+      'https://example.test/catalog/v8.json',
+    );
     expect(mockStore.get('bayaan:lastSeenCatalogVersion')).toBe('8');
   });
 

@@ -40,7 +40,8 @@ export const MaxWidthContainer: React.FC<MaxWidthContainerProps> = ({
 
   return (
     <View style={[fill && styles.outerFill, styles.outerCenter]}>
-      <View style={[fill && styles.innerFill, {maxWidth, width: '100%'}, style]}>
+      <View
+        style={[fill && styles.innerFill, {maxWidth, width: '100%'}, style]}>
         {children}
       </View>
     </View>

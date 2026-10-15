@@ -21,7 +21,10 @@ import {fetchMp3QuranSurah, fetchQdcSurah} from './lib/timestamp-sources';
 import type {AyahTimestamp} from '../types/timestamps';
 
 const CONCURRENCY = 8;
-const REPORT_PATH = path.resolve(process.cwd(), 'scripts/.mirror-timestamps-report.json');
+const REPORT_PATH = path.resolve(
+  process.cwd(),
+  'scripts/.mirror-timestamps-report.json',
+);
 
 interface RewayatInfo {
   id: string;
@@ -66,11 +69,19 @@ function loadEnv() {
 
 loadEnv();
 
-const API_URL = process.env.BAYAAN_API_URL || process.env.EXPO_PUBLIC_ISTIMA_API_URL || process.env.EXPO_PUBLIC_BAYAAN_API_URL;
-const API_KEY = process.env.BAYAAN_API_KEY || process.env.EXPO_PUBLIC_ISTIMA_API_KEY || process.env.EXPO_PUBLIC_BAYAAN_API_KEY;
+const API_URL =
+  process.env.BAYAAN_API_URL ||
+  process.env.EXPO_PUBLIC_ISTIMA_API_URL ||
+  process.env.EXPO_PUBLIC_BAYAAN_API_URL;
+const API_KEY =
+  process.env.BAYAAN_API_KEY ||
+  process.env.EXPO_PUBLIC_ISTIMA_API_KEY ||
+  process.env.EXPO_PUBLIC_BAYAAN_API_KEY;
 
 if (!API_URL || !API_KEY) {
-  throw new Error('Set BAYAAN_API_URL and BAYAAN_API_KEY (or EXPO_PUBLIC_* equivalents).');
+  throw new Error(
+    'Set BAYAAN_API_URL and BAYAAN_API_KEY (or EXPO_PUBLIC_* equivalents).',
+  );
 }
 
 async function fetchAllRewayat(): Promise<RewayatInfo[]> {
@@ -80,7 +91,8 @@ async function fetchAllRewayat(): Promise<RewayatInfo[]> {
     const res = await fetch(`${API_URL}/v1/reciters?page=${page}&limit=200`, {
       headers: {Authorization: `Bearer ${API_KEY}`},
     });
-    if (!res.ok) throw new Error(`reciters fetch ${res.status}: ${await res.text()}`);
+    if (!res.ok)
+      throw new Error(`reciters fetch ${res.status}: ${await res.text()}`);
     const json = (await res.json()) as {
       data: Array<{
         name: string;
@@ -116,7 +128,10 @@ async function mirrorSurah(
   rw: RewayatInfo,
   surahNumber: number,
 ): Promise<SurahResult> {
-  const key = `timestamps/${rw.id}/${String(surahNumber).padStart(3, '0')}.json`;
+  const key = `timestamps/${rw.id}/${String(surahNumber).padStart(
+    3,
+    '0',
+  )}.json`;
 
   if (skipExisting && !dryRun) {
     if (await objectExists(key)) {
@@ -148,7 +163,12 @@ async function mirrorSurah(
     await uploadJson(key, data);
   }
 
-  return {rewayatId: rw.id, surahNumber, status: 'uploaded', ayahCount: data.length};
+  return {
+    rewayatId: rw.id,
+    surahNumber,
+    status: 'uploaded',
+    ayahCount: data.length,
+  };
 }
 
 async function runWithConcurrency<T, R>(
@@ -179,13 +199,17 @@ async function main() {
     if (filterRewayatId) return rw.id === filterRewayatId;
     return rw.mp3quran_read_id != null || rw.qdc_reciter_id != null;
   });
-  console.log(`Mirroring timestamps for ${eligible.length} rewayat (dryRun=${dryRun}, skipExisting=${skipExisting})`);
+  console.log(
+    `Mirroring timestamps for ${eligible.length} rewayat (dryRun=${dryRun}, skipExisting=${skipExisting})`,
+  );
 
   const allResults: SurahResult[] = [];
 
   for (const rw of eligible) {
     const surahs = Array.from({length: 114}, (_, i) => i + 1);
-    process.stdout.write(`\n[${rw.reciter_name} / ${rw.rewayat_name} / ${rw.style}] (id=${rw.id}) `);
+    process.stdout.write(
+      `\n[${rw.reciter_name} / ${rw.rewayat_name} / ${rw.style}] (id=${rw.id}) `,
+    );
     const results = await runWithConcurrency(
       surahs,
       surah => mirrorSurah(rw, surah),
@@ -195,10 +219,18 @@ async function main() {
     const skipped = results.filter(r => r.status === 'skipped').length;
     const empty = results.filter(r => r.status === 'empty').length;
     const errored = results.filter(r => r.status === 'error').length;
-    process.stdout.write(`uploaded=${uploaded} skipped=${skipped} empty=${empty} error=${errored}`);
+    process.stdout.write(
+      `uploaded=${uploaded} skipped=${skipped} empty=${empty} error=${errored}`,
+    );
     if (errored > 0) {
-      const sampleErrors = results.filter(r => r.status === 'error').slice(0, 3);
-      process.stdout.write(`\n  first errors: ${sampleErrors.map(r => `s${r.surahNumber}:${r.message}`).join(' | ')}`);
+      const sampleErrors = results
+        .filter(r => r.status === 'error')
+        .slice(0, 3);
+      process.stdout.write(
+        `\n  first errors: ${sampleErrors
+          .map(r => `s${r.surahNumber}:${r.message}`)
+          .join(' | ')}`,
+      );
     }
     allResults.push(...results);
   }
@@ -223,7 +255,11 @@ async function main() {
   );
 
   console.log(`\n\nReport written to ${REPORT_PATH}`);
-  console.log(`Rewayat with at least one surah mirrored: ${Object.keys(coverageObj).length}`);
+  console.log(
+    `Rewayat with at least one surah mirrored: ${
+      Object.keys(coverageObj).length
+    }`,
+  );
   const totalUploaded = allResults.filter(r => r.status === 'uploaded').length;
   console.log(`Total surah JSONs uploaded: ${totalUploaded}`);
 }

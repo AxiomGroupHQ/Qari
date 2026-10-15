@@ -46,7 +46,7 @@ async function loadService(envEnabled: string | undefined): Promise<{
   }
   jest.resetModules();
   mockStorage.clear();
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
+
   const mod = require('../AnalyticsService');
   // Initialize while the env flag is still set — the service latches `enabled`
   // inside initialize(), so the env var is only read once.

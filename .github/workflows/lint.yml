@@ -31,13 +31,13 @@ jobs:
       # formatting and lint debt. Both steps surface issues but don't fail the
       # job. TODO: once the codebase is clean, flip `continue-on-error: false`.
       #
-      # Prettier specifically shows a ~44-file discrepancy between CI and
-      # local runs even with matched node/prettier versions — root cause
-      # unknown, tracked separately from the OSS-readiness work.
+      # Prettier: `npx prettier` resolves to node_modules/.bin/prettier, which
+      # jest-snapshot-prettier hijacks (prettier 2.8.8). ESLint uses prettier 3, so
+      # the two disagreed. Call the prettier 3 binary directly.
       - name: Prettier
         if: success() || failure()
         continue-on-error: true
-        run: npx prettier --check .
+        run: npm run format:check
 
       - name: ESLint
         if: success() || failure()
@@ -46,8 +46,8 @@ jobs:
 
       - name: TypeScript
         if: success() || failure()
-        # The full-project typecheck needs >2GB heap; bump from the default
-        # ~1.7GB to avoid OOM on GitHub-hosted runners.
+        # The full-project typecheck needs a large heap; 4096 ran out of memory
+        # on GitHub-hosted runners (exit 134), so use 8192.
         env:
-          NODE_OPTIONS: --max-old-space-size=4096
+          NODE_OPTIONS: --max-old-space-size=8192
         run: npx tsc --noEmit

@@ -47,6 +47,7 @@ export interface HomeRow {
  * (theming context, navigation hooks, …) must default to optional so
  * existing implementations keep compiling.
  */
+// eslint-disable-next-line @typescript-eslint/no-empty-interface -- intentionally empty props type
 export interface ListenTabTopComponentProps {}
 
 /**

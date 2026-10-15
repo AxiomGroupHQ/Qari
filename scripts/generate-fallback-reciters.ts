@@ -85,8 +85,10 @@ async function main(): Promise<void> {
   const envPath = path.resolve(__dirname, '..', '.env');
   const env = loadEnv(envPath);
 
-  const apiUrl = env['EXPO_PUBLIC_ISTIMA_API_URL'] ?? env['EXPO_PUBLIC_BAYAAN_API_URL'];
-  const apiKey = env['EXPO_PUBLIC_ISTIMA_API_KEY'] ?? env['EXPO_PUBLIC_BAYAAN_API_KEY'];
+  const apiUrl =
+    env.EXPO_PUBLIC_ISTIMA_API_URL ?? env.EXPO_PUBLIC_BAYAAN_API_URL;
+  const apiKey =
+    env.EXPO_PUBLIC_ISTIMA_API_KEY ?? env.EXPO_PUBLIC_BAYAAN_API_KEY;
 
   if (!apiUrl || !apiKey) {
     console.error(

@@ -119,10 +119,17 @@ async function main() {
   writeFileSync(OUT_PATH, JSON.stringify(payload));
   const bytes = JSON.stringify(payload).length;
   console.log(`wrote ${OUT_PATH}`);
-  console.log(`  ${bytes.toLocaleString()} bytes (${(bytes / 1024 / 1024).toFixed(1)} MB)`);
+  console.log(
+    `  ${bytes.toLocaleString()} bytes (${(bytes / 1024 / 1024).toFixed(
+      1,
+    )} MB)`,
+  );
   console.log(`  pages: ${out.length}`);
   console.log(
-    `  total words: ${out.reduce((s, p) => s + p.l.reduce((s2, l) => s2 + l.w.length, 0), 0)}`,
+    `  total words: ${out.reduce(
+      (s, p) => s + p.l.reduce((s2, l) => s2 + l.w.length, 0),
+      0,
+    )}`,
   );
 }
 

@@ -7,7 +7,8 @@
  * Usage: npm run add:new-reciters -- [--dry-run]
  */
 
-const ADMIN_URL = process.env.BAYAAN_ADMIN_URL || process.env.EXPO_PUBLIC_BAYAAN_API_URL;
+const ADMIN_URL =
+  process.env.BAYAAN_ADMIN_URL || process.env.EXPO_PUBLIC_BAYAAN_API_URL;
 const ADMIN_TOKEN = process.env.BAYAAN_ADMIN_TOKEN;
 
 if (!ADMIN_URL || !ADMIN_TOKEN) {
@@ -44,7 +45,8 @@ const RECITERS: NewReciter[] = [
       {
         name: "Hafs A'n Assem",
         style: 'murattal',
-        server: 'https://server16.mp3quran.net/a_binhameed/Rewayat-Hafs-A-n-Assem',
+        server:
+          'https://server16.mp3quran.net/a_binhameed/Rewayat-Hafs-A-n-Assem',
         source_type: 'mp3quran',
         surah_total: 114,
         surah_list: Array.from({length: 114}, (_, i) => i + 1),
@@ -60,7 +62,8 @@ const RECITERS: NewReciter[] = [
       {
         name: "Hafs A'n Assem",
         style: 'murattal',
-        server: 'https://server16.mp3quran.net/H-Aldaghriri/Rewayat-Hafs-A-n-Assem',
+        server:
+          'https://server16.mp3quran.net/H-Aldaghriri/Rewayat-Hafs-A-n-Assem',
         source_type: 'mp3quran',
         surah_total: 114,
         surah_list: Array.from({length: 114}, (_, i) => i + 1),
@@ -71,11 +74,16 @@ const RECITERS: NewReciter[] = [
 ];
 
 async function findBySlug(slug: string): Promise<{id: string} | null> {
-  const res = await fetch(`${ADMIN_URL}/admin/reciters?q=${encodeURIComponent(slug)}&limit=10`, {
-    headers: {Authorization: `Bearer ${ADMIN_TOKEN}`},
-  });
+  const res = await fetch(
+    `${ADMIN_URL}/admin/reciters?q=${encodeURIComponent(slug)}&limit=10`,
+    {
+      headers: {Authorization: `Bearer ${ADMIN_TOKEN}`},
+    },
+  );
   if (!res.ok) throw new Error(`list reciters ${res.status}`);
-  const json = (await res.json()) as {data: Array<{id: string; slug: string | null}>};
+  const json = (await res.json()) as {
+    data: Array<{id: string; slug: string | null}>;
+  };
   return json.data.find(r => r.slug === slug) ?? null;
 }
 
@@ -92,12 +100,16 @@ async function createReciter(r: NewReciter): Promise<string> {
       slug: r.slug,
     }),
   });
-  if (!res.ok) throw new Error(`create reciter ${res.status}: ${await res.text()}`);
+  if (!res.ok)
+    throw new Error(`create reciter ${res.status}: ${await res.text()}`);
   const json = (await res.json()) as {data: {id: string}};
   return json.data.id;
 }
 
-async function createRewayat(reciterId: string, rw: NewReciter['rewayat'][0]): Promise<string> {
+async function createRewayat(
+  reciterId: string,
+  rw: NewReciter['rewayat'][0],
+): Promise<string> {
   const res = await fetch(`${ADMIN_URL}/admin/reciters/${reciterId}/rewayat`, {
     method: 'POST',
     headers: {
@@ -106,7 +118,8 @@ async function createRewayat(reciterId: string, rw: NewReciter['rewayat'][0]): P
     },
     body: JSON.stringify(rw),
   });
-  if (!res.ok) throw new Error(`create rewayat ${res.status}: ${await res.text()}`);
+  if (!res.ok)
+    throw new Error(`create rewayat ${res.status}: ${await res.text()}`);
   const json = (await res.json()) as {data: {id: string}};
   return json.data.id;
 }
@@ -114,7 +127,9 @@ async function createRewayat(reciterId: string, rw: NewReciter['rewayat'][0]): P
 async function main(): Promise<void> {
   for (const r of RECITERS) {
     if (dryRun) {
-      console.log(`DRY would create ${r.slug} with ${r.rewayat.length} rewayat`);
+      console.log(
+        `DRY would create ${r.slug} with ${r.rewayat.length} rewayat`,
+      );
       continue;
     }
     const existing = await findBySlug(r.slug);
@@ -126,7 +141,9 @@ async function main(): Promise<void> {
     console.log(`OK reciter ${r.slug} -> ${reciterId}`);
     for (const rw of r.rewayat) {
       const rewayatId = await createRewayat(reciterId, rw);
-      console.log(`OK   rewayat ${rw.name} (${rw.style}) -> ${rewayatId}  mp3quran_read=${rw.mp3quran_read_id}`);
+      console.log(
+        `OK   rewayat ${rw.name} (${rw.style}) -> ${rewayatId}  mp3quran_read=${rw.mp3quran_read_id}`,
+      );
     }
   }
 }

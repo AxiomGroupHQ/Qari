@@ -50,10 +50,12 @@ function TabSelector<T extends string>({
   // Android: original tab selector with sliding indicator
   const styles = createStyles(theme, options.length, resolvedWidth);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const indicatorPosition = useRef(
     new Animated.Value(options.indexOf(selectedOption)),
   ).current;
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   useEffect(() => {
     Animated.spring(indicatorPosition, {
       toValue: options.indexOf(selectedOption),

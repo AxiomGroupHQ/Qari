@@ -66,7 +66,11 @@ export interface PlayerController<TTrack extends BaseTrack = BaseTrack> {
    * `durationMs` is included so consumers can compute completion percent
    * without cross-referencing the current-track state.
    */
-  onProgressPersist(track: TTrack, positionMs: number, durationMs: number): void;
+  onProgressPersist(
+    track: TTrack,
+    positionMs: number,
+    durationMs: number,
+  ): void;
 }
 
 // ============================================================
@@ -157,8 +161,12 @@ export interface TimestampProvider {
  * stop, or when mushaf takes over from main player).
  */
 export interface LockScreenMetadataSource {
-  subscribeMain(listener: (metadata: LockScreenMetadata | null) => void): Unsubscribe;
-  subscribeMushaf(listener: (metadata: LockScreenMetadata | null) => void): Unsubscribe;
+  subscribeMain(
+    listener: (metadata: LockScreenMetadata | null) => void,
+  ): Unsubscribe;
+  subscribeMushaf(
+    listener: (metadata: LockScreenMetadata | null) => void,
+  ): Unsubscribe;
 }
 
 export type Unsubscribe = () => void;

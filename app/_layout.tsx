@@ -286,7 +286,6 @@ function RootLayout() {
     }
 
     prepare();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Set native root view background + configure Android navigation bar to match theme

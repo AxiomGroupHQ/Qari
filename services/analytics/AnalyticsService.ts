@@ -38,11 +38,11 @@ function isAnalyticsEnabled(): boolean {
 
 class AnalyticsServiceImpl {
   private posthog: PostHog | null = null;
-  private deviceId: string = '';
-  private enabled: boolean = true;
+  private deviceId = '';
+  private enabled = true;
   private meaningfulListenTracker: MeaningfulListenTracker;
   private sessionStartTime: number = Date.now();
-  private sessionListenMs: number = 0;
+  private sessionListenMs = 0;
 
   constructor() {
     this.meaningfulListenTracker = new MeaningfulListenTracker(

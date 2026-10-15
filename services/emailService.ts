@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 import * as Postmark from 'postmark';
 import Constants from 'expo-constants';

@@ -33,14 +33,15 @@ class WBWDataService {
       const tableCheck = await db
         .getFirstAsync<{
           name: string;
-        }>("SELECT name FROM sqlite_master WHERE type='table' AND name='words';")
+        }>(
+          "SELECT name FROM sqlite_master WHERE type='table' AND name='words';",
+        )
         .catch(() => null);
 
       if (!tableCheck) {
         await db.closeAsync();
         await SQLite.deleteDatabaseAsync(dbName);
         await SQLite.importDatabaseFromAssetAsync(dbName, {
-          // eslint-disable-next-line @typescript-eslint/no-require-imports
           assetId: require('../../data/wbw/wbw-en.db'),
         });
         db = await SQLite.openDatabaseAsync(dbName);

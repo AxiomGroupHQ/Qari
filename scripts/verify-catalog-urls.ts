@@ -267,7 +267,9 @@ async function main() {
 
   for (let i = 0; i < checks.length; i++) {
     const {reciterName, rewayatName, surah, url} = checks[i];
-    const label = `[${i + 1}/${totalUrls}] ${reciterName} · ${rewayatName} · surah ${pad3(surah)}`;
+    const label = `[${
+      i + 1
+    }/${totalUrls}] ${reciterName} · ${rewayatName} · surah ${pad3(surah)}`;
 
     try {
       const {status, contentType} = await headRequest(url);

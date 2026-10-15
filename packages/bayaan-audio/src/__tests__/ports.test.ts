@@ -31,13 +31,25 @@ const sampleTrack: BaseTrack = {
 
 describe('NullPlayerEventSink', () => {
   it('implements every PlayerEventSink method as a no-op', () => {
-    expect(() => NullPlayerEventSink.onPlaybackStarted(sampleTrack)).not.toThrow();
-    expect(() => NullPlayerEventSink.onPlaybackCompleted(sampleTrack, 30_000)).not.toThrow();
-    expect(() => NullPlayerEventSink.onPlaybackPaused(sampleTrack, 15_000)).not.toThrow();
-    expect(() => NullPlayerEventSink.onSkip(sampleTrack, 'forward')).not.toThrow();
-    expect(() => NullPlayerEventSink.onSkip(sampleTrack, 'backward')).not.toThrow();
+    expect(() =>
+      NullPlayerEventSink.onPlaybackStarted(sampleTrack),
+    ).not.toThrow();
+    expect(() =>
+      NullPlayerEventSink.onPlaybackCompleted(sampleTrack, 30_000),
+    ).not.toThrow();
+    expect(() =>
+      NullPlayerEventSink.onPlaybackPaused(sampleTrack, 15_000),
+    ).not.toThrow();
+    expect(() =>
+      NullPlayerEventSink.onSkip(sampleTrack, 'forward'),
+    ).not.toThrow();
+    expect(() =>
+      NullPlayerEventSink.onSkip(sampleTrack, 'backward'),
+    ).not.toThrow();
     expect(() => NullPlayerEventSink.onRateChange(1, 1.5)).not.toThrow();
-    expect(() => NullPlayerEventSink.onSeek(sampleTrack, 1000, 5000)).not.toThrow();
+    expect(() =>
+      NullPlayerEventSink.onSeek(sampleTrack, 1000, 5000),
+    ).not.toThrow();
     expect(() => NullPlayerEventSink.onError(new Error('x'), {})).not.toThrow();
   });
 });
@@ -67,7 +79,7 @@ describe('ExpoAudioPlayerControllerAdapter — PlayerController contract', () =>
     'error',
   ];
 
-  it.each(states)('accepts state %s without throwing', (state) => {
+  it.each(states)('accepts state %s without throwing', state => {
     expect(() => controller.onPlaybackStateChange(state)).not.toThrow();
   });
 
@@ -90,13 +102,19 @@ describe('ExpoAudioPlayerControllerAdapter — PlayerController contract', () =>
   });
 
   it('accepts error with and without context', () => {
-    expect(() => controller.onError(new Error('boom'), {source: 'test'})).not.toThrow();
+    expect(() =>
+      controller.onError(new Error('boom'), {source: 'test'}),
+    ).not.toThrow();
     expect(() => controller.onError(new Error('boom'), {})).not.toThrow();
   });
 
   it('accepts progress persist at boundaries', () => {
-    expect(() => controller.onProgressPersist(sampleTrack, 0, 60_000)).not.toThrow();
-    expect(() => controller.onProgressPersist(sampleTrack, 60_000, 60_000)).not.toThrow();
+    expect(() =>
+      controller.onProgressPersist(sampleTrack, 0, 60_000),
+    ).not.toThrow();
+    expect(() =>
+      controller.onProgressPersist(sampleTrack, 60_000, 60_000),
+    ).not.toThrow();
   });
 
   it('survives the realistic call ordering during playback', () => {
@@ -150,7 +168,7 @@ describe('Type-shape compile checks', () => {
   it('PlayerEventSink shape can be implemented generically', () => {
     type ConsumerTrack = BaseTrack & {meta: {surahId: number}};
     const sink: PlayerEventSink<ConsumerTrack> = {
-      onPlaybackStarted: (t) => expect(t.meta.surahId).toBeGreaterThan(0),
+      onPlaybackStarted: t => expect(t.meta.surahId).toBeGreaterThan(0),
       onPlaybackCompleted: () => {},
       onPlaybackPaused: () => {},
       onSkip: () => {},

@@ -136,6 +136,7 @@ const SystemPlaylistDetail: React.FC<SystemPlaylistDetailProps> = ({
   const {updateQueue, addToQueue, play} = usePlayerActions();
   const {startNewChain} = useRecentlyPlayedStore();
   const navigation = useNavigation();
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const iosHeaderHeight = isGlass ? useHeaderHeight() : 0;
 
   const scrollY = useRef(new RNAnimated.Value(0)).current;

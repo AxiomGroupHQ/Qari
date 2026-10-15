@@ -114,6 +114,7 @@ function initReciter(id: string): Reciter | null {
 const MemoizedSurahList = React.memo(SurahList);
 
 // Skeleton placeholder for surah list — shows pulsing rows while content loads
+// eslint-disable-next-line react/display-name -- memo wrapper, name inferred from the const
 const SurahListSkeleton: React.FC<{theme: any}> = React.memo(({theme}) => {
   const pulseAnim = useRef(new RNAnimated.Value(0.3)).current;
 
@@ -199,6 +200,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
   const bottomInset = useBottomInset();
   const {height: screenHeight, width: screenWidth} = useWindowDimensions();
   const navigation = useNavigation();
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const headerHeight = isGlass ? useHeaderHeight() : 0;
 
   // Synchronous reciter init — data available on first render, no deferred loading delay

@@ -31,11 +31,11 @@ class MushafAudioService {
   private trackingInterval: ReturnType<typeof setInterval> | null = null;
 
   // Current state
-  private currentSurah: number = 0;
+  private currentSurah = 0;
   private timestamps: AyahTimestamp[] = [];
-  private lastTrackedAyah: number = -1;
+  private lastTrackedAyah = -1;
   private isPlaying = false;
-  private rate: number = 1.0;
+  private rate = 1.0;
   private _dispatchingAyahChange = false;
 
   // Callbacks

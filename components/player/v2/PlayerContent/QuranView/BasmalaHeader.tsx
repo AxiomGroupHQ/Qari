@@ -52,7 +52,9 @@ function getOrBuildBasmala(
   showAllahNameHighlight: boolean,
   allahNameHighlightColor?: string,
 ): BasmalaCacheEntry {
-  const cacheKey = `${width}:${textColor}:${dkFontFamily}:${fontSize}:${showTajweed}:${arabicTextWeight}:${showAllahNameHighlight}:${allahNameHighlightColor ?? ''}`;
+  const cacheKey = `${width}:${textColor}:${dkFontFamily}:${fontSize}:${showTajweed}:${arabicTextWeight}:${showAllahNameHighlight}:${
+    allahNameHighlightColor ?? ''
+  }`;
   if (basmalaCache?.key === cacheKey) return basmalaCache;
 
   const color = Skia.Color(textColor);

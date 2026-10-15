@@ -18,7 +18,7 @@ describe('MockAudioPlayer', () => {
 
   it('emits status updates to subscribed listeners', () => {
     const updates: PlaybackStatus[] = [];
-    player.addListener('playbackStatusUpdate', (s) => updates.push(s));
+    player.addListener('playbackStatusUpdate', s => updates.push(s));
     player.simulateLoaded({durationMillis: 30_000});
     player.play();
     player.simulatePlaybackProgress(5_000);
@@ -31,7 +31,7 @@ describe('MockAudioPlayer', () => {
 
   it('removes listeners via the returned subscription', () => {
     const updates: PlaybackStatus[] = [];
-    const subscription = player.addListener('playbackStatusUpdate', (s) =>
+    const subscription = player.addListener('playbackStatusUpdate', s =>
       updates.push(s),
     );
     player.simulateLoaded({durationMillis: 1000});

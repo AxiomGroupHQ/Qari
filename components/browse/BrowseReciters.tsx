@@ -129,6 +129,7 @@ export default function BrowseReciters({
 
   // On iOS, the native Stack header handles the top area; on Android, use custom Header
   const useNativeHeader = USE_GLASS;
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const iosHeaderHeight = useNativeHeader ? useHeaderHeight() : 0;
 
   const [selectedTeacher, setSelectedTeacher] = useState<string | null>(
