@@ -31,6 +31,32 @@ import {useDevSettingsStore} from '@/store/devSettingsStore';
 import {ThemePicker} from '@/components/settings/ThemePicker';
 import branding from '@/config/branding';
 
+
+// User-facing settings copy only; Quran text and religious content are untouched.
+const arabicSettings: Record<string, string> = {
+  'APPEARANCE':'المظهر','DEVELOPER':'المطور','Floating Dev Menu':'قائمة أدوات المطور العائمة',
+  'Show the floating developer tools button':'إظهار زر أدوات المطور العائم',
+  'Quran':'القرآن','Audio & Playback':'الصوت والتشغيل','App & Data':'التطبيق والبيانات',
+  'Feedback':'الملاحظات','Mushaf Settings':'إعدادات المصحف',
+  'Customize Quran display options':'تخصيص خيارات عرض القرآن',
+  'Translations & Tafaseer':'الترجمات والتفاسير',
+  'Manage Quran translations and commentary':'إدارة ترجمات القرآن وتفاسيره',
+  'Default Reciter':'القارئ الافتراضي','Choose your preferred reciter':'اختر قارئك المفضل',
+  'Reciter Choice':'اختيار القارئ','Customize reciter selection':'تخصيص اختيار القارئ',
+  'Storage':'التخزين','View and manage storage usage':'عرض مساحة التخزين وإدارتها',
+  'Write a Review':'كتابة تقييم','Share your experience with others':'شارك تجربتك مع الآخرين',
+  'Feature Requests':'اقتراحات الميزات','Suggest improvements and new features':'اقترح تحسينات وميزات جديدة',
+  'Help & Support':'المساعدة والدعم','What\'s New':'ما الجديد',
+  'See what\'s new in this version':'اطلع على الجديد في هذا الإصدار',
+  'Learn more about our mission':'تعرّف على رسالتنا',
+  'Terms of Service':'شروط الخدمة','Read our terms of service':'اقرأ شروط الخدمة',
+  'Privacy Policy':'سياسة الخصوصية','View our privacy policy':'اطلع على سياسة الخصوصية',
+};
+const arabicSettingsEnabled = typeof navigator !== 'undefined' && navigator.language.toLowerCase().startsWith('ar');
+const settingsText = (value: string) => arabicSettingsEnabled
+  ? (arabicSettings[value] ?? (value.startsWith('About ') ? 'حول Istima' : value.startsWith('Get assistance') ? 'احصل على مساعدة في استخدام Istima' : value))
+  : value;
+
 const isExternalLink = (type: string): boolean => {
   return ['support', 'featureRequest', 'rateApp'].includes(type);
 };
@@ -288,7 +314,7 @@ export default function SettingsScreen() {
         showsVerticalScrollIndicator={false}>
         {/* Appearance */}
         <View style={styles.section}>
-          <Text style={styles.sectionHeader}>APPEARANCE</Text>
+          <Text style={styles.sectionHeader}>{settingsText('APPEARANCE')}</Text>
           <ThemePicker />
         </View>
 
@@ -296,7 +322,7 @@ export default function SettingsScreen() {
         {settingsItems.map(section => (
           <View key={section.section} style={styles.section}>
             <Text style={styles.sectionHeader}>
-              {section.section.toUpperCase()}
+              {settingsText(section.section).toUpperCase()}
             </Text>
             {renderCard(
               section.items.map((item, itemIndex) => (
@@ -312,9 +338,9 @@ export default function SettingsScreen() {
                       {renderIcon(item, iconColor)}
                     </View>
                     <View style={styles.settingsTextContainer}>
-                      <Text style={styles.settingsTitle}>{item.title}</Text>
+                      <Text style={styles.settingsTitle}>{settingsText(item.title)}</Text>
                       <Text style={styles.settingsDescription}>
-                        {item.description}
+                        {settingsText(item.description)}
                       </Text>
                     </View>
                     <Feather
@@ -336,7 +362,7 @@ export default function SettingsScreen() {
         {/* Developer Section */}
         {__DEV__ && (
           <View style={styles.section}>
-            <Text style={styles.sectionHeader}>DEVELOPER</Text>
+            <Text style={styles.sectionHeader}>{settingsText('DEVELOPER')}</Text>
             {renderCard(
               <View style={styles.settingsRow}>
                 <View style={styles.settingsItemIcon}>
@@ -347,7 +373,7 @@ export default function SettingsScreen() {
                   />
                 </View>
                 <View style={styles.settingsTextContainer}>
-                  <Text style={styles.settingsTitle}>Floating Dev Menu</Text>
+                  <Text style={styles.settingsTitle}>{settingsText('Floating Dev Menu')}</Text>
                   <Text style={styles.settingsDescription}>
                     Show the floating developer tools button
                   </Text>
