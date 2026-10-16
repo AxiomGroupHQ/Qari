@@ -49,5 +49,5 @@ jobs:
         # The full-project typecheck needs >2GB heap; bump from the default
         # ~1.7GB to avoid OOM on GitHub-hosted runners.
         env:
-          NODE_OPTIONS: --max-old-space-size=4096
+          NODE_OPTIONS: --max-old-space-size=6144
         run: npx tsc --noEmit
