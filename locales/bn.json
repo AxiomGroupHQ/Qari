@@ -105,7 +105,9 @@
       "notes": "নোট",
       "playlists": "প্লেলিস্ট",
       "reciters": "কারী",
-      "uploads": "আপলোড"
+      "uploads": "আপলোড",
+      "history": "ইতিহাস",
+      "noHistoryYet": "এখনও কিছু চালানো হয়নি"
     },
     "loved": {
       "allLovedSurahsAreAlready": "সব প্রিয় সূরা আগেই ডাউনলোড করা হয়েছে।",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "সব আপলোড সরান",
       "uploadRecitationsToSeeThem": "তিলাওয়াত আপলোড করলে এখানে দেখা যাবে"
+    },
+    "history": {
+      "emptyTitle": "এখনও কোনো ইতিহাস নেই",
+      "emptySubtitle": "আপনি যে সূরাগুলো শুনবেন সেগুলো এখানে দেখা যাবে",
+      "clear": "ইতিহাস মুছুন",
+      "clearTitle": "ইতিহাস মুছবেন?",
+      "clearMessage": "এটি আপনার সম্প্রতি শোনা তালিকা সরিয়ে দেবে। আপনার প্লেলিস্ট, প্রিয় সূরা ও ডাউনলোড যেমন আছে তেমনই থাকবে।"
     }
   },
   "common": {

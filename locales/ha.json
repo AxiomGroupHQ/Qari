@@ -105,7 +105,9 @@
       "notes": "Bayanan kula",
       "playlists": "Jerin Sauraro",
       "reciters": "Makaranta",
-      "uploads": "Abubuwan da Aka Ɗora"
+      "uploads": "Abubuwan da Aka Ɗora",
+      "history": "Tarihi",
+      "noHistoryYet": "Ba a kunna komai ba tukuna"
     },
     "loved": {
       "allLovedSurahsAreAlready": "An riga an sauke dukkan surorin da ake so.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Cire Dukkan Abubuwan da Aka Ɗora",
       "uploadRecitationsToSeeThem": "Ɗora karatuttuka domin ganinsu a nan"
+    },
+    "history": {
+      "emptyTitle": "Babu tarihi tukuna",
+      "emptySubtitle": "Surorin da ka kunna za su bayyana a nan",
+      "clear": "Share tarihi",
+      "clearTitle": "A share tarihi?",
+      "clearMessage": "Wannan zai cire jerin abubuwan da ka kunna kwanan nan. Jerinka, surorin da kake so da abubuwan da ka sauke za su kasance yadda suke."
     }
   },
   "common": {

@@ -105,7 +105,9 @@
       "notes": "નોંધો",
       "playlists": "પ્લેલિસ્ટ",
       "reciters": "કારીઓ",
-      "uploads": "અપલોડ"
+      "uploads": "અપલોડ",
+      "history": "ઇતિહાસ",
+      "noHistoryYet": "હજી કંઈ વગાડ્યું નથી"
     },
     "loved": {
       "allLovedSurahsAreAlready": "બધી પ્રિય સૂરહો પહેલેથી જ ડાઉનલોડ થયેલ છે.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "બધા અપલોડ દૂર કરો",
       "uploadRecitationsToSeeThem": "તિલાવત અપલોડ કરો જેથી તે અહીં દેખાય"
+    },
+    "history": {
+      "emptyTitle": "હજી કોઈ ઇતિહાસ નથી",
+      "emptySubtitle": "તમે વગાડેલી સૂરતો અહીં દેખાશે",
+      "clear": "ઇતિહાસ સાફ કરો",
+      "clearTitle": "ઇતિહાસ સાફ કરવો છે?",
+      "clearMessage": "આ તમારી તાજેતરમાં વગાડેલી યાદી દૂર કરશે. તમારી પ્લેલિસ્ટ, મનપસંદ સૂરતો અને ડાઉનલોડ જેમના તેમ રહેશે."
     }
   },
   "common": {

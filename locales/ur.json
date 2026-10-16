@@ -105,7 +105,9 @@
       "notes": "نوٹس",
       "playlists": "پلے لسٹس",
       "reciters": "قاری",
-      "uploads": "اپ لوڈز"
+      "uploads": "اپ لوڈز",
+      "history": "ہسٹری",
+      "noHistoryYet": "ابھی تک کچھ نہیں چلایا گیا"
     },
     "loved": {
       "allLovedSurahsAreAlready": "تمام پسندیدہ سورتیں پہلے ہی ڈاؤن لوڈ ہو چکی ہیں۔",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "تمام اپ لوڈز ہٹائیں",
       "uploadRecitationsToSeeThem": "تلاوتیں اپ لوڈ کریں تاکہ وہ یہاں نظر آئیں"
+    },
+    "history": {
+      "emptyTitle": "ابھی کوئی ہسٹری نہیں",
+      "emptySubtitle": "آپ جو سورتیں چلائیں گے وہ یہاں نظر آئیں گی",
+      "clear": "ہسٹری صاف کریں",
+      "clearTitle": "ہسٹری صاف کریں؟",
+      "clearMessage": "اس سے حال ہی میں چلائی گئی فہرست ہٹ جائے گی۔ آپ کی پلے لسٹس، پسندیدہ سورتیں اور ڈاؤن لوڈز جوں کے توں رہیں گے۔"
     }
   },
   "common": {

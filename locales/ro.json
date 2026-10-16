@@ -108,7 +108,9 @@
       "notes": "Note",
       "playlists": "Liste de redare",
       "reciters": "Recitatori",
-      "uploads": "Încărcări"
+      "uploads": "Încărcări",
+      "history": "Istoric",
+      "noHistoryYet": "Nimic redat încă"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Toate surele îndrăgite sunt deja descărcate.",
@@ -136,6 +138,13 @@
     "uploads": {
       "removeAllUploads": "Elimină toate încărcările",
       "uploadRecitationsToSeeThem": "Încarcă recitări pentru a le vedea aici"
+    },
+    "history": {
+      "emptyTitle": "Încă nu există istoric",
+      "emptySubtitle": "Surele pe care le asculți vor apărea aici",
+      "clear": "Șterge istoricul",
+      "clearTitle": "Ștergi istoricul?",
+      "clearMessage": "Aceasta elimină lista redărilor recente. Listele de redare, surele favorite și descărcările tale rămân neschimbate."
     }
   },
   "common": {

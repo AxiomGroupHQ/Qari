@@ -65,6 +65,10 @@ export default function CollectionLayout() {
           options={collectionScreenOptions}
         />
         <Stack.Screen
+          name="collection/history"
+          options={collectionScreenOptions}
+        />
+        <Stack.Screen
           name="collection/uploads"
           options={collectionScreenOptions}
         />

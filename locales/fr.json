@@ -108,7 +108,9 @@
       "notes": "Notes",
       "playlists": "Playlists",
       "reciters": "Récitateurs",
-      "uploads": "Imports"
+      "uploads": "Imports",
+      "history": "Historique",
+      "noHistoryYet": "Rien n'a encore été lu"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Toutes les sourates aimées sont déjà téléchargées.",
@@ -136,6 +138,13 @@
     "uploads": {
       "removeAllUploads": "Supprimer tous les imports",
       "uploadRecitationsToSeeThem": "Importez des récitations pour les voir ici"
+    },
+    "history": {
+      "emptyTitle": "Pas encore d'historique",
+      "emptySubtitle": "Les sourates que vous écoutez apparaîtront ici",
+      "clear": "Effacer l'historique",
+      "clearTitle": "Effacer l'historique ?",
+      "clearMessage": "Cela supprime votre liste d'écoutes récentes. Vos playlists, sourates favorites et téléchargements restent inchangés."
     }
   },
   "common": {

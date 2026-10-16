@@ -105,7 +105,9 @@
       "notes": "Notlar",
       "playlists": "Çalma Listeleri",
       "reciters": "Kâriler",
-      "uploads": "Yüklemeler"
+      "uploads": "Yüklemeler",
+      "history": "Geçmiş",
+      "noHistoryYet": "Henüz hiçbir şey çalınmadı"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Sevilen tüm sureler zaten indirildi.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Tüm Yüklemeleri Kaldır",
       "uploadRecitationsToSeeThem": "Burada görmek için okuyuşları yükleyin"
+    },
+    "history": {
+      "emptyTitle": "Henüz geçmiş yok",
+      "emptySubtitle": "Çaldığınız sureler burada görünür",
+      "clear": "Geçmişi temizle",
+      "clearTitle": "Geçmiş temizlensin mi?",
+      "clearMessage": "Bu, son çalınanlar listenizi kaldırır. Çalma listeleriniz, sevdiğiniz sureler ve indirmeleriniz olduğu gibi kalır."
     }
   },
   "common": {

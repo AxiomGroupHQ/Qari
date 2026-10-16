@@ -108,7 +108,9 @@
       "notes": "Bind yi",
       "playlists": "Liste yi",
       "reciters": "Jàngalekat yi",
-      "uploads": "Yu ñu yokk"
+      "uploads": "Yu ñu yokk",
+      "history": "Tariix",
+      "noHistoryYet": "Amul dara bu ñu defar"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Surat yi ñu bëgg yépp yeb nañu ko ba noppi.",
@@ -136,6 +138,13 @@
     "uploads": {
       "removeAllUploads": "Jële yu ñu yokk yépp",
       "uploadRecitationsToSeeThem": "Yokk jàng yi ngir gis leen fii"
+    },
+    "history": {
+      "emptyTitle": "Amul tariix tey",
+      "emptySubtitle": "Surat yi nga dégg dinañu fi feeñ",
+      "clear": "Far tariix bi",
+      "clearTitle": "Far tariix bi?",
+      "clearMessage": "Loolu dina dindi lisit bi nga mujj a dégg. Say lisit, surat yi nga bëgg ak yi nga yeb dinañu des ni ñu mel."
     }
   },
   "common": {

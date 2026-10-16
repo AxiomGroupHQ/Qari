@@ -105,7 +105,9 @@
       "notes": "Notew",
       "playlists": "Playlistw",
       "reciters": "Kalanbagaw",
-      "uploads": "Kalan lakɔrɔtɔw"
+      "uploads": "Kalan lakɔrɔtɔw",
+      "history": "Tariki",
+      "noHistoryYet": "Foyi ma ta fɔlɔ"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Sura kanubagatɔw bɛɛ jiginna kaban.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Kalan lakɔrɔtɔw bɛɛ bɔ",
       "uploadRecitationsToSeeThem": "Kalan lakɔrɔ walasa i k'u ye yan"
+    },
+    "history": {
+      "emptyTitle": "Tariki tɛ yen fɔlɔ",
+      "emptySubtitle": "Sura minnu bɛ lamɛn, olu bɛ yan",
+      "clear": "Tariki bɔ yen",
+      "clearTitle": "Tariki bɔ yen wa?",
+      "clearMessage": "Nin bɛ i ka lamɛnni kɔfɛ lisitɛ bɔ. I ka lisitɛw, sura kanu ni zanw bɛ to a cogo la."
     }
   },
   "common": {

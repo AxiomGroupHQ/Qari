@@ -105,7 +105,9 @@
       "notes": "Shënimet",
       "playlists": "Listat",
       "reciters": "Recituesit",
-      "uploads": "Ngarkimet"
+      "uploads": "Ngarkimet",
+      "history": "Historiku",
+      "noHistoryYet": "Ende nuk është luajtur asgjë"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Të gjitha suret e dashura janë shkarkuar tashmë.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Hiq të gjitha ngarkimet",
       "uploadRecitationsToSeeThem": "Ngarko recitime për t'i parë këtu"
+    },
+    "history": {
+      "emptyTitle": "Ende nuk ka histori",
+      "emptySubtitle": "Suret që luan do të shfaqen këtu",
+      "clear": "Pastro historikun",
+      "clearTitle": "Të pastrohet historiku?",
+      "clearMessage": "Kjo heq listën e luajtjeve të fundit. Listat, suret e preferuara dhe shkarkimet e tua mbeten siç janë."
     }
   },
   "common": {

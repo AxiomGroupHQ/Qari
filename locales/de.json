@@ -105,7 +105,9 @@
       "notes": "Notizen",
       "playlists": "Playlists",
       "reciters": "Rezitatoren",
-      "uploads": "Uploads"
+      "uploads": "Uploads",
+      "history": "Verlauf",
+      "noHistoryYet": "Noch nichts abgespielt"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Alle Lieblingssuren sind bereits heruntergeladen.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Alle Uploads entfernen",
       "uploadRecitationsToSeeThem": "Lade Rezitationen hoch, um sie hier zu sehen"
+    },
+    "history": {
+      "emptyTitle": "Noch kein Verlauf",
+      "emptySubtitle": "Suren, die du abspielst, erscheinen hier",
+      "clear": "Verlauf löschen",
+      "clearTitle": "Verlauf löschen?",
+      "clearMessage": "Dadurch wird deine Liste zuletzt gehörter Suren entfernt. Deine Playlists, Lieblingssuren und Downloads bleiben erhalten."
     }
   },
   "common": {

@@ -102,7 +102,9 @@
       "notes": "Nota",
       "playlists": "Senarai Main",
       "reciters": "Qari",
-      "uploads": "Muat Naik"
+      "uploads": "Muat Naik",
+      "history": "Sejarah",
+      "noHistoryYet": "Belum ada yang dimainkan"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Semua surah kegemaran sudah dimuat turun.",
@@ -130,6 +132,13 @@
     "uploads": {
       "removeAllUploads": "Buang Semua Muat Naik",
       "uploadRecitationsToSeeThem": "Muat naik bacaan untuk melihatnya di sini"
+    },
+    "history": {
+      "emptyTitle": "Belum ada sejarah",
+      "emptySubtitle": "Surah yang anda mainkan akan muncul di sini",
+      "clear": "Kosongkan sejarah",
+      "clearTitle": "Kosongkan sejarah?",
+      "clearMessage": "Ini membuang senarai yang baru dimainkan. Senarai main, surah kegemaran dan muat turun anda kekal seperti sedia ada."
     }
   },
   "common": {

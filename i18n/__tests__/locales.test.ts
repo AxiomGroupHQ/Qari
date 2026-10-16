@@ -121,6 +121,13 @@ describe('share and discover strings', () => {
     'sheets.playlistContextSheet.shareRateLimited',
     'sheets.playlistContextSheet.shareNothing',
     'sheets.playlistContextSheet.shareMessage',
+    'collection.index.history',
+    'collection.index.noHistoryYet',
+    'collection.history.emptyTitle',
+    'collection.history.emptySubtitle',
+    'collection.history.clear',
+    'collection.history.clearTitle',
+    'collection.history.clearMessage',
   ];
   const en = flatten(
     JSON.parse(fs.readFileSync(path.join(localesDir, 'en.json'), 'utf8')),

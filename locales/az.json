@@ -105,7 +105,9 @@
       "notes": "Qeydlər",
       "playlists": "Pleylistlər",
       "reciters": "Qarilər",
-      "uploads": "Yükləmələr"
+      "uploads": "Yükləmələr",
+      "history": "Tarix",
+      "noHistoryYet": "Hələ heç nə oxudulmayıb"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Bəyənilən bütün surələr artıq endirilib.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Bütün yükləmələri sil",
       "uploadRecitationsToSeeThem": "Tilavətləri burada görmək üçün yükləyin"
+    },
+    "history": {
+      "emptyTitle": "Hələ tarix yoxdur",
+      "emptySubtitle": "Dinlədiyiniz surələr burada görünəcək",
+      "clear": "Tarixi təmizlə",
+      "clearTitle": "Tarix təmizlənsin?",
+      "clearMessage": "Bu, son dinləmə siyahınızı silir. Pleylistləriniz, sevimli surələriniz və yükləmələriniz olduğu kimi qalır."
     }
   },
   "common": {

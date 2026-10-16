@@ -105,7 +105,9 @@
       "notes": "Qaydlar",
       "playlists": "Pleylistlar",
       "reciters": "Qorilar",
-      "uploads": "Yuklangan fayllar"
+      "uploads": "Yuklangan fayllar",
+      "history": "Tarix",
+      "noHistoryYet": "Hali hech narsa ijro etilmagan"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Barcha sevimli suralar allaqachon yuklab olingan.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Barcha yuklangan fayllarni olib tashlash",
       "uploadRecitationsToSeeThem": "Tilovatlarni shu yerda ko'rish uchun yuklang"
+    },
+    "history": {
+      "emptyTitle": "Hali tarix yo‘q",
+      "emptySubtitle": "Siz ijro etgan suralar shu yerda ko‘rinadi",
+      "clear": "Tarixni tozalash",
+      "clearTitle": "Tarix tozalansinmi?",
+      "clearMessage": "Bu yaqinda ijro etilganlar ro‘yxatini o‘chiradi. Pleylistlaringiz, sevimli suralaringiz va yuklab olinganlaringiz o‘z holicha qoladi."
     }
   },
   "common": {

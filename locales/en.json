@@ -75,7 +75,9 @@
       "notes": "Notes",
       "playlists": "Playlists",
       "reciters": "Reciters",
-      "uploads": "Uploads"
+      "uploads": "Uploads",
+      "history": "History",
+      "noHistoryYet": "Nothing played yet"
     },
     "loved": {
       "allLovedSurahsAreAlready": "All loved surahs are already downloaded.",
@@ -103,6 +105,13 @@
     "uploads": {
       "removeAllUploads": "Remove All Uploads",
       "uploadRecitationsToSeeThem": "Upload recitations to see them here"
+    },
+    "history": {
+      "emptyTitle": "No history yet",
+      "emptySubtitle": "Surahs you play will show up here",
+      "clear": "Clear History",
+      "clearTitle": "Clear history?",
+      "clearMessage": "This removes your recently played list. Your playlists, loved surahs and downloads stay as they are."
     }
   },
   "common": {

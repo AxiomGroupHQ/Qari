@@ -105,7 +105,9 @@
       "notes": "Têbînî",
       "playlists": "Lîsteyên lêdanê",
       "reciters": "Xwîner",
-      "uploads": "Barkirin"
+      "uploads": "Barkirin",
+      "history": "Dîrok",
+      "noHistoryYet": "Hê tiştek nehatiye lêdan"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Hemû sûreyên hezkirî jixwe hatine daxistin.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Hemû barkirinan rake",
       "uploadRecitationsToSeeThem": "Xwendinan bar bike da ku li vir bibînî"
+    },
+    "history": {
+      "emptyTitle": "Hê dîrok tune",
+      "emptySubtitle": "Sûreyên ku tu lê dixî dê li vir xuya bibin",
+      "clear": "Dîrokê paqij bike",
+      "clearTitle": "Dîrok were paqijkirin?",
+      "clearMessage": "Ev lîsteya ku nû hatiye lêdan radike. Lîste, sûreyên bijare û daxistinên te wekî xwe dimînin."
     }
   },
   "common": {

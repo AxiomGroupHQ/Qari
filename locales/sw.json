@@ -105,7 +105,9 @@
       "notes": "Maelezo",
       "playlists": "Orodha za Kucheza",
       "reciters": "Qari",
-      "uploads": "Vilivyopakiwa"
+      "uploads": "Vilivyopakiwa",
+      "history": "Historia",
+      "noHistoryYet": "Hakuna kilichochezwa bado"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Sura zote pendwa tayari zimepakuliwa.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Ondoa Vilivyopakiwa Vyote",
       "uploadRecitationsToSeeThem": "Pakia qiraa ili uziione hapa"
+    },
+    "history": {
+      "emptyTitle": "Bado hakuna historia",
+      "emptySubtitle": "Sura utakazocheza zitaonekana hapa",
+      "clear": "Futa historia",
+      "clearTitle": "Futa historia?",
+      "clearMessage": "Hii huondoa orodha ya ulivyocheza hivi karibuni. Orodha zako, sura ulizopenda na vipakuliwa vitabaki kama vilivyo."
     }
   },
   "common": {

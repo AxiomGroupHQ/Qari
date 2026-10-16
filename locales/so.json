@@ -105,7 +105,9 @@
       "notes": "Xusuus-qorrooyin",
       "playlists": "Liisaska",
       "reciters": "Akhristayaasha",
-      "uploads": "La geliyey"
+      "uploads": "La geliyey",
+      "history": "Taariikh",
+      "noHistoryYet": "Wax lama ciyaarin weli"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Dhammaan suurooyinka la jecelyahay hore ayaa loo soo dejiyey.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Ka saar dhammaan waxa la geliyey",
       "uploadRecitationsToSeeThem": "Geli akhrisyo si aad halkan u aragto"
+    },
+    "history": {
+      "emptyTitle": "Taariikh weli ma jirto",
+      "emptySubtitle": "Suuradaha aad ciyaarto halkan ayay ka muuqan doonaan",
+      "clear": "Tirtir taariikhda",
+      "clearTitle": "Taariikhda ma tirtirnaa?",
+      "clearMessage": "Tani waxay saaraysaa liiskii dhawaan la ciyaaray. Liisaskaaga, suuradaha aad jeceshahay iyo soo dejinahaaga way sii jiraan."
     }
   },
   "common": {

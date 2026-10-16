@@ -105,7 +105,9 @@
       "notes": "ማስታወሻዎች",
       "playlists": "አጫዋች ዝርዝሮች",
       "reciters": "አንባቢዎች",
-      "uploads": "ሰቀላዎች"
+      "uploads": "ሰቀላዎች",
+      "history": "ታሪክ",
+      "noHistoryYet": "እስካሁን ምንም አልተጫወተም"
     },
     "loved": {
       "allLovedSurahsAreAlready": "ሁሉም የተወደዱ ሱራዎች አስቀድመው ወርደዋል።",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "ሁሉንም ሰቀላዎች አስወግድ",
       "uploadRecitationsToSeeThem": "እዚህ ለማየት ንባቦችን ይስቀሉ"
+    },
+    "history": {
+      "emptyTitle": "እስካሁን ታሪክ የለም",
+      "emptySubtitle": "የሚያጫውቷቸው ሱራዎች እዚህ ይታያሉ",
+      "clear": "ታሪክን ሰርዝ",
+      "clearTitle": "ታሪክ ይሰረዝ?",
+      "clearMessage": "ይህ በቅርብ የተጫወቱትን ዝርዝር ያስወግዳል። የአጫዋች ዝርዝሮችዎ፣ የወደዷቸው ሱራዎች እና ውርዶች እንዳሉ ይቆያሉ።"
     }
   },
   "common": {

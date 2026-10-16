@@ -105,7 +105,9 @@
       "notes": "Ýazgylar",
       "playlists": "Pleýlistler",
       "reciters": "Karylar",
-      "uploads": "Ýükläp iberilenler"
+      "uploads": "Ýükläp iberilenler",
+      "history": "Taryh",
+      "noHistoryYet": "Heniz hiç zat oýnalmady"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Ähli halanan süreler eýýäm ýükläp alnan.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Ähli ýükläp iberilenleri aýyr",
       "uploadRecitationsToSeeThem": "Tilawatlary şu ýerde görmek üçin ýükläp iberiň"
+    },
+    "history": {
+      "emptyTitle": "Heniz taryh ýok",
+      "emptySubtitle": "Diňleýän sureleriňiz şu ýerde görünýär",
+      "clear": "Taryhy arassala",
+      "clearTitle": "Taryh arassalansynmy?",
+      "clearMessage": "Bu soňky oýnalanlar sanawyny aýyrýar. Pleýlistleriňiz, halaýan sureleriňiz we ýüklemeleriňiz şol bolşy ýaly galýar."
     }
   },
   "common": {

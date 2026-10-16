@@ -104,7 +104,9 @@
       "notes": "笔记",
       "playlists": "播放列表",
       "reciters": "诵读者",
-      "uploads": "上传内容"
+      "uploads": "上传内容",
+      "history": "历史记录",
+      "noHistoryYet": "还没有播放过任何内容"
     },
     "loved": {
       "allLovedSurahsAreAlready": "所有喜爱的苏拉均已下载。",
@@ -132,6 +134,13 @@
     "uploads": {
       "removeAllUploads": "移除所有上传内容",
       "uploadRecitationsToSeeThem": "上传诵读音频后即可在此查看"
+    },
+    "history": {
+      "emptyTitle": "暂无历史记录",
+      "emptySubtitle": "你播放过的章节会显示在这里",
+      "clear": "清除历史记录",
+      "clearTitle": "清除历史记录？",
+      "clearMessage": "这会移除你最近播放的列表。你的播放列表、喜爱的章节和下载内容不受影响。"
     }
   },
   "common": {

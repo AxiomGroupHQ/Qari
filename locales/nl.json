@@ -105,7 +105,9 @@
       "notes": "Notities",
       "playlists": "Afspeellijsten",
       "reciters": "Recitatoren",
-      "uploads": "Uploads"
+      "uploads": "Uploads",
+      "history": "Geschiedenis",
+      "noHistoryYet": "Nog niets afgespeeld"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Alle geliefde soera's zijn al gedownload.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Alle uploads verwijderen",
       "uploadRecitationsToSeeThem": "Upload recitaties om ze hier te zien"
+    },
+    "history": {
+      "emptyTitle": "Nog geen geschiedenis",
+      "emptySubtitle": "Soera's die je afspeelt verschijnen hier",
+      "clear": "Geschiedenis wissen",
+      "clearTitle": "Geschiedenis wissen?",
+      "clearMessage": "Hiermee verdwijnt je lijst met recent afgespeelde soera's. Je afspeellijsten, favoriete soera's en downloads blijven staan."
     }
   },
   "common": {
