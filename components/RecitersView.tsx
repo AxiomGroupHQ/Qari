@@ -263,6 +263,7 @@ const RenderSectionItem = React.memo(
           name={reciter.name}
           onPress={() => onReciterPress(reciter)}
           showFollowAlong={showFollowAlong}
+          width={moderateScale(92)}
         />
       );
     }

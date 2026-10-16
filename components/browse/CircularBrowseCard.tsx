@@ -5,6 +5,7 @@ import Color from 'color';
 import {Reciter} from '@/data/reciterData';
 import {Theme} from '@/utils/themeUtils';
 import {ReciterImage} from '@/components/ReciterImage';
+import {HOME_GOLD} from '@/components/home/homeTheme';
 
 interface CircularBrowseCardProps {
   reciter: Reciter;
@@ -25,8 +26,10 @@ function createStyles(theme: Theme, width: number) {
       height: width,
       borderRadius: width / 2,
       overflow: 'hidden',
-      borderWidth: 1,
-      borderColor: Color(theme.colors.text).alpha(0.08).toString(),
+      borderWidth: 1.5,
+      borderColor: Color(HOME_GOLD)
+        .alpha(theme.isDarkMode ? 0.45 : 0.35)
+        .toString(),
       backgroundColor: Color(theme.colors.text).alpha(0.04).toString(),
     },
     image: {

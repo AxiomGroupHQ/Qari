@@ -49,6 +49,9 @@ function createStyles(_theme: Theme, bottomInset = 0) {
       justifyContent: 'space-between',
       marginBottom: moderateScale(10),
     },
+    rowCircular: {
+      justifyContent: 'space-evenly',
+    },
     loadingContainer: {
       padding: moderateScale(20),
       alignItems: 'center',
@@ -84,11 +87,12 @@ const BrowseGrid = React.memo(
 
     // Calculate number of columns based on screen width
     const numColumns = useMemo(() => {
-      // Circular reciter cells stay compact - 4 columns on a phone-width
-      // screen; detailed (rectangular) cards keep the wider minimum.
-      const minCardWidth = moderateScale(circular ? 92 : 120);
+      // Circular reciter cells sit 3-up on a phone again, near the
+      // pre-trim size; the circle itself is capped slightly below the
+      // cell width so it reads a touch smaller than the old design.
+      const minCardWidth = moderateScale(120);
       return Math.max(3, Math.floor(windowWidth / minCardWidth));
-    }, [windowWidth, circular]);
+    }, [windowWidth]);
 
     // Convert flat list to rows for grid layout
     const itemRows = useMemo(() => {
@@ -106,12 +110,16 @@ const BrowseGrid = React.memo(
       const gapSpace = moderateScale(10) * (numColumns - 1);
       const availableWidth = windowWidth - totalHorizontalPadding - gapSpace;
       const itemWidth = availableWidth / numColumns;
+      const circleWidth = circular
+        ? Math.min(itemWidth, moderateScale(104))
+        : itemWidth;
       const itemHeight = circular
-        ? itemWidth + moderateScale(48)
+        ? circleWidth + moderateScale(48)
         : itemWidth * 1.2;
 
       return {
         width: itemWidth,
+        circleWidth,
         height: itemHeight,
       };
     }, [windowWidth, numColumns, circular]);
@@ -119,14 +127,14 @@ const BrowseGrid = React.memo(
     // Render a row of items
     const renderRow = useCallback(
       ({item}: {item: Reciter[]}) => (
-        <View style={styles.row}>
+        <View style={[styles.row, circular && styles.rowCircular]}>
           {item.map(reciter =>
             circular ? (
               <CircularBrowseCard
                 key={reciter.id}
                 reciter={reciter}
                 onPress={() => onReciterPress(reciter)}
-                width={itemDimensions.width}
+                width={itemDimensions.circleWidth}
                 theme={theme}
               />
             ) : (
@@ -148,7 +156,11 @@ const BrowseGrid = React.memo(
               .map((_, index) => (
                 <View
                   key={`placeholder-${index}`}
-                  style={{width: itemDimensions.width}}
+                  style={{
+                    width: circular
+                      ? itemDimensions.circleWidth
+                      : itemDimensions.width,
+                  }}
                 />
               ))}
         </View>
@@ -159,6 +171,7 @@ const BrowseGrid = React.memo(
         theme,
         numColumns,
         styles.row,
+        styles.rowCircular,
         getRewayatIdForReciter,
         circular,
       ],

@@ -15,6 +15,7 @@ import {Feather} from '@expo/vector-icons';
 import Color from 'color';
 import {Link} from 'expo-router';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {HOME_GOLD} from '@/components/home/homeTheme';
 import {t} from '@/i18n';
 
 interface CircularReciterCardProps {
@@ -73,7 +74,9 @@ export const CircularReciterCard: React.FC<CircularReciterCardProps> = ({
           alignItems: 'center',
           justifyContent: 'center',
           borderWidth: 1.5,
-          borderColor: Color(theme.colors.text).alpha(0.06).toString(),
+          borderColor: Color(HOME_GOLD)
+            .alpha(theme.isDarkMode ? 0.45 : 0.35)
+            .toString(),
         },
         reciterImage: {
           width: '100%',
