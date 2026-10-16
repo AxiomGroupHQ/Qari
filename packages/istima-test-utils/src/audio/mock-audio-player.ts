@@ -6,9 +6,9 @@
  * seekTo / replace / setRate / setVolume / addListener) plus deterministic
  * `simulate*` drivers so tests can step through the playback state machine.
  *
- * Lives in @bayaan/test-utils so RFC-005's `@bayaan/audio` services tests
+ * Lives in @istima/test-utils so RFC-005's `@istima/audio` services tests
  * can share it without re-importing from app code. The adapter test in
- * @bayaan/audio uses it today; once the audio services move into the
+ * @istima/audio uses it today; once the audio services move into the
  * package (RFC-005 PR 6), every service test reuses this same fixture.
  */
 

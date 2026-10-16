@@ -22,13 +22,13 @@
  *    dependency direction the RFC sequence is establishing.
  */
 
-import type {BaseTrack, PlaybackState} from '@bayaan/types';
+import type {BaseTrack, PlaybackState} from '@istima/types';
 
 import type {PlayerController} from '../ports';
 
 /**
  * Reference implementation of `PlayerController<TTrack>` against the future
- * `BayaanAudioProvider`. Behavior is intentionally minimal — every callback
+ * `IstimaAudioProvider`. Behavior is intentionally minimal — every callback
  * is a no-op the consumer overrides via subclass or composition. The full
  * implementation arrives with RFC-005.
  */

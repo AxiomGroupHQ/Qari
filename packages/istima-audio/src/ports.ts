@@ -1,7 +1,7 @@
 /**
- * @bayaan/audio ports
+ * @istima/audio ports
  *
- * The five interfaces a consumer implements when integrating @bayaan/audio.
+ * The five interfaces a consumer implements when integrating @istima/audio.
  * Defined in ADR-0001. The package calls into ports; ports never call back
  * into the package. Flow is one-directional: package → port → consumer.
  *
@@ -13,14 +13,14 @@ import type {
   BaseTrack,
   LockScreenMetadata,
   PlaybackState,
-} from '@bayaan/types';
+} from '@istima/types';
 
 // ============================================================
 // PlayerController — state + progress + persistence bridge
 // ============================================================
 
 /**
- * Bridges @bayaan/audio's playback events into the consumer's state model
+ * Bridges @istima/audio's playback events into the consumer's state model
  * (Zustand, Redux, signals, anything). Replaces today's bidirectional
  * coupling between ExpoAudioProvider and playerStore (ADR-0001 §Context.1).
  *
@@ -172,15 +172,15 @@ export interface LockScreenMetadataSource {
 export type Unsubscribe = () => void;
 
 // ============================================================
-// BayaanAudioConfig — the full consumer config the package takes at init
+// IstimaAudioConfig — the full consumer config the package takes at init
 // ============================================================
 
 /**
- * Passed to the (future) `BayaanAudioProvider` once RFC-004's later
+ * Passed to the (future) `IstimaAudioProvider` once RFC-004's later
  * extraction PRs land. Surfaced here so consumer apps can prepare their
  * wire-up shape ahead of the migration.
  */
-export interface BayaanAudioConfig<TTrack extends BaseTrack = BaseTrack> {
+export interface IstimaAudioConfig<TTrack extends BaseTrack = BaseTrack> {
   controller: PlayerController<TTrack>;
   coordinator: CoordinatorHooks;
   /**

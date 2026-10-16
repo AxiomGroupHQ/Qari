@@ -1,15 +1,15 @@
 import {
-  BayaanError,
-  BayaanAudioError,
-  BayaanMushafError,
-  BayaanLifecycleError,
-  BayaanNetworkError,
+  IstimaError,
+  IstimaAudioError,
+  IstimaMushafError,
+  IstimaLifecycleError,
+  IstimaNetworkError,
 } from '../errors';
 
-describe('BayaanError', () => {
+describe('IstimaError', () => {
   describe('construction', () => {
     it('captures code, recoverable, message, and frozen context', () => {
-      const err = new BayaanError('AUDIO_LOAD_FAILED', 'load failed', {
+      const err = new IstimaError('AUDIO_LOAD_FAILED', 'load failed', {
         recoverable: true,
         context: {url: 'https://example.invalid/track.mp3'},
       });
@@ -22,7 +22,7 @@ describe('BayaanError', () => {
     });
 
     it('defaults context to an empty frozen object when omitted', () => {
-      const err = new BayaanError('PRECONDITION_VIOLATED', 'no player', {
+      const err = new IstimaError('PRECONDITION_VIOLATED', 'no player', {
         recoverable: false,
       });
 
@@ -32,7 +32,7 @@ describe('BayaanError', () => {
 
     it('preserves a cause via options.cause', () => {
       const cause = new TypeError('bad uri');
-      const err = new BayaanError('AUDIO_SOURCE_INVALID', 'invalid source', {
+      const err = new IstimaError('AUDIO_SOURCE_INVALID', 'invalid source', {
         recoverable: false,
         cause,
       });
@@ -42,7 +42,7 @@ describe('BayaanError', () => {
 
     it('does not retain a reference to the caller-provided context object', () => {
       const ctx = {surahId: 42} as Record<string, unknown>;
-      const err = new BayaanError('AUDIO_PLAYBACK_FAILED', 'failed', {
+      const err = new IstimaError('AUDIO_PLAYBACK_FAILED', 'failed', {
         recoverable: true,
         context: ctx,
       });
@@ -54,16 +54,16 @@ describe('BayaanError', () => {
   });
 
   describe('Error inheritance', () => {
-    it('is an instance of Error and BayaanError', () => {
-      const err = new BayaanError('AUDIO_LOAD_FAILED', 'x', {
+    it('is an instance of Error and IstimaError', () => {
+      const err = new IstimaError('AUDIO_LOAD_FAILED', 'x', {
         recoverable: true,
       });
       expect(err).toBeInstanceOf(Error);
-      expect(err).toBeInstanceOf(BayaanError);
+      expect(err).toBeInstanceOf(IstimaError);
     });
 
     it('preserves a stack trace', () => {
-      const err = new BayaanError('AUDIO_LOAD_FAILED', 'x', {
+      const err = new IstimaError('AUDIO_LOAD_FAILED', 'x', {
         recoverable: true,
       });
       expect(typeof err.stack).toBe('string');
@@ -73,64 +73,64 @@ describe('BayaanError', () => {
 });
 
 describe('Domain subclasses', () => {
-  it('all extend BayaanError and Error', () => {
-    const audio = new BayaanAudioError('AUDIO_LOAD_FAILED', 'a', {
+  it('all extend IstimaError and Error', () => {
+    const audio = new IstimaAudioError('AUDIO_LOAD_FAILED', 'a', {
       recoverable: true,
     });
-    const mushaf = new BayaanMushafError('MUSHAF_DB_NOT_FOUND', 'm', {
+    const mushaf = new IstimaMushafError('MUSHAF_DB_NOT_FOUND', 'm', {
       recoverable: false,
     });
-    const lifecycle = new BayaanLifecycleError('LIFECYCLE_AFTER_DESTROY', 'l', {
+    const lifecycle = new IstimaLifecycleError('LIFECYCLE_AFTER_DESTROY', 'l', {
       recoverable: false,
     });
-    const network = new BayaanNetworkError('NETWORK_TIMEOUT', 'n', {
+    const network = new IstimaNetworkError('NETWORK_TIMEOUT', 'n', {
       recoverable: true,
     });
 
     for (const err of [audio, mushaf, lifecycle, network]) {
       expect(err).toBeInstanceOf(Error);
-      expect(err).toBeInstanceOf(BayaanError);
+      expect(err).toBeInstanceOf(IstimaError);
     }
   });
 
   it('have the right name property for each subclass', () => {
     expect(
-      new BayaanAudioError('AUDIO_LOAD_FAILED', 'x', {recoverable: true}).name,
-    ).toBe('BayaanAudioError');
+      new IstimaAudioError('AUDIO_LOAD_FAILED', 'x', {recoverable: true}).name,
+    ).toBe('IstimaAudioError');
     expect(
-      new BayaanMushafError('MUSHAF_DB_NOT_FOUND', 'x', {recoverable: false})
+      new IstimaMushafError('MUSHAF_DB_NOT_FOUND', 'x', {recoverable: false})
         .name,
-    ).toBe('BayaanMushafError');
+    ).toBe('IstimaMushafError');
     expect(
-      new BayaanLifecycleError('LIFECYCLE_AFTER_DESTROY', 'x', {
+      new IstimaLifecycleError('LIFECYCLE_AFTER_DESTROY', 'x', {
         recoverable: false,
       }).name,
-    ).toBe('BayaanLifecycleError');
+    ).toBe('IstimaLifecycleError');
     expect(
-      new BayaanNetworkError('NETWORK_TIMEOUT', 'x', {recoverable: true}).name,
-    ).toBe('BayaanNetworkError');
+      new IstimaNetworkError('NETWORK_TIMEOUT', 'x', {recoverable: true}).name,
+    ).toBe('IstimaNetworkError');
   });
 
   it('lets consumers branch on instanceof for each domain', () => {
     const errs = [
-      new BayaanAudioError('AUDIO_LOAD_FAILED', 'a', {recoverable: true}),
-      new BayaanMushafError('MUSHAF_DB_NOT_FOUND', 'm', {recoverable: false}),
-      new BayaanLifecycleError('LIFECYCLE_AFTER_DESTROY', 'l', {
+      new IstimaAudioError('AUDIO_LOAD_FAILED', 'a', {recoverable: true}),
+      new IstimaMushafError('MUSHAF_DB_NOT_FOUND', 'm', {recoverable: false}),
+      new IstimaLifecycleError('LIFECYCLE_AFTER_DESTROY', 'l', {
         recoverable: false,
       }),
-      new BayaanNetworkError('NETWORK_TIMEOUT', 'n', {recoverable: true}),
+      new IstimaNetworkError('NETWORK_TIMEOUT', 'n', {recoverable: true}),
     ] as const;
 
-    expect(errs[0]).toBeInstanceOf(BayaanAudioError);
-    expect(errs[0]).not.toBeInstanceOf(BayaanMushafError);
+    expect(errs[0]).toBeInstanceOf(IstimaAudioError);
+    expect(errs[0]).not.toBeInstanceOf(IstimaMushafError);
 
-    expect(errs[1]).toBeInstanceOf(BayaanMushafError);
-    expect(errs[1]).not.toBeInstanceOf(BayaanAudioError);
+    expect(errs[1]).toBeInstanceOf(IstimaMushafError);
+    expect(errs[1]).not.toBeInstanceOf(IstimaAudioError);
 
-    expect(errs[2]).toBeInstanceOf(BayaanLifecycleError);
-    expect(errs[2]).not.toBeInstanceOf(BayaanNetworkError);
+    expect(errs[2]).toBeInstanceOf(IstimaLifecycleError);
+    expect(errs[2]).not.toBeInstanceOf(IstimaNetworkError);
 
-    expect(errs[3]).toBeInstanceOf(BayaanNetworkError);
-    expect(errs[3]).not.toBeInstanceOf(BayaanLifecycleError);
+    expect(errs[3]).toBeInstanceOf(IstimaNetworkError);
+    expect(errs[3]).not.toBeInstanceOf(IstimaLifecycleError);
   });
 });

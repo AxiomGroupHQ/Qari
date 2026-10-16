@@ -11,11 +11,11 @@ export type {LockScreenMetadata} from './lock-screen';
 export type {AmbientSoundType} from './ambient';
 
 // Errors
-export type {BayaanErrorOptions, ErrorCode} from './errors';
+export type {IstimaErrorOptions, ErrorCode} from './errors';
 export {
-  BayaanError,
-  BayaanAudioError,
-  BayaanMushafError,
-  BayaanLifecycleError,
-  BayaanNetworkError,
+  IstimaError,
+  IstimaAudioError,
+  IstimaMushafError,
+  IstimaLifecycleError,
+  IstimaNetworkError,
 } from './errors';

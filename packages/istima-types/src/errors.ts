@@ -1,9 +1,9 @@
 /**
  * Istima platform error machinery.
  *
- * Every error produced by `@bayaan/*` packages is a `BayaanError` subclass.
+ * Every error produced by `@istima/*` packages is a `IstimaError` subclass.
  * Consumers branch on `error.code` (stable enum) or `error instanceof
- * BayaanAudioError` (domain marker), never on `error.message`.
+ * IstimaAudioError` (domain marker), never on `error.message`.
  *
  * Two categories by handling:
  *   - Recoverable (`recoverable: true`) — flow through callback ports
@@ -48,7 +48,7 @@ export type ErrorCode =
   | 'NETWORK_OFFLINE'
   | 'NETWORK_HTTP_ERROR';
 
-export interface BayaanErrorOptions {
+export interface IstimaErrorOptions {
   recoverable: boolean;
   context?: Record<string, unknown>;
   cause?: unknown;
@@ -56,18 +56,18 @@ export interface BayaanErrorOptions {
 
 /**
  * Base class for all platform errors. Use the domain subclasses
- * (`BayaanAudioError`, `BayaanMushafError`, …) when throwing or constructing
+ * (`IstimaAudioError`, `IstimaMushafError`, …) when throwing or constructing
  * for `instanceof` matching downstream.
  */
-export class BayaanError extends Error {
+export class IstimaError extends Error {
   readonly code: ErrorCode;
   readonly recoverable: boolean;
   readonly context: Readonly<Record<string, unknown>>;
   readonly cause?: unknown;
 
-  constructor(code: ErrorCode, message: string, options: BayaanErrorOptions) {
+  constructor(code: ErrorCode, message: string, options: IstimaErrorOptions) {
     super(message);
-    this.name = 'BayaanError';
+    this.name = 'IstimaError';
     this.code = code;
     this.recoverable = options.recoverable;
     this.context = Object.freeze({...(options.context ?? {})});
@@ -76,33 +76,33 @@ export class BayaanError extends Error {
 }
 
 /** Audio-domain errors. Use for AUDIO_* codes. */
-export class BayaanAudioError extends BayaanError {
-  constructor(code: ErrorCode, message: string, options: BayaanErrorOptions) {
+export class IstimaAudioError extends IstimaError {
+  constructor(code: ErrorCode, message: string, options: IstimaErrorOptions) {
     super(code, message, options);
-    this.name = 'BayaanAudioError';
+    this.name = 'IstimaAudioError';
   }
 }
 
 /** Mushaf-domain errors. Use for MUSHAF_* / REWAYAT_* / SKIA_* codes. */
-export class BayaanMushafError extends BayaanError {
-  constructor(code: ErrorCode, message: string, options: BayaanErrorOptions) {
+export class IstimaMushafError extends IstimaError {
+  constructor(code: ErrorCode, message: string, options: IstimaErrorOptions) {
     super(code, message, options);
-    this.name = 'BayaanMushafError';
+    this.name = 'IstimaMushafError';
   }
 }
 
 /** Lifecycle errors. Use for LIFECYCLE_* / PRECONDITION_* codes. */
-export class BayaanLifecycleError extends BayaanError {
-  constructor(code: ErrorCode, message: string, options: BayaanErrorOptions) {
+export class IstimaLifecycleError extends IstimaError {
+  constructor(code: ErrorCode, message: string, options: IstimaErrorOptions) {
     super(code, message, options);
-    this.name = 'BayaanLifecycleError';
+    this.name = 'IstimaLifecycleError';
   }
 }
 
 /** Network errors. Use for NETWORK_* codes. */
-export class BayaanNetworkError extends BayaanError {
-  constructor(code: ErrorCode, message: string, options: BayaanErrorOptions) {
+export class IstimaNetworkError extends IstimaError {
+  constructor(code: ErrorCode, message: string, options: IstimaErrorOptions) {
     super(code, message, options);
-    this.name = 'BayaanNetworkError';
+    this.name = 'IstimaNetworkError';
   }
 }

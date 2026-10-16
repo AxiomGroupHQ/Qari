@@ -9,7 +9,7 @@
  * (consumer-side: Istima's playerStore-backed controller in app code).
  */
 
-import type {BaseTrack, PlaybackState} from '@bayaan/types';
+import type {BaseTrack, PlaybackState} from '@istima/types';
 
 import type {
   CoordinatorHooks,

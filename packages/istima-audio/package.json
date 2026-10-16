@@ -1,7 +1,7 @@
 {
-  "name": "@bayaan/test-utils",
+  "name": "@istima/audio",
   "version": "0.1.0",
-  "description": "Shared Jest test helpers for @bayaan/* packages.",
+  "description": "Audio playback ports and adapters for the Bayaan platform.",
   "license": "AGPL-3.0-or-later",
   "private": true,
   "main": "./src/index.ts",
@@ -12,6 +12,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@bayaan/types": "*"
+    "@istima/types": "*"
+  },
+  "devDependencies": {
+    "@istima/test-utils": "*"
   }
 }

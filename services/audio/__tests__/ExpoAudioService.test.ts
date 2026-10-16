@@ -7,7 +7,7 @@
  * (RFC-006 onward). They use a per-test `FakeAudioPlayer` that mirrors the
  * slice of expo-audio's AudioPlayer surface that ExpoAudioService.ts actually
  * touches. Once Group B reuses the same fake, it gets promoted into
- * @bayaan/test-utils.
+ * @istima/test-utils.
  *
  * See docs/rfcs/005-audio-characterization-tests.md.
  */

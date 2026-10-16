@@ -1,6 +1,6 @@
-// Ports (ADR-0001 — the seam @bayaan/audio exposes to consumers)
+// Ports (ADR-0001 — the seam @istima/audio exposes to consumers)
 export type {
-  BayaanAudioConfig,
+  IstimaAudioConfig,
   CoordinatorHooks,
   LockScreenMetadataSource,
   PlayerController,

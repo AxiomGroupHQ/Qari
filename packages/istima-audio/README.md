@@ -1,4 +1,4 @@
-# @bayaan/audio
+# @istima/audio
 
 The audio playback layer for the Bayaan platform. Owns the service singletons
 and the React provider; consumers own all state.
@@ -23,7 +23,7 @@ import {
   type PlayerEventSink,
   type TimestampProvider,
   type LockScreenMetadataSource,
-  type BayaanAudioConfig,
+  type IstimaAudioConfig,
   type Unsubscribe,
 
   // No-op analytics sink for consumers that opt out.
@@ -31,7 +31,7 @@ import {
 
   // Stub adapter — fully wired in RFC-005.
   ExpoAudioPlayerControllerAdapter,
-} from '@bayaan/audio';
+} from '@istima/audio';
 ```
 
 ## Design invariants
@@ -55,11 +55,11 @@ ADR-0001 details the alternatives considered and why the hexagonal split won.
 ## Testing
 
 ```sh
-npx jest packages/bayaan-audio
+npx jest packages/istima-audio
 ```
 
 The package's tests use jest matchers and the `MockAudioPlayer` fixture from
-`@bayaan/test-utils`. Once RFC-005 lands, the same fixture will drive the
+`@istima/test-utils`. Once RFC-005 lands, the same fixture will drive the
 service-layer state-machine tests.
 
 ## License
