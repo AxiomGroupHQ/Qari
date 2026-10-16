@@ -15,6 +15,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import {moderateScale} from 'react-native-size-matters';
 import {Feather} from '@expo/vector-icons';
+import {dirIcon} from '@/i18n/direction';
 import Color from 'color';
 import {SearchInput} from '@/components/SearchInput';
 import {RECITERS, Reciter, Rewayat} from '@/data/reciterData';
@@ -574,25 +575,51 @@ export default function BrowseReciters({
     <TouchableWithoutFeedback onPress={handleOutsidePress}>
       <View style={styles.container}>
         {/* Android: custom Header; iOS: native Stack header handles this */}
-        {!useNativeHeader && (
-          <Header
-            title={isGeneralBrowse ? '' : title}
-            onBack={onBack}
-            showBlur={true}
-            containerStyle={{zIndex: 2}}
-          />
-        )}
+        {!useNativeHeader &&
+          (isGeneralBrowse ? (
+            /* Compact header: back button and screen title on one line */
+            <View
+              style={[
+                styles.compactHeader,
+                {paddingTop: insets.top + moderateScale(6)},
+              ]}>
+              <Pressable
+                onPress={onBack}
+                hitSlop={12}
+                accessibilityRole="button"
+                accessibilityLabel={t('common.back')}
+                style={({pressed}) => [
+                  styles.compactBack,
+                  pressed && styles.compactBackPressed,
+                ]}>
+                <Feather
+                  name={dirIcon('arrow-left')}
+                  size={moderateScale(24)}
+                  color={theme.colors.text}
+                />
+              </Pressable>
+              <Text style={styles.compactTitle} numberOfLines={1}>
+                {t('common.reciters')}
+              </Text>
+            </View>
+          ) : (
+            <Header
+              title={title}
+              onBack={onBack}
+              showBlur={true}
+              containerStyle={{zIndex: 2}}
+            />
+          ))}
 
-        {/* Top region: large editorial title, then search and filters */}
+        {/* Top region: search and filters (title lives in the header row) */}
         <View
           style={{
             marginTop: useNativeHeader
               ? topOffset
-              : insets.top + moderateScale(56),
+              : isGeneralBrowse
+                ? moderateScale(2)
+                : insets.top + moderateScale(56),
           }}>
-          {isGeneralBrowse && (
-            <Text style={styles.largeTitle}>{t('common.reciters')}</Text>
-          )}
           {/* Search and Filter Bar */}
           <View style={styles.searchFilterContainer}>
             <SearchInput
@@ -910,14 +937,28 @@ const createStyles = (theme: Theme) =>
       color: Color(theme.colors.textSecondary).alpha(0.5).toString(),
       fontStyle: 'italic',
     },
-    largeTitle: {
-      fontSize: moderateScale(30),
+    compactHeader: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      paddingHorizontal: moderateScale(16),
+      paddingBottom: moderateScale(6),
+      zIndex: 2,
+    },
+    compactBack: {
+      padding: moderateScale(6),
+      marginStart: moderateScale(-6),
+      borderRadius: moderateScale(20),
+    },
+    compactBackPressed: {
+      opacity: 0.6,
+    },
+    compactTitle: {
+      fontSize: moderateScale(24),
       fontFamily: 'Manrope-Bold',
       color: theme.colors.text,
       letterSpacing: -0.5,
-      paddingHorizontal: moderateScale(16),
-      paddingTop: moderateScale(4),
-      paddingBottom: moderateScale(2),
+      marginStart: moderateScale(8),
+      flexShrink: 1,
     },
     segmentControl: {
       flexDirection: 'row',
