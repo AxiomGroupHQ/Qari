@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Ana saukar da jerin sauraro...",
       "editPlaylist": "Gyara Jerin Sauraro",
       "emptyPlaylist": "Jerin Sauraro Fanko",
-      "thisPlaylistIsEmpty": "Wannan jerin sauraro fanko ne."
+      "thisPlaylistIsEmpty": "Wannan jerin sauraro fanko ne.",
+      "sharePlaylist": "Raba jeri",
+      "shareFailed": "Ba a iya ƙirƙirar hanyar raba ba. Duba haɗinka kuma sake gwadawa.",
+      "shareRateLimited": "An ƙirƙiri hanyoyi da yawa. Sake gwadawa bayan awa ɗaya.",
+      "shareNothing": "Ƙara wasu surori kafin ka raba.",
+      "shareMessage": "Saurari jerina \"{{name}}\" a Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Game da Riwaya",
@@ -787,5 +792,25 @@
       "unknown": "Wani abu ya faru. Da fatan za a sake gwadawa."
     },
     "emailRequired": "Ana buƙatar imel mai inganci don adana bayananka na sirri (abubuwan da kake so, alamomi, jerin kunnawa, saituna). Idan babu, zai tsaya a wannan na'urar kawai."
+  },
+  "sharedPlaylist": {
+    "title": "Jerin waƙoƙi da aka raba",
+    "play": "Kunna duka",
+    "save": "Ajiye a jerina",
+    "saved": "An ajiye a jerinka",
+    "loading": "Ana loda jeri...",
+    "notFound": "Ba a samu wannan jerin da aka raba ba.",
+    "error": "Ba a iya loda wannan jeri ba. Duba haɗinka.",
+    "retry": "Sake gwadawa",
+    "itemCount_one": "Karatuttuka {{count}}",
+    "itemCount_other": "Karatuttuka {{count}}"
+  },
+  "discover": {
+    "title": "Bincika",
+    "loading": "Ana neman karatu",
+    "empty": "Ba a samu karatu yanzu ba",
+    "retry": "Sake gwadawa",
+    "close": "Rufe",
+    "paused": "An dakatar, danna don ci gaba"
   }
 }

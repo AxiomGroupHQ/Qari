@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Playlist wird heruntergeladen …",
       "editPlaylist": "Playlist bearbeiten",
       "emptyPlaylist": "Leere Playlist",
-      "thisPlaylistIsEmpty": "Diese Playlist ist leer."
+      "thisPlaylistIsEmpty": "Diese Playlist ist leer.",
+      "sharePlaylist": "Playlist teilen",
+      "shareFailed": "Der Freigabelink konnte nicht erstellt werden. Prüfe deine Verbindung und versuche es erneut.",
+      "shareRateLimited": "Zu viele Links erstellt. Versuche es in einer Stunde erneut.",
+      "shareNothing": "Füge vor dem Teilen ein paar Suren hinzu.",
+      "shareMessage": "Hör dir meine Playlist „{{name}}“ auf Istima an"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Über Überlieferungen",
@@ -787,5 +792,25 @@
       "unknown": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
     },
     "emailRequired": "Zum Speichern deiner persönlichen Daten (Favoriten, Lesezeichen, Wiedergabelisten, Einstellungen) ist eine gültige E-Mail-Adresse nötig. Ohne sie bleiben sie nur auf diesem Gerät."
+  },
+  "sharedPlaylist": {
+    "title": "Geteilte Playlist",
+    "play": "Alle abspielen",
+    "save": "In meinen Playlists speichern",
+    "saved": "In deinen Playlists gespeichert",
+    "loading": "Playlist wird geladen ...",
+    "notFound": "Diese geteilte Playlist wurde nicht gefunden.",
+    "error": "Diese Playlist konnte nicht geladen werden. Prüfe deine Verbindung.",
+    "retry": "Erneut versuchen",
+    "itemCount_one": "{{count}} Rezitationen",
+    "itemCount_other": "{{count}} Rezitationen"
+  },
+  "discover": {
+    "title": "Entdecken",
+    "loading": "Rezitation wird gesucht",
+    "empty": "Gerade konnte keine Rezitation gefunden werden",
+    "retry": "Erneut versuchen",
+    "close": "Schließen",
+    "paused": "Pausiert, zum Fortsetzen tippen"
   }
 }

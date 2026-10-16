@@ -588,7 +588,12 @@
       "downloadingPlaylist": "Na-ebudata ndepụta ọkpụkpọ...",
       "editPlaylist": "Dezie ndepụta ọkpụkpọ",
       "emptyPlaylist": "Ndepụta ọkpụkpọ efu",
-      "thisPlaylistIsEmpty": "Ndepụta ọkpụkpọ a tọgbọ chakoo."
+      "thisPlaylistIsEmpty": "Ndepụta ọkpụkpọ a tọgbọ chakoo.",
+      "sharePlaylist": "Kekọrịta ndepụta",
+      "shareFailed": "Enweghị ike ịmepụta njikọ nkekọrịta. Lelee njikọ gị ma nwaa ọzọ.",
+      "shareRateLimited": "E mepụtala njikọ ọtụtụ. Nwaa ọzọ mgbe otu awa gachara.",
+      "shareNothing": "Tinye ụfọdụ surah tupu ị kekọrịta.",
+      "shareMessage": "Gee ntị na ndepụta m \"{{name}}\" na Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Banyere riwaya",
@@ -786,5 +791,24 @@
       "unknown": "Ihe adịghị mma mere. Biko nwaa ọzọ."
     },
     "emailRequired": "A chọrọ email bara uru iji chekwaa data nke gị (ihe ndị ị masịrị, akara ndetu, ndepụta egwu, ntọala). Na-enweghị ya, ọ ga-anọ naanị n'ngwa a."
+  },
+  "sharedPlaylist": {
+    "title": "Ndepụta egwu e kekọrọ",
+    "play": "Kpọọ ha niile",
+    "save": "Chekwaa na ndepụta m",
+    "saved": "Echekwala na ndepụta gị",
+    "loading": "Na-ebugo ndepụta...",
+    "notFound": "Achọtaghị ndepụta e kekọrọ a.",
+    "error": "Enweghị ike ibugo ndepụta a. Lelee njikọ gị.",
+    "retry": "Nwaa ọzọ",
+    "itemCount_other": "Ọgụgụ {{count}}"
+  },
+  "discover": {
+    "title": "Chọpụta",
+    "loading": "Na-achọ ọgụgụ",
+    "empty": "Achọtaghị ọgụgụ ugbu a",
+    "retry": "Nwaa ọzọ",
+    "close": "Mechie",
+    "paused": "Akwụsịrị, pịa ka ọ gaa n'ihu"
   }
 }

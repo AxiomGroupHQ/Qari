@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Playlist bɛ jigin...",
       "editPlaylist": "Playlist yɛlɛma",
       "emptyPlaylist": "Playlist lankolon",
-      "thisPlaylistIsEmpty": "Nin playlist lankolon don."
+      "thisPlaylistIsEmpty": "Nin playlist lankolon don.",
+      "sharePlaylist": "Lisitɛ lamɛn",
+      "shareFailed": "Lamɛnni ɲɛmɔgɔ ma da. I ka jɛkabɔ lajɛ ka segin a kɛ.",
+      "shareRateLimited": "Ɲɛmɔgɔ caman dara. I ka segin a kɛ lɛrɛ kelen kɔ.",
+      "shareNothing": "Sura dɔw fara a kan sani i ka lamɛn.",
+      "shareMessage": "Aw ye n ka lisitɛ \"{{name}}\" lamɛn Istima kan"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Rewayat ko",
@@ -787,5 +792,24 @@
       "unknown": "Fɛn dɔ ma ɲɛ. I ka segin ka kɔrɔbɔ."
     },
     "emailRequired": "Imɛli ɲuman ka kan ka i yɛrɛ ka donniya mara (kanuw, taamasiyɛnw, dɔnkili lisɛw, sigiw). N'o t'a la, a bɛna to o mashin in na dɔrɔn."
+  },
+  "sharedPlaylist": {
+    "title": "Lisitɛ lamɛnnen",
+    "play": "Bɛɛ ka kɛ",
+    "save": "A mara n ka lisitɛw la",
+    "saved": "A marala i ka lisitɛw la",
+    "loading": "Lisitɛ bɛ ta...",
+    "notFound": "Nin lisitɛ lamɛnnen ma sɔrɔ.",
+    "error": "Nin lisitɛ ma se ka ta. I ka jɛkabɔ lajɛ.",
+    "retry": "A tɛmɛ tuma wɛrɛ",
+    "itemCount_other": "Kalan {{count}}"
+  },
+  "discover": {
+    "title": "A sɔrɔ",
+    "loading": "Kalan bɛ ɲini",
+    "empty": "Kalan ma sɔrɔ sisan",
+    "retry": "A tɛmɛ tuma wɛrɛ",
+    "close": "A datugu",
+    "paused": "A jɔra, i bɛ digi walasa ka taa a fɛ"
   }
 }

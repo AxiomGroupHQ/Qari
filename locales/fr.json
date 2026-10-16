@@ -594,7 +594,12 @@
       "downloadingPlaylist": "Téléchargement de la playlist...",
       "editPlaylist": "Modifier la playlist",
       "emptyPlaylist": "Playlist vide",
-      "thisPlaylistIsEmpty": "Cette playlist est vide."
+      "thisPlaylistIsEmpty": "Cette playlist est vide.",
+      "sharePlaylist": "Partager la playlist",
+      "shareFailed": "Impossible de créer le lien de partage. Vérifiez votre connexion et réessayez.",
+      "shareRateLimited": "Trop de liens créés. Réessayez dans une heure.",
+      "shareNothing": "Ajoutez quelques sourates avant de partager.",
+      "shareMessage": "Écoutez ma playlist « {{name}} » sur Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "À propos des riwayat",
@@ -793,5 +798,26 @@
       "unknown": "Une erreur s’est produite. Veuillez réessayer."
     },
     "emailRequired": "Une adresse e-mail valide est nécessaire pour enregistrer vos données personnelles (favoris, signets, listes, réglages). Sans elle, elles restent uniquement sur cet appareil."
+  },
+  "sharedPlaylist": {
+    "title": "Playlist partagée",
+    "play": "Tout lire",
+    "save": "Enregistrer dans mes playlists",
+    "saved": "Enregistrée dans vos playlists",
+    "loading": "Chargement de la playlist...",
+    "notFound": "Cette playlist partagée est introuvable.",
+    "error": "Impossible de charger cette playlist. Vérifiez votre connexion.",
+    "retry": "Réessayer",
+    "itemCount_many": "{{count}} récitations",
+    "itemCount_one": "{{count}} récitations",
+    "itemCount_other": "{{count}} récitations"
+  },
+  "discover": {
+    "title": "Découvrir",
+    "loading": "Recherche d'une récitation",
+    "empty": "Impossible de trouver une récitation pour le moment",
+    "retry": "Réessayer",
+    "close": "Fermer",
+    "paused": "En pause, touchez pour reprendre"
   }
 }

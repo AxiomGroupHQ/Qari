@@ -584,7 +584,12 @@
       "downloadingPlaylist": "Mengunduh playlist...",
       "editPlaylist": "Ubah Playlist",
       "emptyPlaylist": "Playlist Kosong",
-      "thisPlaylistIsEmpty": "Playlist ini kosong."
+      "thisPlaylistIsEmpty": "Playlist ini kosong.",
+      "sharePlaylist": "Bagikan playlist",
+      "shareFailed": "Tautan berbagi tidak dapat dibuat. Periksa koneksi Anda lalu coba lagi.",
+      "shareRateLimited": "Terlalu banyak tautan dibuat. Coba lagi dalam satu jam.",
+      "shareNothing": "Tambahkan beberapa surah sebelum berbagi.",
+      "shareMessage": "Dengarkan playlist saya \"{{name}}\" di Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Tentang Riwayat",
@@ -781,5 +786,24 @@
       "unknown": "Terjadi kesalahan. Silakan coba lagi."
     },
     "emailRequired": "Email yang valid diperlukan untuk menyimpan data pribadi Anda (favorit, penanda, daftar putar, pengaturan). Tanpa itu, data hanya tersimpan di perangkat ini."
+  },
+  "sharedPlaylist": {
+    "title": "Playlist yang dibagikan",
+    "play": "Putar semua",
+    "save": "Simpan ke playlist saya",
+    "saved": "Disimpan ke playlist Anda",
+    "loading": "Memuat playlist...",
+    "notFound": "Playlist yang dibagikan ini tidak ditemukan.",
+    "error": "Playlist ini tidak dapat dimuat. Periksa koneksi Anda.",
+    "retry": "Coba lagi",
+    "itemCount_other": "{{count}} lantunan"
+  },
+  "discover": {
+    "title": "Jelajahi",
+    "loading": "Mencari lantunan",
+    "empty": "Belum bisa menemukan lantunan saat ini",
+    "retry": "Coba lagi",
+    "close": "Tutup",
+    "paused": "Dijeda, ketuk untuk melanjutkan"
   }
 }

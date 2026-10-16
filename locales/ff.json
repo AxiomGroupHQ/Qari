@@ -594,7 +594,12 @@
       "downloadingPlaylist": "Ndaɓɓata liste...",
       "editPlaylist": "Taaskin liste",
       "emptyPlaylist": "Liste bonndunde",
-      "thisPlaylistIsEmpty": "Liste ndee ina bonndi."
+      "thisPlaylistIsEmpty": "Liste ndee ina bonndi.",
+      "sharePlaylist": "Followu lisiti",
+      "shareFailed": "Mi waawaay waɗude jokkol follugo. Ndaar jokkere maa e eto fahin.",
+      "shareRateLimited": "Jokkooli ɗuuɗi tawaa. Eto fahin caggal waktu gooto.",
+      "shareNothing": "Ɓesdu ɗuuɗi cuuraaji ɗii adii follugo.",
+      "shareMessage": "Nanndu lisiti am \"{{name}}\" e Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Fii Rewayaat",
@@ -793,5 +798,26 @@
       "unknown": "Huunde wooɗi. Taskaa fahin."
     },
     "emailRequired": "Imeel ngaandi ɗon sokli ngam famɗugo keɓal maaɗa ngal hoore maaɗa (suɓaaɗe, maandorɗe, limtol cuuɗi, teelte). So walaa, ɗum wona dow kuutiniroojum ngam tan."
+  },
+  "sharedPlaylist": {
+    "title": "Lisiti follaama",
+    "play": "Ɗaɓɓu fuu",
+    "save": "Hisnu e lisiti am",
+    "saved": "Hisnaama e lisiti maa",
+    "loading": "Lisiti ɗon loowa...",
+    "notFound": "Ɗum lisiti follaama ngoo yiytaaka.",
+    "error": "Mi waawaay loowude ɗum lisiti. Ndaar jokkere maa.",
+    "retry": "Eto fahin",
+    "itemCount_many": "Tilaawa {{count}}",
+    "itemCount_one": "Tilaawa {{count}}",
+    "itemCount_other": "Tilaawa {{count}}"
+  },
+  "discover": {
+    "title": "Tawtu",
+    "loading": "Ɗon ɗaɓɓita tilaawa",
+    "empty": "Mi tawaay tilaawa jooni",
+    "retry": "Eto fahin",
+    "close": "Uddu",
+    "paused": "Hoorii, tappu ngam jokkude"
   }
 }

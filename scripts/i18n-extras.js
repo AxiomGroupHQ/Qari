@@ -71,7 +71,7 @@ en.forEach(([key, text], idx) => {
     native[key.slice(7)] = v;
     return;
   }
-  if (key === 'adhkarUi.count') {
+  if (key === 'adhkarUi.count' || key === 'sharedPlaylist.itemCount') {
     for (const c of ['zero', 'one', 'two', 'few', 'many', 'other'])
       delete flat[`${key}_${c}`];
     for (const c of cats) flat[`${key}_${c}`] = v;
@@ -79,7 +79,19 @@ en.forEach(([key, text], idx) => {
   }
   flat[key] = v;
 });
-fs.writeFileSync(file, JSON.stringify(nest(flat), null, 2) + '\n');
+// keep the existing key order: write only the changed keys into the parsed tree
+const tree = JSON.parse(fs.readFileSync(file, 'utf8'));
+const setKey = (k, v) => {
+  const ps = k.split('.');
+  let o = tree;
+  ps.slice(0, -1).forEach(p => (o = o[p] = o[p] || {}));
+  if (v === undefined) delete o[ps[ps.length - 1]];
+  else o[ps[ps.length - 1]] = v;
+};
+const before = flatten(tree);
+for (const k of Object.keys(before)) if (!(k in flat)) setKey(k, undefined);
+for (const [k, v] of Object.entries(flat)) if (before[k] !== v) setKey(k, v);
+fs.writeFileSync(file, JSON.stringify(tree, null, 2) + '\n');
 if (Object.keys(native).length)
   fs.writeFileSync(
     `locales/native/${code}.json`,

@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Dina-download ang playlist...",
       "editPlaylist": "I-edit ang playlist",
       "emptyPlaylist": "Walang lamang playlist",
-      "thisPlaylistIsEmpty": "Walang laman ang playlist na ito."
+      "thisPlaylistIsEmpty": "Walang laman ang playlist na ito.",
+      "sharePlaylist": "Ibahagi ang playlist",
+      "shareFailed": "Hindi nakagawa ng link sa pagbabahagi. Tingnan ang iyong koneksyon at subukan muli.",
+      "shareRateLimited": "Napakaraming link ang nagawa. Subukan muli pagkalipas ng isang oras.",
+      "shareNothing": "Magdagdag ng ilang surah bago magbahagi.",
+      "shareMessage": "Pakinggan ang playlist kong \"{{name}}\" sa Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Tungkol sa riwayat",
@@ -787,5 +792,25 @@
       "unknown": "May nangyaring mali. Pakisubukan ulit."
     },
     "emailRequired": "Kailangan ng wastong email para ma-save ang personal mong data (mga paborito, bookmark, playlist, setting). Kung wala, sa device na ito lang ito mananatili."
+  },
+  "sharedPlaylist": {
+    "title": "Ibinahaging playlist",
+    "play": "I-play lahat",
+    "save": "I-save sa aking mga playlist",
+    "saved": "Nai-save sa iyong mga playlist",
+    "loading": "Nilo-load ang playlist...",
+    "notFound": "Hindi nahanap ang ibinahaging playlist na ito.",
+    "error": "Hindi ma-load ang playlist na ito. Tingnan ang iyong koneksyon.",
+    "retry": "Subukan muli",
+    "itemCount_one": "{{count}} pagbigkas",
+    "itemCount_other": "{{count}} pagbigkas"
+  },
+  "discover": {
+    "title": "Tuklasin",
+    "loading": "Naghahanap ng pagbigkas",
+    "empty": "Walang makitang pagbigkas ngayon",
+    "retry": "Subukan muli",
+    "close": "Isara",
+    "paused": "Naka-pause, i-tap para ipagpatuloy"
   }
 }
