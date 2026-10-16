@@ -27,6 +27,7 @@ import {digitalKhattDataService} from '@/services/mushaf/DigitalKhattDataService
 import type {SkTypefaceFontProvider} from '@shopify/react-native-skia';
 import type {IndexedTajweedData} from '@/utils/tajweedLoader';
 import {getReadingThemeById} from '@/constants/readingThemes';
+import {useReadingIsDark} from '@/hooks/useReadingThemeColors';
 import {
   ALLAH_NAME_HIGHLIGHT_OPTIONS,
   getAllahNameHighlightColorHex,
@@ -578,7 +579,8 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
   context,
   onOpenThemePicker,
 }) => {
-  const {theme, themeMode} = useTheme();
+  const {theme} = useTheme();
+  const readingIsDark = useReadingIsDark();
   const styles = useMemo(() => createStyles(theme), [theme]);
   const {indexedTajweedData, isLoading: isTajweedLoading} = useTajweedStore();
 
@@ -908,11 +910,8 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
           ]}
           onPress={onOpenThemePicker}>
           <Text style={styles.settingRowLabel}>
-            {themeMode === 'system'
-              ? 'System'
-              : (getReadingThemeById(
-                  themeMode === 'light' ? lightThemeId : darkThemeId,
-                )?.name ?? 'System')}
+            {getReadingThemeById(readingIsDark ? darkThemeId : lightThemeId)
+              ?.name ?? 'System'}
           </Text>
           <Feather
             name={dirIcon('chevron-right')}

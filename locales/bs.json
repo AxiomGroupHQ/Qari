@@ -412,7 +412,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Promjena načina izgleda primjenjuje se na cijelu aplikaciju"
+    "changingAppearanceModeAppliesTo": "Promjena načina izgleda primjenjuje se na cijelu aplikaciju",
+    "readingModeNote": "Odnosi se samo na čitanje Kur'ana. Izgled aplikacije postavlja se u Postavkama."
   },
   "reciterBrowse": {
     "allReciters": "Svi učači",

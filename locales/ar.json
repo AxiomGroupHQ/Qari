@@ -427,7 +427,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "تغيير وضع المظهر ينطبق على التطبيق بأكمله"
+    "changingAppearanceModeAppliesTo": "تغيير وضع المظهر ينطبق على التطبيق بأكمله",
+    "readingModeNote": "يُطبَّق على قراءة القرآن فقط. يُضبط مظهر التطبيق من الإعدادات."
   },
   "reciterBrowse": {
     "allReciters": "جميع القرّاء",

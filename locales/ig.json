@@ -406,7 +406,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Ịgbanwe ụdị ọdịdị ga-emetụta ngwa ahụ dum"
+    "changingAppearanceModeAppliesTo": "Ịgbanwe ụdị ọdịdị ga-emetụta ngwa ahụ dum",
+    "readingModeNote": "Ọ na-emetụta naanị ọgụgụ Qur'an. A na-ahọpụta ọdịdị ngwa na Ntọala."
   },
   "reciterBrowse": {
     "allReciters": "Ndị na-agụ niile",

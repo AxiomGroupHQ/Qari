@@ -377,7 +377,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Changing appearance mode applies to the entire app"
+    "changingAppearanceModeAppliesTo": "Changing appearance mode applies to the entire app",
+    "readingModeNote": "Applies to Quran reading only. The app appearance is set in Settings."
   },
   "reciterBrowse": {
     "allReciters": "All Reciters",

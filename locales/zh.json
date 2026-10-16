@@ -406,7 +406,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "更改外观模式将应用于整个应用"
+    "changingAppearanceModeAppliesTo": "更改外观模式将应用于整个应用",
+    "readingModeNote": "仅适用于《古兰经》阅读。应用外观请在“设置”中设置。"
   },
   "reciterBrowse": {
     "allReciters": "全部诵读者",

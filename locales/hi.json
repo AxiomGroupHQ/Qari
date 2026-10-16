@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "रूप-रंग मोड बदलने से पूरे ऐप पर लागू होगा"
+    "changingAppearanceModeAppliesTo": "रूप-रंग मोड बदलने से पूरे ऐप पर लागू होगा",
+    "readingModeNote": "यह केवल क़ुरआन पढ़ने पर लागू होता है। ऐप का रूप सेटिंग्स में तय होता है।"
   },
   "reciterBrowse": {
     "allReciters": "सभी क़ारी",

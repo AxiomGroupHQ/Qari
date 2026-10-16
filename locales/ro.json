@@ -412,7 +412,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Schimbarea modului de afișare se aplică întregii aplicații"
+    "changingAppearanceModeAppliesTo": "Schimbarea modului de afișare se aplică întregii aplicații",
+    "readingModeNote": "Se aplică doar citirii Coranului. Aspectul aplicației se setează în Setări."
   },
   "reciterBrowse": {
     "allReciters": "Toți recitatorii",

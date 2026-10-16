@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "दृश्य मोड बदलल्यास संपूर्ण अ‍ॅपवर परिणाम होतो"
+    "changingAppearanceModeAppliesTo": "दृश्य मोड बदलल्यास संपूर्ण अ‍ॅपवर परिणाम होतो",
+    "readingModeNote": "फक्त कुरआन वाचनासाठी लागू. अॅपचे स्वरूप सेटिंग्जमध्ये ठरते."
   },
   "reciterBrowse": {
     "allReciters": "सर्व कारी",

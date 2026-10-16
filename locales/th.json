@@ -406,7 +406,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "การเปลี่ยนโหมดรูปลักษณ์จะมีผลกับทั้งแอป"
+    "changingAppearanceModeAppliesTo": "การเปลี่ยนโหมดรูปลักษณ์จะมีผลกับทั้งแอป",
+    "readingModeNote": "ใช้กับการอ่านอัลกุรอานเท่านั้น ส่วนรูปลักษณ์ของแอปตั้งค่าได้ในการตั้งค่า"
   },
   "reciterBrowse": {
     "allReciters": "ผู้อ่านทั้งหมด",

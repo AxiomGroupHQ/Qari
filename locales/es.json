@@ -408,7 +408,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "El cambio de modo de apariencia se aplica a toda la aplicación"
+    "changingAppearanceModeAppliesTo": "El cambio de modo de apariencia se aplica a toda la aplicación",
+    "readingModeNote": "Se aplica solo a la lectura del Corán. La apariencia de la app se ajusta en Ajustes."
   },
   "reciterBrowse": {
     "allReciters": "Todos los recitadores",

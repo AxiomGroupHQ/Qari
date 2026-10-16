@@ -406,7 +406,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "ការប្តូររបៀបរូបរាងអនុវត្តចំពោះកម្មវិធីទាំងមូល"
+    "changingAppearanceModeAppliesTo": "ការប្តូររបៀបរូបរាងអនុវត្តចំពោះកម្មវិធីទាំងមូល",
+    "readingModeNote": "អនុវត្តតែចំពោះការអានគម្ពីរគួរអានប៉ុណ្ណោះ។ រូបរាងកម្មវិធីត្រូវកំណត់នៅក្នុងការកំណត់។"
   },
   "reciterBrowse": {
     "allReciters": "អ្នកសូត្រទាំងអស់",

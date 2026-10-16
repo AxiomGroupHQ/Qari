@@ -412,7 +412,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "A alteração do modo de aparência aplica-se a toda a aplicação"
+    "changingAppearanceModeAppliesTo": "A alteração do modo de aparência aplica-se a toda a aplicação",
+    "readingModeNote": "Aplica-se apenas à leitura do Alcorão. A aparência do app é definida em Ajustes."
   },
   "reciterBrowse": {
     "allReciters": "Todos os recitadores",

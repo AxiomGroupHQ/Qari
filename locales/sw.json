@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Kubadilisha hali ya mwonekano kunatumika kwa programu nzima"
+    "changingAppearanceModeAppliesTo": "Kubadilisha hali ya mwonekano kunatumika kwa programu nzima",
+    "readingModeNote": "Inatumika kwa usomaji wa Qur'ani pekee. Mwonekano wa programu huwekwa katika Mipangilio."
   },
   "reciterBrowse": {
     "allReciters": "Qari Wote",

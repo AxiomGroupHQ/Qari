@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Η αλλαγή εμφάνισης εφαρμόζεται σε ολόκληρη την εφαρμογή"
+    "changingAppearanceModeAppliesTo": "Η αλλαγή εμφάνισης εφαρμόζεται σε ολόκληρη την εφαρμογή",
+    "readingModeNote": "Ισχύει μόνο για την ανάγνωση του Κορανίου. Η εμφάνιση της εφαρμογής ορίζεται στις Ρυθμίσεις."
   },
   "reciterBrowse": {
     "allReciters": "Όλοι οι απαγγελτές",

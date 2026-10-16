@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Guherandina awayê xuyangê li ser tevahiya sepanê tê sepandin"
+    "changingAppearanceModeAppliesTo": "Guherandina awayê xuyangê li ser tevahiya sepanê tê sepandin",
+    "readingModeNote": "Tenê ji bo xwendina Quranê derbas dibe. Xuyabûna sepanê di Mîhengan de tê danîn."
   },
   "reciterBrowse": {
     "allReciters": "Hemû xwîner",

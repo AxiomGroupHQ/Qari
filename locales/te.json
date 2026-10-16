@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "స్వరూప మోడ్‌ను మార్చడం మొత్తం యాప్‌కు వర్తిస్తుంది"
+    "changingAppearanceModeAppliesTo": "స్వరూప మోడ్‌ను మార్చడం మొత్తం యాప్‌కు వర్తిస్తుంది",
+    "readingModeNote": "ఖుర్ఆన్ పఠనానికి మాత్రమే వర్తిస్తుంది. యాప్ రూపం సెట్టింగ్‌లలో సెట్ చేయబడుతుంది."
   },
   "reciterBrowse": {
     "allReciters": "అన్ని పఠనకర్తలు",

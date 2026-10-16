@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "दृश्य मोड परिवर्तन पूरै एपमा लागू हुन्छ"
+    "changingAppearanceModeAppliesTo": "दृश्य मोड परिवर्तन पूरै एपमा लागू हुन्छ",
+    "readingModeNote": "कुरआन पढ्ने मा मात्र लागू हुन्छ। एपको स्वरूप सेटिङमा तोकिन्छ।"
   },
   "reciterBrowse": {
     "allReciters": "सबै कारीहरू",

@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Ndryshimi i modalitetit të pamjes zbatohet në të gjithë aplikacionin"
+    "changingAppearanceModeAppliesTo": "Ndryshimi i modalitetit të pamjes zbatohet në të gjithë aplikacionin",
+    "readingModeNote": "Vlen vetëm për leximin e Kuranit. Pamja e aplikacionit caktohet te Cilësimet."
   },
   "reciterBrowse": {
     "allReciters": "Të gjithë recituesit",

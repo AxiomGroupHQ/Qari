@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Ɲɛnajɛ cogo yɛlɛma bɛ kɛ app bɛɛ la"
+    "changingAppearanceModeAppliesTo": "Ɲɛnajɛ cogo yɛlɛma bɛ kɛ app bɛɛ la",
+    "readingModeNote": "Kuranɛ kalan dɔrɔn de la. Appli cogo bɛ sigi Sigilanw kɔnɔ."
   },
   "reciterBrowse": {
     "allReciters": "Kalanbaga bɛɛ",

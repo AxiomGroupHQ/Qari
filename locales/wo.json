@@ -412,7 +412,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Soppi ci melo bi dafay jëfandikoo ci app bi mépp"
+    "changingAppearanceModeAppliesTo": "Soppi ci melo bi dafay jëfandikoo ci app bi mépp",
+    "readingModeNote": "Ndigal bi dafay jëfandikoo ci jàng Alxuraan rekk. Melo appli bi ñuy ko tànn ci Jumtukaay yi."
   },
   "reciterBrowse": {
     "allReciters": "Jàngalekat yépp",

@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Ko'rinish rejimini o'zgartirish butun ilovaga ta'sir qiladi"
+    "changingAppearanceModeAppliesTo": "Ko'rinish rejimini o'zgartirish butun ilovaga ta'sir qiladi",
+    "readingModeNote": "Faqat Qur'on o‘qishga tegishli. Ilova ko‘rinishi Sozlamalarda belgilanadi."
   },
   "reciterBrowse": {
     "allReciters": "Barcha qorilar",

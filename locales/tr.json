@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Görünüm modunu değiştirmek tüm uygulamaya uygulanır"
+    "changingAppearanceModeAppliesTo": "Görünüm modunu değiştirmek tüm uygulamaya uygulanır",
+    "readingModeNote": "Yalnızca Kur'an okumaya uygulanır. Uygulamanın görünümü Ayarlar'dan belirlenir."
   },
   "reciterBrowse": {
     "allReciters": "Tüm Kâriler",

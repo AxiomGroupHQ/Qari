@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "દેખાવ મોડ બદલવાથી આખી એપ પર લાગુ થશે"
+    "changingAppearanceModeAppliesTo": "દેખાવ મોડ બદલવાથી આખી એપ પર લાગુ થશે",
+    "readingModeNote": "ફક્ત કુરઆન વાંચન માટે લાગુ પડે છે. એપનો દેખાવ સેટિંગ્સમાં નક્કી થાય છે."
   },
   "reciterBrowse": {
     "allReciters": "બધા કારીઓ",

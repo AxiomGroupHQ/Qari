@@ -406,7 +406,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Ìyípadà irú ìrísí kan gbogbo ètò náà"
+    "changingAppearanceModeAppliesTo": "Ìyípadà irú ìrísí kan gbogbo ètò náà",
+    "readingModeNote": "Ó kan kíkà Al-Ƙurʼān nìkan. A máa ń ṣètò ìrísí ohun èlò náà nínú Ètò."
   },
   "reciterBrowse": {
     "allReciters": "Gbogbo olùkà",

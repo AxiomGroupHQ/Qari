@@ -412,7 +412,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Jijjiirama haalaa mul'ataa appii guutuu irratti hojiirra oola"
+    "changingAppearanceModeAppliesTo": "Jijjiirama haalaa mul'ataa appii guutuu irratti hojiirra oola",
+    "readingModeNote": "Dubbisa Qur'aanaa qofaaf hojiirra oola. Bifti appii Qindaa'inaa keessatti saagama."
   },
   "reciterBrowse": {
     "allReciters": "Qaraa hunda",
