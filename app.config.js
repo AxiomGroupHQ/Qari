@@ -16,9 +16,11 @@ const EAS_PROJECT_ID =
 // env. Forks that don't set it get no update checks (no phone-home to the
 // maintainer's Expo project).
 const OTA_UPDATES_ENABLED = Boolean(EAS_PROJECT_ID_FROM_ENV);
-// Associated/deep-link domain. Forks must set their own; leaving unset means
-// no universal-link registration, avoiding conflicts with the maintainer's app.
-const ASSOCIATED_DOMAIN = process.env.EXPO_PUBLIC_ASSOCIATED_DOMAIN;
+// Associated/deep-link domain for share links (https://istima.app/...).
+// Override with EXPO_PUBLIC_ASSOCIATED_DOMAIN; set it to an empty string to disable.
+const ASSOCIATED_DOMAIN =
+  process.env.EXPO_PUBLIC_ASSOCIATED_DOMAIN ??
+  branding.shareBaseUrl.replace(/^https?:\/\//, '');
 const PRIVACY_POLICY_URL =
   process.env.EXPO_PUBLIC_PRIVACY_POLICY_URL ?? branding.privacyUrl;
 

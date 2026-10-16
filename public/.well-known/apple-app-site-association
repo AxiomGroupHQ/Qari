@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["S4W5Q2L53W.com.istima.app"],
+        "components": [
+          {"/": "/quran/*"},
+          {"/": "/reciter/*"},
+          {"/": "/mushaf/*"},
+          {"/": "/adhkar/*"}
+        ]
+      }
+    ]
+  }
+}
