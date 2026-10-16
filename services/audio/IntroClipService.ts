@@ -53,9 +53,12 @@ export type ClipResult = 'completed' | 'failed' | 'cancelled' | 'disabled';
 class IntroClipService {
   private player: AudioPlayer | null = null;
   private cancel: (() => void) | null = null;
+  /** Bumped by every stop(). A clip job started before the bump must not start another player. */
+  private epoch = 0;
 
   /** Stop a clip that is playing (user paused, skipped or started another track). */
   stop(): void {
+    this.epoch += 1;
     this.cancel?.();
   }
 
@@ -78,7 +81,7 @@ class IntroClipService {
   async play(kind: ClipKind): Promise<ClipResult> {
     if (!isClipEnabled(kind)) return 'disabled';
     this.stop();
-    const job = this.playInner();
+    const job = this.playInner(this.epoch);
     setActiveClip(job);
     try {
       return await job;
@@ -87,7 +90,7 @@ class IntroClipService {
     }
   }
 
-  private async playInner(): Promise<ClipResult> {
+  private async playInner(epoch: number): Promise<ClipResult> {
     let lang = 'en';
     try {
       lang = resolveLocale(useLanguageStore.getState().preference);
@@ -96,20 +99,27 @@ class IntroClipService {
     }
     const url = clipUrlFor(lang);
     if (url) {
-      const r = await this.run(url);
+      const r = await this.run(url, epoch);
       if (r !== 'failed') return r;
     }
-    return this.run(BUNDLED_EN);
+    // stop() can land between the remote attempt and the fallback, when no player exists to cancel.
+    if (this.epoch !== epoch) return 'cancelled';
+    return this.run(BUNDLED_EN, epoch);
   }
 
-  private run(source: string | number): Promise<ClipResult> {
+  private run(source: string | number, epoch: number): Promise<ClipResult> {
     return new Promise<ClipResult>(resolve => {
+      if (this.epoch !== epoch) {
+        resolve('cancelled');
+        return;
+      }
       let done = false;
       let player: AudioPlayer | null = null;
       let loadTimer: ReturnType<typeof setTimeout> | undefined;
       let capTimer: ReturnType<typeof setTimeout> | undefined;
       let sub: {remove: () => void} | undefined;
 
+      const cancelThis = () => finish('cancelled');
       const finish = (result: ClipResult) => {
         if (done) return;
         done = true;
@@ -123,7 +133,7 @@ class IntroClipService {
           /* already released */
         }
         if (this.player === player) this.player = null;
-        this.cancel = null;
+        if (this.cancel === cancelThis) this.cancel = null;
         resolve(result);
       };
 
@@ -132,7 +142,7 @@ class IntroClipService {
           typeof source === 'string' ? {uri: source} : source,
         );
         this.player = player;
-        this.cancel = () => finish('cancelled');
+        this.cancel = cancelThis;
         let started = false;
         sub = player.addListener('playbackStatusUpdate', status => {
           if (status.isLoaded && !started) {
