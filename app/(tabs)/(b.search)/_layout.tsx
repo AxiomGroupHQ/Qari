@@ -44,7 +44,7 @@ export default function SearchLayout() {
                   headerBlurEffect: undefined,
                   headerStyle: {backgroundColor: 'transparent'},
                   headerShadowVisible: false,
-                  headerTitle: t('common.browseAll'),
+                  headerTitle: '',
                   headerBackTitle: '',
                   headerBackground: EmptyHeaderBackground,
                   fullScreenGestureEnabled: false,

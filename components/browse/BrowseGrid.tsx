@@ -11,6 +11,8 @@ import {LegendList} from '@legendapp/list';
 import {Reciter} from '@/data/reciterData';
 import {Theme} from '@/utils/themeUtils';
 import {BrowseReciterCard} from './BrowseReciterCard';
+import {CircularBrowseCard} from './CircularBrowseCard';
+import {NativeScrollEvent, NativeSyntheticEvent} from 'react-native';
 
 interface BrowseGridProps {
   reciters: Reciter[];
@@ -25,6 +27,11 @@ interface BrowseGridProps {
   // that don't need it; the original `moderateScale(80)` floor still
   // applies when the inset is small or unset.
   bottomInset?: number;
+  // Circular photo + name cells (browse-all redesign). Default false keeps
+  // the detailed rectangle cards used by rewayat/picker flows.
+  circular?: boolean;
+  // Scroll reporter for the collapsible tab bar.
+  onScroll?: (event: NativeSyntheticEvent<NativeScrollEvent>) => void;
 }
 
 function createStyles(_theme: Theme, bottomInset = 0) {
@@ -95,29 +102,41 @@ const BrowseGrid = React.memo(
       const gapSpace = moderateScale(10) * (numColumns - 1);
       const availableWidth = windowWidth - totalHorizontalPadding - gapSpace;
       const itemWidth = availableWidth / numColumns;
-      const itemHeight = itemWidth * 1.2;
+      const itemHeight = circular
+        ? itemWidth + moderateScale(48)
+        : itemWidth * 1.2;
 
       return {
         width: itemWidth,
         height: itemHeight,
       };
-    }, [windowWidth, numColumns]);
+    }, [windowWidth, numColumns, circular]);
 
     // Render a row of items
     const renderRow = useCallback(
       ({item}: {item: Reciter[]}) => (
         <View style={styles.row}>
-          {item.map(reciter => (
-            <BrowseReciterCard
-              key={reciter.id}
-              reciter={reciter}
-              onPress={() => onReciterPress(reciter)}
-              width={itemDimensions.width}
-              height={itemDimensions.height}
-              theme={theme}
-              rewayatId={getRewayatIdForReciter?.(reciter)}
-            />
-          ))}
+          {item.map(reciter =>
+            circular ? (
+              <CircularBrowseCard
+                key={reciter.id}
+                reciter={reciter}
+                onPress={() => onReciterPress(reciter)}
+                width={itemDimensions.width}
+                theme={theme}
+              />
+            ) : (
+              <BrowseReciterCard
+                key={reciter.id}
+                reciter={reciter}
+                onPress={() => onReciterPress(reciter)}
+                width={itemDimensions.width}
+                height={itemDimensions.height}
+                theme={theme}
+                rewayatId={getRewayatIdForReciter?.(reciter)}
+              />
+            ),
+          )}
           {/* Add empty placeholders for the last row if needed */}
           {item.length < numColumns &&
             Array(numColumns - item.length)
@@ -137,6 +156,7 @@ const BrowseGrid = React.memo(
         numColumns,
         styles.row,
         getRewayatIdForReciter,
+        circular,
       ],
     );
 
@@ -173,6 +193,8 @@ const BrowseGrid = React.memo(
           onEndReachedThreshold={0.5}
           maintainVisibleContentPosition
           onScrollBeginDrag={onScrollBeginDrag}
+          onScroll={onScroll}
+          scrollEventThrottle={16}
         />
       </View>
     );
@@ -182,7 +204,8 @@ const BrowseGrid = React.memo(
     prevProps.onReciterPress === nextProps.onReciterPress &&
     prevProps.reciters.length === nextProps.reciters.length &&
     prevProps.getRewayatIdForReciter === nextProps.getRewayatIdForReciter &&
-    prevProps.bottomInset === nextProps.bottomInset,
+    prevProps.bottomInset === nextProps.bottomInset &&
+    prevProps.circular === nextProps.circular,
 );
 
 BrowseGrid.displayName = 'BrowseGrid';

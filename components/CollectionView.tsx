@@ -10,6 +10,7 @@ import {moderateScale, verticalScale} from 'react-native-size-matters';
 import {CircularReciterCard} from './cards/CircularReciterCard';
 import {ReciterCard} from './cards/ReciterCard';
 import {useFavoriteReciters} from '@/hooks/useFavoriteReciters';
+import {useCollapsibleTabBar} from '@/hooks/useCollapsibleTabBar';
 import {Reciter} from '@/data/reciterData';
 import {useLoved} from '@/hooks/useLoved';
 
@@ -88,6 +89,8 @@ export default function CollectionView({
     })),
   ];
 
+  const {onScroll: onCollectionScroll} = useCollapsibleTabBar();
+
   const getItemKey = (item: Reciter | TrackItem) => {
     if ('id' in item) {
       return item.id;
@@ -106,6 +109,8 @@ export default function CollectionView({
         numColumns={3}
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{paddingHorizontal: moderateScale(15)}}
+        onScroll={onCollectionScroll}
+        scrollEventThrottle={16}
       />
     </View>
   );
