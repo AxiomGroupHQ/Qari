@@ -36,6 +36,30 @@ Status values: **bundled** = pulled and served from our own site, **not contacte
 | `api.thebayaan.com` (reciter catalog API) | Reciter data | **Not contacted**. No API URL is set in production, the app uses the bundled `data/reciters-fallback.json`. Env var names `EXPO_PUBLIC_BAYAAN_API_URL/KEY` still work as legacy aliases only. |
 | Reciter catalog and rewayat data | Reciter lists | **Bundled** (`data/reciters-fallback.json`, `data/rewayat*.ts`). |
 | `EXPO_PUBLIC_KILLSWITCH_URL` | Remote kill switch | **Not contacted** unless the variable is set. It is not set. |
-| `app.thebayaan.com` (iOS associated domain in `ios/Bayaan/Bayaan.entitlements`) | iOS universal links | **Still external**. Only in the committed iOS project file. `app.config.js` uses `EXPO_PUBLIC_ASSOCIATED_DOMAIN` instead. Needs a decision before the next iOS build. |
+| `app.thebayaan.com` (iOS associated domain in `ios/Bayaan/Bayaan.entitlements`) | iOS universal links | **Still external** in the committed iOS project file only. `app.config.js` now defaults the associated domain to `istima.app` (override with `EXPO_PUBLIC_ASSOCIATED_DOMAIN`). Check `ios/Bayaan/Bayaan.entitlements` before the next iOS build. |
 | Audio files (`server*.mp3quran.net`) | Recitation playback | **Still external**, but this is mp3quran.net, not Bayaan. Self-hosting is ~GBs of audio and needs Cloudflare R2 access. |
 | Runtime identifiers (storage keys such as `@bayaan/last_track`, Postmark template alias, `bayaan_*` keys) | Local storage, email template | Kept on purpose, so existing users keep their data. Not network contacts. |
+
+## Upstream Bayaan issues (thebayaan/Bayaan, checked October 2026)
+
+Fixes are made in Istima only, never in the Bayaan repo. Feature write-up: `docs/features.md`.
+
+| Issue | Item | Status | What is needed |
+| --- | --- | --- | --- |
+| #204 | Downloads vanish offline when reciter list is empty | **Fixed** (PR #34) | Device check offline. |
+| #117 | Shareable links | **Partly done** | Share buttons already make `https://istima.app/...` links. App-link domain and iOS `apple-app-site-association` added (PR #34). Android: SHA-256 of the signing key to add `assetlinks.json`. Playlist links and rich preview cards need server work (decision). |
+| #133 | Android performance | **Nothing safe to change blind** | Real Android device for list tuning and R8 testing. Console logs in hot paths are already `__DEV__` guarded. |
+| #74 | Merge mini + full player into one sheet | Not built | Device or simulator to test the animation. Risk of breaking the player if built blind. |
+| #126 | Home screen widgets | Not built | Native code (WidgetKit, Glance). Apple Developer access (App Group, new target), Xcode/EAS build, devices. |
+| #118 | Watch apps | Not built | New native targets, Apple provisioning, devices. |
+| #116 | TV apps | Not built | New native targets, store setup, devices. |
+| #115 | CarPlay / Android Auto | Not built | Apple CarPlay audio entitlement request, Google Play review. Plan: `docs/features/carplay-android-auto.md`. |
+| #119 | Analytics and listening insights | Partly (basic analytics only) | Decision on dashboard content and on PostHog (new third-party service, privacy policy). |
+| #8 | Discover feed (short snippets) | Not built | Decide the content source and audio rights. |
+| #9 | Feature requirements doc | **Done** | `docs/features.md`. |
+| #192 | i18n | **Done** (60 languages) | - |
+| #120 | Cloud sync | **Done** (own accounts and Worker) | Remaining sync documents listed above. |
+| #127 | Web app | **Done** (istima.app) | - |
+| #242 | Dev-client crash on OAuth deep links | Not applicable | Dev builds only. |
+| #323 | Quran Foundation note sync | Not applicable | Istima has no Quran Foundation sync. |
+| #62 | MP3 to Opus | Not applicable | Istima does not host audio. |
