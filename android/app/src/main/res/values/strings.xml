@@ -2,4 +2,11 @@
   <string name="app_name">Istima</string>
   <string name="expo_system_ui_user_interface_style" translatable="false">automatic</string>
   <string name="expo_splash_screen_resize_mode" translatable="false">native</string>
+  <string name="widget_quick_title">Istima</string>
+  <string name="widget_quick_description">Open a surah or the mushaf in one tap</string>
+  <string name="widget_fatiha">Al-Fatiha</string>
+  <string name="widget_yasin">Ya-Sin</string>
+  <string name="widget_mulk">Al-Mulk</string>
+  <string name="widget_kahf">Al-Kahf</string>
+  <string name="widget_mushaf">Mushaf</string>
 </resources>
