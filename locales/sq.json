@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Po shkarkohet lista...",
       "editPlaylist": "Ndrysho listën",
       "emptyPlaylist": "Listë bosh",
-      "thisPlaylistIsEmpty": "Kjo listë është bosh."
+      "thisPlaylistIsEmpty": "Kjo listë është bosh.",
+      "sharePlaylist": "Ndaj listën",
+      "shareFailed": "Lidhja e ndarjes nuk u krijua dot. Kontrollo lidhjen dhe provo përsëri.",
+      "shareRateLimited": "U krijuan shumë lidhje. Provo përsëri pas një ore.",
+      "shareNothing": "Shto disa sure përpara se të ndash.",
+      "shareMessage": "Dëgjo listën time \"{{name}}\" në Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Rreth rivajateve",
@@ -787,5 +792,25 @@
       "unknown": "Diçka shkoi keq. Provoni përsëri."
     },
     "emailRequired": "Nevojitet një email i vlefshëm për të ruajtur të dhënat tuaja personale (të preferuara, faqeshënues, lista, cilësime). Pa të, mbeten vetëm në këtë pajisje."
+  },
+  "sharedPlaylist": {
+    "title": "Lista e luajtjes e ndarë",
+    "play": "Luaj të gjitha",
+    "save": "Ruaje te listat e mia",
+    "saved": "U ruajt te listat e tua",
+    "loading": "Po ngarkohet lista...",
+    "notFound": "Kjo listë e ndarë nuk u gjet.",
+    "error": "Kjo listë nuk mund të ngarkohej. Kontrollo lidhjen.",
+    "retry": "Provo përsëri",
+    "itemCount_one": "{{count}} recitime",
+    "itemCount_other": "{{count}} recitime"
+  },
+  "discover": {
+    "title": "Zbulo",
+    "loading": "Po kërkohet një recitim",
+    "empty": "Tani nuk u gjet dot asnjë recitim",
+    "retry": "Provo përsëri",
+    "close": "Mbyll",
+    "paused": "Në pauzë, trokit për të vazhduar"
   }
 }

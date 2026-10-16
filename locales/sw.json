@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Inapakua orodha ya kucheza...",
       "editPlaylist": "Hariri Orodha ya Kucheza",
       "emptyPlaylist": "Orodha ya Kucheza Tupu",
-      "thisPlaylistIsEmpty": "Orodha hii ya kucheza ni tupu."
+      "thisPlaylistIsEmpty": "Orodha hii ya kucheza ni tupu.",
+      "sharePlaylist": "Shiriki orodha",
+      "shareFailed": "Kiungo cha kushiriki hakikuweza kuundwa. Angalia muunganisho wako kisha ujaribu tena.",
+      "shareRateLimited": "Viungo vingi sana vimeundwa. Jaribu tena baada ya saa moja.",
+      "shareNothing": "Ongeza baadhi ya sura kabla ya kushiriki.",
+      "shareMessage": "Sikiliza orodha yangu \"{{name}}\" kwenye Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Kuhusu Riwaya",
@@ -787,5 +792,25 @@
       "unknown": "Hitilafu imetokea. Tafadhali jaribu tena."
     },
     "emailRequired": "Barua pepe halali inahitajika ili kuhifadhi data yako binafsi (vipendwa, alamisho, orodha za kucheza, mipangilio). Bila hiyo, inabaki kwenye kifaa hiki pekee."
+  },
+  "sharedPlaylist": {
+    "title": "Orodha ya kucheza iliyoshirikiwa",
+    "play": "Cheza zote",
+    "save": "Hifadhi kwenye orodha zangu",
+    "saved": "Imehifadhiwa kwenye orodha zako",
+    "loading": "Inapakia orodha...",
+    "notFound": "Orodha hii iliyoshirikiwa haikupatikana.",
+    "error": "Orodha hii haikuweza kupakiwa. Angalia muunganisho wako.",
+    "retry": "Jaribu tena",
+    "itemCount_one": "Qiraa {{count}}",
+    "itemCount_other": "Qiraa {{count}}"
+  },
+  "discover": {
+    "title": "Gundua",
+    "loading": "Inatafuta qiraa",
+    "empty": "Haikuweza kupata qiraa sasa hivi",
+    "retry": "Jaribu tena",
+    "close": "Funga",
+    "paused": "Imesitishwa, gusa kuendelea"
   }
 }

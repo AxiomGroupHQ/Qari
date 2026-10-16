@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Lîsteya lêdanê tê daxistin...",
       "editPlaylist": "Lîsteya lêdanê biguherîne",
       "emptyPlaylist": "Lîsteya lêdanê ya vala",
-      "thisPlaylistIsEmpty": "Ev lîsteya lêdanê vala ye."
+      "thisPlaylistIsEmpty": "Ev lîsteya lêdanê vala ye.",
+      "sharePlaylist": "Lîsteyê parve bike",
+      "shareFailed": "Girêdana parvekirinê nehat çêkirin. Girêdana xwe kontrol bike û dîsa biceribîne.",
+      "shareRateLimited": "Pir girêdan hatin çêkirin. Piştî saetekê dîsa biceribîne.",
+      "shareNothing": "Beriya parvekirinê çend sûreyan zêde bike.",
+      "shareMessage": "Lîsteya min \"{{name}}\" li Istima bibihîze"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Derbarê riwayetan",
@@ -787,5 +792,25 @@
       "unknown": "Tiştek xelet çû. Ji kerema xwe dîsa biceribîne."
     },
     "emailRequired": "Ji bo tomarkirina daneyên kesane (hezkirî, nîşan, lîsteyên lêdanê, mîheng) e-nameyeke derbasdar pêwîst e. Bêyî wê tenê li ser vê amûrê dimîne."
+  },
+  "sharedPlaylist": {
+    "title": "Lîsteya parvekirî",
+    "play": "Hemûyan bilîze",
+    "save": "Di lîsteyên min de tomar bike",
+    "saved": "Di lîsteyên te de hat tomarkirin",
+    "loading": "Lîste tê barkirin...",
+    "notFound": "Ev lîsteya parvekirî nehat dîtin.",
+    "error": "Ev lîste nehat barkirin. Girêdana xwe kontrol bike.",
+    "retry": "Dîsa biceribîne",
+    "itemCount_one": "{{count}} qiraet",
+    "itemCount_other": "{{count}} qiraet"
+  },
+  "discover": {
+    "title": "Keşf bike",
+    "loading": "Qiraetek tê lêgerîn",
+    "empty": "Niha qiraetek nehat dîtin",
+    "retry": "Dîsa biceribîne",
+    "close": "Bigire",
+    "paused": "Hat rawestandin, ji bo domandinê bitikîne"
   }
 }

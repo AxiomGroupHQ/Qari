@@ -588,7 +588,12 @@
       "downloadingPlaylist": "正在下载播放列表……",
       "editPlaylist": "编辑播放列表",
       "emptyPlaylist": "空播放列表",
-      "thisPlaylistIsEmpty": "此播放列表为空。"
+      "thisPlaylistIsEmpty": "此播放列表为空。",
+      "sharePlaylist": "分享播放列表",
+      "shareFailed": "无法创建分享链接。请检查网络连接后重试。",
+      "shareRateLimited": "创建的链接过多。请一小时后再试。",
+      "shareNothing": "分享前请先添加一些章节。",
+      "shareMessage": "来 Istima 听我的播放列表“{{name}}”"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "关于诵读传承",
@@ -810,5 +815,24 @@
       "unknown": "出了点问题，请重试。"
     },
     "emailRequired": "保存个人数据（收藏、书签、播放列表、设置）需要有效的邮箱。没有邮箱，数据只会保留在此设备上。"
+  },
+  "sharedPlaylist": {
+    "title": "共享播放列表",
+    "play": "全部播放",
+    "save": "保存到我的播放列表",
+    "saved": "已保存到你的播放列表",
+    "loading": "正在加载播放列表...",
+    "notFound": "找不到此共享播放列表。",
+    "error": "无法加载此播放列表。请检查网络连接。",
+    "retry": "重试",
+    "itemCount_other": "{{count}} 段诵读"
+  },
+  "discover": {
+    "title": "发现",
+    "loading": "正在寻找诵读",
+    "empty": "暂时找不到诵读",
+    "retry": "重试",
+    "close": "关闭",
+    "paused": "已暂停，点按继续"
   }
 }

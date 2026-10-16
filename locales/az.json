@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Pleylist endirilir...",
       "editPlaylist": "Pleylisti redaktə et",
       "emptyPlaylist": "Boş pleylist",
-      "thisPlaylistIsEmpty": "Bu pleylist boşdur."
+      "thisPlaylistIsEmpty": "Bu pleylist boşdur.",
+      "sharePlaylist": "Pleylisti paylaş",
+      "shareFailed": "Paylaşma linkini yaratmaq mümkün olmadı. Bağlantınızı yoxlayıb yenidən cəhd edin.",
+      "shareRateLimited": "Çox sayda link yaradılıb. Bir saatdan sonra yenidən cəhd edin.",
+      "shareNothing": "Paylaşmazdan əvvəl bir neçə surə əlavə edin.",
+      "shareMessage": "Istima-da \"{{name}}\" pleylistimi dinləyin"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Rəvayətlər haqqında",
@@ -787,5 +792,25 @@
       "unknown": "Xəta baş verdi. Yenidən cəhd edin."
     },
     "emailRequired": "Şəxsi məlumatlarınızı (sevimlilər, əlfəcinlər, pleylistlər, ayarlar) saxlamaq üçün etibarlı e-poçt lazımdır. Olmadıqda yalnız bu cihazda qalır."
+  },
+  "sharedPlaylist": {
+    "title": "Paylaşılan pleylist",
+    "play": "Hamısını oxut",
+    "save": "Pleylistlərimə yadda saxla",
+    "saved": "Pleylistlərinizə yadda saxlanıldı",
+    "loading": "Pleylist yüklənir...",
+    "notFound": "Bu paylaşılan pleylist tapılmadı.",
+    "error": "Bu pleylisti yükləmək mümkün olmadı. Bağlantınızı yoxlayın.",
+    "retry": "Yenidən cəhd et",
+    "itemCount_one": "{{count}} qiraət",
+    "itemCount_other": "{{count}} qiraət"
+  },
+  "discover": {
+    "title": "Kəşf et",
+    "loading": "Qiraət axtarılır",
+    "empty": "Hazırda qiraət tapmaq mümkün olmadı",
+    "retry": "Yenidən cəhd et",
+    "close": "Bağla",
+    "paused": "Dayandırıldı, davam etmək üçün toxunun"
   }
 }

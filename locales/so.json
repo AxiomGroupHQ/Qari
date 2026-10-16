@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Liiska waa la soo dejinayaa...",
       "editPlaylist": "Wax ka beddel liiska",
       "emptyPlaylist": "Liis madhan",
-      "thisPlaylistIsEmpty": "Liiskan waa madhan yahay."
+      "thisPlaylistIsEmpty": "Liiskan waa madhan yahay.",
+      "sharePlaylist": "La wadaag liiska",
+      "shareFailed": "Linkiga wadaagista lama abuuri karin. Hubi isku xirkaaga oo mar kale isku day.",
+      "shareRateLimited": "Linkiyo aad u badan ayaa la sameeyay. Mar kale isku day saacad kadib.",
+      "shareNothing": "Ku dar dhowr suurad kahor intaadan wadaagin.",
+      "shareMessage": "Dhegeyso liiskayga \"{{name}}\" Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Ku saabsan Rewayaadka",
@@ -787,5 +792,25 @@
       "unknown": "Wax qalad ah ayaa dhacay. Fadlan mar kale isku day."
     },
     "emailRequired": "Iimayl sax ah ayaa loo baahan yahay si loo keydiyo xogtaada gaarka ah (kuwa aad jeceshahay, calaamadaha, liisaska ciyaarta, dejinta). Haddii kale waxay ku hadhi doontaa qalabkan oo keliya."
+  },
+  "sharedPlaylist": {
+    "title": "Liis la wadaagay",
+    "play": "Dhammaan ciyaar",
+    "save": "Ku keydi liisaskayga",
+    "saved": "Waxaa lagu keydiyay liisaskaaga",
+    "loading": "Liiska waa la soo gelinayaa...",
+    "notFound": "Liiskan la wadaagay lama helin.",
+    "error": "Liiskan lama soo gelin karo. Hubi isku xirkaaga.",
+    "retry": "Mar kale isku day",
+    "itemCount_one": "Qiraado {{count}}",
+    "itemCount_other": "Qiraado {{count}}"
+  },
+  "discover": {
+    "title": "Hel",
+    "loading": "Qiraado ayaa la raadinayaa",
+    "empty": "Hadda qiraado lama helin",
+    "retry": "Mar kale isku day",
+    "close": "Xidh",
+    "paused": "Waa la hakiyay, taabo si aad u sii wadato"
   }
 }

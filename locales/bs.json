@@ -594,7 +594,12 @@
       "downloadingPlaylist": "Preuzimanje plejliste...",
       "editPlaylist": "Uredi plejlistu",
       "emptyPlaylist": "Prazna plejlista",
-      "thisPlaylistIsEmpty": "Ova plejlista je prazna."
+      "thisPlaylistIsEmpty": "Ova plejlista je prazna.",
+      "sharePlaylist": "Podijeli plejlistu",
+      "shareFailed": "Nije moguće kreirati link za dijeljenje. Provjerite vezu i pokušajte ponovo.",
+      "shareRateLimited": "Kreirano je previše linkova. Pokušajte ponovo za sat vremena.",
+      "shareNothing": "Dodajte nekoliko sura prije dijeljenja.",
+      "shareMessage": "Poslušajte moju plejlistu \"{{name}}\" na Istimi"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "O rivajetima",
@@ -793,5 +798,26 @@
       "unknown": "Nešto je pošlo po zlu. Pokušajte ponovo."
     },
     "emailRequired": "Za čuvanje ličnih podataka (omiljeni, markeri, plejliste, postavke) potrebna je važeća e-pošta. Bez nje ostaju samo na ovom uređaju."
+  },
+  "sharedPlaylist": {
+    "title": "Dijeljena plejlista",
+    "play": "Reproduciraj sve",
+    "save": "Sačuvaj u moje plejliste",
+    "saved": "Sačuvano u vaše plejliste",
+    "loading": "Učitavanje plejliste...",
+    "notFound": "Ova dijeljena plejlista nije pronađena.",
+    "error": "Nije moguće učitati ovu plejlistu. Provjerite vezu.",
+    "retry": "Pokušaj ponovo",
+    "itemCount_few": "Učenja: {{count}}",
+    "itemCount_one": "Učenja: {{count}}",
+    "itemCount_other": "Učenja: {{count}}"
+  },
+  "discover": {
+    "title": "Otkrij",
+    "loading": "Traženje učenja",
+    "empty": "Trenutno nije moguće pronaći učenje",
+    "retry": "Pokušaj ponovo",
+    "close": "Zatvori",
+    "paused": "Pauzirano, dodirnite za nastavak"
   }
 }

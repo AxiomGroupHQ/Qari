@@ -594,7 +594,12 @@
       "downloadingPlaylist": "ዝርዝር መጻወቲ ይወርድ ኣሎ...",
       "editPlaylist": "ዝርዝር መጻወቲ ኣርትዕ",
       "emptyPlaylist": "ባዶ ዝርዝር መጻወቲ",
-      "thisPlaylistIsEmpty": "እዚ ዝርዝር መጻወቲ ባዶ እዩ።"
+      "thisPlaylistIsEmpty": "እዚ ዝርዝር መጻወቲ ባዶ እዩ።",
+      "sharePlaylist": "ዝርዝር ኣካፍል",
+      "shareFailed": "መላግቦ ሊንክ ክፍጠር ኣይከኣለን። ርክብካ ፈትሸ ደጊምካ ፈትን።",
+      "shareRateLimited": "ብዙሓት ሊንክታት ተፈጢሮም። ድሕሪ ሓደ ሰዓት ደጊምካ ፈትን።",
+      "shareNothing": "ቅድሚ ምክፋል ገለ ሱራታት ወስኽ።",
+      "shareMessage": "ኣብ Istima ዝርዝረይ \"{{name}}\" ስማዕ"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "ብዛዕባ ሪዋያት",
@@ -817,5 +822,26 @@
       "unknown": "ገለ ጌጋ ተፈጢሩ። በጃኻ ደጊምካ ፈትን።"
     },
     "emailRequired": "ውልቃዊ ዳታ (ዝፈትዎም፣ ምልክታት፣ ዝርዝራት መጻወቲ፣ ቅጥዕታት) ንምዕቃብ ልክዕ ኢሜይል የድልዮ። ብዘይኡ ኣብዚ መሳለጢ ጥራይ ይተርፍ።"
+  },
+  "sharedPlaylist": {
+    "title": "ዝተኻፈለ ዝርዝር",
+    "play": "ኩሉ ኣጥፍእ",
+    "save": "ኣብ ዝርዝራተይ ዕቆብ",
+    "saved": "ኣብ ዝርዝራትካ ተዐቂቡ",
+    "loading": "ዝርዝር ይጽዓን ኣሎ...",
+    "notFound": "እዚ ዝተኻፈለ ዝርዝር ኣይተረኽበን።",
+    "error": "እዚ ዝርዝር ክጽዓን ኣይከኣለን። ርክብካ ፈትሽ።",
+    "retry": "ደጊምካ ፈትን",
+    "itemCount_many": "ቁራኣት {{count}}",
+    "itemCount_one": "ቁራኣት {{count}}",
+    "itemCount_other": "ቁራኣት {{count}}"
+  },
+  "discover": {
+    "title": "ድለ",
+    "loading": "ቁራእ ይድለ ኣሎ",
+    "empty": "ሕጂ ቁራእ ክርከብ ኣይከኣለን",
+    "retry": "ደጊምካ ፈትን",
+    "close": "ዓጽው",
+    "paused": "ደው ኢሉ ኣሎ፣ ንምቕጻል ተንክፍ"
   }
 }
