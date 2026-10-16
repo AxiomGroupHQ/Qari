@@ -2,6 +2,7 @@ import {
   cleanArabic,
   cleanTranslation,
   repeatCountFromText,
+  stripBrackets,
   stripRepeatNotes,
 } from '../adhkarText';
 import adhkar from '@/data/adhkar.json';
@@ -89,5 +90,56 @@ describe('stripRepeatNotes + repeatCountFromText', () => {
     expect(repeatCountFromText('(one hundred times)')).toBe(100);
     expect(repeatCountFromText('(thirty-three times)')).toBe(33);
     expect(repeatCountFromText('no note here')).toBeNull();
+  });
+});
+
+describe('stripBrackets', () => {
+  it('drops footnote-number markers whole', () => {
+    expect(stripBrackets('He said ( 1 ) nothing.')).toBe('He said nothing.');
+    expect(stripBrackets('Bismil-lah (1) Ar-rahman (2)')).toBe(
+      'Bismil-lah Ar-rahman',
+    );
+  });
+
+  it('drops the marks and keeps the words inside', () => {
+    expect(stripBrackets('for the evening, one reads (amsaytu) instead.')).toBe(
+      'for the evening, one reads amsaytu instead.',
+    );
+    expect(stripBrackets('(He is) the Most Great [saying] this')).toBe(
+      'He is the Most Great saying this',
+    );
+    expect(stripBrackets('(Al-Baqarah :255)')).toBe('Al-Baqarah :255');
+  });
+
+  it('handles square brackets and doubles in Arabic', () => {
+    expect(stripBrackets('[وإذا أمسى قال: أمسينا]')).toBe(
+      'وإذا أمسى قال: أمسينا',
+    );
+    expect(stripBrackets('((بسم الله)).')).toBe('بسم الله.');
+  });
+
+  it('passes null through', () => {
+    expect(stripBrackets(null)).toBeNull();
+  });
+
+  it('leaves no bracket marks in any display field of the seed data', () => {
+    const rows = adhkar.adhkar as {
+      arabic: string;
+      translation: string | null;
+      transliteration: string | null;
+      instruction: string | null;
+    }[];
+    for (const a of rows) {
+      const cleaned = [
+        stripBrackets(stripRepeatNotes(a.arabic)),
+        stripBrackets(stripRepeatNotes(a.translation)),
+        stripBrackets(a.transliteration),
+        stripBrackets(stripRepeatNotes(a.instruction)),
+      ];
+      for (const v of cleaned) {
+        if (v == null) continue;
+        expect(v).not.toMatch(/[()[\]]/);
+      }
+    }
   });
 });

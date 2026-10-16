@@ -1,8 +1,7 @@
 import {localizeCategoryTitle, localizeSuperTitle} from '@/utils/adhkarTitles';
 import {
-  cleanArabic,
-  cleanTranslation,
   repeatCountFromText,
+  stripBrackets,
   stripRepeatNotes,
 } from '@/utils/adhkarText';
 import * as SQLite from 'expo-sqlite';
@@ -88,10 +87,10 @@ function mapDhikrRow(dhikr: DhikrRow): Dhikr {
   return {
     id: dhikr.id,
     categoryId: dhikr.category_id,
-    arabic: stripRepeatNotes(cleanArabic(dhikr.arabic)) ?? '',
-    translation: stripRepeatNotes(cleanTranslation(dhikr.translation)),
-    transliteration: dhikr.transliteration,
-    instruction: cleanTranslation(dhikr.instruction),
+    arabic: stripBrackets(stripRepeatNotes(dhikr.arabic)) ?? '',
+    translation: stripBrackets(stripRepeatNotes(dhikr.translation)),
+    transliteration: stripBrackets(dhikr.transliteration),
+    instruction: stripBrackets(stripRepeatNotes(dhikr.instruction)),
     repeatCount:
       dhikr.repeat_count > 1
         ? dhikr.repeat_count
