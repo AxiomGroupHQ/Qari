@@ -9,7 +9,7 @@ const POSTMARK_FROM_EMAIL = Constants.expoConfig?.extra?.postmarkFromEmail;
 
 const client = new Postmark.ServerClient(POSTMARK_API_KEY);
 
-const POSTMARK_TEMPLATE_ALIAS = 'email-verification-bayaan-1';
+const POSTMARK_TEMPLATE_ALIAS = 'email-verification-istima-1';
 
 export async function sendVerificationEmail(
   to: string,
