@@ -858,5 +858,39 @@
     "body": "ਅੱਜ ਦੀ ਸੂਰਤ: {{name}}। ਸੁਣਨ ਲਈ ਟੈਪ ਕਰੋ।",
     "denied": "ਇਸ ਐਪ ਲਈ ਸੂਚਨਾਵਾਂ ਬੰਦ ਹਨ। ਸਿਸਟਮ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਚਾਲੂ ਕਰੋ।",
     "turnOn": "ਚਾਲੂ ਕਰੋ"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "ਸਵੇਰ",
+      "evening-adhkar": "ਸ਼ਾਮ",
+      "salah": "ਨਮਾਜ਼",
+      "before-sleep": "ਸੌਣ ਤੋਂ ਪਹਿਲਾਂ",
+      "after-salah": "ਨਮਾਜ਼ ਤੋਂ ਬਾਅਦ",
+      "waking-up": "ਜਾਗਣ ਵੇਲੇ",
+      "salawat": "ਸਲਵਾਤ",
+      "praises-of-allah": "ਅੱਲ੍ਹਾ ਦੀ ਪ੍ਰਸ਼ੰਸਾ",
+      "istighfar": "ਇਸਤਿਗ਼ਫ਼ਾਰ",
+      "nightmares": "ਡਰਾਉਣੇ ਸੁਪਨੇ",
+      "protection-of-iman": "ਈਮਾਨ ਦੀ ਸੁਰੱਖਿਆ",
+      "difficulties-happiness": "ਮੁਸ਼ਕਲਾਂ ਅਤੇ ਖ਼ੁਸ਼ੀ",
+      "quranic-duas": "ਕੁਰਾਨ ਦੀਆਂ ਦੁਆਵਾਂ",
+      "names-of-allah": "ਅੱਲ੍ਹਾ ਦੇ 99 ਨਾਮ",
+      "clothes": "ਕੱਪੜੇ",
+      "lavatory-wudu": "ਪਖਾਨਾ ਅਤੇ ਵੁਜ਼ੂ",
+      "adhan-masjid": "ਅਜ਼ਾਨ ਅਤੇ ਮਸਜਿਦ",
+      "home": "ਘਰ",
+      "istikharah": "ਇਸਤਖ਼ਾਰਾ",
+      "gatherings": "ਇਕੱਠ",
+      "food-drink": "ਖਾਣਾ ਅਤੇ ਪੀਣਾ",
+      "travel": "ਸਫ਼ਰ",
+      "nature": "ਕੁਦਰਤ",
+      "social-interactions": "ਸਮਾਜਿਕ ਮੇਲ-ਜੋਲ",
+      "hajj-umrah": "ਹੱਜ ਅਤੇ ਉਮਰਾ",
+      "marriage-children": "ਵਿਆਹ ਅਤੇ ਬੱਚੇ",
+      "death": "ਮੌਤ",
+      "ruqyah-illness": "ਰੁਕਯਾ ਅਤੇ ਬਿਮਾਰੀ",
+      "money-shopping": "ਪੈਸਾ ਅਤੇ ਖ਼ਰੀਦਦਾਰੀ"
+    },
+    "cat": {}
   }
 }

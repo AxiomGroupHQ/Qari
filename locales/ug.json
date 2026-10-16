@@ -858,5 +858,39 @@
     "body": "بۈگۈنكى سۈرە: {{name}}. ئاڭلاش ئۈچۈن چېكىڭ.",
     "denied": "بۇ ئەپ ئۈچۈن ئۇقتۇرۇشلار تاقالغان. سىستېما تەڭشىكىدە ئېچىڭ.",
     "turnOn": "ئاچ"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "ئەتىگەن",
+      "evening-adhkar": "كەچ",
+      "salah": "ناماز",
+      "before-sleep": "ئۇخلاشتىن بۇرۇن",
+      "after-salah": "نامازدىن كېيىن",
+      "waking-up": "ئويغانغاندا",
+      "salawat": "سالاۋات",
+      "praises-of-allah": "ئاللاھقا ھەمدۇسانا",
+      "istighfar": "ئىستىغپار",
+      "nightmares": "قورقۇنچلۇق چۈشلەر",
+      "protection-of-iman": "ئىماننى قوغداش",
+      "difficulties-happiness": "قىيىنچىلىق ۋە خۇشاللىق",
+      "quranic-duas": "قۇرئان دۇئالىرى",
+      "names-of-allah": "ئاللاھنىڭ 99 ئىسمى",
+      "clothes": "كىيىم-كېچەك",
+      "lavatory-wudu": "ھاجەتخانا ۋە تاھارەت",
+      "adhan-masjid": "ئەزان ۋە مەسچىت",
+      "home": "ئۆي",
+      "istikharah": "ئىستىخارە",
+      "gatherings": "يىغىلىشلار",
+      "food-drink": "يېمەك-ئىچمەك",
+      "travel": "سەپەر",
+      "nature": "تەبىئەت",
+      "social-interactions": "ئىجتىمائىي مۇناسىۋەت",
+      "hajj-umrah": "ھەج ۋە ئۆمرە",
+      "marriage-children": "نىكاھ ۋە بالىلار",
+      "death": "ئۆلۈم",
+      "ruqyah-illness": "رۇقيە ۋە كېسەللىك",
+      "money-shopping": "پۇل ۋە سودا"
+    },
+    "cat": {}
   }
 }

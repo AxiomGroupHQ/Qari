@@ -858,5 +858,39 @@
     "body": "د نن سورت: {{name}}. د اورېدو لپاره کلیک کړئ.",
     "denied": "د دې اپ لپاره خبرتیاوې بندې دي. د سیسټم په تنظیماتو کې یې چالان کړئ.",
     "turnOn": "چالان کړئ"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "سهار",
+      "evening-adhkar": "مازدیګر",
+      "salah": "لمونځ",
+      "before-sleep": "د خوب مخکې",
+      "after-salah": "د لمانځه وروسته",
+      "waking-up": "د ویښېدو پر مهال",
+      "salawat": "صلوات",
+      "praises-of-allah": "د الله ستاینې",
+      "istighfar": "استغفار",
+      "nightmares": "بد خوبونه",
+      "protection-of-iman": "د ایمان ساتنه",
+      "difficulties-happiness": "ستونزې او خوښي",
+      "quranic-duas": "د قرآن دعاګانې",
+      "names-of-allah": "د الله ۹۹ نومونه",
+      "clothes": "جامې",
+      "lavatory-wudu": "تشناب او اودس",
+      "adhan-masjid": "اذان او جومات",
+      "home": "کور",
+      "istikharah": "استخاره",
+      "gatherings": "غونډې",
+      "food-drink": "خواړه او څښاک",
+      "travel": "سفر",
+      "nature": "طبیعت",
+      "social-interactions": "ټولنیز اړیکې",
+      "hajj-umrah": "حج او عمره",
+      "marriage-children": "واده او ماشومان",
+      "death": "مرګ",
+      "ruqyah-illness": "رقیه او ناروغي",
+      "money-shopping": "پیسې او پیرودنه"
+    },
+    "cat": {}
   }
 }

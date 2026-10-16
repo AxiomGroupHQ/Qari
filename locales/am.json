@@ -858,5 +858,39 @@
     "body": "የዛሬ ሱራ፦ {{name}}። ለማዳመጥ ይንኩ።",
     "denied": "ለዚህ መተግበሪያ ማሳወቂያዎች ጠፍተዋል። በሲስተም ቅንብሮች ውስጥ ያብሩ።",
     "turnOn": "አብራ"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "ጠዋት",
+      "evening-adhkar": "ማታ",
+      "salah": "ሶላት",
+      "before-sleep": "ከመተኛት በፊት",
+      "after-salah": "ከሶላት በኋላ",
+      "waking-up": "ሲነቁ",
+      "salawat": "ሰለዋት",
+      "praises-of-allah": "የአላህ ምስጋናዎች",
+      "istighfar": "ኢስቲግፋር",
+      "nightmares": "ቅዠቶች",
+      "protection-of-iman": "የኢማን ጥበቃ",
+      "difficulties-happiness": "ችግሮችና ደስታ",
+      "quranic-duas": "የቁርአን ዱዓዎች",
+      "names-of-allah": "99ኙ የአላህ ስሞች",
+      "clothes": "ልብስ",
+      "lavatory-wudu": "መጸዳጃ እና ውዱእ",
+      "adhan-masjid": "አዛንና መስጂድ",
+      "home": "ቤት",
+      "istikharah": "ኢስቲኻራ",
+      "gatherings": "ስብሰባዎች",
+      "food-drink": "ምግብና መጠጥ",
+      "travel": "ጉዞ",
+      "nature": "ተፈጥሮ",
+      "social-interactions": "ማኅበራዊ ግንኙነት",
+      "hajj-umrah": "ሐጅና ዑምራ",
+      "marriage-children": "ጋብቻና ልጆች",
+      "death": "ሞት",
+      "ruqyah-illness": "ሩቅያና ሕመም",
+      "money-shopping": "ገንዘብና ግብይት"
+    },
+    "cat": {}
   }
 }

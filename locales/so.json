@@ -834,5 +834,39 @@
     "body": "Suuradda maanta: {{name}}. Taabo si aad u dhegeysato.",
     "denied": "Ogeysiisyada waa laga damiyay app-kan. Ka shid dejinta nidaamka.",
     "turnOn": "Shid"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Subax",
+      "evening-adhkar": "Fiid",
+      "salah": "Salaad",
+      "before-sleep": "Hurdada ka hor",
+      "after-salah": "Salaadda ka dib",
+      "waking-up": "Toosidda",
+      "salawat": "Salawaad",
+      "praises-of-allah": "Ammaanta Allaah",
+      "istighfar": "Istighfaar",
+      "nightmares": "Riyooyin xun",
+      "protection-of-iman": "Ilaalinta Iimaanka",
+      "difficulties-happiness": "Dhibaatooyin iyo farxad",
+      "quranic-duas": "Ducooyinka Qur'aanka",
+      "names-of-allah": "99-ka Magac ee Allaah",
+      "clothes": "Dharka",
+      "lavatory-wudu": "Musqusha iyo Udhuu",
+      "adhan-masjid": "Aadaanka iyo Masjidka",
+      "home": "Guriga",
+      "istikharah": "Istikhaaro",
+      "gatherings": "Shirarka",
+      "food-drink": "Cunto iyo cabitaan",
+      "travel": "Safar",
+      "nature": "Dabeecadda",
+      "social-interactions": "Xiriirka bulshada",
+      "hajj-umrah": "Xajka iyo Cumrada",
+      "marriage-children": "Guurka iyo carruurta",
+      "death": "Geerida",
+      "ruqyah-illness": "Ruqyada iyo bukaan",
+      "money-shopping": "Lacag iyo wax iibsi"
+    },
+    "cat": {}
   }
 }

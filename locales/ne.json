@@ -858,5 +858,39 @@
     "body": "आजको सूरा: {{name}}। सुन्न ट्याप गर्नुहोस्।",
     "denied": "यो एपका लागि सूचनाहरू बन्द छन्। सिस्टम सेटिङमा खोल्नुहोस्।",
     "turnOn": "खोल्नुहोस्"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "बिहान",
+      "evening-adhkar": "साँझ",
+      "salah": "नमाज",
+      "before-sleep": "सुत्नुअघि",
+      "after-salah": "नमाजपछि",
+      "waking-up": "ब्यूँझँदा",
+      "salawat": "सलावत",
+      "praises-of-allah": "अल्लाहको प्रशंसा",
+      "istighfar": "इस्तिग्फार",
+      "nightmares": "डरलाग्दा सपना",
+      "protection-of-iman": "ईमानको सुरक्षा",
+      "difficulties-happiness": "कठिनाइ र खुसी",
+      "quranic-duas": "कुरआनका दुआ",
+      "names-of-allah": "अल्लाहका ९९ नाम",
+      "clothes": "लुगा",
+      "lavatory-wudu": "शौचालय र वुजू",
+      "adhan-masjid": "अजान र मस्जिद",
+      "home": "घर",
+      "istikharah": "इस्तिखारा",
+      "gatherings": "भेला",
+      "food-drink": "खाना र पेय",
+      "travel": "यात्रा",
+      "nature": "प्रकृति",
+      "social-interactions": "सामाजिक व्यवहार",
+      "hajj-umrah": "हज र उमरा",
+      "marriage-children": "विवाह र बालबालिका",
+      "death": "मृत्यु",
+      "ruqyah-illness": "रुक्या र रोग",
+      "money-shopping": "पैसा र किनमेल"
+    },
+    "cat": {}
   }
 }

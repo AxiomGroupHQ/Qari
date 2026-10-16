@@ -834,5 +834,39 @@
     "body": "Şu günki sura: {{name}}. Diňlemek üçin basyň.",
     "denied": "Bu programma üçin habarnamalar öçürilen. Ulgam sazlamalarynda açyň.",
     "turnOn": "Aç"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Ertir",
+      "evening-adhkar": "Agşam",
+      "salah": "Namaz",
+      "before-sleep": "Ýatmazdan öň",
+      "after-salah": "Namazdan soň",
+      "waking-up": "Oýanmak",
+      "salawat": "Salawat",
+      "praises-of-allah": "Allanyň alkyşlary",
+      "istighfar": "Istigfar",
+      "nightmares": "Erbet düýşler",
+      "protection-of-iman": "Imany goramak",
+      "difficulties-happiness": "Kynçylyk we bagt",
+      "quranic-duas": "Gurhan dogalary",
+      "names-of-allah": "Allanyň 99 ady",
+      "clothes": "Egin-eşik",
+      "lavatory-wudu": "Hajathana we dessine",
+      "adhan-masjid": "Azan we metjit",
+      "home": "Öý",
+      "istikharah": "Istihara",
+      "gatherings": "Ýygnaklar",
+      "food-drink": "Iýmit we içgi",
+      "travel": "Syýahat",
+      "nature": "Tebigat",
+      "social-interactions": "Jemgyýetçilik gatnaşyklary",
+      "hajj-umrah": "Haj we umra",
+      "marriage-children": "Nika we çagalar",
+      "death": "Ölüm",
+      "ruqyah-illness": "Rukýa we keselleme",
+      "money-shopping": "Pul we söwda"
+    },
+    "cat": {}
   }
 }

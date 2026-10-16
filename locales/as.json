@@ -858,5 +858,39 @@
     "body": "আজিৰ ছুৰা: {{name}}। শুনিবলৈ টিপক।",
     "denied": "এই এপৰ বাবে জাননী বন্ধ আছে। চিস্টেম ছেটিংছত চালু কৰক।",
     "turnOn": "চালু কৰক"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "ৰাতিপুৱা",
+      "evening-adhkar": "সন্ধিয়া",
+      "salah": "নামাজ",
+      "before-sleep": "শোৱাৰ আগত",
+      "after-salah": "নামাজৰ পিছত",
+      "waking-up": "সাৰ পোৱাৰ সময়ত",
+      "salawat": "ছালাৱাত",
+      "praises-of-allah": "আল্লাহৰ প্ৰশংসা",
+      "istighfar": "ইস্তিগফাৰ",
+      "nightmares": "দুঃস্বপ্ন",
+      "protection-of-iman": "ঈমানৰ সুৰক্ষা",
+      "difficulties-happiness": "অসুবিধা আৰু আনন্দ",
+      "quranic-duas": "কুৰআনৰ দোৱা",
+      "names-of-allah": "আল্লাহৰ ৯৯টা নাম",
+      "clothes": "কাপোৰ-কানি",
+      "lavatory-wudu": "শৌচালয় আৰু ওজু",
+      "adhan-masjid": "আজান আৰু মছজিদ",
+      "home": "ঘৰ",
+      "istikharah": "ইস্তিখাৰা",
+      "gatherings": "সভা",
+      "food-drink": "খাদ্য আৰু পানীয়",
+      "travel": "ভ্ৰমণ",
+      "nature": "প্ৰকৃতি",
+      "social-interactions": "সামাজিক সম্পৰ্ক",
+      "hajj-umrah": "হজ্জ আৰু উমৰা",
+      "marriage-children": "বিয়া আৰু সন্তান",
+      "death": "মৃত্যু",
+      "ruqyah-illness": "ৰুকিয়া আৰু ৰোগ",
+      "money-shopping": "ধন আৰু বজাৰ কৰা"
+    },
+    "cat": {}
   }
 }

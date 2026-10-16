@@ -858,5 +858,39 @@
     "body": "ഇന്നത്തെ സൂറ: {{name}}. കേൾക്കാൻ ടാപ്പ് ചെയ്യുക.",
     "denied": "ഈ ആപ്പിന് അറിയിപ്പുകൾ ഓഫാണ്. സിസ്റ്റം ക്രമീകരണങ്ങളിൽ ഓണാക്കുക.",
     "turnOn": "ഓണാക്കുക"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "രാവിലെ",
+      "evening-adhkar": "വൈകുന്നേരം",
+      "salah": "നമസ്കാരം",
+      "before-sleep": "ഉറങ്ങുന്നതിന് മുമ്പ്",
+      "after-salah": "നമസ്കാരത്തിനു ശേഷം",
+      "waking-up": "ഉണരുമ്പോൾ",
+      "salawat": "സ്വലാത്ത്",
+      "praises-of-allah": "അല്ലാഹുവിന്റെ സ്തുതികൾ",
+      "istighfar": "ഇസ്തിഗ്ഫാർ",
+      "nightmares": "ദുസ്വപ്നങ്ങൾ",
+      "protection-of-iman": "ഈമാന്റെ സംരക്ഷണം",
+      "difficulties-happiness": "ബുദ്ധിമുട്ടുകളും സന്തോഷവും",
+      "quranic-duas": "ഖുർആനിലെ ദുആകൾ",
+      "names-of-allah": "അല്ലാഹുവിന്റെ 99 നാമങ്ങൾ",
+      "clothes": "വസ്ത്രങ്ങൾ",
+      "lavatory-wudu": "ശൗചാലയവും വുദൂവും",
+      "adhan-masjid": "ബാങ്കും മസ്ജിദും",
+      "home": "വീട്",
+      "istikharah": "ഇസ്തിഖാറ",
+      "gatherings": "സദസ്സുകൾ",
+      "food-drink": "ഭക്ഷണപാനീയങ്ങൾ",
+      "travel": "യാത്ര",
+      "nature": "പ്രകൃതി",
+      "social-interactions": "സാമൂഹിക ഇടപെടലുകൾ",
+      "hajj-umrah": "ഹജ്ജും ഉംറയും",
+      "marriage-children": "വിവാഹവും കുട്ടികളും",
+      "death": "മരണം",
+      "ruqyah-illness": "റുഖ്‌യയും രോഗവും",
+      "money-shopping": "പണവും ഷോപ്പിങ്ങും"
+    },
+    "cat": {}
   }
 }

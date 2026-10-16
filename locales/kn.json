@@ -858,5 +858,39 @@
     "body": "ಇಂದಿನ ಸೂರಾ: {{name}}. ಆಲಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ.",
     "denied": "ಈ ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ಸೂಚನೆಗಳು ಆಫ್ ಆಗಿವೆ. ಸಿಸ್ಟಮ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಆನ್ ಮಾಡಿ.",
     "turnOn": "ಆನ್ ಮಾಡಿ"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "ಬೆಳಿಗ್ಗೆ",
+      "evening-adhkar": "ಸಂಜೆ",
+      "salah": "ನಮಾಝ್",
+      "before-sleep": "ಮಲಗುವ ಮುನ್ನ",
+      "after-salah": "ನಮಾಝ್ ನಂತರ",
+      "waking-up": "ಎಚ್ಚರವಾದಾಗ",
+      "salawat": "ಸಲವಾತ್",
+      "praises-of-allah": "ಅಲ್ಲಾಹನ ಸ್ತುತಿಗಳು",
+      "istighfar": "ಇಸ್ತಿಗ್ಫಾರ್",
+      "nightmares": "ದುಃಸ್ವಪ್ನಗಳು",
+      "protection-of-iman": "ಈಮಾನಿನ ರಕ್ಷಣೆ",
+      "difficulties-happiness": "ಕಷ್ಟಗಳು ಮತ್ತು ಸಂತೋಷ",
+      "quranic-duas": "ಕುರ್ಆನ್ ದುಆಗಳು",
+      "names-of-allah": "ಅಲ್ಲಾಹನ 99 ಹೆಸರುಗಳು",
+      "clothes": "ಬಟ್ಟೆಗಳು",
+      "lavatory-wudu": "ಶೌಚಾಲಯ ಮತ್ತು ವುಝೂ",
+      "adhan-masjid": "ಅಝಾನ್ ಮತ್ತು ಮಸೀದಿ",
+      "home": "ಮನೆ",
+      "istikharah": "ಇಸ್ತಿಖಾರಾ",
+      "gatherings": "ಸಭೆಗಳು",
+      "food-drink": "ಆಹಾರ ಮತ್ತು ಪಾನೀಯ",
+      "travel": "ಪ್ರಯಾಣ",
+      "nature": "ಪ್ರಕೃತಿ",
+      "social-interactions": "ಸಾಮಾಜಿಕ ಸಂಬಂಧಗಳು",
+      "hajj-umrah": "ಹಜ್ ಮತ್ತು ಉಮ್ರಾ",
+      "marriage-children": "ಮದುವೆ ಮತ್ತು ಮಕ್ಕಳು",
+      "death": "ಮರಣ",
+      "ruqyah-illness": "ರುಕ್ಯಾ ಮತ್ತು ಅನಾರೋಗ್ಯ",
+      "money-shopping": "ಹಣ ಮತ್ತು ಖರೀದಿ"
+    },
+    "cat": {}
   }
 }

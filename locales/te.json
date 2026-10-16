@@ -858,5 +858,39 @@
     "body": "నేటి సూరా: {{name}}. వినడానికి నొక్కండి.",
     "denied": "ఈ యాప్‌కు నోటిఫికేషన్‌లు ఆఫ్‌లో ఉన్నాయి. సిస్టమ్ సెట్టింగ్‌లలో ఆన్ చేయండి.",
     "turnOn": "ఆన్ చేయి"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "ఉదయం",
+      "evening-adhkar": "సాయంత్రం",
+      "salah": "నమాజ్",
+      "before-sleep": "నిద్రకు ముందు",
+      "after-salah": "నమాజ్ తర్వాత",
+      "waking-up": "నిద్ర లేవడం",
+      "salawat": "సలవాత్",
+      "praises-of-allah": "అల్లాహ్ స్తుతులు",
+      "istighfar": "ఇస్తిగ్ఫార్",
+      "nightmares": "పీడకలలు",
+      "protection-of-iman": "ఈమాన్ రక్షణ",
+      "difficulties-happiness": "కష్టాలు మరియు ఆనందం",
+      "quranic-duas": "ఖురాన్ దుఆలు",
+      "names-of-allah": "అల్లాహ్ 99 నామాలు",
+      "clothes": "దుస్తులు",
+      "lavatory-wudu": "మరుగుదొడ్డి మరియు వుజూ",
+      "adhan-masjid": "అజాన్ మరియు మస్జిద్",
+      "home": "ఇల్లు",
+      "istikharah": "ఇస్తిఖారా",
+      "gatherings": "సమావేశాలు",
+      "food-drink": "ఆహారం మరియు పానీయం",
+      "travel": "ప్రయాణం",
+      "nature": "ప్రకృతి",
+      "social-interactions": "సామాజిక సంబంధాలు",
+      "hajj-umrah": "హజ్ మరియు ఉమ్రా",
+      "marriage-children": "వివాహం మరియు పిల్లలు",
+      "death": "మరణం",
+      "ruqyah-illness": "రుక్యా మరియు అనారోగ్యం",
+      "money-shopping": "డబ్బు మరియు షాపింగ్"
+    },
+    "cat": {}
   }
 }

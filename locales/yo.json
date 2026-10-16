@@ -832,5 +832,39 @@
     "body": "Sura òní: {{name}}. Tẹ̀ láti gbọ́.",
     "denied": "A ti pa àwọn ìfitónilétí fún app yìí. Tan wọ́n ní ètò ẹ̀rọ.",
     "turnOn": "Tan"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Òwúrọ̀",
+      "evening-adhkar": "Ìrọ̀lẹ́",
+      "salah": "Ṣàlá",
+      "before-sleep": "Kí o tó sùn",
+      "after-salah": "Lẹ́yìn Ṣàlá",
+      "waking-up": "Jíjí",
+      "salawat": "Ṣàláwàtì",
+      "praises-of-allah": "Ìyìn Allāhu",
+      "istighfar": "Istigfari",
+      "nightmares": "Àlá Búburú",
+      "protection-of-iman": "Ìdáàbòbò Ìmàn",
+      "difficulties-happiness": "Ìṣòro àti Ayọ̀",
+      "quranic-duas": "Àdúrà Kùránì",
+      "names-of-allah": "Orúkọ Allāhu mẹ́tàdínlọ́gọ́rùn-ún",
+      "clothes": "Aṣọ",
+      "lavatory-wudu": "Ilé Ìgbọ̀nsẹ̀ àti Ablution",
+      "adhan-masjid": "Àdhān àti Mọ́sálásí",
+      "home": "Ilé",
+      "istikharah": "Istikhara",
+      "gatherings": "Àpéjọ",
+      "food-drink": "Oúnjẹ àti Ohun Mímu",
+      "travel": "Ìrìnàjò",
+      "nature": "Àdánidá",
+      "social-interactions": "Ìbáṣepọ̀ Àwùjọ",
+      "hajj-umrah": "Hajj àti Umrah",
+      "marriage-children": "Ìgbéyàwó àti Àwọn Ọmọ",
+      "death": "Ikú",
+      "ruqyah-illness": "Ruqyah àti Àìsàn",
+      "money-shopping": "Owó àti Ríra Nǹkan"
+    },
+    "cat": {}
   }
 }

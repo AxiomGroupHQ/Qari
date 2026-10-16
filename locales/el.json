@@ -858,5 +858,39 @@
     "body": "Η σούρα της ημέρας: {{name}}. Πατήστε για ακρόαση.",
     "denied": "Οι ειδοποιήσεις είναι απενεργοποιημένες για αυτή την εφαρμογή. Ενεργοποιήστε τις στις ρυθμίσεις συστήματος.",
     "turnOn": "Ενεργοποίηση"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Πρωί",
+      "evening-adhkar": "Βράδυ",
+      "salah": "Σαλάχ",
+      "before-sleep": "Πριν τον ύπνο",
+      "after-salah": "Μετά τη Σαλάχ",
+      "waking-up": "Ξύπνημα",
+      "salawat": "Σαλαουάτ",
+      "praises-of-allah": "Δοξολογίες του Αλλάχ",
+      "istighfar": "Ιστιγφάρ",
+      "nightmares": "Εφιάλτες",
+      "protection-of-iman": "Προστασία της Ίμαν",
+      "difficulties-happiness": "Δυσκολίες και ευτυχία",
+      "quranic-duas": "Δουάς από το Κοράνι",
+      "names-of-allah": "Τα 99 Ονόματα του Αλλάχ",
+      "clothes": "Ρούχα",
+      "lavatory-wudu": "Τουαλέτα και Ουντού",
+      "adhan-masjid": "Αντάν και Τζαμί",
+      "home": "Σπίτι",
+      "istikharah": "Ιστιχάρα",
+      "gatherings": "Συναθροίσεις",
+      "food-drink": "Φαγητό και ποτό",
+      "travel": "Ταξίδι",
+      "nature": "Φύση",
+      "social-interactions": "Κοινωνικές σχέσεις",
+      "hajj-umrah": "Χατζ και Ουμρά",
+      "marriage-children": "Γάμος και παιδιά",
+      "death": "Θάνατος",
+      "ruqyah-illness": "Ρουκιά και ασθένεια",
+      "money-shopping": "Χρήματα και αγορές"
+    },
+    "cat": {}
   }
 }

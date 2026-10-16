@@ -856,5 +856,39 @@
     "body": "ស៊ូរ៉ោះថ្ងៃនេះ៖ {{name}}។ ចុចដើម្បីស្តាប់។",
     "denied": "ការជូនដំណឹងត្រូវបានបិទសម្រាប់កម្មវិធីនេះ។ បើកវាក្នុងការកំណត់ប្រព័ន្ធ។",
     "turnOn": "បើក"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "ព្រឹក",
+      "evening-adhkar": "ល្ងាច",
+      "salah": "សឡាត",
+      "before-sleep": "មុនចូលគេង",
+      "after-salah": "ក្រោយសឡាត",
+      "waking-up": "ពេលភ្ញាក់ពីគេង",
+      "salawat": "សឡាវ៉ាត",
+      "praises-of-allah": "ការសរសើរអល់ឡោះ",
+      "istighfar": "អិស្ទិកហ្វារ",
+      "nightmares": "សុបិនអាក្រក់",
+      "protection-of-iman": "ការការពារអៀម៉ាន",
+      "difficulties-happiness": "ការលំបាក និងសុភមង្គល",
+      "quranic-duas": "ឌូអាពីគម្ពីរគួរអាន",
+      "names-of-allah": "នាមទាំង ៩៩ របស់អល់ឡោះ",
+      "clothes": "សម្លៀកបំពាក់",
+      "lavatory-wudu": "បន្ទប់ទឹក និងវូឌូអ៍",
+      "adhan-masjid": "អាហ្សាន និងម៉ាស្ជិត",
+      "home": "ផ្ទះ",
+      "istikharah": "អិស្ទិខារ៉ះ",
+      "gatherings": "ការជួបជុំ",
+      "food-drink": "អាហារ និងភេសជ្ជៈ",
+      "travel": "ការធ្វើដំណើរ",
+      "nature": "ធម្មជាតិ",
+      "social-interactions": "ទំនាក់ទំនងសង្គម",
+      "hajj-umrah": "ហាជ្ជិ និងអ៊ូមរ៉ះ",
+      "marriage-children": "អាពាហ៍ពិពាហ៍ និងកូន",
+      "death": "សេចក្តីស្លាប់",
+      "ruqyah-illness": "រុកយ៉ះ និងជំងឺ",
+      "money-shopping": "លុយ និងការទិញទំនិញ"
+    },
+    "cat": {}
   }
 }

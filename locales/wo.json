@@ -841,5 +841,39 @@
     "body": "Sura bi tey: {{name}}. Laal ngir déglu.",
     "denied": "Yégle yi dañu ko tëj ci app bii. Ubbil ko ci settings systèm bi.",
     "turnOn": "Ubbil"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Suba",
+      "evening-adhkar": "Ngoon",
+      "salah": "Julli",
+      "before-sleep": "Laata nga nelaw",
+      "after-salah": "Ginnaaw julli",
+      "waking-up": "Yeewu",
+      "salawat": "Salawaat",
+      "praises-of-allah": "Cant Yàlla",
+      "istighfar": "Istigfaar",
+      "nightmares": "Gént yu bon",
+      "protection-of-iman": "Aar ngëm",
+      "difficulties-happiness": "Coono ak mbég",
+      "quranic-duas": "Ñaan yu Alxuraan",
+      "names-of-allah": "Tur yu Yàlla yi 99",
+      "clothes": "Yéere",
+      "lavatory-wudu": "Wàllu ak Wudu",
+      "adhan-masjid": "Adaan ak Jàkka",
+      "home": "Kër",
+      "istikharah": "Istikaara",
+      "gatherings": "Àdduna ak mbooloo",
+      "food-drink": "Lekk ak naan",
+      "travel": "Tukki",
+      "nature": "Sutura",
+      "social-interactions": "Jëflante ak nit ñi",
+      "hajj-umrah": "Aji ak Umra",
+      "marriage-children": "Séy ak Doom",
+      "death": "Dee",
+      "ruqyah-illness": "Ruqya ak Feebar",
+      "money-shopping": "Xaalis ak Jaay"
+    },
+    "cat": {}
   }
 }

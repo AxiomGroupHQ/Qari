@@ -833,5 +833,39 @@
     "body": "Bi ka sura: {{name}}. Digi ka lamɛn.",
     "denied": "Kunnafoni dɔ finiwere nin app in na. A da sɛtiniw la.",
     "turnOn": "A da"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Sɔgɔmada",
+      "evening-adhkar": "Wula",
+      "salah": "Seli",
+      "before-sleep": "Sani i ka sunɔgɔ",
+      "after-salah": "Seli kɔ",
+      "waking-up": "Wuli",
+      "salawat": "Salawati",
+      "praises-of-allah": "Ala tanuli",
+      "istighfar": "Istigafari",
+      "nightmares": "Sugo juguw",
+      "protection-of-iman": "Imaani kantari",
+      "difficulties-happiness": "Gɛlɛyaw ni nisɔndiya",
+      "quranic-duas": "Kurani dugawu",
+      "names-of-allah": "Ala tɔgɔ 99",
+      "clothes": "Fini",
+      "lavatory-wudu": "Ɲɛnɛ ni Wudu",
+      "adhan-masjid": "Adana ni misiri",
+      "home": "So",
+      "istikharah": "Istikara",
+      "gatherings": "Jɛkuluw",
+      "food-drink": "Dumuni ni minfɛn",
+      "travel": "Taama",
+      "nature": "Danfɛnw",
+      "social-interactions": "Jama ka ɲɔgɔn bolo",
+      "hajj-umrah": "Hajji ni Umra",
+      "marriage-children": "Furu ni denw",
+      "death": "Saya",
+      "ruqyah-illness": "Ruqya ni bana",
+      "money-shopping": "Wari ni feere"
+    },
+    "cat": {}
   }
 }
