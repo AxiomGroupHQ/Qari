@@ -2,6 +2,20 @@
  * Adds link-preview tags to shared playlist pages (/p/:id).
  * Every other path is served straight from the static assets.
  */
+// Cloudflare Workers provide HTMLRewriter at runtime; this app's tsconfig has
+// no workers types, so declare just the part used here.
+interface RewriterElement {
+  remove(): void;
+  append(content: string, options?: {html?: boolean}): void;
+}
+declare class HTMLRewriter {
+  on(
+    selector: string,
+    handlers: {element: (el: RewriterElement) => void},
+  ): HTMLRewriter;
+  transform(res: Response): Response;
+}
+
 interface Env {
   ASSETS: {fetch: (req: Request) => Promise<Response>};
 }
