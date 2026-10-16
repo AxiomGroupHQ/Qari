@@ -1,6 +1,6 @@
 # Tracker
 
-Deferred items and the self-hosting inventory. Update the status when something changes.
+Deferred items and the self-hosting inventory. Update the status when something changes. Last reviewed October 16, 2026.
 
 ## Deferred items
 
