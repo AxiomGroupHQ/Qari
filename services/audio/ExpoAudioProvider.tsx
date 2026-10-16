@@ -11,6 +11,7 @@
  * Must be mounted at the app root level for audio to work.
  */
 
+import {introClipService, shouldPlayEndClip} from './IntroClipService';
 import React, {useEffect, useRef, useCallback} from 'react';
 import {AppState, Platform} from 'react-native';
 import {useAudioPlayer, useAudioPlayerStatus} from 'expo-audio';
@@ -364,6 +365,15 @@ export function ExpoAudioProvider({children}: ExpoAudioProviderProps) {
         // Reset listen tracking refs
         playbackStartTimeRef.current = 0;
         accumulatedListenMsRef.current = 0;
+      }
+
+      // Outro clip: only after a long surah, never for user uploads, on its own short player.
+      if (
+        completedTrack &&
+        !completedTrack.isUserUpload &&
+        shouldPlayEndClip(latestStatusRef.current.duration)
+      ) {
+        await introClipService.play('end');
       }
 
       if (repeatMode === 'track') {
