@@ -22,7 +22,7 @@ export const featureFlags = {
   multiTranslation: true,
   tafsir: true,
   sleepTimer: true,
-  sharedPlaylists: false, // turn on after the share API is deployed
+  sharedPlaylists: true,
   carDisplay: true,
 } as const;
 
