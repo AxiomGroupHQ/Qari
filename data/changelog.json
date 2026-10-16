@@ -5,11 +5,6 @@
     "title": "A More Personal Mushaf",
     "highlights": [
       {
-        "title": "ISTIMA is now Open Source",
-        "description": "ISTIMA is now AGPL-3.0 and on GitHub. Star the repo, report issues, or open a pull request.",
-        "icon": "logo-github"
-      },
-      {
         "title": "7 More Rewayat",
         "description": "Read the mushaf in Warsh, Qalun, Al-Bazzi, Qunbul, Shu'bah, Al-Duri, and Al-Susi alongside Hafs, with per-letter and whole-word diff highlighting",
         "icon": "layers-outline"
@@ -32,7 +27,6 @@
     ],
     "fullChangelog": {
       "features": [
-        "ISTIMA is now open source at github.com/AxiomGroupHQ/Qari under AGPL-3.0",
         "7 new rewayat with full mushaf text and diff highlighting: Shu'bah, Al-Bazzi, Qunbul, Warsh, Qalun, Al-Duri (Abu Amr), Al-Susi. 8 rewayat with text in total, Hafs included",
         "Canonical rewayah identity module with support for all 20 qira'at narrations; the 12 text-less rewayat appear in the picker as audio-only entries",
         "Rewayah-aware player: verse text renders in the currently-playing rewayah; bookmarks, notes, highlights, and share URLs carry the rewayah stamp",
@@ -75,8 +69,6 @@
         "Floating player, player-sheet header, and upload UI refinements"
       ],
       "technical": [
-        "License switched from Apache 2.0 + Commons Clause to AGPL-3.0-or-later; added TRADEMARKS.md separating code license from brand protection",
-        "Open-source governance files added; bundled reciters.json removed (streams from API instead); unused fonts removed",
         "Cloudflare R2 audio CDN migration with slug-based URL resolution and cache-busting backwards compatibility",
         "Analytics infrastructure: PostHog SDK + device-ID generation + event schema + local aggregation + meaningful-listen tracking",
         "Analytics killswitch + privacy manifest + build hardening",

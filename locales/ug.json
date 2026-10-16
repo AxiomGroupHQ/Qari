@@ -215,7 +215,9 @@
     "whatSNew": "يېڭىلىقلار",
     "wordByWord": "سۆزمۇسۆز",
     "writeYourNoteHere": "ئىزاھاتىڭىزنى بۇ يەرگە يېزىڭ...",
-    "yourPlaylists": "قويۇش تىزىملىكلىرىڭىز"
+    "yourPlaylists": "قويۇش تىزىملىكلىرىڭىز",
+    "rewayatAvailable": "{{number}} رىۋايەت بار",
+    "rewayatByReciter": "{{rewayat}} - {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "مۇلازىمەت شەرتلىرى",
       "viewAndManageStorageUsage": "ساقلاش بوشلۇقى ئىشلىتىلىشىنى كۆرۈش ۋە باشقۇرۇش",
       "viewOurPrivacyPolicy": "مەخپىيەتلىك سىياسىتىمىزنى كۆرۈڭ",
-      "writeAReview": "باھا يېزىش"
+      "writeAReview": "باھا يېزىش",
+      "rateUnavailableTitle": "باھالاش ھازىرچە ئىشلەتكىلى بولمايدۇ",
+      "rateUnavailableMessage": "بۇ ئەپ تېخى ئەپ دۇكانلىرىغا چىقمىغان. سەل تۇرۇپ قايتا كۆرۈڭ."
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "ئايەت {{surah}}:{{ayah}} · {{total}} سۆزنىڭ {{position}}-سۆزى"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "حفص",
+      "shubah": "شعبة",
+      "al-bazzi": "البزي",
+      "qunbul": "قنبل",
+      "warsh": "ورش",
+      "qalun": "قالون",
+      "al-duri-abi-amr": "الدوري (أبو عمرو)",
+      "al-susi": "السوسي",
+      "hisham": "هشام",
+      "ibn-dhakwan": "ابن ذكوان",
+      "khalaf-an-hamzah": "خلف (حمزة)",
+      "khallad": "خلاد",
+      "al-duri-al-kisai": "الدوري (الكسائي)",
+      "abu-al-harith": "أبو الحارث",
+      "ibn-jammaz": "ابن جماز",
+      "ibn-wardan": "ابن وردان",
+      "rawh": "روح",
+      "ruwais": "رويس",
+      "idris": "إدريس",
+      "ishaq": "إسحاق"
+    }
   }
 }

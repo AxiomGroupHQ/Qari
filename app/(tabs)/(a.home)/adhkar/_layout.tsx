@@ -35,7 +35,8 @@ export default function AdhkarLayout() {
         />
         <Stack.Screen name="[superId]/index" />
         <Stack.Screen name="[superId]/[dhikrId]" />
-        <Stack.Screen name="saved" />
+        <Stack.Screen name="saved/index" />
+        <Stack.Screen name="saved/[dhikrId]" />
       </Stack>
     </AdhkarAudioProvider>
   );

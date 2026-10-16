@@ -80,7 +80,6 @@ export interface Branding {
   appSlug: string;
   urlScheme: string;
   bundleId: {ios: string; android: string};
-  supportUrl: string;
   termsUrl: string;
   privacyUrl: string;
   shareBaseUrl: string;
@@ -230,7 +229,7 @@ export interface Branding {
    * `{base}/{rewayatId}/{NNN}.json` layout `TimestampFetchService`
    * constructs).
    *
-   * Field absent → consumer applies `?? 'https://cdn.thebayaan.com/timestamps'`
+   * Field absent → consumer defaults to `https://iapi.istima.app/timestamps`
    * at the call site → byte-equivalent to today's behavior.
    *
    * Forks set this to their own mirror's base when the `has_timestamps`

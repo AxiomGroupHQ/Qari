@@ -215,7 +215,9 @@
     "whatSNew": "Што е ново",
     "wordByWord": "Збор по збор",
     "writeYourNoteHere": "Напишете ја вашата белешка овде...",
-    "yourPlaylists": "Вашите плејлисти"
+    "yourPlaylists": "Вашите плејлисти",
+    "rewayatAvailable": "Достапни {{number}} ревајати",
+    "rewayatByReciter": "{{rewayat}} од {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Услови за користење",
       "viewAndManageStorageUsage": "Прегледајте и управувајте со користењето на складиштето",
       "viewOurPrivacyPolicy": "Погледнете ја нашата политика за приватност",
-      "writeAReview": "Напишете рецензија"
+      "writeAReview": "Напишете рецензија",
+      "rateUnavailableTitle": "Оценувањето сè уште не е достапно",
+      "rateUnavailableMessage": "Апликацијата сè уште не е објавена во продавниците за апликации. Проверете повторно наскоро."
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "Ајет {{surah}}:{{ayah}} · Збор {{position}} од {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Хафс",
+      "shubah": "Шубе",
+      "al-bazzi": "ел-Баззи",
+      "qunbul": "Кунбул",
+      "warsh": "Варш",
+      "qalun": "Калун",
+      "al-duri-abi-amr": "ед-Дури (Абу Амр)",
+      "al-susi": "ес-Суси",
+      "hisham": "Хишам",
+      "ibn-dhakwan": "Ибн Закван",
+      "khalaf-an-hamzah": "Халаф (Хамза)",
+      "khallad": "Халад",
+      "al-duri-al-kisai": "ед-Дури (ел-Кисаи)",
+      "abu-al-harith": "Абу ел-Харис",
+      "ibn-jammaz": "Ибн Џамаз",
+      "ibn-wardan": "Ибн Вардан",
+      "rawh": "Рох",
+      "ruwais": "Руејс",
+      "idris": "Идрис",
+      "ishaq": "Исхак"
+    }
   }
 }

@@ -17,6 +17,7 @@ import {
   View,
   Text,
   Platform,
+  ActivityIndicator,
   StatusBar as RNStatusBar,
   Appearance,
   InteractionManager,
@@ -457,6 +458,21 @@ function RootLayout() {
   }
 
   if (!fontsLoaded || !isPlayerReady || !appIsReady) {
+    // Native keeps the splash screen up. On web there is no splash, and startup takes several
+    // seconds, so show a spinner instead of a blank page.
+    if (Platform.OS === 'web') {
+      return (
+        <View
+          style={{
+            flex: 1,
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: theme.colors.background,
+          }}>
+          <ActivityIndicator size="large" color={theme.colors.text} />
+        </View>
+      );
+    }
     return null;
   }
 
@@ -471,6 +487,9 @@ function RootLayout() {
           flushAt: 20,
           flushInterval: 30000,
           disabled: !process.env.EXPO_PUBLIC_POSTHOG_API_KEY,
+          // Without a key, don't fetch remote config either (it 404s on every page load).
+          disableRemoteConfig: !process.env.EXPO_PUBLIC_POSTHOG_API_KEY,
+          preloadFeatureFlags: !!process.env.EXPO_PUBLIC_POSTHOG_API_KEY,
         }}
         autocapture={{
           captureScreens: true,

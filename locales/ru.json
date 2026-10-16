@@ -221,7 +221,9 @@
     "whatSNew": "Что нового",
     "wordByWord": "По словам",
     "writeYourNoteHere": "Напишите заметку здесь…",
-    "yourPlaylists": "Ваши плейлисты"
+    "yourPlaylists": "Ваши плейлисты",
+    "rewayatAvailable": "Доступно риваятов: {{number}}",
+    "rewayatByReciter": "{{rewayat}} – {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -691,7 +693,9 @@
       "termsOfService": "Условия использования",
       "viewAndManageStorageUsage": "Просмотр и управление хранилищем",
       "viewOurPrivacyPolicy": "Прочитайте политику конфиденциальности",
-      "writeAReview": "Написать отзыв"
+      "writeAReview": "Написать отзыв",
+      "rateUnavailableTitle": "Оценка пока недоступна",
+      "rateUnavailableMessage": "Приложения ещё нет в магазинах приложений. Загляните позже."
     }
   },
   "ui": {
@@ -757,5 +761,29 @@
   },
   "wordDetail": {
     "context": "Аят {{surah}}:{{ayah}} · Слово {{position}} из {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Хафс",
+      "shubah": "Шуба",
+      "al-bazzi": "аль-Баззи",
+      "qunbul": "Кунбуль",
+      "warsh": "Варш",
+      "qalun": "Калун",
+      "al-duri-abi-amr": "ад-Дури (Абу Амр)",
+      "al-susi": "ас-Сусси",
+      "hisham": "Хишам",
+      "ibn-dhakwan": "Ибн Закван",
+      "khalaf-an-hamzah": "Халяф (Хамза)",
+      "khallad": "Халлад",
+      "al-duri-al-kisai": "ад-Дури (аль-Кисаи)",
+      "abu-al-harith": "Абу аль-Харис",
+      "ibn-jammaz": "Ибн Джаммаз",
+      "ibn-wardan": "Ибн Вардан",
+      "rawh": "Рух",
+      "ruwais": "Руайс",
+      "idris": "Идрис",
+      "ishaq": "Исхак"
+    }
   }
 }

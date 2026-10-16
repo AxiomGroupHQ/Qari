@@ -214,7 +214,9 @@
     "whatSNew": "Ihe ọhụrụ",
     "wordByWord": "Okwu n'okwu",
     "writeYourNoteHere": "Dee ndetu gị ebe a...",
-    "yourPlaylists": "Ndepụta ọkpụkpọ gị"
+    "yourPlaylists": "Ndepụta ọkpụkpọ gị",
+    "rewayatAvailable": "Rewayat {{number}} dị",
+    "rewayatByReciter": "{{rewayat}} nke {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -678,7 +680,9 @@
       "termsOfService": "Usoro ọrụ",
       "viewAndManageStorageUsage": "Lelee ma jikwaa ojiji nchekwa",
       "viewOurPrivacyPolicy": "Lelee iwu nzuzo anyị",
-      "writeAReview": "Dee nyocha"
+      "writeAReview": "Dee nyocha",
+      "rateUnavailableTitle": "Ọkwa anaghị adị ugbu a",
+      "rateUnavailableMessage": "Etinyebeghị ngwa a na ụlọ ahịa ngwa. Biko lelee ọzọ n'oge na-adịghị anya."
     }
   },
   "ui": {

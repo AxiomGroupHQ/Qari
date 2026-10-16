@@ -215,7 +215,9 @@
     "whatSNew": "Çfarë ka të re",
     "wordByWord": "Fjalë për fjalë",
     "writeYourNoteHere": "Shkruaj shënimin tënd këtu...",
-    "yourPlaylists": "Listat e tua"
+    "yourPlaylists": "Listat e tua",
+    "rewayatAvailable": "{{number}} rivajete të disponueshme",
+    "rewayatByReciter": "{{rewayat}} nga {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Kushtet e shërbimit",
       "viewAndManageStorageUsage": "Shiko dhe menaxho përdorimin e hapësirës",
       "viewOurPrivacyPolicy": "Shiko politikën tonë të privatësisë",
-      "writeAReview": "Shkruaj një vlerësim"
+      "writeAReview": "Shkruaj një vlerësim",
+      "rateUnavailableTitle": "Vlerësimi nuk është ende i disponueshëm",
+      "rateUnavailableMessage": "Aplikacioni nuk është ende i listuar në dyqanet e aplikacioneve. Provo përsëri së shpejti."
     }
   },
   "ui": {

@@ -214,7 +214,9 @@
     "whatSNew": "更新内容",
     "wordByWord": "逐词",
     "writeYourNoteHere": "在此撰写笔记……",
-    "yourPlaylists": "你的播放列表"
+    "yourPlaylists": "你的播放列表",
+    "rewayatAvailable": "提供 {{number}} 种传述",
+    "rewayatByReciter": "{{reciter}}诵读的{{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -678,7 +680,9 @@
       "termsOfService": "服务条款",
       "viewAndManageStorageUsage": "查看和管理存储空间使用情况",
       "viewOurPrivacyPolicy": "查看隐私政策",
-      "writeAReview": "撰写评价"
+      "writeAReview": "撰写评价",
+      "rateUnavailableTitle": "暂不支持评分",
+      "rateUnavailableMessage": "应用尚未上架应用商店，请稍后再来看看。"
     }
   },
   "ui": {
@@ -744,5 +748,29 @@
   },
   "wordDetail": {
     "context": "经文 {{surah}}:{{ayah}} · 第 {{position}} 个词，共 {{total}} 个"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "哈弗斯",
+      "shubah": "舒阿拜",
+      "al-bazzi": "巴兹",
+      "qunbul": "昆布勒",
+      "warsh": "沃尔什",
+      "qalun": "盖伦",
+      "al-duri-abi-amr": "杜里（艾布·阿慕尔）",
+      "al-susi": "苏西",
+      "hisham": "希沙姆",
+      "ibn-dhakwan": "伊本·宰坤",
+      "khalaf-an-hamzah": "海莱弗（哈姆宰）",
+      "khallad": "海拉德",
+      "al-duri-al-kisai": "杜里（基萨伊）",
+      "abu-al-harith": "艾布·哈里斯",
+      "ibn-jammaz": "伊本·贾玛兹",
+      "ibn-wardan": "伊本·瓦尔丹",
+      "rawh": "拉维赫",
+      "ruwais": "鲁韦斯",
+      "idris": "伊德里斯",
+      "ishaq": "伊斯哈格"
+    }
   }
 }

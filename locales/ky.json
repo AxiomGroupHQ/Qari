@@ -215,7 +215,9 @@
     "whatSNew": "Жаңылыктар",
     "wordByWord": "Сөзмө-сөз",
     "writeYourNoteHere": "Эскертмеңизди бул жерге жазыңыз...",
-    "yourPlaylists": "Ойнотуу тизмелериңиз"
+    "yourPlaylists": "Ойнотуу тизмелериңиз",
+    "rewayatAvailable": "{{number}} риваят бар",
+    "rewayatByReciter": "{{reciter}} – {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Тейлөө шарттары",
       "viewAndManageStorageUsage": "Сактагычтын колдонулушун көрүү жана башкаруу",
       "viewOurPrivacyPolicy": "Купуялык саясатыбызды көрүү",
-      "writeAReview": "Сын-пикир жазуу"
+      "writeAReview": "Сын-пикир жазуу",
+      "rateUnavailableTitle": "Баалоо азырынча жеткиликсиз",
+      "rateUnavailableMessage": "Колдонмо дагы эле тиркемелер дүкөнүндө жок. Жакында кайра текшериңиз."
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "{{surah}}:{{ayah}} аяты · {{total}} сөздүн {{position}}-сөзү"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Хафс",
+      "shubah": "Шуба",
+      "al-bazzi": "аль-Баззи",
+      "qunbul": "Кунбул",
+      "warsh": "Варш",
+      "qalun": "Калун",
+      "al-duri-abi-amr": "ад-Дури (Абу Амр)",
+      "al-susi": "ас-Суси",
+      "hisham": "Хишам",
+      "ibn-dhakwan": "Ибн Закван",
+      "khalaf-an-hamzah": "Халаф (Хамза)",
+      "khallad": "Халлад",
+      "al-duri-al-kisai": "ад-Дури (аль-Кисаи)",
+      "abu-al-harith": "Абу аль-Харис",
+      "ibn-jammaz": "Ибн Жаммаз",
+      "ibn-wardan": "Ибн Вардан",
+      "rawh": "Рух",
+      "ruwais": "Руайс",
+      "idris": "Идрис",
+      "ishaq": "Исхак"
+    }
   }
 }

@@ -215,7 +215,9 @@
     "whatSNew": "Täzelikler",
     "wordByWord": "Sözme-söz",
     "writeYourNoteHere": "Ýazgyňyzy şu ýere ýazyň...",
-    "yourPlaylists": "Pleýlistleriňiz"
+    "yourPlaylists": "Pleýlistleriňiz",
+    "rewayatAvailable": "{{number}} rowaýat elýeterli",
+    "rewayatByReciter": "{{reciter}} – {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Hyzmat şertleri",
       "viewAndManageStorageUsage": "Ýadyň ulanylyşyny gör we dolandyr",
       "viewOurPrivacyPolicy": "Gizlinlik syýasatymyza serediň",
-      "writeAReview": "Syn ýaz"
+      "writeAReview": "Syn ýaz",
+      "rateUnavailableTitle": "Baha bermek entek elýeterli däl",
+      "rateUnavailableMessage": "Programma entek programma dükanlarynda ýok. Ýakynda ýene bir gezek barlaň."
     }
   },
   "ui": {

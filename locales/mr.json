@@ -215,7 +215,9 @@
     "whatSNew": "नवीन काय आहे",
     "wordByWord": "शब्दशः",
     "writeYourNoteHere": "तुमची टीप येथे लिहा...",
-    "yourPlaylists": "तुमच्या प्लेलिस्ट"
+    "yourPlaylists": "तुमच्या प्लेलिस्ट",
+    "rewayatAvailable": "{{number}} रिवायती उपलब्ध",
+    "rewayatByReciter": "{{reciter}} यांची {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "सेवा अटी",
       "viewAndManageStorageUsage": "साठवणीचा वापर पाहा आणि व्यवस्थापित करा",
       "viewOurPrivacyPolicy": "आमचे गोपनीयता धोरण पाहा",
-      "writeAReview": "पुनरावलोकन लिहा"
+      "writeAReview": "पुनरावलोकन लिहा",
+      "rateUnavailableTitle": "रेटिंग अद्याप उपलब्ध नाही",
+      "rateUnavailableMessage": "अॅप अजून अॅप स्टोअरवर उपलब्ध नाही. कृपया लवकरच पुन्हा तपासा."
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "आयत {{surah}}:{{ayah}} · {{total}} पैकी {{position}} वा शब्द"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "हफ्स",
+      "shubah": "शुअबा",
+      "al-bazzi": "अल-बज्जी",
+      "qunbul": "कुंबुल",
+      "warsh": "वर्श",
+      "qalun": "कालून",
+      "al-duri-abi-amr": "अद-दूरी (अबू अम्र)",
+      "al-susi": "अस-सूसी",
+      "hisham": "हिशाम",
+      "ibn-dhakwan": "इब्न झकवान",
+      "khalaf-an-hamzah": "खलफ (हमजा)",
+      "khallad": "खल्लाद",
+      "al-duri-al-kisai": "अद-दूरी (अल-किसाई)",
+      "abu-al-harith": "अबू अल-हारिस",
+      "ibn-jammaz": "इब्न जम्माज",
+      "ibn-wardan": "इब्न वरदान",
+      "rawh": "रौह",
+      "ruwais": "रुवैस",
+      "idris": "इद्रीस",
+      "ishaq": "इसहाक"
+    }
   }
 }

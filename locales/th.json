@@ -214,7 +214,9 @@
     "whatSNew": "มีอะไรใหม่",
     "wordByWord": "ทีละคำ",
     "writeYourNoteHere": "เขียนบันทึกของคุณที่นี่...",
-    "yourPlaylists": "เพลย์ลิสต์ของคุณ"
+    "yourPlaylists": "เพลย์ลิสต์ของคุณ",
+    "rewayatAvailable": "มี {{number}} ริวายะห์",
+    "rewayatByReciter": "{{rewayat}} โดย {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -678,7 +680,9 @@
       "termsOfService": "ข้อกำหนดการให้บริการ",
       "viewAndManageStorageUsage": "ดูและจัดการการใช้พื้นที่จัดเก็บ",
       "viewOurPrivacyPolicy": "ดูนโยบายความเป็นส่วนตัวของเรา",
-      "writeAReview": "เขียนรีวิว"
+      "writeAReview": "เขียนรีวิว",
+      "rateUnavailableTitle": "ยังไม่สามารถให้คะแนนได้",
+      "rateUnavailableMessage": "แอปยังไม่ได้วางจำหน่ายในแอปสโตร์ โปรดกลับมาตรวจสอบอีกครั้งเร็วๆ นี้"
     }
   },
   "ui": {
@@ -744,5 +748,29 @@
   },
   "wordDetail": {
     "context": "อายะฮ์ {{surah}}:{{ayah}} · คำที่ {{position}} จาก {{total}} คำ"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "ฮัฟซ์",
+      "shubah": "ชุอ์บะฮ์",
+      "al-bazzi": "อัลบัซซี",
+      "qunbul": "กุนบุล",
+      "warsh": "วัรช์",
+      "qalun": "เกาะลูน",
+      "al-duri-abi-amr": "อัดดูรี (อบู อัมร์)",
+      "al-susi": "อัสสูซี",
+      "hisham": "ฮิชาม",
+      "ibn-dhakwan": "อิบนุ ซัคว็อน",
+      "khalaf-an-hamzah": "ค่อลัฟ (ฮัมซะฮ์)",
+      "khallad": "ค็อลลาด",
+      "al-duri-al-kisai": "อัดดูรี (อัลกิสาอี)",
+      "abu-al-harith": "อบูอัลหาริษ",
+      "ibn-jammaz": "อิบนุ ญัมมาซ",
+      "ibn-wardan": "อิบนุ วัรดาน",
+      "rawh": "เราห์",
+      "ruwais": "รุวัยส์",
+      "idris": "อิดรีส",
+      "ishaq": "อิสหาก"
+    }
   }
 }

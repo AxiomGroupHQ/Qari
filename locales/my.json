@@ -214,7 +214,9 @@
     "whatSNew": "အသစ်ပါဝင်မှုများ",
     "wordByWord": "တစ်လုံးချင်း",
     "writeYourNoteHere": "သင့်မှတ်စုကို ဤနေရာတွင် ရေးပါ...",
-    "yourPlaylists": "သင့်ဖွင့်ရန်စာရင်းများ"
+    "yourPlaylists": "သင့်ဖွင့်ရန်စာရင်းများ",
+    "rewayatAvailable": "ရဝါယတ် {{number}} ခု ရနိုင်သည်",
+    "rewayatByReciter": "{{reciter}} ၏ {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -678,7 +680,9 @@
       "termsOfService": "ဝန်ဆောင်မှု စည်းကမ်းချက်များ",
       "viewAndManageStorageUsage": "သိုလှောင်မှုအသုံးပြုပုံ ကြည့်ရှုစီမံမည်",
       "viewOurPrivacyPolicy": "ကိုယ်ရေးအချက်အလက် မူဝါဒကို ကြည့်ပါ",
-      "writeAReview": "သုံးသပ်ချက် ရေးမည်"
+      "writeAReview": "သုံးသပ်ချက် ရေးမည်",
+      "rateUnavailableTitle": "အဆင့်သတ်မှတ်ခြင်း မရသေးပါ",
+      "rateUnavailableMessage": "အက်ပ်ကို အက်ပ်စတိုးများတွင် မတင်ရသေးပါ။ မကြာမီ ပြန်စစ်ကြည့်ပါ။"
     }
   },
   "ui": {
@@ -744,5 +748,29 @@
   },
   "wordDetail": {
     "context": "အာယသ် {{surah}}:{{ayah}} · စကားလုံး {{total}} လုံးအနက် {{position}} လုံးမြောက်"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "ဟဖ်စ်",
+      "shubah": "ရှုအ်ဗာ",
+      "al-bazzi": "အယ်လ်ဘတ်ဇီ",
+      "qunbul": "ကွန်ဘူလ်",
+      "warsh": "ဝါရ်ရှ်",
+      "qalun": "ကာလွန်",
+      "al-duri-abi-amr": "အဒ်ဒူရီ (အဘူအမ်ရ်)",
+      "al-susi": "အစ်စူစီ",
+      "hisham": "ဟိရှမ်",
+      "ibn-dhakwan": "အစ်ဘ်နု ဇက်ဝမ်",
+      "khalaf-an-hamzah": "ခလပ် (ဟမ်ဇာ)",
+      "khallad": "ခလ္လဒ်",
+      "al-duri-al-kisai": "အဒ်ဒူရီ (အလ်ကစာအီ)",
+      "abu-al-harith": "အဘူအလ်ဟာရစ်",
+      "ibn-jammaz": "အစ်ဘ်နု ဂျမ္မာဇ်",
+      "ibn-wardan": "အစ်ဘ်နု ဝါဒန်",
+      "rawh": "ရောဟ်",
+      "ruwais": "ရူဝေ့စ်",
+      "idris": "အစ်ဒြီစ်",
+      "ishaq": "အစ်စ်ဟာက်"
+    }
   }
 }

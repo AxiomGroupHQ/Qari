@@ -215,7 +215,9 @@
     "whatSNew": "Çi nû heye",
     "wordByWord": "Peyv bi peyv",
     "writeYourNoteHere": "Têbîniya xwe li vir binivîse...",
-    "yourPlaylists": "Lîsteyên te yên lêdanê"
+    "yourPlaylists": "Lîsteyên te yên lêdanê",
+    "rewayatAvailable": "{{number}} rîwayet hene",
+    "rewayatByReciter": "{{rewayat}} ji {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Şertên xizmetê",
       "viewAndManageStorageUsage": "Bikaranîna hilanînê bibîne û bi rê ve bibe",
       "viewOurPrivacyPolicy": "Siyaseta me ya nepeniyê bibîne",
-      "writeAReview": "Nirxandinek binivîse"
+      "writeAReview": "Nirxandinek binivîse",
+      "rateUnavailableTitle": "Nirxandin hêj ne amade ye",
+      "rateUnavailableMessage": "Sepan hêj di firotgehên sepanan de nehatiye tomarkirin. Ji kerema xwe dîsa li pey bikeve."
     }
   },
   "ui": {

@@ -1,3 +1,4 @@
+import {t} from '@/i18n';
 import React from 'react';
 import {View, Text, Pressable} from 'react-native';
 import {ScaledSheet, moderateScale} from 'react-native-size-matters';
@@ -60,7 +61,7 @@ export const ReciterItem: React.FC<ReciterItemProps> = React.memo(
             <Text style={styles.reciterRewayat} numberOfLines={1}>
               {secondaryText ||
                 (item.rewayat.length > 1
-                  ? `${item.rewayat.length} rewayat available`
+                  ? t('common.rewayatAvailable', {number: item.rewayat.length})
                   : getDisplayLabelFromName(item.rewayat[0]?.name))}
             </Text>
             {showFollowAlong && <FollowAlongBadge />}

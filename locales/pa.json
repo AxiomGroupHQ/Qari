@@ -215,7 +215,9 @@
     "whatSNew": "ਨਵਾਂ ਕੀ ਹੈ",
     "wordByWord": "ਸ਼ਬਦ ਦਰ ਸ਼ਬਦ",
     "writeYourNoteHere": "ਆਪਣਾ ਨੋਟ ਇੱਥੇ ਲਿਖੋ...",
-    "yourPlaylists": "ਤੁਹਾਡੀਆਂ ਪਲੇਲਿਸਟਾਂ"
+    "yourPlaylists": "ਤੁਹਾਡੀਆਂ ਪਲੇਲਿਸਟਾਂ",
+    "rewayatAvailable": "{{number}} ਰਿਵਾਇਤਾਂ ਉਪਲਬਧ",
+    "rewayatByReciter": "{{reciter}} ਦੀ {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "ਸੇਵਾ ਸ਼ਰਤਾਂ",
       "viewAndManageStorageUsage": "ਸਟੋਰੇਜ ਵਰਤੋਂ ਵੇਖੋ ਅਤੇ ਸੰਭਾਲੋ",
       "viewOurPrivacyPolicy": "ਸਾਡੀ ਗੋਪਨੀਅਤਾ ਨੀਤੀ ਵੇਖੋ",
-      "writeAReview": "ਸਮੀਖਿਆ ਲਿਖੋ"
+      "writeAReview": "ਸਮੀਖਿਆ ਲਿਖੋ",
+      "rateUnavailableTitle": "ਰੇਟਿੰਗ ਅਜੇ ਉਪਲਬਧ ਨਹੀਂ",
+      "rateUnavailableMessage": "ਐਪ ਅਜੇ ਐਪ ਸਟੋਰਾਂ 'ਤੇ ਸੂਚੀਬੱਧ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਜਲਦੀ ਹੀ ਦੁਬਾਰਾ ਵੇਖੋ।"
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "ਆਇਤ {{surah}}:{{ayah}} · ਸ਼ਬਦ {{position}} / {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "ਹਫ਼ਸ",
+      "shubah": "ਸ਼ੁਅਬਾ",
+      "al-bazzi": "ਅਲ-ਬੱਜ਼ੀ",
+      "qunbul": "ਕੁੰਬੁਲ",
+      "warsh": "ਵਰਸ਼",
+      "qalun": "ਕਾਲੂਨ",
+      "al-duri-abi-amr": "ਅਦ-ਦੂਰੀ (ਅਬੂ ਅਮਰ)",
+      "al-susi": "ਅਸ-ਸੂਸੀ",
+      "hisham": "ਹਿਸ਼ਾਮ",
+      "ibn-dhakwan": "ਇਬਨ ਜ਼ਕਵਾਨ",
+      "khalaf-an-hamzah": "ਖ਼ਲਫ਼ (ਹਮਜ਼ਾ)",
+      "khallad": "ਖ਼ੱਲਾਦ",
+      "al-duri-al-kisai": "ਅਦ-ਦੂਰੀ (ਅਲ-ਕਿਸਾਈ)",
+      "abu-al-harith": "ਅਬੂ ਅਲ-ਹਾਰਿਸ",
+      "ibn-jammaz": "ਇਬਨ ਜੱਮਾਜ਼",
+      "ibn-wardan": "ਇਬਨ ਵਰਦਾਨ",
+      "rawh": "ਰੌਹ",
+      "ruwais": "ਰੁਵੈਸ",
+      "idris": "ਇਦਰੀਸ",
+      "ishaq": "ਇਸਹਾਕ"
+    }
   }
 }

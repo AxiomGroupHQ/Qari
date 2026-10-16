@@ -218,7 +218,9 @@
     "whatSNew": "Noutăți",
     "wordByWord": "Cuvânt cu cuvânt",
     "writeYourNoteHere": "Scrie nota aici...",
-    "yourPlaylists": "Listele tale de redare"
+    "yourPlaylists": "Listele tale de redare",
+    "rewayatAvailable": "{{number}} rewayat disponibile",
+    "rewayatByReciter": "{{rewayat}} de {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -685,7 +687,9 @@
       "termsOfService": "Termeni de utilizare",
       "viewAndManageStorageUsage": "Vezi și gestionează spațiul utilizat",
       "viewOurPrivacyPolicy": "Vezi politica de confidențialitate",
-      "writeAReview": "Scrie o recenzie"
+      "writeAReview": "Scrie o recenzie",
+      "rateUnavailableTitle": "Evaluarea nu este încă disponibilă",
+      "rateUnavailableMessage": "Aplicația nu este încă listată în magazinele de aplicații. Revino curând."
     }
   },
   "ui": {

@@ -227,7 +227,9 @@
     "whatSNew": "ما الجديد",
     "wordByWord": "كلمة بكلمة",
     "writeYourNoteHere": "اكتب ملاحظتك هنا...",
-    "yourPlaylists": "قوائم التشغيل الخاصة بك"
+    "yourPlaylists": "قوائم التشغيل الخاصة بك",
+    "rewayatAvailable": "{{number}} روايات متاحة",
+    "rewayatByReciter": "{{rewayat}} بصوت {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -703,7 +705,9 @@
       "termsOfService": "شروط الخدمة",
       "viewAndManageStorageUsage": "عرض مساحة التخزين وإدارتها",
       "viewOurPrivacyPolicy": "اطلع على سياسة الخصوصية",
-      "writeAReview": "كتابة تقييم"
+      "writeAReview": "كتابة تقييم",
+      "rateUnavailableTitle": "التقييم غير متاح بعد",
+      "rateUnavailableMessage": "التطبيق غير مدرج في متاجر التطبيقات بعد. يرجى المحاولة لاحقًا."
     }
   },
   "ui": {
@@ -769,5 +773,29 @@
   },
   "wordDetail": {
     "context": "الآية {{surah}}:{{ayah}} · الكلمة {{position}} من {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "حفص",
+      "shubah": "شعبة",
+      "al-bazzi": "البزي",
+      "qunbul": "قنبل",
+      "warsh": "ورش",
+      "qalun": "قالون",
+      "al-duri-abi-amr": "الدوري (أبو عمرو)",
+      "al-susi": "السوسي",
+      "hisham": "هشام",
+      "ibn-dhakwan": "ابن ذكوان",
+      "khalaf-an-hamzah": "خلف (حمزة)",
+      "khallad": "خلاد",
+      "al-duri-al-kisai": "الدوري (الكسائي)",
+      "abu-al-harith": "أبو الحارث",
+      "ibn-jammaz": "ابن جماز",
+      "ibn-wardan": "ابن وردان",
+      "rawh": "روح",
+      "ruwais": "رويس",
+      "idris": "إدريس",
+      "ishaq": "إسحاق"
+    }
   }
 }

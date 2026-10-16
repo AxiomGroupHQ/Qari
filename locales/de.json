@@ -215,7 +215,9 @@
     "whatSNew": "Neuigkeiten",
     "wordByWord": "Wort für Wort",
     "writeYourNoteHere": "Schreibe hier deine Notiz …",
-    "yourPlaylists": "Deine Playlists"
+    "yourPlaylists": "Deine Playlists",
+    "rewayatAvailable": "{{number}} Rezitationsarten verfügbar",
+    "rewayatByReciter": "{{rewayat}} von {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Nutzungsbedingungen",
       "viewAndManageStorageUsage": "Speicherbelegung anzeigen und verwalten",
       "viewOurPrivacyPolicy": "Unsere Datenschutzerklärung ansehen",
-      "writeAReview": "Bewertung schreiben"
+      "writeAReview": "Bewertung schreiben",
+      "rateUnavailableTitle": "Bewertungen sind noch nicht verfügbar",
+      "rateUnavailableMessage": "Die App ist noch nicht in den App-Stores gelistet. Bitte schau bald wieder vorbei."
     }
   },
   "ui": {

@@ -215,7 +215,9 @@
     "whatSNew": "Min kura",
     "wordByWord": "Danye kelen-kelen",
     "writeYourNoteHere": "I ka note sebe yan...",
-    "yourPlaylists": "I ka playlistw"
+    "yourPlaylists": "I ka playlistw",
+    "rewayatAvailable": "Rewayat {{number}} be yen",
+    "rewayatByReciter": "{{reciter}} ka {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Baara kecogo sariyaw",
       "viewAndManageStorageUsage": "Maraso baarakecogo laje ka a nyemogoya",
       "viewOurPrivacyPolicy": "An ka gundo ladonni sariya laje",
-      "writeAReview": "Hakilina sebe"
+      "writeAReview": "Hakilina sebe",
+      "rateUnavailableTitle": "Jateminɛ male sɔtɔ folo",
+      "rateUnavailableMessage": "Porogaramu male don app store kɔnɔ folo. Aw ye a lajɛ tuma dɔ kɔ."
     }
   },
   "ui": {

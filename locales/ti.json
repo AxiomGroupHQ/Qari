@@ -218,7 +218,9 @@
     "whatSNew": "ሓድሽ ነገር",
     "wordByWord": "ቃል ብቃል",
     "writeYourNoteHere": "መዘክርካ ኣብዚ ጽሓፍ...",
-    "yourPlaylists": "ዝርዝራት መጻወቲኹም"
+    "yourPlaylists": "ዝርዝራት መጻወቲኹም",
+    "rewayatAvailable": "{{number}} ሪዋያት ይርከቡ",
+    "rewayatByReciter": "{{rewayat}} ብ{{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -685,7 +687,9 @@
       "termsOfService": "ውዕላት ኣገልግሎት",
       "viewAndManageStorageUsage": "ኣጠቓቕማ መዘወሪ ርኣዩ ኣመሓድሩ",
       "viewOurPrivacyPolicy": "ፖሊሲ ብሕትነትና ርኣዩ",
-      "writeAReview": "ግምጋም ጽሓፍ"
+      "writeAReview": "ግምጋም ጽሓፍ",
+      "rateUnavailableTitle": "ግምጋም ገና ኣይርከብን",
+      "rateUnavailableMessage": "እቲ መተግበሪ ኣብ መሸጣ መተግበርታት ገና ኣይተዘርዘረን። በጃኻ ኣብ ቀረባ እዋን ዳግማይ ርአ።"
     }
   },
   "ui": {
@@ -751,5 +755,29 @@
   },
   "wordDetail": {
     "context": "ኣያ {{surah}}:{{ayah}} · ቃል {{position}} ካብ {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "ሓፍስ",
+      "shubah": "ሹዕባ",
+      "al-bazzi": "ኣል-ባዚ",
+      "qunbul": "ቁንቡል",
+      "warsh": "ወርሽ",
+      "qalun": "ቃሉን",
+      "al-duri-abi-amr": "ኣድ-ዱሪ (ኣቡ ዓምር)",
+      "al-susi": "ኣስ-ሱሲ",
+      "hisham": "ሂሻም",
+      "ibn-dhakwan": "ኢብኑ ዘክዋን",
+      "khalaf-an-hamzah": "ኸለፍ (ሓምዛ)",
+      "khallad": "ኸላድ",
+      "al-duri-al-kisai": "ኣድ-ዱሪ (ኣል-ኪሳኢ)",
+      "abu-al-harith": "ኣቡል ሓሪስ",
+      "ibn-jammaz": "ኢብኑ ጀማዝ",
+      "ibn-wardan": "ኢብኑ ወርዳን",
+      "rawh": "ሩሕ",
+      "ruwais": "ሩወይስ",
+      "idris": "ኢድሪስ",
+      "ishaq": "ኢሥሐቅ"
+    }
   }
 }

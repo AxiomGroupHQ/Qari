@@ -215,7 +215,9 @@
     "whatSNew": "Yeniliklər",
     "wordByWord": "Sözbəsöz",
     "writeYourNoteHere": "Qeydinizi burada yazın...",
-    "yourPlaylists": "Pleylistləriniz"
+    "yourPlaylists": "Pleylistləriniz",
+    "rewayatAvailable": "{{number}} rəvayət mövcuddur",
+    "rewayatByReciter": "{{reciter}} – {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Xidmət şərtləri",
       "viewAndManageStorageUsage": "Yaddaş istifadəsinə baxın və idarə edin",
       "viewOurPrivacyPolicy": "Məxfilik siyasətimizə baxın",
-      "writeAReview": "Rəy yaz"
+      "writeAReview": "Rəy yaz",
+      "rateUnavailableTitle": "Qiymətləndirmə hələ mövcud deyil",
+      "rateUnavailableMessage": "Tətbiq hələ tətbiq mağazalarında yerləşdirilməyib. Zəhmət olmasa tezliklə yenidən yoxlayın."
     }
   },
   "ui": {

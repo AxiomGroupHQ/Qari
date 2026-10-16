@@ -215,7 +215,9 @@
     "whatSNew": "අලුත් දේ",
     "wordByWord": "වචනයෙන් වචනය",
     "writeYourNoteHere": "ඔබේ සටහන මෙහි ලියන්න...",
-    "yourPlaylists": "ඔබේ ධාවන ලැයිස්තු"
+    "yourPlaylists": "ඔබේ ධාවන ලැයිස්තු",
+    "rewayatAvailable": "රිවායත් {{number}} ක් ලබාගත හැක",
+    "rewayatByReciter": "{{reciter}} ගේ {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "සේවා කොන්දේසි",
       "viewAndManageStorageUsage": "ගබඩා භාවිතය බලන්න සහ කළමනාකරණය කරන්න",
       "viewOurPrivacyPolicy": "අපගේ රහස්‍යතා ප්‍රතිපත්තිය බලන්න",
-      "writeAReview": "සමාලෝචනයක් ලියන්න"
+      "writeAReview": "සමාලෝචනයක් ලියන්න",
+      "rateUnavailableTitle": "ඇගයීම තවම ලබාගත නොහැක",
+      "rateUnavailableMessage": "යෙදුම තවම යෙදුම් ගබඩාවල ලැයිස්තුගත කර නැත. කරුණාකර ඉක්මනින් නැවත පරීක්ෂා කරන්න."
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "ආයතය {{surah}}:{{ayah}} · වචන {{total}} න් {{position}} වැනි වචනය"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "හෆ්ස්",
+      "shubah": "ශුඅ්බා",
+      "al-bazzi": "අල්-බස්සි",
+      "qunbul": "කුන්බුල්",
+      "warsh": "වර්ෂ්",
+      "qalun": "කාලූන්",
+      "al-duri-abi-amr": "අද්-දූරි (අබූ අම්ර්)",
+      "al-susi": "අස්-සූසි",
+      "hisham": "හිෂාම්",
+      "ibn-dhakwan": "ඉබ්නු ධක්වාන්",
+      "khalaf-an-hamzah": "ඛලාෆ් (හම්සා)",
+      "khallad": "ඛල්ලාද්",
+      "al-duri-al-kisai": "අද්-දූරි (අල්-කිසාඊ)",
+      "abu-al-harith": "අබුල් හාරිස්",
+      "ibn-jammaz": "ඉබ්නු ජම්මාස්",
+      "ibn-wardan": "ඉබ්නු වර්දාන්",
+      "rawh": "රව්හ්",
+      "ruwais": "රුවෛස්",
+      "idris": "ඉද්රීස්",
+      "ishaq": "ඉස්හාක්"
+    }
   }
 }

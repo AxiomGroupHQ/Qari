@@ -215,7 +215,9 @@
     "whatSNew": "څه نوي دي",
     "wordByWord": "کلیمه په کلیمه",
     "writeYourNoteHere": "خپل یادښت دلته ولیکئ...",
-    "yourPlaylists": "ستاسې د غږولو لړلیکونه"
+    "yourPlaylists": "ستاسې د غږولو لړلیکونه",
+    "rewayatAvailable": "{{number}} روایتونه شته",
+    "rewayatByReciter": "{{rewayat}} د {{reciter}} په غږ"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "د خدمت شرطونه",
       "viewAndManageStorageUsage": "د زېرمې کارونه وګورئ او اداره یې کړئ",
       "viewOurPrivacyPolicy": "زموږ د محرمیت تګلاره وګورئ",
-      "writeAReview": "بیاکتنه ولیکئ"
+      "writeAReview": "بیاکتنه ولیکئ",
+      "rateUnavailableTitle": "درجه‌بندي لا نشته",
+      "rateUnavailableMessage": "دا اپلیکېشن لا د اپ سټورونو کې نه دی ثبت شوی. مهرباني وکړئ ژر بیا وګورئ."
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "آیت {{surah}}:{{ayah}} · کلیمه {{position}} له {{total}} څخه"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "حفص",
+      "shubah": "شعبة",
+      "al-bazzi": "البزي",
+      "qunbul": "قنبل",
+      "warsh": "ورش",
+      "qalun": "قالون",
+      "al-duri-abi-amr": "الدوري (أبو عمرو)",
+      "al-susi": "السوسي",
+      "hisham": "هشام",
+      "ibn-dhakwan": "ابن ذكوان",
+      "khalaf-an-hamzah": "خلف (حمزة)",
+      "khallad": "خلاد",
+      "al-duri-al-kisai": "الدوري (الكسائي)",
+      "abu-al-harith": "أبو الحارث",
+      "ibn-jammaz": "ابن جماز",
+      "ibn-wardan": "ابن وردان",
+      "rawh": "روح",
+      "ruwais": "رويس",
+      "idris": "إدريس",
+      "ishaq": "إسحاق"
+    }
   }
 }

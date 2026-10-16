@@ -19,7 +19,6 @@ module.exports = {
     ios: 'com.istima.app',
     android: 'com.istima.app',
   },
-  supportUrl: 'https://istima.app/support',
   termsUrl: 'https://istima.app/terms',
   privacyUrl: 'https://istima.app/privacy',
   shareBaseUrl: 'https://istima.app',

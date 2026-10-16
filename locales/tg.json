@@ -215,7 +215,9 @@
     "whatSNew": "Чӣ нав аст",
     "wordByWord": "Калима ба калима",
     "writeYourNoteHere": "Ёддошти худро ин ҷо нависед...",
-    "yourPlaylists": "Рӯйхатҳои пахши шумо"
+    "yourPlaylists": "Рӯйхатҳои пахши шумо",
+    "rewayatAvailable": "{{number}} ривоят дастрас аст",
+    "rewayatByReciter": "{{rewayat}} бо овози {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Шартҳои хизматрасонӣ",
       "viewAndManageStorageUsage": "Дидан ва идора кардани истифодаи ҳофиза",
       "viewOurPrivacyPolicy": "Дидани сиёсати махфияти мо",
-      "writeAReview": "Навиштани назар"
+      "writeAReview": "Навиштани назар",
+      "rateUnavailableTitle": "Баҳодиҳӣ ҳоло дастрас нест",
+      "rateUnavailableMessage": "Барнома ҳоло дар мағозаҳои барнома сабт нашудааст. Лутфан баъдтар дубора санҷед."
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "Ояти {{surah}}:{{ayah}} · Калимаи {{position}} аз {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Ҳафс",
+      "shubah": "Шуъба",
+      "al-bazzi": "ал-Баззӣ",
+      "qunbul": "Қунбул",
+      "warsh": "Варш",
+      "qalun": "Қолун",
+      "al-duri-abi-amr": "ад-Дурӣ (Абуамр)",
+      "al-susi": "ас-Сусӣ",
+      "hisham": "Ҳишом",
+      "ibn-dhakwan": "Ибни Зақвон",
+      "khalaf-an-hamzah": "Халаф (Ҳамза)",
+      "khallad": "Халлод",
+      "al-duri-al-kisai": "ад-Дурӣ (ал-Кисоӣ)",
+      "abu-al-harith": "Абулҳорис",
+      "ibn-jammaz": "Ибни Ҷаммоз",
+      "ibn-wardan": "Ибни Вардон",
+      "rawh": "Равҳ",
+      "ruwais": "Рувайс",
+      "idris": "Идрис",
+      "ishaq": "Исҳоқ"
+    }
   }
 }

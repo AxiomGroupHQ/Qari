@@ -215,7 +215,9 @@
     "whatSNew": "Τι νέο υπάρχει",
     "wordByWord": "Λέξη προς λέξη",
     "writeYourNoteHere": "Γράψτε τη σημείωσή σας εδώ...",
-    "yourPlaylists": "Οι λίστες σας"
+    "yourPlaylists": "Οι λίστες σας",
+    "rewayatAvailable": "{{number}} ρεβαγιάτ διαθέσιμα",
+    "rewayatByReciter": "{{rewayat}} από {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Όροι χρήσης",
       "viewAndManageStorageUsage": "Διαχείριση χρήσης αποθηκευτικού χώρου",
       "viewOurPrivacyPolicy": "Δείτε την πολιτική απορρήτου",
-      "writeAReview": "Γράψτε κριτική"
+      "writeAReview": "Γράψτε κριτική",
+      "rateUnavailableTitle": "Η αξιολόγηση δεν είναι ακόμη διαθέσιμη",
+      "rateUnavailableMessage": "Η εφαρμογή δεν έχει ακόμη καταχωριστεί στα καταστήματα εφαρμογών. Δοκιμάστε ξανά σύντομα."
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "Εδάφιο {{surah}}:{{ayah}} · Λέξη {{position}} από {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Χαφς",
+      "shubah": "Σουμπά",
+      "al-bazzi": "Αλ-Μπαζί",
+      "qunbul": "Κουνμπούλ",
+      "warsh": "Βαρς",
+      "qalun": "Καλούν",
+      "al-duri-abi-amr": "Αντ-Ντούρι (Αμπού Αμρ)",
+      "al-susi": "Ας-Σούσι",
+      "hisham": "Χισάμ",
+      "ibn-dhakwan": "Ιμπν Ζακουάν",
+      "khalaf-an-hamzah": "Χαλάφ (Χάμζα)",
+      "khallad": "Χαλάντ",
+      "al-duri-al-kisai": "Αντ-Ντούρι (Αλ-Κισάι)",
+      "abu-al-harith": "Αμπού αλ-Χάρις",
+      "ibn-jammaz": "Ιμπν Τζαμμάζ",
+      "ibn-wardan": "Ιμπν Βαρντάν",
+      "rawh": "Ραχ",
+      "ruwais": "Ρουαΐς",
+      "idris": "Ίντρις",
+      "ishaq": "Ισχάκ"
+    }
   }
 }

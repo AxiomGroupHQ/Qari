@@ -114,7 +114,7 @@ export default function BrowseReciters({
   theme,
   onBack,
   surahId,
-  title = 'Browse All',
+  title = t('common.browseAll'),
   initialTeacher,
   initialStudent,
   initialHasPhoto = false,

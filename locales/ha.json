@@ -215,7 +215,9 @@
     "whatSNew": "Sabbin Abubuwa",
     "wordByWord": "Kalma da Kalma",
     "writeYourNoteHere": "Rubuta bayaninka a nan...",
-    "yourPlaylists": "Jerin Sauraronka"
+    "yourPlaylists": "Jerin Sauraronka",
+    "rewayatAvailable": "Riwayoyi {{number}} suna nan",
+    "rewayatByReciter": "{{rewayat}} na {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Sharuɗɗan Amfani",
       "viewAndManageStorageUsage": "Duba da sarrafa amfani da ma'aji",
       "viewOurPrivacyPolicy": "Duba manufar sirrinmu",
-      "writeAReview": "Rubuta Bita"
+      "writeAReview": "Rubuta Bita",
+      "rateUnavailableTitle": "Ba a riga an samu ba",
+      "rateUnavailableMessage": "Ba a riga an saka manhajar a shagunan manhajoji ba. Da fatan za ku sake dubawa nan gaba."
     }
   },
   "ui": {

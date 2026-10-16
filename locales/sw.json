@@ -215,7 +215,9 @@
     "whatSNew": "Mapya",
     "wordByWord": "Neno kwa Neno",
     "writeYourNoteHere": "Andika maelezo yako hapa...",
-    "yourPlaylists": "Orodha Zako za Kucheza"
+    "yourPlaylists": "Orodha Zako za Kucheza",
+    "rewayatAvailable": "Riwaya {{number}} zinapatikana",
+    "rewayatByReciter": "{{rewayat}} na {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Masharti ya Huduma",
       "viewAndManageStorageUsage": "Tazama na usimamie matumizi ya hifadhi",
       "viewOurPrivacyPolicy": "Tazama sera yetu ya faragha",
-      "writeAReview": "Andika Maoni"
+      "writeAReview": "Andika Maoni",
+      "rateUnavailableTitle": "Ukadiriaji bado haupatikani",
+      "rateUnavailableMessage": "Programu bado haijaorodheshwa kwenye maduka ya programu. Tafadhali angalia tena hivi karibuni."
     }
   },
   "ui": {

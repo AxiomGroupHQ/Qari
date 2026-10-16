@@ -215,7 +215,9 @@
     "whatSNew": "Yangiliklar",
     "wordByWord": "So'zma-so'z",
     "writeYourNoteHere": "Qaydingizni shu yerga yozing...",
-    "yourPlaylists": "Pleylistlaringiz"
+    "yourPlaylists": "Pleylistlaringiz",
+    "rewayatAvailable": "{{number}} ta rivoyat mavjud",
+    "rewayatByReciter": "{{reciter}} – {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Foydalanish shartlari",
       "viewAndManageStorageUsage": "Xotira sarfini ko'rish va boshqarish",
       "viewOurPrivacyPolicy": "Maxfiylik siyosatimizni ko'ring",
-      "writeAReview": "Sharh yozish"
+      "writeAReview": "Sharh yozish",
+      "rateUnavailableTitle": "Baholash hozircha mavjud emas",
+      "rateUnavailableMessage": "Ilova hali ilovalar do'konlarida e'lon qilinmagan. Iltimos, keyinroq qayta tekshiring."
     }
   },
   "ui": {

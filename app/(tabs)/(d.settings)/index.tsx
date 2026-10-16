@@ -1,5 +1,5 @@
 import React, {useMemo} from 'react';
-import {Text, Pressable, ScrollView, View, Linking, Switch} from 'react-native';
+import {Text, Pressable, ScrollView, View, Switch} from 'react-native';
 import {useRouter} from 'expo-router';
 import {SheetManager} from 'react-native-actions-sheet';
 import {useTheme} from '@/hooks/useTheme';
@@ -12,7 +12,7 @@ import {useBottomInset} from '@/hooks/useBottomInset';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {USE_GLASS, useGlassColorScheme} from '@/hooks/useGlassProps';
 import {GlassView} from 'expo-glass-effect';
-import {openAppStoreForReview, markAsRated} from '@/utils/reviewUtils';
+import {showToast} from '@/utils/toastUtils';
 import {
   QuranIcon,
   DualPagesIcon,
@@ -37,7 +37,7 @@ import {dirIcon} from '@/i18n/direction';
 // User-facing settings copy only; Quran text and religious content are untouched.
 
 const isExternalLink = (type: string): boolean => {
-  return ['support', 'featureRequest', 'rateApp'].includes(type);
+  return ['rateApp'].includes(type);
 };
 
 const settingsItems = [
@@ -142,26 +142,6 @@ const settingsItems = [
           return t('tabs.settings.shareYourExperienceWithOthers');
         },
         icon: 'star',
-        iconType: 'custom',
-      },
-      {
-        get title() {
-          return t('tabs.settings.featureRequests');
-        },
-        type: 'featureRequest',
-        get description() {
-          return t('tabs.settings.suggestImprovementsAndNewFeatures');
-        },
-        icon: 'lightbulb',
-        iconType: 'custom',
-      },
-      {
-        get title() {
-          return t('tabs.settings.helpSupport');
-        },
-        type: 'support',
-        description: `Get assistance with using ${branding.appName}`,
-        icon: 'chatBubble',
         iconType: 'custom',
       },
     ],
@@ -307,17 +287,15 @@ export default function SettingsScreen() {
         await clearPlayerCache();
         break;
       case 'rateApp':
-        await markAsRated();
-        await openAppStoreForReview();
+        // No store listing is configured yet, so tell the user instead of opening a wrong page.
+        showToast(
+          t('tabs.settings.rateUnavailableTitle'),
+          t('tabs.settings.rateUnavailableMessage'),
+          'none',
+        );
         break;
       case 'whatsNew':
         router.push('/(d.settings)/whats-new');
-        break;
-      case 'support':
-        await Linking.openURL(branding.supportUrl);
-        break;
-      case 'featureRequest':
-        await Linking.openURL(branding.supportUrl);
         break;
       case 'terms':
         router.push('/terms'); // @ai
