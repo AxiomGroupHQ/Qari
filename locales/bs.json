@@ -108,7 +108,9 @@
       "notes": "Bilješke",
       "playlists": "Plejliste",
       "reciters": "Učači",
-      "uploads": "Otpremljeno"
+      "uploads": "Otpremljeno",
+      "history": "Historija",
+      "noHistoryYet": "Još ništa nije reproducirano"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Sve omiljene sure su već preuzete.",
@@ -136,6 +138,13 @@
     "uploads": {
       "removeAllUploads": "Ukloni sve otpremljene snimke",
       "uploadRecitationsToSeeThem": "Otpremite recitacije da ih vidite ovdje"
+    },
+    "history": {
+      "emptyTitle": "Još nema historije",
+      "emptySubtitle": "Sure koje pustite pojavit će se ovdje",
+      "clear": "Obriši historiju",
+      "clearTitle": "Obrisati historiju?",
+      "clearMessage": "Ovo uklanja vašu listu nedavno puštenog. Vaše plejliste, omiljene sure i preuzimanja ostaju kakvi jesu."
     }
   },
   "common": {

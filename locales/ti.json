@@ -108,7 +108,9 @@
       "notes": "መዘክራት",
       "playlists": "ዝርዝራት መጻወቲ",
       "reciters": "ቀሪኦት",
-      "uploads": "ዝተጻዕኑ"
+      "uploads": "ዝተጻዕኑ",
+      "history": "ታሪኽ",
+      "noHistoryYet": "ክሳብ ሕጂ ዝተጻወተ የለን"
     },
     "loved": {
       "allLovedSurahsAreAlready": "ኩሎም ዝተፈትዉ ሱራታት ብዘይካ ሕጂ ወሪዶም ኣለዉ።",
@@ -136,6 +138,13 @@
     "uploads": {
       "removeAllUploads": "ኩሉ ዝተጻዕነ ኣወግድ",
       "uploadRecitationsToSeeThem": "ኣብዚ ንምርኣይ ቅራኣት ጸዓኑ"
+    },
+    "history": {
+      "emptyTitle": "ክሳብ ሕጂ ታሪኽ የለን",
+      "emptySubtitle": "እትጻወቶም ሱራታት ኣብዚ ክረኣዩ እዮም",
+      "clear": "ታሪኽ ደምስስ",
+      "clearTitle": "ታሪኽ ይደምሰስ?",
+      "clearMessage": "እዚ ብዙሕ ከይጸንሐ ዝተጻወተ ዝርዝር የልግስ። ዝርዝራትካ፣ ዝፈተኻቶም ሱራታት ከምኡውን ዝወረድካዮም ከምቲ ዘለዉ ይጸንሑ።"
     }
   },
   "common": {

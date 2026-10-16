@@ -105,7 +105,9 @@
       "notes": "Mga tala",
       "playlists": "Mga playlist",
       "reciters": "Mga tagabigkas",
-      "uploads": "Mga upload"
+      "uploads": "Mga upload",
+      "history": "Kasaysayan",
+      "noHistoryYet": "Wala pang napapatugtog"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Na-download na ang lahat ng minamahal na surah.",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "Alisin ang lahat ng upload",
       "uploadRecitationsToSeeThem": "Mag-upload ng mga pagbigkas para makita rito"
+    },
+    "history": {
+      "emptyTitle": "Wala pang kasaysayan",
+      "emptySubtitle": "Lalabas dito ang mga surah na pinakikinggan mo",
+      "clear": "I-clear ang kasaysayan",
+      "clearTitle": "I-clear ang kasaysayan?",
+      "clearMessage": "Aalisin nito ang listahan ng kamakailang pinatugtog. Mananatili ang iyong mga playlist, paboritong surah, at download."
     }
   },
   "common": {

@@ -106,7 +106,9 @@
       "notes": "Notas",
       "playlists": "Listas de reproducción",
       "reciters": "Recitadores",
-      "uploads": "Archivos subidos"
+      "uploads": "Archivos subidos",
+      "history": "Historial",
+      "noHistoryYet": "Aún no se ha reproducido nada"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Todas las suras favoritas ya están descargadas.",
@@ -134,6 +136,13 @@
     "uploads": {
       "removeAllUploads": "Eliminar todos los archivos subidos",
       "uploadRecitationsToSeeThem": "Sube recitaciones para verlas aquí"
+    },
+    "history": {
+      "emptyTitle": "Todavía no hay historial",
+      "emptySubtitle": "Las suras que escuches aparecerán aquí",
+      "clear": "Borrar historial",
+      "clearTitle": "¿Borrar el historial?",
+      "clearMessage": "Esto elimina tu lista de reproducidos recientemente. Tus listas, suras favoritas y descargas se mantienen."
     }
   },
   "common": {

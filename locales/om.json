@@ -108,7 +108,9 @@
       "notes": "Yaadannoo",
       "playlists": "Tarreeffama sirna",
       "reciters": "Qaraa",
-      "uploads": "Fe'amaa"
+      "uploads": "Fe'amaa",
+      "history": "Seenaa",
+      "noHistoryYet": "Hanga ammaatti homaatu hin taphatamne"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Suuraaleen jaallataman hundi duraanuu buufataniiru.",
@@ -136,6 +138,13 @@
     "uploads": {
       "removeAllUploads": "Fe'amaa hunda balleessi",
       "uploadRecitationsToSeeThem": "Qara'uu fe'i as akka argitaniif"
+    },
+    "history": {
+      "emptyTitle": "Hanga ammaatti seenaan hin jiru",
+      "emptySubtitle": "Suuraan isin taphattan as ni mul'ata",
+      "clear": "Seenaa haqi",
+      "clearTitle": "Seenaan haqamu?",
+      "clearMessage": "Kunis tarree dhiyeenya taphatame ni balleessa. Tarreewwan keessan, suuraan jaallataman fi buufatamaniin akkuma jiranitti ni turu."
     }
   },
   "common": {

@@ -108,7 +108,9 @@
       "notes": "Note",
       "playlists": "Playlist",
       "reciters": "Recitatori",
-      "uploads": "Caricamenti"
+      "uploads": "Caricamenti",
+      "history": "Cronologia",
+      "noHistoryYet": "Ancora nulla riprodotto"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Tutte le sure amate sono già state scaricate.",
@@ -136,6 +138,13 @@
     "uploads": {
       "removeAllUploads": "Rimuovi tutti i caricamenti",
       "uploadRecitationsToSeeThem": "Carica recitazioni per vederle qui"
+    },
+    "history": {
+      "emptyTitle": "Ancora nessuna cronologia",
+      "emptySubtitle": "Le sure che ascolti appariranno qui",
+      "clear": "Cancella cronologia",
+      "clearTitle": "Cancellare la cronologia?",
+      "clearMessage": "Questo rimuove l'elenco di ciò che hai ascoltato di recente. Playlist, sure preferite e download restano invariati."
     }
   },
   "common": {

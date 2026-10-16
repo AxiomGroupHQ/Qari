@@ -102,7 +102,9 @@
       "notes": "Catatan",
       "playlists": "Playlist",
       "reciters": "Qari",
-      "uploads": "Unggahan"
+      "uploads": "Unggahan",
+      "history": "Riwayat",
+      "noHistoryYet": "Belum ada yang diputar"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Semua surah favorit sudah diunduh.",
@@ -130,6 +132,13 @@
     "uploads": {
       "removeAllUploads": "Hapus Semua Unggahan",
       "uploadRecitationsToSeeThem": "Unggah bacaan untuk melihatnya di sini"
+    },
+    "history": {
+      "emptyTitle": "Belum ada riwayat",
+      "emptySubtitle": "Surah yang Anda putar akan muncul di sini",
+      "clear": "Hapus riwayat",
+      "clearTitle": "Hapus riwayat?",
+      "clearMessage": "Ini menghapus daftar yang baru diputar. Playlist, surah favorit, dan unduhan Anda tetap ada."
     }
   },
   "common": {

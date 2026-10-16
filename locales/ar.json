@@ -117,7 +117,9 @@
       "notes": "الملاحظات",
       "playlists": "قوائم التشغيل",
       "reciters": "القراء",
-      "uploads": "الملفات المرفوعة"
+      "uploads": "الملفات المرفوعة",
+      "history": "السجل",
+      "noHistoryYet": "لم يتم تشغيل شيء بعد"
     },
     "loved": {
       "allLovedSurahsAreAlready": "جميع السور المحبوبة منزّلة بالفعل.",
@@ -145,6 +147,13 @@
     "uploads": {
       "removeAllUploads": "إزالة جميع الملفات المرفوعة",
       "uploadRecitationsToSeeThem": "ارفع تلاوات لتظهر هنا"
+    },
+    "history": {
+      "emptyTitle": "لا يوجد سجل بعد",
+      "emptySubtitle": "ستظهر هنا السور التي تستمع إليها",
+      "clear": "مسح السجل",
+      "clearTitle": "مسح السجل؟",
+      "clearMessage": "سيؤدي هذا إلى إزالة قائمة المشغّل مؤخرًا. تبقى قوائم التشغيل والسور المفضلة والتنزيلات كما هي."
     }
   },
   "common": {

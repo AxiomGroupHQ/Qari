@@ -12,6 +12,7 @@ import {Theme} from '@/utils/themeUtils';
 import Color from 'color';
 
 import {useDownloads} from '@/services/player/store/downloadSelectors';
+import {useRecentlyPlayedStore} from '@/services/player/store/recentlyPlayedStore';
 import {usePlaylists} from '@/hooks/usePlaylists';
 import {SheetManager} from 'react-native-actions-sheet';
 import {
@@ -49,6 +50,7 @@ export default function CollectionScreen() {
   const {favoriteReciters} = useFavoriteReciters();
   const downloads = useDownloads();
   const {playlists} = usePlaylists();
+  const recentTracks = useRecentlyPlayedStore(state => state.recentTracks);
   const {totalCount: uploadsTotalCount} = useUploadsStore();
 
   const [bookmarkCount, setBookmarkCount] = useState(0);
@@ -133,6 +135,15 @@ export default function CollectionScreen() {
       count: noteCount,
       emptyText: t('collection.index.noNotesYet'),
       route: '/collection/notes',
+    },
+    {
+      id: 'history',
+      label: t('collection.index.history'),
+      icon: <Feather name="clock" size={moderateScale(22)} color="#14B8A6" />,
+      color: '#14B8A6',
+      count: recentTracks.length,
+      emptyText: t('collection.index.noHistoryYet'),
+      route: '/collection/history',
     },
     {
       id: 'uploads',

@@ -104,7 +104,9 @@
       "notes": "Ndetu",
       "playlists": "Ndepụta ọkpụkpọ",
       "reciters": "Ndị na-agụ",
-      "uploads": "Ihe ebugoro"
+      "uploads": "Ihe ebugoro",
+      "history": "Akụkọ",
+      "noHistoryYet": "Ọ dịbeghị ihe e kpọrọ"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Ebudatala sura niile ị hụrụ n'anya tupu ugbu a.",
@@ -132,6 +134,13 @@
     "uploads": {
       "removeAllUploads": "Wepụ ihe niile ebugoro",
       "uploadRecitationsToSeeThem": "Bulite ọgụgụ ka ị hụ ha ebe a"
+    },
+    "history": {
+      "emptyTitle": "Akụkọ adịbeghị",
+      "emptySubtitle": "Surah ndị ị na-akpọ ga-apụta ebe a",
+      "clear": "Hichapụ akụkọ",
+      "clearTitle": "Hichapụ akụkọ?",
+      "clearMessage": "Nke a ga-ewepụ ndepụta ihe ị kpọrọ n'oge na-adịbeghị anya. Ndepụta gị, surah ndị ị hụrụ n'anya na ihe ị budatara ga-anọgide dị ka ha dị."
     }
   },
   "common": {

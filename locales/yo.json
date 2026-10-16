@@ -104,7 +104,9 @@
       "notes": "Àwọn àkọsílẹ̀",
       "playlists": "Àwọn àtòjọ ìṣeré",
       "reciters": "Àwọn olùkà",
-      "uploads": "Àwọn ohun tí a rán sókè"
+      "uploads": "Àwọn ohun tí a rán sókè",
+      "history": "Ìtàn",
+      "noHistoryYet": "A kò tíì ṣe nǹkan kankan"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Gbogbo súrà tí o fẹ́ràn ti wà ní ìpamọ́ tẹ́lẹ̀.",
@@ -132,6 +134,13 @@
     "uploads": {
       "removeAllUploads": "Yọ gbogbo ohun tí a rán sókè kúrò",
       "uploadRecitationsToSeeThem": "Rán àwọn kíkà sókè láti rí wọn níbí"
+    },
+    "history": {
+      "emptyTitle": "Kò sí ìtàn síbẹ̀",
+      "emptySubtitle": "Àwọn sūrah tí o bá ṣe yóò hàn níbí",
+      "clear": "Pa ìtàn rẹ́",
+      "clearTitle": "Pa ìtàn rẹ́?",
+      "clearMessage": "Èyí yóò yọ àtòkọ ohun tí o ṣe láìpẹ́ kúrò. Àwọn àtòkọ rẹ, àwọn sūrah tí o fẹ́ràn àti ìgbàsílẹ̀ rẹ yóò wà bí wọ́n ṣe wà."
     }
   },
   "common": {

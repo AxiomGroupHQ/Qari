@@ -105,7 +105,9 @@
       "notes": "नोट",
       "playlists": "प्लेलिस्ट",
       "reciters": "क़ारी",
-      "uploads": "अपलोड"
+      "uploads": "अपलोड",
+      "history": "इतिहास",
+      "noHistoryYet": "अभी तक कुछ नहीं चलाया गया"
     },
     "loved": {
       "allLovedSurahsAreAlready": "सभी पसंदीदा सूरहें पहले से डाउनलोड हैं।",
@@ -133,6 +135,13 @@
     "uploads": {
       "removeAllUploads": "सभी अपलोड हटाएँ",
       "uploadRecitationsToSeeThem": "तिलावत अपलोड करें ताकि वे यहाँ दिखें"
+    },
+    "history": {
+      "emptyTitle": "अभी कोई इतिहास नहीं है",
+      "emptySubtitle": "आप जो सूरतें चलाएँगे वे यहाँ दिखेंगी",
+      "clear": "इतिहास साफ़ करें",
+      "clearTitle": "इतिहास साफ़ करें?",
+      "clearMessage": "इससे हाल ही में चलाई गई सूची हट जाएगी। आपकी प्लेलिस्ट, पसंदीदा सूरतें और डाउनलोड जैसे हैं वैसे ही रहेंगे।"
     }
   },
   "common": {

@@ -108,7 +108,9 @@
       "notes": "Hoorɗe",
       "playlists": "Liste",
       "reciters": "Ɗiɗɗorɓe",
-      "uploads": "Nastinaaɗe"
+      "uploads": "Nastinaaɗe",
+      "history": "Tuugnorgal",
+      "noHistoryYet": "Walaa ko ɗaɓɓitaama taa"
     },
     "loved": {
       "allLovedSurahsAreAlready": "Sura yiɗaaɗe fuu ndaɓɓaama.",
@@ -136,6 +138,13 @@
     "uploads": {
       "removeAllUploads": "Ittu nastinaaɗe fuu",
       "uploadRecitationsToSeeThem": "Nastin ɗiɗɗugo ngam yi'ugo ɗo"
+    },
+    "history": {
+      "emptyTitle": "Walaa tuugnorgal taa",
+      "emptySubtitle": "Cuuraaji ɗi a ɗaɓɓitata ceeɗan ɗoo",
+      "clear": "Ittu tuugnorgal",
+      "clearTitle": "Ittu tuugnorgal na?",
+      "clearMessage": "Ɗum ittay lisiti ko ɗaɓɓitaama sera. Lisiti maa, cuuraaji muñɗa e ko ndaañaa ina ngoodi."
     }
   },
   "common": {
