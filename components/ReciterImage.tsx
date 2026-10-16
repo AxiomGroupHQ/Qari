@@ -12,10 +12,19 @@ interface ReciterImageProps {
   style?: StyleProp<ViewStyle>;
   profileIconSize?: number;
   blurRadius?: number;
+  /** Use the bundled headshot first when there is one; the remote URL is the fallback. */
+  preferLocal?: boolean;
 }
 
 export const ReciterImage: React.FC<ReciterImageProps> = React.memo(
-  ({imageUrl, reciterName = '', style, profileIconSize, blurRadius}) => {
+  ({
+    imageUrl,
+    reciterName = '',
+    style,
+    profileIconSize,
+    blurRadius,
+    preferLocal,
+  }) => {
     const {theme} = useTheme();
 
     const styles = useMemo(
@@ -66,7 +75,11 @@ export const ReciterImage: React.FC<ReciterImageProps> = React.memo(
       setRemoteFailed(false);
     }, [imageUrl]);
     const imageSource =
-      imageUrl && !remoteFailed ? {uri: imageUrl} : (localImageSource ?? null);
+      preferLocal && localImageSource
+        ? localImageSource
+        : imageUrl && !remoteFailed
+          ? {uri: imageUrl}
+          : (localImageSource ?? null);
 
     return (
       <View style={[styles.container, style]}>
@@ -76,7 +89,9 @@ export const ReciterImage: React.FC<ReciterImageProps> = React.memo(
             source={imageSource}
             style={styles.image}
             contentFit="cover"
-            recyclingKey={imageUrl || formattedName}
+            recyclingKey={
+              preferLocal ? formattedName : imageUrl || formattedName
+            }
             transition={100}
             onError={() => {
               if (imageUrl) setRemoteFailed(true);
