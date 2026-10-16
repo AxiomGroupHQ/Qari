@@ -7,7 +7,7 @@ import {t} from '@/i18n';
 
 // Always keep the category list under any adhkar screen, so a page opened
 // directly (reload, deep link, shared URL) still has a Back target.
-export const unstable_settings = {initialRouteName: 'index'};
+export const unstable_settings = {initialRouteName: 'adhkar/index'};
 
 export default function AdhkarLayout() {
   const {theme} = useTheme();
@@ -36,13 +36,13 @@ export default function AdhkarLayout() {
             headerBackButtonDisplayMode: 'minimal',
           }}>
           <Stack.Screen
-            name="index"
+            name="adhkar/index"
             options={{title: t('recitersView.adhkar')}}
           />
-          <Stack.Screen name="[superId]/index" />
-          <Stack.Screen name="[superId]/[dhikrId]" />
-          <Stack.Screen name="saved/index" />
-          <Stack.Screen name="saved/[dhikrId]" />
+          <Stack.Screen name="adhkar/[superId]/index" />
+          <Stack.Screen name="adhkar/[superId]/[dhikrId]" />
+          <Stack.Screen name="adhkar/saved/index" />
+          <Stack.Screen name="adhkar/saved/[dhikrId]" />
         </Stack>
       </AdhkarAudioProvider>
     </ErrorBoundary>
