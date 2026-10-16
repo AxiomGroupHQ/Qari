@@ -22,6 +22,7 @@ export const featureFlags = {
   tafsir: true,
   sleepTimer: true,
   sharedPlaylists: false, // turn on after the share API is deployed
+  discoverFeed: false, // random ayah feed, off until reviewed
 } as const;
 
 export type FeatureFlag = keyof typeof featureFlags;

@@ -828,5 +828,13 @@
     "retry": "Try again",
     "itemCount_one": "{{count}} recitation",
     "itemCount_other": "{{count}} recitations"
+  },
+  "discover": {
+    "title": "Discover",
+    "loading": "Finding a recitation",
+    "empty": "Could not find a recitation right now",
+    "retry": "Try again",
+    "close": "Close",
+    "paused": "Paused, tap to resume"
   }
 }
