@@ -26,7 +26,11 @@
     "showInstruction": "បង្ហាញការណែនាំ",
     "tapBookmarkHint": "ចុចរូបតំណាងចំណាំលើហ្ស៊ីគ្រណាមួយ ដើម្បីរក្សាទុកនៅទីនេះ",
     "tapToCount": "ចុចដើម្បីរាប់",
-    "tapToIncrement": "ចុចដើម្បីបង្កើនចំនួន"
+    "tapToIncrement": "ចុចដើម្បីបង្កើនចំនួន",
+    "reciteTimes": "សូត្រ {{n}}×",
+    "playAllStop": "ឈប់",
+    "playAllPrevious": "មុន",
+    "playAllNext": "បន្ទាប់"
   },
   "app": {
     "errorInitializingPlayer": "កំហុសពេលចាប់ផ្តើមកម្មវិធីចាក់សំឡេង៖ {{message}}",
@@ -250,7 +254,8 @@
     "subtitle_other": "បានទាញយក • {{count}} ស៊ូរ៉ោះ"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "សូមអភ័យទោស មានកំហុសកើតឡើង"
+    "sorryThereWasAnError": "សូមអភ័យទោស មានកំហុសកើតឡើង",
+    "tryAgain": "ព្យាយាមម្តងទៀត"
   },
   "hero": {
     "browseAllReciters": {

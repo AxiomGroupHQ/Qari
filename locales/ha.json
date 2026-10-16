@@ -27,7 +27,11 @@
     "showInstruction": "Nuna umarni",
     "tapBookmarkHint": "Taɓa alamar bookmark a kowane zikiri don ajiye shi a nan",
     "tapToCount": "Taɓa don ƙirga",
-    "tapToIncrement": "Taɓa don ƙara ƙirga"
+    "tapToIncrement": "Taɓa don ƙara ƙirga",
+    "reciteTimes": "Karanta {{n}}×",
+    "playAllStop": "Tsaya",
+    "playAllPrevious": "Na baya",
+    "playAllNext": "Na gaba"
   },
   "app": {
     "errorInitializingPlayer": "Kuskure wajen fara na'urar kunna sauti: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "An sauke • surori {{count}}"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Yi haƙuri.. an sami kuskure"
+    "sorryThereWasAnError": "Yi haƙuri.. an sami kuskure",
+    "tryAgain": "Sake gwadawa"
   },
   "hero": {
     "browseAllReciters": {

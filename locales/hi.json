@@ -27,7 +27,11 @@
     "showInstruction": "निर्देश दिखाएँ",
     "tapBookmarkHint": "इसे यहाँ सहेजने के लिए किसी भी ज़िक्र पर बुकमार्क आइकन पर टैप करें",
     "tapToCount": "गिनने के लिए टैप करें",
-    "tapToIncrement": "गिनती बढ़ाने के लिए टैप करें"
+    "tapToIncrement": "गिनती बढ़ाने के लिए टैप करें",
+    "reciteTimes": "{{n}}× पढ़ें",
+    "playAllStop": "रोकें",
+    "playAllPrevious": "पिछला",
+    "playAllNext": "अगला"
   },
   "app": {
     "errorInitializingPlayer": "प्लेयर शुरू करने में त्रुटि: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "डाउनलोड किया गया • {{count}} सूरहें"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "क्षमा करें.. एक त्रुटि हुई"
+    "sorryThereWasAnError": "क्षमा करें.. एक त्रुटि हुई",
+    "tryAgain": "फिर कोशिश करें"
   },
   "hero": {
     "browseAllReciters": {

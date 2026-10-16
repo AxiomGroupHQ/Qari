@@ -28,7 +28,11 @@
     "showInstruction": "Afficher les instructions",
     "tapBookmarkHint": "Touchez l'icône de signet sur un dhikr pour l'enregistrer ici",
     "tapToCount": "Touchez pour compter",
-    "tapToIncrement": "Touchez pour augmenter le compteur"
+    "tapToIncrement": "Touchez pour augmenter le compteur",
+    "reciteTimes": "Réciter {{n}}×",
+    "playAllStop": "Arrêter",
+    "playAllPrevious": "Précédent",
+    "playAllNext": "Suivant"
   },
   "app": {
     "errorInitializingPlayer": "Erreur d'initialisation du lecteur : {{message}}",
@@ -255,7 +259,8 @@
     "subtitle_other": "Téléchargées • {{count}} sourates"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Désolé.. une erreur s'est produite"
+    "sorryThereWasAnError": "Désolé.. une erreur s'est produite",
+    "tryAgain": "Réessayer"
   },
   "hero": {
     "browseAllReciters": {

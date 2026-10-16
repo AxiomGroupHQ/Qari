@@ -28,7 +28,11 @@
     "showInstruction": "መምርሒ ኣርኢ",
     "tapBookmarkHint": "ኣብዚ ንምቕማጥ ኣብ ዝኾነ ዚክሪ ዘሎ ምልክት ምልክት ጠውቕ",
     "tapToCount": "ንምቝጻር ጠውቕ",
-    "tapToIncrement": "ቝጽሪ ንምውሳኽ ጠውቕ"
+    "tapToIncrement": "ቝጽሪ ንምውሳኽ ጠውቕ",
+    "reciteTimes": "{{n}}× ኣንብብ",
+    "playAllStop": "ኣቋርጽ",
+    "playAllPrevious": "ዝሓለፈ",
+    "playAllNext": "ዝቕጽል"
   },
   "app": {
     "errorInitializingPlayer": "ተጻዋታይ ምጅማር ኣይተኻእለን፦ {{message}}",
@@ -255,7 +259,8 @@
     "subtitle_other": "ወሪዶም • {{count}} ሱራታት"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "ይቕሬታ.. ጌጋ ተፈጢሩ"
+    "sorryThereWasAnError": "ይቕሬታ.. ጌጋ ተፈጢሩ",
+    "tryAgain": "ዳግም ፈትን"
   },
   "hero": {
     "browseAllReciters": {

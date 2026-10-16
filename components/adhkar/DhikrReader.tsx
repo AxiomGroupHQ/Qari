@@ -103,7 +103,7 @@ export const DhikrReader: React.FC<DhikrReaderProps> = ({
           <View style={styles.repeatBadgeContainer}>
             <View style={styles.repeatBadge}>
               <Text style={styles.repeatBadgeText}>
-                Recite {dhikr.repeatCount} times
+                {t('adhkarUi.reciteTimes', {n: dhikr.repeatCount})}
               </Text>
             </View>
           </View>
@@ -115,20 +115,6 @@ export const DhikrReader: React.FC<DhikrReaderProps> = ({
             <Text style={styles.arabicText}>{dhikr.arabic}</Text>
           </View>
         ) : null}
-
-        {/* Audio Controls with action buttons - lazy loaded for performance */}
-        {showControls && (
-          <View style={styles.audioSection}>
-            <AdhkarAudioControls
-              audioFile={dhikr.audioFile}
-              onCopy={handleOpenCopyOptions}
-              onBookmark={onSaveToggle}
-              onShare={handleShare}
-              onSettings={handleOpenSettings}
-              isBookmarked={isSaved}
-            />
-          </View>
-        )}
 
         {/* Divider */}
         {showTranslation && dhikr.translation ? (
@@ -199,6 +185,19 @@ export const DhikrReader: React.FC<DhikrReaderProps> = ({
         {/* Bottom padding */}
         <View style={styles.bottomSpacer} />
       </ScrollView>
+      {/* Controls stay pinned below the scrolling text */}
+      {showControls && (
+        <View style={styles.audioSection}>
+          <AdhkarAudioControls
+            audioFile={dhikr.audioFile}
+            onCopy={handleOpenCopyOptions}
+            onBookmark={onSaveToggle}
+            onShare={handleShare}
+            onSettings={handleOpenSettings}
+            isBookmarked={isSaved}
+          />
+        </View>
+      )}
     </View>
   );
 };
@@ -258,8 +257,9 @@ const createStyles = (theme: Theme, fontSizes?: FontSizes) =>
       paddingHorizontal: moderateScale(8),
     },
     audioSection: {
-      marginTop: moderateScale(4),
-      marginBottom: moderateScale(8),
+      paddingHorizontal: moderateScale(16),
+      paddingTop: moderateScale(4),
+      paddingBottom: moderateScale(8),
     },
     divider: {
       height: 1,

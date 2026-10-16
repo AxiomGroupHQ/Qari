@@ -31,7 +31,11 @@
     "showInstruction": "ڕێنمایی پیشان بدە",
     "tapBookmarkHint": "لەسەر هێمای نیشانە لە هەر زیکرێک دابگرە بۆ پاشەکەوتکردنی لێرە",
     "tapToCount": "دابگرە بۆ ژماردن",
-    "tapToIncrement": "دابگرە بۆ زیادکردنی ژمارە"
+    "tapToIncrement": "دابگرە بۆ زیادکردنی ژمارە",
+    "reciteTimes": "{{n}}× بیخوێنە",
+    "playAllStop": "وەستاندن",
+    "playAllPrevious": "پێشوو",
+    "playAllNext": "دواتر"
   },
   "app": {
     "errorInitializingPlayer": "هەڵە لە دەستپێکردنی لێدەر: {{message}}",
@@ -255,7 +259,8 @@
     "subtitle_other": "داگیراوە • {{count}} سوورەت"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "ببورە، هەڵەیەک ڕوویدا"
+    "sorryThereWasAnError": "ببورە، هەڵەیەک ڕوویدا",
+    "tryAgain": "دووبارە هەوڵبدەرەوە"
   },
   "hero": {
     "browseAllReciters": {

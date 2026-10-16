@@ -28,7 +28,11 @@
     "showInstruction": "Wone ndigal",
     "tapBookmarkHint": "Bësal ni bookmark ci benn dhikr ngir denc ko fii",
     "tapToCount": "Bësal ngir waññ",
-    "tapToIncrement": "Bësal ngir yokk waññ"
+    "tapToIncrement": "Bësal ngir yokk waññ",
+    "reciteTimes": "Jàng {{n}}×",
+    "playAllStop": "Taxaw",
+    "playAllPrevious": "Bi jiitu",
+    "playAllNext": "Bi ci topp"
   },
   "app": {
     "errorInitializingPlayer": "Njumte ci tambali joŋantekat bi: {{message}}",
@@ -255,7 +259,8 @@
     "subtitle_other": "Yeb nañu • {{count}} surat"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Baal ma.. am na njumte"
+    "sorryThereWasAnError": "Baal ma.. am na njumte",
+    "tryAgain": "Jéemaat"
   },
   "hero": {
     "browseAllReciters": {

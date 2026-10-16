@@ -28,7 +28,11 @@
     "showInstruction": "Mostra istruzioni",
     "tapBookmarkHint": "Tocca l'icona del segnalibro su un dhikr per salvarlo qui",
     "tapToCount": "Tocca per contare",
-    "tapToIncrement": "Tocca per aumentare il conteggio"
+    "tapToIncrement": "Tocca per aumentare il conteggio",
+    "reciteTimes": "Recita {{n}}×",
+    "playAllStop": "Ferma",
+    "playAllPrevious": "Precedente",
+    "playAllNext": "Successivo"
   },
   "app": {
     "errorInitializingPlayer": "Errore durante l'inizializzazione del lettore: {{message}}",
@@ -255,7 +259,8 @@
     "subtitle_other": "Scaricate • {{count}} sure"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Si è verificato un errore"
+    "sorryThereWasAnError": "Si è verificato un errore",
+    "tryAgain": "Riprova"
   },
   "hero": {
     "browseAllReciters": {

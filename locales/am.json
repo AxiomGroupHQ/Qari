@@ -27,7 +27,11 @@
     "showInstruction": "መመሪያ አሳይ",
     "tapBookmarkHint": "እዚህ ለማስቀመጥ በማንኛውም ዚክር ላይ ያለውን የዕልባት አዶ ይንኩ",
     "tapToCount": "ለመቁጠር ይንኩ",
-    "tapToIncrement": "ቆጠራውን ለመጨመር ይንኩ"
+    "tapToIncrement": "ቆጠራውን ለመጨመር ይንኩ",
+    "reciteTimes": "{{n}}× ያንብቡ",
+    "playAllStop": "አቁም",
+    "playAllPrevious": "ቀዳሚ",
+    "playAllNext": "ቀጣይ"
   },
   "app": {
     "errorInitializingPlayer": "ማጫወቻውን ማስጀመር አልተሳካም፦ {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "ወርደዋል • {{count}} ሱራዎች"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "ይቅርታ.. ስህተት ተፈጥሯል"
+    "sorryThereWasAnError": "ይቅርታ.. ስህተት ተፈጥሯል",
+    "tryAgain": "እንደገና ሞክር"
   },
   "hero": {
     "browseAllReciters": {

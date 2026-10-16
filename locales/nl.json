@@ -27,7 +27,11 @@
     "showInstruction": "Instructie tonen",
     "tapBookmarkHint": "Tik op het bladwijzericoon bij een dhikr om hem hier op te slaan",
     "tapToCount": "Tik om te tellen",
-    "tapToIncrement": "Tik om de teller te verhogen"
+    "tapToIncrement": "Tik om de teller te verhogen",
+    "reciteTimes": "{{n}}× reciteren",
+    "playAllStop": "Stop",
+    "playAllPrevious": "Vorige",
+    "playAllNext": "Volgende"
   },
   "app": {
     "errorInitializingPlayer": "Fout bij het initialiseren van de speler: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Gedownload • {{count}} soera's"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Sorry, er is een fout opgetreden"
+    "sorryThereWasAnError": "Sorry, er is een fout opgetreden",
+    "tryAgain": "Opnieuw proberen"
   },
   "hero": {
     "browseAllReciters": {

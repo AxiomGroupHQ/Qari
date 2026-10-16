@@ -27,7 +27,11 @@
     "showInstruction": "لارښوونه وښایاست",
     "tapBookmarkHint": "دلته د خوندي کولو لپاره په هر ذکر کې د نښې په انځور کېکاږئ",
     "tapToCount": "د شمېرلو لپاره کېکاږئ",
-    "tapToIncrement": "د شمېرې د زیاتولو لپاره کېکاږئ"
+    "tapToIncrement": "د شمېرې د زیاتولو لپاره کېکاږئ",
+    "reciteTimes": "{{n}}× تکرار کړئ",
+    "playAllStop": "درول",
+    "playAllPrevious": "مخکینی",
+    "playAllNext": "راتلونکی"
   },
   "app": {
     "errorInitializingPlayer": "د غږ پلیر په چالانولو کې تېروتنه: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "ښکته شوي • {{count}} سورتونه"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "بښنه غواړو، تېروتنه وشوه"
+    "sorryThereWasAnError": "بښنه غواړو، تېروتنه وشوه",
+    "tryAgain": "بیا هڅه وکړئ"
   },
   "hero": {
     "browseAllReciters": {

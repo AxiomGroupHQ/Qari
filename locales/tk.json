@@ -27,7 +27,11 @@
     "showInstruction": "Görkezmäni görkez",
     "tapBookmarkHint": "Bu ýerde saklamak üçin islendik zikirdäki bellik nyşanyna basyň",
     "tapToCount": "Sanamak üçin basyň",
-    "tapToIncrement": "Sanawy köpeltmek üçin basyň"
+    "tapToIncrement": "Sanawy köpeltmek üçin basyň",
+    "reciteTimes": "{{n}}× okaň",
+    "playAllStop": "Duruz",
+    "playAllPrevious": "Öňki",
+    "playAllNext": "Indiki"
   },
   "app": {
     "errorInitializingPlayer": "Pleýeri işe girizmekde ýalňyşlyk: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Ýükläp alnan • {{count}} süre"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Bagyşlaň, ýalňyşlyk ýüze çykdy"
+    "sorryThereWasAnError": "Bagyşlaň, ýalňyşlyk ýüze çykdy",
+    "tryAgain": "Gaýtadan synanyşyň"
   },
   "hero": {
     "browseAllReciters": {

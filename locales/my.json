@@ -26,7 +26,11 @@
     "showInstruction": "ညွှန်ကြားချက် ပြရန်",
     "tapBookmarkHint": "ဤနေရာတွင် သိမ်းရန် ဇိက်ရ်တစ်ခုခုရှိ bookmark အိုင်ကွန်ကို နှိပ်ပါ",
     "tapToCount": "ရေတွက်ရန် နှိပ်ပါ",
-    "tapToIncrement": "ရေတွက်မှု တိုးရန် နှိပ်ပါ"
+    "tapToIncrement": "ရေတွက်မှု တိုးရန် နှိပ်ပါ",
+    "reciteTimes": "{{n}}× ရွတ်ပါ",
+    "playAllStop": "ရပ်ရန်",
+    "playAllPrevious": "ယခင်",
+    "playAllNext": "နောက်"
   },
   "app": {
     "errorInitializingPlayer": "အသံဖွင့်စက် စတင်ရာတွင် အမှားဖြစ်ပွားသည်: {{message}}",
@@ -250,7 +254,8 @@
     "subtitle_other": "ဒေါင်းလုဒ်ပြီး • စူရဟ် {{count}} ပုဒ်"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "ဝမ်းနည်းပါသည်၊ အမှားဖြစ်ပွားခဲ့သည်"
+    "sorryThereWasAnError": "ဝမ်းနည်းပါသည်၊ အမှားဖြစ်ပွားခဲ့သည်",
+    "tryAgain": "ထပ်စမ်းပါ"
   },
   "hero": {
     "browseAllReciters": {

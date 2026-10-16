@@ -27,7 +27,11 @@
     "showInstruction": "നിർദ്ദേശം കാണിക്കുക",
     "tapBookmarkHint": "ഇവിടെ സംരക്ഷിക്കാൻ ഏതെങ്കിലും ദിക്റിലെ ബുക്ക്മാർക്ക് ഐക്കണിൽ ടാപ്പ് ചെയ്യുക",
     "tapToCount": "എണ്ണാൻ ടാപ്പ് ചെയ്യുക",
-    "tapToIncrement": "എണ്ണം കൂട്ടാൻ ടാപ്പ് ചെയ്യുക"
+    "tapToIncrement": "എണ്ണം കൂട്ടാൻ ടാപ്പ് ചെയ്യുക",
+    "reciteTimes": "{{n}}× ചൊല്ലുക",
+    "playAllStop": "നിർത്തുക",
+    "playAllPrevious": "മുമ്പത്തേത്",
+    "playAllNext": "അടുത്തത്"
   },
   "app": {
     "errorInitializingPlayer": "പ്ലെയർ ആരംഭിക്കുന്നതിൽ പിശക്: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "ഡൗൺലോഡ് ചെയ്തത് • {{count}} സൂറകൾ"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "ക്ഷമിക്കണം.. ഒരു പിശക് സംഭവിച്ചു"
+    "sorryThereWasAnError": "ക്ഷമിക്കണം.. ഒരു പിശക് സംഭവിച്ചു",
+    "tryAgain": "വീണ്ടും ശ്രമിക്കുക"
   },
   "hero": {
     "browseAllReciters": {

@@ -27,7 +27,11 @@
     "showInstruction": "Нишон додани дастур",
     "tapBookmarkHint": "Барои захира кардан дар ин ҷо ба нишони хатбарак дар ягон зикр зер кунед",
     "tapToCount": "Барои шумурдан зер кунед",
-    "tapToIncrement": "Барои зиёд кардани шумора зер кунед"
+    "tapToIncrement": "Барои зиёд кардани шумора зер кунед",
+    "reciteTimes": "{{n}}× хонед",
+    "playAllStop": "Қатъ",
+    "playAllPrevious": "Қаблӣ",
+    "playAllNext": "Баъдӣ"
   },
   "app": {
     "errorInitializingPlayer": "Хато ҳангоми оғоз кардани плеер: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Боргиришуда • {{count}} сура"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Бубахшед, хатое рух дод"
+    "sorryThereWasAnError": "Бубахшед, хатое рух дод",
+    "tryAgain": "Бори дигар кӯшиш кунед"
   },
   "hero": {
     "browseAllReciters": {

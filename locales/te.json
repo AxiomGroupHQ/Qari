@@ -27,7 +27,11 @@
     "showInstruction": "సూచనలను చూపండి",
     "tapBookmarkHint": "ఇక్కడ సేవ్ చేయడానికి ఏదైనా జిక్ర్‌పై బుక్‌మార్క్ చిహ్నాన్ని నొక్కండి",
     "tapToCount": "లెక్కించడానికి నొక్కండి",
-    "tapToIncrement": "లెక్కను పెంచడానికి నొక్కండి"
+    "tapToIncrement": "లెక్కను పెంచడానికి నొక్కండి",
+    "reciteTimes": "{{n}}× పఠించండి",
+    "playAllStop": "ఆపు",
+    "playAllPrevious": "మునుపటి",
+    "playAllNext": "తదుపరి"
   },
   "app": {
     "errorInitializingPlayer": "ప్లేయర్‌ను ప్రారంభించడంలో లోపం: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "డౌన్‌లోడ్ అయినవి • {{count}} సూరాలు"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "క్షమించండి.. లోపం జరిగింది"
+    "sorryThereWasAnError": "క్షమించండి.. లోపం జరిగింది",
+    "tryAgain": "మళ్లీ ప్రయత్నించండి"
   },
   "hero": {
     "browseAllReciters": {

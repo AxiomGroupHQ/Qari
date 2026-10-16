@@ -27,7 +27,11 @@
     "showInstruction": "Onyesha maelekezo",
     "tapBookmarkHint": "Gusa aikoni ya alama kwenye dhikri yoyote ili kuihifadhi hapa",
     "tapToCount": "Gusa kuhesabu",
-    "tapToIncrement": "Gusa kuongeza hesabu"
+    "tapToIncrement": "Gusa kuongeza hesabu",
+    "reciteTimes": "Soma {{n}}×",
+    "playAllStop": "Simamisha",
+    "playAllPrevious": "Iliyotangulia",
+    "playAllNext": "Inayofuata"
   },
   "app": {
     "errorInitializingPlayer": "Hitilafu ya kuanzisha kicheza: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Imepakuliwa • sura {{count}}"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Samahani.. kulikuwa na hitilafu"
+    "sorryThereWasAnError": "Samahani.. kulikuwa na hitilafu",
+    "tryAgain": "Jaribu tena"
   },
   "hero": {
     "browseAllReciters": {

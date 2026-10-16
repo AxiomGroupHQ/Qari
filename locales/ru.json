@@ -29,7 +29,11 @@
     "showInstruction": "Показать инструкцию",
     "tapBookmarkHint": "Нажмите значок закладки у любого зикра, чтобы сохранить его здесь",
     "tapToCount": "Нажмите, чтобы считать",
-    "tapToIncrement": "Нажмите, чтобы увеличить счёт"
+    "tapToIncrement": "Нажмите, чтобы увеличить счёт",
+    "reciteTimes": "Повторить {{n}}×",
+    "playAllStop": "Стоп",
+    "playAllPrevious": "Назад",
+    "playAllNext": "Далее"
   },
   "app": {
     "errorInitializingPlayer": "Ошибка инициализации проигрывателя: {{message}}",
@@ -259,7 +263,8 @@
     "subtitle_other": "Скачано • {{count}} суры"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Извините, произошла ошибка"
+    "sorryThereWasAnError": "Извините, произошла ошибка",
+    "tryAgain": "Повторить попытку"
   },
   "hero": {
     "browseAllReciters": {

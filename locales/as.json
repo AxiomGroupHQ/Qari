@@ -27,7 +27,11 @@
     "showInstruction": "নিৰ্দেশনা দেখুৱাওক",
     "tapBookmarkHint": "ইয়াত সংৰক্ষণ কৰিবলৈ যিকোনো জিকিৰৰ বুকমাৰ্ক আইকনত টেপ কৰক",
     "tapToCount": "গণিবলৈ টেপ কৰক",
-    "tapToIncrement": "গণনা বঢ়াবলৈ টেপ কৰক"
+    "tapToIncrement": "গণনা বঢ়াবলৈ টেপ কৰক",
+    "reciteTimes": "{{n}}× পঢ়ক",
+    "playAllStop": "বন্ধ কৰক",
+    "playAllPrevious": "আগৰটো",
+    "playAllNext": "পিছৰটো"
   },
   "app": {
     "errorInitializingPlayer": "প্লেয়াৰ আৰম্ভ কৰোঁতে ত্ৰুটি: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "ডাউনলোড কৰা • {{count}} টা ছুৰা"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "দুঃখিত, এটা ত্ৰুটি হ'ল"
+    "sorryThereWasAnError": "দুঃখিত, এটা ত্ৰুটি হ'ল",
+    "tryAgain": "আকৌ চেষ্টা কৰক"
   },
   "hero": {
     "browseAllReciters": {

@@ -26,7 +26,11 @@
     "showInstruction": "แสดงคำแนะนำ",
     "tapBookmarkHint": "แตะไอคอนบุ๊กมาร์กที่ซิกิรใดก็ได้เพื่อบันทึกไว้ที่นี่",
     "tapToCount": "แตะเพื่อนับ",
-    "tapToIncrement": "แตะเพื่อเพิ่มจำนวนนับ"
+    "tapToIncrement": "แตะเพื่อเพิ่มจำนวนนับ",
+    "reciteTimes": "อ่าน {{n}} ครั้ง",
+    "playAllStop": "หยุด",
+    "playAllPrevious": "ก่อนหน้า",
+    "playAllNext": "ถัดไป"
   },
   "app": {
     "errorInitializingPlayer": "เริ่มต้นเครื่องเล่นไม่สำเร็จ: {{message}}",
@@ -250,7 +254,8 @@
     "subtitle_other": "ดาวน์โหลดแล้ว • {{count}} ซูเราะฮ์"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "ขออภัย เกิดข้อผิดพลาด"
+    "sorryThereWasAnError": "ขออภัย เกิดข้อผิดพลาด",
+    "tryAgain": "ลองอีกครั้ง"
   },
   "hero": {
     "browseAllReciters": {

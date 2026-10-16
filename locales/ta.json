@@ -27,7 +27,11 @@
     "showInstruction": "வழிமுறையைக் காட்டு",
     "tapBookmarkHint": "இங்கே சேமிக்க எந்த திக்ரிலும் புக்மார்க் ஐகானைத் தட்டவும்",
     "tapToCount": "எண்ணத் தட்டவும்",
-    "tapToIncrement": "எண்ணிக்கையை அதிகரிக்கத் தட்டவும்"
+    "tapToIncrement": "எண்ணிக்கையை அதிகரிக்கத் தட்டவும்",
+    "reciteTimes": "{{n}}× ஓதுங்கள்",
+    "playAllStop": "நிறுத்து",
+    "playAllPrevious": "முந்தையது",
+    "playAllNext": "அடுத்தது"
   },
   "app": {
     "errorInitializingPlayer": "பிளேயரைத் தொடங்குவதில் பிழை: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "பதிவிறக்கப்பட்டவை • {{count}} சூராக்கள்"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "மன்னிக்கவும்.. ஒரு பிழை ஏற்பட்டது"
+    "sorryThereWasAnError": "மன்னிக்கவும்.. ஒரு பிழை ஏற்பட்டது",
+    "tryAgain": "மீண்டும் முயற்சிக்கவும்"
   },
   "hero": {
     "browseAllReciters": {

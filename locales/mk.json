@@ -27,7 +27,11 @@
     "showInstruction": "Прикажи упатство",
     "tapBookmarkHint": "Допрете ја иконата за обележувач на кој било зикр за да го зачувате овде",
     "tapToCount": "Допрете за броење",
-    "tapToIncrement": "Допрете за зголемување на бројот"
+    "tapToIncrement": "Допрете за зголемување на бројот",
+    "reciteTimes": "Повторете {{n}}×",
+    "playAllStop": "Запри",
+    "playAllPrevious": "Претходно",
+    "playAllNext": "Следно"
   },
   "app": {
     "errorInitializingPlayer": "Грешка при иницијализација на плеерот: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Преземено • {{count}} суре"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Извинете.. настана грешка"
+    "sorryThereWasAnError": "Извинете.. настана грешка",
+    "tryAgain": "Обидете се повторно"
   },
   "hero": {
     "browseAllReciters": {

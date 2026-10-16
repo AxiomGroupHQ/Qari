@@ -1,3 +1,4 @@
+import {cleanArabic, cleanTranslation} from '@/utils/adhkarText';
 import * as SQLite from 'expo-sqlite';
 import type {
   AdhkarCategory,
@@ -324,8 +325,8 @@ class AdhkarDatabaseService {
     return adhkar.map(dhikr => ({
       id: dhikr.id,
       categoryId: dhikr.category_id,
-      arabic: dhikr.arabic,
-      translation: dhikr.translation,
+      arabic: cleanArabic(dhikr.arabic),
+      translation: cleanTranslation(dhikr.translation),
       transliteration: dhikr.transliteration,
       instruction: dhikr.instruction,
       repeatCount: dhikr.repeat_count,
@@ -350,8 +351,8 @@ class AdhkarDatabaseService {
     return adhkar.map(dhikr => ({
       id: dhikr.id,
       categoryId: dhikr.category_id,
-      arabic: dhikr.arabic,
-      translation: dhikr.translation,
+      arabic: cleanArabic(dhikr.arabic),
+      translation: cleanTranslation(dhikr.translation),
       transliteration: dhikr.transliteration,
       instruction: dhikr.instruction,
       repeatCount: dhikr.repeat_count,
@@ -374,8 +375,8 @@ class AdhkarDatabaseService {
     return {
       id: dhikr.id,
       categoryId: dhikr.category_id,
-      arabic: dhikr.arabic,
-      translation: dhikr.translation,
+      arabic: cleanArabic(dhikr.arabic),
+      translation: cleanTranslation(dhikr.translation),
       transliteration: dhikr.transliteration,
       instruction: dhikr.instruction,
       repeatCount: dhikr.repeat_count,

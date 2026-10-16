@@ -28,7 +28,11 @@
     "showInstruction": "Hollu ñaawngol",
     "tapBookmarkHint": "Taɓ anndin maandaa ɗon e dhikr kala ngam sabbitaade ɗoo",
     "tapToCount": "Taɓ ngam limtaade",
-    "tapToIncrement": "Taɓ ngam ɓeydaade limtol"
+    "tapToIncrement": "Taɓ ngam ɓeydaade limtol",
+    "reciteTimes": "Janngu {{n}}×",
+    "playAllStop": "Daggu",
+    "playAllPrevious": "Ɓuri",
+    "playAllNext": "Ɓaawo"
   },
   "app": {
     "errorInitializingPlayer": "Fitaande jooɗorde jaɓɓi: {{message}}",
@@ -255,7 +259,8 @@
     "subtitle_other": "Ndaɓɓaama • sura {{count}}"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Yaafo.. fitaande waɗii"
+    "sorryThereWasAnError": "Yaafo.. fitaande waɗii",
+    "tryAgain": "Eto fahin"
   },
   "hero": {
     "browseAllReciters": {

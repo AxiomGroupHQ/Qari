@@ -27,7 +27,11 @@
     "showInstruction": "ಸೂಚನೆ ತೋರಿಸಿ",
     "tapBookmarkHint": "ಇಲ್ಲಿ ಉಳಿಸಲು ಯಾವುದೇ ದಿಕ್ರ್‌ನಲ್ಲಿ ಬುಕ್‌ಮಾರ್ಕ್ ಐಕಾನ್ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ",
     "tapToCount": "ಎಣಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ",
-    "tapToIncrement": "ಎಣಿಕೆ ಹೆಚ್ಚಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ"
+    "tapToIncrement": "ಎಣಿಕೆ ಹೆಚ್ಚಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ",
+    "reciteTimes": "{{n}}× ಪಠಿಸಿ",
+    "playAllStop": "ನಿಲ್ಲಿಸಿ",
+    "playAllPrevious": "ಹಿಂದಿನದು",
+    "playAllNext": "ಮುಂದಿನದು"
   },
   "app": {
     "errorInitializingPlayer": "ಪ್ಲೇಯರ್ ಪ್ರಾರಂಭಿಸುವಲ್ಲಿ ದೋಷ: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "ಡೌನ್‌ಲೋಡ್ ಆಗಿವೆ • {{count}} ಸೂರಗಳು"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "ಕ್ಷಮಿಸಿ.. ಒಂದು ದೋಷ ಉಂಟಾಯಿತು"
+    "sorryThereWasAnError": "ಕ್ಷಮಿಸಿ.. ಒಂದು ದೋಷ ಉಂಟಾಯಿತು",
+    "tryAgain": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
   },
   "hero": {
     "browseAllReciters": {

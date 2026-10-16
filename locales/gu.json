@@ -27,7 +27,11 @@
     "showInstruction": "સૂચનાઓ બતાવો",
     "tapBookmarkHint": "અહીં સાચવવા માટે કોઈપણ ઝિક્ર પરના બુકમાર્ક આઇકન પર ટેપ કરો",
     "tapToCount": "ગણવા માટે ટેપ કરો",
-    "tapToIncrement": "ગણતરી વધારવા માટે ટેપ કરો"
+    "tapToIncrement": "ગણતરી વધારવા માટે ટેપ કરો",
+    "reciteTimes": "{{n}}× પઠન કરો",
+    "playAllStop": "રોકો",
+    "playAllPrevious": "પાછળનું",
+    "playAllNext": "આગળનું"
   },
   "app": {
     "errorInitializingPlayer": "પ્લેયર શરૂ કરવામાં ભૂલ: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "ડાઉનલોડ કરેલ • {{count}} સૂરહો"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "માફ કરશો.. ભૂલ આવી"
+    "sorryThereWasAnError": "માફ કરશો.. ભૂલ આવી",
+    "tryAgain": "ફરી પ્રયાસ કરો"
   },
   "hero": {
     "browseAllReciters": {

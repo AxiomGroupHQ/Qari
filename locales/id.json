@@ -26,7 +26,11 @@
     "showInstruction": "Tampilkan petunjuk",
     "tapBookmarkHint": "Ketuk ikon penanda pada dzikir mana pun untuk menyimpannya di sini",
     "tapToCount": "Ketuk untuk menghitung",
-    "tapToIncrement": "Ketuk untuk menambah hitungan"
+    "tapToIncrement": "Ketuk untuk menambah hitungan",
+    "reciteTimes": "Baca {{n}}×",
+    "playAllStop": "Berhenti",
+    "playAllPrevious": "Sebelumnya",
+    "playAllNext": "Berikutnya"
   },
   "app": {
     "errorInitializingPlayer": "Gagal memulai pemutar: {{message}}",
@@ -247,7 +251,8 @@
     "subtitle_other": "Diunduh • {{count}} surah"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Maaf.. terjadi kesalahan"
+    "sorryThereWasAnError": "Maaf.. terjadi kesalahan",
+    "tryAgain": "Coba lagi"
   },
   "hero": {
     "browseAllReciters": {

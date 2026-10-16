@@ -31,7 +31,11 @@
     "showInstruction": "إظهار التعليمات",
     "tapBookmarkHint": "اضغط على أيقونة الإشارة المرجعية في أي ذكر لحفظه هنا",
     "tapToCount": "اضغط للعدّ",
-    "tapToIncrement": "اضغط لزيادة العدّ"
+    "tapToIncrement": "اضغط لزيادة العدّ",
+    "reciteTimes": "كرّر {{n}}×",
+    "playAllStop": "إيقاف",
+    "playAllPrevious": "السابق",
+    "playAllNext": "التالي"
   },
   "app": {
     "errorInitializingPlayer": "خطأ في تهيئة المشغّل: {{message}}",
@@ -267,7 +271,8 @@
     "subtitle_zero": "منزّل • {{count}} سور"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "عذرًا، حدث خطأ"
+    "sorryThereWasAnError": "عذرًا، حدث خطأ",
+    "tryAgain": "حاول مرة أخرى"
   },
   "hero": {
     "browseAllReciters": {

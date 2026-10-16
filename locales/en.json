@@ -221,7 +221,8 @@
     "subtitle_other": "Downloaded • {{count}} surahs"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Sorry.. there was an error"
+    "sorryThereWasAnError": "Sorry.. there was an error",
+    "tryAgain": "Try again"
   },
   "hero": {
     "browseAllReciters": {
@@ -763,7 +764,11 @@
     "showInstruction": "Show instruction",
     "hideInfo": "Hide Info",
     "showInfo": "Show Info",
-    "counterLabel": "Tasbeeh counter, {{current}} of {{target}}"
+    "counterLabel": "Tasbeeh counter, {{current}} of {{target}}",
+    "reciteTimes": "Recite {{n}}×",
+    "playAllStop": "Stop",
+    "playAllPrevious": "Previous",
+    "playAllNext": "Next"
   },
   "rewayah": {
     "short": {

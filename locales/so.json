@@ -27,7 +27,11 @@
     "showInstruction": "Muuji tilmaamaha",
     "tapBookmarkHint": "Taabo astaanta calaamadda dhikri kasta si aad halkan ugu keydiso",
     "tapToCount": "Taabo si aad u tirisid",
-    "tapToIncrement": "Taabo si aad u kordhiso tirada"
+    "tapToIncrement": "Taabo si aad u kordhiso tirada",
+    "reciteTimes": "Ku akhri {{n}}×",
+    "playAllStop": "Jooji",
+    "playAllPrevious": "Hore",
+    "playAllNext": "Xiga"
   },
   "app": {
     "errorInitializingPlayer": "Khalad bilaabista daaraha: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "La soo dejiyey • {{count}} suurooyin"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Waan ka xunnahay.. khalad ayaa dhacay"
+    "sorryThereWasAnError": "Waan ka xunnahay.. khalad ayaa dhacay",
+    "tryAgain": "Isku day mar kale"
   },
   "hero": {
     "browseAllReciters": {

@@ -16,12 +16,13 @@ import {
 } from 'react-native';
 import {useLocalSearchParams, useRouter, useNavigation} from 'expo-router';
 import {Feather} from '@expo/vector-icons';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {useBottomInset} from '@/hooks/useBottomInset';
 import {ScaledSheet, moderateScale} from 'react-native-size-matters';
 import {useAdhkar} from '@/hooks/useAdhkar';
 import {useTheme} from '@/hooks/useTheme';
 import {Theme} from '@/utils/themeUtils';
 import {DhikrReader} from '@/components/adhkar/DhikrReader';
+import {PlayAllBar} from '@/components/adhkar/PlayAllBar';
 import {LoadingIndicator} from '@/components/LoadingIndicator';
 import {Dhikr} from '@/types/adhkar';
 import {adhkarService} from '@/services/adhkar/AdhkarService';
@@ -39,13 +40,15 @@ const DhikrPage = React.memo(function DhikrPage({
   dhikr,
   isSaved,
   onSaveToggle,
+  height,
 }: {
   dhikr: Dhikr;
   isSaved: boolean;
   onSaveToggle: () => void;
+  height?: number;
 }) {
   return (
-    <View style={{width: SCREEN_WIDTH, flex: 1}}>
+    <View style={{width: SCREEN_WIDTH, height: height ?? '100%'}}>
       <DhikrReader
         dhikr={dhikr}
         isSaved={isSaved}
@@ -77,7 +80,7 @@ const DhikrReaderScreen: React.FC = () => {
   const router = useRouter();
   const navigation = useNavigation();
   const {theme} = useTheme();
-  const insets = useSafeAreaInsets();
+  const bottomInset = useBottomInset();
   const styles = useMemo(() => createStyles(theme), [theme]);
   const headerHeight = useHeaderHeight();
   const flatListRef = useRef<FlatList<Dhikr>>(null);
@@ -88,6 +91,7 @@ const DhikrReaderScreen: React.FC = () => {
   const [categoryTitles, setCategoryTitles] = useState<CategoryTitleMap>({});
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [isDataLoaded, setIsDataLoaded] = useState(false);
+  const [pageHeight, setPageHeight] = useState<number | undefined>(undefined);
 
   const {isSaved, toggleSaved} = useAdhkar();
 
@@ -160,10 +164,15 @@ const DhikrReaderScreen: React.FC = () => {
       adhkarList.length > 0
     ) {
       isScrollingFromPlayAll.current = true;
-      flatListRef.current?.scrollToIndex({
-        index: playAllIndex,
-        animated: true,
-      });
+      try {
+        flatListRef.current?.scrollToIndex({
+          index: playAllIndex,
+          animated: true,
+        });
+      } catch (e) {
+        // A bad scroll must never take the screen down.
+        console.warn('[adhkar] scrollToIndex failed', e);
+      }
       setCurrentIndex(playAllIndex);
       // Reset flag after animation completes
       setTimeout(() => {
@@ -293,10 +302,11 @@ const DhikrReaderScreen: React.FC = () => {
           dhikr={item}
           isSaved={isSaved(item.id)}
           onSaveToggle={() => handleSaveToggle(item)}
+          height={pageHeight}
         />
       );
     },
-    [isSaved, handleSaveToggle],
+    [isSaved, handleSaveToggle, pageHeight],
   );
 
   const keyExtractor = useCallback((item: Dhikr) => item.id, []);
@@ -330,28 +340,44 @@ const DhikrReaderScreen: React.FC = () => {
       <View
         style={[
           styles.listContainer,
-          {paddingTop: headerHeight, paddingBottom: insets.bottom},
+          {paddingTop: headerHeight, paddingBottom: bottomInset},
         ]}>
-        <FlatList
-          ref={flatListRef}
-          data={adhkarList}
-          renderItem={renderItem}
-          keyExtractor={keyExtractor}
-          horizontal
-          pagingEnabled
-          showsHorizontalScrollIndicator={false}
-          initialScrollIndex={initialIndex}
-          getItemLayout={getItemLayout}
-          onViewableItemsChanged={onViewableItemsChanged}
-          viewabilityConfig={viewabilityConfig}
-          windowSize={3}
-          maxToRenderPerBatch={2}
-          removeClippedSubviews={true}
-          initialNumToRender={1}
-          decelerationRate="fast"
-          snapToInterval={SCREEN_WIDTH}
-          snapToAlignment="start"
-        />
+        <View
+          style={styles.listArea}
+          onLayout={e => setPageHeight(e.nativeEvent.layout.height)}>
+          <FlatList
+            ref={flatListRef}
+            extraData={pageHeight}
+            data={adhkarList}
+            renderItem={renderItem}
+            keyExtractor={keyExtractor}
+            horizontal
+            pagingEnabled
+            showsHorizontalScrollIndicator={false}
+            initialScrollIndex={initialIndex}
+            getItemLayout={getItemLayout}
+            onViewableItemsChanged={onViewableItemsChanged}
+            viewabilityConfig={viewabilityConfig}
+            windowSize={3}
+            maxToRenderPerBatch={2}
+            removeClippedSubviews={true}
+            initialNumToRender={1}
+            decelerationRate="fast"
+            snapToInterval={SCREEN_WIDTH}
+            snapToAlignment="start"
+            onScrollToIndexFailed={info => {
+              setTimeout(
+                () =>
+                  flatListRef.current?.scrollToOffset({
+                    offset: info.index * SCREEN_WIDTH,
+                    animated: false,
+                  }),
+                50,
+              );
+            }}
+          />
+        </View>
+        {isThisPlayAllSource ? <PlayAllBar /> : null}
       </View>
     </View>
   );
@@ -369,6 +395,9 @@ const createStyles = (theme: Theme) =>
       alignItems: 'center',
     },
     listContainer: {
+      flex: 1,
+    },
+    listArea: {
       flex: 1,
     },
     emptyText: {

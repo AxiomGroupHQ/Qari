@@ -28,7 +28,11 @@
     "showInstruction": "Mostrar instrucciones",
     "tapBookmarkHint": "Toca el icono de marcador en cualquier dhikr para guardarlo aquí",
     "tapToCount": "Toca para contar",
-    "tapToIncrement": "Toca para aumentar el contador"
+    "tapToIncrement": "Toca para aumentar el contador",
+    "reciteTimes": "Recitar {{n}}×",
+    "playAllStop": "Detener",
+    "playAllPrevious": "Anterior",
+    "playAllNext": "Siguiente"
   },
   "app": {
     "errorInitializingPlayer": "Error al iniciar el reproductor: {{message}}",
@@ -252,7 +256,8 @@
     "subtitle_other": "Descargadas • {{count}} suras"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Lo sentimos, se produjo un error"
+    "sorryThereWasAnError": "Lo sentimos, se produjo un error",
+    "tryAgain": "Intentar de nuevo"
   },
   "hero": {
     "browseAllReciters": {
