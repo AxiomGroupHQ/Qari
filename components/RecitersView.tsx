@@ -1,4 +1,4 @@
-import React, {useMemo, useEffect, useRef, useCallback} from 'react';
+import React, {useMemo, useEffect, useRef} from 'react';
 import {
   View,
   Text,
@@ -8,24 +8,20 @@ import {
   Pressable,
 } from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
-import {moderateScale, verticalScale} from 'react-native-size-matters';
+import {moderateScale} from 'react-native-size-matters';
 import {Reciter, RECITERS} from '@/data/reciterData';
 import {BrowseReciterCard} from './browse/BrowseReciterCard';
 import {CircularReciterCard} from './cards/CircularReciterCard';
 import {useFavoriteReciters} from '@/hooks/useFavoriteReciters';
 import {RecentReciterCard} from '@/components/cards/RecentReciterCard';
 import {useLoved} from '@/hooks/useLoved';
-import {
-  useRecentlyPlayedStore,
-  RecentlyPlayedTrack,
-} from '@/services/player/store/recentlyPlayedStore';
+import {RecentlyPlayedTrack} from '@/services/player/store/recentlyPlayedStore';
 import {useDownloadStore} from '@/services/player/store/downloadStore';
 import {usePlaylists} from '@/hooks/usePlaylists';
 import {PlaylistCard} from '@/components/cards/PlaylistCard';
 import {UserPlaylist} from '@/services/playlist/PlaylistService';
 import {Theme} from '@/utils/themeUtils';
-import {RecitersHero} from '@/components/hero/RecitersHero';
-import {GlowBackdrop} from '@/components/GlowBackdrop';
+import {HomeTop} from '@/components/home/HomeTop';
 import {useCollapsibleTabBar} from '@/hooks/useCollapsibleTabBar';
 import {
   getTajweedReciters,
@@ -59,7 +55,6 @@ import {getReciterByIdSync} from '@/services/dataService';
  * `config/branding.js` to reorder, hide, or omit rows entirely.
  */
 const DEFAULT_HOME_ROW_CONFIG: readonly HomeRow[] = [
-  {id: 'continue-listening', enabled: true},
   {id: 'new-to-quran', enabled: true},
   {id: 'favorites', enabled: true},
   {id: 'featured', enabled: true},
@@ -354,12 +349,6 @@ const Section = React.memo(
 
     return (
       <View style={styles.section}>
-        {/* Soft gradient halo behind the section - the cross-platform
-         * stand-in for the reference design's glass-card shine. */}
-        <GlowBackdrop
-          color={theme.colors.primary}
-          intensity={theme.isDarkMode ? 0.14 : 0.08}
-        />
         <View style={styles.sectionHeader}>
           <Text style={[styles.sectionTitle, {color: theme.colors.text}]}>
             {title}
@@ -427,7 +416,6 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const {onScroll: onHomeScroll} = useCollapsibleTabBar();
-  const {recentTracks} = useRecentlyPlayedStore();
   const {favoriteReciters} = useFavoriteReciters();
   const {lovedTracks} = useLoved();
   const downloads = useDownloadStore(state => state.downloads);
@@ -437,21 +425,6 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
   // Generate a session seed once when the component first mounts
   // This persists across re-renders but changes on app restart
   const sessionSeed = useRef(Date.now()).current;
-
-  // Filter out any corrupted recent tracks (missing reciter or surah data)
-  // Upload tracks are valid if they have userRecitationId
-  const validRecentTracks = useMemo(
-    () =>
-      recentTracks.filter(track =>
-        track.isUserUpload
-          ? !!track.userRecitationId
-          : track.reciter?.id &&
-            track.reciter?.name &&
-            track.surah?.id &&
-            track.surah?.name,
-      ),
-    [recentTracks],
-  );
 
   // Track when the reciters view is opened
   useEffect(() => {
@@ -541,10 +514,6 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     });
   };
 
-  const handleClearRecentTracks = useCallback(() => {
-    useRecentlyPlayedStore.getState().clearRecentTracks();
-  }, []);
-
   const showNewToQuran = shouldShowNewToQuran();
 
   // Adhkar data for the section at the bottom
@@ -582,24 +551,15 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
    * Istima already did with `{cond && <Section …/>}`).
    */
   const rowNodes: Record<HomeRowId, React.ReactNode> = {
-    'continue-listening':
-      validRecentTracks.length > 0 ? (
-        <Section
-          title={t('recitersView.continueListening')}
-          data={validRecentTracks}
-          variant="recent"
-          onReciterPress={onReciterPress}
-          onClear={handleClearRecentTracks}
-          theme={theme}
-        />
-      ) : null,
+    // Replaced by the Continue Listening hero card in `HomeTop`.
+    'continue-listening': null,
 
     'new-to-quran':
       showNewToQuran && beginnerFriendlyReciters.length > 0 ? (
         <Section
           title={t('recitersView.newToQuranStartHere')}
           data={beginnerFriendlyReciters}
-          variant="default"
+          variant="circular"
           onReciterPress={onReciterPress}
           theme={theme}
         />
@@ -621,7 +581,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
         <Section
           title={t('recitersView.featuredReciters')}
           data={featuredReciters}
-          variant="default"
+          variant="circular"
           onReciterPress={onReciterPress}
           theme={theme}
         />
@@ -630,10 +590,6 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     adhkar:
       adhkarLoaded && adhkarCategories.length > 0 ? (
         <View style={styles.section}>
-          <GlowBackdrop
-            color={theme.colors.primary}
-            intensity={theme.isDarkMode ? 0.14 : 0.08}
-          />
           <View style={styles.sectionHeader}>
             <Text style={[styles.sectionTitle, {color: theme.colors.text}]}>
               {t('recitersView.adhkar')}
@@ -748,8 +704,8 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
   const homeRowConfig = branding.homeRowConfig ?? DEFAULT_HOME_ROW_CONFIG;
 
   // RFC-008 - Listen-tab top-region slot. Forks may replace the default
-  // `RecitersHero` via `branding.listenTabTopComponent`; capitalised here
-  // so it can be used as a JSX element. `undefined` keeps Istima's hero.
+  // `HomeTop` via `branding.listenTabTopComponent`; capitalised here
+  // so it can be used as a JSX element. `undefined` keeps Istima's top.
   const ListenTabTopComponent = branding.listenTabTopComponent;
 
   return (
@@ -765,10 +721,10 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
       onScroll={onHomeScroll}
       scrollEventThrottle={16}
       removeClippedSubviews={true}>
-      {/* RFC-008 - Listen-tab top region. Default is the unified
-       * `RecitersHero`; forks may substitute their own via
-       * `branding.listenTabTopComponent`. */}
-      {ListenTabTopComponent ? <ListenTabTopComponent /> : <RecitersHero />}
+      {/* RFC-008 - Listen-tab top region. Default is the redesigned
+       * `HomeTop` (slim wordmark + Continue Listening hero + shortcuts);
+       * forks may substitute their own via `branding.listenTabTopComponent`. */}
+      {ListenTabTopComponent ? <ListenTabTopComponent /> : <HomeTop />}
 
       {homeRowConfig
         .filter(row => row.enabled)
@@ -808,7 +764,7 @@ const styles = StyleSheet.create({
     marginBottom: moderateScale(10),
   },
   sectionTitle: {
-    fontSize: moderateScale(20),
+    fontSize: moderateScale(22),
     fontFamily: 'Manrope-Bold',
     letterSpacing: -0.5,
   },
