@@ -1,6 +1,6 @@
 # Tracker
 
-Deferred items and the self-hosting inventory. Update the status when something changes. Last reviewed October 16, 2026 (end of the localization, accounts and share-links round).
+Deferred items and the self-hosting inventory. Update the status when something changes. Last reviewed October 16, 2026 (after PR #58).
 
 ## Deferred items
 
@@ -30,7 +30,7 @@ Backend is live: Worker `istima-api` (routes `iapi.istima.app/v1/*`) and D1 data
 
 ## What shipped in this round
 
-Everything below is merged to `main` unless a PR number is marked open. "Verified" means unit tests, lint and a scoped typecheck, not a run on a device.
+Everything below is merged to `main`. "Verified" means unit tests, lint and a scoped typecheck, not a run on a device.
 
 | PR | Change | Notes |
 | --- | --- | --- |
@@ -44,24 +44,31 @@ Everything below is merged to `main` unless a PR number is marked open. "Verifie
 | #42 | Dark theme by default | Brought `feat/default-dark` into `main`. |
 | #43 | Footer test for playlist shares, tracker date | Also re-triggered the site build. |
 | #44 | Continue Listening cards fall back to the bundled headshot when a saved image URL fails | The reciter API returns 404 in production, so saved entries have no image URL. |
+| #46 | `sharedPlaylists` flag turned on | Backend was already live. |
+| #47 | CI lint job fix | ESLint passes with 0 errors. The TypeScript step still ran out of memory, fixed by the heap edit below. |
+| #48 | Removed the unused Postmark email verification code | Login stays the only account flow. |
+| #49 | Share, Discover and Android widget strings translated into 59 languages, plus Android `values-xx` resources | Not native-reviewed. |
+| #50 | Tracker update | - |
+| #51 | Share for the Loved collection and the built-in system playlists | Uses `services/share/shareTrackList.ts`. |
+| #52 | History screen (Collection > History): recently played, share, clear | 7 new strings in 60 languages. |
+| #53 | Reading mode no longer changes the whole app theme | New `readingMode` setting (default: follow the app). One new string in 60 languages. |
+| #54 | `discoverFeed` flag on, docs updated | - |
+| #55 | Typecheck fix for `edge/previewWorker.ts` (`HTMLRewriter` types) | Last 3 real type errors CI reported. |
+| #56 | Continue Listening uses the bundled headshot first, stronger light-mode fills on Home cards | Light mode look not checked on a device. |
+| #57 | Adhkar category names sit on the tile over the art | Not checked on a device. |
+| #58 | Settings icon moved to the top header, Adhkar tab added to the bottom bar | Adhkar screens now live under `app/(tabs)/(e.adhkar)`. URLs unchanged. Native gear position not checked on a device. |
 | Qari-api #2, #3 | Accounts/sync Worker, then share endpoints `POST/GET /v1/share/playlist` | Deployed. |
 
-Open PRs, not merged (the owner merges):
+No PRs are open from this round except the tracker update itself.
 
-| PR | Change |
-| --- | --- |
-| #46 | Turn on `sharedPlaylists` (backend is live) |
-| #47 | Fix the failing Lint & Typecheck job (TypeScript step ran out of memory on CI). Not verified locally. CI on the PR is the test. |
-| #48 | Remove the unused Postmark email verification code |
-| #49 | Translate share links, Discover and Android widget strings into the other 59 languages, plus Android `values-xx` resources |
-| (this PR) | Tracker update |
+CI: the owner raised the TypeScript step heap to 6144 MB in `.github/workflows/lint.yml`, which lets the full typecheck finish.
 
 ## Feature flags
 
 | Flag | State | Notes |
 | --- | --- | --- |
-| `sharedPlaylists` | Off on `main`, on in #46 | Backend deployed. Android `/p/` links also need `assetlinks.json`. |
-| `discoverFeed` | On | Turned on by the owner. Still needs a device test, and the audio source terms have not been checked. |
+| `sharedPlaylists` | On | Backend deployed. Android `/p/` links also need `assetlinks.json`. |
+| `discoverFeed` | On | Turned on in #54. Still needs a device test, and the audio source terms have not been checked. |
 | `carDisplay` | Off | Idle until a native bridge exists. |
 
 ## Parked or pending
@@ -85,8 +92,8 @@ Open PRs, not merged (the owner merges):
 - No device run yet of the Android widget, the `values-xx` resources, Discover, the share sheet, or the `/p/<id>` screen on iOS and Android.
 - The 59-language translations were written by an AI assistant and have not had a native-speaker review. Languages most in need of a check: Bambara, Mandinka, Fula, Wolof, Oromo, Tigrinya, Yoruba.
 - Plural counts (`N recitations`) use one wording for every plural form.
-- The Lint & Typecheck fix (#47) has not been run to completion locally.
-- The live site was checked only from outside (HTTP status and served HTML). The Cloudflare Workers Builds check had not finished on the newest `main` commit at the time of writing.
+- The new header gear, the Adhkar tab, the Adhkar tile labels and the light-mode Home fills (#56 to #58) were checked with lint, tests and a scoped typecheck only.
+- The live site was checked only from outside (HTTP status and served HTML). 
 
 ## Self-hosting inventory
 
@@ -109,15 +116,15 @@ Item numbers are the original request-list issue numbers. Feature write-up: `doc
 | Issue | Item | Status | What is needed |
 | --- | --- | --- | --- |
 | #204 | Downloads vanish offline when reciter list is empty | **Fixed** (PR #34) | Device check offline. |
-| #117 | Shareable links | **Partly done** | Share buttons already make `https://istima.app/...` links. App-link domain and iOS `apple-app-site-association` added (PR #34). Android: SHA-256 of the signing key to add `assetlinks.json`. Playlist share links: backend is live (D1 + Worker), the flag is turned on in PR #46, and the strings are translated in PR #49. Android app links still need the SHA-256 for `assetlinks.json`. |
+| #117 | Shareable links | **Partly done** | Share buttons already make `https://istima.app/...` links. App-link domain and iOS `apple-app-site-association` added (PR #34). Android: SHA-256 of the signing key to add `assetlinks.json`. Playlist share links: backend is live (D1 + Worker), the flag is on (#46) and the strings are translated (#49). Android app links still need the SHA-256 for `assetlinks.json`. |
 | #133 | Android performance | **Nothing safe to change blind** | Real Android device for list tuning and R8 testing. Console logs in hot paths are already `__DEV__` guarded. |
 | #74 | Merge mini + full player into one sheet | **Skipped by owner** | Device or simulator to test the animation. Risk of breaking the player if built blind. |
-| #126 | Home screen widgets | **Android: first widget built** | Android Quick Surah widget (Al-Fatiha, Ya-Sin, Al-Mulk, Al-Kahf, Mushaf; opens the app by deep link, no audio code). Widget description and Mushaf label are localized in PR #49 (surah names stay as in the app). Not compiled or run on a device yet. iOS widgets pending (needs Apple Developer access: App Group, new target). Watch and TV apps pending. Other Android widgets (now playing, ayah of the day) not started. |
+| #126 | Home screen widgets | **Android: first widget built** | Android Quick Surah widget (Al-Fatiha, Ya-Sin, Al-Mulk, Al-Kahf, Mushaf; opens the app by deep link, no audio code). Widget description and Mushaf label are localized (#49) (surah names stay as in the app). Not compiled or run on a device yet. iOS widgets pending (needs Apple Developer access: App Group, new target). Watch and TV apps pending. Other Android widgets (now playing, ayah of the day) not started. |
 | #118 | Watch apps | Not built | New native targets, Apple provisioning, devices. |
 | #116 | TV apps | Not built | New native targets, store setup, devices. |
 | #115 | CarPlay / Android Auto | **Groundwork only** | Car browse list and a "not available yet" fallback are in (`services/car`, flag `carDisplay`). No car screen appears yet. Still needs Apple's CarPlay audio entitlement, a native package (compatibility with RN 0.83 unverified), the Android Auto descriptor, and simulator/DHU testing. |
 | #119 | Analytics and listening insights | **Skipped by owner** | Decision on dashboard content and on PostHog (new third-party service, privacy policy). |
-| #8 | Discover feed (random ayah snippets) | **Built, flag on** | Swipe feed of random ayat from existing recitations that have per-ayah timings (`/discover`, flag `discoverFeed`, entry tile on Search). Own audio player, steps aside when the main player starts. Strings translated in PR #49. Not tested on a device. Audio rights unchanged from normal playback; licence terms of the sources not verified. |
+| #8 | Discover feed (random ayah snippets) | **Built, flag on** | Swipe feed of random ayat from existing recitations that have per-ayah timings (`/discover`, flag `discoverFeed`, entry tile on Search). Own audio player, steps aside when the main player starts. Strings translated (#49). Not tested on a device. Audio rights unchanged from normal playback; licence terms of the sources not verified. |
 | #9 | Feature requirements doc | **Done** | `docs/features.md`. |
 | #192 | i18n | **Done** (60 languages) | - |
 | #120 | Cloud sync | **Done** (own accounts and Worker) | Remaining sync documents listed above. |
