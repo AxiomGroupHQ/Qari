@@ -89,6 +89,16 @@ export const useThemeStore = create<ThemeState>()(
     }),
     {
       name: 'theme-storage',
+      // v1: one-time move of stored "Auto" to Dark (dark became the default). Runs only for data
+      // saved before this version; Auto picked afterwards is saved as v1 and kept.
+      version: 1,
+      migrate: (persisted, version) => {
+        const state = (persisted ?? {}) as Partial<ThemeState>;
+        if (version < 1 && state.themeMode === 'system') {
+          return {...state, themeMode: 'dark'} as ThemeState;
+        }
+        return state as ThemeState;
+      },
       storage: createJSONStorage(() => AsyncStorage),
       partialize: state => ({
         themeMode: state.themeMode,
