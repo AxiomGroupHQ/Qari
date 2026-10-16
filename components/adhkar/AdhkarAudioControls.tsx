@@ -89,8 +89,9 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
       // Seeking state for thumb visibility
       const [isSeeking, setIsSeeking] = useState(false);
 
-      // Show progress bar once user has interacted (pressed play) and player is loaded
-      const showProgressBar = hasInteracted && duration > 0;
+      // Show progress bar once user has interacted (pressed play) and player is loaded.
+      // Hidden in Play All mode: PlayAllBar is the single transport then.
+      const showProgressBar = !isPlayAllMode && hasInteracted && duration > 0;
 
       // Active background color for repeat button
       const activeBackgroundColor = `${theme.colors.text}20`;
@@ -128,23 +129,27 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
         return (
           <View style={styles.container}>
             <View style={styles.buttonsRow}>
-              <View style={styles.noAudioPlaceholder}>
-                <Feather
-                  name="volume-x"
-                  size={moderateScale(18)}
-                  color={theme.colors.textSecondary}
-                />
-              </View>
-              {/* Repeat button (disabled state) */}
-              <TouchableOpacity
-                style={styles.repeatButton}
-                disabled
-                activeOpacity={1}>
-                <RepeatIcon
-                  size={moderateScale(20)}
-                  color={theme.colors.textSecondary}
-                />
-              </TouchableOpacity>
+              {!isPlayAllMode && (
+                <>
+                  <View style={styles.noAudioPlaceholder}>
+                    <Feather
+                      name="volume-x"
+                      size={moderateScale(18)}
+                      color={theme.colors.textSecondary}
+                    />
+                  </View>
+                  {/* Repeat button (disabled state) */}
+                  <TouchableOpacity
+                    style={styles.repeatButton}
+                    disabled
+                    activeOpacity={1}>
+                    <RepeatIcon
+                      size={moderateScale(20)}
+                      color={theme.colors.textSecondary}
+                    />
+                  </TouchableOpacity>
+                </>
+              )}
               {/* Action buttons */}
               <View style={styles.actionButtonsContainer}>
                 <TouchableOpacity
@@ -234,50 +239,59 @@ export const AdhkarAudioControls: React.FC<AdhkarAudioControlsProps> =
 
           {/* Buttons Row */}
           <View style={styles.buttonsRow}>
-            {/* Play/Pause Button */}
-            <TouchableOpacity
-              style={styles.playButton}
-              onPress={handleToggle}
-              activeOpacity={1}
-              accessibilityRole="button"
-              accessibilityLabel={
-                isPlaying ? t('adhkarUi.pauseAudio') : t('adhkarUi.playAudio')
-              }>
-              {isPlaying ? (
-                <PauseIcon
-                  size={moderateScale(14)}
-                  color={theme.colors.background}
-                />
-              ) : (
-                <PlayIcon
-                  size={moderateScale(14)}
-                  color={theme.colors.background}
-                />
-              )}
-            </TouchableOpacity>
+            {/* In Play All mode the transport (play/pause, previous, next,
+                stop) lives in PlayAllBar, so this row only keeps the
+                copy/bookmark/share/settings actions - one pause button. */}
+            {!isPlayAllMode && (
+              <>
+                {/* Play/Pause Button */}
+                <TouchableOpacity
+                  style={styles.playButton}
+                  onPress={handleToggle}
+                  activeOpacity={1}
+                  accessibilityRole="button"
+                  accessibilityLabel={
+                    isPlaying
+                      ? t('adhkarUi.pauseAudio')
+                      : t('adhkarUi.playAudio')
+                  }>
+                  {isPlaying ? (
+                    <PauseIcon
+                      size={moderateScale(14)}
+                      color={theme.colors.background}
+                    />
+                  ) : (
+                    <PlayIcon
+                      size={moderateScale(14)}
+                      color={theme.colors.background}
+                    />
+                  )}
+                </TouchableOpacity>
 
-            {/* Repeat Toggle Button (always visible) */}
-            <TouchableOpacity
-              style={[
-                styles.repeatButton,
-                isLooping && {backgroundColor: activeBackgroundColor},
-              ]}
-              onPress={toggleLooping}
-              activeOpacity={0.7}
-              accessibilityRole="button"
-              accessibilityLabel={
-                isLooping
-                  ? t('adhkarUi.disableRepeat')
-                  : t('adhkarUi.enableRepeat')
-              }
-              accessibilityState={{selected: isLooping}}>
-              <RepeatIcon
-                size={moderateScale(20)}
-                color={
-                  isLooping ? theme.colors.text : theme.colors.textSecondary
-                }
-              />
-            </TouchableOpacity>
+                {/* Repeat Toggle Button (always visible) */}
+                <TouchableOpacity
+                  style={[
+                    styles.repeatButton,
+                    isLooping && {backgroundColor: activeBackgroundColor},
+                  ]}
+                  onPress={toggleLooping}
+                  activeOpacity={0.7}
+                  accessibilityRole="button"
+                  accessibilityLabel={
+                    isLooping
+                      ? t('adhkarUi.disableRepeat')
+                      : t('adhkarUi.enableRepeat')
+                  }
+                  accessibilityState={{selected: isLooping}}>
+                  <RepeatIcon
+                    size={moderateScale(20)}
+                    color={
+                      isLooping ? theme.colors.text : theme.colors.textSecondary
+                    }
+                  />
+                </TouchableOpacity>
+              </>
+            )}
 
             {/* Action Buttons */}
             <View style={styles.actionButtonsContainer}>

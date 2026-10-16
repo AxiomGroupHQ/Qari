@@ -1,5 +1,10 @@
 import {localizeCategoryTitle, localizeSuperTitle} from '@/utils/adhkarTitles';
-import {cleanArabic, cleanTranslation} from '@/utils/adhkarText';
+import {
+  cleanArabic,
+  cleanTranslation,
+  repeatCountFromText,
+  stripRepeatNotes,
+} from '@/utils/adhkarText';
 import * as SQLite from 'expo-sqlite';
 import type {
   AdhkarCategory,
@@ -74,13 +79,37 @@ function esc(value: string | null | undefined): string {
   return `'${value.replace(/'/g, "''")}'`;
 }
 
+/**
+ * Row -> Dhikr. Cleans the source's bracket marks and moves inline
+ * recite-count notes ("(ثلاثاً)", "(three times)") out of the text: the count
+ * becomes the badge via repeatCount when the row's own repeat_count is 1.
+ */
+function mapDhikrRow(dhikr: DhikrRow): Dhikr {
+  return {
+    id: dhikr.id,
+    categoryId: dhikr.category_id,
+    arabic: stripRepeatNotes(cleanArabic(dhikr.arabic)) ?? '',
+    translation: stripRepeatNotes(cleanTranslation(dhikr.translation)),
+    transliteration: dhikr.transliteration,
+    instruction: cleanTranslation(dhikr.instruction),
+    repeatCount:
+      dhikr.repeat_count > 1
+        ? dhikr.repeat_count
+        : (repeatCountFromText(dhikr.arabic, dhikr.translation) ??
+          dhikr.repeat_count),
+    audioFile: dhikr.audio_file,
+    sortOrder: dhikr.sort_order,
+  };
+}
+
 // Data version - increment when seed data changes to trigger re-seed
 // Version 1: Initial adhkar data (267 items)
 // Version 2: Added Quranic Duas (40 items, total 307)
 // Version 3: Fixed audio file naming (dua_X.mp3 -> adhkar_X.mp3)
 // Version 4: Added 99 Names of Allah (99 items, total 406)
 // Version 5: Balanced "Other" section bento grid (left=14, right=14)
-const DATA_VERSION = 5;
+// Version 6: Force reseed so every device picks up the current adhkar text
+const DATA_VERSION = 6;
 
 class AdhkarDatabaseService {
   private db: SQLite.SQLiteDatabase | null = null;
@@ -323,17 +352,7 @@ class AdhkarDatabaseService {
       [categoryId],
     )) as DhikrRow[];
 
-    return adhkar.map(dhikr => ({
-      id: dhikr.id,
-      categoryId: dhikr.category_id,
-      arabic: cleanArabic(dhikr.arabic),
-      translation: cleanTranslation(dhikr.translation),
-      transliteration: dhikr.transliteration,
-      instruction: cleanTranslation(dhikr.instruction),
-      repeatCount: dhikr.repeat_count,
-      audioFile: dhikr.audio_file,
-      sortOrder: dhikr.sort_order,
-    }));
+    return adhkar.map(mapDhikrRow);
   }
 
   // Get all adhkar for multiple category IDs (for super category view)
@@ -349,17 +368,7 @@ class AdhkarDatabaseService {
       categoryIds,
     )) as DhikrRow[];
 
-    return adhkar.map(dhikr => ({
-      id: dhikr.id,
-      categoryId: dhikr.category_id,
-      arabic: cleanArabic(dhikr.arabic),
-      translation: cleanTranslation(dhikr.translation),
-      transliteration: dhikr.transliteration,
-      instruction: cleanTranslation(dhikr.instruction),
-      repeatCount: dhikr.repeat_count,
-      audioFile: dhikr.audio_file,
-      sortOrder: dhikr.sort_order,
-    }));
+    return adhkar.map(mapDhikrRow);
   }
 
   // Get a single dhikr by ID
@@ -373,17 +382,7 @@ class AdhkarDatabaseService {
 
     if (!dhikr) return null;
 
-    return {
-      id: dhikr.id,
-      categoryId: dhikr.category_id,
-      arabic: cleanArabic(dhikr.arabic),
-      translation: cleanTranslation(dhikr.translation),
-      transliteration: dhikr.transliteration,
-      instruction: cleanTranslation(dhikr.instruction),
-      repeatCount: dhikr.repeat_count,
-      audioFile: dhikr.audio_file,
-      sortOrder: dhikr.sort_order,
-    };
+    return mapDhikrRow(dhikr);
   }
 
   // Toggle saved status for a dhikr
