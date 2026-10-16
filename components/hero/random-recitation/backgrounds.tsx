@@ -444,7 +444,7 @@ function FWRibbonBackground({theme}: {theme: Theme}) {
       <View
         style={[
           abs,
-          {backgroundColor: theme.isDarkMode ? '#111118' : '#f0eff5'},
+          {backgroundColor: theme.isDarkMode ? '#111118' : '#e3e0f2'},
         ]}
       />
       <Svg style={abs} viewBox="0 0 400 85">
@@ -459,27 +459,27 @@ function FWRibbonBackground({theme}: {theme: Theme}) {
             <Stop
               offset="0%"
               stopColor="#8b5cf6"
-              stopOpacity={theme.isDarkMode ? 0.4 : 0.2}
+              stopOpacity={theme.isDarkMode ? 0.4 : 0.44}
             />
             <Stop
               offset="25%"
               stopColor="#ec4899"
-              stopOpacity={theme.isDarkMode ? 0.35 : 0.15}
+              stopOpacity={theme.isDarkMode ? 0.35 : 0.33}
             />
             <Stop
               offset="50%"
               stopColor="#38bdf8"
-              stopOpacity={theme.isDarkMode ? 0.3 : 0.15}
+              stopOpacity={theme.isDarkMode ? 0.3 : 0.33}
             />
             <Stop
               offset="75%"
               stopColor="#34d399"
-              stopOpacity={theme.isDarkMode ? 0.35 : 0.15}
+              stopOpacity={theme.isDarkMode ? 0.35 : 0.33}
             />
             <Stop
               offset="100%"
               stopColor="#fbbf24"
-              stopOpacity={theme.isDarkMode ? 0.3 : 0.15}
+              stopOpacity={theme.isDarkMode ? 0.3 : 0.33}
             />
           </SvgLinearGradient>
           <SvgLinearGradient
@@ -492,17 +492,17 @@ function FWRibbonBackground({theme}: {theme: Theme}) {
             <Stop
               offset="0%"
               stopColor="#34d399"
-              stopOpacity={theme.isDarkMode ? 0.2 : 0.1}
+              stopOpacity={theme.isDarkMode ? 0.2 : 0.22}
             />
             <Stop
               offset="50%"
               stopColor="#8b5cf6"
-              stopOpacity={theme.isDarkMode ? 0.25 : 0.12}
+              stopOpacity={theme.isDarkMode ? 0.25 : 0.26}
             />
             <Stop
               offset="100%"
               stopColor="#ec4899"
-              stopOpacity={theme.isDarkMode ? 0.2 : 0.1}
+              stopOpacity={theme.isDarkMode ? 0.2 : 0.22}
             />
           </SvgLinearGradient>
         </Defs>

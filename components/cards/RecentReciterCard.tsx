@@ -323,7 +323,7 @@ export const RecentReciterCard = ({
               StyleSheet.absoluteFill,
               {
                 backgroundColor: Color(theme.colors.text)
-                  .alpha(0.04)
+                  .alpha(theme.isDarkMode ? 0.04 : 0.09)
                   .toString(),
               },
             ]}
@@ -363,6 +363,7 @@ export const RecentReciterCard = ({
               {USE_GLASS ? (
                 <Link.AppleZoom>
                   <ReciterImage
+                    preferLocal
                     imageUrl={imageUrl}
                     reciterName={reciterName}
                     style={styles.image}
@@ -371,6 +372,7 @@ export const RecentReciterCard = ({
                 </Link.AppleZoom>
               ) : (
                 <ReciterImage
+                  preferLocal
                   imageUrl={imageUrl}
                   reciterName={reciterName}
                   style={styles.image}
@@ -443,6 +445,7 @@ export const RecentReciterCard = ({
 };
 
 function createStyles(theme: {
+  isDarkMode?: boolean;
   colors: {
     border: string;
     card: string;
@@ -458,7 +461,9 @@ function createStyles(theme: {
       borderRadius: moderateScale(14),
       overflow: 'hidden',
       borderWidth: 1,
-      borderColor: Color(theme.colors.text).alpha(0.06).toString(),
+      borderColor: Color(theme.colors.text)
+        .alpha(theme.isDarkMode === false ? 0.14 : 0.06)
+        .toString(),
       padding: moderateScale(6),
       gap: moderateScale(4),
     },
@@ -469,7 +474,9 @@ function createStyles(theme: {
       aspectRatio: 1,
       borderRadius: moderateScale(8),
       overflow: 'hidden',
-      backgroundColor: Color(theme.colors.text).alpha(0.06).toString(),
+      backgroundColor: Color(theme.colors.text)
+        .alpha(theme.isDarkMode === false ? 0.1 : 0.06)
+        .toString(),
     },
     image: {
       width: '100%',
@@ -483,7 +490,9 @@ function createStyles(theme: {
     },
     // Bottom zone: surah + playback controls
     playbackZone: {
-      backgroundColor: Color(theme.colors.text).alpha(0.06).toString(),
+      backgroundColor: Color(theme.colors.text)
+        .alpha(theme.isDarkMode === false ? 0.1 : 0.06)
+        .toString(),
       borderRadius: moderateScale(8),
       paddingHorizontal: moderateScale(6),
       paddingVertical: moderateScale(5),

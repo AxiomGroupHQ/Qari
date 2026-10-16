@@ -166,6 +166,8 @@ const createStyles = (theme: Theme) =>
     container: {
       borderRadius: moderateScale(20),
       overflow: 'hidden',
+      borderWidth: theme.isDarkMode ? 0 : 1,
+      borderColor: 'rgba(80,60,140,0.18)',
     },
     content: {
       flex: 1,
@@ -194,7 +196,9 @@ const createStyles = (theme: Theme) =>
       borderRadius: moderateScale(22),
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: 'rgba(255,255,255,0.22)',
+      backgroundColor: theme.isDarkMode
+        ? 'rgba(255,255,255,0.22)'
+        : 'rgba(80,60,140,0.14)',
       marginStart: moderateScale(12),
     },
   });
