@@ -193,7 +193,7 @@ const SavedAdhkarCard = ({savedCount, style}: SavedAdhkarCardProps) => {
 
   if (USE_GLASS) {
     return (
-      <Link href="/(tabs)/(a.home)/adhkar/saved" asChild>
+      <Link href="/(tabs)/(e.adhkar)/saved" asChild>
         <Pressable style={StyleSheet.flatten([styles.glassWrapper, style])}>
           <Link.AppleZoom>
             <GlassView
@@ -209,7 +209,7 @@ const SavedAdhkarCard = ({savedCount, style}: SavedAdhkarCardProps) => {
   }
 
   return (
-    <Link href="/(tabs)/(a.home)/adhkar/saved" asChild>
+    <Link href="/(tabs)/(e.adhkar)/saved" asChild>
       <Pressable style={StyleSheet.flatten([styles.hero, style])}>
         {cardContent}
       </Pressable>

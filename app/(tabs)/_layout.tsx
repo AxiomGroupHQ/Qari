@@ -15,6 +15,7 @@ import {TabletSidebar} from '@/components/tablet/TabletSidebar';
 import {useResponsive} from '@/hooks/useResponsive';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import {t} from '@/i18n';
+import {NativeHeaderSettingsButton} from '@/components/HeaderSettingsButton';
 
 // PNG tab icons for NativeTabs (iOS) - template-rendered by the native tab bar
 const tabIcons = {
@@ -104,13 +105,18 @@ function IOSTabs() {
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger
-        name="(d.settings)"
+        name="(e.adhkar)"
         contentStyle={{backgroundColor: theme.colors.background}}>
         <NativeTabs.Trigger.Icon
-          sf={{default: 'gearshape', selected: 'gearshape.fill'}}
+          sf={{default: 'moon.stars', selected: 'moon.stars.fill'}}
         />
-        <NativeTabs.Trigger.Label>{t('ui.settings')}</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>
+          {t('recitersView.adhkar')}
+        </NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
+
+      {/* Settings opens from the header icon; keep the route, hide the tab. */}
+      <NativeTabs.Trigger name="(d.settings)" hidden />
     </NativeTabs>
   );
 }
@@ -138,7 +144,14 @@ function AndroidTabs() {
           name="(c.collection)"
           options={{title: t('ui.collection')}}
         />
-        <Tabs.Screen name="(d.settings)" options={{title: t('ui.settings')}} />
+        <Tabs.Screen
+          name="(e.adhkar)"
+          options={{title: t('recitersView.adhkar')}}
+        />
+        <Tabs.Screen
+          name="(d.settings)"
+          options={{title: t('ui.settings'), href: null}}
+        />
       </Tabs>
       <FloatingPlayer />
     </View>
@@ -173,7 +186,14 @@ function TabletTabs() {
           name="(c.collection)"
           options={{title: t('ui.collection')}}
         />
-        <Tabs.Screen name="(d.settings)" options={{title: t('ui.settings')}} />
+        <Tabs.Screen
+          name="(e.adhkar)"
+          options={{title: t('recitersView.adhkar')}}
+        />
+        <Tabs.Screen
+          name="(d.settings)"
+          options={{title: t('ui.settings'), href: null}}
+        />
       </Tabs>
     </View>
   );
@@ -191,6 +211,7 @@ export default function TabsLayout() {
         backgroundColor="transparent"
       />
       {isTablet ? <TabletTabs /> : USE_GLASS ? <IOSTabs /> : <AndroidTabs />}
+      <NativeHeaderSettingsButton />
     </>
   );
 }

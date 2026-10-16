@@ -8,6 +8,16 @@ import {useTheme} from '@/hooks/useTheme';
 import {useSiteHeaderStore} from '@/store/siteHeaderStore';
 import {IstimaWordmark} from './IstimaWordmark';
 import {t} from '@/i18n';
+import {HeaderSettingsButton} from '@/components/HeaderSettingsButton';
+
+function HeaderActions() {
+  return (
+    <View style={styles.actions}>
+      <HeaderSettingsButton />
+      <LanguageButton />
+    </View>
+  );
+}
 
 function LanguageButton() {
   const {theme} = useTheme();
@@ -31,7 +41,7 @@ export function SiteHeader() {
   if (isHome) {
     return (
       <View style={styles.floating} pointerEvents="box-none">
-        <LanguageButton />
+        <HeaderActions />
       </View>
     );
   }
@@ -44,7 +54,7 @@ export function SiteHeader() {
         style={styles.brand}>
         <IstimaWordmark compact />
       </Pressable>
-      <LanguageButton />
+      <HeaderActions />
     </View>
   );
 }
@@ -64,6 +74,7 @@ const styles = StyleSheet.create({
     right: 16,
     zIndex: 10,
   },
+  actions: {flexDirection: 'row', alignItems: 'center', gap: 4},
   langButton: {
     padding: 6,
     borderRadius: 20,

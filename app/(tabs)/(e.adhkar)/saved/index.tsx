@@ -85,7 +85,7 @@ const SavedAdhkarScreen: React.FC = () => {
     // Navigate to reader with first dhikr
     const firstDhikr = adhkarList[0];
     router.push({
-      pathname: '/(tabs)/(a.home)/adhkar/saved/[dhikrId]',
+      pathname: '/(tabs)/(e.adhkar)/saved/[dhikrId]',
       params: {
         dhikrId: firstDhikr.id,
         globalIndex: '0',
@@ -150,7 +150,7 @@ const SavedAdhkarScreen: React.FC = () => {
     ({item, index}: {item: Dhikr; index: number}) => (
       <Link
         href={{
-          pathname: '/(tabs)/(a.home)/adhkar/saved/[dhikrId]',
+          pathname: '/(tabs)/(e.adhkar)/saved/[dhikrId]',
           params: {
             dhikrId: item.id,
             globalIndex: index.toString(),
