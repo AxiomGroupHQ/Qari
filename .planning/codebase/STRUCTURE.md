@@ -95,7 +95,6 @@ Istima/
 │   ├── StorageManager.ts   # Storage utilities
 │   ├── QueueManager.ts     # Queue state and sequencing
 │   ├── SurahLoader.ts      # Surah data lazy-loading
-│   ├── emailService.ts     # Email utilities
 │   ├── database/           # SQLite persistence layer
 │   │   └── DatabaseService.ts # Playlist and data persistence
 │   ├── player/             # Audio playback system

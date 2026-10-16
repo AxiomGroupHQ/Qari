@@ -15,7 +15,7 @@ What you need to provide, why, and how to get it. Official URLs only.
 | 5 | GitHub token with `workflow` scope | CI file edits (lint.yml) | **Yes** | Pending |
 | 6 | Real App Store ID (and Play listing) | "Rate app" | No | Pending |
 | 7 | Support page / contact address | Support + Feature request links | No | Pending |
-| 8 | Email sender (e.g. Postmark) | Password reset only (no verification needed) | **Yes** (API key) | Optional, later |
+| 8 | Email sender | Password reset only (no verification needed; no email is sent today) | **Yes** (API key) | Optional, later |
 | 9 | PostHog key, Sentry DSN | Analytics, crash reports | PostHog key public, DSN semi-public | Optional |
 | 10 | Cloudflare Pages `iapi.istima.app` | Timestamps | - | Done (working) |
 
