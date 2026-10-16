@@ -70,7 +70,7 @@ export const AdhkarBentoCard = React.memo(function AdhkarBentoCard({
 
   const linkProps = {
     href: {
-      pathname: '/(tabs)/(e.adhkar)/[superId]' as const,
+      pathname: '/(tabs)/(e.adhkar)/adhkar/[superId]' as const,
       params: {superId: category.id},
     },
     asChild: true as const,

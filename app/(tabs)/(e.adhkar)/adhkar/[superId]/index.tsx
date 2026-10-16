@@ -207,7 +207,7 @@ const SuperCategoryListScreen: React.FC = () => {
         : '';
 
     router.push({
-      pathname: '/(tabs)/(e.adhkar)/[superId]/[dhikrId]',
+      pathname: '/(tabs)/(e.adhkar)/adhkar/[superId]/[dhikrId]',
       params: {
         superId,
         dhikrId: firstDhikr.id,
@@ -316,7 +316,7 @@ const SuperCategoryListScreen: React.FC = () => {
     ({item}: {item: DhikrItem}) => (
       <Link
         href={{
-          pathname: '/(tabs)/(e.adhkar)/[superId]/[dhikrId]',
+          pathname: '/(tabs)/(e.adhkar)/adhkar/[superId]/[dhikrId]',
           params: {
             superId: superId,
             dhikrId: item.dhikr.id,

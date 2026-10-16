@@ -117,6 +117,8 @@ function IOSTabs() {
 
       {/* Settings opens from the header icon; keep the route, hide the tab. */}
       <NativeTabs.Trigger name="(d.settings)" hidden />
+      {/* Pinned web root ("/" = Home); never a tab. */}
+      <NativeTabs.Trigger name="index" hidden />
     </NativeTabs>
   );
 }
@@ -152,6 +154,8 @@ function AndroidTabs() {
           name="(d.settings)"
           options={{title: t('ui.settings'), href: null}}
         />
+        {/* Pinned web root ("/" = Home); never a tab. */}
+        <Tabs.Screen name="index" options={{href: null}} />
       </Tabs>
       <FloatingPlayer />
     </View>
@@ -194,6 +198,8 @@ function TabletTabs() {
           name="(d.settings)"
           options={{title: t('ui.settings'), href: null}}
         />
+        {/* Pinned web root ("/" = Home); never a tab. */}
+        <Tabs.Screen name="index" options={{href: null}} />
       </Tabs>
     </View>
   );

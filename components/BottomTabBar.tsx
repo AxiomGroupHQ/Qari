@@ -175,7 +175,7 @@ const BottomTabBar: React.FC<BottomTabBarProps> = ({
         navigation.dispatch(
           CommonActions.navigate({
             name: route.name,
-            params: {screen: 'index'},
+            params: {screen: 'adhkar/index'},
           }),
         );
       }
@@ -201,7 +201,9 @@ const BottomTabBar: React.FC<BottomTabBarProps> = ({
           <View style={styles.content}>
             {state.routes.map((route, index) => {
               // Settings is opened from the header icon, not the tab bar.
-              if (route.name === '(d.settings)') return null;
+              // 'index' is the explicit web root screen pinned to Home.
+              if (route.name === '(d.settings)' || route.name === 'index')
+                return null;
               const {options} = descriptors[route.key];
               const label =
                 options.tabBarLabel !== undefined

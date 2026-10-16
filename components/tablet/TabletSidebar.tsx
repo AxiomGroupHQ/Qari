@@ -156,7 +156,7 @@ export const TabletSidebar: React.FC<BottomTabBarProps> = ({
         navigation.dispatch(
           CommonActions.navigate({
             name: route.name,
-            params: {screen: 'index'},
+            params: {screen: 'adhkar/index'},
           }),
         );
       }
@@ -198,7 +198,8 @@ export const TabletSidebar: React.FC<BottomTabBarProps> = ({
       <View style={styles.items}>
         {state.routes.map((route, index) => {
           // Settings is opened from the header icon, not the tab bar.
-          if (route.name === '(d.settings)') return null;
+          if (route.name === '(d.settings)' || route.name === 'index')
+            return null;
           const {options} = descriptors[route.key];
           const label =
             options.tabBarLabel !== undefined
