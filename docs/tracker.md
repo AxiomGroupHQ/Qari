@@ -55,7 +55,7 @@ Item numbers are the original request-list issue numbers. Feature write-up: `doc
 | #116 | TV apps | Not built | New native targets, store setup, devices. |
 | #115 | CarPlay / Android Auto | Not built | Apple CarPlay audio entitlement request, Google Play review. Plan: `docs/features/carplay-android-auto.md`. |
 | #119 | Analytics and listening insights | **Skipped by owner** | Decision on dashboard content and on PostHog (new third-party service, privacy policy). |
-| #8 | Discover feed (short snippets) | **Skipped by owner** | Decide the content source and audio rights. |
+| #8 | Discover feed (random ayah snippets) | **Built, flag off** | Swipe feed of random ayat from existing recitations that have per-ayah timings (`/discover`, flag `discoverFeed`, entry tile on Search). Own audio player, steps aside when the main player starts. English strings only. Not tested on a device. Audio rights unchanged from normal playback; licence terms of the sources not verified. |
 | #9 | Feature requirements doc | **Done** | `docs/features.md`. |
 | #192 | i18n | **Done** (60 languages) | - |
 | #120 | Cloud sync | **Done** (own accounts and Worker) | Remaining sync documents listed above. |

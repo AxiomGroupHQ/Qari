@@ -13,6 +13,7 @@ import {useTheme} from '@/hooks/useTheme';
 import {useWindowDimensions} from 'react-native';
 import Color from 'color';
 import {LinearGradient} from 'expo-linear-gradient';
+import {isFeatureEnabled} from '@/config/featureFlags';
 import {getAllSystemPlaylists, SystemPlaylist} from '@/data/systemPlaylists';
 import {useBottomInset} from '@/hooks/useBottomInset';
 import {USE_GLASS, useGlassColorScheme} from '@/hooks/useGlassProps';
@@ -90,8 +91,22 @@ function systemPlaylistToTile(playlist: SystemPlaylist): BentoTile {
 // Get all tiles (browse + system playlists)
 function getAllTiles(): BentoTile[] {
   const systemPlaylists = getAllSystemPlaylists();
+  const discoverTiles: BentoTile[] = isFeatureEnabled('discoverFeed')
+    ? [
+        {
+          id: 'discover',
+          title: t('discover.title'),
+          backgroundColor: '#0D9488',
+          route: '/discover',
+          heightMultiplier: 1,
+          column: 'left',
+          order: 0,
+          type: 'browse',
+        },
+      ]
+    : [];
   const systemPlaylistTiles = systemPlaylists.map(systemPlaylistToTile);
-  return [...BROWSE_TILES, ...systemPlaylistTiles];
+  return [...discoverTiles, ...BROWSE_TILES, ...systemPlaylistTiles];
 }
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface -- intentionally empty props type
