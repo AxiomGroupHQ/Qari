@@ -475,7 +475,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
   // Get specialized reciter collections with session-based shuffle
   // Each collection uses a different offset to the seed for unique shuffles
   const featuredReciters = useMemo(
-    () => seededShuffle(getFeaturedReciters(8), sessionSeed + 2),
+    () => seededShuffle(getFeaturedReciters(10), sessionSeed + 2),
     [sessionSeed],
   );
   const istimaOriginalsReciters = useMemo(

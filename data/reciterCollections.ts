@@ -3,6 +3,8 @@ import {useTimestampStore} from '@/store/timestampStore';
 
 // Featured Reciters - Spotlight reciters chosen by Istima
 const FEATURED_RECITER_NAMES = [
+  'Mohammed Ayyub',
+  'Noreen Mohammad Siddiq',
   'Abdullah Qarafi',
   'Bandar Balilah',
   'Abdulrasheed Soufi',
