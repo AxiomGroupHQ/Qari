@@ -53,6 +53,10 @@ class ScrollingHeroErrorBoundary extends React.Component<{
   }
 }
 
+/** Smaller tiles, so about three times as many reciters are visible (was 5 columns). */
+const NUM_COLUMNS = 9;
+const GAP = 4;
+
 interface ColumnConfig {
   speed: number;
   direction: 1 | -1;
@@ -66,6 +70,10 @@ const COLUMNS: ColumnConfig[] = [
   {speed: 230000, direction: -1, reciters: [], startOffset: 200},
   {speed: 210000, direction: -1, reciters: [], startOffset: 250},
   {speed: 200000, direction: -1, reciters: [], startOffset: 250},
+  {speed: 225000, direction: -1, reciters: [], startOffset: 50},
+  {speed: 205000, direction: -1, reciters: [], startOffset: 150},
+  {speed: 215000, direction: -1, reciters: [], startOffset: 220},
+  {speed: 235000, direction: -1, reciters: [], startOffset: 80},
 ];
 
 // Memoized ReciterImage component
@@ -94,7 +102,7 @@ function useDistributedReciters(reciters: Reciter[]) {
 
     if (recitersWithImages.length === 0) {
       console.warn('No reciters with images found');
-      return Array(5).fill([]);
+      return Array(NUM_COLUMNS).fill([]);
     }
 
     // Efficient shuffling algorithm
@@ -108,8 +116,8 @@ function useDistributedReciters(reciters: Reciter[]) {
     }
 
     let availableReciters = [...recitersWithImages];
-    const minRecitersNeeded = 20;
-    const maxDuplicates = 5;
+    const minRecitersNeeded = NUM_COLUMNS * 7;
+    const maxDuplicates = 12;
     let duplicateCount = 0;
 
     while (
@@ -121,12 +129,12 @@ function useDistributedReciters(reciters: Reciter[]) {
     }
 
     const shuffled = shuffle(availableReciters);
-    const columns: Reciter[][] = Array(5)
+    const columns: Reciter[][] = Array(NUM_COLUMNS)
       .fill([])
       .map(() => []);
 
     shuffled.forEach((reciter, index) => {
-      const columnIndex = index % 5;
+      const columnIndex = index % NUM_COLUMNS;
       if (columns[columnIndex].length < 7) {
         columns[columnIndex].push(reciter);
       }
@@ -138,6 +146,8 @@ function useDistributedReciters(reciters: Reciter[]) {
 
 interface ColumnProps {
   config: ColumnConfig;
+  /** Rendered tile edge in px (column width), so the loop height is exact. */
+  tileSize: number;
   styles: ReturnType<typeof createStyles>;
   theme: Theme;
 }
@@ -233,10 +243,10 @@ Overlay.displayName = 'Overlay';
 
 // Optimize Column component
 const Column = React.memo(
-  ({config, styles}: ColumnProps) => {
+  ({config, styles, tileSize}: ColumnProps) => {
     const scrollY = useSharedValue(config.startOffset);
     const isAnimating = useSharedValue(true);
-    const itemSize = SECTION_HEIGHT / 2;
+    const itemSize = tileSize > 0 ? tileSize : SECTION_HEIGHT / 3;
     const isComponentMounted = React.useRef(true);
 
     // Create duplicated array for seamless looping
@@ -247,7 +257,7 @@ const Column = React.memo(
 
     // Calculate content height for a single set of items
     const singleSetHeight = useMemo(
-      () => config.reciters.length * (itemSize + moderateScale(4)),
+      () => config.reciters.length * (itemSize + moderateScale(GAP)),
       [config.reciters.length, itemSize],
     );
 
@@ -338,6 +348,7 @@ const Column = React.memo(
   },
   (prevProps, nextProps) =>
     prevProps.config === nextProps.config &&
+    prevProps.tileSize === nextProps.tileSize &&
     prevProps.theme === nextProps.theme,
 );
 
@@ -367,11 +378,11 @@ function createStyles(theme: Theme) {
     columnsContainer: {
       flexDirection: 'row',
       flex: 1,
-      gap: moderateScale(4),
+      gap: moderateScale(GAP),
     },
     column: {
       flex: 1,
-      gap: moderateScale(4),
+      gap: moderateScale(GAP),
     },
     imageContainer: {
       aspectRatio: 1,
@@ -429,6 +440,12 @@ export const ScrollingHero = React.memo(
     const glassColorScheme = useGlassColorScheme();
     const styles = useMemo(() => createStyles(theme), [theme]);
 
+    const [containerWidth, setContainerWidth] = React.useState(0);
+    const tileSize =
+      containerWidth > 0
+        ? (containerWidth - moderateScale(GAP) * (NUM_COLUMNS - 1)) /
+          NUM_COLUMNS
+        : 0;
     const distributedReciters = useDistributedReciters(RECITERS);
     const columnConfigs = useMemo(
       () =>
@@ -441,9 +458,17 @@ export const ScrollingHero = React.memo(
 
     const scrollingContent = (
       <>
-        <View style={styles.columnsContainer}>
+        <View
+          style={styles.columnsContainer}
+          onLayout={e => setContainerWidth(e.nativeEvent.layout.width)}>
           {columnConfigs.map((config, index) => (
-            <Column key={index} config={config} styles={styles} theme={theme} />
+            <Column
+              key={index}
+              config={config}
+              tileSize={tileSize}
+              styles={styles}
+              theme={theme}
+            />
           ))}
         </View>
         <Overlay isRevealed={false} theme={theme} styles={styles} />

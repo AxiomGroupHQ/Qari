@@ -1,4 +1,5 @@
 import React, {useCallback, useMemo} from 'react';
+import {ShuffleIcon} from '@/components/Icons';
 import {
   View,
   Text,
@@ -120,7 +121,7 @@ export function RandomRecitationHero({
   }, [updateQueue, play, startNewChain]);
 
   const containerHeight = useMemo(
-    () => ({height: isCompact ? moderateScale(75) : RANDOM_HERO_HEIGHT}),
+    () => ({height: isCompact ? moderateScale(96) : RANDOM_HERO_HEIGHT}),
     [isCompact],
   );
 
@@ -148,6 +149,12 @@ export function RandomRecitationHero({
               {copy.subtitle}
             </Text>
           </View>
+          <View style={styles.iconBadge}>
+            <ShuffleIcon
+              color={textColors.labelColor}
+              size={moderateScale(24)}
+            />
+          </View>
         </View>
       </Pressable>
     </Animated.View>
@@ -172,13 +179,22 @@ const createStyles = (theme: Theme) =>
     },
     title: {
       fontFamily: 'Manrope-Bold',
-      fontSize: moderateScale(9),
+      fontSize: moderateScale(13),
       letterSpacing: moderateScale(0.5),
       marginBottom: verticalScale(2),
       textTransform: 'uppercase',
     },
     subtitle: {
       fontFamily: 'Manrope-Medium',
-      fontSize: moderateScale(11),
+      fontSize: moderateScale(15),
+    },
+    iconBadge: {
+      width: moderateScale(44),
+      height: moderateScale(44),
+      borderRadius: moderateScale(22),
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: 'rgba(255,255,255,0.22)',
+      marginStart: moderateScale(12),
     },
   });

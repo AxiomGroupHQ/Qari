@@ -62,7 +62,7 @@ export const ThemePicker: React.FC = () => {
         const Icon = IconMap[option.icon];
         const iconColor = isActive
           ? theme.colors.text
-          : Color(theme.colors.text).alpha(0.35).toString();
+          : Color(theme.colors.text).alpha(0.6).toString();
 
         return (
           <Pressable
@@ -111,7 +111,7 @@ const createStyles = (theme: Theme) =>
     label: {
       fontSize: moderateScale(11.5),
       fontFamily: 'Manrope-Medium',
-      color: Color(theme.colors.text).alpha(0.35).toString(),
+      color: Color(theme.colors.text).alpha(0.6).toString(),
     },
     labelActive: {
       color: Color(theme.colors.text).alpha(0.85).toString(),

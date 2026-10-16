@@ -156,6 +156,19 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
     opacity: overlayOpacity.value,
   }));
 
+  // Never leave the user without the back/home buttons: leave immersive when playback is no longer
+  // playing (paused, ended, idle, error) or when the track changes.
+  const playbackState = usePlayerStore(s => s.playback.state);
+  const currentTrackIndex = usePlayerStore(s => s.queue.currentIndex);
+  useEffect(() => {
+    if (playbackState !== 'playing' && playbackState !== 'loading') {
+      setImmersive(false);
+    }
+  }, [playbackState, setImmersive]);
+  useEffect(() => {
+    setImmersive(false);
+  }, [currentTrackIndex, setImmersive]);
+
   // Exit immersive when queue opens
   useEffect(() => {
     if (showQueue) {

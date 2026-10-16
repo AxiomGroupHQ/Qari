@@ -107,7 +107,9 @@ async function loadTrackAtIndex(
 
   // Intro clip: own short player, before the recitation starts. Never for user uploads.
   if (autoPlay && startPosition === 0 && !track.isUserUpload) {
-    await introClipService.play('start');
+    const clip = await introClipService.play('start');
+    // Paused, skipped or superseded while the clip played: do not start this recitation.
+    if (clip === 'cancelled') return;
   }
 
   if (startPosition > 0) {

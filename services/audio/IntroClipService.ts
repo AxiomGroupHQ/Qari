@@ -8,6 +8,7 @@
  * Clip source: <EXPO_PUBLIC_INTRO_CLIP_BASE_URL>/<lang>.mp3 for languages in INTRO_CLIP_LANGS, with
  * the bundled English clip as the fallback for every other language and for any load/playback error.
  */
+import {getActiveClip, setActiveClip, whenClipIdle} from './clipGate';
 import {createAudioPlayer, type AudioPlayer} from 'expo-audio';
 import {
   INTRO_CLIP_BASE_URL,
@@ -46,13 +47,24 @@ export function clipUrlFor(lang: string): string | null {
   return `${INTRO_CLIP_BASE_URL}/${lang}.mp3`;
 }
 
+/** completed: played to the end. failed: could not play (carry on). cancelled: stopped on purpose. */
+export type ClipResult = 'completed' | 'failed' | 'cancelled' | 'disabled';
+
 class IntroClipService {
   private player: AudioPlayer | null = null;
   private cancel: (() => void) | null = null;
 
-  /** Stop a clip that is playing (user paused, skipped or left). */
+  /** Stop a clip that is playing (user paused, skipped or started another track). */
   stop(): void {
     this.cancel?.();
+  }
+
+  /**
+   * Resolves once no clip is running. The recitation player waits on this before it plays, so the
+   * recitation can never start underneath a clip, whichever code path asks it to play.
+   */
+  async whenIdle(): Promise<void> {
+    await whenClipIdle();
   }
 
   isPlaying(): boolean {
@@ -60,12 +72,22 @@ class IntroClipService {
   }
 
   /**
-   * Play a clip and wait for it to finish. Never throws. Resolves true when it played to the end,
-   * false when it was disabled, skipped or failed (callers carry on with the recitation either way).
+   * Play a clip and wait for it to finish. Never throws. Callers must only start the recitation
+   * when the result is not 'cancelled'.
    */
-  async play(kind: ClipKind): Promise<boolean> {
-    if (!isClipEnabled(kind)) return false;
+  async play(kind: ClipKind): Promise<ClipResult> {
+    if (!isClipEnabled(kind)) return 'disabled';
     this.stop();
+    const job = this.playInner();
+    setActiveClip(job);
+    try {
+      return await job;
+    } finally {
+      if (getActiveClip() === job) setActiveClip(null);
+    }
+  }
+
+  private async playInner(): Promise<ClipResult> {
     let lang = 'en';
     try {
       lang = resolveLocale(useLanguageStore.getState().preference);
@@ -73,19 +95,22 @@ class IntroClipService {
       /* English */
     }
     const url = clipUrlFor(lang);
-    if (url && (await this.run(url))) return true;
+    if (url) {
+      const r = await this.run(url);
+      if (r !== 'failed') return r;
+    }
     return this.run(BUNDLED_EN);
   }
 
-  private run(source: string | number): Promise<boolean> {
-    return new Promise<boolean>(resolve => {
+  private run(source: string | number): Promise<ClipResult> {
+    return new Promise<ClipResult>(resolve => {
       let done = false;
       let player: AudioPlayer | null = null;
       let loadTimer: ReturnType<typeof setTimeout> | undefined;
       let capTimer: ReturnType<typeof setTimeout> | undefined;
       let sub: {remove: () => void} | undefined;
 
-      const finish = (ok: boolean) => {
+      const finish = (result: ClipResult) => {
         if (done) return;
         done = true;
         clearTimeout(loadTimer);
@@ -99,7 +124,7 @@ class IntroClipService {
         }
         if (this.player === player) this.player = null;
         this.cancel = null;
-        resolve(ok);
+        resolve(result);
       };
 
       try {
@@ -107,22 +132,25 @@ class IntroClipService {
           typeof source === 'string' ? {uri: source} : source,
         );
         this.player = player;
-        this.cancel = () => finish(false);
+        this.cancel = () => finish('cancelled');
         let started = false;
         sub = player.addListener('playbackStatusUpdate', status => {
           if (status.isLoaded && !started) {
             started = true;
             clearTimeout(loadTimer);
           }
-          if (status.didJustFinish) finish(true);
+          if (status.didJustFinish) finish('completed');
         });
         loadTimer = setTimeout(() => {
-          if (!started) finish(false);
+          if (!started) finish('failed');
         }, LOAD_TIMEOUT_MS);
-        capTimer = setTimeout(() => finish(started), MAX_CLIP_MS);
+        capTimer = setTimeout(
+          () => finish(started ? 'completed' : 'failed'),
+          MAX_CLIP_MS,
+        );
         player.play();
       } catch {
-        finish(false);
+        finish('failed');
       }
     });
   }

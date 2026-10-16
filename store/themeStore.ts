@@ -12,6 +12,31 @@ interface ThemeState {
   setPrimaryColor: (color: PrimaryColor) => void;
 }
 
+/**
+ * Sync native UI (keyboard, alerts, glass chrome) with the chosen mode. react-native-web's Appearance
+ * has no setColorScheme, so calling it there threw and the theme never changed (Light/Dark looked
+ * disabled). On web we only set the CSS color-scheme instead.
+ */
+const syncNativeColorScheme = (mode: ThemeMode) => {
+  if (Platform.OS === 'web') {
+    if (typeof document !== 'undefined') {
+      document.documentElement.style.colorScheme =
+        mode === 'system' ? '' : mode;
+    }
+    return;
+  }
+  try {
+    if (mode === 'system') {
+      // Android's AppearanceModule.setColorScheme crashes on null, so skip it there.
+      if (Platform.OS !== 'android') Appearance.setColorScheme(null as any);
+    } else {
+      Appearance.setColorScheme(mode);
+    }
+  } catch {
+    /* never block a theme change on native chrome sync */
+  }
+};
+
 const getEffectiveTheme = (
   mode: ThemeMode,
   primaryColor: PrimaryColor,
@@ -46,15 +71,7 @@ export const useThemeStore = create<ThemeState>()(
       setThemeMode: mode =>
         set(state => {
           const newTheme = getEffectiveTheme(mode, state.primaryColor);
-          // Sync native UI (keyboard, alerts, liquid glass chrome) with the choice
-          // Android's AppearanceModule.setColorScheme crashes on null — skip the call entirely
-          if (mode === 'system') {
-            if (Platform.OS !== 'android') {
-              Appearance.setColorScheme(null as any);
-            }
-          } else {
-            Appearance.setColorScheme(mode);
-          }
+          syncNativeColorScheme(mode);
           return {
             themeMode: mode,
             theme: newTheme,
@@ -80,14 +97,7 @@ export const useThemeStore = create<ThemeState>()(
       onRehydrateStorage: () => state => {
         if (state) {
           const theme = getEffectiveTheme(state.themeMode, state.primaryColor);
-          // Sync native UI with the persisted preference on app launch
-          if (state.themeMode === 'system') {
-            if (Platform.OS !== 'android') {
-              Appearance.setColorScheme(null as any);
-            }
-          } else {
-            Appearance.setColorScheme(state.themeMode);
-          }
+          syncNativeColorScheme(state.themeMode);
           useThemeStore.setState({
             ...state,
             theme,

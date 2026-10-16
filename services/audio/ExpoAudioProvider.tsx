@@ -51,6 +51,7 @@ export function ExpoAudioProvider({children}: ExpoAudioProviderProps) {
     duration: 0,
   });
   const isHandlingTrackEnd = useRef(false);
+  const endHandledRef = useRef(false);
   const wasPlaying = useRef(false);
 
   // Analytics refs
@@ -373,7 +374,9 @@ export function ExpoAudioProvider({children}: ExpoAudioProviderProps) {
         !completedTrack.isUserUpload &&
         shouldPlayEndClip(latestStatusRef.current.duration)
       ) {
-        await introClipService.play('end');
+        const clip = await introClipService.play('end');
+        // Paused or skipped during the outro: do not also advance from here.
+        if (clip === 'cancelled') return;
       }
 
       if (repeatMode === 'track') {
@@ -402,9 +405,15 @@ export function ExpoAudioProvider({children}: ExpoAudioProviderProps) {
   // Monitor for track end via didJustFinish
   useEffect(() => {
     // expo-audio sets didJustFinish to true when track completes
-    if (status.didJustFinish) {
-      handleTrackEnd();
+    // didJustFinish stays true until the next status change, and handleTrackEnd can now take a few
+    // seconds (outro clip). Handle each finish once, or the end clip would re-trigger and loop.
+    if (!status.didJustFinish) {
+      endHandledRef.current = false;
+      return;
     }
+    if (endHandledRef.current) return;
+    endHandledRef.current = true;
+    handleTrackEnd();
   }, [status.didJustFinish, handleTrackEnd]);
 
   // ========== AMBIENT SOUND SYNC ==========
