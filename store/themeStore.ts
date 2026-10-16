@@ -64,9 +64,9 @@ Appearance.addChangeListener(({colorScheme}) => {
 export const useThemeStore = create<ThemeState>()(
   persist(
     set => ({
-      themeMode: 'system',
+      themeMode: 'dark',
       primaryColor: 'Blue',
-      theme: getEffectiveTheme('system', 'Blue'),
+      theme: getEffectiveTheme('dark', 'Blue'),
 
       setThemeMode: mode =>
         set(state => {
