@@ -1,18 +1,14 @@
-import {Platform} from 'react-native';
 import branding from '@/config/branding';
 import {RECITERS, type Rewayat} from '@/data/reciterData';
 import {timestampDatabaseService} from './TimestampDatabaseService';
 import type {AyahTimestamp} from '@/types/timestamps';
 
-// Timestamps are self-hosted: the JSON files ship in `public/timestamps/` and are served
-// by the same site as the web app (https://istima.app/timestamps/...). Same-origin on web, so
-// no CORS; native builds read the same files from the website. A fork can still point
-// `branding.timestampCdnBase` at its own mirror. The URL is composed below as
-// `${R2_BASE}/${rewayatId}/${paddedSurah}.json`. A trailing slash is stripped so a fork
-// typo doesn't produce `//` paths that 404 on most CDNs.
+// Timestamps are self-hosted in the AxiomGroupHQ/Qari-api repo and served by Cloudflare Pages at
+// https://iapi.istima.app/timestamps/{rewayatId}/{NNN}.json on every platform. A fork can point
+// `branding.timestampCdnBase` at its own mirror. A trailing slash is stripped so a typo doesn't
+// produce `//` paths that 404 on most CDNs.
 const R2_BASE = (
-  branding.timestampCdnBase ??
-  (Platform.OS === 'web' ? '/timestamps' : `${branding.websiteUrl}/timestamps`)
+  branding.timestampCdnBase ?? 'https://iapi.istima.app/timestamps'
 ).replace(/\/+$/, '');
 
 // Minimal per-element shape check for the fetched JSON. The cast

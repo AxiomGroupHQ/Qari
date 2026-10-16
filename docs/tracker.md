@@ -10,7 +10,7 @@ Deferred items and the Bayaan self-hosting inventory. Update the status when som
 | Rate app (Settings) | Message only | The real App Store ID (and Play listing). Bayaan's ID was removed, `utils/reviewUtils.ts` is deleted. Rate now shows a friendly "not available yet" toast. |
 | Legal pages (privacy, terms) | English only | Decide whether to translate `data/legal/*.json`. Both now say "Last Updated: October 2026". |
 | Manifest link in the web page | Open | `public/manifest.json` exists but the HTML does not link to it yet (needs a custom web HTML template). |
-| Cloudflare Pages file limit | Watch | `public/timestamps` adds ~12.9k files. Pages allows 20,000 files per deploy. Merge them into one file per rewayat if the app grows. |
+| Cloudflare Pages project for iapi.istima.app | Needs setup | Connect `AxiomGroupHQ/Qari-api` to a Pages project and add the custom domain `iapi.istima.app`. Timestamps return 404 until this is done. Pages allows 20,000 files per deploy (now ~12.9k). |
 
 ## Bayaan self-hosting inventory
 
@@ -18,7 +18,7 @@ Status values: **bundled** = pulled and served from our own site, **not contacte
 
 | Asset / host | Used for | Status |
 | --- | --- | --- |
-| `cdn.thebayaan.com/timestamps/{rewayatId}/{NNN}.json` (12,875 files, 113 rewayat, ~69 MB) | Verse follow-along timing | **Bundled**. Pulled into `public/timestamps/`, served from `istima.app/timestamps/...`. Code reads `/timestamps` on web and `https://istima.app/timestamps` on iOS/Android. Live after the next deploy. |
+| `cdn.thebayaan.com/timestamps/{rewayatId}/{NNN}.json` (12,875 files, 113 rewayat, ~69 MB) | Verse follow-along timing | **Pulled and pushed** to the `AxiomGroupHQ/Qari-api` repo (`timestamps/`). The app reads `https://iapi.istima.app/timestamps/...` on web, iOS and Android. **Still pending:** Cloudflare Pages + domain (see above). |
 | `api.thebayaan.com` (reciter catalog API) | Reciter data | **Not contacted**. No API URL is set in production, the app uses the bundled `data/reciters-fallback.json`. Env var names `EXPO_PUBLIC_BAYAAN_API_URL/KEY` still work as legacy aliases only. |
 | Reciter catalog and rewayat data | Reciter lists | **Bundled** (`data/reciters-fallback.json`, `data/rewayat*.ts`). |
 | `EXPO_PUBLIC_KILLSWITCH_URL` | Remote kill switch | **Not contacted** unless the variable is set. It is not set. |
