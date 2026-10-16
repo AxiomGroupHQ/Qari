@@ -559,6 +559,11 @@
       "downloadingPlaylist": "Downloading playlist...",
       "editPlaylist": "Edit Playlist",
       "emptyPlaylist": "Empty Playlist",
+      "shareFailed": "Could not create the share link. Check your connection and try again.",
+      "shareMessage": "Listen to my playlist \"{{name}}\" on Istima",
+      "shareNothing": "Add some surahs before sharing.",
+      "sharePlaylist": "Share Playlist",
+      "shareRateLimited": "Too many links created. Try again in an hour.",
       "thisPlaylistIsEmpty": "This playlist is empty."
     },
     "rewayatInfoSheet": {
@@ -811,5 +816,17 @@
       "unknown": "Something went wrong. Please try again."
     },
     "emailRequired": "A valid email is required to save your personal data (favorites, bookmarks, playlists, settings). Without one, it stays on this device only."
+  },
+  "sharedPlaylist": {
+    "title": "Shared playlist",
+    "play": "Play all",
+    "save": "Save to my playlists",
+    "saved": "Saved to your playlists",
+    "loading": "Loading playlist...",
+    "notFound": "This shared playlist was not found.",
+    "error": "Could not load this playlist. Check your connection.",
+    "retry": "Try again",
+    "itemCount_one": "{{count}} recitation",
+    "itemCount_other": "{{count}} recitations"
   }
 }

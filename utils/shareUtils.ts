@@ -49,6 +49,10 @@ export function mushafShareUrl(page: number, theme?: 'dark' | 'light'): string {
     : `${BASE_URL}/mushaf/${page}`;
 }
 
+export function playlistShareUrl(id: string): string {
+  return `${BASE_URL}/p/${id}`;
+}
+
 export function adhkarShareUrl(superId: string): string {
   return `${BASE_URL}/adhkar/${superId}`;
 }
@@ -59,7 +63,8 @@ export function dhikrShareUrl(superId: string, dhikrId: string): string {
 
 function inferShareContentType(
   url: string,
-): 'verse' | 'surah' | 'mushaf' | 'reciter' | 'adhkar' {
+): 'verse' | 'surah' | 'mushaf' | 'reciter' | 'adhkar' | 'playlist' {
+  if (/\/p\/[a-z0-9]+$/.test(url)) return 'playlist';
   if (/\/quran\/\d+\/\d+/.test(url)) return 'verse';
   if (/\/quran\/\d+/.test(url)) return 'surah';
   if (url.includes('/mushaf/')) return 'mushaf';
