@@ -38,7 +38,7 @@ Status values: **bundled** = pulled and served from our own site, **not contacte
 | `EXPO_PUBLIC_KILLSWITCH_URL` | Remote kill switch | **Not contacted** unless the variable is set. It is not set. |
 | Old upstream link domain (iOS associated domain) | iOS universal links | **Fixed.** `ios/Istima/Istima.entitlements` and `app.config.js` both use `istima.app` now. AASA file is in `public/.well-known/`. |
 | Audio files (`server*.mp3quran.net`) | Recitation playback | **Still external**, but this is mp3quran.net, not the old upstream. Self-hosting is ~GBs of audio and needs Cloudflare R2 access. |
-| Runtime identifiers (storage keys such as `@istima/last_track`, Postmark template alias, `istima_*` keys) | Local storage, email template | Kept on purpose, so existing users keep their data. Not network contacts. |
+| Runtime identifiers (storage keys such as `@istima/last_track`, `istima_*` keys) | Local storage | Kept on purpose, so existing users keep their data. Not network contacts. |
 
 ## Feature backlog (checked October 2026)
 

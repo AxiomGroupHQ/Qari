@@ -26,7 +26,6 @@ module.exports = {
   apiBaseUrl: 'https://iapi.istima.app',
   // Google OAuth client IDs (Google Cloud console). Empty = Google sign-in button is hidden.
   googleClientIds: {web: '', ios: '', android: ''},
-  emailProductName: 'Istima',
   catalog: {
     source: 'bundled',
     fallbackPath: undefined,

@@ -87,7 +87,6 @@ export interface Branding {
   apiBaseUrl: string;
   /** Google OAuth client IDs. An empty `web` ID hides Google sign-in. */
   googleClientIds: {web: string; ios: string; android: string};
-  emailProductName: string;
   catalog: BrandingCatalogConfig;
   /**
    * Order + visibility of Listen-tab home rows.

@@ -20,13 +20,6 @@
 - Server URL pattern stored in: Rewayat.server field (e.g., `https://redacted.supabase.co/storage/v1/object/public/quran-audio/reciters/{folder}`)
 - Audio file format: MP3 files named with 3-digit surah numbers (001.mp3 to 114.mp3)
 
-**Email Service (Postmark):**
-- Service: Postmark email service
-- What it's used for: Verification email delivery
-- SDK/Client: `postmark` package (imported in `services/emailService.ts`)
-- Auth: `POSTMARK_API_KEY` configured via `Constants.expoConfig?.extra?.postmarkApiKey`
-- Implementation: `services/emailService.ts` - `sendVerificationEmail()` function
-- Template: Template alias `email-verification-istima-1`
 
 ## Data Storage
 
@@ -66,7 +59,6 @@
 - Implementation approach:
   - Supabase anonymous auth for read-only data access
   - No user account system currently in place
-  - Postmark email verification for future feature integration
 - No user login/registration UI in current version
 
 ## Monitoring & Observability
@@ -109,8 +101,6 @@
 - `SUPABASE_URL` - Supabase project URL
 - `SUPABASE_ANON_KEY` - Supabase anonymous API key
 - `APPLE_TEAM_ID` - Apple Developer Team ID for iOS signing
-- `POSTMARK_API_KEY` - Email service API key (optional, for email features)
-- `POSTMARK_FROM_EMAIL` - Sender email address (optional)
 
 **Build-time vars (gradle.properties for Android):**
 - `ISTIMA_UPLOAD_KEYSTORE_PATH` - Path to Android signing keystore
@@ -130,7 +120,6 @@
 
 **Outgoing:**
 - None detected
-- Note: Email verification flow in `services/emailService.ts` is setup-ready but may not be fully integrated
 
 ---
 
