@@ -218,7 +218,9 @@
     "whatSNew": "Lu bees",
     "wordByWord": "Baat ak baat",
     "writeYourNoteHere": "Bindal sa bind fii...",
-    "yourPlaylists": "Sa liste yi"
+    "yourPlaylists": "Sa liste yi",
+    "rewayatAvailable": "{{number}} rewayat yu am",
+    "rewayatByReciter": "{{rewayat}} bu {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -685,7 +687,9 @@
       "termsOfService": "Yoon yu jëfandikoo",
       "viewAndManageStorageUsage": "Seet te saytu jëfandikoo dencukaay bi",
       "viewOurPrivacyPolicy": "Seet sunu politigu kumpa",
-      "writeAReview": "Bind ab saytu"
+      "writeAReview": "Bind ab saytu",
+      "rateUnavailableTitle": "Natt gi amul leegi",
+      "rateUnavailableMessage": "Appli bi manul ñu ko gis ci app store yi. Dellusiil gis ko ci ay bés."
     }
   },
   "ui": {

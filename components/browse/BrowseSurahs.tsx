@@ -391,7 +391,11 @@ export default function BrowseSurahs({theme, onBack}: BrowseSurahsProps) {
                 ? 'arrow-down'
                 : 'calendar';
           const label =
-            option === 'asc' ? 'Asc' : option === 'desc' ? 'Desc' : 'Rev';
+            option === 'asc'
+              ? t('common.asc')
+              : option === 'desc'
+                ? t('common.desc')
+                : t('common.rev');
           return (
             <Pressable
               key={option}

@@ -215,7 +215,9 @@
     "whatSNew": "புதியவை என்ன",
     "wordByWord": "சொல் வாரியாக",
     "writeYourNoteHere": "இங்கே உங்கள் குறிப்பை எழுதுங்கள்...",
-    "yourPlaylists": "உங்கள் பிளேலிஸ்ட்கள்"
+    "yourPlaylists": "உங்கள் பிளேலிஸ்ட்கள்",
+    "rewayatAvailable": "{{number}} ரிவாயத்துகள் உள்ளன",
+    "rewayatByReciter": "{{reciter}} அவர்களின் {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "சேவை விதிமுறைகள்",
       "viewAndManageStorageUsage": "சேமிப்பக பயன்பாட்டைப் பார்த்து நிர்வகியுங்கள்",
       "viewOurPrivacyPolicy": "எங்கள் தனியுரிமைக் கொள்கையைப் பாருங்கள்",
-      "writeAReview": "மதிப்பாய்வு எழுதுங்கள்"
+      "writeAReview": "மதிப்பாய்வு எழுதுங்கள்",
+      "rateUnavailableTitle": "மதிப்பீடு இன்னும் கிடைக்கவில்லை",
+      "rateUnavailableMessage": "செயலி இன்னும் ஆப் ஸ்டோர்களில் பட்டியலிடப்படவில்லை. விரைவில் மீண்டும் பார்க்கவும்."
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "வசனம் {{surah}}:{{ayah}} · சொல் {{position}} / {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "ஹஃப்ஸ்",
+      "shubah": "ஷுஃபா",
+      "al-bazzi": "அல்-பஸ்ஸி",
+      "qunbul": "குன்புல்",
+      "warsh": "வர்ஷ்",
+      "qalun": "காலூன்",
+      "al-duri-abi-amr": "அத்-தூரி (அபூ அம்ர்)",
+      "al-susi": "அஸ்-ஸூஸி",
+      "hisham": "ஹிஷாம்",
+      "ibn-dhakwan": "இப்னு தக்வான்",
+      "khalaf-an-hamzah": "கலஃப் (ஹம்ஸா)",
+      "khallad": "கல்லாத்",
+      "al-duri-al-kisai": "அத்-தூரி (அல்-கிஸாஈ)",
+      "abu-al-harith": "அபுல் ஹாரிஸ்",
+      "ibn-jammaz": "இப்னு ஜம்மாஸ்",
+      "ibn-wardan": "இப்னு வர்தான்",
+      "rawh": "ரவ்ஹ்",
+      "ruwais": "ருவைஸ்",
+      "idris": "இத்ரீஸ்",
+      "ishaq": "இஸ்ஹாக்"
+    }
   }
 }

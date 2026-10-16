@@ -388,7 +388,9 @@ export const CollectionSearchModal: React.FC<CollectionSearchModalProps> = ({
           type: 'reciter',
           id: reciter.id,
           title: reciter.name,
-          subtitle: `${reciter.rewayat.length} rewayat available`,
+          subtitle: t('common.rewayatAvailable', {
+            number: reciter.rewayat.length,
+          }),
           metadata: {kind: 'reciter', data: reciter},
         });
         console.log('  ✓ Found favorite reciter:', reciter.name);
@@ -407,9 +409,10 @@ export const CollectionSearchModal: React.FC<CollectionSearchModalProps> = ({
           results.push({
             type: 'rewayat',
             id: rewayat.id,
-            title: `${getDisplayLabelFromName(rewayat.name)} by ${
-              reciter.name
-            }`,
+            title: t('common.rewayatByReciter', {
+              rewayat: getDisplayLabelFromName(rewayat.name),
+              reciter: reciter.name,
+            }),
             subtitle: t('collection.collectionSearchModal.rewayat'),
             metadata: {kind: 'rewayat', data: {reciter, rewayat}},
           });

@@ -215,7 +215,9 @@
     "whatSNew": "Ano ang bago",
     "wordByWord": "Salita bawat salita",
     "writeYourNoteHere": "Isulat ang iyong tala rito...",
-    "yourPlaylists": "Mga playlist mo"
+    "yourPlaylists": "Mga playlist mo",
+    "rewayatAvailable": "{{number}} rewayat ang magagamit",
+    "rewayatByReciter": "{{rewayat}} ni {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Mga tuntunin ng serbisyo",
       "viewAndManageStorageUsage": "Tingnan at pamahalaan ang paggamit ng storage",
       "viewOurPrivacyPolicy": "Tingnan ang aming patakaran sa privacy",
-      "writeAReview": "Sumulat ng pagsusuri"
+      "writeAReview": "Sumulat ng pagsusuri",
+      "rateUnavailableTitle": "Hindi pa available ang pagre-rate",
+      "rateUnavailableMessage": "Wala pa ang app sa mga app store. Pakisubukang muli sa lalong madaling panahon."
     }
   },
   "ui": {

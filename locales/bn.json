@@ -215,7 +215,9 @@
     "whatSNew": "নতুন কী আছে",
     "wordByWord": "শব্দে শব্দে",
     "writeYourNoteHere": "আপনার নোট এখানে লিখুন...",
-    "yourPlaylists": "আপনার প্লেলিস্ট"
+    "yourPlaylists": "আপনার প্লেলিস্ট",
+    "rewayatAvailable": "{{number}}টি তিলাওয়াত পদ্ধতি পাওয়া যাচ্ছে",
+    "rewayatByReciter": "{{reciter}}-এর {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "সেবার শর্তাবলি",
       "viewAndManageStorageUsage": "স্টোরেজ ব্যবহার দেখুন ও পরিচালনা করুন",
       "viewOurPrivacyPolicy": "আমাদের গোপনীয়তা নীতি দেখুন",
-      "writeAReview": "রিভিউ লিখুন"
+      "writeAReview": "রিভিউ লিখুন",
+      "rateUnavailableTitle": "রেটিং এখনো উপলব্ধ নয়",
+      "rateUnavailableMessage": "অ্যাপটি এখনো অ্যাপ স্টোরে তালিকাভুক্ত হয়নি। অনুগ্রহ করে একটু পরে আবার দেখুন।"
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "আয়াত {{surah}}:{{ayah}} · শব্দ {{position}}/{{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "হাফস",
+      "shubah": "শুবা",
+      "al-bazzi": "আল-বাজ্জি",
+      "qunbul": "কুনবুল",
+      "warsh": "ওয়ার্শ",
+      "qalun": "কালুন",
+      "al-duri-abi-amr": "আদ-দুরি (আবু আমর)",
+      "al-susi": "আস-সুসি",
+      "hisham": "হিশাম",
+      "ibn-dhakwan": "ইবনে যাকওয়ান",
+      "khalaf-an-hamzah": "খালাফ (হামযা)",
+      "khallad": "খাল্লাদ",
+      "al-duri-al-kisai": "আদ-দুরি (আল-কিসায়ি)",
+      "abu-al-harith": "আবুল হারিস",
+      "ibn-jammaz": "ইবনে জাম্মায",
+      "ibn-wardan": "ইবনে ওয়ারদান",
+      "rawh": "রাওহ",
+      "ruwais": "রুওয়াইস",
+      "idris": "ইদরিস",
+      "ishaq": "ইসহাক"
+    }
   }
 }

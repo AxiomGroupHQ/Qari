@@ -219,7 +219,9 @@
     "whatSNew": "چی نوێیە",
     "wordByWord": "وشە بە وشە",
     "writeYourNoteHere": "تێبینییەکەت لێرە بنووسە...",
-    "yourPlaylists": "لیستەکانی لێدانت"
+    "yourPlaylists": "لیستەکانی لێدانت",
+    "rewayatAvailable": "{{number}} ڕیوایەت بەردەستە",
+    "rewayatByReciter": "{{rewayat}} بە دەنگی {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -683,7 +685,9 @@
       "termsOfService": "مەرجەکانی خزمەتگوزاری",
       "viewAndManageStorageUsage": "بەکارهێنانی بیرگە ببینە و بەڕێوەی ببە",
       "viewOurPrivacyPolicy": "سیاسەتی تایبەتمەندییەکەمان ببینە",
-      "writeAReview": "هەڵسەنگاندن بنووسە"
+      "writeAReview": "هەڵسەنگاندن بنووسە",
+      "rateUnavailableTitle": "هەڵسەنگاندن هێشتا بەردەست نییە",
+      "rateUnavailableMessage": "ئەپەکە هێشتا لە فرۆشگاکانی ئەپدا تۆمار نەکراوە. تکایە دواتر دووبارە بپشکنە."
     }
   },
   "ui": {
@@ -749,5 +753,29 @@
   },
   "wordDetail": {
     "context": "ئایەتی {{surah}}:{{ayah}} · وشەی {{position}} لە {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "حفص",
+      "shubah": "شعبة",
+      "al-bazzi": "البزي",
+      "qunbul": "قنبل",
+      "warsh": "ورش",
+      "qalun": "قالون",
+      "al-duri-abi-amr": "الدوري (أبو عمرو)",
+      "al-susi": "السوسي",
+      "hisham": "هشام",
+      "ibn-dhakwan": "ابن ذكوان",
+      "khalaf-an-hamzah": "خلف (حمزة)",
+      "khallad": "خلاد",
+      "al-duri-al-kisai": "الدوري (الكسائي)",
+      "abu-al-harith": "أبو الحارث",
+      "ibn-jammaz": "ابن جماز",
+      "ibn-wardan": "ابن وردان",
+      "rawh": "روح",
+      "ruwais": "رويس",
+      "idris": "إدريس",
+      "ishaq": "إسحاق"
+    }
   }
 }

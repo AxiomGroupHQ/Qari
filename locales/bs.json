@@ -218,7 +218,9 @@
     "whatSNew": "Šta je novo",
     "wordByWord": "Riječ po riječ",
     "writeYourNoteHere": "Napišite svoju bilješku ovdje...",
-    "yourPlaylists": "Vaše plejliste"
+    "yourPlaylists": "Vaše plejliste",
+    "rewayatAvailable": "Dostupno rivajeta: {{number}}",
+    "rewayatByReciter": "{{rewayat}} – {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -685,7 +687,9 @@
       "termsOfService": "Uslovi korištenja",
       "viewAndManageStorageUsage": "Pregledajte i upravljajte korištenjem pohrane",
       "viewOurPrivacyPolicy": "Pogledajte našu politiku privatnosti",
-      "writeAReview": "Napišite recenziju"
+      "writeAReview": "Napišite recenziju",
+      "rateUnavailableTitle": "Ocjenjivanje još nije dostupno",
+      "rateUnavailableMessage": "Aplikacija još nije objavljena u prodavnicama aplikacija. Provjerite ponovo uskoro."
     }
   },
   "ui": {

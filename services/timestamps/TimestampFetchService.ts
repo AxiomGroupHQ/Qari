@@ -1,22 +1,18 @@
+import {Platform} from 'react-native';
 import branding from '@/config/branding';
 import {RECITERS, type Rewayat} from '@/data/reciterData';
 import {timestampDatabaseService} from './TimestampDatabaseService';
 import type {AyahTimestamp} from '@/types/timestamps';
 
-// RFC-015 — fork-supplied timestamp CDN base. Absent from `branding.js`
-// → fallback to Istima's production CDN (byte-equivalent to the
-// pre-RFC-015 hardcoded value). Forks set `branding.timestampCdnBase`
-// to their own mirror's base. The URL is composed below as
-// `${R2_BASE}/${rewayatId}/${paddedSurah}.json`.
-//
-// The JSDoc on `branding.timestampCdnBase` documents "no trailing
-// slash", but a fork typo (`'https://cdn.myfork.com/timestamps/'`)
-// would compose `…/timestamps//rewayat-id/001.json` and silently 404
-// every lookup against R2 / most CDNs that don't normalize doubled
-// slashes. Strip a trailing slash defensively so the runtime matches
-// the contract regardless of the fork-side value.
+// Timestamps are self-hosted: the JSON files ship in `public/timestamps/` and are served
+// by the same site as the web app (https://istima.app/timestamps/...). Same-origin on web, so
+// no CORS; native builds read the same files from the website. A fork can still point
+// `branding.timestampCdnBase` at its own mirror. The URL is composed below as
+// `${R2_BASE}/${rewayatId}/${paddedSurah}.json`. A trailing slash is stripped so a fork
+// typo doesn't produce `//` paths that 404 on most CDNs.
 const R2_BASE = (
-  branding.timestampCdnBase ?? 'https://cdn.thebayaan.com/timestamps'
+  branding.timestampCdnBase ??
+  (Platform.OS === 'web' ? '/timestamps' : `${branding.websiteUrl}/timestamps`)
 ).replace(/\/+$/, '');
 
 // Minimal per-element shape check for the fetched JSON. The cast

@@ -214,7 +214,9 @@
     "whatSNew": "Kí ló tuntun",
     "wordByWord": "Ọ̀rọ̀ kọ̀ọ̀kan",
     "writeYourNoteHere": "Kọ àkọsílẹ̀ rẹ níbí...",
-    "yourPlaylists": "Àwọn àtòjọ ìṣeré rẹ"
+    "yourPlaylists": "Àwọn àtòjọ ìṣeré rẹ",
+    "rewayatAvailable": "Rewayat {{number}} wà",
+    "rewayatByReciter": "{{rewayat}} láti ọwọ́ {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -678,7 +680,9 @@
       "termsOfService": "Àwọn òfin iṣẹ́",
       "viewAndManageStorageUsage": "Wo kí o sì ṣàkóso lílo ibi ìpamọ́",
       "viewOurPrivacyPolicy": "Wo ìlànà àṣírí wa",
-      "writeAReview": "Kọ àyẹ̀wò"
+      "writeAReview": "Kọ àyẹ̀wò",
+      "rateUnavailableTitle": "Ìdíwọ̀n kò sí síbẹ̀",
+      "rateUnavailableMessage": "A kò tíì ṣe àtòjọ àpù yìí sórí àwọn ilé ìtajà àpù. Jọ̀wọ́ tún wò ó láìpẹ́."
     }
   },
   "ui": {

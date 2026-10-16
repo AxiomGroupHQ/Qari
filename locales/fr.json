@@ -218,7 +218,9 @@
     "whatSNew": "Nouveautés",
     "wordByWord": "Mot à mot",
     "writeYourNoteHere": "Écrivez votre note ici...",
-    "yourPlaylists": "Vos playlists"
+    "yourPlaylists": "Vos playlists",
+    "rewayatAvailable": "{{number}} rewayat disponibles",
+    "rewayatByReciter": "{{rewayat}} par {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -685,7 +687,9 @@
       "termsOfService": "Conditions d'utilisation",
       "viewAndManageStorageUsage": "Consultez et gérez l'espace de stockage utilisé",
       "viewOurPrivacyPolicy": "Consultez notre politique de confidentialité",
-      "writeAReview": "Écrire un avis"
+      "writeAReview": "Écrire un avis",
+      "rateUnavailableTitle": "La notation n'est pas encore disponible",
+      "rateUnavailableMessage": "L'application n'est pas encore publiée sur les boutiques d'applications. Revenez bientôt."
     }
   },
   "ui": {

@@ -215,7 +215,9 @@
     "whatSNew": "نیا کیا ہے",
     "wordByWord": "لفظ بہ لفظ",
     "writeYourNoteHere": "اپنا نوٹ یہاں لکھیں...",
-    "yourPlaylists": "آپ کی پلے لسٹس"
+    "yourPlaylists": "آپ کی پلے لسٹس",
+    "rewayatAvailable": "{{number}} روایات دستیاب",
+    "rewayatByReciter": "{{reciter}} کی {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "شرائطِ خدمت",
       "viewAndManageStorageUsage": "اسٹوریج کے استعمال کو دیکھیں اور منظم کریں",
       "viewOurPrivacyPolicy": "ہماری رازداری کی پالیسی دیکھیں",
-      "writeAReview": "جائزہ لکھیں"
+      "writeAReview": "جائزہ لکھیں",
+      "rateUnavailableTitle": "ریٹنگ ابھی دستیاب نہیں",
+      "rateUnavailableMessage": "ایپ ابھی ایپ اسٹورز پر دستیاب نہیں۔ براہِ کرم جلد دوبارہ دیکھیں۔"
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "آیت {{surah}}:{{ayah}} · لفظ {{position}} از {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "حفص",
+      "shubah": "شعبة",
+      "al-bazzi": "البزي",
+      "qunbul": "قنبل",
+      "warsh": "ورش",
+      "qalun": "قالون",
+      "al-duri-abi-amr": "الدوري (أبو عمرو)",
+      "al-susi": "السوسي",
+      "hisham": "هشام",
+      "ibn-dhakwan": "ابن ذكوان",
+      "khalaf-an-hamzah": "خلف (حمزة)",
+      "khallad": "خلاد",
+      "al-duri-al-kisai": "الدوري (الكسائي)",
+      "abu-al-harith": "أبو الحارث",
+      "ibn-jammaz": "ابن جماز",
+      "ibn-wardan": "ابن وردان",
+      "rawh": "روح",
+      "ruwais": "رويس",
+      "idris": "إدريس",
+      "ishaq": "إسحاق"
+    }
   }
 }

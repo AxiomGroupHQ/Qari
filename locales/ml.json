@@ -215,7 +215,9 @@
     "whatSNew": "പുതിയതെന്താണ്",
     "wordByWord": "പദാനുപദം",
     "writeYourNoteHere": "ഇവിടെ നിങ്ങളുടെ കുറിപ്പ് എഴുതുക...",
-    "yourPlaylists": "നിങ്ങളുടെ പ്ലേലിസ്റ്റുകൾ"
+    "yourPlaylists": "നിങ്ങളുടെ പ്ലേലിസ്റ്റുകൾ",
+    "rewayatAvailable": "{{number}} റിവായത്തുകൾ ലഭ്യമാണ്",
+    "rewayatByReciter": "{{reciter}}യുടെ {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "സേവന നിബന്ധനകൾ",
       "viewAndManageStorageUsage": "സംഭരണ ഉപയോഗം കാണുകയും നിയന്ത്രിക്കുകയും ചെയ്യുക",
       "viewOurPrivacyPolicy": "ഞങ്ങളുടെ സ്വകാര്യതാ നയം കാണുക",
-      "writeAReview": "ഒരു റിവ്യൂ എഴുതുക"
+      "writeAReview": "ഒരു റിവ്യൂ എഴുതുക",
+      "rateUnavailableTitle": "റേറ്റിംഗ് ഇതുവരെ ലഭ്യമല്ല",
+      "rateUnavailableMessage": "ആപ്പ് ഇതുവരെ ആപ്പ് സ്റ്റോറുകളിൽ ലിസ്റ്റ് ചെയ്തിട്ടില്ല. ദയവായി പിന്നീട് വീണ്ടും പരിശോധിക്കുക."
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "വാക്യം {{surah}}:{{ayah}} · വാക്ക് {{position}} / {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "ഹഫ്സ്",
+      "shubah": "ശുഅ്ബ",
+      "al-bazzi": "അൽ-ബസ്സി",
+      "qunbul": "ഖുൻബുൽ",
+      "warsh": "വർശ്",
+      "qalun": "ഖാലൂൻ",
+      "al-duri-abi-amr": "അദ്-ദൂരി (അബൂ അംറ്)",
+      "al-susi": "അസ്-സൂസി",
+      "hisham": "ഹിശാം",
+      "ibn-dhakwan": "ഇബ്നു ദക്വാൻ",
+      "khalaf-an-hamzah": "ഖലഫ് (ഹംസ)",
+      "khallad": "ഖല്ലാദ്",
+      "al-duri-al-kisai": "അദ്-ദൂരി (അൽ-കിസാഈ)",
+      "abu-al-harith": "അബുൽ ഹാരിസ്",
+      "ibn-jammaz": "ഇബ്നു ജമ്മാസ്",
+      "ibn-wardan": "ഇബ്നു വർദാൻ",
+      "rawh": "റൗഹ്",
+      "ruwais": "റുവൈസ്",
+      "idris": "ഇദ്‌രീസ്",
+      "ishaq": "ഇസ്ഹാഖ്"
+    }
   }
 }

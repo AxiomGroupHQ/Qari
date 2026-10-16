@@ -215,7 +215,9 @@
     "whatSNew": "Yenilikler",
     "wordByWord": "Kelime Kelime",
     "writeYourNoteHere": "Notunuzu buraya yazın...",
-    "yourPlaylists": "Çalma Listeleriniz"
+    "yourPlaylists": "Çalma Listeleriniz",
+    "rewayatAvailable": "{{number}} rivayet mevcut",
+    "rewayatByReciter": "{{reciter}} – {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Hizmet Şartları",
       "viewAndManageStorageUsage": "Depolama kullanımını görüntüleyin ve yönetin",
       "viewOurPrivacyPolicy": "Gizlilik politikamızı görüntüleyin",
-      "writeAReview": "Yorum Yaz"
+      "writeAReview": "Yorum Yaz",
+      "rateUnavailableTitle": "Puanlama henüz kullanılamıyor",
+      "rateUnavailableMessage": "Uygulama henüz uygulama mağazalarında yayında değil. Lütfen yakında tekrar kontrol edin."
     }
   },
   "ui": {

@@ -212,7 +212,9 @@
     "whatSNew": "Yang Baru",
     "wordByWord": "Kata per Kata",
     "writeYourNoteHere": "Tulis catatan Anda di sini...",
-    "yourPlaylists": "Playlist Anda"
+    "yourPlaylists": "Playlist Anda",
+    "rewayatAvailable": "{{number}} riwayat tersedia",
+    "rewayatByReciter": "{{rewayat}} oleh {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -673,7 +675,9 @@
       "termsOfService": "Ketentuan Layanan",
       "viewAndManageStorageUsage": "Lihat dan kelola penggunaan penyimpanan",
       "viewOurPrivacyPolicy": "Lihat kebijakan privasi kami",
-      "writeAReview": "Tulis Ulasan"
+      "writeAReview": "Tulis Ulasan",
+      "rateUnavailableTitle": "Penilaian belum tersedia",
+      "rateUnavailableMessage": "Aplikasi belum terdaftar di toko aplikasi. Silakan cek lagi nanti."
     }
   },
   "ui": {

@@ -69,8 +69,6 @@
         "Floating player, player-sheet header, and upload UI refinements"
       ],
       "technical": [
-        "License switched from Apache 2.0 + Commons Clause to AGPL-3.0-or-later; added TRADEMARKS.md separating code license from brand protection",
-        "Open-source governance files added; bundled reciters.json removed (streams from API instead); unused fonts removed",
         "Cloudflare R2 audio CDN migration with slug-based URL resolution and cache-busting backwards compatibility",
         "Analytics infrastructure: PostHog SDK + device-ID generation + event schema + local aggregation + meaningful-listen tracking",
         "Analytics killswitch + privacy manifest + build hardening",

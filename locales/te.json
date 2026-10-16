@@ -215,7 +215,9 @@
     "whatSNew": "కొత్తగా ఏముంది",
     "wordByWord": "పదం వారీగా",
     "writeYourNoteHere": "మీ నోట్‌ను ఇక్కడ రాయండి...",
-    "yourPlaylists": "మీ ప్లేలిస్ట్‌లు"
+    "yourPlaylists": "మీ ప్లేలిస్ట్‌లు",
+    "rewayatAvailable": "{{number}} రివాయత్‌లు అందుబాటులో ఉన్నాయి",
+    "rewayatByReciter": "{{reciter}} వారి {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "సేవా నిబంధనలు",
       "viewAndManageStorageUsage": "నిల్వ వినియోగాన్ని చూడండి, నిర్వహించండి",
       "viewOurPrivacyPolicy": "మా గోప్యతా విధానాన్ని చూడండి",
-      "writeAReview": "సమీక్ష రాయండి"
+      "writeAReview": "సమీక్ష రాయండి",
+      "rateUnavailableTitle": "రేటింగ్ ఇంకా అందుబాటులో లేదు",
+      "rateUnavailableMessage": "యాప్ ఇంకా యాప్ స్టోర్‌లలో జాబితా కాలేదు. దయచేసి త్వరలో మళ్లీ చూడండి."
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "వచనం {{surah}}:{{ayah}} · పదం {{position}} / {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "హఫ్స్",
+      "shubah": "షుఅబా",
+      "al-bazzi": "అల్-బజ్జీ",
+      "qunbul": "ఖున్బుల్",
+      "warsh": "వర్ష్",
+      "qalun": "ఖాలూన్",
+      "al-duri-abi-amr": "అద్-దూరీ (అబూ అమ్ర్)",
+      "al-susi": "అస్-సూసీ",
+      "hisham": "హిషామ్",
+      "ibn-dhakwan": "ఇబ్న్ జక్వాన్",
+      "khalaf-an-hamzah": "ఖలఫ్ (హమ్జా)",
+      "khallad": "ఖల్లాద్",
+      "al-duri-al-kisai": "అద్-దూరీ (అల్-కిసాయీ)",
+      "abu-al-harith": "అబుల్ హారిస్",
+      "ibn-jammaz": "ఇబ్న్ జమ్మాజ్",
+      "ibn-wardan": "ఇబ్న్ వర్దాన్",
+      "rawh": "రౌహ్",
+      "ruwais": "రువైస్",
+      "idris": "ఇద్రీస్",
+      "ishaq": "ఇస్హాక్"
+    }
   }
 }

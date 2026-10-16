@@ -1,3 +1,4 @@
+import {t} from '@/i18n';
 import React, {useMemo} from 'react';
 import {View, Text, Pressable, StyleSheet} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
@@ -118,7 +119,9 @@ const BrowseReciterCard = React.memo(
           <View style={styles.secondaryRow}>
             <Text style={styles.reciterInfo} numberOfLines={1}>
               {uniqueRewayatNames.length > 1
-                ? `${uniqueRewayatNames.length} rewayat available`
+                ? t('common.rewayatAvailable', {
+                    number: uniqueRewayatNames.length,
+                  })
                 : getDisplayLabelFromName(reciter.rewayat[0]?.name)}
             </Text>
             {showFollowAlong && <FollowAlongBadge />}

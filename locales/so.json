@@ -215,7 +215,9 @@
     "whatSNew": "Waxa cusub",
     "wordByWord": "Eray ba eray",
     "writeYourNoteHere": "Halkan ku qor xusuus-qorradaada...",
-    "yourPlaylists": "Liisaskaaga"
+    "yourPlaylists": "Liisaskaaga",
+    "rewayatAvailable": "{{number}} riwaayad ayaa jira",
+    "rewayatByReciter": "{{rewayat}} oo uu akhriyay {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Shuruudaha Adeegga",
       "viewAndManageStorageUsage": "Eeg oo maaree isticmaalka kaydka",
       "viewOurPrivacyPolicy": "Eeg siyaasadda gaarnimadayada",
-      "writeAReview": "Qor dib-u-eegis"
+      "writeAReview": "Qor dib-u-eegis",
+      "rateUnavailableTitle": "Qiimeyntu weli lama heli karo",
+      "rateUnavailableMessage": "Appka weli looma gelin dukaamada abka. Fadlan dhawaan dib u eeg."
     }
   },
   "ui": {

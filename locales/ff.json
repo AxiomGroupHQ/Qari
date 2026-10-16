@@ -218,7 +218,9 @@
     "whatSNew": "Ko hesɗi",
     "wordByWord": "Daande e daande",
     "writeYourNoteHere": "Winndu hoore maaɗa ɗo...",
-    "yourPlaylists": "Liste maaɗa"
+    "yourPlaylists": "Liste maaɗa",
+    "rewayatAvailable": "Rewayat {{number}} ngonka",
+    "rewayatByReciter": "{{rewayat}} e {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -685,7 +687,9 @@
       "termsOfService": "Laawol kuutoral",
       "viewAndManageStorageUsage": "Ƴeewtu e hooreejo kuutoral reeni",
       "viewOurPrivacyPolicy": "Ƴeewtu sirru suturo amen",
-      "writeAReview": "Winndu ƴeewndo"
+      "writeAReview": "Winndu ƴeewndo",
+      "rateUnavailableTitle": "Jeyaango jooni walaa",
+      "rateUnavailableMessage": "Aplikasiyoŋ ngoo walaa e suuɗe aplikasiyoŋ ko ɓuri. Ndaarta e ɓuri yeeso."
     }
   },
   "ui": {

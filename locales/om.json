@@ -218,7 +218,9 @@
     "whatSNew": "Wanti haaraa",
     "wordByWord": "Jecha jechaan",
     "writeYourNoteHere": "Yaadannoo kee as barreessi...",
-    "yourPlaylists": "Tarreeffama sirna kee"
+    "yourPlaylists": "Tarreeffama sirna kee",
+    "rewayatAvailable": "Rewaayaatni {{number}} jiru",
+    "rewayatByReciter": "{{rewayat}} kan {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -685,7 +687,9 @@
       "termsOfService": "Haala Tajaajilaa",
       "viewAndManageStorageUsage": "Fayyadama kuusaa ilaali bulchi",
       "viewOurPrivacyPolicy": "Imaammata dhuunfaa keenya ilaali",
-      "writeAReview": "Gamaaggama barreessi"
+      "writeAReview": "Gamaaggama barreessi",
+      "rateUnavailableTitle": "Madaallii amma hin jiru",
+      "rateUnavailableMessage": "Appiin kun suuqii appii keessatti hin galmoofne. Yeroo gabaabaa keessatti deebi'ii ilaali."
     }
   },
   "ui": {

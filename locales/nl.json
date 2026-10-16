@@ -215,7 +215,9 @@
     "whatSNew": "Wat is er nieuw?",
     "wordByWord": "Woord voor woord",
     "writeYourNoteHere": "Schrijf je notitie hier...",
-    "yourPlaylists": "Je afspeellijsten"
+    "yourPlaylists": "Je afspeellijsten",
+    "rewayatAvailable": "{{number}} rewayat beschikbaar",
+    "rewayatByReciter": "{{rewayat}} door {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "Gebruiksvoorwaarden",
       "viewAndManageStorageUsage": "Bekijk en beheer opslaggebruik",
       "viewOurPrivacyPolicy": "Bekijk ons privacybeleid",
-      "writeAReview": "Een beoordeling schrijven"
+      "writeAReview": "Een beoordeling schrijven",
+      "rateUnavailableTitle": "Beoordelen is nog niet beschikbaar",
+      "rateUnavailableMessage": "De app staat nog niet in de app stores. Kom binnenkort terug."
     }
   },
   "ui": {

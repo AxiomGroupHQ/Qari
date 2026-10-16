@@ -8,6 +8,7 @@
 // All other rewayah-aware code imports from here. Do not define a RewayahId
 // literal, a resolver, or a migration mapping anywhere else.
 
+import {t} from '@/i18n';
 import {resolveRewayatName, type RewayatEntry} from '@/data/rewayat';
 
 // ── Canonical slug union ─────────────────────────────────────────────────────
@@ -186,7 +187,7 @@ const SHORT_LABELS: Readonly<Record<RewayahId, string>> = {
 };
 
 export function getShortLabel(id: RewayahId): string {
-  return SHORT_LABELS[id];
+  return t(`rewayah.short.${id}`, {defaultValue: SHORT_LABELS[id]});
 }
 
 // Long labels — the "Student 'an Teacher" form used in the mushaf

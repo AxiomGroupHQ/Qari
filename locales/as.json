@@ -215,7 +215,9 @@
     "whatSNew": "নতুন কি আছে",
     "wordByWord": "শব্দে শব্দে",
     "writeYourNoteHere": "আপোনাৰ টোকা ইয়াত লিখক...",
-    "yourPlaylists": "আপোনাৰ প্লেলিষ্টসমূহ"
+    "yourPlaylists": "আপোনাৰ প্লেলিষ্টসমূহ",
+    "rewayatAvailable": "{{number}}টা তিলাৱত উপলব্ধ",
+    "rewayatByReciter": "{{reciter}}ৰ {{rewayat}}"
   },
   "components": {
     "actionButtons": {
@@ -679,7 +681,9 @@
       "termsOfService": "সেৱাৰ চৰ্তসমূহ",
       "viewAndManageStorageUsage": "সংৰক্ষণ স্থানৰ ব্যৱহাৰ চাওক আৰু পৰিচালনা কৰক",
       "viewOurPrivacyPolicy": "আমাৰ গোপনীয়তা নীতি চাওক",
-      "writeAReview": "পৰ্যালোচনা লিখক"
+      "writeAReview": "পৰ্যালোচনা লিখক",
+      "rateUnavailableTitle": "ৰেটিং এতিয়াও উপলব্ধ নহয়",
+      "rateUnavailableMessage": "এপটো এতিয়াও এপ ষ্ট'ৰত তালিকাভুক্ত হোৱা নাই। অনুগ্ৰহ কৰি অলপ পিছত চাওক।"
     }
   },
   "ui": {
@@ -745,5 +749,29 @@
   },
   "wordDetail": {
     "context": "আয়াত {{surah}}:{{ayah}} · {{total}} টাৰ ভিতৰত {{position}} নং শব্দ"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "হাফছ",
+      "shubah": "শুবা",
+      "al-bazzi": "আল-বাজ্জী",
+      "qunbul": "কুনবুল",
+      "warsh": "ৱাৰ্ছ",
+      "qalun": "কালুন",
+      "al-duri-abi-amr": "আদ-দুৰী (আবু আমৰ)",
+      "al-susi": "আছ-ছুছী",
+      "hisham": "হিছাম",
+      "ibn-dhakwan": "ইবনে জাকৱান",
+      "khalaf-an-hamzah": "খালাফ (হামজা)",
+      "khallad": "খাল্লাদ",
+      "al-duri-al-kisai": "আদ-দুৰী (আল-কিছাঈ)",
+      "abu-al-harith": "আবুল হাৰিছ",
+      "ibn-jammaz": "ইবনে জাম্মাজ",
+      "ibn-wardan": "ইবনে ৱাৰ্দান",
+      "rawh": "ৰাওহ",
+      "ruwais": "ৰুৱাইছ",
+      "idris": "ইদ্ৰিছ",
+      "ishaq": "ইছহাক"
+    }
   }
 }

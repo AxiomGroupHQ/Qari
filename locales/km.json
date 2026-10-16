@@ -214,7 +214,9 @@
     "whatSNew": "អ្វីដែលថ្មី",
     "wordByWord": "មួយពាក្យម្តង",
     "writeYourNoteHere": "សរសេរកំណត់ត្រារបស់អ្នកនៅទីនេះ...",
-    "yourPlaylists": "បញ្ជីចាក់របស់អ្នក"
+    "yourPlaylists": "បញ្ជីចាក់របស់អ្នក",
+    "rewayatAvailable": "មានរ៉ាវ៉ាយ៉ាត {{number}}",
+    "rewayatByReciter": "{{rewayat}} ដោយ {{reciter}}"
   },
   "components": {
     "actionButtons": {
@@ -678,7 +680,9 @@
       "termsOfService": "លក្ខខណ្ឌសេវាកម្ម",
       "viewAndManageStorageUsage": "មើល និងគ្រប់គ្រងការប្រើទំហំផ្ទុក",
       "viewOurPrivacyPolicy": "មើលគោលការណ៍ឯកជនភាពរបស់យើង",
-      "writeAReview": "សរសេរការវាយតម្លៃ"
+      "writeAReview": "សរសេរការវាយតម្លៃ",
+      "rateUnavailableTitle": "ការវាយតម្លៃមិនទាន់មានទេ",
+      "rateUnavailableMessage": "កម្មវិធីមិនទាន់មាននៅលើហាងកម្មវិធីនៅឡើយទេ។ សូមពិនិត្យម្តងទៀតក្នុងពេលឆាប់ៗ។"
     }
   },
   "ui": {
@@ -744,5 +748,29 @@
   },
   "wordDetail": {
     "context": "អាយ៉ាត់ {{surah}}:{{ayah}} · ពាក្យទី {{position}} ក្នុងចំណោម {{total}}"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "ហាហ្វស",
+      "shubah": "ស៊ូអ្បះ",
+      "al-bazzi": "អាល់ប៉ាហ្ស៊ី",
+      "qunbul": "គុនប៊ុល",
+      "warsh": "វ៉ារ្ស",
+      "qalun": "កាលូន",
+      "al-duri-abi-amr": "អាដ-ឌូរី (អាប៊ូ អាំរ)",
+      "al-susi": "អាស-ស៊ូស៊ី",
+      "hisham": "ហ៊ីសាម",
+      "ibn-dhakwan": "អ៊ីប៊ន់ ហ្សាក់វ៉ាន",
+      "khalaf-an-hamzah": "ខាឡាហ្វ (ហាំហ្សះ)",
+      "khallad": "ខាឡាដ",
+      "al-duri-al-kisai": "អាដ-ឌូរី (អាល់-គីសាអី)",
+      "abu-al-harith": "អាប៊ូ អាល់-ហារីស",
+      "ibn-jammaz": "អ៊ីប៊ន់ ជាំម៉ាស",
+      "ibn-wardan": "អ៊ីប៊ន់ វ៉ារដាន",
+      "rawh": "រ៉ូហ៍",
+      "ruwais": "រូវ៉ៃស",
+      "idris": "អ៊ីដរីស",
+      "ishaq": "អ៊ីស្ហាក់"
+    }
   }
 }
