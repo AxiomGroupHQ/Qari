@@ -829,5 +829,12 @@
     "retry": "Eto fahin",
     "close": "Uddu",
     "paused": "Hoorii, tappu ngam jokkude"
+  },
+  "dailyReminder": {
+    "title": "Jantorgol sura ñalnde kala",
+    "description": "Anndinol yaaje fajiri kala e sura ngam hettugo.",
+    "body": "Sura hannde: {{name}}. Taaskaa ngam hettugo.",
+    "denied": "Anndinooje maaɗaaɗe ngam ndee app. Hurmin ɗe e settings sistem.",
+    "turnOn": "Hurmin"
   }
 }

@@ -846,5 +846,12 @@
     "retry": "Try again",
     "close": "Close",
     "paused": "Paused, tap to resume"
+  },
+  "dailyReminder": {
+    "title": "Daily surah reminder",
+    "description": "A gentle notification each morning with a surah to listen to.",
+    "body": "Today's surah: {{name}}. Tap to listen.",
+    "denied": "Notifications are turned off for this app. Turn them on in system settings.",
+    "turnOn": "Turn on"
   }
 }

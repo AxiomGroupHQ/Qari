@@ -822,5 +822,12 @@
     "retry": "Yenidən cəhd et",
     "close": "Bağla",
     "paused": "Dayandırıldı, davam etmək üçün toxunun"
+  },
+  "dailyReminder": {
+    "title": "Gündəlik surə xatırlatması",
+    "description": "Hər səhər dinləmək üçün bir surə ilə yumşaq bildiriş.",
+    "body": "Bugünkü surə: {{name}}. Dinləmək üçün toxunun.",
+    "denied": "Bu tətbiq üçün bildirişlər söndürülüb. Sistem ayarlarında aktiv edin.",
+    "turnOn": "Aç"
   }
 }

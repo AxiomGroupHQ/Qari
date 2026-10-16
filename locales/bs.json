@@ -829,5 +829,12 @@
     "retry": "Pokušaj ponovo",
     "close": "Zatvori",
     "paused": "Pauzirano, dodirnite za nastavak"
+  },
+  "dailyReminder": {
+    "title": "Dnevni podsjetnik na suru",
+    "description": "Blago obavještenje svako jutro sa surom za slušanje.",
+    "body": "Današnja sura: {{name}}. Dodirnite za slušanje.",
+    "denied": "Obavještenja su isključena za ovu aplikaciju. Uključite ih u postavkama sistema.",
+    "turnOn": "Uključi"
   }
 }

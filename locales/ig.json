@@ -820,5 +820,12 @@
     "retry": "Nwaa ọzọ",
     "close": "Mechie",
     "paused": "Akwụsịrị, pịa ka ọ gaa n'ihu"
+  },
+  "dailyReminder": {
+    "title": "Ncheta sura kwa ụbọchị",
+    "description": "Ọkwa dị nwayọọ n'ụtụtụ ọ bụla nwere sura ị ga-ege ntị.",
+    "body": "Sura taa: {{name}}. Pịa ka ị nụ ya.",
+    "denied": "A gbanyụọla ọkwa maka ngwa a. Gbanye ha na ntọala sistemụ.",
+    "turnOn": "Gbanye"
   }
 }

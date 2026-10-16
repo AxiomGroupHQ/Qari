@@ -822,5 +822,12 @@
     "retry": "Subukan muli",
     "close": "Isara",
     "paused": "Naka-pause, i-tap para ipagpatuloy"
+  },
+  "dailyReminder": {
+    "title": "Pang-araw-araw na paalala ng surah",
+    "description": "Isang banayad na abiso tuwing umaga na may surah na mapapakinggan.",
+    "body": "Surah ngayong araw: {{name}}. I-tap para making.",
+    "denied": "Naka-off ang mga notification para sa app na ito. I-on ang mga ito sa mga setting ng system.",
+    "turnOn": "I-on"
   }
 }

@@ -822,5 +822,12 @@
     "retry": "Täzeden synanyş",
     "close": "Ýap",
     "paused": "Duruzyldy, dowam etmek üçin basyň"
+  },
+  "dailyReminder": {
+    "title": "Gündelik sura ýadyna salyşy",
+    "description": "Her gün irden diňlemek üçin sura bilen ýumşak habarnama.",
+    "body": "Şu günki sura: {{name}}. Diňlemek üçin basyň.",
+    "denied": "Bu programma üçin habarnamalar öçürilen. Ulgam sazlamalarynda açyň.",
+    "turnOn": "Aç"
   }
 }

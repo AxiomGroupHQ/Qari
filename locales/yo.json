@@ -820,5 +820,12 @@
     "retry": "Gbìyànjú lẹ́ẹ̀kan sí i",
     "close": "Ti",
     "paused": "A dúró, tẹ láti tẹ̀síwájú"
+  },
+  "dailyReminder": {
+    "title": "Olùránnilétí sura ojoojúmọ́",
+    "description": "Ìfitónilétí rọra ní àràárọ̀ kọ̀ọ̀kan pẹ̀lú sura kan láti gbọ́.",
+    "body": "Sura òní: {{name}}. Tẹ̀ láti gbọ́.",
+    "denied": "A ti pa àwọn ìfitónilétí fún app yìí. Tan wọ́n ní ètò ẹ̀rọ.",
+    "turnOn": "Tan"
   }
 }

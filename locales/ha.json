@@ -822,5 +822,12 @@
     "retry": "Sake gwadawa",
     "close": "Rufe",
     "paused": "An dakatar, danna don ci gaba"
+  },
+  "dailyReminder": {
+    "title": "Tunatarwar sura ta yau da kullum",
+    "description": "Sanarwa mai sauƙi kowace safiya da sura da za a saurara.",
+    "body": "Surar yau: {{name}}. Danna don saurara.",
+    "denied": "An kashe sanarwa don wannan manhaja. Kunna su a saitunan tsarin.",
+    "turnOn": "Kunna"
   }
 }

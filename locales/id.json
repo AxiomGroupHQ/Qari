@@ -815,5 +815,12 @@
     "retry": "Coba lagi",
     "close": "Tutup",
     "paused": "Dijeda, ketuk untuk melanjutkan"
+  },
+  "dailyReminder": {
+    "title": "Pengingat surah harian",
+    "description": "Notifikasi lembut setiap pagi berisi satu surah untuk didengarkan.",
+    "body": "Surah hari ini: {{name}}. Ketuk untuk mendengarkan.",
+    "denied": "Notifikasi dimatikan untuk aplikasi ini. Aktifkan di pengaturan sistem.",
+    "turnOn": "Aktifkan"
   }
 }

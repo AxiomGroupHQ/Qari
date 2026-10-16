@@ -822,5 +822,12 @@
     "retry": "Dîsa biceribîne",
     "close": "Bigire",
     "paused": "Hat rawestandin, ji bo domandinê bitikîne"
+  },
+  "dailyReminder": {
+    "title": "Bîrxistina rojane ya sûreyê",
+    "description": "Her sibeh agahdariyeke nerm bi sûreyek ji bo guhdarkirinê.",
+    "body": "Sûreya îro: {{name}}. Ji bo guhdarkirinê bitikîne.",
+    "denied": "Agahdarî ji bo vê sepanê girtî ne. Di mîhengên pergalê de vekin.",
+    "turnOn": "Veke"
   }
 }
