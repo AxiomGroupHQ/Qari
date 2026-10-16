@@ -1,7 +1,7 @@
 """
-Diff every Hafs verse between Bayaan's dk_words.db and KFGQPC's hafsData_v18.json
+Diff every Hafs verse between Istima's dk_words.db and KFGQPC's hafsData_v18.json
 to discover the set of codepoint substitutions and tokenization rules needed to
-normalize KFGQPC -> Bayaan conventions.
+normalize KFGQPC -> Istima conventions.
 
 Outputs a frequency-sorted table of codepoint-level differences across all verses.
 """
@@ -16,11 +16,11 @@ from pathlib import Path
 HERE = Path(__file__).parent
 REPO = HERE.parents[1]
 KFGQPC_HAFS = HERE / "hafs.json"
-BAYAAN_DB = REPO / "data" / "mushaf" / "digitalkhatt" / "digital-khatt-v2.db"
+ISTIMA_DB = REPO / "data" / "mushaf" / "digitalkhatt" / "digital-khatt-v2.db"
 
 
-def load_bayaan_verses() -> dict[tuple[int, int], str]:
-    conn = sqlite3.connect(BAYAAN_DB)
+def load_istima_verses() -> dict[tuple[int, int], str]:
+    conn = sqlite3.connect(ISTIMA_DB)
     cur = conn.cursor()
     verses: dict[tuple[int, int], list[tuple[int, str]]] = {}
     for surah, ayah, word, text in cur.execute(
@@ -52,27 +52,27 @@ def name(cp: int) -> str:
 
 
 def main() -> None:
-    bayaan = load_bayaan_verses()
+    istima = load_istima_verses()
     kfgqpc = load_kfgqpc_hafs()
 
-    shared = set(bayaan) & set(kfgqpc)
-    print(f"Bayaan verses: {len(bayaan)}")
+    shared = set(istima) & set(kfgqpc)
+    print(f"Istima verses: {len(istima)}")
     print(f"KFGQPC verses: {len(kfgqpc)}")
     print(f"Shared keys:   {len(shared)}")
 
-    bayaan_cps: Counter[int] = Counter()
+    istima_cps: Counter[int] = Counter()
     kfgqpc_cps: Counter[int] = Counter()
     for key in shared:
-        bayaan_cps.update(codepoint_histogram(bayaan[key]))
+        istima_cps.update(codepoint_histogram(istima[key]))
         kfgqpc_cps.update(codepoint_histogram(kfgqpc[key]))
 
-    only_bayaan = set(bayaan_cps) - set(kfgqpc_cps)
-    only_kfgqpc = set(kfgqpc_cps) - set(bayaan_cps)
-    common = set(bayaan_cps) & set(kfgqpc_cps)
+    only_istima = set(istima_cps) - set(kfgqpc_cps)
+    only_kfgqpc = set(kfgqpc_cps) - set(istima_cps)
+    common = set(istima_cps) & set(kfgqpc_cps)
 
-    print("\n=== Codepoints only in Bayaan ===")
-    for cp in sorted(only_bayaan, key=lambda c: -bayaan_cps[c]):
-        print(f"  U+{cp:04X} {chr(cp)!r:>5}  {bayaan_cps[cp]:>7}  {name(cp)}")
+    print("\n=== Codepoints only in Istima ===")
+    for cp in sorted(only_istima, key=lambda c: -istima_cps[c]):
+        print(f"  U+{cp:04X} {chr(cp)!r:>5}  {istima_cps[cp]:>7}  {name(cp)}")
 
     print("\n=== Codepoints only in KFGQPC Hafs ===")
     for cp in sorted(only_kfgqpc, key=lambda c: -kfgqpc_cps[c]):
@@ -81,13 +81,13 @@ def main() -> None:
     print("\n=== Codepoints in both, frequency skew (|delta| > 100) ===")
     skewed = []
     for cp in common:
-        b = bayaan_cps[cp]
+        b = istima_cps[cp]
         k = kfgqpc_cps[cp]
         if abs(b - k) > 100:
             skewed.append((cp, b, k))
     skewed.sort(key=lambda x: -abs(x[1] - x[2]))
     for cp, b, k in skewed[:40]:
-        print(f"  U+{cp:04X} {chr(cp)!r:>5}  bayaan={b:>7}  kfgqpc={k:>7}  delta={b-k:+}  {name(cp)}")
+        print(f"  U+{cp:04X} {chr(cp)!r:>5}  istima={b:>7}  kfgqpc={k:>7}  delta={b-k:+}  {name(cp)}")
 
 
 if __name__ == "__main__":

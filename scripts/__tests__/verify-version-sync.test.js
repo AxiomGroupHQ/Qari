@@ -54,7 +54,7 @@ const SAMPLE_PLIST = `<?xml version="1.0" encoding="UTF-8"?>
 \t<key>CFBundleDevelopmentRegion</key>
 \t<string>en</string>
 \t<key>CFBundleDisplayName</key>
-\t<string>Bayaan</string>
+\t<string>Istima</string>
 \t<key>CFBundleShortVersionString</key>
 \t<string>2.2.0</string>
 \t<key>CFBundleSignature</key>
@@ -70,9 +70,9 @@ const SAMPLE_PLIST = `<?xml version="1.0" encoding="UTF-8"?>
 const SAMPLE_GRADLE = `apply plugin: "com.android.application"
 
 android {
-    namespace 'com.bayaan.app'
+    namespace 'com.istima.app'
     defaultConfig {
-        applicationId 'com.bayaan.app'
+        applicationId 'com.istima.app'
         minSdkVersion 24
         targetSdkVersion 34
         versionCode 698
@@ -95,47 +95,47 @@ describe('findInfoPlistPath', () => {
   });
 
   it('finds the single app-target Info.plist', () => {
-    writeFile('ios/Bayaan/Info.plist', SAMPLE_PLIST);
+    writeFile('ios/Istima/Info.plist', SAMPLE_PLIST);
     expect(findInfoPlistPath(tmpRoot)).toBe(
-      path.join(tmpRoot, 'ios/Bayaan/Info.plist'),
+      path.join(tmpRoot, 'ios/Istima/Info.plist'),
     );
   });
 
-  it('skips test target plists (BayaanTests/, BayaanUITests/)', () => {
+  it('skips test target plists (IstimaTests/, IstimaUITests/)', () => {
     // The bug PR #251 review highlighted: readdirSync filesystem-order
-    // could pick BayaanTests/Info.plist before Bayaan/Info.plist, silently
+    // could pick IstimaTests/Info.plist before Istima/Info.plist, silently
     // patching the test bundle's version. Filtering by suffix prevents it.
-    writeFile('ios/BayaanTests/Info.plist', SAMPLE_PLIST);
-    writeFile('ios/BayaanUITests/Info.plist', SAMPLE_PLIST);
-    writeFile('ios/Bayaan/Info.plist', SAMPLE_PLIST);
+    writeFile('ios/IstimaTests/Info.plist', SAMPLE_PLIST);
+    writeFile('ios/IstimaUITests/Info.plist', SAMPLE_PLIST);
+    writeFile('ios/Istima/Info.plist', SAMPLE_PLIST);
     expect(findInfoPlistPath(tmpRoot)).toBe(
-      path.join(tmpRoot, 'ios/Bayaan/Info.plist'),
+      path.join(tmpRoot, 'ios/Istima/Info.plist'),
     );
   });
 
   it('skips Pods/, build/, .xcodeproj, .xcworkspace', () => {
     writeFile('ios/Pods/Info.plist', SAMPLE_PLIST);
     writeFile('ios/build/Info.plist', SAMPLE_PLIST);
-    writeFile('ios/Bayaan.xcodeproj/Info.plist', SAMPLE_PLIST);
-    writeFile('ios/Bayaan.xcworkspace/Info.plist', SAMPLE_PLIST);
-    writeFile('ios/Bayaan/Info.plist', SAMPLE_PLIST);
+    writeFile('ios/Istima.xcodeproj/Info.plist', SAMPLE_PLIST);
+    writeFile('ios/Istima.xcworkspace/Info.plist', SAMPLE_PLIST);
+    writeFile('ios/Istima/Info.plist', SAMPLE_PLIST);
     expect(findInfoPlistPath(tmpRoot)).toBe(
-      path.join(tmpRoot, 'ios/Bayaan/Info.plist'),
+      path.join(tmpRoot, 'ios/Istima/Info.plist'),
     );
   });
 
   it('skips share extension targets (*Extension, *Widget)', () => {
     writeFile('ios/ShareExtension/Info.plist', SAMPLE_PLIST);
     writeFile('ios/MyAppWidget/Info.plist', SAMPLE_PLIST);
-    writeFile('ios/Bayaan/Info.plist', SAMPLE_PLIST);
+    writeFile('ios/Istima/Info.plist', SAMPLE_PLIST);
     expect(findInfoPlistPath(tmpRoot)).toBe(
-      path.join(tmpRoot, 'ios/Bayaan/Info.plist'),
+      path.join(tmpRoot, 'ios/Istima/Info.plist'),
     );
   });
 
   it('throws (not picks arbitrarily) when multiple app candidates remain', () => {
     // Two non-test, non-extension plists - ambiguous. Better to fail loud.
-    writeFile('ios/Bayaan/Info.plist', SAMPLE_PLIST);
+    writeFile('ios/Istima/Info.plist', SAMPLE_PLIST);
     writeFile('ios/Qariah/Info.plist', SAMPLE_PLIST);
     expect(() => findInfoPlistPath(tmpRoot)).toThrow(/Ambiguous app target/);
   });
@@ -146,11 +146,11 @@ describe('findInfoPlistPath', () => {
 // =====================================================================
 describe('readVersionFromInfoPlist', () => {
   it('parses CFBundleShortVersionString and CFBundleVersion', () => {
-    writeFile('ios/Bayaan/Info.plist', SAMPLE_PLIST);
+    writeFile('ios/Istima/Info.plist', SAMPLE_PLIST);
     const got = readVersionFromInfoPlist(tmpRoot);
     expect(got.semanticVersion).toBe('2.2.0');
     expect(got.buildNumber).toBe('698');
-    expect(got.path).toBe(path.join(tmpRoot, 'ios/Bayaan/Info.plist'));
+    expect(got.path).toBe(path.join(tmpRoot, 'ios/Istima/Info.plist'));
   });
 
   it('throws if Info.plist is missing', () => {
@@ -159,7 +159,7 @@ describe('readVersionFromInfoPlist', () => {
 
   it('throws if Info.plist lacks CFBundleShortVersionString', () => {
     writeFile(
-      'ios/Bayaan/Info.plist',
+      'ios/Istima/Info.plist',
       SAMPLE_PLIST.replace(
         '<key>CFBundleShortVersionString</key>\n\t<string>2.2.0</string>',
         '',
@@ -203,7 +203,7 @@ describe('readVersionFromAndroidGradle', () => {
 // =====================================================================
 describe('patchInfoPlist', () => {
   it('updates CFBundleShortVersionString and CFBundleVersion only', () => {
-    const p = writeFile('ios/Bayaan/Info.plist', SAMPLE_PLIST);
+    const p = writeFile('ios/Istima/Info.plist', SAMPLE_PLIST);
     patchInfoPlist(
       p,
       {semanticVersion: '2.2.0', buildNumber: '698'},
@@ -225,7 +225,7 @@ describe('patchInfoPlist', () => {
   });
 
   it('is a no-op when current === target', () => {
-    const p = writeFile('ios/Bayaan/Info.plist', SAMPLE_PLIST);
+    const p = writeFile('ios/Istima/Info.plist', SAMPLE_PLIST);
     patchInfoPlist(
       p,
       {semanticVersion: '2.2.0', buildNumber: '698'},
@@ -235,7 +235,7 @@ describe('patchInfoPlist', () => {
   });
 
   it('updates only the changed field when one of two differs', () => {
-    const p = writeFile('ios/Bayaan/Info.plist', SAMPLE_PLIST);
+    const p = writeFile('ios/Istima/Info.plist', SAMPLE_PLIST);
     patchInfoPlist(
       p,
       {semanticVersion: '2.2.0', buildNumber: '698'},
@@ -298,7 +298,7 @@ describe('patchAndroidGradle', () => {
 // =====================================================================
 describe('round-trip', () => {
   it('Info.plist: patch then re-read yields the new versions', () => {
-    writeFile('ios/Bayaan/Info.plist', SAMPLE_PLIST);
+    writeFile('ios/Istima/Info.plist', SAMPLE_PLIST);
     const before = readVersionFromInfoPlist(tmpRoot);
     patchInfoPlist(before.path, before, {
       semanticVersion: '4.0.0',
@@ -327,7 +327,7 @@ describe('round-trip', () => {
 // =====================================================================
 
 // Minimal pbxproj fixture: one main app XCBuildConfiguration (Info.plist =
-// Bayaan/Info.plist, no MARKETING_VERSION set) and one ShareExtension pair
+// Istima/Info.plist, no MARKETING_VERSION set) and one ShareExtension pair
 // (Debug + Release, INFOPLIST_FILE ending `-Info.plist`, both carrying
 // MARKETING_VERSION + CURRENT_PROJECT_VERSION). Mirrors expo-prebuild
 // pbxproj output structure with tab indentation.
@@ -349,10 +349,10 @@ const SAMPLE_PBXPROJ = `// !$*UTF8*$!
 \t\t\t\t\t"$(inherited)",
 \t\t\t\t);
 \t\t\t\tGENERATE_INFOPLIST_FILE = YES;
-\t\t\t\tINFOPLIST_FILE = Bayaan/Info.plist;
+\t\t\t\tINFOPLIST_FILE = Istima/Info.plist;
 \t\t\t\tMARKETING_VERSION = 1.0;
-\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = "com.bayaan.app";
-\t\t\t\tPRODUCT_NAME = Bayaan;
+\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = "com.istima.app";
+\t\t\t\tPRODUCT_NAME = Istima;
 \t\t\t};
 \t\t\tname = Debug;
 \t\t};
@@ -364,7 +364,7 @@ const SAMPLE_PBXPROJ = `// !$*UTF8*$!
 \t\t\t\tGENERATE_INFOPLIST_FILE = YES;
 \t\t\t\tINFOPLIST_FILE = "ShareExtension/ShareExtension-Info.plist";
 \t\t\t\tMARKETING_VERSION = 2.2.0;
-\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = "com.bayaan.app.share-extension";
+\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = "com.istima.app.share-extension";
 \t\t\t\tPRODUCT_NAME = ShareExtension;
 \t\t\t};
 \t\t\tname = Debug;
@@ -377,7 +377,7 @@ const SAMPLE_PBXPROJ = `// !$*UTF8*$!
 \t\t\t\tGENERATE_INFOPLIST_FILE = YES;
 \t\t\t\tINFOPLIST_FILE = "ShareExtension/ShareExtension-Info.plist";
 \t\t\t\tMARKETING_VERSION = 2.2.0;
-\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = "com.bayaan.app.share-extension";
+\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = "com.istima.app.share-extension";
 \t\t\t\tPRODUCT_NAME = ShareExtension;
 \t\t\t};
 \t\t\tname = Release;
@@ -396,9 +396,9 @@ describe('findExtensionConfigBlocks', () => {
   });
 
   it('returns empty list when no extension targets are present', () => {
-    // Main-app-only pbxproj: INFOPLIST_FILE = Bayaan/Info.plist (no `-Info.plist` suffix).
+    // Main-app-only pbxproj: INFOPLIST_FILE = Istima/Info.plist (no `-Info.plist` suffix).
     writeFile(
-      'ios/Bayaan.xcodeproj/project.pbxproj',
+      'ios/Istima.xcodeproj/project.pbxproj',
       `${SAMPLE_PBXPROJ.replace(
         /[\s\S]*?376EE19454074DB08B7E9626 \/\* Debug \*\/ = \{[\s\S]*?376EE19454074DB08B7E9627 \/\* Release \*\/ = \{[\s\S]*?\t\t\};/m,
         '',
@@ -410,7 +410,7 @@ describe('findExtensionConfigBlocks', () => {
   });
 
   it('finds the Debug + Release config blocks for an extension target', () => {
-    writeFile('ios/Bayaan.xcodeproj/project.pbxproj', SAMPLE_PBXPROJ);
+    writeFile('ios/Istima.xcodeproj/project.pbxproj', SAMPLE_PBXPROJ);
     const result = findExtensionConfigBlocks(tmpRoot);
     expect(result.blocks).toHaveLength(2);
     const debug = result.blocks.find(b => b.configName === 'Debug');
@@ -445,7 +445,7 @@ describe('findExtensionConfigBlocks', () => {
 \t};
 }
 `;
-    writeFile('ios/Bayaan.xcodeproj/project.pbxproj', trick);
+    writeFile('ios/Istima.xcodeproj/project.pbxproj', trick);
     const result = findExtensionConfigBlocks(tmpRoot);
     expect(result.blocks).toEqual([]);
   });
@@ -454,7 +454,7 @@ describe('findExtensionConfigBlocks', () => {
 describe('patchExtensionConfigBlocks', () => {
   it('patches MARKETING_VERSION + CURRENT_PROJECT_VERSION for all blocks', () => {
     const pbxprojPath = writeFile(
-      'ios/Bayaan.xcodeproj/project.pbxproj',
+      'ios/Istima.xcodeproj/project.pbxproj',
       SAMPLE_PBXPROJ,
     );
     const before = findExtensionConfigBlocks(tmpRoot);
@@ -472,7 +472,7 @@ describe('patchExtensionConfigBlocks', () => {
 
   it('leaves main-app config blocks untouched', () => {
     const pbxprojPath = writeFile(
-      'ios/Bayaan.xcodeproj/project.pbxproj',
+      'ios/Istima.xcodeproj/project.pbxproj',
       SAMPLE_PBXPROJ,
     );
     const before = findExtensionConfigBlocks(tmpRoot);

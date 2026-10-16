@@ -76,7 +76,7 @@ This regenerates the `ios/` directory and runs `pod install`. Takes ~5 minutes.
 mkdir -p build
 
 xcodebuild archive \
-  -workspace ios/Bayaan.xcworkspace \
+  -workspace ios/Istima.xcworkspace \
   -scheme Istima \
   -configuration Release \
   -destination "generic/platform=iOS" \
@@ -288,7 +288,7 @@ asc bundle-ids list
 npx expo prebuild --platform ios --clean && \
 mkdir -p build && \
 xcodebuild archive \
-  -workspace ios/Bayaan.xcworkspace \
+  -workspace ios/Istima.xcworkspace \
   -scheme Istima \
   -configuration Release \
   -destination "generic/platform=iOS" \
@@ -313,7 +313,7 @@ asc publish testflight \
 npx expo prebuild --platform ios --clean && \
 mkdir -p build && \
 xcodebuild archive \
-  -workspace ios/Bayaan.xcworkspace \
+  -workspace ios/Istima.xcworkspace \
   -scheme Istima \
   -configuration Release \
   -destination "generic/platform=iOS" \

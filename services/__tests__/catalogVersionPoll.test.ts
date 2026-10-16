@@ -88,7 +88,7 @@ describe('initCatalogVersionPolling', () => {
 
   it('refetches when server version exceeds lastSeen, with versioned url', async () => {
     mockBranding.catalogVersionEndpoint = 'https://example.test/version.json';
-    mockStore.set('bayaan:lastSeenCatalogVersion', '7');
+    mockStore.set('istima:lastSeenCatalogVersion', '7');
     (global.fetch as jest.Mock).mockResolvedValueOnce({
       ok: true,
       json: () =>
@@ -105,12 +105,12 @@ describe('initCatalogVersionPolling', () => {
       8,
       'https://example.test/catalog/v8.json',
     );
-    expect(mockStore.get('bayaan:lastSeenCatalogVersion')).toBe('8');
+    expect(mockStore.get('istima:lastSeenCatalogVersion')).toBe('8');
   });
 
   it('does not refetch when server version equals lastSeen', async () => {
     mockBranding.catalogVersionEndpoint = 'https://example.test/version.json';
-    mockStore.set('bayaan:lastSeenCatalogVersion', '8');
+    mockStore.set('istima:lastSeenCatalogVersion', '8');
     (global.fetch as jest.Mock).mockResolvedValueOnce({
       ok: true,
       json: () => Promise.resolve({version: 8}),

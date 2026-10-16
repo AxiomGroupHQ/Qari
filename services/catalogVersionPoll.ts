@@ -22,7 +22,7 @@ type CatalogVersion = {
   url?: string;
 };
 
-const LAST_SEEN_KEY = 'bayaan:lastSeenCatalogVersion';
+const LAST_SEEN_KEY = 'istima:lastSeenCatalogVersion';
 const POLL_TIMEOUT_MS = 1500;
 const FOREGROUND_DEBOUNCE_MS = 5 * 60 * 1000;
 

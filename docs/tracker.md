@@ -33,12 +33,12 @@ Status values: **bundled** = pulled and served from our own site, **not contacte
 | Asset / host | Used for | Status |
 | --- | --- | --- |
 | old upstream CDN `timestamps/{rewayatId}/{NNN}.json` (12,875 files, 113 rewayat, ~69 MB) | Verse follow-along timing | **Pulled and pushed** to the `AxiomGroupHQ/Qari-api` repo (`timestamps/`). The app reads `https://iapi.istima.app/timestamps/...` on web, iOS and Android. **Still pending:** Cloudflare Pages + domain (see above). |
-| Old upstream reciter catalog API | Reciter data | **Not contacted**. No API URL is set in production, the app uses the bundled `data/reciters-fallback.json`. Env var names `EXPO_PUBLIC_BAYAAN_API_URL/KEY` still work as legacy aliases only. |
+| Old upstream reciter catalog API | Reciter data | **Not contacted**. No API URL is set in production, the app uses the bundled `data/reciters-fallback.json`. Env var names `EXPO_PUBLIC_ISTIMA_API_URL/KEY` still work as legacy aliases only. |
 | Reciter catalog and rewayat data | Reciter lists | **Bundled** (`data/reciters-fallback.json`, `data/rewayat*.ts`). |
 | `EXPO_PUBLIC_KILLSWITCH_URL` | Remote kill switch | **Not contacted** unless the variable is set. It is not set. |
-| Old upstream link domain (iOS associated domain) | iOS universal links | **Fixed.** `ios/Bayaan/Bayaan.entitlements` and `app.config.js` both use `istima.app` now. AASA file is in `public/.well-known/`. |
+| Old upstream link domain (iOS associated domain) | iOS universal links | **Fixed.** `ios/Istima/Istima.entitlements` and `app.config.js` both use `istima.app` now. AASA file is in `public/.well-known/`. |
 | Audio files (`server*.mp3quran.net`) | Recitation playback | **Still external**, but this is mp3quran.net, not the old upstream. Self-hosting is ~GBs of audio and needs Cloudflare R2 access. |
-| Runtime identifiers (storage keys such as `@bayaan/last_track`, Postmark template alias, `bayaan_*` keys) | Local storage, email template | Kept on purpose, so existing users keep their data. Not network contacts. |
+| Runtime identifiers (storage keys such as `@istima/last_track`, Postmark template alias, `istima_*` keys) | Local storage, email template | Kept on purpose, so existing users keep their data. Not network contacts. |
 
 ## Feature backlog (checked October 2026)
 

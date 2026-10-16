@@ -14,7 +14,7 @@
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		473D2E9A88E349F88BC9D616 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FED6E047654E9BA298F99C /* ShareViewController.swift */; };
 		A3E8964AF81A43F1BEEB97E5 /* ShareExtension.appex in Copy Files */ = {isa = PBXBuildFile; fileRef = B674B1E3AFD9412DBA105D80 /* ShareExtension.appex */; };
-		AC391543B38968CC9FD1DA0F /* libPods-Bayaan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2761034759DDE2471699C0C /* libPods-Bayaan.a */; };
+		AC391543B38968CC9FD1DA0F /* libPods-Istima.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2761034759DDE2471699C0C /* libPods-Istima.a */; };
 		BB170965D90948F5AE38A5B1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08676E8EA490481A84A5E811 /* MainInterface.storyboard */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		EBCCAF53388426B59365802A /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80EB146942F9EBA147653E /* ExpoModulesProvider.swift */; };
@@ -47,24 +47,24 @@
 
 /* Begin PBXFileReference section */
 		08676E8EA490481A84A5E811 /* MainInterface.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MainInterface.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Bayaan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bayaan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Bayaan/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Bayaan/Info.plist; sourceTree = "<group>"; };
-		1A80EB146942F9EBA147653E /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Bayaan/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Istima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Istima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Istima/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Istima/Info.plist; sourceTree = "<group>"; };
+		1A80EB146942F9EBA147653E /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Istima/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		3CA97EA8BD334900BD5A7EDF /* ShareExtensionPreprocessor.js */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = ShareExtensionPreprocessor.js; path = ShareExtensionPreprocessor.js; sourceTree = "<group>"; };
 		452A863BBDF94B81A15693EF /* ShareExtension-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "ShareExtension-Info.plist"; path = "ShareExtension-Info.plist"; sourceTree = "<group>"; };
 		6235A4512F954221BAEE5FB2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = PrivacyInfo.xcprivacy; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		76FB5558E40F32C9BD282821 /* Pods-Bayaan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bayaan.release.xcconfig"; path = "Target Support Files/Pods-Bayaan/Pods-Bayaan.release.xcconfig"; sourceTree = "<group>"; };
+		76FB5558E40F32C9BD282821 /* Pods-Istima.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Istima.release.xcconfig"; path = "Target Support Files/Pods-Istima/Pods-Istima.release.xcconfig"; sourceTree = "<group>"; };
 		7D3463C1A2A64387BE58A214 /* ShareExtension.entitlements */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = ShareExtension.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 		91FED6E047654E9BA298F99C /* ShareViewController.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = ShareViewController.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
-		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Bayaan/SplashScreen.storyboard; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Istima/SplashScreen.storyboard; sourceTree = "<group>"; };
 		B674B1E3AFD9412DBA105D80 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = undefined; name = ShareExtension.appex; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		D2761034759DDE2471699C0C /* libPods-Bayaan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bayaan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2761034759DDE2471699C0C /* libPods-Istima.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Istima.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Bayaan/AppDelegate.swift; sourceTree = "<group>"; };
-		F11748442D0722820044C1D9 /* Bayaan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bayaan-Bridging-Header.h"; path = "Bayaan/Bayaan-Bridging-Header.h"; sourceTree = "<group>"; };
-		FA31D73A80470CE01CAD8763 /* Pods-Bayaan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bayaan.debug.xcconfig"; path = "Target Support Files/Pods-Bayaan/Pods-Bayaan.debug.xcconfig"; sourceTree = "<group>"; };
+		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Istima/AppDelegate.swift; sourceTree = "<group>"; };
+		F11748442D0722820044C1D9 /* Istima-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Istima-Bridging-Header.h"; path = "Istima/Istima-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA31D73A80470CE01CAD8763 /* Pods-Istima.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Istima.debug.xcconfig"; path = "Target Support Files/Pods-Istima/Pods-Istima.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC391543B38968CC9FD1DA0F /* libPods-Bayaan.a in Frameworks */,
+				AC391543B38968CC9FD1DA0F /* libPods-Istima.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,31 +86,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0822B67F93AE242A7D6397F2 /* Bayaan */ = {
+		0822B67F93AE242A7D6397F2 /* Istima */ = {
 			isa = PBXGroup;
 			children = (
 				1A80EB146942F9EBA147653E /* ExpoModulesProvider.swift */,
 			);
-			name = Bayaan;
+			name = Istima;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* Bayaan */ = {
+		13B07FAE1A68108700A75B9A /* Istima */ = {
 			isa = PBXGroup;
 			children = (
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
-				F11748442D0722820044C1D9 /* Bayaan-Bridging-Header.h */,
+				F11748442D0722820044C1D9 /* Istima-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
 			);
-			name = Bayaan;
+			name = Istima;
 			sourceTree = "<group>";
 		};
 		2CAF4EB815DA4E5598FB085C /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				0822B67F93AE242A7D6397F2 /* Bayaan */,
+				0822B67F93AE242A7D6397F2 /* Istima */,
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				D2761034759DDE2471699C0C /* libPods-Bayaan.a */,
+				D2761034759DDE2471699C0C /* libPods-Istima.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,8 +127,8 @@
 		6A4A6CC8F0BD530D8A61F4B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FA31D73A80470CE01CAD8763 /* Pods-Bayaan.debug.xcconfig */,
-				76FB5558E40F32C9BD282821 /* Pods-Bayaan.release.xcconfig */,
+				FA31D73A80470CE01CAD8763 /* Pods-Istima.debug.xcconfig */,
+				76FB5558E40F32C9BD282821 /* Pods-Istima.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -144,7 +144,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* Bayaan */,
+				13B07FAE1A68108700A75B9A /* Istima */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
@@ -160,7 +160,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Bayaan.app */,
+				13B07F961A680F5B00A75B9A /* Istima.app */,
 				B674B1E3AFD9412DBA105D80 /* ShareExtension.appex */,
 			);
 			name = Products;
@@ -172,7 +172,7 @@
 				BB2F792C24A3F905000567C9 /* Expo.plist */,
 			);
 			name = Supporting;
-			path = Bayaan/Supporting;
+			path = Istima/Supporting;
 			sourceTree = "<group>";
 		};
 		C0E7835B38B34313B4134894 /* ShareExtension */ = {
@@ -192,9 +192,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* Bayaan */ = {
+		13B07F861A680F5B00A75B9A /* Istima */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Bayaan" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Istima" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
 				15C7479892B8D29546D8FC7C /* [Expo] Configure project */,
@@ -213,9 +213,9 @@
 			dependencies = (
 				2E948DFE50604DE4A4549D5E /* PBXTargetDependency */,
 			);
-			name = Bayaan;
-			productName = Bayaan;
-			productReference = 13B07F961A680F5B00A75B9A /* Bayaan.app */;
+			name = Istima;
+			productName = Istima;
+			productReference = 13B07F961A680F5B00A75B9A /* Istima.app */;
 			productType = "com.apple.product-type.application";
 		};
 		63B7AD14D53E40DDBCBDDCFB /* ShareExtension */ = {
@@ -249,7 +249,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Bayaan" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Istima" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -262,7 +262,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Bayaan */,
+				13B07F861A680F5B00A75B9A /* Istima */,
 				63B7AD14D53E40DDBCBDDCFB /* ShareExtension */,
 			);
 		};
@@ -325,7 +325,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bayaan-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Istima-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -343,18 +343,18 @@
 			inputPaths = (
 				"$(SRCROOT)/.xcode.env",
 				"$(SRCROOT)/.xcode.env.local",
-				"$(SRCROOT)/Bayaan/Bayaan.entitlements",
-				"$(SRCROOT)/Pods/Target Support Files/Pods-Bayaan/expo-configure-project.sh",
+				"$(SRCROOT)/Istima/Istima.entitlements",
+				"$(SRCROOT)/Pods/Target Support Files/Pods-Istima/expo-configure-project.sh",
 			);
 			name = "[Expo] Configure project";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(SRCROOT)/Pods/Target Support Files/Pods-Bayaan/ExpoModulesProvider.swift",
+				"$(SRCROOT)/Pods/Target Support Files/Pods-Istima/ExpoModulesProvider.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-Bayaan/expo-configure-project.sh\"\n";
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-Istima/expo-configure-project.sh\"\n";
 		};
 		26E5B019E0CA4DA48C16E51C /* Upload Debug Symbols to Sentry */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -376,7 +376,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bayaan/Pods-Bayaan-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Istima/Pods-Istima-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/React-Core-prebuilt/React.framework/React",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ReactNativeDependencies/ReactNativeDependencies.framework/ReactNativeDependencies",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermesvm.framework/hermesvm",
@@ -389,7 +389,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bayaan/Pods-Bayaan-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Istima/Pods-Istima-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		538CC7A950A14AC48D73479C /* [Expo Dev Launcher] Strip Local Network Keys for Release */ = {
@@ -412,7 +412,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bayaan/Pods-Bayaan-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Istima/Pods-Istima-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXApplication/ExpoApplication_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
@@ -457,7 +457,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bayaan/Pods-Bayaan-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Istima/Pods-Istima-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -493,11 +493,11 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA31D73A80470CE01CAD8763 /* Pods-Bayaan.debug.xcconfig */;
+			baseConfigurationReference = FA31D73A80470CE01CAD8763 /* Pods-Istima.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Bayaan/Bayaan.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Istima/Istima.entitlements;
 				CURRENT_PROJECT_VERSION = 698;
 				DEVELOPMENT_TEAM = S4W5Q2L53W;
 				ENABLE_BITCODE = NO;
@@ -505,7 +505,7 @@
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = Bayaan/Info.plist;
+				INFOPLIST_FILE = Istima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,8 +519,8 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.istima.app;
-				PRODUCT_NAME = Bayaan;
-				SWIFT_OBJC_BRIDGING_HEADER = "Bayaan/Bayaan-Bridging-Header.h";
+				PRODUCT_NAME = Istima;
+				SWIFT_OBJC_BRIDGING_HEADER = "Istima/Istima-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -530,14 +530,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76FB5558E40F32C9BD282821 /* Pods-Bayaan.release.xcconfig */;
+			baseConfigurationReference = 76FB5558E40F32C9BD282821 /* Pods-Istima.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Bayaan/Bayaan.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Istima/Istima.entitlements;
 				CURRENT_PROJECT_VERSION = 698;
 				DEVELOPMENT_TEAM = S4W5Q2L53W;
-				INFOPLIST_FILE = Bayaan/Info.plist;
+				INFOPLIST_FILE = Istima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -551,8 +551,8 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.istima.app;
-				PRODUCT_NAME = Bayaan;
-				SWIFT_OBJC_BRIDGING_HEADER = "Bayaan/Bayaan-Bridging-Header.h";
+				PRODUCT_NAME = Istima;
+				SWIFT_OBJC_BRIDGING_HEADER = "Istima/Istima-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -740,7 +740,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Bayaan" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Istima" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -758,7 +758,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Bayaan" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Istima" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

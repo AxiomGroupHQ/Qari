@@ -50,8 +50,8 @@ interface MigrationResult {
 // Config / env
 // ---------------------------------------------------------------------------
 
-const API_URL = process.env.BAYAAN_API_URL;
-const API_KEY = process.env.BAYAAN_API_KEY;
+const API_URL = process.env.ISTIMA_API_URL;
+const API_KEY = process.env.ISTIMA_API_KEY;
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 
@@ -65,8 +65,8 @@ const PAGE_LIMIT = 200;
 
 function validateEnv(): void {
   const missing: string[] = [];
-  if (!API_URL) missing.push('BAYAAN_API_URL');
-  if (!API_KEY) missing.push('BAYAAN_API_KEY');
+  if (!API_URL) missing.push('ISTIMA_API_URL');
+  if (!API_KEY) missing.push('ISTIMA_API_KEY');
   if (!ADMIN_EMAIL) missing.push('ADMIN_EMAIL');
   if (!ADMIN_PASSWORD) missing.push('ADMIN_PASSWORD');
 
@@ -355,7 +355,7 @@ async function migrate(): Promise<void> {
         try {
           await updateRewayat(rewayat.id, {
             server: r2Url,
-            source_type: 'bayaan',
+            source_type: 'istima',
           });
           result.updated++;
         } catch (err) {

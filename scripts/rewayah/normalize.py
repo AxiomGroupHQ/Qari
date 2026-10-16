@@ -1,5 +1,5 @@
 """
-Normalize KFGQPC text to Bayaan conventions.
+Normalize KFGQPC text to Istima conventions.
 
 Rules derived empirically from diff_codepoints.py output against 6,236 Hafs verses.
 
@@ -9,7 +9,7 @@ Codepoint substitutions:
   U+0656 -> U+08F2  (open kasratan; 1,935)
   U+065E -> U+08F1  (open dammatan; 1,807)
 
-Hamza decomposition (KFGQPC precomposed -> Bayaan decomposed):
+Hamza decomposition (KFGQPC precomposed -> Istima decomposed):
   U+0623 (أ) -> U+0627 U+0654  (alef + hamza-above)
   U+0625 (إ) -> U+0627 U+0655  (alef + hamza-below)
   U+0626 (ئ) -> U+064A U+0654  (yeh + hamza-above)
@@ -17,13 +17,13 @@ Hamza decomposition (KFGQPC precomposed -> Bayaan decomposed):
 
 Verse markers:
   KFGQPC suffixes the bare Arabic-Indic digits at end of verse, joined by a space.
-  Bayaan emits them as a separate token prefixed with U+06DD (end-of-ayah marker).
+  Istima emits them as a separate token prefixed with U+06DD (end-of-ayah marker).
 
   "... يُؤۡمِنُونَ ٦"  ->  "... يُؤْمِنُونَ ۝٦"
 
 Ruku' marker:
   KFGQPC treats U+06DE as a standalone token separated by spaces.
-  Bayaan attaches it (no space) to the FIRST word of the verse.
+  Istima attaches it (no space) to the FIRST word of the verse.
 
   "۞ وَإِذَا ..."  ->  "۞وَإِذَا ..."
 
@@ -41,7 +41,7 @@ HAMZA_ABOVE = "\u0654"
 HAMZA_BELOW = "\u0655"
 
 # Applied atomically via str.translate so U+06E1 -> U+0652 and U+0652 -> U+06DF
-# don't collide. Bayaan uses U+0652 for quiescence (no vowel) and U+06DF for
+# don't collide. Istima uses U+0652 for quiescence (no vowel) and U+06DF for
 # silent letters; KFGQPC inverts this (U+06E1 for quiescence, U+0652 for silent).
 CODEPOINT_MAP = {
     "\u06E1": "\u0652",  # quiescence sukun
@@ -90,7 +90,7 @@ LEADING_RUKU = re.compile(rf"^{RUKU}\s+")
 
 
 # After hamza decomposition, KFGQPC's precomposed `أٓ` becomes `ا + ٔ + ٓ`
-# (alef, hamza-above, madda). Bayaan writes the same sound as `ـَٔا`
+# (alef, hamza-above, madda). Istima writes the same sound as `ـَٔا`
 # (tatweel, fatha, hamza-above, alef) - the tatweel acts as a visual carrier
 # for the hamza mark that precedes a true alef. This occurs in words like
 # "الآخرة", "آدم", "آخر".
@@ -107,20 +107,20 @@ def substitute_codepoints(text: str) -> str:
 
 
 def attach_ruku(text: str) -> str:
-    """KFGQPC: '۞ وَإِذَا...' -> Bayaan: '۞وَإِذَا...'"""
+    """KFGQPC: '۞ وَإِذَا...' -> Istima: '۞وَإِذَا...'"""
     return LEADING_RUKU.sub(RUKU, text, count=1)
 
 
 def wrap_ayah_marker(text: str) -> str:
-    """KFGQPC: '... يُؤۡمِنُونَ ٦' -> Bayaan: '... يُؤْمِنُونَ ۝٦'"""
+    """KFGQPC: '... يُؤۡمِنُونَ ٦' -> Istima: '... يُؤْمِنُونَ ۝٦'"""
     return TRAIL_AYAH_NUM.sub(f" {END_OF_AYAH}" + r"\1", text)
 
 
 def normalize_verse(kfgqpc_text: str, *, wrap_ayah: bool = True) -> str:
-    """Full normalization pipeline: KFGQPC conventions -> Bayaan conventions.
+    """Full normalization pipeline: KFGQPC conventions -> Istima conventions.
 
     `wrap_ayah=True` (default) prefixes the trailing ayah digit with U+06DD
-    (Bayaan's DigitalKhatt font expects '۝N'). For rewayat that render with
+    (Istima's DigitalKhatt font expects '۝N'). For rewayat that render with
     a KFGQPC per-qiraat font, set `wrap_ayah=False` — KFGQPC fonts have an
     OpenType feature that turns a bare Arabic digit into the ornamental
     ayah marker, and the U+06DD prefix would render as a SECOND empty marker

@@ -101,12 +101,12 @@ The script:
 **`utils/audioUtils.ts`:** The current production code already does `${rewayat.server}/${paddedSurah}.mp3` - once the DB server URLs point to R2, this works without code changes. The R2 POC branch's conditional routing code is not needed and should not be merged.
 
 **`services/dataService.ts`:**
-- Bump `DATA_VERSION` to `'4'` to bust the `bayaan_reciters` AsyncStorage cache so old mp3quran/Supabase URLs are replaced on next launch
+- Bump `DATA_VERSION` to `'4'` to bust the `istima_reciters` AsyncStorage cache so old mp3quran/Supabase URLs are replaced on next launch
 - Add `getReciterBySlug(slug: string)` - simple array find on in-memory `RECITERS`
 
 **Player queue migration (stale URLs):** The `DATA_VERSION` bump only busts the reciters cache. Stale audio URLs also live in the Zustand-persisted `player-store` AsyncStorage key (the `queue.tracks` array contains full URLs). On app startup, check if any track URL in the persisted queue contains `mp3quran.net` or `supabase.co` - if so, clear the queue. This prevents the player from trying to resume playback from dead URLs.
 
-`@bayaan/last_track` in AsyncStorage is NOT the active persistence mechanism - the player restores from `useRecentlyPlayedStore` and `playerStore.queue`. Do not target `@bayaan/last_track`.
+`@istima/last_track` in AsyncStorage is NOT the active persistence mechanism - the player restores from `useRecentlyPlayedStore` and `playerStore.queue`. Do not target `@istima/last_track`.
 
 ### Bad Data Fixes
 
@@ -153,7 +153,7 @@ Changing `associatedDomains` (iOS) and `intentFilters` (Android) requires `expo 
 Can be done as a Cloudflare Worker proxying to the Railway backend, a CNAME + reverse proxy, or a separate Railway service. The key requirement is that `/.well-known/*` is served directly (no redirect chain).
 
 **Files to update:**
-- `app.config.js` - `associatedDomains` and `intentFilters[0].data.host` (NOT the generated `AndroidManifest.xml` or `Bayaan.entitlements` - those are outputs of `expo prebuild`)
+- `app.config.js` - `associatedDomains` and `intentFilters[0].data.host` (NOT the generated `AndroidManifest.xml` or `Istima.entitlements` - those are outputs of `expo prebuild`)
 - `utils/shareUtils.ts` - `BASE_URL`
 - Backend `share/index.ts` - `BASE_URL` and `IOS_STORE_URL` (fix to `id6648769980`)
 - Backend `ogTemplate.ts` - `IOS_STORE_URL` (already correct ID, fix URL format to match)

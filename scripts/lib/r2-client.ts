@@ -32,7 +32,7 @@ if (!R2_ACCOUNT_ID || !R2_ACCESS_KEY_ID || !R2_SECRET_ACCESS_KEY) {
   );
 }
 
-export const BUCKET = 'bayaan-audio';
+export const BUCKET = 'istima-audio';
 
 export const r2 = new S3Client({
   region: 'auto',

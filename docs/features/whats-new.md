@@ -89,7 +89,7 @@ If you prefer programmatic testing:
    import { resetVersionTracking } from '@/utils/versionUtils';
    await resetVersionTracking();
    ```
-   - Or manually clear AsyncStorage key: `@bayaan_last_seen_version`
+   - Or manually clear AsyncStorage key: `@istima_last_seen_version`
 
 2. **Restart the app** (full restart, not hot reload)
 

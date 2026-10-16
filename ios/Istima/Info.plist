@@ -34,13 +34,12 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>istima</string>
-				<string>bayaan</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>exp+bayaan</string>
+				<string>exp+istima</string>
 			</array>
 		</dict>
 	</array>

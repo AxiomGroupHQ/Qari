@@ -91,10 +91,10 @@ The upload keystore is stored at:
 ```
 
 Keystore credentials are managed securely through:
-- **Keystore path**: Referenced via `BAYAAN_UPLOAD_STORE_FILE` in `~/.gradle/gradle.properties`
-- **Keystore password**: Set as `BAYAAN_UPLOAD_STORE_PASSWORD` in `~/.gradle/gradle.properties`
-- **Key alias**: Set as `BAYAAN_UPLOAD_KEY_ALIAS` in `~/.gradle/gradle.properties` (defaults to 'upload')
-- **Key password**: Set as `BAYAAN_UPLOAD_KEY_PASSWORD` in `~/.gradle/gradle.properties`
+- **Keystore path**: Referenced via `ISTIMA_UPLOAD_STORE_FILE` in `~/.gradle/gradle.properties`
+- **Keystore password**: Set as `ISTIMA_UPLOAD_STORE_PASSWORD` in `~/.gradle/gradle.properties`
+- **Key alias**: Set as `ISTIMA_UPLOAD_KEY_ALIAS` in `~/.gradle/gradle.properties` (defaults to 'upload')
+- **Key password**: Set as `ISTIMA_UPLOAD_KEY_PASSWORD` in `~/.gradle/gradle.properties`
 
 For detailed information on keystore management, refer to:
 ```
@@ -216,10 +216,10 @@ Keystore credentials are managed securely through:
 - **Keystore file**: Stored at `~/Documents/app-credentials/istima/keystore/istima-upload-key.keystore`
 - **Passwords**: Stored in `~/.gradle/gradle.properties` using variables:
   ```
-  BAYAAN_UPLOAD_STORE_FILE=/path/to/keystore/istima-upload-key.keystore
-  BAYAAN_UPLOAD_STORE_PASSWORD=your_keystore_password
-  BAYAAN_UPLOAD_KEY_ALIAS=upload
-  BAYAAN_UPLOAD_KEY_PASSWORD=your_key_password
+  ISTIMA_UPLOAD_STORE_FILE=/path/to/keystore/istima-upload-key.keystore
+  ISTIMA_UPLOAD_STORE_PASSWORD=your_keystore_password
+  ISTIMA_UPLOAD_KEY_ALIAS=upload
+  ISTIMA_UPLOAD_KEY_PASSWORD=your_key_password
   ```
 
 This keeps sensitive credentials outside the project repository while maintaining convenience for development.
@@ -236,8 +236,8 @@ This keeps sensitive credentials outside the project repository while maintainin
 
 For CI/CD integration, set environment variables in your build system:
 ```
-BAYAAN_UPLOAD_STORE_FILE
-BAYAAN_UPLOAD_STORE_PASSWORD
-BAYAAN_UPLOAD_KEY_ALIAS
-BAYAAN_UPLOAD_KEY_PASSWORD
+ISTIMA_UPLOAD_STORE_FILE
+ISTIMA_UPLOAD_STORE_PASSWORD
+ISTIMA_UPLOAD_KEY_ALIAS
+ISTIMA_UPLOAD_KEY_PASSWORD
 ``` 

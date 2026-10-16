@@ -11,7 +11,7 @@
  * Required env vars:
  *   WORKER_URL  - R2 migrator worker URL
  *   AUTH_TOKEN  - Worker auth token
- *   BAYAAN_API_KEY - Bearer token for the backend API
+ *   ISTIMA_API_KEY - Bearer token for the backend API
  *
  * Or: reads from .env.r2-worker automatically if present.
  */
@@ -112,14 +112,14 @@ loadEnvFile();
 
 const WORKER_URL = process.env.WORKER_URL;
 const AUTH_TOKEN = process.env.AUTH_TOKEN;
-const BAYAAN_API_KEY = process.env.BAYAAN_API_KEY;
+const ISTIMA_API_KEY = process.env.ISTIMA_API_KEY;
 
 const DRY_RUN = process.argv.includes('--dry-run');
 const STATUS_ONLY = process.argv.includes('--status');
 const RESET_STATUS = process.argv.includes('--reset-status');
 const CDN_BASE = 'https://cdn.example.com';
 const R2_KEY_PREFIX = 'quran/recitations';
-const API_BASE = 'https://bayaan-backend-production.up.railway.app';
+const API_BASE = 'https://istima-backend-production.up.railway.app';
 const PAGE_LIMIT = 200;
 const ENQUEUE_BATCH_SIZE = 500; // Worker chunks to 100 internally
 
@@ -131,7 +131,7 @@ function validateEnv(): void {
   const missing: string[] = [];
   if (!WORKER_URL) missing.push('WORKER_URL');
   if (!AUTH_TOKEN) missing.push('AUTH_TOKEN');
-  if (!BAYAAN_API_KEY) missing.push('BAYAAN_API_KEY');
+  if (!ISTIMA_API_KEY) missing.push('ISTIMA_API_KEY');
 
   if (missing.length > 0) {
     console.error(
@@ -149,7 +149,7 @@ function validateEnv(): void {
 async function fetchRecitersPage(page: number): Promise<PaginatedResponse> {
   const url = `${API_BASE}/v1/reciters?page=${page}&limit=${PAGE_LIMIT}`;
   const res = await fetch(url, {
-    headers: {Authorization: `Bearer ${BAYAAN_API_KEY}`},
+    headers: {Authorization: `Bearer ${ISTIMA_API_KEY}`},
   });
 
   if (!res.ok) {

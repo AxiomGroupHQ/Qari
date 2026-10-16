@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # iOS
-mkdir -p ios/Bayaan/Images.xcassets/Calligraphy.imageset
-cp assets/calligraphy-light.png ios/Bayaan/Images.xcassets/Calligraphy.imageset/
-cp assets/calligraphy-dark.png ios/Bayaan/Images.xcassets/Calligraphy.imageset/
+mkdir -p ios/Istima/Images.xcassets/Calligraphy.imageset
+cp assets/calligraphy-light.png ios/Istima/Images.xcassets/Calligraphy.imageset/
+cp assets/calligraphy-dark.png ios/Istima/Images.xcassets/Calligraphy.imageset/
 
 # Android
 mkdir -p android/app/src/main/res/drawable

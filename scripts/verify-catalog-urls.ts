@@ -247,7 +247,7 @@ async function main() {
     0,
   );
 
-  console.log(`\nBayaan catalog URL verifier`);
+  console.log(`\nIstima catalog URL verifier`);
   console.log(`  ${catalogPath}`);
   console.log(
     `  ${totalReciters} reciters · ${totalRewayat} rewayat · ${totalUrls} audio URLs`,

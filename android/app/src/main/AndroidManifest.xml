@@ -39,9 +39,8 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="bayaan"/>
         <data android:scheme="istima"/>
-        <data android:scheme="exp+bayaan"/>
+        <data android:scheme="exp+istima"/>
       </intent-filter>
       <intent-filter android:autoVerify="true" data-generated="true">
         <action android:name="android.intent.action.VIEW"/>

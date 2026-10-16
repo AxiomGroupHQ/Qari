@@ -12,12 +12,12 @@
  *   R2_ACCESS_KEY_ID     - R2 S3-compat access key
  *   R2_SECRET_ACCESS_KEY - R2 S3-compat secret key
  *
- *   BAYAAN_API_KEY       - Bearer token for the backend API
+ *   ISTIMA_API_KEY       - Bearer token for the backend API
  *   ADMIN_EMAIL          - Admin account email (for JWT)
  *   ADMIN_PASSWORD       - Admin account password (for JWT)
  *
  * Optional env (falls back to defaults):
- *   BAYAAN_API_URL       - Backend base URL (default: production Railway URL)
+ *   ISTIMA_API_URL       - Backend base URL (default: production Railway URL)
  *
  * Behaviour:
  *   - Parses utils/reciterImages.ts to build slug → filename mapping
@@ -99,18 +99,18 @@ const R2_ACCOUNT_ID = process.env.R2_ACCOUNT_ID;
 const R2_ACCESS_KEY_ID = process.env.R2_ACCESS_KEY_ID;
 const R2_SECRET_ACCESS_KEY = process.env.R2_SECRET_ACCESS_KEY;
 
-const BAYAAN_API_KEY =
-  process.env.BAYAAN_API_KEY ?? process.env.EXPO_PUBLIC_BAYAAN_API_KEY;
+const ISTIMA_API_KEY =
+  process.env.ISTIMA_API_KEY ?? process.env.EXPO_PUBLIC_ISTIMA_API_KEY;
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 const API_URL =
-  process.env.BAYAAN_API_URL ??
-  process.env.EXPO_PUBLIC_BAYAAN_API_URL ??
-  'https://bayaan-backend-production.up.railway.app';
+  process.env.ISTIMA_API_URL ??
+  process.env.EXPO_PUBLIC_ISTIMA_API_URL ??
+  'https://istima-backend-production.up.railway.app';
 
 const DRY_RUN = process.argv.includes('--dry-run');
 
-const R2_BUCKET = 'bayaan-audio';
+const R2_BUCKET = 'istima-audio';
 const CDN_BASE = 'https://cdn.example.com';
 const R2_KEY_PREFIX = 'assets/reciter-images';
 const PAGE_LIMIT = 200;
@@ -124,8 +124,8 @@ function validateEnv(): void {
   if (!R2_ACCOUNT_ID) missing.push('R2_ACCOUNT_ID');
   if (!R2_ACCESS_KEY_ID) missing.push('R2_ACCESS_KEY_ID');
   if (!R2_SECRET_ACCESS_KEY) missing.push('R2_SECRET_ACCESS_KEY');
-  if (!BAYAAN_API_KEY)
-    missing.push('BAYAAN_API_KEY / EXPO_PUBLIC_BAYAAN_API_KEY');
+  if (!ISTIMA_API_KEY)
+    missing.push('ISTIMA_API_KEY / EXPO_PUBLIC_ISTIMA_API_KEY');
   if (!ADMIN_EMAIL) missing.push('ADMIN_EMAIL');
   if (!ADMIN_PASSWORD) missing.push('ADMIN_PASSWORD');
 
@@ -239,7 +239,7 @@ async function getToken(): Promise<string> {
 async function fetchRecitersPage(page: number): Promise<PaginatedResponse> {
   const url = `${API_URL}/v1/reciters?page=${page}&limit=${PAGE_LIMIT}`;
   const res = await fetch(url, {
-    headers: {Authorization: `Bearer ${BAYAAN_API_KEY}`},
+    headers: {Authorization: `Bearer ${ISTIMA_API_KEY}`},
   });
 
   if (!res.ok) {

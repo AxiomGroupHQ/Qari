@@ -24,8 +24,8 @@ export async function clearPlayerCache(): Promise<void> {
     const keysToRemove = [
       'player-store',
       'player-recently-played-storage',
-      '@bayaan/last_track',
-      '@bayaan/last_position',
+      '@istima/last_track',
+      '@istima/last_position',
     ];
 
     await AsyncStorage.multiRemove(keysToRemove);

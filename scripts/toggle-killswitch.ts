@@ -1,5 +1,5 @@
 /**
- * Toggle the Bayaan killswitch on Cloudflare R2.
+ * Toggle the Istima killswitch on Cloudflare R2.
  *
  * Usage:
  *   npx tsx scripts/toggle-killswitch.ts --disable   # Activate killswitch (use fallback)
@@ -16,7 +16,7 @@ import {S3Client, PutObjectCommand} from '@aws-sdk/client-s3';
 // ---------------------------------------------------------------------------
 
 const CDN_CONFIG_URL = 'https://cdn.example.com/config/app-config.json';
-const R2_BUCKET = 'bayaan-audio';
+const R2_BUCKET = 'istima-audio';
 const R2_KEY = 'config/app-config.json';
 
 // ---------------------------------------------------------------------------

@@ -1,8 +1,8 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Track} from '@/types/audio';
 
-const LAST_TRACK_KEY = '@bayaan/last_track';
-const LAST_POSITION_KEY = '@bayaan/last_position';
+const LAST_TRACK_KEY = '@istima/last_track';
+const LAST_POSITION_KEY = '@istima/last_position';
 
 export const saveLastTrack = async (track: Track) => {
   try {

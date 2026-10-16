@@ -1,5 +1,5 @@
 """
-Build a Bayaan-compatible Mushaf words DB by patching a base rewayah's words
+Build a Istima-compatible Mushaf words DB by patching a base rewayah's words
 DB with another rewayah's text — the same approach used for Shu'bah on top
 of Hafs, generalized to any (base, target) pair.
 

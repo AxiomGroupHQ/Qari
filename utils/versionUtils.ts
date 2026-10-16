@@ -3,7 +3,7 @@ import Constants from 'expo-constants';
 import * as semver from 'semver';
 import {ChangelogEntry} from '@/types/changelog';
 
-const LAST_SEEN_VERSION_KEY = '@bayaan_last_seen_version';
+const LAST_SEEN_VERSION_KEY = '@istima_last_seen_version';
 
 /**
  * Normalize version string to valid semver format

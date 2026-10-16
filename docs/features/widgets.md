@@ -129,7 +129,7 @@ React Native app
 Widget (native)
   ├── reads from shared storage
   ├── renders native UI (SwiftUI / Glance)
-  └── user taps → deep link (bayaan://) → opens app at correct screen
+  └── user taps → deep link (istima://) → opens app at correct screen
 ```
 
 ### Expo Integration
@@ -138,7 +138,7 @@ Since widgets are native code, integration with the Expo/RN project requires:
 
 1. **Expo Config Plugin** to add widget extension target (iOS) and widget provider (Android) during `expo prebuild`
 2. **Native module** to write data from RN → shared storage (App Group / SharedPreferences)
-3. **Deep links** via existing `bayaan://` scheme bring users back into the RN app
+3. **Deep links** via existing `istima://` scheme bring users back into the RN app
 
 **Community packages:**
 - `@bittingz/expo-widgets` - Expo config plugin that scaffolds iOS and Android widget targets
@@ -174,7 +174,7 @@ Since widgets are native code, integration with the Expo/RN project requires:
 
 - `app.config.js` - Config plugin for widget targets, App Group entitlement
 - New: `plugins/withWidgets.js` - Expo config plugin for widget setup
-- New: `ios/BayaanWidgets/` - Swift/SwiftUI widget extension
+- New: `ios/IstimaWidgets/` - Swift/SwiftUI widget extension
 - New: `android/app/src/main/java/.../widgets/` - Kotlin widget provider
 - New: `services/widget/WidgetBridge.ts` - RN → native shared storage bridge
 - Existing stores (`playerStore`, `mushafSettingsStore`, `playCountStore`) - add write-to-widget-storage side effects

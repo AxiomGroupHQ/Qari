@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Bayaan.app"
-               BlueprintName = "Bayaan"
-               ReferencedContainer = "container:Bayaan.xcodeproj">
+               BuildableName = "Istima.app"
+               BlueprintName = "Istima"
+               ReferencedContainer = "container:Istima.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "BayaanTests.xctest"
-               BlueprintName = "BayaanTests"
-               ReferencedContainer = "container:Bayaan.xcodeproj">
+               BuildableName = "IstimaTests.xctest"
+               BlueprintName = "IstimaTests"
+               ReferencedContainer = "container:Istima.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Bayaan.app"
-            BlueprintName = "Bayaan"
-            ReferencedContainer = "container:Bayaan.xcodeproj">
+            BuildableName = "Istima.app"
+            BlueprintName = "Istima"
+            ReferencedContainer = "container:Istima.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Bayaan.app"
-            BlueprintName = "Bayaan"
-            ReferencedContainer = "container:Bayaan.xcodeproj">
+            BuildableName = "Istima.app"
+            BlueprintName = "Istima"
+            ReferencedContainer = "container:Istima.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

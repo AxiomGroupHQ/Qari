@@ -50,7 +50,7 @@ Expected: `Rewayat mappings: 29`, `Style mappings: 8`, `Structure OK`
 
 ```bash
 curl -s "https://istima-backend-production.up.railway.app/v1/reciters?page=1&limit=200" \
-  -H "Authorization: Bearer $(grep EXPO_PUBLIC_BAYAAN_API_KEY .env | cut -d= -f2)" | \
+  -H "Authorization: Bearer $(grep EXPO_PUBLIC_ISTIMA_API_KEY .env | cut -d= -f2)" | \
 python3 -c "
 import json, sys
 slugs = json.load(open('data/rewayat-slugs.json'))
@@ -94,22 +94,22 @@ This script updates every rewayat row's `server` column to the R2 CDN URL via th
 // Run with: npx tsx scripts/migrate-rewayat-to-r2.ts
 //
 // Env vars required:
-//   BAYAAN_API_URL - backend URL (e.g., https://istima-backend-production.up.railway.app)
-//   BAYAAN_API_KEY - API key for GET /v1/reciters
+//   ISTIMA_API_URL - backend URL (e.g., https://istima-backend-production.up.railway.app)
+//   ISTIMA_API_KEY - API key for GET /v1/reciters
 //   ADMIN_EMAIL    - admin login email
 //   ADMIN_PASSWORD - admin login password
 
 import rewayatSlugs from '../data/rewayat-slugs.json';
 
-const API_URL = process.env.BAYAAN_API_URL;
-const API_KEY = process.env.BAYAAN_API_KEY;
+const API_URL = process.env.ISTIMA_API_URL;
+const API_KEY = process.env.ISTIMA_API_KEY;
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 const R2_CDN_BASE = 'https://cdn.example.com';
 const DRY_RUN = process.argv.includes('--dry-run');
 
 if (!API_URL || !API_KEY || !ADMIN_EMAIL || !ADMIN_PASSWORD) {
-  console.error('Missing required env vars: BAYAAN_API_URL, BAYAAN_API_KEY, ADMIN_EMAIL, ADMIN_PASSWORD');
+  console.error('Missing required env vars: ISTIMA_API_URL, ISTIMA_API_KEY, ADMIN_EMAIL, ADMIN_PASSWORD');
   process.exit(1);
 }
 
@@ -316,8 +316,8 @@ main.catch(err => {
 - [ ] **Step 2: Run in dry-run mode**
 
 ```bash
-BAYAAN_API_URL=https://istima-backend-production.up.railway.app \
-BAYAAN_API_KEY=$(grep EXPO_PUBLIC_BAYAAN_API_KEY .env | cut -d= -f2) \
+ISTIMA_API_URL=https://istima-backend-production.up.railway.app \
+ISTIMA_API_KEY=$(grep EXPO_PUBLIC_ISTIMA_API_KEY .env | cut -d= -f2) \
 ADMIN_EMAIL=<your-admin-email> \
 ADMIN_PASSWORD=<your-admin-password> \
 npx tsx scripts/migrate-rewayat-to-r2.ts --dry-run
@@ -332,8 +332,8 @@ If the dry-run reports missing names or styles, add them to `data/rewayat-slugs.
 - [ ] **Step 4: Run live migration**
 
 ```bash
-BAYAAN_API_URL=https://istima-backend-production.up.railway.app \
-BAYAAN_API_KEY=$(grep EXPO_PUBLIC_BAYAAN_API_KEY .env | cut -d= -f2) \
+ISTIMA_API_URL=https://istima-backend-production.up.railway.app \
+ISTIMA_API_KEY=$(grep EXPO_PUBLIC_ISTIMA_API_KEY .env | cut -d= -f2) \
 ADMIN_EMAIL=<your-admin-email> \
 ADMIN_PASSWORD=<your-admin-password> \
 npx tsx scripts/migrate-rewayat-to-r2.ts
@@ -345,7 +345,7 @@ Expected: All rewayat updated (except those already on R2). Summary shows 0 fail
 
 ```bash
 curl -s "https://istima-backend-production.up.railway.app/v1/reciters?page=1&limit=5" \
-  -H "Authorization: Bearer $(grep EXPO_PUBLIC_BAYAAN_API_KEY .env | cut -d= -f2)" | \
+  -H "Authorization: Bearer $(grep EXPO_PUBLIC_ISTIMA_API_KEY .env | cut -d= -f2)" | \
 python3 -c "
 import json, sys
 data = json.load(sys.stdin)
@@ -1154,7 +1154,7 @@ git commit -m "feat: add share buttons to player, mushaf, verse actions, adhkar,
 expo prebuild --platform ios --clean
 ```
 
-Verify `ios/Bayaan/Bayaan.entitlements` now contains `applinks:istima.app`.
+Verify `ios/Istima/Istima.entitlements` now contains `applinks:istima.app`.
 
 - [ ] **Step 2: Prebuild Android**
 

@@ -6,15 +6,9 @@ import {useReciterStore} from '../store/reciterStore';
 import {useApiHealthStore} from '../store/apiHealthStore';
 import fallbackReciters from '../data/reciters-fallback.json';
 
-// EXPO_PUBLIC_ISTIMA_* is the current name. The legacy EXPO_PUBLIC_BAYAAN_* names still work so
-// existing .env files and CI settings keep working. Keep each process.env access a literal so
-// Expo can inline it at build time.
-const ISTIMA_API_URL =
-  process.env.EXPO_PUBLIC_ISTIMA_API_URL ??
-  process.env.EXPO_PUBLIC_BAYAAN_API_URL;
-const ISTIMA_API_KEY =
-  process.env.EXPO_PUBLIC_ISTIMA_API_KEY ??
-  process.env.EXPO_PUBLIC_BAYAAN_API_KEY;
+// Keep each process.env access a literal so Expo can inline it at build time.
+const ISTIMA_API_URL = process.env.EXPO_PUBLIC_ISTIMA_API_URL;
+const ISTIMA_API_KEY = process.env.EXPO_PUBLIC_ISTIMA_API_KEY;
 
 // ── Killswitch ───────────────────────────────────────────────────────────────
 // Only fetched when EXPO_PUBLIC_KILLSWITCH_URL is set. Forks that don't
@@ -39,8 +33,8 @@ async function isBackendEnabled(): Promise<boolean> {
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-const RECITERS_KEY = 'bayaan_reciters';
-const RECITER_SERVERS_KEY = 'bayaan_reciter_servers';
+const RECITERS_KEY = 'istima_reciters';
+const RECITER_SERVERS_KEY = 'istima_reciter_servers';
 const DATA_VERSION = '4'; // Increment: bust cache for R2 CDN URL migration
 
 // ── Storage helpers ───────────────────────────────────────────────────────────
@@ -404,8 +398,8 @@ export async function clearStoredData(): Promise<void> {
     await AsyncStorage.multiRemove([
       RECITERS_KEY,
       RECITER_SERVERS_KEY,
-      '@bayaan/last_track',
-      '@bayaan/last_position',
+      '@istima/last_track',
+      '@istima/last_position',
     ]);
     await usePlayerStore.getState().cleanup();
   } catch (error) {

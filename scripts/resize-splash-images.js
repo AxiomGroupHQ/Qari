@@ -5,11 +5,11 @@ const path = require('path');
 const SOURCE_DIR = path.join(__dirname, '../assets');
 const IOS_SPLASH_DIR = path.join(
   __dirname,
-  '../ios/Bayaan/Images.xcassets/SplashScreen.imageset',
+  '../ios/Istima/Images.xcassets/SplashScreen.imageset',
 );
 const IOS_CALLIGRAPHY_DIR = path.join(
   __dirname,
-  '../ios/Bayaan/Images.xcassets/Calligraphy.imageset',
+  '../ios/Istima/Images.xcassets/Calligraphy.imageset',
 );
 const ANDROID_DIR = path.join(__dirname, '../android/app/src/main/res');
 

@@ -1,6 +1,6 @@
 """
 Validate that normalize.normalize_verse() applied to KFGQPC Hafs JSON
-produces text that byte-matches Bayaan's dk_words.db on a per-verse basis.
+produces text that byte-matches Istima's dk_words.db on a per-verse basis.
 
 Reports:
   - round-trip match rate
@@ -18,14 +18,14 @@ from normalize import normalize_verse
 
 HERE = Path(__file__).parent
 REPO = HERE.parents[1]
-BAYAAN_DB = REPO / "data" / "mushaf" / "digitalkhatt" / "digital-khatt-v2.db"
+ISTIMA_DB = REPO / "data" / "mushaf" / "digitalkhatt" / "digital-khatt-v2.db"
 KFGQPC_HAFS = HERE / "hafs.json"
 
 MAX_SAMPLES = 10
 
 
-def load_bayaan_verses() -> dict[tuple[int, int], str]:
-    conn = sqlite3.connect(BAYAAN_DB)
+def load_istima_verses() -> dict[tuple[int, int], str]:
+    conn = sqlite3.connect(ISTIMA_DB)
     cur = conn.cursor()
     verses: dict[tuple[int, int], list[tuple[int, str]]] = defaultdict(list)
     for surah, ayah, word, text in cur.execute(
@@ -59,7 +59,7 @@ def char_deltas(a: str, b: str) -> list[tuple[int, str, str]]:
 
 
 def main() -> None:
-    bayaan = load_bayaan_verses()
+    istima = load_istima_verses()
     kfgqpc = json.loads(KFGQPC_HAFS.read_text(encoding="utf-8"))
     kfgqpc_by_key = {(row["sora"], row["aya_no"]): row["aya_text"] for row in kfgqpc}
 
@@ -69,19 +69,19 @@ def main() -> None:
     samples: list[tuple[tuple[int, int], str, str]] = []
     residual_cps: Counter[tuple[str, str]] = Counter()
 
-    for key, bayaan_text in bayaan.items():
+    for key, istima_text in istima.items():
         kf = kfgqpc_by_key.get(key)
         if kf is None:
             continue
         total += 1
         normalized = normalize_verse(kf)
-        if normalized == bayaan_text:
+        if normalized == istima_text:
             matches += 1
         else:
             mismatches += 1
             if len(samples) < MAX_SAMPLES:
-                samples.append((key, bayaan_text, normalized))
-            for _, a, b in char_deltas(bayaan_text, normalized):
+                samples.append((key, istima_text, normalized))
+            for _, a, b in char_deltas(istima_text, normalized):
                 residual_cps[(a, b)] += 1
 
     print(f"Verses compared: {total}")
@@ -92,7 +92,7 @@ def main() -> None:
         print(f"\n=== First {len(samples)} mismatches ===")
         for key, a, b in samples:
             print(f"\n  {key[0]}:{key[1]}")
-            print(f"    bayaan:     {a}")
+            print(f"    istima:     {a}")
             print(f"    normalized: {b}")
             deltas = char_deltas(a, b)[:6]
             if deltas:
@@ -102,7 +102,7 @@ def main() -> None:
                         if not c:
                             return "[]"
                         return f"{c!r} U+{ord(c):04X}"
-                    print(f"      @{idx}  bayaan={fmt(x)}  normalized={fmt(y)}")
+                    print(f"      @{idx}  istima={fmt(x)}  normalized={fmt(y)}")
 
     print("\n=== Residual codepoint delta frequency (top 20) ===")
     for (a, b), count in residual_cps.most_common(20):
@@ -114,7 +114,7 @@ def main() -> None:
                 return f"U+{ord(c):04X} {unicodedata.name(c)}"
             except ValueError:
                 return f"U+{ord(c):04X} (unknown)"
-        print(f"  {count:>6}  bayaan={name(a):<50}  normalized={name(b)}")
+        print(f"  {count:>6}  istima={name(a):<50}  normalized={name(b)}")
 
 
 if __name__ == "__main__":

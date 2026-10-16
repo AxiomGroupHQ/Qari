@@ -46,7 +46,7 @@ module.exports = {
     locales: nativeLocales,
     name: branding.appName, // @ai
     slug: branding.appSlug, // @ai
-    scheme: branding.urlScheme, // Retain legacy bayaan URL handling for existing installations. @ai
+    scheme: branding.urlScheme,
     description: branding.contentTagline + '. ' + branding.reflectionTagline, // @ai
     web: {name: branding.appName, favicon: './assets/images/icon.png'}, // @ai
     version: getVersionString(),
@@ -81,7 +81,7 @@ module.exports = {
         UIBackgroundModes: ['audio', 'remote-notification'],
         CFBundleURLTypes: [
           {
-            CFBundleURLSchemes: [branding.urlScheme, 'bayaan'],
+            CFBundleURLSchemes: [branding.urlScheme],
           },
         ],
         NSPrivacyPolicyURL: PRIVACY_POLICY_URL,

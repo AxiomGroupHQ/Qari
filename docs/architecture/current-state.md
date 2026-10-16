@@ -128,7 +128,7 @@ app/
     └── (d.settings)/        # Settings, reading themes, Mushaf settings
 ```
 
-Deep links use the `bayaan://` URL scheme and `iapi.istima.app/share` associated domain.
+Deep links use the `istima://` URL scheme and `iapi.istima.app/share` associated domain.
 
 ---
 

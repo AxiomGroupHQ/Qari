@@ -29,7 +29,7 @@ Enable users to share links to reciters, recitations, surahs, playlists, mushaf 
 
 ## Current State
 
-- **Custom URL scheme** `bayaan://` is already configured in `app.config.js`
+- **Custom URL scheme** `istima://` is already configured in `app.config.js`
 - **Expo Router v4** with file-based routing already has dynamic routes: `reciter/[id]`, `playlist/[id]`
 - **No associated domain** (Universal Links / App Links) configured yet
 - **No backend** - Supabase is used for storage and data, but no edge functions or API layer exists
@@ -39,7 +39,7 @@ Enable users to share links to reciters, recitations, surahs, playlists, mushaf 
 
 ### Level 1: Custom URL Scheme Only
 
-Use the existing `bayaan://` scheme. Links like `bayaan://reciter/abc123` resolve via Expo Router.
+Use the existing `istima://` scheme. Links like `istima://reciter/abc123` resolve via Expo Router.
 
 - **Pros** - Near-zero effort, works today
 - **Cons** - Only works with app installed, no web fallback, no social preview cards, ugly URLs

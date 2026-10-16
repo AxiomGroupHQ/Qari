@@ -370,7 +370,7 @@ Istima/
 - Purpose: Native iOS project (Xcode workspace)
 - Generated: By `expo prebuild` command
 - Committed: Yes (some files), but many generated
-- Important: `ios/Bayaan.xcworkspace` used for development/archiving
+- Important: `ios/Istima.xcworkspace` used for development/archiving
 - Credentials: iOS team ID configured via `withIOSTeam.js` plugin
 
 **android/** - Android Build Artifacts

@@ -295,7 +295,7 @@ export function getSystemPlaylists(): SystemPlaylist[] {
 
     // Trending: Istima Essentials
     {
-      id: 'bayaan-essentials',
+      id: 'istima-essentials',
       title: `${branding.appName} Essentials`,
       description: 'Our top recommendations for every listener',
       backgroundColor: '#DC2626', // Deep red
