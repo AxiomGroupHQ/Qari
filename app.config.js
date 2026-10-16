@@ -191,6 +191,16 @@ module.exports = {
       'expo-router',
       ['expo-audio', {enableBackgroundPlayback: true}],
       'expo-sqlite',
+      // Native Google sign-in. iosUrlScheme is the iOS client ID reversed
+      // (com.googleusercontent.apps.<id>); the plugin needs it at prebuild time.
+      [
+        '@react-native-google-signin/google-signin',
+        {
+          iosUrlScheme:
+            process.env.GOOGLE_IOS_URL_SCHEME ||
+            'com.googleusercontent.apps.unset',
+        },
+      ],
       [
         'expo-splash-screen',
         {

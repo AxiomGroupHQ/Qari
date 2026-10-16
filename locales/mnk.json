@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Aya {{surah}}:{{ayah}} · Danye {{position}}, {{total}} la"
+  },
+  "account": {
+    "title": "Kɔntɔ",
+    "settingsDescription": "Don ka i ka dɔnniyaa mara ani k'a bɛn",
+    "signInTitle": "Don",
+    "signUpTitle": "Kɔntɔ da",
+    "benefit": "I ka kanuu, taamasiyɛnuu, dɔnkili lisɛnuu ani sigiyaa bɛn i ka mashinuu bɛɛ la.",
+    "name": "Tɔgɔ (a tɛ wajibi)",
+    "email": "Imɛli",
+    "password": "Gundo kumaa",
+    "passwordHint": "A ka dɔgɔya, a ka kɛ so 8 ye.",
+    "signIn": "Don",
+    "signUp": "Kɔntɔ da",
+    "or": "walima",
+    "continueWithGoogle": "Taa ni Google ye",
+    "noAccount": "Kɔntɔ tɛ i yé? A da",
+    "haveAccount": "Kɔntɔ bɛ i yé? Don",
+    "signedInAs": "I donna",
+    "syncInfo": "I ka kanuu, taamasiyɛnuu, dɔnkili lisɛnuu, adhkar marala, sigiyaa ani i ka taa ɲɛ bɛnna a yɛrɛ ma.",
+    "signOut": "Bɔ",
+    "deleteAccount": "Kɔntɔ bɔ",
+    "deleteTitle": "Kɔntɔ bɔ?",
+    "deleteMessage": "O bɛ i ka kɔntɔ ni dɔnniyaa bɛnnen bɛɛ bɔ badaa. Dɔnniyaa min bɛ o mashin in na, o bɛ to.",
+    "deleteConfirm": "Bɔ",
+    "errors": {
+      "invalid_email": "I ye imɛli adirɛsi ɲuman sɛbɛn. A ka kan ka i yɛrɛ ka dɔnniyaa mara.",
+      "weak_password": "Gundo kumaa ka kan ka kɛ so 8 ye min b'a la.",
+      "email_taken": "Kɔntɔ bɛ yen ni imɛli in ye kaban.",
+      "invalid_credentials": "Imɛli walima gundo kumaa ma ɲi.",
+      "too_many_attempts": "Kɔrɔbɔ caman. I ka segin ka kɔrɔbɔ miniti 15 kɔfɛ.",
+      "invalid_google_token": "Donni ni Google ye ma ɲɛ. I ka segin ka kɔrɔbɔ.",
+      "google_not_configured": "Donni ni Google ye tɛ se ka kɛ fɔlɔ.",
+      "email_not_verified": "I ka Google imɛli ma sɛgɛsɛgɛ.",
+      "unauthorized": "I ka sigi tilara. I ka don kokura.",
+      "network": "Sɛrivɛri tɛ se ka sɔrɔ. I ka sɛgɛsɛgɛ i ka jɛɲɔgɔnya la.",
+      "unknown": "Fɛn dɔ ma ɲɛ. I ka segin ka kɔrɔbɔ."
+    },
+    "emailRequired": "Imɛli ɲuman ka kan ka i yɛrɛ ka dɔnniyaa mara (kanuu, taamasiyɛnuu, dɔnkili lisɛnuu, sigiyaa). N'o tɛ, a bɛ to o mashin in na dɔrɔn."
   }
 }

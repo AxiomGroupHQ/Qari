@@ -22,6 +22,10 @@ module.exports = {
   termsUrl: 'https://istima.app/terms',
   privacyUrl: 'https://istima.app/privacy',
   shareBaseUrl: 'https://istima.app',
+  // Accounts + sync API (Cloudflare Worker + D1), see docs/accounts.md
+  apiBaseUrl: 'https://iapi.istima.app',
+  // Google OAuth client IDs (Google Cloud console). Empty = Google sign-in button is hidden.
+  googleClientIds: {web: '', ios: '', android: ''},
   emailProductName: 'Istima',
   catalog: {
     source: 'bundled',

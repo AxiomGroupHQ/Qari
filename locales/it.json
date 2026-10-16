@@ -755,5 +755,43 @@
   },
   "wordDetail": {
     "context": "Versetto {{surah}}:{{ayah}} · Parola {{position}} di {{total}}"
+  },
+  "account": {
+    "title": "Account",
+    "settingsDescription": "Accedi per salvare e sincronizzare i tuoi dati",
+    "signInTitle": "Accedi",
+    "signUpTitle": "Crea account",
+    "benefit": "Sincronizza preferiti, segnalibri, playlist e impostazioni su tutti i tuoi dispositivi.",
+    "name": "Nome (facoltativo)",
+    "email": "Email",
+    "password": "Password",
+    "passwordHint": "Almeno 8 caratteri.",
+    "signIn": "Accedi",
+    "signUp": "Crea account",
+    "or": "oppure",
+    "continueWithGoogle": "Continua con Google",
+    "noAccount": "Non hai un account? Creane uno",
+    "haveAccount": "Hai già un account? Accedi",
+    "signedInAs": "Accesso effettuato",
+    "syncInfo": "Preferiti, segnalibri, playlist, adhkar salvati, impostazioni e progressi si sincronizzano automaticamente.",
+    "signOut": "Esci",
+    "deleteAccount": "Elimina account",
+    "deleteTitle": "Eliminare l’account?",
+    "deleteMessage": "Questo elimina definitivamente il tuo account e tutti i dati sincronizzati. I dati su questo dispositivo restano.",
+    "deleteConfirm": "Elimina",
+    "errors": {
+      "invalid_email": "Inserisci un indirizzo email valido. È necessario per salvare i tuoi dati personali.",
+      "weak_password": "La password deve avere almeno 8 caratteri.",
+      "email_taken": "Esiste già un account con questa email.",
+      "invalid_credentials": "Email o password errata.",
+      "too_many_attempts": "Troppi tentativi. Riprova tra 15 minuti.",
+      "invalid_google_token": "Accesso con Google non riuscito. Riprova.",
+      "google_not_configured": "L’accesso con Google non è ancora disponibile.",
+      "email_not_verified": "La tua email Google non è verificata.",
+      "unauthorized": "La sessione è scaduta. Accedi di nuovo.",
+      "network": "Impossibile raggiungere il server. Controlla la connessione.",
+      "unknown": "Qualcosa è andato storto. Riprova."
+    },
+    "emailRequired": "Serve un’email valida per salvare i tuoi dati personali (preferiti, segnalibri, playlist, impostazioni). Senza, restano solo su questo dispositivo."
   }
 }

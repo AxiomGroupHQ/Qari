@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Ayə {{surah}}:{{ayah}} · {{total}} sözdən {{position}}-ci söz"
+  },
+  "account": {
+    "title": "Hesab",
+    "settingsDescription": "Məlumatlarınızı ehtiyat nüsxələmək və sinxronlaşdırmaq üçün daxil olun",
+    "signInTitle": "Daxil ol",
+    "signUpTitle": "Hesab yarat",
+    "benefit": "Sevimlilərinizi, əlfəcinlərinizi, pleylistlərinizi və ayarlarınızı cihazlarınız arasında sinxronlaşdırın.",
+    "name": "Ad (könüllü)",
+    "email": "E-poçt",
+    "password": "Parol",
+    "passwordHint": "Ən azı 8 simvol.",
+    "signIn": "Daxil ol",
+    "signUp": "Hesab yarat",
+    "or": "və ya",
+    "continueWithGoogle": "Google ilə davam et",
+    "noAccount": "Hesabınız yoxdur? Yaradın",
+    "haveAccount": "Artıq hesabınız var? Daxil olun",
+    "signedInAs": "Daxil olunub",
+    "syncInfo": "Sevimliləriniz, əlfəcinləriniz, pleylistləriniz, saxlanmış zikrlər, ayarlarınız və irəliləyişiniz avtomatik sinxronlaşır.",
+    "signOut": "Çıx",
+    "deleteAccount": "Hesabı sil",
+    "deleteTitle": "Hesab silinsin?",
+    "deleteMessage": "Bu, hesabınızı və bütün sinxronlaşdırılmış məlumatları həmişəlik silir. Bu cihazdakı məlumatlar qalır.",
+    "deleteConfirm": "Sil",
+    "errors": {
+      "invalid_email": "Zəhmət olmasa etibarlı e-poçt ünvanı daxil edin. Şəxsi məlumatları saxlamaq üçün tələb olunur.",
+      "weak_password": "Parol ən azı 8 simvol olmalıdır.",
+      "email_taken": "Bu e-poçtla hesab artıq mövcuddur.",
+      "invalid_credentials": "E-poçt və ya parol yanlışdır.",
+      "too_many_attempts": "Çox sayda cəhd. 15 dəqiqə sonra yenidən cəhd edin.",
+      "invalid_google_token": "Google ilə giriş alınmadı. Yenidən cəhd edin.",
+      "google_not_configured": "Google ilə giriş hələ əlçatan deyil.",
+      "email_not_verified": "Google e-poçtunuz təsdiqlənməyib.",
+      "unauthorized": "Sessiyanızın vaxtı bitdi. Yenidən daxil olun.",
+      "network": "Serverə çatmaq mümkün deyil. Bağlantınızı yoxlayın.",
+      "unknown": "Xəta baş verdi. Yenidən cəhd edin."
+    },
+    "emailRequired": "Şəxsi məlumatlarınızı (sevimlilər, əlfəcinlər, pleylistlər, ayarlar) saxlamaq üçün etibarlı e-poçt lazımdır. Olmadıqda yalnız bu cihazda qalır."
   }
 }

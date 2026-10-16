@@ -755,5 +755,43 @@
   },
   "wordDetail": {
     "context": "Ajet {{surah}}:{{ayah}} · Riječ {{position}} od {{total}}"
+  },
+  "account": {
+    "title": "Račun",
+    "settingsDescription": "Prijavite se da sačuvate i sinhronizujete svoje podatke",
+    "signInTitle": "Prijava",
+    "signUpTitle": "Napravi račun",
+    "benefit": "Sinhronizujte omiljene, markere, plejliste i postavke na svim uređajima.",
+    "name": "Ime (opcionalno)",
+    "email": "E-pošta",
+    "password": "Lozinka",
+    "passwordHint": "Najmanje 8 znakova.",
+    "signIn": "Prijava",
+    "signUp": "Napravi račun",
+    "or": "ili",
+    "continueWithGoogle": "Nastavi s Googleom",
+    "noAccount": "Nemate račun? Napravite ga",
+    "haveAccount": "Već imate račun? Prijavite se",
+    "signedInAs": "Prijavljeni ste",
+    "syncInfo": "Vaši omiljeni, markeri, plejliste, sačuvani zikrovi, postavke i napredak sinhronizuju se automatski.",
+    "signOut": "Odjava",
+    "deleteAccount": "Izbriši račun",
+    "deleteTitle": "Izbrisati račun?",
+    "deleteMessage": "Ovo trajno briše vaš račun i sve sinhronizovane podatke. Podaci na ovom uređaju ostaju.",
+    "deleteConfirm": "Izbriši",
+    "errors": {
+      "invalid_email": "Unesite važeću adresu e-pošte. Potrebna je za čuvanje ličnih podataka.",
+      "weak_password": "Lozinka mora imati najmanje 8 znakova.",
+      "email_taken": "Račun s ovom e-poštom već postoji.",
+      "invalid_credentials": "E-pošta ili lozinka nisu tačni.",
+      "too_many_attempts": "Previše pokušaja. Pokušajte ponovo za 15 minuta.",
+      "invalid_google_token": "Prijava putem Googlea nije uspjela. Pokušajte ponovo.",
+      "google_not_configured": "Prijava putem Googlea još nije dostupna.",
+      "email_not_verified": "Vaša Google e-pošta nije potvrđena.",
+      "unauthorized": "Sesija je istekla. Prijavite se ponovo.",
+      "network": "Nije moguće povezati se sa serverom. Provjerite vezu.",
+      "unknown": "Nešto je pošlo po zlu. Pokušajte ponovo."
+    },
+    "emailRequired": "Za čuvanje ličnih podataka (omiljeni, markeri, plejliste, postavke) potrebna je važeća e-pošta. Bez nje ostaju samo na ovom uređaju."
   }
 }

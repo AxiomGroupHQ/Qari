@@ -101,6 +101,24 @@ const settingsItems = [
   },
   {
     get section() {
+      return t('account.title');
+    },
+    items: [
+      {
+        get title() {
+          return t('account.title');
+        },
+        type: 'account',
+        get description() {
+          return t('account.settingsDescription');
+        },
+        icon: 'personAudio',
+        iconType: 'custom',
+      },
+    ],
+  },
+  {
+    get section() {
       return t('tabs.settings.appData');
     },
     items: [
@@ -279,6 +297,9 @@ export default function SettingsScreen() {
         break;
       case 'language':
         SheetManager.show('language-picker');
+        break;
+      case 'account':
+        router.push('/(d.settings)/account');
         break;
       case 'storage':
         router.push('/(d.settings)/storage');

@@ -773,5 +773,43 @@
       "idris": "ኢድሪስ",
       "ishaq": "ኢሥሐቅ"
     }
+  },
+  "account": {
+    "title": "መለያ",
+    "settingsDescription": "ውሂብዎን ለመጠባበቅና ለማመሳሰል ይግቡ",
+    "signInTitle": "ግባ",
+    "signUpTitle": "መለያ ፍጠር",
+    "benefit": "ተወዳጆችዎን፣ ዕልባቶችዎን፣ አጫዋች ዝርዝሮችዎን እና ቅንብሮችዎን በሁሉም መሣሪያዎችዎ ላይ ያመሳስሉ።",
+    "name": "ስም (አማራጭ)",
+    "email": "ኢሜይል",
+    "password": "የይለፍ ቃል",
+    "passwordHint": "ቢያንስ 8 ቁምፊዎች።",
+    "signIn": "ግባ",
+    "signUp": "መለያ ፍጠር",
+    "or": "ወይም",
+    "continueWithGoogle": "በGoogle ቀጥል",
+    "noAccount": "መለያ የለዎትም? ይፍጠሩ",
+    "haveAccount": "መለያ አለዎት? ይግቡ",
+    "signedInAs": "ገብተዋል",
+    "syncInfo": "ተወዳጆችዎ፣ ዕልባቶችዎ፣ አጫዋች ዝርዝሮችዎ፣ የተቀመጡ አዝካሮች፣ ቅንብሮችዎ እና ሂደትዎ በራስ-ሰር ይመሳሰላሉ።",
+    "signOut": "ውጣ",
+    "deleteAccount": "መለያ ሰርዝ",
+    "deleteTitle": "መለያ ይሰረዝ?",
+    "deleteMessage": "ይህ መለያዎን እና ሁሉንም የተመሳሰለ ውሂብ እስከመጨረሻው ይሰርዛል። በዚህ መሣሪያ ላይ ያለ ውሂብ ይቀራል።",
+    "deleteConfirm": "ሰርዝ",
+    "errors": {
+      "invalid_email": "እባክዎ ትክክለኛ የኢሜይል አድራሻ ያስገቡ። የግል ውሂብዎን ለማስቀመጥ ያስፈልጋል።",
+      "weak_password": "የይለፍ ቃሉ ቢያንስ 8 ቁምፊዎች መሆን አለበት።",
+      "email_taken": "በዚህ ኢሜይል መለያ አስቀድሞ አለ።",
+      "invalid_credentials": "ኢሜይሉ ወይም የይለፍ ቃሉ ትክክል አይደለም።",
+      "too_many_attempts": "ብዙ ሙከራዎች። ከ15 ደቂቃ በኋላ እንደገና ይሞክሩ።",
+      "invalid_google_token": "በGoogle መግባት አልተሳካም። እባክዎ እንደገና ይሞክሩ።",
+      "google_not_configured": "በGoogle መግባት ገና አይገኝም።",
+      "email_not_verified": "የGoogle ኢሜይልዎ አልተረጋገጠም።",
+      "unauthorized": "ክፍለ ጊዜዎ አልቋል። እባክዎ እንደገና ይግቡ።",
+      "network": "አገልጋዩን ማግኘት አልተቻለም። ግንኙነትዎን ያረጋግጡ።",
+      "unknown": "የሆነ ችግር ተፈጥሯል። እባክዎ እንደገና ይሞክሩ።"
+    },
+    "emailRequired": "የግል ውሂብዎን (ተወዳጆች፣ ዕልባቶች፣ አጫዋች ዝርዝሮች፣ ቅንብሮች) ለማስቀመጥ ትክክለኛ ኢሜይል ያስፈልጋል። ያለሱ በዚህ መሣሪያ ላይ ብቻ ይቀራል።"
   }
 }

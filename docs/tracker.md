@@ -12,6 +12,20 @@ Deferred items and the Bayaan self-hosting inventory. Update the status when som
 | Manifest link in the web page | Open | `public/manifest.json` exists but the HTML does not link to it yet (needs a custom web HTML template). |
 | Cloudflare Pages project for iapi.istima.app | Needs setup | Connect `AxiomGroupHQ/Qari-api` to a Pages project and add the custom domain `iapi.istima.app`. Timestamps return 404 until this is done. Pages allows 20,000 files per deploy (now ~12.9k). |
 
+## Accounts and sync (in progress, not committed)
+
+| Item | Status | What is needed |
+| --- | --- | --- |
+| API Worker + D1 schema (`istima-worker`, routes `iapi.istima.app/v1/*`) | Built and tested locally | Create D1 database, deploy. See `docs/credentials-and-setup.md` sections 1 and 2. |
+| Email sign-up / sign-in | Built | Nothing for basic use. Email verification and password reset need an email provider (section 8). |
+| Google sign-in | Built for web, hidden until configured | Three Google OAuth client IDs (section 3). Native needs a library swap and a new native build. |
+| Sync: settings, favorites, play counts | Built | Test with a deployed API. |
+| Sync: playlists, verse annotations, adhkar saved, listening position | Not built | Server already accepts these documents. App adapters still to write. |
+| Account deletion | Built (App Store requirement) | - |
+| Translations for the account screens | English only | Translate into 59 locales after review. |
+| Native build with `expo-secure-store` | Needed | New iOS and Android builds. |
+| Credentials list | Written | `docs/credentials-and-setup.md` |
+
 ## Bayaan self-hosting inventory
 
 Status values: **bundled** = pulled and served from our own site, **not contacted** = the live app does not call it, **still external** = still depends on someone else.

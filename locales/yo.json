@@ -748,5 +748,43 @@
   },
   "wordDetail": {
     "context": "Áyà {{surah}}:{{ayah}} · Ọ̀rọ̀ {{position}} nínú {{total}}"
+  },
+  "account": {
+    "title": "Àkọọ́lẹ̀",
+    "settingsDescription": "Wọlé láti fi dátà rẹ pamọ́ àti láti mú un bá ara mu",
+    "signInTitle": "Wọlé",
+    "signUpTitle": "Ṣẹ̀dá àkọọ́lẹ̀",
+    "benefit": "Mú àwọn ayanfẹ́, àwọn àmì ìwé, àwọn àtòjọ orin àti àwọn ètò rẹ bá ara mu lórí gbogbo ẹ̀rọ rẹ.",
+    "name": "Orúkọ (àṣàyàn)",
+    "email": "Ímeèlì",
+    "password": "Ọ̀rọ̀ìpamọ́",
+    "passwordHint": "Ó kéré tán àwọn kọ́kọ́rọ́ mẹ́jọ.",
+    "signIn": "Wọlé",
+    "signUp": "Ṣẹ̀dá àkọọ́lẹ̀",
+    "or": "tàbí",
+    "continueWithGoogle": "Tẹ̀síwájú pẹ̀lú Google",
+    "noAccount": "Kò tíì ní àkọọ́lẹ̀? Ṣẹ̀dá ọ̀kan",
+    "haveAccount": "Ní àkọọ́lẹ̀ tẹ́lẹ̀? Wọlé",
+    "signedInAs": "O ti wọlé",
+    "syncInfo": "Àwọn ayanfẹ́, àwọn àmì ìwé, àwọn àtòjọ orin, àwọn adhkar tí a fi pamọ́, àwọn ètò àti ìtẹ̀síwájú rẹ ń bá ara wọn mu fúnra wọn.",
+    "signOut": "Jáde",
+    "deleteAccount": "Pa àkọọ́lẹ̀ rẹ́",
+    "deleteTitle": "Pa àkọọ́lẹ̀ rẹ́?",
+    "deleteMessage": "Èyí yóò pa àkọọ́lẹ̀ rẹ àti gbogbo dátà tí a mú bá ara mu rẹ́ títí láé. Dátà tó wà lórí ẹ̀rọ yìí yóò wà.",
+    "deleteConfirm": "Parẹ́",
+    "errors": {
+      "invalid_email": "Jọ̀wọ́ tẹ àdírẹ́sì ímeèlì tó tọ́ sí i. A nílò rẹ̀ láti fi dátà àdáni rẹ pamọ́.",
+      "weak_password": "Ọ̀rọ̀ìpamọ́ gbọ́dọ̀ ní ó kéré tán àwọn kọ́kọ́rọ́ mẹ́jọ.",
+      "email_taken": "Àkọọ́lẹ̀ kan ti wà pẹ̀lú ímeèlì yìí.",
+      "invalid_credentials": "Ímeèlì tàbí ọ̀rọ̀ìpamọ́ kò tọ́.",
+      "too_many_attempts": "Ìgbìyànjú pọ̀ jù. Gbìyànjú lẹ́ẹ̀kan sí i lẹ́yìn ìṣẹ́jú 15.",
+      "invalid_google_token": "Wíwọlé pẹ̀lú Google kùnà. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i.",
+      "google_not_configured": "Wíwọlé pẹ̀lú Google kò tíì wà.",
+      "email_not_verified": "A kò tíì fìdí ímeèlì Google rẹ múlẹ̀.",
+      "unauthorized": "Àkókò rẹ ti parí. Jọ̀wọ́ wọlé lẹ́ẹ̀kan sí i.",
+      "network": "Kò lè dé ọ̀dọ̀ olupin. Ṣàyẹ̀wò ìsopọ̀ rẹ.",
+      "unknown": "Nǹkan kan ṣẹlẹ̀. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i."
+    },
+    "emailRequired": "Ímeèlì tó tọ́ ni a nílò láti fi dátà àdáni rẹ pamọ́ (àwọn ayanfẹ́, àwọn àmì ìwé, àwọn àtòjọ orin, àwọn ètò). Láìsí rẹ̀, yóò wà lórí ẹ̀rọ yìí nìkan."
   }
 }

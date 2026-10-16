@@ -755,5 +755,43 @@
   },
   "wordDetail": {
     "context": "Aaya {{surah}}:{{ayah}} · Daande {{position}} e {{total}}"
+  },
+  "account": {
+    "title": "Konnguɗi",
+    "settingsDescription": "Seŋo ngam famɗugo e sinkaago keɓal maaɗa",
+    "signInTitle": "Seŋo",
+    "signUpTitle": "Waɗ konnguɗi",
+    "benefit": "Sinkaa suɓaaɗe maaɗa, maandorɗe, limtol cuuɗi e teelte ko fuɗɗaaɗe dow kuutiniroojum maaɗa fuu.",
+    "name": "Innde (ngalaa wajibi)",
+    "email": "Imeel",
+    "password": "Finnde",
+    "passwordHint": "Ɓuri famɗugo 8 ko ɓesngu.",
+    "signIn": "Seŋo",
+    "signUp": "Waɗ konnguɗi",
+    "or": "malla",
+    "continueWithGoogle": "Jokku e Google",
+    "noAccount": "A walaa konnguɗi? Waɗ gooto",
+    "haveAccount": "A woodi konnguɗi? Seŋo",
+    "signedInAs": "A seŋii",
+    "syncInfo": "Suɓaaɗe maaɗa, maandorɗe, limtol cuuɗi, adhkar ndaa famɗaaɗe, teelte e ɓeydaare maaɗa ɗon sinkaa hoore maaɗe.",
+    "signOut": "Yaltu",
+    "deleteAccount": "Wilitir konnguɗi",
+    "deleteTitle": "Wilitir konnguɗi?",
+    "deleteMessage": "Ɗum wilitirat konnguɗi maaɗa e keɓal fuu sinkaaɗal haa teddungal. Keɓal woni dow kuutiniroojum ngam walla.",
+    "deleteConfirm": "Wilitir",
+    "errors": {
+      "invalid_email": "Winndu aadereese imeel ngaandi. Ɗum sokli ngam famɗugo keɓal maaɗa ngal hoore maaɗa.",
+      "weak_password": "Finnde ina haani wona e ɓuri famɗugo 8 ko ɓesngu.",
+      "email_taken": "Konnguɗi woodi e imeel ngam ɗum.",
+      "invalid_credentials": "Imeel malla finnde wooɗa.",
+      "too_many_attempts": "Ɓuri tiiɗugo. Taskaa fahin caggal minti 15.",
+      "invalid_google_token": "Seŋo e Google waylii. Taskaa fahin.",
+      "google_not_configured": "Seŋo e Google walaa jooni.",
+      "email_not_verified": "Imeel Google maaɗa ngaɗaaka fuu.",
+      "unauthorized": "Sahaa maaɗa gasii. Seŋo fahin.",
+      "network": "Ngoodaaka jokkondirgo e serwer ngam. Ndaar jokkondiral maaɗa.",
+      "unknown": "Huunde wooɗi. Taskaa fahin."
+    },
+    "emailRequired": "Imeel ngaandi ɗon sokli ngam famɗugo keɓal maaɗa ngal hoore maaɗa (suɓaaɗe, maandorɗe, limtol cuuɗi, teelte). So walaa, ɗum wona dow kuutiniroojum ngam tan."
   }
 }

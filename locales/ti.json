@@ -779,5 +779,43 @@
       "idris": "ኢድሪስ",
       "ishaq": "ኢሥሐቅ"
     }
+  },
+  "account": {
+    "title": "ሕሳብ",
+    "settingsDescription": "ዳታኻ ንምሕላውን ንምምሳልን እቶ",
+    "signInTitle": "እቶ",
+    "signUpTitle": "ሕሳብ ክፈት",
+    "benefit": "ዝፈትዎም፣ ምልክታት፣ ዝርዝራት መጻወቲ ከምኡውን ቅጥዕታትካ ኣብ ኩሉ መሳለጢታትካ ኣመሳስል።",
+    "name": "ስም (ኣማራጺ)",
+    "email": "ኢሜይል",
+    "password": "ቃል ሕለፍ",
+    "passwordHint": "እንተታሕተ 8 ፊደላት።",
+    "signIn": "እቶ",
+    "signUp": "ሕሳብ ክፈት",
+    "or": "ወይ",
+    "continueWithGoogle": "ብGoogle ቀጽል",
+    "noAccount": "ሕሳብ የብልካን? ክፈት",
+    "haveAccount": "ሕሳብ ኣለካ? እቶ",
+    "signedInAs": "ኣትዩ ኣሎ",
+    "syncInfo": "ዝፈትዎም፣ ምልክታት፣ ዝርዝራት መጻወቲ፣ ዝተዐቀቡ ኣዝካር፣ ቅጥዕታትን ግስጋሴን ብኣውቶማቲክ ይምሳሰሉ።",
+    "signOut": "ውጻእ",
+    "deleteAccount": "ሕሳብ ደምስስ",
+    "deleteTitle": "ሕሳብ ይድምሰስ?",
+    "deleteMessage": "እዚ ሕሳብካን ኩሉ ዝተመሳሰለ ዳታን ንሓዋሩ የጥፍእ። ኣብዚ መሳለጢ ዘሎ ዳታ ይተርፍ።",
+    "deleteConfirm": "ደምስስ",
+    "errors": {
+      "invalid_email": "በጃኻ ልክዕ ኣድራሻ ኢሜይል ኣእትው። ውልቃዊ ዳታ ንምዕቃብ የድሊ።",
+      "weak_password": "ቃል ሕለፍ እንተታሕተ 8 ፊደላት ክህልዎ ኣለዎ።",
+      "email_taken": "ብዚ ኢሜይል ሕሳብ ኣቐዲሙ ኣሎ።",
+      "invalid_credentials": "ኢሜይል ወይ ቃል ሕለፍ ጌጋ እዩ።",
+      "too_many_attempts": "ብዙሕ ፈተነ። ድሕሪ 15 ደቒቕ ደጊምካ ፈትን።",
+      "invalid_google_token": "ብGoogle ምእታው ኣይሰለጠን። በጃኻ ደጊምካ ፈትን።",
+      "google_not_configured": "ብGoogle ምእታው ገና ኣይርከብን።",
+      "email_not_verified": "ናይ Google ኢሜይልካ ኣይተረጋገጸን።",
+      "unauthorized": "ክፍለ ግዜኻ ወዲኡ። በጃኻ ደጊምካ እቶ።",
+      "network": "ነቲ ሰርቨር ምብጻሕ ኣይተኻእለን። ርክብካ ርአ።",
+      "unknown": "ገለ ጌጋ ተፈጢሩ። በጃኻ ደጊምካ ፈትን።"
+    },
+    "emailRequired": "ውልቃዊ ዳታ (ዝፈትዎም፣ ምልክታት፣ ዝርዝራት መጻወቲ፣ ቅጥዕታት) ንምዕቃብ ልክዕ ኢሜይል የድልዮ። ብዘይኡ ኣብዚ መሳለጢ ጥራይ ይተርፍ።"
   }
 }

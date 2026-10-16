@@ -748,5 +748,43 @@
   },
   "wordDetail": {
     "context": "Amaokwu {{surah}}:{{ayah}} · Okwu {{position}} n'ime {{total}}"
+  },
+  "account": {
+    "title": "Akaụntụ",
+    "settingsDescription": "Banye iji chekwaa ma mekọrịta data gị",
+    "signInTitle": "Banye",
+    "signUpTitle": "Mepụta akaụntụ",
+    "benefit": "Mekọrịta ihe ndị ị masịrị, akara ndetu, ndepụta egwu na ntọala gị n'ihe niile ị nwere.",
+    "name": "Aha (nhọrọ)",
+    "email": "Email",
+    "password": "Okwuntughe",
+    "passwordHint": "Opekata mpe mkpụrụedemede 8.",
+    "signIn": "Banye",
+    "signUp": "Mepụta akaụntụ",
+    "or": "ma ọ bụ",
+    "continueWithGoogle": "Gaba n'ihu na Google",
+    "noAccount": "Enweghị akaụntụ? Mepụta otu",
+    "haveAccount": "Enweelarị akaụntụ? Banye",
+    "signedInAs": "Abanyela",
+    "syncInfo": "Ihe ndị ị masịrị, akara ndetu, ndepụta egwu, adhkar echekwara, ntọala na ọganihu gị na-emekọrịta n'onwe ha.",
+    "signOut": "Pụọ",
+    "deleteAccount": "Hichapụ akaụntụ",
+    "deleteTitle": "Hichapụ akaụntụ?",
+    "deleteMessage": "Nke a ga-ehichapụ akaụntụ gị na data niile emekọritara ruo mgbe ebighị ebi. Data dị n'ngwa a ga-anọgide.",
+    "deleteConfirm": "Hichapụ",
+    "errors": {
+      "invalid_email": "Biko tinye adreesị email bara uru. A chọrọ ya iji chekwaa data nke gị.",
+      "weak_password": "Okwuntughe ga-enwerịrị opekata mpe mkpụrụedemede 8.",
+      "email_taken": "Akaụntụ nwere email a dịlarị.",
+      "invalid_credentials": "Email ma ọ bụ okwuntughe ezighi ezi.",
+      "too_many_attempts": "Nnwale ndị dị ukwuu. Nwaa ọzọ mgbe nkeji 15 gachara.",
+      "invalid_google_token": "Ịbanye na Google emeghị. Biko nwaa ọzọ.",
+      "google_not_configured": "Ịbanye na Google adịbeghị.",
+      "email_not_verified": "Egosipụtabeghị email Google gị.",
+      "unauthorized": "Oge gị agwụla. Biko banye ọzọ.",
+      "network": "Enweghị ike ịkpọtụrụ sava. Lelee njikọ gị.",
+      "unknown": "Ihe adịghị mma mere. Biko nwaa ọzọ."
+    },
+    "emailRequired": "A chọrọ email bara uru iji chekwaa data nke gị (ihe ndị ị masịrị, akara ndetu, ndepụta egwu, ntọala). Na-enweghị ya, ọ ga-anọ naanị n'ngwa a."
   }
 }

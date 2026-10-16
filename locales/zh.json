@@ -772,5 +772,43 @@
       "idris": "伊德里斯",
       "ishaq": "伊斯哈格"
     }
+  },
+  "account": {
+    "title": "账户",
+    "settingsDescription": "登录以备份并同步你的数据",
+    "signInTitle": "登录",
+    "signUpTitle": "创建账户",
+    "benefit": "在你的所有设备间同步收藏、书签、播放列表和设置。",
+    "name": "姓名（可选）",
+    "email": "邮箱",
+    "password": "密码",
+    "passwordHint": "至少 8 个字符。",
+    "signIn": "登录",
+    "signUp": "创建账户",
+    "or": "或",
+    "continueWithGoogle": "使用 Google 继续",
+    "noAccount": "还没有账户？立即创建",
+    "haveAccount": "已有账户？登录",
+    "signedInAs": "已登录",
+    "syncInfo": "你的收藏、书签、播放列表、已保存的 adhkar、设置和进度会自动同步。",
+    "signOut": "退出登录",
+    "deleteAccount": "删除账户",
+    "deleteTitle": "删除账户？",
+    "deleteMessage": "这将永久删除你的账户和所有已同步的数据。此设备上的数据会保留。",
+    "deleteConfirm": "删除",
+    "errors": {
+      "invalid_email": "请输入有效的邮箱地址。保存个人数据需要它。",
+      "weak_password": "密码至少需要 8 个字符。",
+      "email_taken": "该邮箱已注册账户。",
+      "invalid_credentials": "邮箱或密码不正确。",
+      "too_many_attempts": "尝试次数过多，请 15 分钟后再试。",
+      "invalid_google_token": "Google 登录失败，请重试。",
+      "google_not_configured": "Google 登录暂不可用。",
+      "email_not_verified": "你的 Google 邮箱尚未验证。",
+      "unauthorized": "登录已过期，请重新登录。",
+      "network": "无法连接服务器，请检查网络。",
+      "unknown": "出了点问题，请重试。"
+    },
+    "emailRequired": "保存个人数据（收藏、书签、播放列表、设置）需要有效的邮箱。没有邮箱，数据只会保留在此设备上。"
   }
 }

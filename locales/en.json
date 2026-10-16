@@ -773,5 +773,43 @@
       "idris": "Idris",
       "ishaq": "Ishaq"
     }
+  },
+  "account": {
+    "title": "Account",
+    "settingsDescription": "Sign in to back up and sync your data",
+    "signInTitle": "Sign in",
+    "signUpTitle": "Create account",
+    "benefit": "Sync your favorites, bookmarks, playlists and settings across your devices.",
+    "name": "Name (optional)",
+    "email": "Email",
+    "password": "Password",
+    "passwordHint": "At least 8 characters.",
+    "signIn": "Sign in",
+    "signUp": "Create account",
+    "or": "or",
+    "continueWithGoogle": "Continue with Google",
+    "noAccount": "No account yet? Create one",
+    "haveAccount": "Already have an account? Sign in",
+    "signedInAs": "Signed in",
+    "syncInfo": "Your favorites, bookmarks, playlists, saved adhkar, settings and progress sync automatically.",
+    "signOut": "Sign out",
+    "deleteAccount": "Delete account",
+    "deleteTitle": "Delete account?",
+    "deleteMessage": "This permanently deletes your account and all synced data. Data on this device stays.",
+    "deleteConfirm": "Delete",
+    "errors": {
+      "invalid_email": "Please enter a valid email address. It is required to save your personal data.",
+      "weak_password": "Password must be at least 8 characters.",
+      "email_taken": "An account with this email already exists.",
+      "invalid_credentials": "Email or password is incorrect.",
+      "too_many_attempts": "Too many attempts. Try again in 15 minutes.",
+      "invalid_google_token": "Google sign-in failed. Please try again.",
+      "google_not_configured": "Google sign-in isn't available yet.",
+      "email_not_verified": "Your Google email isn't verified.",
+      "unauthorized": "Your session expired. Please sign in again.",
+      "network": "Can't reach the server. Check your connection.",
+      "unknown": "Something went wrong. Please try again."
+    },
+    "emailRequired": "A valid email is required to save your personal data (favorites, bookmarks, playlists, settings). Without one, it stays on this device only."
   }
 }

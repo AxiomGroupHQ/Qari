@@ -83,6 +83,10 @@ export interface Branding {
   termsUrl: string;
   privacyUrl: string;
   shareBaseUrl: string;
+  /** Base URL of the accounts + sync API, no trailing slash. */
+  apiBaseUrl: string;
+  /** Google OAuth client IDs. An empty `web` ID hides Google sign-in. */
+  googleClientIds: {web: string; ios: string; android: string};
   emailProductName: string;
   catalog: BrandingCatalogConfig;
   /**

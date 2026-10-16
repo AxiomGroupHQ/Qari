@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Aya {{surah}}:{{ayah}} · Kalma {{position}} cikin {{total}}"
+  },
+  "account": {
+    "title": "Asusu",
+    "settingsDescription": "Shiga don adana da daidaita bayananka",
+    "signInTitle": "Shiga",
+    "signUpTitle": "Ƙirƙiri asusu",
+    "benefit": "Daidaita abubuwan da kake so, alamomi, jerin kunnawa da saituna a duk na'urorinka.",
+    "name": "Suna (zaɓi)",
+    "email": "Imel",
+    "password": "Kalmar sirri",
+    "passwordHint": "Aƙalla haruffa 8.",
+    "signIn": "Shiga",
+    "signUp": "Ƙirƙiri asusu",
+    "or": "ko",
+    "continueWithGoogle": "Ci gaba da Google",
+    "noAccount": "Ba ka da asusu? Ƙirƙiri ɗaya",
+    "haveAccount": "Kana da asusu? Shiga",
+    "signedInAs": "An shiga",
+    "syncInfo": "Abubuwan da kake so, alamomi, jerin kunnawa, adhkar da aka adana, saituna da ci gabanka suna daidaitawa kai tsaye.",
+    "signOut": "Fita",
+    "deleteAccount": "Share asusu",
+    "deleteTitle": "Share asusu?",
+    "deleteMessage": "Wannan zai share asusunka da duk bayanan da aka daidaita har abada. Bayanai a wannan na'urar za su ragu.",
+    "deleteConfirm": "Share",
+    "errors": {
+      "invalid_email": "Da fatan za a shigar da adireshin imel mai inganci. Ana buƙatarsa don adana bayananka na sirri.",
+      "weak_password": "Dole kalmar sirri ta kasance aƙalla haruffa 8.",
+      "email_taken": "Akwai asusu da wannan imel ɗin.",
+      "invalid_credentials": "Imel ko kalmar sirri ba daidai ba ne.",
+      "too_many_attempts": "Ƙoƙari da yawa. Sake gwadawa bayan mintuna 15.",
+      "invalid_google_token": "Shiga da Google ya gaza. Da fatan za a sake gwadawa.",
+      "google_not_configured": "Shiga da Google bai samu ba tukuna.",
+      "email_not_verified": "Ba a tabbatar da imel ɗinka na Google ba.",
+      "unauthorized": "Zamanka ya ƙare. Da fatan za a sake shiga.",
+      "network": "Ba a iya haɗawa da sabar ba. Duba haɗinka.",
+      "unknown": "Wani abu ya faru. Da fatan za a sake gwadawa."
+    },
+    "emailRequired": "Ana buƙatar imel mai inganci don adana bayananka na sirri (abubuwan da kake so, alamomi, jerin kunnawa, saituna). Idan babu, zai tsaya a wannan na'urar kawai."
   }
 }

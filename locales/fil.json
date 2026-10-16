@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Talata {{surah}}:{{ayah}} · Salita {{position}} ng {{total}}"
+  },
+  "account": {
+    "title": "Account",
+    "settingsDescription": "Mag-sign in para i-back up at i-sync ang iyong data",
+    "signInTitle": "Mag-sign in",
+    "signUpTitle": "Gumawa ng account",
+    "benefit": "I-sync ang iyong mga paborito, bookmark, playlist, at setting sa lahat ng device mo.",
+    "name": "Pangalan (opsyonal)",
+    "email": "Email",
+    "password": "Password",
+    "passwordHint": "Hindi bababa sa 8 character.",
+    "signIn": "Mag-sign in",
+    "signUp": "Gumawa ng account",
+    "or": "o",
+    "continueWithGoogle": "Magpatuloy gamit ang Google",
+    "noAccount": "Wala pang account? Gumawa ng isa",
+    "haveAccount": "May account na? Mag-sign in",
+    "signedInAs": "Naka-sign in",
+    "syncInfo": "Awtomatikong nagsi-sync ang iyong mga paborito, bookmark, playlist, naka-save na adhkar, setting, at progreso.",
+    "signOut": "Mag-sign out",
+    "deleteAccount": "Burahin ang account",
+    "deleteTitle": "Burahin ang account?",
+    "deleteMessage": "Permanenteng buburahin nito ang iyong account at lahat ng na-sync na data. Mananatili ang data sa device na ito.",
+    "deleteConfirm": "Burahin",
+    "errors": {
+      "invalid_email": "Maglagay ng wastong email address. Kailangan ito para ma-save ang personal mong data.",
+      "weak_password": "Dapat hindi bababa sa 8 character ang password.",
+      "email_taken": "May account na gamit ang email na ito.",
+      "invalid_credentials": "Mali ang email o password.",
+      "too_many_attempts": "Masyadong maraming pagsubok. Subukan ulit pagkalipas ng 15 minuto.",
+      "invalid_google_token": "Nabigo ang pag-sign in gamit ang Google. Pakisubukan ulit.",
+      "google_not_configured": "Hindi pa available ang pag-sign in gamit ang Google.",
+      "email_not_verified": "Hindi pa na-verify ang iyong Google email.",
+      "unauthorized": "Nag-expire na ang iyong session. Mag-sign in ulit.",
+      "network": "Hindi maabot ang server. Suriin ang koneksyon mo.",
+      "unknown": "May nangyaring mali. Pakisubukan ulit."
+    },
+    "emailRequired": "Kailangan ng wastong email para ma-save ang personal mong data (mga paborito, bookmark, playlist, setting). Kung wala, sa device na ito lang ito mananatili."
   }
 }

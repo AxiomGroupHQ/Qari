@@ -755,5 +755,43 @@
   },
   "wordDetail": {
     "context": "Aayata {{surah}}:{{ayah}} · Jecha {{position}} keessaa {{total}}"
+  },
+  "account": {
+    "title": "Herrega",
+    "settingsDescription": "Daataa kee olkaa'uu fi walsimsiisuuf seeni",
+    "signInTitle": "Seeni",
+    "signUpTitle": "Herrega uumi",
+    "benefit": "Kanneen jaallatte, mallattoo kitaabaa, tarreeffama taphataa fi qindaa'inoota meeshaalee kee hunda irratti walsimsiisi.",
+    "name": "Maqaa (filannoo)",
+    "email": "Imeelii",
+    "password": "Jecha icciitii",
+    "passwordHint": "Yoo xiqqaate arfii 8.",
+    "signIn": "Seeni",
+    "signUp": "Herrega uumi",
+    "or": "yookaan",
+    "continueWithGoogle": "Google waliin itti fufi",
+    "noAccount": "Herrega hin qabduu? Uumi",
+    "haveAccount": "Herrega qabdaa? Seeni",
+    "signedInAs": "Seenteetta",
+    "syncInfo": "Kanneen jaallatte, mallattoon kitaabaa, tarreeffamni taphataa, adhkaarri olkaa'ame, qindaa'inootaa fi adeemsi kee ofumaan walsimata.",
+    "signOut": "Ba'i",
+    "deleteAccount": "Herrega haqi",
+    "deleteTitle": "Herregni haqamu?",
+    "deleteMessage": "Kunis herrega kee fi daataa walsimate hundumaa yeroo hundaaf haqa. Daataan meeshaa kana irra jiru ni hafa.",
+    "deleteConfirm": "Haqi",
+    "errors": {
+      "invalid_email": "Maaloo teessoo imeelii sirrii galchi. Daataa dhuunfaa kee olkaa'uuf barbaachisaadha.",
+      "weak_password": "Jechi icciitii yoo xiqqaate arfii 8 qabaachuu qaba.",
+      "email_taken": "Herregni imeelii kanaan jiru duraanuu jira.",
+      "invalid_credentials": "Imeeliin yookaan jechi icciitii dogoggora.",
+      "too_many_attempts": "Yaaliin baay'ee dha. Daqiiqaa 15 booda irra deebi'ii yaali.",
+      "invalid_google_token": "Google'n seenuun hin milkoofne. Maaloo irra deebi'ii yaali.",
+      "google_not_configured": "Google'n seenuun amma hin jiru.",
+      "email_not_verified": "Imeeliin Google kee hin mirkanaa'ne.",
+      "unauthorized": "Yeroon kee dhumateera. Maaloo irra deebi'ii seeni.",
+      "network": "Sarvarii quunnamuun hin danda'amne. Walqunnamtii kee ilaali.",
+      "unknown": "Wanti tokko dogoggore. Maaloo irra deebi'ii yaali."
+    },
+    "emailRequired": "Daataa dhuunfaa kee (kanneen jaallatte, mallattoo kitaabaa, tarreeffama taphataa, qindaa'inoota) olkaa'uuf imeelii sirrii ta'e barbaachisa. Yoo hin jiraanne meeshaa kana qofa irra jiraata."
   }
 }

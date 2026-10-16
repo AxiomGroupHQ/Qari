@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Aya {{surah}}:{{ayah}} · Neno {{position}} kati ya {{total}}"
+  },
+  "account": {
+    "title": "Akaunti",
+    "settingsDescription": "Ingia ili kuhifadhi na kusawazisha data yako",
+    "signInTitle": "Ingia",
+    "signUpTitle": "Fungua akaunti",
+    "benefit": "Sawazisha vipendwa, alamisho, orodha za kucheza na mipangilio yako kwenye vifaa vyako vyote.",
+    "name": "Jina (hiari)",
+    "email": "Barua pepe",
+    "password": "Nenosiri",
+    "passwordHint": "Angalau herufi 8.",
+    "signIn": "Ingia",
+    "signUp": "Fungua akaunti",
+    "or": "au",
+    "continueWithGoogle": "Endelea na Google",
+    "noAccount": "Huna akaunti? Fungua moja",
+    "haveAccount": "Tayari una akaunti? Ingia",
+    "signedInAs": "Umeingia",
+    "syncInfo": "Vipendwa, alamisho, orodha za kucheza, adhkar zilizohifadhiwa, mipangilio na maendeleo yako husawazishwa kiotomatiki.",
+    "signOut": "Toka",
+    "deleteAccount": "Futa akaunti",
+    "deleteTitle": "Futa akaunti?",
+    "deleteMessage": "Hii itafuta akaunti yako na data yote iliyosawazishwa kabisa. Data kwenye kifaa hiki itabaki.",
+    "deleteConfirm": "Futa",
+    "errors": {
+      "invalid_email": "Tafadhali weka anwani halali ya barua pepe. Inahitajika ili kuhifadhi data yako binafsi.",
+      "weak_password": "Nenosiri lazima liwe na angalau herufi 8.",
+      "email_taken": "Akaunti yenye barua pepe hii tayari ipo.",
+      "invalid_credentials": "Barua pepe au nenosiri si sahihi.",
+      "too_many_attempts": "Majaribio mengi mno. Jaribu tena baada ya dakika 15.",
+      "invalid_google_token": "Kuingia kwa Google kumeshindwa. Tafadhali jaribu tena.",
+      "google_not_configured": "Kuingia kwa Google bado hakupatikani.",
+      "email_not_verified": "Barua pepe yako ya Google haijathibitishwa.",
+      "unauthorized": "Kipindi chako kimeisha. Tafadhali ingia tena.",
+      "network": "Imeshindwa kufikia seva. Angalia muunganisho wako.",
+      "unknown": "Hitilafu imetokea. Tafadhali jaribu tena."
+    },
+    "emailRequired": "Barua pepe halali inahitajika ili kuhifadhi data yako binafsi (vipendwa, alamisho, orodha za kucheza, mipangilio). Bila hiyo, inabaki kwenye kifaa hiki pekee."
   }
 }

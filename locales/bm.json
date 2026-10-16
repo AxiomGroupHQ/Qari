@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Aya {{surah}}:{{ayah}} · Daɲɛ {{position}}, {{total}} la"
+  },
+  "account": {
+    "title": "Konti",
+    "settingsDescription": "Don walasa k'i ka donniya mara ani k'a bɛn ɲɔgɔn ma",
+    "signInTitle": "Don",
+    "signUpTitle": "Konti da",
+    "benefit": "I ka kanuw, taamasiyɛnw, dɔnkili lisɛw ani sigiw bɛn ɲɔgɔn ma i ka mashinw bɛɛ la.",
+    "name": "Tɔgɔ (a tɛ wajibiyalen)",
+    "email": "Imɛli",
+    "password": "Gundo kumasen",
+    "passwordHint": "Ni ka dɔgɔya, a ka kɛ so 8 ye.",
+    "signIn": "Don",
+    "signUp": "Konti da",
+    "or": "wala",
+    "continueWithGoogle": "Taa a fɛ ni Google ye",
+    "noAccount": "Konti t'i ye? Da dɔ",
+    "haveAccount": "Konti b'i ye? Don",
+    "signedInAs": "I donna",
+    "syncInfo": "I ka kanuw, taamasiyɛnw, dɔnkili lisɛw, adhkar mara minnu kɛra, sigiw ani i ka taa ɲɛ bɛnnen b'a yɛrɛ ma.",
+    "signOut": "Bɔ",
+    "deleteAccount": "Konti bɔ",
+    "deleteTitle": "Konti bɔ?",
+    "deleteMessage": "O bɛna i ka konti ni donniya bɛnnen bɛɛ bɔ badaa. Donniya min b'o mashin in na, o bɛna to yen.",
+    "deleteConfirm": "Bɔ",
+    "errors": {
+      "invalid_email": "I ye imɛli adirɛsi ɲuman sɛbɛn. A ka kan ka i yɛrɛ ka donniya mara.",
+      "weak_password": "Gundo kumasen ka kan ka kɛ so 8 ye min b'a la.",
+      "email_taken": "Konti bɛ yen ni imɛli in ye kaban.",
+      "invalid_credentials": "Imɛli wala gundo kumasen ma ɲi.",
+      "too_many_attempts": "Kɔrɔbɔ caman. I ka segin ka kɔrɔbɔ miniti 15 kɔfɛ.",
+      "invalid_google_token": "Donni ni Google ye ma ɲɛ. I ka segin ka kɔrɔbɔ.",
+      "google_not_configured": "Donni ni Google ye tɛ se ka kɛ fɔlɔ.",
+      "email_not_verified": "I ka Google imɛli ma sɛgɛsɛgɛ.",
+      "unauthorized": "I ka sigi tilara. I ka don kokura.",
+      "network": "Sɛrivɛri tɛ se ka sɔrɔ. I ka sɛgɛsɛgɛ i ka jɛɲɔgɔnya la.",
+      "unknown": "Fɛn dɔ ma ɲɛ. I ka segin ka kɔrɔbɔ."
+    },
+    "emailRequired": "Imɛli ɲuman ka kan ka i yɛrɛ ka donniya mara (kanuw, taamasiyɛnw, dɔnkili lisɛw, sigiw). N'o t'a la, a bɛna to o mashin in na dɔrɔn."
   }
 }
