@@ -53,7 +53,7 @@ Item numbers are the original request-list issue numbers. Feature write-up: `doc
 | #126 | Home screen widgets | **Android: first widget built** | Android Quick Surah widget (Al-Fatiha, Ya-Sin, Al-Mulk, Al-Kahf, Mushaf; opens the app by deep link, no audio code). Not compiled or run on a device yet. iOS widgets pending (needs Apple Developer access: App Group, new target). Watch and TV apps pending. Other Android widgets (now playing, ayah of the day) not started. |
 | #118 | Watch apps | Not built | New native targets, Apple provisioning, devices. |
 | #116 | TV apps | Not built | New native targets, store setup, devices. |
-| #115 | CarPlay / Android Auto | Not built | Apple CarPlay audio entitlement request, Google Play review. Plan: `docs/features/carplay-android-auto.md`. |
+| #115 | CarPlay / Android Auto | **Groundwork only** | Car browse list and a "not available yet" fallback are in (`services/car`, flag `carDisplay`). No car screen appears yet. Still needs Apple's CarPlay audio entitlement, a native package (compatibility with RN 0.83 unverified), the Android Auto descriptor, and simulator/DHU testing. |
 | #119 | Analytics and listening insights | **Skipped by owner** | Decision on dashboard content and on PostHog (new third-party service, privacy policy). |
 | #8 | Discover feed (random ayah snippets) | **Built, flag off** | Swipe feed of random ayat from existing recitations that have per-ayah timings (`/discover`, flag `discoverFeed`, entry tile on Search). Own audio player, steps aside when the main player starts. English strings only. Not tested on a device. Audio rights unchanged from normal playback; licence terms of the sources not verified. |
 | #9 | Feature requirements doc | **Done** | `docs/features.md`. |

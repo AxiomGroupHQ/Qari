@@ -23,6 +23,7 @@ export const featureFlags = {
   tafsir: true,
   sleepTimer: true,
   sharedPlaylists: false, // turn on after the share API is deployed
+  carDisplay: true,
 } as const;
 
 export type FeatureFlag = keyof typeof featureFlags;
