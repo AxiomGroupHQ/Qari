@@ -40,7 +40,7 @@ Everything below is merged to `main` unless a PR number is marked open. "Verifie
 | #38 | Playlist share links (`sharedPlaylists` flag) | Share action, `/p/<id>` screen, preview worker `edge/previewWorker.ts`. |
 | #39 | CarPlay / Android Auto groundwork (flag `carDisplay`, off) | No car screen yet. |
 | #40 | Android Quick Surah home screen widget | Not compiled on a device. |
-| #41 | Discover feed (flag `discoverFeed`, off) | Not tested on a device. |
+| #41 | Discover feed (flag `discoverFeed`, on) | Not tested on a device. |
 | #42 | Dark theme by default | Brought `feat/default-dark` into `main`. |
 | #43 | Footer test for playlist shares, tracker date | Also re-triggered the site build. |
 | #44 | Continue Listening cards fall back to the bundled headshot when a saved image URL fails | The reciter API returns 404 in production, so saved entries have no image URL. |
@@ -61,7 +61,7 @@ Open PRs, not merged (the owner merges):
 | Flag | State | Notes |
 | --- | --- | --- |
 | `sharedPlaylists` | Off on `main`, on in #46 | Backend deployed. Android `/p/` links also need `assetlinks.json`. |
-| `discoverFeed` | Off | Needs a device test, and the audio source terms have not been checked. |
+| `discoverFeed` | On | Turned on by the owner. Still needs a device test, and the audio source terms have not been checked. |
 | `carDisplay` | Off | Idle until a native bridge exists. |
 
 ## Parked or pending
@@ -117,7 +117,7 @@ Item numbers are the original request-list issue numbers. Feature write-up: `doc
 | #116 | TV apps | Not built | New native targets, store setup, devices. |
 | #115 | CarPlay / Android Auto | **Groundwork only** | Car browse list and a "not available yet" fallback are in (`services/car`, flag `carDisplay`). No car screen appears yet. Still needs Apple's CarPlay audio entitlement, a native package (compatibility with RN 0.83 unverified), the Android Auto descriptor, and simulator/DHU testing. |
 | #119 | Analytics and listening insights | **Skipped by owner** | Decision on dashboard content and on PostHog (new third-party service, privacy policy). |
-| #8 | Discover feed (random ayah snippets) | **Built, flag off** | Swipe feed of random ayat from existing recitations that have per-ayah timings (`/discover`, flag `discoverFeed`, entry tile on Search). Own audio player, steps aside when the main player starts. Strings translated in PR #49. Not tested on a device. Audio rights unchanged from normal playback; licence terms of the sources not verified. |
+| #8 | Discover feed (random ayah snippets) | **Built, flag on** | Swipe feed of random ayat from existing recitations that have per-ayah timings (`/discover`, flag `discoverFeed`, entry tile on Search). Own audio player, steps aside when the main player starts. Strings translated in PR #49. Not tested on a device. Audio rights unchanged from normal playback; licence terms of the sources not verified. |
 | #9 | Feature requirements doc | **Done** | `docs/features.md`. |
 | #192 | i18n | **Done** (60 languages) | - |
 | #120 | Cloud sync | **Done** (own accounts and Worker) | Remaining sync documents listed above. |

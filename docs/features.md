@@ -27,6 +27,6 @@ One-page requirements view . Status as of October 2026. Every feature must work 
 | P3 | CarPlay and Android Auto (#115) | Platform approval | Apple CarPlay audio entitlement, Google Play review. |
 | P3 | Home widgets (#126) | Android first widget built, iOS pending | Android Quick Surah widget is in the repo, not yet compiled on a device. iOS needs Apple Developer access (App Group, target). Watch and TV apps pending. |
 | P3 | Watch apps (#118), TV apps (#116) | Native targets, provisioning | Apple Developer access, store setup, devices. |
-| P3 | Discover feed (#8) | Built, flag off | Random ayah feed from existing timed recitations. Needs a device check and translations. |
+| P3 | Discover feed (#8) | Built, flag on | Random ayah feed from existing timed recitations. Strings translated. Still needs a device check. |
 
 Not applicable: #242 (dev builds only), #323 (no Quran Foundation sync), #62 (audio is not hosted by Istima).
