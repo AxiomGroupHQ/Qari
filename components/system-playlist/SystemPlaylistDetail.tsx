@@ -39,6 +39,8 @@ import Color from 'color';
 import {useRecentlyPlayedStore} from '@/services/player/store/recentlyPlayedStore';
 import {getFeaturedReciters} from '@/data/featuredReciters';
 import {SheetManager} from 'react-native-actions-sheet';
+import {isFeatureEnabled} from '@/config/featureFlags';
+import {shareTrackList} from '@/services/share/shareTrackList';
 import {useNavigation} from 'expo-router';
 import {useHeaderHeight} from '@react-navigation/elements';
 import {CollectionStickyHeader} from '@/components/collection/CollectionStickyHeader';
@@ -628,6 +630,22 @@ const SystemPlaylistDetail: React.FC<SystemPlaylistDetailProps> = ({
     [playlist.type, selectedReciter],
   );
 
+  const handleSharePress = useCallback(() => {
+    const tracks = playlist.items.flatMap(item => {
+      const reciterId = item.reciterId ?? selectedReciter?.id;
+      if (!reciterId) return [];
+      const rewayatId = item.rewayatId ?? selectedRewayatId ?? undefined;
+      return [
+        {
+          surahId: String(item.surahId),
+          reciterId: String(reciterId),
+          ...(rewayatId ? {rewayatId: String(rewayatId)} : {}),
+        },
+      ];
+    });
+    shareTrackList(playlist.title, tracks);
+  }, [playlist, selectedReciter, selectedRewayatId]);
+
   const listHeaderComponent = useMemo(
     () => (
       <SystemPlaylistHeader
@@ -639,6 +657,11 @@ const SystemPlaylistDetail: React.FC<SystemPlaylistDetailProps> = ({
         }
         onPlayPress={handlePlayAll}
         onShufflePress={canPlay ? handleShufflePlay : undefined}
+        onSharePress={
+          isFeatureEnabled('sharedPlaylists') && canPlay
+            ? handleSharePress
+            : undefined
+        }
         canPlayImmediately={canPlay}
         theme={theme}
       />
@@ -649,6 +672,7 @@ const SystemPlaylistDetail: React.FC<SystemPlaylistDetailProps> = ({
       canPlay,
       handlePlayAll,
       handleShufflePlay,
+      handleSharePress,
       theme,
     ],
   );

@@ -41,6 +41,8 @@ import {SheetManager} from 'react-native-actions-sheet';
 import {useCollectionNativeHeader} from '@/hooks/useCollectionNativeHeader';
 import {t as translate} from '@/i18n';
 import {dirIcon} from '@/i18n/direction';
+import {isFeatureEnabled} from '@/config/featureFlags';
+import {shareTrackList} from '@/services/share/shareTrackList';
 
 interface LovedTrack {
   reciterId: string;
@@ -536,6 +538,19 @@ const LovedScreen = () => {
                 <CheckIcon color={theme.colors.text} size={moderateScale(20)} />
               ) : undefined,
           },
+          ...(isFeatureEnabled('sharedPlaylists')
+            ? [
+                {
+                  label: translate('sheets.playlistContextSheet.sharePlaylist'),
+                  icon: 'share',
+                  onPress: () =>
+                    shareTrackList(
+                      translate('common.loved'),
+                      lovedData.map(d => d.track),
+                    ),
+                },
+              ]
+            : []),
           {
             label: translate('collection.loved.unloveAllSurahs'),
             icon: 'heart',
@@ -553,7 +568,7 @@ const LovedScreen = () => {
       },
     });
   }, [
-    lovedData.length,
+    lovedData,
     downloadState,
     handleBulkDownload,
     unloveAll,
