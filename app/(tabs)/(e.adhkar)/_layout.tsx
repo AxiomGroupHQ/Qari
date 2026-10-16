@@ -5,6 +5,10 @@ import {useTheme} from '@/hooks/useTheme';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import {t} from '@/i18n';
 
+// Always keep the category list under any adhkar screen, so a page opened
+// directly (reload, deep link, shared URL) still has a Back target.
+export const unstable_settings = {initialRouteName: 'index'};
+
 export default function AdhkarLayout() {
   const {theme} = useTheme();
 

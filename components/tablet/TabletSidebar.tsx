@@ -146,6 +146,19 @@ export const TabletSidebar: React.FC<BottomTabBarProps> = ({
         navigation.dispatch(
           CommonActions.navigate({name: route.name, merge: true}),
         );
+      } else if (
+        isFocused &&
+        !event.defaultPrevented &&
+        route.name === '(e.adhkar)'
+      ) {
+        // Tapping the active Adhkar tab returns to the category list, even
+        // when the stack was entered mid-way (reload or direct link).
+        navigation.dispatch(
+          CommonActions.navigate({
+            name: route.name,
+            params: {screen: 'index'},
+          }),
+        );
       }
     },
     [state.index, navigation],
