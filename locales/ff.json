@@ -841,5 +841,39 @@
     "body": "Sura hannde: {{name}}. Taaskaa ngam hettugo.",
     "denied": "Anndinooje maaɗaaɗe ngam ndee app. Hurmin ɗe e settings sistem.",
     "turnOn": "Hurmin"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Fajiri",
+      "evening-adhkar": "Kikiiɗe",
+      "salah": "Juulde",
+      "before-sleep": "Ɓesngu jam",
+      "after-salah": "Caggal juulde",
+      "waking-up": "Fuɗɗaade",
+      "salawat": "Salawaat",
+      "praises-of-allah": "Yeewtidde Alla",
+      "istighfar": "Istigfaar",
+      "nightmares": "Ndaarooji bonɗi",
+      "protection-of-iman": "Reeniirgu Iimaan",
+      "difficulties-happiness": "Tampere e jam",
+      "quranic-duas": "Du'aaji Alqur'aana",
+      "names-of-allah": "Inɗe Alla 99",
+      "clothes": "Ngoondi",
+      "lavatory-wudu": "Hoore-hoodere e Wuduu",
+      "adhan-masjid": "Aduuna e Misiide",
+      "home": "Suudu",
+      "istikharah": "Istikaara",
+      "gatherings": "Hawtooji",
+      "food-drink": "Nyaamdu e Yarduɗe",
+      "travel": "Jahal",
+      "nature": "Winndere",
+      "social-interactions": "Jokkondiral yimɓe",
+      "hajj-umrah": "Hajji e Umra",
+      "marriage-children": "Resndu e Ɓiɓɓe",
+      "death": "Maayde",
+      "ruqyah-illness": "Ruqya e Nawnaade",
+      "money-shopping": "Kuuɓal e Soodugo"
+    },
+    "cat": {}
   }
 }

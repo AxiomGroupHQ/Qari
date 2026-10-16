@@ -858,5 +858,39 @@
     "body": "Сура на денот: {{name}}. Допрете за слушање.",
     "denied": "Известувањата се исклучени за оваа апликација. Вклучете ги во поставките на системот.",
     "turnOn": "Вклучи"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Утро",
+      "evening-adhkar": "Вечер",
+      "salah": "Салат",
+      "before-sleep": "Пред спиење",
+      "after-salah": "По салатот",
+      "waking-up": "Будење",
+      "salawat": "Салавати",
+      "praises-of-allah": "Пофалби на Аллах",
+      "istighfar": "Истигфар",
+      "nightmares": "Кошмари",
+      "protection-of-iman": "Заштита на иманот",
+      "difficulties-happiness": "Тешкотии и среќа",
+      "quranic-duas": "Курански дуа",
+      "names-of-allah": "99-те имиња на Аллах",
+      "clothes": "Облека",
+      "lavatory-wudu": "Тоалет и абдест",
+      "adhan-masjid": "Езан и џамија",
+      "home": "Дом",
+      "istikharah": "Истихара",
+      "gatherings": "Собири",
+      "food-drink": "Храна и пијалак",
+      "travel": "Патување",
+      "nature": "Природа",
+      "social-interactions": "Општествени односи",
+      "hajj-umrah": "Хаџ и умра",
+      "marriage-children": "Брак и деца",
+      "death": "Смрт",
+      "ruqyah-illness": "Рукја и болест",
+      "money-shopping": "Пари и купување"
+    },
+    "cat": {}
   }
 }

@@ -834,5 +834,39 @@
     "body": "Sûreya îro: {{name}}. Ji bo guhdarkirinê bitikîne.",
     "denied": "Agahdarî ji bo vê sepanê girtî ne. Di mîhengên pergalê de vekin.",
     "turnOn": "Veke"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Sibe",
+      "evening-adhkar": "Êvar",
+      "salah": "Nimêj",
+      "before-sleep": "Berî razanê",
+      "after-salah": "Piştî nimêjê",
+      "waking-up": "Şiyarbûn",
+      "salawat": "Selewat",
+      "praises-of-allah": "Pesnên Xwedê",
+      "istighfar": "Îstixfar",
+      "nightmares": "Xewnên xirab",
+      "protection-of-iman": "Parastina îmanê",
+      "difficulties-happiness": "Zehmetî û şahî",
+      "quranic-duas": "Dûayên Qur’anê",
+      "names-of-allah": "99 Navên Xwedê",
+      "clothes": "Cil û berg",
+      "lavatory-wudu": "Tuwalet û dest-nimêj",
+      "adhan-masjid": "Ezan û mizgeft",
+      "home": "Mal",
+      "istikharah": "Îstixare",
+      "gatherings": "Civîn",
+      "food-drink": "Xwarin û vexwarin",
+      "travel": "Rêwîtî",
+      "nature": "Xwezayê",
+      "social-interactions": "Têkiliyên civakî",
+      "hajj-umrah": "Hec û Umre",
+      "marriage-children": "Zewac û zarok",
+      "death": "Mirin",
+      "ruqyah-illness": "Ruqye û nexweşî",
+      "money-shopping": "Pere û kirrûfirrot"
+    },
+    "cat": {}
   }
 }

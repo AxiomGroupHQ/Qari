@@ -858,5 +858,39 @@
     "body": "આજની સૂરા: {{name}}. સાંભળવા માટે ટેપ કરો.",
     "denied": "આ એપ માટે સૂચનાઓ બંધ છે. સિસ્ટમ સેટિંગ્સમાં ચાલુ કરો.",
     "turnOn": "ચાલુ કરો"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "સવાર",
+      "evening-adhkar": "સાંજ",
+      "salah": "નમાઝ",
+      "before-sleep": "સૂતા પહેલાં",
+      "after-salah": "નમાઝ પછી",
+      "waking-up": "જાગતી વખતે",
+      "salawat": "સલવાત",
+      "praises-of-allah": "અલ્લાહની પ્રશંસા",
+      "istighfar": "ઇસ્તિગ્ફાર",
+      "nightmares": "ખરાબ સપનાં",
+      "protection-of-iman": "ઈમાનનું રક્ષણ",
+      "difficulties-happiness": "મુશ્કેલીઓ અને ખુશી",
+      "quranic-duas": "કુરાનની દુઆઓ",
+      "names-of-allah": "અલ્લાહના 99 નામો",
+      "clothes": "કપડાં",
+      "lavatory-wudu": "શૌચાલય અને વુઝૂ",
+      "adhan-masjid": "અઝાન અને મસ્જિદ",
+      "home": "ઘર",
+      "istikharah": "ઇસ્તિખારા",
+      "gatherings": "સભાઓ",
+      "food-drink": "ખોરાક અને પીણું",
+      "travel": "મુસાફરી",
+      "nature": "પ્રકૃતિ",
+      "social-interactions": "સામાજિક વ્યવહાર",
+      "hajj-umrah": "હજ અને ઉમરા",
+      "marriage-children": "લગ્ન અને બાળકો",
+      "death": "મૃત્યુ",
+      "ruqyah-illness": "રુક્યા અને બીમારી",
+      "money-shopping": "પૈસા અને ખરીદી"
+    },
+    "cat": {}
   }
 }

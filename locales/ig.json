@@ -832,5 +832,39 @@
     "body": "Sura taa: {{name}}. Pịa ka ị nụ ya.",
     "denied": "A gbanyụọla ọkwa maka ngwa a. Gbanye ha na ntọala sistemụ.",
     "turnOn": "Gbanye"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Ụtụtụ",
+      "evening-adhkar": "Mgbede",
+      "salah": "Salah",
+      "before-sleep": "Tupu i hie ụra",
+      "after-salah": "Mgbe Salah gasịrị",
+      "waking-up": "Ịșụ ụra",
+      "salawat": "Salawat",
+      "praises-of-allah": "Otuto Allah",
+      "istighfar": "Istighfar",
+      "nightmares": "Ọrụrụ ọjọọ",
+      "protection-of-iman": "Nchedo Iman",
+      "difficulties-happiness": "Ihe isi ike na Ọṅụ",
+      "quranic-duas": "Ekpere sitere na Kuran",
+      "names-of-allah": "Aha 99 nke Allah",
+      "clothes": "Uwe",
+      "lavatory-wudu": "Ụlọ mposi na Wudu",
+      "adhan-masjid": "Adhan na Ụlọ Ekpere",
+      "home": "Ụlọ",
+      "istikharah": "Istikhara",
+      "gatherings": "Nzukọ",
+      "food-drink": "Nri na Ihe ọṅụṅụ",
+      "travel": "Njem",
+      "nature": "Okike",
+      "social-interactions": "Mmekọrịta Mmadụ",
+      "hajj-umrah": "Hajj na Umrah",
+      "marriage-children": "Alụmdi na nwunye na Ụmụaka",
+      "death": "Ọnwụ",
+      "ruqyah-illness": "Ruqyah na Ọrịa",
+      "money-shopping": "Ego na Ịzụ ahịa"
+    },
+    "cat": {}
   }
 }

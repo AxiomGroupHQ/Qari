@@ -856,5 +856,39 @@
     "body": "ယနေ့စူရဟ်- {{name}}။ နားထောင်ရန် နှိပ်ပါ။",
     "denied": "ဤအက်ပ်အတွက် အကြောင်းကြားချက်များ ပိတ်ထားသည်။ စနစ်ဆက်တင်များတွင် ဖွင့်ပါ။",
     "turnOn": "ဖွင့်ပါ"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "နံနက်",
+      "evening-adhkar": "ညနေ",
+      "salah": "ဆွလာတ်",
+      "before-sleep": "အိပ်ရာမဝင်မီ",
+      "after-salah": "ဆွလာတ်ပြီးနောက်",
+      "waking-up": "အိပ်ရာနိုးချိန်",
+      "salawat": "ဆွလဝါတ်",
+      "praises-of-allah": "အလ္လာဟ်အား ချီးမွမ်းခြင်း",
+      "istighfar": "အစ်တစ်ဖာ",
+      "nightmares": "အိပ်မက်ဆိုး",
+      "protection-of-iman": "အီမာန် ကာကွယ်ခြင်း",
+      "difficulties-happiness": "အခက်အခဲနှင့် ပျော်ရွှင်မှု",
+      "quranic-duas": "ကုရ်အာန်ဒုအာများ",
+      "names-of-allah": "အလ္လာဟ်၏ အမည်တော် ၉၉ ပါး",
+      "clothes": "အဝတ်အစား",
+      "lavatory-wudu": "အိမ်သာနှင့် ဝုဒူ",
+      "adhan-masjid": "အာဇာန်နှင့် ဗလီ",
+      "home": "အိမ်",
+      "istikharah": "အစ်တစ်ခါရာ",
+      "gatherings": "စုဝေးမှုများ",
+      "food-drink": "အစားအသောက်",
+      "travel": "ခရီးသွားခြင်း",
+      "nature": "သဘာဝ",
+      "social-interactions": "လူမှုဆက်ဆံရေး",
+      "hajj-umrah": "ဟဂျ်နှင့် အုမ်ရာ",
+      "marriage-children": "အိမ်ထောင်ရေးနှင့် ကလေးများ",
+      "death": "သေခြင်း",
+      "ruqyah-illness": "ရုက်ယာနှင့် ရောဂါ",
+      "money-shopping": "ငွေကြေးနှင့် ဈေးဝယ်ခြင်း"
+    },
+    "cat": {}
   }
 }

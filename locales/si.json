@@ -858,5 +858,39 @@
     "body": "අද සූරාව: {{name}}. ඇසීමට ස්පර්ශ කරන්න.",
     "denied": "මෙම යෙදුම සඳහා දැනුම්දීම් අක්‍රියයි. පද්ධති සැකසුම් තුළ ඒවා සක්‍රිය කරන්න.",
     "turnOn": "සක්‍රිය කරන්න"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "උදෑසන",
+      "evening-adhkar": "සවස",
+      "salah": "සලාතය",
+      "before-sleep": "නිදාගැනීමට පෙර",
+      "after-salah": "සලාතයෙන් පසු",
+      "waking-up": "අවදි වීම",
+      "salawat": "සලවාත්",
+      "praises-of-allah": "අල්ලාහ්ගේ ප්‍රශංසා",
+      "istighfar": "ඉස්තිග්ෆාර්",
+      "nightmares": "නරක සිහින",
+      "protection-of-iman": "ඊමානය ආරක්ෂා කිරීම",
+      "difficulties-happiness": "දුෂ්කරතා සහ සතුට",
+      "quranic-duas": "කුර්ආන් දුආ",
+      "names-of-allah": "අල්ලාහ්ගේ නාම 99",
+      "clothes": "ඇඳුම්",
+      "lavatory-wudu": "වැසිකිළිය සහ වුළූ",
+      "adhan-masjid": "අදාන් සහ පල්ලිය",
+      "home": "ගෙදර",
+      "istikharah": "ඉස්තිඛාරා",
+      "gatherings": "රැස්වීම්",
+      "food-drink": "ආහාර සහ පාන",
+      "travel": "ගමන",
+      "nature": "සොබාදහම",
+      "social-interactions": "සමාජ සබඳතා",
+      "hajj-umrah": "හජ් සහ උම්රා",
+      "marriage-children": "විවාහය සහ දරුවන්",
+      "death": "මරණය",
+      "ruqyah-illness": "රුක්යා සහ රෝග",
+      "money-shopping": "මුදල් සහ සාප්පු යාම"
+    },
+    "cat": {}
   }
 }

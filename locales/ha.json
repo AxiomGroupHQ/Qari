@@ -834,5 +834,39 @@
     "body": "Surar yau: {{name}}. Danna don saurara.",
     "denied": "An kashe sanarwa don wannan manhaja. Kunna su a saitunan tsarin.",
     "turnOn": "Kunna"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Safiya",
+      "evening-adhkar": "Yamma",
+      "salah": "Sallah",
+      "before-sleep": "Kafin Barci",
+      "after-salah": "Bayan Sallah",
+      "waking-up": "Tashi daga Barci",
+      "salawat": "Salawat",
+      "praises-of-allah": "Yabon Allah",
+      "istighfar": "Istigfari",
+      "nightmares": "Mafarki Mai Ban Tsoro",
+      "protection-of-iman": "Kare Imani",
+      "difficulties-happiness": "Wahala da Farin Ciki",
+      "quranic-duas": "Addu'o'in Alkur'ani",
+      "names-of-allah": "Sunayen Allah 99",
+      "clothes": "Tufafi",
+      "lavatory-wudu": "Bayan Gida da Alwala",
+      "adhan-masjid": "Kiran Sallah da Masallaci",
+      "home": "Gida",
+      "istikharah": "Istikhara",
+      "gatherings": "Tarurruka",
+      "food-drink": "Abinci da Abin Sha",
+      "travel": "Tafiya",
+      "nature": "Yanayi",
+      "social-interactions": "Mu'amalar Jama'a",
+      "hajj-umrah": "Hajji da Umra",
+      "marriage-children": "Aure da Yara",
+      "death": "Mutuwa",
+      "ruqyah-illness": "Ruqya da Rashin Lafiya",
+      "money-shopping": "Kudi da Siyayya"
+    },
+    "cat": {}
   }
 }

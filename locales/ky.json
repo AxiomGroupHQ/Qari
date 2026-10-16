@@ -858,5 +858,39 @@
     "body": "Бүгүнкү сүрө: {{name}}. Угуу үчүн басыңыз.",
     "denied": "Бул колдонмо үчүн билдирмелер өчүрүлгөн. Аларды тутум жөндөөлөрүнөн күйгүзүңүз.",
     "turnOn": "Күйгүзүү"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Эртең мененки",
+      "evening-adhkar": "Кечки",
+      "salah": "Намаз",
+      "before-sleep": "Уктаардын алдында",
+      "after-salah": "Намаздан кийин",
+      "waking-up": "Ойгонгондо",
+      "salawat": "Салават",
+      "praises-of-allah": "Аллахтын мактоолору",
+      "istighfar": "Истигфар",
+      "nightmares": "Жаман түштөр",
+      "protection-of-iman": "Ыймандын коргоосу",
+      "difficulties-happiness": "Кыйынчылык жана бакыт",
+      "quranic-duas": "Куран дубалары",
+      "names-of-allah": "Аллахтын 99 ысымы",
+      "clothes": "Кийим",
+      "lavatory-wudu": "Даараткана жана даарат",
+      "adhan-masjid": "Азан жана мечит",
+      "home": "Үй",
+      "istikharah": "Истихара",
+      "gatherings": "Жыйындар",
+      "food-drink": "Тамак-аш жана суусундук",
+      "travel": "Саякат",
+      "nature": "Табият",
+      "social-interactions": "Коомдук мамилелер",
+      "hajj-umrah": "Ажылык жана умра",
+      "marriage-children": "Нике жана балдар",
+      "death": "Өлүм",
+      "ruqyah-illness": "Рукия жана оору",
+      "money-shopping": "Акча жана соода"
+    },
+    "cat": {}
   }
 }

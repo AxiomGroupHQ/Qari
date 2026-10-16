@@ -858,5 +858,39 @@
     "body": "இன்றைய சூரா: {{name}}. கேட்க தட்டவும்.",
     "denied": "இந்த ஆப்ஸுக்கு அறிவிப்புகள் அணைக்கப்பட்டுள்ளன. சிஸ்டம் அமைப்புகளில் இயக்கவும்.",
     "turnOn": "இயக்கு"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "காலை",
+      "evening-adhkar": "மாலை",
+      "salah": "தொழுகை",
+      "before-sleep": "உறங்கும் முன்",
+      "after-salah": "தொழுகைக்குப் பின்",
+      "waking-up": "விழித்தெழுதல்",
+      "salawat": "ஸலவாத்",
+      "praises-of-allah": "அல்லாஹ்வின் புகழ்மொழிகள்",
+      "istighfar": "இஸ்திக்ஃபார்",
+      "nightmares": "கனவு பயங்கள்",
+      "protection-of-iman": "ஈமானின் பாதுகாப்பு",
+      "difficulties-happiness": "சிரமங்களும் மகிழ்ச்சியும்",
+      "quranic-duas": "குர்ஆன் துஆக்கள்",
+      "names-of-allah": "அல்லாஹ்வின் 99 திருநாமங்கள்",
+      "clothes": "ஆடைகள்",
+      "lavatory-wudu": "கழிவறையும் உளூவும்",
+      "adhan-masjid": "அதானும் பள்ளிவாசலும்",
+      "home": "வீடு",
+      "istikharah": "இஸ்திகாரா",
+      "gatherings": "கூட்டங்கள்",
+      "food-drink": "உணவும் பானமும்",
+      "travel": "பயணம்",
+      "nature": "இயற்கை",
+      "social-interactions": "சமூக உறவுகள்",
+      "hajj-umrah": "ஹஜ்ஜும் உம்ராவும்",
+      "marriage-children": "திருமணமும் குழந்தைகளும்",
+      "death": "மரணம்",
+      "ruqyah-illness": "ருக்யாவும் நோயும்",
+      "money-shopping": "பணமும் கடைவீதியும்"
+    },
+    "cat": {}
   }
 }

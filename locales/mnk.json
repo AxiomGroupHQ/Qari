@@ -834,5 +834,39 @@
     "body": "Bi sura: {{name}}. A digi ka a lamɛn.",
     "denied": "Jooni dooxulu bɛ a maŋ app in na. A dayi sistɛmu ɲɛfɔlu kɔnɔ.",
     "turnOn": "A dayi"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Subaa",
+      "evening-adhkar": "Fulaa",
+      "salah": "Salii",
+      "before-sleep": "Kaŋ a sinɔ",
+      "after-salah": "Salii kɔ",
+      "waking-up": "Wuluŋo",
+      "salawat": "Salawaatoo",
+      "praises-of-allah": "Ala tanunoo",
+      "istighfar": "Istigafaroo",
+      "nightmares": "Sunɔo kuntaa",
+      "protection-of-iman": "Imaani kantaroo",
+      "difficulties-happiness": "Maŋ nɛ ni nisɔndiyaa",
+      "quranic-duas": "Kuraani dugaawoo",
+      "names-of-allah": "Ala tɔɔ 99",
+      "clothes": "Fini",
+      "lavatory-wudu": "Konkoo ni Wuduu",
+      "adhan-masjid": "Adana ni Misiri",
+      "home": "Kɔrɔ",
+      "istikharah": "Istikaaroo",
+      "gatherings": "Kafuu",
+      "food-drink": "Domoroo ni Minoo",
+      "travel": "Taamaroo",
+      "nature": "Danfɛnw",
+      "social-interactions": "Jamaa ŋ keŋo",
+      "hajj-umrah": "Hajjoo ni Umrao",
+      "marriage-children": "Furoo ni Denoo",
+      "death": "Saa",
+      "ruqyah-illness": "Ruqiyaa ni Kɔlɔnkɔlɔ",
+      "money-shopping": "Wari ni Soloo"
+    },
+    "cat": {}
   }
 }

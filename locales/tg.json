@@ -858,5 +858,39 @@
     "body": "Сураи имрӯз: {{name}}. Барои гӯш кардан ламс кунед.",
     "denied": "Огоҳиҳо барои ин барнома хомӯшанд. Онҳоро дар танзимоти система фаъол кунед.",
     "turnOn": "Фаъол кардан"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Субҳ",
+      "evening-adhkar": "Бегоҳ",
+      "salah": "Намоз",
+      "before-sleep": "Пеш аз хоб",
+      "after-salah": "Баъд аз намоз",
+      "waking-up": "Бедорӣ",
+      "salawat": "Салавот",
+      "praises-of-allah": "Ситоишҳои Аллоҳ",
+      "istighfar": "Истиғфор",
+      "nightmares": "Хобҳои бад",
+      "protection-of-iman": "Ҳифзи имон",
+      "difficulties-happiness": "Душворӣ ва шодӣ",
+      "quranic-duas": "Дуоҳои Қуръонӣ",
+      "names-of-allah": "99 номи Аллоҳ",
+      "clothes": "Либос",
+      "lavatory-wudu": "Ҳоҷатхона ва таҳорат",
+      "adhan-masjid": "Азон ва масҷид",
+      "home": "Хона",
+      "istikharah": "Истихора",
+      "gatherings": "Маҷлисҳо",
+      "food-drink": "Хӯрок ва нӯшокӣ",
+      "travel": "Сафар",
+      "nature": "Табиат",
+      "social-interactions": "Муносибатҳои иҷтимоӣ",
+      "hajj-umrah": "Ҳаҷ ва умра",
+      "marriage-children": "Никоҳ ва кӯдакон",
+      "death": "Марг",
+      "ruqyah-illness": "Руқя ва беморӣ",
+      "money-shopping": "Пул ва харид"
+    },
+    "cat": {}
   }
 }

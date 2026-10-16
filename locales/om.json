@@ -841,5 +841,39 @@
     "body": "Suuraan har'aa: {{name}}. Dhaggeeffachuuf tuqi.",
     "denied": "Beeksisni app kanaaf cufameera. Qindaa'ina sirnaa keessatti bani.",
     "turnOn": "Bani"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "Ganama",
+      "evening-adhkar": "Galgala",
+      "salah": "Salaata",
+      "before-sleep": "Osoo hin rafiin dura",
+      "after-salah": "Salaata booda",
+      "waking-up": "Ka'uu",
+      "salawat": "Salawaata",
+      "praises-of-allah": "Galata Allaahii",
+      "istighfar": "Istigfaara",
+      "nightmares": "Abjuu hamaa",
+      "protection-of-iman": "Eegumsa Iimaanaa",
+      "difficulties-happiness": "Rakkoo fi gammachuu",
+      "quranic-duas": "Du'aa'ota Qur'aanaa",
+      "names-of-allah": "Maqaawwan Allaah 99",
+      "clothes": "Uffata",
+      "lavatory-wudu": "Mana fincaanii fi Wudu'aa",
+      "adhan-masjid": "Aadaanii fi Masjiida",
+      "home": "Mana",
+      "istikharah": "Istikhaaraa",
+      "gatherings": "Walga'ii",
+      "food-drink": "Nyaata fi dhugaatii",
+      "travel": "Imala",
+      "nature": "Uumama",
+      "social-interactions": "Walitti dhufeenya hawaasaa",
+      "hajj-umrah": "Hajjii fi Umraa",
+      "marriage-children": "Fuudhaa fi heerumaa fi ijoolleen",
+      "death": "Du'aa",
+      "ruqyah-illness": "Ruqyaa fi dhukkuba",
+      "money-shopping": "Maallaqaa fi bitannaa"
+    },
+    "cat": {}
   }
 }

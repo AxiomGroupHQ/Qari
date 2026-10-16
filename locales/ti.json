@@ -865,5 +865,39 @@
     "body": "ናይ ሎሚ ሱራ፦ {{name}}። ንምስማዕ ጠውቕ።",
     "denied": "ንዚ መተግበሪ ኣፕ መተሓሳሰቢታት ጠፊኡ እዩ። ኣብ ቅጥዒታት ሲስተም ኣንድዶ።",
     "turnOn": "ኣንድድ"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "ንግሆ",
+      "evening-adhkar": "ምሸት",
+      "salah": "ሰላት",
+      "before-sleep": "ቅድሚ ድቃስ",
+      "after-salah": "ድሕሪ ሰላት",
+      "waking-up": "ምብራህ",
+      "salawat": "ሰለዋት",
+      "praises-of-allah": "ምስጋና ኣላህ",
+      "istighfar": "ኢስቲግፋር",
+      "nightmares": "ሕልሚ ሽፍታ",
+      "protection-of-iman": "ሓለዋ ኢማን",
+      "difficulties-happiness": "ጸገማትን ሓጎስን",
+      "quranic-duas": "ዱዓታት ቁርዓን",
+      "names-of-allah": "99 ሽምታት ኣላህ",
+      "clothes": "ክዳን",
+      "lavatory-wudu": "መጸዳድያን ውዱእን",
+      "adhan-masjid": "ኣዛንን መስጊድን",
+      "home": "ገዛ",
+      "istikharah": "ኢስቲኻራ",
+      "gatherings": "ኣኼባታት",
+      "food-drink": "መግቢን መስተን",
+      "travel": "ጉዕዞ",
+      "nature": "ተፈጥሮ",
+      "social-interactions": "ማሕበራዊ ርክብ",
+      "hajj-umrah": "ሓጅን ዑምራን",
+      "marriage-children": "ተመርዓዋን ቆልዑን",
+      "death": "ሞት",
+      "ruqyah-illness": "ሩቕያን ሕማምን",
+      "money-shopping": "ገንዘብን ዕዳጋን"
+    },
+    "cat": {}
   }
 }

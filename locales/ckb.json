@@ -866,5 +866,39 @@
     "body": "سوورەتی ئەمڕۆ: {{name}}. بۆ گوێگرتن دەستی پێدابنێ.",
     "denied": "ئاگادارکردنەوەکان بۆ ئەم ئەپە کوژاونەتەوە. لە ڕێکخستنەکانی سیستەمدا چالاکیان بکە.",
     "turnOn": "داگیرسان"
+  },
+  "adhkarCategories": {
+    "super": {
+      "morning-adhkar": "بەیانی",
+      "evening-adhkar": "ئێوارە",
+      "salah": "نوێژ",
+      "before-sleep": "پێش خەوتن",
+      "after-salah": "دوای نوێژ",
+      "waking-up": "خەبەربوونەوە",
+      "salawat": "سەڵەوات",
+      "praises-of-allah": "ستایشەکانی خوا",
+      "istighfar": "ئیستیغفار",
+      "nightmares": "خەونی ترسناک",
+      "protection-of-iman": "پاراستنی ئیمان",
+      "difficulties-happiness": "دژواری و خۆشی",
+      "quranic-duas": "دوعاکانی قورئان",
+      "names-of-allah": "٩٩ ناوەکەی خوا",
+      "clothes": "جلوبەرگ",
+      "lavatory-wudu": "ئاوەدەست و دەستنوێژ",
+      "adhan-masjid": "بانگ و مزگەوت",
+      "home": "ماڵ",
+      "istikharah": "ئیستیخارە",
+      "gatherings": "کۆبوونەوەکان",
+      "food-drink": "خواردن و خواردنەوە",
+      "travel": "گەشت",
+      "nature": "سروشت",
+      "social-interactions": "پەیوەندی کۆمەڵایەتی",
+      "hajj-umrah": "حەج و عومرە",
+      "marriage-children": "هاوسەرگیری و منداڵ",
+      "death": "مردن",
+      "ruqyah-illness": "ڕوقیە و نەخۆشی",
+      "money-shopping": "پارە و بازاڕکردن"
+    },
+    "cat": {}
   }
 }
