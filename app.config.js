@@ -170,6 +170,11 @@ module.exports = {
                     host: ASSOCIATED_DOMAIN,
                     pathPrefix: '/adhkar',
                   },
+                  {
+                    scheme: 'https',
+                    host: ASSOCIATED_DOMAIN,
+                    pathPrefix: '/p/',
+                  },
                 ],
                 category: ['BROWSABLE', 'DEFAULT'],
               },

@@ -47,7 +47,7 @@ Item numbers are the original request-list issue numbers. Feature write-up: `doc
 | Issue | Item | Status | What is needed |
 | --- | --- | --- | --- |
 | #204 | Downloads vanish offline when reciter list is empty | **Fixed** (PR #34) | Device check offline. |
-| #117 | Shareable links | **Partly done** | Share buttons already make `https://istima.app/...` links. App-link domain and iOS `apple-app-site-association` added (PR #34). Android: SHA-256 of the signing key to add `assetlinks.json`. Playlist links and rich preview cards need server work (decision). |
+| #117 | Shareable links | **Partly done** | Share buttons already make `https://istima.app/...` links. App-link domain and iOS `apple-app-site-association` added (PR #34). Android: SHA-256 of the signing key to add `assetlinks.json`. Playlist share links built behind the `sharedPlaylists` flag (share action, `/p/<id>` screen, preview worker `edge/previewWorker.ts`). Not live until the D1 migration and API worker are deployed (owner's Cloudflare access). New strings are English only, 59 translations pending. |
 | #133 | Android performance | **Nothing safe to change blind** | Real Android device for list tuning and R8 testing. Console logs in hot paths are already `__DEV__` guarded. |
 | #74 | Merge mini + full player into one sheet | **Skipped by owner** | Device or simulator to test the animation. Risk of breaking the player if built blind. |
 | #126 | Home screen widgets | Not built | Native code (WidgetKit, Glance). Apple Developer access (App Group, new target), Xcode/EAS build, devices. |

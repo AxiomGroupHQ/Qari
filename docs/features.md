@@ -21,7 +21,7 @@ One-page requirements view . Status as of October 2026. Every feature must work 
 | --- | --- | --- | --- |
 | P1 | Android app links (#117) | Signing key fingerprint | SHA-256 from Play Console App signing or EAS credentials. |
 | Skipped | Merged mini and full player (#74) | Skipped by owner | A device or simulator test loop. |
-| P2 | Playlist share links and rich previews (#117) | Server work | Decision: store shared playlists in the Worker, add server-rendered meta tags. |
+| P2 | Playlist share links and rich previews (#117) | Built, not deployed | Shared playlists stored in D1 (public by link), preview tags added by an edge worker. Flag: `sharedPlaylists`. Needs the API migration and worker deploy. |
 | Skipped | Listening insights (#119) | Skipped by owner | What to show, and whether to use PostHog (privacy policy change). |
 | P2 | Android performance (#133) | Device testing | A real Android device for list tuning and R8. |
 | P3 | CarPlay and Android Auto (#115) | Platform approval | Apple CarPlay audio entitlement, Google Play review. |
