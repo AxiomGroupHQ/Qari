@@ -11,7 +11,7 @@
  */
 export const featureFlags = {
   adhkar: true,
-  discoverFeed: false, // random ayah feed, off until reviewed
+  discoverFeed: true,
   ambientAudioOverlay: true,
   userUploads: true,
   wordByWordTransliteration: true,
