@@ -27,6 +27,8 @@ import {useRouter} from 'expo-router';
 import {usePlayerActions} from '@/hooks/usePlayerActions';
 import {createTracksForReciter} from '@/utils/track';
 import {useRecentlyPlayedStore} from '@/services/player/store/recentlyPlayedStore';
+import {useDownloadStore} from '@/services/player/store/downloadStore';
+import {useCollapsibleTabBar} from '@/hooks/useCollapsibleTabBar';
 import {getSurahById} from '@/services/dataService';
 import {reciterImages} from '@/utils/reciterImages';
 import Header from '@/components/Header';
@@ -149,6 +151,15 @@ export default function BrowseReciters({
     hasPhotoEnabled && initialHasPhoto,
   );
 
+  // The reference-style redesign (large title, All/Favorites/Downloaded
+  // segments, circular grid) applies to the plain "browse every reciter"
+  // screen only. Picker flows (surah playback) and rewayat browsing keep
+  // the detailed cards and teacher/student chips.
+  const isGeneralBrowse = !surahId && !initialTeacher && !initialStudent;
+  const [segment, setSegment] = useState<'all' | 'favorites' | 'downloaded'>(
+    'all',
+  );
+
   const [isFilterModalVisible, setIsFilterModalVisible] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchFocused, setIsSearchFocused] = useState(false);
@@ -157,7 +168,9 @@ export default function BrowseReciters({
     rewayat: [],
     sortBy: 'featured',
   });
-  useFavoriteReciters();
+  const {favoriteReciters} = useFavoriteReciters();
+  const downloads = useDownloadStore(state => state.downloads);
+  const {onScroll: onGridScroll} = useCollapsibleTabBar();
 
   // Get cached primary teachers (computed once at module level)
   const primaryTeachers = getPrimaryTeachers();
@@ -337,6 +350,42 @@ export default function BrowseReciters({
     advancedFilters,
     hasPhoto,
     hasPhotoEnabled,
+  ]);
+
+  const downloadedReciters = useMemo(() => {
+    const ids = new Set(
+      downloads.filter(d => d.status === 'completed').map(d => d.reciterId),
+    );
+    return RECITERS.filter(r => ids.has(r.id)).sort((a, b) =>
+      a.name.localeCompare(b.name),
+    );
+  }, [downloads]);
+
+  // The list the grid actually shows. `all` runs the full filter/sort
+  // pipeline above; the Favorites and Downloads segments are simple
+  // memberships, still narrowed by the search box.
+  const visibleReciters = useMemo(() => {
+    const base =
+      segment === 'favorites'
+        ? favoriteReciters
+        : segment === 'downloaded'
+          ? downloadedReciters
+          : filteredReciters;
+    if (segment === 'all' || !searchQuery.trim()) return base;
+    const query = searchQuery.toLowerCase().trim();
+    return base.filter(
+      reciter =>
+        reciter.name.toLowerCase().includes(query) ||
+        reciter.rewayat.some(rewaya =>
+          rewaya.name?.toLowerCase().includes(query),
+        ),
+    );
+  }, [
+    segment,
+    favoriteReciters,
+    downloadedReciters,
+    filteredReciters,
+    searchQuery,
   ]);
 
   const handleFilterModalPress = () => {
@@ -527,132 +576,174 @@ export default function BrowseReciters({
         {/* Android: custom Header; iOS: native Stack header handles this */}
         {!useNativeHeader && (
           <Header
-            title={title}
+            title={isGeneralBrowse ? '' : title}
             onBack={onBack}
             showBlur={true}
             containerStyle={{zIndex: 2}}
           />
         )}
 
-        {/* Search and Filter Bar */}
+        {/* Top region: large editorial title, then search and filters */}
         <View
-          style={[
-            styles.searchFilterContainer,
-            {
-              marginTop: useNativeHeader
-                ? topOffset
-                : insets.top + moderateScale(56),
-            },
-          ]}>
-          <SearchInput
-            placeholder={t('common.searchReciters')}
-            value={searchQuery}
-            onChangeText={setSearchQuery}
-            onCancel={handleSearchCancel}
-            showCancelButton={isSearchFocused}
-            iconColor={theme.colors.text}
-            iconOpacity={0.25}
-            placeholderTextColor={Color(theme.colors.text)
-              .alpha(0.35)
-              .toString()}
-            textColor={theme.colors.text}
-            backgroundColor={Color(theme.colors.text).alpha(0.04).toString()}
-            borderColor={Color(theme.colors.text).alpha(0.06).toString()}
-            onFocus={handleSearchFocus}
-            onBlur={handleSearchBlur}
-            onSubmitEditing={Keyboard.dismiss}
-            containerStyle={{paddingHorizontal: 0, flex: 1}}
-          />
-          {!isSearchFocused && (
-            <Pressable
-              style={({pressed}) => [
-                styles.filterButton,
-                pressed && styles.filterButtonPressed,
-              ]}
-              onPress={handleFilterModalPress}>
-              <Feather
-                name="sliders"
-                size={moderateScale(18)}
-                color={Color(theme.colors.text).alpha(0.7).toString()}
-              />
-            </Pressable>
+          style={{
+            marginTop: useNativeHeader
+              ? topOffset
+              : insets.top + moderateScale(56),
+          }}>
+          {isGeneralBrowse && (
+            <Text style={styles.largeTitle}>{t('common.reciters')}</Text>
+          )}
+          {/* Search and Filter Bar */}
+          <View style={styles.searchFilterContainer}>
+            <SearchInput
+              placeholder={t('common.searchReciters')}
+              value={searchQuery}
+              onChangeText={setSearchQuery}
+              onCancel={handleSearchCancel}
+              showCancelButton={isSearchFocused}
+              iconColor={theme.colors.text}
+              iconOpacity={0.25}
+              placeholderTextColor={Color(theme.colors.text)
+                .alpha(0.35)
+                .toString()}
+              textColor={theme.colors.text}
+              backgroundColor={Color(theme.colors.text).alpha(0.04).toString()}
+              borderColor={Color(theme.colors.text).alpha(0.06).toString()}
+              onFocus={handleSearchFocus}
+              onBlur={handleSearchBlur}
+              onSubmitEditing={Keyboard.dismiss}
+              containerStyle={{paddingHorizontal: 0, flex: 1}}
+            />
+            {!isSearchFocused && (
+              <Pressable
+                style={({pressed}) => [
+                  styles.filterButton,
+                  pressed && styles.filterButtonPressed,
+                ]}
+                onPress={handleFilterModalPress}>
+                <Feather
+                  name="sliders"
+                  size={moderateScale(18)}
+                  color={Color(theme.colors.text).alpha(0.7).toString()}
+                />
+              </Pressable>
+            )}
+          </View>
+
+          {/* All / Favorites / Downloads segmented control */}
+          {isGeneralBrowse && (
+            <View style={styles.segmentControl}>
+              {(
+                [
+                  {id: 'all', label: t('browse.browseReciters.all')},
+                  {id: 'favorites', label: t('ui.favorites')},
+                  {id: 'downloaded', label: t('common.downloads')},
+                ] as const
+              ).map(option => {
+                const selected = segment === option.id;
+                return (
+                  <Pressable
+                    key={option.id}
+                    accessibilityRole="button"
+                    accessibilityState={{selected}}
+                    style={[
+                      styles.segmentItem,
+                      selected && styles.segmentItemActive,
+                    ]}
+                    onPress={() => {
+                      Keyboard.dismiss();
+                      setSegment(option.id);
+                    }}>
+                    <Text
+                      style={[
+                        styles.segmentText,
+                        selected && styles.segmentTextActive,
+                      ]}>
+                      {option.label}
+                    </Text>
+                  </Pressable>
+                );
+              })}
+            </View>
           )}
         </View>
 
-        {/* Filter Chips */}
-        <View style={styles.filterSectionsContainer}>
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.filterBarContainer}
-            keyboardShouldPersistTaps="handled">
-            {dynamicFilterChips.map(chip => (
-              <Animated.View
-                key={chip.label + chip.type}
-                entering={FadeIn.duration(300)}
-                exiting={FadeOut.duration(200)}
-                layout={LinearTransition.duration(300)}>
-                {chip.type === 'separator' ? (
-                  <View style={styles.separatorChip}>
-                    <Text style={styles.separatorChipText}>{chip.label}</Text>
-                  </View>
-                ) : (
+        {/* Filter Chips (rewayat browsing only applies to "All") */}
+        {segment === 'all' && (
+          <View style={styles.filterSectionsContainer}>
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.filterBarContainer}
+              keyboardShouldPersistTaps="handled">
+              {dynamicFilterChips.map(chip => (
+                <Animated.View
+                  key={chip.label + chip.type}
+                  entering={FadeIn.duration(300)}
+                  exiting={FadeOut.duration(200)}
+                  layout={LinearTransition.duration(300)}>
+                  {chip.type === 'separator' ? (
+                    <View style={styles.separatorChip}>
+                      <Text style={styles.separatorChipText}>{chip.label}</Text>
+                    </View>
+                  ) : (
+                    <Pressable
+                      accessibilityRole="togglebutton"
+                      accessibilityLabel={chip.label}
+                      accessibilityState={{selected: chip.isSelected}}
+                      style={({pressed}) => [
+                        styles.filterChip,
+                        chip.isSelected && styles.filterChipActive,
+                        pressed && styles.filterChipPressed,
+                      ]}
+                      onPress={() => {
+                        Keyboard.dismiss();
+                        handleChipPress(chip);
+                      }}>
+                      <Text
+                        style={[
+                          styles.filterChipText,
+                          chip.isSelected && styles.filterChipTextActive,
+                        ]}>
+                        {chip.label}
+                      </Text>
+                    </Pressable>
+                  )}
+                </Animated.View>
+              ))}
+              {/* RFC-012 - composable chip(s) from `branding.searchFilters`.
+               * v1 ships `has-photo` end-to-end; other dimensions render
+               * once they're wired through (or live as bespoke chips above). */}
+              {hasPhotoEnabled && (
+                <Animated.View
+                  entering={FadeIn.duration(300)}
+                  layout={LinearTransition.duration(300)}>
                   <Pressable
                     accessibilityRole="togglebutton"
-                    accessibilityLabel={chip.label}
-                    accessibilityState={{selected: chip.isSelected}}
+                    accessibilityLabel={t('browse.browseReciters.hasPhoto')}
+                    accessibilityState={{selected: hasPhoto}}
                     style={({pressed}) => [
                       styles.filterChip,
-                      chip.isSelected && styles.filterChipActive,
+                      hasPhoto && styles.filterChipActive,
                       pressed && styles.filterChipPressed,
                     ]}
                     onPress={() => {
                       Keyboard.dismiss();
-                      handleChipPress(chip);
+                      setHasPhoto(v => !v);
                     }}>
                     <Text
                       style={[
                         styles.filterChipText,
-                        chip.isSelected && styles.filterChipTextActive,
+                        hasPhoto && styles.filterChipTextActive,
                       ]}>
-                      {chip.label}
+                      {t('browse.browseReciters.hasPhoto')}
                     </Text>
                   </Pressable>
-                )}
-              </Animated.View>
-            ))}
-            {/* RFC-012 - composable chip(s) from `branding.searchFilters`.
-             * v1 ships `has-photo` end-to-end; other dimensions render
-             * once they're wired through (or live as bespoke chips above). */}
-            {hasPhotoEnabled && (
-              <Animated.View
-                entering={FadeIn.duration(300)}
-                layout={LinearTransition.duration(300)}>
-                <Pressable
-                  accessibilityRole="togglebutton"
-                  accessibilityLabel={t('browse.browseReciters.hasPhoto')}
-                  accessibilityState={{selected: hasPhoto}}
-                  style={({pressed}) => [
-                    styles.filterChip,
-                    hasPhoto && styles.filterChipActive,
-                    pressed && styles.filterChipPressed,
-                  ]}
-                  onPress={() => {
-                    Keyboard.dismiss();
-                    setHasPhoto(v => !v);
-                  }}>
-                  <Text
-                    style={[
-                      styles.filterChipText,
-                      hasPhoto && styles.filterChipTextActive,
-                    ]}>
-                    {t('browse.browseReciters.hasPhoto')}
-                  </Text>
-                </Pressable>
-              </Animated.View>
-            )}
-          </ScrollView>
-        </View>
+                </Animated.View>
+              )}
+            </ScrollView>
+          </View>
+        )}
 
         {/* Active Filters Indicator */}
         {hasActiveFilters && (
@@ -679,14 +770,28 @@ export default function BrowseReciters({
         {/* Content */}
         <View style={styles.contentContainer}>
           <BrowseGrid
-            reciters={filteredReciters}
+            reciters={visibleReciters}
             onReciterPress={handleReciterPress}
             theme={theme}
             keyboardShouldPersistTaps="handled"
             onScrollBeginDrag={() => Keyboard.dismiss()}
             getRewayatIdForReciter={getRewayatIdForReciter}
             bottomInset={bottomInset}
+            circular={isGeneralBrowse}
+            onScroll={onGridScroll}
           />
+          {isGeneralBrowse &&
+            segment !== 'all' &&
+            visibleReciters.length === 0 &&
+            !searchQuery.trim() && (
+              <View style={styles.emptySegmentContainer}>
+                <Text style={styles.emptySegmentText}>
+                  {segment === 'favorites'
+                    ? t('collection.index.noFavoritesYet')
+                    : t('collection.index.noDownloadsYet')}
+                </Text>
+              </View>
+            )}
         </View>
 
         {/* Filter Modal */}
@@ -804,5 +909,61 @@ const createStyles = (theme: Theme) =>
       fontFamily: 'Amiri-Regular',
       color: Color(theme.colors.textSecondary).alpha(0.5).toString(),
       fontStyle: 'italic',
+    },
+    largeTitle: {
+      fontSize: moderateScale(30),
+      fontFamily: 'Manrope-Bold',
+      color: theme.colors.text,
+      letterSpacing: -0.5,
+      paddingHorizontal: moderateScale(16),
+      paddingTop: moderateScale(4),
+      paddingBottom: moderateScale(2),
+    },
+    segmentControl: {
+      flexDirection: 'row',
+      marginHorizontal: moderateScale(16),
+      marginTop: moderateScale(10),
+      marginBottom: moderateScale(2),
+      padding: moderateScale(3),
+      borderRadius: moderateScale(24),
+      backgroundColor: Color(theme.colors.text).alpha(0.06).toString(),
+    },
+    segmentItem: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingVertical: moderateScale(8),
+      borderRadius: moderateScale(20),
+    },
+    segmentItemActive: {
+      backgroundColor: theme.isDarkMode
+        ? Color(theme.colors.text).alpha(0.14).toString()
+        : '#ffffff',
+      shadowColor: '#000',
+      shadowOffset: {width: 0, height: 1},
+      shadowOpacity: 0.12,
+      shadowRadius: 3,
+      elevation: 2,
+    },
+    segmentText: {
+      fontSize: moderateScale(13),
+      fontFamily: 'Manrope-Medium',
+      color: Color(theme.colors.textSecondary).alpha(0.6).toString(),
+    },
+    segmentTextActive: {
+      color: theme.colors.text,
+      fontFamily: 'Manrope-SemiBold',
+    },
+    emptySegmentContainer: {
+      position: 'absolute',
+      top: '35%',
+      left: 0,
+      right: 0,
+      alignItems: 'center',
+    },
+    emptySegmentText: {
+      fontSize: moderateScale(14),
+      fontFamily: 'Manrope-Medium',
+      color: Color(theme.colors.textSecondary).alpha(0.5).toString(),
     },
   });

@@ -42,7 +42,9 @@ export default function HomeLayout() {
         <Stack.Screen
           name="browse-all"
           options={{
-            title: t('common.browseAll'),
+            // Large in-content title inside BrowseReciters; keep the
+            // native header for the back button only.
+            title: '',
             // Non-glass devices use custom Header component; hide native header to avoid clash
             headerShown: USE_GLASS,
           }}

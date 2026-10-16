@@ -25,6 +25,8 @@ import {PlaylistCard} from '@/components/cards/PlaylistCard';
 import {UserPlaylist} from '@/services/playlist/PlaylistService';
 import {Theme} from '@/utils/themeUtils';
 import {RecitersHero} from '@/components/hero/RecitersHero';
+import {GlowBackdrop} from '@/components/GlowBackdrop';
+import {useCollapsibleTabBar} from '@/hooks/useCollapsibleTabBar';
 import {
   getTajweedReciters,
   getMemorizationReciters,
@@ -352,6 +354,12 @@ const Section = React.memo(
 
     return (
       <View style={styles.section}>
+        {/* Soft gradient halo behind the section - the cross-platform
+         * stand-in for the reference design's glass-card shine. */}
+        <GlowBackdrop
+          color={theme.colors.primary}
+          intensity={theme.isDarkMode ? 0.14 : 0.08}
+        />
         <View style={styles.sectionHeader}>
           <Text style={[styles.sectionTitle, {color: theme.colors.text}]}>
             {title}
@@ -418,6 +426,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
   const bottomInset = useBottomInset();
   const insets = useSafeAreaInsets();
   const router = useRouter();
+  const {onScroll: onHomeScroll} = useCollapsibleTabBar();
   const {recentTracks} = useRecentlyPlayedStore();
   const {favoriteReciters} = useFavoriteReciters();
   const {lovedTracks} = useLoved();
@@ -621,6 +630,10 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     adhkar:
       adhkarLoaded && adhkarCategories.length > 0 ? (
         <View style={styles.section}>
+          <GlowBackdrop
+            color={theme.colors.primary}
+            intensity={theme.isDarkMode ? 0.14 : 0.08}
+          />
           <View style={styles.sectionHeader}>
             <Text style={[styles.sectionTitle, {color: theme.colors.text}]}>
               {t('recitersView.adhkar')}
@@ -749,6 +762,8 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
       }
       contentInsetAdjustmentBehavior={USE_GLASS ? 'automatic' : 'never'}
       showsVerticalScrollIndicator={false}
+      onScroll={onHomeScroll}
+      scrollEventThrottle={16}
       removeClippedSubviews={true}>
       {/* RFC-008 - Listen-tab top region. Default is the unified
        * `RecitersHero`; forks may substitute their own via
@@ -783,18 +798,19 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   section: {
-    marginBottom: moderateScale(24),
+    marginBottom: moderateScale(36),
   },
   sectionHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: moderateScale(16),
-    marginBottom: moderateScale(16),
+    marginBottom: moderateScale(14),
   },
   sectionTitle: {
-    fontSize: moderateScale(18),
-    fontFamily: 'Manrope-SemiBold',
+    fontSize: moderateScale(24),
+    fontFamily: 'Manrope-Bold',
+    letterSpacing: -0.5,
   },
   clearButton: {
     fontSize: moderateScale(13),

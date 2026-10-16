@@ -13,6 +13,7 @@ import {useSettings} from '@/hooks/useSettings';
 import {useBottomInset} from '@/hooks/useBottomInset';
 import {getJuzForSurah, getJuzName} from '@/data/juzData';
 import {USE_GLASS} from '@/hooks/useGlassProps';
+import {useCollapsibleTabBar} from '@/hooks/useCollapsibleTabBar';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {ContinueReadingHero} from '@/components/hero/ContinueReadingHero';
 import {t} from '@/i18n';
@@ -277,6 +278,8 @@ export default function SurahsView({
 
   const getItemType = useCallback((item: FlatItem) => item.type, []);
 
+  const {onScroll: onSurahsScroll} = useCollapsibleTabBar();
+
   // iOS with NativeTabs: automatic content insets handle top/bottom
   // Android / older iOS: manual padding needed
   const contentPadding = USE_GLASS
@@ -296,6 +299,8 @@ export default function SurahsView({
         contentContainerStyle={contentPadding}
         contentInsetAdjustmentBehavior={USE_GLASS ? 'automatic' : 'never'}
         drawDistance={moderateScale(300)}
+        onScroll={onSurahsScroll}
+        scrollEventThrottle={16}
       />
     </View>
   );
