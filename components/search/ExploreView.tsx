@@ -135,8 +135,16 @@ const BentoTileComponent = React.memo(
     const glassColorScheme = useGlassColorScheme();
 
     const borderColor = useMemo(
-      () => Color(tile.backgroundColor).alpha(0.55).toString(),
+      () => Color(tile.backgroundColor).alpha(0.7).toString(),
       [tile.backgroundColor],
+    );
+    // Soft tint of the tile colour so the card reads as filled, not hollow.
+    const tintColor = useMemo(
+      () =>
+        Color(tile.backgroundColor)
+          .alpha(theme.isDarkMode ? 0.18 : 0.16)
+          .toString(),
+      [tile.backgroundColor, theme.isDarkMode],
     );
 
     const isLargeCard = tile.heightMultiplier >= 2;
@@ -200,8 +208,8 @@ const BentoTileComponent = React.memo(
       );
     }
 
-    // Non-glass fallback: keep the thin tinted hollow border so Android /
-    // pre-iOS-26 still get a recognizable card shape.
+    // Non-glass fallback: keep the tinted border and add a soft tint fill so
+    // web, Android and pre-iOS-26 get a visible card, not an empty outline.
     // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
     const fallbackStyle = useMemo(
       () => ({
@@ -209,9 +217,9 @@ const BentoTileComponent = React.memo(
         borderRadius: OUTER_RADIUS,
         borderWidth: BORDER_WIDTH,
         borderColor,
-        backgroundColor: 'transparent' as const,
+        backgroundColor: tintColor,
       }),
-      [outerStyle, borderColor],
+      [outerStyle, borderColor, tintColor],
     );
 
     return (
