@@ -48,6 +48,7 @@ import {AdhkarBentoCard} from '@/components/adhkar/AdhkarBentoCard';
 import {SuperCategory} from '@/types/adhkar';
 import branding, {type HomeRow, type HomeRowId} from '@/config/branding';
 import {t} from '@/i18n';
+import {getReciterByIdSync} from '@/services/dataService';
 
 /**
  * Fallback row order used when `branding.homeRowConfig` is undefined.
@@ -168,6 +169,13 @@ const MemoizedFlatList = React.memo(
 
 MemoizedFlatList.displayName = 'MemoizedFlatList';
 
+// History keeps a copy of the reciter from when it was played, with the image URL of that
+// moment. If the catalog is loaded, trust it over the copy: an old URL would show an empty card.
+function liveReciterImage(saved: Reciter): string | undefined {
+  const live = getReciterByIdSync(saved.id);
+  return (live ? live.image_url : saved.image_url) || undefined;
+}
+
 const RenderSectionItem = React.memo(
   ({
     item,
@@ -230,7 +238,7 @@ const RenderSectionItem = React.memo(
 
       return (
         <RecentReciterCard
-          imageUrl={item.reciter.image_url ?? undefined}
+          imageUrl={liveReciterImage(item.reciter)}
           reciterName={item.reciter.name}
           surahName={item.surah.name}
           trackId={`${item.reciter.id}:${item.surah.id}`}
