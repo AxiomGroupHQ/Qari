@@ -626,7 +626,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
               {t('recitersView.adhkar')}
             </Text>
             <Pressable
-              onPress={() => router.push('/(tabs)/(a.home)/adhkar')}
+              onPress={() => router.push('/(tabs)/(e.adhkar)')}
               hitSlop={8}>
               <Text
                 style={[

@@ -8,13 +8,13 @@ export default function AdhkarIndexScreen() {
 
   const handleCategoryPress = (superCategory: SuperCategory) => {
     router.push({
-      pathname: '/(tabs)/(a.home)/adhkar/[superId]',
+      pathname: '/(tabs)/(e.adhkar)/[superId]',
       params: {superId: superCategory.id},
     });
   };
 
   const handleSavedPress = () => {
-    router.push('/(tabs)/(a.home)/adhkar/saved');
+    router.push('/(tabs)/(e.adhkar)/saved');
   };
 
   return (

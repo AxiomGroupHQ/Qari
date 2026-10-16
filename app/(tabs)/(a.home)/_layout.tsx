@@ -35,7 +35,6 @@ export default function HomeLayout() {
           }}
         />
         <Stack.Screen name="playlist/[id]" options={{title: ''}} />
-        <Stack.Screen name="adhkar" options={{headerShown: false}} />
         <Stack.Screen
           name="translations"
           options={{title: t('common.translationsTafaseer')}}

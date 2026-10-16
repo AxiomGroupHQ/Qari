@@ -7,7 +7,7 @@ import {
   QuranIcon,
   SearchIcon,
   CollectionIcon,
-  SettingsIcon,
+  MoonIcon,
 } from '@/components/Icons';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {CommonActions} from '@react-navigation/native';
@@ -44,8 +44,8 @@ function getIcon(
       return (
         <CollectionIcon filled={isFocused} color={color} size={iconSize} />
       );
-    case '(d.settings)':
-      return <SettingsIcon filled={isFocused} color={color} size={iconSize} />;
+    case '(e.adhkar)':
+      return <MoonIcon color={color} size={iconSize} />;
     default:
       return null;
   }
@@ -184,6 +184,8 @@ export const TabletSidebar: React.FC<BottomTabBarProps> = ({
 
       <View style={styles.items}>
         {state.routes.map((route, index) => {
+          // Settings is opened from the header icon, not the tab bar.
+          if (route.name === '(d.settings)') return null;
           const {options} = descriptors[route.key];
           const label =
             options.tabBarLabel !== undefined
