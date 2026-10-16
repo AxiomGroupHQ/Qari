@@ -19,6 +19,7 @@ import {AdhkarAudioControls} from './AdhkarAudioControls';
 import {useAdhkarSettingsStore} from '@/store/adhkarSettingsStore';
 import {Dhikr} from '@/types/adhkar';
 import {t} from '@/i18n';
+import {buildShareText} from '@/utils/adhkarText';
 
 // Enable LayoutAnimation for Android
 if (
@@ -82,15 +83,13 @@ export const DhikrReader: React.FC<DhikrReaderProps> = ({
   }, []);
 
   const handleShare = useCallback(async () => {
-    const content = [
-      dhikr.arabic,
-      dhikr.translation ? `\n\n${dhikr.translation}` : '',
-      dhikr.transliteration ? `\n\n${dhikr.transliteration}` : '',
-      dhikr.instruction ? `\n\n${dhikr.instruction}` : '',
-    ].join('');
+    const content = buildShareText(dhikr, {
+      translation: showTranslation,
+      transliteration: showTransliteration,
+    });
 
     await shareMessage(content);
-  }, [dhikr]);
+  }, [dhikr, showTranslation, showTransliteration]);
 
   return (
     <View style={styles.container}>

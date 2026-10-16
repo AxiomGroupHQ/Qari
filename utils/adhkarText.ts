@@ -39,3 +39,30 @@ export function cleanTranslation(text: string | null): string | null {
   while (wrapsWholeText(s)) s = s.slice(1, -1).trim();
   return s;
 }
+
+interface ShareParts {
+  arabic: string;
+  translation: string | null;
+  transliteration: string | null;
+}
+
+/**
+ * Text for Share. Same order and visibility as the reader: Arabic, then the
+ * translation and transliteration the user has switched on. The info note is
+ * left out (it is a separate, collapsed section and in some entries repeats
+ * the translation in other words).
+ */
+export function buildShareText(
+  d: ShareParts,
+  show: {translation: boolean; transliteration: boolean},
+): string {
+  const parts = [cleanArabic(d.arabic)];
+  if (show.translation && d.translation) {
+    const t = cleanTranslation(d.translation);
+    if (t) parts.push(t);
+  }
+  if (show.transliteration && d.transliteration) {
+    parts.push(d.transliteration.trim());
+  }
+  return parts.join('\n\n');
+}

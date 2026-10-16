@@ -28,3 +28,20 @@ describe('adhkar bracket stripping', () => {
     expect(left.length).toBe(0);
   });
 });
+
+describe('share text', () => {
+  const {buildShareText} = jest.requireActual('../adhkarText');
+  const d = {
+    arabic: '((قال)).',
+    translation: '(Whoever says it)',
+    transliteration: 'qaala',
+  };
+  it('follows the display settings and drops brackets', () => {
+    expect(buildShareText(d, {translation: true, transliteration: true})).toBe(
+      'قال.\n\nWhoever says it\n\nqaala',
+    );
+    expect(
+      buildShareText(d, {translation: false, transliteration: false}),
+    ).toBe('قال.');
+  });
+});
