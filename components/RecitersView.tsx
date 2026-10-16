@@ -798,17 +798,17 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   section: {
-    marginBottom: moderateScale(36),
+    marginBottom: moderateScale(28),
   },
   sectionHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: moderateScale(16),
-    marginBottom: moderateScale(14),
+    marginBottom: moderateScale(10),
   },
   sectionTitle: {
-    fontSize: moderateScale(24),
+    fontSize: moderateScale(20),
     fontFamily: 'Manrope-Bold',
     letterSpacing: -0.5,
   },

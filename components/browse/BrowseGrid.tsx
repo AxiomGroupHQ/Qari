@@ -84,9 +84,11 @@ const BrowseGrid = React.memo(
 
     // Calculate number of columns based on screen width
     const numColumns = useMemo(() => {
-      const minCardWidth = moderateScale(120);
+      // Circular reciter cells stay compact - 4 columns on a phone-width
+      // screen; detailed (rectangular) cards keep the wider minimum.
+      const minCardWidth = moderateScale(circular ? 92 : 120);
       return Math.max(3, Math.floor(windowWidth / minCardWidth));
-    }, [windowWidth]);
+    }, [windowWidth, circular]);
 
     // Convert flat list to rows for grid layout
     const itemRows = useMemo(() => {
