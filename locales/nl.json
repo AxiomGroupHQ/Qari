@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Vers {{surah}}:{{ayah}} · Woord {{position}} van {{total}}"
+  },
+  "account": {
+    "title": "Account",
+    "settingsDescription": "Log in om je gegevens te back-uppen en te synchroniseren",
+    "signInTitle": "Inloggen",
+    "signUpTitle": "Account maken",
+    "benefit": "Synchroniseer je favorieten, bladwijzers, afspeellijsten en instellingen op al je apparaten.",
+    "name": "Naam (optioneel)",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "passwordHint": "Minstens 8 tekens.",
+    "signIn": "Inloggen",
+    "signUp": "Account maken",
+    "or": "of",
+    "continueWithGoogle": "Doorgaan met Google",
+    "noAccount": "Nog geen account? Maak er een",
+    "haveAccount": "Al een account? Log in",
+    "signedInAs": "Ingelogd",
+    "syncInfo": "Je favorieten, bladwijzers, afspeellijsten, opgeslagen adhkar, instellingen en voortgang worden automatisch gesynchroniseerd.",
+    "signOut": "Uitloggen",
+    "deleteAccount": "Account verwijderen",
+    "deleteTitle": "Account verwijderen?",
+    "deleteMessage": "Hiermee worden je account en alle gesynchroniseerde gegevens definitief verwijderd. Gegevens op dit apparaat blijven bestaan.",
+    "deleteConfirm": "Verwijderen",
+    "errors": {
+      "invalid_email": "Voer een geldig e-mailadres in. Het is nodig om je persoonlijke gegevens op te slaan.",
+      "weak_password": "Het wachtwoord moet minstens 8 tekens bevatten.",
+      "email_taken": "Er bestaat al een account met dit e-mailadres.",
+      "invalid_credentials": "E-mail of wachtwoord is onjuist.",
+      "too_many_attempts": "Te veel pogingen. Probeer het over 15 minuten opnieuw.",
+      "invalid_google_token": "Inloggen met Google is mislukt. Probeer het opnieuw.",
+      "google_not_configured": "Inloggen met Google is nog niet beschikbaar.",
+      "email_not_verified": "Je Google-e-mail is niet geverifieerd.",
+      "unauthorized": "Je sessie is verlopen. Log opnieuw in.",
+      "network": "Kan de server niet bereiken. Controleer je verbinding.",
+      "unknown": "Er ging iets mis. Probeer het opnieuw."
+    },
+    "emailRequired": "Een geldig e-mailadres is nodig om je persoonlijke gegevens (favorieten, bladwijzers, afspeellijsten, instellingen) op te slaan. Zonder blijven ze alleen op dit apparaat."
   }
 }

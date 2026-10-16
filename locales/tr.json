@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Ayet {{surah}}:{{ayah}} · Kelime {{position}}/{{total}}"
+  },
+  "account": {
+    "title": "Hesap",
+    "settingsDescription": "Verilerinizi yedeklemek ve eşitlemek için giriş yapın",
+    "signInTitle": "Giriş yap",
+    "signUpTitle": "Hesap oluştur",
+    "benefit": "Favorilerinizi, yer imlerinizi, çalma listelerinizi ve ayarlarınızı cihazlarınız arasında eşitleyin.",
+    "name": "Ad (isteğe bağlı)",
+    "email": "E-posta",
+    "password": "Parola",
+    "passwordHint": "En az 8 karakter.",
+    "signIn": "Giriş yap",
+    "signUp": "Hesap oluştur",
+    "or": "veya",
+    "continueWithGoogle": "Google ile devam et",
+    "noAccount": "Hesabınız yok mu? Oluşturun",
+    "haveAccount": "Zaten hesabınız var mı? Giriş yapın",
+    "signedInAs": "Giriş yapıldı",
+    "syncInfo": "Favorileriniz, yer imleriniz, çalma listeleriniz, kayıtlı zikirleriniz, ayarlarınız ve ilerlemeniz otomatik olarak eşitlenir.",
+    "signOut": "Çıkış yap",
+    "deleteAccount": "Hesabı sil",
+    "deleteTitle": "Hesap silinsin mi?",
+    "deleteMessage": "Bu işlem hesabınızı ve eşitlenen tüm verileri kalıcı olarak siler. Bu cihazdaki veriler kalır.",
+    "deleteConfirm": "Sil",
+    "errors": {
+      "invalid_email": "Lütfen geçerli bir e-posta adresi girin. Kişisel verilerinizi kaydetmek için gereklidir.",
+      "weak_password": "Parola en az 8 karakter olmalıdır.",
+      "email_taken": "Bu e-postayla bir hesap zaten var.",
+      "invalid_credentials": "E-posta veya parola yanlış.",
+      "too_many_attempts": "Çok fazla deneme. 15 dakika sonra tekrar deneyin.",
+      "invalid_google_token": "Google ile giriş başarısız oldu. Lütfen tekrar deneyin.",
+      "google_not_configured": "Google ile giriş henüz kullanılamıyor.",
+      "email_not_verified": "Google e-postanız doğrulanmamış.",
+      "unauthorized": "Oturumunuz sona erdi. Lütfen tekrar giriş yapın.",
+      "network": "Sunucuya ulaşılamıyor. Bağlantınızı kontrol edin.",
+      "unknown": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+    },
+    "emailRequired": "Kişisel verilerinizi (favoriler, yer imleri, çalma listeleri, ayarlar) kaydetmek için geçerli bir e-posta gerekir. Olmazsa veriler yalnızca bu cihazda kalır."
   }
 }

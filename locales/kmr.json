@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Ayeta {{surah}}:{{ayah}} · Peyva {{position}} ji {{total}}"
+  },
+  "account": {
+    "title": "Ajimêr",
+    "settingsDescription": "Ji bo yedekkirin û hevdemkirina daneyên xwe têkevin",
+    "signInTitle": "Têkeve",
+    "signUpTitle": "Ajimêr çêke",
+    "benefit": "Hezkirî, nîşan, lîsteyên lêdanê û mîhengên xwe di navbera amûrên xwe de hevdem bike.",
+    "name": "Nav (bijarte)",
+    "email": "E-name",
+    "password": "Şîfre",
+    "passwordHint": "Herî kêm 8 tîp.",
+    "signIn": "Têkeve",
+    "signUp": "Ajimêr çêke",
+    "or": "an",
+    "continueWithGoogle": "Bi Google berdewam bike",
+    "noAccount": "Hê ajimêra te tune? Çêke",
+    "haveAccount": "Ajimêra te heye? Têkeve",
+    "signedInAs": "Têketî ye",
+    "syncInfo": "Hezkirî, nîşan, lîsteyên lêdanê, zikrên tomarkirî, mîheng û pêşketina te bi xwe hevdem dibin.",
+    "signOut": "Derkeve",
+    "deleteAccount": "Ajimêrê jê bibe",
+    "deleteTitle": "Ajimêr jê bibe?",
+    "deleteMessage": "Ev ajimêra te û hemû daneyên hevdemkirî ji bo her tim jê dibe. Daneyên li ser vê amûrê dimînin.",
+    "deleteConfirm": "Jê bibe",
+    "errors": {
+      "invalid_email": "Ji kerema xwe navnîşana e-nameyeke derbasdar binivîse. Ji bo tomarkirina daneyên kesane pêwîst e.",
+      "weak_password": "Şîfre divê herî kêm 8 tîp be.",
+      "email_taken": "Ajimêrek bi vê e-nameyê re berê heye.",
+      "invalid_credentials": "E-name an şîfre şaş e.",
+      "too_many_attempts": "Zêde hewldan. Piştî 15 hûrdeman dîsa biceribîne.",
+      "invalid_google_token": "Têketina bi Google têk çû. Ji kerema xwe dîsa biceribîne.",
+      "google_not_configured": "Têketina bi Google hê ne berdest e.",
+      "email_not_verified": "E-nameya te ya Google nehatiye pejirandin.",
+      "unauthorized": "Rûniştina te qediya. Ji kerema xwe dîsa têkeve.",
+      "network": "Negihîje serverê. Girêdana xwe kontrol bike.",
+      "unknown": "Tiştek xelet çû. Ji kerema xwe dîsa biceribîne."
+    },
+    "emailRequired": "Ji bo tomarkirina daneyên kesane (hezkirî, nîşan, lîsteyên lêdanê, mîheng) e-nameyeke derbasdar pêwîst e. Bêyî wê tenê li ser vê amûrê dimîne."
   }
 }

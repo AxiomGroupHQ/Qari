@@ -755,5 +755,43 @@
   },
   "wordDetail": {
     "context": "Aaya {{surah}}:{{ayah}} · Baat {{position}} ci {{total}}"
+  },
+  "account": {
+    "title": "Kont",
+    "settingsDescription": "Dugal ngir denc ak bokk sa dónnée yi",
+    "signInTitle": "Dugal",
+    "signUpTitle": "Defar kont",
+    "benefit": "Boole say bëgg, say màndarga, say limu woy ak say jumtukaay ci sa jumtukaay yépp.",
+    "name": "Tur (bëgg-bëgg)",
+    "email": "Imeel",
+    "password": "Baatu jàll",
+    "passwordHint": "Ñetti-ñetti 8 araf ci ayu-bu-ndaw.",
+    "signIn": "Dugal",
+    "signUp": "Defar kont",
+    "or": "walla",
+    "continueWithGoogle": "Wéy ak Google",
+    "noAccount": "Amoo kont? Defar benn",
+    "haveAccount": "Am nga kont? Dugal",
+    "signedInAs": "Dugg nga",
+    "syncInfo": "Say bëgg, say màndarga, say limu woy, adhkar yu ñu denc, say jumtukaay ak sa yoon di ñu bokk ci boppam.",
+    "signOut": "Génn",
+    "deleteAccount": "Far kont bi",
+    "deleteTitle": "Far kont bi?",
+    "deleteMessage": "Lii dina far sa kont ak sa dónnée yi ñu boole ba fàww. Dónnée yi nekk ci jumtukaay bii dinañu des.",
+    "deleteConfirm": "Far",
+    "errors": {
+      "invalid_email": "Bindal imeel bu baax. Soxla na ngir denc sa dónnée yu bopp.",
+      "weak_password": "Baatu jàll bi dafa wara am ñetti-ñetti 8 araf.",
+      "email_taken": "Am na kont ak imeel bii ba noppi.",
+      "invalid_credentials": "Imeel walla baatu jàll bi dafa jaaxal.",
+      "too_many_attempts": "Nga jéem lool. Jéemaat ci 15 simili.",
+      "invalid_google_token": "Dugal ak Google jàllul. Jéemaatal.",
+      "google_not_configured": "Dugal ak Google amul leegi.",
+      "email_not_verified": "Sa imeel Google dañu ko dëggal.",
+      "unauthorized": "Sa jotaay jeex na. Dugalaat.",
+      "network": "Mënuñu jokkoo ak serwër bi. Seetal sa jokkoo.",
+      "unknown": "Dafa am lu jaaxal. Jéemaatal."
+    },
+    "emailRequired": "Imeel bu baax a lay soxla ngir denc sa dónnée yu bopp (say bëgg, say màndarga, say limu woy, say jumtukaay). Bu amul, dina des ci jumtukaay bii rekk."
   }
 }

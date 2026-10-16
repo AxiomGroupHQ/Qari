@@ -124,7 +124,7 @@ export class LocalAggregationStore {
     return JSON.parse(raw) as KhatmahProgress;
   }
 
-  private saveKhatmahProgress(progress: KhatmahProgress): void {
+  saveKhatmahProgress(progress: KhatmahProgress): void {
     this.mmkv.set(KHATMAH_KEY, JSON.stringify(progress));
   }
 

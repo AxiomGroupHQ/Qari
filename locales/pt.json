@@ -755,5 +755,43 @@
   },
   "wordDetail": {
     "context": "Versículo {{surah}}:{{ayah}} · Palavra {{position}} de {{total}}"
+  },
+  "account": {
+    "title": "Conta",
+    "settingsDescription": "Inicie sessão para fazer backup e sincronizar os seus dados",
+    "signInTitle": "Iniciar sessão",
+    "signUpTitle": "Criar conta",
+    "benefit": "Sincronize favoritos, marcadores, listas de reprodução e definições entre os seus dispositivos.",
+    "name": "Nome (opcional)",
+    "email": "E-mail",
+    "password": "Palavra-passe",
+    "passwordHint": "Pelo menos 8 caracteres.",
+    "signIn": "Iniciar sessão",
+    "signUp": "Criar conta",
+    "or": "ou",
+    "continueWithGoogle": "Continuar com o Google",
+    "noAccount": "Ainda não tem conta? Crie uma",
+    "haveAccount": "Já tem conta? Inicie sessão",
+    "signedInAs": "Sessão iniciada",
+    "syncInfo": "Os seus favoritos, marcadores, listas, adhkar guardados, definições e progresso são sincronizados automaticamente.",
+    "signOut": "Terminar sessão",
+    "deleteAccount": "Eliminar conta",
+    "deleteTitle": "Eliminar conta?",
+    "deleteMessage": "Isto elimina permanentemente a sua conta e todos os dados sincronizados. Os dados neste dispositivo permanecem.",
+    "deleteConfirm": "Eliminar",
+    "errors": {
+      "invalid_email": "Introduza um endereço de e-mail válido. É necessário para guardar os seus dados pessoais.",
+      "weak_password": "A palavra-passe deve ter pelo menos 8 caracteres.",
+      "email_taken": "Já existe uma conta com este e-mail.",
+      "invalid_credentials": "E-mail ou palavra-passe incorretos.",
+      "too_many_attempts": "Demasiadas tentativas. Tente novamente dentro de 15 minutos.",
+      "invalid_google_token": "Falha ao iniciar sessão com o Google. Tente novamente.",
+      "google_not_configured": "O início de sessão com o Google ainda não está disponível.",
+      "email_not_verified": "O seu e-mail do Google não está verificado.",
+      "unauthorized": "A sua sessão expirou. Inicie sessão novamente.",
+      "network": "Não foi possível contactar o servidor. Verifique a ligação.",
+      "unknown": "Algo correu mal. Tente novamente."
+    },
+    "emailRequired": "É necessário um e-mail válido para guardar os seus dados pessoais (favoritos, marcadores, listas, definições). Sem ele, ficam apenas neste dispositivo."
   }
 }

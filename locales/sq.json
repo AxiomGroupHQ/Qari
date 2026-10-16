@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Vargu {{surah}}:{{ayah}} · Fjala {{position}} nga {{total}}"
+  },
+  "account": {
+    "title": "Llogaria",
+    "settingsDescription": "Hyni për të ruajtur dhe sinkronizuar të dhënat tuaja",
+    "signInTitle": "Hyr",
+    "signUpTitle": "Krijo llogari",
+    "benefit": "Sinkronizoni të preferuarat, faqeshënuesit, listat e luajtjes dhe cilësimet në pajisjet tuaja.",
+    "name": "Emri (opsional)",
+    "email": "Email",
+    "password": "Fjalëkalimi",
+    "passwordHint": "Të paktën 8 karaktere.",
+    "signIn": "Hyr",
+    "signUp": "Krijo llogari",
+    "or": "ose",
+    "continueWithGoogle": "Vazhdo me Google",
+    "noAccount": "Nuk keni llogari? Krijoni një",
+    "haveAccount": "Keni tashmë llogari? Hyni",
+    "signedInAs": "I identifikuar",
+    "syncInfo": "Të preferuarat, faqeshënuesit, listat e luajtjes, adhkar-et e ruajtura, cilësimet dhe përparimi sinkronizohen automatikisht.",
+    "signOut": "Dil",
+    "deleteAccount": "Fshi llogarinë",
+    "deleteTitle": "Të fshihet llogaria?",
+    "deleteMessage": "Kjo fshin përgjithmonë llogarinë tuaj dhe të gjitha të dhënat e sinkronizuara. Të dhënat në këtë pajisje mbeten.",
+    "deleteConfirm": "Fshi",
+    "errors": {
+      "invalid_email": "Shkruani një adresë email të vlefshme. Nevojitet për të ruajtur të dhënat tuaja personale.",
+      "weak_password": "Fjalëkalimi duhet të ketë të paktën 8 karaktere.",
+      "email_taken": "Ekziston tashmë një llogari me këtë email.",
+      "invalid_credentials": "Email ose fjalëkalim i pasaktë.",
+      "too_many_attempts": "Shumë përpjekje. Provoni përsëri pas 15 minutash.",
+      "invalid_google_token": "Hyrja me Google dështoi. Provoni përsëri.",
+      "google_not_configured": "Hyrja me Google nuk është ende e disponueshme.",
+      "email_not_verified": "Emaili juaj i Google nuk është verifikuar.",
+      "unauthorized": "Seanca juaj skadoi. Hyni përsëri.",
+      "network": "Nuk lidhet me serverin. Kontrolloni lidhjen.",
+      "unknown": "Diçka shkoi keq. Provoni përsëri."
+    },
+    "emailRequired": "Nevojitet një email i vlefshëm për të ruajtur të dhënat tuaja personale (të preferuara, faqeshënues, lista, cilësime). Pa të, mbeten vetëm në këtë pajisje."
   }
 }

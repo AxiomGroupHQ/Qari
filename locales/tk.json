@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Aýat {{surah}}:{{ayah}} · {{total}} sözüň {{position}}-nji sözi"
+  },
+  "account": {
+    "title": "Hasap",
+    "settingsDescription": "Maglumatlaryňyzy ätiýaçlandyrmak we sinhronlaşdyrmak üçin giriň",
+    "signInTitle": "Giriş",
+    "signUpTitle": "Hasap döret",
+    "benefit": "Halanýanlaryňyzy, bellikleriňizi, çalyş sanawlaryňyzy we sazlamalaryňyzy enjamlaryňyz arasynda sinhronlaşdyryň.",
+    "name": "Ady (hökman däl)",
+    "email": "E-poçta",
+    "password": "Parol",
+    "passwordHint": "Iň bolmanda 8 simwol.",
+    "signIn": "Giriş",
+    "signUp": "Hasap döret",
+    "or": "ýa-da",
+    "continueWithGoogle": "Google bilen dowam et",
+    "noAccount": "Hasabyňyz ýokmy? Dörediň",
+    "haveAccount": "Hasabyňyz barmy? Giriň",
+    "signedInAs": "Girdiňiz",
+    "syncInfo": "Halanýanlaryňyz, bellikleriňiz, çalyş sanawlaryňyz, saklanan zikirleriňiz, sazlamalaryňyz we ösüşiňiz awtomatiki sinhronlaşýar.",
+    "signOut": "Çyk",
+    "deleteAccount": "Hasaby poz",
+    "deleteTitle": "Hasap pozulsynmy?",
+    "deleteMessage": "Bu hasabyňyzy we ähli sinhronlaşdyrylan maglumatlary hemişelik pozýar. Bu enjamdaky maglumatlar galýar.",
+    "deleteConfirm": "Poz",
+    "errors": {
+      "invalid_email": "Dogry e-poçta salgysyny giriziň. Ol şahsy maglumatlary saklamak üçin gerek.",
+      "weak_password": "Parol iň bolmanda 8 simwoldan ybarat bolmaly.",
+      "email_taken": "Bu e-poçta bilen hasap eýýäm bar.",
+      "invalid_credentials": "E-poçta ýa-da parol nädogry.",
+      "too_many_attempts": "Gaty köp synanyşyk. 15 minutdan soň gaýtadan synanyşyň.",
+      "invalid_google_token": "Google bilen giriş şowsuz boldy. Gaýtadan synanyşyň.",
+      "google_not_configured": "Google bilen giriş entek elýeterli däl.",
+      "email_not_verified": "Google e-poçtaňyz tassyklanmady.",
+      "unauthorized": "Sessiýaňyz gutardy. Gaýtadan giriň.",
+      "network": "Serwere ýetip bolmady. Birikmäňizi barlaň.",
+      "unknown": "Nämedir bir zat ýalňyş boldy. Gaýtadan synanyşyň."
+    },
+    "emailRequired": "Şahsy maglumatlary (halanýanlar, bellikler, çalyş sanawlary, sazlamalar) saklamak üçin dogry e-poçta gerek. Ol bolmasa, diňe şu enjamda galýar."
   }
 }

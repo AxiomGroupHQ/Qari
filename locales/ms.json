@@ -743,5 +743,43 @@
   },
   "wordDetail": {
     "context": "Ayat {{surah}}:{{ayah}} · Perkataan {{position}} daripada {{total}}"
+  },
+  "account": {
+    "title": "Akaun",
+    "settingsDescription": "Log masuk untuk menyandarkan dan menyegerakkan data anda",
+    "signInTitle": "Log masuk",
+    "signUpTitle": "Cipta akaun",
+    "benefit": "Segerakkan kegemaran, penanda halaman, senarai main dan tetapan anda merentas peranti.",
+    "name": "Nama (pilihan)",
+    "email": "E-mel",
+    "password": "Kata laluan",
+    "passwordHint": "Sekurang-kurangnya 8 aksara.",
+    "signIn": "Log masuk",
+    "signUp": "Cipta akaun",
+    "or": "atau",
+    "continueWithGoogle": "Teruskan dengan Google",
+    "noAccount": "Belum ada akaun? Cipta satu",
+    "haveAccount": "Sudah ada akaun? Log masuk",
+    "signedInAs": "Telah log masuk",
+    "syncInfo": "Kegemaran, penanda halaman, senarai main, zikir tersimpan, tetapan dan kemajuan anda disegerakkan secara automatik.",
+    "signOut": "Log keluar",
+    "deleteAccount": "Padam akaun",
+    "deleteTitle": "Padam akaun?",
+    "deleteMessage": "Ini akan memadam akaun dan semua data yang disegerakkan secara kekal. Data pada peranti ini kekal.",
+    "deleteConfirm": "Padam",
+    "errors": {
+      "invalid_email": "Sila masukkan alamat e-mel yang sah. Ia diperlukan untuk menyimpan data peribadi anda.",
+      "weak_password": "Kata laluan mestilah sekurang-kurangnya 8 aksara.",
+      "email_taken": "Akaun dengan e-mel ini sudah wujud.",
+      "invalid_credentials": "E-mel atau kata laluan tidak betul.",
+      "too_many_attempts": "Terlalu banyak percubaan. Cuba lagi dalam 15 minit.",
+      "invalid_google_token": "Log masuk Google gagal. Sila cuba lagi.",
+      "google_not_configured": "Log masuk Google belum tersedia.",
+      "email_not_verified": "E-mel Google anda belum disahkan.",
+      "unauthorized": "Sesi anda telah tamat. Sila log masuk semula.",
+      "network": "Tidak dapat menghubungi pelayan. Semak sambungan anda.",
+      "unknown": "Sesuatu tidak kena. Sila cuba lagi."
+    },
+    "emailRequired": "E-mel yang sah diperlukan untuk menyimpan data peribadi anda (kegemaran, penanda halaman, senarai main, tetapan). Tanpanya, data kekal pada peranti ini sahaja."
   }
 }

@@ -750,5 +750,43 @@
   },
   "wordDetail": {
     "context": "Aleya {{surah}}:{{ayah}} · Palabra {{position}} de {{total}}"
+  },
+  "account": {
+    "title": "Cuenta",
+    "settingsDescription": "Inicia sesión para respaldar y sincronizar tus datos",
+    "signInTitle": "Iniciar sesión",
+    "signUpTitle": "Crear cuenta",
+    "benefit": "Sincroniza tus favoritos, marcadores, listas de reproducción y ajustes entre tus dispositivos.",
+    "name": "Nombre (opcional)",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "passwordHint": "Al menos 8 caracteres.",
+    "signIn": "Iniciar sesión",
+    "signUp": "Crear cuenta",
+    "or": "o",
+    "continueWithGoogle": "Continuar con Google",
+    "noAccount": "¿Aún no tienes cuenta? Crea una",
+    "haveAccount": "¿Ya tienes cuenta? Inicia sesión",
+    "signedInAs": "Sesión iniciada",
+    "syncInfo": "Tus favoritos, marcadores, listas, adhkar guardados, ajustes y progreso se sincronizan automáticamente.",
+    "signOut": "Cerrar sesión",
+    "deleteAccount": "Eliminar cuenta",
+    "deleteTitle": "¿Eliminar cuenta?",
+    "deleteMessage": "Esto elimina de forma permanente tu cuenta y todos los datos sincronizados. Los datos de este dispositivo se conservan.",
+    "deleteConfirm": "Eliminar",
+    "errors": {
+      "invalid_email": "Introduce un correo electrónico válido. Es necesario para guardar tus datos personales.",
+      "weak_password": "La contraseña debe tener al menos 8 caracteres.",
+      "email_taken": "Ya existe una cuenta con este correo.",
+      "invalid_credentials": "Correo o contraseña incorrectos.",
+      "too_many_attempts": "Demasiados intentos. Inténtalo de nuevo en 15 minutos.",
+      "invalid_google_token": "Error al iniciar sesión con Google. Inténtalo de nuevo.",
+      "google_not_configured": "El inicio de sesión con Google aún no está disponible.",
+      "email_not_verified": "Tu correo de Google no está verificado.",
+      "unauthorized": "Tu sesión ha caducado. Inicia sesión de nuevo.",
+      "network": "No se puede conectar con el servidor. Revisa tu conexión.",
+      "unknown": "Algo salió mal. Inténtalo de nuevo."
+    },
+    "emailRequired": "Se necesita un correo válido para guardar tus datos personales (favoritos, marcadores, listas, ajustes). Sin él, solo permanecen en este dispositivo."
   }
 }

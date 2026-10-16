@@ -743,5 +743,43 @@
   },
   "wordDetail": {
     "context": "Ayat {{surah}}:{{ayah}} · Kata {{position}} dari {{total}}"
+  },
+  "account": {
+    "title": "Akun",
+    "settingsDescription": "Masuk untuk mencadangkan dan menyinkronkan data Anda",
+    "signInTitle": "Masuk",
+    "signUpTitle": "Buat akun",
+    "benefit": "Sinkronkan favorit, penanda, daftar putar, dan pengaturan Anda di semua perangkat.",
+    "name": "Nama (opsional)",
+    "email": "Email",
+    "password": "Kata sandi",
+    "passwordHint": "Minimal 8 karakter.",
+    "signIn": "Masuk",
+    "signUp": "Buat akun",
+    "or": "atau",
+    "continueWithGoogle": "Lanjutkan dengan Google",
+    "noAccount": "Belum punya akun? Buat akun",
+    "haveAccount": "Sudah punya akun? Masuk",
+    "signedInAs": "Sudah masuk",
+    "syncInfo": "Favorit, penanda, daftar putar, dzikir tersimpan, pengaturan, dan kemajuan Anda disinkronkan otomatis.",
+    "signOut": "Keluar",
+    "deleteAccount": "Hapus akun",
+    "deleteTitle": "Hapus akun?",
+    "deleteMessage": "Ini akan menghapus akun dan semua data tersinkron secara permanen. Data di perangkat ini tetap ada.",
+    "deleteConfirm": "Hapus",
+    "errors": {
+      "invalid_email": "Masukkan alamat email yang valid. Ini diperlukan untuk menyimpan data pribadi Anda.",
+      "weak_password": "Kata sandi minimal 8 karakter.",
+      "email_taken": "Akun dengan email ini sudah ada.",
+      "invalid_credentials": "Email atau kata sandi salah.",
+      "too_many_attempts": "Terlalu banyak percobaan. Coba lagi dalam 15 menit.",
+      "invalid_google_token": "Masuk dengan Google gagal. Silakan coba lagi.",
+      "google_not_configured": "Masuk dengan Google belum tersedia.",
+      "email_not_verified": "Email Google Anda belum terverifikasi.",
+      "unauthorized": "Sesi Anda berakhir. Silakan masuk lagi.",
+      "network": "Tidak dapat terhubung ke server. Periksa koneksi Anda.",
+      "unknown": "Terjadi kesalahan. Silakan coba lagi."
+    },
+    "emailRequired": "Email yang valid diperlukan untuk menyimpan data pribadi Anda (favorit, penanda, daftar putar, pengaturan). Tanpa itu, data hanya tersimpan di perangkat ini."
   }
 }

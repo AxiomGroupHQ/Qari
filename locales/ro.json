@@ -755,5 +755,43 @@
   },
   "wordDetail": {
     "context": "Versetul {{surah}}:{{ayah}} · Cuvântul {{position}} din {{total}}"
+  },
+  "account": {
+    "title": "Cont",
+    "settingsDescription": "Autentifică-te pentru a salva și sincroniza datele",
+    "signInTitle": "Autentificare",
+    "signUpTitle": "Creează cont",
+    "benefit": "Sincronizează favoritele, marcajele, listele de redare și setările pe toate dispozitivele.",
+    "name": "Nume (opțional)",
+    "email": "E-mail",
+    "password": "Parolă",
+    "passwordHint": "Cel puțin 8 caractere.",
+    "signIn": "Autentificare",
+    "signUp": "Creează cont",
+    "or": "sau",
+    "continueWithGoogle": "Continuă cu Google",
+    "noAccount": "Nu ai cont? Creează unul",
+    "haveAccount": "Ai deja cont? Autentifică-te",
+    "signedInAs": "Autentificat",
+    "syncInfo": "Favoritele, marcajele, listele de redare, adhkar-urile salvate, setările și progresul se sincronizează automat.",
+    "signOut": "Deconectare",
+    "deleteAccount": "Șterge contul",
+    "deleteTitle": "Ștergi contul?",
+    "deleteMessage": "Contul și toate datele sincronizate vor fi șterse definitiv. Datele de pe acest dispozitiv rămân.",
+    "deleteConfirm": "Șterge",
+    "errors": {
+      "invalid_email": "Introdu o adresă de e-mail validă. Este necesară pentru a salva datele personale.",
+      "weak_password": "Parola trebuie să aibă cel puțin 8 caractere.",
+      "email_taken": "Există deja un cont cu acest e-mail.",
+      "invalid_credentials": "E-mail sau parolă incorectă.",
+      "too_many_attempts": "Prea multe încercări. Încearcă din nou peste 15 minute.",
+      "invalid_google_token": "Autentificarea cu Google a eșuat. Încearcă din nou.",
+      "google_not_configured": "Autentificarea cu Google nu este încă disponibilă.",
+      "email_not_verified": "E-mailul tău Google nu este verificat.",
+      "unauthorized": "Sesiunea a expirat. Autentifică-te din nou.",
+      "network": "Nu se poate contacta serverul. Verifică conexiunea.",
+      "unknown": "Ceva nu a mers bine. Încearcă din nou."
+    },
+    "emailRequired": "Este necesar un e-mail valid pentru a salva datele personale (favorite, marcaje, liste de redare, setări). Fără el, rămân doar pe acest dispozitiv."
   }
 }

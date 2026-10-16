@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "{{surah}}:{{ayah}}-oyat · {{total}} so'zdan {{position}}-so'z"
+  },
+  "account": {
+    "title": "Hisob",
+    "settingsDescription": "Ma’lumotlaringizni saqlash va sinxronlash uchun kiring",
+    "signInTitle": "Kirish",
+    "signUpTitle": "Hisob yaratish",
+    "benefit": "Sevimlilar, xatcho‘plar, pleylistlar va sozlamalaringizni qurilmalaringiz o‘rtasida sinxronlang.",
+    "name": "Ism (ixtiyoriy)",
+    "email": "E-pochta",
+    "password": "Parol",
+    "passwordHint": "Kamida 8 ta belgi.",
+    "signIn": "Kirish",
+    "signUp": "Hisob yaratish",
+    "or": "yoki",
+    "continueWithGoogle": "Google bilan davom etish",
+    "noAccount": "Hisobingiz yo‘qmi? Yarating",
+    "haveAccount": "Hisobingiz bormi? Kiring",
+    "signedInAs": "Kirilgan",
+    "syncInfo": "Sevimlilar, xatcho‘plar, pleylistlar, saqlangan zikrlar, sozlamalar va taraqqiyotingiz avtomatik sinxronlanadi.",
+    "signOut": "Chiqish",
+    "deleteAccount": "Hisobni o‘chirish",
+    "deleteTitle": "Hisob o‘chirilsinmi?",
+    "deleteMessage": "Bu hisobingiz va barcha sinxronlangan ma’lumotlarni butunlay o‘chiradi. Ushbu qurilmadagi ma’lumotlar qoladi.",
+    "deleteConfirm": "O‘chirish",
+    "errors": {
+      "invalid_email": "Iltimos, haqiqiy e-pochta manzilini kiriting. U shaxsiy ma’lumotlarni saqlash uchun kerak.",
+      "weak_password": "Parol kamida 8 ta belgidan iborat bo‘lishi kerak.",
+      "email_taken": "Bu e-pochta bilan hisob allaqachon mavjud.",
+      "invalid_credentials": "E-pochta yoki parol noto‘g‘ri.",
+      "too_many_attempts": "Juda ko‘p urinish. 15 daqiqadan keyin qayta urinib ko‘ring.",
+      "invalid_google_token": "Google orqali kirish amalga oshmadi. Qayta urinib ko‘ring.",
+      "google_not_configured": "Google orqali kirish hozircha mavjud emas.",
+      "email_not_verified": "Google e-pochtangiz tasdiqlanmagan.",
+      "unauthorized": "Seansingiz tugadi. Qayta kiring.",
+      "network": "Serverga ulanib bo‘lmadi. Internetni tekshiring.",
+      "unknown": "Xatolik yuz berdi. Qayta urinib ko‘ring."
+    },
+    "emailRequired": "Shaxsiy ma’lumotlarni (sevimlilar, xatcho‘plar, pleylistlar, sozlamalar) saqlash uchun haqiqiy e-pochta kerak. Aks holda ular faqat shu qurilmada qoladi."
   }
 }

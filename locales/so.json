@@ -749,5 +749,43 @@
   },
   "wordDetail": {
     "context": "Aayadda {{surah}}:{{ayah}} · Erayga {{position}} ee {{total}}"
+  },
+  "account": {
+    "title": "Akoon",
+    "settingsDescription": "Gal si aad u kaydiso oo u isku xidho xogtaada",
+    "signInTitle": "Gal",
+    "signUpTitle": "Samee akoon",
+    "benefit": "La mid ahaysii kuwa aad jeceshahay, calaamadaha, liisaska ciyaarta iyo dejinta qalab kasta.",
+    "name": "Magac (ikhtiyaari)",
+    "email": "Iimayl",
+    "password": "Erayga sirta ah",
+    "passwordHint": "Ugu yaraan 8 xaraf.",
+    "signIn": "Gal",
+    "signUp": "Samee akoon",
+    "or": "ama",
+    "continueWithGoogle": "Ku sii wad Google",
+    "noAccount": "Akoon ma haysatid? Samee mid",
+    "haveAccount": "Akoon horey ma u haysatay? Gal",
+    "signedInAs": "Waad gashay",
+    "syncInfo": "Kuwa aad jeceshahay, calaamadaha, liisaska ciyaarta, adhkaarta la keydiyay, dejinta iyo horumarkaaga si toos ah ayay isku waafaqaan.",
+    "signOut": "Ka bax",
+    "deleteAccount": "Tirtir akoonka",
+    "deleteTitle": "Akoonka ma tirtirnaa?",
+    "deleteMessage": "Tani waxay si joogto ah u tirtirtaa akoonkaaga iyo dhammaan xogta la isku waafajiyay. Xogta qalabkan jirta way harsanaysaa.",
+    "deleteConfirm": "Tirtir",
+    "errors": {
+      "invalid_email": "Fadlan geli cinwaan iimayl sax ah. Waxaa loo baahan yahay in lagu keydiyo xogtaada gaarka ah.",
+      "weak_password": "Erayga sirta ahi waa inuu lahaadaa ugu yaraan 8 xaraf.",
+      "email_taken": "Akoon leh iimaylkan horey ayuu u jiray.",
+      "invalid_credentials": "Iimaylka ama erayga sirta ah waa khalad.",
+      "too_many_attempts": "Isku daygo aad u badan. Mar kale isku day 15 daqiiqo kadib.",
+      "invalid_google_token": "Gelitaanka Google wuu fashilmay. Fadlan mar kale isku day.",
+      "google_not_configured": "Gelitaanka Google weli ma diyaarna.",
+      "email_not_verified": "Iimaylkaaga Google lama xaqiijin.",
+      "unauthorized": "Fadhigaagii wuu dhammaaday. Fadlan mar kale gal.",
+      "network": "Server-ka lagama gaari karo. Hubi xiriirkaaga.",
+      "unknown": "Wax qalad ah ayaa dhacay. Fadlan mar kale isku day."
+    },
+    "emailRequired": "Iimayl sax ah ayaa loo baahan yahay si loo keydiyo xogtaada gaarka ah (kuwa aad jeceshahay, calaamadaha, liisaska ciyaarta, dejinta). Haddii kale waxay ku hadhi doontaa qalabkan oo keliya."
   }
 }

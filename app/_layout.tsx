@@ -39,6 +39,8 @@ import {
 } from 'react-native-reanimated';
 import {preloadTajweedData} from '@/utils/tajweedLoader';
 import {appInitializer} from '@/services/AppInitializer';
+import {useAuthStore} from '@/store/authStore';
+import {startSync} from '@/services/sync/SyncService';
 import {NetworkStatusMonitor} from '@/components/NetworkStatusMonitor';
 import {useNetworkMonitor} from '@/hooks/useNetworkMonitor';
 import {PostHogProvider, usePostHog} from 'posthog-react-native';
@@ -241,6 +243,8 @@ function RootLayout() {
         // Initialize all SQLite services, adhkar, playlists, mushaf, fonts, stores, etc.
         // This blocks splash screen so everything is ready when the user sees the app
         await appInitializer.initialize();
+        // Restore the account session in the background, then start syncing (never blocks startup).
+        void useAuthStore.getState().init().then(startSync);
         if (__DEV__) console.log('[App] AppInitializer complete');
 
         // PRE-WARM: Initialize stores BEFORE first play to prevent cold start lag
