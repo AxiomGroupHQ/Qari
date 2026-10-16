@@ -37,6 +37,7 @@ import {MushafRepeatOptionsSheet} from './MushafRepeatOptionsSheet';
 import {FollowAlongSheet} from './FollowAlongSheet';
 import {WordDetailSheet} from './WordDetailSheet';
 import {HomeCardOptionsSheet} from './HomeCardOptionsSheet';
+import {HomeRepetitionSheet} from './HomeRepetitionSheet';
 
 // Register all sheets
 registerSheet('surah-options', SurahOptionsSheet);
@@ -70,6 +71,7 @@ registerSheet('mushaf-repeat-options', MushafRepeatOptionsSheet);
 registerSheet('follow-along', FollowAlongSheet);
 registerSheet('word-detail', WordDetailSheet);
 registerSheet('home-card-options', HomeCardOptionsSheet);
+registerSheet('home-repetition', HomeRepetitionSheet);
 
 // Type definitions for payloads
 declare module 'react-native-actions-sheet' {
@@ -152,6 +154,12 @@ declare module 'react-native-actions-sheet' {
         remainingTime: number | null;
         onTimerChange: (minutes: number) => void;
         onTurnOffTimer: () => void;
+      };
+    }>;
+    'home-repetition': SheetDefinition<{
+      payload: {
+        /** Verse-repeat count; 0 repeats forever. */
+        verseRepeat: number;
       };
     }>;
     'mushaf-layout': SheetDefinition<{

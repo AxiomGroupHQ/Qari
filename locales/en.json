@@ -414,6 +414,31 @@
     "seeMore": "See More",
     "yourFavorites": "Your Favorites"
   },
+  "homeFeatures": {
+    "ayahRange": "Ayah range",
+    "chooseSurah": "Choose a Surah",
+    "continueListening": "Continue listening",
+    "duration1h": "1 hour",
+    "duration30m": "30 minutes",
+    "duration3h": "3 hours",
+    "duration5h": "5 hours",
+    "duration8h": "8 hours",
+    "khatma": "Khatma",
+    "khatmaActiveSubtitle": "{{done}} of 114 surahs completed",
+    "khatmaCompletedSubtitle": "All 114 surahs completed",
+    "khatmaProgressTitle": "Khatma Progress",
+    "khatmaStartSubtitle": "Start Khatma and track your progress",
+    "repetition": "Repetition",
+    "repetitionSubtitle": "Choose a Surah and ayah range, then repeat it with synced timing.",
+    "repetitionTitle": "Repeat any ayah range",
+    "selectDuration": "Select duration",
+    "selectReciter": "Select reciter",
+    "startNewKhatma": "Start new Khatma",
+    "startRepetition": "Start repetition",
+    "timedListening": "Timed Listening",
+    "timerActiveNote": "Playback pauses when the timer ends. Tap the selected duration again to turn it off.",
+    "unlimited": "Unlimited"
+  },
   "screens": {
     "translationsContent": {
       "active": "Active",
