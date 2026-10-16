@@ -6,6 +6,7 @@
  * Queue management is handled by playerStore.
  */
 
+import {whenClipIdle} from './clipGate';
 import {setAudioModeAsync, AudioPlayer, AudioSource} from 'expo-audio';
 
 type PlaybackState =
@@ -209,6 +210,8 @@ class ExpoAudioService {
     }
 
     try {
+      // Never start the recitation underneath an intro/outro clip.
+      await whenClipIdle();
       await this.player.play();
       this.playbackState = 'playing';
       this.notifyListeners();

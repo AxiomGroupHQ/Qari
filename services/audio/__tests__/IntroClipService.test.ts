@@ -56,7 +56,7 @@ describe('IntroClipService', () => {
 
   it('plays the bundled English clip for English and resolves true', async () => {
     (createAudioPlayer as jest.Mock).mockReturnValue(fakePlayer(true));
-    await expect(introClipService.play('start')).resolves.toBe(true);
+    await expect(introClipService.play('start')).resolves.toBe('completed');
     expect(createAudioPlayer).toHaveBeenCalledWith(1);
   });
 
@@ -76,7 +76,7 @@ describe('IntroClipService', () => {
         throw new Error('network');
       })
       .mockReturnValueOnce(fakePlayer(true));
-    await expect(introClipService.play('start')).resolves.toBe(true);
+    await expect(introClipService.play('start')).resolves.toBe('completed');
     expect(createAudioPlayer).toHaveBeenLastCalledWith(1);
   });
 
@@ -84,6 +84,30 @@ describe('IntroClipService', () => {
     (createAudioPlayer as jest.Mock).mockReturnValue(fakePlayer(false));
     const p = introClipService.play('start');
     introClipService.stop();
-    await expect(p).resolves.toBe(false);
+    await expect(p).resolves.toBe('cancelled');
+  });
+
+  it('whenIdle waits for a running clip, so recitation cannot overlap', async () => {
+    (createAudioPlayer as jest.Mock).mockReturnValue(fakePlayer(true));
+    let idle = false;
+    const p = introClipService.play('start');
+    const w = introClipService.whenIdle().then(() => {
+      idle = true;
+    });
+    expect(idle).toBe(false);
+    await p;
+    await w;
+    expect(idle).toBe(true);
+    expect(introClipService.isPlaying()).toBe(false);
+  });
+
+  it('a new clip cancels the previous one', async () => {
+    (createAudioPlayer as jest.Mock)
+      .mockReturnValueOnce(fakePlayer(false))
+      .mockReturnValueOnce(fakePlayer(true));
+    const first = introClipService.play('start');
+    const second = introClipService.play('start');
+    await expect(first).resolves.toBe('cancelled');
+    await expect(second).resolves.toBe('completed');
   });
 });

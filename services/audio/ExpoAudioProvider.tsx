@@ -373,7 +373,9 @@ export function ExpoAudioProvider({children}: ExpoAudioProviderProps) {
         !completedTrack.isUserUpload &&
         shouldPlayEndClip(latestStatusRef.current.duration)
       ) {
-        await introClipService.play('end');
+        const clip = await introClipService.play('end');
+        // Paused or skipped during the outro: do not also advance from here.
+        if (clip === 'cancelled') return;
       }
 
       if (repeatMode === 'track') {
