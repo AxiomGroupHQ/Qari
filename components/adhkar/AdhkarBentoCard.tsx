@@ -18,15 +18,9 @@ interface AdhkarBentoCardProps {
   height: number;
 }
 
-// Label typography constants. Also used below to size the image panel so
-// a caller-supplied `height` is treated as the card's TOTAL footprint
-// (image + label), matching the spacing the card had before the title
-// was moved outside. That keeps sections vertically consistent with
-// their neighbors.
+// The category name sits on the tile, over the artwork (top-left).
 const LABEL_LINE_HEIGHT = moderateScale(16);
-const LABEL_MARGIN_TOP = moderateScale(4);
 const LABEL_FONT_SIZE = moderateScale(13);
-const LABEL_OVERHEAD = LABEL_LINE_HEIGHT + LABEL_MARGIN_TOP;
 
 export const AdhkarBentoCard = React.memo(function AdhkarBentoCard({
   category,
@@ -44,30 +38,34 @@ export const AdhkarBentoCard = React.memo(function AdhkarBentoCard({
     baseColor.alpha(0.25).toString(),
   ] as const;
 
-  const imageHeight = Math.max(0, height - LABEL_OVERHEAD);
-  const styles = createStyles(theme, width, imageHeight);
+  const styles = createStyles(theme, width, height);
 
   const imageSet = ADHKAR_CATEGORY_IMAGES[category.id];
-
-  const cardContent = imageSet ? (
-    <Image
-      source={isDarkMode ? imageSet.dark : imageSet.light}
-      style={StyleSheet.absoluteFill}
-      contentFit="cover"
-    />
-  ) : (
-    <LinearGradient
-      colors={gradientColors}
-      start={{x: 0, y: 0}}
-      end={{x: 1, y: 1}}
-      style={StyleSheet.absoluteFill}
-    />
-  );
 
   const label = (
     <Text style={styles.title} numberOfLines={2}>
       {category.title}
     </Text>
+  );
+
+  const cardContent = (
+    <>
+      {imageSet ? (
+        <Image
+          source={isDarkMode ? imageSet.dark : imageSet.light}
+          style={StyleSheet.absoluteFill}
+          contentFit="cover"
+        />
+      ) : (
+        <LinearGradient
+          colors={gradientColors}
+          start={{x: 0, y: 0}}
+          end={{x: 1, y: 1}}
+          style={StyleSheet.absoluteFill}
+        />
+      )}
+      {label}
+    </>
   );
 
   const linkProps = {
@@ -90,7 +88,6 @@ export const AdhkarBentoCard = React.memo(function AdhkarBentoCard({
               {cardContent}
             </GlassView>
           </Link.AppleZoom>
-          {label}
         </Pressable>
       </Link>
     );
@@ -100,7 +97,6 @@ export const AdhkarBentoCard = React.memo(function AdhkarBentoCard({
     <Link {...linkProps}>
       <Pressable style={styles.wrapper}>
         <View style={styles.container}>{cardContent}</View>
-        {label}
       </Pressable>
     </Link>
   );
@@ -128,13 +124,22 @@ const createStyles = (
       overflow: 'hidden' as const,
     },
     title: {
+      position: 'absolute',
+      top: moderateScale(8),
+      start: moderateScale(10),
+      end: moderateScale(10),
       fontSize: LABEL_FONT_SIZE,
       fontFamily: 'Manrope-SemiBold',
-      color: theme.colors.text,
+      color: theme.isDarkMode ? '#ffffff' : '#1a1a2e',
       lineHeight: LABEL_LINE_HEIGHT,
       textAlign: 'auto',
-      marginTop: LABEL_MARGIN_TOP,
-      paddingHorizontal: moderateScale(2),
+      ...(theme.isDarkMode
+        ? {
+            textShadowColor: 'rgba(0,0,0,0.55)',
+            textShadowOffset: {width: 0, height: 1},
+            textShadowRadius: 3,
+          }
+        : {}),
     },
   });
 
