@@ -22,6 +22,9 @@ import {PlaylistCard} from '@/components/cards/PlaylistCard';
 import {UserPlaylist} from '@/services/playlist/PlaylistService';
 import {Theme} from '@/utils/themeUtils';
 import {HomeTop} from '@/components/home/HomeTop';
+import {KhatmaCard} from '@/components/home/KhatmaCard';
+import {RepetitionCard} from '@/components/home/RepetitionCard';
+import {TimedListeningCard} from '@/components/home/TimedListeningCard';
 import {useCollapsibleTabBar} from '@/hooks/useCollapsibleTabBar';
 import {
   getTajweedReciters,
@@ -55,6 +58,9 @@ import {getReciterByIdSync} from '@/services/dataService';
  * `config/branding.js` to reorder, hide, or omit rows entirely.
  */
 const DEFAULT_HOME_ROW_CONFIG: readonly HomeRow[] = [
+  {id: 'khatma', enabled: true},
+  {id: 'repetition', enabled: true},
+  {id: 'timed-listening', enabled: true},
   {id: 'new-to-quran', enabled: true},
   {id: 'favorites', enabled: true},
   {id: 'featured', enabled: true},
@@ -553,6 +559,12 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
   const rowNodes: Record<HomeRowId, React.ReactNode> = {
     // Replaced by the Continue Listening hero card in `HomeTop`.
     'continue-listening': null,
+
+    // Feature cards (real data: khatmah auto-tracking, mushaf repeat
+    // playback, player sleep timer). Always render.
+    khatma: <KhatmaCard />,
+    repetition: <RepetitionCard />,
+    'timed-listening': <TimedListeningCard />,
 
     'new-to-quran':
       showNewToQuran && beginnerFriendlyReciters.length > 0 ? (
