@@ -19,6 +19,7 @@ import {
   useDownloads,
 } from '@/services/player/store/downloadSelectors';
 import {getReciterById, getSurahById} from '@/services/dataService';
+import {reciterForDownload} from '@/services/player/utils/reciterForDownload';
 import {Reciter} from '@/data/reciterData';
 import {Surah} from '@/data/surahData';
 import {usePlayerActions} from '@/hooks/usePlayerActions';
@@ -259,7 +260,7 @@ export default function DownloadsScreen() {
           ]);
           return {
             download,
-            reciter: reciter || null,
+            reciter: reciterForDownload(download, reciter),
             surah: surah || null,
           };
         }),
