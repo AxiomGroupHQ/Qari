@@ -36,13 +36,13 @@ module.exports = {
    * override this to reorder, hide, or omit rows entirely.
    */
   homeRowConfig: [
-    {id: 'khatma', enabled: true},
-    {id: 'repetition', enabled: true},
-    {id: 'timed-listening', enabled: true},
     {id: 'new-to-quran', enabled: true},
     {id: 'favorites', enabled: true},
+    {id: 'khatma', enabled: true},
     {id: 'featured', enabled: true},
+    {id: 'repetition', enabled: true},
     {id: 'adhkar', enabled: true},
+    {id: 'timed-listening', enabled: true},
     {id: 'follow-along', enabled: true},
     {id: 'playlists', enabled: true},
     {id: 'exclusives', enabled: true},
