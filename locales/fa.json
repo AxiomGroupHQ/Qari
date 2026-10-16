@@ -27,7 +27,11 @@
     "showInstruction": "نمایش راهنما",
     "tapBookmarkHint": "روی نماد نشانک در هر ذکر ضربه بزنید تا اینجا ذخیره شود",
     "tapToCount": "برای شمارش ضربه بزنید",
-    "tapToIncrement": "برای افزایش شمارش ضربه بزنید"
+    "tapToIncrement": "برای افزایش شمارش ضربه بزنید",
+    "reciteTimes": "{{n}}× تکرار کنید",
+    "playAllStop": "توقف",
+    "playAllPrevious": "قبلی",
+    "playAllNext": "بعدی"
   },
   "app": {
     "errorInitializingPlayer": "خطا در راه‌اندازی پخش‌کننده: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "دانلودشده • {{count}} سوره"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "متأسفیم.. خطایی رخ داد"
+    "sorryThereWasAnError": "متأسفیم.. خطایی رخ داد",
+    "tryAgain": "تلاش دوباره"
   },
   "hero": {
     "browseAllReciters": {

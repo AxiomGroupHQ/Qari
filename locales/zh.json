@@ -26,7 +26,11 @@
     "showInstruction": "显示说明",
     "tapBookmarkHint": "点按任意齐克尔上的书签图标即可保存到这里",
     "tapToCount": "点按计数",
-    "tapToIncrement": "点按增加计数"
+    "tapToIncrement": "点按增加计数",
+    "reciteTimes": "诵读 {{n}} 次",
+    "playAllStop": "停止",
+    "playAllPrevious": "上一个",
+    "playAllNext": "下一个"
   },
   "app": {
     "errorInitializingPlayer": "播放器初始化失败：{{message}}",
@@ -250,7 +254,8 @@
     "subtitle_other": "已下载 · {{count}} 章"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "抱歉，发生了错误"
+    "sorryThereWasAnError": "抱歉，发生了错误",
+    "tryAgain": "重试"
   },
   "hero": {
     "browseAllReciters": {

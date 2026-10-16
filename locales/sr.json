@@ -28,7 +28,11 @@
     "showInstruction": "Прикажи упутство",
     "tapBookmarkHint": "Додирните иконицу обележивача на било ком зикру да бисте га сачували овде",
     "tapToCount": "Додирните за бројање",
-    "tapToIncrement": "Додирните за повећање броја"
+    "tapToIncrement": "Додирните за повећање броја",
+    "reciteTimes": "Поновите {{n}}×",
+    "playAllStop": "Заустави",
+    "playAllPrevious": "Претходно",
+    "playAllNext": "Следеће"
   },
   "app": {
     "errorInitializingPlayer": "Грешка при покретању плејера: {{message}}",
@@ -255,7 +259,8 @@
     "subtitle_other": "Преузето • сура: {{count}}"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Извините.. дошло је до грешке"
+    "sorryThereWasAnError": "Извините.. дошло је до грешке",
+    "tryAgain": "Покушај поново"
   },
   "hero": {
     "browseAllReciters": {

@@ -26,7 +26,11 @@
     "showInstruction": "Tunjukkan arahan",
     "tapBookmarkHint": "Ketik ikon penanda buku pada mana-mana zikir untuk menyimpannya di sini",
     "tapToCount": "Ketik untuk mengira",
-    "tapToIncrement": "Ketik untuk menambah bilangan"
+    "tapToIncrement": "Ketik untuk menambah bilangan",
+    "reciteTimes": "Baca {{n}}×",
+    "playAllStop": "Henti",
+    "playAllPrevious": "Sebelumnya",
+    "playAllNext": "Seterusnya"
   },
   "app": {
     "errorInitializingPlayer": "Ralat memulakan pemain: {{message}}",
@@ -247,7 +251,8 @@
     "subtitle_other": "Dimuat turun • {{count}} surah"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Maaf.. berlaku ralat"
+    "sorryThereWasAnError": "Maaf.. berlaku ralat",
+    "tryAgain": "Cuba lagi"
   },
   "hero": {
     "browseAllReciters": {

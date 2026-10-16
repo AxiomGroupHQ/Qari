@@ -26,7 +26,11 @@
     "showInstruction": "Fi ìtọ́sọ́nà hàn",
     "tapBookmarkHint": "Tẹ àmì ìwé-àmì lórí dhikr kankan láti fi pamọ́ síbí",
     "tapToCount": "Tẹ láti ka",
-    "tapToIncrement": "Tẹ láti fi kún kíkà"
+    "tapToIncrement": "Tẹ láti fi kún kíkà",
+    "reciteTimes": "Ka {{n}}×",
+    "playAllStop": "Dúró",
+    "playAllPrevious": "Ti tẹ́lẹ̀",
+    "playAllNext": "Tó kàn"
   },
   "app": {
     "errorInitializingPlayer": "Àṣìṣe nígbà bíbẹ̀rẹ̀ ẹ̀rọ ìṣeré: {{message}}",
@@ -250,7 +254,8 @@
     "subtitle_other": "A ti gbà sílẹ̀ • súrà {{count}}"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Má bínú, àṣìṣe kan ṣẹlẹ̀"
+    "sorryThereWasAnError": "Má bínú, àṣìṣe kan ṣẹlẹ̀",
+    "tryAgain": "Gbìyànjú lẹ́ẹ̀kan sí i"
   },
   "hero": {
     "browseAllReciters": {

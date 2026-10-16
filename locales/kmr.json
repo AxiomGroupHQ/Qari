@@ -27,7 +27,11 @@
     "showInstruction": "Rêwerzê nîşan bide",
     "tapBookmarkHint": "Ji bo tomarkirina li vir, li ser îkona nîşankirinê ya her zikirekê bitikîne",
     "tapToCount": "Ji bo jimartinê bitikîne",
-    "tapToIncrement": "Ji bo zêdekirina jimarê bitikîne"
+    "tapToIncrement": "Ji bo zêdekirina jimarê bitikîne",
+    "reciteTimes": "{{n}}× bixwîne",
+    "playAllStop": "Bisekinîne",
+    "playAllPrevious": "Berê",
+    "playAllNext": "Piştî"
   },
   "app": {
     "errorInitializingPlayer": "Di destpêkirina lêkerê de çewtî: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Hatiye daxistin • {{count}} sûre"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Bibore, çewtiyek çêbû"
+    "sorryThereWasAnError": "Bibore, çewtiyek çêbû",
+    "tryAgain": "Dîsa biceribîne"
   },
   "hero": {
     "browseAllReciters": {

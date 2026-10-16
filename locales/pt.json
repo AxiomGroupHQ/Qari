@@ -28,7 +28,11 @@
     "showInstruction": "Mostrar instruções",
     "tapBookmarkHint": "Toque no ícone de marcador em qualquer dhikr para guardá-lo aqui",
     "tapToCount": "Toque para contar",
-    "tapToIncrement": "Toque para aumentar a contagem"
+    "tapToIncrement": "Toque para aumentar a contagem",
+    "reciteTimes": "Recitar {{n}}×",
+    "playAllStop": "Parar",
+    "playAllPrevious": "Anterior",
+    "playAllNext": "Seguinte"
   },
   "app": {
     "errorInitializingPlayer": "Erro ao inicializar o leitor: {{message}}",
@@ -255,7 +259,8 @@
     "subtitle_other": "Transferidas • {{count}} suras"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Ocorreu um erro"
+    "sorryThereWasAnError": "Ocorreu um erro",
+    "tryAgain": "Tentar novamente"
   },
   "hero": {
     "browseAllReciters": {

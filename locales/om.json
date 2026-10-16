@@ -28,7 +28,11 @@
     "showInstruction": "Qajeelfama agarsiisi",
     "tapBookmarkHint": "Asitti olkaa'uuf mallattoo bookmark zikrii kamiyyuu irratti tuqi",
     "tapToCount": "Lakkaa'uuf tuqi",
-    "tapToIncrement": "Lakkoofsa dabaluuf tuqi"
+    "tapToIncrement": "Lakkoofsa dabaluuf tuqi",
+    "reciteTimes": "Altokko {{n}}× dubbisi",
+    "playAllStop": "Dhaabi",
+    "playAllPrevious": "Kan darbe",
+    "playAllNext": "Kan itti aanu"
   },
   "app": {
     "errorInitializingPlayer": "Dogoggora taphachiisaa jalqabuu: {{message}}",
@@ -255,7 +259,8 @@
     "subtitle_other": "Buufatame • suuraalee {{count}}"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Dhiifama.. dogoggorri uumameera"
+    "sorryThereWasAnError": "Dhiifama.. dogoggorri uumameera",
+    "tryAgain": "Irra deebi'i yaali"
   },
   "hero": {
     "browseAllReciters": {

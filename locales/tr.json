@@ -27,7 +27,11 @@
     "showInstruction": "Talimatı göster",
     "tapBookmarkHint": "Buraya kaydetmek için herhangi bir zikirdeki yer imi simgesine dokunun",
     "tapToCount": "Saymak için dokunun",
-    "tapToIncrement": "Sayıyı artırmak için dokunun"
+    "tapToIncrement": "Sayıyı artırmak için dokunun",
+    "reciteTimes": "{{n}}× okuyun",
+    "playAllStop": "Durdur",
+    "playAllPrevious": "Önceki",
+    "playAllNext": "Sonraki"
   },
   "app": {
     "errorInitializingPlayer": "Oynatıcı başlatılırken hata: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "İndirildi • {{count}} sure"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Üzgünüz.. bir hata oluştu"
+    "sorryThereWasAnError": "Üzgünüz.. bir hata oluştu",
+    "tryAgain": "Tekrar dene"
   },
   "hero": {
     "browseAllReciters": {

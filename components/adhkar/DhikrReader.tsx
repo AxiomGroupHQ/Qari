@@ -19,6 +19,7 @@ import {AdhkarAudioControls} from './AdhkarAudioControls';
 import {useAdhkarSettingsStore} from '@/store/adhkarSettingsStore';
 import {Dhikr} from '@/types/adhkar';
 import {t} from '@/i18n';
+import {buildShareText} from '@/utils/adhkarText';
 
 // Enable LayoutAnimation for Android
 if (
@@ -82,15 +83,13 @@ export const DhikrReader: React.FC<DhikrReaderProps> = ({
   }, []);
 
   const handleShare = useCallback(async () => {
-    const content = [
-      dhikr.arabic,
-      dhikr.translation ? `\n\n${dhikr.translation}` : '',
-      dhikr.transliteration ? `\n\n${dhikr.transliteration}` : '',
-      dhikr.instruction ? `\n\n${dhikr.instruction}` : '',
-    ].join('');
+    const content = buildShareText(dhikr, {
+      translation: showTranslation,
+      transliteration: showTransliteration,
+    });
 
     await shareMessage(content);
-  }, [dhikr]);
+  }, [dhikr, showTranslation, showTransliteration]);
 
   return (
     <View style={styles.container}>
@@ -103,7 +102,7 @@ export const DhikrReader: React.FC<DhikrReaderProps> = ({
           <View style={styles.repeatBadgeContainer}>
             <View style={styles.repeatBadge}>
               <Text style={styles.repeatBadgeText}>
-                Recite {dhikr.repeatCount} times
+                {t('adhkarUi.reciteTimes', {n: dhikr.repeatCount})}
               </Text>
             </View>
           </View>
@@ -115,20 +114,6 @@ export const DhikrReader: React.FC<DhikrReaderProps> = ({
             <Text style={styles.arabicText}>{dhikr.arabic}</Text>
           </View>
         ) : null}
-
-        {/* Audio Controls with action buttons - lazy loaded for performance */}
-        {showControls && (
-          <View style={styles.audioSection}>
-            <AdhkarAudioControls
-              audioFile={dhikr.audioFile}
-              onCopy={handleOpenCopyOptions}
-              onBookmark={onSaveToggle}
-              onShare={handleShare}
-              onSettings={handleOpenSettings}
-              isBookmarked={isSaved}
-            />
-          </View>
-        )}
 
         {/* Divider */}
         {showTranslation && dhikr.translation ? (
@@ -199,6 +184,19 @@ export const DhikrReader: React.FC<DhikrReaderProps> = ({
         {/* Bottom padding */}
         <View style={styles.bottomSpacer} />
       </ScrollView>
+      {/* Controls stay pinned below the scrolling text */}
+      {showControls && (
+        <View style={styles.audioSection}>
+          <AdhkarAudioControls
+            audioFile={dhikr.audioFile}
+            onCopy={handleOpenCopyOptions}
+            onBookmark={onSaveToggle}
+            onShare={handleShare}
+            onSettings={handleOpenSettings}
+            isBookmarked={isSaved}
+          />
+        </View>
+      )}
     </View>
   );
 };
@@ -258,8 +256,9 @@ const createStyles = (theme: Theme, fontSizes?: FontSizes) =>
       paddingHorizontal: moderateScale(8),
     },
     audioSection: {
-      marginTop: moderateScale(4),
-      marginBottom: moderateScale(8),
+      paddingHorizontal: moderateScale(16),
+      paddingTop: moderateScale(4),
+      paddingBottom: moderateScale(8),
     },
     divider: {
       height: 1,

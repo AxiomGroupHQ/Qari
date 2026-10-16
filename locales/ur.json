@@ -27,7 +27,11 @@
     "showInstruction": "ہدایات دکھائیں",
     "tapBookmarkHint": "کسی بھی ذکر پر بُک مارک آئیکن کو تھپتھپائیں تاکہ وہ یہاں محفوظ ہو جائے",
     "tapToCount": "گنتی کے لیے تھپتھپائیں",
-    "tapToIncrement": "گنتی بڑھانے کے لیے تھپتھپائیں"
+    "tapToIncrement": "گنتی بڑھانے کے لیے تھپتھپائیں",
+    "reciteTimes": "{{n}}× پڑھیں",
+    "playAllStop": "روکیں",
+    "playAllPrevious": "پچھلا",
+    "playAllNext": "اگلا"
   },
   "app": {
     "errorInitializingPlayer": "پلیئر شروع کرنے میں خرابی: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "ڈاؤن لوڈ شدہ • {{count}} سورتیں"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "معذرت.. ایک خرابی پیش آئی"
+    "sorryThereWasAnError": "معذرت.. ایک خرابی پیش آئی",
+    "tryAgain": "دوبارہ کوشش کریں"
   },
   "hero": {
     "browseAllReciters": {

@@ -27,7 +27,11 @@
     "showInstruction": "Көрсөтмөнү көрсөтүү",
     "tapBookmarkHint": "Бул жерге сактоо үчүн каалаган зикирдеги бетбелги сөлөкөтүн басыңыз",
     "tapToCount": "Санаш үчүн басыңыз",
-    "tapToIncrement": "Санды көбөйтүү үчүн басыңыз"
+    "tapToIncrement": "Санды көбөйтүү үчүн басыңыз",
+    "reciteTimes": "{{n}}× окуңуз",
+    "playAllStop": "Токтотуу",
+    "playAllPrevious": "Мурунку",
+    "playAllNext": "Кийинки"
   },
   "app": {
     "errorInitializingPlayer": "Ойноткучту иштетүүдө ката: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Жүктөлгөн • {{count}} сүрө"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Кечиресиз, ката кетти"
+    "sorryThereWasAnError": "Кечиресиз, ката кетти",
+    "tryAgain": "Кайра аракет кылуу"
   },
   "hero": {
     "browseAllReciters": {

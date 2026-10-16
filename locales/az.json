@@ -27,7 +27,11 @@
     "showInstruction": "Təlimatı göstər",
     "tapBookmarkHint": "Burada saxlamaq üçün istənilən zikrdə əlfəcin ikonasına toxunun",
     "tapToCount": "Saymaq üçün toxunun",
-    "tapToIncrement": "Sayı artırmaq üçün toxunun"
+    "tapToIncrement": "Sayı artırmaq üçün toxunun",
+    "reciteTimes": "{{n}}× oxuyun",
+    "playAllStop": "Dayandır",
+    "playAllPrevious": "Əvvəlki",
+    "playAllNext": "Növbəti"
   },
   "app": {
     "errorInitializingPlayer": "Pleyer başladılarkən xəta: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Endirilib • {{count}} surə"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Təəssüf, xəta baş verdi"
+    "sorryThereWasAnError": "Təəssüf, xəta baş verdi",
+    "tryAgain": "Yenidən cəhd edin"
   },
   "hero": {
     "browseAllReciters": {

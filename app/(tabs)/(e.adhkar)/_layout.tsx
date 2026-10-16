@@ -1,4 +1,5 @@
 import {Stack} from 'expo-router';
+import ErrorBoundary from '@/components/ErrorBoundary';
 import {AdhkarAudioProvider} from '@/components/adhkar/AdhkarAudioProvider';
 import {useTheme} from '@/hooks/useTheme';
 import {USE_GLASS} from '@/hooks/useGlassProps';
@@ -8,36 +9,38 @@ export default function AdhkarLayout() {
   const {theme} = useTheme();
 
   return (
-    <AdhkarAudioProvider>
-      <Stack
-        screenOptions={{
-          headerShown: true,
-          freezeOnBlur: true,
-          headerTintColor: theme.colors.text,
-          ...(USE_GLASS
-            ? {
-                headerTransparent: true,
-                headerStyle: {backgroundColor: 'transparent'},
-              }
-            : {
-                headerStyle: {backgroundColor: theme.colors.background},
-              }),
-          headerTitleStyle: {
-            fontFamily: 'Manrope-SemiBold',
-            color: theme.colors.text,
-          },
-          headerShadowVisible: false,
-          headerBackButtonDisplayMode: 'minimal',
-        }}>
-        <Stack.Screen
-          name="index"
-          options={{title: t('recitersView.adhkar')}}
-        />
-        <Stack.Screen name="[superId]/index" />
-        <Stack.Screen name="[superId]/[dhikrId]" />
-        <Stack.Screen name="saved/index" />
-        <Stack.Screen name="saved/[dhikrId]" />
-      </Stack>
-    </AdhkarAudioProvider>
+    <ErrorBoundary>
+      <AdhkarAudioProvider>
+        <Stack
+          screenOptions={{
+            headerShown: true,
+            freezeOnBlur: true,
+            headerTintColor: theme.colors.text,
+            ...(USE_GLASS
+              ? {
+                  headerTransparent: true,
+                  headerStyle: {backgroundColor: 'transparent'},
+                }
+              : {
+                  headerStyle: {backgroundColor: theme.colors.background},
+                }),
+            headerTitleStyle: {
+              fontFamily: 'Manrope-SemiBold',
+              color: theme.colors.text,
+            },
+            headerShadowVisible: false,
+            headerBackButtonDisplayMode: 'minimal',
+          }}>
+          <Stack.Screen
+            name="index"
+            options={{title: t('recitersView.adhkar')}}
+          />
+          <Stack.Screen name="[superId]/index" />
+          <Stack.Screen name="[superId]/[dhikrId]" />
+          <Stack.Screen name="saved/index" />
+          <Stack.Screen name="saved/[dhikrId]" />
+        </Stack>
+      </AdhkarAudioProvider>
+    </ErrorBoundary>
   );
 }

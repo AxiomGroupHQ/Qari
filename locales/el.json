@@ -27,7 +27,11 @@
     "showInstruction": "Εμφάνιση οδηγιών",
     "tapBookmarkHint": "Πατήστε το εικονίδιο σελιδοδείκτη σε οποιοδήποτε ζικρ για να το αποθηκεύσετε εδώ",
     "tapToCount": "Πατήστε για μέτρηση",
-    "tapToIncrement": "Πατήστε για αύξηση της μέτρησης"
+    "tapToIncrement": "Πατήστε για αύξηση της μέτρησης",
+    "reciteTimes": "Επαναλάβετε {{n}}×",
+    "playAllStop": "Διακοπή",
+    "playAllPrevious": "Προηγούμενο",
+    "playAllNext": "Επόμενο"
   },
   "app": {
     "errorInitializingPlayer": "Σφάλμα αρχικοποίησης αναπαραγωγής: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Ελήφθησαν • {{count}} σούρες"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Λυπούμαστε, παρουσιάστηκε σφάλμα"
+    "sorryThereWasAnError": "Λυπούμαστε, παρουσιάστηκε σφάλμα",
+    "tryAgain": "Δοκιμάστε ξανά"
   },
   "hero": {
     "browseAllReciters": {

@@ -27,7 +27,11 @@
     "showInstruction": "Ko'rsatmani ko'rsatish",
     "tapBookmarkHint": "Bu yerga saqlash uchun istalgan zikrdagi xatcho'p belgisiga bosing",
     "tapToCount": "Sanash uchun bosing",
-    "tapToIncrement": "Sonni oshirish uchun bosing"
+    "tapToIncrement": "Sonni oshirish uchun bosing",
+    "reciteTimes": "{{n}}× o‘qing",
+    "playAllStop": "To‘xtatish",
+    "playAllPrevious": "Oldingi",
+    "playAllNext": "Keyingi"
   },
   "app": {
     "errorInitializingPlayer": "Pleyerni ishga tushirishda xato: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Yuklab olingan • {{count}} ta sura"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Kechirasiz, xato yuz berdi"
+    "sorryThereWasAnError": "Kechirasiz, xato yuz berdi",
+    "tryAgain": "Qayta urinish"
   },
   "hero": {
     "browseAllReciters": {

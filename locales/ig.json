@@ -26,7 +26,11 @@
     "showInstruction": "Gosi ntụziaka",
     "tapBookmarkHint": "Pịa akara akara ihe n'ime dhikr ọ bụla iji chekwaa ya ebe a",
     "tapToCount": "Pịa iji gụọ",
-    "tapToIncrement": "Pịa iji tinye ọnụọgụ"
+    "tapToIncrement": "Pịa iji tinye ọnụọgụ",
+    "reciteTimes": "Gụọ {{n}}×",
+    "playAllStop": "Kwụsị",
+    "playAllPrevious": "Nke gara aga",
+    "playAllNext": "Nke na-esote"
   },
   "app": {
     "errorInitializingPlayer": "Njehie na ịmalite ihe ọkpụkpọ: {{message}}",
@@ -250,7 +254,8 @@
     "subtitle_other": "Ebudatara • sura {{count}}"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Ndo, njehie mere"
+    "sorryThereWasAnError": "Ndo, njehie mere",
+    "tryAgain": "Gbalịa ọzọ"
   },
   "hero": {
     "browseAllReciters": {

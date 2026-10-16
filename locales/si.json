@@ -27,7 +27,11 @@
     "showInstruction": "උපදෙස් පෙන්වන්න",
     "tapBookmarkHint": "මෙහි සුරැකීමට ඕනෑම ධික්ර් එකක පොත් සලකුණ අයිකනය තට්ටු කරන්න",
     "tapToCount": "ගණන් කිරීමට තට්ටු කරන්න",
-    "tapToIncrement": "ගණන වැඩි කිරීමට තට්ටු කරන්න"
+    "tapToIncrement": "ගණන වැඩි කිරීමට තට්ටු කරන්න",
+    "reciteTimes": "{{n}}× කියවන්න",
+    "playAllStop": "නවත්වන්න",
+    "playAllPrevious": "පෙර",
+    "playAllNext": "ඊළඟ"
   },
   "app": {
     "errorInitializingPlayer": "වාදකය ආරම්භ කිරීමේ දෝෂයකි: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "බාගත කළ • සූරා {{count}}"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "කණගාටුයි, දෝෂයක් ඇති විය"
+    "sorryThereWasAnError": "කණගාටුයි, දෝෂයක් ඇති විය",
+    "tryAgain": "නැවත උත්සාහ කරන්න"
   },
   "hero": {
     "browseAllReciters": {

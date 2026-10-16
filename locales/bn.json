@@ -27,7 +27,11 @@
     "showInstruction": "নির্দেশনা দেখান",
     "tapBookmarkHint": "এখানে সংরক্ষণ করতে যেকোনো যিকিরের বুকমার্ক আইকনে ট্যাপ করুন",
     "tapToCount": "গুনতে ট্যাপ করুন",
-    "tapToIncrement": "গণনা বাড়াতে ট্যাপ করুন"
+    "tapToIncrement": "গণনা বাড়াতে ট্যাপ করুন",
+    "reciteTimes": "{{n}}× পড়ুন",
+    "playAllStop": "থামান",
+    "playAllPrevious": "আগেরটি",
+    "playAllNext": "পরেরটি"
   },
   "app": {
     "errorInitializingPlayer": "প্লেয়ার চালু করতে ত্রুটি: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "ডাউনলোড করা • {{count}}টি সূরা"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "দুঃখিত.. একটি ত্রুটি হয়েছে"
+    "sorryThereWasAnError": "দুঃখিত.. একটি ত্রুটি হয়েছে",
+    "tryAgain": "আবার চেষ্টা করুন"
   },
   "hero": {
     "browseAllReciters": {

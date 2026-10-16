@@ -27,7 +27,11 @@
     "showInstruction": "ئۇقتۇرۇشنى كۆرسىتىش",
     "tapBookmarkHint": "بۇ يەردە ساقلاش ئۈچۈن ھەر قانداق زىكىردىكى خەتەر بەلگىسىنى چېكىڭ",
     "tapToCount": "سانداش ئۈچۈن چېكىڭ",
-    "tapToIncrement": "سانىنى ئاشۇرۇش ئۈچۈن چېكىڭ"
+    "tapToIncrement": "سانىنى ئاشۇرۇش ئۈچۈن چېكىڭ",
+    "reciteTimes": "{{n}}× ئوقۇڭ",
+    "playAllStop": "توختات",
+    "playAllPrevious": "ئالدىنقى",
+    "playAllNext": "كېيىنكى"
   },
   "app": {
     "errorInitializingPlayer": "قويغۇچنى قوزغىتىشتا خاتالىق: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "چۈشۈرۈلگەن • {{count}} سۈرە"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "كەچۈرۈڭ، خاتالىق كۆرۈلدى"
+    "sorryThereWasAnError": "كەچۈرۈڭ، خاتالىق كۆرۈلدى",
+    "tryAgain": "قايتا سىناڭ"
   },
   "hero": {
     "browseAllReciters": {

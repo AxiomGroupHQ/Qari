@@ -27,7 +27,11 @@
     "showInstruction": "ਹਦਾਇਤਾਂ ਦਿਖਾਓ",
     "tapBookmarkHint": "ਇੱਥੇ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਕਿਸੇ ਵੀ ਜ਼ਿਕਰ ਦੇ ਬੁੱਕਮਾਰਕ ਆਈਕਨ ਨੂੰ ਟੈਪ ਕਰੋ",
     "tapToCount": "ਗਿਣਨ ਲਈ ਟੈਪ ਕਰੋ",
-    "tapToIncrement": "ਗਿਣਤੀ ਵਧਾਉਣ ਲਈ ਟੈਪ ਕਰੋ"
+    "tapToIncrement": "ਗਿਣਤੀ ਵਧਾਉਣ ਲਈ ਟੈਪ ਕਰੋ",
+    "reciteTimes": "{{n}}× ਪੜ੍ਹੋ",
+    "playAllStop": "ਰੋਕੋ",
+    "playAllPrevious": "ਪਿਛਲਾ",
+    "playAllNext": "ਅਗਲਾ"
   },
   "app": {
     "errorInitializingPlayer": "ਪਲੇਅਰ ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਗਲਤੀ: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "ਡਾਊਨਲੋਡ ਕੀਤਾ • {{count}} ਸੂਰਹਾਂ"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "ਮੁਆਫ਼ ਕਰਨਾ.. ਇੱਕ ਗਲਤੀ ਹੋ ਗਈ"
+    "sorryThereWasAnError": "ਮੁਆਫ਼ ਕਰਨਾ.. ਇੱਕ ਗਲਤੀ ਹੋ ਗਈ",
+    "tryAgain": "ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ"
   },
   "hero": {
     "browseAllReciters": {

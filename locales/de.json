@@ -27,7 +27,11 @@
     "showInstruction": "Anleitung einblenden",
     "tapBookmarkHint": "Tippe bei einem Dhikr auf das Lesezeichen-Symbol, um ihn hier zu speichern",
     "tapToCount": "Zum Zählen tippen",
-    "tapToIncrement": "Tippen, um den Zähler zu erhöhen"
+    "tapToIncrement": "Tippen, um den Zähler zu erhöhen",
+    "reciteTimes": "{{n}}× rezitieren",
+    "playAllStop": "Stopp",
+    "playAllPrevious": "Zurück",
+    "playAllNext": "Weiter"
   },
   "app": {
     "errorInitializingPlayer": "Fehler beim Initialisieren des Players: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Heruntergeladen • {{count}} Suren"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Entschuldigung, ein Fehler ist aufgetreten"
+    "sorryThereWasAnError": "Entschuldigung, ein Fehler ist aufgetreten",
+    "tryAgain": "Erneut versuchen"
   },
   "hero": {
     "browseAllReciters": {

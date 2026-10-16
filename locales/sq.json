@@ -27,7 +27,11 @@
     "showInstruction": "Shfaq udhëzimin",
     "tapBookmarkHint": "Prekni ikonën e faqerojtësit te çdo dhikr për ta ruajtur këtu",
     "tapToCount": "Prekni për të numëruar",
-    "tapToIncrement": "Prekni për të rritur numrin"
+    "tapToIncrement": "Prekni për të rritur numrin",
+    "reciteTimes": "Recito {{n}}×",
+    "playAllStop": "Ndalo",
+    "playAllPrevious": "E mëparshmja",
+    "playAllNext": "Tjetra"
   },
   "app": {
     "errorInitializingPlayer": "Gabim gjatë nisjes së luajtësit: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Shkarkuar • {{count}} sure"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Na vjen keq.. ndodhi një gabim"
+    "sorryThereWasAnError": "Na vjen keq.. ndodhi një gabim",
+    "tryAgain": "Provo përsëri"
   },
   "hero": {
     "browseAllReciters": {

@@ -27,7 +27,11 @@
     "showInstruction": "Cikan jira",
     "tapBookmarkHint": "Dhikr o dhikr la taamasyɛn digi walasa k'a mara yan",
     "tapToCount": "A digi ka jate",
-    "tapToIncrement": "A digi ka jate fara a kan"
+    "tapToIncrement": "A digi ka jate fara a kan",
+    "reciteTimes": "{{n}}× karan",
+    "playAllStop": "A jɔ",
+    "playAllPrevious": "Ɲɛmɔgɔ",
+    "playAllNext": "Nata"
   },
   "app": {
     "errorInitializingPlayer": "Fɔlifɛn bɛ ka ɲɛsin jɔ ka lamɛnbaga daminɛ la: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Jiginna • sura {{count}}"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Hakɛto.. fili dɔ kɛra"
+    "sorryThereWasAnError": "Hakɛto.. fili dɔ kɛra",
+    "tryAgain": "A kɛ tuguni"
   },
   "hero": {
     "browseAllReciters": {

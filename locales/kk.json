@@ -27,7 +27,11 @@
     "showInstruction": "Нұсқауды көрсету",
     "tapBookmarkHint": "Мұнда сақтау үшін кез келген зікірдегі бетбелгі белгішесін түртіңіз",
     "tapToCount": "Санау үшін түртіңіз",
-    "tapToIncrement": "Санды арттыру үшін түртіңіз"
+    "tapToIncrement": "Санды арттыру үшін түртіңіз",
+    "reciteTimes": "{{n}}× оқыңыз",
+    "playAllStop": "Тоқтату",
+    "playAllPrevious": "Алдыңғы",
+    "playAllNext": "Келесі"
   },
   "app": {
     "errorInitializingPlayer": "Ойнатқышты іске қосу қатесі: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Жүктелген • {{count}} сүре"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Кешіріңіз, қате орын алды"
+    "sorryThereWasAnError": "Кешіріңіз, қате орын алды",
+    "tryAgain": "Қайталап көру"
   },
   "hero": {
     "browseAllReciters": {

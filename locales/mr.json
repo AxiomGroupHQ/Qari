@@ -27,7 +27,11 @@
     "showInstruction": "सूचना दाखवा",
     "tapBookmarkHint": "येथे जतन करण्यासाठी कोणत्याही ज़िक्रवरील बुकमार्क चिन्हावर टॅप करा",
     "tapToCount": "मोजण्यासाठी टॅप करा",
-    "tapToIncrement": "संख्या वाढवण्यासाठी टॅप करा"
+    "tapToIncrement": "संख्या वाढवण्यासाठी टॅप करा",
+    "reciteTimes": "{{n}}× म्हणा",
+    "playAllStop": "थांबवा",
+    "playAllPrevious": "मागील",
+    "playAllNext": "पुढील"
   },
   "app": {
     "errorInitializingPlayer": "प्लेअर सुरू करताना त्रुटी: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "डाउनलोड केलेले • {{count}} सुरा"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "क्षमस्व, त्रुटी आली"
+    "sorryThereWasAnError": "क्षमस्व, त्रुटी आली",
+    "tryAgain": "पुन्हा प्रयत्न करा"
   },
   "hero": {
     "browseAllReciters": {

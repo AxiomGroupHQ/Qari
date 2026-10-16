@@ -7,7 +7,15 @@
  * avoiding complex store synchronization that causes feedback loops.
  */
 
-import React, {createContext, useContext, useEffect, useRef} from 'react';
+import React, {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import {useAudioPlayer, useAudioPlayerStatus} from 'expo-audio';
 import {useAdhkarAudioStore} from '@/store/adhkarAudioStore';
 import {useAdhkarPlayAllStore} from '@/store/adhkarPlayAllStore';
@@ -43,11 +51,26 @@ export const useAdhkarAudioPlayer = () => useContext(AdhkarAudioContext);
  * Internal component that manages the actual audio player.
  * Only rendered when there's a valid audio source.
  */
+interface LiveStatus {
+  progress: number;
+  duration: number;
+  currentTime: number;
+}
+
+const IDLE: LiveStatus = {progress: 0, duration: 0, currentTime: 0};
+
+/**
+ * Headless: renders nothing. It is keyed by audio source in the provider, so
+ * every track gets a fresh player and the previous one is released before the
+ * next starts. (Swapping the source on one live player hook is what broke
+ * Play All after the first track.)
+ */
 const AudioPlayerManager: React.FC<{
   audioSource: number;
   isPlayAllMode: boolean;
-  children: React.ReactNode;
-}> = ({audioSource, isPlayAllMode, children}) => {
+  onStatus: (s: LiveStatus) => void;
+  registerSeek: (fn: (progress: number) => void) => void;
+}> = ({audioSource, isPlayAllMode, onStatus, registerSeek}) => {
   // Single-dhikr store state
   const singleShouldPlay = useAdhkarAudioStore(state => state.isPlaying);
   const isLooping = useAdhkarAudioStore(state => state.isLooping);
@@ -199,37 +222,30 @@ const AudioPlayerManager: React.FC<{
   const duration = status?.duration ?? 0;
   const progress = duration > 0 ? Math.min(currentTime / duration, 1) : 0;
 
-  // Direct seek function - no store involved
   const seek = (newProgress: number) => {
     if (player && duration > 0) {
-      const seekTime = newProgress * duration;
       try {
-        player.seekTo(seekTime);
+        player.seekTo(newProgress * duration);
       } catch (error) {
         console.warn('[AudioPlayerManager] Seek error:', error);
       }
     }
   };
+  const seekRef = useRef(seek);
+  seekRef.current = seek;
 
-  return (
-    <AdhkarAudioContext.Provider
-      value={{progress, duration, currentTime, seek}}>
-      {children}
-    </AdhkarAudioContext.Provider>
-  );
-};
+  useEffect(() => {
+    registerSeek((p: number) => seekRef.current(p));
+    return () => registerSeek(() => {});
+  }, [registerSeek]);
 
-/**
- * Fallback provider when no audio is loaded
- */
-const NoAudioProvider: React.FC<{children: React.ReactNode}> = ({children}) => {
-  const noopSeek = () => {};
-  return (
-    <AdhkarAudioContext.Provider
-      value={{progress: 0, duration: 0, currentTime: 0, seek: noopSeek}}>
-      {children}
-    </AdhkarAudioContext.Provider>
-  );
+  useEffect(() => {
+    onStatus({progress, duration, currentTime});
+  }, [onStatus, progress, duration, currentTime]);
+
+  useEffect(() => () => onStatus(IDLE), [onStatus]);
+
+  return null;
 };
 
 /**
@@ -286,18 +302,28 @@ export const AdhkarAudioProvider: React.FC<{children: React.ReactNode}> = ({
     prevMainPlayerState.current = mainPlayerState;
   }, [mainPlayerState, pauseAdhkar, playAllPause, isPlayAllMode]);
 
-  // Render with or without audio player
-  if (effectiveAudioSource) {
-    return (
-      <AudioPlayerManager
-        audioSource={effectiveAudioSource}
-        isPlayAllMode={isPlayAllMode}>
-        {children}
-      </AudioPlayerManager>
-    );
-  }
+  const [live, setLive] = useState<LiveStatus>(IDLE);
+  const seekFn = useRef<(progress: number) => void>(() => {});
+  const registerSeek = useCallback((fn: (progress: number) => void) => {
+    seekFn.current = fn;
+  }, []);
+  const seek = useCallback((p: number) => seekFn.current(p), []);
+  const value = useMemo(() => ({...live, seek}), [live, seek]);
 
-  return <NoAudioProvider>{children}</NoAudioProvider>;
+  return (
+    <AdhkarAudioContext.Provider value={value}>
+      {children}
+      {effectiveAudioSource ? (
+        <AudioPlayerManager
+          key={effectiveAudioSource}
+          audioSource={effectiveAudioSource}
+          isPlayAllMode={isPlayAllMode}
+          onStatus={setLive}
+          registerSeek={registerSeek}
+        />
+      ) : null}
+    </AdhkarAudioContext.Provider>
+  );
 };
 
 export default AdhkarAudioProvider;

@@ -1,3 +1,4 @@
+import {cleanArabic, cleanTranslation} from '@/utils/adhkarText';
 import * as SQLite from 'expo-sqlite';
 import type {
   AdhkarCategory,
@@ -324,10 +325,10 @@ class AdhkarDatabaseService {
     return adhkar.map(dhikr => ({
       id: dhikr.id,
       categoryId: dhikr.category_id,
-      arabic: dhikr.arabic,
-      translation: dhikr.translation,
+      arabic: cleanArabic(dhikr.arabic),
+      translation: cleanTranslation(dhikr.translation),
       transliteration: dhikr.transliteration,
-      instruction: dhikr.instruction,
+      instruction: cleanTranslation(dhikr.instruction),
       repeatCount: dhikr.repeat_count,
       audioFile: dhikr.audio_file,
       sortOrder: dhikr.sort_order,
@@ -350,10 +351,10 @@ class AdhkarDatabaseService {
     return adhkar.map(dhikr => ({
       id: dhikr.id,
       categoryId: dhikr.category_id,
-      arabic: dhikr.arabic,
-      translation: dhikr.translation,
+      arabic: cleanArabic(dhikr.arabic),
+      translation: cleanTranslation(dhikr.translation),
       transliteration: dhikr.transliteration,
-      instruction: dhikr.instruction,
+      instruction: cleanTranslation(dhikr.instruction),
       repeatCount: dhikr.repeat_count,
       audioFile: dhikr.audio_file,
       sortOrder: dhikr.sort_order,
@@ -374,10 +375,10 @@ class AdhkarDatabaseService {
     return {
       id: dhikr.id,
       categoryId: dhikr.category_id,
-      arabic: dhikr.arabic,
-      translation: dhikr.translation,
+      arabic: cleanArabic(dhikr.arabic),
+      translation: cleanTranslation(dhikr.translation),
       transliteration: dhikr.transliteration,
-      instruction: dhikr.instruction,
+      instruction: cleanTranslation(dhikr.instruction),
       repeatCount: dhikr.repeat_count,
       audioFile: dhikr.audio_file,
       sortOrder: dhikr.sort_order,

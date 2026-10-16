@@ -27,7 +27,11 @@
     "showInstruction": "Ipakita ang tagubilin",
     "tapBookmarkHint": "I-tap ang icon ng bookmark sa anumang dhikr para i-save ito rito",
     "tapToCount": "I-tap para magbilang",
-    "tapToIncrement": "I-tap para dagdagan ang bilang"
+    "tapToIncrement": "I-tap para dagdagan ang bilang",
+    "reciteTimes": "Bigkasin ng {{n}}×",
+    "playAllStop": "Ihinto",
+    "playAllPrevious": "Nakaraan",
+    "playAllNext": "Susunod"
   },
   "app": {
     "errorInitializingPlayer": "Error sa pagsisimula ng player: {{message}}",
@@ -251,7 +255,8 @@
     "subtitle_other": "Na-download • {{count}} surah"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Paumanhin, nagkaroon ng error"
+    "sorryThereWasAnError": "Paumanhin, nagkaroon ng error",
+    "tryAgain": "Subukan muli"
   },
   "hero": {
     "browseAllReciters": {

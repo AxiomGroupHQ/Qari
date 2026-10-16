@@ -28,7 +28,11 @@
     "showInstruction": "Arată instrucțiunile",
     "tapBookmarkHint": "Atinge pictograma de semn de carte la orice dhikr pentru a-l salva aici",
     "tapToCount": "Atinge pentru a număra",
-    "tapToIncrement": "Atinge pentru a mări numărătoarea"
+    "tapToIncrement": "Atinge pentru a mări numărătoarea",
+    "reciteTimes": "Recită de {{n}}×",
+    "playAllStop": "Oprește",
+    "playAllPrevious": "Anterior",
+    "playAllNext": "Următorul"
   },
   "app": {
     "errorInitializingPlayer": "Eroare la inițializarea playerului: {{message}}",
@@ -255,7 +259,8 @@
     "subtitle_other": "Descărcate • {{count}} de sure"
   },
   "errorBoundary": {
-    "sorryThereWasAnError": "Ne pare rău, a apărut o eroare"
+    "sorryThereWasAnError": "Ne pare rău, a apărut o eroare",
+    "tryAgain": "Încearcă din nou"
   },
   "hero": {
     "browseAllReciters": {
