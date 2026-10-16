@@ -192,24 +192,31 @@ const SavedDhikrReaderScreen: React.FC = () => {
     [toggleSaved],
   );
 
-  const onViewableItemsChanged = useCallback(
+  // VirtualizedList throws "Changing onViewableItemsChanged on the fly is not
+  // supported" when this callback's identity changes while the list is
+  // mounted. Play All changes playAllIndex on every track, so the callback
+  // must stay reference-stable; read the changing values from a ref instead.
+  const playAllSyncRef = useRef({isThisPlayAllSource, playAllIndex, goToIndex});
+  playAllSyncRef.current = {isThisPlayAllSource, playAllIndex, goToIndex};
+
+  const onViewableItemsChanged = useRef(
     ({viewableItems}: {viewableItems: ViewToken[]}) => {
       if (viewableItems.length > 0 && viewableItems[0].index !== null) {
         const newIndex = viewableItems[0].index;
         setCurrentIndex(newIndex);
 
         // Sync Play All store when user manually swipes (not from Play All auto-scroll)
+        const sync = playAllSyncRef.current;
         if (
-          isThisPlayAllSource &&
-          newIndex !== playAllIndex &&
+          sync.isThisPlayAllSource &&
+          newIndex !== sync.playAllIndex &&
           !isScrollingFromPlayAll.current
         ) {
-          goToIndex(newIndex);
+          sync.goToIndex(newIndex);
         }
       }
     },
-    [isThisPlayAllSource, playAllIndex, goToIndex],
-  );
+  ).current;
 
   const viewabilityConfig = useRef({
     itemVisiblePercentThreshold: 50,

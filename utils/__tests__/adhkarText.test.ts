@@ -1,4 +1,9 @@
-import {cleanArabic, cleanTranslation} from '../adhkarText';
+import {
+  cleanArabic,
+  cleanTranslation,
+  repeatCountFromText,
+  stripRepeatNotes,
+} from '../adhkarText';
 import adhkar from '@/data/adhkar.json';
 
 describe('adhkar bracket stripping', () => {
@@ -43,5 +48,46 @@ describe('share text', () => {
     expect(
       buildShareText(d, {translation: false, transliteration: false}),
     ).toBe('قال.');
+  });
+});
+
+describe('stripRepeatNotes + repeatCountFromText', () => {
+  it('drops the Arabic "(ثلاثاً)" note, with or without diacritics', () => {
+    expect(
+      stripRepeatNotes(
+        'أَسْتَغْفِرُ اللَّهَ (ثَلاَثَاً) اللَّهُمَّ أَنْتَ السَّلاَمُ.',
+      ),
+    ).toBe('أَسْتَغْفِرُ اللَّهَ اللَّهُمَّ أَنْتَ السَّلاَمُ.');
+    expect(
+      stripRepeatNotes('لاَ إِلَهَ إِلاَّ اللَّهُ [ثلاثاً]، اللَّهُمَّ'),
+    ).toBe('لاَ إِلَهَ إِلاَّ اللَّهُ، اللَّهُمَّ');
+  });
+
+  it('drops English "(three times)" style notes', () => {
+    expect(
+      stripRepeatNotes('I ask Allah for forgiveness.(three times) (O Allah)'),
+    ).toBe('I ask Allah for forgiveness. (O Allah)');
+    expect(stripRepeatNotes('Glorified.(Three Times)')).toBe('Glorified.');
+    expect(stripRepeatNotes('Some words.(one hundred times every day)')).toBe(
+      'Some words.',
+    );
+    expect(stripRepeatNotes(null)).toBeNull();
+  });
+
+  it('keeps bracketed content that is not a recite-count note', () => {
+    expect(
+      stripRepeatNotes('for the evening, one reads (amsaytu) instead.'),
+    ).toBe('for the evening, one reads (amsaytu) instead.');
+  });
+
+  it('extracts the recite count from a note', () => {
+    expect(
+      repeatCountFromText('أَسْتَغْفِرُ اللَّهَ (ثَلاَثَاً) اللَّهُمَّ'),
+    ).toBe(3);
+    expect(repeatCountFromText('... [ثلاثاً] ...')).toBe(3);
+    expect(repeatCountFromText('Glorified.(Three Times)')).toBe(3);
+    expect(repeatCountFromText('(one hundred times)')).toBe(100);
+    expect(repeatCountFromText('(thirty-three times)')).toBe(33);
+    expect(repeatCountFromText('no note here')).toBeNull();
   });
 });
