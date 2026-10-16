@@ -162,3 +162,26 @@ export function stripRepeatNotes(text: string | null): string | null {
     .replace(/ +([.،,])/g, '$1')
     .trim();
 }
+
+/**
+ * Bracket audit of data/adhkar.json (Oct 2026): once repeat notes are gone,
+ * the remaining "(" ")" "[" "]" marks are source formatting, not meaning -
+ * quoted passages and whole-text wraps in the Arabic, translator
+ * clarifications in the English ("(He is)", "[saying]"), verse references
+ * ("(Al-Baqarah :255)") and footnote markers ("( 1 )", "(2)") whose
+ * footnotes the app does not show. The reader drops the marks and keeps the
+ * words inside; footnote-number markers are dropped whole so no stray digits
+ * remain. Run after stripRepeatNotes, which needs the marks to find notes.
+ */
+const FOOTNOTE_MARKER = /\s*[([]\s*\d{1,2}\s*[)\]]/g;
+
+/** Drop every remaining bracket mark from display text, keeping the words. */
+export function stripBrackets(text: string | null): string | null {
+  if (text == null) return text;
+  return text
+    .replace(FOOTNOTE_MARKER, '')
+    .replace(/[()[\]]/g, '')
+    .replace(/ {2,}/g, ' ')
+    .replace(/ +([.،,])/g, '$1')
+    .trim();
+}
