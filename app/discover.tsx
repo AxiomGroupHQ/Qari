@@ -19,6 +19,7 @@ import {generateSmartAudioUrl} from '@/utils/audioUtils';
 import {getReciterArtwork} from '@/utils/artworkUtils';
 import {getTranslationText} from '@/utils/translationLookup';
 import {useMushafSettingsStore} from '@/store/mushafSettingsStore';
+import {useNetworkStore} from '@/store/networkStore';
 import {SURAHS} from '@/data/surahData';
 import {
   pickRandomClip,
@@ -75,6 +76,18 @@ export default function DiscoverScreen(): React.ReactElement {
       loading.current = false;
     }
   }, [clips.length]);
+
+  // When the connection comes back after a failed load, try again by itself.
+  const isOnline = useNetworkStore(st => st.isOnline);
+  const wasOnline = useRef(isOnline);
+  useEffect(() => {
+    if (isOnline && !wasOnline.current && failed && clips.length === 0) {
+      setFailed(false);
+      loadMore();
+    }
+    wasOnline.current = isOnline;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOnline]);
 
   useEffect(() => {
     loadMore();
