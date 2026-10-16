@@ -49,13 +49,13 @@ Item numbers are the original request-list issue numbers. Feature write-up: `doc
 | #204 | Downloads vanish offline when reciter list is empty | **Fixed** (PR #34) | Device check offline. |
 | #117 | Shareable links | **Partly done** | Share buttons already make `https://istima.app/...` links. App-link domain and iOS `apple-app-site-association` added (PR #34). Android: SHA-256 of the signing key to add `assetlinks.json`. Playlist links and rich preview cards need server work (decision). |
 | #133 | Android performance | **Nothing safe to change blind** | Real Android device for list tuning and R8 testing. Console logs in hot paths are already `__DEV__` guarded. |
-| #74 | Merge mini + full player into one sheet | Not built | Device or simulator to test the animation. Risk of breaking the player if built blind. |
+| #74 | Merge mini + full player into one sheet | **Skipped by owner** | Device or simulator to test the animation. Risk of breaking the player if built blind. |
 | #126 | Home screen widgets | Not built | Native code (WidgetKit, Glance). Apple Developer access (App Group, new target), Xcode/EAS build, devices. |
 | #118 | Watch apps | Not built | New native targets, Apple provisioning, devices. |
 | #116 | TV apps | Not built | New native targets, store setup, devices. |
 | #115 | CarPlay / Android Auto | Not built | Apple CarPlay audio entitlement request, Google Play review. Plan: `docs/features/carplay-android-auto.md`. |
-| #119 | Analytics and listening insights | Partly (basic analytics only) | Decision on dashboard content and on PostHog (new third-party service, privacy policy). |
-| #8 | Discover feed (short snippets) | Not built | Decide the content source and audio rights. |
+| #119 | Analytics and listening insights | **Skipped by owner** | Decision on dashboard content and on PostHog (new third-party service, privacy policy). |
+| #8 | Discover feed (short snippets) | **Skipped by owner** | Decide the content source and audio rights. |
 | #9 | Feature requirements doc | **Done** | `docs/features.md`. |
 | #192 | i18n | **Done** (60 languages) | - |
 | #120 | Cloud sync | **Done** (own accounts and Worker) | Remaining sync documents listed above. |

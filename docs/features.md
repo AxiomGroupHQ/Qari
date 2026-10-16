@@ -20,13 +20,13 @@ One-page requirements view . Status as of October 2026. Every feature must work 
 | Priority | Feature | Blocked by | What she must provide |
 | --- | --- | --- | --- |
 | P1 | Android app links (#117) | Signing key fingerprint | SHA-256 from Play Console App signing or EAS credentials. |
-| P1 | Merged mini and full player (#74) | Needs animation testing | A device or simulator test loop. |
+| Skipped | Merged mini and full player (#74) | Skipped by owner | A device or simulator test loop. |
 | P2 | Playlist share links and rich previews (#117) | Server work | Decision: store shared playlists in the Worker, add server-rendered meta tags. |
-| P2 | Listening insights (#119) | Product decision | What to show, and whether to use PostHog (privacy policy change). |
+| Skipped | Listening insights (#119) | Skipped by owner | What to show, and whether to use PostHog (privacy policy change). |
 | P2 | Android performance (#133) | Device testing | A real Android device for list tuning and R8. |
 | P3 | CarPlay and Android Auto (#115) | Platform approval | Apple CarPlay audio entitlement, Google Play review. |
 | P3 | Home widgets (#126) | Native build and provisioning | Apple Developer access (App Group, target), Xcode or EAS builds, devices. |
 | P3 | Watch apps (#118), TV apps (#116) | Native targets, provisioning | Apple Developer access, store setup, devices. |
-| P3 | Discover feed (#8) | Content decision | Snippet source and audio rights. |
+| Skipped | Discover feed (#8) | Skipped by owner | Snippet source and audio rights. |
 
 Not applicable: #242 (dev builds only), #323 (no Quran Foundation sync), #62 (audio is not hosted by Istima).

@@ -475,7 +475,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
   // Get specialized reciter collections with session-based shuffle
   // Each collection uses a different offset to the seed for unique shuffles
   const featuredReciters = useMemo(
-    () => seededShuffle(getFeaturedReciters(10), sessionSeed + 2),
+    () => getFeaturedReciters(10, sessionSeed + 2),
     [sessionSeed],
   );
   const istimaOriginalsReciters = useMemo(
@@ -483,7 +483,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     [sessionSeed],
   );
   const beginnerFriendlyReciters = useMemo(
-    () => seededShuffle(getBeginnerFriendlyReciters(10), sessionSeed + 4),
+    () => getBeginnerFriendlyReciters(8, sessionSeed + 4),
     [sessionSeed],
   );
   const tajweedReciters = useMemo(

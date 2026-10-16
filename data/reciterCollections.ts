@@ -2,9 +2,10 @@ import {RECITERS, Reciter} from './reciterData';
 import {useTimestampStore} from '@/store/timestampStore';
 
 // Featured Reciters - Spotlight reciters chosen by Istima
+// Always shown first in the Featured row (rotation applies to the rest).
+const FEATURED_PINNED_NAMES = ['Mohammed Ayyub', 'Noreen Mohammad Siddiq'];
+
 const FEATURED_RECITER_NAMES = [
-  'Mohammed Ayyub',
-  'Noreen Mohammad Siddiq',
   'Abdullah Qarafi',
   'Bandar Balilah',
   'Abdulrasheed Soufi',
@@ -98,6 +99,21 @@ function normalizeReciterName(name: string): string {
     .trim();
 }
 
+/** Deterministic shuffle: the same seed gives the same order (stable within one app session). */
+function seededOrder<T>(items: T[], seed: number): T[] {
+  const out = [...items];
+  let x = Math.abs(Math.floor(seed)) % 2147483647 || 1;
+  const rand = (): number => {
+    x = (x * 48271) % 2147483647;
+    return x / 2147483647;
+  };
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
 /**
  * Finds a reciter by their name using normalized comparison
  */
@@ -111,10 +127,24 @@ function findReciterByName(name: string): Reciter | undefined {
 /**
  * Gets featured reciters chosen by Istima to spotlight
  */
-export function getFeaturedReciters(count?: number): Reciter[] {
-  const reciters = FEATURED_RECITER_NAMES.map(findReciterByName).filter(
-    (reciter): reciter is Reciter => reciter !== undefined,
+export function getFeaturedReciters(count?: number, seed?: number): Reciter[] {
+  const resolve = (names: string[]): Reciter[] =>
+    names
+      .map(findReciterByName)
+      .filter((reciter): reciter is Reciter => reciter !== undefined);
+  const pinned = resolve(FEATURED_PINNED_NAMES);
+  const pinnedIds = new Set(pinned.map(r => r.id));
+  // Rotation pool: the featured list plus trending and beginner picks.
+  const pool = resolve([
+    ...FEATURED_RECITER_NAMES,
+    ...TRENDING_RECITER_NAMES,
+    ...BEGINNER_FRIENDLY_RECITER_NAMES,
+  ]).filter(
+    (r, i, all) =>
+      !pinnedIds.has(r.id) && all.findIndex(x => x.id === r.id) === i,
   );
+  const rest = seed === undefined ? pool : seededOrder(pool, seed);
+  const reciters = [...pinned, ...rest];
   return count ? reciters.slice(0, count) : reciters;
 }
 
@@ -161,10 +191,20 @@ export function getMemorizationReciters(count?: number): Reciter[] {
 /**
  * Gets a list of reciters who are approachable for beginners
  */
-export function getBeginnerFriendlyReciters(count?: number): Reciter[] {
-  const reciters = BEGINNER_FRIENDLY_RECITER_NAMES.map(
-    findReciterByName,
-  ).filter((reciter): reciter is Reciter => reciter !== undefined);
+export function getBeginnerFriendlyReciters(
+  count?: number,
+  seed?: number,
+): Reciter[] {
+  const all = BEGINNER_FRIENDLY_RECITER_NAMES.map(findReciterByName).filter(
+    (reciter): reciter is Reciter => reciter !== undefined,
+  );
+  // Noreen Mohammad Siddiq is pinned first; the others rotate by seed.
+  const pinned = all.filter(r => FEATURED_PINNED_NAMES.includes(r.name));
+  const rest = all.filter(r => !pinned.includes(r));
+  const reciters = [
+    ...pinned,
+    ...(seed === undefined ? rest : seededOrder(rest, seed)),
+  ];
   return count ? reciters.slice(0, count) : reciters;
 }
 
