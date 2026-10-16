@@ -17,12 +17,12 @@
     "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "types": ["node", "jest"]
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    "**/*.json",
     "scripts/**/*",
     "types/**/*"
   ],
