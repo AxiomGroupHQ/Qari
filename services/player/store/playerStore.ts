@@ -82,6 +82,9 @@ export interface PlayerStoreState extends Omit<UnifiedPlayerState, 'ui'> {
 /**
  * Helper to load and optionally play a track from the queue
  */
+/** Latest load request. A load that is no longer the latest must not touch the audio player. */
+let loadToken = 0;
+
 async function loadTrackAtIndex(
   tracks: Track[],
   index: number,
@@ -103,13 +106,19 @@ async function loadTrackAtIndex(
       autoPlay,
     });
 
+  // Any new load ends a running intro/outro clip first, so two clips never overlap and an
+  // older load cannot start its recitation under a newer one.
+  const token = ++loadToken;
+  introClipService.stop();
+
   await expoAudioService.loadTrack(track.url);
+  if (token !== loadToken) return;
 
   // Intro clip: own short player, before the recitation starts. Never for user uploads.
   if (autoPlay && startPosition === 0 && !track.isUserUpload) {
     const clip = await introClipService.play('start');
     // Paused, skipped or superseded while the clip played: do not start this recitation.
-    if (clip === 'cancelled') return;
+    if (clip === 'cancelled' || token !== loadToken) return;
   }
 
   if (startPosition > 0) {
@@ -121,6 +130,7 @@ async function loadTrackAtIndex(
         currentTime: expoAudioService.getCurrentTime(),
       });
     await expoAudioService.seekTo(startPosition);
+    if (token !== loadToken) return;
     if (__DEV__)
       console.log('[PlayerStore] POST-SEEK state:', {
         currentTime: expoAudioService.getCurrentTime(),
