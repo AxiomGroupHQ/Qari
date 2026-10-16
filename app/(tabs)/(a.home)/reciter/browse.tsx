@@ -1,3 +1,4 @@
+import {t} from '@/i18n';
 import React, {useLayoutEffect} from 'react';
 import {useRouter, useLocalSearchParams, useNavigation} from 'expo-router';
 import {useTheme} from '@/hooks/useTheme';
@@ -29,7 +30,7 @@ export default function BrowseScreen() {
     ? rewayatName
     : surahId
       ? `Browse Reciters - ${SURAHS[parseInt(surahId, 10) - 1].name}`
-      : 'Browse All';
+      : t('common.browseAll');
 
   // Set native header title on iOS
   useLayoutEffect(() => {

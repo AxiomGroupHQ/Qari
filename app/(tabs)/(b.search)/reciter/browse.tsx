@@ -1,3 +1,4 @@
+import {t} from '@/i18n';
 import React from 'react';
 import {useRouter, useLocalSearchParams} from 'expo-router';
 import {useTheme} from '@/hooks/useTheme';
@@ -21,7 +22,7 @@ export default function BrowseScreen() {
   // Get surah name if surahId is provided
   const title = surahId
     ? `Browse Reciters - ${SURAHS[parseInt(surahId, 10) - 1].name}`
-    : 'Browse All';
+    : t('common.browseAll');
 
   return (
     <BrowseReciters
