@@ -1,4 +1,5 @@
 import {create} from 'zustand';
+import {introClipService} from '@/services/audio/IntroClipService';
 import {createJSONStorage, persist} from 'zustand/middleware';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Track} from '@/types/audio';
@@ -104,6 +105,11 @@ async function loadTrackAtIndex(
 
   await expoAudioService.loadTrack(track.url);
 
+  // Intro clip: own short player, before the recitation starts. Never for user uploads.
+  if (autoPlay && startPosition === 0 && !track.isUserUpload) {
+    await introClipService.play('start');
+  }
+
   if (startPosition > 0) {
     if (__DEV__)
       console.log('[PlayerStore] PRE-SEEK state:', {
@@ -194,6 +200,7 @@ export const usePlayerStore = create<PlayerStoreState>()(
             loading: {...state.loading, trackLoading: true},
           }));
 
+          introClipService.stop();
           await expoAudioService.pause();
 
           set(state => ({
