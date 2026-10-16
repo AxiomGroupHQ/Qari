@@ -24,9 +24,9 @@ All 604 page layouts are precomputed once per font family and stored in MMKV (`r
 
 ### Cache layers (checked in order)
 
-1. **In-memory `pageLayoutsCache`** — `Map<string, Map<number, JustResultByLine[]>>`, fastest (~0.001ms)
-2. **MMKV** — synchronous disk read via `MushafLayoutCacheService` (~1ms including JSON parse)
-3. **On-demand compute** — `JustService.getPageLayout()` (~20-100ms, only on first launch before MMKV is populated)
+1. **In-memory `pageLayoutsCache`** - `Map<string, Map<number, JustResultByLine[]>>`, fastest (~0.001ms)
+2. **MMKV** - synchronous disk read via `MushafLayoutCacheService` (~1ms including JSON parse)
+3. **On-demand compute** - `JustService.getPageLayout()` (~20-100ms, only on first launch before MMKV is populated)
 
 ### Key schema
 
@@ -49,9 +49,9 @@ All 604 page layouts are precomputed once per font family and stored in MMKV (`r
 
 ### Files
 
-- `services/mushaf/MushafLayoutCacheService.ts` — singleton, MMKV read/write, precomputation orchestration
-- `services/mushaf/JustificationService.ts` — `getCachedPageLayout()` checks in-memory then MMKV
-- `services/AppInitializer.ts` — registers cache service at priority 8
+- `services/mushaf/MushafLayoutCacheService.ts` - singleton, MMKV read/write, precomputation orchestration
+- `services/mushaf/JustificationService.ts` - `getCachedPageLayout()` checks in-memory then MMKV
+- `services/AppInitializer.ts` - registers cache service at priority 8
 
 ## `SkiaPage` Responsibilities
 
@@ -80,7 +80,7 @@ File: `components/mushaf/skia/SkiaPage.tsx`
 
 ### Layout resolution strategy
 
-1. `useState` initializer calls `getCachedPageLayout()` — synchronous check of in-memory then MMKV
+1. `useState` initializer calls `getCachedPageLayout()` - synchronous check of in-memory then MMKV
 2. `useEffect` fallback: if no cached result and `fontMgr` is ready, compute on-demand (first launch only)
 
 No async storage, no pre-warming, no module-level shared state.

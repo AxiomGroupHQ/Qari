@@ -15,7 +15,7 @@ interface PageEdgeDecorationProps {
   pageColor: string;
   /**
    * Render rounded corners + edge strips on BOTH sides (used on iPad single-
-   * page views where there is no facing page on the "spine" side — showing a
+   * page views where there is no facing page on the "spine" side - showing a
    * sharp spine-edge floating in empty space looks like a clipped card).
    */
   symmetric?: boolean;
@@ -85,7 +85,7 @@ const PageEdgeDecoration: React.FC<PageEdgeDecorationProps> = ({
 
   return (
     <>
-      {/* Clipping container for fill strips — matches outermost border shape */}
+      {/* Clipping container for fill strips - matches outermost border shape */}
       <View
         style={[
           {

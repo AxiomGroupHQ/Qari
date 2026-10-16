@@ -14,7 +14,7 @@ import type {IndexedTajweedData} from '@/utils/tajweedLoader';
  * 3. Use TajweedAlignmentService to align QPC segments onto DK text
  * 4. Return Map<charIndex, ruleName>
  *
- * Results are cached — indexedTajweedData is loaded once at startup and never changes,
+ * Results are cached - indexedTajweedData is loaded once at startup and never changes,
  * so for a given verseKey the result is always the same.
  */
 const verseTajweedCache = new Map<string, Map<number, string> | null>();
@@ -79,7 +79,7 @@ export function getVerseTajweedMap(
  * align the first 4 words (positions 1-4) onto the hardcoded text,
  * skipping position 5 (the verse-end marker ١).
  *
- * Result is cached — basmala tajweed never changes.
+ * Result is cached - basmala tajweed never changes.
  */
 let basmalaTajweedCache: Map<number, string> | null | undefined;
 

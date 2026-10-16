@@ -1,6 +1,6 @@
 # Git Workflow Guidelines for Istima
 
-This document outlines the Git branching strategy and workflow practices for the Istima project. Following these guidelines will help maintain code quality, streamline collaboration, and ensure smooth deployment processes.
+This document outlines the Git branching strategy and workflow practices for the Istima project. Following these guidelines will help maintain code quality, simplify collaboration, and ensure smooth deployment processes.
 
 ## Table of Contents
 
@@ -260,7 +260,7 @@ git tag -a v1.2.3 -m "Version 1.2.3 - Brief description"
 git push origin v1.2.3
 ```
 
-## Bayaan-Specific Implementation
+## Istima-Specific Implementation
 
 Based on our project structure, we've implemented the following:
 

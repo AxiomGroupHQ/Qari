@@ -7,11 +7,11 @@ import {showToast} from '@/utils/toastUtils';
 // "Now reading" toast whenever it transitions between tracks. When the
 // resolver had to coerce to Hafs because the track's rewayah isn't one of
 // the 8 with bundled text data, the toast switches to "Showing in Hafs"
-// instead — the missing rewayah's name is intentionally omitted because
+// instead - the missing rewayah's name is intentionally omitted because
 // (a) the user already sees the rewayah in the player UI, and (b) we'd be
 // announcing a name we can't actually render text for.
 //
-// Suppresses the toast on the very first observation — cold starts with a
+// Suppresses the toast on the very first observation - cold starts with a
 // restored session would otherwise announce the restored track's rewayah
 // at launch, which is noise. From the second observation onward, any
 // change to (id, isFallback) fires.

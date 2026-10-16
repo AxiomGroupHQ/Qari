@@ -2,7 +2,7 @@
 // the concatenation of word-glyph codepoints; Skia justifies inter-word
 // spacing via TextAlign.Justify when laid out at canvas width.
 //
-// Surah-name lines are NOT rendered here — they go through SkiaSurahHeader
+// Surah-name lines are NOT rendered here - they go through SkiaSurahHeader
 // (same component DK uses).
 
 import React, {useMemo} from 'react';

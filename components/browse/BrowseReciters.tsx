@@ -48,7 +48,7 @@ interface BrowseRecitersProps {
   initialTeacher?: string;
   initialStudent?: string;
   /**
-   * RFC-012 — initial value for the `has-photo` filter chip. When the
+   * RFC-012 - initial value for the `has-photo` filter chip. When the
    * chip is enabled in `branding.searchFilters`, this prop seeds its
    * starting state. Defaults to `false` (chip un-toggled).
    */
@@ -77,7 +77,7 @@ function resolveStudent(dbName: string): string | undefined {
   return resolveRewayatName(dbName)?.student ?? fallbackStudent(dbName);
 }
 
-// Get primary teachers — canonical order from registry
+// Get primary teachers - canonical order from registry
 const getPrimaryTeachers = (): string[] => {
   return [...QIRAAT_TEACHERS];
 };
@@ -139,7 +139,7 @@ export default function BrowseReciters({
     initialStudent || null,
   );
 
-  // RFC-012 — composable filter chips. Each dimension in
+  // RFC-012 - composable filter chips. Each dimension in
   // `branding.searchFilters` (when configured) gets its own piece of
   // state + a toggleable chip in the strip below the search input.
   // v1 ships `has-photo` end-to-end; `rewaya` / `has-surah` stay on
@@ -230,7 +230,7 @@ export default function BrowseReciters({
   const filteredReciters = useMemo(() => {
     // Hoisted above the filter chain so the RFC-012 `has-photo` filter
     // and the existing sort step share one definition. "Has photo" matches
-    // a card whose user-visible artwork resolves to something — either a
+    // a card whose user-visible artwork resolves to something - either a
     // catalog `image_url` OR a bundled local headshot fallback.
     const hasImage = (reciter: Reciter): boolean => {
       if (reciter.image_url) return true;
@@ -307,7 +307,7 @@ export default function BrowseReciters({
       );
     }
 
-    // RFC-012 — `has-photo` filter dimension. Predicate uses the same
+    // RFC-012 - `has-photo` filter dimension. Predicate uses the same
     // `hasImage` helper as the sort step below, so the filter and the
     // sort agree on what counts as "has a photo." No-op when the chip
     // isn't enabled in branding or the user hasn't toggled it on.
@@ -377,7 +377,7 @@ export default function BrowseReciters({
       rewayat: [],
       sortBy: 'featured',
     });
-    // RFC-012 — reset the composable chip state too.
+    // RFC-012 - reset the composable chip state too.
     setHasPhoto(false);
   };
 
@@ -403,7 +403,7 @@ export default function BrowseReciters({
       advancedFilters.styles.length > 0 ||
       advancedFilters.rewayat.length > 0 ||
       advancedFilters.sortBy !== 'featured' ||
-      hasPhoto // RFC-012 — `has-photo` chip counts as active
+      hasPhoto // RFC-012 - `has-photo` chip counts as active
     );
   }, [
     selectedTeacher,
@@ -621,7 +621,7 @@ export default function BrowseReciters({
                 )}
               </Animated.View>
             ))}
-            {/* RFC-012 — composable chip(s) from `branding.searchFilters`.
+            {/* RFC-012 - composable chip(s) from `branding.searchFilters`.
              * v1 ships `has-photo` end-to-end; other dimensions render
              * once they're wired through (or live as bespoke chips above). */}
             {hasPhotoEnabled && (

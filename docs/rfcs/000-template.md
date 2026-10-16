@@ -24,13 +24,13 @@ List the alternatives evaluated. For each, say why it was rejected. The goal is 
 
 ## Consequences
 
-- **Positive:** what improves
-- **Neutral:** what doesn't change
-- **Negative / risks:** what gets worse, or what could go wrong
+- **Positive** - what improves
+- **Neutral** - what doesn't change
+- **Negative / risks** - what gets worse, or what could go wrong
 
 ## How we'll know it worked
 
-Concrete, observable success criteria. Not "the code is cleaner" — "every package's `package.json` declares Skia as a peer dependency, verified by CI."
+Concrete, observable success criteria. Not "the code is cleaner" - "every package's `package.json` declares Skia as a peer dependency, verified by CI."
 
 ## Open questions
 

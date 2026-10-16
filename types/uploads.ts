@@ -31,7 +31,7 @@ export interface CustomReciter {
   createdAt: number;
 }
 
-// Row types (snake_case — maps directly to SQLite columns)
+// Row types (snake_case - maps directly to SQLite columns)
 
 export interface UploadedRecitationRow {
   id: string;

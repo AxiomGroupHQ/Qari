@@ -49,7 +49,7 @@ export const PlayerSheet = () => {
 
   // Fires a "Now reading <rewayah>" toast whenever the currently-playing
   // track's resolved rewayah transitions. Mounted here (not deeper) so the
-  // observation outlives the sheet's open/close cycles — the toast fires
+  // observation outlives the sheet's open/close cycles - the toast fires
   // on track changes regardless of whether the sheet is visible.
   usePlayingRewayahObserver();
 
@@ -257,7 +257,7 @@ export const PlayerSheet = () => {
       ? SURAHS.find(s => s.id === surahNumber)
       : undefined;
 
-    // Upload tracks — always show options
+    // Upload tracks - always show options
     if (currentTrack.isUserUpload) {
       SheetManager.show('player-options', {
         payload: {
@@ -272,7 +272,7 @@ export const PlayerSheet = () => {
       return;
     }
 
-    // System tracks — existing behavior
+    // System tracks - existing behavior
     if (currentSurahData && currentTrack.reciterId) {
       SheetManager.show('player-options', {
         payload: {

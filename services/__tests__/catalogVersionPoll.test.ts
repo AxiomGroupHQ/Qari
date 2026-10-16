@@ -1,4 +1,4 @@
-// RFC-010 — catalogVersionPoll behavior.
+// RFC-010 - catalogVersionPoll behavior.
 //
 // Covers the three behaviors that matter for fork adopters:
 //   - undefined endpoint → no-op (Istima default)
@@ -65,7 +65,7 @@ describe('initCatalogVersionPolling', () => {
     expect(refetch).not.toHaveBeenCalled();
   });
 
-  it('fails open on a 500 — no refetch, no throw', async () => {
+  it('fails open on a 500 - no refetch, no throw', async () => {
     mockBranding.catalogVersionEndpoint = 'https://example.test/version.json';
     (global.fetch as jest.Mock).mockResolvedValueOnce({ok: false, status: 500});
     const refetch = jest.fn();
@@ -88,7 +88,7 @@ describe('initCatalogVersionPolling', () => {
 
   it('refetches when server version exceeds lastSeen, with versioned url', async () => {
     mockBranding.catalogVersionEndpoint = 'https://example.test/version.json';
-    mockStore.set('bayaan:lastSeenCatalogVersion', '7');
+    mockStore.set('istima:lastSeenCatalogVersion', '7');
     (global.fetch as jest.Mock).mockResolvedValueOnce({
       ok: true,
       json: () =>
@@ -105,12 +105,12 @@ describe('initCatalogVersionPolling', () => {
       8,
       'https://example.test/catalog/v8.json',
     );
-    expect(mockStore.get('bayaan:lastSeenCatalogVersion')).toBe('8');
+    expect(mockStore.get('istima:lastSeenCatalogVersion')).toBe('8');
   });
 
   it('does not refetch when server version equals lastSeen', async () => {
     mockBranding.catalogVersionEndpoint = 'https://example.test/version.json';
-    mockStore.set('bayaan:lastSeenCatalogVersion', '8');
+    mockStore.set('istima:lastSeenCatalogVersion', '8');
     (global.fetch as jest.Mock).mockResolvedValueOnce({
       ok: true,
       json: () => Promise.resolve({version: 8}),

@@ -115,7 +115,7 @@ class TafseerDbService {
         try {
           await this.db.execAsync(`ALTER TABLE tafaseer ADD COLUMN ${col}`);
         } catch {
-          // Column already exists (fresh install) — safe to ignore
+          // Column already exists (fresh install) - safe to ignore
         }
       }
       await this.db.runAsync(
@@ -318,7 +318,7 @@ class TafseerDbService {
    * Import the bundled Ibn Kathir (Abridged) tafseer into SQLite.
    * The compact JSON stores only group leaders (1,895 entries instead of 6,231)
    * to minimize bundle size. This method expands groups into per-verse rows.
-   * Runs once on first launch — subsequent calls are no-ops.
+   * Runs once on first launch - subsequent calls are no-ops.
    */
   async importBundledIbnKathir(): Promise<void> {
     const already = await this.isDownloaded('169');

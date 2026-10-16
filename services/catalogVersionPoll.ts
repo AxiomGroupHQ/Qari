@@ -1,4 +1,4 @@
-// RFC-010 — app-side catalog version polling.
+// RFC-010 - app-side catalog version polling.
 //
 // Reads `branding.catalogVersionEndpoint`. When set, polls on cold-start
 // and AppState 'active' (debounced), and triggers a catalog refetch when
@@ -22,7 +22,7 @@ type CatalogVersion = {
   url?: string;
 };
 
-const LAST_SEEN_KEY = 'bayaan:lastSeenCatalogVersion';
+const LAST_SEEN_KEY = 'istima:lastSeenCatalogVersion';
 const POLL_TIMEOUT_MS = 1500;
 const FOREGROUND_DEBOUNCE_MS = 5 * 60 * 1000;
 

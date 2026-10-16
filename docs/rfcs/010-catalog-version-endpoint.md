@@ -1,4 +1,4 @@
-# RFC-010: `branding.catalogVersionEndpoint` — runtime catalog refresh
+# RFC-010: `branding.catalogVersionEndpoint` - runtime catalog refresh
 
 | Field    | Value                                                                        |
 | -------- | ---------------------------------------------------------------------------- |
@@ -9,7 +9,7 @@
 
 ## Summary
 
-Add an optional `branding.catalogVersionEndpoint?: string` field. When set, the app polls this URL on cold-start (and optionally on `AppState 'active'`) to discover whether the published catalog is newer than the locally-cached one, and triggers a `CatalogProvider` refetch when so — without requiring an app rebuild.
+Add an optional `branding.catalogVersionEndpoint?: string` field. When set, the app polls this URL on cold-start (and optionally on `AppState 'active'`) to discover whether the published catalog is newer than the locally-cached one, and triggers a `CatalogProvider` refetch when so - without requiring an app rebuild.
 
 Default behavior for Istima is unchanged: the field is undefined → no polling → catalog versioning by app build only (today's behavior).
 
@@ -17,7 +17,7 @@ Default behavior for Istima is unchanged: the field is undefined → no polling 
 
 Istima today versions its reciter catalog by app build: `services/dataService.ts:37` declares `const DATA_VERSION = '4'` as the AsyncStorage cache-bust key. A catalog update requires shipping a new app build. For Istima's relatively static reciter list this is fine.
 
-Fork-side context — Qariah (the fork at `omar-zarka/qariah-v2`) recently shipped an ops console (`omar-zarka/qariah-ops-console`) that publishes catalog updates frequently (new reciters, metadata edits, recitation uploads). Tying every catalog change to an app rebuild + TestFlight cycle is incompatible with that workflow. Qariah needs runtime catalog refresh.
+Fork-side context - Qariah (the fork at `omar-zarka/qariah-v2`) recently shipped an ops console (`omar-zarka/qariah-ops-console`) that publishes catalog updates frequently (new reciters, metadata edits, recitation uploads). Tying every catalog change to an app rebuild + TestFlight cycle is incompatible with that workflow. Qariah needs runtime catalog refresh.
 
 The cleanest way to add this is at the multi-tenant config seam established by RFC-007: a single optional URL the app polls. Tenants who don't want runtime refresh (Istima, others) simply don't set the field.
 
@@ -38,11 +38,11 @@ export interface Branding {
    *
    * If `version` exceeds the locally-tracked last-seen version, the app
    * refetches the catalog. When `url` is present, the app SHOULD use it
-   * instead of the configured live catalog URL — the URL points at an
+   * instead of the configured live catalog URL - the URL points at an
    * immutable per-version snapshot, so the CDN can cache it aggressively
    * while propagation stays instant (the URL itself is the cache key).
    *
-   * If undefined (default), no polling — catalog is versioned only by the
+   * If undefined (default), no polling - catalog is versioned only by the
    * bundled `DATA_VERSION` constant.
    *
    * Fail-open: poll failures (offline, 5xx, parse error) are swallowed.
@@ -61,7 +61,7 @@ import {AppState, type AppStateStatus} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import branding from '../config/branding';
 
-const LAST_SEEN_KEY = 'bayaan:lastSeenCatalogVersion';
+const LAST_SEEN_KEY = 'istima:lastSeenCatalogVersion';
 const POLL_TIMEOUT_MS = 1500;
 const FOREGROUND_DEBOUNCE_MS = 5 * 60 * 1000;
 
@@ -102,7 +102,7 @@ initCatalogVersionPolling(refetchCatalogToVersion);
 
 ### Fail-open semantics
 
-The bundled catalog is always the source of truth on cold-start. The poll is purely additive: if it succeeds and the remote is newer, the app upgrades; if it fails for any reason, the user sees the bundled (or last-cached) catalog. A misconfigured endpoint, a CDN outage, or even a malicious response cannot brick the app — at worst, runtime refresh is degraded.
+The bundled catalog is always the source of truth on cold-start. The poll is purely additive: if it succeeds and the remote is newer, the app upgrades; if it fails for any reason, the user sees the bundled (or last-cached) catalog. A misconfigured endpoint, a CDN outage, or even a malicious response cannot brick the app - at worst, runtime refresh is degraded.
 
 ## Alternatives considered
 
@@ -120,7 +120,7 @@ No new endpoint needed. But polling a ~500 KB catalog on every cold-start is was
 
 ### D. Embed version in catalog filename (`catalog-v8.json`)
 
-Requires the app to "guess" the next version, or to be told via a separate config — which is just this RFC by another name.
+Requires the app to "guess" the next version, or to be told via a separate config - which is just this RFC by another name.
 
 ### E. Status quo (build-time-only versioning)
 
@@ -131,7 +131,7 @@ Forces every tenant with dynamic catalog ops into a custom forked solution. Defe
 **Positive:**
 - Tenants with dynamic catalog operations (Qariah today; potentially others) can publish catalog updates without an app rebuild.
 - Versioned `url` enables aggressive CDN caching with instant propagation, since the URL is the cache key per version.
-- One small additive seam — no API change for `CatalogProvider`.
+- One small additive seam - no API change for `CatalogProvider`.
 
 **Neutral:**
 - Istima's default behavior is unchanged (undefined endpoint → no poll).

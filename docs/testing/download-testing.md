@@ -142,16 +142,16 @@ If using React Native DevTools or Flipper, enable:
 ## Performance Metrics to Monitor
 
 ### Before Fix (Expected Poor Performance)
-- **FPS:** Drops to 10-30 during downloads
-- **Bridge Traffic:** 100-500 messages/sec
-- **UI Freezing:** Visible stuttering and lag
-- **Memory:** Steady increase during downloads
+- **FPS** - Drops to 10-30 during downloads
+- **Bridge Traffic** - 100-500 messages/sec
+- **UI Freezing** - Visible stuttering and lag
+- **Memory** - Steady increase during downloads
 
 ### After Fix (Expected Good Performance)
-- **FPS:** Stable 60 FPS
-- **Bridge Traffic:** 6-10 messages/sec (throttled)
-- **UI Freezing:** None - smooth interactions
-- **Memory:** Stable, no leaks
+- **FPS** - Stable 60 FPS
+- **Bridge Traffic** - 6-10 messages/sec (throttled)
+- **UI Freezing** - None - smooth interactions
+- **Memory** - Stable, no leaks
 
 ## Console Output Verification
 

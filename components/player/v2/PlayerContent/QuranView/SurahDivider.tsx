@@ -19,7 +19,7 @@ const fallbackSurahNames: Record<number, string> = {};
   },
 );
 
-// Module-scope font cache — recomputed only when width changes (device rotation)
+// Module-scope font cache - recomputed only when width changes (device rotation)
 interface DividerFontCache {
   width: number;
   font: SkFont;
@@ -80,7 +80,7 @@ const SurahDivider: React.FC<SurahDividerProps> = ({
 
   const scaledDividerFont = getOrBuildDividerFont(width);
 
-  // Skia rendering path — delegates to shared SkiaSurahHeader
+  // Skia rendering path - delegates to shared SkiaSurahHeader
   if (scaledDividerFont && nameFontMgr && width > 0) {
     return (
       <View style={styles.container}>

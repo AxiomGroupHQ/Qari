@@ -1,6 +1,6 @@
 # Third-Party Licenses
 
-Bayaan is distributed under AGPL-3.0-or-later. This file lists the
+Istima is proprietary software (Copyright (c) 2026 Istima by Halalweb). This file lists the
 npm production dependencies (1183 packages) bundled into the app,
 along with their licenses.
 
@@ -50,12 +50,12 @@ The Arabic adhkar text, English translations, and accompanying MP3 recitations
 bundled in `assets/audio/adhkar/` and referenced in `data/adhkar.json` are
 sourced from **Hisn al-Muslim** (https://www.hisnmuslim.com) — the compilation
 "Fortress of the Muslim" by Sa'id bin Ali bin Wahf al-Qahtani. Audio recitations
-are from the publicly available HisnMuslim archive. Bayaan redistributes this
+are from the publicly available HisnMuslim archive. Istima redistributes this
 content for non-commercial Islamic use and attributes the source here and in
 the app's About screen.
 
 If you are the content owner and have concerns about redistribution, please
-open an issue at https://github.com/thebayaan/Bayaan/issues so we can address
+email app@istima.app so we can address
 it promptly.
 
 ## npm production dependencies

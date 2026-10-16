@@ -25,6 +25,12 @@
     <meta-data android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH" android:value="ALWAYS"/>
     <meta-data android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS" android:value="2000"/>
     <meta-data android:name="expo.modules.updates.EXPO_UPDATE_URL" android:value="https://u.expo.dev/e31ace41-2d1b-4777-8230-8c8264277d59"/>
+    <receiver android:name=".widget.QuickSurahWidget" android:exported="false">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@xml/quick_surah_widget_info"/>
+    </receiver>
     <service android:name="expo.modules.audio.service.AudioControlsService" android:exported="false" android:foregroundServiceType="mediaPlayback">
       <intent-filter>
         <action android:name="androidx.media3.session.MediaSessionService"/>
@@ -39,9 +45,8 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="bayaan"/>
         <data android:scheme="istima"/>
-        <data android:scheme="exp+bayaan"/>
+        <data android:scheme="exp+istima"/>
       </intent-filter>
       <intent-filter android:autoVerify="true" data-generated="true">
         <action android:name="android.intent.action.VIEW"/>
@@ -49,6 +54,7 @@
         <data android:scheme="https" android:host="istima.app" android:pathPrefix="/reciter"/>
         <data android:scheme="https" android:host="istima.app" android:pathPrefix="/mushaf"/>
         <data android:scheme="https" android:host="istima.app" android:pathPrefix="/adhkar"/>
+        <data android:scheme="https" android:host="istima.app" android:pathPrefix="/p/"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <category android:name="android.intent.category.DEFAULT"/>
       </intent-filter>

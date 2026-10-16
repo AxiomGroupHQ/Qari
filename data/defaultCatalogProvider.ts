@@ -11,7 +11,7 @@ let _activeProvider: CatalogProvider = defaultCatalogProvider;
 /**
  * Replace the active catalog provider.
  * Call at app boot (e.g. in app/_layout.tsx) before any component reads the catalog.
- * Bayaan itself never calls this; it is provided for forks that supply a different
+ * The app itself never calls this; it is provided for forks that supply a different
  * reciter catalog.
  */
 export function setCatalogProvider(provider: CatalogProvider): void {

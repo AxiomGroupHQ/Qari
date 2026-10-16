@@ -3,7 +3,7 @@
 ## Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in the
-Bayaan community a harassment-free experience for everyone, regardless of age,
+Istima community a harassment-free experience for everyone, regardless of age,
 disability, ethnicity, level of experience, education, socio-economic status,
 nationality, personal appearance, or race.
 
@@ -46,13 +46,13 @@ moderation decisions when appropriate.
 ## Scope
 
 This Code of Conduct applies within all community spaces (GitHub issues, pull
-requests, discussions, and any official Bayaan channels) and also applies when
+requests, discussions, and any official Istima channels) and also applies when
 an individual is officially representing the community in public spaces.
 
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the maintainers at **conduct@thebayaan.com**. All complaints will
+reported to the maintainers at **app@istima.app**. All complaints will
 be reviewed and investigated promptly and fairly.
 
 All maintainers are obligated to respect the privacy and security of the

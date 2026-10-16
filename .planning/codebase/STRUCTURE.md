@@ -5,7 +5,7 @@
 ## Directory Layout
 
 ```
-Bayaan/
+Istima/
 ├── .planning/              # GSD orchestration artifacts (planning, analysis)
 ├── app/                    # Expo Router screens and layouts (main navigation)
 │   ├── _layout.tsx         # Root layout, app initialization
@@ -77,7 +77,7 @@ Bayaan/
 │   ├── useSettings.ts      # User settings access
 │   └── [Other domain-specific hooks]
 ├── ios/                    # iOS native build artifacts
-│   └── Bayaan.xcworkspace/ # Xcode workspace
+│   └── Istima.xcworkspace/ # Xcode workspace
 ├── android/                # Android native build artifacts
 │   └── app/                # Android app module
 ├── scripts/                # Build and deployment scripts
@@ -370,7 +370,7 @@ Bayaan/
 - Purpose: Native iOS project (Xcode workspace)
 - Generated: By `expo prebuild` command
 - Committed: Yes (some files), but many generated
-- Important: `ios/Bayaan.xcworkspace` used for development/archiving
+- Important: `ios/Istima.xcworkspace` used for development/archiving
 - Credentials: iOS team ID configured via `withIOSTeam.js` plugin
 
 **android/** - Android Build Artifacts
@@ -378,11 +378,11 @@ Bayaan/
 - Generated: By `expo prebuild` command
 - Committed: Yes (some files), but many generated
 - Important: `android/app/build/outputs/bundle/release/` contains AAB
-- Keystore: `~/Documents/app-credentials/bayaan/keystore/bayaan-upload-key.keystore`
+- Keystore: `~/Documents/app-credentials/istima/keystore/istima-upload-key.keystore`
 
 **build/** - Archive Outputs
 - Purpose: Storage for archived builds
-- Generated: `ios/build/` and `build/Bayaan.xcarchive` for iOS
+- Generated: `ios/build/` and `build/Istima.xcarchive` for iOS
 - Contents: Compiled app archives, export metadata
 - Lifecycle: Temporary, can be cleared after upload
 

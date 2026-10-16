@@ -68,7 +68,7 @@ interface MushafSettingsState {
   showAllahNameHighlight: boolean;
   allahNameHighlightColor: MushafAllahNameHighlightColor;
 
-  // Font family (legacy — kept for backward compatibility)
+  // Font family (legacy - kept for backward compatibility)
   arabicFontFamily: 'Uthmani';
   uthmaniFont: 'v1' | 'v2';
 
@@ -81,7 +81,7 @@ interface MushafSettingsState {
   // Scroll direction (horizontal paging vs vertical continuous scroll)
   scrollDirection: MushafScrollDirection;
 
-  // Recently read positions (last 10, chain-based — not deduplicated by surahId)
+  // Recently read positions (last 10, chain-based - not deduplicated by surahId)
   recentPages: RecentRead[];
 
   // Active translation (bundled or downloaded remote)
@@ -280,7 +280,7 @@ export const useMushafSettingsStore = create<MushafSettingsState>()(
           state.recentPages = [];
         }
         if (version < 5) {
-          // lastScreenWasMushaf & lastReadPage moved to MMKV — drop stale keys
+          // lastScreenWasMushaf & lastReadPage moved to MMKV - drop stale keys
           delete state.lastScreenWasMushaf;
           delete state.lastReadPage;
         }

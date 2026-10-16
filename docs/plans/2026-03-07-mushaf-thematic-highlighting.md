@@ -1,4 +1,4 @@
-> **SHIPPED — This feature is implemented.** Mushaf thematic highlighting shipped. See `ThemeDataService`, `themeDataService.init()`, and the Skia mushaf rendering layer.
+> **SHIPPED - This feature is implemented.** Mushaf thematic highlighting shipped. See `ThemeDataService`, `themeDataService.init()`, and the Skia mushaf rendering layer.
 
 # Mushaf Thematic Highlighting Implementation Plan
 
@@ -228,9 +228,9 @@ After the Translation card (ends around line 770, the `</>` closing), before the
           </View>
 ```
 
-This uses the existing `styles.card`, `styles.optionRow`, `styles.optionLabel`, `styles.helperText`, and `styles.switchStyle` — no new styles needed.
+This uses the existing `styles.card`, `styles.optionRow`, `styles.optionLabel`, `styles.helperText`, and `styles.switchStyle` - no new styles needed.
 
-Note: This toggle lives inside the `{(context !== 'mushaf' || viewMode === 'list') && (...)}` block so it's visible in list mode and player context, which matches the translation toggle pattern. It should also be visible in mushaf mode since themes apply there too. Place it **outside** that conditional, right before the FONT section, so it always appears.
+This toggle lives inside the `{(context !== 'mushaf' || viewMode === 'list') && (...)}` block so it's visible in list mode and player context, which matches the translation toggle pattern. It should also be visible in mushaf mode since themes apply there too. Place it **outside** that conditional, right before the FONT section, so it always appears.
 
 **Step 3: Run type check**
 
@@ -284,7 +284,7 @@ if (!hasAnnotations && !hasPlayback && !selectedSet && !showThemes) return EMPTY
 1. After the `addVerseHighlight` helper (line 529), before Layer 1, add:
 
 ```typescript
-    // Layer 0: Theme zebra highlights (lowest priority — painted first)
+    // Layer 0: Theme zebra highlights (lowest priority - painted first)
     if (showThemes) {
       const verseKeys = mushafVerseMapService.getOrderedVerseKeysForPage(pageNumber);
       const themeBgEven = Color(textColor).alpha(0.04).toString();
@@ -661,7 +661,7 @@ After the Tafseer pressable (around line 691, before the `{hasSimilarVerses` che
               ) : null}
 ```
 
-Note: Using Feather "layers" icon since it represents grouped/layered content. This is always visible (not gated behind `showThemes`) so users can discover what theme a verse belongs to.
+Using Feather "layers" icon since it represents grouped/layered content. This is always visible (not gated behind `showThemes`) so users can discover what theme a verse belongs to.
 
 **Step 8: Run type check**
 

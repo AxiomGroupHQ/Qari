@@ -145,7 +145,7 @@ async function main() {
   console.log();
 }
 
-// ── SQLite builder (calls Python with execFileSync — no shell) ──────
+// ── SQLite builder (calls Python with execFileSync - no shell) ──────
 
 function buildSQLite(jsonPath, dbPath) {
   if (fs.existsSync(dbPath)) fs.unlinkSync(dbPath);

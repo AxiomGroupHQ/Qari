@@ -18,12 +18,12 @@ As a user, I want to use Istima on my Apple TV or Android TV so that I can liste
 ### Apple TV (tvOS)
 
 - Requires the [`react-native-tvos`](https://github.com/react-native-tvos/react-native-tvos) fork of React Native
-- Expo does not natively support tvOS — requires custom native configuration via `expo prebuild` with patched native projects, or a bare workflow
+- Expo does not natively support tvOS - requires custom native configuration via `expo prebuild` with patched native projects, or a bare workflow
 - Minimum tvOS version: 16.0+
 
 ### Android TV
 
-- Android TV is a variant of Android — React Native apps can run with modifications
+- Android TV is a variant of Android - React Native apps can run with modifications
 - `react-native-tvos` fork also provides Android TV focus engine support
 - Minimum Android TV API level: 28 (Android 9)
 
@@ -73,7 +73,7 @@ As a user, I want to use Istima on my Apple TV or Android TV so that I can liste
 ### Recommended Approach: Monorepo with Shared Core
 
 ```
-bayaan/
+istima/
 ├── packages/
 │   ├── core/                  # Shared business logic
 │   │   ├── stores/            # Zustand stores
@@ -93,7 +93,7 @@ bayaan/
 Alternatively, if monorepo is too much overhead initially, a simpler approach:
 
 ```
-Bayaan/
+Istima/
 ├── app/
 │   ├── (tabs)/               # Mobile tab layout
 │   └── (tv)/                 # TV layout (side rail navigation)
@@ -107,18 +107,18 @@ Bayaan/
 
 TV platforms use a **focus engine** instead of touch. Every interactive element must:
 
-1. Be **focusable** — register with the TV focus engine
-2. Have a **focused state** — visual indicator (border, scale, glow)
-3. Support **directional navigation** — up/down/left/right moves focus
-4. Handle **select** — equivalent to tap/press
-5. Handle **back/menu** — equivalent to back navigation
+1. Be **focusable** - register with the TV focus engine
+2. Have a **focused state** - visual indicator (border, scale, glow)
+3. Support **directional navigation** - up/down/left/right moves focus
+4. Handle **select** - equivalent to tap/press
+5. Handle **back/menu** - equivalent to back navigation
 
 ```typescript
 // TV-aware pressable wrapper
 interface TVPressableProps {
-  onPress: () => void;
-  onFocus?: () => void;
-  onBlur?: () => void;
+  onPress:  => void;
+  onFocus?:  => void;
+  onBlur?:  => void;
   hasTVPreferredFocus?: boolean;
   children: React.ReactNode;
 }
@@ -149,13 +149,13 @@ React Native's built-in `Pressable` supports TV focus out of the box when using 
 │  │      │  └────────────────────────────────────┘│
 │  └──────┘                                        │
 │  ┌──────────────────────────────────────────────┐│
-│  │  Now Playing: Surah Al-Baqarah — Al-Husary   ││
+│  │  Now Playing: Surah Al-Baqarah - Al-Husary   ││
 │  │  ━━━━━━━━━━━━━●━━━━━━━━━━━  02:34 / 45:12   ││
 │  └──────────────────────────────────────────────┘│
 └──────────────────────────────────────────────────┘
 ```
 
-- **Left rail**: Replaces bottom tabs — Home, Reciters, Surahs, Now Playing
+- **Left rail**: Replaces bottom tabs - Home, Reciters, Surahs, Now Playing
 - **Content area**: Large cards in horizontal rows, focus-navigable
 - **Bottom bar**: Persistent now-playing info (not interactive unless focused)
 
@@ -175,7 +175,7 @@ Full-screen player replaces the mobile bottom-sheet player:
 │                                                  │
 │           Surah Al-Baqarah                       │
 │           Sheikh Al-Husary                       │
-│           Hafs A'n Asim — Murattal               │
+│           Hafs A'n Asim - Murattal               │
 │                                                  │
 │     ━━━━━━━━━━━━━━━●━━━━━━━━━━━━━━━              │
 │     02:34                         45:12          │
@@ -251,10 +251,10 @@ Full-screen player replaces the mobile bottom-sheet player:
 
 ### Phase 2: Core Screens
 
-1. **Home screen** — Featured reciters, recently played, continue listening
-2. **Reciters screen** — Large card grid, horizontal rows by category
-3. **Reciter detail** — Surah list with large focus-friendly rows
-4. **Surah list screen** — Browsable surah list with focus navigation
+1. **Home screen** - Featured reciters, recently played, continue listening
+2. **Reciters screen** - Large card grid, horizontal rows by category
+3. **Reciter detail** - Surah list with large focus-friendly rows
+4. **Surah list screen** - Browsable surah list with focus navigation
 
 ### Phase 3: Player
 
@@ -281,20 +281,20 @@ Full-screen player replaces the mobile bottom-sheet player:
 
 ## Open Questions
 
-1. **Monorepo vs single project?** — Monorepo is cleaner long-term but adds build complexity. Single project with platform checks is simpler to start.
-2. **Expo compatibility** — How much of Expo SDK 54 works on tvOS? Need Phase 0 research.
-3. **expo-audio on tvOS** — Does it work? Does background audio work on tvOS? Apple TV apps may not "background" the same way.
-4. **Mushaf view on TV?** — Should the digital Mushaf be available on TV? Could be a beautiful large-screen experience, but adds significant scope.
-5. **App Store guidelines** — Apple TV apps have specific UI/UX requirements. Need to review Apple's tvOS HIG.
-6. **Android TV launcher integration** — Channels, recommendations row, etc.
+1. **Monorepo vs single project?** - Monorepo is cleaner long-term but adds build complexity. Single project with platform checks is simpler to start.
+2. **Expo compatibility** - How much of Expo SDK 54 works on tvOS? Need Phase 0 research.
+3. **expo-audio on tvOS** - Does it work? Does background audio work on tvOS? Apple TV apps may not "background" the same way.
+4. **Mushaf view on TV?** - Should the digital Mushaf be available on TV? Could be a beautiful large-screen experience, but adds significant scope.
+5. **App Store guidelines** - Apple TV apps have specific UI/UX requirements. Need to review Apple's tvOS HIG.
+6. **Android TV launcher integration** - Channels, recommendations row, etc.
 
 ## References
 
-- [react-native-tvos](https://github.com/react-native-tvos/react-native-tvos) — React Native fork with TV support
+- [react-native-tvos](https://github.com/react-native-tvos/react-native-tvos) - React Native fork with TV support
 - [Apple TV Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos)
 - [Android TV Design Guidelines](https://developer.android.com/design/ui/tv)
 - [React Native TV documentation](https://reactnative.dev/docs/building-for-apple-tv)
-- [Expo + TV discussion](https://github.com/expo/expo/discussions) — Community efforts
+- [Expo + TV discussion](https://github.com/expo/expo/discussions) - Community efforts
 
 ---
 

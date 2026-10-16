@@ -50,8 +50,8 @@ interface MigrationResult {
 // Config / env
 // ---------------------------------------------------------------------------
 
-const API_URL = process.env.BAYAAN_API_URL;
-const API_KEY = process.env.BAYAAN_API_KEY;
+const API_URL = process.env.ISTIMA_API_URL;
+const API_KEY = process.env.ISTIMA_API_KEY;
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 
@@ -65,8 +65,8 @@ const PAGE_LIMIT = 200;
 
 function validateEnv(): void {
   const missing: string[] = [];
-  if (!API_URL) missing.push('BAYAAN_API_URL');
-  if (!API_KEY) missing.push('BAYAAN_API_KEY');
+  if (!API_URL) missing.push('ISTIMA_API_URL');
+  if (!API_KEY) missing.push('ISTIMA_API_KEY');
   if (!ADMIN_EMAIL) missing.push('ADMIN_EMAIL');
   if (!ADMIN_PASSWORD) missing.push('ADMIN_PASSWORD');
 
@@ -141,13 +141,13 @@ async function fetchAllReciters(): Promise<ReciterEntry[]> {
   const all: ReciterEntry[] = [...first.data];
 
   console.log(
-    `  Page 1/${total_pages} — ${first.data.length} reciters (total: ${first.meta.total})`,
+    `  Page 1/${total_pages} - ${first.data.length} reciters (total: ${first.meta.total})`,
   );
 
   for (let page = 2; page <= total_pages; page++) {
     const resp = await fetchRecitersPage(page);
     all.push(...resp.data);
-    console.log(`  Page ${page}/${total_pages} — ${resp.data.length} reciters`);
+    console.log(`  Page ${page}/${total_pages} - ${resp.data.length} reciters`);
   }
 
   console.log(`Fetched ${all.length} reciters total.\n`);
@@ -174,7 +174,7 @@ async function updateRewayat(
   });
 
   if (res.status === 401 && !retried) {
-    console.log('  JWT expired — re-authenticating...');
+    console.log('  JWT expired - re-authenticating...');
     jwtToken = null;
     await authenticate();
     return updateRewayat(rewayatId, payload, true);
@@ -248,7 +248,7 @@ async function migrate(): Promise<void> {
   validateEnv();
 
   if (DRY_RUN) {
-    console.log('=== DRY RUN — no changes will be made ===\n');
+    console.log('=== DRY RUN - no changes will be made ===\n');
   }
 
   const slugsPath = path.resolve(__dirname, '../data/rewayat-slugs.json');
@@ -300,7 +300,7 @@ async function migrate(): Promise<void> {
       // Skip if already on R2
       // ------------------------------------------------------------------
       if (rewayat.server && rewayat.server.includes('cdn.example.com')) {
-        console.log(`${prefix} Already on R2 — skipping`);
+        console.log(`${prefix} Already on R2 - skipping`);
         result.skipped++;
         continue;
       }
@@ -309,7 +309,7 @@ async function migrate(): Promise<void> {
       // Build R2 URL
       // ------------------------------------------------------------------
       if (!reciter.slug) {
-        console.warn(`${prefix} Reciter has no slug — skipping`);
+        console.warn(`${prefix} Reciter has no slug - skipping`);
         result.failed++;
         continue;
       }
@@ -323,7 +323,7 @@ async function migrate(): Promise<void> {
 
       if (!r2Url) {
         console.warn(
-          `${prefix} Cannot build R2 URL (unmapped rewayah or style: "${rewayat.name}" / "${rewayat.style}") — skipping`,
+          `${prefix} Cannot build R2 URL (unmapped rewayah or style: "${rewayat.name}" / "${rewayat.style}") - skipping`,
         );
         result.failed++;
         continue;
@@ -341,7 +341,7 @@ async function migrate(): Promise<void> {
       const verified = await verifyR2Url(r2Url, firstSurah);
       if (!verified) {
         console.warn(
-          `${prefix} R2 verification failed (HEAD ${padded}.mp3 not 200) — skipping`,
+          `${prefix} R2 verification failed (HEAD ${padded}.mp3 not 200) - skipping`,
         );
         result.failed++;
         continue;
@@ -355,7 +355,7 @@ async function migrate(): Promise<void> {
         try {
           await updateRewayat(rewayat.id, {
             server: r2Url,
-            source_type: 'bayaan',
+            source_type: 'istima',
           });
           result.updated++;
         } catch (err) {
@@ -372,7 +372,7 @@ async function migrate(): Promise<void> {
   // Summary
   // ---------------------------------------------------------------------------
   console.log('\n=== Migration Summary ===');
-  if (DRY_RUN) console.log('(DRY RUN — no changes were written)');
+  if (DRY_RUN) console.log('(DRY RUN - no changes were written)');
   console.log(`  Updated:           ${result.updated}`);
   console.log(`  Skipped (already): ${result.skipped}`);
   console.log(`  Failed / unmapped: ${result.failed}`);

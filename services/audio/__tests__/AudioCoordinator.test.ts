@@ -1,10 +1,10 @@
 /**
- * Characterization tests for AudioCoordinator — Group B from
- * bayaan-platform/planning/Characterization-Test-Plan.md.
+ * Characterization tests for AudioCoordinator - Group B from
+ * the characterization test plan.
  *
  * Locks in mutual-exclusion behavior between the main player and the mushaf
  * player BEFORE the RFC-008 refactor that replaces the lazy-`require()`
- * pattern with `CoordinatorHooks` injection. Tests-only — zero production
+ * pattern with `CoordinatorHooks` injection. Tests-only - zero production
  * code touched.
  *
  * The lazy `require('./MushafAudioService')` and `require('@/store/mushafPlayerStore')`
@@ -16,11 +16,11 @@
 
 // Mock the eagerly-imported player store at the top level so AudioCoordinator's
 // `import {usePlayerStore}` resolves to our spy. Lazy-required modules are
-// mocked the same way — jest hoists `jest.mock` so the require() inside
+// mocked the same way - jest hoists `jest.mock` so the require() inside
 // `mainWillPlay()` picks up the mock.
 //
 // Variables referenced from inside `jest.mock(...)` factories must be named
-// `mock*` (case insensitive) — babel-jest's hoist guard allows that prefix.
+// `mock*` (case insensitive) - babel-jest's hoist guard allows that prefix.
 const mockMainPause = jest.fn(() => Promise.resolve());
 const mockMushafSetPlaybackState = jest.fn();
 const mockMushafServicePause = jest.fn();
@@ -57,7 +57,7 @@ import {useMushafPlayerStore} from '@/store/mushafPlayerStore';
 /**
  * Helper: re-import AudioCoordinator with a fresh module registry so the
  * private `activeSource` field starts at `'none'` for every test. The
- * coordinator is a singleton with no public reset method — `jest.isolateModules`
+ * coordinator is a singleton with no public reset method - `jest.isolateModules`
  * is the surgical way to get a clean instance without modifying production
  * code (which would violate Tidy First for a tests-only PR).
  */
@@ -69,7 +69,7 @@ function freshCoordinator(): typeof import('../AudioCoordinator').audioCoordinat
   return instance;
 }
 
-describe('AudioCoordinator — Group B characterization', () => {
+describe('AudioCoordinator - Group B characterization', () => {
   beforeEach(() => {
     mockMainPause.mockClear();
     mockMushafSetPlaybackState.mockClear();
@@ -179,7 +179,7 @@ describe('AudioCoordinator — Group B characterization', () => {
     const c = freshCoordinator();
     c.mushafWillPlay();
 
-    // mushaf is "playing" per the default mock — the lazy-require path runs
+    // mushaf is "playing" per the default mock - the lazy-require path runs
     // end to end. The assertion is "does not throw", plus confirmation that
     // both lazy-required exports were actually consumed.
     expect(() => c.mainWillPlay()).not.toThrow();

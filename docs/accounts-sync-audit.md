@@ -13,7 +13,7 @@ No verification email is sent. Registration requires a well-formed address whose
 | playcounts | play-count-storage | built |
 
 ## Server accepts, app adapter still to build
-playlists, annotations (verse annotations), adhkar (saved), position (last track and position: `@bayaan/last_track`, `@bayaan/last_position`).
+playlists, annotations (verse annotations), adhkar (saved), position (last track and position: `@istima/last_track`, `@istima/last_position`).
 
 ## Audit: recommended additions
 Add to the save list:

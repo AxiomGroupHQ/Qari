@@ -32,7 +32,7 @@ const QPC_SKIP = new Set([
   0x200c, // ZWNJ
 ]);
 
-/** Waqf (stop/pause) marks — should never receive any tajweed coloring */
+/** Waqf (stop/pause) marks - should never receive any tajweed coloring */
 const WAQF_MARKS = new Set([
   0x06d6, // ۖ Small high ligature sad with lam with alef maksura
   0x06d7, // ۗ Small high ligature qaf with lam with alef maksura
@@ -120,7 +120,7 @@ export function alignWordTajweed(
       di + 1 < dkArr.length &&
       dkArr[di + 1].codePointAt(0) === 0x0670
     ) {
-      // Skip the extra fatha in DK — don't advance QPC
+      // Skip the extra fatha in DK - don't advance QPC
       di++;
       continue;
     }
@@ -263,7 +263,7 @@ function applyTafkhim(dkArr: string[], result: Map<number, string>): void {
   for (let i = 0; i < dkArr.length; i++) {
     const cp = dkArr[i].codePointAt(0)!;
 
-    // Never color waqf marks — also remove any rule assigned during alignment
+    // Never color waqf marks - also remove any rule assigned during alignment
     if (WAQF_MARKS.has(cp)) {
       result.delete(i);
       continue;

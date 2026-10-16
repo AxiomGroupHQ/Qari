@@ -1,8 +1,8 @@
-// Reciter data is no longer bundled — it is fetched from the Bayaan API
+// Reciter data is no longer bundled - it is fetched from the catalog API
 // at runtime and stored in AsyncStorage. RECITERS starts as an empty array
 // and is populated in-place by dataService.getAllReciters() on first load.
 // All importers hold a reference to the same array object, so they see
-// the data automatically once it is populated — no import changes needed.
+// the data automatically once it is populated - no import changes needed.
 
 export interface Reciter {
   id: string;
@@ -29,6 +29,6 @@ export interface Rewayat {
   timestamps_surah_list?: number[];
 }
 
-// Mutable array — populated in-place by dataService after API fetch.
+// Mutable array - populated in-place by dataService after API fetch.
 // Do NOT reassign this variable; mutate it with splice() to preserve references.
 export const RECITERS: Reciter[] = [];

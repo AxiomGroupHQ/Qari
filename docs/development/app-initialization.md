@@ -436,7 +436,7 @@ Potential improvements to consider:
 
 ## Summary
 
-The AppInitializer provides a robust, extensible system for managing app startup. By preloading SQLite data during initialization, the app feels instant and responsive. Adding new features is as simple as registering them with the initializer.
+The AppInitializer provides a solid, extensible system for managing app startup. By preloading SQLite data during initialization, the app feels instant and responsive. Adding new features is as simple as registering them with the initializer.
 
 **Key Takeaway**: Always register SQLite-based services with AppInitializer to ensure data is ready before screens mount.
 

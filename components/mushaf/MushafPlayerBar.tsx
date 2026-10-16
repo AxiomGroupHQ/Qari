@@ -129,7 +129,7 @@ export const MushafPlayerBar: React.FC<MushafPlayerBarProps> = ({
     );
   }
 
-  // ── Idle state: [Search] — spacer — [Play] — spacer — [Options] ────
+  // ── Idle state: [Search] - spacer - [Play] - spacer - [Options] ────
   if (isIdle) {
     return (
       <View style={styles.idleRow}>

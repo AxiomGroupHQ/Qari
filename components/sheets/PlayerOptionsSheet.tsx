@@ -126,7 +126,7 @@ export const PlayerOptionsSheet = (props: SheetProps<'player-options'>) => {
   const {setDownloading, addDownload, clearDownloading, setDownloadProgress} =
     useDownloadActions();
 
-  // Calculate loved state — only meaningful when reciterId + surahId exist
+  // Calculate loved state - only meaningful when reciterId + surahId exist
   const canLove = !!reciterId && !!surahId;
   const isLovedState = canLove
     ? rewayatId

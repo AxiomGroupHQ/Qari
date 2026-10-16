@@ -13,7 +13,7 @@ const R2_BASE = (
 
 // Minimal per-element shape check for the fetched JSON. The cast
 // `as AyahTimestamp[]` existed pre-RFC, but this RFC widens the set
-// of CDN operators to fork maintainers — a structurally wrong JSON
+// of CDN operators to fork maintainers - a structurally wrong JSON
 // (snake-cased fields from a raw mp3quran upload, an old shape
 // without `durationMs`, etc.) would land `undefined` in the SQLite
 // `duration_ms` column and corrupt the ayah-highlight offsets.

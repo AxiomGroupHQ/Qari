@@ -106,7 +106,7 @@ export function parseTafseerHtml(html: string): TafseerNode[] {
     lastIndex = match.index + match[0].length;
   }
 
-  // No block tags found — treat entire content as a single paragraph
+  // No block tags found - treat entire content as a single paragraph
   if (nodes.length === 0 && html.trim()) {
     const children = parseInlineContent(html);
     if (children.length > 0) {

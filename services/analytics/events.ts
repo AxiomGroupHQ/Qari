@@ -170,7 +170,13 @@ export interface PlaylistModifiedProps {
 }
 
 export interface ShareCreatedProps {
-  content_type: 'verse' | 'surah' | 'mushaf' | 'reciter' | 'adhkar';
+  content_type:
+    | 'verse'
+    | 'surah'
+    | 'mushaf'
+    | 'reciter'
+    | 'adhkar'
+    | 'playlist';
   surah_id?: number;
 }
 

@@ -17,7 +17,7 @@ interface TabletDockedPlayerProps {
 /**
  * Mini player docked inside the iPad sidebar footer.
  *
- * Phones never mount this component — they use `FloatingPlayer` (Android)
+ * Phones never mount this component - they use `FloatingPlayer` (Android)
  * or `MiniPlayer` inside `NativeTabs.BottomAccessory` (iOS).
  */
 export const TabletDockedPlayer: React.FC<TabletDockedPlayerProps> = React.memo(

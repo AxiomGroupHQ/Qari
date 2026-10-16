@@ -8,8 +8,8 @@ This guide is for contributors who want to run Istima against their own backend 
 
 Istima has two backend dependencies:
 
-1. **Istima REST API** — serves reciter metadata, audio URL resolution, and ayah timestamps. The hosted version is at `api.thebayaan.com`. The backend source is at [thebayaan/Backend--bayaan](https://github.com/thebayaan/Backend--bayaan).
-2. **Supabase** — used for audio file storage (reciters' MP3s) and as the source of truth for reciter/rewayat data. The Supabase client in the app is legacy for most features; the REST API is the primary data source.
+1. **Istima REST API** - serves reciter metadata, audio URL resolution, and ayah timestamps. The hosted version is at `iapi.istima.app`. The backend source is at theistima/Backend--istima.
+2. **Supabase** - used for audio file storage (reciters' MP3s) and as the source of truth for reciter/rewayat data. The Supabase client in the app is legacy for most features; the REST API is the primary data source.
 
 For most contributors, the **community API key** is all you need. Self-hosting is only necessary if you want to add reciters, modify the data model, or run a fully independent deployment.
 
@@ -26,7 +26,7 @@ cp .env.example .env
 Set in `.env`:
 
 ```
-EXPO_PUBLIC_ISTIMA_API_URL=https://api.thebayaan.com
+EXPO_PUBLIC_ISTIMA_API_URL=https://iapi.istima.app
 EXPO_PUBLIC_ISTIMA_API_KEY=<community key>
 ```
 
@@ -49,7 +49,7 @@ Run the following in the Supabase SQL editor:
 ```sql
 -- Reciters table
 create table reciters (
-  id uuid primary key default gen_random_uuid(),
+  id uuid primary key default gen_random_uuid,
   name text not null,
   date text,
   image_url text
@@ -57,7 +57,7 @@ create table reciters (
 
 -- Rewayat table
 create table rewayat (
-  id uuid primary key default gen_random_uuid(),
+  id uuid primary key default gen_random_uuid,
   reciter_id uuid references reciters(id) on delete cascade,
   name text not null,
   style text,
@@ -92,18 +92,18 @@ SUPABASE_URL=https://your-project-id.supabase.co
 SUPABASE_ANON_KEY=your-anon-key
 ```
 
-Note: the Supabase variables use the `SUPABASE_` prefix (not `EXPO_PUBLIC_`), which means they are not exposed to the client bundle. They are only used in Node scripts (e.g. `npm run fetch-reciters`).
+the Supabase variables use the `SUPABASE_` prefix (not `EXPO_PUBLIC_`), which means they are not exposed to the client bundle. They are only used in Node scripts (e.g. `npm run fetch-reciters`).
 
 ---
 
 ## Option 3: Full self-hosted deployment (fork)
 
-Use this if you are building an independent fork of Bayaan.
+Use this if you are building an independent fork of Istima.
 
 ### Step 1: Fork and clone
 
 ```bash
-git clone https://github.com/your-org/Bayaan.git
+git clone https://github.com/your-org/Istima.git
 cd Istima
 npm install
 ```
@@ -138,7 +138,7 @@ This will create a new EAS project and update `eas.json`. Replace the `projectId
 
 Either:
 
-- Deploy the [Backend--bayaan](https://github.com/thebayaan/Backend--bayaan) to your own infrastructure and point `EXPO_PUBLIC_ISTIMA_API_URL` at it, or
+- Deploy the Backend--istima to your own infrastructure and point `EXPO_PUBLIC_ISTIMA_API_URL` at it, or
 - Populate your Supabase project with reciter data and use `npm run fetch-reciters` to generate `data/reciters.json` for use as a bundled fallback.
 
 ### Step 5: iOS signing

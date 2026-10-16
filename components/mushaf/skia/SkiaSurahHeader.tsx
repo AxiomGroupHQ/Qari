@@ -15,8 +15,8 @@ import {
   getQCFSurahNameChar,
 } from '@/constants/surahNameGlyphs';
 
-/** 'withIcon' — QCF font, single glyph includes decorative "سورة" icon.
- *  'withoutIcon' — V4 font, name-only glyph + separate icon glyph. */
+/** 'withIcon' - QCF font, single glyph includes decorative "سورة" icon.
+ *  'withoutIcon' - V4 font, name-only glyph + separate icon glyph. */
 type SurahNameVariant = 'withIcon' | 'withoutIcon';
 
 interface SkiaSurahHeaderProps {
@@ -80,7 +80,7 @@ const SkiaSurahHeader: React.FC<SkiaSurahHeaderProps> = ({
     contentHeight,
   ]);
 
-  // ── withIcon: QCF font — single glyph includes name + icon ──
+  // ── withIcon: QCF font - single glyph includes name + icon ──
   const qcfNameStr = useMemo(
     () => (variant === 'withIcon' ? getQCFSurahNameChar(surahNumber) : ''),
     [variant, surahNumber],
@@ -120,7 +120,7 @@ const SkiaSurahHeader: React.FC<SkiaSurahHeaderProps> = ({
     contentHeight,
   ]);
 
-  // QCF font has hardcoded black SVG fills — recolor with a SrcIn color filter
+  // QCF font has hardcoded black SVG fills - recolor with a SrcIn color filter
   const qcfColorPaint = useMemo(() => {
     const paint = Skia.Paint();
     paint.setColorFilter(
@@ -129,7 +129,7 @@ const SkiaSurahHeader: React.FC<SkiaSurahHeaderProps> = ({
     return paint;
   }, [nameColor]);
 
-  // ── withoutIcon: V4 font — separate icon + name paragraphs ──
+  // ── withoutIcon: V4 font - separate icon + name paragraphs ──
   const v4NameStr = useMemo(
     () => (variant === 'withoutIcon' ? getSurahNameChar(surahNumber) : ''),
     [variant, surahNumber],

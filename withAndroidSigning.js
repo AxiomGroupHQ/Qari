@@ -12,13 +12,13 @@ const androidSigningConfigsBlock = `
             keyPassword 'android'
         }
         release {
-            if (project.hasProperty('BAYAAN_UPLOAD_STORE_FILE')) {
-                storeFile file(project.properties['BAYAAN_UPLOAD_STORE_FILE'])
-                storePassword System.getenv('BAYAAN_UPLOAD_STORE_PASSWORD') ?: project.properties['BAYAAN_UPLOAD_STORE_PASSWORD']
-                keyAlias System.getenv('BAYAAN_UPLOAD_KEY_ALIAS') ?: project.properties['BAYAAN_UPLOAD_KEY_ALIAS'] ?: 'upload'
-                keyPassword System.getenv('BAYAAN_UPLOAD_KEY_PASSWORD') ?: project.properties['BAYAAN_UPLOAD_KEY_PASSWORD']
+            if (project.hasProperty('ISTIMA_UPLOAD_STORE_FILE')) {
+                storeFile file(project.properties['ISTIMA_UPLOAD_STORE_FILE'])
+                storePassword System.getenv('ISTIMA_UPLOAD_STORE_PASSWORD') ?: project.properties['ISTIMA_UPLOAD_STORE_PASSWORD']
+                keyAlias System.getenv('ISTIMA_UPLOAD_KEY_ALIAS') ?: project.properties['ISTIMA_UPLOAD_KEY_ALIAS'] ?: 'upload'
+                keyPassword System.getenv('ISTIMA_UPLOAD_KEY_PASSWORD') ?: project.properties['ISTIMA_UPLOAD_KEY_PASSWORD']
             } else {
-                println "WARNING: Release signing config 'BAYAAN_UPLOAD_STORE_FILE' not found in gradle.properties or environment variables. App will not be signed for release using custom keystore."
+                println "WARNING: Release signing config 'ISTIMA_UPLOAD_STORE_FILE' not found in gradle.properties or environment variables. App will not be signed for release using custom keystore."
                 // Fall back to debug signing
                 storeFile file('debug.keystore')
                 storePassword 'android'
@@ -63,7 +63,7 @@ function applySigningConfigLogic(buildGradleContent) {
   const hasReleaseConfig =
     newContent.includes('signingConfigs {') &&
     newContent.includes('release {') &&
-    newContent.includes('BAYAAN_UPLOAD_STORE_FILE');
+    newContent.includes('ISTIMA_UPLOAD_STORE_FILE');
 
   // Replace the entire signingConfigs block if it exists but doesn't have our release config
   if (hasSigningConfigs && !hasReleaseConfig) {

@@ -1,11 +1,11 @@
 import {Platform} from 'react-native';
 
 interface PlatformFeatures {
-  /** iOS only — MiniPlayer rendered inside NativeTabs.BottomAccessory */
+  /** iOS only - MiniPlayer rendered inside NativeTabs.BottomAccessory */
   hasBottomAccessoryPlayer: boolean;
-  /** iOS only — minimizeBehavior="onScrollDown" on NativeTabs */
+  /** iOS only - minimizeBehavior="onScrollDown" on NativeTabs */
   hasTabMinimizeBehavior: boolean;
-  /** iOS only — contentStyle on NativeTabs.Trigger */
+  /** iOS only - contentStyle on NativeTabs.Trigger */
   hasTabContentStyle: boolean;
 }
 

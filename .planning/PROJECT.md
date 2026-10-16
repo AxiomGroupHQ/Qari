@@ -1,38 +1,38 @@
-# Bayaan
+# Istima
 
 ## What This Is
 
-Bayaan is a Quran audio app for iOS and Android that lets users listen to Quran recitations from various reciters. Users can browse reciters, play surahs with background audio support, create playlists, download for offline listening, and mark favorites. Built with React Native and Expo.
+Istima is a Quran audio app for iOS and Android that lets users listen to Quran recitations from various reciters. Users can browse reciters, play surahs with background audio support, create playlists, download for offline listening, and mark favorites. Built with React Native and Expo.
 
 ## Core Value
 
-Reliable, uninterrupted Quran playback — users must be able to listen to recitations seamlessly, whether online or offline.
+Reliable, uninterrupted Quran playback - users must be able to listen to recitations smoothly, whether online or offline.
 
 ## Requirements
 
 ### Validated
 
-- ✓ Audio playback with background support — existing
-- ✓ Queue management with lazy batch loading — existing
-- ✓ Reciter and rewayat browsing — existing
-- ✓ Surah selection and playback — existing
-- ✓ Playlist creation and management (SQLite-backed) — existing
-- ✓ Offline downloads with local file playback — existing
-- ✓ Loved/favorite tracks persistence — existing
-- ✓ Search functionality (reciters and surahs) — existing
-- ✓ Dark/light theme support — existing
-- ✓ Playback controls (rate, repeat, shuffle) — existing
-- ✓ Recently played tracking — existing
+- ✓ Audio playback with background support - existing
+- ✓ Queue management with lazy batch loading - existing
+- ✓ Reciter and rewayat browsing - existing
+- ✓ Surah selection and playback - existing
+- ✓ Playlist creation and management (SQLite-backed) - existing
+- ✓ Offline downloads with local file playback - existing
+- ✓ Loved/favorite tracks persistence - existing
+- ✓ Search functionality (reciters and surahs) - existing
+- ✓ Dark/light theme support - existing
+- ✓ Playback controls (rate, repeat, shuffle) - existing
+- ✓ Recently played tracking - existing
 
 ### Active
 
-(None yet — use `/gsd:new-milestone` to define next work)
+(None yet - use `/gsd:new-milestone` to define next work)
 
 ### Out of Scope
 
-- Cross-device sync — Deferred, requires Supabase schema and conflict resolution
-- Verse-level navigation — Requires verse timestamp metadata not currently available
-- Playback statistics/analytics — Future enhancement
+- Cross-device sync - Deferred, requires Supabase schema and conflict resolution
+- Verse-level navigation - Requires verse timestamp metadata not currently available
+- Playback statistics/analytics - Future enhancement
 
 ## Context
 
@@ -70,7 +70,7 @@ Reliable, uninterrupted Quran playback — users must be able to listen to recit
 | ------------------------- | ------------------------------------------------------------ | -------------------------------------------------------- |
 | Zustand over Redux        | Simpler API, less boilerplate, sufficient for app complexity | ✓ Good                                                   |
 | SQLite for playlists      | Need relational queries, AsyncStorage insufficient           | ✓ Good                                                   |
-| react-native-track-player | Standard choice at time of development                       | ⚠️ Revisit — migration to react-native-audio-api planned |
+| react-native-track-player | Standard choice at time of development                       | ⚠️ Revisit - migration to react-native-audio-api planned |
 | Expo managed workflow     | Faster iteration, OTA updates                                | ✓ Good                                                   |
 
 

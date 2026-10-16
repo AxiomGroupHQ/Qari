@@ -3,7 +3,7 @@ import type {TafseerEdition} from '@/types/tafseer';
 /**
  * Boot-time tafsir editions list, hand-curated and shipped in-bundle.
  *
- * RFC-009 — this static list intentionally coexists with the dynamic
+ * RFC-009 - this static list intentionally coexists with the dynamic
  * `TafsirProvider.fetchAvailableEditions()` runtime path. The static
  * list is the no-network UI surface used by Settings → Tafsir to render
  * the picker on first launch and offline; the provider's dynamic

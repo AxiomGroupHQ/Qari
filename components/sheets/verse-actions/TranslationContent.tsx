@@ -246,7 +246,7 @@ export const TranslationContent: React.FC<TranslationContentProps> = ({
         })}
       </ScrollView>
 
-      {/* Footer — Prev / Next */}
+      {/* Footer - Prev / Next */}
       <View style={[styles.footer, {paddingBottom: verticalScale(16)}]}>
         <Pressable
           onPress={goToPrevious}

@@ -57,9 +57,9 @@ Bridge libraries exist to let the React Native phone app communicate with the na
 
 **Caveats:**
 
-- Speaker playback drains ~6 min battery per minute of audio — impractical for long surahs
+- Speaker playback drains ~6 min battery per minute of audio - impractical for long surahs
 - Bluetooth headphone playback is the realistic path for standalone listening
-- watchOS aggressively kills background downloads — even well-funded apps (Overcast, Spotify) struggle with download reliability
+- watchOS aggressively kills background downloads - even well-funded apps (Overcast, Spotify) struggle with download reliability
 - **75 MB app bundle size limit** on watchOS
 - Independent app capability available since watchOS 6 (2019)
 
@@ -76,7 +76,7 @@ Bridge libraries exist to let the React Native phone app communicate with the na
 
 **Caveats:**
 
-- Android 15+ enforces `setSuppressPlaybackOnUnsuitableOutput(true)` — media won't play on speaker unless explicitly allowed
+- Android 15+ enforces `setSuppressPlaybackOnUnsuitableOutput(true)` - media won't play on speaker unless explicitly allowed
 - Bluetooth headphone playback is the recommended path
 - Downloads should use WorkManager with charging + Wi-Fi constraints
 
@@ -291,12 +291,12 @@ Similar layouts but adapted for round displays:
 
 ## Open Questions
 
-1. **Native developer availability** — Watch apps require Swift (watchOS) and Kotlin (Wear OS) expertise. Can the current team handle this, or is it outsourced?
-2. **Expo prebuild persistence** — How to preserve the watchOS Xcode target across `expo prebuild --clean` runs? Config plugin or committed `ios/` directory?
-3. **Which platform first?** — Apple Watch has a larger installed base for this demographic, but Wear OS is easier to bridge from React Native. Recommend Apple Watch first.
-4. **Standalone playback worth the effort?** — Given watchOS download reliability issues, is remote control sufficient for v1?
-5. **Mushaf on watch?** — Screen is too small for meaningful Quran text display. Skip for watch.
-6. **RTL support on watch?** — SwiftUI handles RTL well natively. Verify Arabic text rendering on both platforms.
+1. **Native developer availability** - Watch apps require Swift (watchOS) and Kotlin (Wear OS) expertise. Can the current team handle this, or is it outsourced?
+2. **Expo prebuild persistence** - How to preserve the watchOS Xcode target across `expo prebuild --clean` runs? Config plugin or committed `ios/` directory?
+3. **Which platform first?** - Apple Watch has a larger installed base for this demographic, but Wear OS is easier to bridge from React Native. Recommend Apple Watch first.
+4. **Standalone playback worth the effort?** - Given watchOS download reliability issues, is remote control sufficient for v1?
+5. **Mushaf on watch?** - Screen is too small for meaningful Quran text display. Skip for watch.
+6. **RTL support on watch?** - SwiftUI handles RTL well natively. Verify Arabic text rendering on both platforms.
 
 ## Market Context
 
@@ -327,7 +327,7 @@ No major Quran app currently offers full standalone audio playback on smartwatch
 - [Apple WatchConnectivity Documentation](https://developer.apple.com/documentation/watchconnectivity)
 - [Wear OS Media Guide](https://developer.android.com/media/implement/surfaces/wear-os)
 - [Horologist Media Toolkit](https://github.com/google/horologist)
-- [Apple TV & Android TV Feature Doc](./tv-app.md) — sibling feature for large-screen platforms
+- [Apple TV & Android TV Feature Doc](./tv-app.md) - sibling feature for large-screen platforms
 
 ---
 

@@ -1,4 +1,4 @@
-# Mushaf Page — Design Document
+# Mushaf Page - Design Document
 
 > **Status**: Blocked (waiting on mushaf text renderer from collaborator)
 > **Branch**: TBD (off `develop`)
@@ -80,11 +80,11 @@ FloatingPlayer currently only renders when `currentTrack` exists. It needs to al
 
 ## 4. Reader Mode UX
 
-### 4.1 Mushaf Rendering (Blocker — Friend Building)
+### 4.1 Mushaf Rendering (Blocker - Friend Building)
 
 - Text-rendered pages matching physical mushaf layout
 - Uses fonts like KFGQPC or similar
-- Friend is building this component — we design the container and integration points around it
+- Friend is building this component - we design the container and integration points around it
 
 ### 4.2 Surah Picker
 
@@ -131,7 +131,7 @@ FloatingPlayer currently only renders when `currentTrack` exists. It needs to al
 
 - No ayah-level sync available
 - Show surah-level association only (reader shows the surah that's playing)
-- Mushaf doesn't highlight or auto-scroll — just shows the right surah
+- Mushaf doesn't highlight or auto-scroll - just shows the right surah
 
 ---
 
@@ -146,13 +146,13 @@ FloatingPlayer currently only renders when `currentTrack` exists. It needs to al
 
 Full set of ayah-level actions:
 
-1. **Play from here** — starts audio from this ayah (requires reciter selection if none active)
-2. **Bookmark** — saves ayah to bookmarks (appears in Collection tab)
-3. **Add note** — attach a personal note to this ayah
-4. **Copy text** — copy Arabic text (+ translation if enabled) to clipboard
-5. **Share** — share ayah text via system share sheet
-6. **Loop range** — select start ayah (pre-filled from long press), pick end ayah, set repeat count
-7. **Tafsir/Translation** — show detailed commentary or translation for this specific ayah
+1. **Play from here** - starts audio from this ayah (requires reciter selection if none active)
+2. **Bookmark** - saves ayah to bookmarks (appears in Collection tab)
+3. **Add note** - attach a personal note to this ayah
+4. **Copy text** - copy Arabic text (+ translation if enabled) to clipboard
+5. **Share** - share ayah text via system share sheet
+6. **Loop range** - select start ayah (pre-filled from long press), pick end ayah, set repeat count
+7. **Tafsir/Translation** - show detailed commentary or translation for this specific ayah
 
 ---
 
@@ -236,7 +236,7 @@ interface MushafReadingState {
 
 - `mushafReadingStore` is lightweight (positions + bookmarks)
 - The mushaf renderer component should handle its own page virtualization
-- Font rendering is the main cost — friend's renderer needs to optimize this
+- Font rendering is the main cost - friend's renderer needs to optimize this
 
 ---
 
@@ -298,12 +298,12 @@ interface MushafReadingState {
 
 ### Infrastructure (no renderer needed)
 
-1. `mushafReadingStore` — reading state, bookmarks, notes, history
-2. Entry point changes — SurahsView tap behavior, options sheet updates, search tab updates
+1. `mushafReadingStore` - reading state, bookmarks, notes, history
+2. Entry point changes - SurahsView tap behavior, options sheet updates, search tab updates
 3. FloatingPlayer reading session support
 4. `sheetContentMode` state in playerStore
-5. `AyahActionsSheet` — long-press actions (most work without renderer)
-6. `SurahPickerSheet` — surah navigation modal
+5. `AyahActionsSheet` - long-press actions (most work without renderer)
+6. `SurahPickerSheet` - surah navigation modal
 7. Shell `MushafContainer` component with loading/placeholder state
 8. Bookmark integration with Collection tab
 9. Mode toggle button in PlayerContent controls area

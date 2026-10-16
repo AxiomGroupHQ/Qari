@@ -1,6 +1,6 @@
 // Word-level QCF V2 glyph supplier. The page STRUCTURE (which lines are
 // surah-headers vs basmallah vs ayah, what y position each occupies) comes
-// from the DigitalKhatt service — see digitalKhattDataService.getPageLines().
+// from the DigitalKhatt service - see digitalKhattDataService.getPageLines().
 // This service only owns the page-font glyph codes for ayah lines, plus
 // the constant for the basmala line.
 
@@ -42,7 +42,7 @@ export const BASMALA_TEXT = 'ﱁﱂﱃﱄ';
 export const BASMALA_FONT_FAMILY = 'p1-v2';
 
 // Per-page line-content overrides applied at lookup time. Currently
-// empty — the QUL Tarteel-sourced qcf-pages.json (built via
+// empty - the QUL Tarteel-sourced qcf-pages.json (built via
 // scripts/build-qcf-from-qul.mjs) has correct line breaks straight from
 // the curated KFGQPC V2 layout. Add entries here only if a future page
 // needs hand-tuning beyond what the source data provides.

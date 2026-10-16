@@ -1,7 +1,7 @@
-/** Ornamental surah divider frame — PUA glyph U+E000 from quran-common.ttf */
+/** Ornamental surah divider frame - PUA glyph U+E000 from quran-common.ttf */
 export const SURAH_DIVIDER_CHAR = '\uE000';
 
-/** Surah icon ligature in surah-name-v4.ttf — renders before the surah name */
+/** Surah icon ligature in surah-name-v4.ttf - renders before the surah name */
 export const SURAH_ICON_CHAR = 'surah-icon';
 
 /** Get the ligature string for a surah name glyph in surah-name-v4.ttf */
@@ -11,7 +11,7 @@ export function getSurahNameChar(surahNumber: number): string {
 }
 
 /**
- * QCF_FullSurah_HD_COLOR codepoint map — maps surah number (1-114) to the
+ * QCF_FullSurah_HD_COLOR codepoint map - maps surah number (1-114) to the
  * direct Unicode codepoint in surah-name-qcf.ttf (King Fahad Complex font).
  * Each glyph includes the surah name WITH a decorative "سورة" icon.
  * Order follows the font's internal GID table (FC45-FC64 then FB51-FBEB).

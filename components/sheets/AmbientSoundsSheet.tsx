@@ -55,7 +55,7 @@ export const AmbientSoundsSheet = (props: SheetProps<'ambient-sounds'>) => {
 
   /**
    * When the sheet closes, check if the main Quran player is playing.
-   * If it's NOT playing, the user was just sampling — stop ambient playback.
+   * If it's NOT playing, the user was just sampling - stop ambient playback.
    * If it IS playing, ambient should continue alongside recitation.
    */
   const handleBeforeClose = useCallback(() => {
@@ -127,7 +127,7 @@ export const AmbientSoundsSheet = (props: SheetProps<'ambient-sounds'>) => {
           })}
         </View>
 
-        {/* Volume Slider — only show when a sound is active */}
+        {/* Volume Slider - only show when a sound is active */}
         {isEnabled && (
           <View style={styles.volumeSection}>
             <View style={styles.volumeHeader}>

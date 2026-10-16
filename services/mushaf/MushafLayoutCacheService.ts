@@ -6,7 +6,7 @@ import {useMushafSettingsStore} from '@/store/mushafSettingsStore';
 // Bump this when font files change or layout computation logic changes.
 // Incrementing invalidates all cached layouts and forces recomputation.
 // v9: layouts are now keyed by rewayah (word widths differ per transmission
-// — sharing a cache across rewayahs leaves Shouba lines under-stretched).
+// - sharing a cache across rewayahs leaves Shouba lines under-stretched).
 const SCHEMA_VERSION = 9;
 
 function mmkvKey(

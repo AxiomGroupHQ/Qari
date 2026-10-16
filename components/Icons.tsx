@@ -884,7 +884,7 @@ export const AmbientIcon: React.FC<IconProps> = ({color, size, filled}) => (
   </Svg>
 );
 
-// Tafseer — Stacked Volumes
+// Tafseer - Stacked Volumes
 export const StackedVolumesIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Rect
@@ -919,7 +919,7 @@ export const StackedVolumesIcon: React.FC<IconProps> = ({color, size}) => (
   </Svg>
 );
 
-// Notes — Page + Quill
+// Notes - Page + Quill
 export const PageQuillIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Rect
@@ -979,7 +979,7 @@ export const PageQuillIcon: React.FC<IconProps> = ({color, size}) => (
   </Svg>
 );
 
-// Similar Verses — Mirror Waves
+// Similar Verses - Mirror Waves
 export const MirrorWavesIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Path
@@ -999,7 +999,7 @@ export const MirrorWavesIcon: React.FC<IconProps> = ({color, size}) => (
   </Svg>
 );
 
-// Highlight — Text Highlight Bar
+// Highlight - Text Highlight Bar
 export const HighlightIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Rect
@@ -1049,7 +1049,7 @@ export const HighlightIcon: React.FC<IconProps> = ({color, size}) => (
   </Svg>
 );
 
-// Mushaf Mode — Mushaf Page (pill icon)
+// Mushaf Mode - Mushaf Page (pill icon)
 export const MushafPagePillIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Rect
@@ -1180,7 +1180,7 @@ export const MushafPagePillIcon: React.FC<IconProps> = ({color, size}) => (
   </Svg>
 );
 
-// Scroll Mode — Page + Arrow (pill icon)
+// Scroll Mode - Page + Arrow (pill icon)
 export const ScrollModePillIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Rect
@@ -1242,7 +1242,7 @@ export const ScrollModePillIcon: React.FC<IconProps> = ({color, size}) => (
   </Svg>
 );
 
-// List View — Flowing text lines (no page border)
+// List View - Flowing text lines (no page border)
 export const ListViewPillIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Rect
@@ -1292,7 +1292,7 @@ export const ListViewPillIcon: React.FC<IconProps> = ({color, size}) => (
   </Svg>
 );
 
-// Horizontal Scroll — Two pages with horizontal arrow
+// Horizontal Scroll - Two pages with horizontal arrow
 export const HorizontalScrollPillIcon: React.FC<IconProps> = ({
   color,
   size,
@@ -1386,7 +1386,7 @@ export const HorizontalScrollPillIcon: React.FC<IconProps> = ({
   </Svg>
 );
 
-// Vertical Scroll — Page with downward arrow
+// Vertical Scroll - Page with downward arrow
 export const VerticalScrollPillIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Rect
@@ -1448,7 +1448,7 @@ export const VerticalScrollPillIcon: React.FC<IconProps> = ({color, size}) => (
   </Svg>
 );
 
-// Book Layout — Landscape Book (pill icon)
+// Book Layout - Landscape Book (pill icon)
 export const BookLayoutPillIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Rect
@@ -1480,7 +1480,7 @@ export const BookLayoutPillIcon: React.FC<IconProps> = ({color, size}) => (
   </Svg>
 );
 
-// Fullscreen Layout — Expand Arrows (pill icon)
+// Fullscreen Layout - Expand Arrows (pill icon)
 export const FullscreenPillIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Rect
@@ -1502,7 +1502,7 @@ export const FullscreenPillIcon: React.FC<IconProps> = ({color, size}) => (
   </Svg>
 );
 
-// Shared Phrases — Chain Links
+// Shared Phrases - Chain Links
 export const ChainLinksIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Path d="M9 12H15" stroke={color} strokeWidth={1.5} strokeLinecap="round" />
@@ -2169,7 +2169,7 @@ export const MoonIcon: React.FC<IconProps> = ({color, size}) => (
 
 export const AutoThemeIcon: React.FC<IconProps> = ({color, size}) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-    {/* Circle split in half — left light, right dark */}
+    {/* Circle split in half - left light, right dark */}
     <Circle cx={12} cy={12} r={8.5} stroke={color} strokeWidth={1.5} />
     {/* Right half filled (dark side) */}
     <Path d="M12 3.5a8.5 8.5 0 010 17V3.5z" fill={color} opacity={0.85} />

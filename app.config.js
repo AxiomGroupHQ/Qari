@@ -46,7 +46,7 @@ module.exports = {
     locales: nativeLocales,
     name: branding.appName, // @ai
     slug: branding.appSlug, // @ai
-    scheme: branding.urlScheme, // Retain legacy bayaan URL handling for existing installations. @ai
+    scheme: branding.urlScheme,
     description: branding.contentTagline + '. ' + branding.reflectionTagline, // @ai
     web: {name: branding.appName, favicon: './assets/images/icon.png'}, // @ai
     version: getVersionString(),
@@ -81,7 +81,7 @@ module.exports = {
         UIBackgroundModes: ['audio', 'remote-notification'],
         CFBundleURLTypes: [
           {
-            CFBundleURLSchemes: [branding.urlScheme, 'bayaan'],
+            CFBundleURLSchemes: [branding.urlScheme],
           },
         ],
         NSPrivacyPolicyURL: PRIVACY_POLICY_URL,
@@ -170,6 +170,11 @@ module.exports = {
                     host: ASSOCIATED_DOMAIN,
                     pathPrefix: '/adhkar',
                   },
+                  {
+                    scheme: 'https',
+                    host: ASSOCIATED_DOMAIN,
+                    pathPrefix: '/p/',
+                  },
                 ],
                 category: ['BROWSABLE', 'DEFAULT'],
               },
@@ -251,8 +256,8 @@ module.exports = {
             [
               '@sentry/react-native/expo',
               {
-                organization: process.env.SENTRY_ORG ?? 'bayaan',
-                project: process.env.SENTRY_PROJECT ?? 'bayaan',
+                organization: process.env.SENTRY_ORG ?? 'istima',
+                project: process.env.SENTRY_PROJECT ?? 'istima',
               },
             ],
           ]

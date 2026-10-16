@@ -1,6 +1,6 @@
-> **SHIPPED — This feature is implemented.** Implementation reference plan; the feature shipped. See `WBWDataService`, `WBWVerseView`, and `mushafSettingsStore`.
+> **SHIPPED - This feature is implemented.** Implementation reference plan; the feature shipped. See `WBWDataService`, `WBWVerseView`, and `mushafSettingsStore`.
 
-# Word-by-Word Translation — Implementation Plan
+# Word-by-Word Translation - Implementation Plan
 
 > **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
 
@@ -214,7 +214,7 @@ Add after the Tafseer DB registration block (after line 390):
 /**
  * WBW Data Service (Priority 10)
  * Opens wbw-en.db for word-by-word translations.
- * Non-critical — WBW features degrade gracefully without it.
+ * Non-critical - WBW features degrade gracefully without it.
  */
 appInitializer.registerService({
   name: 'WBW Data',
@@ -242,14 +242,14 @@ feat(wbw): register WBWDataService in AppInitializer
 
 **IMPORTANT:** Invoke `frontend-design` skill before writing this component. Follow the alpha-based design system.
 
-This is the core visual component — the RTL flex-wrap grid of word units.
+This is the core visual component - the RTL flex-wrap grid of word units.
 
 **Key requirements:**
 
 - `flexDirection: 'row-reverse'` + `flexWrap: 'wrap'` for RTL flow
 - Each word unit: Arabic (top) → subtle hairline → transliteration (optional) → translation (optional)
 - Subtle line under each Arabic word: `Color(theme.colors.text).alpha(0.06)`, `StyleSheet.hairlineWidth`
-- No backgrounds or borders on individual word units — spacing creates grouping
+- No backgrounds or borders on individual word units - spacing creates grouping
 - Arabic: same font as current Mushaf settings (DK font family, user's arabicFontSize)
 - Translation: `Manrope-Regular`, `ms(11)`, `Color(theme.colors.text).alpha(0.7)`
 - Transliteration: `Manrope-Regular`, `ms(10.5)`, `Color(theme.colors.textSecondary).alpha(0.5)`, italic
@@ -362,7 +362,7 @@ Insert ABOVE the Transliteration card (before line 644), inside the `(context !=
 
 **Step 3: Add checkbox styles**
 
-Add to `createStyles` — use `frontend-design` for exact tokens:
+Add to `createStyles` - use `frontend-design` for exact tokens:
 
 ```typescript
 checkbox: {
@@ -510,8 +510,8 @@ feat(wbw): wire WBW store state through QuranView to VerseItem
 
 The sheet receives `{ verseKey, position }` as payload. It should:
 
-- Look up word data from `wbwDataService.getVerseWords(verseKey)` — find by position
-- Look up Arabic text from `digitalKhattDataService.getVerseWords(verseKey)` — find by `wordPositionInVerse`
+- Look up word data from `wbwDataService.getVerseWords(verseKey)` - find by position
+- Look up Arabic text from `digitalKhattDataService.getVerseWords(verseKey)` - find by `wordPositionInVerse`
 - Display: large Arabic word (centered), transliteration, translation
 - Play button that loads audio from `https://audio.qurancdn.com/${audioUrl}`
 - Footer: "Verse X:Y · Word N of M"

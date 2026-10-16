@@ -54,7 +54,7 @@ export const useAmbientStore = create<AmbientStoreState>()(
           ambientAudioService.setVolume(volume);
           ambientAudioService.fadeIn();
         } else if (!enabled) {
-          // Full stop — pause, release player, reset state
+          // Full stop - pause, release player, reset state
           ambientAudioService.stop();
         }
 
@@ -99,7 +99,7 @@ export const useAmbientStore = create<AmbientStoreState>()(
         // Only persist preferences, not runtime state
         currentSound: state.currentSound,
         volume: state.volume,
-        // Don't persist isEnabled — ambient should not auto-start on app launch
+        // Don't persist isEnabled - ambient should not auto-start on app launch
       }),
     },
   ),

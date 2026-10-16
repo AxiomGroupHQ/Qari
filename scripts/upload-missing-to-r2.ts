@@ -3,15 +3,15 @@
  *
  * Sends migration tasks to the Cloudflare R2 Migrator Worker for any rewayat
  * not yet on R2. The Worker fetches from source (mp3quran / quranicaudio) and
- * writes directly to R2 server-side — no local download/upload needed.
+ * writes directly to R2 server-side - no local download/upload needed.
  *
  * Usage:
  *   npx tsx scripts/upload-missing-to-r2.ts [--dry-run]
  *
  * Required env vars:
- *   WORKER_URL  — R2 migrator worker URL
- *   AUTH_TOKEN  — Worker auth token
- *   BAYAAN_API_KEY — Bearer token for the backend API
+ *   WORKER_URL  - R2 migrator worker URL
+ *   AUTH_TOKEN  - Worker auth token
+ *   ISTIMA_API_KEY - Bearer token for the backend API
  *
  * Or: reads from .env.r2-worker automatically if present.
  */
@@ -112,14 +112,14 @@ loadEnvFile();
 
 const WORKER_URL = process.env.WORKER_URL;
 const AUTH_TOKEN = process.env.AUTH_TOKEN;
-const BAYAAN_API_KEY = process.env.BAYAAN_API_KEY;
+const ISTIMA_API_KEY = process.env.ISTIMA_API_KEY;
 
 const DRY_RUN = process.argv.includes('--dry-run');
 const STATUS_ONLY = process.argv.includes('--status');
 const RESET_STATUS = process.argv.includes('--reset-status');
 const CDN_BASE = 'https://cdn.example.com';
 const R2_KEY_PREFIX = 'quran/recitations';
-const API_BASE = 'https://bayaan-backend-production.up.railway.app';
+const API_BASE = 'https://istima-backend-production.up.railway.app';
 const PAGE_LIMIT = 200;
 const ENQUEUE_BATCH_SIZE = 500; // Worker chunks to 100 internally
 
@@ -131,7 +131,7 @@ function validateEnv(): void {
   const missing: string[] = [];
   if (!WORKER_URL) missing.push('WORKER_URL');
   if (!AUTH_TOKEN) missing.push('AUTH_TOKEN');
-  if (!BAYAAN_API_KEY) missing.push('BAYAAN_API_KEY');
+  if (!ISTIMA_API_KEY) missing.push('ISTIMA_API_KEY');
 
   if (missing.length > 0) {
     console.error(
@@ -149,7 +149,7 @@ function validateEnv(): void {
 async function fetchRecitersPage(page: number): Promise<PaginatedResponse> {
   const url = `${API_BASE}/v1/reciters?page=${page}&limit=${PAGE_LIMIT}`;
   const res = await fetch(url, {
-    headers: {Authorization: `Bearer ${BAYAAN_API_KEY}`},
+    headers: {Authorization: `Bearer ${ISTIMA_API_KEY}`},
   });
 
   if (!res.ok) {
@@ -289,7 +289,7 @@ async function main(): Promise<void> {
   }
 
   if (DRY_RUN) {
-    console.log('=== DRY RUN — no files will be enqueued ===\n');
+    console.log('=== DRY RUN - no files will be enqueued ===\n');
   }
 
   // Health check
@@ -348,7 +348,7 @@ async function main(): Promise<void> {
 
       if (!r2KeyBase) {
         console.warn(
-          `${prefix} Unmapped rewayah/style: "${rewayat.name}" / "${rewayat.style}" — skipping`,
+          `${prefix} Unmapped rewayah/style: "${rewayat.name}" / "${rewayat.style}" - skipping`,
         );
         stats.rewayatFailed++;
         continue;
@@ -360,7 +360,7 @@ async function main(): Promise<void> {
       );
 
       if (surahNumbers.length === 0) {
-        console.warn(`${prefix} No valid surah numbers — skipping`);
+        console.warn(`${prefix} No valid surah numbers - skipping`);
         stats.rewayatFailed++;
         continue;
       }
@@ -373,7 +373,7 @@ async function main(): Promise<void> {
 
       const sourceServer = rewayat.server?.replace(/\/$/, '');
       if (!sourceServer) {
-        console.warn(`${prefix} No source server URL — skipping`);
+        console.warn(`${prefix} No source server URL - skipping`);
         stats.rewayatFailed++;
         continue;
       }
@@ -416,7 +416,7 @@ async function main(): Promise<void> {
 
   // Summary
   console.log('\n=== Enqueue Summary ===');
-  if (DRY_RUN) console.log('(DRY RUN — nothing was enqueued)');
+  if (DRY_RUN) console.log('(DRY RUN - nothing was enqueued)');
   console.log(`  Rewayat processed:   ${stats.rewayatProcessed}`);
   console.log(`  Rewayat skipped:     ${stats.rewayatSkipped}`);
   console.log(`  Rewayat failed:      ${stats.rewayatFailed}`);

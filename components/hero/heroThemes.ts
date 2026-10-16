@@ -3,7 +3,7 @@
  * All heroes share the same theme per session via SESSION_SEED.
  */
 
-/** Module-level seed — set once on first import, stable for the session */
+/** Module-level seed - set once on first import, stable for the session */
 export const SESSION_SEED = Date.now();
 
 export interface HeroColorTheme {

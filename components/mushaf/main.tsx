@@ -71,7 +71,7 @@ const TOTAL_PAGES = 604;
 const ANIMATION_DURATION = 300;
 
 // ============================================================================
-// Spread helpers — iPad landscape renders two facing pages per FlatList item.
+// Spread helpers - iPad landscape renders two facing pages per FlatList item.
 // Spread N (0-indexed) contains pages (2N+1, 2N+2), with the odd page on the
 // right and the even page on the left (standard RTL mushaf convention).
 // ============================================================================
@@ -79,7 +79,7 @@ interface Spread {
   /** Odd-numbered page (right side in RTL reading order). */
   right: number;
   /** Even-numbered page (left side). `null` only if the mushaf has an odd
-   *  total page count — for 604 pages every spread has both. */
+   *  total page count - for 604 pages every spread has both. */
   left: number | null;
 }
 
@@ -160,7 +160,7 @@ const DKPageView: React.FC<{
 
   // On tablet single-page views there is no facing page on the "spine" side,
   // so the asymmetric book-edge look leaves a sharp corner floating in empty
-  // edgeBg — the user perceives that as a clipped / cut-off card. Render
+  // edgeBg - the user perceives that as a clipped / cut-off card. Render
   // with all four corners rounded instead. `facingPages` is still the source
   // of truth: once we add the real two-page spread, that path will use the
   // asymmetric decoration on each half of the spread.
@@ -195,7 +195,7 @@ const DKPageView: React.FC<{
         width: metrics.pageWidth,
         height: metrics.screenHeight,
         backgroundColor: isBookLayout ? bgColor : cardColor,
-        // QCF fonts load async — keep page visible so the background color
+        // QCF fonts load async - keep page visible so the background color
         // shows immediately after navigation instead of a blank white screen
         opacity: isQCF ? 1 : pageReady ? 1 : 0,
       }}>
@@ -270,7 +270,7 @@ const DKPageView: React.FC<{
           symmetric={useSymmetricEdges}
         />
       )}
-      {/* Surah name(s) — top left */}
+      {/* Surah name(s) - top left */}
       <Text
         style={[
           styles.pageLabel,
@@ -283,7 +283,7 @@ const DKPageView: React.FC<{
         numberOfLines={1}>
         {surahLabel}
       </Text>
-      {/* Juz number — top right */}
+      {/* Juz number - top right */}
       <Text
         style={[
           styles.pageLabel,
@@ -297,7 +297,7 @@ const DKPageView: React.FC<{
         numberOfLines={1}>
         {juzLabel}
       </Text>
-      {/* Page number — bottom center */}
+      {/* Page number - bottom center */}
       <Text
         style={[
           styles.pageLabel,
@@ -560,17 +560,17 @@ export default function MushafViewer({
     });
   }, []);
 
-  // On rotation the measured size is stale for a frame — fall back to window
+  // On rotation the measured size is stale for a frame - fall back to window
   // dims until `onLayout` reports the new size.
   useEffect(() => {
     setContainerSize(null);
   }, [windowWidth, windowHeight]);
 
-  // Live mushaf layout metrics — tracks rotation / iPad / safe area.
+  // Live mushaf layout metrics - tracks rotation / iPad / safe area.
   // On non-glass devices the `MushafPlayerBar` renders as a fixed-height
   // absolute bar; account for it so the page never sits underneath.
   //
-  // Phone path: keep behaviour identical — don't pass measured dims so the
+  // Phone path: keep behaviour identical - don't pass measured dims so the
   // existing frozen-padding math still applies.
   // Tablet path: always use measured dims (falls back to window on first frame).
   const metrics = useMushafLayout({
@@ -606,7 +606,7 @@ export default function MushafViewer({
     [],
   );
 
-  // Spread list — only used when `metrics.facingPages` is true (iPad
+  // Spread list - only used when `metrics.facingPages` is true (iPad
   // landscape). Kept stable across renders to avoid re-triggering FlatList
   // recycling on every metrics change.
   const spreads = useMemo<Spread[]>(
@@ -700,7 +700,7 @@ export default function MushafViewer({
     if (!USE_GLASS) return;
 
     if (isImmersive || isSearchMode) {
-      // Hide native header — search overlay renders its own UI
+      // Hide native header - search overlay renders its own UI
       navigation.setOptions({
         headerShown: false,
         headerSearchBarOptions: undefined,
@@ -979,7 +979,7 @@ export default function MushafViewer({
     [],
   );
 
-  // Vertical mode callbacks — update the same state as horizontal FlatList
+  // Vertical mode callbacks - update the same state as horizontal FlatList
   const handleContinuousPageChange = useCallback(
     (page: number) => {
       // Record last-read unconditionally so "Continue Reading" resumes
@@ -1011,7 +1011,7 @@ export default function MushafViewer({
     }
   }, [currentPage, isPlayerActive]);
 
-  // Android back handler — exit search mode instead of popping screen
+  // Android back handler - exit search mode instead of popping screen
   useEffect(() => {
     if (!isSearchMode) return;
     const sub = BackHandler.addEventListener('hardwareBackPress', () => {
@@ -1153,7 +1153,7 @@ export default function MushafViewer({
       )}
 
       {/* ================================================================ */}
-      {/* Normal mode header — fades out when immersive                    */}
+      {/* Normal mode header - fades out when immersive                    */}
       {/* ================================================================ */}
       <StatusBar hidden={isImmersive && !isSearchMode} animated />
 
@@ -1245,7 +1245,7 @@ export default function MushafViewer({
           )}
 
           {/* ================================================================ */}
-          {/* Normal mode bottom bar — non-glass (iOS 26 uses Stack.Toolbar)  */}
+          {/* Normal mode bottom bar - non-glass (iOS 26 uses Stack.Toolbar)  */}
           {/* ================================================================ */}
           {!USE_GLASS && (
             <Animated.View

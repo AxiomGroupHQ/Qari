@@ -16,7 +16,7 @@ export interface AyahTrackingState {
   timestampTo: number;
 }
 
-// Row types (snake_case — direct SQLite column mapping)
+// Row types (snake_case - direct SQLite column mapping)
 
 export interface AyahTimestampRow {
   rewayat_id: string;

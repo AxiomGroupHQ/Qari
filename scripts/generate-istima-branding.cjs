@@ -24,7 +24,7 @@ function walk(directory) {
 }
 walk(path.join(root, 'android/app/src/main/res'));
 walk(path.join(root, 'android/app/src/main/play'));
-walk(path.join(root, 'ios/Bayaan/Images.xcassets'));
+walk(path.join(root, 'ios/Istima/Images.xcassets'));
 for (const name of [
   'icon',
   'adaptive-icon',

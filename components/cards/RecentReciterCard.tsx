@@ -113,12 +113,12 @@ export const RecentReciterCard = ({
   // Calculate time remaining
   //
   // Two display states the old code conflated as `'0m'`:
-  //   1. **Duration unknown** — `effectiveDuration` is 0 because the
+  //   1. **Duration unknown** - `effectiveDuration` is 0 because the
   //      track's duration hasn't been measured yet, or we're paused on
   //      a track with no `duration` field. The old `'0m'` reads as
   //      "track ended" to the user. Now returns an em-dash so the user
   //      knows the time is genuinely unknown rather than zero.
-  //   2. **Short tracks** — for any remaining duration under 60s,
+  //   2. **Short tracks** - for any remaining duration under 60s,
   //      `Math.round(remainingSeconds / 60)` rounds to 0 → `'0m'`. Most
   //      visible on short surahs like Al-Fatihah (~50s total): every
   //      state past mid-track collapses to "0m". Now shows seconds for
@@ -341,7 +341,7 @@ export const RecentReciterCard = ({
         </>
       )}
 
-      {/* Image box — matches playback zone spacing */}
+      {/* Image box - matches playback zone spacing */}
       <View style={styles.imageContainer}>
         {isUserUpload ? (
           <Pressable onPress={handlePlayPress} onLongPress={handleLongPress}>
@@ -387,7 +387,7 @@ export const RecentReciterCard = ({
         {reciterName}
       </Text>
 
-      {/* Bottom zone: Playback controls — resumes audio */}
+      {/* Bottom zone: Playback controls - resumes audio */}
       <Pressable
         onPress={handlePlayPress}
         onLongPress={handleLongPress}

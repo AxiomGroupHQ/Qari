@@ -10,7 +10,7 @@
 
 ## Overview
 
-Add a comprehensive Adhkar/Dhikr feature to Istima, providing users with the complete Hisnul Muslim (Fortress of the Muslim) collection with Arabic text, translation, transliteration, and audio.
+Add a full Adhkar/Dhikr feature to Istima, providing users with the complete Hisnul Muslim (Fortress of the Muslim) collection with Arabic text, translation, transliteration, and audio.
 
 **Reference:** https://lifewithallah.com/dhikr-dua/
 
@@ -25,7 +25,7 @@ Add a comprehensive Adhkar/Dhikr feature to Istima, providing users with the com
 
 ### Data Source
 
-Curated dataset at: `/Users/osmansaeday/Bayaan/dua-audio-samples/`
+Curated dataset at: `/Users/osmansaeday/Istima/dua-audio-samples/`
 - `final-hisnul-muslim.json` - Complete structured data
 - `hisnmuslim-48k/` - Compressed audio files (48kbps, mono, 36MB total)
 

@@ -26,7 +26,7 @@
 - SDK/Client: `postmark` package (imported in `services/emailService.ts`)
 - Auth: `POSTMARK_API_KEY` configured via `Constants.expoConfig?.extra?.postmarkApiKey`
 - Implementation: `services/emailService.ts` - `sendVerificationEmail()` function
-- Template: Template alias `email-verification-bayaan-1`
+- Template: Template alias `email-verification-istima-1`
 
 ## Data Storage
 
@@ -113,15 +113,15 @@
 - `POSTMARK_FROM_EMAIL` - Sender email address (optional)
 
 **Build-time vars (gradle.properties for Android):**
-- `BAYAAN_UPLOAD_KEYSTORE_PATH` - Path to Android signing keystore
-- `BAYAAN_UPLOAD_KEYSTORE_PASSWORD` - Keystore password
-- `BAYAAN_UPLOAD_KEY_ALIAS` - Key alias
-- `BAYAAN_UPLOAD_KEY_PASSWORD` - Key password
+- `ISTIMA_UPLOAD_KEYSTORE_PATH` - Path to Android signing keystore
+- `ISTIMA_UPLOAD_KEYSTORE_PASSWORD` - Keystore password
+- `ISTIMA_UPLOAD_KEY_ALIAS` - Key alias
+- `ISTIMA_UPLOAD_KEY_PASSWORD` - Key password
 
 **Secrets location:**
 - `.env` file at project root (not committed, must be created locally)
 - `~/.gradle/gradle.properties` - Android signing credentials
-- Keystore: `~/Documents/app-credentials/bayaan/keystore/bayaan-upload-key.keystore`
+- Keystore: `~/Documents/app-credentials/istima/keystore/istima-upload-key.keystore`
 
 ## Webhooks & Callbacks
 

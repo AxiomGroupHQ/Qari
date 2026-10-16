@@ -22,6 +22,12 @@ import {Ionicons} from '@expo/vector-icons';
 import {useCollectionDownloadState} from '@/hooks/useCollectionDownloadState';
 import Color from 'color';
 import {t} from '@/i18n';
+import {isFeatureEnabled} from '@/config/featureFlags';
+import {
+  createSharedPlaylist,
+  SharedPlaylistError,
+} from '@/services/share/SharedPlaylistService';
+import {playlistShareUrl, shareUrl} from '@/utils/shareUtils';
 
 export const PlaylistContextSheet = (props: SheetProps<'playlist-context'>) => {
   const {theme} = useTheme();
@@ -362,6 +368,37 @@ export const PlaylistContextSheet = (props: SheetProps<'playlist-context'>) => {
     isDownloadingWithRewayat,
   ]);
 
+  const handleSharePlaylist = useCallback(async () => {
+    try {
+      const items = await getPlaylistItems(playlistId);
+      // User uploads live only on this device, so they cannot be shared.
+      const shareable = items
+        .filter(item => !item.userRecitationId)
+        .map(item => ({
+          surahId: item.surahId,
+          reciterId: item.reciterId,
+          ...(item.rewayatId ? {rewayatId: item.rewayatId} : {}),
+        }));
+      const id = await createSharedPlaylist(playlistName, shareable);
+      await shareUrl(
+        playlistShareUrl(id),
+        t('sheets.playlistContextSheet.shareMessage', {name: playlistName}),
+      );
+    } catch (err) {
+      const code = err instanceof SharedPlaylistError ? err.code : 'network';
+      Alert.alert(
+        t('sheets.playlistContextSheet.sharePlaylist'),
+        t(
+          code === 'empty'
+            ? 'sheets.playlistContextSheet.shareNothing'
+            : code === 'rate_limited'
+              ? 'sheets.playlistContextSheet.shareRateLimited'
+              : 'sheets.playlistContextSheet.shareFailed',
+        ),
+      );
+    }
+  }, [getPlaylistItems, playlistId, playlistName]);
+
   if (!playlistId) {
     return null;
   }
@@ -385,6 +422,17 @@ export const PlaylistContextSheet = (props: SheetProps<'playlist-context'>) => {
         downloadState.allDownloaded,
       isDownloadOption: true,
     },
+    ...(isFeatureEnabled('sharedPlaylists')
+      ? [
+          {
+            label: t('sheets.playlistContextSheet.sharePlaylist'),
+            icon: 'share',
+            onPress: handleSharePlaylist,
+            destructive: false,
+            disabled: false,
+          },
+        ]
+      : []),
     {
       label: t('sheets.playlistContextSheet.deletePlaylist'),
       icon: 'minus-circle',

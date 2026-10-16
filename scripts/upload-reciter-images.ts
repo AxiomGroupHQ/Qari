@@ -8,16 +8,16 @@
  *   npx tsx scripts/upload-reciter-images.ts [--dry-run]
  *
  * Required env (read from .env.r2 + .env automatically):
- *   R2_ACCOUNT_ID        — Cloudflare account ID
- *   R2_ACCESS_KEY_ID     — R2 S3-compat access key
- *   R2_SECRET_ACCESS_KEY — R2 S3-compat secret key
+ *   R2_ACCOUNT_ID        - Cloudflare account ID
+ *   R2_ACCESS_KEY_ID     - R2 S3-compat access key
+ *   R2_SECRET_ACCESS_KEY - R2 S3-compat secret key
  *
- *   BAYAAN_API_KEY       — Bearer token for the backend API
- *   ADMIN_EMAIL          — Admin account email (for JWT)
- *   ADMIN_PASSWORD       — Admin account password (for JWT)
+ *   ISTIMA_API_KEY       - Bearer token for the backend API
+ *   ADMIN_EMAIL          - Admin account email (for JWT)
+ *   ADMIN_PASSWORD       - Admin account password (for JWT)
  *
  * Optional env (falls back to defaults):
- *   BAYAAN_API_URL       — Backend base URL (default: production Railway URL)
+ *   ISTIMA_API_URL       - Backend base URL (default: production Railway URL)
  *
  * Behaviour:
  *   - Parses utils/reciterImages.ts to build slug → filename mapping
@@ -99,18 +99,18 @@ const R2_ACCOUNT_ID = process.env.R2_ACCOUNT_ID;
 const R2_ACCESS_KEY_ID = process.env.R2_ACCESS_KEY_ID;
 const R2_SECRET_ACCESS_KEY = process.env.R2_SECRET_ACCESS_KEY;
 
-const BAYAAN_API_KEY =
-  process.env.BAYAAN_API_KEY ?? process.env.EXPO_PUBLIC_BAYAAN_API_KEY;
+const ISTIMA_API_KEY =
+  process.env.ISTIMA_API_KEY ?? process.env.EXPO_PUBLIC_ISTIMA_API_KEY;
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 const API_URL =
-  process.env.BAYAAN_API_URL ??
-  process.env.EXPO_PUBLIC_BAYAAN_API_URL ??
-  'https://bayaan-backend-production.up.railway.app';
+  process.env.ISTIMA_API_URL ??
+  process.env.EXPO_PUBLIC_ISTIMA_API_URL ??
+  'https://istima-backend-production.up.railway.app';
 
 const DRY_RUN = process.argv.includes('--dry-run');
 
-const R2_BUCKET = 'bayaan-audio';
+const R2_BUCKET = 'istima-audio';
 const CDN_BASE = 'https://cdn.example.com';
 const R2_KEY_PREFIX = 'assets/reciter-images';
 const PAGE_LIMIT = 200;
@@ -124,8 +124,8 @@ function validateEnv(): void {
   if (!R2_ACCOUNT_ID) missing.push('R2_ACCOUNT_ID');
   if (!R2_ACCESS_KEY_ID) missing.push('R2_ACCESS_KEY_ID');
   if (!R2_SECRET_ACCESS_KEY) missing.push('R2_SECRET_ACCESS_KEY');
-  if (!BAYAAN_API_KEY)
-    missing.push('BAYAAN_API_KEY / EXPO_PUBLIC_BAYAAN_API_KEY');
+  if (!ISTIMA_API_KEY)
+    missing.push('ISTIMA_API_KEY / EXPO_PUBLIC_ISTIMA_API_KEY');
   if (!ADMIN_EMAIL) missing.push('ADMIN_EMAIL');
   if (!ADMIN_PASSWORD) missing.push('ADMIN_PASSWORD');
 
@@ -239,7 +239,7 @@ async function getToken(): Promise<string> {
 async function fetchRecitersPage(page: number): Promise<PaginatedResponse> {
   const url = `${API_URL}/v1/reciters?page=${page}&limit=${PAGE_LIMIT}`;
   const res = await fetch(url, {
-    headers: {Authorization: `Bearer ${BAYAAN_API_KEY}`},
+    headers: {Authorization: `Bearer ${ISTIMA_API_KEY}`},
   });
 
   if (!res.ok) {
@@ -258,12 +258,12 @@ async function fetchAllReciters(): Promise<ReciterEntry[]> {
   const {total_pages, total} = first.meta;
   const all: ReciterEntry[] = [...first.data];
 
-  console.log(`  Page 1/${total_pages} — ${first.data.length} reciters`);
+  console.log(`  Page 1/${total_pages} - ${first.data.length} reciters`);
 
   for (let page = 2; page <= total_pages; page++) {
     const resp = await fetchRecitersPage(page);
     all.push(...resp.data);
-    console.log(`  Page ${page}/${total_pages} — ${resp.data.length} reciters`);
+    console.log(`  Page ${page}/${total_pages} - ${resp.data.length} reciters`);
   }
 
   console.log(`Fetched ${all.length} / ${total} reciters total.\n`);
@@ -284,7 +284,7 @@ async function existsOnCdn(cdnUrl: string): Promise<boolean> {
 }
 
 // ---------------------------------------------------------------------------
-// R2 existence check (via S3 HeadObject — authoritative)
+// R2 existence check (via S3 HeadObject - authoritative)
 // ---------------------------------------------------------------------------
 
 async function existsInR2(s3: S3Client, r2Key: string): Promise<boolean> {
@@ -338,7 +338,7 @@ async function updateReciterImageUrl(
   });
 
   if (res.status === 401 && !retried) {
-    console.log('  JWT expired — re-authenticating...');
+    console.log('  JWT expired - re-authenticating...');
     jwtToken = null;
     await authenticate();
     return updateReciterImageUrl(reciterId, imageUrl, true);
@@ -360,7 +360,7 @@ async function main(): Promise<void> {
   validateEnv();
 
   if (DRY_RUN) {
-    console.log('=== DRY RUN — no files will be uploaded or DB updated ===\n');
+    console.log('=== DRY RUN - no files will be uploaded or DB updated ===\n');
   }
 
   // Parse slug → filename map from reciterImages.ts
@@ -406,7 +406,7 @@ async function main(): Promise<void> {
 
     // Check if local file exists
     if (!fs.existsSync(localPath)) {
-      console.warn(`${prefix} Local file not found: ${filename} — skipping`);
+      console.warn(`${prefix} Local file not found: ${filename} - skipping`);
       stats.failed++;
       continue;
     }
@@ -414,7 +414,7 @@ async function main(): Promise<void> {
     // Check existence in R2 (authoritative S3 HEAD)
     const alreadyExists = await existsInR2(s3, r2Key);
     if (alreadyExists) {
-      console.log(`${prefix} Already in R2 — skipping upload`);
+      console.log(`${prefix} Already in R2 - skipping upload`);
       stats.skipped++;
     } else {
       console.log(`${prefix} Uploading ${filename} → ${r2Key}`);
@@ -437,7 +437,7 @@ async function main(): Promise<void> {
     // Update DB image_url
     const reciter = slugToReciter.get(slug);
     if (!reciter) {
-      console.warn(`${prefix} No matching reciter in DB — skipping DB update`);
+      console.warn(`${prefix} No matching reciter in DB - skipping DB update`);
       stats.noSlugMatch++;
       continue;
     }
@@ -466,7 +466,7 @@ async function main(): Promise<void> {
   // Summary
   // ---------------------------------------------------------------------------
   console.log('\n=== Upload Summary ===');
-  if (DRY_RUN) console.log('(DRY RUN — no changes were made)');
+  if (DRY_RUN) console.log('(DRY RUN - no changes were made)');
   console.log(`  Images uploaded:      ${stats.uploaded}`);
   console.log(`  Images skipped:       ${stats.skipped}`);
   console.log(`  Images failed:        ${stats.failed}`);

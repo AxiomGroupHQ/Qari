@@ -57,7 +57,7 @@ class WBWDataService {
     }
   }
 
-  /** Synchronous cache-only lookup — returns null on cache miss */
+  /** Synchronous cache-only lookup - returns null on cache miss */
   getVerseWordsCached(verseKey: string): WBWWord[] | null {
     return this.cache.get(verseKey) ?? null;
   }

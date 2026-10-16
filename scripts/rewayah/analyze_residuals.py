@@ -14,11 +14,11 @@ from normalize import normalize_verse
 
 HERE = Path(__file__).parent
 REPO = HERE.parents[1]
-BAYAAN_DB = REPO / "data" / "mushaf" / "digitalkhatt" / "digital-khatt-v2.db"
+ISTIMA_DB = REPO / "data" / "mushaf" / "digitalkhatt" / "digital-khatt-v2.db"
 
 
-def load_bayaan() -> dict[tuple[int, int], str]:
-    conn = sqlite3.connect(BAYAAN_DB)
+def load_istima() -> dict[tuple[int, int], str]:
+    conn = sqlite3.connect(ISTIMA_DB)
     cur = conn.cursor()
     v: dict[tuple[int, int], list[tuple[int, str]]] = defaultdict(list)
     for surah, ayah, word, text in cur.execute(
@@ -30,7 +30,7 @@ def load_bayaan() -> dict[tuple[int, int], str]:
 
 
 def main() -> None:
-    bayaan = load_bayaan()
+    istima = load_istima()
     hafs = json.loads((HERE / "hafs.json").read_text(encoding="utf-8"))
     shouba = json.loads((HERE / "shouba.json").read_text(encoding="utf-8"))
 
@@ -38,11 +38,11 @@ def main() -> None:
     shouba_by_key = {(r["sura_no"], r["aya_no"]): r["aya_text"] for r in shouba}
 
     residual_keys = set()
-    for key, bayaan_text in bayaan.items():
+    for key, istima_text in istima.items():
         kf = hafs_by_key.get(key)
         if kf is None:
             continue
-        if normalize_verse(kf) != bayaan_text:
+        if normalize_verse(kf) != istima_text:
             residual_keys.add(key)
 
     shouba_diff_keys = set()

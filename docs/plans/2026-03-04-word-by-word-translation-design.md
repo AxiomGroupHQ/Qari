@@ -1,6 +1,6 @@
-> **SHIPPED — This feature is implemented.** This was the design document for the word-by-word translation feature. See `services/wbw/WBWDataService.ts` and `mushafSettingsStore` (`showWBW`) for the implementation.
+> **SHIPPED - This feature is implemented.** This was the design document for the word-by-word translation feature. See `services/wbw/WBWDataService.ts` and `mushafSettingsStore` (`showWBW`) for the implementation.
 
-# Word-by-Word Translation — Design Document
+# Word-by-Word Translation - Design Document
 
 **Date:** 2026-03-04
 **Status:** Approved
@@ -14,11 +14,11 @@ Add inline word-by-word (WBW) translation to the scroll/reading mode. When enabl
 
 ## Data Source
 
-- **Database:** `data/wbw/wbw-en.db` (8.14 MB, 77,429 words, all 6,236 verses)
-- **Source:** Quran Foundation API v4 (`?words=true`)
-- **Schema:** `(verse_key, position) -> translation, transliteration, audio_url`
-- **Position mapping:** API `position` maps 1:1 to existing `DKWordInfo.wordPositionInVerse`
-- **Fetch script:** `scripts/fetch-wbw-translations.js` (supports `--language` flag for other languages)
+- **Database** - `data/wbw/wbw-en.db` (8.14 MB, 77,429 words, all 6,236 verses)
+- **Source** - Quran Foundation API v4 (`?words=true`)
+- **Schema** - `(verse_key, position) -> translation, transliteration, audio_url`
+- **Position mapping** - API `position` maps 1:1 to existing `DKWordInfo.wordPositionInVerse`
+- **Fetch script** - `scripts/fetch-wbw-translations.js` (supports `--language` flag for other languages)
 
 ## Verse Layout (WBW ON)
 
@@ -42,7 +42,7 @@ Add inline word-by-word (WBW) translation to the scroll/reading mode. When enabl
 
 - RTL flex-wrap: `flexDirection: 'row-reverse'`, `flexWrap: 'wrap'`
 - Each word unit is a vertical stack: Arabic → subtle line → transliteration (optional) → translation (optional)
-- No background or border on word units — spacing + alignment creates grouping
+- No background or border on word units - spacing + alignment creates grouping
 - Subtle hairline under each Arabic word for visual separation (same as app's divider token: `Color(text).alpha(0.06)`)
 - Arabic uses current Mushaf font/size settings (DK V1/V2/IndoPak)
 - Translation/transliteration in Manrope, smaller and subdued
@@ -50,7 +50,7 @@ Add inline word-by-word (WBW) translation to the scroll/reading mode. When enabl
 
 ### When WBW is OFF
 
-Normal behavior — full Arabic text block, no changes.
+Normal behavior - full Arabic text block, no changes.
 
 ## Settings UI
 
@@ -150,6 +150,6 @@ Long-press handler
 
 - WBW data loaded lazily per-verse (not all 77K words at once)
 - Each verse lookup is a single indexed SQLite query: `WHERE verse_key = ? ORDER BY position`
-- FlashList virtualization still applies — only visible verses render WBW grids
+- FlashList virtualization still applies - only visible verses render WBW grids
 - Word units are simple View + Text stacks, no heavy computation
 

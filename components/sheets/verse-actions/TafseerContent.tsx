@@ -287,7 +287,7 @@ export const TafseerContent: React.FC<TafseerContentProps> = ({
         )}
       </ScrollView>
 
-      {/* Footer — Prev / Next */}
+      {/* Footer - Prev / Next */}
       <View style={[styles.footer, {paddingBottom: verticalScale(16)}]}>
         <Pressable
           onPress={goToPrevious}

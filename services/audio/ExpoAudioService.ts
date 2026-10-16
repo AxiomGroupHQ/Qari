@@ -169,7 +169,7 @@ class ExpoAudioService {
 
     // Phase 1: Wait for player to begin loading the new source
     // (isLoaded becomes false when replace() starts processing).
-    // Cap at 500ms — if isLoaded never becomes false (e.g. instant load
+    // Cap at 500ms - if isLoaded never becomes false (e.g. instant load
     // or first-ever load where isLoaded starts false), fall through.
     const resetDeadline = startTime + 500;
     while (Date.now() < resetDeadline) {

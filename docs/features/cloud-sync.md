@@ -4,12 +4,11 @@
 **Priority:** Medium
 **Complexity:** High
 **Created:** 2026-02-20
-**GitHub Issue:** [#120](https://github.com/thebayaan/Bayaan/issues/120)
-**Related:** [Shareable Deep Links (#117)](https://github.com/thebayaan/Bayaan/issues/117), [`docs/features/shareable-links.md`](shareable-links.md)
+**Related:** Shareable Deep Links (#117), [`docs/features/shareable-links.md`](shareable-links.md)
 
 ## Overview
 
-Allow users to sync their personal data (playlists, bookmarks, notes, highlights, favorites, settings, uploads) across devices — and optionally share content with other users. This feature explores multiple approaches ranging from zero-auth native cloud (iCloud/Google Drive) to full Supabase-backed sync with user accounts.
+Allow users to sync their personal data (playlists, bookmarks, notes, highlights, favorites, settings, uploads) across devices - and optionally share content with other users. This feature explores multiple approaches ranging from zero-auth native cloud (iCloud/Google Drive) to full Supabase-backed sync with user accounts.
 
 ## User Stories
 
@@ -45,21 +44,21 @@ Use each platform's native cloud to sync a user's data across their own devices.
 
 **Google Drive (Android):**
 - Google Drive App Data folder (hidden, app-scoped)
-- User taps "Sign in with Google" once (not traditional auth — no account on your side)
+- User taps "Sign in with Google" once (not traditional auth - no account on your side)
 - Structured data as JSON files or SQLite snapshots
 - Uploads as Drive files
 
-**Auth required:** No — identity comes from the OS account.
+**Auth required:** No - identity comes from the OS account.
 
 **Pros:**
 - Zero backend cost
 - No user accounts to manage
-- Privacy-friendly — data stays in user's cloud
+- Privacy-friendly - data stays in user's cloud
 - Works offline with eventual sync
 
 **Cons:**
 - No cross-platform sync (iCloud doesn't reach Android, vice versa)
-- No sharing between users — private sync only
+- No sharing between users - private sync only
 - Two completely different implementations to maintain
 - iCloud has no React Native first-party support (native modules needed)
 - Limited control over conflict resolution
@@ -81,17 +80,17 @@ Use native cloud for personal sync; push to Supabase when a user wants to share.
 
 Use Supabase as the single cloud backend for all sync and sharing.
 
-- **Auth:** Supabase Auth with Apple Sign-In + Google Sign-In providers (native, one-tap)
-- **Structured data:** Playlists, bookmarks, notes, highlights → Supabase Postgres with Row Level Security
-- **Uploads:** User-scoped Supabase Storage buckets
-- **Sharing:** Data is already server-side — grant read access or generate a link
+- **Auth** - Supabase Auth with Apple Sign-In + Google Sign-In providers (native, one-tap)
+- **Structured data** - Playlists, bookmarks, notes, highlights → Supabase Postgres with Row Level Security
+- **Uploads** - User-scoped Supabase Storage buckets
+- **Sharing** - Data is already server-side - grant read access or generate a link
 - **Ties directly into shareable deep links (#117)**
 
-**Auth required:** Yes — one-tap Apple/Google sign-in.
+**Auth required:** Yes - one-tap Apple/Google sign-in.
 
 **Pros:**
 - Cross-platform sync (iPhone ↔ Android)
-- Sharing is built-in — data already in the cloud
+- Sharing is built-in - data already in the cloud
 - Single implementation, one codebase
 - Natural extension of existing Supabase usage
 - RLS secures data per-user without custom middleware
@@ -108,9 +107,9 @@ Use a local-first sync framework (PowerSync, ElectricSQL, or Triplit) on top of 
 
 - Data lives locally in SQLite (already used), syncs to Supabase when online
 - CRDTs / operational transforms handle merge conflicts automatically
-- True offline-first — works without connectivity, syncs when available
+- True offline-first - works without connectivity, syncs when available
 
-**Auth required:** Yes — user identity needed for sync routing.
+**Auth required:** Yes - user identity needed for sync routing.
 
 **Pros:**
 - Preserves existing offline-first behavior
@@ -128,7 +127,7 @@ Use a local-first sync framework (PowerSync, ElectricSQL, or Triplit) on top of 
 - **Audio routing stays unchanged.** Syncing metadata (playlists, bookmarks) does not require routing audio through a backend. Audio continues streaming from Supabase Storage / mp3quran.net.
 - **Uploads are the hardest part.** Syncing MP3 files across devices requires actual file transfer (~5-50MB per file). All other data is lightweight structured data.
 - **Downloads should NOT be synced.** They're cached copies of publicly available audio and can be re-downloaded on any device.
-- **Offline-first is critical.** The app works fully offline today. Any sync solution must preserve this — sync should be additive, not a requirement.
+- **Offline-first is critical.** The app works fully offline today. Any sync solution must preserve this - sync should be additive, not a requirement.
 - **Conflict resolution matters for annotations.** If a user bookmarks a verse on one device and adds a note on another, both changes should merge, not overwrite.
 
 ## Relationship to Shareable Links (#117)
@@ -136,24 +135,24 @@ Use a local-first sync framework (PowerSync, ElectricSQL, or Triplit) on top of 
 These features are complementary:
 - **Shareable links** need server-side data to resolve (e.g., fetching a shared playlist by ID)
 - **Cloud sync (Option 3/4)** puts that data server-side naturally
-- If cloud sync is implemented with Supabase, shared playlist links from #117 become trivial — the playlist already exists in Postgres, just make it readable by the recipient
+- If cloud sync is implemented with Supabase, shared playlist links from #117 become trivial - the playlist already exists in Postgres, just make it readable by the recipient
 
 ## Implementation Phases (assuming Option 3)
 
 1. **Phase 1:** Supabase Auth integration (Apple Sign-In + Google Sign-In)
-2. **Phase 2:** Schema design — user-scoped tables for playlists, annotations, favorites
-3. **Phase 3:** Sync engine — local SQLite ↔ Supabase Postgres (bidirectional)
-4. **Phase 4:** Upload sync — user-scoped Supabase Storage buckets
-5. **Phase 5:** Sharing — read-access grants, ties into shareable links (#117)
+2. **Phase 2:** Schema design - user-scoped tables for playlists, annotations, favorites
+3. **Phase 3:** Sync engine - local SQLite ↔ Supabase Postgres (bidirectional)
+4. **Phase 4:** Upload sync - user-scoped Supabase Storage buckets
+5. **Phase 5:** Sharing - read-access grants, ties into shareable links (#117)
 
 ## Files Likely Affected
 
-- `app.config.js` — Auth provider config (Apple, Google entitlements)
-- `services/database/DatabaseService.ts` — Sync layer on top of existing SQLite
-- `services/auth/` — New auth service (Supabase Auth SDK)
-- `store/` — Persisted stores may need sync-aware wrappers
-- `services/playlist/PlaylistService.ts` — Read/write to Supabase in addition to local
-- `services/verse-annotations/VerseAnnotationService.ts` — Same
+- `app.config.js` - Auth provider config (Apple, Google entitlements)
+- `services/database/DatabaseService.ts` - Sync layer on top of existing SQLite
+- `services/auth/` - New auth service (Supabase Auth SDK)
+- `store/` - Persisted stores may need sync-aware wrappers
+- `services/playlist/PlaylistService.ts` - Read/write to Supabase in addition to local
+- `services/verse-annotations/VerseAnnotationService.ts` - Same
 - New: auth screens or one-tap sign-in flow
 - New: sync status UI (syncing indicator, conflict resolution)
 
@@ -163,4 +162,4 @@ These features are complementary:
 - Should sync be opt-in (user explicitly enables it) or automatic after sign-in?
 - What's the upload storage budget per user? (Supabase Storage pricing)
 - Should there be a free tier (sync metadata only) vs premium (sync uploads)?
-- How should conflicts be resolved — last-write-wins, or merge?
+- How should conflicts be resolved - last-write-wins, or merge?

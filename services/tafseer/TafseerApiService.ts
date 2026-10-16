@@ -2,7 +2,7 @@ import branding from '@/config/branding';
 import {quranComTafsirProvider} from './QuranComTafsirProvider';
 
 /**
- * RFC-009 — tafsir source resolver.
+ * RFC-009 - tafsir source resolver.
  *
  * `tafseerApiService` resolves to the fork-supplied
  * `branding.tafsirProvider` when set, otherwise to Istima's default

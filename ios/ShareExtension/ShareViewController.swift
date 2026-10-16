@@ -12,7 +12,7 @@ import UIKit
 class ShareViewController: UIViewController {
   let hostAppGroupIdentifier = "group.com.istima.app"
   let shareProtocol = "istima"
-  let sharedKey = "bayaanShareKey"
+  let sharedKey = "istimaShareKey"
   var sharedMedia: [SharedMediaFile] = []
   var sharedWebUrl: [WebUrl] = []
   var sharedText: [String] = []

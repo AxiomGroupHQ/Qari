@@ -1,6 +1,6 @@
 // Shared tafsir edition contract (RFC-009). Used by the static
 // `AVAILABLE_TAFASEER` boot-time list, by `TafsirProvider`
-// implementations (Bayaan's QF-backed default + any fork override), and
+// implementations (the QF-backed default + any fork override), and
 // by the SQLite cache layer. Provider implementations are responsible
 // for mapping their upstream API shape into this shape.
 export interface TafseerEdition {

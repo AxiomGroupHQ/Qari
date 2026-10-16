@@ -218,7 +218,7 @@ export const useRecentlyPlayedStore = create<RecentlyPlayedState>()(
 
           const head = state.recentTracks[0];
 
-          // Same reciter — update [0] in place (handles surah auto-advance)
+          // Same reciter - update [0] in place (handles surah auto-advance)
           if (head.reciter.id === reciterId) {
             const surah =
               head.surah.id === surahId
@@ -234,7 +234,7 @@ export const useRecentlyPlayedStore = create<RecentlyPlayedState>()(
           }
 
           // Different reciter at [0].
-          // Check if this reciterId already exists below [0] — if so, it's a
+          // Check if this reciterId already exists below [0] - if so, it's a
           // stale transition update (startNewChain already ran, old reciter was
           // pushed down). Just update that existing entry's progress quietly.
           const belowIndex = state.recentTracks.findIndex(
@@ -250,7 +250,7 @@ export const useRecentlyPlayedStore = create<RecentlyPlayedState>()(
             return {recentTracks: updated, ...maps};
           }
 
-          // Genuinely new reciter from queue auto-advance — create new entry
+          // Genuinely new reciter from queue auto-advance - create new entry
           const newReciter = RECITERS.find(r => r.id === reciterId);
           const newSurah = SURAHS.find(s => s.id === surahId);
           if (!newReciter || !newSurah) {

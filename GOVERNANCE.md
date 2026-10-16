@@ -4,9 +4,8 @@ This document describes how decisions are made in the Istima project.
 
 ## Overview
 
-Istima is an open-source Quran recitation and reading app. The code is
-licensed under AGPL-3.0-or-later. The "Istima" name and logo are trademarks
-governed by [TRADEMARKS.md](TRADEMARKS.md).
+Istima is a Quran recitation and reading app. The code is
+copyright Istima by Halalweb, all rights reserved. The "Istima" name and logo belong to the project owner.
 
 Governance is intentionally lightweight: we favor fast decisions and clear
 ownership over committees and voting.
@@ -22,8 +21,7 @@ and final decision-maker (Benevolent Dictator model). The maintainer:
 - Merges pull requests
 - Cuts releases and ships to app stores
 - Sets the project roadmap
-- Enforces this governance document, the [Code of Conduct](CODE_OF_CONDUCT.md),
-  and the [Trademark Policy](TRADEMARKS.md)
+- Enforces this governance document and the [Code of Conduct](CODE_OF_CONDUCT.md)
 
 As the project grows, additional maintainers may be added. Maintainers are
 added by invitation of the existing maintainer(s).
@@ -31,7 +29,7 @@ added by invitation of the existing maintainer(s).
 ### Contributor
 
 Anyone who submits a pull request, opens an issue, or participates in
-discussions is a contributor. Contributors do not need to be appointed —
+discussions is a contributor. Contributors do not need to be appointed -
 participation is open.
 
 ## How Decisions Are Made
@@ -54,9 +52,9 @@ tafaseer, and reciters to include have extra scrutiny:
 3. **Sectarian scope.** Istima aims to serve the broad mainstream Muslim
    community. Pull requests that add content from fringe, unattested, or
    sectarian-attack-oriented sources will be declined. This is not a
-   judgment on any tradition — it is a scope decision for the official
+   judgment on any tradition - it is a scope decision for the official
    Istima build. Forks under a different name are free to take a
-   different scope (see [TRADEMARKS.md](TRADEMARKS.md)).
+   different scope.
 4. **Accuracy.** Reports of incorrect Arabic text, missing diacritics,
    wrong ayah numbering, or misattributed translations are treated as
    high-priority bugs.
@@ -72,20 +70,19 @@ request or issue.
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the technical workflow (branches,
 PR process, coding style, commit message format).
 
-Code contributions are accepted under the project's AGPL-3.0-or-later
-license. By submitting a pull request, you certify that you have the right
-to license your contribution under those terms (see the
+Code contributions are accepted under the project's copyright terms.
+By submitting a pull request, you certify that you have the right
+to contribute your work under those terms (see the
 [Developer Certificate of Origin](https://developercertificate.org/)).
 
 ## Conflicts
 
 Disputes between contributors are resolved by the maintainer. Reports of
-Code of Conduct violations go to **conduct@thebayaan.com**. Security
-issues go to **security@thebayaan.com** (see [SECURITY.md](SECURITY.md)).
+Code of Conduct violations go to app@istima.app. Security
+issues follow [SECURITY.md](SECURITY.md).
 
 ## Forking
 
 Forking is explicitly allowed and encouraged. If you disagree with a
 decision and want to take the code in a different direction, fork it. You
-must rename the fork and use your own branding per
-[TRADEMARKS.md](TRADEMARKS.md).
+must rename the fork and use your own branding.

@@ -8,7 +8,7 @@
 
 ## Overview
 
-Android performance lags behind iOS across 4 areas: **navigation transitions**, **list scrolling**, **sheet open/close**, and **audio playback**. The root causes are compounding — no single fix resolves everything, but the issues are well-understood and actionable.
+Android performance lags behind iOS across 4 areas: **navigation transitions**, **list scrolling**, **sheet open/close**, and **audio playback**. The root causes are compounding - no single fix resolves everything, but the issues are well-understood and actionable.
 
 ---
 
@@ -26,13 +26,13 @@ android.enableMinifyInReleaseBuilds=true
 android.enableShrinkResourcesInReleaseBuilds=true
 ```
 
-After enabling, test thoroughly — may need additional keep rules in `android/app/proguard-rules.pro`. Also consider switching `proguard-android.txt` to `proguard-android-optimize.txt` in `build.gradle:135`.
+After enabling, test thoroughly - may need additional keep rules in `android/app/proguard-rules.pro`. Also consider switching `proguard-android.txt` to `proguard-android-optimize.txt` in `build.gradle:135`.
 
 ### 1.2 Guard console.log in hot paths
 
 **Files:** `utils/audioUtils.ts:214,224,232`, `services/dataService.ts:168,172`, `services/downloadService.ts:81,89,116,145,174`
 
-`generateSmartAudioUrl()` logs unconditionally for every track — called 114x when loading a reciter. Each `console.log` marshals data across the JS-Native bridge on Android.
+`generateSmartAudioUrl()` logs unconditionally for every track - called 114x when loading a reciter. Each `console.log` marshals data across the JS-Native bridge on Android.
 
 ```typescript
 // Wrap all hot-path logs:
@@ -41,14 +41,14 @@ if (__DEV__) console.log(...)
 
 ### 1.3 Fix StyleSheet.create inside render bodies
 
-**Files (CRITICAL — in list items):**
-- `components/SurahItem.tsx:51` — `const styles = createStyles(theme)`
+**Files (CRITICAL - in list items):**
+- `components/SurahItem.tsx:51` - `const styles = createStyles(theme)`
 - `components/cards/ReciterItem.tsx:32`
 - `components/cards/ReciterCard.tsx:20`
 - `components/cards/TrackCard.tsx:126`
 - `components/cards/CircularReciterCard.tsx:87`
 
-**Files (MEDIUM — in sheets):**
+**Files (MEDIUM - in sheets):**
 - `SurahOptionsSheet`, `PlayerOptionsSheet`, `AmbientSoundsSheet`, `SelectReciterSheet`, `PlaybackSpeedSheet`, `MushafRepeatOptionsSheet`, `MushafLayoutSheet`, `AdhkarBentoCard`
 
 Fix pattern:
@@ -128,7 +128,7 @@ const currentIndex = usePlayerStore(state => state.queue.currentIndex);
 const tracks = usePlayerStore(state => state.queue.tracks); // FULL ARRAY
 ```
 
-Fix — single derived boolean:
+Fix - single derived boolean:
 ```typescript
 const isCurrentAndPlaying = usePlayerStore(s => {
   const t = s.queue.tracks[s.queue.currentIndex];
@@ -140,7 +140,7 @@ const isCurrentAndPlaying = usePlayerStore(s => {
 
 **File:** `components/player/v2/PlayerContent/PlaybackControls/Controls.tsx:22`
 
-Position is only used in seek handlers — read imperatively instead:
+Position is only used in seek handlers - read imperatively instead:
 ```typescript
 // Before:
 const playbackPosition = usePlayerStore(s => s.playback.position);
@@ -261,12 +261,12 @@ Track switching is fully serial: load -> poll -> play. Start loading the next tr
 ### 4.2 Defer data fetches with InteractionManager
 
 **Files:**
-- `app/(tabs)/(a.home)/adhkar/[superId]/index.tsx:68-87` — SQLite query on mount
-- `app/(tabs)/(a.home)/adhkar/[superId]/[dhikrId].tsx:94` — SQLite query on mount
-- `app/(tabs)/(a.home)/adhkar/saved/index.tsx:38` — fan-out SQLite reads
-- `app/(tabs)/(c.collection)/collection/loved.tsx:153-184` — Promise.all enrichment
-- `app/(tabs)/(c.collection)/collection/downloads.tsx:226-249` — Promise.all enrichment
-- `app/(tabs)/(c.collection)/index.tsx:52-63` — SQLite on every focus
+- `app/(tabs)/(a.home)/adhkar/[superId]/index.tsx:68-87` - SQLite query on mount
+- `app/(tabs)/(a.home)/adhkar/[superId]/[dhikrId].tsx:94` - SQLite query on mount
+- `app/(tabs)/(a.home)/adhkar/saved/index.tsx:38` - fan-out SQLite reads
+- `app/(tabs)/(c.collection)/collection/loved.tsx:153-184` - Promise.all enrichment
+- `app/(tabs)/(c.collection)/collection/downloads.tsx:226-249` - Promise.all enrichment
+- `app/(tabs)/(c.collection)/index.tsx:52-63` - SQLite on every focus
 
 Wrap in `InteractionManager.runAfterInteractions()` so queries don't compete with navigation animation.
 
@@ -283,7 +283,7 @@ Wrap in `InteractionManager.runAfterInteractions()` so queries don't compete wit
 - `mushaf/main.tsx:388` (inline anonymous)
 - `FollowAlongSheet.tsx:46` (inline anonymous)
 
-Also: avoid inline `() => handler(item)` closures in renderItem — these defeat React.memo on child components.
+Also: avoid inline `() => handler(item)` closures in renderItem - these defeat React.memo on child components.
 
 ### 4.4 Virtualize heavy sheet content
 

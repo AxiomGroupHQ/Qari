@@ -26,7 +26,7 @@ import {useAmbientStore} from '@/store/ambientStore';
 import {useMushafPlayerStore} from '@/store/mushafPlayerStore';
 import {mushafAudioService} from './MushafAudioService';
 
-// Throttle interval for progress updates — wider on Android to reduce re-renders
+// Throttle interval for progress updates - wider on Android to reduce re-renders
 const PROGRESS_UPDATE_INTERVAL = Platform.OS === 'android' ? 2000 : 1000;
 const PROGRESS_PERSIST_INTERVAL = 10000;
 
@@ -89,7 +89,7 @@ export function ExpoAudioProvider({children}: ExpoAudioProviderProps) {
       }
 
       if (currentTrack.isUserUpload && currentTrack.userRecitationId) {
-        // Upload track — update via upload-specific progress path
+        // Upload track - update via upload-specific progress path
         useRecentlyPlayedStore
           .getState()
           .updateUploadProgress(
@@ -181,7 +181,7 @@ export function ExpoAudioProvider({children}: ExpoAudioProviderProps) {
     const currentTrackId = currentTrack?.id ?? null;
 
     if (currentTrackId !== lastTrackIdRef.current) {
-      // Track changed — reset accumulated listen time
+      // Track changed - reset accumulated listen time
       accumulatedListenMsRef.current = 0;
       playbackStartTimeRef.current = 0;
       hasFiredStartedRef.current = false;
@@ -236,7 +236,7 @@ export function ExpoAudioProvider({children}: ExpoAudioProviderProps) {
 
         // Re-apply playback rate after interruptions (calls, alarms, etc.)
         // The OS resets the native player's rate to 1.0 but the store keeps
-        // the user's chosen rate — sync them back up.
+        // the user's chosen rate - sync them back up.
         const storedRate = usePlayerStore.getState().playback.rate;
         if (storedRate !== 1 && player.playbackRate !== storedRate) {
           expoAudioService.setRate(storedRate);
@@ -269,7 +269,7 @@ export function ExpoAudioProvider({children}: ExpoAudioProviderProps) {
           wasPlaying.current &&
           playbackStartTimeRef.current > 0
         ) {
-          // Paused from playing — calculate listened time
+          // Paused from playing - calculate listened time
           const sessionMs = Date.now() - playbackStartTimeRef.current;
           accumulatedListenMsRef.current += sessionMs;
           analyticsService.trackPlaybackPaused({
@@ -461,7 +461,7 @@ export function ExpoAudioProvider({children}: ExpoAudioProviderProps) {
     }
   }, [status.playing, mushafPlaybackState]);
 
-  // Handle queue end — fade out ambient when queue is done
+  // Handle queue end - fade out ambient when queue is done
   useEffect(() => {
     const currentState = usePlayerStore.getState().playback.state;
     if (currentState === 'ended') {

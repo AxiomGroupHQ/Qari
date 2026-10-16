@@ -25,7 +25,7 @@ dotenv.config({path: path.resolve(__dirname, '../.env.r2')});
 const R2_ACCOUNT_ID = process.env.R2_ACCOUNT_ID ?? '';
 const R2_ACCESS_KEY_ID = process.env.R2_ACCESS_KEY_ID ?? '';
 const R2_SECRET_ACCESS_KEY = process.env.R2_SECRET_ACCESS_KEY ?? '';
-const R2_BUCKET = 'bayaan-audio';
+const R2_BUCKET = 'istima-audio';
 
 if (
   !DRY_RUN &&
@@ -59,7 +59,7 @@ const manropeSemiBoldB64 = fontToBase64('Manrope-SemiBold.ttf');
 const manropeMediumB64 = fontToBase64('Manrope-Medium.ttf');
 const surahNamesB64 = fontToBase64('surah_names.ttf');
 
-// PUA codepoints from surahGlyphMap — maps surah ID to Unicode char
+// PUA codepoints from surahGlyphMap - maps surah ID to Unicode char
 const SURAH_GLYPHS: Record<number, string> = {
   1: '\uE904',
   2: '\uE905',
@@ -441,7 +441,7 @@ function buildHtml(surah: SurahData, dark: boolean): string {
         <svg class="starburst" viewBox="0 0 1023 872" xmlns="http://www.w3.org/2000/svg">
           <path d="${STARBURST_PATH}" fill="currentColor"/>
         </svg>
-        <span class="branding-text">Bayaan</span>
+        <span class="branding-text">Istima</span>
       </div>
     </div>
   </div>

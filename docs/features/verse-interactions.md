@@ -7,7 +7,7 @@
 
 ## Overview
 
-Verse-level interactions enable users to bookmark, annotate, highlight, copy, share, and read tafseer for individual Quran verses (ayahs). This builds a shared architecture that both the existing list view and a future mushaf (page) view can use seamlessly.
+Verse-level interactions enable users to bookmark, annotate, highlight, copy, share, and read tafseer for individual Quran verses (ayahs). This builds a shared architecture that both the existing list view and a future mushaf (page) view can use smoothly.
 
 Currently, all Istima features (loved tracks, downloads, playlists) operate at the **surah level**. The `handleVersePress` stub in `PlayerContent/index.tsx` only logs to console. This feature introduces the first ayah-level interaction layer.
 
@@ -64,7 +64,7 @@ Both the list view and future mushaf view read/write to the same stores and serv
 
 ---
 
-## 1. Types — `types/verse-annotations.ts`
+## 1. Types - `types/verse-annotations.ts`
 
 ```typescript
 export type HighlightColor = 'yellow' | 'green' | 'blue' | 'pink' | 'orange' | 'purple';
@@ -108,7 +108,7 @@ export interface VerseHighlight {
 
 ---
 
-## 2. Database — `services/database/VerseAnnotationDatabaseService.ts`
+## 2. Database - `services/database/VerseAnnotationDatabaseService.ts`
 
 Follows the existing `DatabaseService.ts` singleton pattern (private `db`, `initPromise`, WAL mode).
 
@@ -150,13 +150,13 @@ highlights (
 
 ### Key Decisions
 
-- **UNIQUE on `verse_key`** for all tables — one bookmark/note/highlight per verse
+- **UNIQUE on `verse_key`** for all tables - one bookmark/note/highlight per verse
 - **`surah_number` indexed** for efficient per-surah batch queries
 - **Separate DB file** follows existing pattern of isolated databases per domain
 
 ---
 
-## 3. Service Layer — `services/verse-annotations/VerseAnnotationService.ts`
+## 3. Service Layer - `services/verse-annotations/VerseAnnotationService.ts`
 
 Thin service wrapping the database. Exported as singleton `verseAnnotationService`.
 
@@ -197,7 +197,7 @@ appInitializer.registerService({
 
 ## 4. State Management
 
-### 4a. `store/verseSelectionStore.ts` — Ephemeral UI State
+### 4a. `store/verseSelectionStore.ts` - Ephemeral UI State
 
 Not persisted. Both list view and future mushaf view share this store.
 
@@ -211,7 +211,7 @@ interface VerseSelectionState {
 }
 ```
 
-### 4b. `store/verseAnnotationsStore.ts` — Cached Annotations from SQLite
+### 4b. `store/verseAnnotationsStore.ts` - Cached Annotations from SQLite
 
 ```typescript
 interface VerseAnnotationsState {
@@ -240,9 +240,9 @@ interface VerseAnnotationsState {
 
 ### Sync Strategy
 
-- **On surah change:** Single batch query `getAnnotationsForSurah()` populates Sets/Records
-- **On mutation:** Optimistic update to Zustand (instant UI) + async SQLite write
-- **No startup pre-loading:** Loads on-demand when the player opens a surah
+- **On surah change** - Single batch query `getAnnotationsForSurah()` populates Sets/Records
+- **On mutation** - Optimistic update to Zustand (instant UI) + async SQLite write
+- **No startup pre-loading** - Loads on-demand when the player opens a surah
 
 ---
 
@@ -279,9 +279,9 @@ onLongPress: () => void;
 ```
 
 Visual changes:
-- `isSelected` — subtle background tint + left border accent
-- `highlightColor` — applied as background on the Arabic text container
-- `hasBookmark` / `hasNote` — small indicator icons next to the verse pill
+- `isSelected` - subtle background tint + left border accent
+- `highlightColor` - applied as background on the Arabic text container
+- `hasBookmark` / `hasNote` - small indicator icons next to the verse pill
 - `onLongPress` wired to the `Pressable` component
 
 Existing `onPress` remains as a stub, reserved for future play-from-verse.
@@ -335,14 +335,14 @@ Header: "Al-Baqarah 2:255"
 
 {translation}
 
-— Quran {surah}:{ayah}
+- Quran {surah}:{ayah}
 ```
 
 All sheets registered in `components/sheets/sheets.tsx` using `lazySheet` + type declarations.
 
 ---
 
-## 7. Tafseer Integration — Quran.com API
+## 7. Tafseer Integration - Quran.com API
 
 **Endpoint:** `GET https://api.quran.com/api/v4/tafsirs/{tafsir_id}/by_ayah/{verse_key}`
 
@@ -394,11 +394,11 @@ components/
 ### Modified Files
 
 ```
-components/player/v2/PlayerContent/QuranView/VerseItem.tsx  — new props, visual states, onLongPress
-components/player/v2/PlayerContent/QuranView/index.tsx      — wire selection + annotations
-components/player/v2/PlayerContent/index.tsx                — clear selection on surah change
-components/sheets/sheets.tsx                                — register 6 new sheets + types
-services/AppInitializer.ts                                  — register verse annotations service
+components/player/v2/PlayerContent/QuranView/VerseItem.tsx  - new props, visual states, onLongPress
+components/player/v2/PlayerContent/QuranView/index.tsx      - wire selection + annotations
+components/player/v2/PlayerContent/index.tsx                - clear selection on surah change
+components/sheets/sheets.tsx                                - register 6 new sheets + types
+services/AppInitializer.ts                                  - register verse annotations service
 ```
 
 ---
@@ -447,8 +447,8 @@ services/AppInitializer.ts                                  — register verse a
 
 ## 10. Performance Considerations
 
-- **VerseItem** is already `React.memo()`. New props are primitives — only 2 items re-render per selection change (old + new)
-- **Annotation lookups** use `Set.has()` and `Record` access — O(1) in the render path
+- **VerseItem** is already `React.memo()`. New props are primitives - only 2 items re-render per selection change (old + new)
+- **Annotation lookups** use `Set.has()` and `Record` access - O(1) in the render path
 - **Per-surah loading** keeps memory bounded regardless of total annotations
 - **Optimistic updates** give instant visual feedback; SQLite writes are async
 - **LegendList recycling** works correctly since annotation props are per-item in `renderItem`

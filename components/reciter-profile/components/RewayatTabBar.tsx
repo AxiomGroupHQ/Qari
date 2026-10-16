@@ -93,7 +93,7 @@ export const RewayatTabBar: React.FC<RewayatTabBarProps> = ({
     return scrollX.interpolate({inputRange, outputRange, extrapolate: 'clamp'});
   }, [allLayoutsReady, tabs, tabLayouts, scrollX, screenWidth]);
 
-  // Per-tab opacity interpolations — native-driven, frame-perfect sync with swipe
+  // Per-tab opacity interpolations - native-driven, frame-perfect sync with swipe
   const tabOpacities = useMemo(() => {
     if (tabs.length < 2) {
       const activeIdx = tabs.findIndex(t => t.id === activeTabId);
@@ -158,7 +158,7 @@ export const RewayatTabBar: React.FC<RewayatTabBarProps> = ({
               style={styles.tab}
               onPress={() => handleTabPress(tab.id)}
               onLayout={e => handleTabLayout(tab.id, e)}>
-              {/* Wrapper keeps both texts aligned — bold drives size */}
+              {/* Wrapper keeps both texts aligned - bold drives size */}
               <View style={styles.tabTextWrapper}>
                 <RNAnimated.Text
                   style={[styles.tabTextActive, {opacity: activeOpacity}]}>

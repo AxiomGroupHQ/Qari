@@ -8,11 +8,11 @@
  */
 
 const ADMIN_URL =
-  process.env.BAYAAN_ADMIN_URL || process.env.EXPO_PUBLIC_BAYAAN_API_URL;
-const ADMIN_TOKEN = process.env.BAYAAN_ADMIN_TOKEN;
+  process.env.ISTIMA_ADMIN_URL || process.env.EXPO_PUBLIC_ISTIMA_API_URL;
+const ADMIN_TOKEN = process.env.ISTIMA_ADMIN_TOKEN;
 
 if (!ADMIN_URL || !ADMIN_TOKEN) {
-  throw new Error('Set BAYAAN_ADMIN_URL and BAYAAN_ADMIN_TOKEN.');
+  throw new Error('Set ISTIMA_ADMIN_URL and ISTIMA_ADMIN_TOKEN.');
 }
 
 const dryRun = process.argv.includes('--dry-run');

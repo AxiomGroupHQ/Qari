@@ -103,7 +103,7 @@ function sortRewayat(rewayat: Rewayat[]): Rewayat[] {
   });
 }
 
-// Synchronous reciter init — avoids async loading phase
+// Synchronous reciter init - avoids async loading phase
 function initReciter(id: string): Reciter | null {
   const r = getReciterByIdSync(id);
   if (!r) return null;
@@ -113,7 +113,7 @@ function initReciter(id: string): Reciter | null {
 // Create a proper memoized wrapper for SurahList
 const MemoizedSurahList = React.memo(SurahList);
 
-// Skeleton placeholder for surah list — shows pulsing rows while content loads
+// Skeleton placeholder for surah list - shows pulsing rows while content loads
 // eslint-disable-next-line react/display-name -- memo wrapper, name inferred from the const
 const SurahListSkeleton: React.FC<{theme: any}> = React.memo(({theme}) => {
   const pulseAnim = useRef(new RNAnimated.Value(0.3)).current;
@@ -203,7 +203,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
   // eslint-disable-next-line react-hooks/rules-of-hooks -- guarded by Platform.OS, constant for the app lifetime
   const headerHeight = isGlass ? useHeaderHeight() : 0;
 
-  // Synchronous reciter init — data available on first render, no deferred loading delay
+  // Synchronous reciter init - data available on first render, no deferred loading delay
   const initialReciter = useMemo(
     () => initReciter(currentReciterId),
     [currentReciterId],
@@ -412,7 +412,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
     ],
   );
 
-  // Lazy per-tab surah cache — only computes when a tab is first accessed.
+  // Lazy per-tab surah cache - only computes when a tab is first accessed.
   // Deps key invalidates the whole cache when filter/sort/search changes.
   const surahCacheRef = useRef<{key: string; map: Map<string, Surah[]>}>({
     key: '',
@@ -733,7 +733,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
       }
       // If scrolled past the collapse point, snap back to it so the tab bar
       // stays pinned and content starts cleanly. Otherwise don't touch scroll
-      // — let the header stay visible at its current position.
+      // - let the header stay visible at its current position.
       const snapPoint = Math.max(0, collapsibleHeight - stickyPinOffset);
       if (currentScrollYRef.current > snapPoint) {
         outerScrollRef.current?.scrollTo({y: snapPoint, animated: false});
@@ -748,7 +748,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
     ],
   );
 
-  // Scroll listener — only clears programmatic scroll gate; no side effects during swipe.
+  // Scroll listener - only clears programmatic scroll gate; no side effects during swipe.
   const handleHorizontalScroll = useCallback(
     (e: NativeSyntheticEvent<NativeScrollEvent>) => {
       if (scrollTargetRef.current !== null) {
@@ -763,7 +763,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
     [tabs, screenWidth],
   );
 
-  // Fires after paging snap completes — updates tab state without interrupting gesture.
+  // Fires after paging snap completes - updates tab state without interrupting gesture.
   const handleHorizontalMomentumEnd = useCallback(
     (e: NativeSyntheticEvent<NativeScrollEvent>) => {
       const offsetX = e.nativeEvent.contentOffset.x;
@@ -825,7 +825,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
     [screenWidth, pagerOpacity, initialTabIndex, scrollX],
   );
 
-  // Sticky title bar opacity — fades in as the outer scroll collapses the header
+  // Sticky title bar opacity - fades in as the outer scroll collapses the header
   // With negative margin on header, the actual collapse point is reduced
   const collapsePoint = Math.max(1, collapsibleHeight - stickyPinOffset);
   const stickyTitleOpacity = useMemo(
@@ -874,7 +874,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
         translucent
         backgroundColor="transparent"
       />
-      {/* Main content — always mounted to preserve pager scroll position */}
+      {/* Main content - always mounted to preserve pager scroll position */}
       <View style={{flex: 1}} pointerEvents={showSearch ? 'none' : 'auto'}>
         <>
           {/* Single outer scroll: header collapses, tab bar sticks, content scrolls */}
@@ -911,7 +911,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
             scrollEventThrottle={16}
             showsVerticalScrollIndicator={false}
             bounces={true}>
-            {/* Child 0: Collapsible header — scrolls away */}
+            {/* Child 0: Collapsible header - scrolls away */}
             {/* Negative marginBottom pulls the sticky section up, closing the gap */}
             {/* between action buttons and tab bar when the header is not collapsed */}
             <View
@@ -933,7 +933,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
               </View>
             </View>
 
-            {/* Child 1: Sticky section — sticks at top when header collapses */}
+            {/* Child 1: Sticky section - sticks at top when header collapses */}
             {/* paddingTop offsets below native header (iOS) or sticky title (Android) */}
             <View
               onLayout={e => setStickyHeight(e.nativeEvent.layout.height)}
@@ -1035,7 +1035,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
               </View>
             </View>
 
-            {/* Child 2: Horizontal pager — lazy-rendered, swipeable */}
+            {/* Child 2: Horizontal pager - lazy-rendered, swipeable */}
             {/* Only active ±1 tabs render; previously visited tabs stay mounted */}
             {/* When uploads is active, cap height to viewport so the tall rewayat pages */}
             {/* don't inflate the scrollable area with empty space */}
@@ -1132,7 +1132,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
             </View>
           </RNAnimated.ScrollView>
 
-          {/* Sticky title bar — fades in as outer scroll collapses header (Android only) */}
+          {/* Sticky title bar - fades in as outer scroll collapses header (Android only) */}
           {!isGlass && (
             <RNAnimated.View
               pointerEvents="none"
@@ -1180,7 +1180,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
           )}
         </>
       </View>
-      {/* Search overlay — mounted on top, preserves main content underneath */}
+      {/* Search overlay - mounted on top, preserves main content underneath */}
       {showSearch && (
         <View style={StyleSheet.absoluteFill} pointerEvents="auto">
           <SearchView
@@ -1219,7 +1219,7 @@ const ReciterProfileContent: React.FC<ReciterProfileProps> = ({
   );
 };
 
-// Lightweight wrapper — defers mounting the heavy content until the navigation
+// Lightweight wrapper - defers mounting the heavy content until the navigation
 // transition finishes so the screen push feels instant.
 // On Android, InteractionManager can hang indefinitely if an interaction never
 // completes, so we race it against a short timeout.

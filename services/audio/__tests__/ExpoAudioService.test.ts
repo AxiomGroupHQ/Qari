@@ -1,18 +1,18 @@
 /**
- * Characterization tests for ExpoAudioService — Group A from
- * bayaan-platform/planning/Characterization-Test-Plan.md.
+ * Characterization tests for ExpoAudioService - Group A from
+ * the characterization test plan.
  *
  * These tests lock in current state-machine behavior before any
  * AudioCoordinator / ExpoAudioProvider / LockScreenService refactor begins
  * (RFC-006 onward). They use a per-test `FakeAudioPlayer` that mirrors the
  * slice of expo-audio's AudioPlayer surface that ExpoAudioService.ts actually
  * touches. Once Group B reuses the same fake, it gets promoted into
- * @bayaan/test-utils.
+ * @istima/test-utils.
  *
  * See docs/rfcs/005-audio-characterization-tests.md.
  */
 
-// Mock setAudioModeAsync — the only native call ExpoAudioService.initialize()
+// Mock setAudioModeAsync - the only native call ExpoAudioService.initialize()
 // makes. The rest of the service flows through the injected FakeAudioPlayer.
 jest.mock('expo-audio', () => ({
   setAudioModeAsync: jest.fn(() => Promise.resolve()),
@@ -77,7 +77,7 @@ class FakeAudioPlayer {
  * Helper: instantiate the singleton, set a fake player, and return both.
  * `reset()` clears state between tests; the singleton itself can't be
  * re-newed cheaply, so reset+re-setup is the supported pattern (the service
- * exposes `reset()` for exactly this use case — see ExpoAudioService.ts:454).
+ * exposes `reset()` for exactly this use case - see ExpoAudioService.ts:454).
  */
 function makeService(): {service: ExpoAudioService; player: FakeAudioPlayer} {
   const service = ExpoAudioService.getInstance();
@@ -89,13 +89,13 @@ function makeService(): {service: ExpoAudioService; player: FakeAudioPlayer} {
   return {service, player};
 }
 
-describe('ExpoAudioService — Group A characterization', () => {
+describe('ExpoAudioService - Group A characterization', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
   // ---------------------------------------------------------------- A1 ---
-  it('A1: initialize() is idempotent — second call no-ops', async () => {
+  it('A1: initialize() is idempotent - second call no-ops', async () => {
     const {service} = makeService();
 
     await service.initialize();
@@ -128,7 +128,7 @@ describe('ExpoAudioService — Group A characterization', () => {
   });
 
   // ---------------------------------------------------------------- A3 ---
-  it('A3: loadTrack(url) happy path — state idle → loading → ready', async () => {
+  it('A3: loadTrack(url) happy path - state idle → loading → ready', async () => {
     const {service, player} = makeService();
     const states: ExpoAudioServiceState['playbackState'][] = [];
     service.addStateListener(s => states.push(s.playbackState));
@@ -156,7 +156,7 @@ describe('ExpoAudioService — Group A characterization', () => {
   });
 
   // ---------------------------------------------------------------- A4 ---
-  it('A4: loadTrack(url) error — state error, lastError set, listeners notified', async () => {
+  it('A4: loadTrack(url) error - state error, lastError set, listeners notified', async () => {
     const {service, player} = makeService();
     const states: ExpoAudioServiceState['playbackState'][] = [];
     service.addStateListener(s => states.push(s.playbackState));
@@ -178,7 +178,7 @@ describe('ExpoAudioService — Group A characterization', () => {
     const {service, player} = makeService();
 
     // Manually drive into 'ready' state without going through loadTrack
-    // (covered by A3) — direct test of play/pause transitions.
+    // (covered by A3) - direct test of play/pause transitions.
     player.simulateLoaded(60);
     player.replace.mockImplementationOnce(async () => {
       player.isLoaded = false;
@@ -222,11 +222,11 @@ describe('ExpoAudioService — Group A characterization', () => {
     service.setRate(1.25);
     expect(player.setPlaybackRate).toHaveBeenLastCalledWith(1.25, 'high');
 
-    // Below clamp range — should clamp up to 0.5.
+    // Below clamp range - should clamp up to 0.5.
     service.setRate(0.1);
     expect(player.setPlaybackRate).toHaveBeenLastCalledWith(0.5, 'high');
 
-    // Above clamp range — should clamp down to 2.0.
+    // Above clamp range - should clamp down to 2.0.
     service.setRate(5.0);
     expect(player.setPlaybackRate).toHaveBeenLastCalledWith(2.0, 'high');
   });
@@ -244,7 +244,7 @@ describe('ExpoAudioService — Group A characterization', () => {
     await service.loadTrack('https://example.test/x.mp3');
     await service.play();
 
-    // At minimum: loading, ready, playing — plus any intermediate notifications.
+    // At minimum: loading, ready, playing - plus any intermediate notifications.
     const states = observed.map(s => s.playbackState);
     expect(states).toEqual(
       expect.arrayContaining(['loading', 'ready', 'playing']),

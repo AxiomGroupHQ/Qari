@@ -1,6 +1,6 @@
 # Downloads Feature Documentation
 
-This document provides comprehensive documentation for the offline download feature in the Istima Quran audio app.
+This document provides full documentation for the offline download feature in the Istima Quran audio app.
 
 ## Overview
 
@@ -343,7 +343,7 @@ const handleRemoveDownload = async (reciterId: string, surahId: string) => {
 
 ## Testing
 
-See [Download Testing Guide](../testing/download-testing.md) for comprehensive testing procedures.
+See [Download Testing Guide](../testing/download-testing.md) for full testing procedures.
 
 ### Quick Test Checklist
 

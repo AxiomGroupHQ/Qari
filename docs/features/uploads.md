@@ -1,6 +1,6 @@
 # Uploads Feature - Planning Document
 
-> Allow users to upload personal recitations to Bayaan.
+> Allow users to upload personal recitations to Istima.
 
 **Status:** Ready for implementation
 
@@ -146,7 +146,7 @@ Grid of CircularReciterCards (system reciters with uploads + custom reciters).
 **Other selected:**
 Flat list of du'a, lectures, tafsir, etc.
 
-> **V2:** "Me" pill for personal recordings (deferred — `is_personal` field kept in schema for future use).
+> **V2:** "Me" pill for personal recordings (deferred - `is_personal` field kept in schema for future use).
 
 ---
 
@@ -488,7 +488,7 @@ Following the existing codebase architecture (DatabaseService → Service → St
 ```
 ┌─────────────────────────────────────────────────────┐
 │  UI Layer (Screens, Components, Hooks)              │
-│  useUserRecitations() hook                          │
+│  useUserRecitations hook                          │
 ├─────────────────────────────────────────────────────┤
 │  Zustand Store (useUserRecitationsStore)            │
 │  Reactive UI state, cached query results            │
@@ -512,9 +512,9 @@ appInitializer.registerService({
   name: 'User Recitations',
   priority: 6,                    // after adhkar (priority 4-5)
   critical: false,                // app works without uploads
-  initialize: async () => {
-    await userRecitationsDatabaseService.initialize();
-    await useUserRecitationsStore.getState().loadRecitations();
+  initialize: async  => {
+    await userRecitationsDatabaseService.initialize;
+    await useUserRecitationsStore.getState.loadRecitations;
   },
 });
 ```
@@ -563,12 +563,12 @@ deleteCustomReciter(id: string): Promise<void>
 ```typescript
 const ORPHAN_CHECK_INTERVAL = 7 * 24 * 60 * 60 * 1000; // 7 days
 
-async function maybeRunOrphanCheck() {
-  const lastCheck = await getLastOrphanCheck();
-  const now = Date.now();
+async function maybeRunOrphanCheck {
+  const lastCheck = await getLastOrphanCheck;
+  const now = Date.now;
 
   if (now - lastCheck > ORPHAN_CHECK_INTERVAL) {
-    setTimeout(() => cleanupOrphanFiles(), 3000);
+    setTimeout( => cleanupOrphanFiles, 3000);
     await setLastOrphanCheck(now);
   }
 }
@@ -607,7 +607,7 @@ function createUserUploadTrack(recitation: UserRecitation): Track {
     artwork: getRecitationArtwork(recitation),
     reciterId: recitation.reciterId || recitation.customReciterId || 'user-upload',
     reciterName: getRecitationArtist(recitation),
-    surahId: recitation.surahNumber?.toString(),
+    surahId: recitation.surahNumber?.toString,
     isUserUpload: true,
     userRecitationId: recitation.id,
   };

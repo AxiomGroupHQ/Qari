@@ -1,5 +1,5 @@
 """
-Build a Bayaan-compatible Mushaf words DB by patching a base rewayah's words
+Build a Istima-compatible Mushaf words DB by patching a base rewayah's words
 DB with another rewayah's text — the same approach used for Shu'bah on top
 of Hafs, generalized to any (base, target) pair.
 
@@ -244,14 +244,14 @@ def classify_word(
     if h_strip == t_strip:
         return None
 
-    # 1. Madd al-Badal / Madd al-Lin — U+06E4 explicitly marks this in
+    # 1. Madd al-Badal / Madd al-Lin - U+06E4 explicitly marks this in
     #    KFGQPC Warsh/Qaloon data. Anchor on the letter it sits above.
     if "\u06E4" in target_raw:
         anchors = _marker_anchors(target_raw, "\u06E4")
         if anchors:
             return ("madd", sorted(set(anchors)))
 
-    # 2. Tashil — U+06EA (dot below) or U+06EC (ring above) indicates
+    # 2. Tashil - U+06EA (dot below) or U+06EC (ring above) indicates
     #    hamza tashil / musahhala. Anchor on the carrier letter.
     tashil_anchors: list[int] = []
     if "\u06EA" in target_raw:
@@ -261,7 +261,7 @@ def classify_word(
     if tashil_anchors:
         return ("tashil", sorted(set(tashil_anchors)))
 
-    # 3. Ibdal — Hafs hamza in same letter position as Warsh long vowel.
+    # 3. Ibdal - Hafs hamza in same letter position as Warsh long vowel.
     #    Letter-count-preserving substitution: أ→ا, ؤ→و, ئ→ي. Color just
     #    the substituted letter in the target word.
     h_letters = _letters_only(hafs_raw)
@@ -276,7 +276,7 @@ def classify_word(
         if ibdal_anchors:
             return ("ibdal", sorted(set(ibdal_anchors)))
 
-    # 4. Taghliz al-Lam — Allah following a tafkhim trigger on the
+    # 4. Taghliz al-Lam - Allah following a tafkhim trigger on the
     #    preceding word. Color the lam+lam+shadda in للّه.
     if _ALLAH_SUBSTR in target_raw and target_prev_raw:
         prev_letters = _letters_only(target_prev_raw)
@@ -286,7 +286,7 @@ def classify_word(
             if idx >= 0:
                 return ("taghliz", [idx, idx + 1, idx + 2])
 
-    # 5. Mukhtalif fall-through — but only if there's a SUBSTANTIVE diff.
+    # 5. Mukhtalif fall-through - but only if there's a SUBSTANTIVE diff.
     #    Filter out typographic-only variations (alef wasla style, trailing
     #    vowel mood shifts, silah-adjacent changes) that would otherwise
     #    flood the page with red. The published mushaf reserves the red
@@ -348,8 +348,8 @@ def align_content(
             common = min(b_j - b_i, t_j - t_i)
             for k in range(common):
                 mapping[b_i + k] = t_i + k
-        # 'delete': base has extra words target doesn't cover — keep base text
-        # 'insert': target has extra words with no base slot — drop them
+        # 'delete': base has extra words target doesn't cover - keep base text
+        # 'insert': target has extra words with no base slot - drop them
     return mapping
 
 
@@ -410,7 +410,7 @@ def main() -> None:
 
     # Pre-compute target markers as (content_position, marker_text). The
     # content_position is the count of content tokens that precede the
-    # marker in Bazzi's stream — i.e., where in the content sequence this
+    # marker in Bazzi's stream - i.e., where in the content sequence this
     # marker should appear.
     target_markers_by_surah: dict[int, list[tuple[int, str]]] = {}
     for s, full_tokens in target_full_by_surah.items():
@@ -424,11 +424,11 @@ def main() -> None:
         target_markers_by_surah[s] = markers
 
     # Three classifier modes, picked by rewayah:
-    #   close  (shouba/bazzi/qumbul) — legacy two-tier major/minor. Text
+    #   close  (shouba/bazzi/qumbul) - legacy two-tier major/minor. Text
     #          stored verbatim (no markers to strip).
-    #   nafi   (warsh/qaloon)        — full published-mushaf classifier.
+    #   nafi   (warsh/qaloon)        - full published-mushaf classifier.
     #          Markers drive letter-level madd/tashil/ibdal/taghliz.
-    #   abu_amr (doori/soosi)        — only mukhtalif (genuine content
+    #   abu_amr (doori/soosi)        - only mukhtalif (genuine content
     #          variants). The KFGQPC U+06EA/U+06EC markers in these
     #          sources describe Abu Amr's own hamza rules, which don't
     #          map onto the Nafi' published mushaf; inferring rules
@@ -463,7 +463,7 @@ def main() -> None:
         base_content_texts = [t for _, t, m in base_rows_s if not m]
 
         # Align content streams. mapping[i] = target content index for base
-        # content index i (or None if unaligned — in which case we keep the
+        # content index i (or None if unaligned - in which case we keep the
         # base text at that slot).
         mapping = align_content(base_content_texts, target_content)
         if base_content_texts:

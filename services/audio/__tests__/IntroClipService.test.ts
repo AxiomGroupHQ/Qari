@@ -110,4 +110,19 @@ describe('IntroClipService', () => {
     await expect(first).resolves.toBe('cancelled');
     await expect(second).resolves.toBe('completed');
   });
+  it('stop() between the remote clip failing and the English fallback cancels the fallback', async () => {
+    useLanguageStore.setState({preference: 'ar'} as never);
+    const failing = fakePlayer(false);
+    failing.play = jest.fn(() => {
+      throw new Error('load failed');
+    });
+    (createAudioPlayer as jest.Mock)
+      .mockReset()
+      .mockReturnValueOnce(failing)
+      .mockReturnValue(fakePlayer(true));
+    const job = introClipService.play('start');
+    introClipService.stop();
+    await expect(job).resolves.toBe('cancelled');
+    expect(createAudioPlayer).toHaveBeenCalledTimes(1);
+  });
 });

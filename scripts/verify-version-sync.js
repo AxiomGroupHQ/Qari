@@ -5,7 +5,7 @@
  * `android/app/build.gradle` all agree.
  *
  * Why: version drift between source-of-truth (`app.config.ts`) and the
- * committed native files happens silently — `expo prebuild` regenerates
+ * committed native files happens silently - `expo prebuild` regenerates
  * native dirs from the config, but if you bump the config and forget to
  * re-prebuild (or commit the prebuild output to a separate branch), the
  * archive will ship with stale version metadata. Apple rejects uploads
@@ -33,9 +33,9 @@
  * is set so iOS archives don't fail on Android drift. See PR #251 review.
  *
  * Exit codes:
- *   0 — all 3 in sync (after --fix, this means the patch succeeded)
- *   1 — mismatch (without --fix; with --fix, only if patch failed)
- *   2 — parse error in one of the inputs
+ *   0 - all 3 in sync (after --fix, this means the patch succeeded)
+ *   1 - mismatch (without --fix; with --fix, only if patch failed)
+ *   2 - parse error in one of the inputs
  *
  * Fork-agnostic: scans `ios/*\/Info.plist` rather than hardcoding the app name.
  *
@@ -94,7 +94,7 @@ function readVersionFromGenerator() {
 }
 
 // Directory names under `ios/` that are NEVER the app target. Filter
-// these out of findInfoPlistPath() — they often contain their own
+// these out of findInfoPlistPath() - they often contain their own
 // Info.plist files (test targets in particular) and could be picked up
 // by readdirSync's filesystem-order traversal before the app target.
 // See PR #251 review.
@@ -102,7 +102,7 @@ const IOS_NON_APP_DIRS = new Set(['Pods', 'build', 'DerivedData']);
 
 // Suffixes that mark a directory as an Xcode test/extension target rather
 // than the app target. Test target plists track the test bundle's version,
-// which is unrelated to the app's CFBundleShortVersionString — patching
+// which is unrelated to the app's CFBundleShortVersionString - patching
 // them silently corrupts the test bundle metadata. Extensions (`*Extension`,
 // `*Widget`) are similarly out of scope for this script's intent.
 const IOS_NON_APP_SUFFIXES = ['Tests', 'UITests', 'Extension', 'Widget'];
@@ -113,7 +113,7 @@ function findInfoPlistPath(repoRoot = REPO) {
   // Scan ios/<AppName>/Info.plist, filtering known non-app entries
   // (Pods, build artifacts) and entries whose name marks them as a test
   // target or extension. If multiple candidates remain after filtering,
-  // surface the ambiguity loudly rather than picking one — better to
+  // surface the ambiguity loudly rather than picking one - better to
   // refuse than to silently patch the wrong file.
   const candidates = [];
   for (const entry of fs.readdirSync(iosDir, {withFileTypes: true})) {
@@ -151,7 +151,7 @@ function readVersionFromInfoPlist(repoRoot = REPO) {
   const p = findInfoPlistPath(repoRoot);
   if (!p) {
     throw new Error(
-      'Could not find ios/<App>/Info.plist — has `expo prebuild` run yet?',
+      'Could not find ios/<App>/Info.plist - has `expo prebuild` run yet?',
     );
   }
   const text = fs.readFileSync(p, 'utf8');
@@ -172,7 +172,7 @@ function readVersionFromInfoPlist(repoRoot = REPO) {
 // CFBundleShortVersionString + CFBundleVersion values in Xcode build
 // settings (`MARKETING_VERSION` + `CURRENT_PROJECT_VERSION` written into
 // `project.pbxproj`). Their stub `*-Info.plist` files don't contain the
-// raw CFBundle keys — Xcode generates them at build time by substituting
+// raw CFBundle keys - Xcode generates them at build time by substituting
 // the build settings. So we parse the pbxproj, not the plist.
 //
 // Apple's processor warns at submission time when an embedded
@@ -267,7 +267,7 @@ function patchExtensionConfigBlocks(pbxprojPath, blocks, target) {
 function readVersionFromAndroidGradle(repoRoot = REPO) {
   const p = path.join(repoRoot, 'android/app/build.gradle');
   if (!fs.existsSync(p)) {
-    throw new Error(`Could not find ${p} — has \`expo prebuild\` run yet?`);
+    throw new Error(`Could not find ${p} - has \`expo prebuild\` run yet?`);
   }
   const text = fs.readFileSync(p, 'utf8');
   const versionName = /versionName\s+"([^"]+)"/.exec(text);
@@ -331,7 +331,7 @@ function main() {
     try {
       ios = readVersionFromInfoPlist(REPO);
       // Auto-discover Xcode extension targets and include each in the
-      // check. Empty list (no extensions) is fine — means the project
+      // check. Empty list (no extensions) is fine - means the project
       // ships only the main app and the SE/widget check is a no-op.
       iosExtensions = findExtensionConfigBlocks(REPO);
     } catch (e) {
@@ -446,7 +446,7 @@ function main() {
       );
       process.exit(0);
     }
-    console.error('\n✗ Patch failed — manual fix needed.');
+    console.error('\n✗ Patch failed - manual fix needed.');
     if (CHECK_IOS) console.error(`  iOS now: ${iosAfterPair}`);
     if (CHECK_ANDROID) console.error(`  Android now: ${androidAfterPair}`);
     process.exit(1);
@@ -473,7 +473,7 @@ function main() {
         `\n    needs  versionName "${truth.semanticVersion}", versionCode ${truth.buildNumber}`,
     );
   }
-  // Don't suggest manual sed commands — naive `sed s|<string>X</string>|...|`
+  // Don't suggest manual sed commands - naive `sed s|<string>X</string>|...|`
   // patterns match every <string>X</string> in the plist, not just the
   // CFBundleShortVersionString/CFBundleVersion entries. The auto-patcher
   // (--fix) uses a regex anchored on the CFBundle key to avoid that
@@ -483,13 +483,13 @@ function main() {
   );
   console.error('  node scripts/verify-version-sync.js --fix');
   console.error(
-    '\nThen archive. Do NOT commit the patch first — committing bumps the\n' +
+    '\nThen archive. Do NOT commit the patch first - committing bumps the\n' +
       'git-rev-list commit count, re-introducing drift before archive.',
   );
   process.exit(1);
 }
 
-// Pure functions exported for unit testing — see scripts/__tests__/.
+// Pure functions exported for unit testing - see scripts/__tests__/.
 // `main()` and CLI argv parsing remain script-only.
 module.exports = {
   findInfoPlistPath,

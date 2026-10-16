@@ -8,7 +8,7 @@ import {SURAHS} from '@/data/surahData';
 import {verseAnnotationService} from '@/services/verse-annotations/VerseAnnotationService';
 import type {VerseBookmark} from '@/types/verse-annotations';
 
-// Module-level cache — warmed by AppInitializer after DB is ready
+// Module-level cache - warmed by AppInitializer after DB is ready
 let cachedBookmarks: VerseBookmark[] = [];
 
 /** Called from AppInitializer after VerseAnnotations DB is initialized */

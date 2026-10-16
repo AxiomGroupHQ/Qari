@@ -17,7 +17,7 @@ interface ClearQuranData {
   translations: ClearQuranEntry[];
 }
 
-// Module-scope data (require() is cached by Metro — zero cost after first load)
+// Module-scope data (require() is cached by Metro - zero cost after first load)
 const saheehData =
   require('@/data/SaheehInternational.translation-with-footnote-tags.json') as Record<
     string,
@@ -122,7 +122,7 @@ export function clearActiveRemoteTranslationCache(): void {
 }
 
 /**
- * Universal translation lookup — works for both bundled and remote translations.
+ * Universal translation lookup - works for both bundled and remote translations.
  * For remote translations, uses the in-memory cache populated by enhancedVerseData.
  */
 export function getTranslationText(

@@ -15,15 +15,15 @@
 //
 //   Bug 2: the by-page endpoint sometimes includes words from verses
 //   that don't actually belong on that page. Each word still carries a
-//   correct per-word `page_number` field — but the by-page grouping is
+//   correct per-word `page_number` field - but the by-page grouping is
 //   sloppy. Workaround: filter to only keep words whose `page_number`
 //   matches the requested page.
 //
 //   Combined fix:
-//     pass 1 — line_number + location + char_type_name + text_qpc_hafs
+//     pass 1 - line_number + location + char_type_name + text_qpc_hafs
 //              + page_number  (correct line numbers; can verify the
 //              word truly belongs on this page)
-//     pass 2 — code_v2 + location  (correct codepoints; merge by location)
+//     pass 2 - code_v2 + location  (correct codepoints; merge by location)
 //   Drop any word from pass 1 whose page_number != requested page.
 
 import {writeFileSync, mkdirSync} from 'node:fs';

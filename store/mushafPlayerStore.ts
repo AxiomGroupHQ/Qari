@@ -206,7 +206,7 @@ export const useMushafPlayerStore = create<MushafPlayerStoreState>()(
                 surah !== prevSurah || ayah !== prevAyah;
               if (ayahActuallyChanged) {
                 if (state.verseRepeatCount === 0) {
-                  // Infinite loop — always seek back
+                  // Infinite loop - always seek back
                   mushafAudioService.seekToAyah(prevAyah);
                   // Restore previous ayah in state
                   set({
@@ -226,7 +226,7 @@ export const useMushafPlayerStore = create<MushafPlayerStoreState>()(
                   });
                   return;
                 }
-                // Exhausted verse repeats — reset counter and let it advance
+                // Exhausted verse repeats - reset counter and let it advance
                 set({_versePlayCount: 1});
               }
             }
@@ -261,7 +261,7 @@ export const useMushafPlayerStore = create<MushafPlayerStoreState>()(
                   });
                   return;
                 }
-                // Range exhausted — stop playback
+                // Range exhausted - stop playback
                 mushafAudioService.stop();
                 set({
                   playbackState: 'idle',

@@ -77,7 +77,7 @@ export function SearchView({
   const [reciterFuse, setReciterFuse] = useState<Fuse<Reciter> | null>(null);
   const [surahFuse, setSurahFuse] = useState<Fuse<Surah> | null>(null);
 
-  // Fade animation — both views always mounted
+  // Fade animation - both views always mounted
   const browseOpacity = useRef(new RNAnimated.Value(1)).current;
   const searchOpacity = useRef(new RNAnimated.Value(0)).current;
 
@@ -440,14 +440,14 @@ export function SearchView({
 
   return (
     <View style={styles.container}>
-      {/* Browse Mode — always mounted, hidden via opacity */}
+      {/* Browse Mode - always mounted, hidden via opacity */}
       <RNAnimated.View
         style={[styles.modeContainer, {opacity: browseOpacity}]}
         pointerEvents={isSearchMode ? 'none' : 'auto'}>
         <ExploreView />
       </RNAnimated.View>
 
-      {/* Search Mode — always mounted, hidden via opacity */}
+      {/* Search Mode - always mounted, hidden via opacity */}
       <RNAnimated.View
         style={[
           styles.modeContainer,

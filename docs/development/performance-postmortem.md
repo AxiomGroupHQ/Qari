@@ -1,4 +1,4 @@
-> **ARCHIVED — Historical document.** This postmortem describes performance work done during the react-native-track-player era. The app now uses expo-audio. The patterns described (store pre-warming, lazy loading) are still valid, but specific file paths and API names may be outdated.
+> **ARCHIVED - Historical document.** This postmortem describes performance work done during the react-native-track-player era. The app now uses expo-audio. The patterns described (store pre-warming, lazy loading) are still valid, but specific file paths and API names may be outdated.
 
 # Performance Optimization Postmortem: Playback Initiation Lag Fixes
 
@@ -8,10 +8,10 @@ This document outlines the performance optimizations implemented to resolve lag 
 
 **Key Metrics:**
 
-- **Before:** First surah playback: ~500-1000ms lag
-- **After:** First surah playback: <100ms (5-10x improvement)
-- **Before:** Quick surah switching: UI mismatch, 300-500ms lag
-- **After:** Quick surah switching: Instant, no UI mismatch
+- **Before** - First surah playback: ~500-1000ms lag
+- **After** - First surah playback: <100ms (5-10x improvement)
+- **Before** - Quick surah switching: UI mismatch, 300-500ms lag
+- **After** - Quick surah switching: Instant, no UI mismatch
 
 ---
 
@@ -128,7 +128,7 @@ if (currentOperationRef.current === operationId) {
 
 **Solution:**
 
-- **Hybrid Approach:** Create and play ONLY the first track immediately
+- **Hybrid Approach** - Create and play ONLY the first track immediately
 - Load remaining tracks in parallel in the background (doesn't block playback)
 - Add remaining tracks all at once when ready (single efficient `TrackPlayer.add()` call)
 

@@ -1,7 +1,7 @@
 /**
  * Istima feature flags.
  *
- * All flags default to true — Istima ships every feature.
+ * All flags default to true - Istima ships every feature.
  * Forks override by replacing this file with their own values.
  *
  * These flags are for fork-configurable feature gating, not per-user A/B tests.
@@ -11,6 +11,7 @@
  */
 export const featureFlags = {
   adhkar: true,
+  discoverFeed: false, // random ayah feed, off until reviewed
   ambientAudioOverlay: true,
   userUploads: true,
   wordByWordTransliteration: true,
@@ -21,6 +22,8 @@ export const featureFlags = {
   multiTranslation: true,
   tafsir: true,
   sleepTimer: true,
+  sharedPlaylists: false, // turn on after the share API is deployed
+  carDisplay: true,
 } as const;
 
 export type FeatureFlag = keyof typeof featureFlags;

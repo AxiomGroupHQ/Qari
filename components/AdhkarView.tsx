@@ -106,7 +106,7 @@ export const AdhkarView: React.FC<AdhkarViewProps> = ({
     const gap = CARD_GAP;
     const availableWidth = width - horizontalPadding * 2;
     const columnWidth = (availableWidth - gap) / 2;
-    // 3:2 aspect ratio — cards are wider than tall
+    // 3:2 aspect ratio - cards are wider than tall
     const cardHeight = columnWidth * (2 / 3);
 
     return {

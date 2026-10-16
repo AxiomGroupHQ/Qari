@@ -38,7 +38,7 @@ Object.entries(androidSizes).forEach(([density, size]) => {
 // Generate iOS icons
 const iosIcon = path.join(
   __dirname,
-  '../ios/Bayaan/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png',
+  '../ios/Istima/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png',
 );
 sharp(sourceIcon)
   .resize(1024, 1024)

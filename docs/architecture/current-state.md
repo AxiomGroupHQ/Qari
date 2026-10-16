@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This document describes the current architecture of Istima — the app's layers, how they fit together, and where to find what.
+This document describes the current architecture of Istima - the app's layers, how they fit together, and where to find what.
 
 > **Stack:** React Native 0.83 · Expo SDK 55 · Expo Router v4 · expo-audio · Zustand · expo-sqlite · MMKV · Skia
 
@@ -95,9 +95,9 @@ appInitializer.registerService({
   name: 'My Service',
   priority: 8,          // lower = earlier
   critical: false,      // true = blocks startup on failure
-  initialize: async () => {
-    await myService.initialize();
-    await useMyStore.getState().load();
+  initialize: async  => {
+    await myService.initialize;
+    await useMyStore.getState.load;
   },
 });
 ```
@@ -128,7 +128,7 @@ app/
     └── (d.settings)/        # Settings, reading themes, Mushaf settings
 ```
 
-Deep links use the `bayaan://` URL scheme and `api.thebayaan.com/share` associated domain.
+Deep links use the `istima://` URL scheme and `iapi.istima.app/share` associated domain.
 
 ---
 
@@ -166,7 +166,7 @@ flowchart LR
 
 
 - The **main player** handles all reciter audio. State lives in `playerStore`.
-- The **Mushaf player** handles verse-by-verse audio in the reader. State lives in `mushafPlayerStore`. The two cannot play simultaneously — `AudioCoordinator` enforces this.
+- The **Mushaf player** handles verse-by-verse audio in the reader. State lives in `mushafPlayerStore`. The two cannot play simultaneously - `AudioCoordinator` enforces this.
 - **Ambient audio** uses a separate `AudioPlayer` and syncs its pause/resume with whichever source is active.
 
 ---
@@ -226,7 +226,7 @@ All persistent structured data beyond simple key-value uses **SQLite via expo-sq
 
 | Database          | File              | Service                          | Contents                                  |
 | ----------------- | ----------------- | -------------------------------- | ----------------------------------------- |
-| Main app DB       | `bayaan.db`       | `DatabaseService`                | Playlists, playlist tracks                |
+| Main app DB       | `istima.db`       | `DatabaseService`                | Playlists, playlist tracks                |
 | Adhkar            | `adhkar.db`       | `AdhkarDatabaseService`          | Dhikr items, categories                   |
 | Verse annotations | `annotations.db`  | `VerseAnnotationDatabaseService` | Bookmarks, notes, highlights              |
 | Ayah timestamps   | `timestamps.db`   | `TimestampDatabaseService`       | Cached ayah timing data                   |
@@ -243,11 +243,11 @@ All persistent structured data beyond simple key-value uses **SQLite via expo-sq
 
 The Mushaf reader uses a full custom rendering pipeline:
 
-1. **Data layer** — `DigitalKhattDataService` loads glyph/page JSON from `data/mushaf/digitalkhatt/`
-2. **Layout engine** — `JustificationService` computes Uthmani line justification
-3. **Layout cache** — `MushafLayoutCacheService` precomputes all 604 pages into MMKV for synchronous reads (~<1ms vs ~50ms compute)
-4. **Rendering** — Skia canvas (`@shopify/react-native-skia`) via `components/mushaf/skia/`
-5. **Reading view** — `components/mushaf/reading/` manages page scrolling, verse highlighting, and audio sync
+1. **Data layer** - `DigitalKhattDataService` loads glyph/page JSON from `data/mushaf/digitalkhatt/`
+2. **Layout engine** - `JustificationService` computes Uthmani line justification
+3. **Layout cache** - `MushafLayoutCacheService` precomputes all 604 pages into MMKV for synchronous reads (~<1ms vs ~50ms compute)
+4. **Rendering** - Skia canvas (`@shopify/react-native-skia`) via `components/mushaf/skia/`
+5. **Reading view** - `components/mushaf/reading/` manages page scrolling, verse highlighting, and audio sync
 
 For deep dives see [docs/features/digital-khatt/README.md](../features/digital-khatt/README.md).
 
@@ -255,7 +255,7 @@ For deep dives see [docs/features/digital-khatt/README.md](../features/digital-k
 
 ## Rewayat (multi-qira'at)
 
-The mushaf renders any of the 8 canonical KFGQPC rewayat — Hafs, Shu'bah, Al-Bazzi, Qunbul, Warsh, Qalun, Al-Duri, Al-Susi — selectable from Mushaf Settings. Each ships as a Hafs-layout sibling: shared `dk_layout.db`, per-rewayah `dk_words_<id>.db`.
+The mushaf renders any of the 8 canonical KFGQPC rewayat - Hafs, Shu'bah, Al-Bazzi, Qunbul, Warsh, Qalun, Al-Duri, Al-Susi - selectable from Mushaf Settings. Each ships as a Hafs-layout sibling: shared `dk_layout.db`, per-rewayah `dk_words_<id>.db`.
 
 - `DigitalKhattDataService` holds one active rewayah for the mushaf and a side cache (up to 7 entries, ~4 MB) for surfaces that need a different one (typically the player rendering the reciter's rewayah). `ensureRewayahLoaded(rewayah)` populates the side cache on demand.
 - `RewayahDiffService` loads a per-rewayah diff JSON describing which words differ from Hafs and what highlight category applies. Two channels: background tint for whole-word variants (`major`, `mukhtalif`), foreground color for letter-level rules (`madd`, `tashil`, `ibdal`, `taghliz`, `silah`, `minor`).
@@ -271,9 +271,9 @@ For deep dive see [docs/features/rewayat.md](../features/rewayat.md).
 
 Phase 1 shipped: event tracking, local aggregation, Sentry crash reporting.
 
-- `services/analytics/AnalyticsService.ts` — PostHog-backed event client with killswitch and opt-out.
-- `services/analytics/LocalAggregationStore.ts` — MMKV daily buckets feeding a future stats dashboard.
-- `services/analytics/MeaningfulListenTracker.ts` — 30s / 10% threshold before counting a listen.
+- `services/analytics/AnalyticsService.ts` - PostHog-backed event client with killswitch and opt-out.
+- `services/analytics/LocalAggregationStore.ts` - MMKV daily buckets feeding a future stats dashboard.
+- `services/analytics/MeaningfulListenTracker.ts` - 30s / 10% threshold before counting a listen.
 - Instrumented surfaces: player (play, skip, seek, rate change), mushaf navigation, adhkar interactions, search, translation views, reciter interactions, playlists, share creation, app lifecycle.
 
 For deep dive see [docs/features/analytics.md](../features/analytics.md).
@@ -302,10 +302,10 @@ import {FlashList} from '@shopify/flash-list';
 ### Zero-re-render action hooks
 
 ```typescript
-// For action dispatch only — no re-renders
-const { play, pause } = usePlayerActions();
+// For action dispatch only - no re-renders
+const { play, pause } = usePlayerActions;
 
-// For reading state — re-renders on change
+// For reading state - re-renders on change
 const isPlaying = usePlayerStore(s => s.playback.state === 'playing');
 ```
 
@@ -313,7 +313,7 @@ const isPlaying = usePlayerStore(s => s.playback.state === 'playing');
 
 ```typescript
 // Do this
-Color(theme.colors.text).alpha(0.04).toString()  // card background
+Color(theme.colors.text).alpha(0.04).toString  // card background
 
 // Never do this
 theme.colors.primary  // accent/primary colors are not used for UI chrome

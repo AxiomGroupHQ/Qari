@@ -1,6 +1,6 @@
 # Queue System
 
-The queue in Istima is a flat array of `Track` objects inside `playerStore`. There is no separate queue service or context — the store is the single source of truth.
+The queue in Istima is a flat array of `Track` objects inside `playerStore`. There is no separate queue service or context - the store is the single source of truth.
 
 ---
 
@@ -112,7 +112,7 @@ interface Track {
 }
 ```
 
-When `localPath` is set, the player resolves the full file path at runtime using `resolveFilePath()` in `utils/audioUtils.ts` — this handles iOS path changes after app updates.
+When `localPath` is set, the player resolves the full file path at runtime using `resolveFilePath()` in `utils/audioUtils.ts` - this handles iOS path changes after app updates.
 
 ---
 

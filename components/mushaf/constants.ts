@@ -64,9 +64,9 @@ export {SCREEN_WIDTH, SCREEN_HEIGHT};
 // ---------------------------------------------------------------------------
 
 export interface MushafLayoutMetrics {
-  /** Full device/container width — what the FlatList item occupies. */
+  /** Full device/container width - what the FlatList item occupies. */
   screenWidth: number;
-  /** Full device/container height — what each page View occupies. */
+  /** Full device/container height - what each page View occupies. */
   screenHeight: number;
   /** Width of ONE rendered mushaf page (capped on iPad to stay readable). */
   pageWidth: number;
@@ -100,7 +100,7 @@ export interface MushafLayoutOpts {
    * When provided, overrides `width`/`height` and is treated as the *measured*
    * container size (i.e. after the parent has subtracted the stack header,
    * toolbar, and safe-area insets). Prefer this on iPad to avoid the "cut off
-   * at the bottom" bug — computing metrics from raw window dimensions
+   * at the bottom" bug - computing metrics from raw window dimensions
    * overestimates the available space because the stack chrome is not
    * accounted for in `useWindowDimensions()`.
    */
@@ -213,7 +213,7 @@ export function getMushafLayout(
     // The page fills the full landscape width (edge to edge). Because the
     // font size scales with contentWidth, the text is noticeably larger than
     // in portrait. The page content is taller than the physical screen, so a
-    // ScrollView wraps it — the user scrolls vertically through the page and
+    // ScrollView wraps it - the user scrolls vertically through the page and
     // swipes horizontally to change pages.
     //
     // fontSize ≈ contentWidth × 0.053 (from SkiaPage: FONTSIZE/PAGE_WIDTH × 0.9)

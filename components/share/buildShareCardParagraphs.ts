@@ -1,5 +1,5 @@
 /**
- * Builds Skia paragraph objects for the share card — reused by both the
+ * Builds Skia paragraph objects for the share card - reused by both the
  * preview Canvas and the offscreen capture path.
  */
 import {
@@ -116,7 +116,7 @@ export interface ShareCardElements {
   watermarkTextWidth: number;
   watermarkIconSize: number;
   watermarkGap: number;
-  /** Rendered only when rewayah !== 'hafs' — small label disclosing the
+  /** Rendered only when rewayah !== 'hafs' - small label disclosing the
    *  reading on the share card so recipients can tell which text they're
    *  seeing. Rendered centered, above the watermark. */
   rewayahLabelParagraph: SkParagraph | null;
@@ -156,7 +156,7 @@ function groupBySurah(
 function addVerseMarker(text: string): string {
   // If a U+06DD (end-of-ayah) is already adjacent to the trailing digits,
   // don't re-prefix. DK text concatenated from the words DB includes the
-  // marker word (e.g. "...۝١"), and newer Quran JSON sources do too —
+  // marker word (e.g. "...۝١"), and newer Quran JSON sources do too -
   // blindly prefixing would produce a double marker like "...۝۝١" which
   // renders as two empty circles with the number after them.
   if (/\u06DD\s*[\u0660-\u0669]+$/.test(text)) return text;
@@ -214,7 +214,7 @@ export function buildShareCardParagraphs(
       const char = allVerseText.charAt(i);
 
       if (char === ' ') {
-        // Classify space — aya space: adjacent to Arabic-Indic digit or ۝
+        // Classify space - aya space: adjacent to Arabic-Indic digit or ۝
         const prevCode = i > 0 ? allVerseText.charCodeAt(i - 1) : 0;
         const nextCode =
           i < allVerseText.length - 1 ? allVerseText.charCodeAt(i + 1) : 0;

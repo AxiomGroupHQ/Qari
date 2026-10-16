@@ -39,7 +39,7 @@ export function ContinueReadingHero({
   onSurahLongPress,
 }: ContinueReadingHeroProps) {
   // MMKV reads aren't reactive, and this component is typically cached
-  // inside a memoized FlashList header — so re-read the session value
+  // inside a memoized FlashList header - so re-read the session value
   // every time the Surahs tab regains focus (e.g. after backing out of
   // the mushaf) to keep "Continue Reading" in sync with the latest page.
   const [lastReadPage, setLastReadPage] = useState<number | null>(() =>

@@ -34,11 +34,11 @@ export function paletteForSurah(surahId: number): MeshPalette {
  * Deterministic palette for any string key.
  *
  * Pairs with `paletteForSurah` for callers keying on something other
- * than a surah id — e.g. a rewaya display name, an ISO country code, or
- * a reciter slug — so each tile reads with a distinct color the way
+ * than a surah id - e.g. a rewaya display name, an ISO country code, or
+ * a reciter slug - so each tile reads with a distinct color the way
  * surah tiles already do.
  *
- * djb2 hash — cheap, well-distributed for short ASCII keys.
+ * djb2 hash - cheap, well-distributed for short ASCII keys.
  */
 export function paletteForKey(key: string): MeshPalette {
   let hash = 5381;
@@ -71,7 +71,7 @@ export function SurahGradientMesh({
   viewBoxHeight = 155,
 }: SurahGradientMeshProps): React.ReactElement {
   const uid = useId();
-  const id = (n: number): string => `bayaan-mesh-${uid}-${n}`;
+  const id = (n: number): string => `istima-mesh-${uid}-${n}`;
 
   const mainOpacity = isDark ? 0.12 : 0.15;
   const tertiaryOpacity = isDark ? 0.08 : 0.1;

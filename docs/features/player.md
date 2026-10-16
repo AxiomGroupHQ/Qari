@@ -1,6 +1,6 @@
 # Player System
 
-This document describes the Istima audio player architecture — how playback works, how state flows, and how to extend the system.
+This document describes the Istima audio player architecture - how playback works, how state flows, and how to extend the system.
 
 ---
 
@@ -8,9 +8,9 @@ This document describes the Istima audio player architecture — how playback wo
 
 The player is built on [expo-audio](https://docs.expo.dev/versions/latest/sdk/audio/) and consists of three layers:
 
-1. **ExpoAudioService** — a singleton that wraps the native `AudioPlayer` and exposes imperative playback commands
-2. **ExpoAudioProvider** — a React provider mounted at the app root that bridges the native player to the Zustand store
-3. **playerStore** — a Zustand store (persisted via AsyncStorage) that is the single source of truth for all player state
+1. **ExpoAudioService** - a singleton that wraps the native `AudioPlayer` and exposes imperative playback commands
+2. **ExpoAudioProvider** - a React provider mounted at the app root that bridges the native player to the Zustand store
+3. **playerStore** - a Zustand store (persisted via AsyncStorage) that is the single source of truth for all player state
 
 ---
 
@@ -125,7 +125,7 @@ store.clearSleepTimer()
 
 ### usePlayerActions (`hooks/usePlayerActions.ts`)
 
-A zero-re-render hook that returns player action callbacks. Use this in components that only dispatch actions (e.g. control buttons) — it never triggers a re-render when player state changes.
+A zero-re-render hook that returns player action callbacks. Use this in components that only dispatch actions (e.g. control buttons) - it never triggers a re-render when player state changes.
 
 ```typescript
 const { play, pause, skipToNext, updateQueue } = usePlayerActions();
@@ -173,7 +173,7 @@ Download state is managed by `downloadStore` (`services/player/store/downloadSto
 - Completed downloads (local path and metadata)
 - Download queue
 
-The player checks download status when loading a track — if a local file exists and is readable, it plays from disk rather than streaming.
+The player checks download status when loading a track - if a local file exists and is readable, it plays from disk rather than streaming.
 
 ---
 
@@ -195,7 +195,7 @@ Ambient nature sounds (rain, ocean, etc.) run in a separate `AmbientAudioService
 
 ## Mushaf audio
 
-When the user plays audio in the Mushaf reader, `MushafAudioService` takes over. `AudioCoordinator` ensures the main player and mushaf player do not play simultaneously — only one audio source is active at a time.
+When the user plays audio in the Mushaf reader, `MushafAudioService` takes over. `AudioCoordinator` ensures the main player and mushaf player do not play simultaneously - only one audio source is active at a time.
 
 ---
 
@@ -213,4 +213,4 @@ And the iOS `UIBackgroundModes: ['audio']` plist entry. Lock screen controls (pl
 
 ## Session restore
 
-On app launch, `services/player/utils/restoreSession.ts` attempts to restore the previous playback session from the persisted store state — reloading the queue and seeking to the last known position (in a paused state).
+On app launch, `services/player/utils/restoreSession.ts` attempts to restore the previous playback session from the persisted store state - reloading the queue and seeking to the last known position (in a paused state).

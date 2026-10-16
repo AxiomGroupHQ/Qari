@@ -97,7 +97,7 @@ export async function rebuildEnhancedVerses(
     return true;
   }
 
-  // Remote translation — load all verses from SQLite into memory
+  // Remote translation - load all verses from SQLite into memory
   try {
     const translationMap =
       await translationDbService.getAllVerses(translationId);

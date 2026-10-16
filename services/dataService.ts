@@ -6,19 +6,13 @@ import {useReciterStore} from '../store/reciterStore';
 import {useApiHealthStore} from '../store/apiHealthStore';
 import fallbackReciters from '../data/reciters-fallback.json';
 
-// EXPO_PUBLIC_ISTIMA_* is the current name. The legacy EXPO_PUBLIC_BAYAAN_* names still work so
-// existing .env files and CI settings keep working. Keep each process.env access a literal so
-// Expo can inline it at build time.
-const ISTIMA_API_URL =
-  process.env.EXPO_PUBLIC_ISTIMA_API_URL ??
-  process.env.EXPO_PUBLIC_BAYAAN_API_URL;
-const ISTIMA_API_KEY =
-  process.env.EXPO_PUBLIC_ISTIMA_API_KEY ??
-  process.env.EXPO_PUBLIC_BAYAAN_API_KEY;
+// Keep each process.env access a literal so Expo can inline it at build time.
+const ISTIMA_API_URL = process.env.EXPO_PUBLIC_ISTIMA_API_URL;
+const ISTIMA_API_KEY = process.env.EXPO_PUBLIC_ISTIMA_API_KEY;
 
 // ── Killswitch ───────────────────────────────────────────────────────────────
 // Only fetched when EXPO_PUBLIC_KILLSWITCH_URL is set. Forks that don't
-// configure one skip the check entirely — no phone-home to the maintainer's
+// configure one skip the check entirely - no phone-home to the maintainer's
 // CDN on launch. The maintainer sets this in their local .env.
 const KILLSWITCH_URL = process.env.EXPO_PUBLIC_KILLSWITCH_URL;
 
@@ -39,8 +33,8 @@ async function isBackendEnabled(): Promise<boolean> {
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-const RECITERS_KEY = 'bayaan_reciters';
-const RECITER_SERVERS_KEY = 'bayaan_reciter_servers';
+const RECITERS_KEY = 'istima_reciters';
+const RECITER_SERVERS_KEY = 'istima_reciter_servers';
 const DATA_VERSION = '4'; // Increment: bust cache for R2 CDN URL migration
 
 // ── Storage helpers ───────────────────────────────────────────────────────────
@@ -108,7 +102,7 @@ async function fetchAllRecitersFromApi(): Promise<Reciter[]> {
       `${API_BASE}/v1/reciters?page=${page}&limit=${PAGE_SIZE}`,
       {headers},
     );
-    if (!res.ok) throw new Error(`Bayaan API error: ${res.status}`);
+    if (!res.ok) throw new Error(`Catalog API error: ${res.status}`);
     const json = await res.json();
 
     const reciters: Reciter[] = (json.data ?? []).map((r: any) => ({
@@ -177,12 +171,12 @@ export async function getAllReciters(): Promise<Reciter[]> {
   };
   setRetryFn(retry);
 
-  // Killswitch check — if backend is disabled via CDN config, use bundled fallback
+  // Killswitch check - if backend is disabled via CDN config, use bundled fallback
   if (canFetchFromApi) {
     const backendEnabled = await isBackendEnabled();
     if (!backendEnabled) {
       console.log(
-        '[dataService] Killswitch active — using bundled fallback data',
+        '[dataService] Killswitch active - using bundled fallback data',
       );
       const fallback = fallbackReciters as Reciter[];
       populateReciters(fallback);
@@ -200,7 +194,7 @@ export async function getAllReciters(): Promise<Reciter[]> {
     return cached.data;
   }
 
-  // First launch — fetch from API (blocking)
+  // First launch - fetch from API (blocking)
   if (canFetchFromApi) {
     try {
       const apiReciters = await fetchAllRecitersFromApi();
@@ -225,7 +219,7 @@ export async function getAllReciters(): Promise<Reciter[]> {
     }
   }
 
-  // Last resort — bundled fallback data
+  // Last resort - bundled fallback data
   const fallback = fallbackReciters as Reciter[];
   if (fallback.length > 0) {
     console.log('[dataService] Using bundled fallback data');
@@ -404,8 +398,8 @@ export async function clearStoredData(): Promise<void> {
     await AsyncStorage.multiRemove([
       RECITERS_KEY,
       RECITER_SERVERS_KEY,
-      '@bayaan/last_track',
-      '@bayaan/last_position',
+      '@istima/last_track',
+      '@istima/last_position',
     ]);
     await usePlayerStore.getState().cleanup();
   } catch (error) {

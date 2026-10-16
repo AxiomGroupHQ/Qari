@@ -5,7 +5,7 @@
 // `mushafPreloadService.fontMgr`. The useFonts call ran on every mount
 // even when the preload service was already initialized, and at first-
 // render many <SurahDivider> instances would mount simultaneously and
-// contend for typeface creation — surfacing as "Couldn't create typeface
+// contend for typeface creation - surfacing as "Couldn't create typeface
 // for SurahNameV4" exceptions captured by Sentry.
 //
 // This hook is the real fix. It reads `mushafPreloadService.fontMgr`
@@ -22,14 +22,14 @@
 // to a per-component `useFonts(...)` covering the Mushaf-critical font
 // families. That fallback re-introduces the original parallel-typeface
 // race, but it is bounded to the catastrophic case where the service's
-// own retry already failed — every prior layer of recovery has been
+// own retry already failed - every prior layer of recovery has been
 // exhausted. The alternative is a permanently-blank Mushaf, which is
 // the user-facing regression we must not ship.
 //
 // Happy path: `loadError === false`, the per-component `useFonts` call
 // is still invoked (Rules of Hooks: it must run unconditionally) but its
 // result is discarded. The cost is identical to the pre-fix
-// `useFonts` cycle for that component — but the system as a whole
+// `useFonts` cycle for that component - but the system as a whole
 // avoids the multi-component contention that caused the original Sentry
 // noise because the service's primary `fontMgr` is preferred.
 //
@@ -48,7 +48,7 @@ import {
 import {mushafPreloadService} from '@/services/mushaf/MushafPreloadService';
 
 // Mushaf-critical subset of `FONT_ASSETS` in `MushafPreloadService`. UI
-// fonts (Manrope) are intentionally excluded — they're loaded by the
+// fonts (Manrope) are intentionally excluded - they're loaded by the
 // app-wide font loader, not the Mushaf preload service, so the fallback
 // path doesn't need to re-load them. Updating this list does NOT need to
 // mirror every `FONT_ASSETS` addition; only the Mushaf-rendering families.
@@ -65,8 +65,8 @@ const FALLBACK_FONT_SOURCES = {
 
 export function useMushafFontMgr(): SkTypefaceFontProvider | null {
   // Single subscription per hook instance (Osman review MEDIUM). The
-  // previous shape called `useSyncExternalStore` twice — once for
-  // `fontMgr`, once for `loadError` — so each `_notify()` scheduled two
+  // previous shape called `useSyncExternalStore` twice - once for
+  // `fontMgr`, once for `loadError` - so each `_notify()` scheduled two
   // re-renders per subscribing component per state transition. Under
   // Hermes legacy rendering with 13+ subscribers across the Mushaf tree
   // that's a double cold-start render storm at the worst moment.
@@ -76,7 +76,7 @@ export function useMushafFontMgr(): SkTypefaceFontProvider | null {
   // snapshot means default identity comparison correctly short-circuits
   // unchanged renders without needing a custom comparator. `fontMgr` and
   // `loadError` are then derived from the service's current state at
-  // render time — both flip together inside `_notify`, so reading them
+  // render time - both flip together inside `_notify`, so reading them
   // post-isReady-flip is consistent.
   const isReady = useSyncExternalStore(
     listener => mushafPreloadService.subscribe(listener),

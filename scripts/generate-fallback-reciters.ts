@@ -1,16 +1,16 @@
 /**
- * Fetches all reciters from the Bayaan backend API and saves them
+ * Fetches all reciters from the Istima backend API and saves them
  * to data/reciters-fallback.json for use as a killswitch fallback.
  *
  * Usage: npx tsx scripts/generate-fallback-reciters.ts
  *
- * ⚠️  MAINTAINER-ONLY — this overwrites the OSS-safe fallback.
+ * ⚠️  MAINTAINER-ONLY - this overwrites the OSS-safe fallback.
  *
  * The file checked into git at data/reciters-fallback.json is a curated
  * public-source version (mp3quran.net / quranicaudio.com only) that ships
  * with the open-source repo so forks work out of the box without exposing
  * the full R2 catalog. Running this script replaces it with the full
- * catalog from the Bayaan API (including cdn.example.com URLs).
+ * catalog from the Istima API (including cdn.example.com URLs).
  *
  * Do not commit the regenerated file to the public repo. If you need to
  * regenerate the OSS fallback after adding new reciters, export the data
@@ -85,10 +85,8 @@ async function main(): Promise<void> {
   const envPath = path.resolve(__dirname, '..', '.env');
   const env = loadEnv(envPath);
 
-  const apiUrl =
-    env.EXPO_PUBLIC_ISTIMA_API_URL ?? env.EXPO_PUBLIC_BAYAAN_API_URL;
-  const apiKey =
-    env.EXPO_PUBLIC_ISTIMA_API_KEY ?? env.EXPO_PUBLIC_BAYAAN_API_KEY;
+  const apiUrl = env.EXPO_PUBLIC_ISTIMA_API_URL;
+  const apiKey = env.EXPO_PUBLIC_ISTIMA_API_KEY;
 
   if (!apiUrl || !apiKey) {
     console.error(

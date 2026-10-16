@@ -63,7 +63,7 @@ const TILE_RADIUS = moderateScale(3);
 const TILE_GAP = moderateScale(3);
 const TILE_STEP = TILE_SIZE + TILE_GAP;
 
-// Column configs — different speeds and start offsets for staggered drift
+// Column configs - different speeds and start offsets for staggered drift
 const COLUMN_CONFIGS = [
   {speed: 180000, startOffset: 0},
   {speed: 200000, startOffset: 30},
@@ -231,7 +231,7 @@ export function BrowseAllHero({style}: BrowseAllHeroProps) {
     [],
   );
 
-  // How many columns fit in the card width — we'll use a generous count
+  // How many columns fit in the card width - we'll use a generous count
   // and let flexbox + overflow handle the rest
   const columnCount = COLUMN_CONFIGS.length;
 

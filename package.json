@@ -2,7 +2,7 @@
   "name": "istima",
   "main": "qari-entry.js",
   "version": "2.2.1",
-  "license": "AGPL-3.0-or-later",
+  "license": "UNLICENSED",
   "scripts": {
     "postinstall": "patch-package && node scripts/bootstrap-android-local-properties.js",
     "start": "expo start",

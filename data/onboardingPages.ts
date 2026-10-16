@@ -14,7 +14,7 @@ export interface OnboardingPage {
 
 /**
  * Onboarding pages factory. Brand strings (e.g. `branding.appName`)
- * resolve at call time, not module load — this lets a fork override
+ * resolve at call time, not module load - this lets a fork override
  * `branding` without having to fork this file. Originally a top-level
  * const, but top-level const arrays evaluate before any `branding`
  * resolution, baking the upstream brand name into the bundle.
@@ -104,7 +104,7 @@ export function getOnboardingPages(): OnboardingPage[] {
       gradientColors: ['#0EA5E9', '#0284C7'],
       title: 'Word by Word',
       description:
-        'Tap any word to see its meaning, transliteration, and grammar — right in the mushaf or player.',
+        'Tap any word to see its meaning, transliteration, and grammar - right in the mushaf or player.',
       minVersion: '2.1',
     },
     {

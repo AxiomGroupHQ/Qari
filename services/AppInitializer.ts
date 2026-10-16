@@ -396,7 +396,7 @@ appInitializer.registerService({
 /**
  * Translation DB Service (Priority 10)
  * Opens translations.db for downloaded remote translations.
- * Non-critical — bundled translations work without it.
+ * Non-critical - bundled translations work without it.
  */
 appInitializer.registerService({
   name: 'Translation DB',
@@ -410,7 +410,7 @@ appInitializer.registerService({
 /**
  * Tafseer DB Service (Priority 10)
  * Opens tafaseer.db for downloaded tafaseer.
- * Non-critical — tafseer features degrade gracefully without it.
+ * Non-critical - tafseer features degrade gracefully without it.
  */
 appInitializer.registerService({
   name: 'Tafseer DB',
@@ -426,7 +426,7 @@ appInitializer.registerService({
 /**
  * WBW Data Service (Priority 10)
  * Opens wbw-en.db for word-by-word translations.
- * Non-critical — WBW features degrade gracefully without it.
+ * Non-critical - WBW features degrade gracefully without it.
  */
 appInitializer.registerService({
   name: 'WBW Data',

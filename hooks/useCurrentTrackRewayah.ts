@@ -22,11 +22,11 @@ export interface ResolvedTrackRewayah {
 //      a canonical RewayahId.
 //   2. Otherwise, if the track carries an upload-tag `rewayahName`, map that.
 //   3. If neither resolves to a canonical id, OR the resolved id has no
-//      bundled text data (12 of the 20 canonical rewayat — taxonomy only),
+//      bundled text data (12 of the 20 canonical rewayat - taxonomy only),
 //      coerce to 'hafs' and mark `isFallback: true` so the UI can render
 //      Hafs words while the player surface tells the user we fell back.
 //   4. When the track carried no explicit rewayah info at all, default to
-//      'hafs' silently (not a fallback — there was nothing to fall back from).
+//      'hafs' silently (not a fallback - there was nothing to fall back from).
 export function useCurrentTrackResolvedRewayah(): ResolvedTrackRewayah | null {
   const tracks = usePlayerStore(s => s.queue.tracks);
   const currentIndex = usePlayerStore(s => s.queue.currentIndex);

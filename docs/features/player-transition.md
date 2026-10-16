@@ -20,7 +20,7 @@ Merge the separate `FloatingPlayer` (mini) and `PlayerSheet` (full) into a **sin
 
 - **FloatingPlayer** (`components/player/v2/FloatingPlayer/index.tsx`): Standalone `Animated.View` with spring show/hide. Contains play button, track info, heart icon, surah glyph. On press → `setSheetMode('full')`.
 - **PlayerSheet** (`components/player/v2/PlayerSheet.tsx`): `@gorhom/bottom-sheet` with single snap point `['100%']`. Opens/closes via `sheetMode` Zustand state (`'hidden' | 'full'`). Contains `PlayerContent` with scrollable surah view, controls, etc.
-- **Transition:** Instant — FloatingPlayer hides, sheet slides up. No morph animation.
+- **Transition** - Instant - FloatingPlayer hides, sheet slides up. No morph animation.
 
 ### Target Architecture
 
@@ -80,8 +80,8 @@ All animations are driven by a single shared value: `animatedIndex` (provided by
 
 The `onAnimate` callback fires when a transition begins (user swipe or programmatic snap). It triggers:
 
-- **Artwork position:** Spring from top-left corner (mini) to centered (full) or vice versa
-- **Content cross-fade:** `withTiming` (100-150ms) for the opacity switch
+- **Artwork position** - Spring from top-left corner (mini) to centered (full) or vice versa
+- **Content cross-fade** - `withTiming` (100-150ms) for the opacity switch
 
 **Recommended spring config (from reference, heavily damped):**
 ```tsx
@@ -103,15 +103,15 @@ This produces a smooth, non-bouncy transition. Should be tested against gorhom's
   onAnimate={handleTransition}
   enableContentPanningGesture={isExpanded}
 >
-  {/* Morphing shell — interpolates size, radius, color */}
+  {/* Morphing shell - interpolates size, radius, color */}
   <Animated.View style={shellAnimatedStyle}>
 
-    {/* Full player content — fades in during expansion */}
+    {/* Full player content - fades in during expansion */}
     <Animated.View style={fullContentStyle}>
       <PlayerContent ... />
     </Animated.View>
 
-    {/* Mini player content — fades out during expansion */}
+    {/* Mini player content - fades out during expansion */}
     <Pressable onPress={expand}>
       <Animated.View style={miniContentStyle}>
         <MiniPlayerContent />
@@ -121,7 +121,7 @@ This produces a smooth, non-bouncy transition. Should be tested against gorhom's
   </Animated.View>
 </BottomSheet>
 
-{/* Backdrop — semi-transparent, fades in during expansion */}
+{/* Backdrop - semi-transparent, fades in during expansion */}
 <Animated.View style={backdropStyle} />
 ```
 
@@ -133,7 +133,7 @@ The `sheetMode` Zustand state gains a new value:
 // services/player/types/state.ts
 export interface UIState {
   sheetMode: 'hidden' | 'mini' | 'full';  // 'mini' is new
-  // isTransitioning removed — no longer needed
+  // isTransitioning removed - no longer needed
 }
 ```
 
@@ -162,7 +162,7 @@ The full player contains scrollable content (`BottomSheetScrollView` wrapping Qu
 | Concern | Approach |
 |---|---|
 | **iOS BlurView** | Keep `@react-native-community/blur` in `MiniPlayerContent` for the mini state glass effect |
-| **Android elevation** | Use `elevation` prop (not CSS `boxShadow` — requires RN 0.79+, we're on 0.76.9) |
+| **Android elevation** | Use `elevation` prop (not CSS `boxShadow` - requires RN 0.79+, we're on 0.76.9) |
 | **iOS shadow** | Use `shadowColor/Offset/Opacity/Radius` properties |
 | **Safe area (top)** | Full player needs `paddingTop: insets.top` for the drag handle and header |
 | **Safe area (bottom)** | Mini snap height includes tab bar + bottom inset via `getFloatingPlayerBottomPosition()` |
@@ -185,7 +185,7 @@ Extract the render content from current `FloatingPlayer/index.tsx`:
 - Surah glyph (or microphone icon for uploads)
 - Loading indicator for buffering state
 
-This is a **pure presentational component** — no animation logic, no gesture handling, no positioning. All layout/animation is owned by `PlayerSheet`.
+This is a **pure presentational component** - no animation logic, no gesture handling, no positioning. All layout/animation is owned by `PlayerSheet`.
 
 ### Step 2: Rewrite `PlayerSheet` with dual-snap architecture
 
@@ -194,8 +194,8 @@ This is a **pure presentational component** — no animation logic, no gesture h
 Core changes:
 1. Snap points: `[MINI_SNAP, MINI_SNAP, '100%']`
 2. Add `animatedIndex` shared value fed by gorhom's `animatedIndex` prop
-3. `enablePanDownToClose={false}` — permanent sheet
-4. `detached={true}` with transparent background — the inner `Animated.View` IS the visual card
+3. `enablePanDownToClose={false}` - permanent sheet
+4. `detached={true}` with transparent background - the inner `Animated.View` IS the visual card
 5. `onAnimate` callback triggers spring animations for artwork + cross-fade
 6. Render both `MiniPlayerContent` and `PlayerContent` simultaneously
 7. Interpolate shell shape (height, margins, radius, bg) from `animatedIndex`
@@ -213,7 +213,7 @@ Keeps all existing logic:
 
 **Modify:** `components/player/v2/PlayerContent/index.tsx`
 
-Minimal changes — keep `BottomSheetScrollView` as-is. gorhom handles the scroll+gesture conflict natively.
+Minimal changes - keep `BottomSheetScrollView` as-is. gorhom handles the scroll+gesture conflict natively.
 
 ### Step 4: Update Header close button
 
@@ -261,9 +261,9 @@ Update `handleSheetChanges` to derive `sheetMode` from index.
   }
 ```
 
-**Modify:** `hooks/usePlayerActions.ts` — update `setSheetMode` type signature.
+**Modify:** `hooks/usePlayerActions.ts` - update `setSheetMode` type signature.
 
-**Modify:** `services/player/store/playerStore.ts` — update store type + initial state.
+**Modify:** `services/player/store/playerStore.ts` - update store type + initial state.
 
 ### Step 8: Update consumers of `setSheetMode`
 
@@ -275,8 +275,8 @@ Update `handleSheetChanges` to derive `sheetMode` from index.
 
 ### Step 9: Delete replaced files
 
-- **Delete** `components/player/v2/FloatingPlayer/index.tsx` — logic moved to `MiniPlayerContent` + `PlayerSheet`
-- **Keep** `components/player/v2/FloatingPlayer/PlayButton.tsx` — move to `components/player/v2/PlayButton.tsx` or keep in place (imported by `MiniPlayerContent`)
+- **Delete** `components/player/v2/FloatingPlayer/index.tsx` - logic moved to `MiniPlayerContent` + `PlayerSheet`
+- **Keep** `components/player/v2/FloatingPlayer/PlayButton.tsx` - move to `components/player/v2/PlayButton.tsx` or keep in place (imported by `MiniPlayerContent`)
 
 ### Step 10: Delete dead code
 
@@ -298,7 +298,7 @@ These files exist but are **never imported** anywhere in the codebase (confirmed
 
 | File | Action | Role |
 |---|---|---|
-| `components/player/v2/PlayerSheet.tsx` | **Rewrite** | Main orchestrator — dual snap + interpolations |
+| `components/player/v2/PlayerSheet.tsx` | **Rewrite** | Main orchestrator - dual snap + interpolations |
 | `components/player/v2/MiniPlayerContent.tsx` | **Create** | Extracted mini player presentation |
 | `components/player/v2/FloatingPlayer/index.tsx` | **Delete** | Replaced by MiniPlayerContent inside sheet |
 | `components/player/v2/FloatingPlayer/PlayButton.tsx` | **Keep/Move** | Reused by MiniPlayerContent |
@@ -319,9 +319,9 @@ The architecture is inspired by [expo-apple-music-bottom-sheet](https://github.c
 
 | Reference Pattern | Our Adaptation |
 |---|---|
-| Simple static content | Scrollable content (QuranView, SurahSummary) — use gorhom's `BottomSheetScrollView` |
+| Simple static content | Scrollable content (QuranView, SurahSummary) - use gorhom's `BottomSheetScrollView` |
 | No tab bar | Mini snap height accounts for tab bar + safe area via `getFloatingPlayerBottomPosition()` |
-| CSS `boxShadow` (RN 0.79+) | `elevation` (Android) + `shadowColor/Offset/Opacity/Radius` (iOS) — we're on RN 0.76.9 |
+| CSS `boxShadow` (RN 0.79+) | `elevation` (Android) + `shadowColor/Offset/Opacity/Radius` (iOS) - we're on RN 0.76.9 |
 | No backdrop | Semi-transparent `Animated.View` backdrop that fades in during expansion |
 | No blur | Keep `@react-native-community/blur` BlurView on iOS mini player |
 | No safe area handling | `paddingTop: insets.top` for full player header |
@@ -342,7 +342,7 @@ The architecture is inspired by [expo-apple-music-bottom-sheet](https://github.c
 - [ ] **Scroll content in full player** → scrolls normally; swipe down only activates at scroll top
 - [ ] **All action sheets** (speed, sleep timer, options, mushaf layout) still work
 - [ ] **Sleep timer countdown** still displays
-- [ ] **Mini player** has play/pause, heart, track info, surah glyph — same as current FloatingPlayer
+- [ ] **Mini player** has play/pause, heart, track info, surah glyph - same as current FloatingPlayer
 - [ ] **TypeScript compiles** with no new errors
 - [ ] **Upload tracks** show microphone icon instead of surah glyph in mini player
 - [ ] **Navigate to reciter** from full player collapses to mini, then navigates

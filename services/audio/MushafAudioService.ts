@@ -188,7 +188,7 @@ class MushafAudioService {
     const maxAyah = this.timestamps[this.timestamps.length - 1].ayahNumber;
 
     if (nextAyah > maxAyah) {
-      // End of surah — trigger surah end
+      // End of surah - trigger surah end
       this.handleSurahEnd();
       return;
     }
@@ -203,7 +203,7 @@ class MushafAudioService {
     const minAyah = this.timestamps[0].ayahNumber;
 
     if (prevAyah < minAyah) {
-      // Already at first ayah — seek to beginning
+      // Already at first ayah - seek to beginning
       this.seekToAyah(minAyah);
       return;
     }
@@ -323,7 +323,7 @@ class MushafAudioService {
   }
 
   /**
-   * Full cleanup — stops playback and releases all resources.
+   * Full cleanup - stops playback and releases all resources.
    */
   cleanup(): void {
     this.releasePlayer();

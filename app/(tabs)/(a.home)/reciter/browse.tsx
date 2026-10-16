@@ -16,7 +16,7 @@ export default function BrowseScreen() {
       teacher: string;
       student: string;
       rewayatName: string;
-      // RFC-012 — composable Search-tab filter chips. Tiles on the Home
+      // RFC-012 - composable Search-tab filter chips. Tiles on the Home
       // tab can deeplink here with chips pre-applied (e.g. `?hasPhoto=1`).
       hasPhoto: string;
     }>();

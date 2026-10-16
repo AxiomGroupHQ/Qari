@@ -40,7 +40,7 @@ import branding from '@/config/branding';
 
 const surahData = require('@/data/surahData.json') as Surah[];
 
-// RFC-014 — module-scope one-shot dev warning for forks that opt into the
+// RFC-014 - module-scope one-shot dev warning for forks that opt into the
 // 'native' scroll behavior. Surfaces the "must provide an alternative
 // dismiss affordance" responsibility at dev time (no type-level
 // enforcement). Stripped from Release by the __DEV__ dead-code path at
@@ -58,7 +58,7 @@ function warnOncePlayerScrollBehaviorNative() {
   );
 }
 
-// Module-scope header — stable component identity prevents FlashList unmount/remount
+// Module-scope header - stable component identity prevents FlashList unmount/remount
 interface QuranListHeaderProps {
   surahNumber: number;
   showBismillah: boolean;
@@ -151,14 +151,14 @@ export const QuranView: React.FC<QuranViewProps> = ({
     maxReadingColumn,
   );
   const listRef = useRef<FlashListRef<EnhancedVerse>>(null);
-  // RFC-014 — fork-supplied scroll-handler strategy. `'gorhom'` (default)
+  // RFC-014 - fork-supplied scroll-handler strategy. `'gorhom'` (default)
   // wires the bottom-sheet scrollable so the player sheet inherits the
   // FlashList scroll gesture as its swipe-down-to-dismiss. `'native'`
-  // skips the wrapper — imperative scrollToIndex/scrollToOffset calls
+  // skips the wrapper - imperative scrollToIndex/scrollToOffset calls
   // (RFC-013's anchor, the active-ayah auto-scroll, the rAF-deferred
   // surah-change seek, and the scroll-to-top fallback) reach the native
   // scroll node immediately, but the sheet's swipe-to-dismiss gesture is
-  // lost at the Mushaf list level — forks opting in must provide an
+  // lost at the Mushaf list level - forks opting in must provide an
   // alternative dismiss affordance. The hook is called unconditionally to
   // satisfy rules-of-hooks; the factory is discarded when behavior is
   // 'native'. See docs/rfcs/014-player-scroll-strategy-seam.md.
@@ -215,7 +215,7 @@ export const QuranView: React.FC<QuranViewProps> = ({
   // target offset from item layouts only; without this compensation, the
   // 5% viewPosition lands inside the header band. Stored in a ref so a
   // measurement change doesn't itself trigger re-render of the surah-change
-  // effect — the ref is read at scroll time, by which point onLayout has
+  // effect - the ref is read at scroll time, by which point onLayout has
   // run. Initialized to 0 (no compensation) → first paint may briefly
   // under-shoot; the 2-rAF deferred scrollToIndex below corrects it once
   // the header has measured.
@@ -243,7 +243,7 @@ export const QuranView: React.FC<QuranViewProps> = ({
   // Tajweed data for DK Skia rendering (verse-level indexed)
   const indexedTajweedData = useTajweedStore(s => s.indexedTajweedData);
 
-  // Only need the loader — VerseItem subscribes to its own annotation data
+  // Only need the loader - VerseItem subscribes to its own annotation data
   const loadAnnotationsForSurah = useVerseAnnotationsStore(
     s => s.loadAnnotationsForSurah,
   );
@@ -260,7 +260,7 @@ export const QuranView: React.FC<QuranViewProps> = ({
     });
   }, [selectedTranslationId]);
 
-  // Direct lookup from module-scope pre-built arrays — zero computation per surah change.
+  // Direct lookup from module-scope pre-built arrays - zero computation per surah change.
   // useMemo gives a stable reference so dep arrays of hooks reading `verses` don't
   // change on every render (was a pre-existing react-hooks/exhaustive-deps warning).
   const verses = useMemo(
@@ -268,7 +268,7 @@ export const QuranView: React.FC<QuranViewProps> = ({
     [currentSurah],
   );
 
-  // RFC-013 — fork-supplied initial anchor. Granular selectors so QuranView
+  // RFC-013 - fork-supplied initial anchor. Granular selectors so QuranView
   // doesn't re-render on every player tick. The hook is consulted on
   // currentSurah change; `undefined` (no hook OR hook returns undefined OR
   // returned verse_key not found in `verses`) keeps today's
@@ -287,7 +287,7 @@ export const QuranView: React.FC<QuranViewProps> = ({
   // Reset scroll position when currentSurah changes. When the fork's
   // `initialPlayerVerseKey` resolves to an index, defer scrollToIndex two
   // animation frames so FlashList has time to re-layout for the new `data`
-  // — calling scrollToIndex synchronously in the same render cycle as the
+  // - calling scrollToIndex synchronously in the same render cycle as the
   // data change silently no-ops on FlashList v2 (no
   // `onScrollToIndexFailed` escape hatch like FlatList). For the first
   // mount, `initialScrollIndex` on FlashList handles it natively, so this
@@ -303,7 +303,7 @@ export const QuranView: React.FC<QuranViewProps> = ({
   // Multi-surah double-fire note: in single-surah Istima tracks, a track
   // change always changes currentSurah, so this effect fires exactly once.
   // If multi-surah tracks ship later (e.g. Juz-spanning recitations), the
-  // dep array can fire twice — once from `currentSurah` advancing within
+  // dep array can fire twice - once from `currentSurah` advancing within
   // the same track, once from `initialScrollIndex` resolving on a later
   // render. Future implementer adding multi-surah support should add a
   // ref-based guard like `if (lastFiredForSurahRef.current === currentSurah
@@ -347,11 +347,11 @@ export const QuranView: React.FC<QuranViewProps> = ({
         viewOffset: -headerHeightRef.current,
       });
     } catch {
-      // Index may be out of range during recycling — ignore
+      // Index may be out of range during recycling - ignore
     }
   }, [currentVerseKey, verses, isLocked]);
 
-  // Render verse items — annotations handled inside VerseItem via per-key selectors
+  // Render verse items - annotations handled inside VerseItem via per-key selectors
   const renderItem = useCallback(
     ({item}: {item: EnhancedVerse}) => (
       <VerseItem

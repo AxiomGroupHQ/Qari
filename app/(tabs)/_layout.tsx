@@ -16,7 +16,7 @@ import {useResponsive} from '@/hooks/useResponsive';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import {t} from '@/i18n';
 
-// PNG tab icons for NativeTabs (iOS) — template-rendered by the native tab bar
+// PNG tab icons for NativeTabs (iOS) - template-rendered by the native tab bar
 const tabIcons = {
   home: {
     default: require('@/assets/images/tab-icons/home-default.png'),

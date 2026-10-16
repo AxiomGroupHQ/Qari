@@ -34,7 +34,7 @@ describe('MeaningfulListenTracker', () => {
       tracker.updateProgress(30000); // fires
       expect(onMeaningfulListen).toHaveBeenCalledTimes(1);
 
-      // Second track — should be able to fire again
+      // Second track - should be able to fire again
       tracker.startTracking({
         surahId: 2,
         reciterId: 'reciter-1',

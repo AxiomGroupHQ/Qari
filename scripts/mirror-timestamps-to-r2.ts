@@ -3,14 +3,14 @@
  *
  * One-shot mirror of ayah timestamps from mp3quran + QDC into R2.
  *
- * Output layout: bayaan-audio/timestamps/{rewayat_id}/{NNN}.json
+ * Output layout: istima-audio/timestamps/{rewayat_id}/{NNN}.json
  * Each JSON is an AyahTimestamp[] in the mobile app's canonical shape.
  *
  * Usage:
  *   npm run mirror:timestamps -- [--dry-run] [--rewayat=<id>] [--skip-existing]
  *
  * Required env:
- *   BAYAAN_API_URL, BAYAAN_API_KEY (in .env or .env.r2)
+ *   ISTIMA_API_URL, ISTIMA_API_KEY (in .env or .env.r2)
  *   R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY (in .env.r2)
  */
 
@@ -70,17 +70,17 @@ function loadEnv() {
 loadEnv();
 
 const API_URL =
-  process.env.BAYAAN_API_URL ||
+  process.env.ISTIMA_API_URL ||
   process.env.EXPO_PUBLIC_ISTIMA_API_URL ||
-  process.env.EXPO_PUBLIC_BAYAAN_API_URL;
+  process.env.EXPO_PUBLIC_ISTIMA_API_URL;
 const API_KEY =
-  process.env.BAYAAN_API_KEY ||
+  process.env.ISTIMA_API_KEY ||
   process.env.EXPO_PUBLIC_ISTIMA_API_KEY ||
-  process.env.EXPO_PUBLIC_BAYAAN_API_KEY;
+  process.env.EXPO_PUBLIC_ISTIMA_API_KEY;
 
 if (!API_URL || !API_KEY) {
   throw new Error(
-    'Set BAYAAN_API_URL and BAYAAN_API_KEY (or EXPO_PUBLIC_* equivalents).',
+    'Set ISTIMA_API_URL and ISTIMA_API_KEY (or EXPO_PUBLIC_* equivalents).',
   );
 }
 

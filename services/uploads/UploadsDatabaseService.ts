@@ -75,7 +75,7 @@ class UploadsDatabaseService {
     await this.db
       .execAsync(`ALTER TABLE uploaded_recitations ADD COLUMN style TEXT`)
       .catch(() => {
-        // Column already exists — ignore
+        // Column already exists - ignore
       });
 
     // Migration: add recording_type column for existing databases
@@ -84,7 +84,7 @@ class UploadsDatabaseService {
         `ALTER TABLE uploaded_recitations ADD COLUMN recording_type TEXT`,
       )
       .catch(() => {
-        // Column already exists — ignore
+        // Column already exists - ignore
       });
 
     // Create custom_reciters table

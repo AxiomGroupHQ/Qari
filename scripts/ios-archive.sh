@@ -5,11 +5,11 @@
 #
 # Auto-detects the iOS workspace + scheme by scanning `ios/*.xcworkspace`,
 # rather than hardcoding the app name. Drop-in for forks that customize the
-# appName via `expo prebuild --clean` — the script names the archive +
+# appName via `expo prebuild --clean` - the script names the archive +
 # IPA according to whatever workspace exists, no edits needed.
 #
-# Companion: ios/ExportOptions.example.plist — copy to ios/ExportOptions.plist
-# (gitignored — it contains your team ID) and fill in your APPLE_TEAM_ID.
+# Companion: ios/ExportOptions.example.plist - copy to ios/ExportOptions.plist
+# (gitignored - it contains your team ID) and fill in your APPLE_TEAM_ID.
 
 set -e
 
@@ -84,7 +84,7 @@ fi
 # iOS Info.plist + android/app/build.gradle. `expo prebuild` regenerates the
 # native dirs from the config, but if you bump app.config.ts and forget to
 # re-prebuild before archiving, the archive will ship with stale version
-# metadata — Apple rejects builds whose CFBundleShortVersionString is below
+# metadata - Apple rejects builds whose CFBundleShortVersionString is below
 # a previously-shipped value. Catching this at archive time costs an extra
 # build cycle.
 #
@@ -98,7 +98,7 @@ fi
 # files on every archive run, which (a) makes the working tree non-pristine
 # whenever the script runs, and (b) means there's no signal when drift
 # actually exists vs. when everything was already in sync.
-# --platform=ios scopes the check to the iOS Info.plist only — an Android-only
+# --platform=ios scopes the check to the iOS Info.plist only - an Android-only
 # build number drift shouldn't block an iOS archive (release cadences differ).
 if [ "${VERIFY_FIX:-}" = "1" ] || [ "${VERIFY_FIX:-}" = "true" ]; then
     echo -e "\n${YELLOW}🔍 Verifying version sync (VERIFY_FIX=1 → auto-fix on drift)...${NC}"

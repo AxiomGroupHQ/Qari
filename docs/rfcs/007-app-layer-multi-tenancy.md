@@ -8,7 +8,7 @@
 
 ## Summary
 
-Introduce three thin config seams — `config/branding.js` (app identity), `config/featureFlags.ts` (feature gating), and a `CatalogProvider` interface (audio-catalog abstraction) — so that a sibling fork can override Istima's app identity, suppress features, and supply its own reciter catalog without touching any application code. Zero behavior change for Istima itself.
+Introduce three thin config seams - `config/branding.js` (app identity), `config/featureFlags.ts` (feature gating), and a `CatalogProvider` interface (audio-catalog abstraction) - so that a sibling fork can override Istima's app identity, suppress features, and supply its own reciter catalog without touching any application code. Zero behavior change for Istima itself.
 
 ## Motivation
 
@@ -16,38 +16,38 @@ Istima is increasingly used as an upstream platform. A sister app, Qariah, forks
 
 Three categories of hardcoded values cause friction:
 
-**1. App identity.** `app.config.js` has `name: 'Istima'`, `slug: 'Istima'`, `scheme: 'bayaan'`, `bundleIdentifier: 'com.bayaan.app'`. App source code has additional hardcoded strings:
+**1. App identity.** `app.config.js` has `name: 'Istima'`, `slug: 'Istima'`, `scheme: 'istima'`, `bundleIdentifier: 'com.istima.app'`. App source code has additional hardcoded strings:
 
-- `utils/shareUtils.ts:4` — `const BASE_URL = 'https://app.thebayaan.com'`
-- `app/(tabs)/(d.settings)/index.tsx:263–272` — `Linking.openURL('https://thebayaan.com/support')`, `.../terms`, `.../privacy`
-- `services/emailService.ts:23` — `product_name: 'Istima'`
+- `utils/shareUtils.ts:4` - `const BASE_URL = 'https://istima.app'`
+- `app/(tabs)/(d.settings)/index.tsx:263–272` - `Linking.openURL('https://istima.app/support')`, `.../terms`, `.../privacy`
+- `services/emailService.ts:23` - `product_name: 'Istima'`
 
 A fork that can't change these safely will either edit the files (conflict risk) or ship a broken identity.
 
 **2. Feature set.** Some features are not appropriate for every consumer (e.g., a curated catalog doesn't need user-upload or adhkar modules). There is no gating layer; a fork must delete or comment out code.
 
-**3. Audio catalog.** `data/reciterData.ts` and `data/reciters-fallback.json` contain ~250 male reciters sourced from quran.com. A sister app with a different reciter set has no seam to supply its own catalog without replacing those files wholesale — a hard merge conflict every week.
+**3. Audio catalog.** `data/reciterData.ts` and `data/reciters-fallback.json` contain ~250 male reciters sourced from quran.com. A sister app with a different reciter set has no seam to supply its own catalog without replacing those files wholesale - a hard merge conflict every week.
 
 ## Decision
 
-### 1. `config/branding.js` — app identity knobs
+### 1. `config/branding.js` - app identity knobs
 
 A CommonJS module (CJS required: `app.config.js` calls `require()` before Expo CLI transpiles the tree). Exports the subset of identity values that vary across forks:
 
 ```js
-// config/branding.js — zero-change defaults for Istima
+// config/branding.js - zero-change defaults for Istima
 module.exports = {
   appName: 'Istima',
   appSlug: 'Istima',
-  urlScheme: 'bayaan',
+  urlScheme: 'istima',
   bundleId: {
-    ios: 'com.bayaan.app',
-    android: 'com.bayaan.app',
+    ios: 'com.istima.app',
+    android: 'com.istima.app',
   },
-  supportUrl: 'https://thebayaan.com/support',
-  termsUrl: 'https://thebayaan.com/terms',
-  privacyUrl: 'https://thebayaan.com/privacy',
-  shareBaseUrl: 'https://app.thebayaan.com',
+  supportUrl: 'https://istima.app/support',
+  termsUrl: 'https://istima.app/terms',
+  privacyUrl: 'https://istima.app/privacy',
+  shareBaseUrl: 'https://istima.app',
   emailProductName: 'Istima',
   catalog: {
     source: 'bundled',    // 'bundled' | 'remote'
@@ -84,16 +84,16 @@ export default branding;
 
 | File | Line | From | To |
 |------|------|------|----|
-| `utils/shareUtils.ts` | 4 | `'https://app.thebayaan.com'` | `require('@/config/branding').shareBaseUrl` |
+| `utils/shareUtils.ts` | 4 | `'https://istima.app'` | `require('@/config/branding').shareBaseUrl` |
 | `app/(tabs)/(d.settings)/index.tsx` | 263–272 | inline URL literals | `branding.supportUrl`, `.termsUrl`, `.privacyUrl` |
 | `services/emailService.ts` | 23 | `'Istima'` | `branding.emailProductName` |
 
 This RFC only adds the file. The call-site migrations each fit in a single-line goodwill PR; no RFC needed for those.
 
-### 2. `config/featureFlags.ts` — feature gating
+### 2. `config/featureFlags.ts` - feature gating
 
 ```ts
-// config/featureFlags.ts — all features on; Istima ships everything
+// config/featureFlags.ts - all features on; Istima ships everything
 export const featureFlags = {
   adhkar: true,
   ambientAudioOverlay: true,
@@ -117,7 +117,7 @@ export function isFeatureEnabled(flag: FeatureFlag): boolean {
 
 Call sites replace direct boolean checks with `isFeatureEnabled('flagName')`. This RFC adds the file; call-site adoption is a follow-on PR.
 
-### 3. `CatalogProvider` interface — catalog abstraction
+### 3. `CatalogProvider` interface - catalog abstraction
 
 Rather than a hard import from `data/reciterData.ts`, a provider seam lets a fork supply its own reciter list:
 
@@ -141,7 +141,7 @@ import { RECITERS } from './reciterData';
 import { CatalogProvider } from '@/types/CatalogProvider';
 
 export const defaultCatalogProvider: CatalogProvider = {
-  getAllReciters: () => RECITERS,
+  getAllReciters:  => RECITERS,
   getReciterById: (id) => RECITERS.find(r => r.id === id),
 };
 ```
@@ -152,25 +152,25 @@ This RFC adds the interface and the default implementation. Wiring the service l
 
 ## Alternatives considered
 
-### A — env-variable everything
+### A - env-variable everything
 
 All identity values as `process.env` reads in `app.config.js` (extending the existing `APPLE_TEAM_ID` / `EAS_PROJECT_ID` pattern).
 
 **Rejected.** Runtime JS (`utils/shareUtils.ts`, `services/emailService.ts`) can't read build-time `process.env`. Works for `app.config.js` (build-time) but not app source. Two different override mechanisms for the same conceptual thing (app identity) is confusing.
 
-### B — fork-and-ignore (status quo for forks)
+### B - fork-and-ignore (status quo for forks)
 
 Forks simply edit the files and accept the weekly merge conflicts.
 
 **Rejected.** This is the exact problem being solved. Every merge conflict risks accidentally shipping the wrong identity; every resolution costs developer time.
 
-### C — Separate npm package (`@bayaan/branding`)
+### C - Separate npm package (`@istima/branding`)
 
 Ship branding config as a workspace package.
 
 **Rejected.** Overkill for a single config file. The workspace packages track (RFC-001 through RFC-006) is for self-contained feature libraries. Branding is a thin config layer; a package adds versioning overhead without value.
 
-### D — Extend `app.config.js` only (no runtime config file)
+### D - Extend `app.config.js` only (no runtime config file)
 
 All identity knobs go into `app.config.js` and are injected as `expo-constants` values read at runtime.
 
@@ -180,7 +180,7 @@ All identity knobs go into `app.config.js` and are injected as `expo-constants` 
 
 **Positive**
 - Forks can override brand identity, feature set, and catalog without touching application code.
-- Call-site migrations are small, independent, reviewable PRs — no big-bang rewrite.
+- Call-site migrations are small, independent, reviewable PRs - no big-bang rewrite.
 - Zero behavior change for Istima at merge time (all flags default to `true`; branding defaults to Istima values; default provider wraps existing `RECITERS`).
 
 **Neutral**

@@ -293,7 +293,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
         )}
       </View>
 
-      {/* Header overlay — floating glass card */}
+      {/* Header overlay - floating glass card */}
       <GestureDetector gesture={sheetDragGesture}>
         <Animated.View
           style={[
@@ -320,7 +320,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
         </Animated.View>
       </GestureDetector>
 
-      {/* Controls overlay — floating glass card */}
+      {/* Controls overlay - floating glass card */}
       <GestureDetector gesture={sheetDragGesture}>
         <Animated.View
           style={[

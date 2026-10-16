@@ -10,10 +10,10 @@
 
 NativeTabs in Expo Router SDK 55+ has systemic content inset issues on iOS, primarily caused by:
 
-1. **ScrollView contentInsetAdjustmentBehavior is overridden** — Native screens force `automatic` insets even when explicitly set to `never`
-2. **Pre-rendering without bounded insets** — All tabs render before tab bar is measured, causing layout flashes when SafeAreaProvider updates
-3. **Dynamic prop synchronization broken** — `disableAutomaticContentInsets` arrives too late for native side to apply correctly
-4. **Safe area measurement inconsistency** — Device-only insets applied initially, then jumps to bounded insets causing visible layout shifts
+1. **ScrollView contentInsetAdjustmentBehavior is overridden** - Native screens force `automatic` insets even when explicitly set to `never`
+2. **Pre-rendering without bounded insets** - All tabs render before tab bar is measured, causing layout flashes when SafeAreaProvider updates
+3. **Dynamic prop synchronization broken** - `disableAutomaticContentInsets` arrives too late for native side to apply correctly
+4. **Safe area measurement inconsistency** - Device-only insets applied initially, then jumps to bounded insets causing visible layout shifts
 
 ---
 
@@ -33,11 +33,11 @@ When a ScrollView with `contentInsetAdjustmentBehavior="never"` and `automatical
 
 #### Details
 
-- **Platform:** iOS only
-- **Affected Version:** SDK 55.0.0-preview.10
-- **Behavior:** Extra padding applied despite explicit `never` setting
-- **Video Evidence:** [https://github.com/user-attachments/assets/036e195b-5963-4791-9fd0-78422084ba0d](https://github.com/user-attachments/assets/036e195b-5963-4791-9fd0-78422084ba0d)
-- **Reproduction:** [https://github.com/AdiRishi/expo-scrollview-bug-reproduction](https://github.com/AdiRishi/expo-scrollview-bug-reproduction)
+- **Platform** - iOS only
+- **Affected Version** - SDK 55.0.0-preview.10
+- **Behavior** - Extra padding applied despite explicit `never` setting
+- **Video Evidence** - [https://github.com/user-attachments/assets/036e195b-5963-4791-9fd0-78422084ba0d](https://github.com/user-attachments/assets/036e195b-5963-4791-9fd0-78422084ba0d)
+- **Reproduction** - [https://github.com/AdiRishi/expo-scrollview-bug-reproduction](https://github.com/AdiRishi/expo-scrollview-bug-reproduction)
 
 #### Root Cause (from react-native-screens)
 
@@ -67,11 +67,11 @@ Using FlashList inside a NativeTabs screen results in content being pushed down 
 
 #### Details
 
-- **Expected Behavior:** FlashList should render without automatic safe area padding
-- **Actual Behavior:** Image pushed down by top safe area on initial render
-- **Platform:** iOS
-- **Affected Version:** SDK 54.0.21
-- **Reproduction:** [https://github.com/liixing/expo-native-tabs](https://github.com/liixing/expo-native-tabs)
+- **Expected Behavior** - FlashList should render without automatic safe area padding
+- **Actual Behavior** - Image pushed down by top safe area on initial render
+- **Platform** - iOS
+- **Affected Version** - SDK 54.0.21
+- **Reproduction** - [https://github.com/liixing/expo-native-tabs](https://github.com/liixing/expo-native-tabs)
 
 #### User Workaround
 
@@ -93,10 +93,10 @@ NativeTabs pre-renders all tabs simultaneously on app load. When nested SafeArea
 
 #### Details
 
-- **Cause:** Pre-rendered tab content not positioned relative to tab bar in native view hierarchy
-- **Effect:** ~49px layout shift when navigating to non-initial tabs
-- **Platforms:** iOS 18+
-- **Stack:** expo-router 6.0.21 / react-native 0.81.5
+- **Cause** - Pre-rendered tab content not positioned relative to tab bar in native view hierarchy
+- **Effect** - ~49px layout shift when navigating to non-initial tabs
+- **Platforms** - iOS 18+
+- **Stack** - expo-router 6.0.21 / react-native 0.81.5
 
 #### Workaround (from issue description)
 
@@ -110,7 +110,7 @@ Cache the largest bottom inset value from all tabs visited and apply it globally
 
 #### Related Issue
 
-- software-mansion/react-native-screens#3573 — Same root cause in react-native-screens
+- software-mansion/react-native-screens#3573 - Same root cause in react-native-screens
 
 ---
 
@@ -159,9 +159,9 @@ When using React Navigation's native bottom tabs on iOS with a ScrollView as the
 
 #### Details
 
-- **Platform:** iOS only
-- **Version:** react-native-screens 4.20.0, react-native 0.83.1 (New Architecture/Fabric)
-- **Reproduction:** [https://github.com/cetfu/ReactNavigationReproducerScrollView/](https://github.com/cetfu/ReactNavigationReproducerScrollView/)
+- **Platform** - iOS only
+- **Version** - react-native-screens 4.20.0, react-native 0.83.1 (New Architecture/Fabric)
+- **Reproduction** - [https://github.com/cetfu/ReactNavigationReproducerScrollView/](https://github.com/cetfu/ReactNavigationReproducerScrollView/)
 
 ---
 
@@ -298,11 +298,11 @@ When this occurs, RNScreens logs:
 
 ## Key Findings
 
-1. **Native layer intercepts ScrollView configuration** — react-native-screens aggressively overrides `contentInsetAdjustmentBehavior` from `never` to `automatic`, preventing correct manual inset management.
-2. **Timing mismatch between native and JS** — Props that control inset behavior (like `disableAutomaticContentInsets`) arrive after native initialization completes.
-3. **Pre-render without context is dangerous** — Tab screens render before the tab bar exists in the native hierarchy, causing SafeAreaProvider to measure incorrectly.
-4. **iOS-only issues** — All content inset problems are iOS-specific; Android unaffected.
-5. **Upstream dependency chain** — These are react-native-screens issues that expo-router cannot fully resolve in JS layer.
+1. **Native layer intercepts ScrollView configuration** - react-native-screens aggressively overrides `contentInsetAdjustmentBehavior` from `never` to `automatic`, preventing correct manual inset management.
+2. **Timing mismatch between native and JS** - Props that control inset behavior (like `disableAutomaticContentInsets`) arrive after native initialization completes.
+3. **Pre-render without context is dangerous** - Tab screens render before the tab bar exists in the native hierarchy, causing SafeAreaProvider to measure incorrectly.
+4. **iOS-only issues** - All content inset problems are iOS-specific; Android unaffected.
+5. **Upstream dependency chain** - These are react-native-screens issues that expo-router cannot fully resolve in JS layer.
 
 ---
 
