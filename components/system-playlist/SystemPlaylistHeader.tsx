@@ -27,6 +27,7 @@ interface SystemPlaylistHeaderProps {
   estimatedDuration?: string | null;
   onPlayPress: () => void;
   onShufflePress?: () => void;
+  onSharePress?: () => void;
   canPlayImmediately: boolean;
   theme: Theme;
 }
@@ -38,6 +39,7 @@ export const SystemPlaylistHeader: React.FC<SystemPlaylistHeaderProps> = ({
   estimatedDuration,
   onPlayPress,
   onShufflePress,
+  onSharePress,
   canPlayImmediately,
   theme,
 }) => {
@@ -119,6 +121,18 @@ export const SystemPlaylistHeader: React.FC<SystemPlaylistHeaderProps> = ({
 
           {/* Right side buttons */}
           <View style={styles.rightAlignedButtons}>
+            {onSharePress && (
+              <Pressable
+                style={styles.circleButton}
+                onPress={onSharePress}
+                hitSlop={8}>
+                <Feather
+                  name="share"
+                  size={moderateScale(20)}
+                  color={theme.colors.text}
+                />
+              </Pressable>
+            )}
             {onShufflePress && canPlayImmediately && (
               <AnimatedPressable
                 style={[styles.circleButton, shuffleAnimatedStyle]}
