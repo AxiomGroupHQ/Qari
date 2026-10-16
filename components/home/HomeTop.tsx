@@ -6,17 +6,15 @@ import {ContinueListeningHero} from './ContinueListeningHero';
 import {HomeShortcuts} from './HomeShortcuts';
 
 /**
- * Redesigned Home top region: slim left-aligned wordmark, the Continue
- * Listening hero (gold glow - the only glow on Home), then the glass
- * shortcut row. Replaces RecitersHero (large centered wordmark + reciter
- * collage + big random-recitation card) as the default listen-tab top.
+ * Home top region: centered Istima wordmark with both taglines, then the
+ * Continue Listening hero (gold glow - the only glow on Home), then the
+ * glass shortcut row. The three feature cards no longer sit here; they
+ * are interleaved between the content rows below (see homeRowConfig).
  */
 export function HomeTop() {
   return (
     <View style={styles.root}>
-      <View style={styles.wordmark}>
-        <IstimaWordmark compact />
-      </View>
+      <IstimaWordmark />
       <ContinueListeningHero />
       <HomeShortcuts />
     </View>
@@ -26,8 +24,5 @@ export function HomeTop() {
 const styles = StyleSheet.create({
   root: {
     paddingTop: moderateScale(8),
-  },
-  wordmark: {
-    paddingHorizontal: moderateScale(16),
   },
 });
