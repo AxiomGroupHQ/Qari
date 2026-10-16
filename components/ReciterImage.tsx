@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import {View, StyleSheet, ViewStyle, StyleProp} from 'react-native';
 import {Image} from 'expo-image';
 import {useTheme} from '@/hooks/useTheme';
@@ -59,7 +59,14 @@ export const ReciterImage: React.FC<ReciterImageProps> = React.memo(
     // Catalog entries with `image_url` should win so reciters without a bundled
     // asset still render their photo. Local stays as a fallback for reciters
     // whose catalog entry has no image_url.
-    const imageSource = imageUrl ? {uri: imageUrl} : (localImageSource ?? null);
+    // A remote URL that fails to load (stale host saved in history, offline) falls back to the
+    // bundled headshot, then to the profile icon, instead of leaving an empty square.
+    const [remoteFailed, setRemoteFailed] = useState(false);
+    useEffect(() => {
+      setRemoteFailed(false);
+    }, [imageUrl]);
+    const imageSource =
+      imageUrl && !remoteFailed ? {uri: imageUrl} : (localImageSource ?? null);
 
     return (
       <View style={[styles.container, style]}>
@@ -71,6 +78,9 @@ export const ReciterImage: React.FC<ReciterImageProps> = React.memo(
             contentFit="cover"
             recyclingKey={imageUrl || formattedName}
             transition={100}
+            onError={() => {
+              if (imageUrl) setRemoteFailed(true);
+            }}
             {...(blurRadius ? {blurRadius} : {})}
           />
         ) : (
