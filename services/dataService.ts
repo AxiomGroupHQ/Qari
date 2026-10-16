@@ -77,6 +77,15 @@ function populateReciters(data: Reciter[]): void {
   // Refresh the store's default reciter now that RECITERS is populated
   useReciterStore.getState().refreshDefaultReciter();
   useReciterStore.setState({isInitialized: true});
+  // Keep downloads displayable offline: copy reciter names/images onto downloaded records.
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    require('@/services/player/store/downloadStore')
+      .useDownloadStore.getState()
+      .backfillDownloadMetadata();
+  } catch {
+    /* store not ready yet; the rehydrate hook covers that case */
+  }
 }
 
 // ── API client ────────────────────────────────────────────────────────────────

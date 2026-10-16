@@ -9,6 +9,7 @@ import {
 import {useTheme} from '@/hooks/useTheme';
 import {SurahItem} from '@/components/SurahItem';
 import {getReciterById, getSurahById} from '@/services/dataService';
+import {reciterForDownload} from '@/services/player/utils/reciterForDownload';
 import {moderateScale} from 'react-native-size-matters';
 import {ListRenderItem} from 'react-native';
 import {Reciter} from '@/data/reciterData';
@@ -139,7 +140,7 @@ export const ReciterDownloadsList: React.FC<ReciterDownloadsListProps> = ({
 
           return {
             download,
-            reciter: loadedReciter || null,
+            reciter: reciterForDownload(download, loadedReciter),
             surah: surah || null,
             rewayatName,
           };

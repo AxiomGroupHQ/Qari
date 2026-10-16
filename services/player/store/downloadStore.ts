@@ -1,4 +1,5 @@
 import {create} from 'zustand';
+import {RECITERS} from '@/data/reciterData';
 import {persist, createJSONStorage} from 'zustand/middleware';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
@@ -64,6 +65,24 @@ function throttledSetProgress(
   }, delay);
 }
 
+/** Copy reciter display data onto a download record when the reciter is known. Never overwrites. */
+export function withReciterMetadata(
+  download: DownloadedSurah,
+): DownloadedSurah {
+  if (download.reciterName) return download;
+  const reciter = RECITERS.find(r => r.id === download.reciterId);
+  if (!reciter) return download;
+  const rewayat = download.rewayatId
+    ? reciter.rewayat.find(r => r.id === download.rewayatId)
+    : undefined;
+  return {
+    ...download,
+    reciterName: reciter.name,
+    reciterImageUrl: download.reciterImageUrl ?? reciter.image_url,
+    rewayatName: download.rewayatName ?? rewayat?.name,
+  };
+}
+
 export interface DownloadedSurah {
   reciterId: string;
   surahId: string;
@@ -72,6 +91,10 @@ export interface DownloadedSurah {
   fileSize: number; // Size in bytes
   downloadDate: number; // When downloaded
   status: 'downloading' | 'completed' | 'error';
+  // Denormalised display data so downloads stay visible offline even if the reciter list is empty.
+  reciterName?: string;
+  reciterImageUrl?: string | null;
+  rewayatName?: string;
 }
 
 interface Playlist {
@@ -97,6 +120,8 @@ interface DownloadStoreState {
 
   // Actions
   addDownload: (download: DownloadedSurah) => void;
+  /** Fill reciterName/reciterImageUrl/rewayatName on records that lack them. Idempotent. */
+  backfillDownloadMetadata: () => void;
   removeDownload: (
     reciterId: string,
     surahId: string,
@@ -239,9 +264,16 @@ export const useDownloadStore = create<DownloadStoreState>()(
           }
 
           return {
-            downloads: [...state.downloads, download],
+            downloads: [...state.downloads, withReciterMetadata(download)],
           };
         });
+      },
+      backfillDownloadMetadata: () => {
+        const needs = get().downloads.some(d => !d.reciterName);
+        if (!needs) return;
+        set(state => ({
+          downloads: state.downloads.map(withReciterMetadata),
+        }));
       },
       removeDownload: async (
         reciterId: string,
@@ -503,6 +535,7 @@ export const useDownloadStore = create<DownloadStoreState>()(
       // This fixes the issue where iOS changes the app container UUID on updates,
       // which would make stored absolute paths invalid
       onRehydrateStorage: () => state => {
+        state?.backfillDownloadMetadata?.();
         if (state && state.downloads.length > 0) {
           const needsMigration = state.downloads.some(
             d => d.filePath.startsWith('file://') || d.filePath.startsWith('/'),
