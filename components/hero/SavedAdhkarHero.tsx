@@ -223,7 +223,9 @@ const createStyles = (theme: Theme, heroTheme: HeroColorTheme) =>
     hero: {
       borderRadius: moderateScale(20),
       overflow: 'hidden',
-      flex: 1,
+      // Fixed height comes from the style prop. flex: 1 here collapsed the
+      // card to a thin strip inside the auto-height ScrollView content.
+      flexShrink: 0,
     },
     glassWrapper: {
       height: SECTION_HEIGHT,
@@ -302,6 +304,8 @@ export function SavedAdhkarHero({savedCount}: SavedAdhkarHeroProps) {
     return {
       width: '100%' as const,
       height: SECTION_HEIGHT,
+      minHeight: SECTION_HEIGHT,
+      flexShrink: 0,
     };
   }, []);
 
