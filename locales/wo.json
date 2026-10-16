@@ -594,7 +594,12 @@
       "downloadingPlaylist": "Ñuy yeb liste bi...",
       "editPlaylist": "Soppi liste bi",
       "emptyPlaylist": "Liste bu neen",
-      "thisPlaylistIsEmpty": "Liste bii neen la."
+      "thisPlaylistIsEmpty": "Liste bii neen la.",
+      "sharePlaylist": "Séddoo lisit bi",
+      "shareFailed": "Lien bu séddoo bi manuta sosu. Seetal sa lëkkale te jéemaat.",
+      "shareRateLimited": "Lien yu bari lool sosu nañu. Jéemaat ginnaaw benn waxtu.",
+      "shareNothing": "Yokk ay surat balaa nga séddoo.",
+      "shareMessage": "Dégluleel sama lisit \"{{name}}\" ci Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Ci Rewayaat",
@@ -793,5 +798,26 @@
       "unknown": "Dafa am lu jaaxal. Jéemaatal."
     },
     "emailRequired": "Imeel bu baax a lay soxla ngir denc sa dónnée yu bopp (say bëgg, say màndarga, say limu woy, say jumtukaay). Bu amul, dina des ci jumtukaay bii rekk."
+  },
+  "sharedPlaylist": {
+    "title": "Lisit bu ñu séddoo",
+    "play": "Defal ko lépp",
+    "save": "Denc ko ci sama lisit yi",
+    "saved": "Dencees na ko ci say lisit",
+    "loading": "Lisit bi mungi yeb...",
+    "notFound": "Lisit bu ñu séddoo bi gisuñu ko.",
+    "error": "Lisit bi manuta yeb. Seetal sa lëkkale.",
+    "retry": "Jéemaat",
+    "itemCount_many": "Tilaawa {{count}}",
+    "itemCount_one": "Tilaawa {{count}}",
+    "itemCount_other": "Tilaawa {{count}}"
+  },
+  "discover": {
+    "title": "Wut",
+    "loading": "Ñuy wut tilaawa",
+    "empty": "Gisuñu tilaawa léegi",
+    "retry": "Jéemaat",
+    "close": "Tëj",
+    "paused": "Taxawal nañ ko, laal ngir kontine"
   }
 }

@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Pleylist yuklab olinmoqda...",
       "editPlaylist": "Pleylistni tahrirlash",
       "emptyPlaylist": "Bo'sh pleylist",
-      "thisPlaylistIsEmpty": "Bu pleylist bo'sh."
+      "thisPlaylistIsEmpty": "Bu pleylist bo'sh.",
+      "sharePlaylist": "Pleylistni ulashish",
+      "shareFailed": "Ulashish havolasini yaratib bo‘lmadi. Ulanishni tekshirib, qayta urinib ko‘ring.",
+      "shareRateLimited": "Juda ko‘p havola yaratildi. Bir soatdan keyin qayta urinib ko‘ring.",
+      "shareNothing": "Ulashishdan oldin bir nechta sura qo‘shing.",
+      "shareMessage": "Istima’dagi \"{{name}}\" pleylistimni tinglang"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Rivoyatlar haqida",
@@ -787,5 +792,25 @@
       "unknown": "Xatolik yuz berdi. Qayta urinib ko‘ring."
     },
     "emailRequired": "Shaxsiy ma’lumotlarni (sevimlilar, xatcho‘plar, pleylistlar, sozlamalar) saqlash uchun haqiqiy e-pochta kerak. Aks holda ular faqat shu qurilmada qoladi."
+  },
+  "sharedPlaylist": {
+    "title": "Ulashilgan pleylist",
+    "play": "Hammasini ijro etish",
+    "save": "Pleylistlarimga saqlash",
+    "saved": "Pleylistlaringizga saqlandi",
+    "loading": "Pleylist yuklanmoqda...",
+    "notFound": "Bu ulashilgan pleylist topilmadi.",
+    "error": "Bu pleylistni yuklab bo‘lmadi. Ulanishni tekshiring.",
+    "retry": "Qayta urinish",
+    "itemCount_one": "{{count}} qiroat",
+    "itemCount_other": "{{count}} qiroat"
+  },
+  "discover": {
+    "title": "Kashf qilish",
+    "loading": "Qiroat qidirilmoqda",
+    "empty": "Hozir qiroat topilmadi",
+    "retry": "Qayta urinish",
+    "close": "Yopish",
+    "paused": "To‘xtatildi, davom ettirish uchun bosing"
   }
 }

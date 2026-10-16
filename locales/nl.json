@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Afspeellijst downloaden...",
       "editPlaylist": "Afspeellijst bewerken",
       "emptyPlaylist": "Lege afspeellijst",
-      "thisPlaylistIsEmpty": "Deze afspeellijst is leeg."
+      "thisPlaylistIsEmpty": "Deze afspeellijst is leeg.",
+      "sharePlaylist": "Afspeellijst delen",
+      "shareFailed": "De deellink kon niet worden gemaakt. Controleer je verbinding en probeer het opnieuw.",
+      "shareRateLimited": "Er zijn te veel links gemaakt. Probeer het over een uur opnieuw.",
+      "shareNothing": "Voeg een paar soera's toe voordat je deelt.",
+      "shareMessage": "Luister naar mijn afspeellijst \"{{name}}\" op Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Over riwayat",
@@ -787,5 +792,25 @@
       "unknown": "Er ging iets mis. Probeer het opnieuw."
     },
     "emailRequired": "Een geldig e-mailadres is nodig om je persoonlijke gegevens (favorieten, bladwijzers, afspeellijsten, instellingen) op te slaan. Zonder blijven ze alleen op dit apparaat."
+  },
+  "sharedPlaylist": {
+    "title": "Gedeelde afspeellijst",
+    "play": "Alles afspelen",
+    "save": "Opslaan in mijn afspeellijsten",
+    "saved": "Opgeslagen in je afspeellijsten",
+    "loading": "Afspeellijst laden...",
+    "notFound": "Deze gedeelde afspeellijst is niet gevonden.",
+    "error": "Deze afspeellijst kon niet worden geladen. Controleer je verbinding.",
+    "retry": "Opnieuw proberen",
+    "itemCount_one": "{{count}} recitaties",
+    "itemCount_other": "{{count}} recitaties"
+  },
+  "discover": {
+    "title": "Ontdekken",
+    "loading": "Recitatie zoeken",
+    "empty": "Er kon nu geen recitatie worden gevonden",
+    "retry": "Opnieuw proberen",
+    "close": "Sluiten",
+    "paused": "Gepauzeerd, tik om verder te gaan"
   }
 }

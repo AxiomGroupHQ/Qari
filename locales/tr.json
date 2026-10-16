@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Çalma listesi indiriliyor...",
       "editPlaylist": "Çalma Listesini Düzenle",
       "emptyPlaylist": "Boş Çalma Listesi",
-      "thisPlaylistIsEmpty": "Bu çalma listesi boş."
+      "thisPlaylistIsEmpty": "Bu çalma listesi boş.",
+      "sharePlaylist": "Çalma listesini paylaş",
+      "shareFailed": "Paylaşım bağlantısı oluşturulamadı. Bağlantınızı kontrol edip tekrar deneyin.",
+      "shareRateLimited": "Çok fazla bağlantı oluşturuldu. Bir saat sonra tekrar deneyin.",
+      "shareNothing": "Paylaşmadan önce birkaç sure ekleyin.",
+      "shareMessage": "\"{{name}}\" çalma listemi Istima'da dinleyin"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Rivayetler Hakkında",
@@ -787,5 +792,25 @@
       "unknown": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
     },
     "emailRequired": "Kişisel verilerinizi (favoriler, yer imleri, çalma listeleri, ayarlar) kaydetmek için geçerli bir e-posta gerekir. Olmazsa veriler yalnızca bu cihazda kalır."
+  },
+  "sharedPlaylist": {
+    "title": "Paylaşılan çalma listesi",
+    "play": "Tümünü çal",
+    "save": "Çalma listelerime kaydet",
+    "saved": "Çalma listelerinize kaydedildi",
+    "loading": "Çalma listesi yükleniyor...",
+    "notFound": "Bu paylaşılan çalma listesi bulunamadı.",
+    "error": "Bu çalma listesi yüklenemedi. Bağlantınızı kontrol edin.",
+    "retry": "Tekrar dene",
+    "itemCount_one": "{{count}} tilavet",
+    "itemCount_other": "{{count}} tilavet"
+  },
+  "discover": {
+    "title": "Keşfet",
+    "loading": "Tilavet aranıyor",
+    "empty": "Şu anda tilavet bulunamadı",
+    "retry": "Tekrar dene",
+    "close": "Kapat",
+    "paused": "Duraklatıldı, devam etmek için dokunun"
   }
 }

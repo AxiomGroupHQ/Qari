@@ -594,7 +594,12 @@
       "downloadingPlaylist": "A transferir a lista...",
       "editPlaylist": "Editar lista de reprodução",
       "emptyPlaylist": "Lista de reprodução vazia",
-      "thisPlaylistIsEmpty": "Esta lista de reprodução está vazia."
+      "thisPlaylistIsEmpty": "Esta lista de reprodução está vazia.",
+      "sharePlaylist": "Compartilhar playlist",
+      "shareFailed": "Não foi possível criar o link de compartilhamento. Verifique sua conexão e tente novamente.",
+      "shareRateLimited": "Muitos links criados. Tente novamente em uma hora.",
+      "shareNothing": "Adicione algumas suras antes de compartilhar.",
+      "shareMessage": "Ouça minha playlist \"{{name}}\" no Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Sobre as riwayat",
@@ -793,5 +798,26 @@
       "unknown": "Algo correu mal. Tente novamente."
     },
     "emailRequired": "É necessário um e-mail válido para guardar os seus dados pessoais (favoritos, marcadores, listas, definições). Sem ele, ficam apenas neste dispositivo."
+  },
+  "sharedPlaylist": {
+    "title": "Playlist compartilhada",
+    "play": "Reproduzir tudo",
+    "save": "Salvar nas minhas playlists",
+    "saved": "Salva nas suas playlists",
+    "loading": "Carregando playlist...",
+    "notFound": "Esta playlist compartilhada não foi encontrada.",
+    "error": "Não foi possível carregar esta playlist. Verifique sua conexão.",
+    "retry": "Tentar novamente",
+    "itemCount_many": "{{count}} recitações",
+    "itemCount_one": "{{count}} recitações",
+    "itemCount_other": "{{count}} recitações"
+  },
+  "discover": {
+    "title": "Descobrir",
+    "loading": "Procurando uma recitação",
+    "empty": "Não foi possível encontrar uma recitação agora",
+    "retry": "Tentar novamente",
+    "close": "Fechar",
+    "paused": "Pausado, toque para continuar"
   }
 }

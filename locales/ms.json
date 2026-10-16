@@ -584,7 +584,12 @@
       "downloadingPlaylist": "Memuat turun senarai main...",
       "editPlaylist": "Edit Senarai Main",
       "emptyPlaylist": "Senarai Main Kosong",
-      "thisPlaylistIsEmpty": "Senarai main ini kosong."
+      "thisPlaylistIsEmpty": "Senarai main ini kosong.",
+      "sharePlaylist": "Kongsi senarai main",
+      "shareFailed": "Pautan kongsi tidak dapat dibuat. Semak sambungan anda dan cuba lagi.",
+      "shareRateLimited": "Terlalu banyak pautan dibuat. Cuba lagi dalam satu jam.",
+      "shareNothing": "Tambah beberapa surah sebelum berkongsi.",
+      "shareMessage": "Dengar senarai main saya \"{{name}}\" di Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Tentang Riwayat",
@@ -781,5 +786,24 @@
       "unknown": "Sesuatu tidak kena. Sila cuba lagi."
     },
     "emailRequired": "E-mel yang sah diperlukan untuk menyimpan data peribadi anda (kegemaran, penanda halaman, senarai main, tetapan). Tanpanya, data kekal pada peranti ini sahaja."
+  },
+  "sharedPlaylist": {
+    "title": "Senarai main dikongsi",
+    "play": "Main semua",
+    "save": "Simpan ke senarai main saya",
+    "saved": "Disimpan ke senarai main anda",
+    "loading": "Memuatkan senarai main...",
+    "notFound": "Senarai main dikongsi ini tidak ditemui.",
+    "error": "Senarai main ini tidak dapat dimuatkan. Semak sambungan anda.",
+    "retry": "Cuba lagi",
+    "itemCount_other": "{{count}} bacaan"
+  },
+  "discover": {
+    "title": "Teroka",
+    "loading": "Mencari bacaan",
+    "empty": "Tidak dapat mencari bacaan sekarang",
+    "retry": "Cuba lagi",
+    "close": "Tutup",
+    "paused": "Dijeda, ketik untuk menyambung"
   }
 }

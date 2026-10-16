@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Pleýlist ýüklenýär...",
       "editPlaylist": "Pleýlisti üýtget",
       "emptyPlaylist": "Boş pleýlist",
-      "thisPlaylistIsEmpty": "Bu pleýlist boş."
+      "thisPlaylistIsEmpty": "Bu pleýlist boş.",
+      "sharePlaylist": "Pleýlisti paýlaş",
+      "shareFailed": "Paýlaşmak baglanyşygy döredip bolmady. Birikmäňizi barlaň we täzeden synanyşyň.",
+      "shareRateLimited": "Gaty köp baglanyşyk döredildi. Bir sagatdan soň täzeden synanyşyň.",
+      "shareNothing": "Paýlaşmazdan öň birnäçe sure goşuň.",
+      "shareMessage": "Istima-da \"{{name}}\" pleýlistimi diňläň"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Riwaýatlar barada",
@@ -787,5 +792,25 @@
       "unknown": "Nämedir bir zat ýalňyş boldy. Gaýtadan synanyşyň."
     },
     "emailRequired": "Şahsy maglumatlary (halanýanlar, bellikler, çalyş sanawlary, sazlamalar) saklamak üçin dogry e-poçta gerek. Ol bolmasa, diňe şu enjamda galýar."
+  },
+  "sharedPlaylist": {
+    "title": "Paýlaşylan pleýlist",
+    "play": "Hemmesini oýnat",
+    "save": "Pleýlistlerime ýatda sakla",
+    "saved": "Pleýlistleriňize ýatda saklandy",
+    "loading": "Pleýlist ýüklenýär...",
+    "notFound": "Bu paýlaşylan pleýlist tapylmady.",
+    "error": "Bu pleýlist ýüklenip bilinmedi. Birikmäňizi barlaň.",
+    "retry": "Täzeden synanyş",
+    "itemCount_one": "{{count}} kyraat",
+    "itemCount_other": "{{count}} kyraat"
+  },
+  "discover": {
+    "title": "Tapyň",
+    "loading": "Kyraat gözlenýär",
+    "empty": "Häzir kyraat tapyp bolmady",
+    "retry": "Täzeden synanyş",
+    "close": "Ýap",
+    "paused": "Duruzyldy, dowam etmek üçin basyň"
   }
 }

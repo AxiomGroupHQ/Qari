@@ -594,7 +594,12 @@
       "downloadingPlaylist": "Se descarcă lista...",
       "editPlaylist": "Editează lista de redare",
       "emptyPlaylist": "Listă de redare goală",
-      "thisPlaylistIsEmpty": "Această listă de redare este goală."
+      "thisPlaylistIsEmpty": "Această listă de redare este goală.",
+      "sharePlaylist": "Partajează lista",
+      "shareFailed": "Linkul de partajare nu a putut fi creat. Verifică conexiunea și încearcă din nou.",
+      "shareRateLimited": "Au fost create prea multe linkuri. Încearcă din nou peste o oră.",
+      "shareNothing": "Adaugă câteva sure înainte de a partaja.",
+      "shareMessage": "Ascultă lista mea „{{name}}” pe Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Despre riwayat",
@@ -793,5 +798,26 @@
       "unknown": "Ceva nu a mers bine. Încearcă din nou."
     },
     "emailRequired": "Este necesar un e-mail valid pentru a salva datele personale (favorite, marcaje, liste de redare, setări). Fără el, rămân doar pe acest dispozitiv."
+  },
+  "sharedPlaylist": {
+    "title": "Listă de redare partajată",
+    "play": "Redă tot",
+    "save": "Salvează în listele mele",
+    "saved": "Salvată în listele tale",
+    "loading": "Se încarcă lista...",
+    "notFound": "Această listă partajată nu a fost găsită.",
+    "error": "Lista nu a putut fi încărcată. Verifică conexiunea.",
+    "retry": "Încearcă din nou",
+    "itemCount_few": "{{count}} recitări",
+    "itemCount_one": "{{count}} recitări",
+    "itemCount_other": "{{count}} recitări"
+  },
+  "discover": {
+    "title": "Descoperă",
+    "loading": "Se caută o recitare",
+    "empty": "Nu s-a putut găsi o recitare acum",
+    "retry": "Încearcă din nou",
+    "close": "Închide",
+    "paused": "În pauză, atinge pentru a continua"
   }
 }

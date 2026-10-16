@@ -99,3 +99,45 @@ describe('extras', () => {
     });
   });
 });
+
+describe('share and discover strings', () => {
+  const keys = [
+    'sharedPlaylist.title',
+    'sharedPlaylist.play',
+    'sharedPlaylist.save',
+    'sharedPlaylist.saved',
+    'sharedPlaylist.loading',
+    'sharedPlaylist.notFound',
+    'sharedPlaylist.error',
+    'sharedPlaylist.retry',
+    'discover.title',
+    'discover.loading',
+    'discover.empty',
+    'discover.retry',
+    'discover.close',
+    'discover.paused',
+    'sheets.playlistContextSheet.sharePlaylist',
+    'sheets.playlistContextSheet.shareFailed',
+    'sheets.playlistContextSheet.shareRateLimited',
+    'sheets.playlistContextSheet.shareNothing',
+    'sheets.playlistContextSheet.shareMessage',
+  ];
+  const en = flatten(
+    JSON.parse(fs.readFileSync(path.join(localesDir, 'en.json'), 'utf8')),
+  );
+  LOCALE_CODES.filter(c => c !== 'en').forEach(code => {
+    it(`${code} translates them and keeps placeholders`, () => {
+      const l = flatten(
+        JSON.parse(
+          fs.readFileSync(path.join(localesDir, `${code}.json`), 'utf8'),
+        ),
+      );
+      keys.forEach(k => {
+        expect(l[k]).toBeTruthy();
+        expect(l[k]).not.toBe(en[k]);
+        expect(placeholders(l[k])).toBe(placeholders(en[k]));
+      });
+      expect(l['sharedPlaylist.itemCount_other']).toContain('{{count}}');
+    });
+  });
+});

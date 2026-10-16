@@ -594,7 +594,12 @@
       "downloadingPlaylist": "Tarreeffama buufachaa jira...",
       "editPlaylist": "Tarreeffama gulaali",
       "emptyPlaylist": "Tarreeffama duwwaa",
-      "thisPlaylistIsEmpty": "Tarreeffamni kun duwwaadha."
+      "thisPlaylistIsEmpty": "Tarreeffamni kun duwwaadha.",
+      "sharePlaylist": "Tarree qoodi",
+      "shareFailed": "Linkiin qoodinsaa uumamuu hin dandeenye. Walitti hidhamiinsa keessan mirkaneessaatii irra deebi'ii yaalaa.",
+      "shareRateLimited": "Linkiin baay'een uumameera. Sa'aatii tokko booda irra deebi'ii yaalaa.",
+      "shareNothing": "Osoo hin qoodin dura suuraa muraasa itti ida'aa.",
+      "shareMessage": "Tarree koo \"{{name}}\" Istima irratti dhaggeeffadhaa"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Waa'ee Rewayaat",
@@ -793,5 +798,26 @@
       "unknown": "Wanti tokko dogoggore. Maaloo irra deebi'ii yaali."
     },
     "emailRequired": "Daataa dhuunfaa kee (kanneen jaallatte, mallattoo kitaabaa, tarreeffama taphataa, qindaa'inoota) olkaa'uuf imeelii sirrii ta'e barbaachisa. Yoo hin jiraanne meeshaa kana qofa irra jiraata."
+  },
+  "sharedPlaylist": {
+    "title": "Tarree sagalee qoodame",
+    "play": "Hunda taphachiisi",
+    "save": "Tarree koo keessatti olkaa'i",
+    "saved": "Tarree keessanii keessatti olkaa'ameera",
+    "loading": "Tarreen fe'amaa jira...",
+    "notFound": "Tarreen qoodame kun hin argamne.",
+    "error": "Tarreen kun fe'amuu hin dandeenye. Walitti hidhamiinsa keessan mirkaneessaa.",
+    "retry": "Irra deebi'ii yaali",
+    "itemCount_many": "Qiraa'aa {{count}}",
+    "itemCount_one": "Qiraa'aa {{count}}",
+    "itemCount_other": "Qiraa'aa {{count}}"
+  },
+  "discover": {
+    "title": "Barbaadi",
+    "loading": "Qiraa'aan barbaadamaa jira",
+    "empty": "Amma qiraa'aan argachuu hin dandeenye",
+    "retry": "Irra deebi'ii yaali",
+    "close": "Cufi",
+    "paused": "Dhaabbateera, itti fufuuf tuqi"
   }
 }

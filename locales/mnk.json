@@ -589,7 +589,12 @@
       "downloadingPlaylist": "Playlist be jiŋ...",
       "editPlaylist": "Playlist yelema",
       "emptyPlaylist": "Playlist lankolon",
-      "thisPlaylistIsEmpty": "Nin playlist lankolon don."
+      "thisPlaylistIsEmpty": "Nin playlist lankolon don.",
+      "sharePlaylist": "Lisiti tɔɔ",
+      "shareFailed": "Lamɛn ɲɛmɔɔ mu da. I ka jɛkabɔ lajɛ ka a ɲini kasoto.",
+      "shareRateLimited": "Ɲɛmɔɔ caman dara. A ɲini kasoto lɛrɛ kelen kɔ.",
+      "shareNothing": "Sura dɔ fara a kan sani i ka a tɔɔ.",
+      "shareMessage": "Lamɛn n ka lisiti \"{{name}}\" Istima kan"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Rewayat ko",
@@ -787,5 +792,25 @@
       "unknown": "Fɛn dɔ ma ɲɛ. I ka segin ka kɔrɔbɔ."
     },
     "emailRequired": "Imɛli ɲuman ka kan ka i yɛrɛ ka dɔnniyaa mara (kanuu, taamasiyɛnuu, dɔnkili lisɛnuu, sigiyaa). N'o tɛ, a bɛ to o mashin in na dɔrɔn."
+  },
+  "sharedPlaylist": {
+    "title": "Lisiti sɔtɔnding",
+    "play": "Bee fele",
+    "save": "A mara n ka lisitiyaa kono",
+    "saved": "A maraata i ka lisitiyaa kono",
+    "loading": "Lisiti be sɔtɔ...",
+    "notFound": "Lisiti sɔtɔnding in mu kumandi.",
+    "error": "Lisiti in mu se ka sɔtɔ. I ka jɛkabɔ lajɛ.",
+    "retry": "A ɲini kasoto",
+    "itemCount_one": "Karoo {{count}}",
+    "itemCount_other": "Karoo {{count}}"
+  },
+  "discover": {
+    "title": "A ɲini",
+    "loading": "Karoo be ɲini",
+    "empty": "Karoo mu kumandi sinoma",
+    "retry": "A ɲini kasoto",
+    "close": "A datu",
+    "paused": "A jɔɔra, i ka digi ka taa a ye"
   }
 }

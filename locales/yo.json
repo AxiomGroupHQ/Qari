@@ -588,7 +588,12 @@
       "downloadingPlaylist": "Ń gba àtòjọ ìṣeré sílẹ̀...",
       "editPlaylist": "Ṣàtúnṣe àtòjọ ìṣeré",
       "emptyPlaylist": "Àtòjọ ìṣeré tó ṣófo",
-      "thisPlaylistIsEmpty": "Àtòjọ ìṣeré yìí ṣófo."
+      "thisPlaylistIsEmpty": "Àtòjọ ìṣeré yìí ṣófo.",
+      "sharePlaylist": "Pín àtòkọ",
+      "shareFailed": "Kò ṣeé ṣe láti ṣẹ̀dá ọ̀nà ìpínpín. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì gbìyànjú lẹ́ẹ̀kan sí i.",
+      "shareRateLimited": "A ti ṣẹ̀dá ọ̀nà ìsopọ̀ púpọ̀ jù. Gbìyànjú lẹ́ẹ̀kan sí i lẹ́yìn wákàtí kan.",
+      "shareNothing": "Fi àwọn sūrah díẹ̀ kún un kí o tó pín.",
+      "shareMessage": "Gbọ́ àtòkọ mi \"{{name}}\" lórí Istima"
     },
     "rewayatInfoSheet": {
       "aboutRewayat": "Nípa riwáyà",
@@ -786,5 +791,24 @@
       "unknown": "Nǹkan kan ṣẹlẹ̀. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i."
     },
     "emailRequired": "Ímeèlì tó tọ́ ni a nílò láti fi dátà àdáni rẹ pamọ́ (àwọn ayanfẹ́, àwọn àmì ìwé, àwọn àtòjọ orin, àwọn ètò). Láìsí rẹ̀, yóò wà lórí ẹ̀rọ yìí nìkan."
+  },
+  "sharedPlaylist": {
+    "title": "Àtòkọ orin tí a pín",
+    "play": "Ṣe gbogbo rẹ̀",
+    "save": "Fi pamọ́ sí àwọn àtòkọ mi",
+    "saved": "A ti fi pamọ́ sí àwọn àtòkọ rẹ",
+    "loading": "Àtòkọ ń gbéra...",
+    "notFound": "A kò rí àtòkọ tí a pín yìí.",
+    "error": "Kò ṣeé ṣe láti gbé àtòkọ yìí. Ṣàyẹ̀wò ìsopọ̀ rẹ.",
+    "retry": "Gbìyànjú lẹ́ẹ̀kan sí i",
+    "itemCount_other": "Kíkà {{count}}"
+  },
+  "discover": {
+    "title": "Ṣàwárí",
+    "loading": "À ń wá kíkà kan",
+    "empty": "A kò rí kíkà báyìí",
+    "retry": "Gbìyànjú lẹ́ẹ̀kan sí i",
+    "close": "Ti",
+    "paused": "A dúró, tẹ láti tẹ̀síwájú"
   }
 }
