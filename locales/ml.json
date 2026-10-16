@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "രൂപഭാവ മോഡ് മാറ്റുന്നത് ആപ്പ് മുഴുവൻ ബാധിക്കും"
+    "changingAppearanceModeAppliesTo": "രൂപഭാവ മോഡ് മാറ്റുന്നത് ആപ്പ് മുഴുവൻ ബാധിക്കും",
+    "readingModeNote": "ഖുർആൻ വായനയ്ക്ക് മാത്രം ബാധകം. ആപ്പിന്റെ രൂപം ക്രമീകരണങ്ങളിൽ സജ്ജമാക്കാം."
   },
   "reciterBrowse": {
     "allReciters": "എല്ലാ ഖാരിഇകളും",

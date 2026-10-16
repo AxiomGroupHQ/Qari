@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Тағйири намуди зоҳирӣ ба тамоми барнома татбиқ мешавад"
+    "changingAppearanceModeAppliesTo": "Тағйири намуди зоҳирӣ ба тамоми барнома татбиқ мешавад",
+    "readingModeNote": "Танҳо ба хониши Қуръон татбиқ мешавад. Намуди барнома дар Танзимот муқаррар мешавад."
   },
   "reciterBrowse": {
     "allReciters": "Ҳамаи қориён",

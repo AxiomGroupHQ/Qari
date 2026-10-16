@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Görünüş rejiminin dəyişdirilməsi bütün tətbiqə təsir edir"
+    "changingAppearanceModeAppliesTo": "Görünüş rejiminin dəyişdirilməsi bütün tətbiqə təsir edir",
+    "readingModeNote": "Yalnız Quran oxuyuşuna aiddir. Tətbiqin görünüşü Ayarlarda təyin olunur."
   },
   "reciterBrowse": {
     "allReciters": "Bütün qarilər",

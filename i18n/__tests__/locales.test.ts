@@ -128,6 +128,7 @@ describe('share and discover strings', () => {
     'collection.history.clear',
     'collection.history.clearTitle',
     'collection.history.clearMessage',
+    'readingThemeContent.readingModeNote',
   ];
   const en = flatten(
     JSON.parse(fs.readFileSync(path.join(localesDir, 'en.json'), 'utf8')),

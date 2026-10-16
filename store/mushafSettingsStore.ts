@@ -90,6 +90,8 @@ interface MushafSettingsState {
   // Reading theme (mushaf-only, does not affect global app theme)
   lightThemeId: string;
   darkThemeId: string;
+  /** Which light/dark reading theme the Quran views use. 'app' follows the app theme (the old behaviour). */
+  readingMode: 'app' | 'system' | 'light' | 'dark';
 
   // Rewayah (qiraat transmission) selection
   rewayah: RewayahId;
@@ -121,6 +123,7 @@ interface MushafSettingsState {
   clearRecentPages: () => void;
   setSelectedTranslationId: (id: string) => void;
   setReadingTheme: (themeId: string) => void;
+  setReadingMode: (mode: 'app' | 'system' | 'light' | 'dark') => void;
   setRewayah: (rewayah: RewayahId) => void;
   toggleRewayahDiffs: () => void;
 }
@@ -152,6 +155,7 @@ export const useMushafSettingsStore = create<MushafSettingsState>()(
       selectedTranslationId: 'saheeh',
       lightThemeId: 'default',
       darkThemeId: 'dark-default',
+      readingMode: 'app',
       rewayah: 'hafs' as RewayahId,
       showRewayahDiffs: true,
 
@@ -232,6 +236,7 @@ export const useMushafSettingsStore = create<MushafSettingsState>()(
       clearRecentPages: () => set({recentPages: []}),
       setSelectedTranslationId: (id: string) =>
         set({selectedTranslationId: id}),
+      setReadingMode: mode => set({readingMode: mode}),
       setReadingTheme: (themeId: string) =>
         set(state => {
           const rt = getReadingThemeById(themeId);

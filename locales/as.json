@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "দৃশ্য মোড সলনি কৰিলে সমগ্ৰ এপত প্ৰযোজ্য হয়"
+    "changingAppearanceModeAppliesTo": "দৃশ্য মোড সলনি কৰিলে সমগ্ৰ এপত প্ৰযোজ্য হয়",
+    "readingModeNote": "কেৱল কুৰআন পঢ়াত প্ৰযোজ্য। এপৰ অৱয়ব ছেটিংছত ঠিক কৰা হয়।"
   },
   "reciterBrowse": {
     "allReciters": "সকলো কাৰী",

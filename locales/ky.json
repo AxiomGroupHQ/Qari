@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Көрүнүш режимин өзгөртүү бүт колдонмого таасир этет"
+    "changingAppearanceModeAppliesTo": "Көрүнүш режимин өзгөртүү бүт колдонмого таасир этет",
+    "readingModeNote": "Куран окууга гана тиешелүү. Колдонмонун көрүнүшү Жөндөөлөрдө коюлат."
   },
   "reciterBrowse": {
     "allReciters": "Бардык карылар",

@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Көрініс режимін өзгерту бүкіл қолданбаға қолданылады"
+    "changingAppearanceModeAppliesTo": "Көрініс режимін өзгерту бүкіл қолданбаға қолданылады",
+    "readingModeNote": "Тек Құран оқуға қолданылады. Қолданба көрінісі Параметрлерде орнатылады."
   },
   "reciterBrowse": {
     "allReciters": "Барлық қарилар",

@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Canza yanayin bayyanar yana shafar dukkan manhajar"
+    "changingAppearanceModeAppliesTo": "Canza yanayin bayyanar yana shafar dukkan manhajar",
+    "readingModeNote": "Yana aiki ne kawai ga karatun Alƙur'ani. Ana saita kamannin manhajar a cikin Saituna."
   },
   "reciterBrowse": {
     "allReciters": "Dukkan Makaranta",

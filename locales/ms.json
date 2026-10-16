@@ -402,7 +402,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Perubahan mod penampilan digunakan pada keseluruhan aplikasi"
+    "changingAppearanceModeAppliesTo": "Perubahan mod penampilan digunakan pada keseluruhan aplikasi",
+    "readingModeNote": "Hanya untuk bacaan Al-Quran. Penampilan aplikasi ditetapkan dalam Tetapan."
   },
   "reciterBrowse": {
     "allReciters": "Semua Qari",

@@ -412,7 +412,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Промена режима изгледа примењује се на целу апликацију"
+    "changingAppearanceModeAppliesTo": "Промена режима изгледа примењује се на целу апликацију",
+    "readingModeNote": "Односи се само на читање Курана. Изглед апликације подешава се у Подешавањима."
   },
   "reciterBrowse": {
     "allReciters": "Сви кари",

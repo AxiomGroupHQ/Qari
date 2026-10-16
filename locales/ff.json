@@ -412,7 +412,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Waylugo ngonka sendu ina ɗaɓɓi e app fuu"
+    "changingAppearanceModeAppliesTo": "Waylugo ngonka sendu ina ɗaɓɓi e app fuu",
+    "readingModeNote": "Ɗum ina jokka tan ko wayi e tilaawa Alqur'aana. Ngonka aplikaasiyoŋ no ɗon teskaa e Teelte."
   },
   "reciterBrowse": {
     "allReciters": "Ɗiɗɗorɓe fuu",

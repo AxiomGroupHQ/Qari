@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "ಗೋಚರ ಮೋಡ್ ಬದಲಿಸಿದರೆ ಇಡೀ ಆ್ಯಪ್‌ಗೆ ಅನ್ವಯವಾಗುತ್ತದೆ"
+    "changingAppearanceModeAppliesTo": "ಗೋಚರ ಮೋಡ್ ಬದಲಿಸಿದರೆ ಇಡೀ ಆ್ಯಪ್‌ಗೆ ಅನ್ವಯವಾಗುತ್ತದೆ",
+    "readingModeNote": "ಕುರ್‌ಆನ್ ಓದುವಿಕೆಗೆ ಮಾತ್ರ ಅನ್ವಯಿಸುತ್ತದೆ. ಆ್ಯಪ್‌ನ ನೋಟವನ್ನು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಹೊಂದಿಸಲಾಗುತ್ತದೆ."
   },
   "reciterBrowse": {
     "allReciters": "ಎಲ್ಲಾ ಖಾರಿಗಳು",

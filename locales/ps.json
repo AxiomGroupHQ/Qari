@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "د بڼې بدلون په ټول اپ پلي کېږي"
+    "changingAppearanceModeAppliesTo": "د بڼې بدلون په ټول اپ پلي کېږي",
+    "readingModeNote": "یوازې د قرآن لوستلو لپاره پلي کېږي. د اپ بڼه په تنظیماتو کې ټاکل کېږي."
   },
   "reciterBrowse": {
     "allReciters": "ټول قاریان",

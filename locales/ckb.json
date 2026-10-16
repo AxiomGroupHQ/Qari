@@ -411,7 +411,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "گۆڕینی دۆخی ڕووکار بۆ تەواوی ئەپەکە جێبەجێ دەکرێت"
+    "changingAppearanceModeAppliesTo": "گۆڕینی دۆخی ڕووکار بۆ تەواوی ئەپەکە جێبەجێ دەکرێت",
+    "readingModeNote": "تەنها بۆ خوێندنەوەی قورئان کاردەکات. ڕووکاری ئەپەکە لە ڕێکخستنەکان دیاری دەکرێت."
   },
   "reciterBrowse": {
     "allReciters": "هەموو قارییەکان",

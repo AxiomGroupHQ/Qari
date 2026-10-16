@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Промената на режимот на изглед се применува на целата апликација"
+    "changingAppearanceModeAppliesTo": "Промената на режимот на изглед се применува на целата апликација",
+    "readingModeNote": "Се однесува само на читањето на Куранот. Изгледот на апликацијата се поставува во Поставки."
   },
   "reciterBrowse": {
     "allReciters": "Сите кари",

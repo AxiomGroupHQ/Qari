@@ -406,7 +406,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "အသွင်အပြင်စနစ် ပြောင်းခြင်းသည် အက်ပ်တစ်ခုလုံးနှင့် သက်ဆိုင်သည်"
+    "changingAppearanceModeAppliesTo": "အသွင်အပြင်စနစ် ပြောင်းခြင်းသည် အက်ပ်တစ်ခုလုံးနှင့် သက်ဆိုင်သည်",
+    "readingModeNote": "ကုရ်အာန်ဖတ်ရှုမှုအတွက်သာ သက်ရောက်သည်။ အက်ပ်၏ ပုံစံကို ဆက်တင်များတွင် သတ်မှတ်ပါ။"
   },
   "reciterBrowse": {
     "allReciters": "ကာရီအားလုံး",

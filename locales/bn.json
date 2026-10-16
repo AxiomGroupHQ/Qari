@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "অ্যাপিয়ারেন্স মোড বদলালে পুরো অ্যাপে প্রযোজ্য হয়"
+    "changingAppearanceModeAppliesTo": "অ্যাপিয়ারেন্স মোড বদলালে পুরো অ্যাপে প্রযোজ্য হয়",
+    "readingModeNote": "শুধু কুরআন পড়ার ক্ষেত্রে প্রযোজ্য। অ্যাপের থিম সেটিংসে ঠিক করা হয়।"
   },
   "reciterBrowse": {
     "allReciters": "সব কারী",

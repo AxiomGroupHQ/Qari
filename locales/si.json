@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "පෙනුම් මාදිලිය වෙනස් කිරීම මුළු යෙදුමටම බලපායි"
+    "changingAppearanceModeAppliesTo": "පෙනුම් මාදිලිය වෙනස් කිරීම මුළු යෙදුමටම බලපායි",
+    "readingModeNote": "අදාළ වන්නේ කුර්ආන් කියවීමට පමණි. යෙදුමේ පෙනුම සැකසුම් තුළ සකසයි."
   },
   "reciterBrowse": {
     "allReciters": "සියලු කාරිවරුන්",

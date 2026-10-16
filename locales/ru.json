@@ -417,7 +417,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Изменение режима оформления применяется ко всему приложению"
+    "changingAppearanceModeAppliesTo": "Изменение режима оформления применяется ко всему приложению",
+    "readingModeNote": "Действует только на чтение Корана. Внешний вид приложения задаётся в Настройках."
   },
   "reciterBrowse": {
     "allReciters": "Все чтецы",

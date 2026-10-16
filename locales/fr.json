@@ -412,7 +412,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Le changement de mode d'apparence s'applique à toute l'application"
+    "changingAppearanceModeAppliesTo": "Le changement de mode d'apparence s'applique à toute l'application",
+    "readingModeNote": "S'applique uniquement à la lecture du Coran. L'apparence de l'application se règle dans les Réglages."
   },
   "reciterBrowse": {
     "allReciters": "Tous les récitateurs",

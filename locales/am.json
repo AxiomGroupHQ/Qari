@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "የመልክ ሁነታ ለውጥ በመላው መተግበሪያ ላይ ይተገበራል"
+    "changingAppearanceModeAppliesTo": "የመልክ ሁነታ ለውጥ በመላው መተግበሪያ ላይ ይተገበራል",
+    "readingModeNote": "ለቁርኣን ንባብ ብቻ ይተገበራል። የመተግበሪያው ገጽታ በቅንብሮች ውስጥ ይዘጋጃል።"
   },
   "reciterBrowse": {
     "allReciters": "ሁሉም አንባቢዎች",

@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Nyenaje cogo yelema be ke app bee la"
+    "changingAppearanceModeAppliesTo": "Nyenaje cogo yelema be ke app bee la",
+    "readingModeNote": "A ka baara Kuranɛ karoo dɔrɔɔ ye. Appli cogoo be sigi Sigilanw kɔnɔ."
   },
   "reciterBrowse": {
     "allReciters": "Karandirilaa bee",

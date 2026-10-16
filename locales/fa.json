@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "تغییر حالت ظاهری برای کل برنامه اعمال می‌شود"
+    "changingAppearanceModeAppliesTo": "تغییر حالت ظاهری برای کل برنامه اعمال می‌شود",
+    "readingModeNote": "فقط برای خواندن قرآن اعمال می‌شود. ظاهر برنامه در تنظیمات انتخاب می‌شود."
   },
   "reciterBrowse": {
     "allReciters": "همهٔ قاریان",

@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "தோற்றப் பயன்முறையை மாற்றுவது முழு செயலிக்கும் பொருந்தும்"
+    "changingAppearanceModeAppliesTo": "தோற்றப் பயன்முறையை மாற்றுவது முழு செயலிக்கும் பொருந்தும்",
+    "readingModeNote": "குர்ஆன் வாசிப்புக்கு மட்டும் பொருந்தும். செயலியின் தோற்றம் அமைப்புகளில் அமைக்கப்படும்."
   },
   "reciterBrowse": {
     "allReciters": "அனைத்து ஓதுபவர்கள்",

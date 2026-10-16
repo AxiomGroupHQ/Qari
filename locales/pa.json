@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "ਦਿੱਖ ਮੋਡ ਬਦਲਣ ਨਾਲ ਪੂਰੀ ਐਪ ਉੱਤੇ ਲਾਗੂ ਹੋਵੇਗਾ"
+    "changingAppearanceModeAppliesTo": "ਦਿੱਖ ਮੋਡ ਬਦਲਣ ਨਾਲ ਪੂਰੀ ਐਪ ਉੱਤੇ ਲਾਗੂ ਹੋਵੇਗਾ",
+    "readingModeNote": "ਸਿਰਫ਼ ਕੁਰਾਨ ਪੜ੍ਹਨ ਲਈ ਲਾਗੂ ਹੁੰਦਾ ਹੈ। ਐਪ ਦਾ ਰੂਪ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਤੈਅ ਹੁੰਦਾ ਹੈ।"
   },
   "reciterBrowse": {
     "allReciters": "ਸਾਰੇ ਕਾਰੀ",

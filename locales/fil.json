@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Ang pagbabago ng hitsura ay mailalapat sa buong app"
+    "changingAppearanceModeAppliesTo": "Ang pagbabago ng hitsura ay mailalapat sa buong app",
+    "readingModeNote": "Para lang ito sa pagbabasa ng Quran. Ang hitsura ng app ay itinatakda sa Mga Setting."
   },
   "reciterBrowse": {
     "allReciters": "Lahat ng tagabigkas",

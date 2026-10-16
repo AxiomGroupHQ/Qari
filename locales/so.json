@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Beddelka qaabka muuqaalka wuxuu quseeyaa abka oo dhan"
+    "changingAppearanceModeAppliesTo": "Beddelka qaabka muuqaalka wuxuu quseeyaa abka oo dhan",
+    "readingModeNote": "Waxay khusaysaa akhrinta Qur'aanka oo keliya. Muuqaalka appka waxaa lagu dejiyaa Dejinta."
   },
   "reciterBrowse": {
     "allReciters": "Dhammaan akhristayaasha",

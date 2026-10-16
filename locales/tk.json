@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Görnüş tertibiniň üýtgemegi tutuş programma täsir edýär"
+    "changingAppearanceModeAppliesTo": "Görnüş tertibiniň üýtgemegi tutuş programma täsir edýär",
+    "readingModeNote": "Diňe Gurhan okamaga degişlidir. Programmanyň görnüşi Sazlamalarda bellenýär."
   },
   "reciterBrowse": {
     "allReciters": "Ähli karylar",

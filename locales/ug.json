@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "كۆرۈنۈش ھالىتىنى ئۆزگەرتىش پۈتۈن ئەپكە قوللىنىلىدۇ"
+    "changingAppearanceModeAppliesTo": "كۆرۈنۈش ھالىتىنى ئۆزگەرتىش پۈتۈن ئەپكە قوللىنىلىدۇ",
+    "readingModeNote": "پەقەت قۇرئان ئوقۇشقا ئىشلىتىلىدۇ. ئەپنىڭ كۆرۈنۈشى تەڭشەكتە بەلگىلىنىدۇ."
   },
   "reciterBrowse": {
     "allReciters": "بارلىق قارىلار",

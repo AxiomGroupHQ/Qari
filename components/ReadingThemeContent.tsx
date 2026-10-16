@@ -26,6 +26,7 @@ import {useTheme} from '@/hooks/useTheme';
 import {Theme, ThemeMode} from '@/utils/themeUtils';
 import Color from 'color';
 import {useMushafSettingsStore} from '@/store/mushafSettingsStore';
+import {useReadingIsDark} from '@/hooks/useReadingThemeColors';
 import {
   LIGHT_READING_THEMES,
   DARK_READING_THEMES,
@@ -86,19 +87,23 @@ interface ReadingThemeContentProps {
 export const ReadingThemeContent: React.FC<ReadingThemeContentProps> = ({
   onBack,
 }) => {
-  const {theme, themeMode, setThemeMode} = useTheme();
+  const {theme, themeMode: appThemeMode} = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
-  const {lightThemeId, darkThemeId, setReadingTheme, mushafRenderer} =
-    useMushafSettingsStore();
+  const {
+    lightThemeId,
+    darkThemeId,
+    setReadingTheme,
+    mushafRenderer,
+    readingMode,
+    setReadingMode,
+  } = useMushafSettingsStore();
+  // Until a reading mode is picked here, the segment shows the app theme (the old behaviour)
+  const themeMode: ThemeMode =
+    readingMode === 'app' ? appThemeMode : readingMode;
+  const readingIsDark = useReadingIsDark();
   const systemColorScheme = useColorScheme();
 
-  // Resolve the effective mode (for system, use device appearance)
-  const effectiveMode = useMemo(() => {
-    if (themeMode === 'system') {
-      return systemColorScheme === 'dark' ? 'dark' : 'light';
-    }
-    return themeMode;
-  }, [themeMode, systemColorScheme]);
+  const effectiveMode = readingIsDark ? 'dark' : 'light';
 
   // Determine which chips to show
   const visibleThemes = useMemo(() => {
@@ -154,10 +159,10 @@ export const ReadingThemeContent: React.FC<ReadingThemeContentProps> = ({
         setReadingTheme(newThemes[targetIndex].id);
       }
 
-      setThemeMode(newMode);
+      setReadingMode(newMode);
     },
     [
-      setThemeMode,
+      setReadingMode,
       setReadingTheme,
       effectiveMode,
       lightThemeId,
@@ -166,7 +171,7 @@ export const ReadingThemeContent: React.FC<ReadingThemeContentProps> = ({
     ],
   );
 
-  // Segment changes the whole app's theme mode
+  // Segment changes the reading mode only (Quran views), not the app theme
   const handleSegmentChange = useCallback(
     (event: {nativeEvent: {selectedSegmentIndex: number}}) => {
       const label = SEGMENT_OPTIONS[event.nativeEvent.selectedSegmentIndex];
@@ -217,7 +222,7 @@ export const ReadingThemeContent: React.FC<ReadingThemeContentProps> = ({
 
       {/* Segmented control: System | Light | Dark */}
       <Text style={styles.disclosureText}>
-        {t('readingThemeContent.changingAppearanceModeAppliesTo')}
+        {t('readingThemeContent.readingModeNote')}
       </Text>
       {Platform.OS === 'ios' ? (
         <SegmentedControl

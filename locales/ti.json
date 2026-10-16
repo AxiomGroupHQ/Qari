@@ -412,7 +412,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "ለውጢ ኣገባብ ርእየት ኣብ ምሉእ ኣፕሊኬሽን ይትግበር"
+    "changingAppearanceModeAppliesTo": "ለውጢ ኣገባብ ርእየት ኣብ ምሉእ ኣፕሊኬሽን ይትግበር",
+    "readingModeNote": "ንንባብ ቁርኣን ጥራይ እዩ ዝምልከት። ቅርጺ እቲ ኣፕ ኣብ ቅጥዕታት ይወሃብ።"
   },
   "reciterBrowse": {
     "allReciters": "ኩሎም ቀሪኦት",

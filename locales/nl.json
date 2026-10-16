@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "De weergavemodus wijzigen geldt voor de hele app"
+    "changingAppearanceModeAppliesTo": "De weergavemodus wijzigen geldt voor de hele app",
+    "readingModeNote": "Geldt alleen voor het lezen van de Koran. Het uiterlijk van de app stel je in bij Instellingen."
   },
   "reciterBrowse": {
     "allReciters": "Alle recitatoren",

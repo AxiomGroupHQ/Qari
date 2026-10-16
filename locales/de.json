@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "Die Änderung des Erscheinungsbilds gilt für die gesamte App"
+    "changingAppearanceModeAppliesTo": "Die Änderung des Erscheinungsbilds gilt für die gesamte App",
+    "readingModeNote": "Gilt nur für das Lesen des Qurans. Das Erscheinungsbild der App stellst du in den Einstellungen ein."
   },
   "reciterBrowse": {
     "allReciters": "Alle Rezitatoren",

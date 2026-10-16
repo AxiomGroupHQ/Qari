@@ -407,7 +407,8 @@
     }
   },
   "readingThemeContent": {
-    "changingAppearanceModeAppliesTo": "ظاہری انداز کی تبدیلی پوری ایپ پر لاگو ہوتی ہے"
+    "changingAppearanceModeAppliesTo": "ظاہری انداز کی تبدیلی پوری ایپ پر لاگو ہوتی ہے",
+    "readingModeNote": "یہ صرف قرآن پڑھنے پر لاگو ہوتا ہے۔ ایپ کی ظاہری شکل سیٹنگز میں طے ہوتی ہے۔"
   },
   "reciterBrowse": {
     "allReciters": "تمام قاری",
