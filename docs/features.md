@@ -25,7 +25,7 @@ One-page requirements view . Status as of October 2026. Every feature must work 
 | Skipped | Listening insights (#119) | Skipped by owner | What to show, and whether to use PostHog (privacy policy change). |
 | P2 | Android performance (#133) | Device testing | A real Android device for list tuning and R8. |
 | P3 | CarPlay and Android Auto (#115) | Platform approval | Apple CarPlay audio entitlement, Google Play review. |
-| P3 | Home widgets (#126) | Native build and provisioning | Apple Developer access (App Group, target), Xcode or EAS builds, devices. |
+| P3 | Home widgets (#126) | Android first widget built, iOS pending | Android Quick Surah widget is in the repo, not yet compiled on a device. iOS needs Apple Developer access (App Group, target). Watch and TV apps pending. |
 | P3 | Watch apps (#118), TV apps (#116) | Native targets, provisioning | Apple Developer access, store setup, devices. |
 | Skipped | Discover feed (#8) | Skipped by owner | Snippet source and audio rights. |
 
