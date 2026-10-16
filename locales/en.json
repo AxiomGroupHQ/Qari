@@ -435,7 +435,9 @@
     "selectReciter": "Select reciter",
     "startNewKhatma": "Start new Khatma",
     "startRepetition": "Start repetition",
+    "setTimer": "Set",
     "timedListening": "Timed Listening",
+    "untilTime": "Until time",
     "timerActiveNote": "Playback pauses when the timer ends. Tap the selected duration again to turn it off.",
     "unlimited": "Unlimited"
   },
