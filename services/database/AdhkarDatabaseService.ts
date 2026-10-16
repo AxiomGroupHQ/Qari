@@ -1,3 +1,4 @@
+import {localizeCategoryTitle, localizeSuperTitle} from '@/utils/adhkarTitles';
 import {cleanArabic, cleanTranslation} from '@/utils/adhkarText';
 import * as SQLite from 'expo-sqlite';
 import type {
@@ -260,7 +261,7 @@ class AdhkarDatabaseService {
       const tags = await this.getCategoryTags(category.id);
       result.push({
         id: category.id,
-        title: category.title,
+        title: localizeCategoryTitle(category.id, category.title),
         dhikrCount: category.dhikr_count,
         broadTags: tags,
       });
@@ -304,7 +305,7 @@ class AdhkarDatabaseService {
       const tags = await this.getCategoryTags(category.id);
       result.push({
         id: category.id,
-        title: category.title,
+        title: localizeCategoryTitle(category.id, category.title),
         dhikrCount: category.dhikr_count,
         broadTags: tags,
       });
@@ -489,7 +490,7 @@ class AdhkarDatabaseService {
 
     return rows.map(row => ({
       id: row.id,
-      title: row.title,
+      title: localizeSuperTitle(row.id, row.title),
       arabicTitle: row.arabic_title,
       color: row.color,
       heightMultiplier: row.height_multiplier,
@@ -513,7 +514,7 @@ class AdhkarDatabaseService {
 
     return rows.map(row => ({
       id: row.id,
-      title: row.title,
+      title: localizeSuperTitle(row.id, row.title),
       arabicTitle: row.arabic_title,
       color: row.color,
       heightMultiplier: row.height_multiplier,
@@ -537,7 +538,7 @@ class AdhkarDatabaseService {
 
     return {
       id: row.id,
-      title: row.title,
+      title: localizeSuperTitle(row.id, row.title),
       arabicTitle: row.arabic_title,
       color: row.color,
       heightMultiplier: row.height_multiplier,
