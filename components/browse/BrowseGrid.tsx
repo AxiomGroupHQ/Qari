@@ -76,6 +76,8 @@ const BrowseGrid = React.memo(
     onScrollBeginDrag,
     getRewayatIdForReciter,
     bottomInset = 0,
+    circular = false,
+    onScroll,
   }: BrowseGridProps) => {
     const {width: windowWidth} = useWindowDimensions();
     const [isLoading] = useState(false);
