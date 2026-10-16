@@ -822,5 +822,12 @@
     "retry": "Opnieuw proberen",
     "close": "Sluiten",
     "paused": "Gepauzeerd, tik om verder te gaan"
+  },
+  "dailyReminder": {
+    "title": "Dagelijkse soera-herinnering",
+    "description": "Elke ochtend een rustige melding met een soera om naar te luisteren.",
+    "body": "Soera van de dag: {{name}}. Tik om te luisteren.",
+    "denied": "Meldingen zijn uitgeschakeld voor deze app. Zet ze aan in de systeeminstellingen.",
+    "turnOn": "Aanzetten"
   }
 }

@@ -822,5 +822,12 @@
     "retry": "Tekrar dene",
     "close": "Kapat",
     "paused": "Duraklatıldı, devam etmek için dokunun"
+  },
+  "dailyReminder": {
+    "title": "Günlük sure hatırlatıcısı",
+    "description": "Her sabah dinlemeniz için bir sure içeren hafif bir bildirim.",
+    "body": "Günün suresi: {{name}}. Dinlemek için dokunun.",
+    "denied": "Bu uygulama için bildirimler kapalı. Sistem ayarlarından açın.",
+    "turnOn": "Aç"
   }
 }

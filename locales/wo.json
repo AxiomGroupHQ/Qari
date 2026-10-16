@@ -829,5 +829,12 @@
     "retry": "Jéemaat",
     "close": "Tëj",
     "paused": "Taxawal nañ ko, laal ngir kontine"
+  },
+  "dailyReminder": {
+    "title": "Fàttali bu sura bu bés bu nekk",
+    "description": "Ndaje bu dëgër bu suba bu nekk ak sura ngir déglu.",
+    "body": "Sura bi tey: {{name}}. Laal ngir déglu.",
+    "denied": "Yégle yi dañu ko tëj ci app bii. Ubbil ko ci settings systèm bi.",
+    "turnOn": "Ubbil"
   }
 }

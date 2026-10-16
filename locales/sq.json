@@ -822,5 +822,12 @@
     "retry": "Provo përsëri",
     "close": "Mbyll",
     "paused": "Në pauzë, trokit për të vazhduar"
+  },
+  "dailyReminder": {
+    "title": "Kujtesë ditore me një sure",
+    "description": "Çdo mëngjes një njoftim i butë me një sure për t'u dëgjuar.",
+    "body": "Sureja e ditës: {{name}}. Prek për të dëgjuar.",
+    "denied": "Njoftimet janë çaktivizuar për këtë aplikacion. Aktivizoji te cilësimet e sistemit.",
+    "turnOn": "Aktivizo"
   }
 }

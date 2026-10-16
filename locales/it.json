@@ -829,5 +829,12 @@
     "retry": "Riprova",
     "close": "Chiudi",
     "paused": "In pausa, tocca per riprendere"
+  },
+  "dailyReminder": {
+    "title": "Promemoria quotidiano della sura",
+    "description": "Ogni mattina una notifica discreta con una sura da ascoltare.",
+    "body": "Sura del giorno: {{name}}. Tocca per ascoltare.",
+    "denied": "Le notifiche sono disattivate per questa app. Attivale nelle impostazioni di sistema.",
+    "turnOn": "Attiva"
   }
 }

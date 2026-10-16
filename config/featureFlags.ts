@@ -24,6 +24,7 @@ export const featureFlags = {
   sleepTimer: true,
   sharedPlaylists: true,
   carDisplay: true,
+  dailyReminder: true,
 } as const;
 
 export type FeatureFlag = keyof typeof featureFlags;

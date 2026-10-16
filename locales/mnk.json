@@ -822,5 +822,12 @@
     "retry": "A ɲini kasoto",
     "close": "A datu",
     "paused": "A jɔɔra, i ka digi ka taa a ye"
+  },
+  "dailyReminder": {
+    "title": "Sura donna-donna lakaamaŋ",
+    "description": "Subaa o subaa, jooni dooxulu sura la a lamɛndi kama.",
+    "body": "Bi sura: {{name}}. A digi ka a lamɛn.",
+    "denied": "Jooni dooxulu bɛ a maŋ app in na. A dayi sistɛmu ɲɛfɔlu kɔnɔ.",
+    "turnOn": "A dayi"
   }
 }

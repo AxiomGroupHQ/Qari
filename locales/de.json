@@ -822,5 +822,12 @@
     "retry": "Erneut versuchen",
     "close": "Schließen",
     "paused": "Pausiert, zum Fortsetzen tippen"
+  },
+  "dailyReminder": {
+    "title": "Tägliche Sure als Erinnerung",
+    "description": "Jeden Morgen eine sanfte Benachrichtigung mit einer Sure zum Anhören.",
+    "body": "Sure des Tages: {{name}}. Tippe zum Anhören.",
+    "denied": "Benachrichtigungen sind für diese App ausgeschaltet. Aktiviere sie in den Systemeinstellungen.",
+    "turnOn": "Einschalten"
   }
 }

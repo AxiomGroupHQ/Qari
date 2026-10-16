@@ -815,5 +815,12 @@
     "retry": "Cuba lagi",
     "close": "Tutup",
     "paused": "Dijeda, ketik untuk menyambung"
+  },
+  "dailyReminder": {
+    "title": "Peringatan surah harian",
+    "description": "Pemberitahuan lembut setiap pagi dengan satu surah untuk didengar.",
+    "body": "Surah hari ini: {{name}}. Ketik untuk mendengar.",
+    "denied": "Pemberitahuan dimatikan untuk aplikasi ini. Hidupkannya dalam tetapan sistem.",
+    "turnOn": "Hidupkan"
   }
 }

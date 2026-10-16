@@ -829,5 +829,12 @@
     "retry": "Réessayer",
     "close": "Fermer",
     "paused": "En pause, touchez pour reprendre"
+  },
+  "dailyReminder": {
+    "title": "Rappel quotidien de sourate",
+    "description": "Chaque matin, une notification discrète avec une sourate à écouter.",
+    "body": "Sourate du jour : {{name}}. Touchez pour écouter.",
+    "denied": "Les notifications sont désactivées pour cette app. Activez-les dans les réglages du système.",
+    "turnOn": "Activer"
   }
 }

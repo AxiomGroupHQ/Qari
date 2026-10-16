@@ -822,5 +822,12 @@
     "retry": "Qayta urinish",
     "close": "Yopish",
     "paused": "To‘xtatildi, davom ettirish uchun bosing"
+  },
+  "dailyReminder": {
+    "title": "Kundalik sura eslatmasi",
+    "description": "Har ertalab tinglash uchun sura bilan yumshoq bildirishnoma.",
+    "body": "Bugungi sura: {{name}}. Tinglash uchun bosing.",
+    "denied": "Bu ilova uchun bildirishnomalar o‘chirilgan. Ularni tizim sozlamalarida yoqing.",
+    "turnOn": "Yoqish"
   }
 }

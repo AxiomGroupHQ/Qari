@@ -17,6 +17,7 @@ import {
   View,
   Text,
   Platform,
+  Alert,
   ActivityIndicator,
   StatusBar as RNStatusBar,
   Appearance,
@@ -24,6 +25,12 @@ import {
   type AppStateStatus,
 } from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
+import {useDailyReminderStore} from '@/store/dailyReminderStore';
+import {
+  enableDailyReminders,
+  scheduleDailyReminders,
+} from '@/services/dailyReminder';
+import {isFeatureEnabled} from '@/config/featureFlags';
 import {ThemeProvider} from '@react-navigation/native';
 import {PlayerSheet} from '@/components/player/v2/PlayerSheet';
 import {
@@ -327,6 +334,33 @@ function RootLayout() {
 
     setupNavigationBar();
   }, [theme.colors.background, isDarkMode]);
+
+  // Daily surah reminder: refresh the next two weeks on launch; on the second
+  // launch offer it once. It only turns on if the user says yes AND the OS
+  // permission is granted.
+  useEffect(() => {
+    if (!appIsReady || Platform.OS === 'web') return;
+    if (!isFeatureEnabled('dailyReminder')) return;
+    const st = useDailyReminderStore.getState();
+    st.countLaunch();
+    if (st.enabled) {
+      scheduleDailyReminders();
+      return;
+    }
+    if (!st.offered && st.launches >= 1) {
+      useDailyReminderStore.getState().markOffered();
+      Alert.alert(t('dailyReminder.title'), t('dailyReminder.description'), [
+        {text: t('common.cancel'), style: 'cancel'},
+        {
+          text: t('dailyReminder.turnOn'),
+          onPress: async () => {
+            const ok = await enableDailyReminders();
+            useDailyReminderStore.getState().setEnabled(ok);
+          },
+        },
+      ]);
+    }
+  }, [appIsReady]);
 
   // Handle share intent (uploads from other apps)
   useEffect(() => {

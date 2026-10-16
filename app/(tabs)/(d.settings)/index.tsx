@@ -33,6 +33,13 @@ import {ThemePicker} from '@/components/settings/ThemePicker';
 import branding from '@/config/branding';
 import {t} from '@/i18n';
 import {dirIcon} from '@/i18n/direction';
+import {Alert, Platform} from 'react-native';
+import {isFeatureEnabled} from '@/config/featureFlags';
+import {useDailyReminderStore} from '@/store/dailyReminderStore';
+import {
+  cancelDailyReminders,
+  enableDailyReminders,
+} from '@/services/dailyReminder';
 
 // User-facing settings copy only; Quran text and religious content are untouched.
 
@@ -270,6 +277,21 @@ export default function SettingsScreen() {
   const glassColorScheme = useGlassColorScheme();
   const {showFloatingDevMenu, toggleFloatingDevMenu} = useDevSettingsStore();
 
+  const reminderOn = useDailyReminderStore(st => st.enabled);
+  const setReminderOn = useDailyReminderStore(st => st.setEnabled);
+  const showReminder =
+    Platform.OS !== 'web' && isFeatureEnabled('dailyReminder');
+  const onReminderChange = async (value: boolean) => {
+    if (!value) {
+      setReminderOn(false);
+      await cancelDailyReminders();
+      return;
+    }
+    const ok = await enableDailyReminders();
+    setReminderOn(ok);
+    if (!ok) Alert.alert(t('dailyReminder.title'), t('dailyReminder.denied'));
+  };
+
   const iconColor = theme.colors.text;
   const chevronColor = theme.colors.textSecondary;
 
@@ -406,6 +428,38 @@ export default function SettingsScreen() {
             )}
           </View>
         ))}
+
+        {showReminder && (
+          <View style={styles.section}>
+            {renderCard(
+              <View style={styles.settingsRow}>
+                <View style={styles.settingsItemIcon}>
+                  <Feather
+                    name="bell"
+                    size={moderateScale(20)}
+                    color={iconColor}
+                  />
+                </View>
+                <View style={styles.settingsTextContainer}>
+                  <Text style={styles.settingsTitle}>
+                    {t('dailyReminder.title')}
+                  </Text>
+                  <Text style={styles.settingsDescription}>
+                    {t('dailyReminder.description')}
+                  </Text>
+                </View>
+                <Switch
+                  value={reminderOn}
+                  onValueChange={onReminderChange}
+                  trackColor={trackColor}
+                  thumbColor="#FFFFFF"
+                  ios_backgroundColor={trackColor.false}
+                  style={styles.switchStyle}
+                />
+              </View>,
+            )}
+          </View>
+        )}
 
         {/* Developer Section */}
         {__DEV__ && (

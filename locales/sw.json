@@ -822,5 +822,12 @@
     "retry": "Jaribu tena",
     "close": "Funga",
     "paused": "Imesitishwa, gusa kuendelea"
+  },
+  "dailyReminder": {
+    "title": "Ukumbusho wa kila siku wa sura",
+    "description": "Arifa nyepesi kila asubuhi yenye sura ya kusikiliza.",
+    "body": "Sura ya leo: {{name}}. Gusa ili kusikiliza.",
+    "denied": "Arifa zimezimwa kwa programu hii. Ziwashe katika mipangilio ya mfumo.",
+    "turnOn": "Washa"
   }
 }

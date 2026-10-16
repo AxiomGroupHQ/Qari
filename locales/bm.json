@@ -821,5 +821,12 @@
     "retry": "A tɛmɛ tuma wɛrɛ",
     "close": "A datugu",
     "paused": "A jɔra, i bɛ digi walasa ka taa a fɛ"
+  },
+  "dailyReminder": {
+    "title": "Sura dɔgɔkun ka hakilijigin",
+    "description": "Sɔgɔmada o sɔgɔmada, sura min ka kan ka lamɛn, o ka kunnafoni nɔgɔman.",
+    "body": "Bi ka sura: {{name}}. Digi ka lamɛn.",
+    "denied": "Kunnafoni dɔ finiwere nin app in na. A da sɛtiniw la.",
+    "turnOn": "A da"
   }
 }

@@ -822,5 +822,12 @@
     "retry": "Mar kale isku day",
     "close": "Xidh",
     "paused": "Waa la hakiyay, taabo si aad u sii wadato"
+  },
+  "dailyReminder": {
+    "title": "Xusuusinta suurada maalinlaha ah",
+    "description": "Ogeysiis jilicsan subax kasta oo leh suurad la dhegeysto.",
+    "body": "Suuradda maanta: {{name}}. Taabo si aad u dhegeysato.",
+    "denied": "Ogeysiisyada waa laga damiyay app-kan. Ka shid dejinta nidaamka.",
+    "turnOn": "Shid"
   }
 }

@@ -829,5 +829,12 @@
     "retry": "Încearcă din nou",
     "close": "Închide",
     "paused": "În pauză, atinge pentru a continua"
+  },
+  "dailyReminder": {
+    "title": "Memento zilnic cu o sură",
+    "description": "În fiecare dimineață, o notificare discretă cu o sură de ascultat.",
+    "body": "Sura zilei: {{name}}. Atinge pentru a asculta.",
+    "denied": "Notificările sunt dezactivate pentru această aplicație. Activează-le din setările sistemului.",
+    "turnOn": "Activează"
   }
 }

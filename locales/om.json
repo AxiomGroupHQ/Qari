@@ -829,5 +829,12 @@
     "retry": "Irra deebi'ii yaali",
     "close": "Cufi",
     "paused": "Dhaabbateera, itti fufuuf tuqi"
+  },
+  "dailyReminder": {
+    "title": "Yaadachiisa suuraa guyyaa guyyaa",
+    "description": "Ganama ganama beeksisa laafaa suuraa dhaggeeffachuuf.",
+    "body": "Suuraan har'aa: {{name}}. Dhaggeeffachuuf tuqi.",
+    "denied": "Beeksisni app kanaaf cufameera. Qindaa'ina sirnaa keessatti bani.",
+    "turnOn": "Bani"
   }
 }
