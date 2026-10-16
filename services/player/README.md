@@ -88,7 +88,7 @@ interface UnifiedPlayerState {
 Key actions:
 
 - `play()`, `pause()`, `skipToNext()`, `skipToPrevious()`
-- `updateQueue(tracks, startIndex)` — replaces queue and starts playback
+- `updateQueue(tracks, startIndex)` - replaces queue and starts playback
 - `addToQueue(tracks)`, `removeFromQueue(index)`, `moveInQueue(from, to)`
 - `seekTo(position)`, `setRate(rate)`, `setRepeatMode(mode)`
 - `setSleepTimer(durationMs)`, `clearSleepTimer()`
@@ -156,7 +156,7 @@ The Mushaf reader uses `MushafAudioService` for verse-by-verse playback, coordin
 
 ## Further reading
 
-- [docs/features/player.md](../../docs/features/player.md) — full player feature documentation
-- [docs/features/downloads.md](../../docs/features/downloads.md) — offline download system
-- [docs/architecture/current-state.md](../../docs/architecture/current-state.md) — full architecture overview
+- [docs/features/player.md](../../docs/features/player.md) - full player feature documentation
+- [docs/features/downloads.md](../../docs/features/downloads.md) - offline download system
+- [docs/architecture/current-state.md](../../docs/architecture/current-state.md) - full architecture overview
 

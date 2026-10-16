@@ -2,16 +2,15 @@
 
 ## Supported versions
 
-We accept security reports for the latest released version of Bayaan.
+We accept security reports for the latest released version of Istima.
 
 ## Reporting a vulnerability
 
 **Please do not open a public GitHub issue for security vulnerabilities.**
 
-If you find a security issue, report it through one of these channels:
+If you find a security issue, report it privately:
 
-1. **GitHub private security advisory (preferred):** Go to the [Security tab](https://github.com/thebayaan/Bayaan/security/advisories/new) of this repository and open a private advisory.
-2. **Email:** Send details to `security@thebayaan.com`.
+Email app@istima.app, or use the **Security** tab of this repository to open a private advisory.
 
 We will acknowledge your report within **72 hours** and aim to release a fix within **14 days** for confirmed critical issues.
 
@@ -44,7 +43,7 @@ Open a regular GitHub issue for:
 
 ## Scope
 
-This policy covers the Bayaan mobile app (`com.bayaan.app`). The backend API (`api.thebayaan.com`) is hosted infrastructure and may have a separate responsible disclosure process.
+This policy covers the Istima mobile and web app (`com.istima.app`).
 
 ## Out of scope
 

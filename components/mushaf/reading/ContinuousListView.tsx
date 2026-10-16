@@ -113,7 +113,7 @@ function getPageForVerse(verseKey: string): number | null {
     for (let page = 1; page <= 604; page++) {
       const keys = mushafVerseMapService.getOrderedVerseKeysForPage(page);
       for (const key of keys) {
-        // First occurrence wins — a verse spanning two pages maps to its start page
+        // First occurrence wins - a verse spanning two pages maps to its start page
         if (!verseToPageMap.has(key)) {
           verseToPageMap.set(key, page);
         }

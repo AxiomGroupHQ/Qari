@@ -47,10 +47,10 @@ export default function AboutScreen() {
           <View style={styles.section}>
             <Text style={styles.contentHeading}>Alhamdulillah</Text>
             <Text style={styles.bodyText}>
-              All praise is due to Allah. ISTIMA — استماع — is a place to
-              listen, reflect, and strengthen your connection with the Quran.
-              Built for the Ummah by Halalweb, it brings Quran recitation,
-              reading, and learning together in one calm space.
+              All praise is due to Allah. ISTIMA, استماع, is a place to listen,
+              reflect, and strengthen your connection with the Quran. Built for
+              the Ummah by Halalweb, it brings Quran recitation, reading, and
+              learning together in one calm space.
             </Text>
           </View>
 

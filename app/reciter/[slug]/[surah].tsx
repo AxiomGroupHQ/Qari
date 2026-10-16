@@ -65,7 +65,7 @@ export default function RecitationDeepLinkReceiver(): React.ReactElement {
         try {
           await usePlayerStore.getState().seekTo(tSec);
         } catch {
-          // Seek failures are non-fatal — playback still starts at 0.
+          // Seek failures are non-fatal - playback still starts at 0.
         }
       }
 

@@ -23,7 +23,7 @@ export type RewayahId =
   | 'qalun'
   | 'al-duri-abi-amr'
   | 'al-susi'
-  // 12 without DK data (taxonomy only — audio works, text preview unavailable)
+  // 12 without DK data (taxonomy only - audio works, text preview unavailable)
   | 'hisham'
   | 'ibn-dhakwan'
   | 'khalaf-an-hamzah'
@@ -64,7 +64,7 @@ export const ALL_REWAYAH_IDS: readonly RewayahId[] = [
 
 // Maps the kebab ids from data/rewayat.ts's REWAYAT_REGISTRY (e.g. "hafs-an-assem")
 // to our RewayahId slug. Anything not in this table (e.g. the combined
-// "rowis-rawh-an-yakoob" field recording) returns null — callers fall back to
+// "rowis-rawh-an-yakoob" field recording) returns null - callers fall back to
 // 'hafs' for display purposes.
 const CANONICAL_ID_TO_REWAYAH_ID: Readonly<Record<string, RewayahId>> = {
   'hafs-an-assem': 'hafs',
@@ -87,7 +87,7 @@ const CANONICAL_ID_TO_REWAYAH_ID: Readonly<Record<string, RewayahId>> = {
   'ruwais-an-yaqub': 'ruwais',
   'idris-an-khalaf': 'idris',
   'ishaq-an-khalaf': 'ishaq',
-  // 'rowis-rawh-an-yakoob' intentionally omitted — combined field recording,
+  // 'rowis-rawh-an-yakoob' intentionally omitted - combined field recording,
   // not a distinct rewayah. resolveRewayahFromName returns null; callers
   // fall back to 'hafs' display text.
 };
@@ -106,7 +106,7 @@ export function resolveRewayahFromName(
   return CANONICAL_ID_TO_REWAYAH_ID[entry.id] ?? null;
 }
 
-// Resolve from a full canonical registry entry — avoids a double lookup when
+// Resolve from a full canonical registry entry - avoids a double lookup when
 // the caller already has the entry in hand.
 export function resolveRewayahFromEntry(
   entry: RewayatEntry | null | undefined,
@@ -190,7 +190,7 @@ export function getShortLabel(id: RewayahId): string {
   return t(`rewayah.short.${id}`, {defaultValue: SHORT_LABELS[id]});
 }
 
-// Long labels — the "Student 'an Teacher" form used in the mushaf
+// Long labels - the "Student 'an Teacher" form used in the mushaf
 // settings picker. Kept as ASCII (matches the rest of the app's rewayah
 // copy). Used where the picker UI needs to disambiguate transmitters.
 const LONG_LABELS: Readonly<Record<RewayahId, string>> = {
@@ -230,11 +230,11 @@ const DESCRIPTIONS: Readonly<Record<RewayahId, string>> = {
   'al-bazzi':
     'Meccan transmission from Ibn Kathir, read throughout Mecca and Yemen',
   qunbul: 'The second Meccan transmission from Ibn Kathir',
-  warsh: "Medinan transmission from Nafi' — dominant across North Africa",
+  warsh: "Medinan transmission from Nafi' - dominant across North Africa",
   qalun:
-    "The second Medinan transmission from Nafi' — read in Libya and parts of Tunisia",
+    "The second Medinan transmission from Nafi' - read in Libya and parts of Tunisia",
   'al-duri-abi-amr':
-    'Basran transmission from Abu Amr — common in Sudan and parts of West Africa',
+    'Basran transmission from Abu Amr - common in Sudan and parts of West Africa',
   'al-susi': 'The second Basran transmission from Abu Amr',
   hisham: 'Damascene transmission from Ibn Amir',
   'ibn-dhakwan': 'The second Damascene transmission from Ibn Amir',
@@ -259,7 +259,7 @@ export function getDescription(id: RewayahId): string {
 // Convenience for display sites that hold an API `rewayat` record: maps
 // the record's free-form `name` through the canonical resolver and
 // returns our short label when we recognize it. Falls back to the raw
-// name when we don't — so rewayat not yet in the canonical registry
+// name when we don't - so rewayat not yet in the canonical registry
 // (forward-compat with the server adding new ones, or reciter profile
 // picker showing tariq-aliased variants we want to pass through) still
 // render something sensible instead of disappearing. Prefer this
@@ -293,7 +293,7 @@ export const PERSISTED_ID_MIGRATIONS: Readonly<Record<string, RewayahId>> = {
 };
 
 // Map any persisted string (possibly an old pre-canonical slug) to a valid
-// RewayahId. Returns 'hafs' for unrecognized inputs — the conservative
+// RewayahId. Returns 'hafs' for unrecognized inputs - the conservative
 // default, mirrors the existing fallback behavior for un-stamped annotations.
 export function migratePersistedId(persisted: string): RewayahId {
   const mapped = PERSISTED_ID_MIGRATIONS[persisted];

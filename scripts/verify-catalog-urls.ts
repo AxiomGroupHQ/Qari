@@ -11,7 +11,7 @@
  * Why this exists:
  *   HEAD-200 with Content-Type: audio/mpeg is necessary but NOT sufficient.
  *   A misconfigured upload pipeline can place M4A or WAV bytes at .mp3 keys
- *   with the right Content-Type — every HEAD request returns 200, but iOS
+ *   with the right Content-Type - every HEAD request returns 200, but iOS
  *   silently rejects the file at playback time. Fetching the first 64 bytes
  *   via Range and asserting MP3 magic catches the codec mismatch class
  *   directly.
@@ -105,11 +105,11 @@ function headRequest(
 /**
  * Fetches the first 64 bytes of the URL via Range request and returns the
  * detected audio format from magic bytes. Some CDNs ignore Range and return
- * the full body; that's fine — we destroy the response once we have enough.
+ * the full body; that's fine - we destroy the response once we have enough.
  *
  * Note: `http.request` does not follow 3xx redirects. A catalog URL that
  * 301/302s to the canonical asset will be reported as a failure here. That
- * is the intended behavior for a verifier — the catalog should reference
+ * is the intended behavior for a verifier - the catalog should reference
  * canonical URLs directly.
  */
 function sniffFirstBytes(url: string): Promise<AudioFormat> {
@@ -132,7 +132,7 @@ function sniffFirstBytes(url: string): Promise<AudioFormat> {
             if (received >= 64) res.destroy();
           }
         });
-        // Only listen on `'close'` — fires both on natural end-of-stream and
+        // Only listen on `'close'` - fires both on natural end-of-stream and
         // on the `res.destroy()` above, so it's a strict superset of `'end'`.
         // Avoids the (harmless but unclean) double-resolve when both events
         // fire after destroy.
@@ -280,7 +280,7 @@ async function main() {
           status !== 200
             ? `HTTP ${status}`
             : `bad content-type: ${contentType}`;
-        console.log(`  ✗ ${label} — ${reason}`);
+        console.log(`  ✗ ${label} - ${reason}`);
         failures.push(`${url} → ${reason}`);
       } else if (sniff) {
         const fmt = await sniffFirstBytes(url);
@@ -290,7 +290,7 @@ async function main() {
         } else {
           failed++;
           const reason = `magic-byte mismatch: declared audio/mpeg but bytes are ${fmt}`;
-          console.log(`  ✗ ${label} — ${reason}`);
+          console.log(`  ✗ ${label} - ${reason}`);
           failures.push(`${url} → ${reason}`);
         }
       } else {
@@ -300,7 +300,7 @@ async function main() {
     } catch (e) {
       failed++;
       const reason = e instanceof Error ? e.message : String(e);
-      console.log(`  ✗ ${label} — ${reason}`);
+      console.log(`  ✗ ${label} - ${reason}`);
       failures.push(`${url} → ${reason}`);
     }
 

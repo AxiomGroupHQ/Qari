@@ -1,6 +1,6 @@
 # Contributing to Istima
 
-Thank you for contributing to Bayaan. This guide covers everything you need to get the app running locally, follow the project's code standards, and submit a pull request.
+Thank you for contributing to Istima. This guide covers everything you need to get the app running locally, follow the project's code standards, and submit a pull request.
 
 ---
 
@@ -30,8 +30,8 @@ Thank you for contributing to Bayaan. This guide covers everything you need to g
 ### Clone and install
 
 ```bash
-git clone https://github.com/thebayaan/Bayaan.git
-cd Istima
+git clone https://github.com/AxiomGroupHQ/Qari.git
+cd Qari
 npm install
 ```
 
@@ -59,20 +59,20 @@ cp .env.example .env
 | `EXPO_PUBLIC_POSTHOG_API_KEY`     | No       | PostHog analytics. Blank = analytics disabled.                                     |
 | `EXPO_PUBLIC_SENTRY_DSN`          | No       | Sentry crash reporting. Blank = Sentry skipped entirely, including build plugin.   |
 | `EXPO_PUBLIC_ANALYTICS_ENABLED`   | No       | `false` to disable all analytics/crash reporting. Defaults to enabled.             |
-| `SUPABASE_URL`                    | No       | Legacy — only needed if working on Supabase-dependent features.                    |
-| `SUPABASE_ANON_KEY`               | No       | Legacy — same as above.                                                            |
+| `SUPABASE_URL`                    | No       | Legacy - only needed if working on Supabase-dependent features.                    |
+| `SUPABASE_ANON_KEY`               | No       | Legacy - same as above.                                                            |
 
 
 ### API key for development
 
-The app works out of the box with bundled reciter data — no API key required for most development work. Leave `EXPO_PUBLIC_ISTIMA_API_KEY` blank and the app will use the fallback data under `data/reciters-fallback.json`.
+The app works out of the box with bundled reciter data - no API key required for most development work. Leave `EXPO_PUBLIC_ISTIMA_API_KEY` blank and the app will use the fallback data under `data/reciters-fallback.json`.
 
-The bundled fallback ships **224 reciters sourced from public CDNs** (`mp3quran.net`, `quranicaudio.com`). It is a curated subset of the full catalogue — reciters that were only available via private hosts (R2, Supabase) are excluded, and reciter images are omitted. Live verse-sync timestamps are also unavailable for fallback reciters. This is intentional: forks can build and demo without depending on the maintainer's infrastructure.
+The bundled fallback ships **224 reciters sourced from public CDNs** (`mp3quran.net`, `quranicaudio.com`). It is a curated subset of the full catalogue - reciters that were only available via private hosts (R2, Supabase) are excluded, and reciter images are omitted. Live verse-sync timestamps are also unavailable for fallback reciters. This is intentional: forks can build and demo without depending on the maintainer's infrastructure.
 
 If you are working on a feature that needs the live reciter catalogue, timestamp service, or other backend-only data, request a rate-limited **community key** by opening an issue titled "Community API key request". Then set:
 
 ```
-EXPO_PUBLIC_ISTIMA_API_URL=https://api.thebayaan.com
+EXPO_PUBLIC_ISTIMA_API_URL=https://iapi.istima.app
 EXPO_PUBLIC_ISTIMA_API_KEY=<community key>
 ```
 
@@ -80,11 +80,11 @@ EXPO_PUBLIC_ISTIMA_API_KEY=<community key>
 
 The app is designed to run with zero setup against bundled data. To run your own fork against your own infrastructure:
 
-1. **Apple / iOS signing** — set `APPLE_TEAM_ID` to your own Apple Developer Team ID, then run `npx expo prebuild --clean` to regenerate the Xcode project with your team baked in.
-2. **EAS Build / OTA** — create your own EAS project (`eas init`), then set `EXPO_PUBLIC_EAS_PROJECT_ID` to the UUID. Leaving this blank disables OTA entirely so your users don't phone home anywhere.
-3. **Deep links** — set `EXPO_PUBLIC_ASSOCIATED_DOMAIN` to a domain you control and host the corresponding `.well-known/apple-app-site-association` / `assetlinks.json`. Leave blank to skip deep-link registration.
-4. **Privacy policy** — `EXPO_PUBLIC_PRIVACY_POLICY_URL` must point at a page you publish before submitting to either store.
-5. **Bundle identifier** — rename `com.bayaan.app` in `app.config.js` and `android/app/build.gradle` to something you own.
+1. **Apple / iOS signing** - set `APPLE_TEAM_ID` to your own Apple Developer Team ID, then run `npx expo prebuild --clean` to regenerate the Xcode project with your team baked in.
+2. **EAS Build / OTA** - create your own EAS project (`eas init`), then set `EXPO_PUBLIC_EAS_PROJECT_ID` to the UUID. Leaving this blank disables OTA entirely so your users don't phone home anywhere.
+3. **Deep links** - set `EXPO_PUBLIC_ASSOCIATED_DOMAIN` to a domain you control and host the corresponding `.well-known/apple-app-site-association` / `assetlinks.json`. Leave blank to skip deep-link registration.
+4. **Privacy policy** - `EXPO_PUBLIC_PRIVACY_POLICY_URL` must point at a page you publish before submitting to either store.
+5. **Bundle identifier** - rename `com.istima.app` in `app.config.js` and `android/app/build.gradle` to something you own.
 
 ---
 
@@ -135,7 +135,7 @@ The version displayed in `app.config.js` is derived at build time by `scripts/ge
    git tag -l 'v*' | xargs git tag -d   # remove upstream tags locally
    git tag v1.0.0                       # or whatever starting version makes sense
    ```
-2. `npm run version:patch/minor/major` computes the next version from the current tag and creates a new `vX.Y.Z` tag. It does **not** push — run `git push origin vX.Y.Z` when you're ready.
+2. `npm run version:patch/minor/major` computes the next version from the current tag and creates a new `vX.Y.Z` tag. It does **not** push - run `git push origin vX.Y.Z` when you're ready.
 3. Your Android `versionCode` will diverge from upstream because your commit count differs. That's fine for a separate Play Store listing; just don't try to upload to the same store listing as upstream.
 4. Shallow CI clones (the default for `actions/checkout@v4`) may miss tags; pass `fetch-depth: 0` or set the `BUILD_NUMBER` env var to get deterministic values.
 
@@ -154,7 +154,7 @@ Both checks must pass with no new errors.
 
 ### TypeScript
 
-- Strict mode is on — no `any` types
+- Strict mode is on - no `any` types
 - Use interfaces for props and state shapes
 - Prefer `React.FC<Props>` for functional components
 - Avoid enums; use const maps instead
@@ -165,17 +165,17 @@ Both checks must pass with no new errors.
 // 1. Props interface
 interface MyComponentProps {
   title: string;
-  onPress: () => void;
+  onPress:  => void;
 }
 
 // 2. Component
 export const MyComponent: React.FC<MyComponentProps> = ({ title, onPress }) => {
   // 3. Hooks at the top
-  const theme = useTheme();
+  const theme = useTheme;
 
   // 4. Handlers in the middle
-  const handlePress = useCallback(() => {
-    onPress();
+  const handlePress = useCallback( => {
+    onPress;
   }, [onPress]);
 
   // 5. Return at the bottom
@@ -189,16 +189,16 @@ export const MyComponent: React.FC<MyComponentProps> = ({ title, onPress }) => {
 
 ### Key rules
 
-- Use `Pressable` instead of `TouchableOpacity` — the opacity flash on tap is unwanted
+- Use `Pressable` instead of `TouchableOpacity` - the opacity flash on tap is unwanted
 - Use `FlashList` from `@shopify/flash-list` instead of `FlatList` or `SectionList`
 - Use `expo-image` instead of the built-in `Image` component
-- Avoid `useEffect`/`useState` when possible — prefer Zustand stores and context
+- Avoid `useEffect`/`useState` when possible - prefer Zustand stores and context
 - Use `usePlayerActions` for audio controls, not the deprecated `useUnifiedPlayer`
 - Name variables/functions camelCase, components PascalCase, directories lowercase-with-hyphens
 
 ### Scripts: common pitfalls
 
-When writing Node scripts under `scripts/` that shell out to binaries (`ffmpeg`, `sharp`, `imagemagick`, etc.), avoid passing large binary buffers via `child_process.spawnSync(cmd, args, { input: bigBuffer })`. Once `input` exceeds the OS pipe buffer (~64 KB on macOS / Linux), `spawnSync` deadlocks: the child blocks waiting for stdin to drain while Node blocks waiting for the child to exit. The script appears to "succeed" — the child emits a tiny empty output and no error is raised — which makes the failure mode silent and easy to ship.
+When writing Node scripts under `scripts/` that shell out to binaries (`ffmpeg`, `sharp`, `imagemagick`, etc.), avoid passing large binary buffers via `child_process.spawnSync(cmd, args, { input: bigBuffer })`. Once `input` exceeds the OS pipe buffer (~64 KB on macOS / Linux), `spawnSync` deadlocks: the child blocks waiting for stdin to drain while Node blocks waiting for the child to exit. The script appears to "succeed" - the child emits a tiny empty output and no error is raised - which makes the failure mode silent and easy to ship.
 
 Safer pattern: write the input to a temp file, pass the path as an argument, and clean up in `finally`:
 
@@ -208,7 +208,7 @@ import { writeFileSync, unlinkSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
-const tmp = join(tmpdir(), `script-${process.pid}-${Date.now()}.bin`);
+const tmp = join(tmpdir, `script-${process.pid}-${Date.now()}.bin`);
 writeFileSync(tmp, bigBuffer);
 try {
   spawnSync('ffmpeg', ['-i', tmp, /* ... */ outPath], { stdio: 'inherit' });
@@ -217,7 +217,7 @@ try {
 }
 ```
 
-For streaming use cases, prefer the async `spawn` with an explicit `child.stdin.end(buffer)` and an awaited `'close'` event — `spawnSync` is the wrong primitive for >64 KB of stdin. See the [Node `child_process` docs](https://nodejs.org/api/child_process.html#child_processspawnsynccommand-args-options) for the underlying buffer behavior.
+For streaming use cases, prefer the async `spawn` with an explicit `child.stdin.end(buffer)` and an awaited `'close'` event - `spawnSync` is the wrong primitive for >64 KB of stdin. See the [Node `child_process` docs](https://nodejs.org/api/child_process.html#child_processspawnsynccommand-args-options) for the underlying buffer behavior.
 
 ---
 
@@ -245,9 +245,9 @@ The app uses an alpha-based color system derived from `theme.colors.text` and `t
 
 ```tsx
 {
-  backgroundColor: Color(theme.colors.text).alpha(0.04).toString(),
+  backgroundColor: Color(theme.colors.text).alpha(0.04).toString,
   borderWidth: 1,
-  borderColor: Color(theme.colors.text).alpha(0.06).toString(),
+  borderColor: Color(theme.colors.text).alpha(0.06).toString,
   borderRadius: moderateScale(14),
   overflow: 'hidden',
 }
@@ -264,7 +264,7 @@ AI tools (Cursor, Copilot, Claude, etc.) are welcome and encouraged. See [docs/c
 **Summary:**
 
 - All AI-generated code blocks must be marked with `// @ai` at the end of the line (single line) or `// @ai-start` / `// @ai-end` comments wrapping a block
-- You are responsible for every line you submit — review and understand AI output before pushing
+- You are responsible for every line you submit - review and understand AI output before pushing
 - The PR template includes an AI disclosure checkbox
 
 ### Forks and Claude Code tooling
@@ -314,11 +314,11 @@ Full architecture documentation: [docs/architecture/current-state.md](docs/archi
    git checkout -b feature/your-feature-name
   ```
 2. **Branch naming conventions:**
-  - `feature/description` — new feature
-  - `fix/description` — bug fix
-  - `chore/description` — tooling, dependencies, cleanup
-  - `docs/description` — documentation only
-  - `rfc/NNN-short-title` — Architectural RFC (see [Architectural RFCs](#architectural-rfcs) below)
+  - `feature/description` - new feature
+  - `fix/description` - bug fix
+  - `chore/description` - tooling, dependencies, cleanup
+  - `docs/description` - documentation only
+  - `rfc/NNN-short-title` - Architectural RFC (see [Architectural RFCs](#architectural-rfcs) below)
 3. **Before submitting:**
   ```bash
    npx prettier --write .
@@ -326,7 +326,7 @@ Full architecture documentation: [docs/architecture/current-state.md](docs/archi
    # Test on iOS and Android
   ```
 4. **Open a PR targeting `develop`** with a clear description of what changed and why.
-5. **Keep PRs focused** — one feature or fix per PR. Large scope changes are harder to review and more likely to introduce regressions.
+5. **Keep PRs focused** - one feature or fix per PR. Large scope changes are harder to review and more likely to introduce regressions.
 
 ### Commit message format
 
@@ -345,7 +345,7 @@ Do not include AI tool names or attributions in commit messages.
 
 ## Architectural RFCs
 
-Larger architectural changes — extracting modules into packages, defining cross-cutting interfaces, modifying governance — go through a lightweight RFC process before implementation lands.
+Larger architectural changes - extracting modules into packages, defining cross-cutting interfaces, modifying governance - go through a lightweight RFC process before implementation lands.
 
 An RFC PR adds a single document under [`docs/rfcs/`](docs/rfcs/) using the [template](docs/rfcs/000-template.md) and may include scaffolding the design enables (new types, contract test fixtures, CI workflow files) as long as no existing service behavior changes. Refactors of existing code land in named follow-up PRs that reference the merged RFC.
 

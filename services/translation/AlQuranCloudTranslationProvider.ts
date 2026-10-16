@@ -5,7 +5,7 @@ import type {
 import type {TranslationProvider} from '@/types/TranslationProvider';
 
 /**
- * RFC-009 — Istima's default `TranslationProvider`, backed by the
+ * RFC-009 - Istima's default `TranslationProvider`, backed by the
  * alQuran.cloud aggregator API. Extracted verbatim from the former
  * `TranslationApiService` class body; behaviour is unchanged.
  */
@@ -59,7 +59,7 @@ class AlQuranCloudTranslationProvider implements TranslationProvider {
     // Match the provider contract: every returned edition has a
     // non-undefined `direction`. The /edition endpoint sometimes omits it
     // (and the response is cast unsafely from `unknown`), so default by
-    // language — consistent with `fetchFullTranslation`'s normalization.
+    // language - consistent with `fetchFullTranslation`'s normalization.
     return json.data.map(edition => ({
       ...edition,
       direction:

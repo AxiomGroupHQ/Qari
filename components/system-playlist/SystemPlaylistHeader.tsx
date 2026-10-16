@@ -82,7 +82,7 @@ export const SystemPlaylistHeader: React.FC<SystemPlaylistHeaderProps> = ({
   return (
     <View style={styles.headerContainer}>
       <View style={[styles.contentArea, isGlass && styles.contentAreaIOS]}>
-        {/* Back Button — Android only, iOS uses native header */}
+        {/* Back Button - Android only, iOS uses native header */}
         {!isGlass && (
           <Pressable
             style={styles.backButton}

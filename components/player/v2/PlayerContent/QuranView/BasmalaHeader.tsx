@@ -135,7 +135,7 @@ function getOrBuildBasmala(
   return basmalaCache;
 }
 
-// Fixed size for basmallah — always renders at the default (level 5) size,
+// Fixed size for basmallah - always renders at the default (level 5) size,
 // independent of the user's arabic font size preference.
 const BASMALA_FONT_SIZE = 26;
 
@@ -175,7 +175,7 @@ const BasmalaHeader: React.FC<BasmalaHeaderProps> = ({
     ? styles.container
     : [styles.container, styles.hidden];
 
-  // Skia rendering path — width is known synchronously, cache returns instantly on surah change
+  // Skia rendering path - width is known synchronously, cache returns instantly on surah change
   if (fontMgr && width > 0) {
     const {paragraph, strokeParagraph, height, xPos, maxWidth} =
       getOrBuildBasmala(
@@ -191,7 +191,7 @@ const BasmalaHeader: React.FC<BasmalaHeaderProps> = ({
         allahNameHighlightColor,
       );
     // Extra horizontal room so the basm glyph isn't clipped at canvas edges.
-    // V2 font renders a wider basm glyph — scale padding with width for larger devices.
+    // V2 font renders a wider basm glyph - scale padding with width for larger devices.
     const hPad = Math.max(moderateScale(16), width * 0.06);
     return (
       <View style={containerStyle}>

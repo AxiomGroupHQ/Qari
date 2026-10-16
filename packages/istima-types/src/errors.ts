@@ -6,9 +6,9 @@
  * IstimaAudioError` (domain marker), never on `error.message`.
  *
  * Two categories by handling:
- *   - Recoverable (`recoverable: true`) — flow through callback ports
+ *   - Recoverable (`recoverable: true`) - flow through callback ports
  *     (`onError` callbacks); service continues to function.
- *   - Non-recoverable (`recoverable: false`) — thrown synchronously from the
+ *   - Non-recoverable (`recoverable: false`) - thrown synchronously from the
  *     offending method; signal a programming error (lifecycle violation,
  *     precondition failure).
  */

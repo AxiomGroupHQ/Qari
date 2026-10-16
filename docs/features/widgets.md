@@ -4,8 +4,7 @@
 **Priority:** Medium
 **Complexity:** High
 **Created:** 2026-02-21
-**GitHub Issue:** [#126](https://github.com/thebayaan/Bayaan/issues/126)
-**Related:** [Shareable Deep Links (#117)](https://github.com/thebayaan/Bayaan/issues/117), [Cloud Sync (#120)](https://github.com/thebayaan/Bayaan/issues/120)
+**Related:** Shareable Deep Links (#117), Cloud Sync (#120)
 
 ## Overview
 
@@ -13,7 +12,7 @@ Build native home screen widgets for iOS (WidgetKit + SwiftUI) and Android (App 
 
 ## Widget Catalog
 
-### Tier 1 — High Value, Low Complexity
+### Tier 1 - High Value, Low Complexity
 
 #### 1. Now Playing / Continue Listening
 - Shows currently playing or last played surah, reciter name, and progress
@@ -33,10 +32,10 @@ Build native home screen widgets for iOS (WidgetKit + SwiftUI) and Android (App 
 
 #### 4. Last Read (Mushaf Bookmark)
 - Shows last mushaf page and surah name from `mushafSessionStore.getLastReadPage()` (MMKV-backed)
-- "Continue reading" — one tap opens mushaf where the user left off
+- "Continue reading" - one tap opens mushaf where the user left off
 - Uses `mushafSettingsStore.recentPages` for additional context
 
-### Tier 2 — Medium Complexity
+### Tier 2 - Medium Complexity
 
 #### 5. Adhkar (Morning/Evening)
 - Auto-switches between morning and evening adhkar based on time of day
@@ -58,7 +57,7 @@ Build native home screen widgets for iOS (WidgetKit + SwiftUI) and Android (App 
 - Quick-access grid of loved recitations
 - Tap to play directly
 
-### Tier 3 — High Complexity / High Delight
+### Tier 3 - High Complexity / High Delight
 
 #### 9. Juz Tracker / Khatma Progress
 - Circular progress ring: "12/30 Juz completed"
@@ -66,17 +65,17 @@ Build native home screen widgets for iOS (WidgetKit + SwiftUI) and Android (App 
 - Requires new tracking logic (does not exist yet)
 
 #### 10. Live Tasbeeh Counter
-- Interactive widget — tap to increment counter on home screen without opening app
+- Interactive widget - tap to increment counter on home screen without opening app
 - Shows current dhikr text, count, and target
 - iOS 17+ interactive widgets support this; Android has always supported it
 
 #### 11. Prayer Time + Suggested Adhkar
 - Shows next prayer time (requires prayer time calculation or API)
 - Suggests relevant adhkar for the time of day
-- Larger scope — may warrant its own feature
+- Larger scope - may warrant its own feature
 
 #### 12. Random Reciter Discovery
-- "Listen to someone new" — random reciter with photo and name
+- "Listen to someone new" - random reciter with photo and name
 - Tap to browse their surahs
 - Refreshes daily or on tap
 
@@ -87,12 +86,12 @@ Build native home screen widgets for iOS (WidgetKit + SwiftUI) and Android (App 
 Widgets are a **separate Xcode target** written in Swift/SwiftUI, not part of the React Native bundle.
 
 **Data sharing:**
-- App Group container (`group.com.bayaan.app`) shared between RN app and widget extension
-- RN app writes to `UserDefaults(suiteName: "group.com.bayaan.app")` or a shared SQLite file
+- App Group container (`group.com.istima.app`) shared between RN app and widget extension
+- RN app writes to `UserDefaults(suiteName: "group.com.istima.app")` or a shared SQLite file
 - Widget reads from the same App Group on timeline refresh
 
 **Update model:**
-- Timeline-based — widget provides a `TimelineProvider` with scheduled entries
+- Timeline-based - widget provides a `TimelineProvider` with scheduled entries
 - RN app triggers timeline reload via `WidgetCenter.shared.reloadAllTimelines()` when state changes
 
 **Interactivity (iOS 17+):**
@@ -142,10 +141,10 @@ Since widgets are native code, integration with the Expo/RN project requires:
 3. **Deep links** via existing `bayaan://` scheme bring users back into the RN app
 
 **Community packages:**
-- `@bittingz/expo-widgets` — Expo config plugin that scaffolds iOS and Android widget targets
-- `expo-apple-targets` — Adds arbitrary Apple extension targets to an Expo project
-- `react-native-android-widget` — Write Android widget UI in JS via Jetpack Glance
-- `react-native-shared-group-preferences` — Read/write to App Group UserDefaults from RN
+- `@bittingz/expo-widgets` - Expo config plugin that scaffolds iOS and Android widget targets
+- `expo-apple-targets` - Adds arbitrary Apple extension targets to an Expo project
+- `react-native-android-widget` - Write Android widget UI in JS via Jetpack Glance
+- `react-native-shared-group-preferences` - Read/write to App Group UserDefaults from RN
 
 ### Existing Data Sources
 
@@ -159,26 +158,26 @@ Since widgets are native code, integration with the Expo/RN project requires:
 | Listening Stats | `playCountStore` | Yes (counts only, no duration) |
 | Playlist | `PlaylistService` (SQLite) | Yes |
 | Favorites | `favoriteRecitersStore`, loved tracks | Yes |
-| Juz Tracker | — | No (needs new tracking) |
+| Juz Tracker | - | No (needs new tracking) |
 | Tasbeeh Counter | `adhkarStore.dhikrCounts` | Partial |
-| Prayer Times | — | No (needs calculation/API) |
+| Prayer Times | - | No (needs calculation/API) |
 
 ## Implementation Phases
 
-1. **Phase 1:** Shared data bridge — native module to write player/mushaf state to App Group (iOS) and SharedPreferences (Android)
-2. **Phase 2:** Now Playing widget (both platforms) — exercises the full pattern
-3. **Phase 3:** Last Read + Quick Play widgets — reuse the same bridge
+1. **Phase 1:** Shared data bridge - native module to write player/mushaf state to App Group (iOS) and SharedPreferences (Android)
+2. **Phase 2:** Now Playing widget (both platforms) - exercises the full pattern
+3. **Phase 3:** Last Read + Quick Play widgets - reuse the same bridge
 4. **Phase 4:** Daily Verse + Adhkar widgets
-5. **Phase 5:** Interactive widgets (play/pause, tasbeeh counter) — iOS 17+ and Android
+5. **Phase 5:** Interactive widgets (play/pause, tasbeeh counter) - iOS 17+ and Android
 
 ## Files Likely Affected
 
-- `app.config.js` — Config plugin for widget targets, App Group entitlement
-- New: `plugins/withWidgets.js` — Expo config plugin for widget setup
-- New: `ios/BayaanWidgets/` — Swift/SwiftUI widget extension
-- New: `android/app/src/main/java/.../widgets/` — Kotlin widget provider
-- New: `services/widget/WidgetBridge.ts` — RN → native shared storage bridge
-- Existing stores (`playerStore`, `mushafSettingsStore`, `playCountStore`) — add write-to-widget-storage side effects
+- `app.config.js` - Config plugin for widget targets, App Group entitlement
+- New: `plugins/withWidgets.js` - Expo config plugin for widget setup
+- New: `ios/BayaanWidgets/` - Swift/SwiftUI widget extension
+- New: `android/app/src/main/java/.../widgets/` - Kotlin widget provider
+- New: `services/widget/WidgetBridge.ts` - RN → native shared storage bridge
+- Existing stores (`playerStore`, `mushafSettingsStore`, `playCountStore`) - add write-to-widget-storage side effects
 
 ## Open Questions
 

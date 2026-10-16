@@ -3,11 +3,11 @@
 **Status:** Implemented
 **Last updated:** 2026-02-11
 **Implementation files:**
-- `services/mushaf/MushafLayoutCacheService.ts` — singleton service, MMKV read/write, precomputation
-- `services/mushaf/JustificationService.ts` — `getCachedPageLayout()` checks in-memory then MMKV
-- `components/mushaf/skia/SkiaPage.tsx` — simplified layout resolution (no async, no pre-warming)
-- `components/mushaf/main.tsx` — simplified surah navigation (no precompute call)
-- `services/AppInitializer.ts` — registers cache service at priority 8
+- `services/mushaf/MushafLayoutCacheService.ts` - singleton service, MMKV read/write, precomputation
+- `services/mushaf/JustificationService.ts` - `getCachedPageLayout()` checks in-memory then MMKV
+- `components/mushaf/skia/SkiaPage.tsx` - simplified layout resolution (no async, no pre-warming)
+- `components/mushaf/main.tsx` - simplified surah navigation (no precompute call)
+- `services/AppInitializer.ts` - registers cache service at priority 8
 
 ---
 
@@ -27,9 +27,9 @@ All 604 Uthmani page layouts are precomputed once per font family (DigitalKhattV
 
 ### Cache Layers (checked in order by `getCachedPageLayout`)
 
-1. **In-memory `pageLayoutsCache`** — Map, ~0.001ms
-2. **MMKV** — synchronous read, ~1ms (on MMKV hit, also populates in-memory cache)
-3. **On-demand compute** — `JustService.getPageLayout()`, 20-100ms (first-launch fallback only)
+1. **In-memory `pageLayoutsCache`** - Map, ~0.001ms
+2. **MMKV** - synchronous read, ~1ms (on MMKV hit, also populates in-memory cache)
+3. **On-demand compute** - `JustService.getPageLayout()`, 20-100ms (first-launch fallback only)
 
 ### Precomputation Flow
 

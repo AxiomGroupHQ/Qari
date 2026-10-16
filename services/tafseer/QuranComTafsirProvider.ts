@@ -2,7 +2,7 @@ import type {TafseerEdition, TafseerVerse} from '@/types/tafseer';
 import type {TafsirProvider} from '@/types/TafsirProvider';
 
 /**
- * RFC-009 — Istima's default `TafsirProvider`, backed by the
+ * RFC-009 - Istima's default `TafsirProvider`, backed by the
  * api.quran.com (Quran.com / QF) public API. Extracted verbatim from the
  * former `TafseerApiService` class body; behaviour is unchanged.
  */

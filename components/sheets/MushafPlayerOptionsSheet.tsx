@@ -140,7 +140,7 @@ const AnimatedChevron: React.FC<{expanded: boolean; color: string}> = ({
 };
 
 // ---------------------------------------------------------------------------
-// FadedScrollList — fixed-height scrollable area with bottom fade
+// FadedScrollList - fixed-height scrollable area with bottom fade
 // ---------------------------------------------------------------------------
 const ACCORDION_MAX_HEIGHT = ms(240);
 
@@ -191,7 +191,7 @@ export const MushafPlayerOptionsSheet = (
     ? `${storeRangeEnd.surah}:${storeRangeEnd.ayah}`
     : (pageVerseKeys[pageVerseKeys.length - 1] ?? '1:7');
 
-  // Local state — applied only on "Play Audio"
+  // Local state - applied only on "Play Audio"
   const [startVerseKey, setStartVerseKey] = useState(defaultStart);
   const [endVerseKey, setEndVerseKey] = useState(defaultEnd);
   const [selectedRewayatId, setSelectedRewayatId] = useState<string | null>(
@@ -200,7 +200,7 @@ export const MushafPlayerOptionsSheet = (
   const [selectedReciterName, setSelectedReciterName] = useState<string | null>(
     storeReciterName,
   );
-  // Speed binds directly to the store via `storeRate` below — no local
+  // Speed binds directly to the store via `storeRate` below - no local
   // mirror. The previous useState(storeRate) latched at mount, which
   // raced AsyncStorage rehydration: chip showed 1x regardless of the
   // persisted value, and Play wrote that stale 1x back to the store.
@@ -640,7 +640,7 @@ export const MushafPlayerOptionsSheet = (
         </View>
       </ScrollView>
 
-      {/* Sticky Play Audio CTA — pinned outside scroll */}
+      {/* Sticky Play Audio CTA - pinned outside scroll */}
       <View
         style={[styles.stickyFooter, {paddingBottom: insets.bottom + ms(4)}]}>
         <Pressable

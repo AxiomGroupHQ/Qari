@@ -1,11 +1,11 @@
 # RFC-015: Timestamp CDN base seam (`branding.timestampCdnBase`)
 
-**Status:** Proposed (combined doc + code PR — small surface, single-line
+**Status:** Proposed (combined doc + code PR - small surface, single-line
 change at the consumer, low shape risk).
 **Authors:** Omar Zarka (Qariah)
-**Targets:** `thebayaan/Bayaan` `develop`
-**Related:** PR `thebayaan/Bayaan#278` (merged 2026-05-22) — timestamps R2
-mirror feature that introduced the hardcoded `cdn.thebayaan.com` URL base
+**Targets:** `this repository` `develop`
+**Related:** PR `this repository#278` (merged 2026-05-22) - timestamps R2
+mirror feature that introduced the hardcoded `iapi.istima.app` URL base
 this RFC lifts.
 
 ---
@@ -17,20 +17,20 @@ URL in the timestamps fetch service:
 
 ```ts
 // services/timestamps/TimestampFetchService.ts:5
-const R2_BASE = 'https://cdn.thebayaan.com/timestamps';
+const R2_BASE = 'https://iapi.istima.app/timestamps';
 ```
 
 Forks that want to mirror ayah-timestamp JSONs to their own R2 bucket are
-forced to shadow the entire file today — there is no seam to swap just the
+forced to shadow the entire file today - there is no seam to swap just the
 URL base. This RFC adds an optional `branding.timestampCdnBase?: string`
 field; when absent, the consumer applies
-`?? 'https://cdn.thebayaan.com/timestamps'` and Istima's behavior is
+`?? 'https://iapi.istima.app/timestamps'` and Istima's behavior is
 preserved byte-equivalent. When set, the consumer reads the fork's URL.
 
 The change is two files (`config/branding.d.ts` + `services/timestamps/TimestampFetchService.ts`)
 totaling under 15 lines. No new infrastructure, no API surface beyond a
 single optional string field. Same shape as RFC-010
-(`branding.catalogVersionEndpoint`) — combined doc + code PR is appropriate.
+(`branding.catalogVersionEndpoint`) - combined doc + code PR is appropriate.
 
 ---
 
@@ -45,14 +45,14 @@ options, all bad:
 2. **Patch the constant at build time** (e.g. a CI-side `sed`). Brittle,
    invisible to fork maintainers reading the code, and a footgun for
    anyone running the app locally.
-3. **Override the field on `branding` and pray.** Doesn't work — the
+3. **Override the field on `branding` and pray.** Doesn't work - the
    constant captures the literal at module load and never re-reads.
 
 A single optional config field absorbs all forks at one declaration site.
 
 ### Why now
 
-Qariah-side timestamp mirroring is about to ramp up — TECH_DEBT #36
+Qariah-side timestamp mirroring is about to ramp up - TECH_DEBT #36
 (timing data for non-Zaynab reciters) tracks the work. Filing this RFC
 preemptively so the seam is in place before the first Qariah-side mirror
 upload happens, rather than racing the fork against a stuck-on-the-wrong-CDN
@@ -77,7 +77,7 @@ export interface Branding {
    * `TimestampFetchService` constructs).
    *
    * Field absent → consumer applies
-   * `?? 'https://cdn.thebayaan.com/timestamps'` at the call site →
+   * `?? 'https://iapi.istima.app/timestamps'` at the call site →
    * byte-equivalent to today's behavior.
    *
    * Forks set this to their own mirror's base when the
@@ -92,7 +92,7 @@ export interface Branding {
 
 ### `config/branding.js` (Istima default)
 
-Field omitted. The `?? 'https://cdn.thebayaan.com/timestamps'` fallback at
+Field omitted. The `?? 'https://iapi.istima.app/timestamps'` fallback at
 the consumer site preserves Istima's behavior verbatim. Zero diff to
 `config/branding.js` in the Istima distribution.
 
@@ -104,9 +104,9 @@ the consumer site preserves Istima's behavior verbatim. Zero diff to
  import {timestampDatabaseService} from './TimestampDatabaseService';
  import type {AyahTimestamp} from '@/types/timestamps';
 
--const R2_BASE = 'https://cdn.thebayaan.com/timestamps';
+-const R2_BASE = 'https://iapi.istima.app/timestamps';
 +const R2_BASE =
-+  branding.timestampCdnBase ?? 'https://cdn.thebayaan.com/timestamps';
++  branding.timestampCdnBase ?? 'https://iapi.istima.app/timestamps';
 ```
 
 The fallback is folded into the module-scope constant, evaluated once at
@@ -121,7 +121,7 @@ TimestampFetchService import + R2_BASE line). No new files.
 ## Migration / default behavior
 
 **Istima:** no change. Field absent → fallback fires → URL is
-`https://cdn.thebayaan.com/timestamps`. Zero action required; byte-equivalent
+`https://iapi.istima.app/timestamps`. Zero action required; byte-equivalent
 to today.
 
 **Forks opting in:** declare the field once in `config/branding.js` with the
@@ -133,7 +133,7 @@ TimestampFetchService constructs (already documented in PR #278's RFC text).
 
 ## Open questions
 
-1. **Field name shape — single field vs nested `timestamps` sub-object.**
+1. **Field name shape - single field vs nested `timestamps` sub-object.**
    `timestampCdnBase` is the smallest API surface today. If future timestamp
    configuration grows (e.g. CDN auth, per-rewaya overrides), the natural
    evolution is a `timestamps: {cdnBase: '...', ...}` sub-object. This RFC
@@ -155,7 +155,7 @@ TimestampFetchService constructs (already documented in PR #278's RFC text).
 ### Environment variable (e.g. `EXPO_PUBLIC_TIMESTAMP_CDN_BASE`)
 
 Rejected. Env vars get embedded into the app bundle at build time, so
-ergonomics are identical to a branding field — but env vars are typed
+ergonomics are identical to a branding field - but env vars are typed
 `string | undefined` with no documentation surface and no
 fork-discoverability, and they spread brand-specific configuration across
 the env layer instead of consolidating it under `branding`.
@@ -194,17 +194,17 @@ shape:
   `timestampCdnBase: 'https://new.qariah-storage.xyz/timestamps'`.
 - `services/timestamps/TimestampFetchService.ts` consumes the seam with the
   `?? upstream URL` fallback (this PR's exact change).
-- Qariah's branding-conformance lint allowlist keeps the file allowlisted —
-  the literal `cdn.thebayaan.com` fallback string is intentional per the
+- Qariah's branding-conformance lint allowlist keeps the file allowlisted -
+  the literal `iapi.istima.app` fallback string is intentional per the
   RFC contract.
 
 ---
 
 ## Cross-references
 
-- PR #278 — `feature/timestamps-r2-mirror` (merged 2026-05-22). Introduced
+- PR #278 - `feature/timestamps-r2-mirror` (merged 2026-05-22). Introduced
   the hardcoded URL this RFC lifts.
-- RFC-010 — `branding.catalogVersionEndpoint` (similar shape: optional
+- RFC-010 - `branding.catalogVersionEndpoint` (similar shape: optional
   string field with inline fallback).
-- RFC-014 — recent seam pattern reference (same combined doc+code pattern
+- RFC-014 - recent seam pattern reference (same combined doc+code pattern
   when shape risk is low).

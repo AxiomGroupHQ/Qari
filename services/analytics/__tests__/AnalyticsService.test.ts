@@ -48,7 +48,7 @@ async function loadService(envEnabled: string | undefined): Promise<{
   mockStorage.clear();
 
   const mod = require('../AnalyticsService');
-  // Initialize while the env flag is still set — the service latches `enabled`
+  // Initialize while the env flag is still set - the service latches `enabled`
   // inside initialize(), so the env var is only read once.
   await mod.analyticsService.initialize();
   if (original === undefined) {

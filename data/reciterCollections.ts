@@ -1,7 +1,7 @@
 import {RECITERS, Reciter} from './reciterData';
 import {useTimestampStore} from '@/store/timestampStore';
 
-// Featured Reciters - Spotlight reciters chosen by Bayaan
+// Featured Reciters - Spotlight reciters chosen by Istima
 const FEATURED_RECITER_NAMES = [
   'Abdullah Qarafi',
   'Bandar Balilah',
@@ -22,8 +22,8 @@ const TRENDING_RECITER_NAMES = [
   'Abdullah Al-Johany',
 ];
 
-// Bayaan Originals - Exclusive recitations curated by Bayaan
-const BAYAAN_ORIGINALS_RECITER_NAMES = [
+// Istima Originals - Exclusive recitations curated by Istima
+const ISTIMA_ORIGINALS_RECITER_NAMES = [
   'Albaraa Basfar',
   'Hazem Hassan',
   'Mohammed Hamed',
@@ -107,7 +107,7 @@ function findReciterByName(name: string): Reciter | undefined {
 }
 
 /**
- * Gets featured reciters chosen by Bayaan to spotlight
+ * Gets featured reciters chosen by Istima to spotlight
  */
 export function getFeaturedReciters(count?: number): Reciter[] {
   const reciters = FEATURED_RECITER_NAMES.map(findReciterByName).filter(
@@ -127,10 +127,10 @@ export function getTrendingReciters(count?: number): Reciter[] {
 }
 
 /**
- * Gets Bayaan's exclusive curated recitations
+ * Gets Istima's exclusive curated recitations
  */
-export function getBayaanOriginalsReciters(count?: number): Reciter[] {
-  const reciters = BAYAAN_ORIGINALS_RECITER_NAMES.map(findReciterByName).filter(
+export function getIstimaOriginalsReciters(count?: number): Reciter[] {
+  const reciters = ISTIMA_ORIGINALS_RECITER_NAMES.map(findReciterByName).filter(
     (reciter): reciter is Reciter => reciter !== undefined,
   );
   return count ? reciters.slice(0, count) : reciters;
@@ -192,7 +192,7 @@ export function getReciterCollection(
   collectionName:
     | 'featured'
     | 'trending'
-    | 'bayaan-originals'
+    | 'istima-originals'
     | 'tajweed'
     | 'memorization'
     | 'beginner-friendly'
@@ -204,8 +204,8 @@ export function getReciterCollection(
       return getFeaturedReciters(count);
     case 'trending':
       return getTrendingReciters(count);
-    case 'bayaan-originals':
-      return getBayaanOriginalsReciters(count);
+    case 'istima-originals':
+      return getIstimaOriginalsReciters(count);
     case 'tajweed':
       return getTajweedReciters(count);
     case 'memorization':

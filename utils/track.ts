@@ -211,7 +211,7 @@ export function createUserUploadTrack(recitation: UploadedRecitation): Track {
 
 /**
  * Placeholder Reciter used for uploads that aren't tagged to a system reciter.
- * Uses the first system reciter as a shell — the card will show uploadArtist/uploadTitle instead.
+ * Uses the first system reciter as a shell - the card will show uploadArtist/uploadTitle instead.
  */
 const UPLOAD_PLACEHOLDER_RECITER: Reciter = {
   ...RECITERS[0],

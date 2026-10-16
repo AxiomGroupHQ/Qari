@@ -2,7 +2,7 @@ import branding from '@/config/branding';
 import {alQuranCloudTranslationProvider} from './AlQuranCloudTranslationProvider';
 
 /**
- * RFC-009 — translation source resolver.
+ * RFC-009 - translation source resolver.
  *
  * `translationApiService` resolves to the fork-supplied
  * `branding.translationProvider` when set, otherwise to Istima's default

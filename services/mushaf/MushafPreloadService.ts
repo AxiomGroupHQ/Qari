@@ -154,7 +154,7 @@ class MushafPreloadService {
       }
     } catch (error) {
       // Any pre-font init step rejected (hydration, DK init, diff load). The
-      // outer init must NOT swallow the rejection silently — surface it as
+      // outer init must NOT swallow the rejection silently - surface it as
       // `failed` so subscribers render the fallback rather than a blank UI.
       failed = true;
       console.warn('[MushafPreload] Initialization failed:', error);
@@ -205,7 +205,7 @@ class MushafPreloadService {
 
     // Fallback retry path: serialize the load with `await` between each
     // typeface registration. The original symptom Osman reviewed was
-    // "Couldn't create typeface for SurahNameV4" — parallel typeface
+    // "Couldn't create typeface for SurahNameV4" - parallel typeface
     // registration is the root cause, so the retry forces strict serial
     // ordering. If the retry also fails, `_fontMgr` stays null and
     // `_doInit` flips state to 'failed' so consumers know not to wait
@@ -257,7 +257,7 @@ class MushafPreloadService {
 
       // Only publish if every critical family registered AND at least one
       // typeface landed. A zero-typeface provider is a non-null empty
-      // object — assigning it would pass `_doInit`'s null-guard, flip
+      // object - assigning it would pass `_doInit`'s null-guard, flip
       // `_state` to 'ready' with `loadError === false`, and the hook's
       // fallback (`useFonts`) would never fire. Result: every consumer
       // gets the empty provider, every Mushaf surface renders blank, no

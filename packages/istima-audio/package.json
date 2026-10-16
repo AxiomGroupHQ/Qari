@@ -1,8 +1,8 @@
 {
   "name": "@istima/audio",
   "version": "0.1.0",
-  "description": "Audio playback ports and adapters for the Bayaan platform.",
-  "license": "AGPL-3.0-or-later",
+  "description": "Audio playback ports and adapters for the Istima app.",
+  "license": "UNLICENSED",
   "private": true,
   "main": "./src/index.ts",
   "types": "./src/index.ts",

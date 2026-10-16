@@ -6,7 +6,7 @@ Istima welcomes AI-assisted development. This document explains the project's po
 
 ## Policy
 
-**AI tools are allowed and encouraged.** There is no stigma attached to using AI assistance — the goal is good, working, well-understood code, not handwritten code for its own sake.
+**AI tools are allowed and encouraged.** There is no stigma attached to using AI assistance - the goal is good, working, well-understood code, not handwritten code for its own sake.
 
 **You own everything you submit.** Using an AI tool does not transfer responsibility. If AI-generated code breaks something, introduces a bug, or violates a convention, that is the contributor's responsibility to catch before the PR is opened. Every line in your PR should be code you understand.
 
@@ -59,7 +59,7 @@ When reviewing a PR with AI-marked code, reviewers should:
 - Check that the logic is actually correct for the use case, not just syntactically valid
 - Verify that the code follows project conventions (Pressable not TouchableOpacity, FlashList not FlatList, `usePlayerActions` not `useUnifiedPlayer`, etc.)
 - Confirm that any AI-generated types match the actual data shapes in `types/`
-- Not assume AI-generated code was tested — ask if it is unclear
+- Not assume AI-generated code was tested - ask if it is unclear
 
 ---
 

@@ -1,15 +1,15 @@
 import type {TafseerEdition, TafseerVerse} from '@/types/tafseer';
 
 /**
- * RFC-009 — pluggable tafsir source.
+ * RFC-009 - pluggable tafsir source.
  *
  * A `TafsirProvider` supplies the editions list and full-tafsir download
- * used by Settings → Tafsir. Bayaan's default is the api.quran.com-backed
+ * used by Settings → Tafsir. The default is the api.quran.com-backed
  * `QuranComTafsirProvider`; a fork can override it via
  * `branding.tafsirProvider`.
  *
  * The SQLite cache layer (`tafseerDbService`) sits outside this contract
- * — providers return in-memory `{edition, verses}` only.
+ * - providers return in-memory `{edition, verses}` only.
  */
 export interface TafsirProvider {
   /** Lists every tafsir edition the provider can serve. */

@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Migrate all audio URLs to Cloudflare R2 (`cdn.example.com`), then build shareable deep links on `app.thebayaan.com` with auto-play, verse sharing, and rich OG previews.
+**Goal:** Migrate all audio URLs to Cloudflare R2 (`cdn.example.com`), then build shareable deep links on `istima.app` with auto-play, verse sharing, and rich OG previews.
 
 **Architecture:** DB migration script updates 243 rewayat server URLs through the backend admin API. App-side changes bust cached data and add slug resolution. Share link receiver screens use Expo Router file-based routing, resolving slugs client-side from in-memory reciter data. Backend serves OG cards for bot crawlers and redirects humans to app stores.
 
@@ -11,8 +11,8 @@
 **Spec:** `docs/superpowers/specs/2026-04-10-r2-cutover-and-share-links-design.md`
 
 **Repos:**
-- App: `/Users/osmansaeday/theBayaan/Bayaan`
-- Backend: `/Users/osmansaeday/theBayaan/bayaan-backend`
+- App: `/Users/osmansaeday/theIstima/Istima`
+- Backend: `/Users/osmansaeday/theIstima/istima-backend`
 
 ---
 
@@ -26,7 +26,7 @@
 - [ ] **Step 1: Extract file from R2 POC branch**
 
 ```bash
-cd /Users/osmansaeday/theBayaan/Bayaan
+cd /Users/osmansaeday/theIstima/Istima
 git show feature/r2-audio-poc:data/rewayat-slugs.json > data/rewayat-slugs.json
 ```
 
@@ -49,14 +49,14 @@ Expected: `Rewayat mappings: 29`, `Style mappings: 8`, `Structure OK`
 - [ ] **Step 3: Verify all DB rewayat names are covered**
 
 ```bash
-curl -s "https://bayaan-backend-production.up.railway.app/v1/reciters?page=1&limit=200" \
+curl -s "https://istima-backend-production.up.railway.app/v1/reciters?page=1&limit=200" \
   -H "Authorization: Bearer $(grep EXPO_PUBLIC_BAYAAN_API_KEY .env | cut -d= -f2)" | \
 python3 -c "
 import json, sys
 slugs = json.load(open('data/rewayat-slugs.json'))
 data = json.load(sys.stdin)
-missing_names = set()
-missing_styles = set()
+missing_names = set
+missing_styles = set
 for r in data.get('data', []):
     for rw in r.get('rewayat', []):
         if rw['name'] not in slugs['rewayat']:
@@ -69,7 +69,7 @@ if not missing_names and not missing_styles: print('All names and styles covered
 "
 ```
 
-Expected: `All names and styles covered` — if any are missing, add them to the JSON before proceeding.
+Expected: `All names and styles covered` - if any are missing, add them to the JSON before proceeding.
 
 - [ ] **Step 4: Commit**
 
@@ -94,7 +94,7 @@ This script updates every rewayat row's `server` column to the R2 CDN URL via th
 // Run with: npx tsx scripts/migrate-rewayat-to-r2.ts
 //
 // Env vars required:
-//   BAYAAN_API_URL - backend URL (e.g., https://bayaan-backend-production.up.railway.app)
+//   BAYAAN_API_URL - backend URL (e.g., https://istima-backend-production.up.railway.app)
 //   BAYAAN_API_KEY - API key for GET /v1/reciters
 //   ADMIN_EMAIL    - admin login email
 //   ADMIN_PASSWORD - admin login password
@@ -138,7 +138,7 @@ async function getAdminToken(): Promise<string> {
     body: JSON.stringify({ email: ADMIN_EMAIL, password: ADMIN_PASSWORD }),
   });
   if (!res.ok) throw new Error(`Admin login failed: ${res.status} ${await res.text()}`);
-  const json = await res.json();
+  const json = await res.json;
   return json.data.token;
 }
 
@@ -150,7 +150,7 @@ async function fetchAllReciters(): Promise<Reciter[]> {
       headers: { 'Authorization': `Bearer ${API_KEY}` },
     });
     if (!res.ok) throw new Error(`Fetch reciters failed: ${res.status}`);
-    const json = await res.json();
+    const json = await res.json;
     allReciters.push(...(json.data ?? []));
     if (!json.meta?.total_pages || page >= json.meta.total_pages) break;
     page++;
@@ -188,7 +188,7 @@ async function updateRewayat(
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token}`,
     },
-    body: JSON.stringify({ server, source_type: 'bayaan' }),
+    body: JSON.stringify({ server, source_type: 'istima' }),
   });
   return res.ok;
 }
@@ -213,8 +213,8 @@ async function fixBadSurahList(
 async function main(): Promise<void> {
   console.log(DRY_RUN ? '=== DRY RUN ===' : '=== LIVE MIGRATION ===');
 
-  let token = await getAdminToken();
-  const reciters = await fetchAllReciters();
+  let token = await getAdminToken;
+  const reciters = await fetchAllReciters;
 
   let updated = 0;
   let skipped = 0;
@@ -277,9 +277,9 @@ async function main(): Promise<void> {
         console.log(`  UPDATED ${reciter.name} / ${rw.name}: → ${r2Url}`);
         updated++;
       } else {
-        // May be JWT expired — re-auth and retry once
+        // May be JWT expired - re-auth and retry once
         try {
-          token = await getAdminToken();
+          token = await getAdminToken;
           const retry = await updateRewayat(rw.id, r2Url, token);
           if (retry) {
             console.log(`  UPDATED (retry) ${reciter.name} / ${rw.name}: → ${r2Url}`);
@@ -307,7 +307,7 @@ async function main(): Promise<void> {
   }
 }
 
-main().catch(err => {
+main.catch(err => {
   console.error('Migration failed:', err);
   process.exit(1);
 });
@@ -316,7 +316,7 @@ main().catch(err => {
 - [ ] **Step 2: Run in dry-run mode**
 
 ```bash
-BAYAAN_API_URL=https://bayaan-backend-production.up.railway.app \
+BAYAAN_API_URL=https://istima-backend-production.up.railway.app \
 BAYAAN_API_KEY=$(grep EXPO_PUBLIC_BAYAAN_API_KEY .env | cut -d= -f2) \
 ADMIN_EMAIL=<your-admin-email> \
 ADMIN_PASSWORD=<your-admin-password> \
@@ -332,7 +332,7 @@ If the dry-run reports missing names or styles, add them to `data/rewayat-slugs.
 - [ ] **Step 4: Run live migration**
 
 ```bash
-BAYAAN_API_URL=https://bayaan-backend-production.up.railway.app \
+BAYAAN_API_URL=https://istima-backend-production.up.railway.app \
 BAYAAN_API_KEY=$(grep EXPO_PUBLIC_BAYAAN_API_KEY .env | cut -d= -f2) \
 ADMIN_EMAIL=<your-admin-email> \
 ADMIN_PASSWORD=<your-admin-password> \
@@ -344,7 +344,7 @@ Expected: All rewayat updated (except those already on R2). Summary shows 0 fail
 - [ ] **Step 5: Verify migration by spot-checking the API**
 
 ```bash
-curl -s "https://bayaan-backend-production.up.railway.app/v1/reciters?page=1&limit=5" \
+curl -s "https://istima-backend-production.up.railway.app/v1/reciters?page=1&limit=5" \
   -H "Authorization: Bearer $(grep EXPO_PUBLIC_BAYAAN_API_KEY .env | cut -d= -f2)" | \
 python3 -c "
 import json, sys
@@ -379,7 +379,7 @@ git commit -m "chore: add R2 migration script for rewayat server URLs"
 In `services/dataService.ts`, change line 14:
 
 ```typescript
-const DATA_VERSION = '4'; // Increment: R2 migration — bust cached mp3quran/Supabase URLs
+const DATA_VERSION = '4'; // Increment: R2 migration - bust cached mp3quran/Supabase URLs
 ```
 
 - [ ] **Step 2: Add `getReciterBySlug` to dataService**
@@ -399,7 +399,7 @@ In `services/player/store/playerStore.ts`, find the persist middleware `onRehydr
 Find the `persist` config (around the `STORAGE_KEY` usage) and add an `onRehydrateStorage` callback that clears stale URLs:
 
 ```typescript
-onRehydrateStorage: () => (state) => {
+onRehydrateStorage:  => (state) => {
   if (!state) return;
   const tracks = state.queue?.tracks ?? [];
   const hasStaleUrls = tracks.some(
@@ -424,7 +424,7 @@ Expected: No new errors.
 
 ```bash
 git add services/dataService.ts services/player/store/playerStore.ts
-git commit -m "feat: R2 backwards compatibility — bust cached URLs and add slug lookup"
+git commit -m "feat: R2 backwards compatibility - bust cached URLs and add slug lookup"
 ```
 
 ---
@@ -444,7 +444,7 @@ Play audio from:
 2. A former Supabase reciter (e.g., Mohammed Jibreel)
 3. A reciter that was already on R2 (e.g., one of the 14 already migrated)
 
-Verify audio plays correctly for each. Check the console logs for the audio URL — it should be a `cdn.example.com` URL.
+Verify audio plays correctly for each. Check the console logs for the audio URL - it should be a `cdn.example.com` URL.
 
 - [ ] **Step 3: Test player resume**
 
@@ -454,13 +454,13 @@ Kill and restart the app. Verify the player does NOT try to resume with a stale 
 
 ## Phase 2: Share Links
 
-### Task 5: Set up `app.thebayaan.com` domain
+### Task 5: Set up `istima.app` domain
 
 This is an infrastructure task, not a code task.
 
-- [ ] **Step 1: Configure `app.thebayaan.com` DNS**
+- [ ] **Step 1: Configure `istima.app` DNS**
 
-In Cloudflare DNS for `thebayaan.com`, add a CNAME record:
+In Cloudflare DNS for `istima.app`, add a CNAME record:
 - Name: `app`
 - Target: Railway backend's public domain (or set up a Cloudflare Worker that proxies to Railway)
 
@@ -469,7 +469,7 @@ The domain MUST serve `/.well-known/apple-app-site-association` and `/.well-know
 - [ ] **Step 2: Verify AASA is served correctly**
 
 ```bash
-curl -sI "https://app.thebayaan.com/.well-known/apple-app-site-association" | head -5
+curl -sI "https://istima.app/.well-known/apple-app-site-association" | head -5
 ```
 
 Expected: `HTTP/2 200`, `content-type: application/json`
@@ -477,27 +477,27 @@ Expected: `HTTP/2 200`, `content-type: application/json`
 - [ ] **Step 3: Verify assetlinks.json is served**
 
 ```bash
-curl -s "https://app.thebayaan.com/.well-known/assetlinks.json" | python3 -m json.tool
+curl -s "https://istima.app/.well-known/assetlinks.json" | python3 -m json.tool
 ```
 
-Expected: Valid JSON with `com.bayaan.app` package name.
+Expected: Valid JSON with `com.istima.app` package name.
 
 ---
 
 ### Task 6: Backend bug fixes and domain update
 
 **Files:**
-- Modify: `bayaan-backend/src/routes/share/index.ts` (App Store ID, domain, dead code)
-- Modify: `bayaan-backend/src/lib/ogTemplate.ts` (App Store URL format)
+- Modify: `istima-backend/src/routes/share/index.ts` (App Store ID, domain, dead code)
+- Modify: `istima-backend/src/lib/ogTemplate.ts` (App Store URL format)
 
 - [ ] **Step 1: Fix App Store ID and domain in `share/index.ts`**
 
-In `bayaan-backend/src/routes/share/index.ts`, update the constants at the top:
+In `istima-backend/src/routes/share/index.ts`, update the constants at the top:
 
 ```typescript
-const BASE_URL = 'https://app.thebayaan.com';
-const IOS_STORE_URL = 'https://apps.apple.com/us/app/bayaan/id6648769980';
-const ANDROID_STORE_URL = 'https://play.google.com/store/apps/details?id=com.bayaan.app';
+const BASE_URL = 'https://istima.app';
+const IOS_STORE_URL = 'https://apps.apple.com/us/app/istima/id6648769980';
+const ANDROID_STORE_URL = 'https://play.google.com/store/apps/details?id=com.istima.app';
 ```
 
 - [ ] **Step 2: Remove `storeRedirectUrl()` dead code**
@@ -506,10 +506,10 @@ Delete the `storeRedirectUrl()` function (lines 62-66 in `share/index.ts`).
 
 - [ ] **Step 3: Fix App Store URL in `ogTemplate.ts`**
 
-In `bayaan-backend/src/lib/ogTemplate.ts`, line 1:
+In `istima-backend/src/lib/ogTemplate.ts`, line 1:
 
 ```typescript
-const IOS_STORE_URL = 'https://apps.apple.com/us/app/bayaan/id6648769980';
+const IOS_STORE_URL = 'https://apps.apple.com/us/app/istima/id6648769980';
 ```
 
 Also update the `APP_ICON_URL` to point to a valid location (host on R2 or serve as a static file):
@@ -526,7 +526,7 @@ Upload the app icon to the R2 bucket at `assets/og-default.png` so the OG image 
 
 Extract the fingerprint:
 ```bash
-keytool -list -v -keystore ~/Documents/app-credentials/bayaan/keystore/bayaan-upload-key.keystore | grep SHA256
+keytool -list -v -keystore ~/Documents/app-credentials/istima/keystore/istima-upload-key.keystore | grep SHA256
 ```
 
 Set it as an env var on Railway for the backend service.
@@ -534,17 +534,17 @@ Set it as an env var on Railway for the backend service.
 - [ ] **Step 6: Commit backend changes**
 
 ```bash
-cd /Users/osmansaeday/theBayaan/bayaan-backend
+cd /Users/osmansaeday/theIstima/istima-backend
 git add src/routes/share/index.ts src/lib/ogTemplate.ts
-git commit -m "fix: correct App Store ID, update share domain to app.thebayaan.com, remove dead code"
+git commit -m "fix: correct App Store ID, update share domain to istima.app, remove dead code"
 ```
 
 ---
 
-### Task 7: Backend — new share route handlers
+### Task 7: Backend - new share route handlers
 
 **Files:**
-- Modify: `bayaan-backend/src/routes/share/index.ts` (add recitation, verse, dhikr routes; delete old surah route, playlist route)
+- Modify: `istima-backend/src/routes/share/index.ts` (add recitation, verse, dhikr routes; delete old surah route, playlist route)
 
 - [ ] **Step 1: Replace old surah route with new recitation route**
 
@@ -554,7 +554,7 @@ Delete the old `app.get('/reciter/:slug/surah/:num', ...)` handler. Add the new 
 // ── Recitation (auto-play) ──────────────────────────────────────────────────
 
 app.get('/reciter/:slug/:rewayat/:style/surah/:num', async (c) => {
-  const { slug, rewayat, style, num } = c.req.param();
+  const { slug, rewayat, style, num } = c.req.param;
   const surahNum = parseInt(num, 10);
   const shareUrl = `${BASE_URL}/share/reciter/${slug}/${rewayat}/${style}/surah/${num}`;
   const ua = c.req.header('user-agent');
@@ -571,8 +571,8 @@ app.get('/reciter/:slug/:rewayat/:style/surah/:num', async (c) => {
     // Use slug as fallback name
   }
 
-  const title = `${surahName} — ${reciterName}`;
-  const description = `Listen to Surah ${surahName} recited by ${reciterName} on Bayaan.`;
+  const title = `${surahName} - ${reciterName}`;
+  const description = `Listen to Surah ${surahName} recited by ${reciterName} on Istima.`;
 
   if (isBotUA(ua)) {
     return c.html(buildOgHtml({ title, description, imageUrl, pageUrl: shareUrl }));
@@ -589,7 +589,7 @@ app.get('/reciter/:slug/:rewayat/:style/surah/:num', async (c) => {
 // ── Verse ────────────────────────────────────────────────────────────────────
 
 app.get('/verse/:surah/:ayah', (c) => {
-  const { surah, ayah } = c.req.param();
+  const { surah, ayah } = c.req.param;
   const surahNum = parseInt(surah, 10);
   const shareUrl = `${BASE_URL}/share/verse/${surah}/${ayah}`;
   const ua = c.req.header('user-agent');
@@ -613,11 +613,11 @@ app.get('/verse/:surah/:ayah', (c) => {
 // ── Dhikr ────────────────────────────────────────────────────────────────────
 
 app.get('/dhikr/:superId/:dhikrId', (c) => {
-  const { superId, dhikrId } = c.req.param();
+  const { superId, dhikrId } = c.req.param;
   const shareUrl = `${BASE_URL}/share/dhikr/${superId}/${dhikrId}`;
   const ua = c.req.header('user-agent');
 
-  const title = 'Dhikr — Istima';
+  const title = 'Dhikr - Istima';
   const description = 'Read and track your daily adhkar (remembrance) in the Istima app.';
 
   if (isBotUA(ua)) {
@@ -636,14 +636,14 @@ Remove the entire `app.get('/playlist/:id', ...)` handler.
 - [ ] **Step 5: Commit**
 
 ```bash
-cd /Users/osmansaeday/theBayaan/bayaan-backend
+cd /Users/osmansaeday/theIstima/istima-backend
 git add src/routes/share/index.ts
 git commit -m "feat: add recitation, verse, dhikr share routes; remove old surah and playlist routes"
 ```
 
 ---
 
-### Task 8: App — update `app.config.js` and `shareUtils.ts`
+### Task 8: App - update `app.config.js` and `shareUtils.ts`
 
 **Files:**
 - Modify: `app.config.js` (~line 26, ~line 97)
@@ -653,16 +653,16 @@ git commit -m "feat: add recitation, verse, dhikr share routes; remove old surah
 
 Change `associatedDomains` from:
 ```javascript
-associatedDomains: ['applinks:api.thebayaan.com'],
+associatedDomains: ['applinks:iapi.istima.app'],
 ```
 to:
 ```javascript
-associatedDomains: ['applinks:app.thebayaan.com'],
+associatedDomains: ['applinks:istima.app'],
 ```
 
 - [ ] **Step 2: Update `intentFilters` host in `app.config.js`**
 
-Find the `intentFilters` array and change `data.host` from `api.thebayaan.com` to `app.thebayaan.com`.
+Find the `intentFilters` array and change `data.host` from `iapi.istima.app` to `istima.app`.
 
 - [ ] **Step 3: Rewrite `shareUtils.ts`**
 
@@ -673,7 +673,7 @@ import {Share, Platform} from 'react-native';
 import rewayatSlugs from '@/data/rewayat-slugs.json';
 import type {Reciter, Rewayat} from '@/data/reciterData';
 
-const BASE_URL = 'https://app.thebayaan.com';
+const BASE_URL = 'https://istima.app';
 
 export function reciterShareUrl(slug: string): string {
   return `${BASE_URL}/share/reciter/${slug}`;
@@ -750,12 +750,12 @@ npx prettier --write utils/shareUtils.ts app.config.js
 
 ```bash
 git add utils/shareUtils.ts app.config.js
-git commit -m "feat: update share domain to app.thebayaan.com and rewrite share URL generators"
+git commit -m "feat: update share domain to istima.app and rewrite share URL generators"
 ```
 
 ---
 
-### Task 9: App — add `isInitialized` flag for cold-start deep links
+### Task 9: App - add `isInitialized` flag for cold-start deep links
 
 **Files:**
 - Modify: `store/reciterStore.ts` (add `isInitialized` flag)
@@ -770,7 +770,7 @@ interface ReciterState {
   defaultReciter: Reciter;
   isInitialized: boolean;
   setDefaultReciter: (reciter: Reciter) => void;
-  refreshDefaultReciter: () => void;
+  refreshDefaultReciter:  => void;
 }
 ```
 
@@ -780,12 +780,12 @@ And in the store creation, add the initial value:
 export const useReciterStore = create<ReciterState>()(
   persist(
     set => ({
-      defaultReciter: getDefaultReciter(),
+      defaultReciter: getDefaultReciter,
       isInitialized: false,
       // ... rest of store
 ```
 
-Note: `isInitialized` should NOT be persisted — it must start `false` on every app launch. Add it to the persist config's `partialize` to exclude it:
+`isInitialized` should NOT be persisted - it must start `false` on every app launch. Add it to the persist config's `partialize` to exclude it:
 
 ```typescript
 partialize: (state) => ({ defaultReciter: state.defaultReciter }),
@@ -798,7 +798,7 @@ In `services/dataService.ts`, in the `populateReciters` function, after the spli
 ```typescript
 function populateReciters(data: Reciter[]): void {
   RECITERS.splice(0, RECITERS.length, ...data);
-  useReciterStore.getState().refreshDefaultReciter();
+  useReciterStore.getState.refreshDefaultReciter;
   useReciterStore.setState({ isInitialized: true });
 }
 ```
@@ -818,7 +818,7 @@ git commit -m "feat: add isInitialized flag for cold-start deep link handling"
 
 ---
 
-### Task 10: App — rewrite share receiver screens
+### Task 10: App - rewrite share receiver screens
 
 **Files:**
 - Modify: `app/share/reciter/[slug].tsx` (fix slug resolution)
@@ -842,13 +842,13 @@ import {useTheme} from '@/hooks/useTheme';
 import {useReciterStore} from '@/store/reciterStore';
 import {getReciterBySlug} from '@/services/dataService';
 
-export default function ShareReciterReceiver() {
-  const {slug} = useLocalSearchParams<{slug: string}>();
-  const router = useRouter();
-  const {theme} = useTheme();
+export default function ShareReciterReceiver {
+  const {slug} = useLocalSearchParams<{slug: string}>;
+  const router = useRouter;
+  const {theme} = useTheme;
   const isInitialized = useReciterStore(s => s.isInitialized);
 
-  useEffect(() => {
+  useEffect( => {
     if (!isInitialized || !slug) return;
 
     const reciter = getReciterBySlug(slug);
@@ -902,19 +902,19 @@ import {getReciterBySlug} from '@/services/dataService';
 import {resolveRewayat} from '@/utils/shareUtils';
 import {usePlayerActions} from '@/hooks/usePlayerActions';
 
-export default function ShareRecitationReceiver() {
+export default function ShareRecitationReceiver {
   const {slug, rewayat, style, num} = useLocalSearchParams<{
     slug: string;
     rewayat: string;
     style: string;
     num: string;
-  }>();
-  const router = useRouter();
-  const {theme} = useTheme();
+  }>;
+  const router = useRouter;
+  const {theme} = useTheme;
   const isInitialized = useReciterStore(s => s.isInitialized);
-  const {playTrack} = usePlayerActions();
+  const {playTrack} = usePlayerActions;
 
-  useEffect(() => {
+  useEffect( => {
     if (!isInitialized || !slug || !rewayat || !style || !num) return;
 
     const reciter = getReciterBySlug(slug);
@@ -960,7 +960,7 @@ export default function ShareRecitationReceiver() {
 }
 ```
 
-Note: The `playTrack` call above assumes `usePlayerActions` has a method that accepts `{ reciterId, rewayatId, surahId }`. Check the actual hook signature and adjust — the key is to trigger playback before navigating. The `?t=` timestamp param handling should seek after load; check if the current player service supports seeking on load.
+The `playTrack` call above assumes `usePlayerActions` has a method that accepts `{ reciterId, rewayatId, surahId }`. Check the actual hook signature and adjust - the key is to trigger playback before navigating. The `?t=` timestamp param handling should seek after load; check if the current player service supports seeking on load.
 
 - [ ] **Step 4: Create verse receiver**
 
@@ -976,12 +976,12 @@ import {View, ActivityIndicator} from 'react-native';
 import {useLocalSearchParams, useRouter} from 'expo-router';
 import {useTheme} from '@/hooks/useTheme';
 
-export default function ShareVerseReceiver() {
-  const {surah, ayah} = useLocalSearchParams<{surah: string; ayah: string}>();
-  const router = useRouter();
-  const {theme} = useTheme();
+export default function ShareVerseReceiver {
+  const {surah, ayah} = useLocalSearchParams<{surah: string; ayah: string}>;
+  const router = useRouter;
+  const {theme} = useTheme;
 
-  useEffect(() => {
+  useEffect( => {
     if (!surah || !ayah) {
       router.replace('/');
       return;
@@ -1007,7 +1007,7 @@ export default function ShareVerseReceiver() {
 }
 ```
 
-Note: The mushaf screen may need modification to accept and handle `surah` + `ayah` params for scrolling/highlighting. Check the mushaf route and component to verify it supports these params.
+The mushaf screen may need modification to accept and handle `surah` + `ayah` params for scrolling/highlighting. Check the mushaf route and component to verify it supports these params.
 
 - [ ] **Step 5: Create dhikr receiver**
 
@@ -1023,15 +1023,15 @@ import {View, ActivityIndicator} from 'react-native';
 import {useLocalSearchParams, useRouter} from 'expo-router';
 import {useTheme} from '@/hooks/useTheme';
 
-export default function ShareDhikrReceiver() {
+export default function ShareDhikrReceiver {
   const {superId, dhikrId} = useLocalSearchParams<{
     superId: string;
     dhikrId: string;
-  }>();
-  const router = useRouter();
-  const {theme} = useTheme();
+  }>;
+  const router = useRouter;
+  const {theme} = useTheme;
 
-  useEffect(() => {
+  useEffect( => {
     if (!superId || !dhikrId) {
       router.replace('/');
       return;
@@ -1084,7 +1084,7 @@ git commit -m "feat: rewrite share receiver screens with slug resolution, auto-p
 
 ---
 
-### Task 11: App — add share buttons throughout the app
+### Task 11: App - add share buttons throughout the app
 
 This task adds share entry points to screens that don't have them yet. Each share button imports the appropriate URL generator from `shareUtils.ts` and calls `shareUrl()`.
 
@@ -1119,7 +1119,7 @@ Find the mushaf toolbar and add a share button:
 
 ```typescript
 import {mushafShareUrl, shareUrl} from '@/utils/shareUtils';
-// shareUrl(mushafShareUrl(currentPage), `Quran — Page ${currentPage}`)
+// shareUrl(mushafShareUrl(currentPage), `Quran - Page ${currentPage}`)
 ```
 
 - [ ] **Step 4: Add share to verse actions sheet**
@@ -1154,7 +1154,7 @@ git commit -m "feat: add share buttons to player, mushaf, verse actions, adhkar,
 expo prebuild --platform ios --clean
 ```
 
-Verify `ios/Bayaan/Bayaan.entitlements` now contains `applinks:app.thebayaan.com`.
+Verify `ios/Bayaan/Bayaan.entitlements` now contains `applinks:istima.app`.
 
 - [ ] **Step 2: Prebuild Android**
 
@@ -1162,7 +1162,7 @@ Verify `ios/Bayaan/Bayaan.entitlements` now contains `applinks:app.thebayaan.com
 expo prebuild --platform android --clean
 ```
 
-Verify `android/app/src/main/AndroidManifest.xml` intent filter now references `app.thebayaan.com`.
+Verify `android/app/src/main/AndroidManifest.xml` intent filter now references `istima.app`.
 
 - [ ] **Step 3: Test on device**
 
@@ -1179,16 +1179,16 @@ Follow the deployment process in `docs/deployment/deployment.md`.
 
 ## Phase 3: Rich OG Cards
 
-### Task 13: POC — `satori` + `@resvg/resvg-js` on Hono/Bun
+### Task 13: POC - `satori` + `@resvg/resvg-js` on Hono/Bun
 
 **Files:**
-- Create: `bayaan-backend/src/lib/ogImage.ts`
-- Modify: `bayaan-backend/package.json` (add dependencies)
+- Create: `istima-backend/src/lib/ogImage.ts`
+- Modify: `istima-backend/package.json` (add dependencies)
 
 - [ ] **Step 1: Install dependencies**
 
 ```bash
-cd /Users/osmansaeday/theBayaan/bayaan-backend
+cd /Users/osmansaeday/theIstima/istima-backend
 bun add satori @resvg/resvg-js
 ```
 
@@ -1214,8 +1214,8 @@ git commit -m "feat: add OG image generation with satori + resvg"
 ### Task 14: Integrate OG images into share routes
 
 **Files:**
-- Modify: `bayaan-backend/src/routes/share/index.ts` (generate and serve images)
-- Modify: `bayaan-backend/src/lib/ogTemplate.ts` (accept dynamic image URLs)
+- Modify: `istima-backend/src/routes/share/index.ts` (generate and serve images)
+- Modify: `istima-backend/src/lib/ogTemplate.ts` (accept dynamic image URLs)
 
 - [ ] **Step 1: Add image generation to each share route**
 
@@ -1229,7 +1229,7 @@ Bundle `data/quran.json` (or a minimal verse-text-only version) into the backend
 
 Verify each link type produces a valid preview by checking:
 ```bash
-curl -A "WhatsApp" "https://app.thebayaan.com/share/reciter/abdulbasit-abdulsamad"
+curl -A "WhatsApp" "https://istima.app/share/reciter/abdulbasit-abdulsamad"
 ```
 
 Expected: HTML with `og:image` pointing to a generated PNG.

@@ -3,8 +3,8 @@
  * Bootstrap android/local.properties on cold checkouts.
  *
  * Gradle requires android/local.properties to point at the Android SDK before
- * `npm run android` will work. The file is gitignored upstream — env-specific
- * paths shouldn't be committed — so every fresh worktree needs it written
+ * `npm run android` will work. The file is gitignored upstream - env-specific
+ * paths shouldn't be committed - so every fresh worktree needs it written
  * before first build.
  *
  * Behavior:
@@ -37,7 +37,7 @@ function main() {
   }
 
   if (!sdkDir) {
-    // Don't fail — the developer may not be doing Android work right now.
+    // Don't fail - the developer may not be doing Android work right now.
     console.log(
       '[bootstrap-android] android/local.properties not written: $ANDROID_HOME unset and no ~/Library/Android/sdk found.',
     );

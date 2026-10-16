@@ -1,6 +1,6 @@
 # Terminal-Only iOS Release Guide
 
-Build, archive, upload, and submit Istima to the App Store entirely from the terminal — no Xcode GUI or browser required.
+Build, archive, upload, and submit Istima to the App Store entirely from the terminal - no Xcode GUI or browser required.
 
 Uses `xcodebuild` for building and `asc` ([asccli.sh](https://asccli.sh)) for App Store Connect operations.
 
@@ -18,12 +18,12 @@ Uses `xcodebuild` for building and `asc` ([asccli.sh](https://asccli.sh)) for Ap
 
 | Credential | Location |
 |------------|----------|
-| App Store Connect API Key (.p8) | `~/Documents/app-credentials/bayaan/appstoreconnect/AuthKey_89436RZQQ2.p8` |
+| App Store Connect API Key (.p8) | `~/Documents/app-credentials/istima/appstoreconnect/AuthKey_89436RZQQ2.p8` |
 | Key ID | `89436RZQQ2` |
 | Issuer ID | `11bd7cc0-6b65-4e93-bc4e-e2218eb4a185` |
 | Team ID | `S4W5Q2L53W` |
 | App ID | `6648769980` |
-| Bundle ID | `com.bayaan.app` |
+| Bundle ID | `com.istima.app` |
 
 ### One-Time Setup
 
@@ -36,7 +36,7 @@ asc auth login \
   --name "Istima" \
   --key-id "89436RZQQ2" \
   --issuer-id "11bd7cc0-6b65-4e93-bc4e-e2218eb4a185" \
-  --private-key ~/Documents/app-credentials/bayaan/appstoreconnect/AuthKey_89436RZQQ2.p8
+  --private-key ~/Documents/app-credentials/istima/appstoreconnect/AuthKey_89436RZQQ2.p8
 
 # Verify connection
 asc apps list
@@ -51,7 +51,7 @@ asc apps list
 ### Step 1: Bump Version
 
 ```bash
-cd /Users/osmansaeday/theBayaan/Bayaan
+cd /Users/osmansaeday/theIstima/Istima
 
 # Choose one:
 npm run version:patch   # 2.1.2 → 2.1.3
@@ -80,30 +80,30 @@ xcodebuild archive \
   -scheme Istima \
   -configuration Release \
   -destination "generic/platform=iOS" \
-  -archivePath build/Bayaan.xcarchive \
+  -archivePath build/Istima.xcarchive \
   CODE_SIGN_STYLE=Automatic \
   DEVELOPMENT_TEAM=S4W5Q2L53W
 ```
 
-This is the longest step (~15 minutes). The archive is saved to `build/Bayaan.xcarchive`.
+This is the longest step (~15 minutes). The archive is saved to `build/Istima.xcarchive`.
 
 ### Step 4: Export IPA
 
 ```bash
 xcodebuild -exportArchive \
-  -archivePath build/Bayaan.xcarchive \
+  -archivePath build/Istima.xcarchive \
   -exportPath build/output \
   -exportOptionsPlist ExportOptions.plist
 ```
 
-The IPA is saved to `build/output/Bayaan.ipa` (~120MB).
+The IPA is saved to `build/output/Istima.ipa` (~120MB).
 
 ### Step 5: Upload to App Store Connect
 
 ```bash
 asc builds upload \
   --app 6648769980 \
-  --ipa build/output/Bayaan.ipa
+  --ipa build/output/Istima.ipa
 ```
 
 Upload takes ~1 minute. Apple then processes the build (~5-10 min).
@@ -146,7 +146,7 @@ asc publish testflight \
 # Upload + submit in one shot
 asc publish appstore \
   --app 6648769980 \
-  --ipa build/output/Bayaan.ipa \
+  --ipa build/output/Istima.ipa \
   --version "X.Y.Z" \
   --submit \
   --confirm
@@ -292,16 +292,16 @@ xcodebuild archive \
   -scheme Istima \
   -configuration Release \
   -destination "generic/platform=iOS" \
-  -archivePath build/Bayaan.xcarchive \
+  -archivePath build/Istima.xcarchive \
   CODE_SIGN_STYLE=Automatic \
   DEVELOPMENT_TEAM=S4W5Q2L53W && \
 xcodebuild -exportArchive \
-  -archivePath build/Bayaan.xcarchive \
+  -archivePath build/Istima.xcarchive \
   -exportPath build/output \
   -exportOptionsPlist ExportOptions.plist && \
 asc publish testflight \
   --app 6648769980 \
-  --ipa build/output/Bayaan.ipa \
+  --ipa build/output/Istima.ipa \
   --group "Family" \
   --wait \
   --notify
@@ -317,16 +317,16 @@ xcodebuild archive \
   -scheme Istima \
   -configuration Release \
   -destination "generic/platform=iOS" \
-  -archivePath build/Bayaan.xcarchive \
+  -archivePath build/Istima.xcarchive \
   CODE_SIGN_STYLE=Automatic \
   DEVELOPMENT_TEAM=S4W5Q2L53W && \
 xcodebuild -exportArchive \
-  -archivePath build/Bayaan.xcarchive \
+  -archivePath build/Istima.xcarchive \
   -exportPath build/output \
   -exportOptionsPlist ExportOptions.plist && \
 asc publish appstore \
   --app 6648769980 \
-  --ipa build/output/Bayaan.ipa \
+  --ipa build/output/Istima.ipa \
   --version "X.Y.Z" \
   --submit \
   --confirm
@@ -342,9 +342,9 @@ asc publish appstore \
 | Archive fails with signing error | Ensure `CODE_SIGN_STYLE=Automatic` and `DEVELOPMENT_TEAM=S4W5Q2L53W` are set |
 | Export fails "no profiles" | Open Xcode once to let it download provisioning profiles, or use `xcodebuild -downloadAllPlatforms` |
 | Upload rejected "invalid binary" | Ensure `ExportOptions.plist` has `method` set to `app-store-connect` |
-| Build processing stuck | Check `asc status --app 6648769980` — processing can take up to 30 min |
+| Build processing stuck | Check `asc status --app 6648769980` - processing can take up to 30 min |
 | `asc` command not found | Run `brew install asc` or check `which asc` |
-| Keychain credentials error during export | Cosmetic warning from Xcode — does not affect the export |
+| Keychain credentials error during export | Cosmetic warning from Xcode - does not affect the export |
 | Build number already exists | Apple rejects duplicate build numbers; bump version or ensure a new commit count |
 
 ---

@@ -156,7 +156,7 @@ const versionInfo = generateVersionInfo();
 //
 // `--json-only` (or `-j`) suppresses the human-readable header so callers can
 // JSON.parse(stdout) directly without regex-matching out a `{...}` substring.
-// Used by scripts/verify-version-sync.js — see PR review on #251 for why
+// Used by scripts/verify-version-sync.js - see PR review on #251 for why
 // regex-extracting JSON from interleaved log output is fragile.
 if (require.main === module) {
   const argv = process.argv.slice(2);

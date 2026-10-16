@@ -1,4 +1,4 @@
-# Android Performance Audit — Istima
+# Android Performance Audit - Istima
 
 **Date:** February 2026
 **Scope:** Mounting/unmounting jank, sheet navigation lag, bundled data loading, general Android weakness
@@ -10,15 +10,15 @@
 
 Android performance lags behind iOS due to a compounding set of issues, not any single root cause. The three biggest offenders are:
 
-1. **28MB of bundled JSON parsed on the JS thread** — Hermes is slower at JSON deserialization than JSC, and the app loads massive Quran data files synchronously
-2. **Eager initialization of everything** — 17 action sheets, 7+ providers, 8 useEffects in the root layout, and multiple services all compete for the JS thread at startup
-3. **Missing Android-specific optimizations** — no `largeHeap`, sheet gesture handling disabled on Android (New Architecture and Hermes are already enabled in `android/gradle.properties`)
+1. **28MB of bundled JSON parsed on the JS thread** - Hermes is slower at JSON deserialization than JSC, and the app loads massive Quran data files synchronously
+2. **Eager initialization of everything** - 17 action sheets, 7+ providers, 8 useEffects in the root layout, and multiple services all compete for the JS thread at startup
+3. **Missing Android-specific optimizations** - no `largeHeap`, sheet gesture handling disabled on Android (New Architecture and Hermes are already enabled in `android/gradle.properties`)
 
 ---
 
 ## Detailed Findings
 
-### CRITICAL — Bundled Data Loading (Severity: 10/10)
+### CRITICAL - Bundled Data Loading (Severity: 10/10)
 
 The `data/` directory contains **28MB of JSON files** that are bundled into the app:
 
@@ -39,11 +39,11 @@ The `data/` directory contains **28MB of JSON files** that are bundled into the 
 
 **The Critical Path:**
 
-1. **`reciters.json` (492KB)** is loaded via static `import` in `data/reciterData.ts` — this is a synchronous require that blocks the JS thread during module evaluation. Every file that imports `RECITERS` triggers this parse. It's imported by **20+ files**.
+1. **`reciters.json` (492KB)** is loaded via static `import` in `data/reciterData.ts` - this is a synchronous require that blocks the JS thread during module evaluation. Every file that imports `RECITERS` triggers this parse. It's imported by **20+ files**.
 
 2. **`QPC Hafs Tajweed 2.json` (8.3MB)** is loaded via `require()` in `utils/tajweedLoader.ts:188` inside a `setTimeout(100ms)`. While the 100ms defer helps slightly, the `require()` call itself is **synchronous and blocks the entire JS thread** while Hermes parses 8.3MB of JSON. After parsing, the app then iterates every entry, runs regex processing (`processTajweedWord`), and builds indexed lookup tables. This can freeze the UI for **1-3 seconds on mid-range Android devices**.
 
-3. **`surahData.ts`** is an inline TypeScript array (114 entries, ~30KB) — this is fine, but it's imported everywhere.
+3. **`surahData.ts`** is an inline TypeScript array (114 entries, ~30KB) - this is fine, but it's imported everywhere.
 
 **Why this hurts Android more than iOS:**
 - Hermes JSON parsing is measurably slower than JSC for large payloads
@@ -51,13 +51,13 @@ The `data/` directory contains **28MB of JSON files** that are bundled into the 
 - The single-threaded JS execution model means all JSON parsing blocks UI renders
 
 **Files:**
-- `data/reciterData.ts:1` — `import recitersData from './reciters.json'`
-- `utils/tajweedLoader.ts:184-224` — `preloadTajweedDataWithTimeout()`
-- `app/_layout.tsx:129-135` — triggers tajweed preload on mount
+- `data/reciterData.ts:1` - `import recitersData from './reciters.json'`
+- `utils/tajweedLoader.ts:184-224` - `preloadTajweedDataWithTimeout()`
+- `app/_layout.tsx:129-135` - triggers tajweed preload on mount
 
 ---
 
-### CRITICAL — Eager Sheet Registration (Severity: 8/10)
+### CRITICAL - Eager Sheet Registration (Severity: 8/10)
 
 **`components/sheets/sheets.tsx`** eagerly imports and registers all 17 action sheets at app startup:
 
@@ -76,18 +76,18 @@ import '@/components/sheets/sheets';
 **Impact:** All 17 sheet component modules and their entire dependency trees are evaluated during initial module loading. Each sheet imports its own hooks, store selectors, and component libraries. This adds significant JS evaluation time before the first frame.
 
 Additionally, some sheets contain heavy content:
-- `SelectReciterSheet` — renders the full reciter list with search (imports RECITERS)
-- `FavoriteRecitersSheet` — also imports RECITERS
-- `OrganizeRecitationSheet` — imports RECITERS and SURAHS
-- `AddToCollectionSheet` — contains its own sheet manager calls
+- `SelectReciterSheet` - renders the full reciter list with search (imports RECITERS)
+- `FavoriteRecitersSheet` - also imports RECITERS
+- `OrganizeRecitationSheet` - imports RECITERS and SURAHS
+- `AddToCollectionSheet` - contains its own sheet manager calls
 
 **Files:**
-- `components/sheets/sheets.tsx:1-46` — all 17 registrations
-- `app/_layout.tsx:29` — side-effect import
+- `components/sheets/sheets.tsx:1-46` - all 17 registrations
+- `app/_layout.tsx:29` - side-effect import
 
 ---
 
-### HIGH — Root Layout Initialization Overload (Severity: 8/10)
+### HIGH - Root Layout Initialization Overload (Severity: 8/10)
 
 `app/_layout.tsx` is the app's entry point and it does **too much work simultaneously**:
 
@@ -112,7 +112,7 @@ ErrorBoundary
             Stack
 ```
 
-**Problem:** On mount, the root layout triggers font loading, tajweed parsing, SQLite initialization, audio service setup, store hydration, AND 17 sheet module evaluations — all competing for the same JS thread. On Android, this creates a visible freeze after splash screen dismissal.
+**Problem:** On mount, the root layout triggers font loading, tajweed parsing, SQLite initialization, audio service setup, store hydration, AND 17 sheet module evaluations - all competing for the same JS thread. On Android, this creates a visible freeze after splash screen dismissal.
 
 The **dynamic import of expo-navigation-bar** (`app/_layout.tsx:234`) runs on every theme change on Android, adding latency to theme switches.
 
@@ -122,7 +122,7 @@ The **dynamic import of expo-navigation-bar** (`app/_layout.tsx:234`) runs on ev
 
 ---
 
-### HIGH — Sheet Gesture Handling Disabled on Android (Severity: 7/10)
+### HIGH - Sheet Gesture Handling Disabled on Android (Severity: 7/10)
 
 All three `@gorhom/bottom-sheet` usage sites disable `enableContentPanningGesture` on Android:
 
@@ -135,48 +135,48 @@ enableContentPanningGesture={Platform.OS === 'ios'}
 - `components/BottomSheetModal.tsx:113`
 - `components/modals/BaseModal.tsx:97`
 
-This means on Android, content inside bottom sheets **cannot be scrolled by gestures starting on the content area** — the user can only drag the handle. This creates a noticeably worse UX on Android and makes sheet interaction feel broken/unresponsive.
+This means on Android, content inside bottom sheets **cannot be scrolled by gestures starting on the content area** - the user can only drag the handle. This creates a noticeably worse UX on Android and makes sheet interaction feel broken/unresponsive.
 
 This was likely added as a workaround for gesture conflicts, but it's a blanket disable rather than a proper fix.
 
 ---
 
-### MEDIUM — Missing Android Configuration (Severity: 5/10)
+### MEDIUM - Missing Android Configuration (Severity: 5/10)
 
 `app.config.js` is missing some Android-specific optimizations:
 
-1. **No `largeHeap: true`** — With 28MB of bundled JSON data plus runtime data structures, the app should request large heap allocation on Android. Without it, the app runs under tighter memory constraints, increasing GC pressure and potential OOM crashes.
+1. **No `largeHeap: true`** - With 28MB of bundled JSON data plus runtime data structures, the app should request large heap allocation on Android. Without it, the app runs under tighter memory constraints, increasing GC pressure and potential OOM crashes.
 
-2. ~~**New Architecture**~~ — **RESOLVED.** `newArchEnabled=true` is already set in `android/gradle.properties:38`.
+2. ~~**New Architecture**~~ - **RESOLVED.** `newArchEnabled=true` is already set in `android/gradle.properties:38`.
 
-3. ~~**Hermes engine**~~ — **RESOLVED.** `hermesEnabled=true` is already set in `android/gradle.properties:42`.
+3. ~~**Hermes engine**~~ - **RESOLVED.** `hermesEnabled=true` is already set in `android/gradle.properties:42`.
 
-4. **React Compiler disabled** — There's a comment: `// React Compiler disabled - causes performance issues with Zustand subscriptions`. This means the app misses out on automatic memoization that would particularly help Android.
+4. **React Compiler disabled** - There's a comment: `// React Compiler disabled - causes performance issues with Zustand subscriptions`. This means the app misses out on automatic memoization that would particularly help Android.
 
 5. **No ProGuard/R8 optimization flags** in the Expo config.
 
 **Files:**
-- `app.config.js:87-96` — Android section
+- `app.config.js:87-96` - Android section
 
 ---
 
-### MEDIUM — Fuse.js Search Initialization (Severity: 6/10)
+### MEDIUM - Fuse.js Search Initialization (Severity: 6/10)
 
 `components/search/SearchView.tsx` creates two separate Fuse.js indices when the search tab first mounts:
 
-1. **Reciter Fuse** — Indexes all reciters with multiple weighted keys (name, translated_name, rewayat names)
-2. **Surah Fuse** — Indexes all 114 surahs with weighted keys
+1. **Reciter Fuse** - Indexes all reciters with multiple weighted keys (name, translated_name, rewayat names)
+2. **Surah Fuse** - Indexes all 114 surahs with weighted keys
 
 This initialization happens in a `useEffect` with `[]` dependency, meaning it runs every time the search screen mounts. On Android, building the Fuse index for ~200+ reciters with nested rewayat data causes a visible pause.
 
-The search tab uses `lazy: true` in the tab config, so this only happens on first navigation to search — but when it does, it's noticeable.
+The search tab uses `lazy: true` in the tab config, so this only happens on first navigation to search - but when it does, it's noticeable.
 
 **Files:**
-- `components/search/SearchView.tsx:121-138` — Fuse instance creation
+- `components/search/SearchView.tsx:121-138` - Fuse instance creation
 
 ---
 
-### MEDIUM — No `getItemLayout` on Lists (Severity: 6/10)
+### MEDIUM - No `getItemLayout` on Lists (Severity: 6/10)
 
 The main `SurahsView` SectionList (`components/SurahsView.tsx:397-413`) has good config:
 - `initialNumToRender={25}`
@@ -196,16 +196,16 @@ The card view mode creates variable-height rows, making `getItemLayout` harder, 
 
 ---
 
-### MEDIUM — LinearGradient in List Items (Severity: 5/10)
+### MEDIUM - LinearGradient in List Items (Severity: 5/10)
 
 Juz header items in `SurahsView` render **two `LinearGradient` components** each (`components/SurahsView.tsx:178-208`). `expo-linear-gradient` uses native views, and creating/destroying these during scroll in a virtualized list adds overhead on Android, where native view creation is more expensive than iOS.
 
 **Files:**
-- `components/SurahsView.tsx:178-208` — Juz header with 2x LinearGradient
+- `components/SurahsView.tsx:178-208` - Juz header with 2x LinearGradient
 
 ---
 
-### MEDIUM — AppInitializer Sequential Critical Path (Severity: 5/10)
+### MEDIUM - AppInitializer Sequential Critical Path (Severity: 5/10)
 
 `services/AppInitializer.ts` runs critical services **sequentially** and non-critical in parallel:
 
@@ -227,17 +227,17 @@ The sequential portion blocks app readiness. Database init on Android is typical
 
 ---
 
-### LOW — TouchableOpacity Still Used (Severity: 3/10)
+### LOW - TouchableOpacity Still Used (Severity: 3/10)
 
 Despite CLAUDE.md explicitly stating "Use `Pressable` instead of `TouchableOpacity`", `TouchableOpacity` is still used in several places:
-- `components/SurahsView.tsx:258,292,326,362` — sort buttons and view mode toggle
+- `components/SurahsView.tsx:258,292,326,362` - sort buttons and view mode toggle
 - Various other components
 
 The opacity animation on press uses the JS thread on Android, while `Pressable` can use native press handling.
 
 ---
 
-### LOW — `Color()` Calls in Render (Severity: 3/10)
+### LOW - `Color()` Calls in Render (Severity: 3/10)
 
 Multiple components call `Color(theme.colors.text).alpha(0.05).toString()` inside render methods or inline styles. While individually cheap, these create new string objects on every render.
 
@@ -247,7 +247,7 @@ Multiple components call `Color(theme.colors.text).alpha(0.05).toString()` insid
 
 ---
 
-## Architecture Diagram — Current Problem
+## Architecture Diagram - Current Problem
 
 ```
 App Launch (Android)
@@ -279,13 +279,13 @@ App Launch (Android)
 **Goal:** Eliminate JS thread blocking from bundled data
 **Expected Impact:** 40-60% improvement in startup and mount/unmount responsiveness
 
-1. **Move large JSON data to SQLite** — Instead of bundling `QPC Hafs Tajweed 2.json` (8.3MB), `QPC V4 2.json` (5.2MB), and other Quran text data as JSON, pre-process them into a SQLite database that ships with the app. SQLite reads are paginated, lazy, and don't block the JS thread for the entire dataset.
+1. **Move large JSON data to SQLite** - Instead of bundling `QPC Hafs Tajweed 2.json` (8.3MB), `QPC V4 2.json` (5.2MB), and other Quran text data as JSON, pre-process them into a SQLite database that ships with the app. SQLite reads are paginated, lazy, and don't block the JS thread for the entire dataset.
 
-2. **Lazy-load tajweed data per-surah** — Instead of parsing all 8.3MB at startup, load tajweed data only for the currently viewed surah. Use the SQLite approach: `SELECT * FROM tajweed WHERE surah = ?`.
+2. **Lazy-load tajweed data per-surah** - Instead of parsing all 8.3MB at startup, load tajweed data only for the currently viewed surah. Use the SQLite approach: `SELECT * FROM tajweed WHERE surah = ?`.
 
-3. **Chunk the tajweed processing** — If SQLite migration is too large for Phase 1, at minimum use `InteractionManager.runAfterInteractions()` combined with chunked processing (process 100 entries per frame using `requestAnimationFrame` or `setImmediate`).
+3. **Chunk the tajweed processing** - If SQLite migration is too large for Phase 1, at minimum use `InteractionManager.runAfterInteractions()` combined with chunked processing (process 100 entries per frame using `requestAnimationFrame` or `setImmediate`).
 
-4. **Pre-build the Fuse.js index** — Generate the Fuse index at build time (via a script) and ship the serialized index instead of building it at runtime.
+4. **Pre-build the Fuse.js index** - Generate the Fuse index at build time (via a script) and ship the serialized index instead of building it at runtime.
 
 ---
 
@@ -293,13 +293,13 @@ App Launch (Android)
 **Goal:** Reduce work competing for the JS thread during app initialization
 **Expected Impact:** 20-30% improvement in time-to-interactive
 
-1. **Lazy-register action sheets** — Replace the eager import of all 17 sheets in `sheets.tsx` with dynamic `import()` calls. Register each sheet only when it's first shown. Most users never open most sheets in a single session.
+1. **Lazy-register action sheets** - Replace the eager import of all 17 sheets in `sheets.tsx` with dynamic `import()` calls. Register each sheet only when it's first shown. Most users never open most sheets in a single session.
 
-2. **Cache the `expo-navigation-bar` module** — The Android nav bar setup dynamically imports `expo-navigation-bar` on every theme change. Import it once at the top level (with `Platform.OS === 'android'` guard) and cache the reference.
+2. **Cache the `expo-navigation-bar` module** - The Android nav bar setup dynamically imports `expo-navigation-bar` on every theme change. Import it once at the top level (with `Platform.OS === 'android'` guard) and cache the reference.
 
-3. **Defer non-visible initialization** — Move tajweed, adhkar, uploads, and Fuse.js initialization to `InteractionManager.runAfterInteractions()` so they run after the first frame is painted.
+3. **Defer non-visible initialization** - Move tajweed, adhkar, uploads, and Fuse.js initialization to `InteractionManager.runAfterInteractions()` so they run after the first frame is painted.
 
-4. **Consolidate root layout useEffects** — Merge the 8 useEffect hooks into 2-3 logical groups (critical init, deferred init, theme sync) to reduce the number of effect scheduling overhead.
+4. **Consolidate root layout useEffects** - Merge the 8 useEffect hooks into 2-3 logical groups (critical init, deferred init, theme sync) to reduce the number of effect scheduling overhead.
 
 ---
 
@@ -315,11 +315,11 @@ App Launch (Android)
    }
    ```
 
-2. ~~**Evaluate New Architecture**~~ — **Already enabled.** `newArchEnabled=true` in `android/gradle.properties:38`. No action needed.
+2. ~~**Evaluate New Architecture**~~ - **Already enabled.** `newArchEnabled=true` in `android/gradle.properties:38`. No action needed.
 
-3. **Investigate React Compiler compatibility** — The comment says it was disabled due to Zustand issues. Research if newer Zustand versions or the `useStore` pattern with explicit selectors resolves this. The compiler's auto-memoization would significantly help Android.
+3. **Investigate React Compiler compatibility** - The comment says it was disabled due to Zustand issues. Research if newer Zustand versions or the `useStore` pattern with explicit selectors resolves this. The compiler's auto-memoization would significantly help Android.
 
-4. ~~**Explicit Hermes optimizations**~~ — **Already enabled.** `hermesEnabled=true` in `android/gradle.properties:42`. No action needed.
+4. ~~**Explicit Hermes optimizations**~~ - **Already enabled.** `hermesEnabled=true` in `android/gradle.properties:42`. No action needed.
 
 ---
 
@@ -327,16 +327,16 @@ App Launch (Android)
 **Goal:** Fix sheet interaction UX and navigation transitions on Android
 **Expected Impact:** Noticeable UX improvement, eliminates "broken feel"
 
-1. **Fix `enableContentPanningGesture` on Android** — Instead of disabling it entirely, use proper gesture conflict resolution. Options:
+1. **Fix `enableContentPanningGesture` on Android** - Instead of disabling it entirely, use proper gesture conflict resolution. Options:
    - Use `simultaneousHandlers` to allow both sheet and content gestures
    - Use `BottomSheetScrollView`/`BottomSheetFlatList` from `@gorhom/bottom-sheet` inside sheet content
-   - Test per-sheet — some sheets may work fine with the gesture enabled
+   - Test per-sheet - some sheets may work fine with the gesture enabled
 
-2. **Add screen transition optimization** — The root Stack uses `animation: 'fade'` which is good, but ensure all nested navigators also use native-driver animations. Consider `animation: 'none'` for tab switches if they're already lazy-loaded.
+2. **Add screen transition optimization** - The root Stack uses `animation: 'fade'` which is good, but ensure all nested navigators also use native-driver animations. Consider `animation: 'none'` for tab switches if they're already lazy-loaded.
 
-3. **Add `freezeOnBlur` verification** — Already set on tabs (good), but verify it's working by checking that off-screen tabs truly don't re-render.
+3. **Add `freezeOnBlur` verification** - Already set on tabs (good), but verify it's working by checking that off-screen tabs truly don't re-render.
 
-4. **Optimize PlayerSheet** — The player bottom sheet (`@gorhom/bottom-sheet`) renders `PlayerContent` eagerly. Consider rendering a placeholder when the sheet is at index -1 (hidden).
+4. **Optimize PlayerSheet** - The player bottom sheet (`@gorhom/bottom-sheet`) renders `PlayerContent` eagerly. Consider rendering a placeholder when the sheet is at index -1 (hidden).
 
 ---
 
@@ -346,11 +346,11 @@ App Launch (Android)
 
 1. **Add `getItemLayout` to SurahsView** in list mode (fixed height items). This eliminates async measurement and enables instant scroll-to-index.
 
-2. **Replace LinearGradient in Juz headers** — Use a simpler View with opacity gradient or a cached static image for the decorative lines. Native view creation for each header in a virtualized list is expensive.
+2. **Replace LinearGradient in Juz headers** - Use a simpler View with opacity gradient or a cached static image for the decorative lines. Native view creation for each header in a virtualized list is expensive.
 
 3. **Replace remaining TouchableOpacity** with Pressable across all components.
 
-4. **Memoize `Color()` computations** — Move `Color(theme.colors.text).alpha(X).toString()` into `useMemo` or compute them once in the theme object.
+4. **Memoize `Color()` computations** - Move `Color(theme.colors.text).alpha(X).toString()` into `useMemo` or compute them once in the theme object.
 
 5. **Add `recyclingKey` to expo-image** in list contexts to enable image recycling on Android.
 
@@ -362,13 +362,13 @@ App Launch (Android)
 **Goal:** Prevent performance degradation over time
 **Expected Impact:** Prevents crashes and slowdowns in extended sessions
 
-1. **Implement memory monitoring** — Add a dev-mode memory usage display to catch leaks early.
+1. **Implement memory monitoring** - Add a dev-mode memory usage display to catch leaks early.
 
-2. **Audit Zustand store sizes** — Check if stores accumulate stale data over time (recently played, search history, etc.).
+2. **Audit Zustand store sizes** - Check if stores accumulate stale data over time (recently played, search history, etc.).
 
-3. **Configure expo-image cache limits** — Set explicit cache size limits for Android to prevent memory pressure from accumulated images.
+3. **Configure expo-image cache limits** - Set explicit cache size limits for Android to prevent memory pressure from accumulated images.
 
-4. **Test with Android profiler** — Use Android Studio's CPU and Memory profiler with a release build to validate improvements from each phase.
+4. **Test with Android profiler** - Use Android Studio's CPU and Memory profiler with a release build to validate improvements from each phase.
 
 ---
 

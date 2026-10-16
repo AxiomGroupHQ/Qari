@@ -121,7 +121,7 @@
 **Secrets location:**
 - `.env` file at project root (not committed, must be created locally)
 - `~/.gradle/gradle.properties` - Android signing credentials
-- Keystore: `~/Documents/app-credentials/bayaan/keystore/bayaan-upload-key.keystore`
+- Keystore: `~/Documents/app-credentials/istima/keystore/istima-upload-key.keystore`
 
 ## Webhooks & Callbacks
 

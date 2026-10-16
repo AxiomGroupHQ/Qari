@@ -274,7 +274,7 @@ export const SurahList = React.forwardRef<
 
     const getItemType = React.useCallback((item: FlatItem) => item.type, []);
 
-    // Batched inline rendering — render first batch immediately, rest after interactions
+    // Batched inline rendering - render first batch immediately, rest after interactions
     const INITIAL_CARD_BATCH = 12;
     const INITIAL_LIST_BATCH = 20;
 

@@ -1,4 +1,4 @@
-// Ports (ADR-0001 — the seam @istima/audio exposes to consumers)
+// Ports (ADR-0001 - the seam @istima/audio exposes to consumers)
 export type {
   IstimaAudioConfig,
   CoordinatorHooks,
@@ -10,5 +10,5 @@ export type {
 } from './ports';
 export {NullPlayerEventSink} from './ports';
 
-// Adapters (stub today — fully wired in RFC-005)
+// Adapters (stub today - fully wired in RFC-005)
 export {ExpoAudioPlayerControllerAdapter} from './adapters/expo-audio-player-controller';

@@ -103,8 +103,8 @@
 
 **Build:**
 - `app.config.js` - Expo configuration file specifying:
-  - iOS configuration: bundle ID `com.bayaan.app`, team ID `S4W5Q2L53W`
-  - Android configuration: package `com.bayaan.app`
+  - iOS configuration: bundle ID `com.istima.app`, team ID `S4W5Q2L53W`
+  - Android configuration: package `com.istima.app`
   - Fonts: Manrope, Scheherazade, custom surah name fonts
   - Plugins: expo-router, expo-sqlite, expo-splash-screen, expo-notifications
   - Custom plugins: `withAndroidSigning.js`, `withIOSTeam.js`

@@ -3,15 +3,15 @@
  *
  * Sends migration tasks to the Cloudflare R2 Migrator Worker for any rewayat
  * not yet on R2. The Worker fetches from source (mp3quran / quranicaudio) and
- * writes directly to R2 server-side — no local download/upload needed.
+ * writes directly to R2 server-side - no local download/upload needed.
  *
  * Usage:
  *   npx tsx scripts/upload-missing-to-r2.ts [--dry-run]
  *
  * Required env vars:
- *   WORKER_URL  — R2 migrator worker URL
- *   AUTH_TOKEN  — Worker auth token
- *   BAYAAN_API_KEY — Bearer token for the backend API
+ *   WORKER_URL  - R2 migrator worker URL
+ *   AUTH_TOKEN  - Worker auth token
+ *   BAYAAN_API_KEY - Bearer token for the backend API
  *
  * Or: reads from .env.r2-worker automatically if present.
  */
@@ -289,7 +289,7 @@ async function main(): Promise<void> {
   }
 
   if (DRY_RUN) {
-    console.log('=== DRY RUN — no files will be enqueued ===\n');
+    console.log('=== DRY RUN - no files will be enqueued ===\n');
   }
 
   // Health check
@@ -348,7 +348,7 @@ async function main(): Promise<void> {
 
       if (!r2KeyBase) {
         console.warn(
-          `${prefix} Unmapped rewayah/style: "${rewayat.name}" / "${rewayat.style}" — skipping`,
+          `${prefix} Unmapped rewayah/style: "${rewayat.name}" / "${rewayat.style}" - skipping`,
         );
         stats.rewayatFailed++;
         continue;
@@ -360,7 +360,7 @@ async function main(): Promise<void> {
       );
 
       if (surahNumbers.length === 0) {
-        console.warn(`${prefix} No valid surah numbers — skipping`);
+        console.warn(`${prefix} No valid surah numbers - skipping`);
         stats.rewayatFailed++;
         continue;
       }
@@ -373,7 +373,7 @@ async function main(): Promise<void> {
 
       const sourceServer = rewayat.server?.replace(/\/$/, '');
       if (!sourceServer) {
-        console.warn(`${prefix} No source server URL — skipping`);
+        console.warn(`${prefix} No source server URL - skipping`);
         stats.rewayatFailed++;
         continue;
       }
@@ -416,7 +416,7 @@ async function main(): Promise<void> {
 
   // Summary
   console.log('\n=== Enqueue Summary ===');
-  if (DRY_RUN) console.log('(DRY RUN — nothing was enqueued)');
+  if (DRY_RUN) console.log('(DRY RUN - nothing was enqueued)');
   console.log(`  Rewayat processed:   ${stats.rewayatProcessed}`);
   console.log(`  Rewayat skipped:     ${stats.rewayatSkipped}`);
   console.log(`  Rewayat failed:      ${stats.rewayatFailed}`);

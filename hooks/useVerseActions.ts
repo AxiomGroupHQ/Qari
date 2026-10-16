@@ -5,7 +5,7 @@ import type {HighlightColor} from '@/types/verse-annotations';
 
 /**
  * Zero-re-render action hook for verse annotations.
- * All actions use getState() — no subscription, no re-renders.
+ * All actions use getState() - no subscription, no re-renders.
  */
 export function useVerseActions() {
   return useMemo(

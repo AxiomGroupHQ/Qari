@@ -44,13 +44,13 @@ class QCFFontLoader {
     return task;
   }
 
-  // Best-effort prefetch for nearby pages. Errors are swallowed — the
+  // Best-effort prefetch for nearby pages. Errors are swallowed - the
   // primary ensure() call for the visible page is what matters.
   prefetch(pages: number[], fontMgr: SkTypefaceFontProvider): void {
     for (const p of pages) {
       if (p >= 1 && p <= TOTAL_PAGES && !this.registered.has(p)) {
         this.ensure(p, fontMgr).catch(() => {
-          // Ignore — prefetch is opportunistic
+          // Ignore - prefetch is opportunistic
         });
       }
     }

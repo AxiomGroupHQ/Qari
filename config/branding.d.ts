@@ -42,7 +42,7 @@ export interface HomeRow {
 /**
  * Props passed to a fork's `listenTabTopComponent` (RFC-008).
  *
- * Reserved for future extension — the slot starts with no required props
+ * Reserved for future extension - the slot starts with no required props
  * so forks can ship a plain `() => JSX.Element`. Any future additions
  * (theming context, navigation hooks, …) must default to optional so
  * existing implementations keep compiling.
@@ -51,24 +51,24 @@ export interface HomeRow {
 export interface ListenTabTopComponentProps {}
 
 /**
- * RFC-012 — identifier for a Search/Browse-tab filter dimension.
+ * RFC-012 - identifier for a Search/Browse-tab filter dimension.
  *
  * Each id is a predicate the `BrowseReciters` filter pipeline can apply
  * to the reciter list. Forks declare an array in `branding.searchFilters`
  * to opt in to the user-editable chip framework; when undefined, the
  * Search tab keeps today's bespoke chip set (teacher/student) unchanged.
  *
- * v1 ships the exists-today subset only — every dimension here resolves
+ * v1 ships the exists-today subset only - every dimension here resolves
  * against fields that already exist on `Reciter` / `Reciter.rewayat[]`.
  * Future dimensions (`country`, `translation`) require the corresponding
  * fields to be added to the `Reciter` type and populated from the
  * catalog first; they're not part of this PR.
  */
 export type SearchFilterDimension =
-  | 'rewaya' // Reciter.rewayat[].name — teacher/student (already bespoke; here for future migration)
+  | 'rewaya' // Reciter.rewayat[].name - teacher/student (already bespoke; here for future migration)
   | 'has-surah' // surah picker → Reciter.rewayat[].surah_list includes (already bespoke; here for future migration)
   | 'has-photo' // Reciter.image_url present
-  | 'recitation-style'; // Reciter.rewayat[].style — canonical slugs 'murattal'|'mojawwad'|'moalim' per data/rewayat-slugs.json (already bespoke; here for future migration)
+  | 'recitation-style'; // Reciter.rewayat[].style - canonical slugs 'murattal'|'mojawwad'|'moalim' per data/rewayat-slugs.json (already bespoke; here for future migration)
 
 /** App identity values that vary across forks. */
 export interface Branding {
@@ -92,7 +92,7 @@ export interface Branding {
   /**
    * Order + visibility of Listen-tab home rows.
    *
-   * Optional — when undefined, RecitersView falls back to the built-in
+   * Optional - when undefined, RecitersView falls back to the built-in
    * default order (preserving today's Istima behavior verbatim). Forks
    * override by declaring their own array. Order in the array == render
    * order. Empty-data rows self-hide regardless of `enabled`.
@@ -106,7 +106,7 @@ export interface Branding {
    */
   homeRowConfig?: HomeRow[];
   /**
-   * RFC-010 — optional URL the app polls on cold-start (and on
+   * RFC-010 - optional URL the app polls on cold-start (and on
    * `AppState 'active'`, debounced) to discover catalog updates. The
    * response is expected to be JSON of shape:
    *
@@ -114,7 +114,7 @@ export interface Branding {
    *
    * If `version` exceeds the locally-tracked last-seen version, the app
    * refetches the catalog. When `url` is present, it points at an
-   * immutable per-version snapshot — preferred over the live catalog URL
+   * immutable per-version snapshot - preferred over the live catalog URL
    * because the URL itself is the CDN cache key.
    *
    * Undefined (default) → no polling. Istima ships undefined; forks with
@@ -125,7 +125,7 @@ export interface Branding {
    */
   catalogVersionEndpoint?: string;
   /**
-   * RFC-008 — optional component that replaces the Listen-tab top
+   * RFC-008 - optional component that replaces the Listen-tab top
    * region (the default `RecitersHero`). Forks return a React
    * component; `undefined` keeps Istima's `RecitersHero` verbatim.
    *
@@ -136,31 +136,31 @@ export interface Branding {
    */
   listenTabTopComponent?: ComponentType<ListenTabTopComponentProps>;
   /**
-   * RFC-012 — composable Search-tab filter dimensions. When set, the
+   * RFC-012 - composable Search-tab filter dimensions. When set, the
    * Search tab renders a user-editable chip per id; tiles on the Home
    * tab can deeplink in with chips pre-applied via the matching URL
    * params on the `reciter/browse` route. RFC-012 chips render AFTER
-   * Istima's existing bespoke chips (teacher/student) — trailing
+   * Istima's existing bespoke chips (teacher/student) - trailing
    * position is intentional so users of a forked build see the
    * familiar chips first and the fork's additions after.
    *
    * Tri-state semantics:
-   *   - `undefined` (default) — "not migrated"; Search tab keeps
+   *   - `undefined` (default) - "not migrated"; Search tab keeps
    *     today's bespoke chip set unchanged. Istima ships this.
-   *   - `[]` — "explicitly disable all RFC-012 chips". Observably the
+   *   - `[]` - "explicitly disable all RFC-012 chips". Observably the
    *     same as `undefined` today, but the intent is distinct for
    *     future v2 migration when bespoke chips themselves move under
    *     this seam.
-   *   - non-empty array — opt in to the listed dimensions.
+   *   - non-empty array - opt in to the listed dimensions.
    *
-   * v1 ships exists-today dimensions only — see `SearchFilterDimension`.
+   * v1 ships exists-today dimensions only - see `SearchFilterDimension`.
    *
    * @example
    * searchFilters: ['rewaya', 'has-surah', 'has-photo']
    */
   searchFilters?: SearchFilterDimension[];
   /**
-   * RFC-013 — optional hook returning the verse_key (e.g. `"2:197"`) the
+   * RFC-013 - optional hook returning the verse_key (e.g. `"2:197"`) the
    * PlayerSheet ayah list (`QuranView`) should anchor on for the
    * currently-playing track. Called on cold-mount and on every
    * currentSurah change thereafter. Returning `undefined` (the default)
@@ -187,32 +187,32 @@ export interface Branding {
    */
   initialPlayerVerseKey?: (track: Track) => string | undefined;
   /**
-   * RFC-009 — optional translation source for Settings → Translations.
+   * RFC-009 - optional translation source for Settings → Translations.
    * `undefined` keeps Istima's default (the alQuran.cloud-backed
    * `alQuranCloudTranslationProvider`).
    */
   translationProvider?: TranslationProvider;
   /**
-   * RFC-009 — optional tafsir source for Settings → Tafsir. `undefined`
+   * RFC-009 - optional tafsir source for Settings → Tafsir. `undefined`
    * keeps Istima's default (the api.quran.com-backed
    * `quranComTafsirProvider`).
    */
   tafsirProvider?: TafsirProvider;
   /**
-   * RFC-014 — strategy for wiring the player Mushaf FlashList's scroll
+   * RFC-014 - strategy for wiring the player Mushaf FlashList's scroll
    * handling.
    *
-   * `'gorhom'` — `useBottomSheetScrollableCreator()` is called and its
+   * `'gorhom'` - `useBottomSheetScrollableCreator()` is called and its
    *   result is passed as `renderScrollComponent` on FlashList. The
    *   swipe-down-to-dismiss gesture on the player sheet is active.
    *   Imperative `scrollToIndex` / `scrollToOffset` calls issued before
    *   the sheet's animation has settled into EXTENDED/FILL_PARENT are
    *   intercepted by the gorhom wrapper and silently no-op.
    *
-   * `'native'` — gorhom wrapper skipped; imperative scroll calls reach
+   * `'native'` - gorhom wrapper skipped; imperative scroll calls reach
    *   the native scroll node immediately, regardless of the sheet's
    *   animation state. The sheet's swipe-down-to-dismiss gesture stops
-   *   working at the Mushaf list level — forks opting in must provide
+   *   working at the Mushaf list level - forks opting in must provide
    *   an alternative dismiss affordance (e.g. an explicit close button
    *   in the player header). A `__DEV__`-only warning fires once per
    *   JS context to surface this responsibility.
@@ -220,7 +220,7 @@ export interface Branding {
    * Field absent from `config/branding.js` → consumer applies
    * `?? 'gorhom'` at the call site, byte-equivalent to today's behavior.
    *
-   * Applies identically on iOS and Android — forks don't need
+   * Applies identically on iOS and Android - forks don't need
    * platform-conditional branding. A future strategy (e.g.
    * `'gesture-handler-v3'`) is an additive change to this union.
    *
@@ -228,7 +228,7 @@ export interface Branding {
    */
   playerMushafScrollBehavior?: 'gorhom' | 'native';
   /**
-   * RFC-015 — base URL for ayah-timestamp JSONs served from a fork's
+   * RFC-015 - base URL for ayah-timestamp JSONs served from a fork's
    * R2 bucket (or any CDN with the same
    * `{base}/{rewayatId}/{NNN}.json` layout `TimestampFetchService`
    * constructs).

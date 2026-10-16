@@ -1,14 +1,13 @@
 # Feature: Analytics & Listening Insights
 
-**Status:** Phase 1 shipped (2026-04) — event tracking, local aggregation, Sentry crash reporting. Phases 2+ (Stats Dashboard, Deep Insights, Wrapped) remain in design.
+**Status:** Phase 1 shipped (2026-04) - event tracking, local aggregation, Sentry crash reporting. Phases 2+ (Stats Dashboard, Deep Insights, Wrapped) remain in design.
 **Priority:** High
 **Created:** 2026-02-20
 **Updated:** 2026-04-16
-**GitHub Issue:** [#119](https://github.com/thebayaan/Bayaan/issues/119)
 
 ## Overview
 
-Comprehensive analytics system for Istima — Spotify-level listening insights, Tarteel-level reading tracking, adhkar engagement, and the data foundation for future features like a stats dashboard, activity calendar, and Istima Wrapped.
+Full analytics system for Istima - Spotify-level listening insights, Tarteel-level reading tracking, adhkar engagement, and the data foundation for future features like a stats dashboard, activity calendar, and Istima Wrapped.
 
 This document covers the **full vision** (what we're building toward) and the **Phase 1 scope** (what ships first). Phase 1 is the data foundation: event tracking, local aggregation, and PostHog dashboards. UI features (stats dashboard, activity calendar, Wrapped) are future phases that build on this foundation.
 
@@ -30,15 +29,15 @@ Istima has zero analytics, zero crash reporting, and no visibility into user beh
 |----------|--------|-----------|
 | Analytics platform | PostHog (sole destination) | 1M events/mo free, JS-only SDK (Expo compatible), funnels/retention/cohorts included, offline queuing, feature flags built-in |
 | Privacy model | Track everything, anonymous by default | All data is anonymous (device ID, no PII). Request platform permissions (ATT on iOS) as required. No in-app consent toggle. |
-| User identity | Device UUID (MMKV) | Generated via `expo-crypto` on first launch. Designed for future auth — PostHog `identify()` merges anonymous history when accounts ship. |
+| User identity | Device UUID (MMKV) | Generated via `expo-crypto` on first launch. Designed for future auth - PostHog `identify()` merges anonymous history when accounts ship. |
 | Listen threshold | Graduated | Raw `playback_started` always tracked. `meaningful_listen` fires at 30s or 10% of duration (whichever first). Stats/Wrapped use meaningful listens. |
 | Mushaf tracking | Page-level + time heuristics | Track pages opened and estimate actual reading via time thresholds (~15s = actually read). No verse-level tracking. |
 | Adhkar tracking | Category-level | Track morning/evening/sleep/custom session starts and completions. Not individual dhikr repetitions. |
-| Wrapped cadence | Ramadan Wrapped (Eid) + Annual | Future feature. Event schema captures everything needed — purely a computation + UI layer later. |
+| Wrapped cadence | Ramadan Wrapped (Eid) + Annual | Future feature. Event schema captures everything needed - purely a computation + UI layer later. |
 | Stats dashboard | Dedicated tab, growing into deep insights hub | Future feature. Local aggregation layer built in Phase 1 so data is ready. |
 | Activity calendar | GitHub-style grid | Distinct hues for listening/reading/both, intensity by duration. Future feature, data captured from day one. |
 | Gamification | Consistency without punishment | Days-this-month counter, configurable daily goal. No streaks, no XP, no leaderboards. Respects worship context. |
-| Backend role | Minimal — Wrapped computation only | PostHog handles all event storage and product analytics. Backend (`api.thebayaan.com`) only involved for future Wrapped batch computation via PostHog API/exports. |
+| Backend role | Minimal - Wrapped computation only | PostHog handles all event storage and product analytics. Backend (`iapi.istima.app`) only involved for future Wrapped batch computation via PostHog API/exports. |
 
 ## Full Vision (All Phases)
 
@@ -46,7 +45,7 @@ Istima has zero analytics, zero crash reporting, and no visibility into user beh
 PostHog SDK integration, analytics service singleton, full event instrumentation across all app surfaces.
 
 ### 2. Local Aggregation Layer (Phase 1)
-MMKV-based daily counters updated as events fire — listening time, pages read, adhkar sessions, khatmah progress. Data ready for UI before UI ships.
+MMKV-based daily counters updated as events fire - listening time, pages read, adhkar sessions, khatmah progress. Data ready for UI before UI ships.
 
 ### 3. PostHog Dashboards (Phase 1)
 Product analytics: DAU/WAU/MAU, retention, feature adoption, top reciters/surahs, surah completion rates, reciter trends.
@@ -95,7 +94,7 @@ Ramadan Wrapped (released on Eid al-Fitr) and Annual Wrapped. Shareable story-fo
 
 ### Analytics Service
 
-Singleton at `services/analytics/AnalyticsService.ts`. Wraps PostHog SDK and local aggregation. All event firing goes through this service — no direct PostHog calls from components or stores.
+Singleton at `services/analytics/AnalyticsService.ts`. Wraps PostHog SDK and local aggregation. All event firing goes through this service - no direct PostHog calls from components or stores.
 
 ```typescript
 interface AnalyticsService {
@@ -235,32 +234,32 @@ interface ListeningGoal {
 ### Integration Points
 
 Files to create:
-- `services/analytics/AnalyticsService.ts` — singleton wrapping PostHog + local aggregation
-- `services/analytics/events.ts` — event name constants and property type definitions
-- `services/analytics/LocalAggregationStore.ts` — MMKV daily aggregates
-- `services/analytics/MeaningfulListenTracker.ts` — tracks 30s/10% threshold per active playback
+- `services/analytics/AnalyticsService.ts` - singleton wrapping PostHog + local aggregation
+- `services/analytics/events.ts` - event name constants and property type definitions
+- `services/analytics/LocalAggregationStore.ts` - MMKV daily aggregates
+- `services/analytics/MeaningfulListenTracker.ts` - tracks 30s/10% threshold per active playback
 
 Files to modify:
-- `services/audio/ExpoAudioProvider.tsx` — fire playback events (started, paused, completed, progress for meaningful listen detection)
-- `services/player/store/playerStore.ts` — fire queue, rate, skip events
-- `services/AppInitializer.ts` — register analytics service initialization
-- `app/_layout.tsx` — wrap with PostHog provider, initialize on startup
-- `store/ambientStore.ts` — fire ambient toggle events
-- `store/lovedStore.ts` — fire favorite toggle events
-- `store/downloadStore.ts` — fire download events
-- Mushaf screen components — fire page opened/read events
-- Adhkar screen components — fire session/tasbeeh events
-- Search components — fire search events
-- Share flow — fire share events
+- `services/audio/ExpoAudioProvider.tsx` - fire playback events (started, paused, completed, progress for meaningful listen detection)
+- `services/player/store/playerStore.ts` - fire queue, rate, skip events
+- `services/AppInitializer.ts` - register analytics service initialization
+- `app/_layout.tsx` - wrap with PostHog provider, initialize on startup
+- `store/ambientStore.ts` - fire ambient toggle events
+- `store/lovedStore.ts` - fire favorite toggle events
+- `store/downloadStore.ts` - fire download events
+- Mushaf screen components - fire page opened/read events
+- Adhkar screen components - fire session/tasbeeh events
+- Search components - fire search events
+- Share flow - fire share events
 
 ### PostHog Dashboard Configuration
 
 **Product dashboards to set up:**
-- **Overview:** DAU/WAU/MAU, sessions per day, avg session duration
-- **Retention:** Day 1/7/30 retention cohorts
-- **Listening:** Top reciters by listen time, top surahs by play count, surah completion rate, avg listen duration
-- **Feature adoption:** % users using mushaf, ambient, downloads, playlists, translations, adhkar
-- **Funnels:** App open → play → meaningful listen → complete surah
+- **Overview** - DAU/WAU/MAU, sessions per day, avg session duration
+- **Retention** - Day 1/7/30 retention cohorts
+- **Listening** - Top reciters by listen time, top surahs by play count, surah completion rate, avg listen duration
+- **Feature adoption** - % users using mushaf, ambient, downloads, playlists, translations, adhkar
+- **Funnels** - App open → play → meaningful listen → complete surah
 
 ### Crash Reporting
 
@@ -284,4 +283,4 @@ Extension of stats dashboard: trends over time (listening up/down vs last month)
 Ramadan Wrapped (released Eid al-Fitr) + Annual Wrapped. Story-format shareable cards. Listening personality archetypes (The Devoted, The Explorer, The Consistent, The Night Listener, The Ramadan Warrior, The Scholar, The Mushaf Companion). Percentile rankings. Backend computation via PostHog API/data export.
 
 ### Optional Auth
-Apple/Google sign-in to preserve data across devices and reinstalls. PostHog `identify()` merges anonymous device history into authenticated profile. No schema changes needed — device ID → user ID resolution is built into PostHog.
+Apple/Google sign-in to preserve data across devices and reinstalls. PostHog `identify()` merges anonymous device history into authenticated profile. No schema changes needed - device ID → user ID resolution is built into PostHog.

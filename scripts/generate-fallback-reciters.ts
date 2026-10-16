@@ -4,7 +4,7 @@
  *
  * Usage: npx tsx scripts/generate-fallback-reciters.ts
  *
- * ⚠️  MAINTAINER-ONLY — this overwrites the OSS-safe fallback.
+ * ⚠️  MAINTAINER-ONLY - this overwrites the OSS-safe fallback.
  *
  * The file checked into git at data/reciters-fallback.json is a curated
  * public-source version (mp3quran.net / quranicaudio.com only) that ships

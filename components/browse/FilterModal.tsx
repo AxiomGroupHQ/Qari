@@ -44,7 +44,7 @@ const STYLE_OPTIONS = [
 
 // One chip per rewayah present in the reciter data, keyed by canonical
 // RewayahId slug (or the raw DB name when unresolvable). Dedups tariq
-// aliases — "Warsh A'n Nafi'", "Warsh … Tariq Alazraq", and
+// aliases - "Warsh A'n Nafi'", "Warsh … Tariq Alazraq", and
 // "Warsh … Tariq Abi Baker" all collapse to a single "Warsh" chip.
 // Ordered by the canonical Qira'at sequence (ALL_REWAYAH_IDS order),
 // with any unresolved entries appended at the end.

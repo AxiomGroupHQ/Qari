@@ -14,13 +14,13 @@ This RFC is the second in the XF-NNN multi-tenancy series, following RFC-007 (th
 
 ## Motivation
 
-`components/RecitersView.tsx` currently renders the top region as a fixed `<RecitersHero />` element at the start of the ScrollView (`RecitersView.tsx:545` on `develop`). Forks that ship a different top region — Qariah ships a 3-tile grid (`ListenTabTopGrid`) with stacked Reciter + Surah pills on the left and a tall Shuffle pill on the right — have no extension seam, so they fork the `<RecitersHero />` line directly.
+`components/RecitersView.tsx` currently renders the top region as a fixed `<RecitersHero />` element at the start of the ScrollView (`RecitersView.tsx:545` on `develop`). Forks that ship a different top region - Qariah ships a 3-tile grid (`ListenTabTopGrid`) with stacked Reciter + Surah pills on the left and a tall Shuffle pill on the right - have no extension seam, so they fork the `<RecitersHero />` line directly.
 
 This is the same divergence shape that PR #260 (`branding.homeRowConfig`) just resolved for the rows beneath the hero. The single remaining hardcoded JSX line in this file is the hero render.
 
-Concrete cost today: every Istima change to `RecitersHero` (which has been touched 3× in the last 6 sprints — sprints 7, 10, 13 of Qariah's tracking) creates a merge conflict at this exact line for Qariah's `qariah-main` branch even though Qariah doesn't use `RecitersHero` at all.
+Concrete cost today: every Istima change to `RecitersHero` (which has been touched 3× in the last 6 sprints - sprints 7, 10, 13 of Qariah's tracking) creates a merge conflict at this exact line for Qariah's `qariah-main` branch even though Qariah doesn't use `RecitersHero` at all.
 
-Real cite of Qariah's current divergence: see `components/RecitersView.tsx:687-698` in the Qariah fork — a flag-gated branch that swaps `<RecitersHero />` for `<ListenTabTopGrid />`. The flag plus the JSX swap is the entire workaround.
+Real cite of Qariah's current divergence: see `components/RecitersView.tsx:687-698` in the Qariah fork - a flag-gated branch that swaps `<RecitersHero />` for `<ListenTabTopGrid />`. The flag plus the JSX swap is the entire workaround.
 
 ## Decision
 
@@ -32,7 +32,7 @@ import type {ComponentType} from 'react';
 
 export interface ListenTabTopComponentProps {
   // Reserved for future props. The slot starts with no required props so
-  // forks can ship a plain `() => JSX.Element`. Future additions (e.g.
+  // forks can ship a plain ` => JSX.Element`. Future additions (e.g.
   // theming context, navigation hooks) must default to optional so existing
   // implementations don't break.
 }
@@ -65,39 +65,39 @@ Render-site change in `components/RecitersView.tsx`:
   : <RecitersHero />}
 ```
 
-Total Bayaan-side diff: ~10 lines (5 in branding.d.ts, 2 in branding.js for the field declaration, 3 in RecitersView.tsx for the conditional render).
+Total Istima-side diff: ~10 lines (5 in branding.d.ts, 2 in branding.js for the field declaration, 3 in RecitersView.tsx for the conditional render).
 
 ## Alternatives considered
 
-### Alt 1 — Declarative tile schema: `branding.listenTabTopTiles: TopTileConfig[]`
+### Alt 1 - Declarative tile schema: `branding.listenTabTopTiles: TopTileConfig[]`
 
 Define a structured schema (`{type: 'reciter-pill' | 'surah-pill' | 'shuffle-pill', position: …}`) and have RecitersView render from the array.
 
 **Rejected** because:
-- Constrains the design space to whatever tile types Istima thinks to enumerate today. Qariah's current grid is 3 tiles; the next fork might want 4 with a different layout; the one after that might want a horizontal swipe carousel. Each new shape requires a Bayaan-side schema update and propagation to all callers.
+- Constrains the design space to whatever tile types Istima thinks to enumerate today. Qariah's current grid is 3 tiles; the next fork might want 4 with a different layout; the one after that might want a horizontal swipe carousel. Each new shape requires a Istima-side schema update and propagation to all callers.
 - The render layer ends up as a giant switch-statement, which is exactly the kind of "registry that knows about every consumer" anti-pattern multi-tenancy is supposed to retire.
 - The whole point of the seam is that forks design their own top region.
 
-### Alt 2 — String enum: `branding.listenTabTopMode: 'browse-all-hero' | 'tile-grid' | 'custom'`
+### Alt 2 - String enum: `branding.listenTabTopMode: 'browse-all-hero' | 'tile-grid' | 'custom'`
 
-Pick from a finite set of known top-region shapes; Bayaan-side code knows how to render each named mode.
+Pick from a finite set of known top-region shapes; Istima-side code knows how to render each named mode.
 
 **Rejected** because:
 - Pushes fork-specific layouts into Istima's source tree. Istima would either (a) carry Qariah's `ListenTabTopGrid` code permanently or (b) leave the enum value `'tile-grid'` as a no-op outside Qariah. Both options conflate fork code with main-branch code.
-- Doesn't actually solve the divergence — Qariah's `ListenTabTopGrid` lives in the Qariah tree regardless, and the only thing exported across the seam is a string. The component still has to be wired up downstream.
+- Doesn't actually solve the divergence - Qariah's `ListenTabTopGrid` lives in the Qariah tree regardless, and the only thing exported across the seam is a string. The component still has to be wired up downstream.
 - Discoverability is worse: you have to read the enum + the consumer code to know what each mode does, vs. reading the fork's branding.js entry which IS the component.
 
-### Alt 3 — Component slot (RECOMMENDED — this RFC)
+### Alt 3 - Component slot (RECOMMENDED - this RFC)
 
 Forks pass a React component reference through `Branding`. Istima renders `<branding.listenTabTopComponent />` if set, otherwise `<RecitersHero />`.
 
 **Why this won:**
-- Smallest possible Bayaan-side change (one conditional).
+- Smallest possible Istima-side change (one conditional).
 - Zero opinion on what the top region looks like. Forks own their layout entirely.
 - Type-safe: the component type lives in the same `branding.d.ts` that defines all the other fork-extension points.
 - No registry: Istima doesn't need to know about Qariah's component at all.
 
-### Alt 4 — Status quo (no RFC, keep forking the line)
+### Alt 4 - Status quo (no RFC, keep forking the line)
 
 **Rejected** because:
 - The hardcoded `<RecitersHero />` line is the last remaining merge-conflict-prone shared file in `RecitersView.tsx` after PR #260. Closing this seam eliminates the divergence entirely.
@@ -106,9 +106,9 @@ Forks pass a React component reference through `Branding`. Istima renders `<bran
 ## Consequences
 
 ### Positive
-- Forks that want a different top region declare it in `branding.js` instead of forking `RecitersView.tsx`. Zero Bayaan-source diff at the per-fork level.
+- Forks that want a different top region declare it in `branding.js` instead of forking `RecitersView.tsx`. Zero Istima-source diff at the per-fork level.
 - The seam is opt-in; existing callers (Istima included) are unaffected.
-- Composes cleanly with `homeRowConfig` (PR #260): hero is fully fork-owned, row order is fork-config-driven, leaving `RecitersView.tsx` itself as Bayaan-managed shell.
+- Composes cleanly with `homeRowConfig` (PR #260): hero is fully fork-owned, row order is fork-config-driven, leaving `RecitersView.tsx` itself as Istima-managed shell.
 
 ### Neutral
 - Adds one field to `Branding`. The type addition is ~5 lines.
@@ -127,7 +127,7 @@ Forks pass a React component reference through `Branding`. Istima renders `<bran
 
 ## Open questions
 
-1. **Should the slot receive props?** Today no — the component is self-contained. If future Istima adds (e.g.) a "scroll-up-pull-to-refresh" affordance that wraps the top region, the slot might need an `onRefresh` callback. Defer until a concrete consumer needs it; the empty `ListenTabTopComponentProps` interface reserves the namespace.
+1. **Should the slot receive props?** Today no - the component is self-contained. If future Istima adds (e.g.) a "scroll-up-pull-to-refresh" affordance that wraps the top region, the slot might need an `onRefresh` callback. Defer until a concrete consumer needs it; the empty `ListenTabTopComponentProps` interface reserves the namespace.
 
 2. **ErrorBoundary at the slot?** Probably yes eventually, but not in the initial PR. Istima's existing top-level boundary already catches render crashes; per-slot boundaries are a polish layer.
 

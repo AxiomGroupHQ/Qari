@@ -57,7 +57,7 @@ interface SaheehData {
   [verseKey: string]: SaheehFootnoteEntry;
 }
 
-// Load Saheeh data at module scope (require() is cached — zero cost since QuranView already loaded it)
+// Load Saheeh data at module scope (require() is cached - zero cost since QuranView already loaded it)
 const saheehDataForFootnotes =
   require('@/data/SaheehInternational.translation-with-footnote-tags.json') as SaheehData;
 
@@ -141,7 +141,7 @@ export const VerseItem = memo<VerseItemProps>(
       [allahNameHighlightColorSetting, theme.isDarkMode],
     );
 
-    // Per-verse-key annotation selectors — Zustand skips re-render when
+    // Per-verse-key annotation selectors - Zustand skips re-render when
     // THIS verse's specific value didn't change
     const isSelected = useVerseSelectionStore(
       useCallback(s => s.selectedVerseKey === verseKey, [verseKey]),
@@ -154,7 +154,7 @@ export const VerseItem = memo<VerseItemProps>(
     const hasNote = useVerseAnnotationsStore(
       useCallback(s => s.notedVerseKeys.has(verseKey), [verseKey]),
     );
-    // Fetch tajweed data directly from store — granular selector means only
+    // Fetch tajweed data directly from store - granular selector means only
     // the ~10 visible VerseItems re-render when tajweed finishes loading
     const processedTajweedAyahData = useTajweedStore(
       s => s.indexedTajweedData?.[verseKey],
@@ -184,7 +184,7 @@ export const VerseItem = memo<VerseItemProps>(
       setSelectedWordPosition(null);
     }, [verseKey]);
 
-    // Batch all Color() derivations — only recomputed on theme or highlight change
+    // Batch all Color() derivations - only recomputed on theme or highlight change
     const derivedColors = useMemo(
       () => ({
         bg: Color(textColor).alpha(0.08).toString(),
@@ -244,7 +244,7 @@ export const VerseItem = memo<VerseItemProps>(
           verseKey,
           surahNumber: verse.surah_number,
           ayahNumber: verse.ayah_number,
-          // arabicText omitted — the sheet reads from DK so it always
+          // arabicText omitted - the sheet reads from DK so it always
           // matches the current rewayah instead of the static Hafs
           // text on this VerseItem prop.
           translation: verse.translation || '',
@@ -263,7 +263,7 @@ export const VerseItem = memo<VerseItemProps>(
           verseKey,
           surahNumber: verse.surah_number,
           ayahNumber: verse.ayah_number,
-          // arabicText omitted — the sheet reads from DK so it always
+          // arabicText omitted - the sheet reads from DK so it always
           // matches the current rewayah instead of the static Hafs
           // text on this VerseItem prop.
           translation: verse.translation || '',
@@ -322,7 +322,7 @@ export const VerseItem = memo<VerseItemProps>(
     }, [isQPCSelected, processedTajweedAyahData, showTajweed, textColor]);
     // --- End Building Nodes ---
 
-    // Memoize container style — avoids Pressable function-form re-evaluation every frame
+    // Memoize container style - avoids Pressable function-form re-evaluation every frame
     const containerStyle = useMemo(
       () => [
         styles.container,
@@ -345,7 +345,7 @@ export const VerseItem = memo<VerseItemProps>(
       ],
     );
 
-    // Memoize inline text styles — only change on theme/settings switch, never during scroll
+    // Memoize inline text styles - only change on theme/settings switch, never during scroll
     const arabicStyle = useMemo(
       () => [
         styles.arabicText,

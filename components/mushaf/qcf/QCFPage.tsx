@@ -2,7 +2,7 @@
 //
 // Per-line Skia paragraphs, each at its own y position from
 // calculateLineYPositions(). TextAlign.Center, layout to CONTENT_WIDTH.
-// KFGQPC glyph advances already encode per-line spacing — no Justify
+// KFGQPC glyph advances already encode per-line spacing - no Justify
 // needed (Skia's Justify can't engage on PUA codepoints with no
 // whitespace anyway).
 //
@@ -101,7 +101,7 @@ const DK_FONT_FAMILY = 'DigitalKhattV2';
 const DK_FONT_SIZE = (CONTENT_WIDTH / PAGE_WIDTH) * FONTSIZE * 0.9;
 
 // Skia treats U+0020 (regular space) as a wrap-point and merges adjacent
-// PUA word-glyphs at line start when no separator precedes them — the two
+// PUA word-glyphs at line start when no separator precedes them - the two
 // failure modes are (a) first two words on every page rendering as one
 // glyph blob and (b) hizb-marker pages where the QF API embeds a regular
 // space inside the first word's code field. Replacing spaces with U+200A
@@ -343,7 +343,7 @@ const QCFPage: React.FC<QCFPageProps> = ({
   ]);
 
   // Load this page's QCF page-font, prefetch neighbors. Basmallah no
-  // longer needs the page-1 font — DK font handles it.
+  // longer needs the page-1 font - DK font handles it.
   useEffect(() => {
     if (!fontMgr) return;
     let cancelled = false;

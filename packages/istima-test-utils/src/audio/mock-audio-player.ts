@@ -1,5 +1,5 @@
 /**
- * MockAudioPlayer — drop-in stand-in for expo-audio's AudioPlayer in jest tests.
+ * MockAudioPlayer - drop-in stand-in for expo-audio's AudioPlayer in jest tests.
  *
  * expo-audio's real AudioPlayer is bridged to native code and not directly
  * testable in jest. This double exposes the same surface (play / pause /

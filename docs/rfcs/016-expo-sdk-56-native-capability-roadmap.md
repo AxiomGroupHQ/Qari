@@ -30,7 +30,7 @@ Primary upstream references:
 ## Goals
 
 - Upgrade Istima from SDK 55 to SDK 56 safely.
-- Identify SDK 56 features that can materially improve Bayaan.
+- Identify SDK 56 features that can materially improve Istima.
 - Establish a practical native-code roadmap for Mushaf, Android performance,
   widgets, audio, storage, downloads, and native UI.
 - Avoid expensive rewrites unless prototypes prove the benefit.
@@ -48,7 +48,7 @@ Primary upstream references:
 
 ### Mushaf
 
-The Mushaf is one of the highest-leverage areas for native investment. It is
+The Mushaf is one of the highest-use areas for native investment. It is
 performance-sensitive and combines:
 
 - Skia rendering.

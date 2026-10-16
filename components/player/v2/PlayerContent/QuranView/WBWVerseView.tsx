@@ -86,7 +86,7 @@ interface WBWVerseViewProps {
   onTap?: () => void;
   onLongPress?: () => void;
   /** Context rewayah (player track or mushaf setting). Word-by-word data
-   *  is Hafs-only, so the Arabic here is always rendered in Hafs — this
+   *  is Hafs-only, so the Arabic here is always rendered in Hafs - this
    *  prop only drives the "Showing Hafs" disclosure label. */
   rewayah?: RewayahId;
 }
@@ -107,9 +107,9 @@ interface PositionedWord {
   x: number;
   y: number;
   totalItemHeight: number;
-  /** DK word position — always unique, used as React key */
+  /** DK word position - always unique, used as React key */
   dkPosition: number;
-  /** WBW word position — used for tap lookup in WordDetailSheet */
+  /** WBW word position - used for tap lookup in WordDetailSheet */
   position: number;
   translation: string;
   transliteration: string;
@@ -341,7 +341,7 @@ export const WBWVerseView = memo<WBWVerseViewProps>(
     const contextRewayah = rewayahProp ?? activeRewayah;
     const showingHafsFallback = contextRewayah !== 'hafs';
 
-    // Word-by-word data is Hafs-aligned — always fetch Hafs DK words so
+    // Word-by-word data is Hafs-aligned - always fetch Hafs DK words so
     // word boundaries match the translation/transliteration payload.
     // Lazy-load Hafs into the side cache if the mushaf is currently on a
     // non-Hafs rewayah, then re-render.
@@ -378,7 +378,7 @@ export const WBWVerseView = memo<WBWVerseViewProps>(
 
     const wbwWords = cachedWords ?? asyncWords;
 
-    // Always read Hafs DK words — WBW word indexing is Hafs-aligned.
+    // Always read Hafs DK words - WBW word indexing is Hafs-aligned.
     const dkWords = useMemo(
       () => digitalKhattDataService.getVerseWords(verseKey, 'hafs'),
       [verseKey],
@@ -416,16 +416,16 @@ export const WBWVerseView = memo<WBWVerseViewProps>(
         accumulated = accumulated ? accumulated + ' ' + dkNorm : dkNorm;
 
         if (accumulated === wbwNorm || !wbwNorm) {
-          // Exact match (1:1 or end of N:1 merge) — pair and advance WBW
+          // Exact match (1:1 or end of N:1 merge) - pair and advance WBW
           result.push({dkWord, wbwWord});
           wbwIdx++;
           accumulated = '';
         } else if (wbwNorm.startsWith(accumulated + ' ')) {
-          // DK word is a prefix of the WBW word — pair but don't advance WBW
+          // DK word is a prefix of the WBW word - pair but don't advance WBW
           // (the next DK word will continue accumulating into the same WBW word)
           result.push({dkWord, wbwWord});
         } else {
-          // No text match — fallback to direct pairing and advance
+          // No text match - fallback to direct pairing and advance
           result.push({dkWord, wbwWord});
           wbwIdx++;
           accumulated = '';
@@ -600,7 +600,7 @@ export const WBWVerseView = memo<WBWVerseViewProps>(
             return;
           }
         }
-        // No word hit — forward to parent long-press handler
+        // No word hit - forward to parent long-press handler
         onLongPress?.();
       },
       [computedLayout, onWordPress, onLongPress],
@@ -667,7 +667,7 @@ export const WBWVerseView = memo<WBWVerseViewProps>(
 
     if (!wbwWords) return null;
 
-    // Small disclosure when the active context rewayah isn't Hafs —
+    // Small disclosure when the active context rewayah isn't Hafs -
     // WBW data is Hafs-aligned, so the word grid here is always Hafs.
     const hafsNotice = showingHafsFallback ? (
       <Text
@@ -708,7 +708,7 @@ export const WBWVerseView = memo<WBWVerseViewProps>(
                 }}
               />
             ))}
-            {/* Canvas chunks — split to stay within Metal texture size limits */}
+            {/* Canvas chunks - split to stay within Metal texture size limits */}
             {canvasChunks.map((chunk, idx) => (
               <Canvas
                 key={idx}

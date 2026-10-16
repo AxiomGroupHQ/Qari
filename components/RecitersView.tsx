@@ -30,7 +30,7 @@ import {
   getMemorizationReciters,
   getBeginnerFriendlyReciters,
   getFeaturedReciters,
-  getBayaanOriginalsReciters,
+  getIstimaOriginalsReciters,
   getFollowAlongReciters,
 } from '@/data/reciterCollections';
 import {useTimestampStore} from '@/store/timestampStore';
@@ -478,8 +478,8 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     () => seededShuffle(getFeaturedReciters(8), sessionSeed + 2),
     [sessionSeed],
   );
-  const bayaanOriginalsReciters = useMemo(
-    () => seededShuffle(getBayaanOriginalsReciters(10), sessionSeed + 3),
+  const istimaOriginalsReciters = useMemo(
+    () => seededShuffle(getIstimaOriginalsReciters(10), sessionSeed + 3),
     [sessionSeed],
   );
   const beginnerFriendlyReciters = useMemo(
@@ -668,10 +668,10 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
       ) : null,
 
     exclusives:
-      bayaanOriginalsReciters.length > 0 ? (
+      istimaOriginalsReciters.length > 0 ? (
         <Section
           title={t('recitersView.exclusives')}
-          data={bayaanOriginalsReciters}
+          data={istimaOriginalsReciters}
           variant="featured"
           onReciterPress={onReciterPress}
           theme={theme}
@@ -726,7 +726,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
 
   const homeRowConfig = branding.homeRowConfig ?? DEFAULT_HOME_ROW_CONFIG;
 
-  // RFC-008 — Listen-tab top-region slot. Forks may replace the default
+  // RFC-008 - Listen-tab top-region slot. Forks may replace the default
   // `RecitersHero` via `branding.listenTabTopComponent`; capitalised here
   // so it can be used as a JSX element. `undefined` keeps Istima's hero.
   const ListenTabTopComponent = branding.listenTabTopComponent;
@@ -742,7 +742,7 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
       contentInsetAdjustmentBehavior={USE_GLASS ? 'automatic' : 'never'}
       showsVerticalScrollIndicator={false}
       removeClippedSubviews={true}>
-      {/* RFC-008 — Listen-tab top region. Default is the unified
+      {/* RFC-008 - Listen-tab top region. Default is the unified
        * `RecitersHero`; forks may substitute their own via
        * `branding.listenTabTopComponent`. */}
       {ListenTabTopComponent ? <ListenTabTopComponent /> : <RecitersHero />}

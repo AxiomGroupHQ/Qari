@@ -424,7 +424,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
   const recentPages = useMushafSettingsStore(s => s.recentPages);
   const searchInputRef = useRef<TextInput>(null);
 
-  // Fade animation refs — if autoFocusSearch, start in search mode immediately
+  // Fade animation refs - if autoFocusSearch, start in search mode immediately
   const browseOpacity = useRef(
     new RNAnimated.Value(autoFocusSearch ? 0 : 1),
   ).current;
@@ -490,7 +490,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
   const exitSearchMode = useCallback(() => {
     Keyboard.dismiss();
     if (autoFocusSearch) {
-      // Came directly from search icon — go back to mushaf
+      // Came directly from search icon - go back to mushaf
       onClose();
       return;
     }
@@ -511,7 +511,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
     ]).start();
   }, [browseOpacity, searchOpacity, autoFocusSearch, onClose]);
 
-  // Back handler — exit search or close overlay
+  // Back handler - exit search or close overlay
   useEffect(() => {
     const sub = BackHandler.addEventListener('hardwareBackPress', () => {
       if (isSearchMode) {
@@ -844,7 +844,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
         },
       ]}>
       {/* ============================================================ */}
-      {/* Browse Mode — always mounted, hidden via opacity              */}
+      {/* Browse Mode - always mounted, hidden via opacity              */}
       {/* ============================================================ */}
       <RNAnimated.View
         style={[styles.modeContainer, {opacity: browseOpacity}]}
@@ -903,7 +903,7 @@ const MushafSearchView: React.FC<MushafSearchViewProps> = ({
       </RNAnimated.View>
 
       {/* ============================================================ */}
-      {/* Search Mode — always mounted, hidden via opacity              */}
+      {/* Search Mode - always mounted, hidden via opacity              */}
       {/* ============================================================ */}
       <RNAnimated.View
         style={[

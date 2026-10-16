@@ -1,4 +1,4 @@
-# Analytics Data Foundation — Implementation Plan
+# Analytics Data Foundation - Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -73,7 +73,7 @@ export function getOrCreateDeviceId(): string {
   if (existing) {
     return existing;
   }
-  const id = Crypto.randomUUID();
+  const id = Crypto.randomUUID;
   mmkv.set(DEVICE_ID_KEY, id);
   return id;
 }
@@ -383,26 +383,26 @@ Create `services/analytics/__tests__/LocalAggregationStore.test.ts`:
 import {LocalAggregationStore} from '../LocalAggregationStore';
 
 // Mock MMKV
-const mockStorage = new Map<string, string>();
-jest.mock('react-native-mmkv', () => ({
-  createMMKV: () => ({
+const mockStorage = new Map<string, string>;
+jest.mock('react-native-mmkv',  => ({
+  createMMKV:  => ({
     getString: (key: string) => mockStorage.get(key),
     set: (key: string, value: string) => mockStorage.set(key, value),
     delete: (key: string) => mockStorage.delete(key),
-    getAllKeys: () => Array.from(mockStorage.keys()),
+    getAllKeys:  => Array.from(mockStorage.keys()),
   }),
 }));
 
-describe('LocalAggregationStore', () => {
+describe('LocalAggregationStore',  => {
   let store: LocalAggregationStore;
 
-  beforeEach(() => {
-    mockStorage.clear();
-    store = new LocalAggregationStore();
+  beforeEach( => {
+    mockStorage.clear;
+    store = new LocalAggregationStore;
   });
 
-  describe('addListeningTime', () => {
-    it('creates a new daily aggregate if none exists', () => {
+  describe('addListeningTime',  => {
+    it('creates a new daily aggregate if none exists',  => {
       store.addListeningTime('2026-04-12', 60000, '1', 'reciter-1');
       const agg = store.getDailyAggregate('2026-04-12');
       expect(agg.listeningMs).toBe(60000);
@@ -410,7 +410,7 @@ describe('LocalAggregationStore', () => {
       expect(agg.reciters['reciter-1']).toBe(60000);
     });
 
-    it('accumulates listening time on the same day', () => {
+    it('accumulates listening time on the same day',  => {
       store.addListeningTime('2026-04-12', 30000, '1', 'reciter-1');
       store.addListeningTime('2026-04-12', 45000, '2', 'reciter-1');
       const agg = store.getDailyAggregate('2026-04-12');
@@ -421,8 +421,8 @@ describe('LocalAggregationStore', () => {
     });
   });
 
-  describe('incrementMeaningfulListens', () => {
-    it('increments the meaningful listen counter', () => {
+  describe('incrementMeaningfulListens',  => {
+    it('increments the meaningful listen counter',  => {
       store.incrementMeaningfulListens('2026-04-12');
       store.incrementMeaningfulListens('2026-04-12');
       const agg = store.getDailyAggregate('2026-04-12');
@@ -430,8 +430,8 @@ describe('LocalAggregationStore', () => {
     });
   });
 
-  describe('addPagesOpened and addPagesRead', () => {
-    it('tracks mushaf page opens and reads separately', () => {
+  describe('addPagesOpened and addPagesRead',  => {
+    it('tracks mushaf page opens and reads separately',  => {
       store.addPagesOpened('2026-04-12', 5);
       store.addPagesRead('2026-04-12', 3);
       const agg = store.getDailyAggregate('2026-04-12');
@@ -440,16 +440,16 @@ describe('LocalAggregationStore', () => {
     });
   });
 
-  describe('incrementAdhkarSessions', () => {
-    it('increments adhkar session count', () => {
+  describe('incrementAdhkarSessions',  => {
+    it('increments adhkar session count',  => {
       store.incrementAdhkarSessions('2026-04-12');
       const agg = store.getDailyAggregate('2026-04-12');
       expect(agg.adhkarSessions).toBe(1);
     });
   });
 
-  describe('addTasbeehCount', () => {
-    it('accumulates tasbeeh count', () => {
+  describe('addTasbeehCount',  => {
+    it('accumulates tasbeeh count',  => {
       store.addTasbeehCount('2026-04-12', 33);
       store.addTasbeehCount('2026-04-12', 33);
       const agg = store.getDailyAggregate('2026-04-12');
@@ -457,34 +457,34 @@ describe('LocalAggregationStore', () => {
     });
   });
 
-  describe('getToday', () => {
-    it('returns today formatted as YYYY-MM-DD', () => {
-      const today = store.getToday();
+  describe('getToday',  => {
+    it('returns today formatted as YYYY-MM-DD',  => {
+      const today = store.getToday;
       expect(today).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     });
   });
 
-  describe('khatmah', () => {
-    it('marks a surah as completed', () => {
+  describe('khatmah',  => {
+    it('marks a surah as completed',  => {
       store.markSurahCompleted('42');
-      const progress = store.getKhatmahProgress();
+      const progress = store.getKhatmahProgress;
       expect(progress.surahsCompleted).toContain('42');
     });
 
-    it('does not duplicate surah entries', () => {
+    it('does not duplicate surah entries',  => {
       store.markSurahCompleted('42');
       store.markSurahCompleted('42');
-      const progress = store.getKhatmahProgress();
+      const progress = store.getKhatmahProgress;
       expect(progress.surahsCompleted.filter(s => s === '42')).toHaveLength(1);
     });
   });
 
-  describe('listening goal', () => {
-    it('defaults to 10 minutes', () => {
+  describe('listening goal',  => {
+    it('defaults to 10 minutes',  => {
       expect(store.getListeningGoal()).toBe(10);
     });
 
-    it('persists a custom goal', () => {
+    it('persists a custom goal',  => {
       store.setListeningGoal(20);
       expect(store.getListeningGoal()).toBe(20);
     });
@@ -498,7 +498,7 @@ describe('LocalAggregationStore', () => {
 npx jest services/analytics/__tests__/LocalAggregationStore.test.ts --no-cache
 ```
 
-Expected: FAIL — module not found.
+Expected: FAIL - module not found.
 
 - [ ] **Step 3: Implement LocalAggregationStore**
 
@@ -547,13 +547,13 @@ function emptyAggregate(date: string): DailyAggregate {
 export class LocalAggregationStore {
   private mmkv;
 
-  constructor() {
+  constructor {
     this.mmkv = createMMKV({id: 'analytics-aggregation'});
   }
 
   getToday(): string {
-    const now = new Date();
-    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    const now = new Date;
+    return `${now.getFullYear()}-${String(now.getMonth + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
   }
 
   getDailyAggregate(date: string): DailyAggregate {
@@ -615,8 +615,8 @@ export class LocalAggregationStore {
     const raw = this.mmkv.getString(KHATMAH_KEY);
     if (!raw) {
       const fresh: KhatmahProgress = {
-        id: Date.now().toString(),
-        startedAt: new Date().toISOString(),
+        id: Date.now.toString,
+        startedAt: new Date.toISOString,
         surahsCompleted: [],
       };
       this.mmkv.set(KHATMAH_KEY, JSON.stringify(fresh));
@@ -626,11 +626,11 @@ export class LocalAggregationStore {
   }
 
   markSurahCompleted(surahId: string): void {
-    const progress = this.getKhatmahProgress();
+    const progress = this.getKhatmahProgress;
     if (!progress.surahsCompleted.includes(surahId)) {
       progress.surahsCompleted.push(surahId);
       if (progress.surahsCompleted.length === 114) {
-        progress.completedAt = new Date().toISOString();
+        progress.completedAt = new Date.toISOString;
       }
       this.mmkv.set(KHATMAH_KEY, JSON.stringify(progress));
     }
@@ -638,8 +638,8 @@ export class LocalAggregationStore {
 
   startNewKhatmah(): void {
     const fresh: KhatmahProgress = {
-      id: Date.now().toString(),
-      startedAt: new Date().toISOString(),
+      id: Date.now.toString,
+      startedAt: new Date.toISOString,
       surahsCompleted: [],
     };
     this.mmkv.set(KHATMAH_KEY, JSON.stringify(fresh));
@@ -658,7 +658,7 @@ export class LocalAggregationStore {
   }
 }
 
-export const localAggregationStore = new LocalAggregationStore();
+export const localAggregationStore = new LocalAggregationStore;
 ```
 
 - [ ] **Step 4: Run tests to verify they pass**
@@ -692,29 +692,29 @@ Create `services/analytics/__tests__/MeaningfulListenTracker.test.ts`:
 ```typescript
 import {MeaningfulListenTracker} from '../MeaningfulListenTracker';
 
-describe('MeaningfulListenTracker', () => {
+describe('MeaningfulListenTracker',  => {
   let tracker: MeaningfulListenTracker;
   let onMeaningfulListen: jest.Mock;
 
-  beforeEach(() => {
-    onMeaningfulListen = jest.fn();
+  beforeEach( => {
+    onMeaningfulListen = jest.fn;
     tracker = new MeaningfulListenTracker(onMeaningfulListen);
   });
 
-  describe('startTracking', () => {
-    it('resets state for a new track', () => {
+  describe('startTracking',  => {
+    it('resets state for a new track',  => {
       tracker.startTracking({
         surahId: 1,
         reciterId: 'r1',
         rewayahId: 'rw1',
         totalDurationMs: 300000, // 5 min
       });
-      expect(onMeaningfulListen).not.toHaveBeenCalled();
+      expect(onMeaningfulListen).not.toHaveBeenCalled;
     });
   });
 
-  describe('updateProgress', () => {
-    it('fires at 30 seconds for a long track', () => {
+  describe('updateProgress',  => {
+    it('fires at 30 seconds for a long track',  => {
       tracker.startTracking({
         surahId: 2,
         reciterId: 'r1',
@@ -722,7 +722,7 @@ describe('MeaningfulListenTracker', () => {
         totalDurationMs: 600000, // 10 min
       });
       tracker.updateProgress(29000);
-      expect(onMeaningfulListen).not.toHaveBeenCalled();
+      expect(onMeaningfulListen).not.toHaveBeenCalled;
       tracker.updateProgress(31000);
       expect(onMeaningfulListen).toHaveBeenCalledWith({
         surah_id: 2,
@@ -731,20 +731,20 @@ describe('MeaningfulListenTracker', () => {
       });
     });
 
-    it('fires at 10% for a short track (< 5 min)', () => {
+    it('fires at 10% for a short track (< 5 min)',  => {
       tracker.startTracking({
         surahId: 1,
         reciterId: 'r1',
         rewayahId: 'rw1',
-        totalDurationMs: 40000, // 40 sec — 10% = 4 sec
+        totalDurationMs: 40000, // 40 sec - 10% = 4 sec
       });
       tracker.updateProgress(3000);
-      expect(onMeaningfulListen).not.toHaveBeenCalled();
+      expect(onMeaningfulListen).not.toHaveBeenCalled;
       tracker.updateProgress(5000);
       expect(onMeaningfulListen).toHaveBeenCalledTimes(1);
     });
 
-    it('only fires once per track', () => {
+    it('only fires once per track',  => {
       tracker.startTracking({
         surahId: 1,
         reciterId: 'r1',
@@ -757,23 +757,23 @@ describe('MeaningfulListenTracker', () => {
       expect(onMeaningfulListen).toHaveBeenCalledTimes(1);
     });
 
-    it('does nothing if no track is being tracked', () => {
+    it('does nothing if no track is being tracked',  => {
       tracker.updateProgress(60000);
-      expect(onMeaningfulListen).not.toHaveBeenCalled();
+      expect(onMeaningfulListen).not.toHaveBeenCalled;
     });
   });
 
-  describe('stopTracking', () => {
-    it('prevents future fires', () => {
+  describe('stopTracking',  => {
+    it('prevents future fires',  => {
       tracker.startTracking({
         surahId: 1,
         reciterId: 'r1',
         rewayahId: 'rw1',
         totalDurationMs: 300000,
       });
-      tracker.stopTracking();
+      tracker.stopTracking;
       tracker.updateProgress(60000);
-      expect(onMeaningfulListen).not.toHaveBeenCalled();
+      expect(onMeaningfulListen).not.toHaveBeenCalled;
     });
   });
 });
@@ -785,7 +785,7 @@ describe('MeaningfulListenTracker', () => {
 npx jest services/analytics/__tests__/MeaningfulListenTracker.test.ts --no-cache
 ```
 
-Expected: FAIL — module not found.
+Expected: FAIL - module not found.
 
 - [ ] **Step 3: Implement MeaningfulListenTracker**
 
@@ -907,10 +907,10 @@ class AnalyticsServiceImpl {
   private posthog: PostHog | null = null;
   private deviceId: string = '';
   private meaningfulListenTracker: MeaningfulListenTracker;
-  private sessionStartTime: number = Date.now();
+  private sessionStartTime: number = Date.now;
   private sessionListenMs: number = 0;
 
-  constructor() {
+  constructor {
     this.meaningfulListenTracker = new MeaningfulListenTracker(
       (props: MeaningfulListenProps) => {
         this.trackMeaningfulListen(props);
@@ -919,8 +919,8 @@ class AnalyticsServiceImpl {
   }
 
   async initialize(): Promise<void> {
-    this.deviceId = getOrCreateDeviceId();
-    this.sessionStartTime = Date.now();
+    this.deviceId = getOrCreateDeviceId;
+    this.sessionStartTime = Date.now;
     this.sessionListenMs = 0;
     console.log(
       '[Analytics] Initialized with device ID:',
@@ -952,7 +952,7 @@ class AnalyticsServiceImpl {
   trackPlaybackPaused(props: PlaybackPausedProps): void {
     this.capture(ANALYTICS_EVENTS.PLAYBACK_PAUSED, {...props});
     this.sessionListenMs += props.listened_ms;
-    const today = localAggregationStore.getToday();
+    const today = localAggregationStore.getToday;
     localAggregationStore.addListeningTime(
       today,
       props.listened_ms,
@@ -968,8 +968,8 @@ class AnalyticsServiceImpl {
   trackPlaybackCompleted(props: PlaybackCompletedProps): void {
     this.capture(ANALYTICS_EVENTS.PLAYBACK_COMPLETED, {...props});
     this.sessionListenMs += props.listened_ms;
-    this.meaningfulListenTracker.stopTracking();
-    const today = localAggregationStore.getToday();
+    this.meaningfulListenTracker.stopTracking;
+    const today = localAggregationStore.getToday;
     localAggregationStore.addListeningTime(
       today,
       props.listened_ms,
@@ -981,8 +981,8 @@ class AnalyticsServiceImpl {
   trackPlaybackSkipped(props: PlaybackSkippedProps): void {
     this.capture(ANALYTICS_EVENTS.PLAYBACK_SKIPPED, {...props});
     this.sessionListenMs += props.listened_ms;
-    this.meaningfulListenTracker.stopTracking();
-    const today = localAggregationStore.getToday();
+    this.meaningfulListenTracker.stopTracking;
+    const today = localAggregationStore.getToday;
     localAggregationStore.addListeningTime(
       today,
       props.listened_ms,
@@ -997,7 +997,7 @@ class AnalyticsServiceImpl {
 
   trackMeaningfulListen(props: MeaningfulListenProps): void {
     this.capture(ANALYTICS_EVENTS.MEANINGFUL_LISTEN, {...props});
-    const today = localAggregationStore.getToday();
+    const today = localAggregationStore.getToday;
     localAggregationStore.incrementMeaningfulListens(today);
     localAggregationStore.markSurahCompleted(String(props.surah_id));
   }
@@ -1031,13 +1031,13 @@ class AnalyticsServiceImpl {
 
   trackMushafPageRead(props: MushafPageReadProps): void {
     this.capture(ANALYTICS_EVENTS.MUSHAF_PAGE_READ, {...props});
-    const today = localAggregationStore.getToday();
+    const today = localAggregationStore.getToday;
     localAggregationStore.addPagesRead(today, 1);
   }
 
   trackMushafSessionEnded(props: MushafSessionEndedProps): void {
     this.capture(ANALYTICS_EVENTS.MUSHAF_SESSION_ENDED, {...props});
-    const today = localAggregationStore.getToday();
+    const today = localAggregationStore.getToday;
     localAggregationStore.addPagesOpened(today, props.pages_opened);
   }
 
@@ -1049,13 +1049,13 @@ class AnalyticsServiceImpl {
 
   trackAdhkarSessionCompleted(props: AdhkarSessionCompletedProps): void {
     this.capture(ANALYTICS_EVENTS.ADHKAR_SESSION_COMPLETED, {...props});
-    const today = localAggregationStore.getToday();
+    const today = localAggregationStore.getToday;
     localAggregationStore.incrementAdhkarSessions(today);
   }
 
   trackTasbeehCompleted(props: TasbeehCompletedProps): void {
     this.capture(ANALYTICS_EVENTS.TASBEEH_COMPLETED, {...props});
-    const today = localAggregationStore.getToday();
+    const today = localAggregationStore.getToday;
     localAggregationStore.addTasbeehCount(today, props.count);
   }
 
@@ -1104,14 +1104,14 @@ class AnalyticsServiceImpl {
   // --- Lifecycle ---
 
   trackAppOpened(): void {
-    this.sessionStartTime = Date.now();
+    this.sessionStartTime = Date.now;
     this.sessionListenMs = 0;
     this.capture(ANALYTICS_EVENTS.APP_OPENED, {});
   }
 
   trackAppBackgrounded(): void {
     const props: AppBackgroundedProps = {
-      session_duration_ms: Date.now() - this.sessionStartTime,
+      session_duration_ms: Date.now - this.sessionStartTime,
       total_listen_ms: this.sessionListenMs,
     };
     this.capture(ANALYTICS_EVENTS.APP_BACKGROUNDED, {...props});
@@ -1124,7 +1124,7 @@ class AnalyticsServiceImpl {
   }
 }
 
-export const analyticsService = new AnalyticsServiceImpl();
+export const analyticsService = new AnalyticsServiceImpl;
 ```
 
 - [ ] **Step 2: Register in AppInitializer**
@@ -1140,14 +1140,14 @@ Then add the registration after the Database service (around line 207), at prior
 ```typescript
 /**
  * Analytics Service (Priority 0)
- * Initializes device ID and analytics. Non-critical — app works without it.
+ * Initializes device ID and analytics. Non-critical - app works without it.
  */
 appInitializer.registerService({
   name: 'Analytics',
   priority: 0,
   critical: false,
-  initialize: async () => {
-    await analyticsService.initialize();
+  initialize: async  => {
+    await analyticsService.initialize;
   },
 });
 ```
@@ -1175,7 +1175,7 @@ git commit -m "feat(analytics): AnalyticsService singleton with PostHog + local 
 **Files:**
 - Modify: `services/audio/ExpoAudioProvider.tsx`
 
-This is the highest-value instrumentation — it captures all listening behavior.
+This is the highest-value instrumentation - it captures all listening behavior.
 
 - [ ] **Step 1: Read ExpoAudioProvider.tsx carefully**
 
@@ -1207,7 +1207,7 @@ analyticsService.trackPlaybackStarted({
 });
 ```
 
-The exact property names on the track object will depend on the current type definitions — read the file and adapt.
+The exact property names on the track object will depend on the current type definitions - read the file and adapt.
 
 - [ ] **Step 4: Fire playback_completed on didJustFinish**
 
@@ -1292,13 +1292,13 @@ import {analyticsService} from '@/services/analytics/AnalyticsService';
 In `skipToNext()` (around line 216), before advancing the queue:
 
 ```typescript
-const currentTrack = get().queue[get().currentIndex];
+const currentTrack = get.queue[get.currentIndex];
 if (currentTrack) {
   analyticsService.trackPlaybackSkipped({
     surah_id: currentTrack.surahNumber,
     reciter_id: currentTrack.reciterId,
-    position_ms: get().position,
-    listened_ms: get().position, // Approximate
+    position_ms: get.position,
+    listened_ms: get.position, // Approximate
     direction: 'next',
   });
 }
@@ -1311,11 +1311,11 @@ Similarly in `skipToPrevious()` (around line 275) with `direction: 'prev'`.
 In `seekTo()` (around line 349):
 
 ```typescript
-const currentTrack = get().queue[get().currentIndex];
+const currentTrack = get.queue[get.currentIndex];
 if (currentTrack) {
   analyticsService.trackPlaybackSeeked({
     surah_id: currentTrack.surahNumber,
-    from_ms: get().position,
+    from_ms: get.position,
     to_ms: positionMs,
   });
 }
@@ -1327,7 +1327,7 @@ In `setRate()` (around line 365):
 
 ```typescript
 analyticsService.trackRateChanged({
-  old_rate: get().rate,
+  old_rate: get.rate,
   new_rate: newRate,
 });
 ```
@@ -1366,7 +1366,7 @@ import {analyticsService} from '@/services/analytics/AnalyticsService';
 
 // Inside setEnabled:
 analyticsService.trackAmbientToggled({
-  sound_type: get().currentSound ?? 'unknown',
+  sound_type: get.currentSound ?? 'unknown',
   enabled: newValue,
 });
 ```
@@ -1443,7 +1443,7 @@ In `utils/shareUtils.ts`, the share action is at lines 67-77 (`Share.share()`). 
 ```typescript
 import {analyticsService} from '@/services/analytics/AnalyticsService';
 
-// After Share.share() call succeeds, determine content_type from context:
+// After Share.share call succeeds, determine content_type from context:
 analyticsService.trackShareCreated({
   content_type: contentType, // 'verse' | 'surah' | 'mushaf' | 'reciter' | 'adhkar'
   surah_id: surahId,
@@ -1486,26 +1486,26 @@ import {analyticsService} from '@/services/analytics/AnalyticsService';
 Inside the root layout component, add:
 
 ```typescript
-const posthog = usePostHog();
+const posthog = usePostHog;
 
-useEffect(() => {
+useEffect( => {
   if (posthog) {
     analyticsService.setPostHogInstance(posthog);
-    analyticsService.trackAppOpened();
+    analyticsService.trackAppOpened;
   }
 }, [posthog]);
 
-useEffect(() => {
+useEffect( => {
   function handleAppStateChange(nextState: AppStateStatus) {
     if (nextState === 'background' || nextState === 'inactive') {
-      analyticsService.trackAppBackgrounded();
+      analyticsService.trackAppBackgrounded;
     } else if (nextState === 'active') {
-      analyticsService.trackAppOpened();
+      analyticsService.trackAppOpened;
     }
   }
 
   const subscription = AppState.addEventListener('change', handleAppStateChange);
-  return () => subscription.remove();
+  return  => subscription.remove;
 }, []);
 ```
 
@@ -1537,8 +1537,8 @@ In `app.json` (or `app.config.ts`), add the Sentry plugin to the `plugins` array
 
 ```json
 ["@sentry/react-native/expo", {
-  "organization": "bayaan",
-  "project": "bayaan-mobile"
+  "organization": "istima",
+  "project": "istima-mobile"
 }]
 ```
 
@@ -1557,7 +1557,7 @@ Sentry.init({
 });
 ```
 
-This should be called early, before the component renders — at the module level or in the root layout's initialization.
+This should be called early, before the component renders - at the module level or in the root layout's initialization.
 
 - [ ] **Step 3: Wrap root component with Sentry**
 
@@ -1593,7 +1593,7 @@ git commit -m "feat(analytics): add Sentry crash reporting"
 - Modify: Reciter selection components
 - Modify: Playlist store or components
 
-These are the remaining events from the spec that need instrumentation. Each is a small addition — import `analyticsService` and call the appropriate method at the right point.
+These are the remaining events from the spec that need instrumentation. Each is a small addition - import `analyticsService` and call the appropriate method at the right point.
 
 - [ ] **Step 1: Instrument mushaf page tracking**
 
@@ -1664,7 +1664,7 @@ analyticsService.trackSearchPerformed({
 });
 ```
 
-Debounce to avoid firing on every keystroke — fire after 500ms of no typing or on search submit.
+Debounce to avoid firing on every keystroke - fire after 500ms of no typing or on search submit.
 
 - [ ] **Step 4: Instrument translation viewed**
 
@@ -1753,22 +1753,22 @@ npm start
 
 Open the app and perform these actions, checking PostHog for events (or console logs if PostHog API key isn't configured yet):
 
-1. **Launch app** — should see `app_opened` event
-2. **Play a surah** — should see `playback_started`
-3. **Wait 30+ seconds** — should see `meaningful_listen`
-4. **Pause** — should see `playback_paused` with correct `listened_ms`
-5. **Resume** — should see `playback_resumed`
-6. **Skip to next** — should see `playback_skipped`
-7. **Toggle ambient** — should see `ambient_toggled`
-8. **Favorite a track** — should see `favorite_toggled`
-9. **Background the app** — should see `app_backgrounded` with session duration
+1. **Launch app** - should see `app_opened` event
+2. **Play a surah** - should see `playback_started`
+3. **Wait 30+ seconds** - should see `meaningful_listen`
+4. **Pause** - should see `playback_paused` with correct `listened_ms`
+5. **Resume** - should see `playback_resumed`
+6. **Skip to next** - should see `playback_skipped`
+7. **Toggle ambient** - should see `ambient_toggled`
+8. **Favorite a track** - should see `favorite_toggled`
+9. **Background the app** - should see `app_backgrounded` with session duration
 
 - [ ] **Step 4: Verify local aggregation**
 
 After playing some content, check that MMKV has daily aggregate data. You can add a temporary debug button or use the dev menu to log:
 
 ```typescript
-const today = localAggregationStore.getToday();
+const today = localAggregationStore.getToday;
 const agg = localAggregationStore.getDailyAggregate(today);
 console.log('[Analytics Debug]', JSON.stringify(agg, null, 2));
 ```

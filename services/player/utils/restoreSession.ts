@@ -126,7 +126,7 @@ export async function restoreSession(): Promise<void> {
         loadAudioInBackground(uploadTrack.url, startPosition);
         return;
       }
-      // Upload file was deleted — fall through to next recent track or bail
+      // Upload file was deleted - fall through to next recent track or bail
       if (recentTracks.length <= 1) return;
       // Could try recentTracks[1] but keep it simple for now
       return;
@@ -217,7 +217,7 @@ function loadAudioInBackground(url: string, startPosition: number) {
         console.log('[RestoreSession] Phase 2: Audio loaded and seeked');
       }
     } catch (error) {
-      // Non-fatal — user can still tap the card to replay
+      // Non-fatal - user can still tap the card to replay
       if (__DEV__) {
         console.debug('[RestoreSession] Background audio load failed:', error);
       }

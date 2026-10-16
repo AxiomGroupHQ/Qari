@@ -2,7 +2,7 @@ import type {AyahTimestamp} from '@/types/timestamps';
 
 /**
  * O(log n) binary search for the ayah containing a given playback position.
- * Array must be sorted by timestampFrom (ascending) — DB query returns this naturally.
+ * Array must be sorted by timestampFrom (ascending) - DB query returns this naturally.
  * Returns null if position is before the first ayah (e.g., Bismillah region).
  */
 export function binarySearchAyah(

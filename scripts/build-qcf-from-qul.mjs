@@ -8,7 +8,7 @@
 //   - data/mushaf/qcf/qpc-quran-script.db (QUL "QPC V2 Glyph word-by-word")
 //     → table: words (id, location, surah, ayah, word, text)
 //
-// We only emit `ayah` lines into qcf-pages.json — surah_name and basmallah
+// We only emit `ayah` lines into qcf-pages.json - surah_name and basmallah
 // rendering is handled separately by QCFPage using DK page metadata and the
 // hardcoded BASMALA_TEXT (page-1 font glyphs).
 //

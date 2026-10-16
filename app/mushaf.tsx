@@ -87,7 +87,7 @@ export default function MushafScreen() {
     };
   }, []);
 
-  // Track mushaf screen for session restore (MMKV — sync writes survive force-kill)
+  // Track mushaf screen for session restore (MMKV - sync writes survive force-kill)
   useEffect(() => {
     mushafSessionStore.setLastScreenWasMushaf(true);
     return () => {
@@ -228,7 +228,7 @@ function MushafToolbar() {
   if (isImmersive || isSearchMode) return null;
 
   if (isIdle) {
-    // Idle: [Search] — spacer — [Play] — spacer — [Options]
+    // Idle: [Search] - spacer - [Play] - spacer - [Options]
     return (
       <Stack.Toolbar>
         <Stack.Toolbar.Button icon="magnifyingglass" onPress={handleSearch}>
@@ -246,7 +246,7 @@ function MushafToolbar() {
     );
   }
 
-  // Active: [Stop] — spacer — [Prev] [Play/Pause] [Next] — spacer — [Options]
+  // Active: [Stop] - spacer - [Prev] [Play/Pause] [Next] - spacer - [Options]
   return (
     <Stack.Toolbar>
       <Stack.Toolbar.Button icon="stop.fill" onPress={handleStop}>

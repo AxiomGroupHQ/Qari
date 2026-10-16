@@ -9,7 +9,7 @@
 //
 // Symptoms checked (each contributes to a per-page severity score):
 //
-//   Hard signals (almost certainly broken — score +3 each):
+//   Hard signals (almost certainly broken - score +3 each):
 //     1. Backwards codepoint jump within a line (PUA codepoints should
 //        increase monotonically through the line).
 //     2. Duplicate PUA codepoint across lines on the same page (each
@@ -19,11 +19,11 @@
 //     4. Verse range goes backwards across consecutive lines (line N+1's
 //        first word location precedes line N's last).
 //     5. Line numbers have an internal gap (e.g., page lists lines
-//        1,2,4,5 — line 3 missing in the middle).
+//        1,2,4,5 - line 3 missing in the middle).
 //     6. First word's verse:word position has unexpected jump (not
 //        verse 1 word 1 AND not contiguous with previous page).
 //
-//   Soft signals (suspicious but might be normal — score +1 each):
+//   Soft signals (suspicious but might be normal - score +1 each):
 //     7. Line has >16 codepoints (typical max is 12–13).
 //     8. Duplicate verse:word location appears on multiple words.
 //     9. Page has fewer lines than the typical 13–15. Pages 1, 2, and
@@ -55,7 +55,7 @@ const TOO_FEW_LINES_PER_PAGE = 12;
 
 // Pages that legitimately have fewer than 12 lines because they're at
 // natural short-content boundaries (Al-Fatiha, juz 30 multi-surah pages).
-// These suppress only the "too-few-lines" soft signal — other corruption
+// These suppress only the "too-few-lines" soft signal - other corruption
 // signals still fire normally.
 const EXPECTED_SHORT_PAGES = new Set([
   1, 2, 596, 598, 599, 600, 601, 602, 603, 604,
@@ -248,7 +248,7 @@ for (const page of data.pages) {
         ((firstLoc.v === prevPageLastLoc.v &&
           firstLoc.w === prevPageLastLoc.w + 1) ||
           (firstLoc.v === prevPageLastLoc.v + 1 && firstLoc.w === 1));
-      // Also accept "next surah, verse 1" — surah boundary mid-page is ok
+      // Also accept "next surah, verse 1" - surah boundary mid-page is ok
       const isNextSurahStart =
         firstLoc.s === prevPageLastLoc.s + 1 &&
         firstLoc.v === 1 &&

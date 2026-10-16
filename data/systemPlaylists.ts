@@ -3,7 +3,7 @@
  * These are read-only playlists that provide themed collections of Quranic recitations.
  *
  * The data lives behind `getSystemPlaylists()` (not a top-level const) so that
- * brand strings inside the array — e.g. the "Bayaan Essentials" trending tile —
+ * brand strings inside the array - e.g. the "Istima Essentials" trending tile -
  * resolve `branding.appName` at call time. Top-level const arrays evaluate
  * before any `branding` resolution, baking the upstream brand name into the
  * bundle.
@@ -293,7 +293,7 @@ export function getSystemPlaylists(): SystemPlaylist[] {
       order: 5,
     },
 
-    // Trending: Bayaan Essentials
+    // Trending: Istima Essentials
     {
       id: 'bayaan-essentials',
       title: `${branding.appName} Essentials`,

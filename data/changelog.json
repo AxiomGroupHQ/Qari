@@ -39,7 +39,7 @@
         "Theme-aware Open Graph images (light/dark) generated server-side with custom fonts for surah and verse share links",
         "New Surahs tab with juz groupings, continue-reading hero that resumes at your last-read page, and shared gradient-mesh styling with the hero",
         "Listening insights: anonymous PostHog analytics (30s/10% meaningful-listen threshold) with opt-out, Sentry crash reporting, local MMKV aggregation for offline events",
-        "ISTIMA backend API integration for reciter catalog. App now pulls from api.thebayaan.com with a local bundled fallback and cache",
+        "Backend API integration for the reciter catalog, with a local bundled fallback and cache",
         "Community-fork friendly: app runs without an API key using the bundled fallback catalog",
         "iOS 26 Liquid Glass treatment for the search-tab browse tiles",
         "Cross-platform network-status toasts on connection loss, recovery, and backend-fallback transitions. Replaces the persistent pill banner",

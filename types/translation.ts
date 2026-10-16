@@ -26,7 +26,7 @@ export const BUNDLED_TRANSLATIONS: Record<
 };
 
 // Shared translation edition contract (RFC-009). Used by
-// `TranslationProvider` implementations (Bayaan's alQuran.cloud-backed
+// `TranslationProvider` implementations (the alQuran.cloud-backed
 // default + any fork override) and by the SQLite cache layer.
 // Provider implementations are responsible for mapping their upstream
 // API shape into this shape.

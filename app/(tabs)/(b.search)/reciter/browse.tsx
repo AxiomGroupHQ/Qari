@@ -8,7 +8,7 @@ import {SURAHS} from '@/data/surahData';
 export default function BrowseScreen() {
   const router = useRouter();
   const {theme} = useTheme();
-  // RFC-012 — composable Search-tab filter chips. Tiles can deeplink in
+  // RFC-012 - composable Search-tab filter chips. Tiles can deeplink in
   // with chips pre-applied (e.g. `?hasPhoto=1`).
   const {surahId, hasPhoto} = useLocalSearchParams<{
     surahId: string;

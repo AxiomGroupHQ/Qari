@@ -7,7 +7,7 @@ import {usePlayerStore} from './store/playerStore';
  * This decouples the imperative expand/close calls from the Zustand
  * sheetMode state, fixing the gorhom v5 edge case where a gesture-driven
  * close skips the onChange callback (when the drag position exactly equals
- * the closed detent — no animation runs, so animateToPositionCompleted
+ * the closed detent - no animation runs, so animateToPositionCompleted
  * never fires).
  */
 let _sheetRef: React.RefObject<BottomSheet | null> | null = null;

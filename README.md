@@ -4,31 +4,30 @@ Quran • Bayan • Tafsir • Knowledge
 
 Listen. Reflect. Remember Allah.
 
-**Open-source Quran recitation app for iOS and Android**
+**Quran recitation app for iOS and Android**
 
 Istima lets you listen to Quran recitations from 200+ reciters with background audio support, a full Uthmani Mushaf, Adhkar, offline downloads, playlists, and ambient sounds.
 
 [![React Native](https://img.shields.io/badge/React_Native-0.83-61DAFB?logo=react)](https://reactnative.dev)
 [![Expo](https://img.shields.io/badge/Expo_SDK-55-000020?logo=expo)](https://expo.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript)](https://www.typescriptlang.org)
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
 
 ---
 
 ## Features
 
-- **Quran Player** — Stream or download recitations from 200+ reciters across multiple rewayat. Background playback, lock screen controls, sleep timer, playback speed, and repeat modes.
-- **Digital Mushaf** — Full Uthmani text rendered with [Digital Khatt](docs/features/digital-khatt/README.md) using Skia. Verse follow-along synced to audio playback, multiple reading themes.
-- **Multi-Qira'at (Rewayat)** — All 8 canonical KFGQPC [rewayat](docs/features/rewayat.md) selectable from settings (Hafs, Shu'bah, Al-Bazzi, Qunbul, Warsh, Qalun, Al-Duri, Al-Susi). Published-mushaf-style highlighting for differences from Hafs; context flows into player text, share surfaces, and saved annotations.
-- **Adhkar** — Comprehensive collection of daily Adhkar and Du'a with audio, counters, and saved favorites.
-- **Offline Downloads** — Download any reciter's complete Quran for offline playback. Persistent download management with progress tracking.
-- **Playlists** — Create and manage custom playlists backed by SQLite.
-- **Ambient Sounds** — Layer nature sounds (rain, ocean, forest, etc.) over recitation audio.
-- **Search** — Fast fuzzy search across reciters and surahs using Fuse.js.
-- **Translations & Tafseer** — Multiple translation languages and tafseer editions, downloadable for offline use.
-- **Word-by-Word** — Arabic word-by-word translation overlay in the Mushaf view.
-- **Themes** — Light and dark mode with multiple Mushaf reading themes.
-- **i18n** — Internationalisation via react-i18next with RTL support.
+- **Quran Player** - Stream or download recitations from 200+ reciters across multiple rewayat. Background playback, lock screen controls, sleep timer, playback speed, and repeat modes.
+- **Digital Mushaf** - Full Uthmani text rendered with [Digital Khatt](docs/features/digital-khatt/README.md) using Skia. Verse follow-along synced to audio playback, multiple reading themes.
+- **Multi-Qira'at (Rewayat)** - All 8 canonical KFGQPC [rewayat](docs/features/rewayat.md) selectable from settings (Hafs, Shu'bah, Al-Bazzi, Qunbul, Warsh, Qalun, Al-Duri, Al-Susi). Published-mushaf-style highlighting for differences from Hafs; context flows into player text, share surfaces, and saved annotations.
+- **Adhkar** - Full collection of daily Adhkar and Du'a with audio, counters, and saved favorites.
+- **Offline Downloads** - Download any reciter's complete Quran for offline playback. Persistent download management with progress tracking.
+- **Playlists** - Create and manage custom playlists backed by SQLite.
+- **Ambient Sounds** - Layer nature sounds (rain, ocean, forest, etc.) over recitation audio.
+- **Search** - Fast fuzzy search across reciters and surahs using Fuse.js.
+- **Translations & Tafseer** - Multiple translation languages and tafseer editions, downloadable for offline use.
+- **Word-by-Word** - Arabic word-by-word translation overlay in the Mushaf view.
+- **Themes** - Light and dark mode with multiple Mushaf reading themes.
+- **i18n** - Internationalisation via react-i18next with RTL support.
 
 ---
 
@@ -96,7 +95,7 @@ For a full architecture walkthrough see [docs/architecture/current-state.md](doc
 - For iOS: macOS with Xcode 15+ and Ruby (for CocoaPods, ships with macOS)
 - For Android: Android Studio with an emulator, JDK 17+
 
-Expo CLI is bundled with the project — invoke it via `npx expo` rather than installing globally.
+Expo CLI is bundled with the project - invoke it via `npx expo` rather than installing globally.
 
 ### Install
 
@@ -112,7 +111,7 @@ npm install
 cp .env.example .env
 ```
 
-The app runs out of the box with bundled reciter data — no keys required. See [CONTRIBUTING.md](CONTRIBUTING.md#environment-variables) for the full list of optional variables (backend API, analytics, Sentry, deep links, OTA updates).
+The app runs out of the box with bundled reciter data - no keys required. See [CONTRIBUTING.md](CONTRIBUTING.md#environment-variables) for the full list of optional variables (backend API, analytics, Sentry, deep links, OTA updates).
 
 ### Run
 
@@ -188,22 +187,13 @@ Key points:
 
 ## License
 
-ISTIMA is open source under the **GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)**.
-
-In plain English:
-
-- You are free to use, study, modify, and redistribute this code.
-- If you run a modified version as a network service, you must make your modified source code available to users of that service.
-- Any fork or derivative must be licensed under AGPL-3.0-or-later as well.
-- ISTIMA is a rebranded fork of [Istima](https://github.com/thebayaan/Bayaan). Upstream attribution and trademark notices are preserved in [TRADEMARKS.md](TRADEMARKS.md).
-
-See [LICENSE](LICENSE) for the full terms.
+Copyright (c) 2026 Istima by Halalweb. All rights reserved. See [LICENSE](LICENSE).
 
 ---
 
 ## Screenshots
 
-> Coming soon — contributions welcome.
+> Coming soon - contributions welcome.
 
 ---
 

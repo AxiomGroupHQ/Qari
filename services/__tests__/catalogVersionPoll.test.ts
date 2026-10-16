@@ -1,4 +1,4 @@
-// RFC-010 — catalogVersionPoll behavior.
+// RFC-010 - catalogVersionPoll behavior.
 //
 // Covers the three behaviors that matter for fork adopters:
 //   - undefined endpoint → no-op (Istima default)
@@ -65,7 +65,7 @@ describe('initCatalogVersionPolling', () => {
     expect(refetch).not.toHaveBeenCalled();
   });
 
-  it('fails open on a 500 — no refetch, no throw', async () => {
+  it('fails open on a 500 - no refetch, no throw', async () => {
     mockBranding.catalogVersionEndpoint = 'https://example.test/version.json';
     (global.fetch as jest.Mock).mockResolvedValueOnce({ok: false, status: 500});
     const refetch = jest.fn();

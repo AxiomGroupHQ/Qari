@@ -1,24 +1,24 @@
 # RFC-012: composable filter dimensions in the Search tab
 
-**Status:** Draft (doc-only — code PR planned as a follow-up after shape clears review)
+**Status:** Draft (doc-only - code PR planned as a follow-up after shape clears review)
 **Authors:** Omar Zarka (Qariah fork)
-**Related:** RFC-007 (multi-tenant config seam, merged), RFC-008 (component slot — listen-tab top), RFC-011 (continue-reading history size)
+**Related:** RFC-007 (multi-tenant config seam, merged), RFC-008 (component slot - listen-tab top), RFC-011 (continue-reading history size)
 
 ---
 
 ## Summary
 
-Move filter composition into the Search tab. Today, "Browse by X" tiles on the Home/Listen tab each route into `components/browse/BrowseReciters.tsx` with a single pre-set filter param (`surahId`, `teacher`/`student`, `rewayatName`), but the filter is invisible to the user once they're there — they can't see *what* filtered them in, and can't *combine* dimensions. This RFC proposes consolidating reciter filtering into the Search tab with composable, user-editable filter chips and reducing the Browse-by-X tiles on the Home tab to preset deeplinks into Search with those chips pre-applied.
+Move filter composition into the Search tab. Today, "Browse by X" tiles on the Home/Listen tab each route into `components/browse/BrowseReciters.tsx` with a single pre-set filter param (`surahId`, `teacher`/`student`, `rewayatName`), but the filter is invisible to the user once they're there - they can't see *what* filtered them in, and can't *combine* dimensions. This RFC proposes consolidating reciter filtering into the Search tab with composable, user-editable filter chips and reducing the Browse-by-X tiles on the Home tab to preset deeplinks into Search with those chips pre-applied.
 
-The chip set spans the dimensions the Reciter model can support — `rewaya`, `has-surah`, `has-photo`, and `recitation-style` work against fields that exist today (`Reciter.rewayat[].name`, `Reciter.rewayat[].surah_list`, `Reciter.image_url`, `Reciter.rewayat[].style`); `country` / `translation` are **future dimensions** that first require adding the corresponding fields to `Reciter` in `data/reciterData.ts` and populating them from the catalog. The RFC treats those two as a named prerequisite rather than assuming they already exist (see Design).
+The chip set spans the dimensions the Reciter model can support - `rewaya`, `has-surah`, `has-photo`, and `recitation-style` work against fields that exist today (`Reciter.rewayat[].name`, `Reciter.rewayat[].surah_list`, `Reciter.image_url`, `Reciter.rewayat[].style`); `country` / `translation` are **future dimensions** that first require adding the corresponding fields to `Reciter` in `data/reciterData.ts` and populating them from the catalog. The RFC treats those two as a named prerequisite rather than assuming they already exist (see Design).
 
-Default behavior is preserved via opt-in: a new `branding.searchFilters?: SearchFilterDimension[]` (or component-slot equivalent — see Alternatives) lets each tenant declare which dimensions to surface and in what order. If undefined, Search behaves exactly as today.
+Default behavior is preserved via opt-in: a new `branding.searchFilters?: SearchFilterDimension[]` (or component-slot equivalent - see Alternatives) lets each tenant declare which dimensions to surface and in what order. If undefined, Search behaves exactly as today.
 
 ---
 
 ## Motivation
 
-The destination is *already* unified — `app/(tabs)/(a.home)/reciter/browse.tsx` and `app/(tabs)/(b.search)/reciter/browse.tsx` both render `BrowseReciters.tsx`. Today the param surface is small: `BrowseRecitersProps` declares `surahId | initialTeacher | initialStudent`, the Home route reads `surahId | teacher | student | rewayatName`, and the Search route reads only `surahId`. This RFC's composable-filter model **would extend** that param surface (a small additive change — adding `country | translation | …` params and the matching props); the ~600-LOC migration estimate below is measured from that real starting point, not from a pre-existing full param set. Every "Browse by X" tile constructs one of these param sets and deeplinks in.
+The destination is *already* unified - `app/(tabs)/(a.home)/reciter/browse.tsx` and `app/(tabs)/(b.search)/reciter/browse.tsx` both render `BrowseReciters.tsx`. Today the param surface is small: `BrowseRecitersProps` declares `surahId | initialTeacher | initialStudent`, the Home route reads `surahId | teacher | student | rewayatName`, and the Search route reads only `surahId`. This RFC's composable-filter model **would extend** that param surface (a small additive change - adding `country | translation | …` params and the matching props); the ~600-LOC migration estimate below is measured from that real starting point, not from a pre-existing full param set. Every "Browse by X" tile constructs one of these param sets and deeplinks in.
 
 The user feedback that triggered this RFC (on the Qariah fork's TestFlight beta, 2026-05-19) crystallized the problem: tapping "Surah Al-Baqarah" from the Home/Listen tab dropped the user into a reciter list filtered to Al-Baqarah, but the user couldn't tell *why* the list was filtered, couldn't relax the filter to see more reciters, and couldn't add a second filter ("show me Spanish-translation reciters who have Al-Baqarah"). The hidden-filter UX masks the platform's actual capability.
 
@@ -47,7 +47,7 @@ A targeted fix shipped Qariah-side for the Al-Baqarah case (cross-reciter recita
 
 ### Two shape options for the multi-tenant seam
 
-#### Option A — Declarative config
+#### Option A - Declarative config
 
 ```typescript
 // config/branding.d.ts
@@ -73,14 +73,14 @@ export type SearchFilterDimension =
   | 'translation';        // ⚠ prerequisite: add Reciter.translation, then slug-compare
 ```
 
-**Field prerequisites.** `Reciter` in `data/reciterData.ts` is `{id, name, slug, date, image_url, rewayat}` today, and `Rewayat` carries `name`, `surah_list`, and `style` — so `rewaya`, `has-surah`, `has-photo`, and `recitation-style` are implementable against existing fields, but `country` and `translation` first need their fields added to the `Reciter` type and populated from the catalog API. A tenant that lists those two dimensions in `branding.searchFilters` without the fields present should get a dev-time warning and a no-op chip. Istima can ship the four exists-today dimensions immediately; the rest land as the catalog model grows.
+**Field prerequisites.** `Reciter` in `data/reciterData.ts` is `{id, name, slug, date, image_url, rewayat}` today, and `Rewayat` carries `name`, `surah_list`, and `style` - so `rewaya`, `has-surah`, `has-photo`, and `recitation-style` are implementable against existing fields, but `country` and `translation` first need their fields added to the `Reciter` type and populated from the catalog API. A tenant that lists those two dimensions in `branding.searchFilters` without the fields present should get a dev-time warning and a no-op chip. Istima can ship the four exists-today dimensions immediately; the rest land as the catalog model grows.
 
-Istima adopts with whatever subset fits its product — initially the exists-today dimensions (`['rewaya', 'has-surah', 'has-photo', 'recitation-style']`), adding `country` / `translation` once their `Reciter` fields land. Forks add their preferred dims on top.
+Istima adopts with whatever subset fits its product - initially the exists-today dimensions (`['rewaya', 'has-surah', 'has-photo', 'recitation-style']`), adding `country` / `translation` once their `Reciter` fields land. Forks add their preferred dims on top.
 
 Pro: each chip dimension lives in shared chip UI. New filter dims need a code PR per dim (the chip's value picker, label, predicate).
-Con: extensibility requires a code PR — but the cost is small (each new dim is ~50 LOC).
+Con: extensibility requires a code PR - but the cost is small (each new dim is ~50 LOC).
 
-#### Option B — Component slot (mirrors RFC-008)
+#### Option B - Component slot (mirrors RFC-008)
 
 ```typescript
 // config/branding.d.ts
@@ -101,7 +101,7 @@ export interface SearchFiltersSlotProps {
 ```
 
 Pro: each tenant fully owns their chip UI; zero code in Istima beyond the slot wiring.
-Con: greater divergence — each fork builds its own composer; no shared UI / interaction patterns. Same trade-off RFC-008 lives with.
+Con: greater divergence - each fork builds its own composer; no shared UI / interaction patterns. Same trade-off RFC-008 lives with.
 
 ### Browse-by-X tile reduction
 
@@ -137,24 +137,24 @@ Each "Browse by X" tile builds its own filtered list. Works today. Loses to user
 ### Filters on BrowseReciters (not Search tab)
 Add composable chips to `BrowseReciters` directly; Home-tab tiles still deeplink in with pre-set chips. Considered and rejected because Search is where users *expect* filters to live; BrowseReciters is a "render a filtered list" surface, not a "compose a query" surface. Adding chips there muddles the two surfaces.
 
-### Don't lift to Istima — keep fork-local
+### Don't lift to Istima - keep fork-local
 Loses the multi-tenant-first principle that motivated RFC-007. Istima would benefit equally from composable filters when its reciter catalog grows.
 
 ---
 
 ## Migration plan
 
-1. **Land config seam upstream** (this RFC + its accompanying code PR). Istima ships with `searchFilters: undefined` (no chips visible) — zero behavior change.
+1. **Land config seam upstream** (this RFC + its accompanying code PR). Istima ships with `searchFilters: undefined` (no chips visible) - zero behavior change.
 2. **Istima adopts** with a chosen subset of dims. Each Browse-by-X Home tile flips its `href` to deeplink into Search with the chip pre-set. The carousel rows stay; the destination changes.
 3. **Forks adopt** the same seam with their extended dim sets.
-4. **Deprecate per-screen filter knobs** that `BrowseReciters` has accumulated (style filter, etc) over time — they all become Search-tab chips. Several sprints of cleanup.
+4. **Deprecate per-screen filter knobs** that `BrowseReciters` has accumulated (style filter, etc) over time - they all become Search-tab chips. Several sprints of cleanup.
 
 ---
 
 ## Open questions
 
 1. **Multi-value chips:** does a chip hold one value (Country: Algeria) or many (Country: Algeria + Morocco)? Multi-value adds chip UX complexity; single-value matches the Home-tab tile deeplink semantics most naturally. Recommend single-value v1, multi-value as follow-up.
-2. **Chip set ordering:** alphabetical by label, or matching the `branding.searchFilters` declaration order? Recommend declaration order — gives tenants control.
+2. **Chip set ordering:** alphabetical by label, or matching the `branding.searchFilters` declaration order? Recommend declaration order - gives tenants control.
 3. **"Recitation" vs "Reciter" result mode:** the `has-surah` chip implies the result row is a (reciter, rewaya) tuple, not a reciter card. Result-row component switches based on the chip set.
 4. **Deeplink stability:** lifting filters into the URL means every chip change rewrites the URL. Recommend `router.setParams` (in-place URL update) over `router.push` so back-navigation isn't polluted by filter twiddling.
 5. **Mobile-first chip ergonomics:** chip count > 3 wraps to multiple rows on narrow phones; Filter sheet (modal) for chip *picking* but inline chip *display*. The chip count itself is bounded by the dim list, so multi-row wrap is probably fine.
@@ -177,9 +177,9 @@ Estimated PR size: ~600 LOC across ~10 files; one focused sprint of work after t
 
 ## Risks
 
-- **UX flavor disagreement:** chip placement (above list / sheet / chip drawer), chip removal affordance (× / long-press / drag), chip-pick affordance (tap / sheet / dropdown) all have legitimate variations. Mitigation: ship Option A (shared UI, tenant-declared dims) — flavor is shared, content is local.
-- **Bundle-size:** each new chip dim's value picker is potentially a chunky component. Tree-shaking + lazy-loading mitigations available.
-- **Discoverability:** if Browse-by-X tiles deeplink straight to Search-with-chip, users might not realize the filter is editable. Mitigation: chip styling (close button visible, hover/long-press affordance) + a one-time onboarding tooltip the first time they land via tile.
+- **UX flavor disagreement** - chip placement (above list / sheet / chip drawer), chip removal affordance (× / long-press / drag), chip-pick affordance (tap / sheet / dropdown) all have legitimate variations. Mitigation: ship Option A (shared UI, tenant-declared dims) - flavor is shared, content is local.
+- **Bundle-size** - each new chip dim's value picker is potentially a chunky component. Tree-shaking + lazy-loading mitigations available.
+- **Discoverability** - if Browse-by-X tiles deeplink straight to Search-with-chip, users might not realize the filter is editable. Mitigation: chip styling (close button visible, hover/long-press affordance) + a one-time onboarding tooltip the first time they land via tile.
 
 ---
 

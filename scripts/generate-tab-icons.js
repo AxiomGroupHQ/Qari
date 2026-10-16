@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generates tab bar icon PNGs from SVG path data at @1x, @2x, @3x.
- * Icons are black-on-transparent (template mode — iOS applies tint color).
+ * Icons are black-on-transparent (template mode - iOS applies tint color).
  */
 const sharp = require('sharp');
 const path = require('path');

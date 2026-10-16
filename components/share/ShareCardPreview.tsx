@@ -96,7 +96,7 @@ const ShareCardPreview: React.FC<ShareCardPreviewProps> = ({
   const totalHeight = Math.max(naturalHeight, width);
   const extra = totalHeight - naturalHeight;
 
-  // QCF font has hardcoded black SVG fills — recolor with SrcIn filter
+  // QCF font has hardcoded black SVG fills - recolor with SrcIn filter
   const nameColorPaint = useMemo(() => {
     const paint = Skia.Paint();
     paint.setColorFilter(

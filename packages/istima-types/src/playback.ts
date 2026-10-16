@@ -1,12 +1,12 @@
 /**
  * Native playback state union, used by audio services to communicate with consumers.
  *
- * - `idle` — no track loaded
- * - `loading` — load in progress
- * - `ready` — track loaded, not playing
- * - `playing` — actively playing
- * - `paused` — track loaded, paused (distinct from idle/ready)
- * - `error` — last operation failed; consumer should inspect onError
+ * - `idle` - no track loaded
+ * - `loading` - load in progress
+ * - `ready` - track loaded, not playing
+ * - `playing` - actively playing
+ * - `paused` - track loaded, paused (distinct from idle/ready)
+ * - `error` - last operation failed; consumer should inspect onError
  */
 export type PlaybackState =
   | 'idle'

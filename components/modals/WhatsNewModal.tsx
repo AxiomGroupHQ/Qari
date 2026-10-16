@@ -137,7 +137,7 @@ export const WhatsNewModal = forwardRef<WhatsNewModalRef>((props, ref) => {
 
             <Text style={[styles.title, {color: theme.colors.text}]}>
               {t('whatsNew.titlePrefix')}{' '}
-              <Text style={styles.bayaanText}>ISTIMA</Text>
+              <Text style={styles.brandText}>ISTIMA</Text>
             </Text>
 
             <Text style={[styles.version, {color: theme.colors.textSecondary}]}>
@@ -273,7 +273,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: moderateScale(8),
   },
-  bayaanText: {
+  brandText: {
     color: '#8dc9d6',
     fontFamily: 'Manrope-ExtraBold',
     fontSize: moderateScale(26),

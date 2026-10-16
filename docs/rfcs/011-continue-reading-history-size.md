@@ -16,7 +16,7 @@ This RFC is the fourth in the XF-NNN multi-tenancy series, following RFC-007 (th
 
 `services/mushaf/MushafSessionStore.ts` stores exactly one `lastReadPage: number` in MMKV. `components/hero/ContinueReadingHero.tsx` reads that single value and renders a single `SurahHeroSection` titled `CONTINUE READING` (or `SURAH OF THE DAY` when there's no history). This is great for users who read one surah at a time start-to-finish.
 
-Multi-session readers — users who switch between several surahs in a day for different purposes (e.g., daily review of Al-Kahf on Fridays, ongoing memorization in Yāsīn, study notes in Al-Baqarah) — lose context every time they open a new surah, because the single MMKV slot gets overwritten. The "where was I" affordance becomes "where was I most recently" only.
+Multi-session readers - users who switch between several surahs in a day for different purposes (e.g., daily review of Al-Kahf on Fridays, ongoing memorization in Yāsīn, study notes in Al-Baqarah) - lose context every time they open a new surah, because the single MMKV slot gets overwritten. The "where was I" affordance becomes "where was I most recently" only.
 
 Concrete cost in Qariah's user testing: roughly **40% of returning users open the Surahs tab without using the Continue Reading hero**, because the displayed last page is no longer the one they want to resume. They scroll past the hero and navigate manually.
 
@@ -48,7 +48,7 @@ export interface Branding {
 }
 ```
 
-`MushafSessionStore` widens internally — the persisted MMKV value becomes a `RecentPage[]`, with a one-time migration from the legacy `lastReadPage: number` key when present. Existing API surface is preserved:
+`MushafSessionStore` widens internally - the persisted MMKV value becomes a `RecentPage[]`, with a one-time migration from the legacy `lastReadPage: number` key when present. Existing API surface is preserved:
 
 ```typescript
 // services/mushaf/MushafSessionStore.ts (post-RFC)
@@ -62,7 +62,7 @@ export const mushafSessionStore = {
   // unchanged
   getLastScreenWasMushaf, setLastScreenWasMushaf,
 
-  /** Shim — returns the most recent page or null. */
+  /** Shim - returns the most recent page or null. */
   getLastReadPage(): number | null {
     return this.getRecentPages()[0]?.page ?? null;
   },
@@ -72,7 +72,7 @@ export const mushafSessionStore = {
     // ...
   },
 
-  /** New — returns up to `branding.continueReadingHistorySize` entries, most-recent first. */
+  /** New - returns up to `branding.continueReadingHistorySize` entries, most-recent first. */
   getRecentPages(): RecentPage[] {
     // ...
   },
@@ -81,28 +81,28 @@ export const mushafSessionStore = {
 
 `ContinueReadingHero` renders the existing single-hero layout when `branding.continueReadingHistorySize ?? 1` is `1`, and a horizontal `FlatList` of `SurahHeroSection` cards (same component, no new layout primitives) when the value is `> 1`. The empty-history fallback to `SURAH OF THE DAY` is unchanged in both modes.
 
-Total Bayaan-side diff: ~80 lines (50 in `MushafSessionStore.ts` for the persistence widening + migration, 25 in `ContinueReadingHero.tsx` for the conditional carousel render, 5 in `branding.d.ts`/`branding.js` for the field declaration).
+Total Istima-side diff: ~80 lines (50 in `MushafSessionStore.ts` for the persistence widening + migration, 25 in `ContinueReadingHero.tsx` for the conditional carousel render, 5 in `branding.d.ts`/`branding.js` for the field declaration).
 
 ## Alternatives considered
 
-### Alt 1 — Component slot: `branding.continueReadingHero?: ComponentType`
+### Alt 1 - Component slot: `branding.continueReadingHero?: ComponentType`
 
 Hand the entire `ContinueReadingHero` over to forks via a component slot, like RFC-008's `listenTabTopComponent`.
 
 **Rejected** because:
-- The render shape of the carousel doesn't actually diverge from Istima's single-hero render — both layouts use `SurahHeroSection`. Only the data shape (1 vs. N entries) differs. A component-slot would force Qariah to duplicate `SurahHeroSection` rendering boilerplate it could just share.
-- The persistence layer (`MushafSessionStore`) ALSO needs to know the history size for its FIFO cap. A component-slot doesn't address that — Istima's store would still need to expose `getRecentPages()` to the slot's consumer regardless. So we end up changing the store anyway; might as well make the size a real config and keep both files upstream-shared.
+- The render shape of the carousel doesn't actually diverge from Istima's single-hero render - both layouts use `SurahHeroSection`. Only the data shape (1 vs. N entries) differs. A component-slot would force Qariah to duplicate `SurahHeroSection` rendering boilerplate it could just share.
+- The persistence layer (`MushafSessionStore`) ALSO needs to know the history size for its FIFO cap. A component-slot doesn't address that - Istima's store would still need to expose `getRecentPages()` to the slot's consumer regardless. So we end up changing the store anyway; might as well make the size a real config and keep both files upstream-shared.
 - Numeric config is the smallest and most-targeted seam that solves the divergence.
 
-### Alt 2 — Boolean toggle: `branding.continueReadingMultiPage?: boolean`
+### Alt 2 - Boolean toggle: `branding.continueReadingMultiPage?: boolean`
 
 Same idea but a binary on/off, where "on" means "show 5".
 
 **Rejected** because:
-- Hardcodes `5` as the upstream-blessed list size, which is then ambiguous — is `5` a Bayaan-canonical number? A Qariah-specific number? What if the next fork wants `3`?
+- Hardcodes `5` as the upstream-blessed list size, which is then ambiguous - is `5` a Istima-canonical number? A Qariah-specific number? What if the next fork wants `3`?
 - Numeric is barely more complex on the consumer side and avoids the magic-constant problem.
 
-### Alt 3 — Per-fork hardcode
+### Alt 3 - Per-fork hardcode
 
 Forks continue to fork `MushafSessionStore` + `ContinueReadingHero` and accept ongoing merge conflicts.
 
@@ -112,7 +112,7 @@ Forks continue to fork `MushafSessionStore` + `ContinueReadingHero` and accept o
 
 ## Consequences
 
-**For Istima:** No behavior change. The numeric config defaults to `1`; existing branding.js entries don't need updating. Migration of MMKV is a one-time read-and-rewrite that happens transparently the first time any code calls `getRecentPages()` or `getLastReadPage()` after the upgrade — legacy users see no data loss.
+**For Istima:** No behavior change. The numeric config defaults to `1`; existing branding.js entries don't need updating. Migration of MMKV is a one-time read-and-rewrite that happens transparently the first time any code calls `getRecentPages()` or `getLastReadPage()` after the upgrade - legacy users see no data loss.
 
 **For forks:** Set `branding.continueReadingHistorySize = N` (e.g. `5`) and the carousel appears with no further code changes. Qariah ships at `5`.
 
@@ -122,11 +122,11 @@ Forks continue to fork `MushafSessionStore` + `ContinueReadingHero` and accept o
 
 1. **Clamping behavior.** RFC proposes clamping out-of-range values (`< 1` or `> 10`) at read time with a `console.warn`. Should this be stricter (throw in dev, warn in prod) per Istima's existing config-validation patterns? Pinging the maintainer for direction.
 
-2. **Persisted-entry shape.** This RFC proposes `{page, openedAt}` per entry — `openedAt` enables the "3h ago" / "yesterday" / "2 days ago" labels that motivated the change. Istima doesn't currently track per-page timestamps. The migration from legacy `lastReadPage: number` seeds `openedAt: Date.now()` on first read, which is harmless but inaccurate for the legacy entry. Acceptable?
+2. **Persisted-entry shape.** This RFC proposes `{page, openedAt}` per entry - `openedAt` enables the "3h ago" / "yesterday" / "2 days ago" labels that motivated the change. Istima doesn't currently track per-page timestamps. The migration from legacy `lastReadPage: number` seeds `openedAt: Date.now()` on first read, which is harmless but inaccurate for the legacy entry. Acceptable?
 
 ## References
 
-- RFC-007 — `Branding` interface (the multi-tenancy series root)
-- RFC-008 — `branding.listenTabTopComponent` (precedent for doc-only-first PR shape)
-- RFC-010 — `branding.catalogVersionEndpoint` (precedent for "small numeric/url config" shape)
+- RFC-007 - `Branding` interface (the multi-tenancy series root)
+- RFC-008 - `branding.listenTabTopComponent` (precedent for doc-only-first PR shape)
+- RFC-010 - `branding.catalogVersionEndpoint` (precedent for "small numeric/url config" shape)
 - Qariah-side implementation (already in the fork at `sprint-18-qariah-notes-and-recent-reading` branch): `services/mushaf/MushafSessionStore.ts` widened, `components/hero/RecentReadingCarousel.tsx` net-new, `components/hero/ContinueReadingHero.tsx` conditionally delegates to the carousel. Net diff ~190 lines including the new carousel component.

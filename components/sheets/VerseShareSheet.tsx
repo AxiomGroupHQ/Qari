@@ -182,7 +182,7 @@ export const VerseShareSheet = (props: SheetProps<'verse-share'>) => {
           />
         </View>
 
-        {/* Hidden capture canvas — 1080px physical, positioned off-screen */}
+        {/* Hidden capture canvas - 1080px physical, positioned off-screen */}
         <View style={styles.hiddenCanvas} pointerEvents="none">
           <ShareCardPreview
             canvasRef={captureCanvasRef}

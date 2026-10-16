@@ -45,7 +45,7 @@ export const TrackItem: React.FC<TrackItemProps> = React.memo(
   }) => {
     const {theme} = useTheme();
 
-    // Sync data loading — no async, no useState, no useEffect
+    // Sync data loading - no async, no useState, no useEffect
     const reciter = useMemo(
       () => getReciterByIdSync(reciterId) ?? null,
       [reciterId],
@@ -59,7 +59,7 @@ export const TrackItem: React.FC<TrackItemProps> = React.memo(
       [reciter, rewayatId],
     );
 
-    // Get player state — subscribe to currentTrack instead of full tracks array
+    // Get player state - subscribe to currentTrack instead of full tracks array
     const playbackStatus = usePlayerStore(state => state.playback.state);
     const currentTrack = usePlayerStore(
       state => state.queue.tracks[state.queue.currentIndex] ?? null,

@@ -3,16 +3,15 @@
 > Highlight the active ayah during playback, with auto-scroll and tap-to-seek support.
 
 **Status:** v1 implemented (highlighting + auto-scroll), testing in progress
-**GitHub Issue:** [#73](https://github.com/thebayaan/Bayaan/issues/73)
 **Branch:** `feature/ayah-timestamps`
 
 ---
 
 ## What's Implemented
 
-1. **Active ayah highlighting** — the currently-playing ayah gets a background tint in QuranView
-2. **Smart auto-scroll** — QuranView follows playback; pauses when user scrolls manually; re-center FAB button appears to resume
-3. **Seek-to-ayah utility** — `seekToAyah()` function ready in PlayerContent for future UI binding (e.g. double-tap, button)
+1. **Active ayah highlighting** - the currently-playing ayah gets a background tint in QuranView
+2. **Smart auto-scroll** - QuranView follows playback; pauses when user scrolls manually; re-center FAB button appears to resume
+3. **Seek-to-ayah utility** - `seekToAyah()` function ready in PlayerContent for future UI binding (e.g. double-tap, button)
 4. **R2-mirrored timestamp JSON**: ayah timing for ~114 reciters (113 mp3quran + Bandar Baleelah from QDC), fetched direct from CDN
 
 ### Not Yet Implemented
@@ -28,16 +27,16 @@
 
 ### R2 CDN Approach
 
-Timestamps are fetched direct from Cloudflare R2 (`cdn.thebayaan.com/timestamps/{rewayat_id}/{NNN}.json`). No bundled DB, no backend round-trip. This matches how audio is served (also R2-mirrored from mp3quran), so timestamps and audio are always in sync.
+Timestamps are fetched direct from Cloudflare R2 (`iapi.istima.app/timestamps/{rewayat_id}/{NNN}.json`). No bundled DB, no backend round-trip. This matches how audio is served (also R2-mirrored from mp3quran), so timestamps and audio are always in sync.
 
 ### Data Flow
 
 ```
-R2 CDN (cdn.thebayaan.com/timestamps/{rewayat_id}/{NNN}.json)
+R2 CDN (iapi.istima.app/timestamps/{rewayat_id}/{NNN}.json)
     ↓ fetch on track change (if rewayat has_timestamps + surah in timestamps_surah_list)
 TimestampFetchService (in-memory cache layer)
     ↓ cache by "{rewayatId}-{surahNumber}"
-timestampStore (Zustand — currentAyah, currentSurahTimestamps)
+timestampStore (Zustand - currentAyah, currentSurahTimestamps)
     ↓ subscribed by hooks
 useTimestampLoader (watches current track → loads timestamps)
 useAyahTracker (200ms poll → binary search → setCurrentAyah)
@@ -47,7 +46,7 @@ QuranView (isActive prop on VerseItem, auto-scroll)
 
 ### JSON Shape
 
-Each file at `cdn.thebayaan.com/timestamps/{rewayat_id}/{NNN}.json` is an `AyahTimestamp[]`:
+Each file at `iapi.istima.app/timestamps/{rewayat_id}/{NNN}.json` is an `AyahTimestamp[]`:
 
 ```ts
 interface AyahTimestamp {
@@ -72,7 +71,7 @@ Source of truth: `types/timestamps.ts`. The shape matches exactly what the mirro
 | `types/timestamps.ts` | Domain types, row types, mapping functions |
 | `utils/timestampUtils.ts` | `binarySearchAyah()` O(log n), `findAyahTimestamp()` direct lookup |
 | `services/timestamps/TimestampFetchService.ts` | Fetches AyahTimestamp[] from R2 CDN, in-memory cache |
-| `store/timestampStore.ts` | Zustand store — currentAyah, currentSurahTimestamps |
+| `store/timestampStore.ts` | Zustand store - currentAyah, currentSurahTimestamps |
 | `hooks/useTimestampLoader.ts` | Loads timestamps on track change |
 | `hooks/useAyahTracker.ts` | 200ms poll → binary search → updates currentAyah |
 
@@ -90,7 +89,7 @@ Source of truth: `types/timestamps.ts`. The shape matches exactly what the mirro
 
 ## Data Source
 
-Timestamps are mirrored to Cloudflare R2 at `cdn.thebayaan.com/timestamps/{rewayat_id}/{NNN}.json` as `AyahTimestamp[]` JSON. The mobile client fetches direct from the CDN (matching the audio model: no backend round-trip). See `docs/superpowers/plans/2026-05-23-timestamps-r2-mirror.md` for the migration details.
+Timestamps are mirrored to Cloudflare R2 at `iapi.istima.app/timestamps/{rewayat_id}/{NNN}.json` as `AyahTimestamp[]` JSON. The mobile client fetches direct from the CDN (matching the audio model: no backend round-trip). See `docs/superpowers/plans/2026-05-23-timestamps-r2-mirror.md` for the migration details.
 
 Coverage is gated by two fields on each rewayat:
 - `has_timestamps: boolean`: whether any surah has timestamps on R2
@@ -163,7 +162,7 @@ Coverage continues to expand as new reciters are mirrored to R2.
 
 | Scenario | Behavior |
 |----------|----------|
-| Reciter has no timestamps | Feature invisible — no highlight, no errors |
+| Reciter has no timestamps | Feature invisible - no highlight, no errors |
 | User upload (no rewayatId) | Feature invisible |
 | Position in bismillah region | `binarySearchAyah` returns null → no highlight |
 | Rapid track skipping | useEffect cleanup ensures only latest track loads |

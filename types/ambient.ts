@@ -75,7 +75,7 @@ export const AMBIENT_SOUNDS: Record<AmbientSoundType, AmbientSoundMeta> = {
 
 /**
  * Ordered list of ambient sound types for display in the picker.
- * 'none' is represented as null in the store — it's handled separately in the UI.
+ * 'none' is represented as null in the store - it's handled separately in the UI.
  */
 export const AMBIENT_SOUND_LIST: AmbientSoundType[] = [
   'rain',

@@ -1,7 +1,7 @@
 /**
  * Unit tests for the pure functions in scripts/verify-version-sync.js.
  *
- * `main()` and CLI argv parsing aren't tested here — they're thin glue
+ * `main()` and CLI argv parsing aren't tested here - they're thin glue
  * over the functions covered below. The functions are the load-bearing
  * surface (file discovery, parsing, patching of release-critical native
  * files), so they get explicit coverage per PR #251 review.
@@ -44,7 +44,7 @@ function writeFile(rel, contents) {
   return abs;
 }
 
-// Realistic Info.plist fixture — tab-indented, mirroring expo-prebuild output.
+// Realistic Info.plist fixture - tab-indented, mirroring expo-prebuild output.
 // Includes multiple <string>X</string> entries so the patch regex's anchoring
 // to <key>CFBundle...</key> can be verified.
 const SAMPLE_PLIST = `<?xml version="1.0" encoding="UTF-8"?>
@@ -134,7 +134,7 @@ describe('findInfoPlistPath', () => {
   });
 
   it('throws (not picks arbitrarily) when multiple app candidates remain', () => {
-    // Two non-test, non-extension plists — ambiguous. Better to fail loud.
+    // Two non-test, non-extension plists - ambiguous. Better to fail loud.
     writeFile('ios/Bayaan/Info.plist', SAMPLE_PLIST);
     writeFile('ios/Qariah/Info.plist', SAMPLE_PLIST);
     expect(() => findInfoPlistPath(tmpRoot)).toThrow(/Ambiguous app target/);
@@ -294,7 +294,7 @@ describe('patchAndroidGradle', () => {
 });
 
 // =====================================================================
-// Round-trip — patch, then re-parse should return the patched values
+// Round-trip - patch, then re-parse should return the patched values
 // =====================================================================
 describe('round-trip', () => {
   it('Info.plist: patch then re-read yields the new versions', () => {
@@ -429,7 +429,7 @@ describe('findExtensionConfigBlocks', () => {
 
   it('does not match GENERATE_INFOPLIST_FILE (regex anchoring)', () => {
     // Construct a config block that has GENERATE_INFOPLIST_FILE = YES but no
-    // standalone INFOPLIST_FILE — should NOT be picked up as an extension.
+    // standalone INFOPLIST_FILE - should NOT be picked up as an extension.
     const trick = `// !$*UTF8*$!
 {
 \tobjects = {

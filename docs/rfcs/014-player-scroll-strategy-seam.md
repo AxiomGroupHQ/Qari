@@ -1,11 +1,11 @@
 # RFC-014: Player scroll-handler seam (`branding.playerMushafScrollBehavior`)
 
-**Status:** Approved (RFC doc-PR `thebayaan/Bayaan#279` approved 2026-05-24 by @osmansaeday).
+**Status:** Approved (RFC doc-PR `this repository#279` approved 2026-05-24 by @osmansaeday).
 Shape and naming locked. This update folds in maintainer feedback and ships alongside the
 implementation PR.
 **Authors:** Omar Zarka (Qariah)
-**Targets:** `thebayaan/Bayaan` `develop`
-**Related:** RFC-013 (`thebayaan/Bayaan#269`, merged 2026-05-23 — `branding.initialPlayerVerseKey`)
+**Targets:** `this repository` `develop`
+**Related:** RFC-013 (`this repository#269`, merged 2026-05-23 - `branding.initialPlayerVerseKey`)
 
 ---
 
@@ -19,8 +19,8 @@ swipe-down-to-close gesture on the player sheet is thereby opt-out; forks that n
 imperative `scrollToIndex` calls (range-anchored seeks, bookmark deeplinks, future word-by-word
 follow-along) can trade the gesture for scroll correctness.
 
-A string union (rather than a boolean) leaves room for future strategies — e.g. a third value
-when RN Gesture Handler v3's scroll-coupling pattern lands, or a Skia-v2 gesture integration —
+A string union (rather than a boolean) leaves room for future strategies - e.g. a third value
+when RN Gesture Handler v3's scroll-coupling pattern lands, or a Skia-v2 gesture integration -
 without a breaking-change field rename. The naming aligns with the noun-phrase convention of
 every prior `Branding` field (`homeRowConfig`, `catalogVersionEndpoint`, `listenTabTopComponent`,
 `searchFilters`, `initialPlayerVerseKey`, `translationProvider`, `tafsirProvider`).
@@ -34,13 +34,13 @@ every prior `Branding` field (`homeRowConfig`, `catalogVersionEndpoint`, `listen
 `QuranView/index.tsx` calls `useBottomSheetScrollableCreator()` from `@gorhom/bottom-sheet` and
 passes the resulting factory as `renderScrollComponent` on `FlashList`. This wires the Mushaf
 list's scroll gesture into the sheet's pan gesture recognizer so the user can swipe down anywhere
-on the Mushaf to dismiss the player — a natural and desirable UX for Bayaan.
+on the Mushaf to dismiss the player - a natural and desirable UX for Istima.
 
 The gorhom integration has a well-known side effect: **it intercepts imperative scroll calls
 (FlashList `ref.current.scrollToIndex(…)` / `scrollToOffset(…)`) whenever the sheet's internal
 state machine has not yet settled into `EXTENDED` or `FILL_PARENT`**. During that transition
-window — which spans the full open animation on every player launch, and re-occurs on every sheet
-snap point change — any imperative scroll is silently no-oped. The list stays at its current
+window - which spans the full open animation on every player launch, and re-occurs on every sheet
+snap point change - any imperative scroll is silently no-oped. The list stays at its current
 position; no error is thrown, no callback fires.
 
 For Istima, which always starts playback from surah position 0 (ayah 1), the sheet transition
@@ -49,9 +49,9 @@ lands at the same position the FlashList would already occupy, so the no-op is i
 
 ### Why Qariah hit it
 
-RFC-013 (`thebayaan/Bayaan#269`, merged 2026-05-23) added `branding.initialPlayerVerseKey(track)`
+RFC-013 (`this repository#269`, merged 2026-05-23) added `branding.initialPlayerVerseKey(track)`
 so forks can anchor the Mushaf view on a specific ayah when a track starts playing. Qariah uses
-this to support partial-recitation tracks — a track might cover only ayahs 79–86 of Al-Baqarah.
+this to support partial-recitation tracks - a track might cover only ayahs 79–86 of Al-Baqarah.
 The anchor sequence is:
 
 1. `initialScrollIndex` on `FlashList` → handles the cold-mount case (layout pass).
@@ -91,13 +91,13 @@ go through the gorhom wrapper).
    first few ayahs after a cold player open"; on Qariah's partial-recitation tracks the same
    race additionally combines with site (1)/(2) above.
 
-The flag's contract — "no gorhom wrapper when set to `'native'`" — covers all four uniformly. No
+The flag's contract - "no gorhom wrapper when set to `'native'`" - covers all four uniformly. No
 per-call-site opt-out is exposed; a fork choosing `'native'` is opting out of the sheet's
 swipe-to-dismiss everywhere, in exchange for guaranteed delivery of every imperative scroll.
 
 ### Qariah's workaround (Qariah commit `5331148`, 2026-05-24)
 
-1. Drop `useBottomSheetScrollableCreator()` entirely — do not call the hook, do not pass
+1. Drop `useBottomSheetScrollableCreator()` entirely - do not call the hook, do not pass
    `renderScrollComponent` to `FlashList`.
 2. Retain `key={currentSurah}` on `FlashList` (remounts on surah change; ensures clean layout
    state before the deferred scroll fires).
@@ -115,7 +115,7 @@ player header. The comment at `QuranView/index.tsx` lines 20–28 documents the 
 // pan-down-to-close gesture is not required.
 ```
 
-This workaround is a local Qariah divergence — no seam in the shared codebase lets Istima
+This workaround is a local Qariah divergence - no seam in the shared codebase lets Istima
 preserve its gesture while Qariah opts out. This RFC proposes that seam.
 
 ### Why Istima should care beyond Qariah
@@ -123,11 +123,11 @@ preserve its gesture while Qariah opts out. This RFC proposes that seam.
 Any future imperative scroll into `QuranView` faces the same race. Concrete candidates already in
 the Istima roadmap or community wishlist:
 
-- **Bookmark deeplinks** — tapping a shared verse link opens the player and jumps to that ayah.
-- **Word-by-word follow-along auto-scroll** — the active word scrolls into the center of the
+- **Bookmark deeplinks** - tapping a shared verse link opens the player and jumps to that ayah.
+- **Word-by-word follow-along auto-scroll** - the active word scrolls into the center of the
   viewport as audio progresses; must fire continuously, including during the player's open
   animation on first launch.
-- **Surah-change verse retention** — if/when the player remembers the last-read ayah per surah
+- **Surah-change verse retention** - if/when the player remembers the last-read ayah per surah
   and restores it on re-open.
 
 All three will silently fail on iOS Release whenever they fire during the open-transition window,
@@ -142,7 +142,7 @@ In `components/player/v2/PlayerContent/QuranView/index.tsx`, the relevant lines 
 
 ```tsx
 // (inside QuranView function body)
-const renderScrollComponent = useBottomSheetScrollableCreator();
+const renderScrollComponent = useBottomSheetScrollableCreator;
 
 // ...
 
@@ -156,7 +156,7 @@ const renderScrollComponent = useBottomSheetScrollableCreator();
 `useBottomSheetScrollableCreator()` returns a factory function that gorhom uses to wrap every
 inner scroll view rendered by `FlashList`. The wrapper registers the scroll gesture with the
 sheet's pan responder. While the sheet is animating (any state other than `EXTENDED` /
-`FILL_PARENT`), gorhom holds the scroll gesture and parks imperative calls — the underlying
+`FILL_PARENT`), gorhom holds the scroll gesture and parks imperative calls - the underlying
 `ScrollView`/`FlashList` native scroll node is not reachable until the animation completes.
 
 On iOS this is a hard timing dependency: the sheet open animation takes 300–450 ms in Release
@@ -178,24 +178,24 @@ export interface Branding {
    * Strategy for wiring the player Mushaf FlashList (`QuranView`)'s scroll
    * handling.
    *
-   * `'gorhom'` — `useBottomSheetScrollableCreator()` is called and its result
+   * `'gorhom'` - `useBottomSheetScrollableCreator()` is called and its result
    *   is passed as `renderScrollComponent` on FlashList. The
    *   swipe-down-to-dismiss gesture on the player sheet is active. Imperative
    *   `scrollToIndex` / `scrollToOffset` calls issued before the sheet's
    *   animation has settled into EXTENDED/FILL_PARENT are intercepted by the
    *   gorhom wrapper and silently no-op.
    *
-   * `'native'` — gorhom wrapper skipped; imperative scroll calls reach the
+   * `'native'` - gorhom wrapper skipped; imperative scroll calls reach the
    *   native scroll node immediately, regardless of the sheet's animation
    *   state. The sheet's swipe-down-to-dismiss gesture stops working at the
-   *   Mushaf list level — forks opting in must provide an alternative
+   *   Mushaf list level - forks opting in must provide an alternative
    *   dismiss affordance (e.g. an explicit close button in the player
    *   header).
    *
    * Field absent from `config/branding.js` → consumer applies `?? 'gorhom'`
    * at the call site, byte-equivalent to today's behavior.
    *
-   * Applies identically on iOS and Android — forks don't need
+   * Applies identically on iOS and Android - forks don't need
    * platform-conditional branding.
    */
   playerMushafScrollBehavior?: 'gorhom' | 'native';
@@ -218,14 +218,14 @@ Zero diff to `config/branding.js` in the Istima distribution.
 +
  export const QuranView: React.FC<QuranViewProps> = ({...}) => {
    // ...
--  const renderScrollComponent = useBottomSheetScrollableCreator();
+-  const renderScrollComponent = useBottomSheetScrollableCreator;
 +  const scrollBehavior = branding.playerMushafScrollBehavior ?? 'gorhom';
 +  // Hook call is unconditional (rules-of-hooks); the resulting factory is
 +  // only attached as renderScrollComponent when scrollBehavior === 'gorhom'.
 +  // When 'native', the factory is discarded and FlashList renders with its
-+  // default ScrollView wrapper — imperative scroll calls reach the native
++  // default ScrollView wrapper - imperative scroll calls reach the native
 +  // scroll node directly.
-+  const gorhomScrollComponent = useBottomSheetScrollableCreator();
++  const gorhomScrollComponent = useBottomSheetScrollableCreator;
 +  const renderScrollComponent =
 +    scrollBehavior === 'gorhom' ? gorhomScrollComponent : undefined;
 
@@ -254,7 +254,7 @@ warning:
 ```ts
 if (__DEV__ && scrollBehavior === 'native') {
   // Module-scope guard so it fires once per JS context, not per render.
-  warnOncePlayerScrollBehaviorNative();
+  warnOncePlayerScrollBehaviorNative;
 }
 ```
 
@@ -272,12 +272,12 @@ intrusive timing-instrumentation originally floated.
 byte-equivalent to today. Zero action required.
 
 **Forks opting into `'native'`:** the swipe-down-to-close gesture on the player sheet stops
-working at the Mushaf list level. The sheet itself is not removed — the (×) close button in the
+working at the Mushaf list level. The sheet itself is not removed - the (×) close button in the
 player header, or any other dismiss trigger the fork provides, still works. Forks must audit
 their player dismiss UX before shipping this setting. The dev-mode warning above is the only
 in-product nudge; the contract beyond that lives in this RFC.
 
-**Forks that don't set the field:** same as Bayaan. The default is explicit (`?? 'gorhom'`) and
+**Forks that don't set the field:** same as Istima. The default is explicit (`?? 'gorhom'`) and
 documented so there is no silent behavior change on upstream merge.
 
 **Platform parity:** the field is single-valued across iOS and Android. A fork that wants
@@ -299,8 +299,8 @@ string union resolves both. Documented here so future RFC authors see the conven
 
 ### Component-factory slot (`playerListScrollComponentFactory`)
 
-Expose the scroll wrapper as a fork-supplied factory. More flexible — a fork could swap in a
-completely different gesture library — but exposes the `renderScrollComponent` prop shape to
+Expose the scroll wrapper as a fork-supplied factory. More flexible - a fork could swap in a
+completely different gesture library - but exposes the `renderScrollComponent` prop shape to
 fork authors, requires a `null` convention for "no wrapper", and is overkill for the two
 strategies that actually exist. The string union covers today's two strategies and accepts
 additional values additively.
@@ -333,7 +333,7 @@ The flag approach is O(1) and version-stable.
 
 ### `key={currentSurah}` alone (remount on surah change)
 
-Remounting `FlashList` resets layout state, which prevents a stale-list scroll race — but
+Remounting `FlashList` resets layout state, which prevents a stale-list scroll race - but
 `initialScrollIndex` (set during the mount layout pass) also fires inside the sheet's transition
 window when the player opens for the first time on a given surah. The no-op race is orthogonal to
 whether the list was remounted. `key={currentSurah}` is a useful companion fix (it is retained in
@@ -344,7 +344,7 @@ Qariah's workaround) but does not address the gorhom interception by itself.
 Each fork that needs reliable imperative scroll copies `QuranView/index.tsx` and omits the
 gorhom line. This defeats the multi-tenant model the cross-fork seam work has been building
 toward (RFC-007, RFC-010, RFC-011, RFC-013). Every upstream change to `QuranView` would need
-manual porting into each fork's shadow copy — for what is a single conditional hook call.
+manual porting into each fork's shadow copy - for what is a single conditional hook call.
 
 ---
 
@@ -352,7 +352,7 @@ manual porting into each fork's shadow copy — for what is a single conditional
 
 The three open questions from the original RFC draft are all resolved as of this revision:
 
-1. **FlashList prop shape (absent vs `undefined`).** Resolved as **spread to absent** — the
+1. **FlashList prop shape (absent vs `undefined`).** Resolved as **spread to absent** - the
    conditional spread `{...(renderScrollComponent ? {renderScrollComponent} : {})}` keeps prop
    parity with Istima's no-fork render path. FlashList accepts both forms, but absent is the
    closer-to-no-op shape.
@@ -386,11 +386,11 @@ The three open questions from the original RFC draft are all resolved as of this
 
 ## Cross-references
 
-- RFC-013 — `branding.initialPlayerVerseKey` (`thebayaan/Bayaan#269`, merged 2026-05-23). This
+- RFC-013 - `branding.initialPlayerVerseKey` (`this repository#269`, merged 2026-05-23). This
   RFC formalizes the scroll seam that RFC-013's anchor mechanism requires.
-- Qariah Sprint 23 working fix — commit `6f64a6f8535b33abc080a38942e163ff225059ac` (original
+- Qariah Sprint 23 working fix - commit `6f64a6f8535b33abc080a38942e163ff225059ac` (original
   out-of-band patch, dropped `useBottomSheetScrollableCreator` as an ad-hoc divergence).
-- Qariah Sprint 24 restore — commit `5331148` (today, 2026-05-24; re-applied the workaround on
+- Qariah Sprint 24 restore - commit `5331148` (today, 2026-05-24; re-applied the workaround on
   the Sprint 24 branch; comment added at `QuranView/index.tsx:20–28`).
 - Sprint 15 standing rule: "Unusual structural patterns → doc-only RFC PR first; code PR follows
   once shape clears."
@@ -406,7 +406,7 @@ Qariah's adoption ships in the same sprint as this RFC, against the same shape. 
   `Branding` once this RFC's code PR merges).
 - `components/player/v2/PlayerContent/QuranView/index.tsx` consumes the seam with the `??
   'gorhom'` fallback inline, plus the dev-mode warning.
-- The Qariah-side `key={currentSurah}` divergence on `FlashList` remains in place — it's a
+- The Qariah-side `key={currentSurah}` divergence on `FlashList` remains in place - it's a
   companion fix from the same Sprint 23 work and is orthogonal to the gorhom interception (it
   prevents stale-list scroll races on rapid surah switching, not the imperative-scroll race).
   Not part of this RFC.

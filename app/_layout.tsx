@@ -157,7 +157,7 @@ function RootLayout() {
     [isDarkMode, theme.colors],
   );
 
-  // Critical fonts — block splash screen on these only
+  // Critical fonts - block splash screen on these only
   const [fontsLoaded, fontError] = useFonts({
     'Manrope-Regular': require('@/assets/fonts/Manrope-Regular.ttf'),
     'Manrope-Bold': require('@/assets/fonts/Manrope-Bold.ttf'),
@@ -188,7 +188,7 @@ function RootLayout() {
     // @ai-end
   }, []);
 
-  // Tajweed data — defer until after first frame + interactions complete
+  // Tajweed data - defer until after first frame + interactions complete
   useEffect(() => {
     InteractionManager.runAfterInteractions(() => {
       if (__DEV__) console.log('[App] Preloading tajweed data...');
@@ -391,7 +391,7 @@ function RootLayout() {
   ]);
 
   // Restore mushaf screen if it was open when the app was killed.
-  // MMKV reads are synchronous — no hydration wait needed.
+  // MMKV reads are synchronous - no hydration wait needed.
   useEffect(() => {
     if (!appIsReady || !isPlayerReady || hasShareIntent) return;
 

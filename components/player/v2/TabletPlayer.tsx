@@ -759,7 +759,7 @@ const TabletPlayer: React.FC<TabletPlayerProps> = ({
   // ==============================================================
   return (
     <View style={[styles.rootCol, {backgroundColor: readingColors.background}]}>
-      {/* Top: Header (flexShrink: 0 — never squeezed) */}
+      {/* Top: Header (flexShrink: 0 - never squeezed) */}
       <GestureDetector gesture={sheetDragGesture}>
         <Animated.View
           style={[

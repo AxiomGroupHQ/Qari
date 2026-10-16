@@ -16,7 +16,7 @@ import type {
 } from '@istima/types';
 
 // ============================================================
-// PlayerController — state + progress + persistence bridge
+// PlayerController - state + progress + persistence bridge
 // ============================================================
 
 /**
@@ -25,7 +25,7 @@ import type {
  * coupling between ExpoAudioProvider and playerStore (ADR-0001 §Context.1).
  *
  * The package fires events; the consumer decides what to persist, render,
- * or ignore. Repeat / queue / shuffle logic stays consumer-side — see the
+ * or ignore. Repeat / queue / shuffle logic stays consumer-side - see the
  * onTrackEnded note below.
  */
 export interface PlayerController<TTrack extends BaseTrack = BaseTrack> {
@@ -44,7 +44,7 @@ export interface PlayerController<TTrack extends BaseTrack = BaseTrack> {
   /**
    * Fired when the current track reaches its natural end (the package's
    * equivalent of expo-audio's `didJustFinish`). The consumer decides what
-   * happens next — repeat, advance, or stop. The package does not make
+   * happens next - repeat, advance, or stop. The package does not make
    * this decision: repeat modes, queue advance, and shuffle are consumer
    * concerns (see Istima's playerStore and Qariah's queueRecitations).
    *
@@ -74,12 +74,12 @@ export interface PlayerController<TTrack extends BaseTrack = BaseTrack> {
 }
 
 // ============================================================
-// CoordinatorHooks — how AudioCoordinator pauses consumer-owned players
+// CoordinatorHooks - how AudioCoordinator pauses consumer-owned players
 // ============================================================
 
 /**
- * Replaces the lazy `require()` in AudioCoordinator (Bayaan-Architecture
- * §3.1) that breaks the circular dep between AudioCoordinator ↔
+ * Replaces the lazy `require()` in AudioCoordinator (architecture
+ * section 3.1) that breaks the circular dep between AudioCoordinator ↔
  * mushafPlayerStore ↔ MushafAudioService.
  *
  * Consumer wires this at app startup. AudioCoordinator never imports a
@@ -93,7 +93,7 @@ export interface CoordinatorHooks {
 }
 
 // ============================================================
-// PlayerEventSink — analytics hook
+// PlayerEventSink - analytics hook
 // ============================================================
 
 /**
@@ -131,14 +131,14 @@ export const NullPlayerEventSink: PlayerEventSink<BaseTrack> = {
 };
 
 // ============================================================
-// TimestampProvider — consumer-owned ayah timing data
+// TimestampProvider - consumer-owned ayah timing data
 // ============================================================
 
 /**
  * The package consumes a Promise; data origin is opaque (Istima hosts its
  * own DB; Qariah uses per-recitation timestamps from its backend).
  *
- * Keyed by recitation, not by reciter — both consumers have cases where a
+ * Keyed by recitation, not by reciter - both consumers have cases where a
  * single reciter has multiple recitations of the same surah, so
  * (surahId, reciterId) under-identifies. `recitationKey` is consumer-
  * opaque: pass whatever string uniquely identifies the recitation in your
@@ -149,12 +149,12 @@ export interface TimestampProvider {
 }
 
 // ============================================================
-// LockScreenMetadataSource — subscription-based lock screen feed
+// LockScreenMetadataSource - subscription-based lock screen feed
 // ============================================================
 
 /**
  * LockScreenService today calls `usePlayerStore.subscribe()` and
- * `useMushafPlayerStore.subscribe()` directly — that's the coupling this
+ * `useMushafPlayerStore.subscribe()` directly - that's the coupling this
  * port removes.
  *
  * Listener is called with `null` when the source should be cleared (on
@@ -172,7 +172,7 @@ export interface LockScreenMetadataSource {
 export type Unsubscribe = () => void;
 
 // ============================================================
-// IstimaAudioConfig — the full consumer config the package takes at init
+// IstimaAudioConfig - the full consumer config the package takes at init
 // ============================================================
 
 /**

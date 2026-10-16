@@ -233,7 +233,7 @@ class VerseAnnotationDatabaseService {
     // Migration: add rewayah_id column to all three annotation tables.
     // Legacy rows created before rewayah support existed are backfilled
     // to 'hafs' (the only reading the app showed pre-feature). Idempotent
-    // on rerun — the UPDATE only touches NULLs, new saves stamp their
+    // on rerun - the UPDATE only touches NULLs, new saves stamp their
     // own rewayah via service callers.
     for (const table of ['bookmarks', 'notes', 'highlights']) {
       try {
@@ -254,7 +254,7 @@ class VerseAnnotationDatabaseService {
 
     // One-shot rename of pre-canonical rewayah slugs to the canonical ones.
     // Pre-canonical ids (qumbul, shouba, qaloon, doori, soosi, bazzi)
-    // shipped only in TestFlight — the rename table in RewayahIdentity is
+    // shipped only in TestFlight - the rename table in RewayahIdentity is
     // the single source of truth. Idempotent: once applied, rows match the
     // `=` clause once; on rerun the WHERE matches nothing and the UPDATE is
     // a no-op. Safe to run every boot.

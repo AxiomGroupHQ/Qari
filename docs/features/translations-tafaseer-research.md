@@ -1,14 +1,14 @@
 # Translations & Tafaseer Integration Research Report
 
 **Date:** February 2026
-**Status:** Research Complete — Awaiting Decision
+**Status:** Research Complete - Awaiting Decision
 **Scope:** Adding multi-translation and tafseer support to Istima
 
 ---
 
 ## Executive Summary
 
-Istima already has working translation infrastructure (Saheeh International + Clear Quran bundled, inline display in VerseItem, TranslationContent sheet). The work is **not greenfield** — it's about making the hardcoded system dynamic and extensible.
+Istima already has working translation infrastructure (Saheeh International + Clear Quran bundled, inline display in VerseItem, TranslationContent sheet). The work is **not greenfield** - it's about making the hardcoded system dynamic and extensible.
 
 Three viable API sources exist. The recommended approach is a **hybrid strategy**: use the free, no-auth **Al Quran Cloud API** as the primary data source (101 translations, simple REST), with pre-bundled Saheeh International for offline-first, and SQLite + FTS5 for local storage of downloaded translations. Tafaseer should be API-only due to their massive size (500MB-5GB each).
 
@@ -37,7 +37,7 @@ Three viable API sources exist. The recommended approach is a **hybrid strategy*
 
 **Why Al Quran Cloud for translations:**
 - No authentication required (no OAuth2 token management)
-- 101 translations across 40+ languages — sufficient coverage
+- 101 translations across 40+ languages - sufficient coverage
 - Plain text responses (no HTML parsing needed for most translations)
 - Simple REST: `GET /v1/surah/{surah}/{edition}` returns all verses
 - Bulk-friendly: one call per surah (no pagination needed)
@@ -52,10 +52,10 @@ Three viable API sources exist. The recommended approach is a **hybrid strategy*
 **Why NOT fawazahmed0:**
 - Community-maintained, some OCR errors reported
 - 440+ translations but quality varies significantly
-- CDN-based (GitHub + jsDelivr) — less reliable than dedicated API
+- CDN-based (GitHub + jsDelivr) - less reliable than dedicated API
 
 **Why NOT Tarteel QUL:**
-- No API exists — download-only resource hub
+- No API exists - download-only resource hub
 - Would need to self-host all data
 - Better for pre-bundling specific datasets than live integration
 
@@ -63,7 +63,7 @@ Three viable API sources exist. The recommended approach is a **hybrid strategy*
 
 ## 2. Available Content Catalog
 
-### Translations (via Al Quran Cloud — 101 total)
+### Translations (via Al Quran Cloud - 101 total)
 
 | Language | Count | Notable Translations |
 |---|---|---|
@@ -77,7 +77,7 @@ Three viable API sources exist. The recommended approach is a **hybrid strategy*
 | Bengali, French, German, Indonesian, Italian, Malay, Portuguese, etc. | 1-3 each | Various established translators |
 | **Total** | **101** | **40+ languages** |
 
-### Tafaseer (via Quran Foundation — 20 total)
+### Tafaseer (via Quran Foundation - 20 total)
 
 | Language | Count | Notable Tafaseer |
 |---|---|---|
@@ -193,7 +193,7 @@ Tafsir text is HTML-formatted with `<p>`, `<h2>`, `<ol>` tags. Entries can be ve
 | **Downloaded translations** | SQLite (`translations.db`) | Structured queries, FTS5 search, ~3-5MB each |
 | **Translation metadata** | MMKV (existing pattern) | Fast sync reads for settings/UI |
 | **User preferences** | AsyncStorage via Zustand (existing) | Selected translation, show/hide toggles |
-| **Tafaseer** | API-only (no local storage) | 500MB-5GB each — impractical for mobile |
+| **Tafaseer** | API-only (no local storage) | 500MB-5GB each - impractical for mobile |
 | **Tafseer cache** | MMKV with TTL | Cache recently viewed verses (24hr TTL) |
 
 ### SQLite Schema
@@ -258,7 +258,7 @@ END;
 | CDN egress | $2-3 |
 | **Total** | **$3-5/month** |
 
-**Alternative: $0/month** — Call Al Quran Cloud API directly, cache to SQLite on-device. No Supabase needed for translations.
+**Alternative: $0/month** - Call Al Quran Cloud API directly, cache to SQLite on-device. No Supabase needed for translations.
 
 ---
 
@@ -307,8 +307,8 @@ Settings
 │   │   ├── [Search bar]
 │   │   ├── Active Translation: Saheeh International ✓
 │   │   ├── Downloaded
-│   │   │   ├── Saheeh International (English) — 3.2MB ✓ [pre-installed]
-│   │   │   └── Pickthall (English) — 2.8MB [delete]
+│   │   │   ├── Saheeh International (English) - 3.2MB ✓ [pre-installed]
+│   │   │   └── Pickthall (English) - 2.8MB [delete]
 │   │   ├── Available by Language
 │   │   │   ├── English (11)
 │   │   │   ├── Turkish (10)
@@ -414,9 +414,9 @@ Settings
 
 ### Recommended Parsing Approach
 
-For **Al Quran Cloud** translations (primary source): No parsing needed — plain text.
+For **Al Quran Cloud** translations (primary source): No parsing needed - plain text.
 
-For **bundled Saheeh International** (existing): Already handled in `VerseItem.tsx` and `TranslationContent.tsx` — strips `<sup>` tags, renders footnotes separately.
+For **bundled Saheeh International** (existing): Already handled in `VerseItem.tsx` and `TranslationContent.tsx` - strips `<sup>` tags, renders footnotes separately.
 
 For **Quran Foundation tafsir text** (HTML): Use a lightweight HTML-to-text stripper or render with `react-native-render-html` for rich formatting.
 
@@ -489,13 +489,13 @@ For tafseer rendering (rich HTML), consider `@expo/html-elements` or a simple ma
 
 | # | Question | Options | Recommendation |
 |---|---|---|---|
-| 1 | **Primary API source for translations?** | Al Quran Cloud (no auth, 101) vs Quran Foundation (OAuth2, 74) vs fawazahmed0 (440+, CDN) | **Al Quran Cloud** — no auth, sufficient coverage, plain text |
-| 2 | **Tafseer API source?** | Quran Foundation (20, multi-lang) vs Al Quran Cloud (6, Arabic only) | **Quran Foundation** — more tafaseer, multi-language |
-| 3 | **Pre-bundle translations?** | Saheeh only (3MB) vs Saheeh + 2 more (9MB) vs none (download all) | **Saheeh only** — already bundled, minimal size |
+| 1 | **Primary API source for translations?** | Al Quran Cloud (no auth, 101) vs Quran Foundation (OAuth2, 74) vs fawazahmed0 (440+, CDN) | **Al Quran Cloud** - no auth, sufficient coverage, plain text |
+| 2 | **Tafseer API source?** | Quran Foundation (20, multi-lang) vs Al Quran Cloud (6, Arabic only) | **Quran Foundation** - more tafaseer, multi-language |
+| 3 | **Pre-bundle translations?** | Saheeh only (3MB) vs Saheeh + 2 more (9MB) vs none (download all) | **Saheeh only** - already bundled, minimal size |
 | 4 | **Max simultaneous translations?** | 1 (simple) vs 2-3 (power users) | **1 active + ability to view others in sheet** |
-| 5 | **Supabase as intermediary?** | Direct API calls vs proxy through Supabase Edge Functions | **Direct API** — simpler, $0 cost, less maintenance |
-| 6 | **Tafseer storage?** | API-only vs cache in MMKV vs download to SQLite | **API + MMKV cache** — tafaseer too large for SQLite |
-| 7 | **Should we support FTS search?** | Yes (search within translations) vs No (simpler) | **Yes, Phase 2** — high user value, SQLite FTS5 is free |
+| 5 | **Supabase as intermediary?** | Direct API calls vs proxy through Supabase Edge Functions | **Direct API** - simpler, $0 cost, less maintenance |
+| 6 | **Tafseer storage?** | API-only vs cache in MMKV vs download to SQLite | **API + MMKV cache** - tafaseer too large for SQLite |
+| 7 | **Should we support FTS search?** | Yes (search within translations) vs No (simpler) | **Yes, Phase 2** - high user value, SQLite FTS5 is free |
 | 8 | **Show translation during mushaf mode?** | Yes (below page) vs No (only in list/player view) | **No for mushaf, yes for reading/player** |
 
 ### Nice-to-Have (Future)
@@ -523,7 +523,7 @@ For tafseer rendering (rich HTML), consider `@expo/html-elements` or a simple ma
 
 ## Appendix A: API Endpoint Quick Reference
 
-### Al Quran Cloud (Primary — Translations)
+### Al Quran Cloud (Primary - Translations)
 
 ```
 Base: https://api.alquran.cloud/v1

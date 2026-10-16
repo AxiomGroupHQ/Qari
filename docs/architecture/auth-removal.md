@@ -1,4 +1,4 @@
-> **ARCHIVED — Historical document.** This log tracked authentication-related code removed for the initial release. The `app/(auth)/` route group referenced here no longer exists. Authentication is not currently implemented.
+> **ARCHIVED - Historical document.** This log tracked authentication-related code removed for the initial release. The `app/(auth)/` route group referenced here no longer exists. Authentication is not currently implemented.
 
 # Authentication Removal Log (Historical)
 
@@ -36,7 +36,7 @@ POSTMARK_FROM_EMAIL=your_email
 APPLE_KEY_ID=your_key_id
 APPLE_PRIVATE_KEY=your_private_key
 ```
-Note: The actual values have been redacted for security. Store these securely for future reimplementation.
+The actual values have been redacted for security. Store these securely for future reimplementation.
 
 ## Removed Directories
 - `app/(auth)/*` - Authentication screens and related components

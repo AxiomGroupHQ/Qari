@@ -59,7 +59,7 @@ const manropeSemiBoldB64 = fontToBase64('Manrope-SemiBold.ttf');
 const manropeMediumB64 = fontToBase64('Manrope-Medium.ttf');
 const surahNamesB64 = fontToBase64('surah_names.ttf');
 
-// PUA codepoints from surahGlyphMap — maps surah ID to Unicode char
+// PUA codepoints from surahGlyphMap - maps surah ID to Unicode char
 const SURAH_GLYPHS: Record<number, string> = {
   1: '\uE904',
   2: '\uE905',

@@ -115,7 +115,7 @@ class AmbientAudioService {
         updateInterval: STATUS_UPDATE_INTERVAL,
       });
 
-      // No native loop — we handle it via crossfade
+      // No native loop - we handle it via crossfade
       this.playerA.loop = false;
       this.playerB.loop = false;
 
@@ -323,7 +323,7 @@ class AmbientAudioService {
     const active = this.getActive();
     if (!standby) return;
 
-    if (__DEV__) console.log('[AmbientAudio] Track finished — immediate swap');
+    if (__DEV__) console.log('[AmbientAudio] Track finished - immediate swap');
 
     try {
       standby.seekTo(0);
@@ -536,7 +536,7 @@ class AmbientAudioService {
   }
 
   /**
-   * Full teardown — clears all intervals, removes listeners, releases
+   * Full teardown - clears all intervals, removes listeners, releases
    * both players, resets state. Does NOT reset targetVolume.
    */
   private stopAndRelease(): void {

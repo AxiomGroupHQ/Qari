@@ -52,7 +52,7 @@ export const CollectionOptionsSheet = (
                     // Await the hide before invoking the option's onPress.
                     // Calling SheetManager.show from inside opt.onPress while
                     // the previous sheet is still in its dismiss animation
-                    // races the library's mount queue — the new sheet
+                    // races the library's mount queue - the new sheet
                     // flashes open then closes. Awaiting hide first
                     // serializes the transition.
                     await SheetManager.hide('collection-options');

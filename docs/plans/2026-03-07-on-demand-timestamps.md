@@ -1,12 +1,12 @@
-> **SHIPPED — This feature is implemented.** On-demand timestamp fetching shipped. See `TimestampFetchService` and `TimestampDatabaseService`.
+> **SHIPPED - This feature is implemented.** On-demand timestamp fetching shipped. See `TimestampFetchService` and `TimestampDatabaseService`.
 
-# On-Demand Timestamp Fetch & Cache — Implementation Plan
+# On-Demand Timestamp Fetch & Cache - Implementation Plan
 
 > **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
 
-**Goal:** Replace the 40MB bundled timestamps.db with on-demand fetching from MP3Quran (113 reciters) and QDC (16 unique reciters), permanently cached in local SQLite — expanding follow-along coverage from 34 to ~129 reciters while deleting all URL overrides.
+**Goal:** Replace the 40MB bundled timestamps.db with on-demand fetching from MP3Quran (113 reciters) and QDC (16 unique reciters), permanently cached in local SQLite - expanding follow-along coverage from 34 to ~129 reciters while deleting all URL overrides.
 
-**Architecture:** Two API adapters (MP3Quran + QDC) behind a `TimestampFetchService` that normalizes responses into the existing `AyahTimestamp` shape. Fetches are triggered lazily when a surah is played, then permanently cached in SQLite (timestamps never change). The follow-along registry is built from static `mp3quran_read_id` / `qdc_reciter_id` fields on each rewayat — no network call needed at startup.
+**Architecture:** Two API adapters (MP3Quran + QDC) behind a `TimestampFetchService` that normalizes responses into the existing `AyahTimestamp` shape. Fetches are triggered lazily when a surah is played, then permanently cached in SQLite (timestamps never change). The follow-along registry is built from static `mp3quran_read_id` / `qdc_reciter_id` fields on each rewayat - no network call needed at startup.
 
 **Tech Stack:** expo-sqlite, Zustand, TypeScript, fetch API
 
@@ -19,7 +19,7 @@
 | `data/reciterData.ts` | Add `mp3quranReadId` and `qdcReciterId` optional fields to `Rewayat` interface |
 | `data/reciters.json` | Add mapping fields to ~129 rewayat entries |
 | `types/timestamps.ts` | Add API response types, new `TimestampSource` type |
-| `services/timestamps/TimestampFetchService.ts` | **NEW** — fetches from MP3Quran/QDC, normalizes, writes to SQLite |
+| `services/timestamps/TimestampFetchService.ts` | **NEW** - fetches from MP3Quran/QDC, normalizes, writes to SQLite |
 | `services/timestamps/TimestampDatabaseService.ts` | Remove bundled DB import, add write methods |
 | `services/timestamps/TimestampService.ts` | Add fetch-on-miss path via TimestampFetchService |
 | `store/timestampStore.ts` | Build registry from static rewayat fields instead of DB metadata |
@@ -203,7 +203,7 @@ git commit -m "feat(timestamps): add MP3Quran and QDC API response types"
 **Files:**
 - Modify: `services/timestamps/TimestampDatabaseService.ts`
 
-This is a significant rewrite. The DB is no longer imported from a bundled asset — it's created empty and populated on-demand.
+This is a significant rewrite. The DB is no longer imported from a bundled asset - it's created empty and populated on-demand.
 
 **Step 1: Rewrite TimestampDatabaseService.ts**
 
@@ -340,7 +340,7 @@ export const timestampDatabaseService = new TimestampDatabaseService();
 
 Key changes:
 - DB name changed to `timestamps_v3.db` (fresh start, old `timestamps.db` from bundled era will be ignored)
-- No `importDatabaseFromAssetAsync` — tables created empty
+- No `importDatabaseFromAssetAsync` - tables created empty
 - `timestamp_meta` table replaced with simpler `cached_surahs` table
 - New `writeTimestamps()` method for caching fetched data
 - New `isSurahCached()` method for cache-hit checks
@@ -348,13 +348,13 @@ Key changes:
 **Step 2: Run type check**
 
 Run: `npx tsc --noEmit`
-Expected: Errors in TimestampService.ts and timestampStore.ts (they reference removed `getAllMeta`, `hasTimestamps`, `getMeta`). This is expected — we fix them in Tasks 6 and 7.
+Expected: Errors in TimestampService.ts and timestampStore.ts (they reference removed `getAllMeta`, `hasTimestamps`, `getMeta`). This is expected - we fix them in Tasks 6 and 7.
 
 **Step 3: Commit**
 
 ```bash
 git add services/timestamps/TimestampDatabaseService.ts
-git commit -m "feat(timestamps): rewrite DB service — remove bundled import, add write methods"
+git commit -m "feat(timestamps): rewrite DB service - remove bundled import, add write methods"
 ```
 
 ---
@@ -448,7 +448,7 @@ class TimestampFetchService {
   /**
    * Fetch from MP3Quran API and normalize to AyahTimestamp[].
    * API: GET /api/v3/ayat_timing?surah={N}&read={readId}
-   * Returns times in seconds (float) — we convert to milliseconds.
+   * Returns times in seconds (float) - we convert to milliseconds.
    */
   private async fetchFromMp3Quran(
     readId: number,
@@ -533,7 +533,7 @@ export const timestampFetchService = new TimestampFetchService();
 **Step 2: Run type check**
 
 Run: `npx tsc --noEmit`
-Expected: May still have errors from Task 4 leftovers in other files — that's fine. This file itself should be clean.
+Expected: May still have errors from Task 4 leftovers in other files - that's fine. This file itself should be clean.
 
 **Step 3: Commit**
 
@@ -622,7 +622,7 @@ export const timestampService = new TimestampService();
 ```
 
 Key changes:
-- Removed `hasTimestamps()` and `getMeta()` (no longer needed — registry is static)
+- Removed `hasTimestamps()` and `getMeta()` (no longer needed - registry is static)
 - Added `hasTimestampSource()` for synchronous registry checks
 - `getTimestampsForSurah()` now has 3-tier lookup: memory → SQLite → API fetch
 
@@ -635,7 +635,7 @@ Expected: Errors in timestampStore.ts (references `hasTimestamps`, `getAllMeta`)
 
 ```bash
 git add services/timestamps/TimestampService.ts
-git commit -m "feat(timestamps): add 3-tier lookup — memory, SQLite, API fetch"
+git commit -m "feat(timestamps): add 3-tier lookup - memory, SQLite, API fetch"
 ```
 
 ---
@@ -645,7 +645,7 @@ git commit -m "feat(timestamps): add 3-tier lookup — memory, SQLite, API fetch
 **Files:**
 - Modify: `store/timestampStore.ts`
 
-The follow-along registry no longer reads from the DB. It's built from static `mp3quran_read_id` / `qdc_reciter_id` fields on each rewayat — instant, no async needed.
+The follow-along registry no longer reads from the DB. It's built from static `mp3quran_read_id` / `qdc_reciter_id` fields on each rewayat - instant, no async needed.
 
 **Step 1: Rewrite timestampStore.ts**
 
@@ -749,7 +749,7 @@ export const useTimestampStore = create<TimestampState>()((set, get) => ({
 ```
 
 Key changes:
-- `loadFollowAlongRegistry` is now **synchronous** — builds from static RECITERS data
+- `loadFollowAlongRegistry` is now **synchronous** - builds from static RECITERS data
 - No more DB dependency (`timestampDatabaseService` import removed)
 - Registry checks `mp3quran_read_id || qdc_reciter_id` instead of querying `timestamp_meta`
 
@@ -793,7 +793,7 @@ appInitializer.registerService({
 });
 ```
 
-Note: `loadFollowAlongRegistry()` is no longer async — no `await` needed.
+`loadFollowAlongRegistry()` is no longer async - no `await` needed.
 
 **Step 2: Run type check**
 
@@ -804,7 +804,7 @@ Expected: PASS
 
 ```bash
 git add services/AppInitializer.ts
-git commit -m "feat(timestamps): update AppInitializer — no bundled DB, sync registry"
+git commit -m "feat(timestamps): update AppInitializer - no bundled DB, sync registry"
 ```
 
 ---
@@ -1110,11 +1110,11 @@ Expected: All existing tests pass.
 **Step 5: Manual smoke test**
 
 1. Start the app: `npm run ios`
-2. Play a surah from **Alafasy** (MP3Quran source) — verify follow-along highlighting works
-3. Play a surah from **Mohammed Jibreel** (QDC source) — verify follow-along works with quranicaudio audio
-4. Play a surah from a reciter **without** timestamps — verify no errors, follow-along badge hidden
+2. Play a surah from **Alafasy** (MP3Quran source) - verify follow-along highlighting works
+3. Play a surah from **Mohammed Jibreel** (QDC source) - verify follow-along works with quranicaudio audio
+4. Play a surah from a reciter **without** timestamps - verify no errors, follow-along badge hidden
 5. Check the console for `[FollowAlong] Registry loaded: ~129 rewayat` log
-6. Kill and relaunch — play same Alafasy surah again, verify it loads instantly from SQLite cache (no network fetch)
+6. Kill and relaunch - play same Alafasy surah again, verify it loads instantly from SQLite cache (no network fetch)
 
 **Step 6: Final commit (if any lint/format fixes)**
 

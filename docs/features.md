@@ -1,6 +1,6 @@
 # Istima features and roadmap
 
-One-page requirements view (the Bayaan #9 equivalent). Status as of October 2026. Every feature must work on web, iOS and Android. Quran text, translations, tafsir, duas and adhkar text are never altered. Item-level status lives in `docs/tracker.md`.
+One-page requirements view . Status as of October 2026. Every feature must work on web, iOS and Android. Quran text, translations, tafsir, duas and adhkar text are never altered. Item-level status lives in `docs/tracker.md`.
 
 ## Shipped
 
@@ -15,7 +15,7 @@ One-page requirements view (the Bayaan #9 equivalent). Status as of October 2026
 | Share links | P1 Share buttons for reciter, recitation, surah, verse, mushaf, adhkar produce `https://istima.app/...`. P1 iOS and Android open the app from these links. | P2 Android needs the signing SHA-256 for `assetlinks.json`. |
 | Web app | P0 Full app at istima.app. | P1 Static site. |
 
-## Roadmap (from upstream Bayaan issues)
+## Roadmap
 
 | Priority | Feature | Blocked by | What she must provide |
 | --- | --- | --- | --- |

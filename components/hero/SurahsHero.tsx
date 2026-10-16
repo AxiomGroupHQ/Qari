@@ -120,7 +120,7 @@ export const SurahHeroSection = ({
   const linkProps = {
     href: {
       pathname: '/mushaf' as const,
-      // Prefer the resume page when we have one — that's what makes
+      // Prefer the resume page when we have one - that's what makes
       // the hero a true "Continue reading" shortcut instead of just
       // "open this surah at page 1".
       params: resumePage

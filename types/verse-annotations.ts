@@ -9,7 +9,7 @@ export const HIGHLIGHT_COLORS: Record<HighlightColor, string> = {
 };
 
 // Optional rewayah this annotation was saved in. Null on legacy rows
-// written before rewayah stamping was introduced — the UI treats those
+// written before rewayah stamping was introduced - the UI treats those
 // as rewayah-agnostic and opens them in whatever is currently active.
 import type {RewayahId} from '@/store/mushafSettingsStore';
 

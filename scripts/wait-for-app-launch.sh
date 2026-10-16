@@ -47,9 +47,9 @@ START_EPOCH="$(date +%s)"
 DEADLINE_EPOCH=$(( START_EPOCH + TIMEOUT ))
 
 # Patterns that indicate a successful app launch.
-# - "Running application 'main'" — RN bridge bundle done loading + mounted
-# - "Expo Go is ready"            — Expo Go fallback
-# - "App is ready"                — explicit log if the app emits one
+# - "Running application 'main'" - RN bridge bundle done loading + mounted
+# - "Expo Go is ready"            - Expo Go fallback
+# - "App is ready"                - explicit log if the app emits one
 PATTERNS='Running application|Expo Go is ready|App is ready'
 
 # logcat -T 1 prints from "now" rather than the full ring buffer.
@@ -67,6 +67,6 @@ adb $DEVICE_FLAG logcat -T 1 2>/dev/null | while IFS= read -r line; do
   fi
 done
 
-# `adb logcat` exited (device unplugged?) — bubble up failure.
+# `adb logcat` exited (device unplugged?) - bubble up failure.
 echo "[wait-for-app-launch] adb logcat stream ended unexpectedly" >&2
 exit 4

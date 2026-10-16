@@ -1,7 +1,7 @@
 /**
  * Port shape and no-op default tests.
  *
- * These tests assert the seam itself — that the ports compile, that the
+ * These tests assert the seam itself - that the ports compile, that the
  * NullPlayerEventSink no-op implements the full surface, and that the
  * stub adapter satisfies the PlayerController contract.
  *
@@ -54,7 +54,7 @@ describe('NullPlayerEventSink', () => {
   });
 });
 
-describe('ExpoAudioPlayerControllerAdapter — PlayerController contract', () => {
+describe('ExpoAudioPlayerControllerAdapter - PlayerController contract', () => {
   let controller: PlayerController<BaseTrack>;
 
   beforeEach(() => {
@@ -137,7 +137,7 @@ describe('ExpoAudioPlayerControllerAdapter — PlayerController contract', () =>
 
 describe('Type-shape compile checks', () => {
   // These exist purely to assert that the public types are referenceable.
-  // If an interface drifts, this file fails to compile — which is the test.
+  // If an interface drifts, this file fails to compile - which is the test.
   it('CoordinatorHooks shape', () => {
     const hooks: CoordinatorHooks = {
       pauseMain: () => {},

@@ -25,7 +25,7 @@ The What's New feature has been successfully implemented! This feature automatic
 
 ### Documentation
 
-- `**docs/features/whats-new.md**` - Comprehensive feature documentation
+- `**docs/features/whats-new.md**` - Full feature documentation
 
 ## 📝 Files Modified
 

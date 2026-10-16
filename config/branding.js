@@ -2,7 +2,7 @@
 /**
  * ISTIMA app identity config.
  *
- * CJS (not ESM) — app.config.js calls require() before Expo CLI transpiles.
+ * CJS (not ESM) - app.config.js calls require() before Expo CLI transpiles.
  * Forks override by replacing this file; the shape is typed in branding.d.ts.
  *
  * See docs/rfcs/007-app-layer-multi-tenancy.md for the design rationale.

@@ -7,11 +7,11 @@
 
 ## Overview
 
-Build a ground-up, web-native version of Istima at **thebayaan.com** — a full-featured Quran audio and Mushaf experience for the browser. Not a React Native Web port, but a proper web application built with Next.js, Tailwind CSS, and the Web Audio API, borrowing the design language and data layer from the mobile app.
+Build a ground-up, web-native version of Istima at **istima.app** - a full-featured Quran audio and Mushaf experience for the browser. Not a React Native Web port, but a proper web application built with Next.js, Tailwind CSS, and the Web Audio API, borrowing the design language and data layer from the mobile app.
 
 ## User Story
 
-As a user, I want to visit thebayaan.com and immediately browse reciters, play Quran recitations, read the Mushaf, and manage my listening experience — all from my browser on desktop, tablet, or mobile, with no app download required.
+As a user, I want to visit istima.app and immediately browse reciters, play Quran recitations, read the Mushaf, and manage my listening experience - all from my browser on desktop, tablet, or mobile, with no app download required.
 
 As a user, I want to share a direct link to a specific surah and reciter so that anyone I send it to can start listening instantly.
 
@@ -19,13 +19,13 @@ As a user, I want to share a direct link to a specific surah and reciter so that
 
 The mobile app is built with React Native/Expo. Rather than using Expo Web (which shoehorns native primitives into a browser), a ground-up web app allows:
 
-- **Proper HTML semantics** — accessibility, SEO, screen readers
-- **Native browser APIs** — HTML5 Audio, Service Workers, Cache API, Web Share API
-- **Web-native styling** — Tailwind CSS, CSS Grid/Flexbox, media queries, responsive design
-- **Server-side rendering** — SEO for every surah and reciter page
-- **URL-first architecture** — deep links, shareable URLs, browser history
-- **Desktop-class layouts** — sidebar navigation, persistent player bar, multi-panel views
-- **No React Native Web abstractions** — no `<View>`, no `StyleSheet.create()`, no RN compatibility shims
+- **Proper HTML semantics** - accessibility, SEO, screen readers
+- **Native browser APIs** - HTML5 Audio, Service Workers, Cache API, Web Share API
+- **Web-native styling** - Tailwind CSS, CSS Grid/Flexbox, media queries, responsive design
+- **Server-side rendering** - SEO for every surah and reciter page
+- **URL-first architecture** - deep links, shareable URLs, browser history
+- **Desktop-class layouts** - sidebar navigation, persistent player bar, multi-panel views
+- **No React Native Web abstractions** - no `<View>`, no `StyleSheet.create()`, no RN compatibility shims
 
 ## Tech Stack
 
@@ -34,7 +34,7 @@ The mobile app is built with React Native/Expo. Rather than using Expo Web (whic
 | **Framework** | Next.js (App Router) | SSR/SSG for SEO, file-based routing, React Server Components |
 | **Language** | TypeScript | Shared types with mobile app |
 | **Styling** | Tailwind CSS | Utility-first, responsive, dark mode built-in |
-| **State Management** | Zustand | Same library as mobile — store logic ports directly |
+| **State Management** | Zustand | Same library as mobile - store logic ports directly |
 | **Audio Engine** | HTML5 Audio API | Native browser audio, Media Session API for OS controls |
 | **Data** | Supabase (same backend) | Same database, same storage, same API |
 | **Static Data** | reciters.json, surahs.json | Copied/shared from mobile repo |
@@ -44,7 +44,7 @@ The mobile app is built with React Native/Expo. Rather than using Expo Web (whic
 | **i18n** | react-i18next or next-intl | Same i18n approach, shared translation keys |
 | **Hosting** | Cloudflare Pages | Global edge network, fast in MENA/Asia, generous free tier |
 | **Deployment** | `@opennextjs/cloudflare` | Next.js adapter for Cloudflare Pages |
-| **Domain** | thebayaan.com | Primary web domain |
+| **Domain** | istima.app | Primary web domain |
 
 ## What's Shared with Mobile
 
@@ -80,7 +80,7 @@ The mobile app is built with React Native/Expo. Rather than using Expo Web (whic
 ### Repository Structure
 
 ```
-bayaan-web/                    # Separate repository
+istima-web/                    # Separate repository
 ├── app/                       # Next.js App Router
 │   ├── layout.tsx             # Root layout (sidebar + player bar)
 │   ├── page.tsx               # Home page
@@ -174,10 +174,10 @@ bayaan-web/                    # Separate repository
 │  │  AudioService   │      │  Media Session API   │    │
 │  │  (singleton)    │─────▶│  (OS-level controls) │    │
 │  │                 │      │  - lock screen        │    │
-│  │  new Audio()    │      │  - notification bar   │    │
+│  │  new Audio    │      │  - notification bar   │    │
 │  │  .src = url     │      │  - keyboard media keys│    │
-│  │  .play()        │      └──────────────────────┘    │
-│  │  .pause()       │                                  │
+│  │  .play        │      └──────────────────────┘    │
+│  │  .pause       │                                  │
 │  │  .currentTime   │      ┌──────────────────────┐    │
 │  └────────────────┘      │  AmbientService       │    │
 │                           │  (second Audio())     │    │
@@ -195,7 +195,7 @@ bayaan-web/                    # Separate repository
 ```
 
 The Web Audio API is dramatically simpler than mobile audio:
-- `new Audio(url)` — that's it. No native modules, no bridges.
+- `new Audio(url)` - that's it. No native modules, no bridges.
 - `.play()`, `.pause()`, `.currentTime` for seek
 - `timeupdate` event for progress
 - `ended` event for auto-next
@@ -277,15 +277,15 @@ Every page is server-rendered and indexable:
 
 | URL | Page | SEO Title |
 |-----|------|-----------|
-| `/` | Home | Istima — Listen to the Holy Quran |
-| `/reciters` | All reciters | Quran Reciters — Istima |
-| `/reciters/al-husary` | Reciter detail | Sheikh Al-Husary — Istima |
-| `/surah/2` | Surah page | Surah Al-Baqarah — Listen Online — Istima |
-| `/surah/2?reciter=al-husary` | Surah + reciter | Al-Baqarah by Al-Husary — Istima |
-| `/mushaf` | Mushaf viewer | Read the Holy Quran — Istima |
-| `/mushaf/604` | Mushaf page N | Quran Page 604 — Istima |
-| `/queue` | Queue | Queue — Istima |
-| `/settings` | Settings | Settings — Istima |
+| `/` | Home | Istima - Listen to the Holy Quran |
+| `/reciters` | All reciters | Quran Reciters - Istima |
+| `/reciters/al-husary` | Reciter detail | Sheikh Al-Husary - Istima |
+| `/surah/2` | Surah page | Surah Al-Baqarah - Listen Online - Istima |
+| `/surah/2?reciter=al-husary` | Surah + reciter | Al-Baqarah by Al-Husary - Istima |
+| `/mushaf` | Mushaf viewer | Read the Holy Quran - Istima |
+| `/mushaf/604` | Mushaf page N | Quran Page 604 - Istima |
+| `/queue` | Queue | Queue - Istima |
+| `/settings` | Settings | Settings - Istima |
 
 ### Keyboard Shortcuts
 
@@ -407,7 +407,7 @@ The web app should feel like the same product, not a different app:
 6. Next/previous track with queue integration
 7. Auto-advance to next surah
 8. Keyboard shortcuts for playback
-9. Progress persistence (localStorage — resume where you left off)
+9. Progress persistence (localStorage - resume where you left off)
 
 ### Phase 3: Surah Pages & SEO
 
@@ -456,7 +456,7 @@ The web app should feel like the same product, not a different app:
 4. Mobile Safari audio quirks (autoplay restrictions, audio session handling)
 5. Analytics integration
 6. Error tracking (Sentry or similar)
-7. DNS + SSL setup for thebayaan.com on Cloudflare
+7. DNS + SSL setup for istima.app on Cloudflare
 8. Launch
 
 ## Hosting & Deployment
@@ -464,15 +464,15 @@ The web app should feel like the same product, not a different app:
 ### Cloudflare Pages
 
 ```
-bayaan-web/
+istima-web/
 ├── wrangler.toml              # Cloudflare Pages config
 ├── next.config.ts             # Next.js config
 └── ...
 ```
 
 **Deployment flow:**
-1. Push to `main` branch → Cloudflare Pages auto-deploys to thebayaan.com
-2. Push to `develop` / feature branches → Preview deployments at `*.bayaan-web.pages.dev`
+1. Push to `main` branch → Cloudflare Pages auto-deploys to istima.app
+2. Push to `develop` / feature branches → Preview deployments at `*.istima-web.pages.dev`
 3. `@opennextjs/cloudflare` adapter converts Next.js output to Cloudflare Workers
 
 **Cloudflare benefits:**
@@ -486,18 +486,18 @@ bayaan-web/
 
 | Domain | Purpose |
 |--------|---------|
-| `thebayaan.com` | Primary web app |
-| `www.thebayaan.com` | Redirect to `thebayaan.com` |
-| `api.thebayaan.com` | (Future) API if needed beyond Supabase |
+| `istima.app` | Primary web app |
+| `istima.app` | Redirect to `istima.app` |
+| `iapi.istima.app` | (Future) API if needed beyond Supabase |
 
 ## Open Questions
 
-1. **Shared package for types/data** — Should a shared npm package or Git submodule hold types, surahs.json, reciters.json, and i18n strings between mobile and web repos? Or just copy and sync manually?
-2. **User accounts** — The mobile app doesn't have user auth. Should the web version? Could enable cross-device sync (bookmarks, listening history, queue).
-3. **Mushaf rendering approach** — Port the Digital Khatt rendering from mobile (Skia-based) to web (Canvas/SVG/CSS)? Or use a different rendering approach optimized for web?
-4. **Audio CDN** — Should audio files be proxied through Cloudflare R2/CDN for faster delivery, or continue serving directly from Supabase Storage?
-5. **Analytics** — Cloudflare Web Analytics (privacy-first) vs. Plausible vs. PostHog?
-6. **Component library** — Build from scratch with Tailwind, or use a headless library (Radix UI, Headless UI) for modals, dropdowns, sliders?
+1. **Shared package for types/data** - Should a shared npm package or Git submodule hold types, surahs.json, reciters.json, and i18n strings between mobile and web repos? Or just copy and sync manually?
+2. **User accounts** - The mobile app doesn't have user auth. Should the web version? Could enable cross-device sync (bookmarks, listening history, queue).
+3. **Mushaf rendering approach** - Port the Digital Khatt rendering from mobile (Skia-based) to web (Canvas/SVG/CSS)? Or use a different rendering approach optimized for web?
+4. **Audio CDN** - Should audio files be proxied through Cloudflare R2/CDN for faster delivery, or continue serving directly from Supabase Storage?
+5. **Analytics** - Cloudflare Web Analytics (privacy-first) vs. Plausible vs. PostHog?
+6. **Component library** - Build from scratch with Tailwind, or use a headless library (Radix UI, Headless UI) for modals, dropdowns, sliders?
 
 ## References
 
@@ -509,8 +509,8 @@ bayaan-web/
 - [@opennextjs/cloudflare](https://github.com/opennextjs/opennextjs-cloudflare)
 - [Service Workers (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 - [Web App Manifest (MDN)](https://developer.mozilla.org/en-US/docs/Web/Manifest)
-- [Istima Mobile App — TV Feature Doc](./tv-app.md)
-- [Istima Mobile App — Smartwatch Feature Doc](./smartwatch.md)
+- [Istima Mobile App - TV Feature Doc](./tv-app.md)
+- [Istima Mobile App - Smartwatch Feature Doc](./smartwatch.md)
 
 ---
 

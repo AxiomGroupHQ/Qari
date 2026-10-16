@@ -1,5 +1,5 @@
 /**
- * ExpoAudioPlayerControllerAdapter — stub adapter for the PlayerController port.
+ * ExpoAudioPlayerControllerAdapter - stub adapter for the PlayerController port.
  *
  * THIS IS A SCAFFOLD. RFC-004 ships only the seam (port interfaces) plus
  * this stub so the package compiles end-to-end and the shape is reviewable
@@ -8,7 +8,7 @@
  *
  * Why ship a stub now rather than waiting:
  *  - Demonstrates that the port is implementable as a class wrapping a
- *    consumer store (Istima's `playerStore`) — which is what ADR-0001
+ *    consumer store (Istima's `playerStore`) - which is what ADR-0001
  *    promises for the migration.
  *  - Lets the package self-contain its tests (the contract suite and the
  *    `MockAudioPlayer`-driven test both reference this class).
@@ -28,7 +28,7 @@ import type {PlayerController} from '../ports';
 
 /**
  * Reference implementation of `PlayerController<TTrack>` against the future
- * `IstimaAudioProvider`. Behavior is intentionally minimal — every callback
+ * `IstimaAudioProvider`. Behavior is intentionally minimal - every callback
  * is a no-op the consumer overrides via subclass or composition. The full
  * implementation arrives with RFC-005.
  */

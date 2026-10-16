@@ -328,7 +328,7 @@ export default function TranslationsContent() {
       });
     }
 
-    // Available section — downloaded items (excluding active)
+    // Available section - downloaded items (excluding active)
     const availableRows = allRows
       .filter(r => r.isDownloaded && r.id !== selectedTranslationId)
       .sort((a, b) => a.englishName.localeCompare(b.englishName));
@@ -342,7 +342,7 @@ export default function TranslationsContent() {
       items.push(...availableRows);
     }
 
-    // Language groups — only non-downloaded items
+    // Language groups - only non-downloaded items
     const browseRows = allRows.filter(r => !r.isDownloaded);
     const byLang: Record<string, RowItem[]> = {};
     for (const row of browseRows) {
@@ -408,7 +408,7 @@ export default function TranslationsContent() {
       });
     }
 
-    // Available section — downloaded items (excluding active)
+    // Available section - downloaded items (excluding active)
     const availableRows = allRows
       .filter(r => r.isDownloaded && r.id !== selectedTafseerId)
       .sort((a, b) => a.englishName.localeCompare(b.englishName));
@@ -422,7 +422,7 @@ export default function TranslationsContent() {
       items.push(...availableRows);
     }
 
-    // Language groups — only non-downloaded items
+    // Language groups - only non-downloaded items
     const browseRows = allRows.filter(r => !r.isDownloaded);
     const byLang: Record<string, RowItem[]> = {};
     for (const row of browseRows) {
@@ -749,7 +749,7 @@ export default function TranslationsContent() {
     [activeTab],
   );
 
-  // Place TabSelector in the navigation header — works in any Stack navigator
+  // Place TabSelector in the navigation header - works in any Stack navigator
   useLayoutEffect(() => {
     navigation.setOptions({
       headerTitleAlign: 'left',
@@ -787,7 +787,7 @@ export default function TranslationsContent() {
   return (
     <View style={styles.container}>
       <View style={[styles.content, {paddingTop: headerHeight}]}>
-        {/* Layered FlashLists — both stay mounted, toggle visibility */}
+        {/* Layered FlashLists - both stay mounted, toggle visibility */}
         <View style={{flex: 1}}>
           <View
             style={[
@@ -843,7 +843,7 @@ const createStyles = (theme: Theme) =>
       flex: 1,
     },
 
-    // Section headers — meta (ACTIVE TRANSLATION)
+    // Section headers - meta (ACTIVE TRANSLATION)
     metaHeaderContainer: {
       paddingHorizontal: moderateScale(18),
       paddingTop: moderateScale(12),
@@ -857,7 +857,7 @@ const createStyles = (theme: Theme) =>
       textTransform: 'uppercase',
     },
 
-    // Section headers — language group (ENGLISH, ARABIC)
+    // Section headers - language group (ENGLISH, ARABIC)
     langHeaderContainer: {
       flexDirection: 'row',
       alignItems: 'center',

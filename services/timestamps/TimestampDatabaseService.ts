@@ -27,8 +27,8 @@ class TimestampDatabaseService {
         // (current), so devices upgrading across PR #278 may carry stale
         // 'mp3quran' / 'qdc' rows here until the next fetch overwrites
         // them via INSERT OR REPLACE in writeTimestamps. The stale
-        // values are never read back as a TimestampSource — they live
-        // only on this row for diagnostic purposes — so
+        // values are never read back as a TimestampSource - they live
+        // only on this row for diagnostic purposes - so
         // overwrite-on-next-fetch is sufficient and no one-shot
         // migration is required.
         await db.execAsync(`

@@ -49,7 +49,7 @@ CODEPOINT_MAP = {
     "\u0657": "\u08F0",  # open fathatan
     "\u0656": "\u08F2",  # open kasratan
     "\u065E": "\u08F1",  # open dammatan
-    # Purely visual KFGQPC glyph variants the DK font doesn't have — remap
+    # Purely visual KFGQPC glyph variants the DK font doesn't have - remap
     # to the nearest DK-supported equivalent. These do NOT carry tajweed
     # classification signal so substituting loses nothing.
     "\u06D2": "\u0649",  # yeh barree -> alef maksura (same dotless final form)
@@ -59,8 +59,8 @@ _TRANSLATE_TABLE = str.maketrans({k: v for k, v in CODEPOINT_MAP.items()})
 
 # KFGQPC Warsh/Qaloon markers that the DK font can't render BUT carry
 # tajweed classification signal:
-#   U+06E4 ۤ SMALL HIGH MADDA   — Madd al-Badal / Madd al-Lin (green)
-#   U+06EA ۪ EMPTY CENTRE LOW STOP — Tashil / imalah hint (light blue/dark green)
+#   U+06E4 ۤ SMALL HIGH MADDA   - Madd al-Badal / Madd al-Lin (green)
+#   U+06EA ۪ EMPTY CENTRE LOW STOP - Tashil / imalah hint (light blue/dark green)
 # Preserve them through normalization so the classifier can read them,
 # then strip just before DB insert via strip_for_render() below.
 _CLASSIFICATION_MARKERS = set("\u06E4\u06EA")
@@ -91,7 +91,7 @@ LEADING_RUKU = re.compile(rf"^{RUKU}\s+")
 
 # After hamza decomposition, KFGQPC's precomposed `أٓ` becomes `ا + ٔ + ٓ`
 # (alef, hamza-above, madda). Bayaan writes the same sound as `ـَٔا`
-# (tatweel, fatha, hamza-above, alef) — the tatweel acts as a visual carrier
+# (tatweel, fatha, hamza-above, alef) - the tatweel acts as a visual carrier
 # for the hamza mark that precedes a true alef. This occurs in words like
 # "الآخرة", "آدم", "آخر".
 AKHIRAH_PATTERN = "\u0627\u0654\u0653"  # ا + ٔ + ٓ

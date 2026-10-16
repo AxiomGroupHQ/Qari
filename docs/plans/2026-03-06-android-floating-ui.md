@@ -1,10 +1,10 @@
-> **SHIPPED — This feature is implemented.** The floating tab bar and floating player redesign shipped. See `components/BottomTabBar.tsx` and the `FloatingPlayer` component.
+> **SHIPPED - This feature is implemented.** The floating tab bar and floating player redesign shipped. See `components/BottomTabBar.tsx` and the `FloatingPlayer` component.
 
 # Android Floating Tab Bar + Redesigned Floating Player
 
 **Goal:** Redesign Android's bottom tab bar as a floating pill and simplify the floating player to an artwork-forward layout matching iOS MiniPlayer style.
 
-**Architecture:** Two independent UI changes — (1) BottomTabBar becomes a floating pill with horizontal margins, rounded corners, and alpha-based design system colors; (2) FloatingPlayer simplified to `[ReciterImage] [Title/Artist] [PlayButton]` with no love button, surah glyph, or animations. Both share the same visual language.
+**Architecture:** Two independent UI changes - (1) BottomTabBar becomes a floating pill with horizontal margins, rounded corners, and alpha-based design system colors; (2) FloatingPlayer simplified to `[ReciterImage] [Title/Artist] [PlayButton]` with no love button, surah glyph, or animations. Both share the same visual language.
 
 **Tech Stack:** React Native, react-native-size-matters, Color, expo-image (ReciterImage), Zustand (playerStore)
 
@@ -273,7 +273,7 @@ git commit -m "feat: redesign Android BottomTabBar as floating pill"
 
 ---
 
-### Task 3: Redesign FloatingPlayer — artwork-forward, simplified
+### Task 3: Redesign FloatingPlayer - artwork-forward, simplified
 
 **Files:**
 - Modify: `components/player/v2/FloatingPlayer/index.tsx`
@@ -523,7 +523,7 @@ git commit -m "feat: render FloatingPlayer in Android tabs layout"
 
 ---
 
-### Task 5: Verify and adjust — visual check & cleanup
+### Task 5: Verify and adjust - visual check & cleanup
 
 **Step 1: Run full type check**
 
@@ -536,7 +536,7 @@ Run: `npx prettier --write utils/constants.ts components/BottomTabBar.tsx compon
 
 **Step 3: Delete PlayButton.tsx if no longer imported**
 
-The FloatingPlayer no longer imports `PlayButton` — it renders `PlayIcon`/`PauseIcon` directly (matching MiniPlayer pattern). Check if `PlayButton.tsx` is imported anywhere else:
+The FloatingPlayer no longer imports `PlayButton` - it renders `PlayIcon`/`PauseIcon` directly (matching MiniPlayer pattern). Check if `PlayButton.tsx` is imported anywhere else:
 
 Run: `grep -r "PlayButton" --include="*.tsx" --include="*.ts" -l`
 

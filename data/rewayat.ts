@@ -14,15 +14,15 @@ export interface RewayatInfo extends RewayatEntry {
   reciterCount: number;
 }
 
-// Canonical rewayat registry — ordered by Qira'at teacher.
+// Canonical rewayat registry - ordered by Qira'at teacher.
 //
 // `name` and `aliases` mirror the exact strings stored in the Postgres
-// `rewayat.name` column — they must match the API payload verbatim so
+// `rewayat.name` column - they must match the API payload verbatim so
 // resolveRewayatName() can look up an entry from whatever the backend sends.
 // Those fields retain pre-canonical spellings ("Aldori A'n Abi Amr" etc.).
 //
 // `displayName`, `teacher`, `student`, and `description` are user-facing
-// display fields — they carry the canonical transliterations used by the
+// display fields - they carry the canonical transliterations used by the
 // RewayahIdentity module (Al-Duri, Qalun, Ibn Dhakwan, Hisham, Asim, Abu
 // Amr, Ibn Amir, al-Kisa'i, Abu Ja'far, Ya'qub, etc.) so every UI consumer
 // renders the same spelling.

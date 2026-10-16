@@ -8,16 +8,16 @@
  *   npx tsx scripts/upload-reciter-images.ts [--dry-run]
  *
  * Required env (read from .env.r2 + .env automatically):
- *   R2_ACCOUNT_ID        — Cloudflare account ID
- *   R2_ACCESS_KEY_ID     — R2 S3-compat access key
- *   R2_SECRET_ACCESS_KEY — R2 S3-compat secret key
+ *   R2_ACCOUNT_ID        - Cloudflare account ID
+ *   R2_ACCESS_KEY_ID     - R2 S3-compat access key
+ *   R2_SECRET_ACCESS_KEY - R2 S3-compat secret key
  *
- *   BAYAAN_API_KEY       — Bearer token for the backend API
- *   ADMIN_EMAIL          — Admin account email (for JWT)
- *   ADMIN_PASSWORD       — Admin account password (for JWT)
+ *   BAYAAN_API_KEY       - Bearer token for the backend API
+ *   ADMIN_EMAIL          - Admin account email (for JWT)
+ *   ADMIN_PASSWORD       - Admin account password (for JWT)
  *
  * Optional env (falls back to defaults):
- *   BAYAAN_API_URL       — Backend base URL (default: production Railway URL)
+ *   BAYAAN_API_URL       - Backend base URL (default: production Railway URL)
  *
  * Behaviour:
  *   - Parses utils/reciterImages.ts to build slug → filename mapping
@@ -258,12 +258,12 @@ async function fetchAllReciters(): Promise<ReciterEntry[]> {
   const {total_pages, total} = first.meta;
   const all: ReciterEntry[] = [...first.data];
 
-  console.log(`  Page 1/${total_pages} — ${first.data.length} reciters`);
+  console.log(`  Page 1/${total_pages} - ${first.data.length} reciters`);
 
   for (let page = 2; page <= total_pages; page++) {
     const resp = await fetchRecitersPage(page);
     all.push(...resp.data);
-    console.log(`  Page ${page}/${total_pages} — ${resp.data.length} reciters`);
+    console.log(`  Page ${page}/${total_pages} - ${resp.data.length} reciters`);
   }
 
   console.log(`Fetched ${all.length} / ${total} reciters total.\n`);
@@ -284,7 +284,7 @@ async function existsOnCdn(cdnUrl: string): Promise<boolean> {
 }
 
 // ---------------------------------------------------------------------------
-// R2 existence check (via S3 HeadObject — authoritative)
+// R2 existence check (via S3 HeadObject - authoritative)
 // ---------------------------------------------------------------------------
 
 async function existsInR2(s3: S3Client, r2Key: string): Promise<boolean> {
@@ -338,7 +338,7 @@ async function updateReciterImageUrl(
   });
 
   if (res.status === 401 && !retried) {
-    console.log('  JWT expired — re-authenticating...');
+    console.log('  JWT expired - re-authenticating...');
     jwtToken = null;
     await authenticate();
     return updateReciterImageUrl(reciterId, imageUrl, true);
@@ -360,7 +360,7 @@ async function main(): Promise<void> {
   validateEnv();
 
   if (DRY_RUN) {
-    console.log('=== DRY RUN — no files will be uploaded or DB updated ===\n');
+    console.log('=== DRY RUN - no files will be uploaded or DB updated ===\n');
   }
 
   // Parse slug → filename map from reciterImages.ts
@@ -406,7 +406,7 @@ async function main(): Promise<void> {
 
     // Check if local file exists
     if (!fs.existsSync(localPath)) {
-      console.warn(`${prefix} Local file not found: ${filename} — skipping`);
+      console.warn(`${prefix} Local file not found: ${filename} - skipping`);
       stats.failed++;
       continue;
     }
@@ -414,7 +414,7 @@ async function main(): Promise<void> {
     // Check existence in R2 (authoritative S3 HEAD)
     const alreadyExists = await existsInR2(s3, r2Key);
     if (alreadyExists) {
-      console.log(`${prefix} Already in R2 — skipping upload`);
+      console.log(`${prefix} Already in R2 - skipping upload`);
       stats.skipped++;
     } else {
       console.log(`${prefix} Uploading ${filename} → ${r2Key}`);
@@ -437,7 +437,7 @@ async function main(): Promise<void> {
     // Update DB image_url
     const reciter = slugToReciter.get(slug);
     if (!reciter) {
-      console.warn(`${prefix} No matching reciter in DB — skipping DB update`);
+      console.warn(`${prefix} No matching reciter in DB - skipping DB update`);
       stats.noSlugMatch++;
       continue;
     }
@@ -466,7 +466,7 @@ async function main(): Promise<void> {
   // Summary
   // ---------------------------------------------------------------------------
   console.log('\n=== Upload Summary ===');
-  if (DRY_RUN) console.log('(DRY RUN — no changes were made)');
+  if (DRY_RUN) console.log('(DRY RUN - no changes were made)');
   console.log(`  Images uploaded:      ${stats.uploaded}`);
   console.log(`  Images skipped:       ${stats.skipped}`);
   console.log(`  Images failed:        ${stats.failed}`);

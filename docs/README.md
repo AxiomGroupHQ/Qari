@@ -1,6 +1,6 @@
 # Istima Documentation
 
-This is the documentation hub for the Istima open-source Quran app. All docs live in this directory.
+This is the documentation hub for the Istima Quran app. All docs live in this directory.
 
 **Tech stack:** React Native 0.83 · Expo SDK 55 · Expo Router v4 · expo-audio · Zustand · expo-sqlite · MMKV · Skia
 
@@ -10,10 +10,10 @@ This is the documentation hub for the Istima open-source Quran app. All docs liv
 
 New to the project? Start here:
 
-1. [README.md](../README.md) — project overview, features, quick start
-2. [CONTRIBUTING.md](../CONTRIBUTING.md) — setup guide, code standards, PR workflow
-3. [Architecture overview](architecture/current-state.md) — how all the pieces fit together
-4. [Self-hosting guide](contributing/self-hosting.md) — running your own backend
+1. [README.md](../README.md) - project overview, features, quick start
+2. [CONTRIBUTING.md](../CONTRIBUTING.md) - setup guide, code standards, PR workflow
+3. [Architecture overview](architecture/current-state.md) - how all the pieces fit together
+4. [Self-hosting guide](contributing/self-hosting.md) - running your own backend
 
 ---
 
@@ -37,16 +37,16 @@ New to the project? Start here:
 | [queue.md](features/queue.md) | Queue management, track shape, repeat modes |
 | [downloads.md](features/downloads.md) | Offline download system, downloadStore, file path resolution |
 | [ambient-sounds.md](features/ambient-sounds.md) | Ambient audio, AmbientAudioService, ambient store |
-| [verse-interactions.md](features/verse-interactions.md) | Verse annotations — bookmarks, notes, highlights |
+| [verse-interactions.md](features/verse-interactions.md) | Verse annotations - bookmarks, notes, highlights |
 | [ayah-timestamps.md](features/ayah-timestamps.md) | Ayah timestamp fetch, cache, and follow-along system |
 | [reciter-profile.md](features/reciter-profile.md) | Reciter profile screen components |
 | [whats-new.md](features/whats-new.md) | What's New / changelog feature |
 | [uploads.md](features/uploads.md) | User-uploaded recitations feature |
 | [mushaf-page.md](features/mushaf-page.md) | Mushaf page feature overview (see digital-khatt/ for rendering details) |
 | [digital-khatt-rendering.md](features/digital-khatt-rendering.md) | Digital Khatt rendering overview |
-| [adhkar-feature-plan.md](features/adhkar-feature-plan.md) | Adhkar feature — implementation reference |
-| [rewayat.md](features/rewayat.md) | Multi-qira'at (rewayat) support — 8 KFGQPC readings across mushaf, player, and UGC |
-| [analytics.md](features/analytics.md) | Analytics & listening insights — Phase 1 shipped (PostHog events, local aggregation, Sentry) |
+| [adhkar-feature-plan.md](features/adhkar-feature-plan.md) | Adhkar feature - implementation reference |
+| [rewayat.md](features/rewayat.md) | Multi-qira'at (rewayat) support - 8 KFGQPC readings across mushaf, player, and UGC |
+| [analytics.md](features/analytics.md) | Analytics & listening insights - Phase 1 shipped (PostHog events, local aggregation, Sentry) |
 
 ### Digital Khatt (Mushaf rendering)
 
@@ -54,7 +54,7 @@ Deep documentation of the Uthmani Mushaf rendering system:
 
 | Document | Description |
 |----------|-------------|
-| [README.md](features/digital-khatt/README.md) | Hub — reading order, TL;DR, primary source files |
+| [README.md](features/digital-khatt/README.md) | Hub - reading order, TL;DR, primary source files |
 | [architecture.md](features/digital-khatt/architecture.md) | System architecture |
 | [data-pipeline.md](features/digital-khatt/data-pipeline.md) | Data loading pipeline |
 | [rendering-pipeline.md](features/digital-khatt/rendering-pipeline.md) | Skia rendering pipeline |

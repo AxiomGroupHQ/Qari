@@ -23,7 +23,7 @@ As a user driving with my phone connected to my car, I want to browse reciters a
 - Scene-based architecture: `CarPlaySceneDelegate` alongside the app's main scene
 - `Info.plist` must declare `UIApplicationSceneManifest` with both phone and CarPlay scene roles
 - Audio category already configured (`playback` mode with background audio)
-- CarPlay-specific templates (no custom UI — Apple provides list/grid/now-playing templates)
+- CarPlay-specific templates (no custom UI - Apple provides list/grid/now-playing templates)
 
 **Testing:** iOS Simulator > I/O > External Displays > CarPlay
 
@@ -55,7 +55,7 @@ Istima already has significant infrastructure that CarPlay/Android Auto builds o
 
 ### Library
 
-Use `@g4rb4g3/react-native-carplay` — the Expo-compatible fork of `react-native-carplay` that supports both iOS CarPlay and Android Auto with a unified TypeScript API.
+Use `@g4rb4g3/react-native-carplay` - the Expo-compatible fork of `react-native-carplay` that supports both iOS CarPlay and Android Auto with a unified TypeScript API.
 
 ```bash
 npm install @g4rb4g3/react-native-carplay
@@ -163,11 +163,11 @@ Tab Bar
 
 CarPlay and Android Auto enforce strict UI limits for driver safety:
 
-- **List items:** Max ~12 visible items (scrollable, but limited depth)
-- **Template depth:** Max 5 levels deep on iOS, varies on Android
-- **No custom views:** Must use platform-provided templates only
-- **No frequent updates:** Avoid rapid template refreshes (causes jank)
-- **Images:** Must be pre-sized; CarPlay uses small thumbnails
+- **List items** - Max ~12 visible items (scrollable, but limited depth)
+- **Template depth** - Max 5 levels deep on iOS, varies on Android
+- **No custom views** - Must use platform-provided templates only
+- **No frequent updates** - Avoid rapid template refreshes (causes jank)
+- **Images** - Must be pre-sized; CarPlay uses small thumbnails
 
 ## Requirements
 
@@ -320,7 +320,7 @@ Responsible for:
 1. User can browse reciters and play a surah entirely from CarPlay/Android Auto
 2. Now Playing displays correct surah name, reciter, and artwork
 3. Play/pause/skip/seek controls work from car display
-4. Playback continues seamlessly when CarPlay/Auto disconnects
+4. Playback continues smoothly when CarPlay/Auto disconnects
 5. No crashes or UI glitches during connect/disconnect cycles
 6. Works on both wired and wireless connections
 

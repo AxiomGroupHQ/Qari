@@ -10,12 +10,12 @@ function getHafsRewayat(reciter: Reciter) {
   return reciter.rewayat.find(r => r.name === HAFS_REWAYAT_NAME);
 }
 
-// Lazy-computed default reciter — avoids .find() scans at module load time
+// Lazy-computed default reciter - avoids .find() scans at module load time
 let _defaultReciter: Reciter | null = null;
 function getDefaultReciter(): Reciter {
   if (_defaultReciter) return _defaultReciter;
 
-  // RECITERS is empty on first launch before API data loads — return placeholder
+  // RECITERS is empty on first launch before API data loads - return placeholder
   if (RECITERS.length === 0) {
     return {id: '', name: '', date: null, image_url: null, rewayat: []};
   }

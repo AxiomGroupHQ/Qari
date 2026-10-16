@@ -2,7 +2,7 @@
  * LockScreenService - Bridges playerStore state to system lock screen controls
  *
  * Uses expo-audio's built-in lock screen API (setActiveForLockScreen / updateLockScreenMetadata).
- * Remote commands (play, pause, seek, skip) are handled natively by expo-audio — no JS routing needed.
+ * Remote commands (play, pause, seek, skip) are handled natively by expo-audio - no JS routing needed.
  *
  * This service only manages: which player is active for lock screen, and metadata updates.
  */
@@ -68,7 +68,7 @@ class LockScreenService {
   }
 
   /**
-   * Alias for stopSync — no separate native teardown needed with expo-audio.
+   * Alias for stopSync - no separate native teardown needed with expo-audio.
    */
   async cleanup(): Promise<void> {
     this.stopSync();
@@ -206,7 +206,7 @@ class LockScreenService {
         }
       }
 
-      // Detect mushaf becoming idle — revert to main player
+      // Detect mushaf becoming idle - revert to main player
       if (this.isMushafActive && playbackState === 'idle') {
         this.isMushafActive = false;
         this.lastMushafVerseKey = null;

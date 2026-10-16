@@ -260,9 +260,9 @@ export default function TabScreen() {
 
 ## Reference Files
 
-- **Full research:** `/docs/research/native-tabs-inset-issues.md`
-- **Related CLAUDE.md:** Performance optimization section
-- **Design system:** Color and design patterns
+- **Full research** - `/docs/research/native-tabs-inset-issues.md`
+- **Related CLAUDE.md** - Performance optimization section
+- **Design system** - Color and design patterns
 
 ---
 

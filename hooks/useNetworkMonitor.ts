@@ -23,7 +23,7 @@ export function useNetworkMonitor() {
 
       setOnline(online);
 
-      // Coming back online — silently retry to clear the disruption banner
+      // Coming back online - silently retry to clear the disruption banner
       if (online && !wasOnline) {
         const retry = useApiHealthStore.getState().retryFn;
         if (retry) {

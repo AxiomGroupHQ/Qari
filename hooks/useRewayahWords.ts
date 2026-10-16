@@ -24,13 +24,13 @@ const UNAVAILABLE: RewayahWordsResult = {
 // Subscribes to the service's cache-version counter via useSyncExternalStore,
 // so the component re-renders whenever the main cache is rebuilt or a side
 // cache for the requested rewayah becomes ready. No more stale-useMemo bugs
-// from the older useReducer+bump pattern — if the cache changes, consumers
+// from the older useReducer+bump pattern - if the cache changes, consumers
 // see it on the next commit.
 //
 // Triggers ensureRewayahLoaded on demand for non-active rewayat (e.g. the
 // player rendering a track in a different rewayah from the mushaf setting).
 // Silently returns {status: 'unavailable'} for rewayat without bundled DK
-// data — callers should not pass these to the render path, but the hook
+// data - callers should not pass these to the render path, but the hook
 // degrades gracefully rather than throwing.
 export function useRewayahWords(
   verseKey: string | null,
@@ -75,7 +75,7 @@ export function useRewayahWords(
       ? 'ready'
       : 'loading';
     return {words, status};
-    // cacheVersion is intentionally a dep — it's the reactivity signal.
+    // cacheVersion is intentionally a dep - it's the reactivity signal.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [verseKey, rewayah, rewayahHasData, cacheVersion]);
 }
