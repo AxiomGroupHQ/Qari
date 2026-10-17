@@ -1063,5 +1063,29 @@
     "timedRowSubtitle": "Ndalo pas një kohe të caktuar",
     "timerActiveNote": "Luajtja ndalet kur mbaron kohëmatësi. Prek sërish kohëzgjatjen e zgjedhur për ta fikur.",
     "unlimited": "Pa kufi"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
+    }
   }
 }

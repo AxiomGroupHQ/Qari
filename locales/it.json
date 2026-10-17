@@ -1070,5 +1070,29 @@
     "timedRowSubtitle": "Addormentati dopo un tempo impostato",
     "timerActiveNote": "La riproduzione si interrompe quando il timer scade. Tocca di nuovo la durata selezionata per spegnerlo.",
     "unlimited": "Illimitato"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
+    }
   }
 }
