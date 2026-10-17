@@ -150,7 +150,7 @@ export interface RemoteDataInitResult {
  * memory. Never throws.
  */
 export async function initRemoteData(
-  requiredPaths: string[],
+  requiredPaths: readonly string[],
 ): Promise<RemoteDataInitResult> {
   const ready: string[] = [];
   const missing: string[] = [];
