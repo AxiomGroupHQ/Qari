@@ -51,8 +51,6 @@ export const WBWContent: React.FC<WBWContentProps> = ({
   const dkFontFamily =
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
-      : mushafRenderer === 'dk_v1'
-      ? 'DigitalKhattV1'
       : 'DigitalKhattV2';
 
   const isDK =

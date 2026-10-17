@@ -11,8 +11,7 @@ import * as FileSystem from 'expo-file-system/legacy';
 import {Skia, type SkTypefaceFontProvider} from '@shopify/react-native-skia';
 
 const TOTAL_PAGES = 604;
-const REMOTE_BASE =
-  'https://raw.githubusercontent.com/nuqayah/qpc-fonts/master/mushaf-v2';
+const REMOTE_BASE = 'https://iapi.istima.app/mushaf/qcf2';
 const LOCAL_DIR = `${FileSystem.documentDirectory}qcf-fonts/`;
 
 export function qcfFontFamilyForPage(page: number): string {

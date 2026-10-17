@@ -192,8 +192,6 @@ export const ReadingThemeContent: React.FC<ReadingThemeContentProps> = ({
   const dkFontFamily =
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
-      : mushafRenderer === 'dk_v1'
-      ? 'DigitalKhattV1'
       : 'DigitalKhattV2';
   const fontsReady =
     mushafPreloadService.initialized && digitalKhattDataService.initialized;

@@ -138,7 +138,6 @@ const SkiaPage: React.FC<SkiaPageProps> = ({
 
   const showTajweed = useMushafSettingsStore(s => s.showTajweed);
   const showThemes = useMushafSettingsStore(s => s.showThemes);
-  const uthmaniFont = useMushafSettingsStore(s => s.uthmaniFont);
   const mushafRenderer = useMushafSettingsStore(s => s.mushafRenderer);
   const arabicTextWeight = useMushafSettingsStore(s => s.arabicTextWeight);
   const showAllahNameHighlight = useMushafSettingsStore(
@@ -156,8 +155,6 @@ const SkiaPage: React.FC<SkiaPageProps> = ({
     ) ??
     (mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
-      : uthmaniFont === 'v1'
-      ? 'DigitalKhattV1'
       : 'DigitalKhattV2');
   const allahNameHighlightColor = useMemo(
     () =>

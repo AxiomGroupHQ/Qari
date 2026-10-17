@@ -7,6 +7,7 @@ import {playlistService} from '@/services/playlist/PlaylistService';
 import {uploadsService} from '@/services/uploads/UploadsService';
 import {verseAnnotationService} from '@/services/verse-annotations/VerseAnnotationService';
 import {mushafPreloadService} from '@/services/mushaf/MushafPreloadService';
+import {remoteFontLoader} from '@/services/mushaf/RemoteFontLoader';
 import {qulDataService} from '@/services/mushaf/QulDataService';
 import {translationDbService} from '@/services/translation/TranslationDbService';
 import {tafseerDbService} from '@/services/tafseer/TafseerDbService';
@@ -301,6 +302,17 @@ appInitializer.registerService({
   critical: false,
   initialize: async () => {
     await mushafPreloadService.initialize();
+    // Optional styles download their font on demand. If the saved renderer
+    // is IndoPak, warm the cache at startup so the first Mushaf render has
+    // the font; a failure is non-fatal (settings re-downloads on select).
+    if (useMushafSettingsStore.getState().mushafRenderer === 'dk_indopak') {
+      const fontMgr = mushafPreloadService.fontMgr;
+      if (fontMgr) {
+        remoteFontLoader.ensure('indopak', fontMgr).catch(error => {
+          console.warn('[AppInitializer] IndoPak font download failed:', error);
+        });
+      }
+    }
   },
 });
 
@@ -397,7 +409,6 @@ appInitializer.registerService({
       'ScheherazadeNew-SemiBold': require('@/assets/fonts/ScheherazadeNew-SemiBold.ttf'),
       Uthmani: require('@/assets/fonts/Uthmani.otf'),
       QPC: require('@/assets/fonts/UthmanicHafs1Ver18.ttf'),
-      DigitalKhattV1: require('@/data/mushaf/legacy/DigitalKhattQuranicV1.otf'),
       DigitalKhattV2: require('@/data/mushaf/digitalkhatt/DigitalKhattFont.otf'),
     });
   },

@@ -779,8 +779,6 @@ const ContinuousMushafView = forwardRef<
       ) ??
       (mushafRenderer === 'dk_indopak'
         ? 'DigitalKhattIndoPak'
-        : mushafRenderer === 'dk_v1'
-        ? 'DigitalKhattV1'
         : 'DigitalKhattV2');
     const allahNameHighlightColor = useMemo(
       () =>

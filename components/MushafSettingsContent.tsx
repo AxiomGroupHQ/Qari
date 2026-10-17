@@ -1,5 +1,5 @@
 import React, {useMemo, useCallback, useState} from 'react';
-import {Alert, View, Text, StyleSheet, Switch, Pressable} from 'react-native';
+import {Alert, ActivityIndicator, View, Text, StyleSheet, Switch, Pressable} from 'react-native';
 import {moderateScale, verticalScale} from 'react-native-size-matters';
 import {useTheme} from '@/hooks/useTheme';
 import {Theme} from '@/utils/themeUtils';
@@ -22,6 +22,7 @@ import FormattedTextRenderer from '@/components/utils/FormattedText';
 import {LinearGradient} from 'expo-linear-gradient';
 import SkiaVerseText from '@/components/player/v2/PlayerContent/QuranView/SkiaVerseText';
 import {mushafPreloadService} from '@/services/mushaf/MushafPreloadService';
+import {remoteFontLoader} from '@/services/mushaf/RemoteFontLoader';
 import {useMushafFontMgr} from '@/hooks/useMushafFontMgr';
 import {digitalKhattDataService} from '@/services/mushaf/DigitalKhattDataService';
 import type {SkTypefaceFontProvider} from '@shopify/react-native-skia';
@@ -108,11 +109,6 @@ interface FontOption {
 }
 
 const FONT_OPTIONS: FontOption[] = [
-  {
-    value: 'dk_v1',
-    label: 'Madani 1405',
-    description: 'Classic King Fahd Complex',
-  },
   {
     value: 'dk_v2',
     label: 'Madani 1421',
@@ -215,6 +211,8 @@ const FontSizeControl: React.FC<FontSizeControlProps> = ({
 
   const useSkia = !!skiaFontMgr && !!skiaFontFamily;
   const [sampleWidth, setSampleWidth] = useState(0);
+  const [fontDownloading, setFontDownloading] =
+    useState<MushafRenderer | null>(null);
   const handleSampleLayout = useCallback(
     (e: {nativeEvent: {layout: {width: number}}}) => {
       setSampleWidth(e.nativeEvent.layout.width);
@@ -638,9 +636,7 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
   const dkFontFamily =
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
-      : mushafRenderer === 'dk_v1'
-        ? 'DigitalKhattV1'
-        : 'DigitalKhattV2';
+      : 'DigitalKhattV2';
   const subscribedFontMgr = useMushafFontMgr();
   const fontMgr =
     mushafPreloadService.initialized && digitalKhattDataService.initialized
@@ -694,6 +690,31 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
 
   const handleFontSelect = useCallback(
     async (value: MushafRenderer) => {
+      // Optional styles download their font from iapi.istima.app on first
+      // select (cache-first, offline afterwards). Block the switch until
+      // the font is registered so the Mushaf never renders blank glyphs.
+      if (
+        value === 'dk_indopak' &&
+        mushafRenderer !== 'dk_indopak' &&
+        !remoteFontLoader.isReady('indopak')
+      ) {
+        const fontMgr = mushafPreloadService.fontMgr;
+        if (fontMgr) {
+          setFontDownloading(value);
+          try {
+            await remoteFontLoader.ensure('indopak', fontMgr);
+          } catch (error) {
+            console.warn('[MushafSettings] IndoPak font download failed:', error);
+            setFontDownloading(null);
+            Alert.alert(
+              'Download failed',
+              'The IndoPak font could not be downloaded. Check your connection and try again.',
+            );
+            return;
+          }
+          setFontDownloading(null);
+        }
+      }
       const switchingToQCF = value === 'qcf_v2' && mushafRenderer !== 'qcf_v2';
       if (switchingToQCF && rewayah !== 'hafs') {
         try {
@@ -1172,6 +1193,7 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
                   styles.radioRow,
                   pressed && styles.radioRowPressed,
                 ]}
+                disabled={fontDownloading !== null}
                 onPress={() => handleFontSelect(option.value)}>
                 <View
                   style={[
@@ -1192,6 +1214,12 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
                     {option.description}
                   </Text>
                 </View>
+                {fontDownloading === option.value && (
+                  <ActivityIndicator
+                    size="small"
+                    color={Color(theme.colors.text).alpha(0.7).toString()}
+                  />
+                )}
               </Pressable>
             </React.Fragment>
           );

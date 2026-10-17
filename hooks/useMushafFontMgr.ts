@@ -53,11 +53,7 @@ import {mushafPreloadService} from '@/services/mushaf/MushafPreloadService';
 // path doesn't need to re-load them. Updating this list does NOT need to
 // mirror every `FONT_ASSETS` addition; only the Mushaf-rendering families.
 const FALLBACK_FONT_SOURCES = {
-  DigitalKhattV1: [require('@/data/mushaf/legacy/DigitalKhattQuranicV1.otf')],
   DigitalKhattV2: [require('@/data/mushaf/digitalkhatt/DigitalKhattFont.otf')],
-  DigitalKhattIndoPak: [
-    require('@/data/mushaf/indopak/DigitalKhattIndoPak.otf'),
-  ],
   QuranCommon: [require('@/data/mushaf/quran-common.ttf')],
   SurahNameV4: [require('@/data/mushaf/surah-name-v4.ttf')],
   SurahNameQCF: [require('@/data/mushaf/surah-name-qcf.ttf')],

@@ -11,9 +11,7 @@ import {useMushafSettingsStore} from '@/store/mushafSettingsStore';
 import {migratePersistedId} from '@/services/rewayah/RewayahIdentity';
 
 const FONT_ASSETS: Record<string, number> = {
-  DigitalKhattV1: require('@/data/mushaf/legacy/DigitalKhattQuranicV1.otf'),
   DigitalKhattV2: require('@/data/mushaf/digitalkhatt/DigitalKhattFont.otf'),
-  DigitalKhattIndoPak: require('@/data/mushaf/indopak/DigitalKhattIndoPak.otf'),
   QuranCommon: require('@/data/mushaf/quran-common.ttf'),
   SurahNameV4: require('@/data/mushaf/surah-name-v4.ttf'),
   SurahNameQCF: require('@/data/mushaf/surah-name-qcf.ttf'),
@@ -220,9 +218,7 @@ class MushafPreloadService {
     // Tracked separately so a fallback that drops only ornamental fonts
     // still publishes a usable provider.
     const CRITICAL_FAMILIES = new Set([
-      'DigitalKhattV1',
       'DigitalKhattV2',
-      'DigitalKhattIndoPak',
       'QuranCommon',
     ]);
     try {

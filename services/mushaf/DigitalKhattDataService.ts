@@ -38,7 +38,7 @@ const REWAYAH_DATA: Partial<Record<RewayahId, RewayahAssetConfig>> = {
     wordsAsset: require('../../data/mushaf/digitalkhatt/digital-khatt-v2.db'),
     layoutDbName: 'dk_layout.db',
     layoutAsset: DK_HAFS_LAYOUT_ASSET,
-    fontFamily: null, // defer to user's uthmaniFont/mushafRenderer choice
+    fontFamily: null, // defer to user's mushafRenderer choice
   },
   shubah: {
     wordsDbName: 'dk_words_shouba.db',

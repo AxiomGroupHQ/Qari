@@ -29,7 +29,7 @@ export const getDisplayValue = (actualFontSize: number): number => {
   );
 };
 
-export type MushafRenderer = 'dk_v1' | 'dk_v2' | 'dk_indopak' | 'qcf_v2';
+export type MushafRenderer = 'dk_v2' | 'dk_indopak' | 'qcf_v2';
 export type MushafPageLayout = 'fullscreen' | 'book';
 export type MushafViewMode = 'mushaf' | 'list';
 export type MushafScrollDirection = 'horizontal' | 'vertical';
@@ -70,7 +70,6 @@ interface MushafSettingsState {
 
   // Font family (legacy - kept for backward compatibility)
   arabicFontFamily: 'Uthmani';
-  uthmaniFont: 'v1' | 'v2';
 
   // Mushaf renderer selection
   mushafRenderer: MushafRenderer;
@@ -112,7 +111,6 @@ interface MushafSettingsState {
   setArabicTextWeight: (weight: MushafArabicTextWeight) => void;
   setAllahNameHighlightColor: (color: MushafAllahNameHighlightColor) => void;
   setArabicFontFamily: (font: 'Uthmani') => void;
-  setUthmaniFont: (font: 'v1' | 'v2') => void;
   setMushafRenderer: (renderer: MushafRenderer) => void;
   setPageLayout: (layout: MushafPageLayout) => void;
   setViewMode: (mode: MushafViewMode) => void;
@@ -146,8 +144,7 @@ export const useMushafSettingsStore = create<MushafSettingsState>()(
       showAllahNameHighlight: false,
       allahNameHighlightColor: 'gold' as MushafAllahNameHighlightColor,
       arabicFontFamily: 'Uthmani', // Default font
-      uthmaniFont: 'v1', // Default to V1
-      mushafRenderer: 'dk_v1' as MushafRenderer, // Default to DK V1 (Madani 1405)
+      mushafRenderer: 'dk_v2' as MushafRenderer, // Default to DK V2 (Madani 1421)
       viewMode: 'mushaf' as MushafViewMode,
       scrollDirection: 'horizontal' as MushafScrollDirection,
       pageLayout: 'book' as MushafPageLayout, // Default to book page view
@@ -188,7 +185,6 @@ export const useMushafSettingsStore = create<MushafSettingsState>()(
       setAllahNameHighlightColor: (color: MushafAllahNameHighlightColor) =>
         set({allahNameHighlightColor: color}),
       setArabicFontFamily: (font: 'Uthmani') => set({arabicFontFamily: font}),
-      setUthmaniFont: (font: 'v1' | 'v2') => set({uthmaniFont: font}),
       setMushafRenderer: (renderer: MushafRenderer) =>
         set(state => ({
           mushafRenderer: renderer,
@@ -197,12 +193,6 @@ export const useMushafSettingsStore = create<MushafSettingsState>()(
           rewayah: renderer === 'qcf_v2' ? 'hafs' : state.rewayah,
           showRewayahDiffs:
             renderer === 'qcf_v2' ? false : state.showRewayahDiffs,
-          uthmaniFont:
-            renderer === 'dk_v1'
-              ? 'v1'
-              : renderer === 'dk_indopak'
-              ? 'v2'
-              : 'v2',
         })),
       setPageLayout: (layout: MushafPageLayout) => set({pageLayout: layout}),
       setViewMode: (mode: MushafViewMode) => set({viewMode: mode}),
@@ -257,7 +247,7 @@ export const useMushafSettingsStore = create<MushafSettingsState>()(
     {
       name: 'mushaf-settings',
       storage: createJSONStorage(() => AsyncStorage),
-      version: 16,
+      version: 17,
       migrate: (persistedState: unknown, version: number) => {
         const state = persistedState as Record<string, unknown>;
         if (version === 0) {
@@ -339,6 +329,13 @@ export const useMushafSettingsStore = create<MushafSettingsState>()(
           state.showTajweed = false;
           state.rewayah = 'hafs';
           state.showRewayahDiffs = false;
+        }
+        if (version < 17) {
+          // Madani 1405 (dk_v1) retired - fall back to Madani 1421 (dk_v2)
+          if (state.mushafRenderer === 'dk_v1') {
+            state.mushafRenderer = 'dk_v2';
+          }
+          delete state.uthmaniFont;
         }
         return state as unknown as MushafSettingsState;
       },
