@@ -20,6 +20,20 @@ interface Env {
   ASSETS: {fetch: (req: Request) => Promise<Response>};
 }
 
+/**
+ * The SPA shell HTML must never be cached: the bundle it references is
+ * content-hashed, so a fresh shell always points at the latest deploy.
+ * Without this, edge/browser caches can pin a user (suspended tabs,
+ * bfcache, heuristic caching) to an old shell for days.
+ */
+function noStoreHtml(res: Response): Response {
+  const type = res.headers.get('content-type') || '';
+  if (!type.includes('text/html')) return res;
+  const out = new Response(res.body, res);
+  out.headers.set('Cache-Control', 'no-store');
+  return out;
+}
+
 const API = 'https://iapi.istima.app/v1/share/playlist/';
 const IMAGE = 'https://istima.app/icon.png';
 
@@ -38,7 +52,7 @@ export default {
     const shell = await env.ASSETS.fetch(
       new Request(new URL('/', url).toString(), request),
     );
-    if (!match || request.method !== 'GET') return shell;
+    if (!match || request.method !== 'GET') return noStoreHtml(shell);
 
     let name = 'Playlist';
     let count = 0;
@@ -67,6 +81,6 @@ export default {
     return new HTMLRewriter()
       .on('title', {element: el => el.remove()})
       .on('head', {element: el => el.append(tags, {html: true})})
-      .transform(shell);
+      .transform(noStoreHtml(shell));
   },
 };

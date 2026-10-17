@@ -122,6 +122,7 @@ const styles = StyleSheet.create({
     gap: moderateScale(10),
     marginHorizontal: moderateScale(16),
     marginTop: moderateScale(10),
+    marginBottom: moderateScale(28),
   },
   tile: {
     flex: 1,

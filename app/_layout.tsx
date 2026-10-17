@@ -61,6 +61,7 @@ import {useUploadsStore} from '@/store/uploadsStore';
 import {SheetManager} from 'react-native-actions-sheet';
 import {showToast} from '@/utils/toastUtils';
 import {installKeyboardRecovery} from '@/utils/keyboardRecovery';
+import {installWebAutoUpdate} from '@/utils/webAutoUpdate';
 import {mushafSessionStore} from '@/services/mushaf/MushafSessionStore';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import * as Sentry from '@sentry/react-native';
@@ -432,7 +433,14 @@ function RootLayout() {
   // open and the stuck squashed layout after it closes.
   useEffect(() => {
     if (Platform.OS !== 'web') return;
-    return installKeyboardRecovery();
+    const removeKeyboardRecovery = installKeyboardRecovery();
+    // Self-update: reload the tab when a newer deploy is being served, so
+    // suspended tabs / cached shells never pin users to an old version.
+    const removeWebAutoUpdate = installWebAutoUpdate();
+    return () => {
+      removeKeyboardRecovery();
+      removeWebAutoUpdate();
+    };
   }, []);
 
   useEffect(() => {

@@ -11,8 +11,10 @@
  *  2. Keyboard closed -> reset the document scroll offset so the page
  *     is no longer stuck shifted/clipped.
  *
- * It cannot fix the "keyboard never appears" variant; that still needs
- * a page reload or browser restart.
+ * It also watches for the "keyboard never appears" variant: the viewport
+ * stays squashed (< 80% ratio) for seconds while no text input is focused.
+ * That state is unrecoverable from inside the page, so after a soft repair
+ * attempt it triggers a guarded one-time reload - the only known cure.
  *
  * Detection heuristic: iOS shrinks `visualViewport.height` while the
  * keyboard is open but keeps `window.innerHeight` (the layout viewport)
@@ -49,6 +51,10 @@ export function installKeyboardRecovery(): () => void {
           el.scrollIntoView({block: 'center', behavior: 'smooth'});
         }, 250);
       }
+    } else if (open && !isTextInput(document.activeElement)) {
+      // Squashed viewport but nothing focused: either the keyboard is
+      // animating in before focus lands, or the stuck no-keyboard state.
+      scheduleStuckCheck(2000);
     } else if (!open && keyboardOpen) {
       keyboardOpen = false;
       // Repair the stuck offset once the viewport has restored.
@@ -57,6 +63,51 @@ export function installKeyboardRecovery(): () => void {
       });
     }
   };
+
+  // --- Stuck "squashed, no keyboard" repair (WebKit 279904 variant) ---
+  // Signature: the viewport stays squashed for seconds while NO text input
+  // is focused - the keyboard the layout made room for does not exist.
+  // Repair ladder: reset scroll + force a full relayout; if the page is
+  // still squashed 1.5s later, reload once (guarded, the known cure).
+  const RELOAD_FLAG = 'istima.kbRepairReloadAt';
+  let stuckTimer: ReturnType<typeof setTimeout> | undefined;
+  let recheckTimer: ReturnType<typeof setTimeout> | undefined;
+
+  const isStuckSquashed = () =>
+    viewport.height < window.innerHeight * 0.8 &&
+    !isTextInput(document.activeElement);
+
+  const softRepair = () => {
+    window.scrollTo(0, 0);
+    // Toggling a transform plus a synthetic resize forces WebKit to
+    // recompute the layout viewport.
+    document.body.style.transform = 'translateZ(0)';
+    window.dispatchEvent(new Event('resize'));
+    document.body.style.transform = '';
+  };
+
+  const scheduleStuckCheck = (delay: number) => {
+    if (stuckTimer || recheckTimer) return;
+    stuckTimer = setTimeout(() => {
+      stuckTimer = undefined;
+      if (!isStuckSquashed()) return;
+      softRepair();
+      recheckTimer = setTimeout(() => {
+        recheckTimer = undefined;
+        if (!isStuckSquashed()) return;
+        // One reload per 10 minutes at most - if a reload does not cure it,
+        // looping reloads would make the page unusable.
+        const last = Number(sessionStorage.getItem(RELOAD_FLAG) || 0);
+        if (Date.now() - last > 10 * 60 * 1000) {
+          sessionStorage.setItem(RELOAD_FLAG, String(Date.now()));
+          window.location.reload();
+        }
+      }, 1500);
+    }, delay);
+  };
+
+  // The bug can leave the page squashed from the moment it loads.
+  scheduleStuckCheck(2500);
 
   // Cover the case where the keyboard opens without a resize event
   // (observed in some iOS betas): scroll the input into view on focus.
@@ -77,5 +128,7 @@ export function installKeyboardRecovery(): () => void {
     viewport.removeEventListener('resize', handleResize);
     document.removeEventListener('focusin', handleFocusIn);
     if (scrollTimer) clearTimeout(scrollTimer);
+    if (stuckTimer) clearTimeout(stuckTimer);
+    if (recheckTimer) clearTimeout(recheckTimer);
   };
 }
