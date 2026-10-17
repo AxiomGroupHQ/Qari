@@ -49,21 +49,28 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     const match = url.pathname.match(/^\/p\/([A-Za-z0-9_-]{4,64})\/?$/);
+    if (!match || request.method !== 'GET') {
+      // Every non-preview request: serve the asset for THIS path (the
+      // assets binding applies the SPA fallback) and pin no-store on HTML
+      // shells. wrangler.jsonc routes all requests here (run_worker_first)
+      // because this header cannot be set per content type in _headers.
+      const res = await env.ASSETS.fetch(request);
+      return noStoreHtml(res);
+    }
     const shell = await env.ASSETS.fetch(
       new Request(new URL('/', url).toString(), request),
     );
-    if (!match || request.method !== 'GET') return noStoreHtml(shell);
 
     let name = 'Playlist';
     let count = 0;
     try {
       const res = await fetch(API + match[1]);
-      if (!res.ok) return shell;
+      if (!res.ok) return noStoreHtml(shell);
       const data = (await res.json()) as {name?: string; items?: unknown[]};
       name = data.name || name;
       count = Array.isArray(data.items) ? data.items.length : 0;
     } catch {
-      return shell;
+      return noStoreHtml(shell);
     }
 
     const title = esc(`${name} on Istima`);
