@@ -83,7 +83,7 @@ const SkiaVerseText: React.FC<SkiaVerseTextProps> = ({
   // Reactive read; re-renders when the requested rewayah's cache transitions
   // from loading → ready. Only queried when `text` isn't provided directly.
   const {words, status} = useRewayahWords(
-    text !== undefined ? null : (verseKey ?? null),
+    text !== undefined ? null : verseKey ?? null,
     effectiveRewayah,
   );
   const verseText =
@@ -171,8 +171,8 @@ const SkiaVerseText: React.FC<SkiaVerseTextProps> = ({
         const resolvedColor = allahHighlight
           ? allahNameHighlightColor
           : rule && tajweedColors[rule]
-            ? tajweedColors[rule]
-            : null;
+          ? tajweedColors[rule]
+          : null;
 
         if (resolvedColor) {
           const charColor = Skia.Color(resolvedColor);

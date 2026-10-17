@@ -94,8 +94,8 @@ function mapDhikrRow(dhikr: DhikrRow): Dhikr {
     repeatCount:
       dhikr.repeat_count > 1
         ? dhikr.repeat_count
-        : (repeatCountFromText(dhikr.arabic, dhikr.translation) ??
-          dhikr.repeat_count),
+        : repeatCountFromText(dhikr.arabic, dhikr.translation) ??
+          dhikr.repeat_count,
     audioFile: dhikr.audio_file,
     sortOrder: dhikr.sort_order,
   };

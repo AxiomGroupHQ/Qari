@@ -183,7 +183,7 @@ export const HomeCardOptionsSheet = (
   const iconSize = moderateScale(18);
   const iconColor = theme.colors.text;
 
-  const title = variant === 'recent' ? (surahName ?? reciterName) : reciterName;
+  const title = variant === 'recent' ? surahName ?? reciterName : reciterName;
   const subtitle = variant === 'recent' ? reciterName : undefined;
 
   return (

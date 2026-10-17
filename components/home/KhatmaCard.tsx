@@ -47,14 +47,14 @@ export function KhatmaCard() {
   const subtitle = !progress
     ? t('homeFeatures.khatmaStartSubtitle')
     : isDone
-      ? t('homeFeatures.khatmaCompletedSubtitle')
-      : t('homeFeatures.khatmaActiveSubtitle', {done: completed});
+    ? t('homeFeatures.khatmaCompletedSubtitle')
+    : t('homeFeatures.khatmaActiveSubtitle', {done: completed});
 
   const buttonLabel = isDone
     ? t('homeFeatures.startNewKhatma')
     : !progress
-      ? t('homeFeatures.selectReciter')
-      : t('homeFeatures.continueListening');
+    ? t('homeFeatures.selectReciter')
+    : t('homeFeatures.continueListening');
 
   return (
     <View style={styles.section}>

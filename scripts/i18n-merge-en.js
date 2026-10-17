@@ -10,8 +10,7 @@ const sort = o =>
     .sort()
     .reduce(
       (r, k) => (
-        (r[k] = o[k] && typeof o[k] === 'object' ? sort(o[k]) : o[k]),
-        r
+        (r[k] = o[k] && typeof o[k] === 'object' ? sort(o[k]) : o[k]), r
       ),
       {},
     );

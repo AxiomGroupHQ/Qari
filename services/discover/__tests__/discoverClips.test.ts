@@ -8,9 +8,9 @@ const rewayat = (over = {}) =>
     surah_list: [1, 2, null],
     timestamps_surah_list: [2],
     ...over,
-  }) as never;
+  } as never);
 const reciter = (rw: unknown) =>
-  ({id: 'r1', name: 'R', rewayat: [rw]}) as never;
+  ({id: 'r1', name: 'R', rewayat: [rw]} as never);
 
 describe('discoverClips', () => {
   it('only offers surahs that are both playable and timed', () => {

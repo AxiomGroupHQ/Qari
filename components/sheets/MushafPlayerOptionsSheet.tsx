@@ -186,10 +186,10 @@ export const MushafPlayerOptionsSheet = (
   );
   const defaultStart = storeRangeStart
     ? `${storeRangeStart.surah}:${storeRangeStart.ayah}`
-    : (pageVerseKeys[0] ?? '1:1');
+    : pageVerseKeys[0] ?? '1:1';
   const defaultEnd = storeRangeEnd
     ? `${storeRangeEnd.surah}:${storeRangeEnd.ayah}`
-    : (pageVerseKeys[pageVerseKeys.length - 1] ?? '1:7');
+    : pageVerseKeys[pageVerseKeys.length - 1] ?? '1:7';
 
   // Local state - applied only on "Play Audio"
   const [startVerseKey, setStartVerseKey] = useState(defaultStart);
@@ -460,10 +460,10 @@ export const MushafPlayerOptionsSheet = (
                 {startPickStep === 'surahList'
                   ? renderSurahList(handleStartSurahPick)
                   : startPickSurah
-                    ? renderAyahGrid(startPickSurah, handleStartAyahPick, () =>
-                        setStartPickStep('surahList'),
-                      )
-                    : null}
+                  ? renderAyahGrid(startPickSurah, handleStartAyahPick, () =>
+                      setStartPickStep('surahList'),
+                    )
+                  : null}
               </AccordionScrollList>
             </View>
           )}
@@ -492,10 +492,10 @@ export const MushafPlayerOptionsSheet = (
                 {endPickStep === 'surahList'
                   ? renderSurahList(handleEndSurahPick)
                   : endPickSurah
-                    ? renderAyahGrid(endPickSurah, handleEndAyahPick, () =>
-                        setEndPickStep('surahList'),
-                      )
-                    : null}
+                  ? renderAyahGrid(endPickSurah, handleEndAyahPick, () =>
+                      setEndPickStep('surahList'),
+                    )
+                  : null}
               </AccordionScrollList>
             </View>
           )}

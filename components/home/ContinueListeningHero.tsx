@@ -106,8 +106,9 @@ export function ContinueListeningHero() {
           ? storePosition
           : track.progress * track.duration;
 
-      const availableSurahIds =
-        await getAvailableSurahsForRewayat(rewayatToUseId);
+      const availableSurahIds = await getAvailableSurahsForRewayat(
+        rewayatToUseId,
+      );
       const allSurahsForRewayat = availableSurahIds
         .map(id => getSurahById(id))
         .filter((s): s is Surah => s !== undefined);
@@ -212,7 +213,9 @@ export function ContinueListeningHero() {
       <Pressable
         onPress={handleResume}
         accessibilityRole="button"
-        accessibilityLabel={`${t('recitersView.continueListening')}: ${track.surah.name} - ${track.reciter.name}`}
+        accessibilityLabel={`${t('recitersView.continueListening')}: ${
+          track.surah.name
+        } - ${track.reciter.name}`}
         style={({pressed}) => [
           styles.card,
           {

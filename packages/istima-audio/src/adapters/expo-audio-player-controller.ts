@@ -34,7 +34,8 @@ import type {PlayerController} from '../ports';
  */
 export class ExpoAudioPlayerControllerAdapter<
   TTrack extends BaseTrack = BaseTrack,
-> implements PlayerController<TTrack> {
+> implements PlayerController<TTrack>
+{
   onPlaybackStateChange(_state: PlaybackState): void {
     // RFC-005: forward state to consumer store.
   }

@@ -223,7 +223,7 @@ export const useRecentlyPlayedStore = create<RecentlyPlayedState>()(
             const surah =
               head.surah.id === surahId
                 ? head.surah
-                : (SURAHS.find(s => s.id === surahId) ?? head.surah);
+                : SURAHS.find(s => s.id === surahId) ?? head.surah;
             return {
               recentTracks: [
                 {...head, surah, progress, duration},
@@ -319,7 +319,7 @@ export const useRecentlyPlayedStore = create<RecentlyPlayedState>()(
       partialize: state =>
         ({
           recentTracks: state.recentTracks,
-        }) as unknown as RecentlyPlayedState,
+        } as unknown as RecentlyPlayedState),
     },
   ),
 );

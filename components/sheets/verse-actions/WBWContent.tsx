@@ -52,8 +52,8 @@ export const WBWContent: React.FC<WBWContentProps> = ({
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
       : mushafRenderer === 'dk_v1'
-        ? 'DigitalKhattV1'
-        : 'DigitalKhattV2';
+      ? 'DigitalKhattV1'
+      : 'DigitalKhattV2';
 
   const isDK =
     mushafPreloadService.initialized && digitalKhattDataService.initialized;

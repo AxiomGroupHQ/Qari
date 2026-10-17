@@ -54,7 +54,7 @@ export const TrackItem: React.FC<TrackItemProps> = React.memo(
     const rewayat = useMemo(
       () =>
         rewayatId
-          ? (reciter?.rewayat?.find(r => r.id === rewayatId) ?? null)
+          ? reciter?.rewayat?.find(r => r.id === rewayatId) ?? null
           : null,
       [reciter, rewayatId],
     );

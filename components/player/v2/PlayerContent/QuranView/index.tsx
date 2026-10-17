@@ -235,8 +235,8 @@ export const QuranView: React.FC<QuranViewProps> = ({
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
       : mushafRenderer === 'dk_v1'
-        ? 'DigitalKhattV1'
-        : 'DigitalKhattV2';
+      ? 'DigitalKhattV1'
+      : 'DigitalKhattV2';
   const subscribedFontMgr = useMushafFontMgr();
   const fontMgr = isDK ? subscribedFontMgr : null;
 

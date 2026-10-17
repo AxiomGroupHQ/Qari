@@ -27,17 +27,17 @@ const cats = new Intl.PluralRules(
   code === 'prs'
     ? 'fa'
     : code === 'kmr'
-      ? 'ku'
-      : code === 'ckb'
-        ? 'ar'
-        : code === 'mnk' ||
-            code === 'ff' ||
-            code === 'wo' ||
-            code === 'bm' ||
-            code === 'ti' ||
-            code === 'om'
-          ? 'fr'
-          : code,
+    ? 'ku'
+    : code === 'ckb'
+    ? 'ar'
+    : code === 'mnk' ||
+      code === 'ff' ||
+      code === 'wo' ||
+      code === 'bm' ||
+      code === 'ti' ||
+      code === 'om'
+    ? 'fr'
+    : code,
 ).resolvedOptions().pluralCategories;
 const bases = new Set(
   Object.keys(enAll)
@@ -65,8 +65,8 @@ for (const b of bases) {
           ? other
           : one
         : c === 'one'
-          ? one
-          : other;
+        ? one
+        : other;
   }
   if (!cats.includes('one')) delete flat[b + '_one'];
   if (!cats.includes('other')) delete flat[b + '_other'];

@@ -370,8 +370,8 @@ export default function BrowseReciters({
       segment === 'favorites'
         ? favoriteReciters
         : segment === 'downloaded'
-          ? downloadedReciters
-          : filteredReciters;
+        ? downloadedReciters
+        : filteredReciters;
     if (segment === 'all' || !searchQuery.trim()) return base;
     const query = searchQuery.toLowerCase().trim();
     return base.filter(
@@ -617,8 +617,8 @@ export default function BrowseReciters({
             marginTop: useNativeHeader
               ? topOffset
               : isGeneralBrowse
-                ? moderateScale(2)
-                : insets.top + moderateScale(56),
+              ? moderateScale(2)
+              : insets.top + moderateScale(56),
           }}>
           {/* Search and Filter Bar */}
           <View style={styles.searchFilterContainer}>

@@ -9,6 +9,7 @@ import {
   Animated as RNAnimated,
 } from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
+import {useTranslation} from 'react-i18next';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useRouter} from 'expo-router';
@@ -58,6 +59,7 @@ interface LovedTrackData {
 }
 
 const LovedScreen = () => {
+  const {t} = useTranslation();
   const {theme} = useTheme();
   const insets = useSafeAreaInsets();
   const router = useRouter();

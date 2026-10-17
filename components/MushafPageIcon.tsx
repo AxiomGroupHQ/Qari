@@ -58,8 +58,8 @@ const MushafPageIcon: React.FC<MushafPageIconProps> = ({
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
       : uthmaniFont === 'v1'
-        ? 'DigitalKhattV1'
-        : 'DigitalKhattV2';
+      ? 'DigitalKhattV1'
+      : 'DigitalKhattV2';
 
   // Icon canvas dimensions (slightly taller than square)
   const canvasWidth = size;

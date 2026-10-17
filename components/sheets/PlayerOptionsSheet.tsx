@@ -352,8 +352,8 @@ export const PlayerOptionsSheet = (props: SheetProps<'player-options'>) => {
             {isCurrentlyDownloading
               ? `Downloading ${Math.round(downloadProgress * 100)}%`
               : isTrackDownloaded
-                ? 'Downloaded'
-                : 'Download'}
+              ? 'Downloaded'
+              : 'Download'}
           </Text>
         </Pressable>
       ),

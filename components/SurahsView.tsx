@@ -211,14 +211,14 @@ export default function SurahsView({
                 option === 'asc'
                   ? 'arrow-up'
                   : option === 'desc'
-                    ? 'arrow-down'
-                    : 'calendar';
+                  ? 'arrow-down'
+                  : 'calendar';
               const label =
                 option === 'asc'
                   ? t('common.asc')
                   : option === 'desc'
-                    ? t('common.desc')
-                    : t('common.rev');
+                  ? t('common.desc')
+                  : t('common.rev');
               return (
                 <Pressable
                   key={option}

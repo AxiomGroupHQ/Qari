@@ -392,8 +392,8 @@ export const PlaylistContextSheet = (props: SheetProps<'playlist-context'>) => {
           code === 'empty'
             ? 'sheets.playlistContextSheet.shareNothing'
             : code === 'rate_limited'
-              ? 'sheets.playlistContextSheet.shareRateLimited'
-              : 'sheets.playlistContextSheet.shareFailed',
+            ? 'sheets.playlistContextSheet.shareRateLimited'
+            : 'sheets.playlistContextSheet.shareFailed',
         ),
       );
     }
@@ -586,8 +586,8 @@ export const PlaylistContextSheet = (props: SheetProps<'playlist-context'>) => {
                       option.disabled
                         ? theme.colors.textSecondary
                         : option.destructive
-                          ? '#ff4444'
-                          : theme.colors.text
+                        ? '#ff4444'
+                        : theme.colors.text
                     }
                   />
                 )}

@@ -198,8 +198,9 @@ export const RecentReciterCard = ({
         return;
       }
 
-      const availableSurahIds =
-        await getAvailableSurahsForRewayat(rewayatToUseId);
+      const availableSurahIds = await getAvailableSurahsForRewayat(
+        rewayatToUseId,
+      );
 
       const allSurahsForRewayat = availableSurahIds
         .map(id => getSurahById(id))

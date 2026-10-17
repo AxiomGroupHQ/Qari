@@ -49,7 +49,7 @@ const SkiaVerseText: React.FC<SkiaVerseTextProps> = ({
     typeof useRewayahWords
   >[1];
   const {words, status} = useRewayahWords(
-    text !== undefined ? null : (verseKey ?? null),
+    text !== undefined ? null : verseKey ?? null,
     effectiveRewayah,
   );
   const verseText =
@@ -68,10 +68,10 @@ const SkiaVerseText: React.FC<SkiaVerseTextProps> = ({
     for (let i = 0; i < verseText.length; i++) {
       const rule = tajweedMap?.get(i);
       const color = allahMap?.has(i)
-        ? (allahNameHighlightColor ?? null)
+        ? allahNameHighlightColor ?? null
         : rule && tajweedColors[rule]
-          ? tajweedColors[rule]
-          : null;
+        ? tajweedColors[rule]
+        : null;
       const last = out[out.length - 1];
       if (last && last.color === color) {
         last.text += verseText.charAt(i);

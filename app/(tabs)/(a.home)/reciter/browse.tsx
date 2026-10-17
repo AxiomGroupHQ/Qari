@@ -29,8 +29,8 @@ export default function BrowseScreen() {
   const title = rewayatName
     ? rewayatName
     : surahId
-      ? `Browse Reciters - ${SURAHS[parseInt(surahId, 10) - 1].name}`
-      : t('common.browseAll');
+    ? `Browse Reciters - ${SURAHS[parseInt(surahId, 10) - 1].name}`
+    : t('common.browseAll');
 
   // Set native header title on iOS
   useLayoutEffect(() => {
