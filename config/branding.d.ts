@@ -20,6 +20,8 @@ export interface BrandingCatalogConfig {
  */
 export type HomeRowId =
   | 'continue-listening'
+  | 'listening-tools'
+  | 'explore-collections'
   | 'khatma'
   | 'repetition'
   | 'timed-listening'
@@ -128,8 +130,8 @@ export interface Branding {
   catalogVersionEndpoint?: string;
   /**
    * RFC-008 - optional component that replaces the Listen-tab top
-   * region (the default `RecitersHero`). Forks return a React
-   * component; `undefined` keeps Istima's `RecitersHero` verbatim.
+   * region (the default `HomeTop`). Forks return a React
+   * component; `undefined` keeps Istima's `HomeTop` verbatim.
    *
    * The component renders directly inside the Listen-tab ScrollView at
    * the top, above the rows controlled by `homeRowConfig`. It receives

@@ -30,7 +30,11 @@
     "reciteTimes": "อ่าน {{n}} ครั้ง",
     "playAllStop": "หยุด",
     "playAllPrevious": "ก่อนหน้า",
-    "playAllNext": "ถัดไป"
+    "playAllNext": "ถัดไป",
+    "layoutSheetTitle": "เลย์เอาต์อัซการ์",
+    "arabicText": "ข้อความอาหรับ",
+    "showTranslation": "แสดงคำแปล",
+    "showTransliteration": "แสดงการถอดเสียง"
   },
   "app": {
     "errorInitializingPlayer": "เริ่มต้นเครื่องเล่นไม่สำเร็จ: {{message}}",
@@ -229,7 +233,15 @@
     "writeYourNoteHere": "เขียนบันทึกของคุณที่นี่...",
     "yourPlaylists": "เพลย์ลิสต์ของคุณ",
     "rewayatAvailable": "มี {{number}} ริวายะห์",
-    "rewayatByReciter": "{{rewayat}} โดย {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} โดย {{reciter}}",
+    "back": "ย้อนกลับ",
+    "options": "ตัวเลือก",
+    "shuffle": "สุ่ม",
+    "fontSize": "ขนาดตัวอักษร",
+    "fileImported": "นำเข้าไฟล์แล้ว",
+    "nowReading": "กำลังอ่าน",
+    "openingIn": "กำลังเปิดใน",
+    "showingInHafs": "กำลังแสดงแบบฮัฟส์"
   },
   "components": {
     "actionButtons": {
@@ -379,7 +391,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "ติดแท็กเสียงอ่านนี้เพื่อดูข้อความและรายละเอียดของซูเราะฮ์"
-    }
+    },
+    "ambientSounds": "เสียงบรรยากาศ",
+    "loveAdd": "เพิ่มในรายการโปรด",
+    "loveRemove": "ลบออกจากรายการโปรด",
+    "mushafLayoutOptions": "ตัวเลือกเลย์เอาต์",
+    "nextTrack": "แทร็กถัดไป",
+    "openPlayer": "เปิดเครื่องเล่น",
+    "playbackSpeed": "ความเร็วในการเล่น",
+    "previousTrack": "แทร็กก่อนหน้า",
+    "repeat": "ทำซ้ำ",
+    "seekBack": "ถอยหลัง {{seconds}} วินาที",
+    "seekForward": "ไปข้างหน้า {{seconds}} วินาที",
+    "sleepTimer": "ตั้งเวลาปิด"
   },
   "playlist": {
     "subtitle_one": "เพลย์ลิสต์ • {{count}} ซูเราะฮ์",
@@ -441,7 +465,9 @@
     "myRecitations": "เสียงอ่านของฉัน",
     "newToQuranStartHere": "เพิ่งเริ่มเรียนรู้อัลกุรอาน? เริ่มที่นี่",
     "seeMore": "ดูเพิ่มเติม",
-    "yourFavorites": "รายการโปรดของคุณ"
+    "yourFavorites": "รายการโปรดของคุณ",
+    "randomEmpty": "ไม่พบการอ่านแบบสุ่ม โปรดลองอีกครั้ง",
+    "randomFailed": "ไม่สามารถเล่นการอ่านแบบสุ่ม โปรดลองอีกครั้ง"
   },
   "screens": {
     "translationsContent": {
@@ -630,7 +656,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "ตั้งเวลาปิด",
-      "turnOffTimer": "ปิดตัวตั้งเวลา"
+      "turnOffTimer": "ปิดตัวตั้งเวลา",
+      "minutesRemaining_one": "เหลือ {{count}} นาที",
+      "minutesRemaining_other": "เหลือ {{count}} นาที",
+      "secondsRemaining_one": "เหลือ {{count}} วินาที",
+      "secondsRemaining_other": "เหลือ {{count}} วินาที"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "นำออกจากเพลย์ลิสต์"
@@ -1025,5 +1055,35 @@
       "quranic-duas": "ดุอาอ์จากอัลกุรอาน (รอบบะนา)",
       "names-of-allah": "พระนามอัลลอฮ์ 99 พระนาม"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "ช่วงอายะฮ์",
+    "chooseSurah": "เลือกซูเราะห์",
+    "continueListening": "ฟังต่อ",
+    "duration1h": "1 ชั่วโมง",
+    "duration30m": "30 นาที",
+    "duration3h": "3 ชั่วโมง",
+    "duration5h": "5 ชั่วโมง",
+    "duration8h": "8 ชั่วโมง",
+    "exploreCollectionsSubtitle": "ทัจญ์วีด การท่องจำ ริวายะฮ์ และอื่นๆ",
+    "exploreCollectionsTitle": "สำรวจคอลเลกชัน",
+    "khatma": "คัตมะฮ์",
+    "khatmaActiveSubtitle": "อ่านจบแล้ว {{done}} จาก 114 ซูเราะห์",
+    "khatmaCompletedSubtitle": "อ่านจบครบ 114 ซูเราะห์แล้ว",
+    "khatmaProgressTitle": "ความคืบหน้าคัตมะฮ์",
+    "khatmaStartSubtitle": "เริ่มคัตมะฮ์และติดตามความคืบหน้าของคุณ",
+    "listeningTools": "เครื่องมือการฟัง",
+    "repetition": "ทำซ้ำ",
+    "repetitionSubtitle": "เลือกซูเราะห์และช่วงอายะฮ์ แล้วทำซ้ำพร้อมจังหวะที่ซิงก์กัน",
+    "repetitionTitle": "ทำซ้ำช่วงอายะฮ์ใดก็ได้",
+    "selectDuration": "เลือกระยะเวลา",
+    "selectReciter": "เลือกผู้อ่าน",
+    "startNewKhatma": "เริ่มคัตมะฮ์ใหม่",
+    "startRepetition": "เริ่มทำซ้ำ",
+    "timedListening": "ฟังแบบตั้งเวลา",
+    "timedRowActive": "ตั้งเวลาไว้ {{minutes}} นาที",
+    "timedRowSubtitle": "หยุดหลังจากเวลาที่กำหนด",
+    "timerActiveNote": "การเล่นจะหยุดเมื่อตัวจับเวลาสิ้นสุด แตะระยะเวลาที่เลือกอีกครั้งเพื่อปิด",
+    "unlimited": "ไม่จำกัด"
   }
 }

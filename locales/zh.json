@@ -30,7 +30,11 @@
     "reciteTimes": "诵读 {{n}} 次",
     "playAllStop": "停止",
     "playAllPrevious": "上一个",
-    "playAllNext": "下一个"
+    "playAllNext": "下一个",
+    "layoutSheetTitle": "祈祷文布局",
+    "arabicText": "阿拉伯文本",
+    "showTranslation": "显示翻译",
+    "showTransliteration": "显示音译"
   },
   "app": {
     "errorInitializingPlayer": "播放器初始化失败：{{message}}",
@@ -229,7 +233,15 @@
     "writeYourNoteHere": "在此撰写笔记……",
     "yourPlaylists": "你的播放列表",
     "rewayatAvailable": "提供 {{number}} 种传述",
-    "rewayatByReciter": "{{reciter}}诵读的{{rewayat}}"
+    "rewayatByReciter": "{{reciter}}诵读的{{rewayat}}",
+    "back": "返回",
+    "options": "选项",
+    "shuffle": "随机播放",
+    "fontSize": "字体大小",
+    "fileImported": "文件已导入",
+    "nowReading": "正在阅读",
+    "openingIn": "正在打开",
+    "showingInHafs": "正在以哈夫斯显示"
   },
   "components": {
     "actionButtons": {
@@ -379,7 +391,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "为此诵读添加标签，以查看苏拉正文和详情"
-    }
+    },
+    "ambientSounds": "环境音",
+    "loveAdd": "添加到收藏",
+    "loveRemove": "从收藏中移除",
+    "mushafLayoutOptions": "布局选项",
+    "nextTrack": "下一首",
+    "openPlayer": "打开播放器",
+    "playbackSpeed": "播放速度",
+    "previousTrack": "上一首",
+    "repeat": "重复",
+    "seekBack": "后退{{seconds}}秒",
+    "seekForward": "前进{{seconds}}秒",
+    "sleepTimer": "睡眠定时器"
   },
   "playlist": {
     "subtitle_one": "播放列表 · {{count}} 章",
@@ -441,7 +465,9 @@
     "myRecitations": "我的诵读",
     "newToQuranStartHere": "初识《古兰经》？从这里开始",
     "seeMore": "查看更多",
-    "yourFavorites": "你的喜爱"
+    "yourFavorites": "你的喜爱",
+    "randomEmpty": "未找到随机诵读。请重试。",
+    "randomFailed": "无法播放随机诵读。请重试。"
   },
   "screens": {
     "translationsContent": {
@@ -630,7 +656,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "睡眠定时器",
-      "turnOffTimer": "关闭定时器"
+      "turnOffTimer": "关闭定时器",
+      "minutesRemaining_one": "还剩{{count}}分钟",
+      "minutesRemaining_other": "还剩{{count}}分钟",
+      "secondsRemaining_one": "还剩{{count}}秒",
+      "secondsRemaining_other": "还剩{{count}}秒"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "从播放列表中移除"
@@ -1025,5 +1055,35 @@
       "quranic-duas": "古兰经祈祷词(我们的主啊)",
       "names-of-allah": "真主的99个尊名"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "经文范围",
+    "chooseSurah": "选择一章",
+    "continueListening": "继续收听",
+    "duration1h": "1小时",
+    "duration30m": "30分钟",
+    "duration3h": "3小时",
+    "duration5h": "5小时",
+    "duration8h": "8小时",
+    "exploreCollectionsSubtitle": "塔吉威德、背诵、里瓦亚特等",
+    "exploreCollectionsTitle": "探索收藏",
+    "khatma": "完经",
+    "khatmaActiveSubtitle": "114章中已完成{{done}}章",
+    "khatmaCompletedSubtitle": "114章全部完成",
+    "khatmaProgressTitle": "完经进度",
+    "khatmaStartSubtitle": "开始完经并跟踪您的进度",
+    "listeningTools": "收听工具",
+    "repetition": "重复",
+    "repetitionSubtitle": "选择一章和经文范围,然后以同步时间重复播放。",
+    "repetitionTitle": "重复任意经文范围",
+    "selectDuration": "选择时长",
+    "selectReciter": "选择诵读家",
+    "startNewKhatma": "开始新的完经",
+    "startRepetition": "开始重复",
+    "timedListening": "定时收听",
+    "timedRowActive": "定时器已设置为{{minutes}}分钟",
+    "timedRowSubtitle": "在设定时间后停止",
+    "timerActiveNote": "定时器结束时播放将停止。再次点击所选时长即可关闭。",
+    "unlimited": "无限制"
   }
 }

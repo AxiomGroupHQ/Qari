@@ -32,7 +32,11 @@
     "reciteTimes": "Jàng {{n}}×",
     "playAllStop": "Taxaw",
     "playAllPrevious": "Bi jiitu",
-    "playAllNext": "Bi ci topp"
+    "playAllNext": "Bi ci topp",
+    "layoutSheetTitle": "Lajooru Adhkar",
+    "arabicText": "Màddu Àlàmà",
+    "showTranslation": "Wone Tekki",
+    "showTransliteration": "Wone Bindu Baat"
   },
   "app": {
     "errorInitializingPlayer": "Njumte ci tambali joŋantekat bi: {{message}}",
@@ -233,7 +237,15 @@
     "writeYourNoteHere": "Bindal sa bind fii...",
     "yourPlaylists": "Sa liste yi",
     "rewayatAvailable": "{{number}} rewayat yu am",
-    "rewayatByReciter": "{{rewayat}} bu {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} bu {{reciter}}",
+    "back": "Dellu ginnaaw",
+    "options": "Tànnéef yi",
+    "shuffle": "Jaxasoo",
+    "fontSize": "Ndaj bu mbind",
+    "fileImported": "Denc nañu dokiir",
+    "nowReading": "Dafa jàng léegi",
+    "openingIn": "Dafa ubbi ci",
+    "showingInHafs": "Dafay won ci Hafs"
   },
   "components": {
     "actionButtons": {
@@ -384,7 +396,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Màndargal jàng bi ngir gis bind bi ak xibaar yu surat bi"
-    }
+    },
+    "ambientSounds": "Bàyy yi wér",
+    "loveAdd": "Yokk ci ñu nga bëgg",
+    "loveRemove": "Dindi ci ñu nga bëgg",
+    "mushafLayoutOptions": "Tànnéef lajoor",
+    "nextTrack": "Yàpp bi nga xam",
+    "openPlayer": "Ubbi fëppukaay bi",
+    "playbackSpeed": "Jëmm fépp",
+    "previousTrack": "Yàpp bi nga xam ginnaaw",
+    "repeat": "Ñaawtu",
+    "seekBack": "Dellu sàkkat {{seconds}}",
+    "seekForward": "Yees sàkkat {{seconds}}",
+    "sleepTimer": "Waxtu nelaw"
   },
   "playlist": {
     "subtitle_many": "Liste • {{count}} surat",
@@ -447,7 +471,9 @@
     "myRecitations": "Samay jàng",
     "newToQuranStartHere": "Bees nga ci Alxuraan? Tambali fii",
     "seeMore": "Gis yu ëpp",
-    "yourFavorites": "Yi nga bëgg"
+    "yourFavorites": "Yi nga bëgg",
+    "randomEmpty": "Gisul ñaawtu yu kaw. Jéemaat.",
+    "randomFailed": "Wàññi ñaawtu yu kaw. Jéemaat."
   },
   "screens": {
     "translationsContent": {
@@ -636,7 +662,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Waxtu nelaw",
-      "turnOffTimer": "Dindi waxtu bi"
+      "turnOffTimer": "Dindi waxtu bi",
+      "minutesRemaining_one": "Simili {{count}} des na",
+      "minutesRemaining_other": "Simili {{count}} des na",
+      "secondsRemaining_one": "Sàkkat {{count}} des na",
+      "secondsRemaining_other": "Sàkkat {{count}} des na"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Jële ci liste bi"
@@ -1009,6 +1039,60 @@
       "132": "Yoonu jaar-jàrm ak bokkaa-seen",
       "quranic-duas": "Dua yu Alxuraan (Rabbana)",
       "names-of-allah": "Tur Yàlla 99"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Bëccëg aaya",
+    "chooseSurah": "Tànn benn Suura",
+    "continueListening": "Wéy di dégg",
+    "duration1h": "1 waxtu",
+    "duration30m": "30 simili",
+    "duration3h": "3 waxtu",
+    "duration5h": "5 waxtu",
+    "duration8h": "8 waxtu",
+    "exploreCollectionsSubtitle": "Tajwiid, xàmmte, riwaayat ak yeneen",
+    "exploreCollectionsTitle": "Seet wàllute yu boole",
+    "khatma": "Xatma",
+    "khatmaActiveSubtitle": "{{done}} ci 114 suura mat nañu",
+    "khatmaCompletedSubtitle": "114 suura yépp mat nañu",
+    "khatmaProgressTitle": "Mànku Xatma",
+    "khatmaStartSubtitle": "Tambali Xatma te topp sa mànku",
+    "listeningTools": "Jumtukaayu dégg",
+    "repetition": "Ñaawtu",
+    "repetitionSubtitle": "Tànn benn Suura ak bëccëg aaya, bañ a ñaawtu ko ak waxtu wu boole.",
+    "repetitionTitle": "Ñaawtu bëccëg aaya bi nga bëgg",
+    "selectDuration": "Tànn waxtu wi",
+    "selectReciter": "Tànn kàriit bi",
+    "startNewKhatma": "Tambali Xatma wu yàpp",
+    "startRepetition": "Tambali ñaawtu",
+    "timedListening": "Dégg ci Waxtu",
+    "timedRowActive": "Waxtu wi defar na ko {{minutes}} simili",
+    "timedRowSubtitle": "Taxaw bu gannaaw waxtu",
+    "timerActiveNote": "Fépp bi dafa taxaw bu waxtu wi jeex. Bës waxtu wi nga tànn yeneen ngir bañ ko.",
+    "unlimited": "Amul njëkk"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

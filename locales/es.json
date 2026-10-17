@@ -32,7 +32,11 @@
     "reciteTimes": "Recitar {{n}}×",
     "playAllStop": "Detener",
     "playAllPrevious": "Anterior",
-    "playAllNext": "Siguiente"
+    "playAllNext": "Siguiente",
+    "layoutSheetTitle": "Diseño de adhkar",
+    "arabicText": "Texto árabe",
+    "showTranslation": "Mostrar traducción",
+    "showTransliteration": "Mostrar transliteración"
   },
   "app": {
     "errorInitializingPlayer": "Error al iniciar el reproductor: {{message}}",
@@ -231,7 +235,15 @@
     "writeYourNoteHere": "Escribe tu nota aquí...",
     "yourPlaylists": "Tus listas",
     "rewayatAvailable": "{{number}} rewayat disponibles",
-    "rewayatByReciter": "{{rewayat}} de {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} de {{reciter}}",
+    "back": "Atrás",
+    "options": "Opciones",
+    "shuffle": "Aleatorio",
+    "fontSize": "Tamaño de fuente",
+    "fileImported": "Archivo importado",
+    "nowReading": "Leyendo ahora",
+    "openingIn": "Abriendo en",
+    "showingInHafs": "Mostrando en Hafs"
   },
   "components": {
     "actionButtons": {
@@ -381,7 +393,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Etiqueta esta recitación para ver el texto de la sura y sus detalles"
-    }
+    },
+    "ambientSounds": "Sonidos ambientales",
+    "loveAdd": "Añadir a favoritos",
+    "loveRemove": "Quitar de favoritos",
+    "mushafLayoutOptions": "Opciones de diseño",
+    "nextTrack": "Pista siguiente",
+    "openPlayer": "Abrir reproductor",
+    "playbackSpeed": "Velocidad de reproducción",
+    "previousTrack": "Pista anterior",
+    "repeat": "Repetir",
+    "seekBack": "Retroceder {{seconds}} s",
+    "seekForward": "Adelantar {{seconds}} s",
+    "sleepTimer": "Temporizador de sueño"
   },
   "playlist": {
     "subtitle_one": "Lista • {{count}} sura",
@@ -443,7 +467,9 @@
     "myRecitations": "Mis recitaciones",
     "newToQuranStartHere": "¿Primera vez con el Corán? Empieza aquí",
     "seeMore": "Ver más",
-    "yourFavorites": "Tus favoritos"
+    "yourFavorites": "Tus favoritos",
+    "randomEmpty": "No se encontraron recitaciones aleatorias. Inténtalo de nuevo.",
+    "randomFailed": "No se pudo reproducir la recitación aleatoria. Inténtalo de nuevo."
   },
   "screens": {
     "translationsContent": {
@@ -632,7 +658,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Temporizador de sueño",
-      "turnOffTimer": "Desactivar temporizador"
+      "turnOffTimer": "Desactivar temporizador",
+      "minutesRemaining_one": "{{count}} minuto restante",
+      "minutesRemaining_other": "{{count}} minutos restantes",
+      "secondsRemaining_one": "{{count}} segundo restante",
+      "secondsRemaining_other": "{{count}} segundos restantes"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Quitar de la lista"
@@ -1004,6 +1034,60 @@
       "132": "Tipos de bondad y buenos modales para la vida en comunidad",
       "quranic-duas": "Duas del Corán (Rabbana)",
       "names-of-allah": "Los 99 nombres de Allah"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Rango de aleyas",
+    "chooseSurah": "Elige una sura",
+    "continueListening": "Seguir escuchando",
+    "duration1h": "1 hora",
+    "duration30m": "30 minutos",
+    "duration3h": "3 horas",
+    "duration5h": "5 horas",
+    "duration8h": "8 horas",
+    "exploreCollectionsSubtitle": "Tayweed, memorización, riwayat y más",
+    "exploreCollectionsTitle": "Explorar colecciones",
+    "khatma": "Jatma",
+    "khatmaActiveSubtitle": "{{done}} de 114 suras completadas",
+    "khatmaCompletedSubtitle": "Las 114 suras completadas",
+    "khatmaProgressTitle": "Progreso de la Jatma",
+    "khatmaStartSubtitle": "Empieza una Jatma y sigue tu progreso",
+    "listeningTools": "Herramientas de escucha",
+    "repetition": "Repetición",
+    "repetitionSubtitle": "Elige una sura y un rango de aleyas y repítelo con tiempos sincronizados.",
+    "repetitionTitle": "Repetir cualquier rango de aleyas",
+    "selectDuration": "Elegir duración",
+    "selectReciter": "Elegir recitador",
+    "startNewKhatma": "Empezar nueva Jatma",
+    "startRepetition": "Empezar repetición",
+    "timedListening": "Escucha programada",
+    "timedRowActive": "Temporizador ajustado a {{minutes}} min",
+    "timedRowSubtitle": "Dormir tras un tiempo definido",
+    "timerActiveNote": "La reproducción se pausa cuando termina el temporizador. Toca de nuevo la duración elegida para apagarlo.",
+    "unlimited": "Ilimitado"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

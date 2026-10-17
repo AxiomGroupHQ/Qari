@@ -10,6 +10,7 @@ import Animated, {
   withSpring,
 } from 'react-native-reanimated';
 import {useTheme} from '@/hooks/useTheme';
+import {t} from '@/i18n';
 export const LoveButton = () => {
   const queue = usePlayerStore(s => s.queue);
   const {theme} = useTheme();
@@ -36,7 +37,13 @@ export const LoveButton = () => {
   }));
 
   return (
-    <Pressable style={styles.button} onPress={handleToggleLoved}>
+    <Pressable
+      style={styles.button}
+      onPress={handleToggleLoved}
+      accessibilityRole="button"
+      accessibilityLabel={
+        isLoved ? t('playerContent.loveRemove') : t('playerContent.loveAdd')
+      }>
       <Animated.View style={animatedStyle}>
         <HeartIcon
           size={moderateScale(32)}

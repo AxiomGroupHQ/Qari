@@ -730,7 +730,7 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
         return;
       }
       setRewayah(value);
-      showToast('Now reading', getRewayahShortLabel(value));
+      showToast(t('common.nowReading'), getRewayahShortLabel(value));
     },
     [rewayah, setRewayah],
   );

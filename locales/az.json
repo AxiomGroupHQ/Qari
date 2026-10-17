@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× oxuyun",
     "playAllStop": "Dayandır",
     "playAllPrevious": "Əvvəlki",
-    "playAllNext": "Növbəti"
+    "playAllNext": "Növbəti",
+    "layoutSheetTitle": "Əzkar düzümü",
+    "arabicText": "Ərəb mətni",
+    "showTranslation": "Tərcüməni göstər",
+    "showTransliteration": "Transliterasiyanı göstər"
   },
   "app": {
     "errorInitializingPlayer": "Pleyer başladılarkən xəta: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Qeydinizi burada yazın...",
     "yourPlaylists": "Pleylistləriniz",
     "rewayatAvailable": "{{number}} rəvayət mövcuddur",
-    "rewayatByReciter": "{{reciter}} – {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} – {{rewayat}}",
+    "back": "Geri",
+    "options": "Seçimlər",
+    "shuffle": "Təsadüfi",
+    "fontSize": "Şrift ölçüsü",
+    "fileImported": "Fayl idxal edildi",
+    "nowReading": "İndi oxuyursunuz",
+    "openingIn": "Burada açılır:",
+    "showingInHafs": "Həfs rəvayəti ilə göstərilir"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Surənin mətnini və təfərrüatlarını görmək üçün bu tilavəti etiketləyin"
-    }
+    },
+    "ambientSounds": "Mühit səsləri",
+    "loveAdd": "Sevimlilərə əlavə et",
+    "loveRemove": "Sevimlilərdən çıxar",
+    "mushafLayoutOptions": "Düzüm seçimləri",
+    "nextTrack": "Növbəti trek",
+    "openPlayer": "Pleeri aç",
+    "playbackSpeed": "İfa sürəti",
+    "previousTrack": "Əvvəlki trek",
+    "repeat": "Təkrarla",
+    "seekBack": "{{seconds}} saniyə geri",
+    "seekForward": "{{seconds}} saniyə irəli",
+    "sleepTimer": "Yuxu taymeri"
   },
   "playlist": {
     "subtitle_one": "Pleylist • {{count}} surə",
@@ -442,7 +466,9 @@
     "myRecitations": "Tilavətlərim",
     "newToQuranStartHere": "Quranla yeni tanış olursunuz? Buradan başlayın",
     "seeMore": "Daha çox bax",
-    "yourFavorites": "Sevimliləriniz"
+    "yourFavorites": "Sevimliləriniz",
+    "randomEmpty": "Təsadüfi qiraət tapılmadı. Yenidən cəhd edin.",
+    "randomFailed": "Təsadüfi qiraət ifa edilə bilmədi. Yenidən cəhd edin."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Yuxu taymeri",
-      "turnOffTimer": "Taymeri söndür"
+      "turnOffTimer": "Taymeri söndür",
+      "minutesRemaining_one": "{{count}} dəqiqə qaldı",
+      "minutesRemaining_other": "{{count}} dəqiqə qaldı",
+      "secondsRemaining_one": "{{count}} saniyə qaldı",
+      "secondsRemaining_other": "{{count}} saniyə qaldı"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Pleylistdən çıxar"
@@ -1002,6 +1032,60 @@
       "132": "Xeyirin növləri və cəmiyyət həyatı üçün gözəl əxlaq",
       "quranic-duas": "Qurani dualar (Rəbbənə)",
       "names-of-allah": "Allahın 99 adı"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Ayə aralığı",
+    "chooseSurah": "Surə seçin",
+    "continueListening": "Dinləməyə davam edin",
+    "duration1h": "1 saat",
+    "duration30m": "30 dəqiqə",
+    "duration3h": "3 saat",
+    "duration5h": "5 saat",
+    "duration8h": "8 saat",
+    "exploreCollectionsSubtitle": "Təcvid, əzbərləmə, rəvayətlər və daha çox",
+    "exploreCollectionsTitle": "Kolleksiyaları kəşf edin",
+    "khatma": "Xətm",
+    "khatmaActiveSubtitle": "114 surədən {{done}} tamamlandı",
+    "khatmaCompletedSubtitle": "Bütün 114 surə tamamlandı",
+    "khatmaProgressTitle": "Xətm irəliləyişi",
+    "khatmaStartSubtitle": "Xətmə başlayın və irəliləyişinizi izləyin",
+    "listeningTools": "Dinləmə alətləri",
+    "repetition": "Təkrar",
+    "repetitionSubtitle": "Surə və ayə aralığı seçin, sonra sinxron vaxt ilə təkrarlayın.",
+    "repetitionTitle": "İstənilən ayə aralığını təkrarlayın",
+    "selectDuration": "Müddət seçin",
+    "selectReciter": "Qari seçin",
+    "startNewKhatma": "Yeni xətm başladın",
+    "startRepetition": "Təkrarı başladın",
+    "timedListening": "Vaxtlı dinləmə",
+    "timedRowActive": "Taymer {{minutes}} dəq olaraq təyin edildi",
+    "timedRowSubtitle": "Müəyyən vaxtdan sonra yatın",
+    "timerActiveNote": "Taymer bitəndə ifa dayanır. Söndürmək üçün seçilmiş müddətə yenidən toxunun.",
+    "unlimited": "Limitsiz"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

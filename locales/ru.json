@@ -33,7 +33,11 @@
     "reciteTimes": "Повторить {{n}}×",
     "playAllStop": "Стоп",
     "playAllPrevious": "Назад",
-    "playAllNext": "Далее"
+    "playAllNext": "Далее",
+    "layoutSheetTitle": "Раскладка азкаров",
+    "arabicText": "Арабский текст",
+    "showTranslation": "Показать перевод",
+    "showTransliteration": "Показать транслитерацию"
   },
   "app": {
     "errorInitializingPlayer": "Ошибка инициализации проигрывателя: {{message}}",
@@ -236,7 +240,15 @@
     "writeYourNoteHere": "Напишите заметку здесь…",
     "yourPlaylists": "Ваши плейлисты",
     "rewayatAvailable": "Доступно риваятов: {{number}}",
-    "rewayatByReciter": "{{rewayat}} – {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} – {{reciter}}",
+    "back": "Назад",
+    "options": "Параметры",
+    "shuffle": "Вперемешку",
+    "fontSize": "Размер шрифта",
+    "fileImported": "Файл импортирован",
+    "nowReading": "Сейчас читается",
+    "openingIn": "Открытие в",
+    "showingInHafs": "Показ в хафсе"
   },
   "components": {
     "actionButtons": {
@@ -388,7 +400,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Укажите данные этой записи, чтобы видеть текст суры и сведения о ней"
-    }
+    },
+    "ambientSounds": "Фоновые звуки",
+    "loveAdd": "Добавить в избранное",
+    "loveRemove": "Удалить из избранного",
+    "mushafLayoutOptions": "Параметры раскладки",
+    "nextTrack": "Следующий трек",
+    "openPlayer": "Открыть плеер",
+    "playbackSpeed": "Скорость воспроизведения",
+    "previousTrack": "Предыдущий трек",
+    "repeat": "Повторить",
+    "seekBack": "Назад на {{seconds}} сек",
+    "seekForward": "Вперёд на {{seconds}} сек",
+    "sleepTimer": "Таймер сна"
   },
   "playlist": {
     "subtitle_few": "Плейлист • {{count}} суры",
@@ -452,7 +476,9 @@
     "myRecitations": "Мои записи чтения",
     "newToQuranStartHere": "Знакомитесь с Кораном? Начните здесь",
     "seeMore": "Показать больше",
-    "yourFavorites": "Ваше избранное"
+    "yourFavorites": "Ваше избранное",
+    "randomEmpty": "Не удалось найти случайные чтения. Попробуйте ещё раз.",
+    "randomFailed": "Не удалось воспроизвести случайное чтение. Попробуйте ещё раз."
   },
   "screens": {
     "translationsContent": {
@@ -641,7 +667,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Таймер сна",
-      "turnOffTimer": "Выключить таймер"
+      "turnOffTimer": "Выключить таймер",
+      "minutesRemaining_one": "осталась {{count}} минута",
+      "minutesRemaining_other": "осталось {{count}} минут",
+      "secondsRemaining_one": "осталась {{count}} секунда",
+      "secondsRemaining_other": "осталось {{count}} секунд"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Убрать из плейлиста"
@@ -1041,5 +1071,35 @@
       "quranic-duas": "Коранические дуа (Раббана)",
       "names-of-allah": "99 имён Аллаха"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Диапазон аятов",
+    "chooseSurah": "Выберите суру",
+    "continueListening": "Продолжить прослушивание",
+    "duration1h": "1 час",
+    "duration30m": "30 минут",
+    "duration3h": "3 часа",
+    "duration5h": "5 часов",
+    "duration8h": "8 часов",
+    "exploreCollectionsSubtitle": "Таджвид, заучивание, риваят и другое",
+    "exploreCollectionsTitle": "Обзор коллекций",
+    "khatma": "Хатма",
+    "khatmaActiveSubtitle": "Прочитано {{done}} из 114 сур",
+    "khatmaCompletedSubtitle": "Все 114 сур прочитаны",
+    "khatmaProgressTitle": "Прогресс Хатмы",
+    "khatmaStartSubtitle": "Начните Хатму и отслеживайте прогресс",
+    "listeningTools": "Инструменты прослушивания",
+    "repetition": "Повторение",
+    "repetitionSubtitle": "Выберите суру и диапазон аятов, затем повторяйте с синхронизацией.",
+    "repetitionTitle": "Повтор любого диапазона аятов",
+    "selectDuration": "Выберите длительность",
+    "selectReciter": "Выберите чтеца",
+    "startNewKhatma": "Начать новую Хатму",
+    "startRepetition": "Начать повторение",
+    "timedListening": "Прослушивание по таймеру",
+    "timedRowActive": "Таймер установлен на {{minutes}} мин",
+    "timedRowSubtitle": "Остановка через заданное время",
+    "timerActiveNote": "Воспроизведение остановится, когда таймер завершится. Нажмите выбранную длительность ещё раз, чтобы отключить.",
+    "unlimited": "Без ограничений"
   }
 }

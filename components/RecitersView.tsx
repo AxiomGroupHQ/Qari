@@ -23,6 +23,8 @@ import {UserPlaylist} from '@/services/playlist/PlaylistService';
 import {Theme} from '@/utils/themeUtils';
 import {HomeTop} from '@/components/home/HomeTop';
 import {KhatmaCard} from '@/components/home/KhatmaCard';
+import {ListeningToolsCard} from '@/components/home/ListeningToolsCard';
+import {ExploreCollectionsTile} from '@/components/home/ExploreCollectionsTile';
 import {RepetitionCard} from '@/components/home/RepetitionCard';
 import {TimedListeningCard} from '@/components/home/TimedListeningCard';
 import {useCollapsibleTabBar} from '@/hooks/useCollapsibleTabBar';
@@ -57,21 +59,30 @@ import {getReciterByIdSync} from '@/services/dataService';
  * branding that omits the field. Forks declare their own array in
  * `config/branding.js` to reorder, hide, or omit rows entirely.
  */
+/**
+ * Option A curated Home: one "Listening tools" card (Khatma / Repetition /
+ * Timed Listening as compact rows) plus the core content rows, with the
+ * genre rows (Follow Along, Tajweed, Memorization, Rewayah, etc.) off Home
+ * behind the single "Explore collections" tile. The standalone feature
+ * cards and genre rows stay available for forks via `homeRowConfig`.
+ */
 const DEFAULT_HOME_ROW_CONFIG: readonly HomeRow[] = [
+  {id: 'listening-tools', enabled: true},
   {id: 'new-to-quran', enabled: true},
   {id: 'favorites', enabled: true},
-  {id: 'khatma', enabled: true},
   {id: 'featured', enabled: true},
-  {id: 'repetition', enabled: true},
   {id: 'adhkar', enabled: true},
-  {id: 'timed-listening', enabled: true},
-  {id: 'follow-along', enabled: true},
-  {id: 'playlists', enabled: true},
-  {id: 'exclusives', enabled: true},
-  {id: 'tajweed', enabled: true},
-  {id: 'memorization', enabled: true},
-  {id: 'rewayat', enabled: true},
-  {id: 'collection', enabled: true},
+  {id: 'explore-collections', enabled: true},
+  {id: 'khatma', enabled: false},
+  {id: 'repetition', enabled: false},
+  {id: 'timed-listening', enabled: false},
+  {id: 'follow-along', enabled: false},
+  {id: 'playlists', enabled: false},
+  {id: 'exclusives', enabled: false},
+  {id: 'tajweed', enabled: false},
+  {id: 'memorization', enabled: false},
+  {id: 'rewayat', enabled: false},
+  {id: 'collection', enabled: false},
 ];
 
 interface RecitersViewProps {
@@ -561,8 +572,14 @@ function RecitersView({onReciterPress}: RecitersViewProps) {
     // Replaced by the Continue Listening hero card in `HomeTop`.
     'continue-listening': null,
 
-    // Feature cards (real data: khatmah auto-tracking, mushaf repeat
-    // playback, player sleep timer). Always render.
+    // Option A curated Home: one compact card combining the three
+    // feature cards, plus the genre-rows stand-in tile.
+    'listening-tools': <ListeningToolsCard />,
+    'explore-collections': <ExploreCollectionsTile />,
+
+    // Standalone feature cards (real data: khatmah auto-tracking, mushaf
+    // repeat playback, player sleep timer). Off the default Home; forks
+    // can re-enable them via `homeRowConfig`.
     khatma: <KhatmaCard />,
     repetition: <RepetitionCard />,
     'timed-listening': <TimedListeningCard />,

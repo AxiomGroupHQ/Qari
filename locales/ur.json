@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× پڑھیں",
     "playAllStop": "روکیں",
     "playAllPrevious": "پچھلا",
-    "playAllNext": "اگلا"
+    "playAllNext": "اگلا",
+    "layoutSheetTitle": "اذکار کی ترتیب",
+    "arabicText": "عربی متن",
+    "showTranslation": "ترجمہ دکھائیں",
+    "showTransliteration": "نقل حرفی دکھائیں"
   },
   "app": {
     "errorInitializingPlayer": "پلیئر شروع کرنے میں خرابی: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "اپنا نوٹ یہاں لکھیں...",
     "yourPlaylists": "آپ کی پلے لسٹس",
     "rewayatAvailable": "{{number}} روایات دستیاب",
-    "rewayatByReciter": "{{reciter}} کی {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} کی {{rewayat}}",
+    "back": "واپس",
+    "options": "اختیارات",
+    "shuffle": "شفل",
+    "fontSize": "فونٹ سائز",
+    "fileImported": "فائل درآمد ہو گئی",
+    "nowReading": "اب پڑھ رہے ہیں",
+    "openingIn": "میں کھولا جا رہا ہے",
+    "showingInHafs": "حفص کی روایت میں دکھایا جا رہا ہے"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "سورت کا متن اور تفصیلات دیکھنے کے لیے اس تلاوت کو ٹیگ کریں"
-    }
+    },
+    "ambientSounds": "ماحول کی آوازیں",
+    "loveAdd": "پسندیدہ میں شامل کریں",
+    "loveRemove": "پسندیدہ سے ہٹائیں",
+    "mushafLayoutOptions": "ترتیب کے اختیارات",
+    "nextTrack": "اگلا ٹریک",
+    "openPlayer": "پلیئر کھولیں",
+    "playbackSpeed": "پلے بیک کی رفتار",
+    "previousTrack": "پچھلا ٹریک",
+    "repeat": "دہرائیں",
+    "seekBack": "{{seconds}} سیکنڈ پیچھے",
+    "seekForward": "{{seconds}} سیکنڈ آگے",
+    "sleepTimer": "سلیپ ٹائمر"
   },
   "playlist": {
     "subtitle_one": "پلے لسٹ • {{count}} سورت",
@@ -442,7 +466,9 @@
     "myRecitations": "میری تلاوتیں",
     "newToQuranStartHere": "قرآن میں نئے ہیں؟ یہاں سے شروع کریں",
     "seeMore": "مزید دیکھیں",
-    "yourFavorites": "آپ کے پسندیدہ"
+    "yourFavorites": "آپ کے پسندیدہ",
+    "randomEmpty": "بے ترتیب تلاوتیں نہیں مل سکیں۔ دوبارہ کوشش کریں۔",
+    "randomFailed": "بے ترتیب تلاوت چلائی نہ جا سکی۔ دوبارہ کوشش کریں۔"
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "سلیپ ٹائمر",
-      "turnOffTimer": "ٹائمر بند کریں"
+      "turnOffTimer": "ٹائمر بند کریں",
+      "minutesRemaining_one": "{{count}} منٹ باقی",
+      "minutesRemaining_other": "{{count}} منٹ باقی",
+      "secondsRemaining_one": "{{count}} سیکنڈ باقی",
+      "secondsRemaining_other": "{{count}} سیکنڈ باقی"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "پلے لسٹ سے ہٹائیں"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "قرآنی دعائیں (ربنا)",
       "names-of-allah": "اللہ کے 99 نام"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "آیات کی حد",
+    "chooseSurah": "سورت منتخب کریں",
+    "continueListening": "سننا جاری رکھیں",
+    "duration1h": "1 گھنٹہ",
+    "duration30m": "30 منٹ",
+    "duration3h": "3 گھنٹے",
+    "duration5h": "5 گھنٹے",
+    "duration8h": "8 گھنٹے",
+    "exploreCollectionsSubtitle": "تجوید، حفظ، روایتیں اور مزید",
+    "exploreCollectionsTitle": "مجموعے دریافت کریں",
+    "khatma": "ختم",
+    "khatmaActiveSubtitle": "114 سورتوں میں سے {{done}} مکمل",
+    "khatmaCompletedSubtitle": "تمام 114 سورتیں مکمل ہو گئیں",
+    "khatmaProgressTitle": "ختم کی پیش رفت",
+    "khatmaStartSubtitle": "ختم شروع کریں اور اپنی پیش رفت دیکھیں",
+    "listeningTools": "سننے کے اوزار",
+    "repetition": "تکرار",
+    "repetitionSubtitle": "سورت اور آیات کی حد منتخب کریں، پھر ہم آہنگ وقت کے ساتھ دہرائیں۔",
+    "repetitionTitle": "آیات کی کوئی بھی حد دہرائیں",
+    "selectDuration": "دورانیہ منتخب کریں",
+    "selectReciter": "قاری منتخب کریں",
+    "startNewKhatma": "نیا ختم شروع کریں",
+    "startRepetition": "تکرار شروع کریں",
+    "timedListening": "وقت کے ساتھ سننا",
+    "timedRowActive": "ٹائمر {{minutes}} منٹ پر سیٹ ہے",
+    "timedRowSubtitle": "مقررہ وقت کے بعد سو جائیں",
+    "timerActiveNote": "ٹائمر ختم ہونے پر پلے بیک رک جائے گی۔ بند کرنے کے لیے منتخب دورانیہ دوبارہ دبائیں۔",
+    "unlimited": "لامحدود"
   }
 }

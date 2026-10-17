@@ -32,7 +32,11 @@
     "reciteTimes": "Поновите {{n}}×",
     "playAllStop": "Заустави",
     "playAllPrevious": "Претходно",
-    "playAllNext": "Следеће"
+    "playAllNext": "Следеће",
+    "layoutSheetTitle": "Распоред зикра",
+    "arabicText": "Арапски текст",
+    "showTranslation": "Прикажи превод",
+    "showTransliteration": "Прикажи транслитерацију"
   },
   "app": {
     "errorInitializingPlayer": "Грешка при покретању плејера: {{message}}",
@@ -233,7 +237,15 @@
     "writeYourNoteHere": "Напишите своју белешку овде...",
     "yourPlaylists": "Ваше плејлисте",
     "rewayatAvailable": "Доступно ривајета: {{number}}",
-    "rewayatByReciter": "{{rewayat}} – {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} – {{reciter}}",
+    "back": "Назад",
+    "options": "Опције",
+    "shuffle": "Насумично",
+    "fontSize": "Величина фонта",
+    "fileImported": "Датотека увезена",
+    "nowReading": "Тренутно чита",
+    "openingIn": "Отвара се у",
+    "showingInHafs": "Приказује се у Хафсу"
   },
   "components": {
     "actionButtons": {
@@ -384,7 +396,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Означите ову рецитацију да видите текст и детаље суре"
-    }
+    },
+    "ambientSounds": "Амбијентални звукови",
+    "loveAdd": "Додај у омиљене",
+    "loveRemove": "Уклони из омиљених",
+    "mushafLayoutOptions": "Опције распореда",
+    "nextTrack": "Следећа песма",
+    "openPlayer": "Отвори плејер",
+    "playbackSpeed": "Брзина репродукције",
+    "previousTrack": "Претходна песма",
+    "repeat": "Понови",
+    "seekBack": "{{seconds}} секунди назад",
+    "seekForward": "{{seconds}} секунди напред",
+    "sleepTimer": "Тајмер за спавање"
   },
   "playlist": {
     "subtitle_few": "Плејлиста • {{count}} суре",
@@ -447,7 +471,9 @@
     "myRecitations": "Моје рецитације",
     "newToQuranStartHere": "Нови сте у Курану? Почните овде",
     "seeMore": "Прикажи више",
-    "yourFavorites": "Ваши омиљени"
+    "yourFavorites": "Ваши омиљени",
+    "randomEmpty": "Није пронађено насумично учење. Покушајте поново.",
+    "randomFailed": "Није успела репродукција насумичног учења. Покушајте поново."
   },
   "screens": {
     "translationsContent": {
@@ -636,7 +662,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Тајмер за спавање",
-      "turnOffTimer": "Искључи тајмер"
+      "turnOffTimer": "Искључи тајмер",
+      "minutesRemaining_one": "преостаје {{count}} минута",
+      "minutesRemaining_other": "преостаје {{count}} минута",
+      "secondsRemaining_one": "преостаје {{count}} секунда",
+      "secondsRemaining_other": "преостаје {{count}} секунди"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Уклони из плејлисте"
@@ -1034,5 +1064,35 @@
       "quranic-duas": "Кур'анске молитве (Раббана)",
       "names-of-allah": "99 Аллахових имена"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Опсег ајета",
+    "chooseSurah": "Изаберите суру",
+    "continueListening": "Наставите слушање",
+    "duration1h": "1 сат",
+    "duration30m": "30 минута",
+    "duration3h": "3 сата",
+    "duration5h": "5 сати",
+    "duration8h": "8 сати",
+    "exploreCollectionsSubtitle": "Теџвид, учење напамет, ривајат и више",
+    "exploreCollectionsTitle": "Истражите колекције",
+    "khatma": "Хатма",
+    "khatmaActiveSubtitle": "{{done}} од 114 сура завршено",
+    "khatmaCompletedSubtitle": "Свих 114 сура завршено",
+    "khatmaProgressTitle": "Напредак Хатме",
+    "khatmaStartSubtitle": "Започните Хатму и пратите свој напредак",
+    "listeningTools": "Алати за слушање",
+    "repetition": "Понављање",
+    "repetitionSubtitle": "Изаберите суру и опсег ајета, затим понављајте са синхронизованим временом.",
+    "repetitionTitle": "Поновите било који опсег ајета",
+    "selectDuration": "Изаберите трајање",
+    "selectReciter": "Изаберите читача",
+    "startNewKhatma": "Започните нову Хатму",
+    "startRepetition": "Започните понављање",
+    "timedListening": "Слушање са тајмером",
+    "timedRowActive": "Тајмер подешен на {{minutes}} мин",
+    "timedRowSubtitle": "Заустави након одређеног времена",
+    "timerActiveNote": "Репродукција се зауставља када тајмер истекне. Додирните изабрано трајање поново да га искључите.",
+    "unlimited": "Неограничено"
   }
 }

@@ -1,6 +1,7 @@
 import React, {useCallback, useMemo, useRef} from 'react';
 import {View, Text, Pressable, StyleSheet} from 'react-native';
 import {useTheme} from '@/hooks/useTheme';
+import {t} from '@/i18n';
 import {usePlayerActions} from '@/hooks/usePlayerActions';
 import {usePlayerStore} from '@/services/player/store/playerStore';
 import {expandPlayerSheet} from '@/services/player/sheetRef';
@@ -71,6 +72,8 @@ export const TabletDockedPlayer: React.FC<TabletDockedPlayerProps> = React.memo(
       return (
         <Pressable
           onPress={handlePress}
+          accessibilityRole="button"
+          accessibilityLabel={t('playerContent.openPlayer')}
           style={[styles.compact, {backgroundColor: bg, borderColor: border}]}>
           <ReciterImage
             reciterName={currentTrack.reciterName}
@@ -78,6 +81,10 @@ export const TabletDockedPlayer: React.FC<TabletDockedPlayerProps> = React.memo(
           />
           <Pressable
             onPress={handlePlayPause}
+            accessibilityRole="button"
+            accessibilityLabel={
+              playbackState === 'playing' ? t('ui.pause') : t('ui.play')
+            }
             hitSlop={8}
             style={styles.compactPlay}>
             {isLoadingNewTrack ? (
@@ -95,6 +102,8 @@ export const TabletDockedPlayer: React.FC<TabletDockedPlayerProps> = React.memo(
     return (
       <Pressable
         onPress={handlePress}
+        accessibilityRole="button"
+        accessibilityLabel={t('playerContent.openPlayer')}
         style={[styles.expanded, {backgroundColor: bg, borderColor: border}]}>
         <ReciterImage
           reciterName={currentTrack.reciterName}
@@ -112,6 +121,10 @@ export const TabletDockedPlayer: React.FC<TabletDockedPlayerProps> = React.memo(
         </View>
         <Pressable
           onPress={handlePlayPause}
+          accessibilityRole="button"
+          accessibilityLabel={
+            playbackState === 'playing' ? t('ui.pause') : t('ui.play')
+          }
           hitSlop={8}
           style={styles.playButton}>
           {isLoadingNewTrack ? (

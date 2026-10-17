@@ -30,7 +30,11 @@
     "reciteTimes": "Ka {{n}}×",
     "playAllStop": "Dúró",
     "playAllPrevious": "Ti tẹ́lẹ̀",
-    "playAllNext": "Tó kàn"
+    "playAllNext": "Tó kàn",
+    "layoutSheetTitle": "Àtòjọ Adhkar",
+    "arabicText": "Ọ̀rọ̀ Lárúbáwá",
+    "showTranslation": "Fi Ìtumọ̀ hàn",
+    "showTransliteration": "Fi Kíkọ Sílábù hàn"
   },
   "app": {
     "errorInitializingPlayer": "Àṣìṣe nígbà bíbẹ̀rẹ̀ ẹ̀rọ ìṣeré: {{message}}",
@@ -229,7 +233,15 @@
     "writeYourNoteHere": "Kọ àkọsílẹ̀ rẹ níbí...",
     "yourPlaylists": "Àwọn àtòjọ ìṣeré rẹ",
     "rewayatAvailable": "Rewayat {{number}} wà",
-    "rewayatByReciter": "{{rewayat}} láti ọwọ́ {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} láti ọwọ́ {{reciter}}",
+    "back": "Sẹyìn",
+    "options": "Àwọn aṣayan",
+    "shuffle": "Dàrúkò",
+    "fontSize": "Ìwọ̀n Lẹ́tà",
+    "fileImported": "A ti gbe faili wọlé",
+    "nowReading": "Ń ka báyìí",
+    "openingIn": "Ń ṣí ní",
+    "showingInHafs": "Ń fi hàn ní Hafs"
   },
   "components": {
     "actionButtons": {
@@ -379,7 +391,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Fi àmì sí kíkà yìí láti rí ọ̀rọ̀ súrà àti ẹ̀kúnrẹ́rẹ́ rẹ̀"
-    }
+    },
+    "ambientSounds": "Àwọn ohùn àyíká",
+    "loveAdd": "Fi kún àwọn ayanfẹ́",
+    "loveRemove": "Yọ kúrò nínú àwọn ayanfẹ́",
+    "mushafLayoutOptions": "Àwọn aṣayan àtòjọ",
+    "nextTrack": "Orin tó kàn",
+    "openPlayer": "Ṣí ẹ̀rọ orin",
+    "playbackSpeed": "Ìyára ìṣeré",
+    "previousTrack": "Orin tẹ́lẹ̀",
+    "repeat": "Tun ṣe",
+    "seekBack": "Padà sẹ́yìn ìṣẹ́jú àádọ́ta {{seconds}}",
+    "seekForward": "Lọ síwájú ìṣẹ́jú àádọ́ta {{seconds}}",
+    "sleepTimer": "Aago oorun"
   },
   "playlist": {
     "subtitle_one": "Àtòjọ ìṣeré • súrà {{count}}",
@@ -441,7 +465,9 @@
     "myRecitations": "Àwọn kíkà mi",
     "newToQuranStartHere": "Ṣé o ṣẹ̀ṣẹ̀ mọ Al-Qur'an? Bẹ̀rẹ̀ níbí",
     "seeMore": "Wo sí i",
-    "yourFavorites": "Àwọn àyànfẹ́ rẹ"
+    "yourFavorites": "Àwọn àyànfẹ́ rẹ",
+    "randomEmpty": "Kò rí àwọn ìkàsílẹ̀ àrídàjí. Jọ̀wọ́ gbìyànjú síi.",
+    "randomFailed": "Kò lè ṣeré ìkàsílẹ̀ àrídàjí. Jọ̀wọ́ gbìyànjú síi."
   },
   "screens": {
     "translationsContent": {
@@ -630,7 +656,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Aago oorun",
-      "turnOffTimer": "Pa aago"
+      "turnOffTimer": "Pa aago",
+      "minutesRemaining_one": "Ìṣẹ́jú {{count}} ṣẹ́",
+      "minutesRemaining_other": "Ìṣẹ́jú {{count}} ṣẹ́",
+      "secondsRemaining_one": "Ìṣẹ́jú àádọ́ta {{count}} ṣẹ́",
+      "secondsRemaining_other": "Ìṣẹ́jú àádọ́ta {{count}} ṣẹ́"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Yọ kúrò nínú àtòjọ ìṣeré"
@@ -1000,6 +1030,60 @@
       "132": "Àwọn irúfé ìdáradà àti ìwà tó dára fún ìgbé ayé àpapọ̀",
       "quranic-duas": "Àdúrà Kúrán (Rabbana)",
       "names-of-allah": "Orúkọ Ọlọ́run mẹ́sàn-án"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Ìdáhùn ayah",
+    "chooseSurah": "Yan Surah kan",
+    "continueListening": "Tẹsiwaju gbọgbọ",
+    "duration1h": "Wákàtí 1",
+    "duration30m": "Ìṣẹ́jú 30",
+    "duration3h": "Wákàtí 3",
+    "duration5h": "Wákàtí 5",
+    "duration8h": "Wákàtí 8",
+    "exploreCollectionsSubtitle": "Tajwid, kínlẹ̀ lọ́kọ, riwayat àti ọ̀pọ̀ jù lọ",
+    "exploreCollectionsTitle": "Ṣàwárí àwọn àkójọpọ̀",
+    "khatma": "Khatma",
+    "khatmaActiveSubtitle": "Àwọn surah {{done}} lára 114 ti parí",
+    "khatmaCompletedSubtitle": "Gbogbo àwọn surah 114 ti parí",
+    "khatmaProgressTitle": "Ìlọsíwájú Khatma",
+    "khatmaStartSubtitle": "Bẹ̀rẹ̀ Khatma kí o sì tọpa ìlọsíwájú rẹ",
+    "listeningTools": "Àwọn irinṣẹ́ gbọgbọ",
+    "repetition": "Àtúnṣe",
+    "repetitionSubtitle": "Yan Surah kan àti ìdáhùn ayah, lẹ́yìn náà tun un ṣe pẹ̀lú àkókò tí a ṣe àmúṣiṣẹ́pọ̀.",
+    "repetitionTitle": "Tun ìdáhùn ayah kankan ṣe",
+    "selectDuration": "Yan ìgbà",
+    "selectReciter": "Yan olùkà",
+    "startNewKhatma": "Bẹ̀rẹ̀ Khatma tuntun",
+    "startRepetition": "Bẹ̀rẹ̀ àtúnṣe",
+    "timedListening": "Gbọgbọ Pẹ̀lú Àkókò",
+    "timedRowActive": "A ṣe àkókò fún ìṣẹ́jú {{minutes}}",
+    "timedRowSubtitle": "Dúró lẹ́yìn àkókò kan",
+    "timerActiveNote": "Ìṣeré ń dúró nígbà tí àkókò bá parí. Tẹ ìgbà tí o yan lẹ́ẹ̀kejì láti pa á rẹ́.",
+    "unlimited": "Láìlópin"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

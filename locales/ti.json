@@ -32,7 +32,11 @@
     "reciteTimes": "{{n}}× ኣንብብ",
     "playAllStop": "ኣቋርጽ",
     "playAllPrevious": "ዝሓለፈ",
-    "playAllNext": "ዝቕጽል"
+    "playAllNext": "ዝቕጽል",
+    "layoutSheetTitle": "ኣቀማምጣ ኣዝካር",
+    "arabicText": "ዓረብኛ ጽሓፍ",
+    "showTranslation": "ትርጕም ኣርኢ",
+    "showTransliteration": "ድምጺ ጽሓፍ ኣርኢ"
   },
   "app": {
     "errorInitializingPlayer": "ተጻዋታይ ምጅማር ኣይተኻእለን፦ {{message}}",
@@ -233,7 +237,15 @@
     "writeYourNoteHere": "መዘክርካ ኣብዚ ጽሓፍ...",
     "yourPlaylists": "ዝርዝራት መጻወቲኹም",
     "rewayatAvailable": "{{number}} ሪዋያት ይርከቡ",
-    "rewayatByReciter": "{{rewayat}} ብ{{reciter}}"
+    "rewayatByReciter": "{{rewayat}} ብ{{reciter}}",
+    "back": "ተመለስ",
+    "options": "ኣማራጽታት",
+    "shuffle": "ምድላዋት",
+    "fontSize": "ዓቐን ፊደል",
+    "fileImported": "ፋይል ኣምጺኡ",
+    "nowReading": "ሕጂ ይንብብ ኣሎ",
+    "openingIn": "ኣብ ይኸፍት ኣሎ",
+    "showingInHafs": "ኣብ ሓፍስ የርኢ ኣሎ"
   },
   "components": {
     "actionButtons": {
@@ -384,7 +396,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "ጽሑፍን ሓበሬታን ሱራ ንምርኣይ እዚ ቅራኣት ምልክት ግበሩ"
-    }
+    },
+    "ambientSounds": "ድምጽታት ከባቢ",
+    "loveAdd": "ናብ ተወዳዳርታት ወስኽ",
+    "loveRemove": "ካብ ተወዳዳርታት ኣውጽእ",
+    "mushafLayoutOptions": "ኣማራጽታት ኣቀማምጣ",
+    "nextTrack": "ዝቕጽል",
+    "openPlayer": "መጽወቲ ክፈት",
+    "playbackSpeed": "ፍጥነት ምጽዋታት",
+    "previousTrack": "ዝሓለፈ",
+    "repeat": "ደግም",
+    "seekBack": "{{seconds}} ካልኢት ንድሕሪት",
+    "seekForward": "{{seconds}} ካልኢት ንቕድሚት",
+    "sleepTimer": "ቆጻሪ እንቅልፍ"
   },
   "playlist": {
     "subtitle_many": "ዝርዝር መጻወቲ • {{count}} ሱራታት",
@@ -447,7 +471,9 @@
     "myRecitations": "ናተይ ቅራኣት",
     "newToQuranStartHere": "ንቁርኣን ሓድሽ ዲኹም? ካብዚ ጀምሩ",
     "seeMore": "ዝያዳ ርኣዩ",
-    "yourFavorites": "ዝተፈተዉኩም"
+    "yourFavorites": "ዝተፈተዉኩም",
+    "randomEmpty": "ዘይተመደበ ትላዋት ኣርእዩ ኣይተኻእለን። በጃኻ ደግመ ፈትን።",
+    "randomFailed": "ዘይተመደበ ትላዋት ምጽዋት ኣይተኻእለን። በጃኻ ደግመ ፈትን።"
   },
   "screens": {
     "translationsContent": {
@@ -636,7 +662,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "ቆጻሪ እንቅልፍ",
-      "turnOffTimer": "ቆጻሪ ሰርዝ"
+      "turnOffTimer": "ቆጻሪ ሰርዝ",
+      "minutesRemaining_one": "{{count}} ደቒቕ ተሪፉ",
+      "minutesRemaining_other": "{{count}} ደቒቕ ተሪፉ",
+      "secondsRemaining_one": "{{count}} ካልኢት ተሪፉ",
+      "secondsRemaining_other": "{{count}} ካልኢት ተሪፉ"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "ካብ ዝርዝር መጻወቲ ኣወግድ"
@@ -1034,5 +1064,35 @@
       "quranic-duas": "ቁርኣኒ ዱዓታት (ረበና)",
       "names-of-allah": "99 ናይ አላህ ስሞች"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "ደረጃ ኣያ",
+    "chooseSurah": "ሱራ ምረጽ",
+    "continueListening": "ምስማዕ ቀጽል",
+    "duration1h": "1 ሰዓት",
+    "duration30m": "30 ደቒቕ",
+    "duration3h": "3 ሰዓታት",
+    "duration5h": "5 ሰዓታት",
+    "duration8h": "8 ሰዓታት",
+    "exploreCollectionsSubtitle": "ተጅዊድ፡ ዘክርዎ፡ ሪዋያትን ካልኦትን",
+    "exploreCollectionsTitle": "እዋናት ድርየት",
+    "khatma": "ኸትመ",
+    "khatmaActiveSubtitle": "ካብ 114 ሱራታት {{done}} ተዛዚሙ",
+    "khatmaCompletedSubtitle": "ኩሎም 114 ሱራታት ተዛዚሞም",
+    "khatmaProgressTitle": "ምዕባለ ኸትመ",
+    "khatmaStartSubtitle": "ኸትመ ጀምርን ምዕባለኻ ተኸታተልን",
+    "listeningTools": "መሳርሒታት ምስማዕ",
+    "repetition": "ደጋግም",
+    "repetitionSubtitle": "ሱራን ደረጃ ኣያን ምረጽ፡ ድሕሪኡ ብዝሰማምዕ ግዜ ደግም።",
+    "repetitionTitle": "ዝኾነ ይኹን ደረጃ ኣያ ደግም",
+    "selectDuration": "ግዜ ምረጽ",
+    "selectReciter": "ቐሪ ምረጽ",
+    "startNewKhatma": "ሓድሽ ኸትመ ጀምር",
+    "startRepetition": "ደጋግም ጀምር",
+    "timedListening": "ብግዜ ዝተገደበ ምስማዕ",
+    "timedRowActive": "ሰዓት ን{{minutes}} ደቒቕ ተዳሊዩ",
+    "timedRowSubtitle": "ድሕሪ ዝተወሰነ ግዜ ደው ኢልካ",
+    "timerActiveNote": "እቲ ሰዓት ምስ ተዛዘመ ምጽዋታት ይደው። ንምጥፋእ እቲ ዝተመረጸ ግዜ ዳግመ ጠውቕ።",
+    "unlimited": "ደረት የብሉን"
   }
 }

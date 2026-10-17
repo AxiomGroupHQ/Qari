@@ -31,7 +31,11 @@
     "reciteTimes": "Recito {{n}}×",
     "playAllStop": "Ndalo",
     "playAllPrevious": "E mëparshmja",
-    "playAllNext": "Tjetra"
+    "playAllNext": "Tjetra",
+    "layoutSheetTitle": "Paraqitja e Adhkareve",
+    "arabicText": "Teksti Arab",
+    "showTranslation": "Shfaq Përkthimin",
+    "showTransliteration": "Shfaq Transliterimin"
   },
   "app": {
     "errorInitializingPlayer": "Gabim gjatë nisjes së luajtësit: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Shkruaj shënimin tënd këtu...",
     "yourPlaylists": "Listat e tua",
     "rewayatAvailable": "{{number}} rivajete të disponueshme",
-    "rewayatByReciter": "{{rewayat}} nga {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} nga {{reciter}}",
+    "back": "Kthehu",
+    "options": "Opsionet",
+    "shuffle": "Përzieje",
+    "fontSize": "Madhësia e Shkrimit",
+    "fileImported": "Skedari u importua",
+    "nowReading": "Duke lexuar tani",
+    "openingIn": "Duke u hapur në",
+    "showingInHafs": "Duke shfaqur në Hafs"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Etiketo këtë recitim për të parë tekstin dhe detajet e sures"
-    }
+    },
+    "ambientSounds": "Zërat ambientalë",
+    "loveAdd": "Shto te të preferuarat",
+    "loveRemove": "Hiq nga të preferuarat",
+    "mushafLayoutOptions": "Opsionet e paraqitjes",
+    "nextTrack": "Kënga tjetër",
+    "openPlayer": "Hap luajtësin",
+    "playbackSpeed": "Shpejtësia e luajtjes",
+    "previousTrack": "Kënga e mëparshme",
+    "repeat": "Përsërit",
+    "seekBack": "{{seconds}} sekonda prapa",
+    "seekForward": "{{seconds}} sekonda përpara",
+    "sleepTimer": "Kohëmatësi i gjumit"
   },
   "playlist": {
     "subtitle_one": "Listë • {{count}} sure",
@@ -442,7 +466,9 @@
     "myRecitations": "Recitimet e mia",
     "newToQuranStartHere": "I ri në Kuran? Fillo këtu",
     "seeMore": "Shiko më shumë",
-    "yourFavorites": "Të preferuarit e tu"
+    "yourFavorites": "Të preferuarit e tu",
+    "randomEmpty": "Nuk u gjetën lexime të rastësishme. Provo sërish.",
+    "randomFailed": "Nuk u luajt leximi i rastësishëm. Provo sërish."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Kohëmatësi i gjumit",
-      "turnOffTimer": "Çaktivizo kohëmatësin"
+      "turnOffTimer": "Çaktivizo kohëmatësin",
+      "minutesRemaining_one": "mbetet {{count}} minutë",
+      "minutesRemaining_other": "mbeten {{count}} minuta",
+      "secondsRemaining_one": "mbetet {{count}} sekondë",
+      "secondsRemaining_other": "mbeten {{count}} sekonda"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Hiq nga lista"
@@ -1002,6 +1032,60 @@
       "132": "Llojet e mirësisë dhe sjellja e mirë për jetën në bashkësi",
       "quranic-duas": "Lutjet kuranore (Rabbena)",
       "names-of-allah": "99 emrat e Allahut"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Intervali i ajetit",
+    "chooseSurah": "Zgjidh një Sure",
+    "continueListening": "Vazhdo dëgjimin",
+    "duration1h": "1 orë",
+    "duration30m": "30 minuta",
+    "duration3h": "3 orë",
+    "duration5h": "5 orë",
+    "duration8h": "8 orë",
+    "exploreCollectionsSubtitle": "Texhvid, përmendësh, rivajat dhe më shumë",
+    "exploreCollectionsTitle": "Eksploro koleksionet",
+    "khatma": "Hatme",
+    "khatmaActiveSubtitle": "{{done}} nga 114 suret e përfunduara",
+    "khatmaCompletedSubtitle": "Të 114 suret e përfunduara",
+    "khatmaProgressTitle": "Përparimi i Hatmes",
+    "khatmaStartSubtitle": "Fillo Hatmen dhe ndiq përparimin tënd",
+    "listeningTools": "Mjetet e dëgjimit",
+    "repetition": "Përsëritje",
+    "repetitionSubtitle": "Zgjidh një Sure dhe intervalin e ajetit, pastaj përsërite me kohë të sinkronizuar.",
+    "repetitionTitle": "Përsërit çdo interval ajeti",
+    "selectDuration": "Zgjidh kohëzgjatjen",
+    "selectReciter": "Zgjidh lexuesin",
+    "startNewKhatma": "Fillo Hatme të re",
+    "startRepetition": "Fillo përsëritjen",
+    "timedListening": "Dëgjim me Kohë",
+    "timedRowActive": "Kohëmatësi u caktua për {{minutes}} min",
+    "timedRowSubtitle": "Ndalo pas një kohe të caktuar",
+    "timerActiveNote": "Luajtja ndalet kur mbaron kohëmatësi. Prek sërish kohëzgjatjen e zgjedhur për ta fikur.",
+    "unlimited": "Pa kufi"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

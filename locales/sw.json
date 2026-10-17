@@ -31,7 +31,11 @@
     "reciteTimes": "Soma {{n}}×",
     "playAllStop": "Simamisha",
     "playAllPrevious": "Iliyotangulia",
-    "playAllNext": "Inayofuata"
+    "playAllNext": "Inayofuata",
+    "layoutSheetTitle": "Mpangilio wa Adhkar",
+    "arabicText": "Maandishi ya Kiarabu",
+    "showTranslation": "Onyesha Tafsiri",
+    "showTransliteration": "Onyesha Mwandiko wa Sauti"
   },
   "app": {
     "errorInitializingPlayer": "Hitilafu ya kuanzisha kicheza: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Andika maelezo yako hapa...",
     "yourPlaylists": "Orodha Zako za Kucheza",
     "rewayatAvailable": "Riwaya {{number}} zinapatikana",
-    "rewayatByReciter": "{{rewayat}} na {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} na {{reciter}}",
+    "back": "Rudi",
+    "options": "Chaguo",
+    "shuffle": "Changanya",
+    "fontSize": "Ukubwa wa Fonti",
+    "fileImported": "Faili imeingizwa",
+    "nowReading": "Inasoma sasa",
+    "openingIn": "Inafungua katika",
+    "showingInHafs": "Inaonyesha katika Hafs"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Weka lebo qiraa hii ili uone maandishi ya sura na maelezo"
-    }
+    },
+    "ambientSounds": "Sauti za mazingira",
+    "loveAdd": "Ongeza kwenye vipendwa",
+    "loveRemove": "Ondoa kwenye vipendwa",
+    "mushafLayoutOptions": "Chaguo za mpangilio",
+    "nextTrack": "Wimbo unaofuata",
+    "openPlayer": "Fungua kichezeshi",
+    "playbackSpeed": "Kasi ya uchezaji",
+    "previousTrack": "Wimbo uliopita",
+    "repeat": "Rudia",
+    "seekBack": "Rudi nyuma sekunde {{seconds}}",
+    "seekForward": "Nenda mbele sekunde {{seconds}}",
+    "sleepTimer": "Kipima Muda cha Kulala"
   },
   "playlist": {
     "subtitle_one": "Orodha ya kucheza • sura {{count}}",
@@ -442,7 +466,9 @@
     "myRecitations": "Qiraa Zangu",
     "newToQuranStartHere": "Mpya kwenye Qur'ani? Anzia Hapa",
     "seeMore": "Ona Zaidi",
-    "yourFavorites": "Vipendwa Vyako"
+    "yourFavorites": "Vipendwa Vyako",
+    "randomEmpty": "Imeshindwa kupata tilaawa nasibu. Tafadhali jaribu tena.",
+    "randomFailed": "Imeshindwa kucheza tilaawa nasibu. Tafadhali jaribu tena."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Kipima Muda cha Kulala",
-      "turnOffTimer": "Zima Kipima Muda"
+      "turnOffTimer": "Zima Kipima Muda",
+      "minutesRemaining_one": "Dakika {{count}} zimesalia",
+      "minutesRemaining_other": "Dakika {{count}} zimesalia",
+      "secondsRemaining_one": "Sekunde {{count}} zimesalia",
+      "secondsRemaining_other": "Sekunde {{count}} zimesalia"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Ondoa kwenye Orodha ya Kucheza"
@@ -1002,6 +1032,60 @@
       "132": "Aina za wema na adabu njema za maisha ya jamii",
       "quranic-duas": "Dua za Qur'ani (Rabbana)",
       "names-of-allah": "Majina 99 ya Allah"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Kipindi cha aya",
+    "chooseSurah": "Chagua Surah",
+    "continueListening": "Endelea kusikiliza",
+    "duration1h": "Saa 1",
+    "duration30m": "Dakika 30",
+    "duration3h": "Saa 3",
+    "duration5h": "Saa 5",
+    "duration8h": "Saa 8",
+    "exploreCollectionsSubtitle": "Tajwidi, kukariri, riwayat na zaidi",
+    "exploreCollectionsTitle": "Chunguza makusanyo",
+    "khatma": "Khatma",
+    "khatmaActiveSubtitle": "Surah {{done}} kati ya 114 zimekamilika",
+    "khatmaCompletedSubtitle": "Surah zote 114 zimekamilika",
+    "khatmaProgressTitle": "Maendeleo ya Khatma",
+    "khatmaStartSubtitle": "Anza Khatma na ufuatilie maendeleo yako",
+    "listeningTools": "Zana za kusikiliza",
+    "repetition": "Marudio",
+    "repetitionSubtitle": "Chagua Surah na kipindi cha aya, kisha irudie kwa muda uliolingana.",
+    "repetitionTitle": "Rudia kipindi chochote cha aya",
+    "selectDuration": "Chagua muda",
+    "selectReciter": "Chagua msomaji",
+    "startNewKhatma": "Anza Khatma mpya",
+    "startRepetition": "Anza marudio",
+    "timedListening": "Kusikiliza kwa Muda",
+    "timedRowActive": "Kipima muda kimewekwa kwa dakika {{minutes}}",
+    "timedRowSubtitle": "Acha baada ya muda uliowekwa",
+    "timerActiveNote": "Uchezaji unasimama wakati kipima muda kinaisha. Gusa muda uliochaguliwa tena kuuzima.",
+    "unlimited": "Bila kikomo"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

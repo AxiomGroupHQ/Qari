@@ -30,7 +30,11 @@
     "reciteTimes": "{{n}}× ရွတ်ပါ",
     "playAllStop": "ရပ်ရန်",
     "playAllPrevious": "ယခင်",
-    "playAllNext": "နောက်"
+    "playAllNext": "နောက်",
+    "layoutSheetTitle": "အဇ်ကာ ပုံစံ",
+    "arabicText": "အာရဗီ စာသား",
+    "showTranslation": "ဘာသာပြန် ပြပါ",
+    "showTransliteration": "အသံထွက် ပြပါ"
   },
   "app": {
     "errorInitializingPlayer": "အသံဖွင့်စက် စတင်ရာတွင် အမှားဖြစ်ပွားသည်: {{message}}",
@@ -229,7 +233,15 @@
     "writeYourNoteHere": "သင့်မှတ်စုကို ဤနေရာတွင် ရေးပါ...",
     "yourPlaylists": "သင့်ဖွင့်ရန်စာရင်းများ",
     "rewayatAvailable": "ရဝါယတ် {{number}} ခု ရနိုင်သည်",
-    "rewayatByReciter": "{{reciter}} ၏ {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} ၏ {{rewayat}}",
+    "back": "နောက်သို့",
+    "options": "ရွေးချယ်စရာများ",
+    "shuffle": "ကျပန်းဖွင့်",
+    "fontSize": "စာလုံးအရွယ်အစား",
+    "fileImported": "ဖိုင်သွင်းပြီး",
+    "nowReading": "ယခုဖတ်နေသည်",
+    "openingIn": "၌ ဖွင့်နေသည်",
+    "showingInHafs": "ဟဖ်စ်ဖြင့် ပြနေသည်"
   },
   "components": {
     "actionButtons": {
@@ -379,7 +391,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "စူရဟ်စာသားနှင့် အသေးစိတ်ကို ကြည့်ရန် ဤရွတ်ဖတ်မှုကို အမှတ်အသားတပ်ပါ"
-    }
+    },
+    "ambientSounds": "ပတ်ပတ်လည် အသံများ",
+    "loveAdd": "အကြိုက်ဆုံးထဲ ထည့်ပါ",
+    "loveRemove": "အကြိုက်ဆုံးမှ ဖယ်ပါ",
+    "mushafLayoutOptions": "ပုံစံ ရွေးချယ်စရာများ",
+    "nextTrack": "နောက်တစ်ပုဒ်",
+    "openPlayer": "ဖွင့်ပါ",
+    "playbackSpeed": "ဖွင့်နှုန်း",
+    "previousTrack": "ယခင် တစ်ပုဒ်",
+    "repeat": "ထပ်ခါ",
+    "seekBack": "စက္ကန့် {{seconds}} နောက်သို့",
+    "seekForward": "စက္ကန့် {{seconds}} ရှေ့သို့",
+    "sleepTimer": "အိပ်ချိန် ပိတ်ချိန်သတ်မှတ်မှု"
   },
   "playlist": {
     "subtitle_one": "ဖွင့်ရန်စာရင်း • စူရဟ် {{count}} ပုဒ်",
@@ -441,7 +465,9 @@
     "myRecitations": "ကျွန်ုပ်၏ ရွတ်ဖတ်မှုများ",
     "newToQuranStartHere": "ကုရ်အာန်ကို ယခုမှ စလေ့လာပါသလား။ ဤနေရာမှ စပါ",
     "seeMore": "ပိုကြည့်မည်",
-    "yourFavorites": "သင့်အကြိုက်ဆုံးများ"
+    "yourFavorites": "သင့်အကြိုက်ဆုံးများ",
+    "randomEmpty": "ကျပန်းဖတ်ချက်များ ရှာမတွေ့ပါ။ ထပ်စမ်းကြည့်ပါ။",
+    "randomFailed": "ကျပန်းဖတ်ချက် ဖွင့်၍မရပါ။ ထပ်စမ်းကြည့်ပါ။"
   },
   "screens": {
     "translationsContent": {
@@ -630,7 +656,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "အိပ်ချိန် ပိတ်ချိန်သတ်မှတ်မှု",
-      "turnOffTimer": "အချိန်သတ်မှတ်မှု ပိတ်မည်"
+      "turnOffTimer": "အချိန်သတ်မှတ်မှု ပိတ်မည်",
+      "minutesRemaining_one": "မိနစ် {{count}} ကျန်သည်",
+      "minutesRemaining_other": "မိနစ် {{count}} ကျန်သည်",
+      "secondsRemaining_one": "စက္ကန့် {{count}} ကျန်သည်",
+      "secondsRemaining_other": "စက္ကန့် {{count}} ကျန်သည်"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "ဖွင့်ရန်စာရင်းမှ ဖယ်မည်"
@@ -1025,5 +1055,35 @@
       "quranic-duas": "ကုရ်အာန် ဒုအာများ (ရဗ်ဗနာ)",
       "names-of-allah": "အလ္လာဟ်၏ နာမ်တော် ၉၉"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "အာယတ် အပိုင်းအခြား",
+    "chooseSurah": "စူရာဟ် ရွေးပါ",
+    "continueListening": "နားထောင်မှုကို ဆက်လက်လုပ်ဆောင်ပါ",
+    "duration1h": "1 နာရီ",
+    "duration30m": "30 မိနစ်",
+    "duration3h": "3 နာရီ",
+    "duration5h": "5 နာရီ",
+    "duration8h": "8 နာရီ",
+    "exploreCollectionsSubtitle": "တက်ဂျ်ဝီဒ်၊ မှတ်သားမှု၊ ရိဝါယတ် နှင့် အခြားအရာများ",
+    "exploreCollectionsTitle": "စုစည်းမှုများကို ရှာဖွေပါ",
+    "khatma": "ခတ်မာ",
+    "khatmaActiveSubtitle": "စူရာဟ် 114 မှ {{done}} ပြီးဆုံး",
+    "khatmaCompletedSubtitle": "စူရာဟ် 114 အားလုံး ပြီးဆုံး",
+    "khatmaProgressTitle": "ခတ်မာ တိုးတက်မှု",
+    "khatmaStartSubtitle": "ခတ်မာစတင်ပြီး သင်၏တိုးတက်မှုကို ခြေရာခံပါ",
+    "listeningTools": "နားထောင်ရန် ကိရိယာများ",
+    "repetition": "ထပ်ခါထပ်ခါ",
+    "repetitionSubtitle": "စူရာဟ်နှင့် အာယတ် အပိုင်းအခြားကို ရွေးပြီး synchronized အချိန်နှင့် ထပ်ခါလုပ်ပါ။",
+    "repetitionTitle": "မည်သည့် အာယတ် အပိုင်းအခြားကိုမဆို ထပ်ခါလုပ်ပါ",
+    "selectDuration": "ကြာချိန်ရွေးပါ",
+    "selectReciter": "ရွေးချယ်ပါ ဆရာ",
+    "startNewKhatma": "ခတ်မာအသစ်စတင်ပါ",
+    "startRepetition": "ထပ်ခါလုပ်ခြင်းစတင်ပါ",
+    "timedListening": "အချိန်သတ်မှတ် နားထောင်ခြင်း",
+    "timedRowActive": "မိနစ် {{minutes}} အတွက် အချိန်သတ်မှတ်ထားသည်",
+    "timedRowSubtitle": "သတ်မှတ်အချိန်ပြီးနောက် ရပ်တန့်ပါ",
+    "timerActiveNote": "အချိန်သတ်မှတ်မှု ပြီးဆုံးသောအခါ ဖွင့်ခြင်း ရပ်တန့်ပါမည်။ ပိတ်ရန် ရွေးထားသောကြာချိန်ကို ထပ်နှိပ်ပါ။",
+    "unlimited": "အကန့်အသတ်မရှိ"
   }
 }

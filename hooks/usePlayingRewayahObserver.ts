@@ -2,6 +2,7 @@ import {useEffect, useRef} from 'react';
 import {useCurrentTrackResolvedRewayah} from '@/hooks/useCurrentTrackRewayah';
 import {getShortLabel} from '@/services/rewayah/RewayahIdentity';
 import {showToast} from '@/utils/toastUtils';
+import {t} from '@/i18n';
 
 // Observes the currently-playing track's resolved rewayah and fires a
 // "Now reading" toast whenever it transitions between tracks. When the
@@ -37,9 +38,9 @@ export function usePlayingRewayahObserver(): void {
     if (lastAnnouncedRef.current === key) return;
     lastAnnouncedRef.current = key;
     if (resolved.isFallback) {
-      showToast('Showing in Hafs');
+      showToast(t('common.showingInHafs'));
       return;
     }
-    showToast('Now reading', getShortLabel(resolved.id));
+    showToast(t('common.nowReading'), getShortLabel(resolved.id));
   }, [resolved]);
 }

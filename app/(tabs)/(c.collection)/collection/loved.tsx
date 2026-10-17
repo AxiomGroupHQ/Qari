@@ -577,7 +577,11 @@ const LovedScreen = () => {
 
   const renderHeaderRight = useCallback(
     () => (
-      <Pressable onPress={handleOptionsMenu} hitSlop={8}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={t('common.options')}
+        onPress={handleOptionsMenu}
+        hitSlop={8}>
         <Feather
           name="more-horizontal"
           size={moderateScale(20)}
@@ -689,6 +693,8 @@ const LovedScreen = () => {
         {!USE_GLASS && (
           <View style={[styles.emptyHeader, {paddingTop: insets.top}]}>
             <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t('common.back')}
               style={styles.emptyHeaderBack}
               onPress={() => router.back()}
               hitSlop={8}>
@@ -717,6 +723,8 @@ const LovedScreen = () => {
         {!USE_GLASS && (
           <View style={[styles.emptyHeader, {paddingTop: insets.top}]}>
             <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t('common.back')}
               style={styles.emptyHeaderBack}
               onPress={() => router.back()}
               hitSlop={8}>
@@ -767,7 +775,11 @@ const LovedScreen = () => {
               }),
             },
           ]}>
-          <Pressable onPress={() => router.back()} hitSlop={8}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={t('common.back')}
+            onPress={() => router.back()}
+            hitSlop={8}>
             <Feather
               name={dirIcon('arrow-left')}
               size={moderateScale(24)}

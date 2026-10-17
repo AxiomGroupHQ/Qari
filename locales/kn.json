@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× ಪಠಿಸಿ",
     "playAllStop": "ನಿಲ್ಲಿಸಿ",
     "playAllPrevious": "ಹಿಂದಿನದು",
-    "playAllNext": "ಮುಂದಿನದು"
+    "playAllNext": "ಮುಂದಿನದು",
+    "layoutSheetTitle": "ಅಧ್ಕಾರ್ ಲೇಔಟ್",
+    "arabicText": "ಅರಬ್ಬೀ ಪಠ್ಯ",
+    "showTranslation": "ಅನುವಾದ ತೋರಿಸಿ",
+    "showTransliteration": "ಲಿಪ್ಯಂತರ ತೋರಿಸಿ"
   },
   "app": {
     "errorInitializingPlayer": "ಪ್ಲೇಯರ್ ಪ್ರಾರಂಭಿಸುವಲ್ಲಿ ದೋಷ: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "ನಿಮ್ಮ ಟಿಪ್ಪಣಿಯನ್ನು ಇಲ್ಲಿ ಬರೆಯಿರಿ...",
     "yourPlaylists": "ನಿಮ್ಮ ಪ್ಲೇಲಿಸ್ಟ್‌ಗಳು",
     "rewayatAvailable": "{{number}} ರಿವಾಯತ್‌ಗಳು ಲಭ್ಯವಿವೆ",
-    "rewayatByReciter": "{{reciter}} ಅವರ {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} ಅವರ {{rewayat}}",
+    "back": "ಹಿಂದೆ",
+    "options": "ಆಯ್ಕೆಗಳು",
+    "shuffle": "ಶಫಲ್",
+    "fontSize": "ಫಾಂಟ್ ಗಾತ್ರ",
+    "fileImported": "ಫೈಲ್ ಆಮದು ಮಾಡಲಾಗಿದೆ",
+    "nowReading": "ಈಗ ಓದಲಾಗುತ್ತಿದೆ",
+    "openingIn": "ಇದರಲ್ಲಿ ತೆರೆಯಲಾಗುತ್ತಿದೆ",
+    "showingInHafs": "ಹಫ್ಸ್‌ನಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತಿದೆ"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "ಸೂರದ ಪಠ್ಯ ಮತ್ತು ವಿವರಗಳನ್ನು ನೋಡಲು ಈ ಪಠಣವನ್ನು ಟ್ಯಾಗ್ ಮಾಡಿ"
-    }
+    },
+    "ambientSounds": "ಪರಿಸರ ಧ್ವನಿಗಳು",
+    "loveAdd": "ಮೆಚ್ಚಿನವುಗಳಿಗೆ ಸೇರಿಸಿ",
+    "loveRemove": "ಮೆಚ್ಚಿನವುಗಳಿಂದ ತೆಗೆದುಹಾಕಿ",
+    "mushafLayoutOptions": "ಲೇಔಟ್ ಆಯ್ಕೆಗಳು",
+    "nextTrack": "ಮುಂದಿನ ಟ್ರ್ಯಾಕ್",
+    "openPlayer": "ಪ್ಲೇಯರ್ ತೆರೆಯಿರಿ",
+    "playbackSpeed": "ಪ್ಲೇಬ್ಯಾಕ್ ವೇಗ",
+    "previousTrack": "ಹಿಂದಿನ ಟ್ರ್ಯಾಕ್",
+    "repeat": "ಪುನರಾವರ್ತಿಸಿ",
+    "seekBack": "{{seconds}} ಸೆಕೆಂಡುಗಳು ಹಿಂದೆ",
+    "seekForward": "{{seconds}} ಸೆಕೆಂಡುಗಳು ಮುಂದೆ",
+    "sleepTimer": "ಸ್ಲೀಪ್ ಟೈಮರ್"
   },
   "playlist": {
     "subtitle_one": "ಪ್ಲೇಲಿಸ್ಟ್ • {{count}} ಸೂರ",
@@ -442,7 +466,9 @@
     "myRecitations": "ನನ್ನ ಪಠಣಗಳು",
     "newToQuranStartHere": "ಕುರ್‌ಆನ್‌ಗೆ ಹೊಸಬರೇ? ಇಲ್ಲಿಂದ ಪ್ರಾರಂಭಿಸಿ",
     "seeMore": "ಇನ್ನಷ್ಟು ನೋಡಿ",
-    "yourFavorites": "ನಿಮ್ಮ ನೆಚ್ಚಿನವು"
+    "yourFavorites": "ನಿಮ್ಮ ನೆಚ್ಚಿನವು",
+    "randomEmpty": "ಯಾದೃಚ್ಛಿಕ ತಿಲಾವತಗಳು ಸಿಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+    "randomFailed": "ಯಾದೃಚ್ಛಿಕ ತಿಲಾವತವನ್ನು ಪ್ಲೇ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "ಸ್ಲೀಪ್ ಟೈಮರ್",
-      "turnOffTimer": "ಟೈಮರ್ ಆಫ್ ಮಾಡಿ"
+      "turnOffTimer": "ಟೈಮರ್ ಆಫ್ ಮಾಡಿ",
+      "minutesRemaining_one": "{{count}} ನಿಮಿಷ ಉಳಿದಿದೆ",
+      "minutesRemaining_other": "{{count}} ನಿಮಿಷಗಳು ಉಳಿದಿವೆ",
+      "secondsRemaining_one": "{{count}} ಸೆಕೆಂಡು ಉಳಿದಿದೆ",
+      "secondsRemaining_other": "{{count}} ಸೆಕೆಂಡುಗಳು ಉಳಿದಿವೆ"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "ಪ್ಲೇಲಿಸ್ಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕಿ"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "ಖುರಾನಿಕ ಪ್ರಾರ್ಥನೆಗಳು (ರಬ್ಬನ)",
       "names-of-allah": "ಅಲ್ಲಾಹನ 99 ಹೆಸರುಗಳು"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "ಆಯತ್ ವ್ಯಾಪ್ತಿ",
+    "chooseSurah": "ಒಂದು ಸೂರಹವನ್ನು ಆರಿಸಿ",
+    "continueListening": "ಕೇಳುವುದನ್ನು ಮುಂದುವರಿಸಿ",
+    "duration1h": "1 ಗಂಟೆ",
+    "duration30m": "30 ನಿಮಿಷಗಳು",
+    "duration3h": "3 ಗಂಟೆಗಳು",
+    "duration5h": "5 ಗಂಟೆಗಳು",
+    "duration8h": "8 ಗಂಟೆಗಳು",
+    "exploreCollectionsSubtitle": "ತಜ್ವೀದ್, ಮನಃಪಾಠ, ರಿವಾಯತ್ ಮತ್ತು ಇನ್ನಷ್ಟು",
+    "exploreCollectionsTitle": "ಸಂಗ್ರಹಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
+    "khatma": "ಖತ್ಮ್",
+    "khatmaActiveSubtitle": "114ರಲ್ಲಿ {{done}} ಸೂರಹಗಳು ಪೂರ್ಣ",
+    "khatmaCompletedSubtitle": "ಎಲ್ಲಾ 114 ಸೂರಹಗಳು ಪೂರ್ಣ",
+    "khatmaProgressTitle": "ಖತ್ಮ್ ಪ್ರಗತಿ",
+    "khatmaStartSubtitle": "ಖತ್ಮ್ ಪ್ರಾರಂಭಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಪ್ರಗತಿಯನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ",
+    "listeningTools": "ಕೇಳುವ ಪರಿಕರಗಳು",
+    "repetition": "ಪುನರಾವರ್ತನೆ",
+    "repetitionSubtitle": "ಒಂದು ಸೂರಹ ಮತ್ತು ಆಯತ್ ವ್ಯಾಪ್ತಿಯನ್ನು ಆರಿಸಿ, ನಂತರ ಸಮನ್ವಿತ ಸಮಯದೊಂದಿಗೆ ಅದನ್ನು ಪುನರಾವರ್ತಿಸಿ.",
+    "repetitionTitle": "ಯಾವುದೇ ಆಯತ್ ವ್ಯಾಪ್ತಿಯನ್ನು ಪುನರಾವರ್ತಿಸಿ",
+    "selectDuration": "ಅವಧಿಯನ್ನು ಆರಿಸಿ",
+    "selectReciter": "ಖಾರಿಯನ್ನು ಆರಿಸಿ",
+    "startNewKhatma": "ಹೊಸ ಖತ್ಮ್ ಪ್ರಾರಂಭಿಸಿ",
+    "startRepetition": "ಪುನರಾವರ್ತನೆ ಪ್ರಾರಂಭಿಸಿ",
+    "timedListening": "ಸಮಯ ನಿಗದಿತ ಕೇಳುವಿಕೆ",
+    "timedRowActive": "ಟೈಮರ್ {{minutes}} ನಿಮಿಷಗಳಿಗೆ ಹೊಂದಿಸಲಾಗಿದೆ",
+    "timedRowSubtitle": "ನಿಗದಿತ ಸಮಯದ ನಂತರ ನಿಲ್ಲಿಸಿ",
+    "timerActiveNote": "ಟೈಮರ್ ಮುಗಿದಾಗ ಪ್ಲೇಬ್ಯಾಕ್ ನಿಲ್ಲುತ್ತದೆ. ಅದನ್ನು ಆಫ್ ಮಾಡಲು ಆಯ್ದ ಅವಧಿಯನ್ನು ಮತ್ತೆ ಟ್ಯಾಪ್ ಮಾಡಿ.",
+    "unlimited": "ಅನಿಯಮಿತ"
   }
 }

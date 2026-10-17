@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× పఠించండి",
     "playAllStop": "ఆపు",
     "playAllPrevious": "మునుపటి",
-    "playAllNext": "తదుపరి"
+    "playAllNext": "తదుపరి",
+    "layoutSheetTitle": "అధ్కార్ లేఅవుట్",
+    "arabicText": "అరబిక్ టెక్స్ట్",
+    "showTranslation": "అనువాదం చూపు",
+    "showTransliteration": "లిప్యంతరీకరణ చూపు"
   },
   "app": {
     "errorInitializingPlayer": "ప్లేయర్‌ను ప్రారంభించడంలో లోపం: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "మీ నోట్‌ను ఇక్కడ రాయండి...",
     "yourPlaylists": "మీ ప్లేలిస్ట్‌లు",
     "rewayatAvailable": "{{number}} రివాయత్‌లు అందుబాటులో ఉన్నాయి",
-    "rewayatByReciter": "{{reciter}} వారి {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} వారి {{rewayat}}",
+    "back": "వెనుకకు",
+    "options": "ఎంపికలు",
+    "shuffle": "షఫుల్",
+    "fontSize": "ఫాంట్ పరిమాణం",
+    "fileImported": "ఫైల్ దిగుమతి అయింది",
+    "nowReading": "ఇప్పుడు చదువుతోంది",
+    "openingIn": "దీనిలో తెరుస్తోంది",
+    "showingInHafs": "హఫ్స్‌లో చూపిస్తోంది"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "సూరా వచనం, వివరాలు చూడటానికి ఈ పఠనానికి ట్యాగ్ చేయండి"
-    }
+    },
+    "ambientSounds": "పరిసర శబ్దాలు",
+    "loveAdd": "ఇష్టాలకు జోడించు",
+    "loveRemove": "ఇష్టాల నుండి తీసివేయి",
+    "mushafLayoutOptions": "లేఅవుట్ ఎంపికలు",
+    "nextTrack": "తదుపరి ట్రాక్",
+    "openPlayer": "ప్లేయర్ తెరవండి",
+    "playbackSpeed": "ప్లేబ్యాక్ వేగం",
+    "previousTrack": "మునుపటి ట్రాక్",
+    "repeat": "పునరావృతం",
+    "seekBack": "{{seconds}} సెకన్లు వెనుకకు",
+    "seekForward": "{{seconds}} సెకన్లు ముందుకు",
+    "sleepTimer": "స్లీప్ టైమర్"
   },
   "playlist": {
     "subtitle_one": "ప్లేలిస్ట్ • {{count}} సూరా",
@@ -442,7 +466,9 @@
     "myRecitations": "నా పఠనాలు",
     "newToQuranStartHere": "ఖురాన్‌కు కొత్తవారా? ఇక్కడ ప్రారంభించండి",
     "seeMore": "మరిన్ని చూడండి",
-    "yourFavorites": "మీ ఇష్టమైనవి"
+    "yourFavorites": "మీ ఇష్టమైనవి",
+    "randomEmpty": "యాదృచ్ఛిక తిలావత్లు కనుగొనబడలేదు. మళ్లీ ప్రయత్నించండి.",
+    "randomFailed": "యాదృచ్ఛిక తిలావత్ను ప్లే చేయడం విఫలమైంది. మళ్లీ ప్రయత్నించండి."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "స్లీప్ టైమర్",
-      "turnOffTimer": "టైమర్‌ను ఆపివేయి"
+      "turnOffTimer": "టైమర్‌ను ఆపివేయి",
+      "minutesRemaining_one": "{{count}} నిమిషం మిగిలింది",
+      "minutesRemaining_other": "{{count}} నిమిషాలు మిగిలాయి",
+      "secondsRemaining_one": "{{count}} సెకను మిగిలింది",
+      "secondsRemaining_other": "{{count}} సెకన్లు మిగిలాయి"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "ప్లేలిస్ట్ నుండి తొలగించు"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "ఖుర్ఆనీ ప్రార్థనలు (రబ్బనా)",
       "names-of-allah": "అల్లాహ్ 99 పేర్లు"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "ఆయత్ పరిధి",
+    "chooseSurah": "ఒక సూరాను ఎంచుకోండి",
+    "continueListening": "వినడం కొనసాగించండి",
+    "duration1h": "1 గంట",
+    "duration30m": "30 నిమిషాలు",
+    "duration3h": "3 గంటలు",
+    "duration5h": "5 గంటలు",
+    "duration8h": "8 గంటలు",
+    "exploreCollectionsSubtitle": "తజ్వీద్, పాఠ్యం, రివాయత్ మరియు మరెన్నో",
+    "exploreCollectionsTitle": "సేకరణలను అన్వేషించండి",
+    "khatma": "ఖత్మ్",
+    "khatmaActiveSubtitle": "114లో {{done}} సూరాలు పూర్తయ్యాయి",
+    "khatmaCompletedSubtitle": "అన్ని 114 సూరాలు పూర్తయ్యాయి",
+    "khatmaProgressTitle": "ఖత్మ్ పురోగతి",
+    "khatmaStartSubtitle": "ఖత్మ్ ప్రారంభించి మీ పురోగతిని ట్రాక్ చేయండి",
+    "listeningTools": "వినికిడి సాధనాలు",
+    "repetition": "పునరావృతి",
+    "repetitionSubtitle": "ఒక సూరా మరియు ఆయత్ పరిధిని ఎంచుకుని, సమన్వయ సమయంతో దాన్ని పునరావృతం చేయండి.",
+    "repetitionTitle": "ఏ ఆయత్ పరిధినైనా పునరావృతం చేయండి",
+    "selectDuration": "వ్యవధిని ఎంచుకోండి",
+    "selectReciter": "ఖారీని ఎంచుకోండి",
+    "startNewKhatma": "కొత్త ఖత్మ్ ప్రారంభించండి",
+    "startRepetition": "పునరావృతి ప్రారంభించండి",
+    "timedListening": "సమయపరమైన వినికిడి",
+    "timedRowActive": "టైమర్ {{minutes}} నిమిషాలకు సెట్ చేయబడింది",
+    "timedRowSubtitle": "నిర్ణీత సమయం తర్వాత ఆగిపోవు",
+    "timerActiveNote": "టైమర్ ముగిసినప్పుడు ప్లేబ్యాక్ ఆగిపోతుంది. దాన్ని ఆఫ్ చేయడానికి ఎంచుకున్న వ్యవధిని మళ్లీ ట్యాప్ చేయండి.",
+    "unlimited": "అపరిమితం"
   }
 }

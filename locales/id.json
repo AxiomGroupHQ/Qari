@@ -30,7 +30,11 @@
     "reciteTimes": "Baca {{n}}×",
     "playAllStop": "Berhenti",
     "playAllPrevious": "Sebelumnya",
-    "playAllNext": "Berikutnya"
+    "playAllNext": "Berikutnya",
+    "layoutSheetTitle": "Tata Letak Adzkar",
+    "arabicText": "Teks Arab",
+    "showTranslation": "Tampilkan Terjemahan",
+    "showTransliteration": "Tampilkan Transliterasi"
   },
   "app": {
     "errorInitializingPlayer": "Gagal memulai pemutar: {{message}}",
@@ -227,7 +231,15 @@
     "writeYourNoteHere": "Tulis catatan Anda di sini...",
     "yourPlaylists": "Playlist Anda",
     "rewayatAvailable": "{{number}} riwayat tersedia",
-    "rewayatByReciter": "{{rewayat}} oleh {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} oleh {{reciter}}",
+    "back": "Kembali",
+    "options": "Opsi",
+    "shuffle": "Acak",
+    "fontSize": "Ukuran Font",
+    "fileImported": "File diimpor",
+    "nowReading": "Sedang membaca",
+    "openingIn": "Membuka di",
+    "showingInHafs": "Menampilkan dalam Hafs"
   },
   "components": {
     "actionButtons": {
@@ -376,7 +388,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Beri tag bacaan ini untuk melihat teks surah dan detailnya"
-    }
+    },
+    "ambientSounds": "Suara latar",
+    "loveAdd": "Tambahkan ke favorit",
+    "loveRemove": "Hapus dari favorit",
+    "mushafLayoutOptions": "Opsi tata letak",
+    "nextTrack": "Trek berikutnya",
+    "openPlayer": "Buka pemutar",
+    "playbackSpeed": "Kecepatan putar",
+    "previousTrack": "Trek sebelumnya",
+    "repeat": "Ulangi",
+    "seekBack": "Mundur {{seconds}} detik",
+    "seekForward": "Maju {{seconds}} detik",
+    "sleepTimer": "Timer Tidur"
   },
   "playlist": {
     "subtitle_other": "Playlist • {{count}} surah"
@@ -437,7 +461,9 @@
     "myRecitations": "Bacaan Saya",
     "newToQuranStartHere": "Baru mengenal Al-Qur'an? Mulai dari Sini",
     "seeMore": "Lihat Lainnya",
-    "yourFavorites": "Favorit Anda"
+    "yourFavorites": "Favorit Anda",
+    "randomEmpty": "Gagal menemukan bacaan acak. Silakan coba lagi.",
+    "randomFailed": "Gagal memutar bacaan acak. Silakan coba lagi."
   },
   "screens": {
     "translationsContent": {
@@ -626,7 +652,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Timer Tidur",
-      "turnOffTimer": "Matikan Timer"
+      "turnOffTimer": "Matikan Timer",
+      "minutesRemaining_one": "{{count}} menit tersisa",
+      "minutesRemaining_other": "{{count}} menit tersisa",
+      "secondsRemaining_one": "{{count}} detik tersisa",
+      "secondsRemaining_other": "{{count}} detik tersisa"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Hapus dari Playlist"
@@ -995,6 +1025,60 @@
       "132": "Macam-macam kebaikan dan adab hidup bermasyarakat",
       "quranic-duas": "Doa-doa Al-Qur'an (Rabbana)",
       "names-of-allah": "99 Nama Allah"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Rentang ayat",
+    "chooseSurah": "Pilih Surah",
+    "continueListening": "Lanjutkan mendengarkan",
+    "duration1h": "1 jam",
+    "duration30m": "30 menit",
+    "duration3h": "3 jam",
+    "duration5h": "5 jam",
+    "duration8h": "8 jam",
+    "exploreCollectionsSubtitle": "Tajwid, hafalan, riwayat, dan lainnya",
+    "exploreCollectionsTitle": "Jelajahi koleksi",
+    "khatma": "Khatam",
+    "khatmaActiveSubtitle": "{{done}} dari 114 surah selesai",
+    "khatmaCompletedSubtitle": "Semua 114 surah selesai",
+    "khatmaProgressTitle": "Progres Khatam",
+    "khatmaStartSubtitle": "Mulai Khatam dan lacak progres Anda",
+    "listeningTools": "Alat mendengarkan",
+    "repetition": "Pengulangan",
+    "repetitionSubtitle": "Pilih Surah dan rentang ayat, lalu ulangi dengan waktu tersinkron.",
+    "repetitionTitle": "Ulangi rentang ayat apa pun",
+    "selectDuration": "Pilih durasi",
+    "selectReciter": "Pilih qari",
+    "startNewKhatma": "Mulai Khatam baru",
+    "startRepetition": "Mulai pengulangan",
+    "timedListening": "Mendengarkan Berwaktu",
+    "timedRowActive": "Timer disetel {{minutes}} menit",
+    "timedRowSubtitle": "Berhenti setelah waktu tertentu",
+    "timerActiveNote": "Pemutaran berhenti saat timer berakhir. Ketuk durasi yang dipilih lagi untuk mematikannya.",
+    "unlimited": "Tanpa batas"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

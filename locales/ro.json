@@ -32,7 +32,11 @@
     "reciteTimes": "Recită de {{n}}×",
     "playAllStop": "Oprește",
     "playAllPrevious": "Anterior",
-    "playAllNext": "Următorul"
+    "playAllNext": "Următorul",
+    "layoutSheetTitle": "Aspect adhkar",
+    "arabicText": "Text arab",
+    "showTranslation": "Afișează traducerea",
+    "showTransliteration": "Afișează transliterarea"
   },
   "app": {
     "errorInitializingPlayer": "Eroare la inițializarea playerului: {{message}}",
@@ -233,7 +237,15 @@
     "writeYourNoteHere": "Scrie nota aici...",
     "yourPlaylists": "Listele tale de redare",
     "rewayatAvailable": "{{number}} rewayat disponibile",
-    "rewayatByReciter": "{{rewayat}} de {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} de {{reciter}}",
+    "back": "Înapoi",
+    "options": "Opțiuni",
+    "shuffle": "Aleatoriu",
+    "fontSize": "Dimensiune font",
+    "fileImported": "Fișier importat",
+    "nowReading": "Citire în curs",
+    "openingIn": "Se deschide în",
+    "showingInHafs": "Se afișează în Hafs"
   },
   "components": {
     "actionButtons": {
@@ -384,7 +396,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Etichetează recitarea pentru a vedea textul surei și detaliile"
-    }
+    },
+    "ambientSounds": "Sunete de ambient",
+    "loveAdd": "Adaugă la favorite",
+    "loveRemove": "Elimină din favorite",
+    "mushafLayoutOptions": "Opțiuni de aspect",
+    "nextTrack": "Piesa următoare",
+    "openPlayer": "Deschide playerul",
+    "playbackSpeed": "Viteză de redare",
+    "previousTrack": "Piesa anterioară",
+    "repeat": "Repetă",
+    "seekBack": "Înapoi {{seconds}} s",
+    "seekForward": "Înainte {{seconds}} s",
+    "sleepTimer": "Temporizator de oprire"
   },
   "playlist": {
     "subtitle_few": "Listă de redare • {{count}} sure",
@@ -447,7 +471,9 @@
     "myRecitations": "Recitările mele",
     "newToQuranStartHere": "Abia descoperi Coranul? Începe aici",
     "seeMore": "Vezi mai mult",
-    "yourFavorites": "Favoritele tale"
+    "yourFavorites": "Favoritele tale",
+    "randomEmpty": "Nu s-au găsit recitări aleatorii. Încearcă din nou.",
+    "randomFailed": "Recitarea aleatorie nu a putut fi redată. Încearcă din nou."
   },
   "screens": {
     "translationsContent": {
@@ -636,7 +662,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Temporizator de oprire",
-      "turnOffTimer": "Oprește temporizatorul"
+      "turnOffTimer": "Oprește temporizatorul",
+      "minutesRemaining_one": "{{count}} minut rămas",
+      "minutesRemaining_other": "{{count}} minute rămase",
+      "secondsRemaining_one": "{{count}} secundă rămasă",
+      "secondsRemaining_other": "{{count}} secunde rămase"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Elimină din lista de redare"
@@ -1009,6 +1039,60 @@
       "132": "Feluri de bunătate și bune maniere pentru viața în comunitate",
       "quranic-duas": "Rugăciuni din Coran (Rabbana)",
       "names-of-allah": "Cele 99 de nume ale lui Allah"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Interval de aye",
+    "chooseSurah": "Alege o sura",
+    "continueListening": "Continuă ascultarea",
+    "duration1h": "1 oră",
+    "duration30m": "30 de minute",
+    "duration3h": "3 ore",
+    "duration5h": "5 ore",
+    "duration8h": "8 ore",
+    "exploreCollectionsSubtitle": "Tajweed, memorizare, rewayat și altele",
+    "exploreCollectionsTitle": "Explorează colecțiile",
+    "khatma": "Khatma",
+    "khatmaActiveSubtitle": "{{done}} din 114 de sure finalizate",
+    "khatmaCompletedSubtitle": "Toate cele 114 de sure finalizate",
+    "khatmaProgressTitle": "Progresul Khatmei",
+    "khatmaStartSubtitle": "Începe o Khatma și urmărește-ți progresul",
+    "listeningTools": "Instrumente de ascultare",
+    "repetition": "Repetare",
+    "repetitionSubtitle": "Alege o sura și un interval de aye, apoi repetă-l cu sincronizare.",
+    "repetitionTitle": "Repetă orice interval de aye",
+    "selectDuration": "Alege durata",
+    "selectReciter": "Alege recitatorul",
+    "startNewKhatma": "Începe o Khatma nouă",
+    "startRepetition": "Pornește repetarea",
+    "timedListening": "Ascultare temporizată",
+    "timedRowActive": "Temporizator setat la {{minutes}} min",
+    "timedRowSubtitle": "Adormi după un timp stabilit",
+    "timerActiveNote": "Redarea se întrerupe când temporizatorul se termină. Atinge din nou durata aleasă pentru a-l opri.",
+    "unlimited": "Nelimitat"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

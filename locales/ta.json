@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× ஓதுங்கள்",
     "playAllStop": "நிறுத்து",
     "playAllPrevious": "முந்தையது",
-    "playAllNext": "அடுத்தது"
+    "playAllNext": "அடுத்தது",
+    "layoutSheetTitle": "அத்கார் அமைப்பு",
+    "arabicText": "அரபு உரை",
+    "showTranslation": "மொழிபெயர்ப்பைக் காட்டு",
+    "showTransliteration": "ஒலிபெயர்ப்பைக் காட்டு"
   },
   "app": {
     "errorInitializingPlayer": "பிளேயரைத் தொடங்குவதில் பிழை: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "இங்கே உங்கள் குறிப்பை எழுதுங்கள்...",
     "yourPlaylists": "உங்கள் பிளேலிஸ்ட்கள்",
     "rewayatAvailable": "{{number}} ரிவாயத்துகள் உள்ளன",
-    "rewayatByReciter": "{{reciter}} அவர்களின் {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} அவர்களின் {{rewayat}}",
+    "back": "பின் செல்",
+    "options": "விருப்பங்கள்",
+    "shuffle": "ஷஃபிள்",
+    "fontSize": "எழுத்துரு அளவு",
+    "fileImported": "கோப்பு இறக்குமதி செய்யப்பட்டது",
+    "nowReading": "இப்போது படிக்கிறது",
+    "openingIn": "இதில் திறக்கிறது",
+    "showingInHafs": "ஹஃப்ஸில் காட்டுகிறது"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "சூரா உரையையும் விவரங்களையும் காண இந்த ஓதலுக்கு குறியிடுங்கள்"
-    }
+    },
+    "ambientSounds": "சுற்றுச்சூழல் ஒலிகள்",
+    "loveAdd": "விருப்பங்களில் சேர்",
+    "loveRemove": "விருப்பங்களிலிருந்து நீக்கு",
+    "mushafLayoutOptions": "அமைப்பு விருப்பங்கள்",
+    "nextTrack": "அடுத்த டிராக்",
+    "openPlayer": "பிளேயரைத் திற",
+    "playbackSpeed": "இயக்க வேகம்",
+    "previousTrack": "முந்தைய டிராக்",
+    "repeat": "மீண்டும்",
+    "seekBack": "{{seconds}} வினாடிகள் பின்னே",
+    "seekForward": "{{seconds}} வினாடிகள் முன்னே",
+    "sleepTimer": "உறக்க நேரங்காட்டி"
   },
   "playlist": {
     "subtitle_one": "பிளேலிஸ்ட் • {{count}} சூரா",
@@ -442,7 +466,9 @@
     "myRecitations": "என் ஓதல்கள்",
     "newToQuranStartHere": "குர்ஆனுக்குப் புதியவரா? இங்கே தொடங்குங்கள்",
     "seeMore": "மேலும் பார்",
-    "yourFavorites": "உங்கள் பிடித்தவை"
+    "yourFavorites": "உங்கள் பிடித்தவை",
+    "randomEmpty": "சீரற்ற திலாவத்துகளைக் கண்டுபிடிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.",
+    "randomFailed": "சீரற்ற திலாவத்தை இயக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "உறக்க நேரங்காட்டி",
-      "turnOffTimer": "நேரங்காட்டியை நிறுத்து"
+      "turnOffTimer": "நேரங்காட்டியை நிறுத்து",
+      "minutesRemaining_one": "{{count}} நிமிடம் மீதம்",
+      "minutesRemaining_other": "{{count}} நிமிடங்கள் மீதம்",
+      "secondsRemaining_one": "{{count}} வினாடி மீதம்",
+      "secondsRemaining_other": "{{count}} வினாடிகள் மீதம்"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "பிளேலிஸ்ட்டிலிருந்து நீக்கு"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "குர்ஆனிய பிரார்த்தனைகள் (ரப்பனா)",
       "names-of-allah": "அல்லாஹ்வின் 99 திருப்பெயர்கள்"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "ஆயத்து வரம்பு",
+    "chooseSurah": "ஒரு சூராவைத் தேர்ந்தெடுக்கவும்",
+    "continueListening": "கேட்பதைத் தொடரவும்",
+    "duration1h": "1 மணி நேரம்",
+    "duration30m": "30 நிமிடங்கள்",
+    "duration3h": "3 மணி நேரம்",
+    "duration5h": "5 மணி நேரம்",
+    "duration8h": "8 மணி நேரம்",
+    "exploreCollectionsSubtitle": "தஜ்வீத், மனப்பாடம், ரிவாயத் மற்றும் பல",
+    "exploreCollectionsTitle": "தொகுப்புகளை ஆராயுங்கள்",
+    "khatma": "கத்ம்",
+    "khatmaActiveSubtitle": "114-ல் {{done}} சூராக்கள் நிறைவு",
+    "khatmaCompletedSubtitle": "அனைத்து 114 சூராக்களும் நிறைவு",
+    "khatmaProgressTitle": "கத்ம் முன்னேற்றம்",
+    "khatmaStartSubtitle": "கத்மைத் தொடங்கி உங்கள் முன்னேற்றத்தைக் கண்காணியுங்கள்",
+    "listeningTools": "கேட்கும் கருவிகள்",
+    "repetition": "மீண்டும் மீண்டும்",
+    "repetitionSubtitle": "ஒரு சூராவையும் ஆயத்து வரம்பையும் தேர்ந்தெடுத்து, ஒத்திசைந்த நேரத்துடன் மீண்டும் கேளுங்கள்.",
+    "repetitionTitle": "எந்த ஆயத்து வரம்பையும் மீண்டும் கேளுங்கள்",
+    "selectDuration": "கால அளவைத் தேர்ந்தெடுக்கவும்",
+    "selectReciter": "காரியைத் தேர்ந்தெடுக்கவும்",
+    "startNewKhatma": "புதிய கத்மைத் தொடங்கவும்",
+    "startRepetition": "மீண்டும் கேட்பதைத் தொடங்கவும்",
+    "timedListening": "நேரம் குறித்துக் கேட்பது",
+    "timedRowActive": "டைமர் {{minutes}} நிமிடங்களுக்கு அமைக்கப்பட்டது",
+    "timedRowSubtitle": "குறித்த நேரத்திற்குப் பிறகு நிறுத்து",
+    "timerActiveNote": "டைமர் முடிந்ததும் இசைவு நிறுத்தப்படும். அதை அணைக்க தேர்ந்தெடுத்த கால அளவை மீண்டும் தட்டவும்.",
+    "unlimited": "வரம்பற்றது"
   }
 }

@@ -1,4 +1,10 @@
 import {adhkarDatabaseService} from '@/services/database/AdhkarDatabaseService';
+import i18n from '@/i18n';
+import {
+  applyDhikrTranslation,
+  applyDhikrTranslations,
+  getDhikrTranslationBundle,
+} from '@/services/adhkar/dhikrTranslations';
 import type {
   AdhkarCategory,
   Dhikr,
@@ -22,6 +28,25 @@ export type {
 
 class AdhkarService {
   private initPromise: Promise<void> | null = null;
+
+  /**
+   * Overlay the current locale's human-translated dhikr text (when a
+   * reviewed bundle ships for it) onto DB rows. Falls back to English for
+   * locales, ids, and fields the bundle does not cover.
+   */
+  private localizeDhikr(dhikr: Dhikr): Dhikr {
+    return applyDhikrTranslation(
+      dhikr,
+      getDhikrTranslationBundle(i18n.language ?? 'en'),
+    );
+  }
+
+  private localizeAdhkarList(adhkar: Dhikr[]): Dhikr[] {
+    return applyDhikrTranslations(
+      adhkar,
+      getDhikrTranslationBundle(i18n.language ?? 'en'),
+    );
+  }
 
   // Initialize database and seed if needed (idempotent with mutex protection)
   async initialize(): Promise<void> {
@@ -189,8 +214,10 @@ class AdhkarService {
     const allCategories = await adhkarDatabaseService.getAllCategories();
 
     // Get adhkar for all category IDs in this super category
-    const adhkar = await adhkarDatabaseService.getAdhkarByCategoryIds(
-      superCategory.categoryIds,
+    const adhkar = this.localizeAdhkarList(
+      await adhkarDatabaseService.getAdhkarByCategoryIds(
+        superCategory.categoryIds,
+      ),
     );
 
     // Group adhkar by category
@@ -223,13 +250,16 @@ class AdhkarService {
   // Get all adhkar in a category
   async getAdhkarInCategory(categoryId: string): Promise<Dhikr[]> {
     await this.initialize();
-    return await adhkarDatabaseService.getAdhkarInCategory(categoryId);
+    return this.localizeAdhkarList(
+      await adhkarDatabaseService.getAdhkarInCategory(categoryId),
+    );
   }
 
   // Get a single dhikr by ID
   async getDhikr(id: string): Promise<Dhikr | null> {
     await this.initialize();
-    return await adhkarDatabaseService.getDhikr(id);
+    const dhikr = await adhkarDatabaseService.getDhikr(id);
+    return dhikr ? this.localizeDhikr(dhikr) : null;
   }
 
   // Get adjacent adhkar for swipe navigation
@@ -239,7 +269,9 @@ class AdhkarService {
   ): Promise<{prev: Dhikr | null; next: Dhikr | null}> {
     await this.initialize();
 
-    const adhkar = await adhkarDatabaseService.getAdhkarInCategory(categoryId);
+    const adhkar = this.localizeAdhkarList(
+      await adhkarDatabaseService.getAdhkarInCategory(categoryId),
+    );
 
     return {
       prev: currentIndex > 0 ? adhkar[currentIndex - 1] : null,

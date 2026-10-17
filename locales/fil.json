@@ -31,7 +31,11 @@
     "reciteTimes": "Bigkasin ng {{n}}×",
     "playAllStop": "Ihinto",
     "playAllPrevious": "Nakaraan",
-    "playAllNext": "Susunod"
+    "playAllNext": "Susunod",
+    "layoutSheetTitle": "Layout ng Adhkar",
+    "arabicText": "Tekstong Arabiko",
+    "showTranslation": "Ipakita ang Pagsasalin",
+    "showTransliteration": "Ipakita ang Transliterasyon"
   },
   "app": {
     "errorInitializingPlayer": "Error sa pagsisimula ng player: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Isulat ang iyong tala rito...",
     "yourPlaylists": "Mga playlist mo",
     "rewayatAvailable": "{{number}} rewayat ang magagamit",
-    "rewayatByReciter": "{{rewayat}} ni {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} ni {{reciter}}",
+    "back": "Bumalik",
+    "options": "Mga Opsyon",
+    "shuffle": "I-shuffle",
+    "fontSize": "Laki ng Font",
+    "fileImported": "Na-import ang file",
+    "nowReading": "Binabasa ngayon",
+    "openingIn": "Binubuksan sa",
+    "showingInHafs": "Ipinapakita sa Hafs"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Lagyan ng tag ang pagbigkas na ito para makita ang teksto ng surah at mga detalye"
-    }
+    },
+    "ambientSounds": "Mga ambient na tunog",
+    "loveAdd": "Idagdag sa mga paborito",
+    "loveRemove": "Alisin sa mga paborito",
+    "mushafLayoutOptions": "Mga opsyon sa layout",
+    "nextTrack": "Susunod na track",
+    "openPlayer": "Buksan ang player",
+    "playbackSpeed": "Bilis ng pag-play",
+    "previousTrack": "Nakaraang track",
+    "repeat": "Ulitin",
+    "seekBack": "Bumalik ng {{seconds}} segundo",
+    "seekForward": "Sumulong ng {{seconds}} segundo",
+    "sleepTimer": "Timer ng pagtulog"
   },
   "playlist": {
     "subtitle_one": "Playlist • {{count}} surah",
@@ -442,7 +466,9 @@
     "myRecitations": "Mga pagbigkas ko",
     "newToQuranStartHere": "Bago sa Quran? Dito magsimula",
     "seeMore": "Tingnan pa",
-    "yourFavorites": "Mga paborito mo"
+    "yourFavorites": "Mga paborito mo",
+    "randomEmpty": "Hindi nakahanap ng random na pagbasa. Pakisubukan muli.",
+    "randomFailed": "Hindi napatugtog ang random na pagbasa. Pakisubukan muli."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Timer ng pagtulog",
-      "turnOffTimer": "I-off ang timer"
+      "turnOffTimer": "I-off ang timer",
+      "minutesRemaining_one": "{{count}} minuto na lang",
+      "minutesRemaining_other": "{{count}} minuto na lang",
+      "secondsRemaining_one": "{{count}} segundo na lang",
+      "secondsRemaining_other": "{{count}} segundo na lang"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Alisin sa playlist"
@@ -1002,6 +1032,60 @@
       "132": "Mga uri ng kabutihan at magandang asal sa buhay ng pamayanan",
       "quranic-duas": "Mga dua mula sa Quran (Rabbana)",
       "names-of-allah": "Ang 99 na Pangalan ni Allah"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Saklaw ng ayah",
+    "chooseSurah": "Pumili ng Surah",
+    "continueListening": "Ituloy ang pakikinig",
+    "duration1h": "1 oras",
+    "duration30m": "30 minuto",
+    "duration3h": "3 oras",
+    "duration5h": "5 oras",
+    "duration8h": "8 oras",
+    "exploreCollectionsSubtitle": "Tajwid, memorisasyon, riwayat at iba pa",
+    "exploreCollectionsTitle": "Galugarin ang mga koleksyon",
+    "khatma": "Khatma",
+    "khatmaActiveSubtitle": "{{done}} ng 114 surah ang tapos na",
+    "khatmaCompletedSubtitle": "Tapos na ang lahat ng 114 surah",
+    "khatmaProgressTitle": "Progreso ng Khatma",
+    "khatmaStartSubtitle": "Simulan ang Khatma at subaybayan ang iyong progreso",
+    "listeningTools": "Mga tool sa pakikinig",
+    "repetition": "Pag-uulit",
+    "repetitionSubtitle": "Pumili ng Surah at saklaw ng ayah, pagkatapos ay ulitin ito nang may naka-sync na timing.",
+    "repetitionTitle": "Ulitin ang anumang saklaw ng ayah",
+    "selectDuration": "Piliin ang tagal",
+    "selectReciter": "Pumili ng tagapagbasa",
+    "startNewKhatma": "Simulan ang bagong Khatma",
+    "startRepetition": "Simulan ang pag-uulit",
+    "timedListening": "May Oras na Pakikinig",
+    "timedRowActive": "Naka-set ang timer sa {{minutes}} min",
+    "timedRowSubtitle": "Huminto pagkatapos ng takdang oras",
+    "timerActiveNote": "Humihinto ang pag-play kapag natapos ang timer. I-tap muli ang napiling tagal para i-off ito.",
+    "unlimited": "Walang limitasyon"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

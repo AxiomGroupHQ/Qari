@@ -32,7 +32,11 @@
     "reciteTimes": "Ponovite {{n}}×",
     "playAllStop": "Zaustavi",
     "playAllPrevious": "Prethodno",
-    "playAllNext": "Sljedeće"
+    "playAllNext": "Sljedeće",
+    "layoutSheetTitle": "Raspored Zikra",
+    "arabicText": "Arapski tekst",
+    "showTranslation": "Prikaži prijevod",
+    "showTransliteration": "Prikaži transliteraciju"
   },
   "app": {
     "errorInitializingPlayer": "Greška pri pokretanju plejera: {{message}}",
@@ -233,7 +237,15 @@
     "writeYourNoteHere": "Napišite svoju bilješku ovdje...",
     "yourPlaylists": "Vaše plejliste",
     "rewayatAvailable": "Dostupno rivajeta: {{number}}",
-    "rewayatByReciter": "{{rewayat}} – {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} – {{reciter}}",
+    "back": "Nazad",
+    "options": "Opcije",
+    "shuffle": "Nasumično",
+    "fontSize": "Veličina Fonta",
+    "fileImported": "Datoteka uvezena",
+    "nowReading": "Trenutno čita",
+    "openingIn": "Otvara se u",
+    "showingInHafs": "Prikazuje se u Hafsu"
   },
   "components": {
     "actionButtons": {
@@ -384,7 +396,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Označite ovu recitaciju da vidite tekst i detalje sure"
-    }
+    },
+    "ambientSounds": "Ambijentalni zvukovi",
+    "loveAdd": "Dodaj u omiljene",
+    "loveRemove": "Ukloni iz omiljenih",
+    "mushafLayoutOptions": "Opcije rasporeda",
+    "nextTrack": "Sljedeća pjesma",
+    "openPlayer": "Otvori player",
+    "playbackSpeed": "Brzina reprodukcije",
+    "previousTrack": "Prethodna pjesma",
+    "repeat": "Ponovi",
+    "seekBack": "{{seconds}} sekundi nazad",
+    "seekForward": "{{seconds}} sekundi naprijed",
+    "sleepTimer": "Tajmer za spavanje"
   },
   "playlist": {
     "subtitle_few": "Plejlista • {{count}} sure",
@@ -447,7 +471,9 @@
     "myRecitations": "Moje recitacije",
     "newToQuranStartHere": "Novi ste u Kur'anu? Počnite ovdje",
     "seeMore": "Prikaži više",
-    "yourFavorites": "Vaši omiljeni"
+    "yourFavorites": "Vaši omiljeni",
+    "randomEmpty": "Nije pronađeno nasumično učenje. Pokušajte ponovo.",
+    "randomFailed": "Nije uspjela reprodukcija nasumičnog učenja. Pokušajte ponovo."
   },
   "screens": {
     "translationsContent": {
@@ -636,7 +662,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Tajmer za spavanje",
-      "turnOffTimer": "Isključi tajmer"
+      "turnOffTimer": "Isključi tajmer",
+      "minutesRemaining_one": "preostaje {{count}} minuta",
+      "minutesRemaining_other": "preostaje {{count}} minuta",
+      "secondsRemaining_one": "preostaje {{count}} sekunda",
+      "secondsRemaining_other": "preostaje {{count}} sekundi"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Ukloni iz plejliste"
@@ -1009,6 +1039,60 @@
       "132": "Vrste dobra i lijepo ponašanje za život u zajednici",
       "quranic-duas": "Kur'anske dove (Rabbena)",
       "names-of-allah": "99 Allahovih imena"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Raspon ajeta",
+    "chooseSurah": "Odaberite suru",
+    "continueListening": "Nastavite slušati",
+    "duration1h": "1 sat",
+    "duration30m": "30 minuta",
+    "duration3h": "3 sata",
+    "duration5h": "5 sati",
+    "duration8h": "8 sati",
+    "exploreCollectionsSubtitle": "Tedžvid, učenje napamet, rivajat i više",
+    "exploreCollectionsTitle": "Istražite kolekcije",
+    "khatma": "Hatma",
+    "khatmaActiveSubtitle": "{{done}} od 114 sura završeno",
+    "khatmaCompletedSubtitle": "Svih 114 sura završeno",
+    "khatmaProgressTitle": "Napredak Hatme",
+    "khatmaStartSubtitle": "Započnite Hatmu i pratite svoj napredak",
+    "listeningTools": "Alati za slušanje",
+    "repetition": "Ponavljanje",
+    "repetitionSubtitle": "Odaberite suru i raspon ajeta, zatim ponavljajte sa sinhronizovanim vremenom.",
+    "repetitionTitle": "Ponovite bilo koji raspon ajeta",
+    "selectDuration": "Odaberite trajanje",
+    "selectReciter": "Odaberite čitača",
+    "startNewKhatma": "Započnite novu Hatmu",
+    "startRepetition": "Započnite ponavljanje",
+    "timedListening": "Slušanje s Tajmerom",
+    "timedRowActive": "Tajmer postavljen na {{minutes}} min",
+    "timedRowSubtitle": "Zaustavi nakon određenog vremena",
+    "timerActiveNote": "Reprodukcija se zaustavlja kada tajmer istekne. Dodirnite odabrano trajanje ponovo da ga isključite.",
+    "unlimited": "Neograničeno"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

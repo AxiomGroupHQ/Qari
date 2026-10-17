@@ -81,7 +81,11 @@ export default function DownloadsScreen() {
 
   const renderHeaderRight = useCallback(
     () => (
-      <Pressable onPress={handleOptionsMenu} hitSlop={8}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={t('common.options')}
+        onPress={handleOptionsMenu}
+        hitSlop={8}>
         <Feather
           name="more-horizontal"
           size={moderateScale(20)}
@@ -479,6 +483,8 @@ export default function DownloadsScreen() {
         {!USE_GLASS && (
           <View style={[styles.emptyHeader, {paddingTop: insets.top}]}>
             <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t('common.back')}
               style={styles.emptyHeaderBack}
               onPress={() => router.back()}
               hitSlop={8}>
@@ -540,6 +546,8 @@ export default function DownloadsScreen() {
                 styles.circleButton,
                 !hasDownloads && styles.disabledButton,
               ]}
+              accessibilityLabel={t('common.options')}
+              accessibilityRole="button"
               onPress={hasDownloads ? handleOptionsMenu : undefined}
               disabled={!hasDownloads}>
               <Feather
@@ -555,6 +563,8 @@ export default function DownloadsScreen() {
               styles.playButton,
               !hasDownloads && styles.disabledButton,
             ]}
+            accessibilityLabel={t('collection.downloads.playAll')}
+            accessibilityRole="button"
             onPress={hasDownloads ? handlePlayAll : undefined}
             disabled={!hasDownloads}>
             <View style={styles.playIconContainer}>
@@ -569,6 +579,8 @@ export default function DownloadsScreen() {
               styles.circleButton,
               !hasDownloads && styles.disabledButton,
             ]}
+            accessibilityLabel={t('common.shuffle')}
+            accessibilityRole="button"
             onPress={hasDownloads ? handleShuffle : undefined}
             disabled={!hasDownloads}>
             <ShuffleIcon color={theme.colors.text} size={moderateScale(20)} />
@@ -626,7 +638,11 @@ export default function DownloadsScreen() {
               }),
             },
           ]}>
-          <Pressable onPress={() => router.back()} hitSlop={8}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={t('common.back')}
+            onPress={() => router.back()}
+            hitSlop={8}>
             <Feather
               name={dirIcon('arrow-left')}
               size={moderateScale(24)}

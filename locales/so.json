@@ -31,7 +31,11 @@
     "reciteTimes": "Ku akhri {{n}}×",
     "playAllStop": "Jooji",
     "playAllPrevious": "Hore",
-    "playAllNext": "Xiga"
+    "playAllNext": "Xiga",
+    "layoutSheetTitle": "Qaabdhiska Adhkaarka",
+    "arabicText": "Qoraalka Carabiga",
+    "showTranslation": "Muuji Turjumaadda",
+    "showTransliteration": "Muuji Qoraalka Codka"
   },
   "app": {
     "errorInitializingPlayer": "Khalad bilaabista daaraha: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Halkan ku qor xusuus-qorradaada...",
     "yourPlaylists": "Liisaskaaga",
     "rewayatAvailable": "{{number}} riwaayad ayaa jira",
-    "rewayatByReciter": "{{rewayat}} oo uu akhriyay {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} oo uu akhriyay {{reciter}}",
+    "back": "Dib u noqo",
+    "options": "Doorashooyin",
+    "shuffle": "Isku darka",
+    "fontSize": "Cabbirka Farta",
+    "fileImported": "Faylka waa la soo dejiyay",
+    "nowReading": "Hadda waa la akhriyayaa",
+    "openingIn": "Waa lagu furayaa",
+    "showingInHafs": "Waxaa lagu muujinayaa Xafs"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Calaamadee akhriskan si aad u aragto qoraalka suuradda iyo faahfaahinta"
-    }
+    },
+    "ambientSounds": "Dhawaaqyada deegaanka",
+    "loveAdd": "Ku dar kuwa aad jeceshahay",
+    "loveRemove": "Ka saar kuwa aad jeceshahay",
+    "mushafLayoutOptions": "Doorashooyinka qaabdhiska",
+    "nextTrack": "Wadada xigta",
+    "openPlayer": "Fur ciyaartoyga",
+    "playbackSpeed": "Xawaaraha ciyaarista",
+    "previousTrack": "Wadadii hore",
+    "repeat": "Ku celceli",
+    "seekBack": "Dib u laabo {{seconds}} ilbiriqsi",
+    "seekForward": "Hor u soco {{seconds}} ilbiriqsi",
+    "sleepTimer": "Saacadda hurdada"
   },
   "playlist": {
     "subtitle_one": "Liis • {{count}} suurad",
@@ -442,7 +466,9 @@
     "myRecitations": "Akhrisyadayda",
     "newToQuranStartHere": "Qur'aanka cusub tahay? Halkan ka bilow",
     "seeMore": "Arag wax dheeraad ah",
-    "yourFavorites": "Kuwa aad door bidday"
+    "yourFavorites": "Kuwa aad door bidday",
+    "randomEmpty": "Lama helin akhris aan lala kulan. Fadlan isku day mar kale.",
+    "randomFailed": "Lama dhigi karin akhriska aan lala kulan. Fadlan isku day mar kale."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Saacadda hurdada",
-      "turnOffTimer": "Dami saacadda"
+      "turnOffTimer": "Dami saacadda",
+      "minutesRemaining_one": "{{count}} daqiiqo ayaa hadhay",
+      "minutesRemaining_other": "{{count}} daqiiqo ayaa hadhay",
+      "secondsRemaining_one": "{{count}} ilbiriqsi ayaa hadhay",
+      "secondsRemaining_other": "{{count}} ilbiriqsi ayaa hadhay"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Ka saar liiska"
@@ -1002,6 +1032,60 @@
       "132": "Noocyada wanaagga iyo edebka wanaagsan ee nolosha bulshada",
       "quranic-duas": "Ducada Qur'aanka (Rabbana)",
       "names-of-allah": "99 Magaca Eebbe"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Xadka aayadda",
+    "chooseSurah": "Dooro Suurad",
+    "continueListening": "Wax sii wad dhageysiga",
+    "duration1h": "1 saacad",
+    "duration30m": "30 daqiiqo",
+    "duration3h": "3 saacadood",
+    "duration5h": "5 saacadood",
+    "duration8h": "8 saacadood",
+    "exploreCollectionsSubtitle": "Tajwiid, xifdiga, riwaayat iyo wax kale",
+    "exploreCollectionsTitle": "Baadh uruurinta",
+    "khatma": "Khatma",
+    "khatmaActiveSubtitle": "{{done}} ka mid ah 114 suuradood waa la dhammeeyay",
+    "khatmaCompletedSubtitle": "Dhammaan 114 suuradood waa la dhammeeyay",
+    "khatmaProgressTitle": "Horumarka Khatmada",
+    "khatmaStartSubtitle": "Bilow Khatma oo la soco horumarkaaga",
+    "listeningTools": "Qalabka dhageysiga",
+    "repetition": "Celcelin",
+    "repetitionSubtitle": "Dooro Suurad iyo xadka aayadda, kadibna ku celceli waqti isku xiran.",
+    "repetitionTitle": "Ku celceli xadka aayadda ee aad rabto",
+    "selectDuration": "Dooro muddada",
+    "selectReciter": "Dooro akhriyaha",
+    "startNewKhatma": "Bilow Khatma cusub",
+    "startRepetition": "Bilow celcelinta",
+    "timedListening": "Dhageysi Waqti leh",
+    "timedRowActive": "Waqti-yeedhka waa loo dejiyay {{minutes}} daqiiqo",
+    "timedRowSubtitle": "Jooji ka dib waqti la dejiyay",
+    "timerActiveNote": "Codku wuu istaagaa marka waqtigu dhammaado. Riix muddada aad dooratay mar kale si aad u demiso.",
+    "unlimited": "Xadid la'aan"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

@@ -32,7 +32,11 @@
     "reciteTimes": "Janngu {{n}}×",
     "playAllStop": "Daggu",
     "playAllPrevious": "Ɓuri",
-    "playAllNext": "Ɓaawo"
+    "playAllNext": "Ɓaawo",
+    "layoutSheetTitle": "Sifa Adhkar",
+    "arabicText": "Winndere Aarabi",
+    "showTranslation": "Holli Firo",
+    "showTransliteration": "Holli Winndugol Sawto"
   },
   "app": {
     "errorInitializingPlayer": "Fitaande jooɗorde jaɓɓi: {{message}}",
@@ -233,7 +237,15 @@
     "writeYourNoteHere": "Winndu hoore maaɗa ɗo...",
     "yourPlaylists": "Liste maaɗa",
     "rewayatAvailable": "Rewayat {{number}} ngonka",
-    "rewayatByReciter": "{{rewayat}} e {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} e {{reciter}}",
+    "back": "Rutto",
+    "options": "Cuɓe",
+    "shuffle": "Jalaa",
+    "fontSize": "Mawnge Winndere",
+    "fileImported": "Fiilde naatnaa",
+    "nowReading": "Ina jannga jooni",
+    "openingIn": "Ina udditira",
+    "showingInHafs": "Ina holli e Hafs"
   },
   "components": {
     "actionButtons": {
@@ -384,7 +396,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Maɓɓu ɗiɗɗugo ngam yi'ugo binndol e firo sura"
-    }
+    },
+    "ambientSounds": "Sawtooji taŋorde",
+    "loveAdd": "Ɓeydu e ɗe yiɗaa",
+    "loveRemove": "Ittu e ɗe yiɗaa",
+    "mushafLayoutOptions": "Cuɓe sifa",
+    "nextTrack": "Jimol garowol",
+    "openPlayer": "Uddit firoowo",
+    "playbackSpeed": "Yaawal firo",
+    "previousTrack": "Jimol ɓennuɗo",
+    "repeat": "Ɗuɓɓu",
+    "seekBack": "Rutto hojomaaji ɗiɗi {{seconds}}",
+    "seekForward": "Yeeso hojomaaji ɗiɗi {{seconds}}",
+    "sleepTimer": "Ɗuɗal ɗoñgol"
   },
   "playlist": {
     "subtitle_many": "Liste • sura {{count}}",
@@ -447,7 +471,9 @@
     "myRecitations": "Ɗiɗɗooji am",
     "newToQuranStartHere": "Hesɗi e Alqur'aan? Fuɗɗu ɗo",
     "seeMore": "Yiylo ɓuri",
-    "yourFavorites": "Ɓe ngiɗɗa"
+    "yourFavorites": "Ɓe ngiɗɗa",
+    "randomEmpty": "Jaaɓɗe jamaanu heɓaani. Fuɗɗito.",
+    "randomFailed": "Jannge jamaanu waawaani fiɗde. Fuɗɗito."
   },
   "screens": {
     "translationsContent": {
@@ -636,7 +662,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Ɗuɗal ɗoñgol",
-      "turnOffTimer": "Maaygu ɗuɗal"
+      "turnOffTimer": "Maaygu ɗuɗal",
+      "minutesRemaining_one": "Hojomaaji {{count}} keddii",
+      "minutesRemaining_other": "Hojomaaji {{count}} keddii",
+      "secondsRemaining_one": "Hojomaaji ɗiɗi {{count}} keddii",
+      "secondsRemaining_other": "Hojomaaji ɗiɗi {{count}} keddii"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Ittu e liste"
@@ -1009,6 +1039,60 @@
       "132": "Nguurndam woodi e jokkondiral renndo",
       "quranic-duas": "Du'aawon Alqur'aana (Rabbana)",
       "names-of-allah": "Inɗe Alla 99"
+    }
+  },
+  "homeFeatures": {
+    "ayahRange": "Taƴorde aayat",
+    "chooseSurah": "Suɓo Suura",
+    "continueListening": "Jokku heɗde",
+    "duration1h": "Waktu 1",
+    "duration30m": "Hojomaaji 30",
+    "duration3h": "Waktuuji 3",
+    "duration5h": "Waktuuji 5",
+    "duration8h": "Waktuuji 8",
+    "exploreCollectionsSubtitle": "Tajwiid, waɗde giɗo, riwaayat e goɗɗe",
+    "exploreCollectionsTitle": "Yuurnita yeeɓtirɗe",
+    "khatma": "Xatima",
+    "khatmaActiveSubtitle": "Suuraaɓe {{done}} e nder 114 timma",
+    "khatmaCompletedSubtitle": "Suuraaɓe 114 fof timma",
+    "khatmaProgressTitle": "Ɓuraande Xatima",
+    "khatmaStartSubtitle": "Fuɗɗo Xatima nde rewindo ƴattuɗe maa",
+    "listeningTools": "Kuutorgal heɗde",
+    "repetition": "Ɗuɓɓugol",
+    "repetitionSubtitle": "Suɓo Suura e taƴorde aayat, ɓe ɗuɓɓa ɗum e sahaa jokkondiral.",
+    "repetitionTitle": "Ɗuɓɓa kala taƴorde aayat",
+    "selectDuration": "Suɓo waktu",
+    "selectReciter": "Suɓo janngoowo",
+    "startNewKhatma": "Fuɗɗo Xatima hesere",
+    "startRepetition": "Fuɗɗo ɗuɓɓugol",
+    "timedListening": "Heɗde e Waktu",
+    "timedRowActive": "Waktuuli ndeeɗiraa hojomaaji {{minutes}}",
+    "timedRowSubtitle": "Dartin caggal waktu toɗɗaaɗo",
+    "timerActiveNote": "Firoowo dartata so waktu timmi. Ñoƴƴu waktu suɓaande ɗoon ngam dartinde.",
+    "unlimited": "Alaa keeri"
+  },
+  "rewayah": {
+    "short": {
+      "hafs": "Hafs",
+      "shubah": "Shu'bah",
+      "al-bazzi": "Al-Bazzi",
+      "qunbul": "Qunbul",
+      "warsh": "Warsh",
+      "qalun": "Qalun",
+      "al-duri-abi-amr": "Al-Duri (Abu Amr)",
+      "al-susi": "Al-Susi",
+      "hisham": "Hisham",
+      "ibn-dhakwan": "Ibn Dhakwan",
+      "khalaf-an-hamzah": "Khalaf (Hamzah)",
+      "khallad": "Khallad",
+      "al-duri-al-kisai": "Al-Duri (al-Kisa'i)",
+      "abu-al-harith": "Abu al-Harith",
+      "ibn-jammaz": "Ibn Jammaz",
+      "ibn-wardan": "Ibn Wardan",
+      "rawh": "Rawh",
+      "ruwais": "Ruwais",
+      "idris": "Idris",
+      "ishaq": "Ishaq"
     }
   }
 }

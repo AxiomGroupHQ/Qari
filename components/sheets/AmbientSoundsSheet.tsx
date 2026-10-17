@@ -91,7 +91,10 @@ export const AmbientSoundsSheet = (props: SheetProps<'ambient-sounds'>) => {
               styles.soundCard,
               isNoneSelected && styles.soundCardSelected,
             ]}
-            onPress={handleNoneSelect}>
+            onPress={handleNoneSelect}
+            accessibilityRole="button"
+            accessibilityLabel={t('sheets.ambientSoundsSheet.none')}
+            accessibilityState={{selected: isNoneSelected}}>
             <AmbientIcon type="none" color={theme.colors.text} />
             <Text
               style={[
@@ -113,7 +116,10 @@ export const AmbientSoundsSheet = (props: SheetProps<'ambient-sounds'>) => {
                   styles.soundCard,
                   isSelected && styles.soundCardSelected,
                 ]}
-                onPress={() => handleSoundSelect(soundType)}>
+                onPress={() => handleSoundSelect(soundType)}
+                accessibilityRole="button"
+                accessibilityLabel={meta.label}
+                accessibilityState={{selected: isSelected}}>
                 <AmbientIcon type={soundType} color={theme.colors.text} />
                 <Text
                   style={[

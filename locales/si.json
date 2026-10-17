@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× කියවන්න",
     "playAllStop": "නවත්වන්න",
     "playAllPrevious": "පෙර",
-    "playAllNext": "ඊළඟ"
+    "playAllNext": "ඊළඟ",
+    "layoutSheetTitle": "අඩ්කාර් පිරිසැලසුම",
+    "arabicText": "අරාබි පෙළ",
+    "showTranslation": "පරිවර්තනය පෙන්වන්න",
+    "showTransliteration": "අක්ෂර පරිවර්තනය පෙන්වන්න"
   },
   "app": {
     "errorInitializingPlayer": "වාදකය ආරම්භ කිරීමේ දෝෂයකි: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "ඔබේ සටහන මෙහි ලියන්න...",
     "yourPlaylists": "ඔබේ ධාවන ලැයිස්තු",
     "rewayatAvailable": "රිවායත් {{number}} ක් ලබාගත හැක",
-    "rewayatByReciter": "{{reciter}} ගේ {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} ගේ {{rewayat}}",
+    "back": "ආපසු",
+    "options": "විකල්ප",
+    "shuffle": "කළම්බන්න",
+    "fontSize": "අකුරු ප්‍රමාණය",
+    "fileImported": "ගොනුව ආනයනය කළා",
+    "nowReading": "දැන් කියවමින්",
+    "openingIn": "මෙහි විවෘත කරමින්",
+    "showingInHafs": "හෆ්ස්හි පෙන්වමින්"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "සූරාවේ පෙළ සහ විස්තර බැලීමට මෙම පාරායනයට ටැගයක් යොදන්න"
-    }
+    },
+    "ambientSounds": "පරිසර ශබ්ද",
+    "loveAdd": "ප්‍රියතමවලට එක් කරන්න",
+    "loveRemove": "ප්‍රියතමවලින් ඉවත් කරන්න",
+    "mushafLayoutOptions": "පිරිසැලසුම් විකල්ප",
+    "nextTrack": "ඊළඟ ධ්වනි පථය",
+    "openPlayer": "වාදකය විවෘත කරන්න",
+    "playbackSpeed": "වාදන වේගය",
+    "previousTrack": "කලින් ධ්වනි පථය",
+    "repeat": "නැවත",
+    "seekBack": "තත්පර {{seconds}}ක් ආපසු",
+    "seekForward": "තත්පර {{seconds}}ක් ඉදිරියට",
+    "sleepTimer": "නින්දේ කාලගණකය"
   },
   "playlist": {
     "subtitle_one": "ධාවන ලැයිස්තුව • සූරා {{count}}",
@@ -442,7 +466,9 @@
     "myRecitations": "මගේ පාරායනා",
     "newToQuranStartHere": "කුර්ආනයට අලුත්ද? මෙතැනින් අරඹන්න",
     "seeMore": "තවත් බලන්න",
-    "yourFavorites": "ඔබේ ප්‍රියතමයන්"
+    "yourFavorites": "ඔබේ ප්‍රියතමයන්",
+    "randomEmpty": "අහඹු තිලාවතක් සොයාගත නොහැකි විය. නැවත උත්සාහ කරන්න.",
+    "randomFailed": "අහඹු තිලාවත වාදනය කළ නොහැක. නැවත උත්සාහ කරන්න."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "නින්දේ කාලගණකය",
-      "turnOffTimer": "කාලගණකය අක්‍රිය කරන්න"
+      "turnOffTimer": "කාලගණකය අක්‍රිය කරන්න",
+      "minutesRemaining_one": "මිනිත්තු {{count}}ක් ඉතිරි",
+      "minutesRemaining_other": "මිනිත්තු {{count}}ක් ඉතිරි",
+      "secondsRemaining_one": "තත්පර {{count}}ක් ඉතිරි",
+      "secondsRemaining_other": "තත්පර {{count}}ක් ඉතිරි"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "ධාවන ලැයිස්තුවෙන් ඉවත් කරන්න"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "කුර්ආනික දුආ (රබ්බනා)",
       "names-of-allah": "අල්ලාහ්ගේ නම් 99"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "ආයත පරාසය",
+    "chooseSurah": "සූරයක් තෝරන්න",
+    "continueListening": "ඇසීම දිගටම කරගෙන යන්න",
+    "duration1h": "පැය 1",
+    "duration30m": "මිනිත්තු 30",
+    "duration3h": "පැය 3",
+    "duration5h": "පැය 5",
+    "duration8h": "පැය 8",
+    "exploreCollectionsSubtitle": "තජ්වීඩ්, කටපාඩ කිරීම, රිවායත් සහ තවත්",
+    "exploreCollectionsTitle": "එකතු ගවේෂණය කරන්න",
+    "khatma": "ඛත්ම්",
+    "khatmaActiveSubtitle": "114න් {{done}} සූර සම්පූර්ණයි",
+    "khatmaCompletedSubtitle": "සියලුම සූර 114 සම්පූර්ණයි",
+    "khatmaProgressTitle": "ඛත්ම් ප්‍රගතිය",
+    "khatmaStartSubtitle": "ඛත්ම් ආරම්භ කර ඔබේ ප්‍රගතිය නිරීක්ෂණය කරන්න",
+    "listeningTools": "සවන්දීමේ මෙවලම්",
+    "repetition": "පුනරාවර්තනය",
+    "repetitionSubtitle": "සූරයක් සහ ආයත පරාසයක් තෝරා සම්මුඛ වේලාව සමඟ නැවත නැවත අසන්න.",
+    "repetitionTitle": "ඕනෑම ආයත පරාසයක් නැවත අසන්න",
+    "selectDuration": "කාල සීමාව තෝරන්න",
+    "selectReciter": "කාරීවරයා තෝරන්න",
+    "startNewKhatma": "නව ඛත්ම් ආරම්භ කරන්න",
+    "startRepetition": "පුනරාවර්තනය ආරම්භ කරන්න",
+    "timedListening": "වේලාව නියම කර ඇසීම",
+    "timedRowActive": "ටයිමරය මිනිත්තු {{minutes}}කට සකසා ඇත",
+    "timedRowSubtitle": "නියම වේලාවකට පසුව නවත්වන්න",
+    "timerActiveNote": "ටයිමරය අවසන් වූ විට ධ්වනිය නවතී. එය අක්‍රිය කිරීමට තෝරාගත් කාල සීමාව නැවත තට්ටු කරන්න.",
+    "unlimited": "අසීමිත"
   }
 }

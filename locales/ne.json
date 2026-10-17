@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× पढ्नुहोस्",
     "playAllStop": "रोक्नुहोस्",
     "playAllPrevious": "अघिल्लो",
-    "playAllNext": "अर्को"
+    "playAllNext": "अर्को",
+    "layoutSheetTitle": "अझकार लेआउट",
+    "arabicText": "अरबी पाठ",
+    "showTranslation": "अनुवाद देखाउनुहोस्",
+    "showTransliteration": "लिप्यन्तरण देखाउनुहोस्"
   },
   "app": {
     "errorInitializingPlayer": "प्लेयर सुरु गर्दा त्रुटि: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "आफ्नो टिप्पणी यहाँ लेख्नुहोस्...",
     "yourPlaylists": "तपाईंका प्लेलिस्टहरू",
     "rewayatAvailable": "{{number}} रिवायत उपलब्ध",
-    "rewayatByReciter": "{{reciter}} को {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} को {{rewayat}}",
+    "back": "पछाडि",
+    "options": "विकल्पहरू",
+    "shuffle": "सफल",
+    "fontSize": "फन्ट साइज",
+    "fileImported": "फाइल आयात भयो",
+    "nowReading": "अहिले पढ्दै",
+    "openingIn": "यसमा खोल्दै",
+    "showingInHafs": "हफ्समा देखाउँदै"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "सुराको पाठ र विवरण हेर्न यो तिलावतमा ट्याग लगाउनुहोस्"
-    }
+    },
+    "ambientSounds": "वातावरणीय ध्वनिहरू",
+    "loveAdd": "मनपर्नेमा थप्नुहोस्",
+    "loveRemove": "मनपर्नेबाट हटाउनुहोस्",
+    "mushafLayoutOptions": "लेआउट विकल्पहरू",
+    "nextTrack": "अर्को ट्र्याक",
+    "openPlayer": "प्लेयर खोल्नुहोस्",
+    "playbackSpeed": "प्लेब्याक गति",
+    "previousTrack": "अघिल्लो ट्र्याक",
+    "repeat": "दोहोर्‍याउनुहोस्",
+    "seekBack": "{{seconds}} सेकेन्ड पछाडि",
+    "seekForward": "{{seconds}} सेकेन्ड अगाडि",
+    "sleepTimer": "निद्रा टाइमर"
   },
   "playlist": {
     "subtitle_one": "प्लेलिस्ट • {{count}} सुरा",
@@ -442,7 +466,9 @@
     "myRecitations": "मेरा तिलावतहरू",
     "newToQuranStartHere": "कुरआनसँग नयाँ परिचय हो? यहाँबाट सुरु गर्नुहोस्",
     "seeMore": "थप हेर्नुहोस्",
-    "yourFavorites": "तपाईंका मनपर्नेहरू"
+    "yourFavorites": "तपाईंका मनपर्नेहरू",
+    "randomEmpty": "र्यान्डम तिलावत फेला परेन। कृपया फेरि प्रयास गर्नुहोस्।",
+    "randomFailed": "र्यान्डम तिलावत प्ले गर्न असफल। कृपया फेरि प्रयास गर्नुहोस्।"
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "निद्रा टाइमर",
-      "turnOffTimer": "टाइमर बन्द गर्नुहोस्"
+      "turnOffTimer": "टाइमर बन्द गर्नुहोस्",
+      "minutesRemaining_one": "{{count}} मिनेट बाँकी",
+      "minutesRemaining_other": "{{count}} मिनेट बाँकी",
+      "secondsRemaining_one": "{{count}} सेकेन्ड बाँकी",
+      "secondsRemaining_other": "{{count}} सेकेन्ड बाँकी"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "प्लेलिस्टबाट हटाउनुहोस्"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "कुरानिक दुआहरू (रब्बना)",
       "names-of-allah": "अल्लाहका 99 नामहरू"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "आयत दायरा",
+    "chooseSurah": "एउटा सूरा छान्नुहोस्",
+    "continueListening": "सुन्न जारी राख्नुहोस्",
+    "duration1h": "1 घण्टा",
+    "duration30m": "30 मिनेट",
+    "duration3h": "3 घण्टा",
+    "duration5h": "5 घण्टा",
+    "duration8h": "8 घण्टा",
+    "exploreCollectionsSubtitle": "तज्वीद, कण्ठस्थ, रिवायत र थप",
+    "exploreCollectionsTitle": "संग्रहहरू अन्वेषण गर्नुहोस्",
+    "khatma": "खत्म",
+    "khatmaActiveSubtitle": "114 मध्ये {{done}} सूरा पूरा भयो",
+    "khatmaCompletedSubtitle": "सबै 114 सूरा पूरा भयो",
+    "khatmaProgressTitle": "खत्म प्रगति",
+    "khatmaStartSubtitle": "खत्म सुरु गर्नुहोस् र आफ्नो प्रगति ट्र्याक गर्नुहोस्",
+    "listeningTools": "सुन्ने उपकरणहरू",
+    "repetition": "दोहोर्याइ",
+    "repetitionSubtitle": "एउटा सूरा र आयत दायरा छान्नुहोस्, अनि मिलाइएको समयसाथ दोहोर्‍याउनुहोस्।",
+    "repetitionTitle": "जुनसुकै आयत दायरा दोहोर्‍याउनुहोस्",
+    "selectDuration": "अवधि छान्नुहोस्",
+    "selectReciter": "कारी छान्नुहोस्",
+    "startNewKhatma": "नयाँ खत्म सुरु गर्नुहोस्",
+    "startRepetition": "दोहोर्याइ सुरु गर्नुहोस्",
+    "timedListening": "समय निर्धारित सुन्ने",
+    "timedRowActive": "टाइमर {{minutes}} मिनेटका लागि सेट गरियो",
+    "timedRowSubtitle": "तोकिएको समयपछि रोकिने",
+    "timerActiveNote": "टाइमर सकिएपछि प्लेब्याक रोकिन्छ। बन्द गर्न चयन गरिएको अवधिलाई फेरि ट्याप गर्नुहोस्।",
+    "unlimited": "असीमित"
   }
 }

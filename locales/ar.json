@@ -35,7 +35,11 @@
     "reciteTimes": "كرّر {{n}}×",
     "playAllStop": "إيقاف",
     "playAllPrevious": "السابق",
-    "playAllNext": "التالي"
+    "playAllNext": "التالي",
+    "layoutSheetTitle": "تنسيق الأذكار",
+    "arabicText": "النص العربي",
+    "showTranslation": "إظهار الترجمة",
+    "showTransliteration": "إظهار النقل الحرفي"
   },
   "app": {
     "errorInitializingPlayer": "خطأ في تهيئة المشغّل: {{message}}",
@@ -242,7 +246,15 @@
     "writeYourNoteHere": "اكتب ملاحظتك هنا...",
     "yourPlaylists": "قوائم التشغيل الخاصة بك",
     "rewayatAvailable": "{{number}} روايات متاحة",
-    "rewayatByReciter": "{{rewayat}} بصوت {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} بصوت {{reciter}}",
+    "back": "رجوع",
+    "options": "خيارات",
+    "shuffle": "تشغيل عشوائي",
+    "fontSize": "حجم الخط",
+    "fileImported": "تم استيراد الملف",
+    "nowReading": "تقرأ الآن",
+    "openingIn": "فتح في",
+    "showingInHafs": "العرض برواية حفص"
   },
   "components": {
     "actionButtons": {
@@ -396,7 +408,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "صنّف هذه التلاوة لعرض نص السورة وتفاصيلها"
-    }
+    },
+    "ambientSounds": "أصوات محيطة",
+    "loveAdd": "إضافة إلى المفضلة",
+    "loveRemove": "إزالة من المفضلة",
+    "mushafLayoutOptions": "خيارات التنسيق",
+    "nextTrack": "المقطع التالي",
+    "openPlayer": "فتح المشغّل",
+    "playbackSpeed": "سرعة التشغيل",
+    "previousTrack": "المقطع السابق",
+    "repeat": "تكرار",
+    "seekBack": "رجوع {{seconds}} ثانية",
+    "seekForward": "تقديم {{seconds}} ثانية",
+    "sleepTimer": "مؤقّت النوم"
   },
   "playlist": {
     "subtitle_few": "قائمة تشغيل • {{count}} سور",
@@ -462,7 +486,9 @@
     "myRecitations": "تلاواتي",
     "newToQuranStartHere": "جديد على القرآن؟ ابدأ هنا",
     "seeMore": "عرض المزيد",
-    "yourFavorites": "مفضلاتك"
+    "yourFavorites": "مفضلاتك",
+    "randomEmpty": "تعذّر العثور على تلاوات عشوائية. حاول مرة أخرى.",
+    "randomFailed": "تعذّر تشغيل التلاوة العشوائية. حاول مرة أخرى."
   },
   "screens": {
     "translationsContent": {
@@ -651,7 +677,19 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "مؤقّت النوم",
-      "turnOffTimer": "إيقاف المؤقّت"
+      "turnOffTimer": "إيقاف المؤقّت",
+      "minutesRemaining_zero": "{{count}} دقيقة متبقية",
+      "minutesRemaining_one": "{{count}} دقيقة متبقية",
+      "minutesRemaining_two": "{{count}} دقيقتان متبقيتان",
+      "minutesRemaining_few": "{{count}} دقائق متبقية",
+      "minutesRemaining_many": "{{count}} دقيقة متبقية",
+      "minutesRemaining_other": "{{count}} دقيقة متبقية",
+      "secondsRemaining_zero": "{{count}} ثانية متبقية",
+      "secondsRemaining_one": "{{count}} ثانية متبقية",
+      "secondsRemaining_two": "{{count}} ثانيتان متبقيتان",
+      "secondsRemaining_few": "{{count}} ثوانٍ متبقية",
+      "secondsRemaining_many": "{{count}} ثانية متبقية",
+      "secondsRemaining_other": "{{count}} ثانية متبقية"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "إزالة من قائمة التشغيل"
@@ -1055,5 +1093,35 @@
       "quranic-duas": "أدعية قرآنية (ربنا)",
       "names-of-allah": "أسماء الله الحسنى"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "نطاق الآيات",
+    "chooseSurah": "اختر سورة",
+    "continueListening": "متابعة الاستماع",
+    "duration1h": "ساعة واحدة",
+    "duration30m": "30 دقيقة",
+    "duration3h": "3 ساعات",
+    "duration5h": "5 ساعات",
+    "duration8h": "8 ساعات",
+    "exploreCollectionsSubtitle": "التجويد والحفظ والروايات والمزيد",
+    "exploreCollectionsTitle": "استكشف المجموعات",
+    "khatma": "ختمة",
+    "khatmaActiveSubtitle": "أُنجز {{done}} من 114 سورة",
+    "khatmaCompletedSubtitle": "اكتملت جميع السور الـ114",
+    "khatmaProgressTitle": "تقدّم الختمة",
+    "khatmaStartSubtitle": "ابدأ الختمة وتتبّع تقدّمك",
+    "listeningTools": "أدوات الاستماع",
+    "repetition": "التكرار",
+    "repetitionSubtitle": "اختر سورة ونطاق آيات، ثم كرّره بتوقيت متزامن.",
+    "repetitionTitle": "كرّر أي نطاق من الآيات",
+    "selectDuration": "اختر المدة",
+    "selectReciter": "اختر القارئ",
+    "startNewKhatma": "ابدأ ختمة جديدة",
+    "startRepetition": "ابدأ التكرار",
+    "timedListening": "الاستماع المؤقت",
+    "timedRowActive": "المؤقت مضبوط على {{minutes}} دقيقة",
+    "timedRowSubtitle": "نم بعد وقت محدد",
+    "timerActiveNote": "يتوقف التشغيل مؤقتًا عند انتهاء المؤقت. اضغط على المدة المختارة مرة أخرى لإيقافه.",
+    "unlimited": "بلا حدود"
   }
 }
