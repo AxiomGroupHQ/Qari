@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× ئوقۇڭ",
     "playAllStop": "توختات",
     "playAllPrevious": "ئالدىنقى",
-    "playAllNext": "كېيىنكى"
+    "playAllNext": "كېيىنكى",
+    "layoutSheetTitle": "ئەزكار ئورۇنلاشتۇرۇشى",
+    "arabicText": "ئەرەبچە تېكىست",
+    "showTranslation": "تەرجىمىنى كۆرسەت",
+    "showTransliteration": "لاتىن ئوقۇلۇشىنى كۆرسەت"
   },
   "app": {
     "errorInitializingPlayer": "قويغۇچنى قوزغىتىشتا خاتالىق: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "ئىزاھاتىڭىزنى بۇ يەرگە يېزىڭ...",
     "yourPlaylists": "قويۇش تىزىملىكلىرىڭىز",
     "rewayatAvailable": "{{number}} رىۋايەت بار",
-    "rewayatByReciter": "{{rewayat}} - {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} - {{reciter}}",
+    "back": "قايتىش",
+    "options": "تاللانمىلار",
+    "shuffle": "ئارىلاش",
+    "fontSize": "خەت چوڭلۇقى",
+    "fileImported": "ھۆججەت ئەكىرىلدى",
+    "nowReading": "ھازىر ئوقۇۋاتىسىز",
+    "openingIn": "ئېچىلىۋاتىدۇ:",
+    "showingInHafs": "ھەپس رىۋايىتىدە كۆرسىتىلىۋاتىدۇ"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "سۈرە تېكىستى ۋە تەپسىلاتلىرىنى كۆرۈش ئۈچۈن بۇ تىلاۋەتكە بەلگە قويۇڭ"
-    }
+    },
+    "ambientSounds": "مۇھىت ئاۋازلىرى",
+    "loveAdd": "ياقتۇرۇشلارغا قوشۇش",
+    "loveRemove": "ياقتۇرۇشلاردىن چىقىرىۋېتىش",
+    "mushafLayoutOptions": "ئورۇنلاشتۇرۇش تاللانمىلىرى",
+    "nextTrack": "كېيىنكى پارچە",
+    "openPlayer": "قويغۇچنى ئېچىش",
+    "playbackSpeed": "قويۇش سۈرئىتى",
+    "previousTrack": "ئالدىنقى پارچە",
+    "repeat": "تەكرارلاش",
+    "seekBack": "{{seconds}} سېكۇنت كەينىگە",
+    "seekForward": "{{seconds}} سېكۇنت ئالدىغا",
+    "sleepTimer": "ئۇيقۇ ۋاقىتلىغۇچى"
   },
   "playlist": {
     "subtitle_one": "قويۇش تىزىملىكى • {{count}} سۈرە",
@@ -442,7 +466,9 @@
     "myRecitations": "تىلاۋەتلىرىم",
     "newToQuranStartHere": "قۇرئان بىلەن يېڭى تونۇشتىڭىزمۇ؟ بۇ يەردىن باشلاڭ",
     "seeMore": "تېخىمۇ كۆپ كۆرۈش",
-    "yourFavorites": "ياقتۇرغانلىرىڭىز"
+    "yourFavorites": "ياقتۇرغانلىرىڭىز",
+    "randomEmpty": "ئىختىيارى تىلاۋەت تاپالمىدى. قايتا سىناڭ.",
+    "randomFailed": "ئىختىيارى تىلاۋەت قويۇلمىدى. قايتا سىناڭ."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "ئۇيقۇ ۋاقىتلىغۇچى",
-      "turnOffTimer": "ۋاقىتلىغۇچنى تاقاش"
+      "turnOffTimer": "ۋاقىتلىغۇچنى تاقاش",
+      "minutesRemaining_one": "{{count}} مىنۇت قالدى",
+      "minutesRemaining_other": "{{count}} مىنۇت قالدى",
+      "secondsRemaining_one": "{{count}} سېكۇنت قالدى",
+      "secondsRemaining_other": "{{count}} سېكۇنت قالدى"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "قويۇش تىزىملىكىدىن چىقىرىۋېتىش"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "قۇرئانىي دۇئالار (رەببەنا)",
       "names-of-allah": "ئاللاھنىڭ 99 ئىسمى"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "ئايەت دائىرىسى",
+    "chooseSurah": "سۈرە تاللاڭ",
+    "continueListening": "ئاڭلاشنى داۋاملاشتۇرۇڭ",
+    "duration1h": "1 سائەت",
+    "duration30m": "30 مىنۇت",
+    "duration3h": "3 سائەت",
+    "duration5h": "5 سائەت",
+    "duration8h": "8 سائەت",
+    "exploreCollectionsSubtitle": "تەجۋىد، يادلاش، رىۋايەتلەر ۋە باشقىلار",
+    "exploreCollectionsTitle": "توپلاملارنى ئىزدەڭ",
+    "khatma": "خەتم",
+    "khatmaActiveSubtitle": "114 سۈرىدىن {{done}} تاماملاندى",
+    "khatmaCompletedSubtitle": "بارلىق 114 سۈرە تاماملاندى",
+    "khatmaProgressTitle": "خەتم ئىلگىرىلىشى",
+    "khatmaStartSubtitle": "خەتم باشلاپ، ئىلگىرىلىشىڭىزنى ئىزچىل كۆزىتىڭ",
+    "listeningTools": "ئاڭلاش قوراللىرى",
+    "repetition": "تەكرارلاش",
+    "repetitionSubtitle": "سۈرە ۋە ئايەت دائىرىسىنى تاللاپ، ماس قەدەملىك ۋاقىت بىلەن تەكرارلاڭ.",
+    "repetitionTitle": "خالىغان ئايەت دائىرىسىنى تەكرارلاڭ",
+    "selectDuration": "ۋاقىت تاللاڭ",
+    "selectReciter": "قارى تاللاڭ",
+    "startNewKhatma": "يېڭى خەتم باشلاڭ",
+    "startRepetition": "تەكرارلاشنى باشلاڭ",
+    "timedListening": "ۋاقىتلىق ئاڭلاش",
+    "timedRowActive": "ۋاقىت سايىلاتقۇچ {{minutes}} مىنۇتقا تەڭشەلدى",
+    "timedRowSubtitle": "بەلگىلەنگەن ۋاقىتتىن كېيىن ئۇخلاڭ",
+    "timerActiveNote": "ۋاقىت سايىلاتقۇچ توختىغاندا قويۇش توختايدۇ. ئېتىۋېتىش ئۈچۈن تاللانغان ۋاقىتنى قايتا چېكىڭ.",
+    "unlimited": "چەكلىمىسىز"
   }
 }

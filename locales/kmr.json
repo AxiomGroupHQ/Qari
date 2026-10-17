@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× bixwîne",
     "playAllStop": "Bisekinîne",
     "playAllPrevious": "Berê",
-    "playAllNext": "Piştî"
+    "playAllNext": "Piştî",
+    "layoutSheetTitle": "Rêzkerdana zikran",
+    "arabicText": "Nivîsa erebî",
+    "showTranslation": "Wergerê nîşan bide",
+    "showTransliteration": "Translîterasyonê nîşan bide"
   },
   "app": {
     "errorInitializingPlayer": "Di destpêkirina lêkerê de çewtî: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Têbîniya xwe li vir binivîse...",
     "yourPlaylists": "Lîsteyên te yên lêdanê",
     "rewayatAvailable": "{{number}} rîwayet hene",
-    "rewayatByReciter": "{{rewayat}} ji {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} ji {{reciter}}",
+    "back": "Paşve",
+    "options": "Vebijêrk",
+    "shuffle": "Ketekî",
+    "fontSize": "Mezinahiya tîpan",
+    "fileImported": "Dosya hat împortkirin",
+    "nowReading": "Niha dixwînî",
+    "openingIn": "Tê vekirin di",
+    "showingInHafs": "Bi Hafs tê nîşandan"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Vê xwendinê etîket bike da ku nivîsa sûreyê û hûrgiliyan bibînî"
-    }
+    },
+    "ambientSounds": "Dengên doraşê",
+    "loveAdd": "Têxe bijareyan",
+    "loveRemove": "Ji bijareyan derxe",
+    "mushafLayoutOptions": "Vebijêrkên rêzkerdanê",
+    "nextTrack": "Pisteka din",
+    "openPlayer": "Lêderê veke",
+    "playbackSpeed": "Leza lêdanê",
+    "previousTrack": "Pisteka berê",
+    "repeat": "Dubare bike",
+    "seekBack": "{{seconds}} çirkeyan paş",
+    "seekForward": "{{seconds}} çirkeyan pêş",
+    "sleepTimer": "Demjimêra xewê"
   },
   "playlist": {
     "subtitle_one": "Lîsteya lêdanê • {{count}} sûre",
@@ -442,7 +466,9 @@
     "myRecitations": "Xwendinên min",
     "newToQuranStartHere": "Bi Quranê nû nas dibî? Li vir dest pê bike",
     "seeMore": "Zêdetir bibîne",
-    "yourFavorites": "Bijareyên te"
+    "yourFavorites": "Bijareyên te",
+    "randomEmpty": "Ti qiraetên ketekî nehatin dîtin. Ji kerema xwe dîsa biceribîne.",
+    "randomFailed": "Qiraeta ketekî nehat lêdan. Ji kerema xwe dîsa biceribîne."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Demjimêra xewê",
-      "turnOffTimer": "Demjimêrê bigire"
+      "turnOffTimer": "Demjimêrê bigire",
+      "minutesRemaining_one": "{{count}} xulek mane",
+      "minutesRemaining_other": "{{count}} xulek mane",
+      "secondsRemaining_one": "{{count}} çirke mane",
+      "secondsRemaining_other": "{{count}} çirke mane"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Ji lîsteya lêdanê rake"
@@ -1003,5 +1033,35 @@
       "quranic-duas": "Duayên Quranî (Rebbena)",
       "names-of-allah": "99 Navên Xwedê"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Dora ayetan",
+    "chooseSurah": "Sûreyekê hilbijêre",
+    "continueListening": "Guhdarîyê bidomîne",
+    "duration1h": "1 saet",
+    "duration30m": "30 xulek",
+    "duration3h": "3 saet",
+    "duration5h": "5 saet",
+    "duration8h": "8 saet",
+    "exploreCollectionsSubtitle": "Tecwîd, ezberkirîn, rîwayet û bêtir",
+    "exploreCollectionsTitle": "Koleksîyonan keşif bike",
+    "khatma": "Xetm",
+    "khatmaActiveSubtitle": "{{done}} ji 114 sûreyan temam bûn",
+    "khatmaCompletedSubtitle": "Hemû 114 sûre temam bûn",
+    "khatmaProgressTitle": "Pêşveçûna xetmê",
+    "khatmaStartSubtitle": "Xetmêkê dest pê bike û pêşveçûna xwe bişopîne",
+    "listeningTools": "Amûrên guhdarîyê",
+    "repetition": "Dubarekirin",
+    "repetitionSubtitle": "Sûre û dora ayetan hilbijêre, paşê bi dema hevamdeng dubare bike.",
+    "repetitionTitle": "Her dora ayetan dubare bike",
+    "selectDuration": "Demê hilbijêre",
+    "selectReciter": "Qarîyekê hilbijêre",
+    "startNewKhatma": "Xetma nû dest pê bike",
+    "startRepetition": "Dubarekirinê dest pê bike",
+    "timedListening": "Guhdarîya demjimêrî",
+    "timedRowActive": "Demjimêr li ser {{minutes}} xulek hat saz kirin",
+    "timedRowSubtitle": "Piştî demeke diyarkirî razê",
+    "timerActiveNote": "Demjimêr biqede, lêdan rawestê. Ji bo vêmirandinê careke din li ser dema hilbijartî bitikîne.",
+    "unlimited": "Bêsînor"
   }
 }

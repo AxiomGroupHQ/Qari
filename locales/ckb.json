@@ -35,7 +35,11 @@
     "reciteTimes": "{{n}}× بیخوێنە",
     "playAllStop": "وەستاندن",
     "playAllPrevious": "پێشوو",
-    "playAllNext": "دواتر"
+    "playAllNext": "دواتر",
+    "layoutSheetTitle": "ڕیزبەندی ئەذکار",
+    "arabicText": "دەقی عەرەبی",
+    "showTranslation": "وەرگێڕان پیشانبدە",
+    "showTransliteration": "لاتینیکردن پیشانبدە"
   },
   "app": {
     "errorInitializingPlayer": "هەڵە لە دەستپێکردنی لێدەر: {{message}}",
@@ -234,7 +238,15 @@
     "writeYourNoteHere": "تێبینییەکەت لێرە بنووسە...",
     "yourPlaylists": "لیستەکانی لێدانت",
     "rewayatAvailable": "{{number}} ڕیوایەت بەردەستە",
-    "rewayatByReciter": "{{rewayat}} بە دەنگی {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} بە دەنگی {{reciter}}",
+    "back": "گەڕانەوە",
+    "options": "هەڵبژاردنەکان",
+    "shuffle": "هەڕەمەکی",
+    "fontSize": "قەبارەی فۆنت",
+    "fileImported": "فایل هاوردەکرا",
+    "nowReading": "ئێستا دەخوێنیتەوە",
+    "openingIn": "دەیکرێتەوە لە",
+    "showingInHafs": "بە حەفس نمایش دەکرێت"
   },
   "components": {
     "actionButtons": {
@@ -384,7 +396,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "تاگ بۆ ئەم خوێندنەوەیە زیاد بکە بۆ بینینی دەقی سوورەت و وردەکارییەکان"
-    }
+    },
+    "ambientSounds": "دەنگی دەوروبەر",
+    "loveAdd": "زیادکردن بۆ دڵخوازەکان",
+    "loveRemove": "لابردن لە دڵخوازەکان",
+    "mushafLayoutOptions": "هەڵبژاردنەکانی ڕیزبەندی",
+    "nextTrack": "پارچەی داهاتوو",
+    "openPlayer": "پلەیەر بکەرەوە",
+    "playbackSpeed": "خێرایی پەخش",
+    "previousTrack": "پارچەی پێشوو",
+    "repeat": "دووبارەکردنەوە",
+    "seekBack": "{{seconds}} چرکە بۆ دواوە",
+    "seekForward": "{{seconds}} چرکە بۆ پێشەوە",
+    "sleepTimer": "کاتژمێری خەو"
   },
   "playlist": {
     "subtitle_one": "لیستی لێدان • {{count}} سوورەت",
@@ -446,7 +470,9 @@
     "myRecitations": "خوێندنەوەکانی من",
     "newToQuranStartHere": "تازە لەگەڵ قورئان ئاشنا بوویت؟ لێرە دەست پێ بکە",
     "seeMore": "زیاتر ببینە",
-    "yourFavorites": "دڵخوازەکانت"
+    "yourFavorites": "دڵخوازەکانت",
+    "randomEmpty": "هیچ تلاوەتێکی هەڕەمەکی نەدۆزرایەوە. تکایە دووبارە هەوڵبدەرەوە.",
+    "randomFailed": "تلاوەتە هەڕەمەکییەکە پەخش نەبوو. تکایە دووبارە هەوڵبدەرەوە."
   },
   "screens": {
     "translationsContent": {
@@ -635,7 +661,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "کاتژمێری خەو",
-      "turnOffTimer": "کوژاندنەوەی کاتژمێر"
+      "turnOffTimer": "کوژاندنەوەی کاتژمێر",
+      "minutesRemaining_one": "{{count}} خولەک ماوە",
+      "minutesRemaining_other": "{{count}} خولەک ماوە",
+      "secondsRemaining_one": "{{count}} چرکە ماوە",
+      "secondsRemaining_other": "{{count}} چرکە ماوە"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "لابردن لە لیستی لێدان"
@@ -1035,5 +1065,35 @@
       "quranic-duas": "دواکانی قورئانی (ڕەببەنا)",
       "names-of-allah": "٩٩ ناوی خودا"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "مەودای ئایەت",
+    "chooseSurah": "سورەتێک هەڵبژێرە",
+    "continueListening": "بەردەوامبوون لە گوێگرتن",
+    "duration1h": "1 کاتژمێر",
+    "duration30m": "30 خولەک",
+    "duration3h": "3 کاتژمێر",
+    "duration5h": "5 کاتژمێر",
+    "duration8h": "8 کاتژمێر",
+    "exploreCollectionsSubtitle": "تەجوید و لەبەرکردن و ڕێوایەت و زیاتر",
+    "exploreCollectionsTitle": "کۆمەڵەکان بپشکنە",
+    "khatma": "خەتم",
+    "khatmaActiveSubtitle": "{{done}} لە 114 سورەت تەواوبوون",
+    "khatmaCompletedSubtitle": "هەموو 114 سورەتەکە تەواوبوون",
+    "khatmaProgressTitle": "پێشکەوتنی خەتم",
+    "khatmaStartSubtitle": "خەتمێک دەست پێبکە و پێشکەوتنەکەت ببینە",
+    "listeningTools": "ئامرازەکانی گوێگرتن",
+    "repetition": "دووبارەکردنەوە",
+    "repetitionSubtitle": "سورەت و مەودای ئایەتێک هەڵبژێرە، پاشان بە کاتی هاوکات دووبارەیبکەرەوە.",
+    "repetitionTitle": "هەر مەودایەکی ئایەت دووبارەبکەرەوە",
+    "selectDuration": "ماوە هەڵبژێرە",
+    "selectReciter": "قاریێک هەڵبژێرە",
+    "startNewKhatma": "خەتمێکی نوێ دەست پێبکە",
+    "startRepetition": "دووبارەکردنەوە دەست پێبکە",
+    "timedListening": "گوێگرتنی کاتدیاریکراو",
+    "timedRowActive": "کاتژمێر بۆ {{minutes}} خولەک ڕێکخراوە",
+    "timedRowSubtitle": "دوای کاتێکی دیاریکراو بخەوە",
+    "timerActiveNote": "کاتێک کاتژمێرەکە تەواودەبێت، پەخش دەوەستێت. بۆ کوژاندنەوەی جارێکی تر لەسەر ماوە هەڵبژێردراوەکە بکڕە.",
+    "unlimited": "بێ سنوور"
   }
 }

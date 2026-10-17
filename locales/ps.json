@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× تکرار کړئ",
     "playAllStop": "درول",
     "playAllPrevious": "مخکینی",
-    "playAllNext": "راتلونکی"
+    "playAllNext": "راتلونکی",
+    "layoutSheetTitle": "د اذکارو بڼه",
+    "arabicText": "عربي متن",
+    "showTranslation": "ژباړه وښایئ",
+    "showTransliteration": "لاتیني تلفظ وښایئ"
   },
   "app": {
     "errorInitializingPlayer": "د غږ پلیر په چالانولو کې تېروتنه: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "خپل یادښت دلته ولیکئ...",
     "yourPlaylists": "ستاسې د غږولو لړلیکونه",
     "rewayatAvailable": "{{number}} روایتونه شته",
-    "rewayatByReciter": "{{rewayat}} د {{reciter}} په غږ"
+    "rewayatByReciter": "{{rewayat}} د {{reciter}} په غږ",
+    "back": "شاته",
+    "options": "اختیارونه",
+    "shuffle": "تصادفي",
+    "fontSize": "د فونټ کچه",
+    "fileImported": "فایل دراوړل شو",
+    "nowReading": "اوس لوستل کوې",
+    "openingIn": "پرانیستل کېږي په",
+    "showingInHafs": "په حفس روایت ښودل کېږي"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "دا تلاوت په نښه کړئ چې د سورت متن او جزییات ووینئ"
-    }
+    },
+    "ambientSounds": "د چاپېریال غږونه",
+    "loveAdd": "په خوښونو کې ورزیات کړئ",
+    "loveRemove": "له خوښونو لرې کړئ",
+    "mushafLayoutOptions": "د بڼې اختیارونه",
+    "nextTrack": "بل ټریک",
+    "openPlayer": "پلېر پرانیزئ",
+    "playbackSpeed": "د پخش چټکتیا",
+    "previousTrack": "مخکینی ټریک",
+    "repeat": "تکرار",
+    "seekBack": "{{seconds}} ثانیې شاته",
+    "seekForward": "{{seconds}} ثانیې وړاندې",
+    "sleepTimer": "د خوب وخت ټاکونکی"
   },
   "playlist": {
     "subtitle_one": "د غږولو لړلیک • {{count}} سورت",
@@ -442,7 +466,9 @@
     "myRecitations": "زما تلاوتونه",
     "newToQuranStartHere": "له قرآن سره نوي یاست؟ له دې ځایه پیل کړئ",
     "seeMore": "نور وګورئ",
-    "yourFavorites": "ستاسې خوښ شوي"
+    "yourFavorites": "ستاسې خوښ شوي",
+    "randomEmpty": "تصادفي تلاوتونه ونه موندل شول. بیا هڅه وکړئ.",
+    "randomFailed": "تصادفي تلاوت پخش نه شو. بیا هڅه وکړئ."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "د خوب وخت ټاکونکی",
-      "turnOffTimer": "وخت ټاکونکی بند کړئ"
+      "turnOffTimer": "وخت ټاکونکی بند کړئ",
+      "minutesRemaining_one": "{{count}} دقیقه پاتې",
+      "minutesRemaining_other": "{{count}} دقیقې پاتې",
+      "secondsRemaining_one": "{{count}} ثانیه پاتې",
+      "secondsRemaining_other": "{{count}} ثانیې پاتې"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "له لړلیک څخه لرې کړئ"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "قرآني دعاګانې (ربنا)",
       "names-of-allah": "د الله ۹۹ نومونه"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "د آیتونو ساحه",
+    "chooseSurah": "یوه سورت وټاکئ",
+    "continueListening": "اورېدل دوام کړئ",
+    "duration1h": "1 ساعت",
+    "duration30m": "30 دقیقې",
+    "duration3h": "3 ساعته",
+    "duration5h": "5 ساعته",
+    "duration8h": "8 ساعته",
+    "exploreCollectionsSubtitle": "تجوید، حفظ، روایتونه او نور",
+    "exploreCollectionsTitle": "ټولګې وپلټئ",
+    "khatma": "ختم",
+    "khatmaActiveSubtitle": "له 114 سورتونو {{done}} بشپړ شوي",
+    "khatmaCompletedSubtitle": "ټول 114 سورتونه بشپړ شول",
+    "khatmaProgressTitle": "د ختم پرمختګ",
+    "khatmaStartSubtitle": "ختم پیل کړئ او خپل پرمختګ تعقیب کړئ",
+    "listeningTools": "د اورېدنو وسیلې",
+    "repetition": "تکرار",
+    "repetitionSubtitle": "سورت او د آیتونو ساحه وټاکئ، بیا یې په همغږي وخت سره تکرار کړئ.",
+    "repetitionTitle": "هر د آیتونو ساحه تکرار کړئ",
+    "selectDuration": "موده وټاکئ",
+    "selectReciter": "قارئ وټاکئ",
+    "startNewKhatma": "نوی ختم پیل کړئ",
+    "startRepetition": "تکرار پیل کړئ",
+    "timedListening": "وخت ټاکل شوي اورېدل",
+    "timedRowActive": "ټایمر د {{minutes}} دقیقو لپاره ټاکل شوی",
+    "timedRowSubtitle": "له ټاکل شوي وخت وروسته ویده شئ",
+    "timerActiveNote": "کله چې ټایمر پای ته ورسېږي، پخش درېږي. د بندولو لپاره بیا ټاکل شوې موده وټکئ.",
+    "unlimited": "نامحدود"
   }
 }

@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× تکرار کنید",
     "playAllStop": "توقف",
     "playAllPrevious": "قبلی",
-    "playAllNext": "بعدی"
+    "playAllNext": "بعدی",
+    "layoutSheetTitle": "چیدمان اذکار",
+    "arabicText": "متن عربی",
+    "showTranslation": "نمایش ترجمه",
+    "showTransliteration": "نمایش تلفظ لاتین"
   },
   "app": {
     "errorInitializingPlayer": "خطا در راه‌اندازی پخش‌کننده: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "یادداشت خود را اینجا بنویسید...",
     "yourPlaylists": "فهرست‌های پخش شما",
     "rewayatAvailable": "{{number}} روایت موجود است",
-    "rewayatByReciter": "{{rewayat}} با صدای {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} با صدای {{reciter}}",
+    "back": "بازگشت",
+    "options": "گزینه‌ها",
+    "shuffle": "پخش تصادفی",
+    "fontSize": "اندازه قلم",
+    "fileImported": "فایل وارد شد",
+    "nowReading": "در حال مطالعه",
+    "openingIn": "در حال باز شدن در",
+    "showingInHafs": "نمایش به روایت حفص"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "این تلاوت را برچسب بزنید تا متن و جزئیات سوره را ببینید"
-    }
+    },
+    "ambientSounds": "صداهای محیطی",
+    "loveAdd": "افزودن به علاقه‌مندی‌ها",
+    "loveRemove": "حذف از علاقه‌مندی‌ها",
+    "mushafLayoutOptions": "گزینه‌های چیدمان",
+    "nextTrack": "قطعه بعدی",
+    "openPlayer": "باز کردن پخش‌کننده",
+    "playbackSpeed": "سرعت پخش",
+    "previousTrack": "قطعه قبلی",
+    "repeat": "تکرار",
+    "seekBack": "{{seconds}} ثانیه عقب",
+    "seekForward": "{{seconds}} ثانیه جلو",
+    "sleepTimer": "زمان‌سنج خواب"
   },
   "playlist": {
     "subtitle_one": "فهرست پخش • {{count}} سوره",
@@ -442,7 +466,9 @@
     "myRecitations": "تلاوت‌های من",
     "newToQuranStartHere": "با قرآن تازه آشنا شده‌اید؟ از اینجا شروع کنید",
     "seeMore": "دیدن بیشتر",
-    "yourFavorites": "دلخواه‌های شما"
+    "yourFavorites": "دلخواه‌های شما",
+    "randomEmpty": "تلاوت تصادفی‌ای یافت نشد. دوباره تلاش کنید.",
+    "randomFailed": "پخش تلاوت تصادفی ممکن نشد. دوباره تلاش کنید."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "زمان‌سنج خواب",
-      "turnOffTimer": "خاموش کردن زمان‌سنج"
+      "turnOffTimer": "خاموش کردن زمان‌سنج",
+      "minutesRemaining_one": "{{count}} دقیقه باقی مانده",
+      "minutesRemaining_other": "{{count}} دقیقه باقی مانده",
+      "secondsRemaining_one": "{{count}} ثانیه باقی مانده",
+      "secondsRemaining_other": "{{count}} ثانیه باقی مانده"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "حذف از فهرست پخش"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "دعاهای قرآنی (ربّنا)",
       "names-of-allah": "۹۹ نام خدا"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "محدوده آیات",
+    "chooseSurah": "سوره‌ای را انتخاب کنید",
+    "continueListening": "ادامه شنیدن",
+    "duration1h": "1 ساعت",
+    "duration30m": "30 دقیقه",
+    "duration3h": "3 ساعت",
+    "duration5h": "5 ساعت",
+    "duration8h": "8 ساعت",
+    "exploreCollectionsSubtitle": "تجوید، حفظ، روایت‌ها و بیشتر",
+    "exploreCollectionsTitle": "کاوش مجموعه‌ها",
+    "khatma": "ختم",
+    "khatmaActiveSubtitle": "{{done}} از 114 سوره تکمیل شد",
+    "khatmaCompletedSubtitle": "هر 114 سوره تکمیل شد",
+    "khatmaProgressTitle": "پیشرفت ختم",
+    "khatmaStartSubtitle": "ختم را شروع کنید و پیشرفت خود را دنبال کنید",
+    "listeningTools": "ابزارهای شنیدن",
+    "repetition": "تکرار",
+    "repetitionSubtitle": "سوره و محدوده آیات را انتخاب کنید، سپس با زمان‌بندی هماهنگ تکرارش کنید.",
+    "repetitionTitle": "تکرار هر محدوده از آیات",
+    "selectDuration": "انتخاب مدت",
+    "selectReciter": "انتخاب قاری",
+    "startNewKhatma": "شروع ختم جدید",
+    "startRepetition": "شروع تکرار",
+    "timedListening": "شنیدن زمان‌دار",
+    "timedRowActive": "تایمر روی {{minutes}} دقیقه تنظیم شد",
+    "timedRowSubtitle": "پس از زمانی مشخص بخوابید",
+    "timerActiveNote": "پخش با پایان تایمر متوقف می‌شود. برای خاموش کردن، دوباره روی مدت انتخاب‌شده بزنید.",
+    "unlimited": "نامحدود"
   }
 }
