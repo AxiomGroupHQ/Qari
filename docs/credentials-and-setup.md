@@ -67,7 +67,7 @@ Native sign-in and secure token storage ship with the next native build.
 
 ## 5. GitHub token with `workflow` scope (pending)
 
-Needed only to push edits to `.github/workflows/*.yml` (the two lint.yml fixes). Create at https://github.com/settings/personal-access-tokens (fine-grained): resource owner AxiomGroupHQ, repository `Qari`, permissions Contents: Read and write, Pull requests: Read and write, and **Workflows: Read and write**. Docs: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens . Save it through the vault link ("GitHub Qari workflow token"). Set the shortest expiry that works for you.
+Needed only to push edits to `.github/workflows/*.yml` (the two lint.yml fixes). Create at https://github.com/settings/personal-access-tokens (fine-grained): resource owner AxiomGroupHQ, repository `qari`, permissions Contents: Read and write, Pull requests: Read and write, and **Workflows: Read and write**. Docs: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens . Save it through the vault link ("GitHub Qari workflow token"). Set the shortest expiry that works for you.
 
 ## 6. Real App Store ID (pending)
 
