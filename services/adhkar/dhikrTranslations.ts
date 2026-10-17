@@ -3,9 +3,14 @@ import type {Dhikr} from '@/types/adhkar';
 /**
  * Per-language translations of dhikr body text (translation / instruction).
  *
- * Religious text is translated by humans, never machine-translated. Bundle
- * files live in data/adhkar-translations/<locale>.json as sparse maps from
- * dhikr id to the translated fields:
+ * Human translations are preferred and are added only after the team has
+ * confirmed the source and its license. Languages with no approved human
+ * source may ship a machine-translated bundle, always flagged unreviewed
+ * in data/adhkar-translations/<locale>.meta.json; the UI keeps English
+ * fallback for any missing id or field. Quran, tafsir and Arabic text are
+ * never machine-translated. Bundle files live in
+ * data/adhkar-translations/<locale>.json as sparse maps from dhikr id to
+ * the translated fields:
  *
  *   { "75": { "translation": "...", "instruction": "..." } }
  *
@@ -29,7 +34,12 @@ type BundleLoader = () =>
  * translations-index or manual entry) when a reviewed human translation for
  * a language lands. Empty means every language reads the English source.
  */
-const bundleLoaders: Record<string, BundleLoader> = {};
+const bundleLoaders: Record<string, BundleLoader> = {
+  // Model-authored and UNREVIEWED - see the locale's
+  // data/adhkar-translations/<locale>.meta.json. Replace with the approved
+  // human translation when the team confirms one.
+  ckb: () => require('../../data/adhkar-translations/ckb.json'),
+};
 
 const bundleCache: Record<string, DhikrTranslationBundle | null> = {};
 
@@ -46,21 +56,24 @@ export function registerDhikrTranslationBundle(
 export function getDhikrTranslationBundle(
   locale: string,
 ): DhikrTranslationBundle | null {
-  if (locale in bundleCache) return bundleCache[locale];
-  const loader = bundleLoaders[locale];
+  // Fall back to the base language for regional locales (nl-BE -> nl).
+  const key =
+    locale in bundleLoaders ? locale : (locale.split('-')[0] ?? locale);
+  if (key in bundleCache) return bundleCache[key];
+  const loader = bundleLoaders[key];
   if (!loader) {
-    bundleCache[locale] = null;
+    bundleCache[key] = null;
     return null;
   }
   try {
     const mod = loader();
-    bundleCache[locale] =
+    bundleCache[key] =
       (mod as {default?: DhikrTranslationBundle}).default ??
       (mod as DhikrTranslationBundle);
   } catch {
-    bundleCache[locale] = null;
+    bundleCache[key] = null;
   }
-  return bundleCache[locale];
+  return bundleCache[key];
 }
 
 /**
