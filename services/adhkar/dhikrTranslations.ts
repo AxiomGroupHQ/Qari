@@ -43,6 +43,14 @@ const bundleLoaders: Record<string, BundleLoader> = {
   bm: () => require('../../data/adhkar-translations/bm.json'),
   ff: () => require('../../data/adhkar-translations/ff.json'),
   mnk: () => require('../../data/adhkar-translations/mnk.json'),
+  nl: () => require('../../data/adhkar-translations/nl.json'),
+  el: () => require('../../data/adhkar-translations/el.json'),
+  mk: () => require('../../data/adhkar-translations/mk.json'),
+  mr: () => require('../../data/adhkar-translations/mr.json'),
+  my: () => require('../../data/adhkar-translations/my.json'),
+  pa: () => require('../../data/adhkar-translations/pa.json'),
+  prs: () => require('../../data/adhkar-translations/prs.json'),
+  ti: () => require('../../data/adhkar-translations/ti.json'),
 };
 
 const bundleCache: Record<string, DhikrTranslationBundle | null> = {};
