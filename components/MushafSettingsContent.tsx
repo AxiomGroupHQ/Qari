@@ -651,7 +651,7 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
     try {
       const saheehInternationalData = getRemoteJson(
         'SaheehInternational.translation-with-footnote-tags.json',
-        {},
+        {} as Record<string, {t?: string}>,
       );
       return (
         saheehInternationalData[verseKey]?.t || 'Error loading translation'

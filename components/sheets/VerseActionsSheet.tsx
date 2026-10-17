@@ -62,8 +62,14 @@ import {dirIcon} from '@/i18n/direction';
 import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 const surahData = require('@/data/surahData.json');
-const quranVerses = getRemoteJson('quran.json', {});
-const transliterationData = getRemoteJson('transliteration.json', {});
+const quranVerses = getRemoteJson(
+  'quran.json',
+  {} as Record<string, {text?: string}>,
+);
+const transliterationData = getRemoteJson(
+  'transliteration.json',
+  {} as Record<string, {t?: string}>,
+);
 
 type ActiveScreen =
   | 'highlight'

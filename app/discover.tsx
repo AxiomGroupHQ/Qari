@@ -30,7 +30,7 @@ import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 const quranData = getRemoteJson(
   'quran.json',
-  {} as Record<string, {text_uthmani: string}>,
+  {} as Record<string, {verse_key: string; text: string}>,
 );
 const arabicByKey: Record<string, string> = {};
 for (const v of Object.values(quranData)) arabicByKey[v.verse_key] = v.text;

@@ -27,7 +27,7 @@ jest.mock('@react-native-async-storage/async-storage', () => {
 jest.mock('react-native', () => ({Platform: {OS: 'web'}}));
 
 const webCache = new Map<string, string>();
-jest.mock('expo-file-system', () => ({}), {virtual: true});
+jest.mock('expo-file-system/legacy', () => ({}));
 jest.mock('expo-crypto', () => ({}), {virtual: true});
 
 (global as {caches?: unknown}).caches = {

@@ -48,7 +48,10 @@ import {t} from '@/i18n';
 import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 // Import surah info data
-const surahInfo = getRemoteJson('surahInfo.json', {});
+const surahInfo = getRemoteJson(
+  'surahInfo.json',
+  {} as Record<number, {surah_name: string; text: string}>,
+);
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 

@@ -1,10 +1,8 @@
 import {analyticsService} from '@/services/analytics/AnalyticsService';
 import {databaseService} from '@/services/database/DatabaseService';
 import {adhkarService} from '@/services/adhkar/AdhkarService';
-import {
-  initRemoteData,
-  REMOTE_REFERENCE_FILES,
-} from '@/services/remoteData/remoteReferenceFiles';
+import {initRemoteData} from '@/services/remoteData/RemoteDataService';
+import {REMOTE_REFERENCE_FILES} from '@/services/remoteData/remoteReferenceFiles';
 import {playlistService} from '@/services/playlist/PlaylistService';
 import {uploadsService} from '@/services/uploads/UploadsService';
 import {verseAnnotationService} from '@/services/verse-annotations/VerseAnnotationService';
