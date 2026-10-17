@@ -42,6 +42,7 @@ const bundleLoaders: Record<string, BundleLoader> = {
   wo: () => require('../../data/adhkar-translations/wo.json'),
   bm: () => require('../../data/adhkar-translations/bm.json'),
   ff: () => require('../../data/adhkar-translations/ff.json'),
+  mnk: () => require('../../data/adhkar-translations/mnk.json'),
 };
 
 const bundleCache: Record<string, DhikrTranslationBundle | null> = {};
