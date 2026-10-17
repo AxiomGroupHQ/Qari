@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× ചൊല്ലുക",
     "playAllStop": "നിർത്തുക",
     "playAllPrevious": "മുമ്പത്തേത്",
-    "playAllNext": "അടുത്തത്"
+    "playAllNext": "അടുത്തത്",
+    "layoutSheetTitle": "അദ്കാർ ലേഔട്ട്",
+    "arabicText": "അറബിക് ടെക്സ്റ്റ്",
+    "showTranslation": "വിവർത്തനം കാണിക്കുക",
+    "showTransliteration": "ലിപ്യന്തരണം കാണിക്കുക"
   },
   "app": {
     "errorInitializingPlayer": "പ്ലെയർ ആരംഭിക്കുന്നതിൽ പിശക്: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "ഇവിടെ നിങ്ങളുടെ കുറിപ്പ് എഴുതുക...",
     "yourPlaylists": "നിങ്ങളുടെ പ്ലേലിസ്റ്റുകൾ",
     "rewayatAvailable": "{{number}} റിവായത്തുകൾ ലഭ്യമാണ്",
-    "rewayatByReciter": "{{reciter}}യുടെ {{rewayat}}"
+    "rewayatByReciter": "{{reciter}}യുടെ {{rewayat}}",
+    "back": "പിന്നോട്ട്",
+    "options": "ഓപ്ഷനുകൾ",
+    "shuffle": "ഷഫിൾ",
+    "fontSize": "ഫോണ്ട് വലുപ്പം",
+    "fileImported": "ഫയൽ ഇമ്പോർട്ട് ചെയ്തു",
+    "nowReading": "ഇപ്പോൾ വായിക്കുന്നു",
+    "openingIn": "ഇതിൽ തുറക്കുന്നു",
+    "showingInHafs": "ഹഫ്സിൽ കാണിക്കുന്നു"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "സൂറ വാചകവും വിശദാംശങ്ങളും കാണാൻ ഈ പാരായണം ടാഗ് ചെയ്യുക"
-    }
+    },
+    "ambientSounds": "ചുറ്റുപാട് ശബ്ദങ്ങൾ",
+    "loveAdd": "പ്രിയപ്പെട്ടവയിൽ ചേർക്കുക",
+    "loveRemove": "പ്രിയപ്പെട്ടവയിൽ നിന്ന് നീക്കുക",
+    "mushafLayoutOptions": "ലേഔട്ട് ഓപ്ഷനുകൾ",
+    "nextTrack": "അടുത്ത ട്രാക്ക്",
+    "openPlayer": "പ്ലേയർ തുറക്കുക",
+    "playbackSpeed": "പ്ലേബാക്ക് വേഗത",
+    "previousTrack": "മുൻ ട്രാക്ക്",
+    "repeat": "ആവർത്തിക്കുക",
+    "seekBack": "{{seconds}} സെക്കൻഡ് പിന്നോട്ട്",
+    "seekForward": "{{seconds}} സെക്കൻഡ് മുന്നോട്ട്",
+    "sleepTimer": "സ്ലീപ്പ് ടൈമർ"
   },
   "playlist": {
     "subtitle_one": "പ്ലേലിസ്റ്റ് • {{count}} സൂറ",
@@ -442,7 +466,9 @@
     "myRecitations": "എന്റെ പാരായണങ്ങൾ",
     "newToQuranStartHere": "ഖുർആനിൽ പുതിയതാണോ? ഇവിടെ തുടങ്ങൂ",
     "seeMore": "കൂടുതൽ കാണുക",
-    "yourFavorites": "നിങ്ങളുടെ പ്രിയപ്പെട്ടവ"
+    "yourFavorites": "നിങ്ങളുടെ പ്രിയപ്പെട്ടവ",
+    "randomEmpty": "ക്രമരഹിതമായ തിലാവത്തുകൾ കണ്ടെത്താനായില്ല. വീണ്ടും ശ്രമിക്കുക.",
+    "randomFailed": "ക്രമരഹിതമായ തിലാവത്ത് പ്ലേ ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "സ്ലീപ്പ് ടൈമർ",
-      "turnOffTimer": "ടൈമർ ഓഫ് ചെയ്യുക"
+      "turnOffTimer": "ടൈമർ ഓഫ് ചെയ്യുക",
+      "minutesRemaining_one": "{{count}} മിനിറ്റ് ബാക്കി",
+      "minutesRemaining_other": "{{count}} മിനിറ്റ് ബാക്കി",
+      "secondsRemaining_one": "{{count}} സെക്കൻഡ് ബാക്കി",
+      "secondsRemaining_other": "{{count}} സെക്കൻഡ് ബാക്കി"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "പ്ലേലിസ്റ്റിൽ നിന്ന് നീക്കം ചെയ്യുക"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "ഖുർആനിക പ്രാർത്ഥനകൾ (റബ്ബന)",
       "names-of-allah": "അല്ലാഹുവിന്റെ 99 പേരുകൾ"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "ആയത്ത് പരിധി",
+    "chooseSurah": "ഒരു സൂറ തിരഞ്ഞെടുക്കുക",
+    "continueListening": "കേൾക്കൽ തുടരുക",
+    "duration1h": "1 മണിക്കൂർ",
+    "duration30m": "30 മിനിറ്റ്",
+    "duration3h": "3 മണിക്കൂർ",
+    "duration5h": "5 മണിക്കൂർ",
+    "duration8h": "8 മണിക്കൂർ",
+    "exploreCollectionsSubtitle": "തജ്വീദ്, മനഃപാഠം, റിവായത്ത് എന്നിവയും മറ്റും",
+    "exploreCollectionsTitle": "ശേഖരങ്ങൾ പര്യവേക്ഷണം ചെയ്യുക",
+    "khatma": "ഖത്മ്",
+    "khatmaActiveSubtitle": "114-ൽ {{done}} സൂറകൾ പൂർത്തിയായി",
+    "khatmaCompletedSubtitle": "എല്ലാ 114 സൂറകളും പൂർത്തിയായി",
+    "khatmaProgressTitle": "ഖത്മ് പുരോഗതി",
+    "khatmaStartSubtitle": "ഖത്മ് ആരംഭിച്ച് നിങ്ങളുടെ പുരോഗതി ട്രാക്ക് ചെയ്യുക",
+    "listeningTools": "കേൾവി ഉപകരണങ്ങൾ",
+    "repetition": "ആവർത്തനം",
+    "repetitionSubtitle": "ഒരു സൂറയും ആയത്ത് പരിധിയും തിരഞ്ഞെടുത്ത് സമന്വിത സമയത്തോടെ ആവർത്തിക്കുക.",
+    "repetitionTitle": "ഏത് ആയത്ത് പരിധിയും ആവർത്തിക്കുക",
+    "selectDuration": "ദൈർഘ്യം തിരഞ്ഞെടുക്കുക",
+    "selectReciter": "ഖാരിയെ തിരഞ്ഞെടുക്കുക",
+    "startNewKhatma": "പുതിയ ഖത്മ് ആരംഭിക്കുക",
+    "startRepetition": "ആവർത്തനം ആരംഭിക്കുക",
+    "timedListening": "സമയം നിശ്ചയിച്ചുള്ള കേൾവി",
+    "timedRowActive": "ടൈമർ {{minutes}} മിനിറ്റിലേക്ക് സജ്ജമാക്കി",
+    "timedRowSubtitle": "നിശ്ചിത സമയത്തിന് ശേഷം നിർത്തുക",
+    "timerActiveNote": "ടൈമർ അവസാനിക്കുമ്പോൾ പ്ലേബാക്ക് നിർത്തും. ഓഫ് ചെയ്യാൻ തിരഞ്ഞെടുത്ത ദൈർഘ്യം വീണ്ടും ടാപ്പ് ചെയ്യുക.",
+    "unlimited": "പരിധിയില്ലാത്തത്"
   }
 }

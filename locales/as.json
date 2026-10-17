@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× পঢ়ক",
     "playAllStop": "বন্ধ কৰক",
     "playAllPrevious": "আগৰটো",
-    "playAllNext": "পিছৰটো"
+    "playAllNext": "পিছৰটো",
+    "layoutSheetTitle": "আযকাৰ লেআউট",
+    "arabicText": "আৰবী পাঠ",
+    "showTranslation": "অনুবাদ দেখুৱাওক",
+    "showTransliteration": "লিপ্যন্তৰ দেখুৱাওক"
   },
   "app": {
     "errorInitializingPlayer": "প্লেয়াৰ আৰম্ভ কৰোঁতে ত্ৰুটি: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "আপোনাৰ টোকা ইয়াত লিখক...",
     "yourPlaylists": "আপোনাৰ প্লেলিষ্টসমূহ",
     "rewayatAvailable": "{{number}}টা তিলাৱত উপলব্ধ",
-    "rewayatByReciter": "{{reciter}}ৰ {{rewayat}}"
+    "rewayatByReciter": "{{reciter}}ৰ {{rewayat}}",
+    "back": "উভতি যাওক",
+    "options": "বিকল্প",
+    "shuffle": "এলোমেলো",
+    "fontSize": "ফণ্টৰ আকাৰ",
+    "fileImported": "ফাইল আমদানি কৰা হ'ল",
+    "nowReading": "এতিয়া পঢ়ি আছে",
+    "openingIn": "ইয়াত খোলা হৈ আছে",
+    "showingInHafs": "হাফছত দেখুওৱা হৈ আছে"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "ছুৰাৰ পাঠ আৰু বিৱৰণ চাবলৈ এই তিলাৱতত টেগ দিয়ক"
-    }
+    },
+    "ambientSounds": "পৰিৱেশৰ শব্দ",
+    "loveAdd": "প্ৰিয়ত যোগ কৰক",
+    "loveRemove": "প্ৰিয়ৰ পৰা আঁতৰাওক",
+    "mushafLayoutOptions": "লেআউট বিকল্প",
+    "nextTrack": "পৰৱৰ্তী ট্ৰেক",
+    "openPlayer": "প্লেয়াৰ খোলক",
+    "playbackSpeed": "প্লেবেকৰ গতি",
+    "previousTrack": "আগৰ ট্ৰেক",
+    "repeat": "পুনৰাবৃত্তি",
+    "seekBack": "{{seconds}} ছেকেণ্ড পিছলৈ",
+    "seekForward": "{{seconds}} ছেকেণ্ড আগলৈ",
+    "sleepTimer": "নিদ্ৰা টাইমাৰ"
   },
   "playlist": {
     "subtitle_one": "প্লেলিষ্ট • {{count}} টা ছুৰা",
@@ -442,7 +466,9 @@
     "myRecitations": "মোৰ তিলাৱতসমূহ",
     "newToQuranStartHere": "কুৰআনৰ সৈতে নতুন পৰিচয়? ইয়াৰ পৰা আৰম্ভ কৰক",
     "seeMore": "অধিক চাওক",
-    "yourFavorites": "আপোনাৰ প্ৰিয়সমূহ"
+    "yourFavorites": "আপোনাৰ প্ৰিয়সমূহ",
+    "randomEmpty": "যাদৃচ্ছিক তিলাৱাত বিচাৰি পোৱা নগ'ল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।",
+    "randomFailed": "যাদৃচ্ছিক তিলাৱাত চলাব বিফল হ'ল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।"
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "নিদ্ৰা টাইমাৰ",
-      "turnOffTimer": "টাইমাৰ বন্ধ কৰক"
+      "turnOffTimer": "টাইমাৰ বন্ধ কৰক",
+      "minutesRemaining_one": "{{count}} মিনিট বাকী",
+      "minutesRemaining_other": "{{count}} মিনিট বাকী",
+      "secondsRemaining_one": "{{count}} ছেকেণ্ড বাকী",
+      "secondsRemaining_other": "{{count}} ছেকেণ্ড বাকী"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "প্লেলিষ্টৰ পৰা আঁতৰাওক"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "কোৰআনীয় দোৱা (ৰাব্বানা)",
       "names-of-allah": "আল্লাহৰ ৯৯ নাম"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "আয়াতৰ পৰিসৰ",
+    "chooseSurah": "এটা ছূৰা বাছনি কৰক",
+    "continueListening": "শুনা অব্যাহত ৰাখক",
+    "duration1h": "1 ঘণ্টা",
+    "duration30m": "30 মিনিট",
+    "duration3h": "3 ঘণ্টা",
+    "duration5h": "5 ঘণ্টা",
+    "duration8h": "8 ঘণ্টা",
+    "exploreCollectionsSubtitle": "তাজৱীদ, মুখস্থ, ৰিৱায়াত আৰু অধিক",
+    "exploreCollectionsTitle": "সংগ্ৰহ অন্বেষণ কৰক",
+    "khatma": "খতম",
+    "khatmaActiveSubtitle": "114ৰ ভিতৰত {{done}}টা ছূৰা সম্পূৰ্ণ",
+    "khatmaCompletedSubtitle": "সকলো 114টা ছূৰা সম্পূৰ্ণ",
+    "khatmaProgressTitle": "খতমৰ অগ্ৰগতি",
+    "khatmaStartSubtitle": "খতম আৰম্ভ কৰক আৰু আপোনাৰ অগ্ৰগতি ট্ৰেক কৰক",
+    "listeningTools": "শুনাৰ সা-সৰঞ্জাম",
+    "repetition": "পুনৰাবৃত্তি",
+    "repetitionSubtitle": "এটা ছূৰা আৰু আয়াতৰ পৰিসৰ বাছনি কৰক, তাৰপিছত সমন্বিত সময়ৰ সৈতে ইয়াক পুনৰাবৃত্তি কৰক।",
+    "repetitionTitle": "যিকোনো আয়াতৰ পৰিসৰ পুনৰাবৃত্তি কৰক",
+    "selectDuration": "সময়কাল বাছনি কৰক",
+    "selectReciter": "ক্বাৰী বাছনি কৰক",
+    "startNewKhatma": "নতুন খতম আৰম্ভ কৰক",
+    "startRepetition": "পুনৰাবৃত্তি আৰম্ভ কৰক",
+    "timedListening": "নিৰ্ধাৰিত সময়ত শোনা",
+    "timedRowActive": "টাইমাৰ {{minutes}} মিনিটৰ বাবে ছেট কৰা হৈছে",
+    "timedRowSubtitle": "নিৰ্দিষ্ট সময়ৰ পিছত বন্ধ হওক",
+    "timerActiveNote": "টাইমাৰ শেষ হ'লে প্লেবেক ৰৈ যায়। ইয়াক বন্ধ কৰিবলৈ নিৰ্বাচিত সময়কালত পুনৰ টেপ কৰক।",
+    "unlimited": "সীমাহীন"
   }
 }

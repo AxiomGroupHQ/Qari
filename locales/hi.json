@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× पढ़ें",
     "playAllStop": "रोकें",
     "playAllPrevious": "पिछला",
-    "playAllNext": "अगला"
+    "playAllNext": "अगला",
+    "layoutSheetTitle": "अज़कार लेआउट",
+    "arabicText": "अरबी पाठ",
+    "showTranslation": "अनुवाद दिखाएँ",
+    "showTransliteration": "लिप्यंतरण दिखाएँ"
   },
   "app": {
     "errorInitializingPlayer": "प्लेयर शुरू करने में त्रुटि: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "अपना नोट यहाँ लिखें...",
     "yourPlaylists": "आपकी प्लेलिस्ट",
     "rewayatAvailable": "{{number}} रिवायतें उपलब्ध",
-    "rewayatByReciter": "{{reciter}} की {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} की {{rewayat}}",
+    "back": "वापस",
+    "options": "विकल्प",
+    "shuffle": "शफ़ल",
+    "fontSize": "फ़ॉन्ट आकार",
+    "fileImported": "फ़ाइल आयातित",
+    "nowReading": "अब पढ़ रहे हैं",
+    "openingIn": "इसमें खोल रहे हैं",
+    "showingInHafs": "हफ़्स में दिखा रहे हैं"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "सूरह का टेक्स्ट और विवरण देखने के लिए इस तिलावत को टैग करें"
-    }
+    },
+    "ambientSounds": "परिवेशी ध्वनियाँ",
+    "loveAdd": "पसंदीदा में जोड़ें",
+    "loveRemove": "पसंदीदा से हटाएँ",
+    "mushafLayoutOptions": "लेआउट विकल्प",
+    "nextTrack": "अगला ट्रैक",
+    "openPlayer": "प्लेयर खोलें",
+    "playbackSpeed": "प्लेबैक गति",
+    "previousTrack": "पिछला ट्रैक",
+    "repeat": "दोहराएँ",
+    "seekBack": "{{seconds}} सेकंड पीछे",
+    "seekForward": "{{seconds}} सेकंड आगे",
+    "sleepTimer": "स्लीप टाइमर"
   },
   "playlist": {
     "subtitle_one": "प्लेलिस्ट • {{count}} सूरह",
@@ -442,7 +466,9 @@
     "myRecitations": "मेरी तिलावतें",
     "newToQuranStartHere": "क़ुरआन में नए हैं? यहाँ से शुरू करें",
     "seeMore": "और देखें",
-    "yourFavorites": "आपके पसंदीदा"
+    "yourFavorites": "आपके पसंदीदा",
+    "randomEmpty": "यादृच्छिक तिलावत नहीं मिल सकीं। कृपया पुनः प्रयास करें।",
+    "randomFailed": "यादृच्छिक तिलावत चलाने में विफल। कृपया पुनः प्रयास करें।"
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "स्लीप टाइमर",
-      "turnOffTimer": "टाइमर बंद करें"
+      "turnOffTimer": "टाइमर बंद करें",
+      "minutesRemaining_one": "{{count}} मिनट शेष",
+      "minutesRemaining_other": "{{count}} मिनट शेष",
+      "secondsRemaining_one": "{{count}} सेकंड शेष",
+      "secondsRemaining_other": "{{count}} सेकंड शेष"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "प्लेलिस्ट से हटाएँ"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "क़ुरआनी दुआएँ (रब्बना)",
       "names-of-allah": "अल्लाह के 99 नाम"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "आयत सीमा",
+    "chooseSurah": "एक सूरह चुनें",
+    "continueListening": "सुनना जारी रखें",
+    "duration1h": "1 घंटा",
+    "duration30m": "30 मिनट",
+    "duration3h": "3 घंटे",
+    "duration5h": "5 घंटे",
+    "duration8h": "8 घंटे",
+    "exploreCollectionsSubtitle": "तजवीद, याद करना, रिवायत और अधिक",
+    "exploreCollectionsTitle": "संग्रह खोजें",
+    "khatma": "ख़त्म",
+    "khatmaActiveSubtitle": "114 में से {{done}} सूरहें पूरी हुईं",
+    "khatmaCompletedSubtitle": "सभी 114 सूरहें पूरी हुईं",
+    "khatmaProgressTitle": "ख़त्म प्रगति",
+    "khatmaStartSubtitle": "ख़त्म शुरू करें और अपनी प्रगति ट्रैक करें",
+    "listeningTools": "सुनने के उपकरण",
+    "repetition": "दोहराव",
+    "repetitionSubtitle": "एक सूरह और आयत सीमा चुनें, फिर इसे समन्वित समय के साथ दोहराएँ।",
+    "repetitionTitle": "कोई भी आयत सीमा दोहराएँ",
+    "selectDuration": "अवधि चुनें",
+    "selectReciter": "क़ारी चुनें",
+    "startNewKhatma": "नया ख़त्म शुरू करें",
+    "startRepetition": "दोहराव शुरू करें",
+    "timedListening": "समयबद्ध सुनना",
+    "timedRowActive": "टाइमर {{minutes}} मिनट के लिए सेट",
+    "timedRowSubtitle": "तय समय के बाद बंद हो जाए",
+    "timerActiveNote": "टाइमर समाप्त होने पर प्लेबैक रुक जाता है। इसे बंद करने के लिए चयनित अवधि को फिर से टैप करें।",
+    "unlimited": "असीमित"
   }
 }

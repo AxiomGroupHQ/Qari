@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× পড়ুন",
     "playAllStop": "থামান",
     "playAllPrevious": "আগেরটি",
-    "playAllNext": "পরেরটি"
+    "playAllNext": "পরেরটি",
+    "layoutSheetTitle": "আযকার লেআউট",
+    "arabicText": "আরবি টেক্সট",
+    "showTranslation": "অনুবাদ দেখান",
+    "showTransliteration": "উচ্চারণ লিপি দেখান"
   },
   "app": {
     "errorInitializingPlayer": "প্লেয়ার চালু করতে ত্রুটি: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "আপনার নোট এখানে লিখুন...",
     "yourPlaylists": "আপনার প্লেলিস্ট",
     "rewayatAvailable": "{{number}}টি তিলাওয়াত পদ্ধতি পাওয়া যাচ্ছে",
-    "rewayatByReciter": "{{reciter}}-এর {{rewayat}}"
+    "rewayatByReciter": "{{reciter}}-এর {{rewayat}}",
+    "back": "ফিরে যান",
+    "options": "বিকল্প",
+    "shuffle": "এলোমেলো",
+    "fontSize": "ফন্টের আকার",
+    "fileImported": "ফাইল আমদানি হয়েছে",
+    "nowReading": "এখন পড়ছেন",
+    "openingIn": "এতে খোলা হচ্ছে",
+    "showingInHafs": "হাফসে দেখানো হচ্ছে"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "সূরার টেক্সট ও বিবরণ দেখতে এই তিলাওয়াত ট্যাগ করুন"
-    }
+    },
+    "ambientSounds": "পরিবেশগত শব্দ",
+    "loveAdd": "প্রিয়তে যোগ করুন",
+    "loveRemove": "প্রিয় থেকে সরান",
+    "mushafLayoutOptions": "লেআউট বিকল্প",
+    "nextTrack": "পরবর্তী ট্র্যাক",
+    "openPlayer": "প্লেয়ার খুলুন",
+    "playbackSpeed": "প্লেব্যাক গতি",
+    "previousTrack": "আগের ট্র্যাক",
+    "repeat": "পুনরাবৃত্তি",
+    "seekBack": "{{seconds}} সেকেন্ড পিছনে",
+    "seekForward": "{{seconds}} সেকেন্ড সামনে",
+    "sleepTimer": "স্লিপ টাইমার"
   },
   "playlist": {
     "subtitle_one": "প্লেলিস্ট • {{count}}টি সূরা",
@@ -442,7 +466,9 @@
     "myRecitations": "আমার তিলাওয়াত",
     "newToQuranStartHere": "কুরআনে নতুন? এখান থেকে শুরু করুন",
     "seeMore": "আরও দেখুন",
-    "yourFavorites": "আপনার প্রিয়"
+    "yourFavorites": "আপনার প্রিয়",
+    "randomEmpty": "এলোমেলো তিলাওয়াত খুঁজে পাওয়া যায়নি। আবার চেষ্টা করুন।",
+    "randomFailed": "এলোমেলো তিলাওয়াত চালানো যায়নি। আবার চেষ্টা করুন।"
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "স্লিপ টাইমার",
-      "turnOffTimer": "টাইমার বন্ধ করুন"
+      "turnOffTimer": "টাইমার বন্ধ করুন",
+      "minutesRemaining_one": "{{count}} মিনিট বাকি",
+      "minutesRemaining_other": "{{count}} মিনিট বাকি",
+      "secondsRemaining_one": "{{count}} সেকেন্ড বাকি",
+      "secondsRemaining_other": "{{count}} সেকেন্ড বাকি"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "প্লেলিস্ট থেকে সরান"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "কুরআনের দোয়া (রাব্বানা)",
       "names-of-allah": "আল্লাহর ৯৯ নাম"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "আয়াতের পরিসর",
+    "chooseSurah": "একটি সূরা বেছে নিন",
+    "continueListening": "শোনা চালিয়ে যান",
+    "duration1h": "1 ঘণ্টা",
+    "duration30m": "30 মিনিট",
+    "duration3h": "3 ঘণ্টা",
+    "duration5h": "5 ঘণ্টা",
+    "duration8h": "8 ঘণ্টা",
+    "exploreCollectionsSubtitle": "তাজবীদ, মুখস্থ, রেওয়ায়াত এবং আরও",
+    "exploreCollectionsTitle": "সংগ্রহ অন্বেষণ করুন",
+    "khatma": "খতম",
+    "khatmaActiveSubtitle": "114-এর মধ্যে {{done}}টি সূরা সম্পন্ন",
+    "khatmaCompletedSubtitle": "সব 114টি সূরা সম্পন্ন",
+    "khatmaProgressTitle": "খতমের অগ্রগতি",
+    "khatmaStartSubtitle": "খতম শুরু করুন এবং আপনার অগ্রগতি ট্র্যাক করুন",
+    "listeningTools": "শোনার সরঞ্জাম",
+    "repetition": "পুনরাবৃত্তি",
+    "repetitionSubtitle": "একটি সূরা ও আয়াতের পরিসর বেছে নিন, তারপর সমন্বিত সময়সহ তা পুনরাবৃত্তি করুন।",
+    "repetitionTitle": "যেকোনো আয়াতের পরিসর পুনরাবৃত্তি করুন",
+    "selectDuration": "সময়কাল নির্বাচন করুন",
+    "selectReciter": "ক্বারী নির্বাচন করুন",
+    "startNewKhatma": "নতুন খতম শুরু করুন",
+    "startRepetition": "পুনরাবৃত্তি শুরু করুন",
+    "timedListening": "নির্ধারিত সময়ে শোনা",
+    "timedRowActive": "টাইমার {{minutes}} মিনিটের জন্য সেট",
+    "timedRowSubtitle": "নির্দিষ্ট সময় পরে থেমে যাক",
+    "timerActiveNote": "টাইমার শেষ হলে প্লেব্যাক থেমে যায়। এটি বন্ধ করতে নির্বাচিত সময়কালে আবার আলতো চাপুন।",
+    "unlimited": "সীমাহীন"
   }
 }

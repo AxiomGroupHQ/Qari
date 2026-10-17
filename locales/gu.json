@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× પઠન કરો",
     "playAllStop": "રોકો",
     "playAllPrevious": "પાછળનું",
-    "playAllNext": "આગળનું"
+    "playAllNext": "આગળનું",
+    "layoutSheetTitle": "અઝકાર લેઆઉટ",
+    "arabicText": "અરબી લખાણ",
+    "showTranslation": "અનુવાદ બતાવો",
+    "showTransliteration": "લિપ્યંતરણ બતાવો"
   },
   "app": {
     "errorInitializingPlayer": "પ્લેયર શરૂ કરવામાં ભૂલ: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "તમારી નોંધ અહીં લખો...",
     "yourPlaylists": "તમારી પ્લેલિસ્ટ",
     "rewayatAvailable": "{{number}} રિવાયત ઉપલબ્ધ",
-    "rewayatByReciter": "{{reciter}} દ્વારા {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} દ્વારા {{rewayat}}",
+    "back": "પાછળ",
+    "options": "વિકલ્પો",
+    "shuffle": "શફલ",
+    "fontSize": "ફોન્ટ કદ",
+    "fileImported": "ફાઇલ આયાત થઈ",
+    "nowReading": "હવે વાંચી રહ્યા છે",
+    "openingIn": "આમાં ખોલી રહ્યા છે",
+    "showingInHafs": "હફ્સમાં બતાવી રહ્યા છે"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "સૂરહનું લખાણ અને વિગત જોવા માટે આ તિલાવતને ટૅગ કરો"
-    }
+    },
+    "ambientSounds": "પર્યાવરણીય અવાજ",
+    "loveAdd": "મનપસંદમાં ઉમેરો",
+    "loveRemove": "મનપસંદમાંથી દૂર કરો",
+    "mushafLayoutOptions": "લેઆઉટ વિકલ્પો",
+    "nextTrack": "આગલો ટ્રૅક",
+    "openPlayer": "પ્લેયર ખોલો",
+    "playbackSpeed": "પ્લેબેક ઝડપ",
+    "previousTrack": "પાછળનો ટ્રૅક",
+    "repeat": "દોહરાવો",
+    "seekBack": "{{seconds}} સેકન્ડ પાછળ",
+    "seekForward": "{{seconds}} સેકન્ડ આગળ",
+    "sleepTimer": "સ્લીપ ટાઇમર"
   },
   "playlist": {
     "subtitle_one": "પ્લેલિસ્ટ • {{count}} સૂરહ",
@@ -442,7 +466,9 @@
     "myRecitations": "મારી તિલાવતો",
     "newToQuranStartHere": "કુરઆનમાં નવા છો? અહીંથી શરૂ કરો",
     "seeMore": "વધુ જુઓ",
-    "yourFavorites": "તમારા પ્રિય"
+    "yourFavorites": "તમારા પ્રિય",
+    "randomEmpty": "રેન્ડમ તિલાવત મળી નહીં. ફરી પ્રયાસ કરો.",
+    "randomFailed": "રેન્ડમ તિલાવત ચલાવી શકાઈ નહીં. ફરી પ્રયાસ કરો."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "સ્લીપ ટાઇમર",
-      "turnOffTimer": "ટાઇમર બંધ કરો"
+      "turnOffTimer": "ટાઇમર બંધ કરો",
+      "minutesRemaining_one": "{{count}} મિનિટ બાકી",
+      "minutesRemaining_other": "{{count}} મિનિટ બાકી",
+      "secondsRemaining_one": "{{count}} સેકન્ડ બાકી",
+      "secondsRemaining_other": "{{count}} સેકન્ડ બાકી"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "પ્લેલિસ્ટમાંથી દૂર કરો"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "કુરઆની દુઆઓ (રબ્બના)",
       "names-of-allah": "અલ્લાહના 99 નામ"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "આયત શ્રેણી",
+    "chooseSurah": "સૂરહ પસંદ કરો",
+    "continueListening": "સાંભળવું ચાલુ રાખો",
+    "duration1h": "1 કલાક",
+    "duration30m": "30 મિનિટ",
+    "duration3h": "3 કલાક",
+    "duration5h": "5 કલાક",
+    "duration8h": "8 કલાક",
+    "exploreCollectionsSubtitle": "તજવીદ, યાદ રાખવું, રિવાયત અને વધુ",
+    "exploreCollectionsTitle": "સંગ્રહ શોધો",
+    "khatma": "ખત્મ",
+    "khatmaActiveSubtitle": "114 માંથી {{done}} સૂરહ પૂરી",
+    "khatmaCompletedSubtitle": "બધી 114 સૂરહ પૂરી થઈ",
+    "khatmaProgressTitle": "ખત્મ પ્રગતિ",
+    "khatmaStartSubtitle": "ખત્મ શરૂ કરો અને તમારી પ્રગતિ ટ્રૅક કરો",
+    "listeningTools": "સાંભળવાના સાધનો",
+    "repetition": "પુનરાવર્તન",
+    "repetitionSubtitle": "સૂરહ અને આયત શ્રેણી પસંદ કરો, પછી તેને સમન્વિત સમય સાથે દોહરાવો.",
+    "repetitionTitle": "કોઈપણ આયત શ્રેણી દોહરાવો",
+    "selectDuration": "સમયગાળો પસંદ કરો",
+    "selectReciter": "કારી પસંદ કરો",
+    "startNewKhatma": "નવો ખત્મ શરૂ કરો",
+    "startRepetition": "પુનરાવર્તન શરૂ કરો",
+    "timedListening": "સમયસર સાંભળવું",
+    "timedRowActive": "ટાઇમર {{minutes}} મિનિટ માટે સેટ",
+    "timedRowSubtitle": "નક્કી સમય પછી બંધ થાય",
+    "timerActiveNote": "ટાઇમર પૂરો થતાં પ્લેબેક થંભે છે. તે બંધ કરવા પસંદ કરેલા સમયગાળાને ફરી ટૅપ કરો.",
+    "unlimited": "અમર્યાદિત"
   }
 }

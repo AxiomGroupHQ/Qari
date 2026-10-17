@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× म्हणा",
     "playAllStop": "थांबवा",
     "playAllPrevious": "मागील",
-    "playAllNext": "पुढील"
+    "playAllNext": "पुढील",
+    "layoutSheetTitle": "अझकार लेआउट",
+    "arabicText": "अरबी मजकूर",
+    "showTranslation": "भाषांतर दाखवा",
+    "showTransliteration": "लिप्यंतर दाखवा"
   },
   "app": {
     "errorInitializingPlayer": "प्लेअर सुरू करताना त्रुटी: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "तुमची टीप येथे लिहा...",
     "yourPlaylists": "तुमच्या प्लेलिस्ट",
     "rewayatAvailable": "{{number}} रिवायती उपलब्ध",
-    "rewayatByReciter": "{{reciter}} यांची {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} यांची {{rewayat}}",
+    "back": "मागे",
+    "options": "पर्याय",
+    "shuffle": "शफल",
+    "fontSize": "फॉन्ट आकार",
+    "fileImported": "फाइल आयात केली",
+    "nowReading": "आता वाचत आहे",
+    "openingIn": "यामध्ये उघडत आहे",
+    "showingInHafs": "हफ्समध्ये दाखवत आहे"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "सुरेचा मजकूर आणि तपशील पाहण्यासाठी या तिलावतला टॅग करा"
-    }
+    },
+    "ambientSounds": "परिसर ध्वनी",
+    "loveAdd": "आवडतींमध्ये जोडा",
+    "loveRemove": "आवडतींमधून काढा",
+    "mushafLayoutOptions": "लेआउट पर्याय",
+    "nextTrack": "पुढील ट्रॅक",
+    "openPlayer": "प्लेयर उघडा",
+    "playbackSpeed": "प्लेबॅक वेग",
+    "previousTrack": "मागील ट्रॅक",
+    "repeat": "पुनरावृत्ती",
+    "seekBack": "{{seconds}} सेकंद मागे",
+    "seekForward": "{{seconds}} सेकंद पुढे",
+    "sleepTimer": "स्लीप टाइमर"
   },
   "playlist": {
     "subtitle_one": "प्लेलिस्ट • {{count}} सुरा",
@@ -442,7 +466,9 @@
     "myRecitations": "माझ्या तिलावत",
     "newToQuranStartHere": "कुरआनशी नवीन ओळख आहे? येथून सुरुवात करा",
     "seeMore": "आणखी पाहा",
-    "yourFavorites": "तुमचे आवडते"
+    "yourFavorites": "तुमचे आवडते",
+    "randomEmpty": "यादृच्छिक तिलावत सापडले नाहीत. कृपया पुन्हा प्रयत्न करा.",
+    "randomFailed": "यादृच्छिक तिलावत वाजवता आले नाही. कृपया पुन्हा प्रयत्न करा."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "स्लीप टाइमर",
-      "turnOffTimer": "टाइमर बंद करा"
+      "turnOffTimer": "टाइमर बंद करा",
+      "minutesRemaining_one": "{{count}} मिनिट शेष",
+      "minutesRemaining_other": "{{count}} मिनिटे शेष",
+      "secondsRemaining_one": "{{count}} सेकंद शेष",
+      "secondsRemaining_other": "{{count}} सेकंद शेष"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "प्लेलिस्टमधून काढा"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "कुराणिक प्रार्थना (रब्बना)",
       "names-of-allah": "अल्लाहची 99 नावे"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "आयत श्रेणी",
+    "chooseSurah": "सूरह निवडा",
+    "continueListening": "ऐकणे सुरू ठेवा",
+    "duration1h": "1 तास",
+    "duration30m": "30 मिनिटे",
+    "duration3h": "3 तास",
+    "duration5h": "5 तास",
+    "duration8h": "8 तास",
+    "exploreCollectionsSubtitle": "तजवीद, पाठांतर, रिवायत आणि बरेच काही",
+    "exploreCollectionsTitle": "संग्रह शोधा",
+    "khatma": "खत्म",
+    "khatmaActiveSubtitle": "114 पैकी {{done}} सूरह पूर्ण",
+    "khatmaCompletedSubtitle": "सर्व 114 सूरह पूर्ण",
+    "khatmaProgressTitle": "खत्म प्रगती",
+    "khatmaStartSubtitle": "खत्म सुरू करा आणि तुमची प्रगती ट्रॅक करा",
+    "listeningTools": "ऐकण्याची साधने",
+    "repetition": "पुनरावृत्ती",
+    "repetitionSubtitle": "सूरह आणि आयत श्रेणी निवडा, मग ती समक्रमित वेळेसह पुनरावृत्त करा.",
+    "repetitionTitle": "कोणतीही आयत श्रेणी पुनरावृत्त करा",
+    "selectDuration": "कालावधी निवडा",
+    "selectReciter": "कारी निवडा",
+    "startNewKhatma": "नवीन खत्म सुरू करा",
+    "startRepetition": "पुनरावृत्ती सुरू करा",
+    "timedListening": "वेळेनुसार ऐकणे",
+    "timedRowActive": "टाइमर {{minutes}} मिनिटांसाठी सेट",
+    "timedRowSubtitle": "ठराविक वेळेनंतर थांबा",
+    "timerActiveNote": "टाइमर संपल्यावर प्लेबॅक थांबते. तो बंद करण्यासाठी निवडलेला कालावधी पुन्हा टॅप करा.",
+    "unlimited": "अमर्यादित"
   }
 }
