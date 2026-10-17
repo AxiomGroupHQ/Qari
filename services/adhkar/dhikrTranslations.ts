@@ -39,6 +39,7 @@ const bundleLoaders: Record<string, BundleLoader> = {
   // data/adhkar-translations/<locale>.meta.json. Replace with the approved
   // human translation when the team confirms one.
   ckb: () => require('../../data/adhkar-translations/ckb.json'),
+  wo: () => require('../../data/adhkar-translations/wo.json'),
 };
 
 const bundleCache: Record<string, DhikrTranslationBundle | null> = {};
