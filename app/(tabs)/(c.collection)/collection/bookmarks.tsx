@@ -187,6 +187,8 @@ const BookmarksScreen = () => {
         {!USE_GLASS && (
           <View style={[styles.emptyHeader, {paddingTop: insets.top}]}>
             <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t('common.back')}
               style={styles.emptyHeaderBack}
               onPress={() => router.back()}
               hitSlop={8}>
@@ -219,6 +221,8 @@ const BookmarksScreen = () => {
         {!USE_GLASS && (
           <View style={[styles.emptyHeader, {paddingTop: insets.top}]}>
             <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t('common.back')}
               style={styles.emptyHeaderBack}
               onPress={() => router.back()}
               hitSlop={8}>

@@ -183,6 +183,7 @@
     "share": "Share",
     "shareAsImage": "Share as Image",
     "shareAsText": "Share as Text",
+    "shuffle": "Shuffle",
     "sharedPhrases": "Shared Phrases",
     "showBasmallah": "Show Basmallah",
     "showingInHafs": "Showing in Hafs",
@@ -769,7 +770,8 @@
     },
     "similarVersesContent": {
       "noSimilarVersesFoundFor": "No similar verses found for this ayah.",
-      "sharedPhrases": "SHARED PHRASES",
+      "shuffle": "Shuffle",
+    "sharedPhrases": "SHARED PHRASES",
       "similarWording": "SIMILAR WORDING"
     },
     "tafseerContent": {
