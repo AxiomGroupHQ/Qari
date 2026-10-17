@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× хонед",
     "playAllStop": "Қатъ",
     "playAllPrevious": "Қаблӣ",
-    "playAllNext": "Баъдӣ"
+    "playAllNext": "Баъдӣ",
+    "layoutSheetTitle": "Танзими азкор",
+    "arabicText": "Матни арабӣ",
+    "showTranslation": "Тарҷумаро нишон диҳед",
+    "showTransliteration": "Транслитератсияро нишон диҳед"
   },
   "app": {
     "errorInitializingPlayer": "Хато ҳангоми оғоз кардани плеер: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Ёддошти худро ин ҷо нависед...",
     "yourPlaylists": "Рӯйхатҳои пахши шумо",
     "rewayatAvailable": "{{number}} ривоят дастрас аст",
-    "rewayatByReciter": "{{rewayat}} бо овози {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} бо овози {{reciter}}",
+    "back": "Бозгашт",
+    "options": "Имконот",
+    "shuffle": "Тасодуфӣ",
+    "fontSize": "Андозаи шрифт",
+    "fileImported": "Файл ворид шуд",
+    "nowReading": "Ҳоло хонда истодаед",
+    "openingIn": "Дар ин ҷо кушода мешавад:",
+    "showingInHafs": "Ба ривояти Ҳафс нишон дода мешавад"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Барои дидани матн ва тафсилоти сура ин тиловатро барчасп гузоред"
-    }
+    },
+    "ambientSounds": "Садоҳои муҳит",
+    "loveAdd": "Ба дӯстдоштаҳо илова кунед",
+    "loveRemove": "Аз дӯстдоштаҳо ҳазф кунед",
+    "mushafLayoutOptions": "Имконоти танзим",
+    "nextTrack": "Треки навбатӣ",
+    "openPlayer": "Плеерро кушоед",
+    "playbackSpeed": "Суръати пахш",
+    "previousTrack": "Треки гузашта",
+    "repeat": "Такрор",
+    "seekBack": "{{seconds}} сония ақиб",
+    "seekForward": "{{seconds}} сония пеш",
+    "sleepTimer": "Вақтсанҷи хоб"
   },
   "playlist": {
     "subtitle_one": "Рӯйхати пахш • {{count}} сура",
@@ -442,7 +466,9 @@
     "myRecitations": "Тиловатҳои ман",
     "newToQuranStartHere": "Бо Қуръон нав ошно мешавед? Аз ин ҷо оғоз кунед",
     "seeMore": "Дидани бештар",
-    "yourFavorites": "Дӯстдоштаҳои шумо"
+    "yourFavorites": "Дӯстдоштаҳои шумо",
+    "randomEmpty": "Қироати тасодуфӣ ёфт нашуд. Аз нав кӯшиш кунед.",
+    "randomFailed": "Қироати тасодуфӣ пахш нашуд. Аз нав кӯшиш кунед."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Вақтсанҷи хоб",
-      "turnOffTimer": "Хомӯш кардани вақтсанҷ"
+      "turnOffTimer": "Хомӯш кардани вақтсанҷ",
+      "minutesRemaining_one": "{{count}} дақиқа монд",
+      "minutesRemaining_other": "{{count}} дақиқа монд",
+      "secondsRemaining_one": "{{count}} сония монд",
+      "secondsRemaining_other": "{{count}} сония монд"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Аз рӯйхати пахш баровардан"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "Дуоҳои Қуръонӣ (Раббана)",
       "names-of-allah": "99 Номи Аллоҳ"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Доираи оятҳо",
+    "chooseSurah": "Сӯраеро интихоб кунед",
+    "continueListening": "Шуниданро идома диҳед",
+    "duration1h": "1 соат",
+    "duration30m": "30 дақиқа",
+    "duration3h": "3 соат",
+    "duration5h": "5 соат",
+    "duration8h": "8 соат",
+    "exploreCollectionsSubtitle": "Таҷвид, ҳифз, ривоятҳо ва ғайра",
+    "exploreCollectionsTitle": "Маҷмӯаҳоро омӯзед",
+    "khatma": "Хатм",
+    "khatmaActiveSubtitle": "{{done}} аз 114 сӯра анҷом ёфт",
+    "khatmaCompletedSubtitle": "Ҳамаи 114 сӯра анҷом ёфт",
+    "khatmaProgressTitle": "Пешрафти хатм",
+    "khatmaStartSubtitle": "Хатмро оғоз кунед ва пешрафтатонро пайгирӣ кунед",
+    "listeningTools": "Абзорҳои шунидан",
+    "repetition": "Такрор",
+    "repetitionSubtitle": "Сӯра ва доираи оятҳоро интихоб кунед, пас бо вақти ҳамоҳанг такрор кунед.",
+    "repetitionTitle": "Ҳар доираи оятҳоро такрор кунед",
+    "selectDuration": "Давомнокиро интихоб кунед",
+    "selectReciter": "Қориро интихоб кунед",
+    "startNewKhatma": "Хатми нав оғоз кунед",
+    "startRepetition": "Такрорро оғоз кунед",
+    "timedListening": "Шунидани вақтдор",
+    "timedRowActive": "Таймер ба {{minutes}} дақиқа танзим шуд",
+    "timedRowSubtitle": "Пас аз вақти муайян хобед",
+    "timerActiveNote": "Пахш бо анҷоми таймер мавқуф мешавад. Барои хомӯш кардан, бори дигар давомнокии интихобшударо заҳед.",
+    "unlimited": "Номаҳдуд"
   }
 }

@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× okaň",
     "playAllStop": "Duruz",
     "playAllPrevious": "Öňki",
-    "playAllNext": "Indiki"
+    "playAllNext": "Indiki",
+    "layoutSheetTitle": "Zikr ýerleşişi",
+    "arabicText": "Arapça tekst",
+    "showTranslation": "Terjimäni görkez",
+    "showTransliteration": "Transliterasiýany görkez"
   },
   "app": {
     "errorInitializingPlayer": "Pleýeri işe girizmekde ýalňyşlyk: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Ýazgyňyzy şu ýere ýazyň...",
     "yourPlaylists": "Pleýlistleriňiz",
     "rewayatAvailable": "{{number}} rowaýat elýeterli",
-    "rewayatByReciter": "{{reciter}} – {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} – {{rewayat}}",
+    "back": "Yza",
+    "options": "Saýlawlar",
+    "shuffle": "Tötänleýin",
+    "fontSize": "Şrift ululygy",
+    "fileImported": "Faýl import edildi",
+    "nowReading": "Indi oqylýar",
+    "openingIn": "Bu ýerde açylýar:",
+    "showingInHafs": "Hafs riwaýatynda görkezilýär"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Süräniň tekstini we jikme-jikliklerini görmek üçin bu tilawata bellik ediň"
-    }
+    },
+    "ambientSounds": "Daşky gurşaw sesleri",
+    "loveAdd": "Halanýanlara goş",
+    "loveRemove": "Halanýanlardan aýyr",
+    "mushafLayoutOptions": "Ýerleşiş saýlawlary",
+    "nextTrack": "Indiki trek",
+    "openPlayer": "Oýnadýjy aç",
+    "playbackSpeed": "Oýnatma tizligi",
+    "previousTrack": "Öňki trek",
+    "repeat": "Gaýtala",
+    "seekBack": "{{seconds}} sekunt yza",
+    "seekForward": "{{seconds}} sekunt öňe",
+    "sleepTimer": "Uky taýmeri"
   },
   "playlist": {
     "subtitle_one": "Pleýlist • {{count}} süre",
@@ -442,7 +466,9 @@
     "myRecitations": "Tilawatlarym",
     "newToQuranStartHere": "Gurhan bilen täze tanyşýarsyňyzmy? Şu ýerden başlaň",
     "seeMore": "Has köp gör",
-    "yourFavorites": "Halananlaryňyz"
+    "yourFavorites": "Halananlaryňyz",
+    "randomEmpty": "Tötänleýin okalgalar tapylmady. Ýene synanyşyň.",
+    "randomFailed": "Tötänleýin okalga oýnadylmady. Ýene synanyşyň."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Uky taýmeri",
-      "turnOffTimer": "Taýmeri öçür"
+      "turnOffTimer": "Taýmeri öçür",
+      "minutesRemaining_one": "{{count}} minut galdy",
+      "minutesRemaining_other": "{{count}} minut galdy",
+      "secondsRemaining_one": "{{count}} sekunt galdy",
+      "secondsRemaining_other": "{{count}} sekunt galdy"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Pleýlistden aýyr"
@@ -1003,5 +1033,35 @@
       "quranic-duas": "Kuranyň dualary (Rebbena)",
       "names-of-allah": "Allanyň 99 ady"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Aýat aralygy",
+    "chooseSurah": "Sure saýlaň",
+    "continueListening": "Diňlemegi dowam etdiriň",
+    "duration1h": "1 sagat",
+    "duration30m": "30 minut",
+    "duration3h": "3 sagat",
+    "duration5h": "5 sagat",
+    "duration8h": "8 sagat",
+    "exploreCollectionsSubtitle": "Täjwid, ýatlamak, riwaýatlar we beýlekiler",
+    "exploreCollectionsTitle": "Toplumları öwreniň",
+    "khatma": "Hatym",
+    "khatmaActiveSubtitle": "114 suradan {{done}} tamamlandy",
+    "khatmaCompletedSubtitle": "Ähli 114 sure tamamlandy",
+    "khatmaProgressTitle": "Hatym ösüşi",
+    "khatmaStartSubtitle": "Hatym başladyp ösüşiňizi yzarlaň",
+    "listeningTools": "Diňlemek gurallary",
+    "repetition": "Gaýtalama",
+    "repetitionSubtitle": "Suräni we aýat aralygyny saýlap, yzygiderli wagt bilen gaýtalaň.",
+    "repetitionTitle": "Islendik aýat aralygyny gaýtalaň",
+    "selectDuration": "Dowamlylygy saýlaň",
+    "selectReciter": "Kary saýlaň",
+    "startNewKhatma": "Täze hatym başlaň",
+    "startRepetition": "Gaýtalamany başlaň",
+    "timedListening": "Wagtly diňleme",
+    "timedRowActive": "Taýmer {{minutes}} minuta sazlanyldy",
+    "timedRowSubtitle": "Bellenen wagtdan soň ýatyň",
+    "timerActiveNote": "Taýmer gutaranda oýnatma saklanýar. Öçürmek üçin saýlanan dowamlylyga ýene basyň.",
+    "unlimited": "Çäksiz"
   }
 }

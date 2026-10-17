@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× o‘qing",
     "playAllStop": "To‘xtatish",
     "playAllPrevious": "Oldingi",
-    "playAllNext": "Keyingi"
+    "playAllNext": "Keyingi",
+    "layoutSheetTitle": "Zikr joylashuvi",
+    "arabicText": "Arabcha matn",
+    "showTranslation": "Tarjimani ko'rsatish",
+    "showTransliteration": "Transliteratsiyani ko'rsatish"
   },
   "app": {
     "errorInitializingPlayer": "Pleyerni ishga tushirishda xato: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Qaydingizni shu yerga yozing...",
     "yourPlaylists": "Pleylistlaringiz",
     "rewayatAvailable": "{{number}} ta rivoyat mavjud",
-    "rewayatByReciter": "{{reciter}} – {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} – {{rewayat}}",
+    "back": "Orqaga",
+    "options": "Tanlovlar",
+    "shuffle": "Aralashtirish",
+    "fontSize": "Shrift o'lchami",
+    "fileImported": "Fayl import qilindi",
+    "nowReading": "Hozir o'qilmoqda",
+    "openingIn": "Bu yerda ochilmoqda:",
+    "showingInHafs": "Hafs rivoyatida ko'rsatilmoqda"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Sura matni va tafsilotlarini ko'rish uchun bu tilovatni belgilang"
-    }
+    },
+    "ambientSounds": "Atrof tovushlari",
+    "loveAdd": "Sevimlilarga qo'shish",
+    "loveRemove": "Sevimlilardan olib tashlash",
+    "mushafLayoutOptions": "Joylashuv tanlovlari",
+    "nextTrack": "Keyingi trek",
+    "openPlayer": "Pleyerni ochish",
+    "playbackSpeed": "Ijro tezligi",
+    "previousTrack": "Oldingi trek",
+    "repeat": "Takrorlash",
+    "seekBack": "{{seconds}} soniya orqaga",
+    "seekForward": "{{seconds}} soniya oldinga",
+    "sleepTimer": "Uyqu taymeri"
   },
   "playlist": {
     "subtitle_one": "Pleylist • {{count}} ta sura",
@@ -442,7 +466,9 @@
     "myRecitations": "Tilovatlarim",
     "newToQuranStartHere": "Qur'on bilan endi tanishyapsizmi? Shu yerdan boshlang",
     "seeMore": "Ko'proq ko'rish",
-    "yourFavorites": "Sevimlilaringiz"
+    "yourFavorites": "Sevimlilaringiz",
+    "randomEmpty": "Tasodifiy qiroatlar topilmadi. Qaytadan urinib ko'ring.",
+    "randomFailed": "Tasodifiy qiroat ijro etilmadi. Qaytadan urinib ko'ring."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Uyqu taymeri",
-      "turnOffTimer": "Taymerni o'chirish"
+      "turnOffTimer": "Taymerni o'chirish",
+      "minutesRemaining_one": "{{count}} daqiqa qoldi",
+      "minutesRemaining_other": "{{count}} daqiqa qoldi",
+      "secondsRemaining_one": "{{count}} soniya qoldi",
+      "secondsRemaining_other": "{{count}} soniya qoldi"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Pleylistdan olib tashlash"
@@ -1003,5 +1033,35 @@
       "quranic-duas": "Qur’ondagi duolar (Rabbana)",
       "names-of-allah": "Allohning 99 ismi"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Oyat oralig'i",
+    "chooseSurah": "Sura tanlang",
+    "continueListening": "Tinglashni davom ettirish",
+    "duration1h": "1 soat",
+    "duration30m": "30 daqiqa",
+    "duration3h": "3 soat",
+    "duration5h": "5 soat",
+    "duration8h": "8 soat",
+    "exploreCollectionsSubtitle": "Tajvid, yodlash, rivoyatlar va boshqalar",
+    "exploreCollectionsTitle": "To'plamlarni o'rganish",
+    "khatma": "Xatm",
+    "khatmaActiveSubtitle": "114 suradan {{done}} tugatildi",
+    "khatmaCompletedSubtitle": "Barcha 114 sura tugatildi",
+    "khatmaProgressTitle": "Xatm jarayoni",
+    "khatmaStartSubtitle": "Xatmni boshlang va jarayonni kuzating",
+    "listeningTools": "Tinglash vositalari",
+    "repetition": "Takrorlash",
+    "repetitionSubtitle": "Sura va oyat oralig'ini tanlang, so'ng moslashtirilgan vaqt bilan takrorlang.",
+    "repetitionTitle": "Istalgan oyat oralig'ini takrorlash",
+    "selectDuration": "Davomiylikni tanlash",
+    "selectReciter": "Qorini tanlash",
+    "startNewKhatma": "Yangi xatm boshlash",
+    "startRepetition": "Takrorlashni boshlash",
+    "timedListening": "Vaqtli tinglash",
+    "timedRowActive": "Taymer {{minutes}} daqiqaga o'rnatildi",
+    "timedRowSubtitle": "Belgialangan vaqtdan keyin uxlash",
+    "timerActiveNote": "Taymer tugaganda ijro to'xtaydi. O'chirish uchun tanlangan davomiylikni yana bosing.",
+    "unlimited": "Cheksiz"
   }
 }

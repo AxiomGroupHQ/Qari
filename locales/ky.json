@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× окуңуз",
     "playAllStop": "Токтотуу",
     "playAllPrevious": "Мурунку",
-    "playAllNext": "Кийинки"
+    "playAllNext": "Кийинки",
+    "layoutSheetTitle": "Зикр жайгаштыруусу",
+    "arabicText": "Арабча текст",
+    "showTranslation": "Котормону көрсөтүү",
+    "showTransliteration": "Транслитерацияны көрсөтүү"
   },
   "app": {
     "errorInitializingPlayer": "Ойноткучту иштетүүдө ката: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Эскертмеңизди бул жерге жазыңыз...",
     "yourPlaylists": "Ойнотуу тизмелериңиз",
     "rewayatAvailable": "{{number}} риваят бар",
-    "rewayatByReciter": "{{reciter}} – {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} – {{rewayat}}",
+    "back": "Артка",
+    "options": "Параметрлер",
+    "shuffle": "Аралаштыруу",
+    "fontSize": "Шрифт өлчөмү",
+    "fileImported": "Файл импорттолду",
+    "nowReading": "Азыр окулуп жатат",
+    "openingIn": "Бул жерде ачылууда:",
+    "showingInHafs": "Хафс риваяты менен көрсөтүлүүдө"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Сүрөнүн текстин жана маалыматтарын көрүү үчүн бул кыраатка белги коюңуз"
-    }
+    },
+    "ambientSounds": "Айлана-чөйрө үндөрү",
+    "loveAdd": "Тандалмаларга кошуу",
+    "loveRemove": "Тандалмалардан өчүрүү",
+    "mushafLayoutOptions": "Жайгаштыруу параметрлери",
+    "nextTrack": "Кийинки трек",
+    "openPlayer": "Ойноткучту ачуу",
+    "playbackSpeed": "Ойнотуу ылдамдыгы",
+    "previousTrack": "Мурунку трек",
+    "repeat": "Кайталоо",
+    "seekBack": "{{seconds}} секунд артка",
+    "seekForward": "{{seconds}} секунд алдыга",
+    "sleepTimer": "Уйку таймери"
   },
   "playlist": {
     "subtitle_one": "Ойнотуу тизмеси • {{count}} сүрө",
@@ -442,7 +466,9 @@
     "myRecitations": "Кырааттарым",
     "newToQuranStartHere": "Куран менен жаңы таанышып жатасызбы? Бул жерден баштаңыз",
     "seeMore": "Көбүрөөк көрүү",
-    "yourFavorites": "Сүйүктүүлөрүңүз"
+    "yourFavorites": "Сүйүктүүлөрүңүз",
+    "randomEmpty": "Кокустук окулууштар табылган жок. Кайра аракет кылыңыз.",
+    "randomFailed": "Кокустук окулууш ойнотула алган жок. Кайра аракет кылыңыз."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Уйку таймери",
-      "turnOffTimer": "Таймерди өчүрүү"
+      "turnOffTimer": "Таймерди өчүрүү",
+      "minutesRemaining_one": "{{count}} мүнөт калды",
+      "minutesRemaining_other": "{{count}} мүнөт калды",
+      "secondsRemaining_one": "{{count}} секунд калды",
+      "secondsRemaining_other": "{{count}} секунд калды"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Ойнотуу тизмесинен алып салуу"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "Курандык дубалар (Раббана)",
       "names-of-allah": "Аллахтын 99 аты"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Аяттардын аралыгы",
+    "chooseSurah": "Сүрө тандаңыз",
+    "continueListening": "Угууну улантуу",
+    "duration1h": "1 саат",
+    "duration30m": "30 мүнөт",
+    "duration3h": "3 саат",
+    "duration5h": "5 саат",
+    "duration8h": "8 саат",
+    "exploreCollectionsSubtitle": "Тажвид, жаттоо, риваяттар жана башкалар",
+    "exploreCollectionsTitle": "Топтомдорду изилдөө",
+    "khatma": "Хатм",
+    "khatmaActiveSubtitle": "114 сүрөдөн {{done}} аяктады",
+    "khatmaCompletedSubtitle": "Бардык 114 сүрө аяктады",
+    "khatmaProgressTitle": "Хатмдын прогресси",
+    "khatmaStartSubtitle": "Хатмды баштап, прогрессиңизди байкаңыз",
+    "listeningTools": "Угуу куралдары",
+    "repetition": "Кайталоо",
+    "repetitionSubtitle": "Сүрөнү жана аяттардын аралыгын тандап, шайкеш убакыт менен кайталаңыз.",
+    "repetitionTitle": "Каалаган аяттардын аралыгын кайталоо",
+    "selectDuration": "Убакытты тандоо",
+    "selectReciter": "Карини тандоо",
+    "startNewKhatma": "Жаңы хатм баштоо",
+    "startRepetition": "Кайталоону баштоо",
+    "timedListening": "Убакыт менен угуу",
+    "timedRowActive": "Таймер {{minutes}} мүнөткө орнотулду",
+    "timedRowSubtitle": "Белгиленген убакыттан кийин уктоо",
+    "timerActiveNote": "Таймер бүткөндө ойнотуу токтойт. Өчүрүү үчүн тандалган убакытты кайра басыңыз.",
+    "unlimited": "Чексиз"
   }
 }

@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× оқыңыз",
     "playAllStop": "Тоқтату",
     "playAllPrevious": "Алдыңғы",
-    "playAllNext": "Келесі"
+    "playAllNext": "Келесі",
+    "layoutSheetTitle": "Зікір орналасуы",
+    "arabicText": "Арабша мәтін",
+    "showTranslation": "Аударманы көрсету",
+    "showTransliteration": "Транслитерацияны көрсету"
   },
   "app": {
     "errorInitializingPlayer": "Ойнатқышты іске қосу қатесі: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Жазбаңызды осында жазыңыз...",
     "yourPlaylists": "Ойнату тізімдеріңіз",
     "rewayatAvailable": "{{number}} рауаят қолжетімді",
-    "rewayatByReciter": "{{reciter}} – {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} – {{rewayat}}",
+    "back": "Артқа",
+    "options": "Параметрлер",
+    "shuffle": "Кездейсоқ",
+    "fontSize": "Қаріп өлшемі",
+    "fileImported": "Файл импортталды",
+    "nowReading": "Қазір оқылуда",
+    "openingIn": "Мұнда ашылуда:",
+    "showingInHafs": "Һафс риуаятымен көрсетілуде"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Сүре мәтіні мен мәліметтерін көру үшін осы тиләуатқа белгі қойыңыз"
-    }
+    },
+    "ambientSounds": "Қоршаған дыбыстар",
+    "loveAdd": "Таңдаулыларға қосу",
+    "loveRemove": "Таңдаулылардан алып тастау",
+    "mushafLayoutOptions": "Орналасу параметрлері",
+    "nextTrack": "Келесі трек",
+    "openPlayer": "Ойнатқышты ашу",
+    "playbackSpeed": "Ойнату жылдамдығы",
+    "previousTrack": "Алдыңғы трек",
+    "repeat": "Қайталау",
+    "seekBack": "{{seconds}} секунд артқа",
+    "seekForward": "{{seconds}} секунд алға",
+    "sleepTimer": "Ұйқы таймері"
   },
   "playlist": {
     "subtitle_one": "Ойнату тізімі • {{count}} сүре",
@@ -442,7 +466,9 @@
     "myRecitations": "Тиләуаттарым",
     "newToQuranStartHere": "Құранмен енді танысып жүрсіз бе? Осы жерден бастаңыз",
     "seeMore": "Көбірек көру",
-    "yourFavorites": "Таңдаулыларыңыз"
+    "yourFavorites": "Таңдаулыларыңыз",
+    "randomEmpty": "Кездейсоқ оқылымдар табылмады. Қайталап көріңіз.",
+    "randomFailed": "Кездейсоқ оқылым ойнатылмады. Қайталап көріңіз."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Ұйқы таймері",
-      "turnOffTimer": "Таймерді өшіру"
+      "turnOffTimer": "Таймерді өшіру",
+      "minutesRemaining_one": "{{count}} минут қалды",
+      "minutesRemaining_other": "{{count}} минут қалды",
+      "secondsRemaining_one": "{{count}} секунд қалды",
+      "secondsRemaining_other": "{{count}} секунд қалды"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Ойнату тізімінен алып тастау"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "Құрандағы дұғалар (Раббана)",
       "names-of-allah": "Аллаһтың 99 есімі"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Аят ауқымы",
+    "chooseSurah": "Сүре таңдаңыз",
+    "continueListening": "Тыңдауды жалғастыру",
+    "duration1h": "1 сағат",
+    "duration30m": "30 минут",
+    "duration3h": "3 сағат",
+    "duration5h": "5 сағат",
+    "duration8h": "8 сағат",
+    "exploreCollectionsSubtitle": "Тәжуид, жаттау, риуаяттар және т.б.",
+    "exploreCollectionsTitle": "Топтамаларды зерттеу",
+    "khatma": "Хатым",
+    "khatmaActiveSubtitle": "114 сүреден {{done}} аяқталды",
+    "khatmaCompletedSubtitle": "Барлық 114 сүре аяқталды",
+    "khatmaProgressTitle": "Хатым ілгерілеуі",
+    "khatmaStartSubtitle": "Хатымды бастап, ілгерілеуіңізді бақылаңыз",
+    "listeningTools": "Тыңдау құралдары",
+    "repetition": "Қайталау",
+    "repetitionSubtitle": "Сүре мен аят ауқымын таңдап, үндес уақытпен қайталаңыз.",
+    "repetitionTitle": "Кез келген аят ауқымын қайталау",
+    "selectDuration": "Ұзақтықты таңдау",
+    "selectReciter": "Қариді таңдау",
+    "startNewKhatma": "Жаңа хатым бастау",
+    "startRepetition": "Қайталауды бастау",
+    "timedListening": "Уақытты тыңдау",
+    "timedRowActive": "Таймер {{minutes}} минутқа орнатылды",
+    "timedRowSubtitle": "Белгіленген уақыттан кейін ұйықтау",
+    "timerActiveNote": "Таймер аяқталғанда ойнату тоқтайды. Өшіру үшін таңдалған ұзақтықты қайта түртіңіз.",
+    "unlimited": "Шексіз"
   }
 }

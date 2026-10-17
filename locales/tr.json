@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× okuyun",
     "playAllStop": "Durdur",
     "playAllPrevious": "Önceki",
-    "playAllNext": "Sonraki"
+    "playAllNext": "Sonraki",
+    "layoutSheetTitle": "Zikir Düzeni",
+    "arabicText": "Arapça Metin",
+    "showTranslation": "Çeviriyi göster",
+    "showTransliteration": "Okunuşu göster"
   },
   "app": {
     "errorInitializingPlayer": "Oynatıcı başlatılırken hata: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Notunuzu buraya yazın...",
     "yourPlaylists": "Çalma Listeleriniz",
     "rewayatAvailable": "{{number}} rivayet mevcut",
-    "rewayatByReciter": "{{reciter}} – {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} – {{rewayat}}",
+    "back": "Geri",
+    "options": "Seçenekler",
+    "shuffle": "Karıştır",
+    "fontSize": "Yazı Boyutu",
+    "fileImported": "Dosya içe aktarıldı",
+    "nowReading": "Şimdi okunuyor",
+    "openingIn": "Şurada açılıyor:",
+    "showingInHafs": "Hafs rivayetiyle gösteriliyor"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Sure metnini ve ayrıntılarını görmek için bu okuyuşu etiketleyin"
-    }
+    },
+    "ambientSounds": "Ortam sesleri",
+    "loveAdd": "Favorilere ekle",
+    "loveRemove": "Favorilerden kaldır",
+    "mushafLayoutOptions": "Düzen seçenekleri",
+    "nextTrack": "Sonraki parça",
+    "openPlayer": "Oynatıcıyı aç",
+    "playbackSpeed": "Oynatma hızı",
+    "previousTrack": "Önceki parça",
+    "repeat": "Tekrarla",
+    "seekBack": "{{seconds}} saniye geri",
+    "seekForward": "{{seconds}} saniye ileri",
+    "sleepTimer": "Uyku Zamanlayıcısı"
   },
   "playlist": {
     "subtitle_one": "Çalma listesi • {{count}} sure",
@@ -442,7 +466,9 @@
     "myRecitations": "Okuyuşlarım",
     "newToQuranStartHere": "Kur'an'a yeni mi başlıyorsunuz? Buradan başlayın",
     "seeMore": "Daha Fazla Gör",
-    "yourFavorites": "Favorileriniz"
+    "yourFavorites": "Favorileriniz",
+    "randomEmpty": "Rastgele kıraat bulunamadı. Lütfen tekrar deneyin.",
+    "randomFailed": "Rastgele kıraat oynatılamadı. Lütfen tekrar deneyin."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Uyku Zamanlayıcısı",
-      "turnOffTimer": "Zamanlayıcıyı Kapat"
+      "turnOffTimer": "Zamanlayıcıyı Kapat",
+      "minutesRemaining_one": "{{count}} dakika kaldı",
+      "minutesRemaining_other": "{{count}} dakika kaldı",
+      "secondsRemaining_one": "{{count}} saniye kaldı",
+      "secondsRemaining_other": "{{count}} saniye kaldı"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Çalma Listesinden Kaldır"
@@ -1003,5 +1033,35 @@
       "quranic-duas": "Kur'an'daki Dualar (Rabbena)",
       "names-of-allah": "Allah'ın 99 İsmi"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Ayet aralığı",
+    "chooseSurah": "Bir sure seçin",
+    "continueListening": "Dinlemeye devam et",
+    "duration1h": "1 saat",
+    "duration30m": "30 dakika",
+    "duration3h": "3 saat",
+    "duration5h": "5 saat",
+    "duration8h": "8 saat",
+    "exploreCollectionsSubtitle": "Tecvid, ezberleme, rivayetler ve daha fazlası",
+    "exploreCollectionsTitle": "Koleksiyonları keşfet",
+    "khatma": "Hatim",
+    "khatmaActiveSubtitle": "114 sureden {{done}} tanesi tamamlandı",
+    "khatmaCompletedSubtitle": "114 surenin tamamı bitti",
+    "khatmaProgressTitle": "Hatim İlerlemesi",
+    "khatmaStartSubtitle": "Hatme başlayın ve ilerlemenizi takip edin",
+    "listeningTools": "Dinleme araçları",
+    "repetition": "Tekrar",
+    "repetitionSubtitle": "Bir sure ve ayet aralığı seçin, ardından eş zamanlı olarak tekrarlayın.",
+    "repetitionTitle": "Herhangi bir ayet aralığını tekrarlayın",
+    "selectDuration": "Süre seçin",
+    "selectReciter": "Okuyucu seçin",
+    "startNewKhatma": "Yeni hatim başlat",
+    "startRepetition": "Tekrarı başlat",
+    "timedListening": "Zamanlı Dinleme",
+    "timedRowActive": "Zamanlayıcı {{minutes}} dk olarak ayarlandı",
+    "timedRowSubtitle": "Belirlenen süre sonra uyku",
+    "timerActiveNote": "Zamanlayıcı bitince oynatma duraklar. Kapatmak için seçili süreye tekrar dokunun.",
+    "unlimited": "Sınırsız"
   }
 }
