@@ -52,13 +52,10 @@ const MushafPageIcon: React.FC<MushafPageIconProps> = ({
   borderColor,
 }) => {
   const fontMgr = useMushafFontMgr();
-  const uthmaniFont = useMushafSettingsStore(s => s.uthmaniFont);
   const mushafRenderer = useMushafSettingsStore(s => s.mushafRenderer);
   const fontFamily =
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
-      : uthmaniFont === 'v1'
-      ? 'DigitalKhattV1'
       : 'DigitalKhattV2';
 
   // Icon canvas dimensions (slightly taller than square)

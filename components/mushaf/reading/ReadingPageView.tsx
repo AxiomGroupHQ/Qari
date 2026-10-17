@@ -118,12 +118,9 @@ const ReadingPageView: React.FC<ReadingPageViewProps> = ({
   const dkFontFamily =
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
-      : mushafRenderer === 'dk_v1'
-      ? 'DigitalKhattV1'
       : 'DigitalKhattV2';
   const isDK =
-    (mushafRenderer === 'dk_v1' ||
-      mushafRenderer === 'dk_v2' ||
+    (mushafRenderer === 'dk_v2' ||
       mushafRenderer === 'dk_indopak') &&
     mushafPreloadService.initialized &&
     digitalKhattDataService.initialized;

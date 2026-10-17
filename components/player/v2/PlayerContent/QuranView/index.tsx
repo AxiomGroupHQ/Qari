@@ -226,16 +226,13 @@ export const QuranView: React.FC<QuranViewProps> = ({
 
   // DK Skia rendering: derive font family and fontMgr from mushafRenderer
   const isDK =
-    (mushafRenderer === 'dk_v1' ||
-      mushafRenderer === 'dk_v2' ||
+    (mushafRenderer === 'dk_v2' ||
       mushafRenderer === 'dk_indopak') &&
     mushafPreloadService.initialized &&
     digitalKhattDataService.initialized;
   const dkFontFamily =
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
-      : mushafRenderer === 'dk_v1'
-      ? 'DigitalKhattV1'
       : 'DigitalKhattV2';
   const subscribedFontMgr = useMushafFontMgr();
   const fontMgr = isDK ? subscribedFontMgr : null;

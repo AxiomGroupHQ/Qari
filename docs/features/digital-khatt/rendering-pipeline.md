@@ -63,7 +63,7 @@ File: `components/mushaf/skia/SkiaPage.tsx`
   - `DigitalKhattV1: DigitalKhattQuranicV1.otf`
   - `DigitalKhattV2: DigitalKhattV2.otf`
 - Active family is selected from Mushaf settings:
-  - `uthmaniFont === 'v1' ? 'DigitalKhattV1' : 'DigitalKhattV2'`
+  - `'DigitalKhattV2'` (Madani 1405/DigitalKhattV1 retired; saved settings fall back to V2)
 - rendering waits until font manager exists
 
 ### Geometry and scaling

@@ -103,8 +103,6 @@ export const SimilarVersesContent: React.FC<SimilarVersesContentProps> = ({
   const fontFamily =
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
-      : mushafRenderer === 'dk_v1'
-      ? 'DigitalKhattV1'
       : 'DigitalKhattV2';
   const [contentWidth, setContentWidth] = useState(0);
 
