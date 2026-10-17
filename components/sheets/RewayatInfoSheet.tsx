@@ -98,7 +98,12 @@ Each Rewayah may have slight variations in pronunciation, elongation, or articul
                   selectedRewayatId === rewayat.id && styles.selectedRewayat,
                   pressed && styles.rewayatItemPressed,
                 ]}
-                onPress={() => handleRewayatSelect(rewayat.id)}>
+                onPress={() => handleRewayatSelect(rewayat.id)}
+                accessibilityRole="button"
+                accessibilityLabel={getDisplayLabelFromName(rewayat.name)}
+                accessibilityState={{
+                  selected: selectedRewayatId === rewayat.id,
+                }}>
                 <View>
                   <Text style={styles.rewayatName}>
                     {getDisplayLabelFromName(rewayat.name)}

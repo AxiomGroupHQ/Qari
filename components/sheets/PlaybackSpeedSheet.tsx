@@ -48,7 +48,10 @@ export const PlaybackSpeedSheet = (props: SheetProps<'playback-speed'>) => {
                 currentSpeed === speed && styles.selectedSpeed,
                 pressed && !currentSpeed && styles.speedButtonPressed,
               ]}
-              onPress={() => handleSpeedSelect(speed)}>
+              onPress={() => handleSpeedSelect(speed)}
+              accessibilityRole="button"
+              accessibilityLabel={`${speed}x`}
+              accessibilityState={{selected: currentSpeed === speed}}>
               <Text
                 style={[
                   styles.speedText,
