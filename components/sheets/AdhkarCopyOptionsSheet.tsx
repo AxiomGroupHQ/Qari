@@ -15,6 +15,7 @@ import Color from 'color';
 import {Feather} from '@expo/vector-icons';
 import * as Clipboard from 'expo-clipboard';
 import {Dhikr} from '@/types/adhkar';
+import {t} from '@/i18n';
 
 interface CheckboxRowProps {
   label: string;
@@ -113,12 +114,16 @@ export const AdhkarCopyOptionsSheet = (
       indicatorStyle={styles.indicator}
       gestureEnabled={true}>
       <View style={styles.container}>
-        <Text style={styles.title}>Copy Options</Text>
-        <Text style={styles.subtitle}>Select what to copy</Text>
+        <Text style={styles.title}>
+          {t('sheets.verseCopySheet.copyOptions')}
+        </Text>
+        <Text style={styles.subtitle}>
+          {t('sheets.verseCopySheet.selectWhatToCopy')}
+        </Text>
 
         <View style={styles.optionsContainer}>
           <CheckboxRow
-            label="Arabic"
+            label={t('common.arabic')}
             checked={copyArabic}
             onToggle={() => setCopyArabic(!copyArabic)}
             disabled={!dhikr?.arabic}
@@ -127,7 +132,7 @@ export const AdhkarCopyOptionsSheet = (
           />
           <View style={styles.divider} />
           <CheckboxRow
-            label="Translation"
+            label={t('common.translation')}
             checked={copyTranslation}
             onToggle={() => setCopyTranslation(!copyTranslation)}
             disabled={!dhikr?.translation}
@@ -136,7 +141,7 @@ export const AdhkarCopyOptionsSheet = (
           />
           <View style={styles.divider} />
           <CheckboxRow
-            label="Transliteration"
+            label={t('common.transliteration')}
             checked={copyTransliteration}
             onToggle={() => setCopyTransliteration(!copyTransliteration)}
             disabled={!dhikr?.transliteration}
@@ -165,7 +170,7 @@ export const AdhkarCopyOptionsSheet = (
               styles.copyButtonText,
               !canCopy && styles.copyButtonTextDisabled,
             ]}>
-            Copy to Clipboard
+            {t('common.copyToClipboard')}
           </Text>
         </Pressable>
       </View>

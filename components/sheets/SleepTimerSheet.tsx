@@ -51,11 +51,12 @@ export const SleepTimerSheet = (props: SheetProps<'sleep-timer'>) => {
         {remainingTime !== null && remainingTime > 0 && (
           <Text style={styles.remainingTime}>
             {remainingTime < 1
-              ? `${Math.round(remainingTime * 60)} seconds`
-              : `${Math.round(remainingTime)} ${
-                  remainingTime === 1 ? 'minute' : 'minutes'
-                }`}{' '}
-            remaining
+              ? t('sheets.sleepTimerSheet.secondsRemaining', {
+                  count: Math.round(remainingTime * 60),
+                })
+              : t('sheets.sleepTimerSheet.minutesRemaining', {
+                  count: Math.round(remainingTime),
+                })}
           </Text>
         )}
         <View style={styles.optionsContainer}>

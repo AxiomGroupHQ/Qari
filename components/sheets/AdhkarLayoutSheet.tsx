@@ -17,6 +17,7 @@ import {Theme} from '@/utils/themeUtils';
 import ActionSheet, {SheetProps, ScrollView} from 'react-native-actions-sheet';
 import Color from 'color';
 import {Feather} from '@expo/vector-icons';
+import {t} from '@/i18n';
 import {
   useAdhkarSettingsStore,
   getActualFontSize,
@@ -156,13 +157,13 @@ export const AdhkarLayoutSheet = (props: SheetProps<'adhkar-layout'>) => {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}>
         <View style={styles.container}>
-          <Text style={styles.title}>Adhkar Layout</Text>
+          <Text style={styles.title}>{t('adhkarUi.layoutSheetTitle')}</Text>
 
           {/* Arabic Text Section */}
-          <Text style={styles.sectionHeader}>Arabic Text</Text>
+          <Text style={styles.sectionHeader}>{t('adhkarUi.arabicText')}</Text>
           <View style={styles.card}>
             <FontSizeControl
-              label="Font Size"
+              label={t('common.fontSize')}
               currentActualSize={arabicFontSize}
               onChange={setArabicFontSize}
               theme={theme}
@@ -174,10 +175,12 @@ export const AdhkarLayoutSheet = (props: SheetProps<'adhkar-layout'>) => {
           </View>
 
           {/* Translation Section */}
-          <Text style={styles.sectionHeader}>Translation</Text>
+          <Text style={styles.sectionHeader}>{t('common.translation')}</Text>
           <View style={styles.card}>
             <View style={styles.optionRow}>
-              <Text style={styles.optionLabel}>Show Translation</Text>
+              <Text style={styles.optionLabel}>
+                {t('adhkarUi.showTranslation')}
+              </Text>
               <Switch
                 trackColor={trackColor}
                 thumbColor="#FFFFFF"
@@ -191,7 +194,7 @@ export const AdhkarLayoutSheet = (props: SheetProps<'adhkar-layout'>) => {
               <>
                 <View style={styles.divider} />
                 <FontSizeControl
-                  label="Font Size"
+                  label={t('common.fontSize')}
                   currentActualSize={translationFontSize}
                   onChange={setTranslationFontSize}
                   theme={theme}
@@ -203,10 +206,14 @@ export const AdhkarLayoutSheet = (props: SheetProps<'adhkar-layout'>) => {
           </View>
 
           {/* Transliteration Section */}
-          <Text style={styles.sectionHeader}>Transliteration</Text>
+          <Text style={styles.sectionHeader}>
+            {t('common.transliteration')}
+          </Text>
           <View style={styles.card}>
             <View style={styles.optionRow}>
-              <Text style={styles.optionLabel}>Show Transliteration</Text>
+              <Text style={styles.optionLabel}>
+                {t('adhkarUi.showTransliteration')}
+              </Text>
               <Switch
                 trackColor={trackColor}
                 thumbColor="#FFFFFF"
@@ -220,7 +227,7 @@ export const AdhkarLayoutSheet = (props: SheetProps<'adhkar-layout'>) => {
               <>
                 <View style={styles.divider} />
                 <FontSizeControl
-                  label="Font Size"
+                  label={t('common.fontSize')}
                   currentActualSize={transliterationFontSize}
                   onChange={setTransliterationFontSize}
                   theme={theme}

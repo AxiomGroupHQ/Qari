@@ -1,12 +1,5 @@
 import React, {useCallback} from 'react';
-import {
-  View,
-  Text,
-  Pressable,
-  StyleSheet,
-  ToastAndroid,
-  Platform,
-} from 'react-native';
+import {View, Text, Pressable, StyleSheet} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import Color from 'color';
 import * as Haptics from 'expo-haptics';
@@ -17,13 +10,8 @@ import {useRecentlyPlayedStore} from '@/services/player/store/recentlyPlayedStor
 import {getMultipleRandomTracks} from '@/utils/randomRecitation';
 import {createTracksForReciter} from '@/utils/track';
 import {t} from '@/i18n';
+import {showToast} from '@/utils/toastUtils';
 import {HOME_GOLD} from './homeTheme';
-
-function showToast(message: string) {
-  if (Platform.OS === 'android') {
-    ToastAndroid.show(message, ToastAndroid.SHORT);
-  }
-}
 
 /**
  * Row of small glass shortcut tiles under the Home hero. Currently ships
@@ -42,7 +30,7 @@ export function HomeShortcuts() {
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
       const randomTracks = await getMultipleRandomTracks(15, false);
       if (randomTracks.length === 0) {
-        showToast('Failed to find random recitations. Please try again.');
+        showToast(t('recitersView.randomEmpty'), undefined, 'error');
         return;
       }
 
@@ -80,7 +68,7 @@ export function HomeShortcuts() {
       await startNewChain(reciter, surah, 0, 0, firstRewayah.id);
     } catch (error) {
       console.error('Error playing random recitation:', error);
-      showToast('Failed to play random recitation. Please try again.');
+      showToast(t('recitersView.randomFailed'), undefined, 'error');
     }
   }, [updateQueue, play, startNewChain]);
 

@@ -141,6 +141,7 @@
     "editDetails": "Edit Details",
     "error": "Error",
     "favoriteReciters": "Favorite Reciters",
+    "fontSize": "Font Size",
     "followAlong": "Follow Along",
     "from": "From",
     "goToReciter": "Go to Reciter",
@@ -411,6 +412,8 @@
     "fromYourCollection": "From your Collection",
     "myRecitations": "My Recitations",
     "newToQuranStartHere": "New to Quran? Start Here",
+    "randomEmpty": "Failed to find random recitations. Please try again.",
+    "randomFailed": "Failed to play random recitation. Please try again.",
     "seeMore": "See More",
     "yourFavorites": "Your Favorites"
   },
@@ -630,6 +633,10 @@
       "similarWording": "Similar Wording"
     },
     "sleepTimerSheet": {
+      "minutesRemaining_one": "{{count}} minute remaining",
+      "minutesRemaining_other": "{{count}} minutes remaining",
+      "secondsRemaining_one": "{{count}} second remaining",
+      "secondsRemaining_other": "{{count}} seconds remaining",
       "sleepTimer": "Sleep Timer",
       "turnOffTimer": "Turn Off Timer"
     },
@@ -786,6 +793,10 @@
     "copyArabic": "Copy Arabic text",
     "shareDhikr": "Share dhikr",
     "layoutSettings": "Layout settings",
+    "layoutSheetTitle": "Adhkar Layout",
+    "arabicText": "Arabic Text",
+    "showTranslation": "Show Translation",
+    "showTransliteration": "Show Transliteration",
     "addBookmark": "Add bookmark",
     "removeBookmark": "Remove bookmark",
     "pauseAudio": "Pause audio",
