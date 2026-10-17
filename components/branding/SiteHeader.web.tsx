@@ -5,6 +5,7 @@ import {useRouter} from 'expo-router';
 import {MaterialIcons} from '@expo/vector-icons';
 import {SheetManager} from 'react-native-actions-sheet';
 import {useTheme} from '@/hooks/useTheme';
+import {useResponsive} from '@/hooks/useResponsive';
 import {useSiteHeaderStore} from '@/store/siteHeaderStore';
 import {IstimaWordmark} from './IstimaWordmark';
 import {t} from '@/i18n';
@@ -37,6 +38,9 @@ export function SiteHeader() {
   const router = useRouter();
   const isHome = useSiteHeaderStore(state => state.isHome);
   const {theme} = useTheme();
+  // At tablet/desktop widths the left sidebar already carries the compact
+  // wordmark; rendering the header brand too showed the wordmark twice.
+  const {isTablet} = useResponsive();
   // The home screen has its own hero, so only the language button floats over it.
   if (isHome) {
     return (
@@ -47,13 +51,15 @@ export function SiteHeader() {
   }
   return (
     <View style={[styles.header, {backgroundColor: theme.colors.background}]}>
-      <Pressable
-        accessibilityRole="link"
-        accessibilityLabel={t('branding.siteHeader.web.istimaHome')}
-        onPress={() => router.navigate('/(tabs)/(a.home)')}
-        style={styles.brand}>
-        <IstimaWordmark compact />
-      </Pressable>
+      {!isTablet && (
+        <Pressable
+          accessibilityRole="link"
+          accessibilityLabel={t('branding.siteHeader.web.istimaHome')}
+          onPress={() => router.navigate('/(tabs)/(a.home)')}
+          style={styles.brand}>
+          <IstimaWordmark compact />
+        </Pressable>
+      )}
       <HeaderActions />
     </View>
   );
