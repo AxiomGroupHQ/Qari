@@ -41,8 +41,8 @@ export async function shareTrackList(
         code === 'empty'
           ? 'sheets.playlistContextSheet.shareNothing'
           : code === 'rate_limited'
-          ? 'sheets.playlistContextSheet.shareRateLimited'
-          : 'sheets.playlistContextSheet.shareFailed',
+            ? 'sheets.playlistContextSheet.shareRateLimited'
+            : 'sheets.playlistContextSheet.shareFailed',
       ),
     );
   }
