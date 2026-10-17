@@ -4,6 +4,7 @@ import {
   applyDhikrTranslations,
   getDhikrTranslationBundle,
   registerDhikrTranslationBundle,
+  setDownloadedDhikrTranslationBundle,
 } from '../dhikrTranslations';
 
 const baseDhikr: Dhikr = {
@@ -75,5 +76,22 @@ describe('getDhikrTranslationBundle', () => {
     });
     getDhikrTranslationBundle('de-test');
     expect(loader).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe('downloaded bundles', () => {
+  it('prefers a downloaded bundle over a shipped one', () => {
+    registerDhikrTranslationBundle('dltest', () => ({
+      default: {'75': {translation: 'shipped'}},
+    }));
+    setDownloadedDhikrTranslationBundle('dltest', {
+      '75': {translation: 'downloaded'},
+    });
+    expect(getDhikrTranslationBundle('dltest')).toEqual({
+      '75': {translation: 'downloaded'},
+    });
+    expect(getDhikrTranslationBundle('dltest-XX')).toEqual({
+      '75': {translation: 'downloaded'},
+    });
   });
 });

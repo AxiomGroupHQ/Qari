@@ -3,7 +3,7 @@ import {RECITERS, type Rewayat} from '@/data/reciterData';
 import {timestampDatabaseService} from './TimestampDatabaseService';
 import type {AyahTimestamp} from '@/types/timestamps';
 
-// Timestamps are self-hosted in the AxiomGroupHQ/Qari-api repo and served by Cloudflare Pages at
+// Timestamps are self-hosted in the AxiomGroupHQ/qari-api repo and served by Cloudflare Pages at
 // https://iapi.istima.app/timestamps/{rewayatId}/{NNN}.json on every platform. A fork can point
 // `branding.timestampCdnBase` at its own mirror. A trailing slash is stripped so a typo doesn't
 // produce `//` paths that 404 on most CDNs.

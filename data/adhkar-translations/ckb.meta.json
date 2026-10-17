@@ -1,9 +1,0 @@
-{
-  "locale": "ckb",
-  "machineTranslated": true,
-  "engine": "model-authored",
-  "reviewed": false,
-  "sourceLocale": "en",
-  "entryCount": 406,
-  "notes": "Hand-authored Sorani (Central Kurdish) bundle. Translations drafted entry-by-entry from the English source; Latin transliterations copied byte-verbatim from the source instructions. Quran verse meanings (quranic-1..40) are verbatim from the Asan Tafsir Sorani translation (alquran.cloud edition ku.asan), full-ayah text where the quoted dua is part of a longer ayah. Unreviewed; replace with the team-approved human translation when available."
-}

@@ -5,6 +5,10 @@ import {
   applyDhikrTranslations,
   getDhikrTranslationBundle,
 } from '@/services/adhkar/dhikrTranslations';
+import {
+  ensureDhikrTranslationBundle,
+  initDhikrTranslationRefresh,
+} from '@/services/adhkar/dhikrTranslationLoader';
 import type {
   AdhkarCategory,
   Dhikr,
@@ -30,22 +34,21 @@ class AdhkarService {
   private initPromise: Promise<void> | null = null;
 
   /**
-   * Overlay the current locale's human-translated dhikr text (when a
-   * reviewed bundle ships for it) onto DB rows. Falls back to English for
-   * locales, ids, and fields the bundle does not cover.
+   * Overlay the current locale's translated dhikr text (when a bundle is
+   * published for it) onto DB rows. Falls back to English for locales,
+   * ids, and fields the bundle does not cover. Ensures first so a
+   * freshly published or downloaded bundle is visible to the read.
    */
-  private localizeDhikr(dhikr: Dhikr): Dhikr {
-    return applyDhikrTranslation(
-      dhikr,
-      getDhikrTranslationBundle(i18n.language ?? 'en'),
-    );
+  private async localizeDhikr(dhikr: Dhikr): Promise<Dhikr> {
+    const locale = i18n.language ?? 'en';
+    await ensureDhikrTranslationBundle(locale);
+    return applyDhikrTranslation(dhikr, getDhikrTranslationBundle(locale));
   }
 
-  private localizeAdhkarList(adhkar: Dhikr[]): Dhikr[] {
-    return applyDhikrTranslations(
-      adhkar,
-      getDhikrTranslationBundle(i18n.language ?? 'en'),
-    );
+  private async localizeAdhkarList(adhkar: Dhikr[]): Promise<Dhikr[]> {
+    const locale = i18n.language ?? 'en';
+    await ensureDhikrTranslationBundle(locale);
+    return applyDhikrTranslations(adhkar, getDhikrTranslationBundle(locale));
   }
 
   // Initialize database and seed if needed (idempotent with mutex protection)
@@ -82,6 +85,10 @@ class AdhkarService {
         if (needsReseed) {
           await adhkarDatabaseService.updateDataVersion();
         }
+
+        // Pick up published translation-bundle updates when the app
+        // returns to the foreground (no app rebuild needed).
+        initDhikrTranslationRefresh(() => i18n.language ?? 'en');
       } catch (error) {
         console.error('Failed to initialize adhkar service:', error);
         this.initPromise = null; // Reset on error so it can be retried
@@ -214,7 +221,7 @@ class AdhkarService {
     const allCategories = await adhkarDatabaseService.getAllCategories();
 
     // Get adhkar for all category IDs in this super category
-    const adhkar = this.localizeAdhkarList(
+    const adhkar = await this.localizeAdhkarList(
       await adhkarDatabaseService.getAdhkarByCategoryIds(
         superCategory.categoryIds,
       ),
@@ -269,7 +276,7 @@ class AdhkarService {
   ): Promise<{prev: Dhikr | null; next: Dhikr | null}> {
     await this.initialize();
 
-    const adhkar = this.localizeAdhkarList(
+    const adhkar = await this.localizeAdhkarList(
       await adhkarDatabaseService.getAdhkarInCategory(categoryId),
     );
 
