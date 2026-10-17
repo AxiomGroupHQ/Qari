@@ -26,9 +26,10 @@ import {
 import {analyticsService} from '@/services/analytics/AnalyticsService';
 import {t} from '@/i18n';
 import {dirIcon} from '@/i18n/direction';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 // ─── Data loading (module scope, runs once) ───────────────────────────────
-const quranData = require('@/data/quran.json') as QuranData;
+const quranData = getRemoteJson('quran.json', {} as QuranData);
 
 // ─── Build global verse array sorted by id (1–6236) ──────────────────────
 interface GlobalVerse {

@@ -1,6 +1,8 @@
 import {analyticsService} from '@/services/analytics/AnalyticsService';
 import {databaseService} from '@/services/database/DatabaseService';
 import {adhkarService} from '@/services/adhkar/AdhkarService';
+import {initRemoteData} from '@/services/remoteData/RemoteDataService';
+import {REMOTE_REFERENCE_FILES} from '@/services/remoteData/remoteReferenceFiles';
 import {playlistService} from '@/services/playlist/PlaylistService';
 import {uploadsService} from '@/services/uploads/UploadsService';
 import {verseAnnotationService} from '@/services/verse-annotations/VerseAnnotationService';
@@ -232,6 +234,29 @@ appInitializer.registerService({
   critical: true,
   initialize: async () => {
     await playlistService.initialize();
+  },
+});
+
+/**
+ * Remote Reference Data (Priority 2)
+ * Downloads the reference JSON served from iapi.istima.app/data/ (Quran
+ * text, bundled translations, transliteration, surah info, themes,
+ * changelog) into on-disk cache and memory. Offline after first
+ * download; a failed download degrades the affected feature (empty
+ * fallback) instead of blocking startup, and retries next cold start.
+ */
+appInitializer.registerService({
+  name: 'Remote Reference Data',
+  priority: 2,
+  critical: false,
+  initialize: async () => {
+    const result = await initRemoteData(REMOTE_REFERENCE_FILES);
+    if (result.missing.length > 0) {
+      console.warn(
+        '[RemoteData] unavailable this session:',
+        result.missing.join(', '),
+      );
+    }
   },
 });
 

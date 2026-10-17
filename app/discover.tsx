@@ -26,11 +26,12 @@ import {
   type DiscoverClip,
 } from '@/services/discover/discoverClips';
 import {discoverAudioService} from '@/services/discover/DiscoverAudioService';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
-const quranData = require('@/data/quran.json') as Record<
-  string,
-  {verse_key: string; text: string}
->;
+const quranData = getRemoteJson(
+  'quran.json',
+  {} as Record<string, {verse_key: string; text: string}>,
+);
 const arabicByKey: Record<string, string> = {};
 for (const v of Object.values(quranData)) arabicByKey[v.verse_key] = v.text;
 

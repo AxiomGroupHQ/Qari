@@ -40,9 +40,13 @@ import RenderHtml, {
 } from 'react-native-render-html';
 import {useUploadsStore} from '@/store/uploadsStore';
 import {t} from '@/i18n';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 // Import surah info data
-const surahInfo = require('@/data/surahInfo.json');
+const surahInfo = getRemoteJson(
+  'surahInfo.json',
+  {} as Record<number, {surah_name: string; text: string}>,
+);
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 
@@ -352,8 +356,8 @@ export const PlayerOptionsSheet = (props: SheetProps<'player-options'>) => {
             {isCurrentlyDownloading
               ? `Downloading ${Math.round(downloadProgress * 100)}%`
               : isTrackDownloaded
-              ? 'Downloaded'
-              : 'Download'}
+                ? 'Downloaded'
+                : 'Download'}
           </Text>
         </Pressable>
       ),

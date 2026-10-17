@@ -18,7 +18,7 @@ import {moderateScale} from 'react-native-size-matters';
 import {useTheme} from '@/hooks/useTheme';
 import {Ionicons} from '@expo/vector-icons';
 import {ChangelogEntry} from '@/types/changelog';
-import changelogData from '@/data/changelog.json';
+const changelogData = getRemoteJson<unknown[]>('changelog.json', []);
 import {
   hasVersionChanged,
   markVersionAsSeen,
@@ -28,6 +28,7 @@ import {
 } from '@/utils/versionUtils';
 import Animated, {FadeIn, ZoomIn} from 'react-native-reanimated';
 import {t} from '@/i18n';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 const {width} = Dimensions.get('window');
 

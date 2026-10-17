@@ -4,9 +4,10 @@ import {useTheme} from '@/hooks/useTheme';
 import {ScaledSheet, moderateScale} from 'react-native-size-matters';
 import {Theme} from '@/utils/themeUtils';
 import {ChangelogContent} from '@/components/changelog/ChangelogContent';
-import changelogData from '@/data/changelog.json';
+const changelogData = getRemoteJson<unknown[]>('changelog.json', []);
 import {ChangelogEntry} from '@/types/changelog';
 import {t} from '@/i18n';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 export default function WhatsNewScreen() {
   const {theme} = useTheme();
