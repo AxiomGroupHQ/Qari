@@ -156,7 +156,10 @@ const BookmarksScreen = () => {
           try {
             await digitalKhattDataService.switchRewayah(savedRewayah);
             useMushafSettingsStore.getState().setRewayah(savedRewayah);
-            showToast('Opening in', getRewayahShortLabel(savedRewayah));
+            showToast(
+              t('common.openingIn'),
+              getRewayahShortLabel(savedRewayah),
+            );
           } catch (err) {
             console.error('[Bookmarks] Failed to switch rewayah:', err);
           }

@@ -393,7 +393,7 @@ function RootLayout() {
           );
           resetShareIntent();
           await SplashScreen.hideAsync();
-          showToast('File imported');
+          showToast(t('common.fileImported'));
           SheetManager.show('organize-recitation', {
             payload: {recitation},
           });
