@@ -9,7 +9,7 @@ import {
   registerDhikrTranslationBundle,
 } from '../dhikrTranslations';
 
-const MT_LOCALES = ['ckb', 'wo', 'bm'];
+const MT_LOCALES = ['ckb', 'wo', 'bm', 'ff'];
 
 // Locales written in an Arabic-derived script legitimately contain Arabic
 // characters in their translations, so the no-Arabic leak check cannot
