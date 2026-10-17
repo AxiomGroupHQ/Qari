@@ -20,6 +20,8 @@ export interface BrandingCatalogConfig {
  */
 export type HomeRowId =
   | 'continue-listening'
+  | 'listening-tools'
+  | 'explore-collections'
   | 'khatma'
   | 'repetition'
   | 'timed-listening'
