@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× reciteren",
     "playAllStop": "Stop",
     "playAllPrevious": "Vorige",
-    "playAllNext": "Volgende"
+    "playAllNext": "Volgende",
+    "layoutSheetTitle": "Adhkar-indeling",
+    "arabicText": "Arabische tekst",
+    "showTranslation": "Vertaling tonen",
+    "showTransliteration": "Transliteratie tonen"
   },
   "app": {
     "errorInitializingPlayer": "Fout bij het initialiseren van de speler: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Schrijf je notitie hier...",
     "yourPlaylists": "Je afspeellijsten",
     "rewayatAvailable": "{{number}} rewayat beschikbaar",
-    "rewayatByReciter": "{{rewayat}} door {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} door {{reciter}}",
+    "back": "Terug",
+    "options": "Opties",
+    "shuffle": "Willekeurig",
+    "fontSize": "Lettergrootte",
+    "fileImported": "Bestand geïmporteerd",
+    "nowReading": "Nu aan het lezen",
+    "openingIn": "Openen in",
+    "showingInHafs": "Weergave in Hafs"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Label deze recitatie om de soeratekst en details te zien"
-    }
+    },
+    "ambientSounds": "Omgevingsgeluiden",
+    "loveAdd": "Toevoegen aan favorieten",
+    "loveRemove": "Verwijderen uit favorieten",
+    "mushafLayoutOptions": "Lay-outopties",
+    "nextTrack": "Volgende track",
+    "openPlayer": "Speler openen",
+    "playbackSpeed": "Afspeelsnelheid",
+    "previousTrack": "Vorige track",
+    "repeat": "Herhalen",
+    "seekBack": "{{seconds}} s terug",
+    "seekForward": "{{seconds}} s vooruit",
+    "sleepTimer": "Slaaptimer"
   },
   "playlist": {
     "subtitle_one": "Afspeellijst • {{count}} soera",
@@ -442,7 +466,9 @@
     "myRecitations": "Mijn recitaties",
     "newToQuranStartHere": "Nieuw met de Koran? Begin hier",
     "seeMore": "Meer bekijken",
-    "yourFavorites": "Je favorieten"
+    "yourFavorites": "Je favorieten",
+    "randomEmpty": "Geen willekeurige recitaties gevonden. Probeer het opnieuw.",
+    "randomFailed": "Kan de willekeurige recitatie niet afspelen. Probeer het opnieuw."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Slaaptimer",
-      "turnOffTimer": "Timer uitschakelen"
+      "turnOffTimer": "Timer uitschakelen",
+      "minutesRemaining_one": "{{count}} minuut resterend",
+      "minutesRemaining_other": "{{count}} minuten resterend",
+      "secondsRemaining_one": "{{count}} seconde resterend",
+      "secondsRemaining_other": "{{count}} seconden resterend"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Uit afspeellijst verwijderen"
@@ -1003,5 +1033,35 @@
       "quranic-duas": "Koranische smeekbeden (Rabbana)",
       "names-of-allah": "De 99 namen van Allah"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Versbereik",
+    "chooseSurah": "Kies een soera",
+    "continueListening": "Verder luisteren",
+    "duration1h": "1 uur",
+    "duration30m": "30 minuten",
+    "duration3h": "3 uur",
+    "duration5h": "5 uur",
+    "duration8h": "8 uur",
+    "exploreCollectionsSubtitle": "Tajweed, memorisatie, rewayat en meer",
+    "exploreCollectionsTitle": "Collecties ontdekken",
+    "khatma": "Khatma",
+    "khatmaActiveSubtitle": "{{done}} van 114 soera's voltooid",
+    "khatmaCompletedSubtitle": "Alle 114 soera's voltooid",
+    "khatmaProgressTitle": "Khatma-voortgang",
+    "khatmaStartSubtitle": "Start een Khatma en volg je voortgang",
+    "listeningTools": "Luisterhulpmiddelen",
+    "repetition": "Herhaling",
+    "repetitionSubtitle": "Kies een soera en een versbereik en herhaal het met gesynchroniseerde timing.",
+    "repetitionTitle": "Herhaal elk versbereik",
+    "selectDuration": "Kies duur",
+    "selectReciter": "Kies reciter",
+    "startNewKhatma": "Nieuwe Khatma starten",
+    "startRepetition": "Herhaling starten",
+    "timedListening": "Getimed luisteren",
+    "timedRowActive": "Timer ingesteld op {{minutes}} min",
+    "timedRowSubtitle": "In slaap vallen na een ingestelde tijd",
+    "timerActiveNote": "Het afspelen pauzeert wanneer de timer afloopt. Tik opnieuw op de gekozen duur om hem uit te schakelen.",
+    "unlimited": "Onbeperkt"
   }
 }

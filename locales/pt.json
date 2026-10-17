@@ -32,7 +32,11 @@
     "reciteTimes": "Recitar {{n}}×",
     "playAllStop": "Parar",
     "playAllPrevious": "Anterior",
-    "playAllNext": "Seguinte"
+    "playAllNext": "Seguinte",
+    "layoutSheetTitle": "Layout de adhkar",
+    "arabicText": "Texto árabe",
+    "showTranslation": "Mostrar tradução",
+    "showTransliteration": "Mostrar transliteração"
   },
   "app": {
     "errorInitializingPlayer": "Erro ao inicializar o leitor: {{message}}",
@@ -233,7 +237,15 @@
     "writeYourNoteHere": "Escreva aqui a sua nota...",
     "yourPlaylists": "As suas listas de reprodução",
     "rewayatAvailable": "{{number}} rewayat disponíveis",
-    "rewayatByReciter": "{{rewayat}} por {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} por {{reciter}}",
+    "back": "Voltar",
+    "options": "Opções",
+    "shuffle": "Aleatório",
+    "fontSize": "Tamanho da fonte",
+    "fileImported": "Ficheiro importado",
+    "nowReading": "A ler agora",
+    "openingIn": "A abrir em",
+    "showingInHafs": "A mostrar em Hafs"
   },
   "components": {
     "actionButtons": {
@@ -384,7 +396,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Identifique esta recitação para ver o texto da sura e os detalhes"
-    }
+    },
+    "ambientSounds": "Sons de ambiente",
+    "loveAdd": "Adicionar aos favoritos",
+    "loveRemove": "Remover dos favoritos",
+    "mushafLayoutOptions": "Opções de layout",
+    "nextTrack": "Faixa seguinte",
+    "openPlayer": "Abrir leitor",
+    "playbackSpeed": "Velocidade de reprodução",
+    "previousTrack": "Faixa anterior",
+    "repeat": "Repetir",
+    "seekBack": "Recuar {{seconds}} s",
+    "seekForward": "Avançar {{seconds}} s",
+    "sleepTimer": "Temporizador de suspensão"
   },
   "playlist": {
     "subtitle_many": "Lista de reprodução • Suras: {{count}}",
@@ -447,7 +471,9 @@
     "myRecitations": "As minhas recitações",
     "newToQuranStartHere": "A começar com o Alcorão? Comece aqui",
     "seeMore": "Ver mais",
-    "yourFavorites": "Os seus favoritos"
+    "yourFavorites": "Os seus favoritos",
+    "randomEmpty": "Não foram encontradas recitações aleatórias. Tente novamente.",
+    "randomFailed": "Não foi possível reproduzir a recitação aleatória. Tente novamente."
   },
   "screens": {
     "translationsContent": {
@@ -636,7 +662,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Temporizador de suspensão",
-      "turnOffTimer": "Desativar temporizador"
+      "turnOffTimer": "Desativar temporizador",
+      "minutesRemaining_one": "{{count}} minuto restante",
+      "minutesRemaining_other": "{{count}} minutos restantes",
+      "secondsRemaining_one": "{{count}} segundo restante",
+      "secondsRemaining_other": "{{count}} segundos restantes"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Remover da lista de reprodução"
@@ -1010,5 +1040,35 @@
       "quranic-duas": "Súplicas do Alcorão (Rabbana)",
       "names-of-allah": "Os 99 nomes de Allah"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Intervalo de versículos",
+    "chooseSurah": "Escolha uma surata",
+    "continueListening": "Continuar a ouvir",
+    "duration1h": "1 hora",
+    "duration30m": "30 minutos",
+    "duration3h": "3 horas",
+    "duration5h": "5 horas",
+    "duration8h": "8 horas",
+    "exploreCollectionsSubtitle": "Tajweed, memorização, rewayat e mais",
+    "exploreCollectionsTitle": "Explorar coleções",
+    "khatma": "Khatma",
+    "khatmaActiveSubtitle": "{{done}} de 114 suratas concluídas",
+    "khatmaCompletedSubtitle": "As 114 suratas concluídas",
+    "khatmaProgressTitle": "Progresso da Khatma",
+    "khatmaStartSubtitle": "Comece uma Khatma e acompanhe o seu progresso",
+    "listeningTools": "Ferramentas de escuta",
+    "repetition": "Repetição",
+    "repetitionSubtitle": "Escolha uma surata e um intervalo de versículos e repita-o com tempo sincronizado.",
+    "repetitionTitle": "Repetir qualquer intervalo de versículos",
+    "selectDuration": "Escolher duração",
+    "selectReciter": "Escolher recitador",
+    "startNewKhatma": "Iniciar nova Khatma",
+    "startRepetition": "Iniciar repetição",
+    "timedListening": "Escuta temporizada",
+    "timedRowActive": "Temporizador definido para {{minutes}} min",
+    "timedRowSubtitle": "Dormir após um tempo definido",
+    "timerActiveNote": "A reprodução pausa quando o temporizador termina. Toque novamente na duração escolhida para o desligar.",
+    "unlimited": "Ilimitado"
   }
 }
