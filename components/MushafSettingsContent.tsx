@@ -211,8 +211,6 @@ const FontSizeControl: React.FC<FontSizeControlProps> = ({
 
   const useSkia = !!skiaFontMgr && !!skiaFontFamily;
   const [sampleWidth, setSampleWidth] = useState(0);
-  const [fontDownloading, setFontDownloading] =
-    useState<MushafRenderer | null>(null);
   const handleSampleLayout = useCallback(
     (e: {nativeEvent: {layout: {width: number}}}) => {
       setSampleWidth(e.nativeEvent.layout.width);
@@ -687,6 +685,9 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
     false: Color(theme.colors.text).alpha(0.1).toString(),
     true: Color(theme.colors.text).alpha(0.65).toString(),
   };
+
+  const [fontDownloading, setFontDownloading] =
+    useState<MushafRenderer | null>(null);
 
   const handleFontSelect = useCallback(
     async (value: MushafRenderer) => {
