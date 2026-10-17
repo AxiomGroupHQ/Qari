@@ -31,7 +31,11 @@
     "reciteTimes": "Karanta {{n}}×",
     "playAllStop": "Tsaya",
     "playAllPrevious": "Na baya",
-    "playAllNext": "Na gaba"
+    "playAllNext": "Na gaba",
+    "layoutSheetTitle": "Tsarin Adhkar",
+    "arabicText": "Rubutun Larabci",
+    "showTranslation": "Nuna Fassara",
+    "showTransliteration": "Nuna Rubutun Sauti"
   },
   "app": {
     "errorInitializingPlayer": "Kuskure wajen fara na'urar kunna sauti: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Rubuta bayaninka a nan...",
     "yourPlaylists": "Jerin Sauraronka",
     "rewayatAvailable": "Riwayoyi {{number}} suna nan",
-    "rewayatByReciter": "{{rewayat}} na {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} na {{reciter}}",
+    "back": "Baya",
+    "options": "Zaɓuɓɓuka",
+    "shuffle": "Gauraya",
+    "fontSize": "Girman Haruffa",
+    "fileImported": "An shigo da fayil",
+    "nowReading": "Ana karatu yanzu",
+    "openingIn": "Ana buɗewa a cikin",
+    "showingInHafs": "Ana nuna a Hafs"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Yi wa wannan karatu alama domin ganin rubutun sura da bayanai"
-    }
+    },
+    "ambientSounds": "Sautunan muhalli",
+    "loveAdd": "Ƙara zuwa fi so",
+    "loveRemove": "Cire daga fi so",
+    "mushafLayoutOptions": "Zaɓuɓɓukan tsari",
+    "nextTrack": "Waƙa ta gaba",
+    "openPlayer": "Buɗe mai kunnawa",
+    "playbackSpeed": "Saurin kunna",
+    "previousTrack": "Waƙar da ta gabata",
+    "repeat": "Maimaita",
+    "seekBack": "Komawa baya daƙiƙa {{seconds}}",
+    "seekForward": "Zuwa gaba daƙiƙa {{seconds}}",
+    "sleepTimer": "Lokacin Barci"
   },
   "playlist": {
     "subtitle_one": "Jerin sauraro • sura {{count}}",
@@ -442,7 +466,9 @@
     "myRecitations": "Karatuttukana",
     "newToQuranStartHere": "Sabon zuwa Alƙur'ani? Fara a Nan",
     "seeMore": "Duba Ƙari",
-    "yourFavorites": "Abubuwan da Ka Fi So"
+    "yourFavorites": "Abubuwan da Ka Fi So",
+    "randomEmpty": "An kasa samun karatun bazuwar. Sake gwadawa.",
+    "randomFailed": "An kasa kunna karatun bazuwar. Sake gwadawa."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Lokacin Barci",
-      "turnOffTimer": "Kashe Lokaci"
+      "turnOffTimer": "Kashe Lokaci",
+      "minutesRemaining_one": "Minti {{count}} ya rage",
+      "minutesRemaining_other": "Minti {{count}} suka rage",
+      "secondsRemaining_one": "Daƙiƙa {{count}} ta rage",
+      "secondsRemaining_other": "Daƙiƙa {{count}} suka rage"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Cire daga Jerin Sauraro"
@@ -1003,5 +1033,35 @@
       "quranic-duas": "Addu'o'in Alkur'ani (Rabbana)",
       "names-of-allah": "Suna 99 na Allah"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Zangon aya",
+    "chooseSurah": "Zaɓi Surah",
+    "continueListening": "Ci gaba da saurare",
+    "duration1h": "Awanni 1",
+    "duration30m": "Minti 30",
+    "duration3h": "Awanni 3",
+    "duration5h": "Awanni 5",
+    "duration8h": "Awanni 8",
+    "exploreCollectionsSubtitle": "Tajwidi, hadda, riwayat da dai sauransu",
+    "exploreCollectionsTitle": "Binciki tarin",
+    "khatma": "Khatma",
+    "khatmaActiveSubtitle": "An kammala surori {{done}} daga cikin 114",
+    "khatmaCompletedSubtitle": "An kammala surori 114 gaba ɗaya",
+    "khatmaProgressTitle": "Ci gaban Khatma",
+    "khatmaStartSubtitle": "Fara Khatma kuma bi diddigin ci gabanka",
+    "listeningTools": "Kayan aikin saurare",
+    "repetition": "Maimaitawa",
+    "repetitionSubtitle": "Zaɓi Surah da zangon aya, sannan a maimaita shi da lokaci daidaitacce.",
+    "repetitionTitle": "Maimaita duk wani zangon aya",
+    "selectDuration": "Zaɓi tsawon lokaci",
+    "selectReciter": "Zaɓi mai karatu",
+    "startNewKhatma": "Fara sabon Khatma",
+    "startRepetition": "Fara maimaitawa",
+    "timedListening": "Saurare da Lokaci",
+    "timedRowActive": "An saita mai ƙidaya lokaci zuwa minti {{minutes}}",
+    "timedRowSubtitle": "Tsaya bayan lokaci da aka kafa",
+    "timerActiveNote": "Kunna yana tsayawa lokacin da mai ƙidaya ya ƙare. Taɓa tsawon lokacin da aka zaɓa kuma don kashe shi.",
+    "unlimited": "Babu iyaka"
   }
 }

@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× ያንብቡ",
     "playAllStop": "አቁም",
     "playAllPrevious": "ቀዳሚ",
-    "playAllNext": "ቀጣይ"
+    "playAllNext": "ቀጣይ",
+    "layoutSheetTitle": "የአዝካር አቀማመጥ",
+    "arabicText": "ዓረብኛ ጽሑፍ",
+    "showTranslation": "ትርጉም አሳይ",
+    "showTransliteration": "ድምጽ ጽሑፍ አሳይ"
   },
   "app": {
     "errorInitializingPlayer": "ማጫወቻውን ማስጀመር አልተሳካም፦ {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "ማስታወሻዎን እዚህ ይጻፉ...",
     "yourPlaylists": "የእርስዎ አጫዋች ዝርዝሮች",
     "rewayatAvailable": "{{number}} ንባቦች ይገኛሉ",
-    "rewayatByReciter": "{{rewayat}} በ{{reciter}}"
+    "rewayatByReciter": "{{rewayat}} በ{{reciter}}",
+    "back": "ተመለስ",
+    "options": "አማራጮች",
+    "shuffle": "ደብልቅ",
+    "fontSize": "የፊደል መጠን",
+    "fileImported": "ፋይል አስገብቷል",
+    "nowReading": "አሁን በማንበብ ላይ",
+    "openingIn": "በእዚህ በመክፈት ላይ",
+    "showingInHafs": "በሐፍስ በማሳየት ላይ"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "የሱራውን ጽሑፍና ዝርዝር ለማየት ይህን ንባብ ይሰይሙ"
-    }
+    },
+    "ambientSounds": "የአካባቢ ድምፆች",
+    "loveAdd": "ወደ ተወዳጆች ጨምር",
+    "loveRemove": "ከተወዳጆች አስወግድ",
+    "mushafLayoutOptions": "የአቀማመጥ አማራጮች",
+    "nextTrack": "ቀጣይ ፍለጋ",
+    "openPlayer": "ተጫዋቹን ክፈት",
+    "playbackSpeed": "የማጫወቻ ፍጥነት",
+    "previousTrack": "ያለፈው ፍለጋ",
+    "repeat": "ድገም",
+    "seekBack": "ወደ ኋላ {{seconds}} ሰከንዶች",
+    "seekForward": "ወደ ፊት {{seconds}} ሰከንዶች",
+    "sleepTimer": "የእንቅልፍ ሰዓት ቆጣሪ"
   },
   "playlist": {
     "subtitle_one": "አጫዋች ዝርዝር • {{count}} ሱራ",
@@ -442,7 +466,9 @@
     "myRecitations": "የእኔ ንባቦች",
     "newToQuranStartHere": "ለቁርአን አዲስ ነዎት? እዚህ ይጀምሩ",
     "seeMore": "ተጨማሪ ይመልከቱ",
-    "yourFavorites": "የእርስዎ ተወዳጆች"
+    "yourFavorites": "የእርስዎ ተወዳጆች",
+    "randomEmpty": "የቅጽበት ንባቦችን ማግኘት አልተቻለም። እባክዎ እንደገና ይሞክሩ።",
+    "randomFailed": "የቅጽበት ንባብን ማጫወት አልተቻለም። እባክዎ እንደገና ይሞክሩ።"
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "የእንቅልፍ ሰዓት ቆጣሪ",
-      "turnOffTimer": "ሰዓት ቆጣሪን አጥፋ"
+      "turnOffTimer": "ሰዓት ቆጣሪን አጥፋ",
+      "minutesRemaining_one": "{{count}} ደቂቃ ቀርቷል",
+      "minutesRemaining_other": "{{count}} ደቂቃዎች ቀርተዋል",
+      "secondsRemaining_one": "{{count}} ሰከንድ ቀርቷል",
+      "secondsRemaining_other": "{{count}} ሰከንዶች ቀርተዋል"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "ከአጫዋች ዝርዝር አስወግድ"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "የቁርአን ዱዓዎች (ረበና)",
       "names-of-allah": "የአላህ 99 ስሞች"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "የአያ ክልል",
+    "chooseSurah": "ሱራ ይምረጡ",
+    "continueListening": "ማዳመጥን ቀጥሉ",
+    "duration1h": "1 ሰዓት",
+    "duration30m": "30 ደቂቃዎች",
+    "duration3h": "3 ሰዓቶች",
+    "duration5h": "5 ሰዓቶች",
+    "duration8h": "8 ሰዓቶች",
+    "exploreCollectionsSubtitle": "ተጅዊድ፣ ከልብ ማወቅ፣ ሪዋያት እና ሌሎችም",
+    "exploreCollectionsTitle": "ስብስቦችን ያስሱ",
+    "khatma": "ኸትመ",
+    "khatmaActiveSubtitle": "ከ114 ሱራዎች {{done}} ተጠናቅቋል",
+    "khatmaCompletedSubtitle": "ሁሉም 114 ሱራዎች ተጠናቅቀዋል",
+    "khatmaProgressTitle": "የኸትመ እድገት",
+    "khatmaStartSubtitle": "ኸትመ ይጀምሩ እና እድገትዎን ይከታተሉ",
+    "listeningTools": "የማዳመጫ መሣሪያዎች",
+    "repetition": "ድግግሞሽ",
+    "repetitionSubtitle": "ሱራ እና የአያ ክልል ይምረጡ፣ ከዚያ በማመሳሰል ጊዜ ይድገሙት።",
+    "repetitionTitle": "ማንኛውንም የአያ ክልል ይድገሙ",
+    "selectDuration": "ቆይታ ይምረጡ",
+    "selectReciter": "ነባቢ ይምረጡ",
+    "startNewKhatma": "አዲስ ኸትመ ይጀምሩ",
+    "startRepetition": "ድግግሞሽ ይጀምሩ",
+    "timedListening": "በጊዜ የተገደበ ማዳመጥ",
+    "timedRowActive": "ቆጣሪው ለ{{minutes}} ደቂቃዎች ተቀምጧል",
+    "timedRowSubtitle": "ከተወሰነ ጊዜ በኋላ ይቁም",
+    "timerActiveNote": "ቆጣሪው ሲያበቃ ማጫወቻው ይቆማል። ለማጥፋት የተመረጠውን ቆይታ እንደገና ይንኩ።",
+    "unlimited": "ወሰን የለውም"
   }
 }

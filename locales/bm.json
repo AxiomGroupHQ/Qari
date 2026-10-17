@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× karan",
     "playAllStop": "A jɔ",
     "playAllPrevious": "Ɲɛmɔgɔ",
-    "playAllNext": "Nata"
+    "playAllNext": "Nata",
+    "layoutSheetTitle": "Adhkar Nɔgɔyali",
+    "arabicText": "Larabu Sɛbɛn",
+    "showTranslation": "Bairamafɔ jira",
+    "showTransliteration": "Fɔcogo jira"
   },
   "app": {
     "errorInitializingPlayer": "Fɔlifɛn bɛ ka ɲɛsin jɔ ka lamɛnbaga daminɛ la: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "I ka note sɛbɛn yan...",
     "yourPlaylists": "I ka playlistw",
     "rewayatAvailable": "Kalan kɛcogo {{number}} bɛ yen",
-    "rewayatByReciter": "{{reciter}} ka {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} ka {{rewayat}}",
+    "back": "Sèguin kôrô",
+    "options": "Sugandaw",
+    "shuffle": "Fâli-fâli",
+    "fontSize": "Sɛbɛn bonya",
+    "fileImported": "Dosiyɛ dona",
+    "nowReading": "A bɛ kalan sisan",
+    "openingIn": "A bɛ dà yɔrɔ la",
+    "showingInHafs": "A bɛ jira Hafs la"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Nin kalan taamasyɛn ta walasa i k'a sura sɛbɛn ni a kunnafoniw ye"
-    }
+    },
+    "ambientSounds": "Kan minanw",
+    "loveAdd": "A fara nɛnɛ fɛnw kan",
+    "loveRemove": "A bɔ nɛnɛ fɛnw la",
+    "mushafLayoutOptions": "Nɔgɔyali sugandaw",
+    "nextTrack": "O nɔ na",
+    "openPlayer": "Fɔbagan dà",
+    "playbackSpeed": "Fɔli teliya",
+    "previousTrack": "O fɛna",
+    "repeat": "Ka tɔɔrɔ",
+    "seekBack": "Sɛgɛndɛ {{seconds}} kôrô",
+    "seekForward": "Sɛgɛndɛ {{seconds}} ɲɛ",
+    "sleepTimer": "Sɔgɔ waati jateminɛ"
   },
   "playlist": {
     "subtitle_one": "Playlist • sura {{count}}",
@@ -442,7 +466,9 @@
     "myRecitations": "Ne ka kalanw",
     "newToQuranStartHere": "Kuran kura don wa? Daminɛ yan",
     "seeMore": "A tɔ lajɛ",
-    "yourFavorites": "I kanubagaw"
+    "yourFavorites": "I kanubagaw",
+    "randomEmpty": "Kalanfan tɛ sɔrɔ. Aw ka ɲini tugun.",
+    "randomFailed": "Kalanfan tɛ se ka fɔ. Aw ka ɲini tugun."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Sɔgɔ waati jateminɛ",
-      "turnOffTimer": "Waati jateminɛ jɔ"
+      "turnOffTimer": "Waati jateminɛ jɔ",
+      "minutesRemaining_one": "Miniti {{count}} ka to",
+      "minutesRemaining_other": "Miniti {{count}} ka to",
+      "secondsRemaining_one": "Sɛgɛndɛ {{count}} ka to",
+      "secondsRemaining_other": "Sɛgɛndɛ {{count}} ka to"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "A bɔ playlist la"
@@ -1002,5 +1032,35 @@
       "quranic-duas": "Kuraana duaw (Rabbana)",
       "names-of-allah": "Ala tɔgɔ 99"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Aya sègè",
+    "chooseSurah": "Sura sugandi",
+    "continueListening": "Ka taa ɲɔgɔn kan",
+    "duration1h": "Lerɛ 1",
+    "duration30m": "Miniti 30",
+    "duration3h": "Lerɛ 3",
+    "duration5h": "Lerɛ 5",
+    "duration8h": "Lerɛ 8",
+    "exploreCollectionsSubtitle": "Tajwidi, don, riwayat ni wɛrɛw",
+    "exploreCollectionsTitle": "Ganfɛnw sà",
+    "khatma": "Xatima",
+    "khatmaActiveSubtitle": "Sura {{done}} kɛra 114 kɔnɔ",
+    "khatmaCompletedSubtitle": "Sura 114 bɛɛ kɛra",
+    "khatmaProgressTitle": "Xatima tɛmɛn",
+    "khatmaStartSubtitle": "Xatima daminɛ k'i tɛmɛn tulon",
+    "listeningTools": "Mɛnbolo minanw",
+    "repetition": "Ka tɔɔrɔ",
+    "repetitionSubtitle": "Sura ni aya sègè sugandi, o kɔ k'o tɔɔrɔ waati kɛkɛ la.",
+    "repetitionTitle": "Aya sègè o sègè tɔɔrɔ",
+    "selectDuration": "Waati sugandi",
+    "selectReciter": "Kalanbaga sugandi",
+    "startNewKhatma": "Xatima kura daminɛ",
+    "startRepetition": "Ka tɔɔrɔ daminɛ",
+    "timedListening": "Mɛn Waati Lajɛla",
+    "timedRowActive": "Waati lajɛra miniti {{minutes}} la",
+    "timedRowSubtitle": "Ka ɲɔ waati dɔ kɔ",
+    "timerActiveNote": "Fɔli bɛ ɲɔ waati kɛra. A duguma waati sugandira na ka o bɔ.",
+    "unlimited": "Dan tɛ"
   }
 }

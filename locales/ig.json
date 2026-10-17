@@ -30,7 +30,11 @@
     "reciteTimes": "Gụọ {{n}}×",
     "playAllStop": "Kwụsị",
     "playAllPrevious": "Nke gara aga",
-    "playAllNext": "Nke na-esote"
+    "playAllNext": "Nke na-esote",
+    "layoutSheetTitle": "Nhazi Adhkar",
+    "arabicText": "Ederede Arabik",
+    "showTranslation": "Gosi Nsụgharị",
+    "showTransliteration": "Gosi Ndegasị"
   },
   "app": {
     "errorInitializingPlayer": "Njehie na ịmalite ihe ọkpụkpọ: {{message}}",
@@ -229,7 +233,15 @@
     "writeYourNoteHere": "Dee ndetu gị ebe a...",
     "yourPlaylists": "Ndepụta ọkpụkpọ gị",
     "rewayatAvailable": "Rewayat {{number}} dị",
-    "rewayatByReciter": "{{rewayat}} nke {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} nke {{reciter}}",
+    "back": "Laghachi",
+    "options": "Nhọrọ",
+    "shuffle": "Kọwaa",
+    "fontSize": "Nha Font",
+    "fileImported": "Ebubata faịlụ",
+    "nowReading": "Na-agụ ugbu a",
+    "openingIn": "Na-emeghe na",
+    "showingInHafs": "Na-egosi na Hafs"
   },
   "components": {
     "actionButtons": {
@@ -379,7 +391,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Kaa ọgụgụ a akara ka ị hụ ederede sura na nkọwa ya"
-    }
+    },
+    "ambientSounds": "Ụda gburugburu",
+    "loveAdd": "Tinye na ọkacha mmasị",
+    "loveRemove": "Wepụ na ọkacha mmasị",
+    "mushafLayoutOptions": "Nhọrọ nhazi",
+    "nextTrack": "Egwu na-esote",
+    "openPlayer": "Mepee egwuregwu",
+    "playbackSpeed": "Ọsọ egwuregwu",
+    "previousTrack": "Egwu gara aga",
+    "repeat": "Mee ugboro ugboro",
+    "seekBack": "Laghachi sekọnd {{seconds}}",
+    "seekForward": "Gaa n'ihu sekọnd {{seconds}}",
+    "sleepTimer": "Ngụ oge ụra"
   },
   "playlist": {
     "subtitle_one": "Ndepụta ọkpụkpọ • sura {{count}}",
@@ -441,7 +465,9 @@
     "myRecitations": "Ọgụgụ m",
     "newToQuranStartHere": "Ị bụ onye ọhụrụ na Koran? Malite ebe a",
     "seeMore": "Hụkwuo",
-    "yourFavorites": "Ọkacha mmasị gị"
+    "yourFavorites": "Ọkacha mmasị gị",
+    "randomEmpty": "Ọ dịghị ịgụ random achọpụtara. Nwaa ọzọ.",
+    "randomFailed": "Ọ gaghị ekpo ịgụ random. Nwaa ọzọ."
   },
   "screens": {
     "translationsContent": {
@@ -630,7 +656,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Ngụ oge ụra",
-      "turnOffTimer": "Gbanyụọ ngụ oge"
+      "turnOffTimer": "Gbanyụọ ngụ oge",
+      "minutesRemaining_one": "Nkeji {{count}} fọdụrụ",
+      "minutesRemaining_other": "Nkeji {{count}} fọdụrụ",
+      "secondsRemaining_one": "Sekọnd {{count}} fọdụrụ",
+      "secondsRemaining_other": "Sekọnd {{count}} fọdụrụ"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Wepụ na ndepụta ọkpụkpọ"
@@ -1001,5 +1031,35 @@
       "quranic-duas": "Ekpere Qur'an (Rabbana)",
       "names-of-allah": "Aha Chineke 99"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Oke ayah",
+    "chooseSurah": "Họrọ Surah",
+    "continueListening": "Gaa n'ihu na-ege ntị",
+    "duration1h": "Elekere 1",
+    "duration30m": "Nkeji 30",
+    "duration3h": "Elekere 3",
+    "duration5h": "Elekere 5",
+    "duration8h": "Elekere 8",
+    "exploreCollectionsSubtitle": "Tajwidi, icheta n'isi, riwayat na ndị ọzọ",
+    "exploreCollectionsTitle": "Chọpụta nchịkọta",
+    "khatma": "Khatma",
+    "khatmaActiveSubtitle": "Surah {{done}} n'ime 114 emechaala",
+    "khatmaCompletedSubtitle": "Surah 114 niile emechaala",
+    "khatmaProgressTitle": "Ọganihu Khatma",
+    "khatmaStartSubtitle": "Bido Khatma ma soro ọganihu gị",
+    "listeningTools": "Ngwa ege ntị",
+    "repetition": "Ịme ugboro ugboro",
+    "repetitionSubtitle": "Họrọ Surah na oke ayah, wee mee ya ugboro ugboro na oge koodinara.",
+    "repetitionTitle": "Mee oke ayah ọ bụla ugboro ugboro",
+    "selectDuration": "Họrọ oge",
+    "selectReciter": "Họrọ onye na-agụ",
+    "startNewKhatma": "Bido Khatma ọhụrụ",
+    "startRepetition": "Bido ime ugboro ugboro",
+    "timedListening": "Ege Ntị Oge",
+    "timedRowActive": "Ejirila oge maka nkeji {{minutes}}",
+    "timedRowSubtitle": "Kwụsị mgbe oge gasịrị",
+    "timerActiveNote": "Egwuregwu na-akwụsị mgbe oge gwụrụ. Pịa oge ahọrọ ọzọ iji gbanyụọ ya.",
+    "unlimited": "Enweghị oke"
   }
 }

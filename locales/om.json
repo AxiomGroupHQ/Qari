@@ -32,7 +32,11 @@
     "reciteTimes": "Altokko {{n}}× dubbisi",
     "playAllStop": "Dhaabi",
     "playAllPrevious": "Kan darbe",
-    "playAllNext": "Kan itti aanu"
+    "playAllNext": "Kan itti aanu",
+    "layoutSheetTitle": "Qindaa'ina Adhkaar",
+    "arabicText": "Barruu Arabaa",
+    "showTranslation": "Hiika agarsiisi",
+    "showTransliteration": "Sagaleessuu agarsiisi"
   },
   "app": {
     "errorInitializingPlayer": "Dogoggora taphachiisaa jalqabuu: {{message}}",
@@ -233,7 +237,15 @@
     "writeYourNoteHere": "Yaadannoo kee as barreessi...",
     "yourPlaylists": "Tarreeffama sirna kee",
     "rewayatAvailable": "Rewaayaatni {{number}} jiru",
-    "rewayatByReciter": "{{rewayat}} kan {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} kan {{reciter}}",
+    "back": "Duubatti",
+    "options": "Filannoowwan",
+    "shuffle": "Walitti makaa",
+    "fontSize": "Bal'ina Qubee",
+    "fileImported": "Faayilii galmaa'eera",
+    "nowReading": "Amma dubbisa jira",
+    "openingIn": "Keessatti banamaa jira",
+    "showingInHafs": "Hafs keessatti agarsiisaa jira"
   },
   "components": {
     "actionButtons": {
@@ -384,7 +396,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Qara'uu kana mallatteessi barreeffama suuraa fi bal'ina argachuuf"
-    }
+    },
+    "ambientSounds": "Sagaleewwan naannoo",
+    "loveAdd": "Filatamootatti dabali",
+    "loveRemove": "Filatamoo irraa baasi",
+    "mushafLayoutOptions": "Filannoowwan qindaa'inaa",
+    "nextTrack": "Waan itti aanu",
+    "openPlayer": "Taphaa banii",
+    "playbackSpeed": "Saffisa taphaa",
+    "previousTrack": "Waan dura",
+    "repeat": "Irra deebi'i",
+    "seekBack": "Sekondii {{seconds}} duubatti",
+    "seekForward": "Sekondii {{seconds}} fuuldura",
+    "sleepTimer": "Tooftaa rafuu"
   },
   "playlist": {
     "subtitle_many": "Tarreeffama • suuraalee {{count}}",
@@ -447,7 +471,9 @@
     "myRecitations": "Qara'uu koo",
     "newToQuranStartHere": "Qur'aanaaf haaraa? As jalqabi",
     "seeMore": "Dabalata ilaali",
-    "yourFavorites": "Filatamoo kee"
+    "yourFavorites": "Filatamoo kee",
+    "randomEmpty": "Dubbisaa tasaa argachuu hin dandeenye. Irra deebi'ii yaali.",
+    "randomFailed": "Dubbisaa tasaa taphachuu hin dandeenye. Irra deebi'ii yaali."
   },
   "screens": {
     "translationsContent": {
@@ -636,7 +662,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Tooftaa rafuu",
-      "turnOffTimer": "Tooftaa cufi"
+      "turnOffTimer": "Tooftaa cufi",
+      "minutesRemaining_one": "Daqiqaa {{count}} hafeera",
+      "minutesRemaining_other": "Daqiqaa {{count}} hafeera",
+      "secondsRemaining_one": "Sekondii {{count}} hafeera",
+      "secondsRemaining_other": "Sekondii {{count}} hafeera"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Tarreeffama irraa balleessi"
@@ -1010,5 +1040,35 @@
       "quranic-duas": "Du'aawwan Qur'aanaa (Rabbana)",
       "names-of-allah": "Maqaa Waaq 99"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Hanga aayaa",
+    "chooseSurah": "Suuraa filadhu",
+    "continueListening": "Dhaggeeffachuu itti fufi",
+    "duration1h": "Sa'aatii 1",
+    "duration30m": "Daqiqaa 30",
+    "duration3h": "Sa'aatii 3",
+    "duration5h": "Sa'aatii 5",
+    "duration8h": "Sa'aatii 8",
+    "exploreCollectionsSubtitle": "Tajwiidii, of keessa qabachuu, riwaayatii fi kkf",
+    "exploreCollectionsTitle": "Kuusaalee qoradhu",
+    "khatma": "Xatma",
+    "khatmaActiveSubtitle": "Suuraalee {{done}} 114 keessaa xumuraman",
+    "khatmaCompletedSubtitle": "Suuraalee 114 hundi xumuraman",
+    "khatmaProgressTitle": "Guddina Xatma",
+    "khatmaStartSubtitle": "Xatma jalqabiiti guddina kee hordofi",
+    "listeningTools": "Meeshaalee dhaggeeffannaa",
+    "repetition": "Irra deebi'uu",
+    "repetitionSubtitle": "Suuraa fi hanga aayaa filadhu, achiis yeroo walitti hidhameen irra deebi'i.",
+    "repetitionTitle": "Hanga aayaa kamiyyuu irra deebi'i",
+    "selectDuration": "Yeroo filadhu",
+    "selectReciter": "Dubbisaa filadhu",
+    "startNewKhatma": "Xatma haaraa jalqabi",
+    "startRepetition": "Irra deebi'uu jalqabi",
+    "timedListening": "Dhaggeeffannaa Yeroon",
+    "timedRowActive": "Sa'aatuu daqiqaa {{minutes}}'f qindaa'eera",
+    "timedRowSubtitle": "Yeroo murtaa'e booda dhaabbatu",
+    "timerActiveNote": "Yeroon dhumutti taphi ni dhaabbata. Haqusf dhangaa'e filatame irra deebi'ii tuqi.",
+    "unlimited": "Daangaa hin qabu"
   }
 }

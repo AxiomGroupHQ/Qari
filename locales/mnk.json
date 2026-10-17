@@ -31,7 +31,11 @@
     "reciteTimes": "{{n}}× karan",
     "playAllStop": "A jɔ",
     "playAllPrevious": "Kɔfɛ",
-    "playAllNext": "Nata"
+    "playAllNext": "Nata",
+    "layoutSheetTitle": "Adhkar Nogoyali",
+    "arabicText": "Larabu Seben",
+    "showTranslation": "Bayramanfo jira",
+    "showTransliteration": "Focogo jira"
   },
   "app": {
     "errorInitializingPlayer": "Folifen be ka nyesin jo ka laminbaga damine la: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "I ka note sebe yan...",
     "yourPlaylists": "I ka playlistw",
     "rewayatAvailable": "Rewayat {{number}} be yen",
-    "rewayatByReciter": "{{reciter}} ka {{rewayat}}"
+    "rewayatByReciter": "{{reciter}} ka {{rewayat}}",
+    "back": "Segin",
+    "options": "Sugandilu",
+    "shuffle": "Kafoli",
+    "fontSize": "Sebee Too",
+    "fileImported": "Fayil donna",
+    "nowReading": "A be kalan le sisan",
+    "openingIn": "A be dayi la",
+    "showingInHafs": "A be jira Hafs la"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Nin karaŋ taamasyen ta walasa i k'a sura sebe ni a kunnafoniw ye"
-    }
+    },
+    "ambientSounds": "Kan minanw",
+    "loveAdd": "A fara nene fenw kan",
+    "loveRemove": "A bo nene fenw la",
+    "mushafLayoutOptions": "Nogoyali sugandaw",
+    "nextTrack": "O no na",
+    "openPlayer": "Fobagan da",
+    "playbackSpeed": "Foli teliya",
+    "previousTrack": "O fena",
+    "repeat": "Ka too",
+    "seekBack": "Segende {{seconds}} koro",
+    "seekForward": "Segende {{seconds}} nye",
+    "sleepTimer": "Sogo waati jatemine"
   },
   "playlist": {
     "subtitle_one": "Playlist • sura {{count}}",
@@ -442,7 +466,9 @@
     "myRecitations": "Ne ka karaŋw",
     "newToQuranStartHere": "Kuran kura don wa? Damine yan",
     "seeMore": "A to laje",
-    "yourFavorites": "I kanubagaw"
+    "yourFavorites": "I kanubagaw",
+    "randomEmpty": "Kalanfen te soro. I ka nyini tugun.",
+    "randomFailed": "Kalanfen te se ka fo. I ka nyini tugun."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Sogo waati jatemine",
-      "turnOffTimer": "Waati jatemine jo"
+      "turnOffTimer": "Waati jatemine jo",
+      "minutesRemaining_one": "Miniti {{count}} ka to",
+      "minutesRemaining_other": "Miniti {{count}} ka to",
+      "secondsRemaining_one": "Segende {{count}} ka to",
+      "secondsRemaining_other": "Segende {{count}} ka to"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "A bo playlist la"
@@ -1003,5 +1033,35 @@
       "quranic-duas": "Kurana duyaw (Rabbana)",
       "names-of-allah": "Ala tɔɔ 99"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Aya sege",
+    "chooseSurah": "Sura sugandi",
+    "continueListening": "Ka taa nyonkon kan",
+    "duration1h": "Lere 1",
+    "duration30m": "Miniti 30",
+    "duration3h": "Lere 3",
+    "duration5h": "Lere 5",
+    "duration8h": "Lere 8",
+    "exploreCollectionsSubtitle": "Tajwidi, don, riwayat ni woluw",
+    "exploreCollectionsTitle": "Ganfenw sa",
+    "khatma": "Xatima",
+    "khatmaActiveSubtitle": "Sura {{done}} ke 114 la",
+    "khatmaCompletedSubtitle": "Sura 114 bee ke ra",
+    "khatmaProgressTitle": "Xatima nyenen",
+    "khatmaStartSubtitle": "Xatima damine k'i nyenen tulon",
+    "listeningTools": "Menbolo minanw",
+    "repetition": "Ka too",
+    "repetitionSubtitle": "Sura ni aya sege sugandi, o ko k'o too wati la.",
+    "repetitionTitle": "Aya sege o sege too",
+    "selectDuration": "Wati sugandi",
+    "selectReciter": "Kalanbaga sugandi",
+    "startNewKhatma": "Xatima kura damine",
+    "startRepetition": "Ka too damine",
+    "timedListening": "Men Wati La",
+    "timedRowActive": "Wati lajera miniti {{minutes}} la",
+    "timedRowSubtitle": "Ka nyon wati do ko",
+    "timerActiveNote": "Foli be nyon wati kera. A digu wati sugandira na ka o bo.",
+    "unlimited": "Dan te"
   }
 }
