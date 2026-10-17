@@ -17,6 +17,10 @@ import type {Dhikr} from '@/types/adhkar';
  * Missing locales, missing ids, and missing fields all fall back to the
  * English text seeded into the adhkar SQLite table, so a partial bundle is
  * always safe to ship.
+ *
+ * Istima serves its bundles from https://iapi.istima.app/adhkar/ (see
+ * dhikrTranslationLoader.ts); a fork can still ship bundles in the binary
+ * by registering loaders here.
  */
 export interface DhikrTranslationEntry {
   translation?: string;
@@ -30,30 +34,31 @@ type BundleLoader = () =>
   | {default: DhikrTranslationBundle};
 
 /**
- * Registry of shipped bundles. Populated (via scripts/generate-adhkar-
- * translations-index or manual entry) when a reviewed human translation for
- * a language lands. Empty means every language reads the English source.
+ * Registry of bundles shipped inside the binary. Empty for Istima - its
+ * bundles download from the API host - but kept so forks can ship a
+ * bundle without any network piece.
  */
-const bundleLoaders: Record<string, BundleLoader> = {
-  // Model-authored and UNREVIEWED - see the locale's
-  // data/adhkar-translations/<locale>.meta.json. Replace with the approved
-  // human translation when the team confirms one.
-  ckb: () => require('../../data/adhkar-translations/ckb.json'),
-  wo: () => require('../../data/adhkar-translations/wo.json'),
-  bm: () => require('../../data/adhkar-translations/bm.json'),
-  ff: () => require('../../data/adhkar-translations/ff.json'),
-  mnk: () => require('../../data/adhkar-translations/mnk.json'),
-  nl: () => require('../../data/adhkar-translations/nl.json'),
-  el: () => require('../../data/adhkar-translations/el.json'),
-  mk: () => require('../../data/adhkar-translations/mk.json'),
-  mr: () => require('../../data/adhkar-translations/mr.json'),
-  my: () => require('../../data/adhkar-translations/my.json'),
-  pa: () => require('../../data/adhkar-translations/pa.json'),
-  prs: () => require('../../data/adhkar-translations/prs.json'),
-  ti: () => require('../../data/adhkar-translations/ti.json'),
-};
+const bundleLoaders: Record<string, BundleLoader> = {};
+
+/**
+ * Bundles downloaded this session by dhikrTranslationLoader, keyed by
+ * base locale. Preferred over the shipped registry.
+ */
+const downloadedBundles: Record<string, DhikrTranslationBundle> = {};
 
 const bundleCache: Record<string, DhikrTranslationBundle | null> = {};
+
+/**
+ * Publish a downloaded bundle for synchronous reads. Called by
+ * dhikrTranslationLoader (and tests); not part of a fork's setup.
+ */
+export function setDownloadedDhikrTranslationBundle(
+  locale: string,
+  bundle: DhikrTranslationBundle,
+): void {
+  downloadedBundles[locale] = bundle;
+  delete bundleCache[locale];
+}
 
 /** Register a bundle loader (used by the generated index and tests). */
 export function registerDhikrTranslationBundle(
@@ -64,13 +69,16 @@ export function registerDhikrTranslationBundle(
   delete bundleCache[locale];
 }
 
-/** Load the bundle for a locale, or null when none ships. Cached. */
+/** Load the bundle for a locale, or null when none is available. Cached. */
 export function getDhikrTranslationBundle(
   locale: string,
 ): DhikrTranslationBundle | null {
   // Fall back to the base language for regional locales (nl-BE -> nl).
   const key =
-    locale in bundleLoaders ? locale : (locale.split('-')[0] ?? locale);
+    locale in downloadedBundles || locale in bundleLoaders
+      ? locale
+      : (locale.split('-')[0] ?? locale);
+  if (key in downloadedBundles) return downloadedBundles[key];
   if (key in bundleCache) return bundleCache[key];
   const loader = bundleLoaders[key];
   if (!loader) {

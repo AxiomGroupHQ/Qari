@@ -10,11 +10,11 @@ Deferred items and the self-hosting inventory. Update the status when something 
 | Rate app (Settings) | Message only | The real App Store ID (and Play listing). The old upstream ID was removed, `utils/reviewUtils.ts` is deleted. Rate now shows a friendly "not available yet" toast. |
 | Legal pages (privacy, terms) | English only | Decide whether to translate `data/legal/*.json`. Both now say "Last Updated: October 2026". |
 | Manifest link in the web page | Open | `public/manifest.json` exists but the HTML does not link to it yet (needs a custom web HTML template). |
-| Cloudflare Pages project for iapi.istima.app | **Done** | Pages project `qari-api` (repo `AxiomGroupHQ/Qari-api`) serves clips and timestamps on `iapi.istima.app`. The Worker `istima-api` takes `iapi.istima.app/v1/*` on the same hostname. Pages allows 20,000 files per deploy (now ~12.9k). |
+| Cloudflare Pages project for iapi.istima.app | **Done** | Pages project `qari-api` (repo `AxiomGroupHQ/qari-api`) serves clips and timestamps on `iapi.istima.app`. The Worker `qari-api` takes `iapi.istima.app/v1/*` on the same hostname. Pages allows 20,000 files per deploy (now ~12.9k). |
 
 ## Accounts and sync (deployed October 16, 2026)
 
-Backend is live: Worker `istima-api` (routes `iapi.istima.app/v1/*`) and D1 database `istima-db`, both created in the owner's Cloudflare account. Migrations `0001` (accounts, sync) and `0002_shared_playlists` are applied. No seed rows are needed. The share endpoints were smoke-tested after deploy (create 201, read 200, unknown id 404, bad input 400, test rows deleted). Registration is login only: there is no email verification and no email is sent. The old Postmark code was unused leftover and is removed (PR #48).
+Backend is live: Worker `qari-api` (routes `iapi.istima.app/v1/*`; renamed from `istima-api` on 2026-10-17, same D1) and D1 database `istima-db`, both created in the owner's Cloudflare account. Migrations `0001` (accounts, sync) and `0002_shared_playlists` are applied. No seed rows are needed. The share endpoints were smoke-tested after deploy (create 201, read 200, unknown id 404, bad input 400, test rows deleted). Registration is login only: there is no email verification and no email is sent. The old Postmark code was unused leftover and is removed (PR #48).
 
 | Item | Status | What is needed |
 | --- | --- | --- |
@@ -57,7 +57,7 @@ Everything below is merged to `main`. "Verified" means unit tests, lint and a sc
 | #56 | Continue Listening uses the bundled headshot first, stronger light-mode fills on Home cards | Light mode look not checked on a device. |
 | #57 | Adhkar category names sit on the tile over the art | Not checked on a device. |
 | #58 | Settings icon moved to the top header, Adhkar tab added to the bottom bar | Adhkar screens now live under `app/(tabs)/(e.adhkar)`. URLs unchanged. Native gear position not checked on a device. |
-| Qari-api #2, #3 | Accounts/sync Worker, then share endpoints `POST/GET /v1/share/playlist` | Deployed. |
+| qari-api #2, #3 | Accounts/sync Worker, then share endpoints `POST/GET /v1/share/playlist` | Deployed. |
 
 No PRs are open from this round except the tracker update itself.
 
@@ -101,7 +101,7 @@ Status values: **bundled** = pulled and served from our own site, **not contacte
 
 | Asset / host | Used for | Status |
 | --- | --- | --- |
-| old upstream CDN `timestamps/{rewayatId}/{NNN}.json` (12,875 files, 113 rewayat, ~69 MB) | Verse follow-along timing | **Pulled and pushed** to the `AxiomGroupHQ/Qari-api` repo (`timestamps/`). The app reads `https://iapi.istima.app/timestamps/...` on web, iOS and Android. Served by the Pages project `qari-api` on `iapi.istima.app`. |
+| old upstream CDN `timestamps/{rewayatId}/{NNN}.json` (12,875 files, 113 rewayat, ~69 MB) | Verse follow-along timing | **Pulled and pushed** to the `AxiomGroupHQ/qari-api` repo (`timestamps/`). The app reads `https://iapi.istima.app/timestamps/...` on web, iOS and Android. Served by the Pages project `qari-api` on `iapi.istima.app`. |
 | Old upstream reciter catalog API | Reciter data | **Not contacted**. No API URL is set in production, the app uses the bundled `data/reciters-fallback.json`. Env var names `EXPO_PUBLIC_ISTIMA_API_URL/KEY` still work as legacy aliases only. |
 | Reciter catalog and rewayat data | Reciter lists | **Bundled** (`data/reciters-fallback.json`, `data/rewayat*.ts`). |
 | `EXPO_PUBLIC_KILLSWITCH_URL` | Remote kill switch | **Not contacted** unless the variable is set. It is not set. |

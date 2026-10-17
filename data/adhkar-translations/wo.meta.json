@@ -1,9 +1,0 @@
-{
-  "locale": "wo",
-  "machineTranslated": true,
-  "engine": "model-authored",
-  "reviewed": false,
-  "sourceLocale": "en",
-  "entryCount": 406,
-  "notes": "Hand-authored Wolof bundle. Translations drafted entry-by-entry from the English source; Latin transliterations copied byte-verbatim from the source instructions. Quran verse MEANINGS (quranic-1..40) intentionally omitted - English fallback stays until the team approves a human Wolof Quran translation; only their citation labels are localized. Long verse passages inside entries 4 and 101 also keep the English translation fallback (instruction localized). Unreviewed; replace with the team-approved human translation when available."
-}

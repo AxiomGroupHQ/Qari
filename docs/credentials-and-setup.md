@@ -88,4 +88,4 @@ Email accounts work without verification: the server only checks that the addres
 
 ## 10. Cloudflare Pages `iapi.istima.app` (done)
 
-Serves the timestamp files (repo `AxiomGroupHQ/Qari-api`). Working at https://qari-api.pages.dev and `iapi.istima.app`. Docs: https://developers.cloudflare.com/pages/framework-guides/
+Serves the timestamp files (repo `AxiomGroupHQ/qari-api`). Working at https://qari-api.pages.dev and `iapi.istima.app`. Docs: https://developers.cloudflare.com/pages/framework-guides/
