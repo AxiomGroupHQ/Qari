@@ -41,12 +41,13 @@ import {getRewayahShortLabel} from '@/utils/rewayahLabels';
 import {footerLockup} from './shareFooterLayout';
 import type {RewayahId} from '@/store/mushafSettingsStore';
 import branding from '@/config/branding';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 interface QuranEntry {
   verse_key: string;
   text: string;
 }
-const quranRaw = require('@/data/quran.json') as Record<string, QuranEntry>;
+const quranRaw = getRemoteJson('quran.json', {} as Record<string, QuranEntry>);
 const textByKey: Record<string, string> = {};
 for (const key of Object.keys(quranRaw)) {
   const entry = quranRaw[key];
@@ -56,15 +57,14 @@ for (const key of Object.keys(quranRaw)) {
 interface TextEntry {
   t?: string;
 }
-const translitRaw = require('@/data/transliteration.json') as Record<
-  string,
-  TextEntry
->;
-const translationRaw =
-  require('@/data/SaheehInternational.translation-with-footnote-tags.json') as Record<
-    string,
-    TextEntry
-  >;
+const translitRaw = getRemoteJson(
+  'transliteration.json',
+  {} as Record<string, TextEntry>,
+);
+const translationRaw = getRemoteJson(
+  'SaheehInternational.translation-with-footnote-tags.json',
+  {} as Record<string, TextEntry>,
+);
 const surahMeta = require('@/data/surahData.json') as Array<{
   id: number;
   name: string;

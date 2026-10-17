@@ -33,22 +33,22 @@ import {useMushafSettingsStore} from '@/store/mushafSettingsStore';
 import {digitalKhattDataService} from '@/services/mushaf/DigitalKhattDataService';
 import {getRewayahShortLabel} from '@/utils/rewayahLabels';
 import {t} from '@/i18n';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 const surahData = require('@/data/surahData.json') as Array<{
   id: number;
   name: string;
 }>;
-const saheehData =
-  require('@/data/SaheehInternational.translation-with-footnote-tags.json') as Record<
-    string,
-    {t?: string}
-  >;
+const saheehData = getRemoteJson(
+  'SaheehInternational.translation-with-footnote-tags.json',
+  {} as Record<string, {t?: string}>,
+);
 
 interface QuranEntry {
   verse_key: string;
   text: string;
 }
-const quranRaw = require('@/data/quran.json') as Record<string, QuranEntry>;
+const quranRaw = getRemoteJson('quran.json', {} as Record<string, QuranEntry>);
 const textByKey: Record<string, string> = {};
 for (const key of Object.keys(quranRaw)) {
   const entry = quranRaw[key];
@@ -77,8 +77,8 @@ export const VerseShareSheet = (props: SheetProps<'verse-share'>) => {
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
       : mushafRenderer === 'dk_v1'
-      ? 'DigitalKhattV1'
-      : 'DigitalKhattV2';
+        ? 'DigitalKhattV1'
+        : 'DigitalKhattV2';
 
   // Preview width (sheet padding = 16*2, small inset = 8*2)
   const previewWidth = screenWidth - moderateScale(48);

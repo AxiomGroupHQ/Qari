@@ -1,4 +1,5 @@
 import {QuranData, Verse} from '@/types/quran';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 import {
   getBundledTranslation,
   isBundledTranslation,
@@ -9,7 +10,7 @@ import type {BundledTranslationId} from '@/types/translation';
 import {translationDbService} from '@/services/translation/TranslationDbService';
 
 // Import data with type safety - loaded once at module scope
-const quranData = require('@/data/quran.json') as QuranData;
+const quranData = getRemoteJson('quran.json', {} as QuranData);
 
 export interface SaheehEntry {
   t: string;
@@ -29,8 +30,10 @@ export interface EnhancedVerse extends Verse {
   transliteration?: string;
 }
 
-const transliterationDataCache =
-  require('@/data/transliteration.json') as TransliterationData;
+const transliterationDataCache = getRemoteJson(
+  'transliteration.json',
+  {} as TransliterationData,
+);
 
 // Pre-index verses by surah at module scope (one-time O(6236) cost, then O(1) per lookup)
 const versesBySurah: Record<number, Verse[]> = {};
@@ -99,9 +102,8 @@ export async function rebuildEnhancedVerses(
 
   // Remote translation - load all verses from SQLite into memory
   try {
-    const translationMap = await translationDbService.getAllVerses(
-      translationId,
-    );
+    const translationMap =
+      await translationDbService.getAllVerses(translationId);
     if (Object.keys(translationMap).length === 0) {
       console.warn(
         `[enhancedVerseData] No verses found for ${translationId}, falling back to saheeh`,

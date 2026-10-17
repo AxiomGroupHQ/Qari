@@ -45,9 +45,10 @@ import RenderHtml, {
   defaultSystemFonts,
 } from 'react-native-render-html';
 import {t} from '@/i18n';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 // Import surah info data
-const surahInfo = require('@/data/surahInfo.json');
+const surahInfo = getRemoteJson('surahInfo.json', {});
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 
@@ -374,8 +375,8 @@ export const SurahOptionsSheet = (props: SheetProps<'surah-options'>) => {
                 {isCurrentlyDownloading
                   ? `Downloading ${Math.round(downloadProgress * 100)}%`
                   : isTrackDownloaded
-                  ? 'Downloaded'
-                  : 'Download'}
+                    ? 'Downloaded'
+                    : 'Download'}
               </Text>
             </Pressable>
 

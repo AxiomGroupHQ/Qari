@@ -57,6 +57,7 @@ import {
 } from '@/store/mushafSettingsStore';
 import {t} from '@/i18n';
 import {dirIcon} from '@/i18n/direction';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 // --- Pre-cache Translation/Transliteration Data --- //
 interface TransliterationData {
@@ -69,7 +70,7 @@ interface TransliterationData {
 let transliterationDataCache: TransliterationData | null = null;
 
 try {
-  transliterationDataCache = require('@/data/transliteration.json');
+  transliterationDataCache = getRemoteJson('transliteration.json', {});
   console.log('[MushafSettingsContent] Transliteration data pre-cached');
 } catch (error) {
   console.error('[MushafSettingsContent] Error pre-caching data:', error);
@@ -638,8 +639,8 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
       : mushafRenderer === 'dk_v1'
-      ? 'DigitalKhattV1'
-      : 'DigitalKhattV2';
+        ? 'DigitalKhattV1'
+        : 'DigitalKhattV2';
   const subscribedFontMgr = useMushafFontMgr();
   const fontMgr =
     mushafPreloadService.initialized && digitalKhattDataService.initialized
@@ -648,7 +649,10 @@ export const MushafSettingsContent: React.FC<MushafSettingsContentProps> = ({
 
   const actualTranslationText = useMemo(() => {
     try {
-      const saheehInternationalData = require('@/data/SaheehInternational.translation-with-footnote-tags.json');
+      const saheehInternationalData = getRemoteJson(
+        'SaheehInternational.translation-with-footnote-tags.json',
+        {},
+      );
       return (
         saheehInternationalData[verseKey]?.t || 'Error loading translation'
       );

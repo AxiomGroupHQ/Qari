@@ -17,19 +17,20 @@ interface ClearQuranData {
   translations: ClearQuranEntry[];
 }
 
-// Module-scope data (require() is cached by Metro - zero cost after first load)
-const saheehData =
-  require('@/data/SaheehInternational.translation-with-footnote-tags.json') as Record<
-    string,
-    SaheehEntry
-  >;
-const clearQuranData =
-  require('@/data/clear-quran-translation.json') as ClearQuranData;
+// Module-scope data, downloaded once by RemoteDataService (see AppInitializer).
+const saheehData = getRemoteJson(
+  'SaheehInternational.translation-with-footnote-tags.json',
+  {} as Record<string, SaheehEntry>,
+);
+const clearQuranData = getRemoteJson('clear-quran-translation.json', {
+  translations: [],
+} as ClearQuranData);
 
 // Build verse_key → global 1-based index map for Clear Quran (keyed by sequential verse id)
 // The Clear Quran translations array is 0-indexed by global verse ID (1-6236 → index 0-6235)
 import type {QuranData} from '@/types/quran';
-const quranData = require('@/data/quran.json') as QuranData;
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
+const quranData = getRemoteJson('quran.json', {} as QuranData);
 
 const verseKeyToGlobalId: Record<string, number> = {};
 for (const verse of Object.values(quranData)) {

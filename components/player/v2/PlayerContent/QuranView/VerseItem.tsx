@@ -29,6 +29,7 @@ import {
   getBundledFootnotes,
 } from '@/utils/translationLookup';
 import {t} from '@/i18n';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 // Type for processed word data from store
 interface ProcessedTajweedWord {
@@ -58,8 +59,10 @@ interface SaheehData {
 }
 
 // Load Saheeh data at module scope (require() is cached - zero cost since QuranView already loaded it)
-const saheehDataForFootnotes =
-  require('@/data/SaheehInternational.translation-with-footnote-tags.json') as SaheehData;
+const saheehDataForFootnotes = getRemoteJson(
+  'SaheehInternational.translation-with-footnote-tags.json',
+  {} as SaheehData,
+);
 
 interface VerseItemProps {
   verse: Verse & {translation?: string; transliteration?: string};

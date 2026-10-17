@@ -30,8 +30,9 @@ import RenderHtml, {
   defaultSystemFonts,
 } from 'react-native-render-html';
 import {t} from '@/i18n';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
-const surahInfo = require('@/data/surahInfo.json');
+const surahInfo = getRemoteJson('surahInfo.json', {});
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 

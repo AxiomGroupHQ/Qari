@@ -1,6 +1,9 @@
 import {mushafVerseMapService} from './MushafVerseMapService';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
-const quranThemes = require('@/data/quran-themes.json');
+const quranThemes = getRemoteJson('quran-themes.json', {themes: []} as {
+  themes: never[];
+});
 
 export interface VerseThemeInfo {
   theme: string;

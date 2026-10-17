@@ -59,10 +59,11 @@ import {ThemeContent} from './verse-actions/ThemeContent';
 import {WBWContent} from './verse-actions/WBWContent';
 import {t} from '@/i18n';
 import {dirIcon} from '@/i18n/direction';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 const surahData = require('@/data/surahData.json');
-const quranVerses = require('@/data/quran.json');
-const transliterationData = require('@/data/transliteration.json');
+const quranVerses = getRemoteJson('quran.json', {});
+const transliterationData = getRemoteJson('transliteration.json', {});
 
 type ActiveScreen =
   | 'highlight'

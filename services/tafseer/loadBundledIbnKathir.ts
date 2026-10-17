@@ -1,4 +1,9 @@
 // @ai-generated
+import {
+  getRemoteJson,
+  initRemoteData,
+} from '@/services/remoteData/RemoteDataService';
+
 export interface BundledTafseerEntry {
   s: number;
   f: number;
@@ -7,5 +12,6 @@ export interface BundledTafseerEntry {
 }
 
 export async function loadBundledIbnKathir(): Promise<BundledTafseerEntry[]> {
-  return require('@/data/ibn-kathir-tafseer-compact.json');
+  await initRemoteData(['ibn-kathir-tafseer-compact.json']);
+  return getRemoteJson('ibn-kathir-tafseer-compact.json', []);
 }

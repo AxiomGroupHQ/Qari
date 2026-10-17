@@ -33,6 +33,7 @@ import {digitalKhattDataService} from '@/services/mushaf/DigitalKhattDataService
 import {getRewayahShortLabel} from '@/utils/rewayahLabels';
 import type {RewayahId} from '@/store/mushafSettingsStore';
 import {t} from '@/i18n';
+import {getRemoteJson} from '@/services/remoteData/RemoteDataService';
 
 const surahData = require('@/data/surahData.json') as Array<{
   id: number;
@@ -43,7 +44,7 @@ interface QuranEntry {
   verse_key: string;
   text: string;
 }
-const quranRaw = require('@/data/quran.json') as Record<string, QuranEntry>;
+const quranRaw = getRemoteJson('quran.json', {} as Record<string, QuranEntry>);
 const textByKey: Record<string, string> = {};
 for (const key of Object.keys(quranRaw)) {
   const entry = quranRaw[key];
@@ -93,8 +94,8 @@ export const ShareContent: React.FC<ShareContentProps> = ({
     mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
       : mushafRenderer === 'dk_v1'
-      ? 'DigitalKhattV1'
-      : 'DigitalKhattV2';
+        ? 'DigitalKhattV1'
+        : 'DigitalKhattV2';
 
   const previewWidth = screenWidth - moderateScale(48);
   const captureLogicalWidth = 1080 / PixelRatio.get();
