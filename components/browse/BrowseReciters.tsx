@@ -7,6 +7,7 @@ import {
   ScrollView,
   Keyboard,
   TouchableWithoutFeedback,
+  Platform,
 } from 'react-native';
 import Animated, {
   FadeIn,
@@ -111,6 +112,30 @@ interface Chip {
   label: string;
   type: 'all' | 'teacher' | 'student' | 'separator';
   isSelected: boolean;
+}
+
+/**
+ * Web vs native outside-tap handling. On the web a full-screen
+ * TouchableWithoutFeedback interferes with the browser's own focus
+ * handling - on iOS browsers the tapped input never receives focus and
+ * the keyboard never appears. Browse All was the only screen using this
+ * wrapper, and the only screen where the keyboard would not open.
+ * Tapping outside an input blurs it natively on the web, so no wrapper
+ * is needed there.
+ */
+function OutsidePressWrapper({
+  onPress,
+  children,
+}: {
+  onPress: () => void;
+  children: React.ReactNode;
+}) {
+  if (Platform.OS === 'web') return <>{children}</>;
+  return (
+    <TouchableWithoutFeedback onPress={onPress}>
+      {children}
+    </TouchableWithoutFeedback>
+  );
 }
 
 export default function BrowseReciters({
@@ -572,7 +597,7 @@ export default function BrowseReciters({
   const topOffset = useNativeHeader ? iosHeaderHeight : 0;
 
   return (
-    <TouchableWithoutFeedback onPress={handleOutsidePress}>
+    <OutsidePressWrapper onPress={handleOutsidePress}>
       <View style={styles.container}>
         {/* Android: custom Header; iOS: native Stack header handles this */}
         {!useNativeHeader &&
@@ -833,7 +858,7 @@ export default function BrowseReciters({
           initialFilters={advancedFilters}
         />
       </View>
-    </TouchableWithoutFeedback>
+    </OutsidePressWrapper>
   );
 }
 
