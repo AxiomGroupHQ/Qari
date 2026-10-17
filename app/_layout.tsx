@@ -60,6 +60,7 @@ import {useShareIntent} from 'expo-share-intent';
 import {useUploadsStore} from '@/store/uploadsStore';
 import {SheetManager} from 'react-native-actions-sheet';
 import {showToast} from '@/utils/toastUtils';
+import {installKeyboardRecovery} from '@/utils/keyboardRecovery';
 import {mushafSessionStore} from '@/services/mushaf/MushafSessionStore';
 import {USE_GLASS} from '@/hooks/useGlassProps';
 import * as Sentry from '@sentry/react-native';
@@ -426,6 +427,14 @@ function RootLayout() {
 
   // Restore mushaf screen if it was open when the app was killed.
   // MMKV reads are synchronous - no hydration wait needed.
+  // iOS WebKit keyboard/viewport mitigation (web only; see
+  // utils/keyboardRecovery.web.ts). Repairs scroll-into-view on keyboard
+  // open and the stuck squashed layout after it closes.
+  useEffect(() => {
+    if (Platform.OS !== 'web') return;
+    return installKeyboardRecovery();
+  }, []);
+
   useEffect(() => {
     if (!appIsReady || !isPlayerReady || hasShareIntent) return;
 
