@@ -1,6 +1,6 @@
 # Tracker
 
-Deferred items and the self-hosting inventory. Update the status when something changes. Last reviewed October 16, 2026 (after PR #58).
+Deferred items and the self-hosting inventory. Update the status when something changes. Last reviewed October 18, 2026.
 
 ## Deferred items
 
@@ -8,7 +8,7 @@ Deferred items and the self-hosting inventory. Update the status when something 
 | --- | --- | --- |
 | Support / Feature request links (Settings) | Hidden | A real support page or contact address. The two Settings rows were removed, `branding.supportUrl` is gone. Add them back once a URL exists. |
 | Rate app (Settings) | Message only | The real App Store ID (and Play listing). The old upstream ID was removed, `utils/reviewUtils.ts` is deleted. Rate now shows a friendly "not available yet" toast. |
-| Legal pages (privacy, terms) | English only | Decide whether to translate `data/legal/*.json`. Both now say "Last Updated: October 2026". |
+| Legal pages (privacy, terms) | English only, **reviewed** | Reviewed and accepted by the owner (October 18, 2026); stays English only for now. Both say "Last Updated: October 2026". |
 | Manifest link in the web page | Open | `public/manifest.json` exists but the HTML does not link to it yet (needs a custom web HTML template). |
 | Cloudflare Pages project for iapi.istima.app | **Done** | Pages project `qari-api` (repo `AxiomGroupHQ/qari-api`) serves clips and timestamps on `iapi.istima.app`. The Worker `qari-api` takes `iapi.istima.app/v1/*` on the same hostname. Pages allows 20,000 files per deploy (now ~12.9k). |
 
@@ -22,9 +22,9 @@ Backend is live: Worker `qari-api` (routes `iapi.istima.app/v1/*`; renamed from 
 | Email sign-up / sign-in | **Live** | Nothing. No email provider is needed. Password reset would need one (section 8 of `docs/credentials-and-setup.md`). |
 | Google sign-in | Built, **off in production** | `GOOGLE_CLIENT_IDS` on the Worker is empty. Needs three Google OAuth client IDs (section 3). Native needs a library swap and a new native build. |
 | Sync: settings, favorites, play counts | Built | Test end to end on devices. |
-| Sync: playlists, verse annotations, adhkar saved, listening position | Not built | Server already accepts these documents. App adapters still to write. |
+| Sync: playlists, verse annotations, adhkar saved, listening position | Built | App adapters and server documents live since the accounts launch (October 16, 2026, `services/sync/SyncService.ts`). Test end to end on devices. |
 | Account deletion | Built (App Store requirement) | - |
-| Translations for the account screens | English only | Translate into 59 locales after review. |
+| Translations for the account screens | English only, **reviewed** | Reviewed and accepted by the owner (October 18, 2026). Translate into 59 locales when wanted. |
 | Native build with `expo-secure-store` | Needed | New iOS and Android builds. |
 | Credentials list | Written | `docs/credentials-and-setup.md` |
 
@@ -47,7 +47,7 @@ Everything below is merged to `main`. "Verified" means unit tests, lint and a sc
 | #46 | `sharedPlaylists` flag turned on | Backend was already live. |
 | #47 | CI lint job fix | ESLint passes with 0 errors. The TypeScript step still ran out of memory, fixed by the heap edit below. |
 | #48 | Removed the unused Postmark email verification code | Login stays the only account flow. |
-| #49 | Share, Discover and Android widget strings translated into 59 languages, plus Android `values-xx` resources | Not native-reviewed. |
+| #49 | Share, Discover and Android widget strings translated into 59 languages, plus Android `values-xx` resources | Reviewed and accepted by the owner (October 18, 2026); no native-speaker review. |
 | #50 | Tracker update | - |
 | #51 | Share for the Loved collection and the built-in system playlists | Uses `services/share/shareTrackList.ts`. |
 | #52 | History screen (Collection > History): recently played, share, clear | 7 new strings in 60 languages. |
@@ -71,12 +71,12 @@ CI: the owner raised the TypeScript step heap to 6144 MB in `.github/workflows/l
 | `discoverFeed` | On | Turned on in #54. Still needs a device test, and the audio source terms have not been checked. |
 | `carDisplay` | Off | Idle until a native bridge exists. |
 
-## Parked or pending
+## Next phase (parked items)
 
 | Item | Why |
 | --- | --- |
 | Android `assetlinks.json` | Needs the SHA-256 of the Android signing key. Until then `/.well-known/assetlinks.json` returns the web app page and Android app links do not verify. |
-| Google client IDs | Three OAuth client IDs, then set `GOOGLE_CLIENT_IDS` on the Worker. |
+| Google client IDs | Empty placeholder values are already in place, clearly marked, so nothing breaks and sign-in stays off: `googleClientIds` in `config/branding.js`, the `GOOGLE_IOS_URL_SCHEME` fallback in `app.config.js`, and `GOOGLE_CLIENT_IDS = ""` in the Worker `wrangler.toml`. To turn Google sign-in on, the owner adds the three real OAuth client IDs in the environment (Worker var + app config), section 3 of `docs/credentials-and-setup.md`. |
 | CarPlay / Android Auto screens | Apple CarPlay audio entitlement, a native package, simulator and head unit testing. |
 | iOS widgets, Watch app, TV apps | Apple provisioning, new native targets, devices. |
 | Analytics | Skipped by the owner. |
@@ -90,7 +90,7 @@ CI: the owner raised the TypeScript step heap to 6144 MB in `.github/workflows/l
 ## Unverified
 
 - No device run yet of the Android widget, the `values-xx` resources, Discover, the share sheet, or the `/p/<id>` screen on iOS and Android.
-- The 59-language translations were written by an AI assistant and have not had a native-speaker review. Languages most in need of a check: Bambara, Mandinka, Fula, Wolof, Oromo, Tigrinya, Yoruba.
+- The 59-language translations were written by an AI assistant. The owner reviewed and accepted them on October 18, 2026; no native-speaker review was done. If a native check ever happens, the languages most in need of one: Bambara, Mandinka, Fula, Wolof, Oromo, Tigrinya, Yoruba.
 - Plural counts (`N recitations`) use one wording for every plural form.
 - The new header gear, the Adhkar tab, the Adhkar tile labels and the light-mode Home fills (#56 to #58) were checked with lint, tests and a scoped typecheck only.
 - The live site was checked only from outside (HTTP status and served HTML). 
