@@ -100,8 +100,8 @@ Expo CLI is bundled with the project - invoke it via `npx expo` rather than inst
 ### Install
 
 ```bash
-git clone https://github.com/AxiomGroupHQ/Qari.git
-cd ISTIMA
+git clone https://github.com/AxiomGroupHQ/qari.git
+cd qari
 npm install
 ```
 

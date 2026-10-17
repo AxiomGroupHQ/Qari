@@ -30,8 +30,8 @@ Thank you for contributing to Istima. This guide covers everything you need to g
 ### Clone and install
 
 ```bash
-git clone https://github.com/AxiomGroupHQ/Qari.git
-cd Qari
+git clone https://github.com/AxiomGroupHQ/qari.git
+cd qari
 npm install
 ```
 

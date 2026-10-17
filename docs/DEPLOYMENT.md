@@ -82,7 +82,7 @@ integration; then rename in the script, the workflow input, and any local
 on check-run re-requests and branch-protection reads.
 **Needed:** https://github.com/settings/tokens - regenerate/update the token
 with the `repo` **and `workflow`** scopes (fine-grained token: Actions,
-Checks, Contents, Pull requests read/write on AxiomGroupHQ/Qari). Replace the
+Checks, Contents, Pull requests read/write on AxiomGroupHQ/qari). Replace the
 stored token in the password manager.
 
 ### 7. Privacy contact email
