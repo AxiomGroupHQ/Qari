@@ -46,12 +46,12 @@ const lang =
   code === 'prs'
     ? 'fa'
     : code === 'kmr'
-      ? 'ku'
-      : code === 'ckb'
-        ? 'ar'
-        : ['ff', 'wo', 'ti', 'om'].includes(code)
-          ? 'fr'
-          : code;
+    ? 'ku'
+    : code === 'ckb'
+    ? 'ar'
+    : ['ff', 'wo', 'ti', 'om'].includes(code)
+    ? 'fr'
+    : code;
 let cats;
 try {
   cats = new Intl.PluralRules(lang).resolvedOptions().pluralCategories;

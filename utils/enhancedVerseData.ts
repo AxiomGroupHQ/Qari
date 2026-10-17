@@ -99,8 +99,9 @@ export async function rebuildEnhancedVerses(
 
   // Remote translation - load all verses from SQLite into memory
   try {
-    const translationMap =
-      await translationDbService.getAllVerses(translationId);
+    const translationMap = await translationDbService.getAllVerses(
+      translationId,
+    );
     if (Object.keys(translationMap).length === 0) {
       console.warn(
         `[enhancedVerseData] No verses found for ${translationId}, falling back to saheeh`,

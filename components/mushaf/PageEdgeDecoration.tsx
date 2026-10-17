@@ -72,16 +72,16 @@ const PageEdgeDecoration: React.FC<PageEdgeDecorationProps> = ({
         borderBottomRightRadius: EDGE_BORDER_RADIUS,
       }
     : isRightPage
-      ? {
-          right: EDGE_HORIZONTAL_INSET,
-          borderTopRightRadius: EDGE_BORDER_RADIUS,
-          borderBottomRightRadius: EDGE_BORDER_RADIUS,
-        }
-      : {
-          left: EDGE_HORIZONTAL_INSET,
-          borderTopLeftRadius: EDGE_BORDER_RADIUS,
-          borderBottomLeftRadius: EDGE_BORDER_RADIUS,
-        };
+    ? {
+        right: EDGE_HORIZONTAL_INSET,
+        borderTopRightRadius: EDGE_BORDER_RADIUS,
+        borderBottomRightRadius: EDGE_BORDER_RADIUS,
+      }
+    : {
+        left: EDGE_HORIZONTAL_INSET,
+        borderTopLeftRadius: EDGE_BORDER_RADIUS,
+        borderBottomLeftRadius: EDGE_BORDER_RADIUS,
+      };
 
   return (
     <>

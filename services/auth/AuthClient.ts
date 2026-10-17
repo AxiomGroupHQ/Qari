@@ -27,10 +27,7 @@ export type AuthErrorCode =
   | 'unknown';
 
 export class AuthError extends Error {
-  constructor(
-    public code: AuthErrorCode,
-    public status = 0,
-  ) {
+  constructor(public code: AuthErrorCode, public status = 0) {
     super(code);
   }
 }

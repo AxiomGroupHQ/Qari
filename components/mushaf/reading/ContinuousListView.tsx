@@ -237,8 +237,8 @@ const ContinuousListView = forwardRef<
       mushafRenderer === 'dk_indopak'
         ? 'DigitalKhattIndoPak'
         : mushafRenderer === 'dk_v1'
-          ? 'DigitalKhattV1'
-          : 'DigitalKhattV2';
+        ? 'DigitalKhattV1'
+        : 'DigitalKhattV2';
     const isDK =
       (mushafRenderer === 'dk_v1' ||
         mushafRenderer === 'dk_v2' ||

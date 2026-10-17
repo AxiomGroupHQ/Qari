@@ -353,7 +353,7 @@ const TabletPlayer: React.FC<TabletPlayerProps> = ({
   const [seekValue, setSeekValue] = useState(0);
   const displayTime = isSeeking
     ? seekValue
-    : (progress.seekPosition ?? progress.position);
+    : progress.seekPosition ?? progress.position;
   const handleSliderStart = useCallback(() => {
     setIsSeeking(true);
     setSeekValue(progress.seekPosition ?? progress.position);

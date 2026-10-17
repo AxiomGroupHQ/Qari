@@ -95,8 +95,8 @@ function getOrBuildBasmala(
       const resolvedColor = allahHighlight
         ? allahNameHighlightColor
         : rule && tajweedColors[rule]
-          ? tajweedColors[rule]
-          : null;
+        ? tajweedColors[rule]
+        : null;
 
       if (resolvedColor) {
         const charColor = Skia.Color(resolvedColor);
@@ -266,8 +266,8 @@ const BasmalaFallbackText: React.FC<{
         charToAllahHighlight?.has(i) && allahNameHighlightColor
           ? allahNameHighlightColor
           : showTajweed && charToRule?.get(i)
-            ? tajweedColors[charToRule.get(i)!] || textColor
-            : textColor;
+          ? tajweedColors[charToRule.get(i)!] || textColor
+          : textColor;
       nodes.push(
         <Text key={`basm-char-${i}`} style={{color}}>
           {BASMALLAH_TEXT.charAt(i)}

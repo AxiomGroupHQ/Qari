@@ -20,8 +20,8 @@ export const ReciterHeader: React.FC<ReciterHeaderProps> = ({
   const topPadding = showSearch
     ? moderateScale(15)
     : USE_GLASS
-      ? moderateScale(10)
-      : insets.top + moderateScale(50);
+    ? moderateScale(10)
+    : insets.top + moderateScale(50);
 
   return (
     <View style={[styles.container, {paddingTop: topPadding}]}>

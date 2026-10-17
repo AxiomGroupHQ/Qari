@@ -45,8 +45,9 @@ export function useVerseActions() {
 
       deleteNoteById: async (noteId: string, verseKey: string) => {
         await verseAnnotationService.deleteNoteById(noteId);
-        const remaining =
-          await verseAnnotationService.getNotesCountForVerse(verseKey);
+        const remaining = await verseAnnotationService.getNotesCountForVerse(
+          verseKey,
+        );
         if (remaining === 0) {
           useVerseAnnotationsStore.getState().removeNote(verseKey);
         }

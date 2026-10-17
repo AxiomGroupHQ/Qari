@@ -70,10 +70,10 @@ export function ListeningToolsCard() {
   const khatmaSubtitle = !progress
     ? t('homeFeatures.khatmaStartSubtitle')
     : isKhatmaDone
-      ? t('homeFeatures.khatmaCompletedSubtitle')
-      : t('homeFeatures.khatmaActiveSubtitle', {
-          done: progress.surahsCompleted.length,
-        });
+    ? t('homeFeatures.khatmaCompletedSubtitle')
+    : t('homeFeatures.khatmaActiveSubtitle', {
+        done: progress.surahsCompleted.length,
+      });
 
   const timedSubtitle =
     activeMinutes > 0

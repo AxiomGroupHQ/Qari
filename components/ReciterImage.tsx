@@ -78,8 +78,8 @@ export const ReciterImage: React.FC<ReciterImageProps> = React.memo(
       preferLocal && localImageSource
         ? localImageSource
         : imageUrl && !remoteFailed
-          ? {uri: imageUrl}
-          : (localImageSource ?? null);
+        ? {uri: imageUrl}
+        : localImageSource ?? null;
 
     return (
       <View style={[styles.container, style]}>

@@ -157,8 +157,8 @@ const SkiaPage: React.FC<SkiaPageProps> = ({
     (mushafRenderer === 'dk_indopak'
       ? 'DigitalKhattIndoPak'
       : uthmaniFont === 'v1'
-        ? 'DigitalKhattV1'
-        : 'DigitalKhattV2');
+      ? 'DigitalKhattV1'
+      : 'DigitalKhattV2');
   const allahNameHighlightColor = useMemo(
     () =>
       getAllahNameHighlightColorHex(

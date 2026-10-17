@@ -131,10 +131,10 @@ const MemoizedFlatList = React.memo(
               item.timestamp
             }`
           : 'displayName' in item
-            ? item.id
-            : 'itemCount' in item && 'color' in item
-              ? item.id
-              : item.id
+          ? item.id
+          : 'itemCount' in item && 'color' in item
+          ? item.id
+          : item.id
       }
       horizontal
       showsHorizontalScrollIndicator={false}
@@ -148,26 +148,26 @@ const MemoizedFlatList = React.memo(
           variant === 'circular'
             ? 80
             : variant === 'recent'
-              ? 200
-              : variant === 'featured'
-                ? 140
-                : variant === 'rewayat'
-                  ? 130
-                  : variant === 'playlist'
-                    ? 120
-                    : 140,
+            ? 200
+            : variant === 'featured'
+            ? 140
+            : variant === 'rewayat'
+            ? 130
+            : variant === 'playlist'
+            ? 120
+            : 140,
         offset:
           (variant === 'circular'
             ? 80
             : variant === 'recent'
-              ? 200
-              : variant === 'featured'
-                ? 140
-                : variant === 'rewayat'
-                  ? 130
-                  : variant === 'playlist'
-                    ? 120
-                    : 140) * index,
+            ? 200
+            : variant === 'featured'
+            ? 140
+            : variant === 'rewayat'
+            ? 130
+            : variant === 'playlist'
+            ? 120
+            : 140) * index,
         index,
       })}
     />
@@ -219,8 +219,8 @@ const RenderSectionItem = React.memo(
       'timestamp' in item
         ? (item as RecentlyPlayedTrack).reciter?.id
         : 'rewayat' in item
-          ? (item as Reciter).id
-          : undefined;
+        ? (item as Reciter).id
+        : undefined;
     const showFollowAlong = useReciterFollowAlong(reciterId);
 
     if (variant === 'recent' && 'timestamp' in item) {
@@ -229,7 +229,7 @@ const RenderSectionItem = React.memo(
           <RecentReciterCard
             imageUrl={
               item.reciter?.id !== '__uploads__'
-                ? (item.reciter?.image_url ?? undefined)
+                ? item.reciter?.image_url ?? undefined
                 : undefined
             }
             reciterName={item.uploadArtist || t('recitersView.myRecitations')}

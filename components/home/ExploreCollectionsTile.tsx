@@ -30,7 +30,9 @@ export function ExploreCollectionsTile() {
         <Pressable
           onPress={handlePress}
           accessibilityRole="button"
-          accessibilityLabel={`${t('homeFeatures.exploreCollectionsTitle')}. ${t('homeFeatures.exploreCollectionsSubtitle')}`}
+          accessibilityLabel={`${t(
+            'homeFeatures.exploreCollectionsTitle',
+          )}. ${t('homeFeatures.exploreCollectionsSubtitle')}`}
           style={({pressed}) => [
             styles.card,
             homeGlassCard(theme),

@@ -85,7 +85,7 @@ export const LanguageSheet = () => {
       : t('language.system');
     const nativeName = item.info
       ? item.info.nativeName
-      : (LOCALES.find(l => l.code === deviceCode)?.nativeName ?? '');
+      : LOCALES.find(l => l.code === deviceCode)?.nativeName ?? '';
     const title = englishName;
     const subtitle = nativeName;
     return (
