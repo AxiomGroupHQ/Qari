@@ -347,6 +347,18 @@
     "createReciter": "Create \"{{name}}\""
   },
   "playerContent": {
+    "ambientSounds": "Ambient sounds",
+    "loveAdd": "Add to favorites",
+    "loveRemove": "Remove from favorites",
+    "mushafLayoutOptions": "Layout options",
+    "nextTrack": "Next track",
+    "openPlayer": "Open player",
+    "playbackSpeed": "Playback speed",
+    "previousTrack": "Previous track",
+    "repeat": "Repeat",
+    "seekBack": "Back {{seconds}} seconds",
+    "seekForward": "Forward {{seconds}} seconds",
+    "sleepTimer": "Sleep timer",
     "queueList": {
       "queue": "Queue",
       "queueIsEmpty": "Queue is empty"

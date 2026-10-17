@@ -24,6 +24,7 @@ import {ReciterImage} from '@/components/ReciterImage';
 import {USE_GLASS, useGlassColorScheme} from '@/hooks/useGlassProps';
 import {moderateScale} from '@/utils/scale';
 import {useTheme} from '@/hooks/useTheme';
+import {t} from '@/i18n';
 import {useReadingThemeColors} from '@/hooks/useReadingThemeColors';
 import {useLoved} from '@/hooks/useLoved';
 import {useReciterNavigation} from '@/hooks/useReciterNavigation';
@@ -366,7 +367,16 @@ export const TabletPlayerControlsColumn: React.FC<
           </Pressable>
 
           <View style={styles.heartRow}>
-            <Pressable onPress={handleToggleLoved} style={styles.heartBtn}>
+            <Pressable
+              onPress={handleToggleLoved}
+              style={styles.heartBtn}
+              accessibilityRole="button"
+              accessibilityLabel={
+                isLoved
+                  ? t('playerContent.loveRemove')
+                  : t('playerContent.loveAdd')
+              }>
+              {' '}
               <Animated.View style={loveAnimStyle}>
                 <HeartIcon
                   size={moderateScale(22)}
@@ -405,6 +415,10 @@ export const TabletPlayerControlsColumn: React.FC<
             <View style={styles.transport}>
               <Pressable
                 onPress={handleSeekBack}
+                accessibilityRole="button"
+                accessibilityLabel={t('playerContent.seekBack', {
+                  seconds: SEEK_INTERVAL,
+                })}
                 disabled={trackLoading}
                 style={[styles.transportSide, trackLoading && styles.disabled]}>
                 <View style={styles.seekWrap}>
@@ -424,6 +438,8 @@ export const TabletPlayerControlsColumn: React.FC<
               </Pressable>
               <Pressable
                 onPress={handlePrev}
+                accessibilityRole="button"
+                accessibilityLabel={t('playerContent.previousTrack')}
                 disabled={trackLoading}
                 style={[styles.transportSide, trackLoading && styles.disabled]}>
                 <PreviousIcon
@@ -433,6 +449,10 @@ export const TabletPlayerControlsColumn: React.FC<
               </Pressable>
               <Pressable
                 onPress={handlePlayPause}
+                accessibilityRole="button"
+                accessibilityLabel={
+                  optimisticIsPlaying ? t('ui.pause') : t('ui.play')
+                }
                 disabled={trackLoading}
                 style={[
                   styles.playButton,
@@ -446,6 +466,8 @@ export const TabletPlayerControlsColumn: React.FC<
               </Pressable>
               <Pressable
                 onPress={handleNext}
+                accessibilityRole="button"
+                accessibilityLabel={t('playerContent.nextTrack')}
                 disabled={trackLoading || isLastTrack}
                 style={[
                   styles.transportSide,
@@ -458,6 +480,10 @@ export const TabletPlayerControlsColumn: React.FC<
               </Pressable>
               <Pressable
                 onPress={handleSeekFwd}
+                accessibilityRole="button"
+                accessibilityLabel={t('playerContent.seekForward', {
+                  seconds: SEEK_INTERVAL,
+                })}
                 disabled={trackLoading}
                 style={[styles.transportSide, trackLoading && styles.disabled]}>
                 <View style={styles.seekWrap}>
@@ -480,7 +506,12 @@ export const TabletPlayerControlsColumn: React.FC<
 
           <View style={styles.block}>
             <View style={styles.tools}>
-              <Pressable style={styles.tool} onPress={onMushafLayoutPress}>
+              <Pressable
+                style={styles.tool}
+                onPress={onMushafLayoutPress}
+                accessibilityRole="button"
+                accessibilityLabel={t('playerContent.mushafLayoutOptions')}>
+                {' '}
                 <Ionicons
                   name="options-outline"
                   size={moderateScale(20)}
@@ -492,7 +523,10 @@ export const TabletPlayerControlsColumn: React.FC<
                   styles.tool,
                   playbackRate !== 1 && {backgroundColor: toolActiveBg},
                 ]}
-                onPress={onSpeedPress}>
+                onPress={onSpeedPress}
+                accessibilityRole="button"
+                accessibilityLabel={t('playerContent.playbackSpeed')}>
+                {' '}
                 <Text style={[styles.toolLabel, {color: textColor}]}>
                   {`${playbackRate}x`}
                 </Text>
@@ -504,7 +538,10 @@ export const TabletPlayerControlsColumn: React.FC<
                     backgroundColor: toolActiveBg,
                   },
                 ]}
-                onPress={handleRepeatPress}>
+                onPress={handleRepeatPress}
+                accessibilityRole="button"
+                accessibilityLabel={t('playerContent.repeat')}>
+                {' '}
                 {settings.repeatMode === 'track' ? (
                   <RepeatOneIcon size={moderateScale(20)} color={textColor} />
                 ) : (
@@ -516,7 +553,10 @@ export const TabletPlayerControlsColumn: React.FC<
                   styles.tool,
                   isTimerActive && {backgroundColor: toolActiveBg},
                 ]}
-                onPress={onSleepTimerPress}>
+                onPress={onSleepTimerPress}
+                accessibilityRole="button"
+                accessibilityLabel={t('playerContent.sleepTimer')}>
+                {' '}
                 <TimerIcon
                   size={moderateScale(20)}
                   color={textColor}
@@ -528,7 +568,10 @@ export const TabletPlayerControlsColumn: React.FC<
                   styles.tool,
                   ambientEnabled && {backgroundColor: toolActiveBg},
                 ]}
-                onPress={onAmbientPress}>
+                onPress={onAmbientPress}
+                accessibilityRole="button"
+                accessibilityLabel={t('playerContent.ambientSounds')}>
+                {' '}
                 <AmbientIcon
                   size={moderateScale(20)}
                   color={textColor}
@@ -542,6 +585,8 @@ export const TabletPlayerControlsColumn: React.FC<
                   !followAlongAvailable && {opacity: 0.35},
                 ]}
                 onPress={onFollowAlongPress}
+                accessibilityRole="button"
+                accessibilityLabel={t('common.followAlong')}
                 disabled={!followAlongAvailable}>
                 <Ionicons
                   name="locate-outline"
@@ -554,7 +599,10 @@ export const TabletPlayerControlsColumn: React.FC<
                   styles.tool,
                   showQueue && {backgroundColor: toolActiveBg},
                 ]}
-                onPress={onQueueToggle}>
+                onPress={onQueueToggle}
+                accessibilityRole="button"
+                accessibilityLabel={t('playerContent.queueList.queue')}>
+                {' '}
                 <QueueIcon size={moderateScale(20)} color={textColor} />
               </Pressable>
             </View>
