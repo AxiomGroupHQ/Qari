@@ -774,6 +774,7 @@ const renderAdhkarItem = ({item}: {item: SuperCategory}) => (
     category={item}
     width={moderateScale(140)}
     height={moderateScale(100)}
+    goldShimmer
   />
 );
 
