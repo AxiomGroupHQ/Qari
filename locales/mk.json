@@ -31,7 +31,11 @@
     "reciteTimes": "Повторете {{n}}×",
     "playAllStop": "Запри",
     "playAllPrevious": "Претходно",
-    "playAllNext": "Следно"
+    "playAllNext": "Следно",
+    "layoutSheetTitle": "Распоред на Азкари",
+    "arabicText": "Арапски текст",
+    "showTranslation": "Прикажи превод",
+    "showTransliteration": "Прикажи транслитерација"
   },
   "app": {
     "errorInitializingPlayer": "Грешка при иницијализација на плеерот: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Напишете ја вашата белешка овде...",
     "yourPlaylists": "Вашите плејлисти",
     "rewayatAvailable": "Достапни {{number}} ревајати",
-    "rewayatByReciter": "{{rewayat}} од {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} од {{reciter}}",
+    "back": "Назад",
+    "options": "Опции",
+    "shuffle": "Измешај",
+    "fontSize": "Големина на Фонт",
+    "fileImported": "Датотеката е увезена",
+    "nowReading": "Сега чита",
+    "openingIn": "Се отвора во",
+    "showingInHafs": "Се прикажува во Хафс"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Означете ја оваа рецитација за да го видите текстот и деталите за сурата"
-    }
+    },
+    "ambientSounds": "Амбиентални звуци",
+    "loveAdd": "Додади во омилени",
+    "loveRemove": "Отстрани од омилени",
+    "mushafLayoutOptions": "Опции за распоред",
+    "nextTrack": "Следна песна",
+    "openPlayer": "Отвори го плеерот",
+    "playbackSpeed": "Брзина на репродукција",
+    "previousTrack": "Претходна песна",
+    "repeat": "Повтори",
+    "seekBack": "{{seconds}} секунди назад",
+    "seekForward": "{{seconds}} секунди напред",
+    "sleepTimer": "Тајмер за спиење"
   },
   "playlist": {
     "subtitle_one": "Плејлиста • {{count}} сура",
@@ -442,7 +466,9 @@
     "myRecitations": "Мои рецитации",
     "newToQuranStartHere": "Нови сте со Куранот? Започнете овде",
     "seeMore": "Прикажи повеќе",
-    "yourFavorites": "Вашите омилени"
+    "yourFavorites": "Вашите омилени",
+    "randomEmpty": "Не успеа да се пронајде случајно читање. Обидете се повторно.",
+    "randomFailed": "Не успеа репродукцијата на случајно читање. Обидете се повторно."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Тајмер за спиење",
-      "turnOffTimer": "Исклучи тајмер"
+      "turnOffTimer": "Исклучи тајмер",
+      "minutesRemaining_one": "преостанува {{count}} минута",
+      "minutesRemaining_other": "преостануваат {{count}} минути",
+      "secondsRemaining_one": "преостанува {{count}} секунда",
+      "secondsRemaining_other": "преостануваат {{count}} секунди"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Отстрани од плејлиста"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "Курански молитви (Раббана)",
       "names-of-allah": "99 Аллахови имиња"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Опсег на ајети",
+    "chooseSurah": "Изберете сура",
+    "continueListening": "Продолжете со слушање",
+    "duration1h": "1 час",
+    "duration30m": "30 минути",
+    "duration3h": "3 часа",
+    "duration5h": "5 часа",
+    "duration8h": "8 часа",
+    "exploreCollectionsSubtitle": "Теџвид, памтење, ривајат и повеќе",
+    "exploreCollectionsTitle": "Истражете колекции",
+    "khatma": "Хатма",
+    "khatmaActiveSubtitle": "{{done}} од 114 сури завршени",
+    "khatmaCompletedSubtitle": "Сите 114 сури завршени",
+    "khatmaProgressTitle": "Напредок на Хатма",
+    "khatmaStartSubtitle": "Започнете Хатма и следете го вашиот напредок",
+    "listeningTools": "Алатки за слушање",
+    "repetition": "Повторување",
+    "repetitionSubtitle": "Изберете сура и опсег на ајети, па повторувајте со синхронизирано време.",
+    "repetitionTitle": "Повторете било кој опсег на ајети",
+    "selectDuration": "Изберете времетраење",
+    "selectReciter": "Изберете читач",
+    "startNewKhatma": "Започнете нова Хатма",
+    "startRepetition": "Започнете повторување",
+    "timedListening": "Слушање со Тајмер",
+    "timedRowActive": "Тајмерот е поставен на {{minutes}} мин",
+    "timedRowSubtitle": "Запри по одредено време",
+    "timerActiveNote": "Репродукцијата запира кога тајмерот ќе заврши. Притиснете го повторно избраното времетраење за да го исклучите.",
+    "unlimited": "Неограничено"
   }
 }

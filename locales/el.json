@@ -31,7 +31,11 @@
     "reciteTimes": "Επαναλάβετε {{n}}×",
     "playAllStop": "Διακοπή",
     "playAllPrevious": "Προηγούμενο",
-    "playAllNext": "Επόμενο"
+    "playAllNext": "Επόμενο",
+    "layoutSheetTitle": "Διάταξη Αδκάρ",
+    "arabicText": "Αραβικό κείμενο",
+    "showTranslation": "Εμφάνιση μετάφρασης",
+    "showTransliteration": "Εμφάνιση μεταγραφής"
   },
   "app": {
     "errorInitializingPlayer": "Σφάλμα αρχικοποίησης αναπαραγωγής: {{message}}",
@@ -230,7 +234,15 @@
     "writeYourNoteHere": "Γράψτε τη σημείωσή σας εδώ...",
     "yourPlaylists": "Οι λίστες σας",
     "rewayatAvailable": "{{number}} ρεβαγιάτ διαθέσιμα",
-    "rewayatByReciter": "{{rewayat}} από {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} από {{reciter}}",
+    "back": "Πίσω",
+    "options": "Επιλογές",
+    "shuffle": "Τυχαία",
+    "fontSize": "Μέγεθος Γραμματοσειράς",
+    "fileImported": "Το αρχείο εισήχθη",
+    "nowReading": "Γίνεται ανάγνωση",
+    "openingIn": "Άνοιγμα σε",
+    "showingInHafs": "Εμφάνιση σε Hafs"
   },
   "components": {
     "actionButtons": {
@@ -380,7 +392,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "Προσθέστε ετικέτες στην απαγγελία για να δείτε το κείμενο της σούρας και λεπτομέρειες"
-    }
+    },
+    "ambientSounds": "Ήχοι περιβάλλοντος",
+    "loveAdd": "Προσθήκη στα αγαπημένα",
+    "loveRemove": "Αφαίρεση από τα αγαπημένα",
+    "mushafLayoutOptions": "Επιλογές διάταξης",
+    "nextTrack": "Επόμενο κομμάτι",
+    "openPlayer": "Άνοιγμα προγράμματος αναπαραγωγής",
+    "playbackSpeed": "Ταχύτητα αναπαραγωγής",
+    "previousTrack": "Προηγούμενο κομμάτι",
+    "repeat": "Επανάληψη",
+    "seekBack": "Πίσω {{seconds}} δευτερόλεπτα",
+    "seekForward": "Μπροστά {{seconds}} δευτερόλεπτα",
+    "sleepTimer": "Χρονοδιακόπτης ύπνου"
   },
   "playlist": {
     "subtitle_one": "Λίστα • {{count}} σούρα",
@@ -442,7 +466,9 @@
     "myRecitations": "Οι απαγγελίες μου",
     "newToQuranStartHere": "Νέοι στο Κοράνι; Ξεκινήστε εδώ",
     "seeMore": "Δείτε περισσότερα",
-    "yourFavorites": "Τα αγαπημένα σας"
+    "yourFavorites": "Τα αγαπημένα σας",
+    "randomEmpty": "Δεν βρέθηκαν τυχαίες αναγνώσεις. Δοκιμάστε ξανά.",
+    "randomFailed": "Αποτυχία αναπαραγωγής τυχαίας ανάγνωσης. Δοκιμάστε ξανά."
   },
   "screens": {
     "translationsContent": {
@@ -631,7 +657,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "Χρονοδιακόπτης ύπνου",
-      "turnOffTimer": "Απενεργοποίηση χρονοδιακόπτη"
+      "turnOffTimer": "Απενεργοποίηση χρονοδιακόπτη",
+      "minutesRemaining_one": "απομένει {{count}} λεπτό",
+      "minutesRemaining_other": "απομένουν {{count}} λεπτά",
+      "secondsRemaining_one": "απομένει {{count}} δευτερόλεπτο",
+      "secondsRemaining_other": "απομένουν {{count}} δευτερόλεπτα"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "Αφαίρεση από τη λίστα"
@@ -1027,5 +1057,35 @@
       "quranic-duas": "Κορανικές δεήσεις (Ραμπάνα)",
       "names-of-allah": "99 Ονόματα του Αλλάχ"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "Εύρος αγιών",
+    "chooseSurah": "Επιλέξτε Σούρα",
+    "continueListening": "Συνέχεια ακρόασης",
+    "duration1h": "1 ώρα",
+    "duration30m": "30 λεπτά",
+    "duration3h": "3 ώρες",
+    "duration5h": "5 ώρες",
+    "duration8h": "8 ώρες",
+    "exploreCollectionsSubtitle": "Τατζουίντ, απομνημόνευση, ριγουαγιάτ και άλλα",
+    "exploreCollectionsTitle": "Εξερεύνηση συλλογών",
+    "khatma": "Χάτμα",
+    "khatmaActiveSubtitle": "Ολοκληρώθηκαν {{done}} από 114 σούρες",
+    "khatmaCompletedSubtitle": "Ολοκληρώθηκαν και οι 114 σούρες",
+    "khatmaProgressTitle": "Πρόοδος Χάτμα",
+    "khatmaStartSubtitle": "Ξεκινήστε τη Χάτμα και παρακολουθήστε την πρόοδό σας",
+    "listeningTools": "Εργαλεία ακρόασης",
+    "repetition": "Επανάληψη",
+    "repetitionSubtitle": "Επιλέξτε Σούρα και εύρος αγιών, στη συνέχεια επαναλάβετε με συγχρονισμένο χρόνο.",
+    "repetitionTitle": "Επανάληψη οποιουδήποτε εύρους αγιών",
+    "selectDuration": "Επιλέξτε διάρκεια",
+    "selectReciter": "Επιλέξτε αναγνώστη",
+    "startNewKhatma": "Νέα Χάτμα",
+    "startRepetition": "Έναρξη επανάληψης",
+    "timedListening": "Ακρόαση με Χρονόμετρο",
+    "timedRowActive": "Το χρονόμετρο ορίστηκε σε {{minutes}} λεπτά",
+    "timedRowSubtitle": "Διακοπή μετά από ορισμένο χρόνο",
+    "timerActiveNote": "Η αναπαραγωγή σταματά όταν τελειώσει το χρονόμετρο. Πατήστε ξανά την επιλεγμένη διάρκεια για να το απενεργοποιήσετε.",
+    "unlimited": "Απεριόριστο"
   }
 }
