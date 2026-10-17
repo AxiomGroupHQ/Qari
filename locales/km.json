@@ -30,7 +30,11 @@
     "reciteTimes": "សូត្រ {{n}}×",
     "playAllStop": "ឈប់",
     "playAllPrevious": "មុន",
-    "playAllNext": "បន្ទាប់"
+    "playAllNext": "បន្ទាប់",
+    "layoutSheetTitle": "ប្លង់អាដការ",
+    "arabicText": "អក្សរអារ៉ាប់",
+    "showTranslation": "បង្ហាញការបកប្រែ",
+    "showTransliteration": "បង្ហាញការតែងតួអក្សរ"
   },
   "app": {
     "errorInitializingPlayer": "កំហុសពេលចាប់ផ្តើមកម្មវិធីចាក់សំឡេង៖ {{message}}",
@@ -229,7 +233,15 @@
     "writeYourNoteHere": "សរសេរកំណត់ត្រារបស់អ្នកនៅទីនេះ...",
     "yourPlaylists": "បញ្ជីចាក់របស់អ្នក",
     "rewayatAvailable": "មានរ៉ាវ៉ាយ៉ាត {{number}}",
-    "rewayatByReciter": "{{rewayat}} ដោយ {{reciter}}"
+    "rewayatByReciter": "{{rewayat}} ដោយ {{reciter}}",
+    "back": "ត្រឡប់ក្រោយ",
+    "options": "ជម្រើស",
+    "shuffle": "ចាក់ចៃដន្យ",
+    "fontSize": "ទំហំពុម្ពអក្សរ",
+    "fileImported": "បាននាំចូលឯកសារ",
+    "nowReading": "កំពុងអាន",
+    "openingIn": "កំពុងបើកក្នុង",
+    "showingInHafs": "កំពុងបង្ហាញជា Hafs"
   },
   "components": {
     "actionButtons": {
@@ -379,7 +391,19 @@
     },
     "uploadPlaceholder": {
       "tagThisRecitationToSee": "ដាក់ស្លាកការសូត្រនេះដើម្បីមើលអត្ថបទស៊ូរ៉ោះ និងព័ត៌មានលម្អិត"
-    }
+    },
+    "ambientSounds": "សំឡេងបរិយាកាស",
+    "loveAdd": "បន្ថែមទៅចំណូលចិត្ត",
+    "loveRemove": "ដកចេញពីចំណូលចិត្ត",
+    "mushafLayoutOptions": "ជម្រើសប្លង់",
+    "nextTrack": "ត្រាកបន្ទាប់",
+    "openPlayer": "បើកកម្មវិធីចាក់",
+    "playbackSpeed": "ល្បឿនចាក់",
+    "previousTrack": "ត្រាកមុន",
+    "repeat": "ធ្វើម្តងទៀត",
+    "seekBack": "ថយក្រោយ {{seconds}} វិនាទី",
+    "seekForward": "ទៅមុខ {{seconds}} វិនាទី",
+    "sleepTimer": "កម្មវិធីកំណត់ពេលគេង"
   },
   "playlist": {
     "subtitle_one": "បញ្ជីចាក់ • {{count}} ស៊ូរ៉ោះ",
@@ -441,7 +465,9 @@
     "myRecitations": "ការសូត្ររបស់ខ្ញុំ",
     "newToQuranStartHere": "ទើបស្គាល់គម្ពីរគួរអាន? ចាប់ផ្តើមទីនេះ",
     "seeMore": "មើលបន្ថែម",
-    "yourFavorites": "ចំណូលចិត្តរបស់អ្នក"
+    "yourFavorites": "ចំណូលចិត្តរបស់អ្នក",
+    "randomEmpty": "រកមិនឃើញការអានចៃដន្យ។ សូមព្យាយាមម្តងទៀត។",
+    "randomFailed": "មិនអាចចាក់ការអានចៃដន្យ។ សូមព្យាយាមម្តងទៀត។"
   },
   "screens": {
     "translationsContent": {
@@ -630,7 +656,11 @@
     },
     "sleepTimerSheet": {
       "sleepTimer": "កម្មវិធីកំណត់ពេលគេង",
-      "turnOffTimer": "បិទកម្មវិធីកំណត់ពេល"
+      "turnOffTimer": "បិទកម្មវិធីកំណត់ពេល",
+      "minutesRemaining_one": "នៅសល់ {{count}} នាទី",
+      "minutesRemaining_other": "នៅសល់ {{count}} នាទី",
+      "secondsRemaining_one": "នៅសល់ {{count}} វិនាទី",
+      "secondsRemaining_other": "នៅសល់ {{count}} វិនាទី"
     },
     "surahOptionsSheet": {
       "removeFromPlaylist": "ដកចេញពីបញ្ជីចាក់"
@@ -1025,5 +1055,35 @@
       "quranic-duas": "ដូអាគុរអាន (រ៉ាប់បាណា)",
       "names-of-allah": "ឈ្មោះព្រះ ៩៩"
     }
+  },
+  "homeFeatures": {
+    "ayahRange": "ជួរអាយ៉ាត់",
+    "chooseSurah": "ជ្រើសរើសសូរ៉ាស់",
+    "continueListening": "បន្តស្ដាប់",
+    "duration1h": "1 ម៉ោង",
+    "duration30m": "30 នាទី",
+    "duration3h": "3 ម៉ោង",
+    "duration5h": "5 ម៉ោង",
+    "duration8h": "8 ម៉ោង",
+    "exploreCollectionsSubtitle": "តាជវីដ ការទុកចិត្ត រីវ៉ាយ៉ាត់ និងច្រើនទៀត",
+    "exploreCollectionsTitle": "ស្វែងរកបណ្ណុំ",
+    "khatma": "ខាត់ម៉ា",
+    "khatmaActiveSubtitle": "បានបញ្ចប់ {{done}} ក្នុងចំណោម 114 សូរ៉ាស់",
+    "khatmaCompletedSubtitle": "បានបញ្ចប់សូរ៉ាស់ទាំង 114",
+    "khatmaProgressTitle": "វឌ្ឍនភាពខាត់ម៉ា",
+    "khatmaStartSubtitle": "ចាប់ផ្តើមខាត់ម៉ា និងតាមដានវឌ្ឍនភាពរបស់អ្នក",
+    "listeningTools": "ឧបករណ៍ស្ដាប់",
+    "repetition": "ការធ្វើម្តងទៀត",
+    "repetitionSubtitle": "ជ្រើសរើសសូរ៉ាស់ និងជួរអាយ៉ាត់ បន្ទាប់មកធ្វើម្តងទៀតជាមួយពេលវេលាសមកាលកម្ម។",
+    "repetitionTitle": "ធ្វើម្តងទៀតជួរអាយ៉ាត់ណាមួយ",
+    "selectDuration": "ជ្រើសរើសរយៈពេល",
+    "selectReciter": "ជ្រើសរើសអ្នកអាន",
+    "startNewKhatma": "ចាប់ផ្តើមខាត់ម៉ាថ្មី",
+    "startRepetition": "ចាប់ផ្តើមការធ្វើម្តងទៀត",
+    "timedListening": "ការស្ដាប់កំណត់ពេល",
+    "timedRowActive": "កំណត់ពេល {{minutes}} នាទី",
+    "timedRowSubtitle": "ឈប់បន្ទាប់ពីពេលកំណត់",
+    "timerActiveNote": "ការចាក់ផ្អាកនៅពេលកម្មវិធីកំណត់ពេលបញ្ចប់។ ចុចរយៈពេលដែលបានជ្រើសម្តងទៀតដើម្បីបិទ។",
+    "unlimited": "គ្មានដែនកំណត់"
   }
 }
