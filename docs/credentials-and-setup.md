@@ -86,6 +86,6 @@ Email accounts work without verification: the server only checks that the addres
 - PostHog: project API key from https://posthog.com (Project settings). Set as `EXPO_PUBLIC_POSTHOG_API_KEY`. Without it analytics is simply off.
 - Sentry: DSN from https://sentry.io (Project settings, Client Keys). Set as `EXPO_PUBLIC_SENTRY_DSN`.
 
-## 10. Cloudflare Pages `iapi.istima.app` (done)
+## 10. Cloudflare Worker `iapi.istima.app` (done)
 
-Serves the timestamp files (repo `AxiomGroupHQ/qari-api`). Working at https://qari-api.pages.dev and `iapi.istima.app`. Docs: https://developers.cloudflare.com/pages/framework-guides/
+Serves the timestamp files, clips, adhkar, reference data and mushaf fonts (repo `AxiomGroupHQ/qari-api`, Worker `qari-api` with an assets binding, deployed with `wrangler deploy` from `worker/`). Working at `iapi.istima.app`. The old Pages project `qari-api` no longer receives traffic and is being deleted; `qari-api.pages.dev` is retired. Docs: https://developers.cloudflare.com/workers/static-assets/
