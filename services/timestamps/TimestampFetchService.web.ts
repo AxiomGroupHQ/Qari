@@ -38,7 +38,7 @@ export const timestampFetchService = {
       return null;
     try {
       const response = await fetch(
-        `https://mp3quran.net/api/v3/ayat_timing?read=${rewayat.mp3quran_read_id}&surah=${surah}`,
+        `https://www.mp3quran.net/api/v3/ayat_timing?read=${rewayat.mp3quran_read_id}&surah=${surah}`,
         {signal: AbortSignal.timeout(15000)},
       );
       if (!response.ok) return null;
