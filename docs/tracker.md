@@ -1,6 +1,6 @@
 # Tracker
 
-Deferred items and the self-hosting inventory. Update the status when something changes. Last reviewed October 18, 2026.
+Deferred items and the self-hosting inventory. The plain what-is-left list lives in `../TODO.md` (added 2026-10-20). Update the status when something changes. Last reviewed October 18, 2026.
 
 ## Deferred items
 
