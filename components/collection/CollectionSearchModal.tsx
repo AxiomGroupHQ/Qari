@@ -41,6 +41,10 @@ import {UserPlaylist, PlaylistItem} from '@/services/playlist/PlaylistService';
 import {Reciter, Rewayat} from '@/data/reciterData';
 import {Surah} from '@/data/surahData';
 import {getDisplayLabelFromName} from '@/services/rewayah/RewayahIdentity';
+import {usePlayerActions} from '@/hooks/usePlayerActions';
+import {createTrack} from '@/utils/track';
+import {expandPlayerSheet} from '@/services/player/sheetRef';
+import {useRecentlyPlayedStore} from '@/services/player/store/recentlyPlayedStore';
 /**
  * Simplified type for loved tracks from the useLoved hook
  * The hook returns a subset without the timestamp field
@@ -459,6 +463,43 @@ export const CollectionSearchModal: React.FC<CollectionSearchModalProps> = ({
     // Only depend on query, and always use latest values from props/hooks
   }, [query]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  const {updateQueue, play} = usePlayerActions();
+  const startNewChain = useRecentlyPlayedStore(state => state.startNewChain);
+
+  /**
+   * Play a (reciter, surah, rewayat) triple and open the player sheet.
+   * Replaces the old `/player` route pushes - that route no longer exists,
+   * so tapping these results used to fall through to the home tab.
+   */
+  const playTrackByIds = useCallback(
+    async (ids: {
+      reciterId: string;
+      surahId: string;
+      rewayatId?: string | undefined;
+    }) => {
+      try {
+        const surahIdNumber = parseInt(ids.surahId, 10);
+        if (isNaN(surahIdNumber)) return;
+        const [reciters, surah] = await Promise.all([
+          getAllReciters(),
+          getSurahById(surahIdNumber),
+        ]);
+        const reciter = reciters.find(r => r.id === ids.reciterId);
+        if (!reciter || !surah) return;
+        const rewayatId = ids.rewayatId ?? reciter.rewayat[0]?.id;
+        if (!rewayatId) return;
+        const track = await createTrack(reciter, surah, rewayatId);
+        startNewChain(reciter, surah, 0, 0, rewayatId);
+        await updateQueue([track], 0);
+        await play();
+        expandPlayerSheet();
+      } catch (error) {
+        console.error('Error playing search result:', error);
+      }
+    },
+    [updateQueue, play, startNewChain],
+  );
+
   // ============================================
   // NAVIGATION HANDLER
   // ============================================
@@ -478,16 +519,13 @@ export const CollectionSearchModal: React.FC<CollectionSearchModalProps> = ({
           break;
 
         case 'playlist_item':
-          // Navigate to the track inside the playlist
+          // Play the track from the playlist
           if (result.metadata.kind === 'playlist_item') {
             const {item} = result.metadata.data;
-            router.push({
-              pathname: '/player',
-              params: {
-                reciterId: item.reciterId,
-                surahId: item.surahId,
-                rewayatId: item.rewayatId,
-              },
+            playTrackByIds({
+              reciterId: item.reciterId,
+              surahId: item.surahId,
+              rewayatId: item.rewayatId,
             });
           }
           break;
@@ -507,19 +545,16 @@ export const CollectionSearchModal: React.FC<CollectionSearchModalProps> = ({
 
         case 'surah':
         case 'download':
-          // Navigate to player with the track
+          // Play the track and open the player
           if (
             result.metadata.kind === 'surah' ||
             result.metadata.kind === 'download'
           ) {
             const track = result.metadata.data;
-            router.push({
-              pathname: '/player',
-              params: {
-                reciterId: track.reciterId,
-                surahId: track.surahId,
-                rewayatId: track.rewayatId,
-              },
+            playTrackByIds({
+              reciterId: track.reciterId,
+              surahId: track.surahId,
+              rewayatId: track.rewayatId,
             });
           }
           break;
@@ -528,7 +563,7 @@ export const CollectionSearchModal: React.FC<CollectionSearchModalProps> = ({
       // Close modal
       onClose();
     },
-    [router, onClose],
+    [router, onClose, playTrackByIds],
   );
 
   // ============================================

@@ -24,6 +24,7 @@ import {moderateScale} from 'react-native-size-matters';
 import {LoadingIndicator} from '@/components/LoadingIndicator';
 import {useSettings} from '@/hooks/useSettings';
 import {useReciterStore} from '@/store/reciterStore';
+import {useReciterSelection} from '@/hooks/useReciterSelection';
 import {StyleSheet} from 'react-native';
 import Color from 'color';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
@@ -83,6 +84,7 @@ export function SearchView({
 
   const {theme} = useTheme();
   const {askEveryTime, defaultReciterSelection} = useSettings();
+  const {playWithReciter} = useReciterSelection();
   const defaultReciter = useReciterStore(state => state.defaultReciter);
   const insets = useSafeAreaInsets();
   const [keyboardHeight, setKeyboardHeight] = useState(0);
@@ -358,10 +360,11 @@ export function SearchView({
           break;
         case 'useDefault':
           if (defaultReciter) {
-            router.push({
-              pathname: '/player',
-              params: {reciterImageUrl: defaultReciter.image_url},
-            });
+            playWithReciter(defaultReciter, surah.id.toString()).catch(
+              error => {
+                console.error('Error playing with default reciter:', error);
+              },
+            );
           } else {
             SheetManager.show('select-reciter', {
               payload: {surahId: surah.id.toString(), source: 'search'},
@@ -377,6 +380,7 @@ export function SearchView({
     [
       router,
       addToRecentSearches,
+      playWithReciter,
       askEveryTime,
       defaultReciterSelection,
       defaultReciter,

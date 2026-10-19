@@ -62,6 +62,7 @@ Everything below is merged to `main`. "Verified" means unit tests, lint and a sc
 No PRs are open from this round except the tracker update itself.
 
 CI: the owner raised the TypeScript step heap to 6144 MB in `.github/workflows/lint.yml`, which lets the full typecheck finish.
+| #101 | Link audit fixes: taps that pushed to the removed `/player` route now play the track and open the player sheet (Search, Collection search), mp3quran timestamps use the `www` host (301 removed), dead Play-listing support link removed, unused CategoryScreen with a dead `/surah` push removed | Web build still needs the owner's deploy. |
 
 ## Feature flags
 

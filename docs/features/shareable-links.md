@@ -1,9 +1,10 @@
 # Feature: Shareable Deep Links
 
-**Status:** Planned
+**Status:** Partially shipped (playlist, Loved, History and system-playlist links live at `/p/<id>`; reciter/surah/mushaf/adhkar links still open)
 **Priority:** Medium
 **Complexity:** Medium–High (depending on chosen approach)
 **Created:** 2026-02-20
+**Updated:** 2026-10-19
 **Related:** Cloud Sync (#120), [`docs/features/cloud-sync.md`](cloud-sync.md)
 
 ## Overview
@@ -31,9 +32,10 @@ Enable users to share links to reciters, recitations, surahs, playlists, mushaf 
 
 - **Custom URL scheme** `istima://` is already configured in `app.config.js`
 - **Expo Router v4** with file-based routing already has dynamic routes: `reciter/[id]`, `playlist/[id]`
-- **No associated domain** (Universal Links / App Links) configured yet
-- **No backend** - Supabase is used for storage and data, but no edge functions or API layer exists
-- **Playlists are local** - stored in Zustand/AsyncStorage, not server-side
+- **Associated domains configured**: iOS AASA is served at `/.well-known/apple-app-site-association`; Android `assetlinks.json` still needs the signing fingerprint (native-build task)
+- **Backend live**: the `qari-api` Worker on `iapi.istima.app` serves `POST/GET /v1/share/playlist` (D1 `istima-db`), replacing the old Supabase plan
+- **Shipped**: playlist / Loved / History / system-playlist share links `https://istima.app/p/<id>` with OG preview tags from the edge worker (`edge/previewWorker.ts`)
+- **Playlists are local first** - stored in Zustand/AsyncStorage, uploaded to the share endpoint only when shared
 
 ## Options (Increasing Architectural Change)
 
